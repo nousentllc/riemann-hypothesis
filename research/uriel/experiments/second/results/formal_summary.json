@@ -1,0 +1,61 @@
+{
+  "audited_original_analytic": 14,
+  "clean_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "compared_older_edges": 9,
+  "direct_older_edges": 9,
+  "excerpt_declarations": 3,
+  "imported_mathlib_replayed_from_empty": false,
+  "injected_axioms": [
+    "UrielControl.injected"
+  ],
+  "kernel_control": [
+    "positive control accepted: True.intro at True",
+    "negative control rejected: declTypeMismatch at False"
+  ],
+  "kernel_control_source_sha256": "ce5490dd4cbfe1979a0a96a67948dbb1219c2cf13d0d1d4f488b4153df47c9c1",
+  "object_sha256": {
+    "Development.AutomorphicArithmetic.DedekindLFunctions.CharFamily": "814eeb06ff3a3b84ba0d31bc2cc6c9033d4df7f5e97bd6b9b76d5ee7aac03801",
+    "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.CharFamilyLFunctionNeZeroOfOneLeRe": "491fea3f9a1848d6b1a52ffccbfe248ef269d15feaf74ef35e41c2d88a4629ab",
+    "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.GchiConj": "c06e40cbd342bac9cc13438a6e4f0541b888532c4b6d4f0a0249d637d065d51a",
+    "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.GchiGrowth": "2132e42d119bc9cc2e634c94c80a24bad7c285f6023f93ee60e50985ae30383f",
+    "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.IteratedDerivLaplace": "a0d71051f135b1e3fcbb74f801a2aa878bacf02d10acbca0464932adcf6a5e95",
+    "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LFunctionConj": "da0181454458b6c092ee021b6fa0b0ae5ebbbb76013c6c83e770097cb45b26b9",
+    "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LandauCauchy": "487f9205728572c41e39f325952c9629b2af6bd7d6e5033570f405cdfcc6cbc7",
+    "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LandauCoeff": "1825d0885ed7ad61f1198fb92fd65dcfa5cfed3bf4b4e2c5016c56a2d96bd858",
+    "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LandauDichotomy": "af30e1c06e2e800b7a435472da3fb0b1bf4e421cae7aa0301f42d87da2cc8caf",
+    "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LandauFinite": "3721005ff10777106c13a4162d13a29fe29b5c76a208394a8590fd12b5a54d6b",
+    "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LandauGrowthContra": "cf99cabe8d8c65b4747505773c50669d62a2d647aee0532b6ede729affd343f5",
+    "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LandauKernelMax": "05024d80ba7fd1570e26d74ab9eae4de6796486ff92f5183cb19ce8d55402893",
+    "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LandauNearest": "9495d4fa634e06465433d1f111cc5ff3080bffffa9553c337d32092d90774bfc",
+    "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LandauPoleAsym": "bfe49e44595aa4b09b9d88d7e2673de15f99e1f831b09ad87fb1e203df788b9a",
+    "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LandauPoleReLe": "460d7c7ced39bc56f268d7e8153196f1723022f99cb1527a35c29b32366da974",
+    "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LogDerivLocal": "cdc84797638bb49bc7e38710f20ecc6aa1cb663dd7e56eeb4025e0bef317ae8a",
+    "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.MellinRamp": "a7c36e1a05e4e0a657523eea955388922a82edf648fd9a57a570a1332e69ea91",
+    "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.WindowHypOfRpow": "f12ab56329a83c66f4f96879cbd089d9f513646b855ed9d91d5ee125ab4aeb42",
+    "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.WindowHypUOfWindowHyp": "af89aa3d1e0e1a6b6903593d026f50caab80513dd72a1442689b4bfc2e941068",
+    "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.ZeroFreeOfRpowWindow": "22b156e5269a3f0cf63cc99a9e7e26eeb5d8dbd3820415820fd767455e5642fc",
+    "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.kernelIntegral": "add99f6ccbde2d983a272b31d89f285f8100ddec1d76ef26dd22969c54cee241",
+    "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.landauTails": "7565f7f765c147b8f950bd60d32d3ef5588259a2f562dbb0c608defc3c88b71c",
+    "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.landauWindow": "8d86e83f3e67215b2b4d9a17a30853fc48943cf9561eac431bac38f11889f0d0",
+    "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.landauWindowIneq": "4ed7a21f5b1f2a1eeaac264df403400c17039f065e22ab8f9f27a01a5bd46a55",
+    "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.lemmaL": "1cb634d9f0893ecb2004da96864b6b30480a5ff07340c2447c0a630457ea8b81",
+    "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.measurableGchi": "6f1a14bb8b1e3da079cd9d74a5393ee115576a99f06aa37b7b9469265f334b90",
+    "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.mellinGchiModOne": "27a754b29ba043203f958eb71f6a028d3f80ccdb7cfbb656d9f1a0a6a0f65190",
+    "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.mellinGchiOfNeOne": "d4d77a3b52502a9b99b1b27c1215b5859bee59e1bf158d8fee30e6985a4fffa5",
+    "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.poleData": "1256afb7b0b279f20710dcdc21f617266243c83c612b7e2103b836d625ffca10",
+    "Development.AutomorphicArithmetic.DedekindLFunctions.LandauZeroFreeCriterion": "42c778c51f14caea7b319d39f6cd4be432830e06afda46c3211b5eac30a493c2",
+    "UrielControls": "bb92eb63270f85eb28a59fadf44dac6892b4ebf192181f700f8380450620fd44",
+    "UrielFragments": "5e9d36449735df438164c2d42d7c997d8f550aec9fee009c9bb36ddb1c214b0d",
+    "UrielSharpness": "a440726c78a19b478d25c9bde0239db53bc1d5cced2161085406b06731dfa0ff"
+  },
+  "original_compiled": 30,
+  "original_kernel_replayed": 30,
+  "pin": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "project_source_files": 175187,
+  "reachable_older_edges": 9,
+  "whole_Main_built": false
+}

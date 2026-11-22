@@ -1,0 +1,6 @@
+'Deduction.zeroFree_of_rpow_window' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UpperTheory.V.Win.window1' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GlobalTheory.CutNum.numeric' depends on axioms: [propext, Classical.choice, Quot.sound]
+'GlobalTheory.EX.exists_even_between' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UrielExperiment.slopeCoefficient_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'UrielControl.usesInjected' depends on axioms: [UrielControl.injected]
