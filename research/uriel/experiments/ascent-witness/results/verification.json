@@ -1,0 +1,342 @@
+{
+  "compiled_originals": {
+    "GroundTheory.GlobalFields.Artin.InflationTower": {
+      "olean_sha256": "e5b6f7c72871ee394bedb2d9c017a7ea21654eb0ac4df3d4f60cda7b4c6de6f3",
+      "replay": "replaying GroundTheory.GlobalFields.Artin.InflationTower",
+      "source_blob": "ef2ba83795b2481c3656a298baa146897c2e62aa",
+      "source_sha256": "a16be57fb65ece2fcdc54f6d6c5cac8eb8d8323de4757fdfa34f553be54636b5"
+    },
+    "GroundTheory.GlobalFields.Artin.LogCharpoly": {
+      "olean_sha256": "44c12de9b5c04cd144601977e3bdd998af84fb4cc8cf88c8927053128b3de6a8",
+      "replay": "replaying GroundTheory.GlobalFields.Artin.LogCharpoly",
+      "source_blob": "c50fdadfd20e8517668f4d786c51f0f21d3540ed",
+      "source_sha256": "892c0a87cb91f0106f06928e26b72dca9851b5338e8295465dbc9e64b7b7cf19"
+    },
+    "GroundTheory.GlobalFields.Artin.MemInvariantsCompSubtypeIff": {
+      "olean_sha256": "291a69bf45a930db446e834fa5c9a03b462de87ccdbf35f776b165d9bbb24cfe",
+      "replay": "replaying GroundTheory.GlobalFields.Artin.MemInvariantsCompSubtypeIff",
+      "source_blob": "1eec5740a40c0878615cd207c12d8dc5c45fac7b",
+      "source_sha256": "8a6745db36ab34e685754910cde81cd6f83a6a38c1100c83334b65b8be1d8e81"
+    }
+  },
+  "controls": {
+    "all_layer_premise": {
+      "accepted_type": "SlotThree.Complete.towerClass",
+      "rejected_type": "SlotThree.BaseField.three_not_dvd_class_card",
+      "rejection": "AscentControlRun.lean:2:37: error: Type mismatch\n  SlotThree.BaseField.three_not_dvd_class_card\nhas type\n  \u00ac3 \u2223 Nat.card (ClassGroup (NumberField.RingOfIntegers SlotThree.BaseField.K))\nbut is expected to have type\n  SlotThree.TowerClassHyp"
+    },
+    "anonymous_set_membership": {
+      "accepted_type": "FirstBound 3 1 1 SlotThree.L 64 S",
+      "rejected_type": "1 \u2208 S",
+      "rejection": "AscentControlRun.lean:3:74: error: Type mismatch\n  h\nhas type\n  FirstBound 3 1 1 SlotThree.L 64 S\nbut is expected to have type\n  1 \u2208 S"
+    },
+    "change_base_of_unramifiedness": {
+      "accepted_type": "E",
+      "rejected_type": "\u211a",
+      "rejection": "AscentControlRun.lean:4:2: error: Type mismatch\n  elementary_unramified E (AlgebraicClosure E)\nhas type\n  IsUnramifiedEverywhere E \u21a5(Elementary E (AlgebraicClosure E))\nbut is expected to have type\n  IsUnramifiedEverywhere \u211a \u21a5(Elementary E (AlgebraicClosure E))"
+    }
+  },
+  "excerpt": {
+    "blob": "b225cd4b0d939a69281c97584fcd03cff65dd42f",
+    "commit": "40e56bab026552e089d7afcfeff08d2defb9c005",
+    "file": "src/Development/AutomorphicSpectrum/Proofs/GlobalProofs/CohomologicalDimensionTopologicalIso.lean",
+    "spans": [
+      {
+        "end": 156,
+        "sha256": "609c73746da06026187e1809c41556cde5307cf73ce3d2977db9b5b9bb41ae62",
+        "start": 11
+      },
+      {
+        "end": 225,
+        "sha256": "c7ab98b510888bc0c4629c3efa5aa76c71112abbf85c26f36c2b184d295b03de",
+        "start": 187
+      }
+    ],
+    "wrapped_sha256": "dee11aa0f39a0fdb1c2172adc896ec0d4330d663bdfd2d3865d0c0d087fffd1c"
+  },
+  "field_flags": {
+    "GroundTheory.GlobalFields.": "-DsynthInstance.maxHeartbeats=400000",
+    "GroundTheory.LocalFields.": "-DsynthInstance.maxHeartbeats=400000"
+  },
+  "flags": [
+    "-j1",
+    "--tstack=400000",
+    "-DautoImplicit=false",
+    "-DrelaxedAutoImplicit=false",
+    "-DmaxSynthPendingDepth=3",
+    "-Dpp.unicode.fun=true",
+    "-DmaxHeartbeats=4000000"
+  ],
+  "modules": {
+    "ClassAscent": {
+      "axiom_set": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "declarations": 34,
+      "inventory_sha256": "3ba822df961f2c30d084546d15d2f17d65e448e2219b74fbd53bab76ef17f36b",
+      "olean_sha256": "d007aae1047393e1ef1c5b152c960b67091412c7f7fd3304c4c053bbceb83ebc",
+      "printed_axioms": [
+        "SlotThree.Ascent.cover_group",
+        "SlotThree.Ascent.cubic_quotient_of_proper",
+        "SlotThree.Ascent.first_step_class_card",
+        "SlotThree.Ascent.first_step_norm_injective",
+        "SlotThree.Ascent.fixed_card_eq_coinvariant_card",
+        "SlotThree.Ascent.idealClassAction",
+        "SlotThree.Ascent.nine_pid",
+        "SlotThree.Ascent.normOnCoinvariants",
+        "SlotThree.Ascent.norm_injective_iff",
+        "SlotThree.Ascent.norm_invariant",
+        "SlotThree.Ascent.one_step_of_fixed_dvd",
+        "SlotThree.Ascent.one_step_of_norm_injective",
+        "SlotThree.Ascent.regular_lower",
+        "SlotThree.Ascent.tower_class_hyp",
+        "SlotThree.Ascent.tower_of_later_norms",
+        "SlotThree.Ascent.unramified_degree_dvd"
+      ],
+      "replay": "replaying ClassAscent",
+      "source_sha256": "14094062ab2d332f726da36e1ea5bd995c686768d7bbd5e6393c409d24a3b63a"
+    },
+    "HilbertNormal": {
+      "axiom_set": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "declarations": 3,
+      "inventory_sha256": "b35186e6c2cb2b1d110cc851f036f52e823f93b8e9190d476cb4586fd8e87efe",
+      "olean_sha256": "ca30f6d4ea1ba89055045b52e71ab1159e4b930a06bf329a928a0a38e40e61c8",
+      "printed_axioms": [
+        "Ascent.Direct.hilbert_galois",
+        "Ascent.Direct.stable"
+      ],
+      "replay": "replaying HilbertNormal",
+      "source_sha256": "2eacaa943d0856359f97b4bf67c4eb6099b70ce7a15c2eda03263794ebe7a4e9"
+    },
+    "InertiaDescent": {
+      "axiom_set": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "declarations": 6,
+      "inventory_sha256": "a5b9b1ec65db93affe8e46c924c4fa525bdd9e39c6066f7469728a557e191124",
+      "olean_sha256": "42056b6b784c5c6adfe4946c7c1c2742bbb7d132d21aef97fdb0da1055d66718",
+      "printed_axioms": [
+        "SlotThree.InertiaDescent.descend",
+        "SlotThree.InertiaDescent.fixed_unramified",
+        "SlotThree.InertiaDescent.inertia_conjugates_le_normal",
+        "SlotThree.InertiaDescent.relative_inertia_card"
+      ],
+      "replay": "replaying InertiaDescent",
+      "source_sha256": "1c1a01d54e5aedb60ef0095d67ee586fbb029ba36aa83d7831fa3fddf9ba9046"
+    },
+    "NextLayer": {
+      "axiom_set": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "declarations": 21,
+      "inventory_sha256": "97a252a37889d59599c54a6e9ecc3fa9995d6e6addebadfa558450d92604d8de",
+      "olean_sha256": "4a6c7dfe2cdf32ff093de859b5997a028e0c8a57570555a3317f1c1769cd39f3",
+      "printed_axioms": [
+        "SlotThree.NextLayer.absolute_degree",
+        "SlotThree.NextLayer.prime_over_three_generator",
+        "SlotThree.NextLayer.ramification_three",
+        "SlotThree.NextLayer.ramified_class_trivial",
+        "SlotThree.NextLayer.step_degree",
+        "SlotThree.NextLayer.step_galois",
+        "SlotThree.NextLayer.step_group",
+        "SlotThree.NextLayer.totally_complex",
+        "SlotThree.NextLayer.unique_over_three",
+        "SlotThree.NextLayer.unique_ramified_prime",
+        "SlotThree.NextLayer.unramified_away",
+        "SlotThree.NextLayer.unramified_iff"
+      ],
+      "replay": "replaying NextLayer",
+      "source_sha256": "0e92e502fc51e7e54d8062ac39bf5200e7cded78f5c9973d4a707490d39978c5"
+    },
+    "SemilinearTransport": {
+      "axiom_set": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "declarations": 31,
+      "inventory_sha256": "e2629db3401de05f3347176b373131cfbc8dc236cbd8601abcd9948adedba138",
+      "olean_sha256": "78a81dad97b97d042809cde0307d4f198e074557d715fda408e27f6c3b1c5cc3",
+      "printed_axioms": [],
+      "replay": "replaying SemilinearTransport",
+      "source_sha256": "dee11aa0f39a0fdb1c2172adc896ec0d4330d663bdfd2d3865d0c0d087fffd1c"
+    },
+    "SharedLift": {
+      "axiom_set": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "declarations": 2,
+      "inventory_sha256": "d4d668435dca11dc6397b70fa6845a842076e68cfa76ed3f33ed71db59b37c5e",
+      "olean_sha256": "a68ae900541d0c77020ee6e2b22f3bdcf588ce0201a5b350c396289650d342f6",
+      "printed_axioms": [
+        "SlotThree.Complete.shared_lift_all_labels"
+      ],
+      "replay": "replaying SharedLift",
+      "source_sha256": "6717b6e1a52ee38cf41e6fd6503dd580ff5eee674718bd488fc846eea72ea650"
+    },
+    "TowerResult": {
+      "axiom_set": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "declarations": 17,
+      "inventory_sha256": "0b1ad26929a034e09fc5611ad46e37bc0dfaa924a3f5c5b6326599bdeb5fd013",
+      "olean_sha256": "7a752d7555e2cbfa151b32d22a8174fbbd289d9d03074fe9fc351d9292231705",
+      "printed_axioms": [
+        "SlotThree.Complete.all_labels_are_admissible",
+        "SlotThree.Complete.ascend",
+        "SlotThree.Complete.coinvariant_norm_injective",
+        "SlotThree.Complete.fixed_class_count",
+        "SlotThree.Complete.fixed_class_divisibility",
+        "SlotThree.Complete.layer_invariant_zero",
+        "SlotThree.Complete.norm_on_coinvariants_bijective",
+        "SlotThree.Complete.opposite_at_64",
+        "SlotThree.Complete.partB_named_center",
+        "SlotThree.Complete.regular_layer",
+        "SlotThree.Complete.same_lift_unconditional",
+        "SlotThree.Complete.standard_layers",
+        "SlotThree.Complete.towerClass"
+      ],
+      "replay": "replaying TowerResult",
+      "source_sha256": "f9c8da8e2f0cb2cf49e5bd76fa9d3075a0ff7a4f6752ccbceb1871d5db8c8a0e"
+    },
+    "Transfer": {
+      "axiom_set": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "declarations": 23,
+      "inventory_sha256": "ec309709476c883a3c7bc247673ae27c314bb3b04bd51ea1befa85320f8db106",
+      "olean_sha256": "c3a0e7005905b485b29d0ee83016ca114b7ff384964e75ca9e9dd498a6791f6a",
+      "printed_axioms": [
+        "SlotThree.Ascent.coinvariant_of_regular_tower",
+        "SlotThree.Ascent.extend_norm_class",
+        "SlotThree.Ascent.fixed_card_eq_lower",
+        "SlotThree.Ascent.fixed_of_regular_tower",
+        "SlotThree.Ascent.norm_equiv_of_regular_tower"
+      ],
+      "replay": "replaying Transfer",
+      "source_sha256": "ae56275d128965578477302844ec1a0c5cb3ea77529a9ff323770266cf9d4558"
+    },
+    "UpstairsExtension": {
+      "axiom_set": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "declarations": 16,
+      "inventory_sha256": "f02155f1df23eb40373221fcafa332bec705f48445caa953e733776c0384fc09",
+      "olean_sha256": "eedf754981d713e514b945b16e4b4e431ee41be6d2c62ef54ec90c4e044eebe8",
+      "printed_axioms": [],
+      "replay": "replaying UpstairsExtension",
+      "source_sha256": "7fff6b564c685ad3f7de026f13cb7ea540b87b1d7a79edfbbe21ae6c17074f2f"
+    },
+    "WitnessRecord": {
+      "axiom_set": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "declarations": 17,
+      "inventory_sha256": "3f31b0fd897fc0a09d61920e713f0643761e1053f1936f92414a759c2c7e05c2",
+      "olean_sha256": "c8fa6683a59e91f9cf826173af8592016674e64e1f6520689ebe0a298e8a7f6d",
+      "printed_axioms": [
+        "AscentWitness.admissible_label",
+        "AscentWitness.enough_tags",
+        "AscentWitness.label_answers",
+        "AscentWitness.near_integer",
+        "AscentWitness.tag_exists"
+      ],
+      "replay": "replaying WitnessRecord",
+      "source_sha256": "e3595a0ed6e93ca5dfd0ce168c6988ed1a835bcd3b56ad83f23c1d97b00dd4b2"
+    }
+  },
+  "original_closure": 1103,
+  "original_reused": 1100,
+  "original_reused_digest": "6d935430023cab4ce67bd9a6289f23469ed73beccb55b5cc788961b1dba58e56",
+  "parent": "4b1c9fbbfb9bc50a3f791c2c1f3d7f2adb336c87",
+  "parent_modules": {
+    "BaseField": {
+      "olean_sha256": "fdc7776a8b488a98567a0e9a1af6001c26c068f56cbf1926dc4fe06627b802db",
+      "source_sha256": "d02d6ba36da0f087b8291f339f883ccbc74dfbf455ca237bd9030e83678ab5e4"
+    },
+    "CyclotomicTransport": {
+      "olean_sha256": "9ca9ef9302f71b6b553cc0c19131ad64c25b64b711c66c95587844a3f4b77a74",
+      "source_sha256": "7ce5e0934b29feaf13dbe97d19fc6e7cd4a8c2a7e4a243fb5b146d5bac55dace"
+    },
+    "FieldModel": {
+      "olean_sha256": "9680a282307998ce96e4543591b8b90bfcff77176aedcdf4f1043ed5e22c714d",
+      "source_sha256": "41ed02a1ccbdd4347e2e4ab1912eafa73d4d32836cd008c65b59cac212f5cedf"
+    },
+    "PrescribedPartB": {
+      "olean_sha256": "f582c9e049a034726b605e56c01ca7c82b3f2e4b672120337333444145fa8b2e",
+      "source_sha256": "04b66b44eb6a9aee1fe99c6686aa29f683ee57932f4ca42402999745bbade87a"
+    },
+    "RankZero": {
+      "olean_sha256": "63b3f5a41bf1a5dc808cc8eb48a2560fa07d844dcea11463ff211d3ba9e9e229",
+      "source_sha256": "35110caba030e2d11559c7bd5e45025a6b1b1d60e1f85244af08c88bd45cdc1c"
+    },
+    "SlotApplication": {
+      "olean_sha256": "31381176738f3a37fa8bc6ad7118a48d9e46892ab0adedcc9bd6d002e1300849",
+      "source_sha256": "771475c6b322ccffa64399351a9e6aee66b9a131998c17c1df6bf8490e7d8b69"
+    },
+    "SlotThree": {
+      "olean_sha256": "e0f05bee484c709e1546fa7dd421779eb0c7b91a174edb9e71e2749fc3cc821f",
+      "source_sha256": "235a2b49da83449662c5f59723cfdaa99d7d15a2952407805770b65949e94b0d"
+    },
+    "ZeroLift": {
+      "olean_sha256": "e650125a83715a0e348756515928178889ebf27321d96fe0ec218447967b5351",
+      "source_sha256": "3ac4527863f0e10f8ef9a9114f1f46812cd765bf8b19b3fa08daf35e58bdc681"
+    }
+  },
+  "pin": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "required_final_theorems": [
+    "SlotThree.Complete.all_labels_are_admissible",
+    "SlotThree.Complete.ascend",
+    "SlotThree.Complete.coinvariant_norm_injective",
+    "SlotThree.Complete.fixed_class_count",
+    "SlotThree.Complete.fixed_class_divisibility",
+    "SlotThree.Complete.layer_invariant_zero",
+    "SlotThree.Complete.norm_on_coinvariants_bijective",
+    "SlotThree.Complete.opposite_at_64",
+    "SlotThree.Complete.partB_named_center",
+    "SlotThree.Complete.regular_layer",
+    "SlotThree.Complete.same_lift_unconditional",
+    "SlotThree.Complete.shared_lift_all_labels",
+    "SlotThree.Complete.standard_layers",
+    "SlotThree.Complete.towerClass"
+  ],
+  "selected_targets": "all",
+  "slot_manifest_sha256": "9ee780900f4cf0cd5b981b7e63ee072a59b9c09d5424030ad10b2746123e4f7b",
+  "toolchain": {
+    "lean": "819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+    "packages": {
+      "Cli": "6130a47896ce867c6a4a55373441e59e565bad0f",
+      "LeanSearchClient": "5f4d51b81cbd3f6b32b156bfad9056621a040404",
+      "Qq": "92c15be17b7caf78c2ad767ec40f89052d908d81",
+      "aesop": "3448c0bcc5ce01b2d1546e483ec3620e32df3d0e",
+      "batteries": "4488d40d070b9700d4d5a6aa342f0d40c31b2a2d",
+      "importGraph": "16f02aa7642864af59f1ff0e384a015994db9118",
+      "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+      "plausible": "b7eb3304aeae834b12dda98993a37f6a41f6f0bb",
+      "proofwidgets": "4be2e3d5087eeb272cf5a8853b8f9dd025ef5957"
+    },
+    "version": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+  },
+  "tower_manifest_sha256": "a430f1f033e6caab69b1c737bf5845d428684fb8370eb3d69a2a8853c2060836",
+  "verifier_sha256": "764eb77fba2eac2a6a7914e212464fcbf3c4662157038503d84c907f88525fc0"
+}

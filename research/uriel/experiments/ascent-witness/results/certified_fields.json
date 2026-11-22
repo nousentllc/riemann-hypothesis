@@ -1,0 +1,143 @@
+{
+  "fields": {
+    "cyclotomic_27": {
+      "bnfcertify_full": 1,
+      "class_group_cyclic_factors": [],
+      "class_number": 1,
+      "defining_coefficients_high_to_low": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "degree": 18,
+      "discriminant": -2954312706550833698643,
+      "fixed_classes_for_the_two_order_three_automorphisms": []
+    },
+    "cyclotomic_3": {
+      "bnfcertify_full": 1,
+      "class_group_cyclic_factors": [],
+      "class_number": 1,
+      "defining_coefficients_high_to_low": [
+        1,
+        1,
+        1
+      ],
+      "degree": 2,
+      "discriminant": -3,
+      "fixed_classes_for_the_two_order_three_automorphisms": []
+    },
+    "cyclotomic_9": {
+      "bnfcertify_full": 1,
+      "class_group_cyclic_factors": [],
+      "class_number": 1,
+      "defining_coefficients_high_to_low": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "degree": 6,
+      "discriminant": -19683,
+      "fixed_classes_for_the_two_order_three_automorphisms": []
+    },
+    "diagonal_cubic_1": {
+      "bnfcertify_full": 1,
+      "class_group_cyclic_factors": [
+        3
+      ],
+      "class_number": 3,
+      "defining_coefficients_high_to_low": [
+        1,
+        -1,
+        -30,
+        -27
+      ],
+      "degree": 3,
+      "discriminant": 8281,
+      "fixed_classes_for_the_two_order_three_automorphisms": []
+    },
+    "diagonal_cubic_2": {
+      "bnfcertify_full": 1,
+      "class_group_cyclic_factors": [
+        3
+      ],
+      "class_number": 3,
+      "defining_coefficients_high_to_low": [
+        1,
+        -1,
+        -30,
+        64
+      ],
+      "degree": 3,
+      "discriminant": 8281,
+      "fixed_classes_for_the_two_order_three_automorphisms": []
+    },
+    "diagonal_over_zeta3_1": {
+      "bnfcertify_full": 1,
+      "class_group_cyclic_factors": [
+        6,
+        6
+      ],
+      "class_number": 36,
+      "defining_coefficients_high_to_low": [
+        1,
+        -1,
+        31,
+        84,
+        873,
+        810,
+        729
+      ],
+      "degree": 6,
+      "discriminant": -1851523947,
+      "fixed_classes_for_the_two_order_three_automorphisms": [
+        9,
+        9
+      ]
+    },
+    "diagonal_over_zeta3_2": {
+      "bnfcertify_full": 1,
+      "class_group_cyclic_factors": [
+        3,
+        3
+      ],
+      "class_number": 9,
+      "defining_coefficients_high_to_low": [
+        1,
+        -1,
+        31,
+        -98,
+        964,
+        -1920,
+        4096
+      ],
+      "degree": 6,
+      "discriminant": -1851523947,
+      "fixed_classes_for_the_two_order_three_automorphisms": [
+        9,
+        9
+      ]
+    }
+  },
+  "gp_script_sha256": "f0db5faa1ba6834237e7364f6194cbade724d1f8facbe84b5106244ed6764199",
+  "pari_version": "2.19.1"
+}
