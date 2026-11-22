@@ -1,0 +1,175 @@
+{
+  "extension": {
+    "compiler_output": "'UrielJoint.winPairs_fixed' depends on axioms: [propext, Classical.choice, Quot.sound]\n'UrielJoint.pointwise_of_fixed' depends on axioms: [propext, Classical.choice, Quot.sound]\n'UrielJoint.two_rows' depends on axioms: [propext, Classical.choice, Quot.sound]\nChecked direct proof dependencies for strengthening and weakening",
+    "module": "FixedPair",
+    "olean_sha256": "a41010f36344b5f7e6898b7fd01385a91cf61008e857b8fd3ad8844eb118cbda",
+    "source_sha256": "f2c8ce356093e844b2af4ea5c1b9f562e728a349e749f82d2900ee9f869cbeaa"
+  },
+  "modules": {
+    "Development.AutomorphicArithmetic.CharacterBoxes.ExistsPageN": {
+      "mode": "fresh compilation",
+      "olean_sha256": "3eea59f72e776ff9f3c64b2dea4bebccb9bdcd87eec87ba580b1d7cc04c2c323",
+      "output": "",
+      "source_blob": "398eb8ed3528aa2666e9d3b2b09a582ad4390dd7"
+    },
+    "Development.AutomorphicArithmetic.CharacterBoxes.PairGood": {
+      "mode": "fresh compilation",
+      "olean_sha256": "4bf98da5e19b621d3b26e37b73e10594b636be50ae209834381cb9b5b31e08e6",
+      "output": "",
+      "source_blob": "68d04b506355e999c0f6020ee066c4967c1e6939"
+    },
+    "Development.AutomorphicArithmetic.CharacterBoxes.TwistForm": {
+      "mode": "fresh compilation",
+      "olean_sha256": "6a64555ecd12eeb4565493d5ad63f828e16bb8380034b6a94757946b774842b8",
+      "output": "",
+      "source_blob": "5e8b1a992a393336dffd3603524526dfccfa1981"
+    },
+    "Development.AutomorphicArithmetic.CharacterBoxes.WinPairs": {
+      "mode": "fresh compilation",
+      "olean_sha256": "85f9a6316a757c10a353d8ec984a7f90cf20490a71962d6552dc0073d63d2ec5",
+      "output": "",
+      "source_blob": "4670fec488d1eb59a3cc52dffc8d0eab16e16b0b"
+    },
+    "Formalism.ConjugateSelfDual.Statement": {
+      "mode": "authenticated original build",
+      "olean_sha256": "274121e87ebbd7248bab793e5cfbe343e3379cfaec27e5dee8ecffd62a591946",
+      "output": "",
+      "source_blob": "8ac13fd8953cf0cff090de5b89c0aab876c5c929"
+    },
+    "Formalism.FrobeniusOrbits.Statement": {
+      "mode": "authenticated original build",
+      "olean_sha256": "c4d48271a3432c31c04d69a64720bd072a696765d6886e18a981c675d876eb7a",
+      "output": "",
+      "source_blob": "45d3b672d4649dd27309c092b3f9a24d279dd399"
+    },
+    "Formalism.GaloisCohomology.Statement": {
+      "mode": "fresh compilation",
+      "olean_sha256": "ba9b1a5fac7bc4b0719c8902089acc794bab04479405d767c960e55d291a5242",
+      "output": "",
+      "source_blob": "0799e9bcd8aa191ffaa90ab005453a53381bacea"
+    },
+    "Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.Analytic": {
+      "mode": "fresh compilation",
+      "olean_sha256": "8d47799074adcae7db33f4a43975b04e086801da40abccde2e1dbecc23888456",
+      "output": "Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/Analytic.lean:44:2: warning: Try this: \n  haveI\u0335\n\nThe goal is a proposition, so `have` is preferred over `haveI`.\nThe difference between `have` and `haveI` is that `haveI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`\nFormalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/Analytic.lean:45:2: warning: Try this: \n  haveI\u0335\n\nThe goal is a proposition, so `have` is preferred over `haveI`.\nThe difference between `have` and `haveI` is that `haveI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`\nFormalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/Analytic.lean:48:2: warning: Try this: \n  haveI\u0335\n\nThe goal is a proposition, so `have` is preferred over `haveI`.\nThe difference between `have` and `haveI` is that `haveI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`",
+      "source_blob": "599699b5b35f6fb7bf2ab94f5f0c577b14f35ea1"
+    },
+    "Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.ConjEMemHostFIff": {
+      "mode": "fresh compilation",
+      "olean_sha256": "6b79cd87646aff932c86b1e0bbcd1b0b63f9385eb9fe55d3927413b64c03352b",
+      "output": "",
+      "source_blob": "0ab34ba6d386bb84908efe66de6ce50108eacddc"
+    },
+    "Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.ExplicitFormulaErrorOfHostConditions": {
+      "mode": "fresh compilation",
+      "olean_sha256": "465bbaf665e39801cb826936181995d3fc35fa693916e69027371d6b93ece9d6",
+      "output": "Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/ExplicitFormulaErrorOfHostConditions.lean:60:2: warning: Try this: \n  haveI\u0335\n\nThe goal is a proposition, so `have` is preferred over `haveI`.\nThe difference between `have` and `haveI` is that `haveI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`\nFormalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/ExplicitFormulaErrorOfHostConditions.lean:71:2: warning: Try this: \n  haveI\u0335\n\nThe goal is a proposition, so `have` is preferred over `haveI`.\nThe difference between `have` and `haveI` is that `haveI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`\nFormalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/ExplicitFormulaErrorOfHostConditions.lean:97:2: warning: Try this: \n  haveI\u0335\n\nThe goal is a proposition, so `have` is preferred over `haveI`.\nThe difference between `have` and `haveI` is that `haveI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`\nFormalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/ExplicitFormulaErrorOfHostConditions.lean:98:2: warning: Try this: \n  haveI\u0335\n\nThe goal is a proposition, so `have` is preferred over `haveI`.\nThe difference between `have` and `haveI` is that `haveI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`",
+      "source_blob": "ed60b4b997cd4703713660b185b9e43fd95559a1"
+    },
+    "Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.PrimePairSizeCondition": {
+      "mode": "fresh compilation",
+      "olean_sha256": "fe2cd8a3677383d1aa175f8175b216289f5713dac8a6cde1ed73bd96491af9af",
+      "output": "",
+      "source_blob": "aee05935e7bac6625cd4e07fef4912722d796780"
+    },
+    "Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.ZsmulGeneratorEqZeroOfProjection": {
+      "mode": "fresh compilation",
+      "olean_sha256": "b36a40c2ac5ea8af0e598d918d290a99295eb1106bcfb8c76087b1d8c0636ef4",
+      "output": "",
+      "source_blob": "d13afca4924f8b277ae89b5d1d1e38d349ad99de"
+    },
+    "Formalism.Statement": {
+      "mode": "authenticated original build",
+      "olean_sha256": "4d92c742e703c16a769aaa4aef021cb7a2aba53b2ca383e439470309fdc400c1",
+      "output": "",
+      "source_blob": "30143706942aa349c77e4037537f381f9c8dbb25"
+    },
+    "Formalism.StatementOC": {
+      "mode": "authenticated original build",
+      "olean_sha256": "c87d718d86dad4c74c7d18a21e224c77ddd3729b284c04b6219cdd5a95bc8886",
+      "output": "",
+      "source_blob": "12ab19c0176bd4135c2b23a7ee3ac22888df0122"
+    },
+    "Formalism.TameInertiaTowers.StatementField": {
+      "mode": "authenticated original build",
+      "olean_sha256": "11870c47973c44e4c133f065a683afb9ca9e00484951ac95639f39173a895963",
+      "output": "",
+      "source_blob": "0d8984ee6e59434e27f1560110e63d18acf30b28"
+    },
+    "Formalism.TameInertiaTowers.StatementGroup": {
+      "mode": "authenticated original build",
+      "olean_sha256": "af521889b7e43cd1aa9549f29d9e8feec5fca063cb1d3cc96030213063b7a0a1",
+      "output": "",
+      "source_blob": "a9c329cd4a0a439dd75bfd7dc0271715ee27f0c0"
+    },
+    "ReciprocityTheory.GaloisValuations.ContinuousConstSMulQuotient": {
+      "mode": "authenticated original build",
+      "olean_sha256": "bfaf29881f94f0b8f3b0718f7ce441a3f3ed36964b6fa19a0a2913e67be7c2d7",
+      "output": "",
+      "source_blob": "cc7e6464c45dac01a68e484ce0eb884df25d9f4f"
+    },
+    "ReciprocityTheory.GaloisValuations.Global": {
+      "mode": "authenticated original build",
+      "olean_sha256": "ce449619cd414f95b4ca03d81f14688c6282f6a39d43a53a62151951628536ad",
+      "output": "",
+      "source_blob": "cb4c9727d3c18cfdf185fa0958a4f11d21a5a43f"
+    },
+    "ReciprocityTheory.GaloisValuations.GlobalA": {
+      "mode": "authenticated original build",
+      "olean_sha256": "62856f962bfd1d4cec6c47b9f9e2205244fa6791095436f26b884d710f554ad7",
+      "output": "",
+      "source_blob": "f193f6e2a17963f821834b9cdc5dee96c52cfbab"
+    },
+    "ReciprocityTheory.GaloisValuations.GlobalB": {
+      "mode": "authenticated original build",
+      "olean_sha256": "d89349a55d2e9ef0ab57a29284ae16a6a1bc93c36ae7f0805bcf34b58333564f",
+      "output": "",
+      "source_blob": "522d1e58b5accb8a165d6a392d5209c7b285cf65"
+    },
+    "ReciprocityTheory.GaloisValuations.SeparatedDvrSecondCohomologyMem": {
+      "mode": "authenticated original build",
+      "olean_sha256": "49d4fefb9b4a57a76e4c6589148e4fce5a0b261f6498507e4b066cbfd65f490c",
+      "output": "",
+      "source_blob": "5860d068c8ee7b7d2845256ce5e2871cf3c9c251"
+    },
+    "ReciprocityTheory.Hypotheses.GalCoh": {
+      "mode": "fresh compilation",
+      "olean_sha256": "4dc4f2b80c9dbb5c51df59788e42a6268b7bfa327082d50eace0e14407784c70",
+      "output": "ReciprocityTheory/Hypotheses/GalCoh.lean:102:0: warning: automatically included section variable(s) unused in theorem `ReciprocityTheory.Gal.LocalFinitenessAt.restrict`:\n  [NumberField F]\n  [IsAlgClosure F \u03a9]\n  [Fact (Nat.Prime l)]\n  [Finite M]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField F] [IsAlgClosure F \u03a9] [Fact (Nat.Prime l)] [Finite M] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`\nReciprocityTheory/Hypotheses/GalCoh.lean:107:0: warning: automatically included section variable(s) unused in theorem `ReciprocityTheory.Gal.LocalTateDualityAt.restrict`:\n  [NumberField F]\n  [IsAlgClosure F \u03a9]\n  [Finite M]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField F] [IsAlgClosure F \u03a9] [Finite M] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`\nReciprocityTheory/Hypotheses/GalCoh.lean:113:0: warning: automatically included section variable(s) unused in theorem `ReciprocityTheory.Gal.UnramifiedOrthogonalityAt.restrict`:\n  [IsAlgClosure F \u03a9]\n  [Finite M]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [IsAlgClosure F \u03a9] [Finite M] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`\nReciprocityTheory/Hypotheses/GalCoh.lean:119:0: warning: automatically included section variable(s) unused in theorem `ReciprocityTheory.Gal.LocalEulerCharAt.restrict`:\n  [NumberField F]\n  [IsAlgClosure F \u03a9]\n  [Fact (Nat.Prime l)]\n  [Finite M]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [NumberField F] [IsAlgClosure F \u03a9] [Fact (Nat.Prime l)] [Finite M] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`\nReciprocityTheory/Hypotheses/GalCoh.lean:137:0: warning: automatically included section variable(s) unused in theorem `ReciprocityTheory.Gal.continuous_locFam`:\n  [IsAlgClosure F \u03a9]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [IsAlgClosure F \u03a9] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+      "source_blob": "a4e5044d290790dfc54db004228d49cd9fdb77e5"
+    },
+    "ReciprocityTheory.Hypotheses.GalCohDefs": {
+      "mode": "fresh compilation",
+      "olean_sha256": "a8d2674268c62c33d82ccfd9835c2032cfceb66623d105366d0b2077922f09cd",
+      "output": "ReciprocityTheory/Hypotheses/GalCohDefs.lean:79:8: warning: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`\nReciprocityTheory/Hypotheses/GalCohDefs.lean:80:8: warning: this tactic is never executed\n\nNote: This linter can be disabled with `set_option linter.unreachableTactic false`\nReciprocityTheory/Hypotheses/GalCohDefs.lean:79:8: warning: Unused tactic linter: `rw [\u2190 Module.End.mul_apply, \u2190 map_mul, inv_mul_cancel, map_one,\n  Module.End.one_apply]` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`\nReciprocityTheory/Hypotheses/GalCohDefs.lean:80:8: warning: Unused tactic linter: `rw [\u2190 LinearMap.mul_apply, \u2190 map_mul, inv_mul_cancel, map_one, LinearMap.one_apply]` does nothing\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`\nReciprocityTheory/Hypotheses/GalCohDefs.lean:91:0: warning: automatically included section variable(s) unused in theorem `ReciprocityTheory.Gal.ContAction.comp'`:\n  [TopologicalSpace R]\n  [DiscreteTopology R]\n  [DiscreteTopology M]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [TopologicalSpace R] [DiscreteTopology R] [DiscreteTopology M] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`",
+      "source_blob": "ac6952d0f1b0e6f8cbc15cd6e662ba1848818cc3"
+    }
+  },
+  "original_closure": 23,
+  "pin": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "replays": {
+    "Development.AutomorphicArithmetic.CharacterBoxes.WinPairs": {
+      "exit": 0,
+      "output": "replaying Development.AutomorphicArithmetic.CharacterBoxes.WinPairs"
+    },
+    "FixedPair": {
+      "exit": 0,
+      "output": "replaying FixedPair"
+    }
+  },
+  "toolchain": {
+    "lean": "819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+    "packages": {
+      "Cli": "6130a47896ce867c6a4a55373441e59e565bad0f",
+      "LeanSearchClient": "5f4d51b81cbd3f6b32b156bfad9056621a040404",
+      "Qq": "92c15be17b7caf78c2ad767ec40f89052d908d81",
+      "aesop": "3448c0bcc5ce01b2d1546e483ec3620e32df3d0e",
+      "batteries": "4488d40d070b9700d4d5a6aa342f0d40c31b2a2d",
+      "importGraph": "16f02aa7642864af59f1ff0e384a015994db9118",
+      "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+      "plausible": "b7eb3304aeae834b12dda98993a37f6a41f6f0bb",
+      "proofwidgets": "4be2e3d5087eeb272cf5a8853b8f9dd025ef5957"
+    },
+    "version": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+  }
+}
