@@ -1,0 +1,541 @@
+{
+  "collision": {
+    "Z": 7,
+    "center": 1,
+    "ell": 2,
+    "strict": [
+      1
+    ],
+    "weak": [
+      1,
+      5
+    ]
+  },
+  "combined": [
+    {
+      "R": 6,
+      "U": 4,
+      "Z": 32,
+      "centers": {
+        "2": [
+          1,
+          16,
+          16
+        ],
+        "3": [
+          2,
+          8
+        ],
+        "5": [
+          3
+        ]
+      },
+      "each_good": true,
+      "exception_sets": {
+        "2": [
+          1,
+          16
+        ],
+        "3": [
+          2,
+          8
+        ],
+        "5": [
+          3
+        ]
+      },
+      "in_range": true,
+      "naive_good": false,
+      "union": [
+        1,
+        2,
+        3,
+        8,
+        16
+      ],
+      "union_good": true,
+      "y": "1/8"
+    },
+    {
+      "R": 6,
+      "U": 8,
+      "Z": 256,
+      "centers": {
+        "2": [
+          0,
+          257
+        ],
+        "3": [
+          16,
+          64
+        ],
+        "7": [
+          16,
+          256
+        ]
+      },
+      "each_good": true,
+      "exception_sets": {
+        "2": [],
+        "3": [
+          16,
+          64
+        ],
+        "7": [
+          16,
+          256
+        ]
+      },
+      "in_range": true,
+      "naive_good": false,
+      "union": [
+        16,
+        64,
+        256
+      ],
+      "union_good": true,
+      "y": "1/4"
+    },
+    {
+      "R": 3,
+      "U": 8,
+      "Z": 33,
+      "centers": {
+        "2": [
+          32
+        ],
+        "3": [
+          31
+        ],
+        "5": [
+          30
+        ]
+      },
+      "each_good": true,
+      "exception_sets": {
+        "2": [
+          32
+        ],
+        "3": [
+          31
+        ],
+        "5": [
+          30
+        ]
+      },
+      "in_range": true,
+      "naive_good": false,
+      "union": [
+        30,
+        31,
+        32
+      ],
+      "union_good": true,
+      "y": "1"
+    },
+    {
+      "R": 0,
+      "U": 8,
+      "Z": 8,
+      "centers": {},
+      "each_good": true,
+      "exception_sets": {},
+      "in_range": true,
+      "naive_good": true,
+      "union": [],
+      "union_good": true,
+      "y": "4"
+    },
+    {
+      "R": 1,
+      "U": 4,
+      "Z": 16,
+      "centers": {
+        "2": [
+          16
+        ]
+      },
+      "each_good": true,
+      "exception_sets": {
+        "2": [
+          16
+        ]
+      },
+      "in_range": true,
+      "naive_good": false,
+      "union": [
+        16
+      ],
+      "union_good": true,
+      "y": "1/2"
+    },
+    {
+      "R": 1,
+      "U": 8,
+      "Z": 256,
+      "centers": {
+        "2": [
+          256
+        ]
+      },
+      "each_good": true,
+      "exception_sets": {
+        "2": [
+          256
+        ]
+      },
+      "in_range": true,
+      "naive_good": false,
+      "union": [
+        256
+      ],
+      "union_good": true,
+      "y": "1"
+    },
+    {
+      "R": 1,
+      "U": 12,
+      "Z": 4096,
+      "centers": {
+        "2": [
+          4096
+        ]
+      },
+      "each_good": true,
+      "exception_sets": {
+        "2": [
+          4096
+        ]
+      },
+      "in_range": true,
+      "naive_good": false,
+      "union": [
+        4096
+      ],
+      "union_good": true,
+      "y": "3/2"
+    }
+  ],
+  "prime_ranges": [
+    {
+      "Z": 1,
+      "ell": 2,
+      "strict_max": 1,
+      "strict_modulus": 2,
+      "weak_max": 1,
+      "weak_modulus": 1
+    },
+    {
+      "Z": 2,
+      "ell": 2,
+      "strict_max": 1,
+      "strict_modulus": 4,
+      "weak_max": 1,
+      "weak_modulus": 2
+    },
+    {
+      "Z": 3,
+      "ell": 2,
+      "strict_max": 1,
+      "strict_modulus": 4,
+      "weak_max": 2,
+      "weak_modulus": 2
+    },
+    {
+      "Z": 4,
+      "ell": 2,
+      "strict_max": 1,
+      "strict_modulus": 8,
+      "weak_max": 1,
+      "weak_modulus": 4
+    },
+    {
+      "Z": 5,
+      "ell": 2,
+      "strict_max": 1,
+      "strict_modulus": 8,
+      "weak_max": 2,
+      "weak_modulus": 4
+    },
+    {
+      "Z": 7,
+      "ell": 2,
+      "strict_max": 1,
+      "strict_modulus": 8,
+      "weak_max": 2,
+      "weak_modulus": 4
+    },
+    {
+      "Z": 8,
+      "ell": 2,
+      "strict_max": 1,
+      "strict_modulus": 16,
+      "weak_max": 1,
+      "weak_modulus": 8
+    },
+    {
+      "Z": 9,
+      "ell": 2,
+      "strict_max": 1,
+      "strict_modulus": 16,
+      "weak_max": 2,
+      "weak_modulus": 8
+    },
+    {
+      "Z": 1,
+      "ell": 3,
+      "strict_max": 1,
+      "strict_modulus": 3,
+      "weak_max": 1,
+      "weak_modulus": 1
+    },
+    {
+      "Z": 2,
+      "ell": 3,
+      "strict_max": 1,
+      "strict_modulus": 3,
+      "weak_max": 2,
+      "weak_modulus": 1
+    },
+    {
+      "Z": 3,
+      "ell": 3,
+      "strict_max": 1,
+      "strict_modulus": 9,
+      "weak_max": 1,
+      "weak_modulus": 3
+    },
+    {
+      "Z": 4,
+      "ell": 3,
+      "strict_max": 1,
+      "strict_modulus": 9,
+      "weak_max": 2,
+      "weak_modulus": 3
+    },
+    {
+      "Z": 8,
+      "ell": 3,
+      "strict_max": 1,
+      "strict_modulus": 9,
+      "weak_max": 3,
+      "weak_modulus": 3
+    },
+    {
+      "Z": 9,
+      "ell": 3,
+      "strict_max": 1,
+      "strict_modulus": 27,
+      "weak_max": 1,
+      "weak_modulus": 9
+    },
+    {
+      "Z": 10,
+      "ell": 3,
+      "strict_max": 1,
+      "strict_modulus": 27,
+      "weak_max": 2,
+      "weak_modulus": 9
+    },
+    {
+      "Z": 26,
+      "ell": 3,
+      "strict_max": 1,
+      "strict_modulus": 27,
+      "weak_max": 3,
+      "weak_modulus": 9
+    },
+    {
+      "Z": 27,
+      "ell": 3,
+      "strict_max": 1,
+      "strict_modulus": 81,
+      "weak_max": 1,
+      "weak_modulus": 27
+    },
+    {
+      "Z": 28,
+      "ell": 3,
+      "strict_max": 1,
+      "strict_modulus": 81,
+      "weak_max": 2,
+      "weak_modulus": 27
+    },
+    {
+      "Z": 1,
+      "ell": 5,
+      "strict_max": 1,
+      "strict_modulus": 5,
+      "weak_max": 1,
+      "weak_modulus": 1
+    },
+    {
+      "Z": 2,
+      "ell": 5,
+      "strict_max": 1,
+      "strict_modulus": 5,
+      "weak_max": 2,
+      "weak_modulus": 1
+    },
+    {
+      "Z": 4,
+      "ell": 5,
+      "strict_max": 1,
+      "strict_modulus": 5,
+      "weak_max": 4,
+      "weak_modulus": 1
+    },
+    {
+      "Z": 5,
+      "ell": 5,
+      "strict_max": 1,
+      "strict_modulus": 25,
+      "weak_max": 1,
+      "weak_modulus": 5
+    },
+    {
+      "Z": 6,
+      "ell": 5,
+      "strict_max": 1,
+      "strict_modulus": 25,
+      "weak_max": 2,
+      "weak_modulus": 5
+    },
+    {
+      "Z": 24,
+      "ell": 5,
+      "strict_max": 1,
+      "strict_modulus": 25,
+      "weak_max": 5,
+      "weak_modulus": 5
+    },
+    {
+      "Z": 25,
+      "ell": 5,
+      "strict_max": 1,
+      "strict_modulus": 125,
+      "weak_max": 1,
+      "weak_modulus": 25
+    },
+    {
+      "Z": 26,
+      "ell": 5,
+      "strict_max": 1,
+      "strict_modulus": 125,
+      "weak_max": 2,
+      "weak_modulus": 25
+    },
+    {
+      "Z": 124,
+      "ell": 5,
+      "strict_max": 1,
+      "strict_modulus": 125,
+      "weak_max": 5,
+      "weak_modulus": 25
+    },
+    {
+      "Z": 125,
+      "ell": 5,
+      "strict_max": 1,
+      "strict_modulus": 625,
+      "weak_max": 1,
+      "weak_modulus": 125
+    },
+    {
+      "Z": 126,
+      "ell": 5,
+      "strict_max": 1,
+      "strict_modulus": 625,
+      "weak_max": 2,
+      "weak_modulus": 125
+    },
+    {
+      "Z": 1,
+      "ell": 7,
+      "strict_max": 1,
+      "strict_modulus": 7,
+      "weak_max": 1,
+      "weak_modulus": 1
+    },
+    {
+      "Z": 2,
+      "ell": 7,
+      "strict_max": 1,
+      "strict_modulus": 7,
+      "weak_max": 2,
+      "weak_modulus": 1
+    },
+    {
+      "Z": 6,
+      "ell": 7,
+      "strict_max": 1,
+      "strict_modulus": 7,
+      "weak_max": 6,
+      "weak_modulus": 1
+    },
+    {
+      "Z": 7,
+      "ell": 7,
+      "strict_max": 1,
+      "strict_modulus": 49,
+      "weak_max": 1,
+      "weak_modulus": 7
+    },
+    {
+      "Z": 8,
+      "ell": 7,
+      "strict_max": 1,
+      "strict_modulus": 49,
+      "weak_max": 2,
+      "weak_modulus": 7
+    },
+    {
+      "Z": 48,
+      "ell": 7,
+      "strict_max": 1,
+      "strict_modulus": 49,
+      "weak_max": 7,
+      "weak_modulus": 7
+    },
+    {
+      "Z": 49,
+      "ell": 7,
+      "strict_max": 1,
+      "strict_modulus": 343,
+      "weak_max": 1,
+      "weak_modulus": 49
+    },
+    {
+      "Z": 50,
+      "ell": 7,
+      "strict_max": 1,
+      "strict_modulus": 343,
+      "weak_max": 2,
+      "weak_modulus": 49
+    },
+    {
+      "Z": 342,
+      "ell": 7,
+      "strict_max": 1,
+      "strict_modulus": 343,
+      "weak_max": 7,
+      "weak_modulus": 49
+    },
+    {
+      "Z": 343,
+      "ell": 7,
+      "strict_max": 1,
+      "strict_modulus": 2401,
+      "weak_max": 1,
+      "weak_modulus": 343
+    },
+    {
+      "Z": 344,
+      "ell": 7,
+      "strict_max": 1,
+      "strict_modulus": 2401,
+      "weak_max": 2,
+      "weak_modulus": 343
+    }
+  ]
+}

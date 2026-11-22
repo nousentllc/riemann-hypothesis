@@ -1,0 +1,173 @@
+{
+  "boundary": {
+    "Q": 1,
+    "db": 1,
+    "delta": "1/12",
+    "dg": 3,
+    "lg": 1,
+    "m": 1,
+    "mu": -1,
+    "mug": "-2",
+    "required_constant": "12",
+    "tests": [
+      {
+        "bound": "-7/4",
+        "constant": "9",
+        "holds": false
+      },
+      {
+        "bound": "-23/12",
+        "constant": "11",
+        "holds": false
+      },
+      {
+        "bound": "-23999/12000",
+        "constant": "11999/1000",
+        "holds": false
+      },
+      {
+        "bound": "-2",
+        "constant": "12",
+        "holds": true
+      }
+    ]
+  },
+  "lattices": [
+    {
+      "bad_gram": "2",
+      "covolume_product_squared": "4",
+      "delta": "1/12",
+      "dim": 4,
+      "exact_cut": true,
+      "expected_g": 2,
+      "good_gram": "2",
+      "idempotent": true,
+      "index": "2",
+      "index_identity": true,
+      "omit_denominator_cut_holds": false,
+      "projector_denominator": 2,
+      "q": 1,
+      "rank_ok": true,
+      "symmetric": true
+    },
+    {
+      "bad_gram": "5",
+      "covolume_product_squared": "25",
+      "delta": "1/12",
+      "dim": 4,
+      "exact_cut": true,
+      "expected_g": 5,
+      "good_gram": "5",
+      "idempotent": true,
+      "index": "5",
+      "index_identity": true,
+      "omit_denominator_cut_holds": false,
+      "projector_denominator": 5,
+      "q": 2,
+      "rank_ok": true,
+      "symmetric": true
+    },
+    {
+      "bad_gram": "101",
+      "covolume_product_squared": "10201",
+      "delta": "1/12",
+      "dim": 4,
+      "exact_cut": true,
+      "expected_g": 101,
+      "good_gram": "101",
+      "idempotent": true,
+      "index": "101",
+      "index_identity": true,
+      "omit_denominator_cut_holds": false,
+      "projector_denominator": 101,
+      "q": 10,
+      "rank_ok": true,
+      "symmetric": true
+    },
+    {
+      "bad_gram": "10001",
+      "covolume_product_squared": "100020001",
+      "delta": "1/12",
+      "dim": 4,
+      "exact_cut": true,
+      "expected_g": 10001,
+      "good_gram": "10001",
+      "idempotent": true,
+      "index": "10001",
+      "index_identity": true,
+      "omit_denominator_cut_holds": false,
+      "projector_denominator": 10001,
+      "q": 100,
+      "rank_ok": true,
+      "symmetric": true
+    },
+    {
+      "bad_gram": "2",
+      "covolume_product_squared": "4",
+      "delta": "1/24",
+      "dim": 8,
+      "exact_cut": true,
+      "expected_g": 2,
+      "good_gram": "2",
+      "idempotent": true,
+      "index": "2",
+      "index_identity": true,
+      "omit_denominator_cut_holds": false,
+      "projector_denominator": 2,
+      "q": 1,
+      "rank_ok": true,
+      "symmetric": true
+    },
+    {
+      "bad_gram": "5",
+      "covolume_product_squared": "25",
+      "delta": "1/24",
+      "dim": 8,
+      "exact_cut": true,
+      "expected_g": 5,
+      "good_gram": "5",
+      "idempotent": true,
+      "index": "5",
+      "index_identity": true,
+      "omit_denominator_cut_holds": false,
+      "projector_denominator": 5,
+      "q": 2,
+      "rank_ok": true,
+      "symmetric": true
+    },
+    {
+      "bad_gram": "101",
+      "covolume_product_squared": "10201",
+      "delta": "1/24",
+      "dim": 8,
+      "exact_cut": true,
+      "expected_g": 101,
+      "good_gram": "101",
+      "idempotent": true,
+      "index": "101",
+      "index_identity": true,
+      "omit_denominator_cut_holds": false,
+      "projector_denominator": 101,
+      "q": 10,
+      "rank_ok": true,
+      "symmetric": true
+    },
+    {
+      "bad_gram": "10001",
+      "covolume_product_squared": "100020001",
+      "delta": "1/24",
+      "dim": 8,
+      "exact_cut": true,
+      "expected_g": 10001,
+      "good_gram": "10001",
+      "idempotent": true,
+      "index": "10001",
+      "index_identity": true,
+      "omit_denominator_cut_holds": false,
+      "projector_denominator": 10001,
+      "q": 100,
+      "rank_ok": true,
+      "symmetric": true
+    }
+  ]
+}

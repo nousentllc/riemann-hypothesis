@@ -1,0 +1,69 @@
+{
+  "bump": {
+    "center": "100.5",
+    "center_perturbed": "2.1695041397381496825",
+    "max_integer_change": 0,
+    "unperturbed_window_max": "0.22929892799412536897"
+  },
+  "cross_precision_max": "1.5598567063176266755e-59",
+  "precision_digits": [
+    60,
+    90
+  ],
+  "prime_powers": 604,
+  "tables_agree": true,
+  "windows": [
+    {
+      "V": 8,
+      "Y": 4,
+      "direct_error": "4.9090934652977265531e-91",
+      "endpoint_shortfall": "4.9090934652977265531e-91",
+      "endpoints_only": "0.91151824595460875349",
+      "location": "4.0",
+      "maximum": "0.91151824595460875349",
+      "omit_n4_delta": "0.0",
+      "omit_n4_expected": "0.0",
+      "smooth_pieces": 3,
+      "stationary_candidates": 0
+    },
+    {
+      "V": 64,
+      "Y": 16,
+      "direct_error": "0.0",
+      "endpoint_shortfall": "0.0",
+      "endpoints_only": "0.45957280394600576852",
+      "location": "16.0",
+      "maximum": "0.45957280394600576852",
+      "omit_n4_delta": "0.51986038541995898206",
+      "omit_n4_expected": "0.51986038541995898206",
+      "smooth_pieces": 17,
+      "stationary_candidates": 11
+    },
+    {
+      "V": 512,
+      "Y": 64,
+      "direct_error": "5.8909121583572718637e-90",
+      "endpoint_shortfall": "5.8909121583572718637e-90",
+      "endpoints_only": "0.22929892799412536897",
+      "location": "64.0",
+      "maximum": "0.22929892799412536897",
+      "omit_n4_delta": "1.2996509635498974552",
+      "omit_n4_expected": "1.2996509635498974552",
+      "smooth_pieces": 90,
+      "stationary_candidates": 60
+    },
+    {
+      "V": 4096,
+      "Y": 256,
+      "direct_error": "1.8132963987443477455e-89",
+      "endpoint_shortfall": "0.010657167782822814423",
+      "endpoints_only": "0.10712984283219094711",
+      "location": "300.25283062556143834",
+      "maximum": "0.11778701061501376154",
+      "omit_n4_delta": "2.9626777993466214991",
+      "omit_n4_expected": "2.9626777993466214991",
+      "smooth_pieces": 534,
+      "stationary_candidates": 175
+    }
+  ]
+}

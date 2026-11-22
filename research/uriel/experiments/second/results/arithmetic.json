@@ -1,0 +1,4147 @@
+{
+  "grid": [
+    {
+      "L": 2,
+      "base": 2,
+      "budget": {
+        "envelope_holds": false,
+        "log_ratio_after_subtraction": 1.58095913,
+        "normalizations_equal": true
+      },
+      "cyclic_exponent": 115,
+      "cyclic_exponent_ge_two": true,
+      "fingerprints": {
+        "T2": {
+          "bits": 115,
+          "sha256": "55bbd0111c33f2fed3f7c7e21e1269279fc8e0f87dff84b8ea31eac20f848cad"
+        },
+        "TT": {
+          "bits": 114,
+          "sha256": "98e053be57581ceefcd1b8bc446701f2180d783797abc6b37c28c55ae1cceaee"
+        },
+        "k": {
+          "bits": 249,
+          "sha256": "758d641aa2bbacecad75df335c4f38555680f400ad009ab38d16408d2222de61"
+        },
+        "m": {
+          "bits": 27,
+          "sha256": "817b4bc36c37e1438fbba4ee1b823824fcba97fc4f7969165c8eac75ff5691a3"
+        },
+        "n": {
+          "bits": 116,
+          "sha256": "a7ac2a3d818c0d89d452325adaa2ffc4df1b2bc26b93bc6e0205f6293297656c"
+        },
+        "t": {
+          "bits": 21186,
+          "sha256": "de0bc17bc011d56bf96244f17ee6ab5784a651f3d7e685ba07b338c2738a2350"
+        }
+      },
+      "host_cardinality": {
+        "T2_lower": true,
+        "TT_lower": true,
+        "TT_upper": true,
+        "cardinalities": true
+      },
+      "j": 1,
+      "q": 53,
+      "ranks": {
+        "f_le_k": true,
+        "k_even": true,
+        "m_add_three_le_k": true,
+        "m_even": true,
+        "m_le_f": true,
+        "m_sq_le_N": true,
+        "rank_add_five_le": true,
+        "t_odd": true,
+        "three_m_lt_t": true,
+        "two_le_m": true
+      },
+      "rankval": {
+        "identity": true,
+        "k": true,
+        "m": true,
+        "n": true
+      },
+      "rounded": {
+        "T2_floor_pass": true,
+        "T2_fractional": false,
+        "TT_floor_pass": false,
+        "TT_fractional": true
+      },
+      "scale": {
+        "J_ge_one": true,
+        "eps_below_cutoff": true,
+        "eps_positive": true,
+        "x_gt_one": true
+      },
+      "size_windows": {
+        "C_nonnegative": true,
+        "T2_lower": true,
+        "T2_upper": true,
+        "TT_lower": true,
+        "aE_le": true,
+        "aE_nonnegative": true,
+        "absorption": false,
+        "b_positive": true,
+        "eps_positive": true,
+        "err_le": true,
+        "k_lower": true,
+        "k_upper": true,
+        "m_lower": true,
+        "m_upper": true,
+        "n_positive": true,
+        "x": true
+      },
+      "t_plus_two_ranks": {
+        "f_le_k": true,
+        "k_even": true,
+        "m_add_three_le_k": true,
+        "m_even": true,
+        "m_le_f": true,
+        "m_sq_le_N": true,
+        "rank_add_five_le": true,
+        "t_odd": true,
+        "three_m_lt_t": true,
+        "two_le_m": true
+      },
+      "t_plus_two_rankval": {
+        "identity": false,
+        "k": true,
+        "m": true,
+        "n": true
+      },
+      "threshold_16": true
+    },
+    {
+      "L": 256,
+      "base": 2,
+      "budget": {
+        "envelope_holds": true,
+        "log_ratio_after_subtraction": -3.11818623,
+        "normalizations_equal": true
+      },
+      "cyclic_exponent": 913,
+      "cyclic_exponent_ge_two": true,
+      "fingerprints": {
+        "T2": {
+          "bits": 906,
+          "sha256": "7616ba5d46375003c64d825e368e48987d4d1bc38b9f98dd6eb90c745b7baf85"
+        },
+        "TT": {
+          "bits": 912,
+          "sha256": "cf09e3a56ea4bc8b9b9ffc762fbc5f3b645266c56462ec345e7ad1bd64920bdc"
+        },
+        "k": {
+          "bits": 1989,
+          "sha256": "29f227757b919862895d7b39b49042be0096deed8e331d2fb9c94afb27a04bb1"
+        },
+        "m": {
+          "bits": 212,
+          "sha256": "600be03fdc8f2aade62d7efe37f41a15f66e892114107365fa41e1b5f0c1f33d"
+        },
+        "n": {
+          "bits": 914,
+          "sha256": "ac426e38bca35f95a92994ee14c37bb7920b7da23bff0e2a49952f06f6f1a746"
+        },
+        "t": {
+          "bits": 169436,
+          "sha256": "22e112e9a75f5d7e2d007ebe5b930533669a914d0695205a329e9028e5bae11a"
+        }
+      },
+      "host_cardinality": {
+        "T2_lower": true,
+        "TT_lower": true,
+        "TT_upper": true,
+        "cardinalities": true
+      },
+      "j": 8,
+      "q": 53,
+      "ranks": {
+        "f_le_k": true,
+        "k_even": true,
+        "m_add_three_le_k": true,
+        "m_even": true,
+        "m_le_f": true,
+        "m_sq_le_N": true,
+        "rank_add_five_le": true,
+        "t_odd": true,
+        "three_m_lt_t": true,
+        "two_le_m": true
+      },
+      "rankval": {
+        "identity": true,
+        "k": true,
+        "m": true,
+        "n": true
+      },
+      "rounded": {
+        "T2_floor_pass": true,
+        "T2_fractional": false,
+        "TT_floor_pass": true,
+        "TT_fractional": false
+      },
+      "scale": {
+        "J_ge_one": true,
+        "eps_below_cutoff": true,
+        "eps_positive": true,
+        "x_gt_one": true
+      },
+      "size_windows": {
+        "C_nonnegative": true,
+        "T2_lower": true,
+        "T2_upper": true,
+        "TT_lower": true,
+        "aE_le": true,
+        "aE_nonnegative": true,
+        "absorption": false,
+        "b_positive": true,
+        "eps_positive": true,
+        "err_le": true,
+        "k_lower": true,
+        "k_upper": true,
+        "m_lower": true,
+        "m_upper": true,
+        "n_positive": true,
+        "x": true
+      },
+      "t_plus_two_ranks": {
+        "f_le_k": true,
+        "k_even": true,
+        "m_add_three_le_k": true,
+        "m_even": true,
+        "m_le_f": true,
+        "m_sq_le_N": true,
+        "rank_add_five_le": true,
+        "t_odd": true,
+        "three_m_lt_t": true,
+        "two_le_m": true
+      },
+      "t_plus_two_rankval": {
+        "identity": false,
+        "k": true,
+        "m": true,
+        "n": true
+      },
+      "threshold_16": true
+    },
+    {
+      "L": 4096,
+      "base": 2,
+      "budget": {
+        "envelope_holds": true,
+        "log_ratio_after_subtraction": -5.71840321,
+        "normalizations_equal": true
+      },
+      "cyclic_exponent": 1369,
+      "cyclic_exponent_ge_two": true,
+      "fingerprints": {
+        "T2": {
+          "bits": 1358,
+          "sha256": "0085ce268ac478c685781aa6fc409b7da6078a2323fc478f692d3579d559c4f5"
+        },
+        "TT": {
+          "bits": 1367,
+          "sha256": "17f17558e5c80f2bd14b466582eed896bf36f861137bc4f1122518a6fcc36385"
+        },
+        "k": {
+          "bits": 2983,
+          "sha256": "e686658c8e6cef28d3562c3daa0a3c2a1294e611497cf36fa39d625de179e750"
+        },
+        "m": {
+          "bits": 318,
+          "sha256": "7ee2f6e2bc04500ef33c8e793fee1044854f8fb4232e72a0e6e4cf3f594dd29c"
+        },
+        "n": {
+          "bits": 1370,
+          "sha256": "e1a4c95fbb3551c124b163e25efdcde054f7f6906db555acdcd3b511562f6c93"
+        },
+        "t": {
+          "bits": 254151,
+          "sha256": "4c158ad22922d0c4543cc5830f3a145dedf70b7457337b22e840b02ce48339b2"
+        }
+      },
+      "host_cardinality": {
+        "T2_lower": true,
+        "TT_lower": true,
+        "TT_upper": true,
+        "cardinalities": true
+      },
+      "j": 12,
+      "q": 53,
+      "ranks": {
+        "f_le_k": true,
+        "k_even": true,
+        "m_add_three_le_k": true,
+        "m_even": true,
+        "m_le_f": true,
+        "m_sq_le_N": true,
+        "rank_add_five_le": true,
+        "t_odd": true,
+        "three_m_lt_t": true,
+        "two_le_m": true
+      },
+      "rankval": {
+        "identity": true,
+        "k": true,
+        "m": true,
+        "n": true
+      },
+      "rounded": {
+        "T2_floor_pass": true,
+        "T2_fractional": false,
+        "TT_floor_pass": false,
+        "TT_fractional": true
+      },
+      "scale": {
+        "J_ge_one": true,
+        "eps_below_cutoff": true,
+        "eps_positive": true,
+        "x_gt_one": true
+      },
+      "size_windows": {
+        "C_nonnegative": true,
+        "T2_lower": true,
+        "T2_upper": true,
+        "TT_lower": true,
+        "aE_le": true,
+        "aE_nonnegative": true,
+        "absorption": false,
+        "b_positive": true,
+        "eps_positive": true,
+        "err_le": true,
+        "k_lower": true,
+        "k_upper": true,
+        "m_lower": true,
+        "m_upper": true,
+        "n_positive": true,
+        "x": true
+      },
+      "t_plus_two_ranks": {
+        "f_le_k": true,
+        "k_even": true,
+        "m_add_three_le_k": true,
+        "m_even": true,
+        "m_le_f": true,
+        "m_sq_le_N": true,
+        "rank_add_five_le": true,
+        "t_odd": true,
+        "three_m_lt_t": true,
+        "two_le_m": true
+      },
+      "t_plus_two_rankval": {
+        "identity": false,
+        "k": true,
+        "m": true,
+        "n": true
+      },
+      "threshold_16": true
+    },
+    {
+      "L": 8192,
+      "base": 2,
+      "budget": {
+        "envelope_holds": true,
+        "log_ratio_after_subtraction": -6.3682592,
+        "normalizations_equal": true
+      },
+      "cyclic_exponent": 1483,
+      "cyclic_exponent_ge_two": true,
+      "fingerprints": {
+        "T2": {
+          "bits": 1471,
+          "sha256": "056477bc8eb1b8fee20b9b6c5bac8d00a6adfa92d1a66476b7b54183e7138adc"
+        },
+        "TT": {
+          "bits": 1481,
+          "sha256": "4be49bf1b18515b192e0dbf0a65a8733de00f48b6f9bfc97c91171478630b02e"
+        },
+        "k": {
+          "bits": 3231,
+          "sha256": "aecf9a4385542b5e87d681078f4897c0bbd479d284aeb7d9974ed1f395eb51e6"
+        },
+        "m": {
+          "bits": 344,
+          "sha256": "d4d7d47c780dd312ef71cbea7960b819e3b255f76edf95e8359b802771206baf"
+        },
+        "n": {
+          "bits": 1484,
+          "sha256": "56f8d6a920f9ba225f40253d93d59e167c05182d990c1d8bd445bcd61253a111"
+        },
+        "t": {
+          "bits": 275329,
+          "sha256": "d8fa1f9e9067e5bc6a5ee7a31133197ad4046529e26f6a05f6486b5fe00ccb78"
+        }
+      },
+      "host_cardinality": {
+        "T2_lower": true,
+        "TT_lower": true,
+        "TT_upper": true,
+        "cardinalities": true
+      },
+      "j": 13,
+      "q": 53,
+      "ranks": {
+        "f_le_k": true,
+        "k_even": true,
+        "m_add_three_le_k": true,
+        "m_even": true,
+        "m_le_f": true,
+        "m_sq_le_N": true,
+        "rank_add_five_le": true,
+        "t_odd": true,
+        "three_m_lt_t": true,
+        "two_le_m": true
+      },
+      "rankval": {
+        "identity": true,
+        "k": true,
+        "m": true,
+        "n": true
+      },
+      "rounded": {
+        "T2_floor_pass": true,
+        "T2_fractional": false,
+        "TT_floor_pass": false,
+        "TT_fractional": true
+      },
+      "scale": {
+        "J_ge_one": true,
+        "eps_below_cutoff": true,
+        "eps_positive": true,
+        "x_gt_one": true
+      },
+      "size_windows": {
+        "C_nonnegative": true,
+        "T2_lower": true,
+        "T2_upper": true,
+        "TT_lower": true,
+        "aE_le": true,
+        "aE_nonnegative": true,
+        "absorption": true,
+        "b_positive": true,
+        "eps_positive": true,
+        "err_le": true,
+        "k_lower": true,
+        "k_upper": true,
+        "m_lower": true,
+        "m_upper": true,
+        "n_positive": true,
+        "x": true
+      },
+      "t_plus_two_ranks": {
+        "f_le_k": true,
+        "k_even": true,
+        "m_add_three_le_k": true,
+        "m_even": true,
+        "m_le_f": true,
+        "m_sq_le_N": true,
+        "rank_add_five_le": true,
+        "t_odd": true,
+        "three_m_lt_t": true,
+        "two_le_m": true
+      },
+      "t_plus_two_rankval": {
+        "identity": false,
+        "k": true,
+        "m": true,
+        "n": true
+      },
+      "threshold_16": true
+    },
+    {
+      "L": 65536,
+      "base": 2,
+      "budget": {
+        "envelope_holds": true,
+        "log_ratio_after_subtraction": -8.31776235,
+        "normalizations_equal": true
+      },
+      "cyclic_exponent": 1825,
+      "cyclic_exponent_ge_two": true,
+      "fingerprints": {
+        "T2": {
+          "bits": 1810,
+          "sha256": "7437e9dafb1bbe67872f4ed54fd8e11dc9877649cfc31cf27990aa8b6185d235"
+        },
+        "TT": {
+          "bits": 1823,
+          "sha256": "58197370f2ecf243ae754a734453038f75b9b9ae1b483625a143bf01ef69e3e2"
+        },
+        "k": {
+          "bits": 3977,
+          "sha256": "360d6b67445c14ad47b0b7ccf54461d4d99c3f51c0ebcbda16311a5a09eb7274"
+        },
+        "m": {
+          "bits": 424,
+          "sha256": "b377e7c84b2726e012991a91b37d2f9d1287dd7bc5e0af7e35d2ae86db55ce25"
+        },
+        "n": {
+          "bits": 1826,
+          "sha256": "583f27c237a19c237e72a9d84298d24bddb3e253d323a397a9812ef7bdf3070d"
+        },
+        "t": {
+          "bits": 338865,
+          "sha256": "33c502e914bc67c8812b02febaa1161c08c5e7983227584694e141d25e4f1032"
+        }
+      },
+      "host_cardinality": {
+        "T2_lower": true,
+        "TT_lower": true,
+        "TT_upper": true,
+        "cardinalities": true
+      },
+      "j": 16,
+      "q": 53,
+      "ranks": {
+        "f_le_k": true,
+        "k_even": true,
+        "m_add_three_le_k": true,
+        "m_even": true,
+        "m_le_f": true,
+        "m_sq_le_N": true,
+        "rank_add_five_le": true,
+        "t_odd": true,
+        "three_m_lt_t": true,
+        "two_le_m": true
+      },
+      "rankval": {
+        "identity": true,
+        "k": true,
+        "m": true,
+        "n": true
+      },
+      "rounded": {
+        "T2_floor_pass": true,
+        "T2_fractional": false,
+        "TT_floor_pass": true,
+        "TT_fractional": false
+      },
+      "scale": {
+        "J_ge_one": true,
+        "eps_below_cutoff": true,
+        "eps_positive": true,
+        "x_gt_one": true
+      },
+      "size_windows": {
+        "C_nonnegative": true,
+        "T2_lower": true,
+        "T2_upper": true,
+        "TT_lower": true,
+        "aE_le": true,
+        "aE_nonnegative": true,
+        "absorption": true,
+        "b_positive": true,
+        "eps_positive": true,
+        "err_le": true,
+        "k_lower": true,
+        "k_upper": true,
+        "m_lower": true,
+        "m_upper": true,
+        "n_positive": true,
+        "x": true
+      },
+      "t_plus_two_ranks": {
+        "f_le_k": true,
+        "k_even": true,
+        "m_add_three_le_k": true,
+        "m_even": true,
+        "m_le_f": true,
+        "m_sq_le_N": true,
+        "rank_add_five_le": true,
+        "t_odd": true,
+        "three_m_lt_t": true,
+        "two_le_m": true
+      },
+      "t_plus_two_rankval": {
+        "identity": false,
+        "k": true,
+        "m": true,
+        "n": true
+      },
+      "threshold_16": true
+    },
+    {
+      "L": 16777216,
+      "base": 2,
+      "budget": {
+        "envelope_holds": true,
+        "log_ratio_after_subtraction": -13.51637001,
+        "normalizations_equal": true
+      },
+      "cyclic_exponent": 2737,
+      "cyclic_exponent_ge_two": true,
+      "fingerprints": {
+        "T2": {
+          "bits": 2714,
+          "sha256": "cc29d69af60e2be47095727e5d90da28f08a39f6bb2652ef77470a9b733b3889"
+        },
+        "TT": {
+          "bits": 2734,
+          "sha256": "93c16e1f1f8e6cc9066c67dcd188c45acad7dacec08ce5657e9a90c4a8459abf"
+        },
+        "k": {
+          "bits": 5965,
+          "sha256": "64849b792a0fbe5e1f6bff0dc687f51988981218ec26dacf023ff9bce69fba0c"
+        },
+        "m": {
+          "bits": 635,
+          "sha256": "2ca2121449f2fcfaefacaafa52f597c2b38656d9e3e1c31f6bacb05b8b2881e6"
+        },
+        "n": {
+          "bits": 2738,
+          "sha256": "972dba6e6709d800803f24397f49f5c7862d1a4e8a85a2bfff1bc8779a235401"
+        },
+        "t": {
+          "bits": 508293,
+          "sha256": "20df116fe2f62708afa98e85e01f661dc2b7f706cad68c576c2ccfb6e40e4a2d"
+        }
+      },
+      "host_cardinality": {
+        "T2_lower": true,
+        "TT_lower": true,
+        "TT_upper": true,
+        "cardinalities": true
+      },
+      "j": 24,
+      "q": 53,
+      "ranks": {
+        "f_le_k": true,
+        "k_even": true,
+        "m_add_three_le_k": true,
+        "m_even": true,
+        "m_le_f": true,
+        "m_sq_le_N": true,
+        "rank_add_five_le": true,
+        "t_odd": true,
+        "three_m_lt_t": true,
+        "two_le_m": true
+      },
+      "rankval": {
+        "identity": true,
+        "k": true,
+        "m": true,
+        "n": true
+      },
+      "rounded": {
+        "T2_floor_pass": true,
+        "T2_fractional": false,
+        "TT_floor_pass": true,
+        "TT_fractional": false
+      },
+      "scale": {
+        "J_ge_one": true,
+        "eps_below_cutoff": true,
+        "eps_positive": true,
+        "x_gt_one": true
+      },
+      "size_windows": {
+        "C_nonnegative": true,
+        "T2_lower": true,
+        "T2_upper": true,
+        "TT_lower": true,
+        "aE_le": true,
+        "aE_nonnegative": true,
+        "absorption": true,
+        "b_positive": true,
+        "eps_positive": true,
+        "err_le": true,
+        "k_lower": true,
+        "k_upper": true,
+        "m_lower": true,
+        "m_upper": true,
+        "n_positive": true,
+        "x": true
+      },
+      "t_plus_two_ranks": {
+        "f_le_k": true,
+        "k_even": true,
+        "m_add_three_le_k": true,
+        "m_even": true,
+        "m_le_f": true,
+        "m_sq_le_N": true,
+        "rank_add_five_le": true,
+        "t_odd": true,
+        "three_m_lt_t": true,
+        "two_le_m": true
+      },
+      "t_plus_two_rankval": {
+        "identity": false,
+        "k": true,
+        "m": true,
+        "n": true
+      },
+      "threshold_16": true
+    },
+    {
+      "L": 3,
+      "base": 3,
+      "budget": {
+        "envelope_holds": false,
+        "log_ratio_after_subtraction": 1.13180442,
+        "normalizations_equal": true
+      },
+      "cyclic_exponent": 181,
+      "cyclic_exponent_ge_two": true,
+      "fingerprints": {
+        "T2": {
+          "bits": 180,
+          "sha256": "85e60fdb89b5f97ed5ca1ffc694e60b31b098838154ca86bde52ad90e72ef9f3"
+        },
+        "TT": {
+          "bits": 180,
+          "sha256": "cdf6cda9beb9ab75c912f2b6ff503dc45090dde0b5e68784dd38f528edf30658"
+        },
+        "k": {
+          "bits": 394,
+          "sha256": "8e1c72d30f9833662f07c93c62ebdeb8b42a69e39809822bff45a5535c5a6fe4"
+        },
+        "m": {
+          "bits": 42,
+          "sha256": "d4fabd161cdfda229ef0b85038674fa3df06d5fe531db30ff79fbb259be42e2c"
+        },
+        "n": {
+          "bits": 182,
+          "sha256": "085bd971b5bd803629af537901836481bf9325844a060f2235e870af5bb9a282"
+        },
+        "t": {
+          "bits": 33574,
+          "sha256": "4babe109a49e571328ebaf3ef65f92a6043a6035f72a0de3d98f6c45c95fd05e"
+        }
+      },
+      "host_cardinality": {
+        "T2_lower": true,
+        "TT_lower": true,
+        "TT_upper": true,
+        "cardinalities": true
+      },
+      "j": 1,
+      "q": 53,
+      "ranks": {
+        "f_le_k": true,
+        "k_even": true,
+        "m_add_three_le_k": true,
+        "m_even": true,
+        "m_le_f": true,
+        "m_sq_le_N": true,
+        "rank_add_five_le": true,
+        "t_odd": true,
+        "three_m_lt_t": true,
+        "two_le_m": true
+      },
+      "rankval": {
+        "identity": true,
+        "k": true,
+        "m": true,
+        "n": true
+      },
+      "rounded": {
+        "T2_floor_pass": false,
+        "T2_fractional": true,
+        "TT_floor_pass": false,
+        "TT_fractional": true
+      },
+      "scale": {
+        "J_ge_one": true,
+        "eps_below_cutoff": true,
+        "eps_positive": true,
+        "x_gt_one": true
+      },
+      "size_windows": {
+        "C_nonnegative": true,
+        "T2_lower": true,
+        "T2_upper": true,
+        "TT_lower": true,
+        "aE_le": true,
+        "aE_nonnegative": true,
+        "absorption": false,
+        "b_positive": true,
+        "eps_positive": true,
+        "err_le": true,
+        "k_lower": true,
+        "k_upper": true,
+        "m_lower": true,
+        "m_upper": true,
+        "n_positive": true,
+        "x": true
+      },
+      "t_plus_two_ranks": {
+        "f_le_k": true,
+        "k_even": true,
+        "m_add_three_le_k": true,
+        "m_even": true,
+        "m_le_f": true,
+        "m_sq_le_N": true,
+        "rank_add_five_le": true,
+        "t_odd": true,
+        "three_m_lt_t": true,
+        "two_le_m": true
+      },
+      "t_plus_two_rankval": {
+        "identity": false,
+        "k": true,
+        "m": true,
+        "n": true
+      },
+      "threshold_16": true
+    },
+    {
+      "L": 6561,
+      "base": 3,
+      "budget": {
+        "envelope_holds": true,
+        "log_ratio_after_subtraction": -6.16011252,
+        "normalizations_equal": true
+      },
+      "cyclic_exponent": 1446,
+      "cyclic_exponent_ge_two": true,
+      "fingerprints": {
+        "T2": {
+          "bits": 1434,
+          "sha256": "b012a6afc3e731f6bfe3badb1f325242c8da892b992a6cebf4f43ff08eba6dda"
+        },
+        "TT": {
+          "bits": 1444,
+          "sha256": "b781f6f473034dd42a4de12bcd9008b1f480120116d2875da320498ebd1ebb80"
+        },
+        "k": {
+          "bits": 3151,
+          "sha256": "4cca452353cb9fb44155153975836b54efccef341d818f8be622bf48fd889340"
+        },
+        "m": {
+          "bits": 336,
+          "sha256": "702bf4cacf2748db140bea39d295b014593014e8fb448dd03030b9e408c60b86"
+        },
+        "n": {
+          "bits": 1447,
+          "sha256": "2cac81cabc25b4a798f7be2a21f249e0185128193400e783c1d2f5e8b353f488"
+        },
+        "t": {
+          "bits": 268545,
+          "sha256": "01630f85bb46b21908d01c5bf53d304a28b700bf63815ce8fa3ddc5056906a62"
+        }
+      },
+      "host_cardinality": {
+        "T2_lower": true,
+        "TT_lower": true,
+        "TT_upper": true,
+        "cardinalities": true
+      },
+      "j": 8,
+      "q": 53,
+      "ranks": {
+        "f_le_k": true,
+        "k_even": true,
+        "m_add_three_le_k": true,
+        "m_even": true,
+        "m_le_f": true,
+        "m_sq_le_N": true,
+        "rank_add_five_le": true,
+        "t_odd": true,
+        "three_m_lt_t": true,
+        "two_le_m": true
+      },
+      "rankval": {
+        "identity": true,
+        "k": true,
+        "m": true,
+        "n": true
+      },
+      "rounded": {
+        "T2_floor_pass": false,
+        "T2_fractional": true,
+        "TT_floor_pass": false,
+        "TT_fractional": true
+      },
+      "scale": {
+        "J_ge_one": true,
+        "eps_below_cutoff": true,
+        "eps_positive": true,
+        "x_gt_one": true
+      },
+      "size_windows": {
+        "C_nonnegative": true,
+        "T2_lower": true,
+        "T2_upper": true,
+        "TT_lower": true,
+        "aE_le": true,
+        "aE_nonnegative": true,
+        "absorption": true,
+        "b_positive": true,
+        "eps_positive": true,
+        "err_le": true,
+        "k_lower": true,
+        "k_upper": true,
+        "m_lower": true,
+        "m_upper": true,
+        "n_positive": true,
+        "x": true
+      },
+      "t_plus_two_ranks": {
+        "f_le_k": true,
+        "k_even": true,
+        "m_add_three_le_k": true,
+        "m_even": true,
+        "m_le_f": true,
+        "m_sq_le_N": true,
+        "rank_add_five_le": true,
+        "t_odd": true,
+        "three_m_lt_t": true,
+        "two_le_m": true
+      },
+      "t_plus_two_rankval": {
+        "identity": false,
+        "k": true,
+        "m": true,
+        "n": true
+      },
+      "threshold_16": true
+    },
+    {
+      "L": 531441,
+      "base": 3,
+      "budget": {
+        "envelope_holds": true,
+        "log_ratio_after_subtraction": -10.27994624,
+        "normalizations_equal": true
+      },
+      "cyclic_exponent": 2169,
+      "cyclic_exponent_ge_two": true,
+      "fingerprints": {
+        "T2": {
+          "bits": 2150,
+          "sha256": "4b5aa00fd3c5185a6510a53b054805fcfe4bde8b4dc8624dc8e5bda45702abf5"
+        },
+        "TT": {
+          "bits": 2166,
+          "sha256": "baba0eaa69db7ef05a8a83628c235aebe8ad2bd6c4b90a1883cf65875603ad7a"
+        },
+        "k": {
+          "bits": 4727,
+          "sha256": "8ec50ab81670ccf2b58eb683d7f56c81ac7ce15bb840e610599a407d406f2c83"
+        },
+        "m": {
+          "bits": 503,
+          "sha256": "2235e7d5f95df59614769b2b4750cb064e42839d224d6ac0c8935c4d86d6b12c"
+        },
+        "n": {
+          "bits": 2170,
+          "sha256": "1dd1200ebd20c644bab56b781d1d95e7384bb6b03a340795cf85957429beef03"
+        },
+        "t": {
+          "bits": 402814,
+          "sha256": "606af464d7714268f86519a01874ce39904c15acbe18c9ce6fdb5fe6546a13c6"
+        }
+      },
+      "host_cardinality": {
+        "T2_lower": true,
+        "TT_lower": true,
+        "TT_upper": true,
+        "cardinalities": true
+      },
+      "j": 12,
+      "q": 53,
+      "ranks": {
+        "f_le_k": true,
+        "k_even": true,
+        "m_add_three_le_k": true,
+        "m_even": true,
+        "m_le_f": true,
+        "m_sq_le_N": true,
+        "rank_add_five_le": true,
+        "t_odd": true,
+        "three_m_lt_t": true,
+        "two_le_m": true
+      },
+      "rankval": {
+        "identity": true,
+        "k": true,
+        "m": true,
+        "n": true
+      },
+      "rounded": {
+        "T2_floor_pass": false,
+        "T2_fractional": true,
+        "TT_floor_pass": false,
+        "TT_fractional": true
+      },
+      "scale": {
+        "J_ge_one": true,
+        "eps_below_cutoff": true,
+        "eps_positive": true,
+        "x_gt_one": true
+      },
+      "size_windows": {
+        "C_nonnegative": true,
+        "T2_lower": true,
+        "T2_upper": true,
+        "TT_lower": true,
+        "aE_le": true,
+        "aE_nonnegative": true,
+        "absorption": true,
+        "b_positive": true,
+        "eps_positive": true,
+        "err_le": true,
+        "k_lower": true,
+        "k_upper": true,
+        "m_lower": true,
+        "m_upper": true,
+        "n_positive": true,
+        "x": true
+      },
+      "t_plus_two_ranks": {
+        "f_le_k": true,
+        "k_even": true,
+        "m_add_three_le_k": true,
+        "m_even": true,
+        "m_le_f": true,
+        "m_sq_le_N": true,
+        "rank_add_five_le": true,
+        "t_odd": true,
+        "three_m_lt_t": true,
+        "two_le_m": true
+      },
+      "t_plus_two_rankval": {
+        "identity": false,
+        "k": true,
+        "m": true,
+        "n": true
+      },
+      "threshold_16": true
+    },
+    {
+      "L": 1594323,
+      "base": 3,
+      "budget": {
+        "envelope_holds": true,
+        "log_ratio_after_subtraction": -11.30989557,
+        "normalizations_equal": true
+      },
+      "cyclic_exponent": 2349,
+      "cyclic_exponent_ge_two": true,
+      "fingerprints": {
+        "T2": {
+          "bits": 2329,
+          "sha256": "02a98c1655d26824d3fba3010b4498aebfa571fa54159ad5072241f99ac36c2c"
+        },
+        "TT": {
+          "bits": 2346,
+          "sha256": "474fc84ee5e382bf32688ba13883e5d545f53045626b95ff33bbc23a3c29f3bd"
+        },
+        "k": {
+          "bits": 5121,
+          "sha256": "1b42c46ccd15d28beef31bd036672de95fbd43c9a9e2d7b19b45cbd61aecbe4e"
+        },
+        "m": {
+          "bits": 545,
+          "sha256": "ba3310ddc4b9d4f26d53237ee35d4b35001443c0507732fa36a5c4af17924b12"
+        },
+        "n": {
+          "bits": 2350,
+          "sha256": "57d7306c261565d4b49c63d9e248641d1a39d2edaa126057adc1ea73d326b61f"
+        },
+        "t": {
+          "bits": 436380,
+          "sha256": "7cf7483070697a2357b482af9f3ef629d7a38942881325cf17a3d23d806702ae"
+        }
+      },
+      "host_cardinality": {
+        "T2_lower": true,
+        "TT_lower": true,
+        "TT_upper": true,
+        "cardinalities": true
+      },
+      "j": 13,
+      "q": 53,
+      "ranks": {
+        "f_le_k": true,
+        "k_even": true,
+        "m_add_three_le_k": true,
+        "m_even": true,
+        "m_le_f": true,
+        "m_sq_le_N": true,
+        "rank_add_five_le": true,
+        "t_odd": true,
+        "three_m_lt_t": true,
+        "two_le_m": true
+      },
+      "rankval": {
+        "identity": true,
+        "k": true,
+        "m": true,
+        "n": true
+      },
+      "rounded": {
+        "T2_floor_pass": false,
+        "T2_fractional": true,
+        "TT_floor_pass": false,
+        "TT_fractional": true
+      },
+      "scale": {
+        "J_ge_one": true,
+        "eps_below_cutoff": true,
+        "eps_positive": true,
+        "x_gt_one": true
+      },
+      "size_windows": {
+        "C_nonnegative": true,
+        "T2_lower": true,
+        "T2_upper": true,
+        "TT_lower": true,
+        "aE_le": true,
+        "aE_nonnegative": true,
+        "absorption": true,
+        "b_positive": true,
+        "eps_positive": true,
+        "err_le": true,
+        "k_lower": true,
+        "k_upper": true,
+        "m_lower": true,
+        "m_upper": true,
+        "n_positive": true,
+        "x": true
+      },
+      "t_plus_two_ranks": {
+        "f_le_k": true,
+        "k_even": true,
+        "m_add_three_le_k": true,
+        "m_even": true,
+        "m_le_f": true,
+        "m_sq_le_N": true,
+        "rank_add_five_le": true,
+        "t_odd": true,
+        "three_m_lt_t": true,
+        "two_le_m": true
+      },
+      "t_plus_two_rankval": {
+        "identity": false,
+        "k": true,
+        "m": true,
+        "n": true
+      },
+      "threshold_16": true
+    },
+    {
+      "L": 43046721,
+      "base": 3,
+      "budget": {
+        "envelope_holds": true,
+        "log_ratio_after_subtraction": -14.39974278,
+        "normalizations_equal": true
+      },
+      "cyclic_exponent": 2891,
+      "cyclic_exponent_ge_two": true,
+      "fingerprints": {
+        "T2": {
+          "bits": 2866,
+          "sha256": "ede0bc2bcf4214813a2ceada93296bd689e4f6e9bdf713c1e6ec378dce9e1f94"
+        },
+        "TT": {
+          "bits": 2887,
+          "sha256": "2be3bea062b1c670338008633f1b7d1203ddf2c37178f9de15ffffc5ba805c14"
+        },
+        "k": {
+          "bits": 6302,
+          "sha256": "f331050948d67072a1015913fa110f845eccbe15cf2d4df959de954f77f512e2"
+        },
+        "m": {
+          "bits": 671,
+          "sha256": "6613ded6b017d0e5cd49d473da0dc3d77de3c3b25b37545ed077a5f97bf0f7a4"
+        },
+        "n": {
+          "bits": 2892,
+          "sha256": "6c67170f3740431b17ea2def4658612e307e386e106a6ee34862b664e4c93589"
+        },
+        "t": {
+          "bits": 537082,
+          "sha256": "f138a4b762ab5618223935ba952ef66d9259c3bc697b2a9c4988d34b729766dd"
+        }
+      },
+      "host_cardinality": {
+        "T2_lower": true,
+        "TT_lower": true,
+        "TT_upper": true,
+        "cardinalities": true
+      },
+      "j": 16,
+      "q": 53,
+      "ranks": {
+        "f_le_k": true,
+        "k_even": true,
+        "m_add_three_le_k": true,
+        "m_even": true,
+        "m_le_f": true,
+        "m_sq_le_N": true,
+        "rank_add_five_le": true,
+        "t_odd": true,
+        "three_m_lt_t": true,
+        "two_le_m": true
+      },
+      "rankval": {
+        "identity": true,
+        "k": true,
+        "m": true,
+        "n": true
+      },
+      "rounded": {
+        "T2_floor_pass": false,
+        "T2_fractional": true,
+        "TT_floor_pass": false,
+        "TT_fractional": true
+      },
+      "scale": {
+        "J_ge_one": true,
+        "eps_below_cutoff": true,
+        "eps_positive": true,
+        "x_gt_one": true
+      },
+      "size_windows": {
+        "C_nonnegative": true,
+        "T2_lower": true,
+        "T2_upper": true,
+        "TT_lower": true,
+        "aE_le": true,
+        "aE_nonnegative": true,
+        "absorption": true,
+        "b_positive": true,
+        "eps_positive": true,
+        "err_le": true,
+        "k_lower": true,
+        "k_upper": true,
+        "m_lower": true,
+        "m_upper": true,
+        "n_positive": true,
+        "x": true
+      },
+      "t_plus_two_ranks": {
+        "f_le_k": true,
+        "k_even": true,
+        "m_add_three_le_k": true,
+        "m_even": true,
+        "m_le_f": true,
+        "m_sq_le_N": true,
+        "rank_add_five_le": true,
+        "t_odd": true,
+        "three_m_lt_t": true,
+        "two_le_m": true
+      },
+      "t_plus_two_rankval": {
+        "identity": false,
+        "k": true,
+        "m": true,
+        "n": true
+      },
+      "threshold_16": true
+    },
+    {
+      "L": 282429536481,
+      "base": 3,
+      "budget": {
+        "envelope_holds": true,
+        "log_ratio_after_subtraction": -22.63933495,
+        "normalizations_equal": true
+      },
+      "cyclic_exponent": 4337,
+      "cyclic_exponent_ge_two": true,
+      "fingerprints": {
+        "T2": {
+          "bits": 4299,
+          "sha256": "ad48d9b77c1a6842f250ac40e20f297d97765a2a9cc13c663fe6aa1b7f5d5652"
+        },
+        "TT": {
+          "bits": 4332,
+          "sha256": "068e7bbe456dde871f3f3be580c6c88befe29261c9eb160f9021370736b6fc0f"
+        },
+        "k": {
+          "bits": 9453,
+          "sha256": "84471399010e8ca9e8c36ca4996cb846e8436601f9f792109b503d389ce0b586"
+        },
+        "m": {
+          "bits": 1006,
+          "sha256": "73618746eaa3665b943bf85198ff229cb3fc9b1b06380acdbc236ca9b640ed20"
+        },
+        "n": {
+          "bits": 4338,
+          "sha256": "f98011c6be1e1d6829e3ba4b0fb354f233f11197aa55b6c57d21a479597b3ed6"
+        },
+        "t": {
+          "bits": 805620,
+          "sha256": "ef6db9de3f487e11b2c13c65359008de68097ee1a1acdc1242cd6a0e03ec6e08"
+        }
+      },
+      "host_cardinality": {
+        "T2_lower": true,
+        "TT_lower": true,
+        "TT_upper": true,
+        "cardinalities": true
+      },
+      "j": 24,
+      "q": 53,
+      "ranks": {
+        "f_le_k": true,
+        "k_even": true,
+        "m_add_three_le_k": true,
+        "m_even": true,
+        "m_le_f": true,
+        "m_sq_le_N": true,
+        "rank_add_five_le": true,
+        "t_odd": true,
+        "three_m_lt_t": true,
+        "two_le_m": true
+      },
+      "rankval": {
+        "identity": true,
+        "k": true,
+        "m": true,
+        "n": true
+      },
+      "rounded": {
+        "T2_floor_pass": false,
+        "T2_fractional": true,
+        "TT_floor_pass": false,
+        "TT_fractional": true
+      },
+      "scale": {
+        "J_ge_one": true,
+        "eps_below_cutoff": true,
+        "eps_positive": true,
+        "x_gt_one": true
+      },
+      "size_windows": {
+        "C_nonnegative": true,
+        "T2_lower": true,
+        "T2_upper": true,
+        "TT_lower": true,
+        "aE_le": true,
+        "aE_nonnegative": true,
+        "absorption": true,
+        "b_positive": true,
+        "eps_positive": true,
+        "err_le": true,
+        "k_lower": true,
+        "k_upper": true,
+        "m_lower": true,
+        "m_upper": true,
+        "n_positive": true,
+        "x": true
+      },
+      "t_plus_two_ranks": {
+        "f_le_k": true,
+        "k_even": true,
+        "m_add_three_le_k": true,
+        "m_even": true,
+        "m_le_f": true,
+        "m_sq_le_N": true,
+        "rank_add_five_le": true,
+        "t_odd": true,
+        "three_m_lt_t": true,
+        "two_le_m": true
+      },
+      "t_plus_two_rankval": {
+        "identity": false,
+        "k": true,
+        "m": true,
+        "n": true
+      },
+      "threshold_16": true
+    },
+    {
+      "L": 2,
+      "base": 2,
+      "budget": {
+        "envelope_holds": false,
+        "log_ratio_after_subtraction": 1.58095913,
+        "normalizations_equal": true
+      },
+      "cyclic_exponent": 137,
+      "cyclic_exponent_ge_two": true,
+      "fingerprints": {
+        "T2": {
+          "bits": 137,
+          "sha256": "aa25e1d595a77c375b40b4796ea4ff044890efeebd4bd15d16d54387a5a8fc37"
+        },
+        "TT": {
+          "bits": 136,
+          "sha256": "a6e8db28b8634efd7391af03ff0ed43073ee824d7b6481bbf76d61211b036605"
+        },
+        "k": {
+          "bits": 299,
+          "sha256": "c67fa16bd51acab5386afe00d78e65b4c0ec1c3090cf5533b691ddf885ab278c"
+        },
+        "m": {
+          "bits": 32,
+          "sha256": "f84f6dd9958b3d06bfaec98b2a4ced138f2de8f6811ad8dd0dd0e0b08f4662ee"
+        },
+        "n": {
+          "bits": 138,
+          "sha256": "3892a88a1c454d52a2383473b4827cbfdb1100ef18149781609c4851ae54c0a5"
+        },
+        "t": {
+          "bits": 25570,
+          "sha256": "681a0b95f2f33af1ae06d66c6197d1f02f434ffab84d90a88fa3662ac5d47fbd"
+        }
+      },
+      "host_cardinality": {
+        "T2_lower": true,
+        "TT_lower": true,
+        "TT_upper": true,
+        "cardinalities": true
+      },
+      "j": 1,
+      "q": 64,
+      "ranks": {
+        "f_le_k": true,
+        "k_even": true,
+        "m_add_three_le_k": true,
+        "m_even": true,
+        "m_le_f": true,
+        "m_sq_le_N": true,
+        "rank_add_five_le": true,
+        "t_odd": true,
+        "three_m_lt_t": true,
+        "two_le_m": true
+      },
+      "rankval": {
+        "identity": true,
+        "k": true,
+        "m": true,
+        "n": true
+      },
+      "rounded": {
+        "T2_floor_pass": true,
+        "T2_fractional": false,
+        "TT_floor_pass": false,
+        "TT_fractional": true
+      },
+      "scale": {
+        "J_ge_one": true,
+        "eps_below_cutoff": true,
+        "eps_positive": true,
+        "x_gt_one": true
+      },
+      "size_windows": {
+        "C_nonnegative": true,
+        "T2_lower": true,
+        "T2_upper": true,
+        "TT_lower": true,
+        "aE_le": true,
+        "aE_nonnegative": true,
+        "absorption": false,
+        "b_positive": true,
+        "eps_positive": true,
+        "err_le": true,
+        "k_lower": true,
+        "k_upper": true,
+        "m_lower": true,
+        "m_upper": true,
+        "n_positive": true,
+        "x": true
+      },
+      "t_plus_two_ranks": {
+        "f_le_k": true,
+        "k_even": true,
+        "m_add_three_le_k": true,
+        "m_even": true,
+        "m_le_f": true,
+        "m_sq_le_N": true,
+        "rank_add_five_le": true,
+        "t_odd": true,
+        "three_m_lt_t": true,
+        "two_le_m": true
+      },
+      "t_plus_two_rankval": {
+        "identity": false,
+        "k": true,
+        "m": true,
+        "n": true
+      },
+      "threshold_16": true
+    },
+    {
+      "L": 256,
+      "base": 2,
+      "budget": {
+        "envelope_holds": true,
+        "log_ratio_after_subtraction": -3.11818623,
+        "normalizations_equal": true
+      },
+      "cyclic_exponent": 1089,
+      "cyclic_exponent_ge_two": true,
+      "fingerprints": {
+        "T2": {
+          "bits": 1082,
+          "sha256": "b57567c40b2f158675ea9d5ec0a3c4dadc11f33e85d4a332d469a6c7aa86762d"
+        },
+        "TT": {
+          "bits": 1088,
+          "sha256": "6c2dd2b44f52b75ba83c047fa00c12ad20f28e62934f932ed284fdfcdf7f555c"
+        },
+        "k": {
+          "bits": 2385,
+          "sha256": "f5aaeb14fe70a1487e122c64955bc2c1736decceec37126e91e26d96a02636f5"
+        },
+        "m": {
+          "bits": 256,
+          "sha256": "c893e327224b559283fe25a6ba30eac52d968ee539fe4357f922c4b5f5de1f82"
+        },
+        "n": {
+          "bits": 1090,
+          "sha256": "cdc5acd7f9c657dde09ca8ccb546eb161b7ac07cc9c5b4b76a2f0bbc04f321ff"
+        },
+        "t": {
+          "bits": 204504,
+          "sha256": "bdaf96db30bcc4387ef174ee03acede30e8bffdc57b16ea9091e68ae7ead01f9"
+        }
+      },
+      "host_cardinality": {
+        "T2_lower": true,
+        "TT_lower": true,
+        "TT_upper": true,
+        "cardinalities": true
+      },
+      "j": 8,
+      "q": 64,
+      "ranks": {
+        "f_le_k": true,
+        "k_even": true,
+        "m_add_three_le_k": true,
+        "m_even": true,
+        "m_le_f": true,
+        "m_sq_le_N": true,
+        "rank_add_five_le": true,
+        "t_odd": true,
+        "three_m_lt_t": true,
+        "two_le_m": true
+      },
+      "rankval": {
+        "identity": true,
+        "k": true,
+        "m": true,
+        "n": true
+      },
+      "rounded": {
+        "T2_floor_pass": true,
+        "T2_fractional": false,
+        "TT_floor_pass": true,
+        "TT_fractional": false
+      },
+      "scale": {
+        "J_ge_one": true,
+        "eps_below_cutoff": true,
+        "eps_positive": true,
+        "x_gt_one": true
+      },
+      "size_windows": {
+        "C_nonnegative": true,
+        "T2_lower": true,
+        "T2_upper": true,
+        "TT_lower": true,
+        "aE_le": true,
+        "aE_nonnegative": true,
+        "absorption": false,
+        "b_positive": true,
+        "eps_positive": true,
+        "err_le": true,
+        "k_lower": true,
+        "k_upper": true,
+        "m_lower": true,
+        "m_upper": true,
+        "n_positive": true,
+        "x": true
+      },
+      "t_plus_two_ranks": {
+        "f_le_k": true,
+        "k_even": true,
+        "m_add_three_le_k": true,
+        "m_even": true,
+        "m_le_f": true,
+        "m_sq_le_N": true,
+        "rank_add_five_le": true,
+        "t_odd": true,
+        "three_m_lt_t": true,
+        "two_le_m": true
+      },
+      "t_plus_two_rankval": {
+        "identity": false,
+        "k": true,
+        "m": true,
+        "n": true
+      },
+      "threshold_16": true
+    },
+    {
+      "L": 4096,
+      "base": 2,
+      "budget": {
+        "envelope_holds": true,
+        "log_ratio_after_subtraction": -5.71840321,
+        "normalizations_equal": true
+      },
+      "cyclic_exponent": 1633,
+      "cyclic_exponent_ge_two": true,
+      "fingerprints": {
+        "T2": {
+          "bits": 1622,
+          "sha256": "b6c22d9e0024ab00dc20bcbae69bef7d1da72115d2631aa6de1388ec0f3d57d1"
+        },
+        "TT": {
+          "bits": 1631,
+          "sha256": "adef19feb52f89a942eb63c694d4797152cadc0022f731610be4b5abadce863a"
+        },
+        "k": {
+          "bits": 3577,
+          "sha256": "92f9a272057a71eb6bce43fd746e997f4b9990a82097927ae46db3e92c96d399"
+        },
+        "m": {
+          "bits": 384,
+          "sha256": "0cb0eb5b63ad0c11b7f6262459a7d1481ea7df85d843377eb6402e850845e59d"
+        },
+        "n": {
+          "bits": 1634,
+          "sha256": "191e03bd0b2a24d8c4366d5436a9b8b48ef49a8a6bee458f54144a41a9b1e6ac"
+        },
+        "t": {
+          "bits": 306753,
+          "sha256": "eb93b7029e03a354a335f33e1193cffdfba7d9613592edbd4dd1258463b7d84d"
+        }
+      },
+      "host_cardinality": {
+        "T2_lower": true,
+        "TT_lower": true,
+        "TT_upper": true,
+        "cardinalities": true
+      },
+      "j": 12,
+      "q": 64,
+      "ranks": {
+        "f_le_k": true,
+        "k_even": true,
+        "m_add_three_le_k": true,
+        "m_even": true,
+        "m_le_f": true,
+        "m_sq_le_N": true,
+        "rank_add_five_le": true,
+        "t_odd": true,
+        "three_m_lt_t": true,
+        "two_le_m": true
+      },
+      "rankval": {
+        "identity": true,
+        "k": true,
+        "m": true,
+        "n": true
+      },
+      "rounded": {
+        "T2_floor_pass": true,
+        "T2_fractional": false,
+        "TT_floor_pass": false,
+        "TT_fractional": true
+      },
+      "scale": {
+        "J_ge_one": true,
+        "eps_below_cutoff": true,
+        "eps_positive": true,
+        "x_gt_one": true
+      },
+      "size_windows": {
+        "C_nonnegative": true,
+        "T2_lower": true,
+        "T2_upper": true,
+        "TT_lower": true,
+        "aE_le": true,
+        "aE_nonnegative": true,
+        "absorption": false,
+        "b_positive": true,
+        "eps_positive": true,
+        "err_le": true,
+        "k_lower": true,
+        "k_upper": true,
+        "m_lower": true,
+        "m_upper": true,
+        "n_positive": true,
+        "x": true
+      },
+      "t_plus_two_ranks": {
+        "f_le_k": true,
+        "k_even": true,
+        "m_add_three_le_k": true,
+        "m_even": true,
+        "m_le_f": true,
+        "m_sq_le_N": true,
+        "rank_add_five_le": true,
+        "t_odd": true,
+        "three_m_lt_t": true,
+        "two_le_m": true
+      },
+      "t_plus_two_rankval": {
+        "identity": false,
+        "k": true,
+        "m": true,
+        "n": true
+      },
+      "threshold_16": true
+    },
+    {
+      "L": 8192,
+      "base": 2,
+      "budget": {
+        "envelope_holds": true,
+        "log_ratio_after_subtraction": -6.3682592,
+        "normalizations_equal": true
+      },
+      "cyclic_exponent": 1769,
+      "cyclic_exponent_ge_two": true,
+      "fingerprints": {
+        "T2": {
+          "bits": 1757,
+          "sha256": "ce51fa2f260cb7b3165662ed4008ed73871f3ba8c708fe1a6bc00ead7dc00615"
+        },
+        "TT": {
+          "bits": 1767,
+          "sha256": "5ae917ce8cc58adc1d47478dbfc78b635b322344fca6ac6a99055d05b16620d1"
+        },
+        "k": {
+          "bits": 3875,
+          "sha256": "6fc1c497bd343dbf371e2fcd4a45c5804e0fb8830edbd017e7418f41c897c37d"
+        },
+        "m": {
+          "bits": 416,
+          "sha256": "dd7a631449294fb24272226e14de972dc73feb0f82333ef9278f7a5180143d08"
+        },
+        "n": {
+          "bits": 1770,
+          "sha256": "a6f69c131bf38df87413bc9d1761fcc72ca4c61a4629f8623ec9ae78a1d75aa7"
+        },
+        "t": {
+          "bits": 332315,
+          "sha256": "4c130af2da0c23d29e472d0df2233c5a0186c73a8e3853dd1ff4a9d51e5ac824"
+        }
+      },
+      "host_cardinality": {
+        "T2_lower": true,
+        "TT_lower": true,
+        "TT_upper": true,
+        "cardinalities": true
+      },
+      "j": 13,
+      "q": 64,
+      "ranks": {
+        "f_le_k": true,
+        "k_even": true,
+        "m_add_three_le_k": true,
+        "m_even": true,
+        "m_le_f": true,
+        "m_sq_le_N": true,
+        "rank_add_five_le": true,
+        "t_odd": true,
+        "three_m_lt_t": true,
+        "two_le_m": true
+      },
+      "rankval": {
+        "identity": true,
+        "k": true,
+        "m": true,
+        "n": true
+      },
+      "rounded": {
+        "T2_floor_pass": true,
+        "T2_fractional": false,
+        "TT_floor_pass": false,
+        "TT_fractional": true
+      },
+      "scale": {
+        "J_ge_one": true,
+        "eps_below_cutoff": true,
+        "eps_positive": true,
+        "x_gt_one": true
+      },
+      "size_windows": {
+        "C_nonnegative": true,
+        "T2_lower": true,
+        "T2_upper": true,
+        "TT_lower": true,
+        "aE_le": true,
+        "aE_nonnegative": true,
+        "absorption": true,
+        "b_positive": true,
+        "eps_positive": true,
+        "err_le": true,
+        "k_lower": true,
+        "k_upper": true,
+        "m_lower": true,
+        "m_upper": true,
+        "n_positive": true,
+        "x": true
+      },
+      "t_plus_two_ranks": {
+        "f_le_k": true,
+        "k_even": true,
+        "m_add_three_le_k": true,
+        "m_even": true,
+        "m_le_f": true,
+        "m_sq_le_N": true,
+        "rank_add_five_le": true,
+        "t_odd": true,
+        "three_m_lt_t": true,
+        "two_le_m": true
+      },
+      "t_plus_two_rankval": {
+        "identity": false,
+        "k": true,
+        "m": true,
+        "n": true
+      },
+      "threshold_16": true
+    },
+    {
+      "L": 65536,
+      "amplified_product": {
+        "K": 1,
+        "boundary_pass": true,
+        "cHH": 10,
+        "eBar": 0,
+        "eta_boundary_log2": -7026,
+        "twice_boundary_pass": false,
+        "unit_component_pass": true,
+        "unit_product_pass": false
+      },
+      "base": 2,
+      "budget": {
+        "envelope_holds": true,
+        "log_ratio_after_subtraction": -8.31776235,
+        "normalizations_equal": true
+      },
+      "cyclic_exponent": 2177,
+      "cyclic_exponent_ge_two": true,
+      "fingerprints": {
+        "T2": {
+          "bits": 2162,
+          "sha256": "e8973f40df08d0f3307b508a23957146524704c13e181347332da2c09ca3a9ad"
+        },
+        "TT": {
+          "bits": 2175,
+          "sha256": "65c3feb0d79fde060592dc297bf0e80cf9c58d7b1ab6e375c12762e2a7ddccad"
+        },
+        "k": {
+          "bits": 4769,
+          "sha256": "89212e446a1353470fde4e2d78065035001e1ab3057d7a17ec63d09140e81fdf"
+        },
+        "m": {
+          "bits": 512,
+          "sha256": "a9e8913b13864096b9ea592f9548c87654aaf8df24e3437645fac174d1036e1c"
+        },
+        "n": {
+          "bits": 2178,
+          "sha256": "93ef2fd66c0c067d02b9ef915f7b08af6b3747f2bd9d9cc80c0a887ccebd6c4c"
+        },
+        "t": {
+          "bits": 409001,
+          "sha256": "f3e58c777c31473a313ca6d6ab6b7aa849555a93f7de136ec9bc53b10b3959c1"
+        }
+      },
+      "host_cardinality": {
+        "T2_lower": true,
+        "TT_lower": true,
+        "TT_upper": true,
+        "cardinalities": true
+      },
+      "j": 16,
+      "q": 64,
+      "ranks": {
+        "f_le_k": true,
+        "k_even": true,
+        "m_add_three_le_k": true,
+        "m_even": true,
+        "m_le_f": true,
+        "m_sq_le_N": true,
+        "rank_add_five_le": true,
+        "t_odd": true,
+        "three_m_lt_t": true,
+        "two_le_m": true
+      },
+      "rankval": {
+        "identity": true,
+        "k": true,
+        "m": true,
+        "n": true
+      },
+      "rounded": {
+        "T2_floor_pass": true,
+        "T2_fractional": false,
+        "TT_floor_pass": true,
+        "TT_fractional": false
+      },
+      "scale": {
+        "J_ge_one": true,
+        "eps_below_cutoff": true,
+        "eps_positive": true,
+        "x_gt_one": true
+      },
+      "sensitivity": {
+        "high_k": {
+          "budget": {
+            "envelope_holds": false,
+            "log_ratio_after_subtraction": 633.53652303,
+            "normalizations_equal": true
+          },
+          "failed": [
+            "k_upper"
+          ]
+        },
+        "thin_T2": {
+          "budget": {
+            "envelope_holds": false,
+            "log_ratio_after_subtraction": 701.46495054,
+            "normalizations_equal": true
+          },
+          "failed": [
+            "T2_lower"
+          ]
+        },
+        "thin_TT": {
+          "budget": {
+            "envelope_holds": false,
+            "log_ratio_after_subtraction": 701.46494673,
+            "normalizations_equal": true
+          },
+          "failed": [
+            "TT_lower"
+          ]
+        }
+      },
+      "size_windows": {
+        "C_nonnegative": true,
+        "T2_lower": true,
+        "T2_upper": true,
+        "TT_lower": true,
+        "aE_le": true,
+        "aE_nonnegative": true,
+        "absorption": true,
+        "b_positive": true,
+        "eps_positive": true,
+        "err_le": true,
+        "k_lower": true,
+        "k_upper": true,
+        "m_lower": true,
+        "m_upper": true,
+        "n_positive": true,
+        "x": true
+      },
+      "t_plus_two_ranks": {
+        "f_le_k": true,
+        "k_even": true,
+        "m_add_three_le_k": true,
+        "m_even": true,
+        "m_le_f": true,
+        "m_sq_le_N": true,
+        "rank_add_five_le": true,
+        "t_odd": true,
+        "three_m_lt_t": true,
+        "two_le_m": true
+      },
+      "t_plus_two_rankval": {
+        "identity": false,
+        "k": true,
+        "m": true,
+        "n": true
+      },
+      "threshold_16": true
+    },
+    {
+      "L": 16777216,
+      "base": 2,
+      "budget": {
+        "envelope_holds": true,
+        "log_ratio_after_subtraction": -13.51637001,
+        "normalizations_equal": true
+      },
+      "cyclic_exponent": 3265,
+      "cyclic_exponent_ge_two": true,
+      "fingerprints": {
+        "T2": {
+          "bits": 3242,
+          "sha256": "67f008f65981e4f36396df281a8eff380409ff7bce7d7ef416a1a20e9a8ed10e"
+        },
+        "TT": {
+          "bits": 3262,
+          "sha256": "1dd24bb709f905674578350823b51502102a8a3354b8d400da018c3af74b385f"
+        },
+        "k": {
+          "bits": 7153,
+          "sha256": "9aab201480ba4416fefc93e33e21a251a9f536c3d1fc839df660d76b39c9a431"
+        },
+        "m": {
+          "bits": 767,
+          "sha256": "ceb136fef43a13be58c8d3996614720c3a10f0a6e34663d30afa8fd4cf4eae2d"
+        },
+        "n": {
+          "bits": 3266,
+          "sha256": "af2d3f236dcfd313ae2a16352c71579e4f657b9be9eba50853e0dd320a42849a"
+        },
+        "t": {
+          "bits": 613497,
+          "sha256": "cb70c67a81d13b8ee38f92c4338c742a2a1a1480883299a1c9c0ffeca3a5cd4d"
+        }
+      },
+      "host_cardinality": {
+        "T2_lower": true,
+        "TT_lower": true,
+        "TT_upper": true,
+        "cardinalities": true
+      },
+      "j": 24,
+      "q": 64,
+      "ranks": {
+        "f_le_k": true,
+        "k_even": true,
+        "m_add_three_le_k": true,
+        "m_even": true,
+        "m_le_f": true,
+        "m_sq_le_N": true,
+        "rank_add_five_le": true,
+        "t_odd": true,
+        "three_m_lt_t": true,
+        "two_le_m": true
+      },
+      "rankval": {
+        "identity": true,
+        "k": true,
+        "m": true,
+        "n": true
+      },
+      "rounded": {
+        "T2_floor_pass": true,
+        "T2_fractional": false,
+        "TT_floor_pass": true,
+        "TT_fractional": false
+      },
+      "scale": {
+        "J_ge_one": true,
+        "eps_below_cutoff": true,
+        "eps_positive": true,
+        "x_gt_one": true
+      },
+      "size_windows": {
+        "C_nonnegative": true,
+        "T2_lower": true,
+        "T2_upper": true,
+        "TT_lower": true,
+        "aE_le": true,
+        "aE_nonnegative": true,
+        "absorption": true,
+        "b_positive": true,
+        "eps_positive": true,
+        "err_le": true,
+        "k_lower": true,
+        "k_upper": true,
+        "m_lower": true,
+        "m_upper": true,
+        "n_positive": true,
+        "x": true
+      },
+      "t_plus_two_ranks": {
+        "f_le_k": true,
+        "k_even": true,
+        "m_add_three_le_k": true,
+        "m_even": true,
+        "m_le_f": true,
+        "m_sq_le_N": true,
+        "rank_add_five_le": true,
+        "t_odd": true,
+        "three_m_lt_t": true,
+        "two_le_m": true
+      },
+      "t_plus_two_rankval": {
+        "identity": false,
+        "k": true,
+        "m": true,
+        "n": true
+      },
+      "threshold_16": true
+    },
+    {
+      "L": 3,
+      "base": 3,
+      "budget": {
+        "envelope_holds": false,
+        "log_ratio_after_subtraction": 1.13173169,
+        "normalizations_equal": true
+      },
+      "cyclic_exponent": 216,
+      "cyclic_exponent_ge_two": true,
+      "fingerprints": {
+        "T2": {
+          "bits": 215,
+          "sha256": "daee8cb5adfdefedfdf57d59d3af3d753e42d0a3669fe35ba7f450254df5ae0d"
+        },
+        "TT": {
+          "bits": 215,
+          "sha256": "1667cb1e5ce8b0a67551e1fa2facac70ee3c4a1c98366d42364b081ea1a7802a"
+        },
+        "k": {
+          "bits": 473,
+          "sha256": "eafb689e683d1fc26fb8549c16197cdd266579582b4fb081b9e4ad891f9951a2"
+        },
+        "m": {
+          "bits": 51,
+          "sha256": "e07502a3bc87dba9d260d6bd3fd7e9364da4b5d9811293704c84b7b7b569a61d"
+        },
+        "n": {
+          "bits": 217,
+          "sha256": "895c607361d12436b3c82f8e233278f594d1de2ac032fd9534670a26f9bd5ce5"
+        },
+        "t": {
+          "bits": 40522,
+          "sha256": "f1ecd7f13193788d2bcbfefc079b03fb694f32d772adfdd1be238bb30b8bc010"
+        }
+      },
+      "host_cardinality": {
+        "T2_lower": true,
+        "TT_lower": true,
+        "TT_upper": true,
+        "cardinalities": true
+      },
+      "j": 1,
+      "q": 64,
+      "ranks": {
+        "f_le_k": true,
+        "k_even": true,
+        "m_add_three_le_k": true,
+        "m_even": true,
+        "m_le_f": true,
+        "m_sq_le_N": true,
+        "rank_add_five_le": true,
+        "t_odd": true,
+        "three_m_lt_t": true,
+        "two_le_m": true
+      },
+      "rankval": {
+        "identity": true,
+        "k": true,
+        "m": true,
+        "n": true
+      },
+      "rounded": {
+        "T2_floor_pass": false,
+        "T2_fractional": true,
+        "TT_floor_pass": false,
+        "TT_fractional": true
+      },
+      "scale": {
+        "J_ge_one": true,
+        "eps_below_cutoff": true,
+        "eps_positive": true,
+        "x_gt_one": true
+      },
+      "size_windows": {
+        "C_nonnegative": true,
+        "T2_lower": true,
+        "T2_upper": true,
+        "TT_lower": true,
+        "aE_le": true,
+        "aE_nonnegative": true,
+        "absorption": false,
+        "b_positive": true,
+        "eps_positive": true,
+        "err_le": true,
+        "k_lower": true,
+        "k_upper": true,
+        "m_lower": true,
+        "m_upper": true,
+        "n_positive": true,
+        "x": true
+      },
+      "t_plus_two_ranks": {
+        "f_le_k": true,
+        "k_even": true,
+        "m_add_three_le_k": true,
+        "m_even": true,
+        "m_le_f": true,
+        "m_sq_le_N": true,
+        "rank_add_five_le": true,
+        "t_odd": true,
+        "three_m_lt_t": true,
+        "two_le_m": true
+      },
+      "t_plus_two_rankval": {
+        "identity": false,
+        "k": true,
+        "m": true,
+        "n": true
+      },
+      "threshold_16": true
+    },
+    {
+      "L": 6561,
+      "base": 3,
+      "budget": {
+        "envelope_holds": true,
+        "log_ratio_after_subtraction": -6.16011252,
+        "normalizations_equal": true
+      },
+      "cyclic_exponent": 1725,
+      "cyclic_exponent_ge_two": true,
+      "fingerprints": {
+        "T2": {
+          "bits": 1713,
+          "sha256": "2786e90f4aa1c490d6537de36780231d9dd9ba2a99b238f7acba0b1fc174798c"
+        },
+        "TT": {
+          "bits": 1723,
+          "sha256": "5951babb9a9915a5e338367760f4bbfdff79768c1527b4d520ca8fcb81f69494"
+        },
+        "k": {
+          "bits": 3779,
+          "sha256": "fe64abeb62f6f5f94b3fbbeb6b59a073ddcd4ebee4c2fc1951c8d06aab475dff"
+        },
+        "m": {
+          "bits": 405,
+          "sha256": "0ee89618c0282fdce883b29b32e7562d3fa4ac255e1bee53f3a41d133551ef3f"
+        },
+        "n": {
+          "bits": 1726,
+          "sha256": "ac4853020d9a2435eacc1e52a266a5faccbf3aeb26479026c7c1e2bb4ba298f9"
+        },
+        "t": {
+          "bits": 324126,
+          "sha256": "cd8445637981b3d620ece3d9029c8d5b9e9106ddb03a82eb834a745c43315c7c"
+        }
+      },
+      "host_cardinality": {
+        "T2_lower": true,
+        "TT_lower": true,
+        "TT_upper": true,
+        "cardinalities": true
+      },
+      "j": 8,
+      "q": 64,
+      "ranks": {
+        "f_le_k": true,
+        "k_even": true,
+        "m_add_three_le_k": true,
+        "m_even": true,
+        "m_le_f": true,
+        "m_sq_le_N": true,
+        "rank_add_five_le": true,
+        "t_odd": true,
+        "three_m_lt_t": true,
+        "two_le_m": true
+      },
+      "rankval": {
+        "identity": true,
+        "k": true,
+        "m": true,
+        "n": true
+      },
+      "rounded": {
+        "T2_floor_pass": false,
+        "T2_fractional": true,
+        "TT_floor_pass": false,
+        "TT_fractional": true
+      },
+      "scale": {
+        "J_ge_one": true,
+        "eps_below_cutoff": true,
+        "eps_positive": true,
+        "x_gt_one": true
+      },
+      "size_windows": {
+        "C_nonnegative": true,
+        "T2_lower": true,
+        "T2_upper": true,
+        "TT_lower": true,
+        "aE_le": true,
+        "aE_nonnegative": true,
+        "absorption": true,
+        "b_positive": true,
+        "eps_positive": true,
+        "err_le": true,
+        "k_lower": true,
+        "k_upper": true,
+        "m_lower": true,
+        "m_upper": true,
+        "n_positive": true,
+        "x": true
+      },
+      "t_plus_two_ranks": {
+        "f_le_k": true,
+        "k_even": true,
+        "m_add_three_le_k": true,
+        "m_even": true,
+        "m_le_f": true,
+        "m_sq_le_N": true,
+        "rank_add_five_le": true,
+        "t_odd": true,
+        "three_m_lt_t": true,
+        "two_le_m": true
+      },
+      "t_plus_two_rankval": {
+        "identity": false,
+        "k": true,
+        "m": true,
+        "n": true
+      },
+      "threshold_16": true
+    },
+    {
+      "L": 531441,
+      "base": 3,
+      "budget": {
+        "envelope_holds": true,
+        "log_ratio_after_subtraction": -10.27994624,
+        "normalizations_equal": true
+      },
+      "cyclic_exponent": 2587,
+      "cyclic_exponent_ge_two": true,
+      "fingerprints": {
+        "T2": {
+          "bits": 2568,
+          "sha256": "6f14e62f4642361a6378b1d119f4f6c4219d499c0bf82a44c690c757db5e77be"
+        },
+        "TT": {
+          "bits": 2584,
+          "sha256": "897975a7e150fcf6d0ba5b5e60e9e76d815c2a0782a31edfc087898c48a9bee5"
+        },
+        "k": {
+          "bits": 5668,
+          "sha256": "5500305bdf41ece36f357100d9e2097eceed2b912794095b05f1e69e3af314aa"
+        },
+        "m": {
+          "bits": 608,
+          "sha256": "58706dfd57e16e0cf85545c52e91a5d9929e2c83b68025f1642d4e4a3007dda0"
+        },
+        "n": {
+          "bits": 2588,
+          "sha256": "d977294025890deb0f14422fe800974accd11056cb276a58cb8d3c7ea4779bbb"
+        },
+        "t": {
+          "bits": 486185,
+          "sha256": "8f125322ea6b85cb5bcd12b207d7d65c3ae7d6c5e50237f8e1f8130d6c688ac3"
+        }
+      },
+      "host_cardinality": {
+        "T2_lower": true,
+        "TT_lower": true,
+        "TT_upper": true,
+        "cardinalities": true
+      },
+      "j": 12,
+      "q": 64,
+      "ranks": {
+        "f_le_k": true,
+        "k_even": true,
+        "m_add_three_le_k": true,
+        "m_even": true,
+        "m_le_f": true,
+        "m_sq_le_N": true,
+        "rank_add_five_le": true,
+        "t_odd": true,
+        "three_m_lt_t": true,
+        "two_le_m": true
+      },
+      "rankval": {
+        "identity": true,
+        "k": true,
+        "m": true,
+        "n": true
+      },
+      "rounded": {
+        "T2_floor_pass": false,
+        "T2_fractional": true,
+        "TT_floor_pass": false,
+        "TT_fractional": true
+      },
+      "scale": {
+        "J_ge_one": true,
+        "eps_below_cutoff": true,
+        "eps_positive": true,
+        "x_gt_one": true
+      },
+      "size_windows": {
+        "C_nonnegative": true,
+        "T2_lower": true,
+        "T2_upper": true,
+        "TT_lower": true,
+        "aE_le": true,
+        "aE_nonnegative": true,
+        "absorption": true,
+        "b_positive": true,
+        "eps_positive": true,
+        "err_le": true,
+        "k_lower": true,
+        "k_upper": true,
+        "m_lower": true,
+        "m_upper": true,
+        "n_positive": true,
+        "x": true
+      },
+      "t_plus_two_ranks": {
+        "f_le_k": true,
+        "k_even": true,
+        "m_add_three_le_k": true,
+        "m_even": true,
+        "m_le_f": true,
+        "m_sq_le_N": true,
+        "rank_add_five_le": true,
+        "t_odd": true,
+        "three_m_lt_t": true,
+        "two_le_m": true
+      },
+      "t_plus_two_rankval": {
+        "identity": false,
+        "k": true,
+        "m": true,
+        "n": true
+      },
+      "threshold_16": true
+    },
+    {
+      "L": 1594323,
+      "base": 3,
+      "budget": {
+        "envelope_holds": true,
+        "log_ratio_after_subtraction": -11.30989557,
+        "normalizations_equal": true
+      },
+      "cyclic_exponent": 2803,
+      "cyclic_exponent_ge_two": true,
+      "fingerprints": {
+        "T2": {
+          "bits": 2783,
+          "sha256": "eb177ffa3e4e266e3e7add0708e5b4adbbb7aa0c02b79326362d875234653b88"
+        },
+        "TT": {
+          "bits": 2800,
+          "sha256": "4371f1c1b2e792f09724979d8ce7151b1182badf22a0e155209042c46c4c2357"
+        },
+        "k": {
+          "bits": 6141,
+          "sha256": "ab815b16a38e86c6439761fec3a7c3a1005d8dc7d1aad0b2a247a46da1fa62aa"
+        },
+        "m": {
+          "bits": 659,
+          "sha256": "0a1b61d789c4cd2168d20b8dd65621eb322e13fb92b11ddef1f65aca44d9e58d"
+        },
+        "n": {
+          "bits": 2804,
+          "sha256": "63c7acaa590f981e8336702097d27bf1a40853d226a81c1d4a7c33e8940a9f58"
+        },
+        "t": {
+          "bits": 526701,
+          "sha256": "3b56226c0a3711c1731c8897aabccc9916efb233435a454fcaebd11e68ea9ead"
+        }
+      },
+      "host_cardinality": {
+        "T2_lower": true,
+        "TT_lower": true,
+        "TT_upper": true,
+        "cardinalities": true
+      },
+      "j": 13,
+      "q": 64,
+      "ranks": {
+        "f_le_k": true,
+        "k_even": true,
+        "m_add_three_le_k": true,
+        "m_even": true,
+        "m_le_f": true,
+        "m_sq_le_N": true,
+        "rank_add_five_le": true,
+        "t_odd": true,
+        "three_m_lt_t": true,
+        "two_le_m": true
+      },
+      "rankval": {
+        "identity": true,
+        "k": true,
+        "m": true,
+        "n": true
+      },
+      "rounded": {
+        "T2_floor_pass": false,
+        "T2_fractional": true,
+        "TT_floor_pass": false,
+        "TT_fractional": true
+      },
+      "scale": {
+        "J_ge_one": true,
+        "eps_below_cutoff": true,
+        "eps_positive": true,
+        "x_gt_one": true
+      },
+      "size_windows": {
+        "C_nonnegative": true,
+        "T2_lower": true,
+        "T2_upper": true,
+        "TT_lower": true,
+        "aE_le": true,
+        "aE_nonnegative": true,
+        "absorption": true,
+        "b_positive": true,
+        "eps_positive": true,
+        "err_le": true,
+        "k_lower": true,
+        "k_upper": true,
+        "m_lower": true,
+        "m_upper": true,
+        "n_positive": true,
+        "x": true
+      },
+      "t_plus_two_ranks": {
+        "f_le_k": true,
+        "k_even": true,
+        "m_add_three_le_k": true,
+        "m_even": true,
+        "m_le_f": true,
+        "m_sq_le_N": true,
+        "rank_add_five_le": true,
+        "t_odd": true,
+        "three_m_lt_t": true,
+        "two_le_m": true
+      },
+      "t_plus_two_rankval": {
+        "identity": false,
+        "k": true,
+        "m": true,
+        "n": true
+      },
+      "threshold_16": true
+    },
+    {
+      "L": 43046721,
+      "base": 3,
+      "budget": {
+        "envelope_holds": true,
+        "log_ratio_after_subtraction": -14.39974278,
+        "normalizations_equal": true
+      },
+      "cyclic_exponent": 3449,
+      "cyclic_exponent_ge_two": true,
+      "fingerprints": {
+        "T2": {
+          "bits": 3424,
+          "sha256": "b1d64e3b407e6de9452aed6def666e43dd96b9c3158b522b8006e302c8e7cca9"
+        },
+        "TT": {
+          "bits": 3445,
+          "sha256": "4da3d348616ec53dd8103ed8af23075fa4f2bbbf6d234ffc5758b2d08164429f"
+        },
+        "k": {
+          "bits": 7558,
+          "sha256": "08c4398d73bf36f1edf472bf905ba17669b75ac68fa354939b9221da9b36ee35"
+        },
+        "m": {
+          "bits": 810,
+          "sha256": "b4ee43cd714cb3323b347d84f46ed826a1c617611946dedb376f1c4da66fd736"
+        },
+        "n": {
+          "bits": 3450,
+          "sha256": "1af06efee9971854a3dd22158863cd1e3ea8526a41bce00a87df2728f769646d"
+        },
+        "t": {
+          "bits": 648245,
+          "sha256": "40ccde602a93ef07d68ee0992c54e94644ef5bb4fdc662b1ab63f9a1d149e8ba"
+        }
+      },
+      "host_cardinality": {
+        "T2_lower": true,
+        "TT_lower": true,
+        "TT_upper": true,
+        "cardinalities": true
+      },
+      "j": 16,
+      "q": 64,
+      "ranks": {
+        "f_le_k": true,
+        "k_even": true,
+        "m_add_three_le_k": true,
+        "m_even": true,
+        "m_le_f": true,
+        "m_sq_le_N": true,
+        "rank_add_five_le": true,
+        "t_odd": true,
+        "three_m_lt_t": true,
+        "two_le_m": true
+      },
+      "rankval": {
+        "identity": true,
+        "k": true,
+        "m": true,
+        "n": true
+      },
+      "rounded": {
+        "T2_floor_pass": false,
+        "T2_fractional": true,
+        "TT_floor_pass": false,
+        "TT_fractional": true
+      },
+      "scale": {
+        "J_ge_one": true,
+        "eps_below_cutoff": true,
+        "eps_positive": true,
+        "x_gt_one": true
+      },
+      "size_windows": {
+        "C_nonnegative": true,
+        "T2_lower": true,
+        "T2_upper": true,
+        "TT_lower": true,
+        "aE_le": true,
+        "aE_nonnegative": true,
+        "absorption": true,
+        "b_positive": true,
+        "eps_positive": true,
+        "err_le": true,
+        "k_lower": true,
+        "k_upper": true,
+        "m_lower": true,
+        "m_upper": true,
+        "n_positive": true,
+        "x": true
+      },
+      "t_plus_two_ranks": {
+        "f_le_k": true,
+        "k_even": true,
+        "m_add_three_le_k": true,
+        "m_even": true,
+        "m_le_f": true,
+        "m_sq_le_N": true,
+        "rank_add_five_le": true,
+        "t_odd": true,
+        "three_m_lt_t": true,
+        "two_le_m": true
+      },
+      "t_plus_two_rankval": {
+        "identity": false,
+        "k": true,
+        "m": true,
+        "n": true
+      },
+      "threshold_16": true
+    },
+    {
+      "L": 282429536481,
+      "base": 3,
+      "budget": {
+        "envelope_holds": true,
+        "log_ratio_after_subtraction": -22.63933495,
+        "normalizations_equal": true
+      },
+      "cyclic_exponent": 5174,
+      "cyclic_exponent_ge_two": true,
+      "fingerprints": {
+        "T2": {
+          "bits": 5136,
+          "sha256": "0257257d268d83bf7acc44d15c4b47f6d90ca545f4a2b50fdbd86ff39cb41a5e"
+        },
+        "TT": {
+          "bits": 5169,
+          "sha256": "3bb3784fd29c41760ee5b351413c3fad441e8d597fcd9eee34fb9ef4d3bb1ddf"
+        },
+        "k": {
+          "bits": 11336,
+          "sha256": "84bc77ea37b57e2b0be6be50799b76a0f8db0f6cc913adc152baafbd58fda144"
+        },
+        "m": {
+          "bits": 1215,
+          "sha256": "32544a324ffa6c138c35fb40114ca687b2c86ad2b67365f6632ce02c12234785"
+        },
+        "n": {
+          "bits": 5175,
+          "sha256": "05fd1239ec985d486da33a01592f612d221b9959ebb9072ceebea347e91aad94"
+        },
+        "t": {
+          "bits": 972365,
+          "sha256": "ed322ca9dbc4e2e2317b941c02341da85405485310d34b96cc0bb3c23fed2d2c"
+        }
+      },
+      "host_cardinality": {
+        "T2_lower": true,
+        "TT_lower": true,
+        "TT_upper": true,
+        "cardinalities": true
+      },
+      "j": 24,
+      "q": 64,
+      "ranks": {
+        "f_le_k": true,
+        "k_even": true,
+        "m_add_three_le_k": true,
+        "m_even": true,
+        "m_le_f": true,
+        "m_sq_le_N": true,
+        "rank_add_five_le": true,
+        "t_odd": true,
+        "three_m_lt_t": true,
+        "two_le_m": true
+      },
+      "rankval": {
+        "identity": true,
+        "k": true,
+        "m": true,
+        "n": true
+      },
+      "rounded": {
+        "T2_floor_pass": false,
+        "T2_fractional": true,
+        "TT_floor_pass": false,
+        "TT_fractional": true
+      },
+      "scale": {
+        "J_ge_one": true,
+        "eps_below_cutoff": true,
+        "eps_positive": true,
+        "x_gt_one": true
+      },
+      "size_windows": {
+        "C_nonnegative": true,
+        "T2_lower": true,
+        "T2_upper": true,
+        "TT_lower": true,
+        "aE_le": true,
+        "aE_nonnegative": true,
+        "absorption": true,
+        "b_positive": true,
+        "eps_positive": true,
+        "err_le": true,
+        "k_lower": true,
+        "k_upper": true,
+        "m_lower": true,
+        "m_upper": true,
+        "n_positive": true,
+        "x": true
+      },
+      "t_plus_two_ranks": {
+        "f_le_k": true,
+        "k_even": true,
+        "m_add_three_le_k": true,
+        "m_even": true,
+        "m_le_f": true,
+        "m_sq_le_N": true,
+        "rank_add_five_le": true,
+        "t_odd": true,
+        "three_m_lt_t": true,
+        "two_le_m": true
+      },
+      "t_plus_two_rankval": {
+        "identity": false,
+        "k": true,
+        "m": true,
+        "n": true
+      },
+      "threshold_16": true
+    },
+    {
+      "L": 2,
+      "base": 2,
+      "budget": {
+        "envelope_holds": false,
+        "log_ratio_after_subtraction": 1.58095913,
+        "normalizations_equal": true
+      },
+      "cyclic_exponent": 209,
+      "cyclic_exponent_ge_two": true,
+      "fingerprints": {
+        "T2": {
+          "bits": 209,
+          "sha256": "8f92e33dda68ff39b21d04f54a7f5d96173282dbf47a45d9949bcea5eee4f787"
+        },
+        "TT": {
+          "bits": 208,
+          "sha256": "6794e20706519dd450d4902245585e6ccbaff55481f5e7f8417d2503fe6c6886"
+        },
+        "k": {
+          "bits": 461,
+          "sha256": "7b1ce627efd3cee08b97d6ccc87516a8ba3d8083df1104577aee3cca0fee62e1"
+        },
+        "m": {
+          "bits": 50,
+          "sha256": "5747da2b208d948c6cc8d6edb0bc4e4dfc450676fac66d4c82f22b12197a9e6a"
+        },
+        "n": {
+          "bits": 210,
+          "sha256": "eb32fdb5c185de3af176b3f2ef3debec3be4ebf318503828486256eb1c9b0324"
+        },
+        "t": {
+          "bits": 39916,
+          "sha256": "a470ee5a8cab74b8fd6dd29becd27aaf513ff4b18beb7327aced5e1deb7cacae"
+        }
+      },
+      "host_cardinality": {
+        "T2_lower": true,
+        "TT_lower": true,
+        "TT_upper": true,
+        "cardinalities": true
+      },
+      "j": 1,
+      "q": 100,
+      "ranks": {
+        "f_le_k": true,
+        "k_even": true,
+        "m_add_three_le_k": true,
+        "m_even": true,
+        "m_le_f": true,
+        "m_sq_le_N": true,
+        "rank_add_five_le": true,
+        "t_odd": true,
+        "three_m_lt_t": true,
+        "two_le_m": true
+      },
+      "rankval": {
+        "identity": true,
+        "k": true,
+        "m": true,
+        "n": true
+      },
+      "rounded": {
+        "T2_floor_pass": true,
+        "T2_fractional": false,
+        "TT_floor_pass": false,
+        "TT_fractional": true
+      },
+      "scale": {
+        "J_ge_one": true,
+        "eps_below_cutoff": true,
+        "eps_positive": true,
+        "x_gt_one": true
+      },
+      "size_windows": {
+        "C_nonnegative": true,
+        "T2_lower": true,
+        "T2_upper": true,
+        "TT_lower": true,
+        "aE_le": true,
+        "aE_nonnegative": true,
+        "absorption": false,
+        "b_positive": true,
+        "eps_positive": true,
+        "err_le": true,
+        "k_lower": true,
+        "k_upper": true,
+        "m_lower": true,
+        "m_upper": true,
+        "n_positive": true,
+        "x": true
+      },
+      "t_plus_two_ranks": {
+        "f_le_k": true,
+        "k_even": true,
+        "m_add_three_le_k": true,
+        "m_even": true,
+        "m_le_f": true,
+        "m_sq_le_N": true,
+        "rank_add_five_le": true,
+        "t_odd": true,
+        "three_m_lt_t": true,
+        "two_le_m": true
+      },
+      "t_plus_two_rankval": {
+        "identity": false,
+        "k": true,
+        "m": true,
+        "n": true
+      },
+      "threshold_16": true
+    },
+    {
+      "L": 256,
+      "base": 2,
+      "budget": {
+        "envelope_holds": true,
+        "log_ratio_after_subtraction": -3.11818623,
+        "normalizations_equal": true
+      },
+      "cyclic_exponent": 1665,
+      "cyclic_exponent_ge_two": true,
+      "fingerprints": {
+        "T2": {
+          "bits": 1658,
+          "sha256": "17ba5ab1dcc738df74a9989b1807c2bd78f11e42e6e3c3563aa3e2fe1ae5dbb2"
+        },
+        "TT": {
+          "bits": 1664,
+          "sha256": "d5e4c003fff3dab11883444e95ae5e93973ca2462c2a2938e5ca5f09f5ee2f52"
+        },
+        "k": {
+          "bits": 3681,
+          "sha256": "8227d059033f4a0093c9e857724abb24ed44063dd27b89cb51c0d2f5c0127604"
+        },
+        "m": {
+          "bits": 400,
+          "sha256": "a5e8093491738cd996a378afbe75d8f2994479844bde64c5939a769be0ba2e8d"
+        },
+        "n": {
+          "bits": 1666,
+          "sha256": "9693b3fb187896b7d00edc1a89307577c9a3766019f198731125148aa790b204"
+        },
+        "t": {
+          "bits": 319272,
+          "sha256": "3b8da2aa21e270eb2f2067145c5cf6d9f3b6bbf8353d902386e3bda6bfed711d"
+        }
+      },
+      "host_cardinality": {
+        "T2_lower": true,
+        "TT_lower": true,
+        "TT_upper": true,
+        "cardinalities": true
+      },
+      "j": 8,
+      "q": 100,
+      "ranks": {
+        "f_le_k": true,
+        "k_even": true,
+        "m_add_three_le_k": true,
+        "m_even": true,
+        "m_le_f": true,
+        "m_sq_le_N": true,
+        "rank_add_five_le": true,
+        "t_odd": true,
+        "three_m_lt_t": true,
+        "two_le_m": true
+      },
+      "rankval": {
+        "identity": true,
+        "k": true,
+        "m": true,
+        "n": true
+      },
+      "rounded": {
+        "T2_floor_pass": true,
+        "T2_fractional": false,
+        "TT_floor_pass": true,
+        "TT_fractional": false
+      },
+      "scale": {
+        "J_ge_one": true,
+        "eps_below_cutoff": true,
+        "eps_positive": true,
+        "x_gt_one": true
+      },
+      "size_windows": {
+        "C_nonnegative": true,
+        "T2_lower": true,
+        "T2_upper": true,
+        "TT_lower": true,
+        "aE_le": true,
+        "aE_nonnegative": true,
+        "absorption": false,
+        "b_positive": true,
+        "eps_positive": true,
+        "err_le": true,
+        "k_lower": true,
+        "k_upper": true,
+        "m_lower": true,
+        "m_upper": true,
+        "n_positive": true,
+        "x": true
+      },
+      "t_plus_two_ranks": {
+        "f_le_k": true,
+        "k_even": true,
+        "m_add_three_le_k": true,
+        "m_even": true,
+        "m_le_f": true,
+        "m_sq_le_N": true,
+        "rank_add_five_le": true,
+        "t_odd": true,
+        "three_m_lt_t": true,
+        "two_le_m": true
+      },
+      "t_plus_two_rankval": {
+        "identity": false,
+        "k": true,
+        "m": true,
+        "n": true
+      },
+      "threshold_16": true
+    },
+    {
+      "L": 4096,
+      "base": 2,
+      "budget": {
+        "envelope_holds": true,
+        "log_ratio_after_subtraction": -5.71840321,
+        "normalizations_equal": true
+      },
+      "cyclic_exponent": 2497,
+      "cyclic_exponent_ge_two": true,
+      "fingerprints": {
+        "T2": {
+          "bits": 2486,
+          "sha256": "14fe32ca523fe287965987b01b7b94bec1e9bb8466776572ef965c6b88ee1738"
+        },
+        "TT": {
+          "bits": 2495,
+          "sha256": "3ce79a9194f2876ac6f7e78c3959b1c278c34dce88b7ffb7f76df3edb2411a67"
+        },
+        "k": {
+          "bits": 5521,
+          "sha256": "7788d972b0c191b15a5e29c633d65aa5c5904e61af4b23a23643f6de4caf1bfd"
+        },
+        "m": {
+          "bits": 600,
+          "sha256": "84c7b6f3fcf1dcb10dfd49d96065617d8a964f780d4df429f70415d594461388"
+        },
+        "n": {
+          "bits": 2498,
+          "sha256": "b68ca6cc103a3a0c08d5d47064913d80aaa9cc28cf395b5e45d59ebe8453b776"
+        },
+        "t": {
+          "bits": 478905,
+          "sha256": "cb9e8c2cb3e5d7a47eb6588e9d81fe09ba1bb4b83a1341f6c5c769e72185bb68"
+        }
+      },
+      "host_cardinality": {
+        "T2_lower": true,
+        "TT_lower": true,
+        "TT_upper": true,
+        "cardinalities": true
+      },
+      "j": 12,
+      "q": 100,
+      "ranks": {
+        "f_le_k": true,
+        "k_even": true,
+        "m_add_three_le_k": true,
+        "m_even": true,
+        "m_le_f": true,
+        "m_sq_le_N": true,
+        "rank_add_five_le": true,
+        "t_odd": true,
+        "three_m_lt_t": true,
+        "two_le_m": true
+      },
+      "rankval": {
+        "identity": true,
+        "k": true,
+        "m": true,
+        "n": true
+      },
+      "rounded": {
+        "T2_floor_pass": true,
+        "T2_fractional": false,
+        "TT_floor_pass": false,
+        "TT_fractional": true
+      },
+      "scale": {
+        "J_ge_one": true,
+        "eps_below_cutoff": true,
+        "eps_positive": true,
+        "x_gt_one": true
+      },
+      "size_windows": {
+        "C_nonnegative": true,
+        "T2_lower": true,
+        "T2_upper": true,
+        "TT_lower": true,
+        "aE_le": true,
+        "aE_nonnegative": true,
+        "absorption": false,
+        "b_positive": true,
+        "eps_positive": true,
+        "err_le": true,
+        "k_lower": true,
+        "k_upper": true,
+        "m_lower": true,
+        "m_upper": true,
+        "n_positive": true,
+        "x": true
+      },
+      "t_plus_two_ranks": {
+        "f_le_k": true,
+        "k_even": true,
+        "m_add_three_le_k": true,
+        "m_even": true,
+        "m_le_f": true,
+        "m_sq_le_N": true,
+        "rank_add_five_le": true,
+        "t_odd": true,
+        "three_m_lt_t": true,
+        "two_le_m": true
+      },
+      "t_plus_two_rankval": {
+        "identity": false,
+        "k": true,
+        "m": true,
+        "n": true
+      },
+      "threshold_16": true
+    },
+    {
+      "L": 8192,
+      "base": 2,
+      "budget": {
+        "envelope_holds": true,
+        "log_ratio_after_subtraction": -6.3682592,
+        "normalizations_equal": true
+      },
+      "cyclic_exponent": 2705,
+      "cyclic_exponent_ge_two": true,
+      "fingerprints": {
+        "T2": {
+          "bits": 2693,
+          "sha256": "95fef95ebbf697a791b536f4bcd634af056fb241705be5bf1590a7003bb5c69d"
+        },
+        "TT": {
+          "bits": 2703,
+          "sha256": "60beb1f01424c7393605b31c5f607e2a09c3d1b5df1ecf74687e6419d7385516"
+        },
+        "k": {
+          "bits": 5981,
+          "sha256": "de3a7faf0239e1e13ca6a20b99152597f1e6945de5f7f1df74f1ee8af4dde7d8"
+        },
+        "m": {
+          "bits": 650,
+          "sha256": "755b664a275218a107a3a3475938c50425e74058e536d152caca4ebe1748a592"
+        },
+        "n": {
+          "bits": 2706,
+          "sha256": "e9f3869d63de8fb195943e95047f4945a03371375738d81df1e24227ff04c246"
+        },
+        "t": {
+          "bits": 518813,
+          "sha256": "7340e512bca00c69775959dfbab734378a8df5fd5b718d5ec747806db96df36c"
+        }
+      },
+      "host_cardinality": {
+        "T2_lower": true,
+        "TT_lower": true,
+        "TT_upper": true,
+        "cardinalities": true
+      },
+      "j": 13,
+      "q": 100,
+      "ranks": {
+        "f_le_k": true,
+        "k_even": true,
+        "m_add_three_le_k": true,
+        "m_even": true,
+        "m_le_f": true,
+        "m_sq_le_N": true,
+        "rank_add_five_le": true,
+        "t_odd": true,
+        "three_m_lt_t": true,
+        "two_le_m": true
+      },
+      "rankval": {
+        "identity": true,
+        "k": true,
+        "m": true,
+        "n": true
+      },
+      "rounded": {
+        "T2_floor_pass": true,
+        "T2_fractional": false,
+        "TT_floor_pass": false,
+        "TT_fractional": true
+      },
+      "scale": {
+        "J_ge_one": true,
+        "eps_below_cutoff": true,
+        "eps_positive": true,
+        "x_gt_one": true
+      },
+      "size_windows": {
+        "C_nonnegative": true,
+        "T2_lower": true,
+        "T2_upper": true,
+        "TT_lower": true,
+        "aE_le": true,
+        "aE_nonnegative": true,
+        "absorption": true,
+        "b_positive": true,
+        "eps_positive": true,
+        "err_le": true,
+        "k_lower": true,
+        "k_upper": true,
+        "m_lower": true,
+        "m_upper": true,
+        "n_positive": true,
+        "x": true
+      },
+      "t_plus_two_ranks": {
+        "f_le_k": true,
+        "k_even": true,
+        "m_add_three_le_k": true,
+        "m_even": true,
+        "m_le_f": true,
+        "m_sq_le_N": true,
+        "rank_add_five_le": true,
+        "t_odd": true,
+        "three_m_lt_t": true,
+        "two_le_m": true
+      },
+      "t_plus_two_rankval": {
+        "identity": false,
+        "k": true,
+        "m": true,
+        "n": true
+      },
+      "threshold_16": true
+    },
+    {
+      "L": 65536,
+      "base": 2,
+      "budget": {
+        "envelope_holds": true,
+        "log_ratio_after_subtraction": -8.31776235,
+        "normalizations_equal": true
+      },
+      "cyclic_exponent": 3329,
+      "cyclic_exponent_ge_two": true,
+      "fingerprints": {
+        "T2": {
+          "bits": 3314,
+          "sha256": "39689e6fa49eeed86eeb44b94e1b1bc825ee2800135a7eeb316856a2ab48b355"
+        },
+        "TT": {
+          "bits": 3327,
+          "sha256": "8a47377ed2dc64e3255b57d9ee679c0a0e588b308e263952fdc62b89669e89a2"
+        },
+        "k": {
+          "bits": 7361,
+          "sha256": "41afb119ea69244049c9796dd498f08dd223c79f57c98690a08deb3044383771"
+        },
+        "m": {
+          "bits": 800,
+          "sha256": "d1fe06737bea929d9f5b25e1eb89f842db3c60cba1f29f8186e0f01b389c4273"
+        },
+        "n": {
+          "bits": 3330,
+          "sha256": "677b9885deba7d4119e96a4e94d043e832cd89cde786855ae625a4296d30409c"
+        },
+        "t": {
+          "bits": 638537,
+          "sha256": "95d21141efa85fca47d40ffb07fafd1af3d46df20712e5dc156aebb9f46bb45d"
+        }
+      },
+      "host_cardinality": {
+        "T2_lower": true,
+        "TT_lower": true,
+        "TT_upper": true,
+        "cardinalities": true
+      },
+      "j": 16,
+      "q": 100,
+      "ranks": {
+        "f_le_k": true,
+        "k_even": true,
+        "m_add_three_le_k": true,
+        "m_even": true,
+        "m_le_f": true,
+        "m_sq_le_N": true,
+        "rank_add_five_le": true,
+        "t_odd": true,
+        "three_m_lt_t": true,
+        "two_le_m": true
+      },
+      "rankval": {
+        "identity": true,
+        "k": true,
+        "m": true,
+        "n": true
+      },
+      "rounded": {
+        "T2_floor_pass": true,
+        "T2_fractional": false,
+        "TT_floor_pass": true,
+        "TT_fractional": false
+      },
+      "scale": {
+        "J_ge_one": true,
+        "eps_below_cutoff": true,
+        "eps_positive": true,
+        "x_gt_one": true
+      },
+      "size_windows": {
+        "C_nonnegative": true,
+        "T2_lower": true,
+        "T2_upper": true,
+        "TT_lower": true,
+        "aE_le": true,
+        "aE_nonnegative": true,
+        "absorption": true,
+        "b_positive": true,
+        "eps_positive": true,
+        "err_le": true,
+        "k_lower": true,
+        "k_upper": true,
+        "m_lower": true,
+        "m_upper": true,
+        "n_positive": true,
+        "x": true
+      },
+      "t_plus_two_ranks": {
+        "f_le_k": true,
+        "k_even": true,
+        "m_add_three_le_k": true,
+        "m_even": true,
+        "m_le_f": true,
+        "m_sq_le_N": true,
+        "rank_add_five_le": true,
+        "t_odd": true,
+        "three_m_lt_t": true,
+        "two_le_m": true
+      },
+      "t_plus_two_rankval": {
+        "identity": false,
+        "k": true,
+        "m": true,
+        "n": true
+      },
+      "threshold_16": true
+    },
+    {
+      "L": 16777216,
+      "base": 2,
+      "budget": {
+        "envelope_holds": true,
+        "log_ratio_after_subtraction": -13.51637001,
+        "normalizations_equal": true
+      },
+      "cyclic_exponent": 4993,
+      "cyclic_exponent_ge_two": true,
+      "fingerprints": {
+        "T2": {
+          "bits": 4970,
+          "sha256": "fdec8a19b61e3bc28e31602dc2c58c342771e176c79ee2ca5be39f28e27e44e0"
+        },
+        "TT": {
+          "bits": 4990,
+          "sha256": "a7ad324f7bd4289f1fc548352f522630368076e8db9dca5a93eec25e7405d72d"
+        },
+        "k": {
+          "bits": 11041,
+          "sha256": "53b091a53488d4f600f0a6f9170a4d8f80ea0f7e1d9a7296218b237a51026c0c"
+        },
+        "m": {
+          "bits": 1199,
+          "sha256": "48f7d6a48d9759c5f62c4a36d9d104662ee0faa4b02e020b1be512fafbb52069"
+        },
+        "n": {
+          "bits": 4994,
+          "sha256": "2e3d99733f0884b330871a3ca9eb40f70301482a2e7e873a8e1c861b95981df9"
+        },
+        "t": {
+          "bits": 957801,
+          "sha256": "a5bde07e80b431df831960475d23197365242e84e3cde3310d43297b8eb63493"
+        }
+      },
+      "host_cardinality": {
+        "T2_lower": true,
+        "TT_lower": true,
+        "TT_upper": true,
+        "cardinalities": true
+      },
+      "j": 24,
+      "q": 100,
+      "ranks": {
+        "f_le_k": true,
+        "k_even": true,
+        "m_add_three_le_k": true,
+        "m_even": true,
+        "m_le_f": true,
+        "m_sq_le_N": true,
+        "rank_add_five_le": true,
+        "t_odd": true,
+        "three_m_lt_t": true,
+        "two_le_m": true
+      },
+      "rankval": {
+        "identity": true,
+        "k": true,
+        "m": true,
+        "n": true
+      },
+      "rounded": {
+        "T2_floor_pass": true,
+        "T2_fractional": false,
+        "TT_floor_pass": true,
+        "TT_fractional": false
+      },
+      "scale": {
+        "J_ge_one": true,
+        "eps_below_cutoff": true,
+        "eps_positive": true,
+        "x_gt_one": true
+      },
+      "size_windows": {
+        "C_nonnegative": true,
+        "T2_lower": true,
+        "T2_upper": true,
+        "TT_lower": true,
+        "aE_le": true,
+        "aE_nonnegative": true,
+        "absorption": true,
+        "b_positive": true,
+        "eps_positive": true,
+        "err_le": true,
+        "k_lower": true,
+        "k_upper": true,
+        "m_lower": true,
+        "m_upper": true,
+        "n_positive": true,
+        "x": true
+      },
+      "t_plus_two_ranks": {
+        "f_le_k": true,
+        "k_even": true,
+        "m_add_three_le_k": true,
+        "m_even": true,
+        "m_le_f": true,
+        "m_sq_le_N": true,
+        "rank_add_five_le": true,
+        "t_odd": true,
+        "three_m_lt_t": true,
+        "two_le_m": true
+      },
+      "t_plus_two_rankval": {
+        "identity": false,
+        "k": true,
+        "m": true,
+        "n": true
+      },
+      "threshold_16": true
+    },
+    {
+      "L": 3,
+      "base": 3,
+      "budget": {
+        "envelope_holds": false,
+        "log_ratio_after_subtraction": 1.13179627,
+        "normalizations_equal": true
+      },
+      "cyclic_exponent": 330,
+      "cyclic_exponent_ge_two": true,
+      "fingerprints": {
+        "T2": {
+          "bits": 329,
+          "sha256": "ec9520fe2f6f32fc5ecce8fcfa8cad0b285e61538898a4972b13a302d27157fe"
+        },
+        "TT": {
+          "bits": 329,
+          "sha256": "75f59551c169bca67c1cd568a3a4eaff4df6ba75531a5a1ae469171376c6c862"
+        },
+        "k": {
+          "bits": 730,
+          "sha256": "3243600c8ce3f5e6f51bece137aa6032cf3a43944ccd7e7195e76009db2de741"
+        },
+        "m": {
+          "bits": 80,
+          "sha256": "a738b114c158367ff3c5d1e6b44f43ca9d1dbcbca8fa51bcb7fe1b251b49d815"
+        },
+        "n": {
+          "bits": 331,
+          "sha256": "31c31bd0b91a2101546af237580dfcf0d0d10b4f2bf15696c52bcc91a6b09aac"
+        },
+        "t": {
+          "bits": 63259,
+          "sha256": "fade4fec6a629b82f7854221425b8093d6e8aea115059d46c66ffe565a9aaa07"
+        }
+      },
+      "host_cardinality": {
+        "T2_lower": true,
+        "TT_lower": true,
+        "TT_upper": true,
+        "cardinalities": true
+      },
+      "j": 1,
+      "q": 100,
+      "ranks": {
+        "f_le_k": true,
+        "k_even": true,
+        "m_add_three_le_k": true,
+        "m_even": true,
+        "m_le_f": true,
+        "m_sq_le_N": true,
+        "rank_add_five_le": true,
+        "t_odd": true,
+        "three_m_lt_t": true,
+        "two_le_m": true
+      },
+      "rankval": {
+        "identity": true,
+        "k": true,
+        "m": true,
+        "n": true
+      },
+      "rounded": {
+        "T2_floor_pass": false,
+        "T2_fractional": true,
+        "TT_floor_pass": false,
+        "TT_fractional": true
+      },
+      "scale": {
+        "J_ge_one": true,
+        "eps_below_cutoff": true,
+        "eps_positive": true,
+        "x_gt_one": true
+      },
+      "size_windows": {
+        "C_nonnegative": true,
+        "T2_lower": true,
+        "T2_upper": true,
+        "TT_lower": true,
+        "aE_le": true,
+        "aE_nonnegative": true,
+        "absorption": false,
+        "b_positive": true,
+        "eps_positive": true,
+        "err_le": true,
+        "k_lower": true,
+        "k_upper": true,
+        "m_lower": true,
+        "m_upper": true,
+        "n_positive": true,
+        "x": true
+      },
+      "t_plus_two_ranks": {
+        "f_le_k": true,
+        "k_even": true,
+        "m_add_three_le_k": true,
+        "m_even": true,
+        "m_le_f": true,
+        "m_sq_le_N": true,
+        "rank_add_five_le": true,
+        "t_odd": true,
+        "three_m_lt_t": true,
+        "two_le_m": true
+      },
+      "t_plus_two_rankval": {
+        "identity": false,
+        "k": true,
+        "m": true,
+        "n": true
+      },
+      "threshold_16": true
+    },
+    {
+      "L": 6561,
+      "base": 3,
+      "budget": {
+        "envelope_holds": true,
+        "log_ratio_after_subtraction": -6.16011252,
+        "normalizations_equal": true
+      },
+      "cyclic_exponent": 2638,
+      "cyclic_exponent_ge_two": true,
+      "fingerprints": {
+        "T2": {
+          "bits": 2626,
+          "sha256": "0e4c8d9f8254cfe9e31f68ca7ebf6c63a17f6716282e44b328e57b8c05ef2f78"
+        },
+        "TT": {
+          "bits": 2636,
+          "sha256": "7c4ac07c32c39c6b8dcf8ae5c914c90923e80093244ae13e175a2da239024f1f"
+        },
+        "k": {
+          "bits": 5833,
+          "sha256": "fd3346571af82eb6e7992ab1f28fd0582dece88589344f9cf2b3f4feaf1e5c7a"
+        },
+        "m": {
+          "bits": 634,
+          "sha256": "ea0652740997df1c1dd1c275935acbf0c98212b340f67b53a8402f0e255de91b"
+        },
+        "n": {
+          "bits": 2639,
+          "sha256": "daa8c81e1a620908433365e50483af5b4afaee7a9d42a96179cbf2390db99595"
+        },
+        "t": {
+          "bits": 506029,
+          "sha256": "a54179a132810ecd362312782d04c69357837c958cad7db881dbf832f1647831"
+        }
+      },
+      "host_cardinality": {
+        "T2_lower": true,
+        "TT_lower": true,
+        "TT_upper": true,
+        "cardinalities": true
+      },
+      "j": 8,
+      "q": 100,
+      "ranks": {
+        "f_le_k": true,
+        "k_even": true,
+        "m_add_three_le_k": true,
+        "m_even": true,
+        "m_le_f": true,
+        "m_sq_le_N": true,
+        "rank_add_five_le": true,
+        "t_odd": true,
+        "three_m_lt_t": true,
+        "two_le_m": true
+      },
+      "rankval": {
+        "identity": true,
+        "k": true,
+        "m": true,
+        "n": true
+      },
+      "rounded": {
+        "T2_floor_pass": false,
+        "T2_fractional": true,
+        "TT_floor_pass": false,
+        "TT_fractional": true
+      },
+      "scale": {
+        "J_ge_one": true,
+        "eps_below_cutoff": true,
+        "eps_positive": true,
+        "x_gt_one": true
+      },
+      "size_windows": {
+        "C_nonnegative": true,
+        "T2_lower": true,
+        "T2_upper": true,
+        "TT_lower": true,
+        "aE_le": true,
+        "aE_nonnegative": true,
+        "absorption": true,
+        "b_positive": true,
+        "eps_positive": true,
+        "err_le": true,
+        "k_lower": true,
+        "k_upper": true,
+        "m_lower": true,
+        "m_upper": true,
+        "n_positive": true,
+        "x": true
+      },
+      "t_plus_two_ranks": {
+        "f_le_k": true,
+        "k_even": true,
+        "m_add_three_le_k": true,
+        "m_even": true,
+        "m_le_f": true,
+        "m_sq_le_N": true,
+        "rank_add_five_le": true,
+        "t_odd": true,
+        "three_m_lt_t": true,
+        "two_le_m": true
+      },
+      "t_plus_two_rankval": {
+        "identity": false,
+        "k": true,
+        "m": true,
+        "n": true
+      },
+      "threshold_16": true
+    },
+    {
+      "L": 531441,
+      "base": 3,
+      "budget": {
+        "envelope_holds": true,
+        "log_ratio_after_subtraction": -10.27994624,
+        "normalizations_equal": true
+      },
+      "cyclic_exponent": 3957,
+      "cyclic_exponent_ge_two": true,
+      "fingerprints": {
+        "T2": {
+          "bits": 3938,
+          "sha256": "0a66e3eb9cfc884e06014c579c3cd8d71728ead94b1e0d1fd26a3b96a0ceb3f0"
+        },
+        "TT": {
+          "bits": 3954,
+          "sha256": "d020ed56fd64846dda6403585deaa217ba6962fd191a15aa71f7e3b7af27e549"
+        },
+        "k": {
+          "bits": 8749,
+          "sha256": "b8156e7e3dcca022aa40674041c0c6c753b8a96f21b6940f9f320216f1510264"
+        },
+        "m": {
+          "bits": 950,
+          "sha256": "7b692ba9f19343619b2e476a5220ed9b56ddebea3fcd6784ba0dae6858bd9588"
+        },
+        "n": {
+          "bits": 3958,
+          "sha256": "2145e45b8556b31c6a39877ff0f24b4306f7698536c2f78d84ebc071b015c2b5"
+        },
+        "t": {
+          "bits": 759041,
+          "sha256": "94c789fa9e8a4a7f2fbf09d217d05e75b708ac3b9261aaa2f665f8f2bde2b4f6"
+        }
+      },
+      "host_cardinality": {
+        "T2_lower": true,
+        "TT_lower": true,
+        "TT_upper": true,
+        "cardinalities": true
+      },
+      "j": 12,
+      "q": 100,
+      "ranks": {
+        "f_le_k": true,
+        "k_even": true,
+        "m_add_three_le_k": true,
+        "m_even": true,
+        "m_le_f": true,
+        "m_sq_le_N": true,
+        "rank_add_five_le": true,
+        "t_odd": true,
+        "three_m_lt_t": true,
+        "two_le_m": true
+      },
+      "rankval": {
+        "identity": true,
+        "k": true,
+        "m": true,
+        "n": true
+      },
+      "rounded": {
+        "T2_floor_pass": false,
+        "T2_fractional": true,
+        "TT_floor_pass": false,
+        "TT_fractional": true
+      },
+      "scale": {
+        "J_ge_one": true,
+        "eps_below_cutoff": true,
+        "eps_positive": true,
+        "x_gt_one": true
+      },
+      "size_windows": {
+        "C_nonnegative": true,
+        "T2_lower": true,
+        "T2_upper": true,
+        "TT_lower": true,
+        "aE_le": true,
+        "aE_nonnegative": true,
+        "absorption": true,
+        "b_positive": true,
+        "eps_positive": true,
+        "err_le": true,
+        "k_lower": true,
+        "k_upper": true,
+        "m_lower": true,
+        "m_upper": true,
+        "n_positive": true,
+        "x": true
+      },
+      "t_plus_two_ranks": {
+        "f_le_k": true,
+        "k_even": true,
+        "m_add_three_le_k": true,
+        "m_even": true,
+        "m_le_f": true,
+        "m_sq_le_N": true,
+        "rank_add_five_le": true,
+        "t_odd": true,
+        "three_m_lt_t": true,
+        "two_le_m": true
+      },
+      "t_plus_two_rankval": {
+        "identity": false,
+        "k": true,
+        "m": true,
+        "n": true
+      },
+      "threshold_16": true
+    },
+    {
+      "L": 1594323,
+      "base": 3,
+      "budget": {
+        "envelope_holds": true,
+        "log_ratio_after_subtraction": -11.30989557,
+        "normalizations_equal": true
+      },
+      "cyclic_exponent": 4286,
+      "cyclic_exponent_ge_two": true,
+      "fingerprints": {
+        "T2": {
+          "bits": 4266,
+          "sha256": "118ecf70f34e38390c6dbc66c55ab4ed6ff464cbbcf7067c7ab92d58fbc339bb"
+        },
+        "TT": {
+          "bits": 4283,
+          "sha256": "b01d933d7e9d2286fa5aaa57a7e588dfe0fc0f42b41f29ec13a2a8af25457718"
+        },
+        "k": {
+          "bits": 9479,
+          "sha256": "70e3378219e618c232ccdbcde7ced9ebce2b5b2abfc1820390d350b1a5e6a46e"
+        },
+        "m": {
+          "bits": 1029,
+          "sha256": "d1cc3eaa170485b4a51d2f8212e6dfdfd023b3ad50c607b45e5e4e8a514e7125"
+        },
+        "n": {
+          "bits": 4287,
+          "sha256": "854293fc817700b9a13bea7abf728a8e7cc6b026cb9eb8aad64f3008b9b12d1c"
+        },
+        "t": {
+          "bits": 822293,
+          "sha256": "4556183eca0ed701ae179a51d3bdae0aec843e27307b63e1715808560440dfc1"
+        }
+      },
+      "host_cardinality": {
+        "T2_lower": true,
+        "TT_lower": true,
+        "TT_upper": true,
+        "cardinalities": true
+      },
+      "j": 13,
+      "q": 100,
+      "ranks": {
+        "f_le_k": true,
+        "k_even": true,
+        "m_add_three_le_k": true,
+        "m_even": true,
+        "m_le_f": true,
+        "m_sq_le_N": true,
+        "rank_add_five_le": true,
+        "t_odd": true,
+        "three_m_lt_t": true,
+        "two_le_m": true
+      },
+      "rankval": {
+        "identity": true,
+        "k": true,
+        "m": true,
+        "n": true
+      },
+      "rounded": {
+        "T2_floor_pass": false,
+        "T2_fractional": true,
+        "TT_floor_pass": false,
+        "TT_fractional": true
+      },
+      "scale": {
+        "J_ge_one": true,
+        "eps_below_cutoff": true,
+        "eps_positive": true,
+        "x_gt_one": true
+      },
+      "size_windows": {
+        "C_nonnegative": true,
+        "T2_lower": true,
+        "T2_upper": true,
+        "TT_lower": true,
+        "aE_le": true,
+        "aE_nonnegative": true,
+        "absorption": true,
+        "b_positive": true,
+        "eps_positive": true,
+        "err_le": true,
+        "k_lower": true,
+        "k_upper": true,
+        "m_lower": true,
+        "m_upper": true,
+        "n_positive": true,
+        "x": true
+      },
+      "t_plus_two_ranks": {
+        "f_le_k": true,
+        "k_even": true,
+        "m_add_three_le_k": true,
+        "m_even": true,
+        "m_le_f": true,
+        "m_sq_le_N": true,
+        "rank_add_five_le": true,
+        "t_odd": true,
+        "three_m_lt_t": true,
+        "two_le_m": true
+      },
+      "t_plus_two_rankval": {
+        "identity": false,
+        "k": true,
+        "m": true,
+        "n": true
+      },
+      "threshold_16": true
+    },
+    {
+      "L": 43046721,
+      "base": 3,
+      "budget": {
+        "envelope_holds": true,
+        "log_ratio_after_subtraction": -14.39974278,
+        "normalizations_equal": true
+      },
+      "cyclic_exponent": 5275,
+      "cyclic_exponent_ge_two": true,
+      "fingerprints": {
+        "T2": {
+          "bits": 5250,
+          "sha256": "86445e87cee8d0c6c45ac26c20fa35d223c87dab1a38238dae8b0d069b8f886e"
+        },
+        "TT": {
+          "bits": 5271,
+          "sha256": "b9bf8ec9525ac8b9a0a54575e128486a5570f0560b8b31b186d29a0a7d7d1a03"
+        },
+        "k": {
+          "bits": 11666,
+          "sha256": "e8ffe988a4a8fb5fe0101f24b2d262f78d9841471072ed86c7f9a1b2489cf4bc"
+        },
+        "m": {
+          "bits": 1267,
+          "sha256": "ee25c84556b5378db4eb8eb1a33e04ea8269107d07afb4031d93e575e17a7094"
+        },
+        "n": {
+          "bits": 5276,
+          "sha256": "6fef8e51a5dac1b4edc9ad9b7adf41f212c34c70bfbef64d25462ddc7a60957d"
+        },
+        "t": {
+          "bits": 1012051,
+          "sha256": "bec26fe02581eb19df9e99ca773159ae4fb92fcbd8755437222f9e7ca50e578b"
+        }
+      },
+      "host_cardinality": {
+        "T2_lower": true,
+        "TT_lower": true,
+        "TT_upper": true,
+        "cardinalities": true
+      },
+      "j": 16,
+      "q": 100,
+      "ranks": {
+        "f_le_k": true,
+        "k_even": true,
+        "m_add_three_le_k": true,
+        "m_even": true,
+        "m_le_f": true,
+        "m_sq_le_N": true,
+        "rank_add_five_le": true,
+        "t_odd": true,
+        "three_m_lt_t": true,
+        "two_le_m": true
+      },
+      "rankval": {
+        "identity": true,
+        "k": true,
+        "m": true,
+        "n": true
+      },
+      "rounded": {
+        "T2_floor_pass": false,
+        "T2_fractional": true,
+        "TT_floor_pass": false,
+        "TT_fractional": true
+      },
+      "scale": {
+        "J_ge_one": true,
+        "eps_below_cutoff": true,
+        "eps_positive": true,
+        "x_gt_one": true
+      },
+      "size_windows": {
+        "C_nonnegative": true,
+        "T2_lower": true,
+        "T2_upper": true,
+        "TT_lower": true,
+        "aE_le": true,
+        "aE_nonnegative": true,
+        "absorption": true,
+        "b_positive": true,
+        "eps_positive": true,
+        "err_le": true,
+        "k_lower": true,
+        "k_upper": true,
+        "m_lower": true,
+        "m_upper": true,
+        "n_positive": true,
+        "x": true
+      },
+      "t_plus_two_ranks": {
+        "f_le_k": true,
+        "k_even": true,
+        "m_add_three_le_k": true,
+        "m_even": true,
+        "m_le_f": true,
+        "m_sq_le_N": true,
+        "rank_add_five_le": true,
+        "t_odd": true,
+        "three_m_lt_t": true,
+        "two_le_m": true
+      },
+      "t_plus_two_rankval": {
+        "identity": false,
+        "k": true,
+        "m": true,
+        "n": true
+      },
+      "threshold_16": true
+    },
+    {
+      "L": 282429536481,
+      "base": 3,
+      "budget": {
+        "envelope_holds": true,
+        "log_ratio_after_subtraction": -22.63933495,
+        "normalizations_equal": true
+      },
+      "cyclic_exponent": 7913,
+      "cyclic_exponent_ge_two": true,
+      "fingerprints": {
+        "T2": {
+          "bits": 7875,
+          "sha256": "770095e1d2be98df67e3f484040577412443d492ab9edb7095aad53e2f76c85a"
+        },
+        "TT": {
+          "bits": 7908,
+          "sha256": "32a8b0cd0b83db851ca26b940b0dd4378a6bed4467a2c7892f076b890befba2d"
+        },
+        "k": {
+          "bits": 17498,
+          "sha256": "23d6fc2417f588f62eb834fd99366f65999c46855ac4bdbe3fe9991487375512"
+        },
+        "m": {
+          "bits": 1900,
+          "sha256": "6bed1ee5bdcbe9b0daeb15b842afcab0098b4a10f7fdee75a7afcc50c77846f0"
+        },
+        "n": {
+          "bits": 7914,
+          "sha256": "02774353515d2ea0ca12148016c9d12345c465bd683e4bfcca665446182cbce7"
+        },
+        "t": {
+          "bits": 1518074,
+          "sha256": "0e85bbf580f98bcd7eec6f96c8674e12d9823823ccc48ce23107ab9480bf009f"
+        }
+      },
+      "host_cardinality": {
+        "T2_lower": true,
+        "TT_lower": true,
+        "TT_upper": true,
+        "cardinalities": true
+      },
+      "j": 24,
+      "q": 100,
+      "ranks": {
+        "f_le_k": true,
+        "k_even": true,
+        "m_add_three_le_k": true,
+        "m_even": true,
+        "m_le_f": true,
+        "m_sq_le_N": true,
+        "rank_add_five_le": true,
+        "t_odd": true,
+        "three_m_lt_t": true,
+        "two_le_m": true
+      },
+      "rankval": {
+        "identity": true,
+        "k": true,
+        "m": true,
+        "n": true
+      },
+      "rounded": {
+        "T2_floor_pass": false,
+        "T2_fractional": true,
+        "TT_floor_pass": false,
+        "TT_fractional": true
+      },
+      "scale": {
+        "J_ge_one": true,
+        "eps_below_cutoff": true,
+        "eps_positive": true,
+        "x_gt_one": true
+      },
+      "size_windows": {
+        "C_nonnegative": true,
+        "T2_lower": true,
+        "T2_upper": true,
+        "TT_lower": true,
+        "aE_le": true,
+        "aE_nonnegative": true,
+        "absorption": true,
+        "b_positive": true,
+        "eps_positive": true,
+        "err_le": true,
+        "k_lower": true,
+        "k_upper": true,
+        "m_lower": true,
+        "m_upper": true,
+        "n_positive": true,
+        "x": true
+      },
+      "t_plus_two_ranks": {
+        "f_le_k": true,
+        "k_even": true,
+        "m_add_three_le_k": true,
+        "m_even": true,
+        "m_le_f": true,
+        "m_sq_le_N": true,
+        "rank_add_five_le": true,
+        "t_odd": true,
+        "three_m_lt_t": true,
+        "two_le_m": true
+      },
+      "t_plus_two_rankval": {
+        "identity": false,
+        "k": true,
+        "m": true,
+        "n": true
+      },
+      "threshold_16": true
+    }
+  ],
+  "round_one": {
+    "admissible": 4,
+    "failures": [
+      {
+        "eps": 0.01,
+        "logx": 10.0
+      },
+      {
+        "eps": 0.01,
+        "logx": 100.0
+      },
+      {
+        "eps": 0.03,
+        "logx": 10.0
+      },
+      {
+        "eps": 0.1,
+        "logx": 10.0
+      }
+    ],
+    "inadmissible_exceed": 4,
+    "input_sha256": "0370ca15581d28125c1f3cadaac44f2a1c5aa6ec61c882eba4fe38488e95ccc3",
+    "sampled": 900,
+    "sampled_in_both_domains": 300,
+    "selected": 9,
+    "selected_in_both_domains": 1
+  },
+  "scale_controls": [
+    {
+      "J": "1",
+      "epsilon": "1/52",
+      "fields": {
+        "J_ge_one": true,
+        "eps_below_cutoff": false,
+        "eps_positive": true,
+        "x_gt_one": true
+      }
+    },
+    {
+      "J": "1",
+      "epsilon": "1/50",
+      "fields": {
+        "J_ge_one": true,
+        "eps_below_cutoff": false,
+        "eps_positive": true,
+        "x_gt_one": true
+      }
+    },
+    {
+      "J": "1",
+      "epsilon": "0",
+      "fields": {
+        "J_ge_one": true,
+        "eps_below_cutoff": true,
+        "eps_positive": false,
+        "x_gt_one": true
+      }
+    },
+    {
+      "J": "1/2",
+      "epsilon": "1/64",
+      "fields": {
+        "J_ge_one": false,
+        "eps_below_cutoff": true,
+        "eps_positive": true,
+        "x_gt_one": true
+      }
+    }
+  ]
+}
