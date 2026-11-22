@@ -1,0 +1,30 @@
+{
+  "epsilon": "1/64",
+  "k_min": 48,
+  "lower_box_vs_cohomology": {
+    "first_negative_k": 36127,
+    "last_positive_k": 36126,
+    "negative_margin_units": [
+      -119095791,
+      -119095790
+    ],
+    "positive_margin_units": [
+      367064421,
+      367064422
+    ]
+  },
+  "margin_unit": "1e-12",
+  "pair_scale": "2^k",
+  "upper_box_vs_cohomology": {
+    "first_negative_k": 37550,
+    "last_positive_k": 37549,
+    "negative_margin_units": [
+      -290892511,
+      -290892510
+    ],
+    "positive_margin_units": [
+      197365698,
+      197365699
+    ]
+  }
+}
