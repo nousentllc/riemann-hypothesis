@@ -1,0 +1,65 @@
+{
+  "abbrev_excerpt_sha256": "53cd715de9f0e60d9df6104b54cb30fb9600034bf61ee6dcce308681f79ea10a",
+  "additional_original": {},
+  "controls": {
+    "index_changed": {
+      "exit": 1,
+      "output": "BindingControl.lean:5:70: error: Type mismatch\n  (h.right x hx j).right\nhas type\n  VVle (F.D x j).host.E (F.D x j).R.t \u221a(F.L x j).sc.b\nbut is expected to have type\n  VVle (F.D x i).host.E (F.D x i).R.t \u221a(F.L x i).sc.b"
+    },
+    "index_matched": {
+      "exit": 0,
+      "output": "BindingControl.lean:4:23: warning: Variable name `j` is not explicitly referenced.\n\nHint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:\n  [apply] _j\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`"
+    },
+    "pair_matched": {
+      "exit": 0,
+      "output": ""
+    },
+    "pair_reversed": {
+      "exit": 1,
+      "output": "BindingControl.lean:5:74: error: Application type mismatch: The argument\n  hf\nhas type\n  IsChiField \u03c8 e d q E\nbut is expected to have type\n  IsChiField \u03c8 e q d E\nin the application\n  h.bound E hf"
+    }
+  },
+  "local": {
+    "Enriched": {
+      "olean_sha256": "7c7f6db54407fcb3a882c584a96b881a3045fd61f556bf7ec9c4bf97eb9fbb96",
+      "replay": "replaying Enriched",
+      "source_sha256": "e2555cfc51d868cf39443aa8472aafee05682a02e429058b401c9b643b5cae30"
+    },
+    "JointControls": {
+      "olean_sha256": "cd57f9ea1d8f27fc6c721a1eabde51d4fcfb5c397b69c0d0b5d402201c6acdf2",
+      "replay": "replaying JointControls",
+      "source_sha256": "7bb133e17745934a37cf6eed7a8b1ae85407b641602fee69316bc920e3e547aa"
+    },
+    "OriginalDesign": {
+      "olean_sha256": "15129a306c8a450020ac7b5e885a5fd00c1bfb11a858a781ea18c7848cf4a5a9",
+      "replay": "replaying OriginalDesign",
+      "source_sha256": "4a392b2e0b756001b04837dc2193054b66b56dbabc300c24ac3772264ba3fc3e"
+    },
+    "SameIndex": {
+      "olean_sha256": "ad9688b2429bdf2bd65919dc392ce599e5b4e4b54edeabf9456fb2e126f5fe14",
+      "replay": "replaying SameIndex",
+      "source_sha256": "5e73eefd3ac8f2e0d741c4e426ba4711c00746c1f4a3135286625b06b2783ad6"
+    },
+    "TermAudit": {
+      "olean_sha256": "8314308a9c8b6ce55bf5c98022e1fd5b127ebabf3090bb96552747fc3c8998cc",
+      "replay": "replaying TermAudit",
+      "source_sha256": "669097f5a5f435947e329f90f1f3db90578ff14f3a517b055dd63c3bbd5817ad"
+    }
+  },
+  "pin": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "toolchain": {
+    "lean": "819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+    "packages": {
+      "Cli": "6130a47896ce867c6a4a55373441e59e565bad0f",
+      "LeanSearchClient": "5f4d51b81cbd3f6b32b156bfad9056621a040404",
+      "Qq": "92c15be17b7caf78c2ad767ec40f89052d908d81",
+      "aesop": "3448c0bcc5ce01b2d1546e483ec3620e32df3d0e",
+      "batteries": "4488d40d070b9700d4d5a6aa342f0d40c31b2a2d",
+      "importGraph": "16f02aa7642864af59f1ff0e384a015994db9118",
+      "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+      "plausible": "b7eb3304aeae834b12dda98993a37f6a41f6f0bb",
+      "proofwidgets": "4be2e3d5087eeb272cf5a8853b8f9dd025ef5957"
+    },
+    "version": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+  }
+}
