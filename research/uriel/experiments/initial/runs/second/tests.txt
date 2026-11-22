@@ -1,0 +1,38 @@
+test_high_derivatives_by_quadrature (test_suite.AnalyticTests.test_high_derivatives_by_quadrature) ... ok
+test_low_sigma_is_not_uniform_control (test_suite.AnalyticTests.test_low_sigma_is_not_uniform_control) ... ok
+test_mesh_misses_spike (test_suite.AnalyticTests.test_mesh_misses_spike) ... ok
+test_missing_late_intervals (test_suite.AnalyticTests.test_missing_late_intervals) ... ok
+test_nearest_pole_separation_and_tie (test_suite.AnalyticTests.test_nearest_pole_separation_and_tie) ... ok
+test_residue_sign_control (test_suite.AnalyticTests.test_residue_sign_control) ... ok
+test_source_tail_constants (test_suite.AnalyticTests.test_source_tail_constants) ... ok
+test_admissible_budgets (test_suite.ArithmeticTests.test_admissible_budgets) ... ok
+test_constraint_ablations_rejected (test_suite.ArithmeticTests.test_constraint_ablations_rejected) ... ok
+test_exact_weak_error_contradiction (test_suite.ArithmeticTests.test_exact_weak_error_contradiction) ... ok
+test_finite_threshold_not_silently_ignored (test_suite.ArithmeticTests.test_finite_threshold_not_silently_ignored) ... ok
+test_independent_bracket_normalization (test_suite.ArithmeticTests.test_independent_bracket_normalization) ... ok
+test_eventual_absorption (test_suite.CovolumeTests.test_eventual_absorption) ... ok
+test_exact_numeric_hypotheses (test_suite.CovolumeTests.test_exact_numeric_hypotheses) ... ok
+test_lattice_projection_denominators (test_suite.CovolumeTests.test_lattice_projection_denominators) ... ok
+test_nonorthogonal_idempotent (test_suite.CovolumeTests.test_nonorthogonal_idempotent) ... ok
+test_one_hypothesis_ablations (test_suite.CovolumeTests.test_one_hypothesis_ablations) ... ok
+test_comment_only_dependencies_excluded (test_suite.SourceTests.test_comment_only_dependencies_excluded) ... ok
+test_imports_are_not_theorem_edges (test_suite.SourceTests.test_imports_are_not_theorem_edges) ... ok
+test_no_kernel_claim (test_suite.SourceTests.test_no_kernel_claim) ... ok
+test_pin_and_source_guards (test_suite.SourceTests.test_pin_and_source_guards) ... FAIL
+test_adversarial_moving_exceptions (test_suite.WindowTests.test_adversarial_moving_exceptions) ... ok
+test_boundary_and_nonpositive_indices (test_suite.WindowTests.test_boundary_and_nonpositive_indices) ... ok
+test_cap_and_omitted_exception (test_suite.WindowTests.test_cap_and_omitted_exception) ... ok
+test_whole_interval_exhaustive_and_random (test_suite.WindowTests.test_whole_interval_exhaustive_and_random) ... ok
+
+======================================================================
+FAIL: test_pin_and_source_guards (test_suite.SourceTests.test_pin_and_source_guards)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/jc/.codex/.chatgpt-projects/g-p-68bd11548cb8819196e9c00be786382c/riemann-experiments/research/uriel/experiments/initial/test_suite.py", line 138, in test_pin_and_source_guards
+    self.assertTrue(all(x['mutation_detected'] for x in r['guards']))
+AssertionError: False is not true
+
+----------------------------------------------------------------------
+Ran 25 tests in 1.201s
+
+FAILED (failures=1)

@@ -105,8 +105,8 @@ def audit():
       ('MainTheorems','rhOfAll',['Formalism.VW.rh_of_every','allChi']),
       ('MainConclusion','everyCharacter',['UpperTheory.FinalTheorems.everyCharacter_of_row','UpperTheory.Gal.Int.galoisLocalGlobalStrong_recParameter']),
       ('MainConclusion','everyCharacter_of_row',['UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin','UpperTheory.Zero.LLC.recTExists','UpperTheory.One.vwin_of_row']),
-      ('EveryCharacterOfLiteratureOfVWin','every_character_of_literature_of_vWin',['every_character_of_theta_integrals_local_matching']),
-      ('SiegelEisensteinSecondTermHypotheses','every_character_of_theta_integrals_local_matching',['UpperTheory.Top.every_character_of_green_v_win']),
+      ('EveryCharacterOfLiteratureOfVWin','every_character_of_literature_of_vWin',['_root_.UpperTheory.Lit.every_character_of_theta_integrals_local_matching']),
+      ('SiegelEisensteinSecondTermHypotheses','every_character_of_theta_integrals_local_matching',['_root_.UpperTheory.Top.every_character_of_green_v_win']),
       ('TopPlug','every_character_of_green_v_win',['UpperTheory.Top.imprimitive','_root_.UpperTheory.Top.zero_free_all_of_green_v_win']),
       ('TopPlug','zero_free_all_of_green_v_win',['UpperTheory.Top.zeroFreeAll_of_topG','_root_.UpperTheory.Top.shape_closed_link_n_of_green']),
       ('ZeroFreeAllOfTopG','zeroFreeAll_of_topG',['zeroFreeOn_of_tiedWin_cyc','UpperTheory.Comparison₂.level_gm_le_on_family_scales','UpperTheory.Comparison₂.formB']),
@@ -143,8 +143,11 @@ def audit():
     guarded=[]
     for stem,name,token in guards:
         p=pathof(stem);d=get_decl(contents[p],name);present=token in d['masked']
+        # Repeated hypotheses (e.g. RankVal lower/upper powers) require occurrence counts.
+        # Checking mere token presence would miss deletion of just one occurrence.
         guarded.append(dict(path=p,declaration=name,line=d['line'],token=token,present=present,
-                            mutation_detected=token not in d['masked'].replace(token,'MUTATED',1)))
+                            occurrences=d['masked'].count(token),
+                            mutation_detected=d['masked'].count(token) != d['masked'].replace(token,'MUTATED',1).count(token)))
         if not present:failures.append('guard '+name)
     modules={p[4:-5].replace('/','.'):p for p in contents}
     imports=[]

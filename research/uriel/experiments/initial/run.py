@@ -23,18 +23,31 @@ def dump(path,data):
 def main():
     parser=argparse.ArgumentParser();parser.add_argument('--out',type=Path,default=HERE/'results')
     args=parser.parse_args();args.out.mkdir(parents=True,exist_ok=True)
-    start=time.monotonic()
+    start=time.monotonic();started_utc=datetime.now(timezone.utc).isoformat()
     numerical=dict(analytic=analytic(),arithmetic=arithmetic(),cohomology=cohomology(),covolume=covolume())
     source=audit()
     dump(args.out/'numerical.json',numerical);dump(args.out/'source_graph.json',source)
     test=subprocess.run([sys.executable,'-m','unittest','-v','test_suite'],cwd=HERE,text=True,capture_output=True)
     (args.out/'tests.txt').write_text(test.stdout+test.stderr)
     files={p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in HERE.iterdir() if p.suffix in ['.py','.txt'] or p.name=='PREREGISTRATION.md'}
-    provenance=dict(started_utc=datetime.now(timezone.utc).isoformat(),source_pin=PIN,research_parent=BASE,
+    provenance=dict(started_utc=started_utc,source_pin=PIN,research_parent=BASE,
                     preregistration_commit='9525c5b',python=sys.version,platform=platform.platform(),
                     numpy=numpy.__version__,scipy=scipy.__version__,elapsed_seconds=time.monotonic()-start,
                     test_exit_code=test.returncode,input_sha256=files,full_lean_build=False,kernel_replay=False)
     dump(args.out/'run.json',provenance)
+    source_map=['# Pinned declaration and assumption map','',
+                'Source-inspected declarations only. Body references are not kernel dependency edges.',
+                'Imports unresolved in this selected corpus: '+str(sum(not e['resolved_in_selected_corpus'] for e in source['imports'])),
+                '', '| Declaration | Original source | Visible body references |', '|---|---|---|']
+    for n in source['nodes']:
+        refs=[e['reference'] for e in source['edges'] if e['source']==n['id']]
+        source_map.append('| `'+n['name']+'` | ['+Path(n['path']).name+':'+str(n['line'])+']('+n['url']+') | '+', '.join('`'+r+'`' for r in refs)+' |')
+    source_map += ['', '## Guarded assumptions', '',
+                   'Mutation tests check occurrence counts of exact source fragments. They are syntactic guards, not semantic theorem equivalence checks.', '']
+    for g in source['guards']:
+        url=f'https://github.com/nousentllc/riemann-hypothesis/blob/{PIN}/{g["path"]}#L{g["line"]}'
+        source_map.append('- ['+g['declaration']+']('+url+'): `'+g['token']+'`.')
+    (args.out/'SOURCE_MAP.md').write_text('\n'.join(source_map)+'\n')
     a=numerical['analytic'];b=numerical['arithmetic'];c=numerical['cohomology'];d=numerical['covolume']
     sel=[r for r in b['selected'] if r['admissible']]
     report=f'''# Executed initial mechanism suite

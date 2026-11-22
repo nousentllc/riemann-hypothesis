@@ -77,7 +77,8 @@ class ArithmeticTests(unittest.TestCase):
 class WindowTests(unittest.TestCase):
     def test_whole_interval_exhaustive_and_random(self):
         r=results()['cohomology']
-        self.assertGreater(r['cases'],1000)
+        # B=1 merges cut=U/(2B) with U/2: 163+256+256 grid subsets, plus 300 seeded.
+        self.assertEqual(r['cases'],163+256+256+300)
         self.assertEqual(r['failures'],[])
 
     def test_adversarial_moving_exceptions(self):
