@@ -1,0 +1,1665 @@
+{
+  "files": [
+    {
+      "git_blob": "57b0ed14ddecb9098cf58e1a155288d9afd687b1",
+      "path": "src/Development/AbelianVarietyTheory/Definitions/GlobalTwisting/CountsIrreducibilityConstants.lean",
+      "sha256": "831f134c03b0082ed2788ce798f9c1a0bd3d0a3259f26b6de60741082d7725cb"
+    },
+    {
+      "git_blob": "688162690ac7cbfe620037fcee8e451e7116f45b",
+      "path": "src/Development/AbelianVarietyTheory/Definitions/GlobalTwisting/PairRowIffQdRows.lean",
+      "sha256": "ce62bded2b02505b79892b0593c99e266bfadfba21574e84470ce1f1957b087f"
+    },
+    {
+      "git_blob": "1de433cc5ce2fa941ca72691bc75a3bccb667634",
+      "path": "src/Development/AbelianVarietyTheory/Definitions/GlobalTwisting/ThinScalesIffHostBound.lean",
+      "sha256": "413712d1bffa0ffc17a269690dbd21597d8eb1dd08452f943dfdcf535f607146"
+    },
+    {
+      "git_blob": "b5246ad29ce66b7680db8a0e1dd3a6f8577a45ba",
+      "path": "src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/ExistsFamPOfKits.lean",
+      "sha256": "5637a641fd600135f29acaf3d29a495b7029639794674f940ea24a107815ab32"
+    },
+    {
+      "git_blob": "5afd609c06ffbef90f5df59e9915343c913c6257",
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/CMFieldExponentialBounds/AdmissibleOfPageN.lean",
+      "sha256": "ded642308ff9cd83eed14643f20899986c271c73f2ee900bccf6f7a32f3b350d"
+    },
+    {
+      "git_blob": "2f86e49421d870aa158af11ad1388da80b5d70d1",
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/HeightAndVanishing/JointWinOfCounts.lean",
+      "sha256": "3c71cf0dabc617e3d1ab9fc04939c311e4242912407cdfbc71c8e0764563d558"
+    },
+    {
+      "git_blob": "d0d49933faebf73a8162c153b8115139e36efa82",
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/Exc.lean",
+      "sha256": "7bb13ceb4141dea9a35e93dbba8b71b06e44b172584e06c886b0c5a518146cfe"
+    },
+    {
+      "git_blob": "ef9122254fb295f15e9f01d9512d70a26e6f6884",
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/ImportsAlt.lean",
+      "sha256": "64dfdb3fb277bfa34743573339b931a9e3696ff189570dfa2a940e095517cf47"
+    },
+    {
+      "git_blob": "3ba2c097a7496c4f32255699e57917c9763bd162",
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/Near1.lean",
+      "sha256": "ce808763ab7c876f1450be042cd5e57cb68961d7f7b12678c945eed5e2b52853"
+    },
+    {
+      "git_blob": "c41983a3d9483591b7d7eedfb3b672d72cde101a",
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/PartA.lean",
+      "sha256": "73c1660109e43f18debb3b2fd6ccdd4f7022c79c7c8eb7467ca7385cb5e72eb1"
+    },
+    {
+      "git_blob": "cd8a7cae15738f4054f543cddf4af595a6d1f7dc",
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/PartB.lean",
+      "sha256": "4b6133d7cc4a262e1a96e0b0e4bf48f7ce9fdc6d4e8dc4102d3ce039be4055ab"
+    },
+    {
+      "git_blob": "a2e12927214cad3ce637b33adb435f42992c1c65",
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/SecondBound.lean",
+      "sha256": "d0e3d59ca3196bc37ccf563afbe6829d6497e607c533b7984f27d5b8c91a29d6"
+    },
+    {
+      "git_blob": "d4b0c37c79996fca0b0d30fb53fe798eceb90cff",
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/ThmBabOf.lean",
+      "sha256": "c263c5de2b26c9ade93525ea218afa71304f44a9916bc97b7e2573f5fd61e33b"
+    },
+    {
+      "git_blob": "386bec7e22094a4309c4a8e2846435357f703375",
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/Window.lean",
+      "sha256": "354e0ad1b87c54c46a40486a037d0a10b598ffc1b1d8e840e4f80560090a50be"
+    },
+    {
+      "git_blob": "3d39aa0fc809fe8408a55186f7f4c4364d0a7f4c",
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/Window1.lean",
+      "sha256": "9b80fe0dd466a58b0fae61b8d875bce2c40be17d56341c072a95462c41778d88"
+    },
+    {
+      "git_blob": "f4b900eb48df14f16eea03d08b7d9ef077f3d4a1",
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/HVCore.lean",
+      "sha256": "695927bf54a16053ae211e0d1f7ad26217806520d60f884459f9c0d7aac1460d"
+    },
+    {
+      "git_blob": "23b7a05606074da30e6f8eb3b3821e877a968d3e",
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/TopMainZj.lean",
+      "sha256": "f824d3f7873a493432bdfcbdc279fa82d70a6a9dbaac44c2a30316cada2eae3e"
+    },
+    {
+      "git_blob": "4cba179acd45ac08d3cad21f51c9b9d62715a9a4",
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/VwinOfRow.lean",
+      "sha256": "d2df45a5cf337190ae6f885e8e43056ae4e804ae8da250a2ab0abd64b1ca7080"
+    },
+    {
+      "git_blob": "01c499108485b16d33791a9e46fbb1e2af865522",
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/WindowBoundOfLiteratureLevel.lean",
+      "sha256": "576e18ba083451bcffe9e94075dc8d22ccfa6995fa8d30d68ea108b1cc910cf0"
+    },
+    {
+      "git_blob": "52224122dd8f9deefef473151d716984f3e1f1ff",
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/PrimeSetBoundDataOfPrimitiveChar.lean",
+      "sha256": "8d78f096654f4cdd977c71b1b163bb0883c53a295d0928816d96b0d6a8362cf1"
+    },
+    {
+      "git_blob": "857965059bf92dee66f67769d93377548b55a764",
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/StmtFields.lean",
+      "sha256": "6504b5c58704921aae65b2651c419051c6f0cf3c040bc517dc663cfa19dce50a"
+    },
+    {
+      "git_blob": "94820ef32775f43f41c61da2b892a121d0549b86",
+      "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/DesWin.lean",
+      "sha256": "655762e90a0d7aae940774b631286a6cb942e59f68d7a3c350c05274487bf6ec"
+    },
+    {
+      "git_blob": "5321920359316653b7627951429a6d7555c311b0",
+      "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/DivinNOfHypV.lean",
+      "sha256": "cefdce360890e26405199ef8db01d6b0c7e044c4ebebeb6bbcfd23de6148bde0"
+    },
+    {
+      "git_blob": "398eb8ed3528aa2666e9d3b2b09a582ad4390dd7",
+      "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/ExistsPageN.lean",
+      "sha256": "732c3347fb02e410cf9af8831afdbba1d230fc522c3dbbccdb4b708e5dde73db"
+    },
+    {
+      "git_blob": "f3e2032b133ff64406a87e27438cdf467aa05a1f",
+      "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/FieldChi.lean",
+      "sha256": "784b9d6aed0292547065a98f2577d41f82269332559815f38fc85da4f69369b3"
+    },
+    {
+      "git_blob": "d98214b25bf84966a5b4e858a35f21ac9193b49f",
+      "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/HostOfField.lean",
+      "sha256": "cd70757dd71088386ae322de0a4ce80adaeec30c2fcfe5f2ae03ae2b69e515b9"
+    },
+    {
+      "git_blob": "0c36d8f9f09fc160cb21149253a5bb53f0553c14",
+      "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/KitS.lean",
+      "sha256": "6c9e96b7ebf2e5059ab172b04273d15d91a0f825ee8041bc197df968755c96ec"
+    },
+    {
+      "git_blob": "ee340012ab19713a8acfecf8adc6a331cbc2f1a4",
+      "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean",
+      "sha256": "a5f71e107087e37b2c598709795b0f56c0a6741cf1e8ab99ee1f97e2fce0fe34"
+    },
+    {
+      "git_blob": "68d04b506355e999c0f6020ee066c4967c1e6939",
+      "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/PairGood.lean",
+      "sha256": "e5ddbc7f4573275caad502b8414dc3579ed904d1fa6c5f3848080bbd94fb3abb"
+    },
+    {
+      "git_blob": "f92f69d4f22ee8dd7bed5e32899838a3254eb54b",
+      "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/PairRows.lean",
+      "sha256": "d6127d2887d36c090ef5be5510babe63204c02f630c7a6fb3694dc7845d68bbb"
+    },
+    {
+      "git_blob": "b104f034fc9c13758e280d1b7d33ac1ea370663a",
+      "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/Supply.lean",
+      "sha256": "c57b63c82b55380b31aabae74ba797be099cd0edaba3de88387995fea2cfe31f"
+    },
+    {
+      "git_blob": "339885b77069601fb716a60739369805241e8222",
+      "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/SupplyChi.lean",
+      "sha256": "70a11ba909e03b9153a6beacce24da22f3224b8192ec6980b7f27018961be81b"
+    },
+    {
+      "git_blob": "5e8b1a992a393336dffd3603524526dfccfa1981",
+      "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/TwistForm.lean",
+      "sha256": "f6fcb4d6d30327b91dc81247a280070efc3196de2053cad36cbf14ec1daae2c3"
+    },
+    {
+      "git_blob": "4670fec488d1eb59a3cc52dffc8d0eab16e16b0b",
+      "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/WinPairs.lean",
+      "sha256": "41c1edf737bb6e1a4791d4440488a885889209db750698359ab4d1e237dc2f6e"
+    },
+    {
+      "git_blob": "54d1b4b84e8c4b97c98379f0bf1bd6bf2f3b2da1",
+      "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/ZeroFreeAllOfTopG.lean",
+      "sha256": "349d9eafe63952c2fa4ccb2055bef7de0144d442c552196183fe48f01958f033"
+    },
+    {
+      "git_blob": "7e63fdeda04264253733059bf951a4c1635cebaa",
+      "path": "src/Development/AutomorphicArithmetic/MeanSquareBounds/PairExists.lean",
+      "sha256": "e4e59ce3542cdbde727aaef132c495d1aa20d99c42dee8cf058c3f5a407a8db7"
+    },
+    {
+      "git_blob": "0ba3621036f19146e7e67fa9c0e8a1c38661a097",
+      "path": "src/Development/AutomorphicArithmetic/PrimitiveCosets/CoreAtH.lean",
+      "sha256": "cb17dfd05546ac3116b0638406cb082913e3370841a8abfab1e6498b6d4ac698"
+    },
+    {
+      "git_blob": "de994949e6fd2d7238cfcb1c19d361ccdfe904fc",
+      "path": "src/Development/AutomorphicArithmetic/PrimitiveCosets/LevelGmLeOnFamilyScales.lean",
+      "sha256": "978ad99fd0d9e2dc25af57715030516195b629ccd9d5a114451fc5402f1d1426"
+    },
+    {
+      "git_blob": "c349e34925ac26b8bc76bd36e9b91562f86d6b8d",
+      "path": "src/Development/AutomorphicArithmetic/PrimitiveCosets/WindowInequalityOfArtinInputs.lean",
+      "sha256": "02d09bb042cbcb56956053a9a4ca75302f5a2cc93583f299005078f4656826aa"
+    },
+    {
+      "git_blob": "a61dcd354b2dae8240b13591af29acaf635f41a4",
+      "path": "src/Development/AutomorphicArithmetic/ShortNorms/Primes.lean",
+      "sha256": "72822189c30c2430ce881e1d303294bdc397829b286a4e281b0ac451164b02e1"
+    },
+    {
+      "git_blob": "261b566b0ea0d155ef1a434889d720c3b439735f",
+      "path": "src/Development/AutomorphicArithmetic/ShortNorms/hostOfFieldOf.lean",
+      "sha256": "fb75c6141fe635f8afd236416d423a493548ce9e834da1b839686331d5d40489"
+    },
+    {
+      "git_blob": "04ca5068e90544580c7684a316ec79c49d3572fc",
+      "path": "src/Development/AutomorphicArithmetic/ShortNorms/supplyOfAdmOf.lean",
+      "sha256": "b70c2177d57dfcd03f82784741813b7c6e6b525c69ffec5cae5527f03013a364"
+    },
+    {
+      "git_blob": "a13ba1f8c38d4dbf2ddd809fbf9610a007936c24",
+      "path": "src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean",
+      "sha256": "246b74eeb03dae250c45b46c155b3590cb53c2bac86f5e35f4b74338db487068"
+    },
+    {
+      "git_blob": "42abe20ee235820aaa924dbabce5e1d2c2540380",
+      "path": "src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean",
+      "sha256": "e761e876e3236895eec1b67b5a2118846ddfcc6883eed367ac6cc78523da15f2"
+    },
+    {
+      "git_blob": "c51cb6b5bd4bf2944ace89e00a2990da16bd519a",
+      "path": "src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopPlug.lean",
+      "sha256": "7d1d7972a4abe1284c5e4da9dd65a6eb605b06efb5e993b298fe5aaed88e9adf"
+    },
+    {
+      "git_blob": "3f791ca182db235c4a8ff582d3f038019320d5cd",
+      "path": "src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopShape.lean",
+      "sha256": "9647d4cbe444f79de90c7a5371801e83c58a040499bf03fd61faf37be9e6eaa3"
+    },
+    {
+      "git_blob": "44cd54c38881086724fdf7f10f32b7d8e80e35b3",
+      "path": "src/Formalism/SharpRestriction/FamCore.lean",
+      "sha256": "b261e12923d7dc47037a7b5b458e61ef59d69545f3b40a904a36e6bf8047ec78"
+    },
+    {
+      "git_blob": "7fdcc0d7a632caec8de1b70d957b459a2c3f5fde",
+      "path": "src/Formalism/SharpRestriction/GlobalSchurBounds/GeneralLinearActions/FiltrationCocycleLiftCriterion.lean",
+      "sha256": "f547104b02cfa5b508b5d9fd489d7839de0d90c97d9634893644631224b72c67"
+    },
+    {
+      "git_blob": "52d1c096fc2cf82732bf2a030a2c5e063841106a",
+      "path": "src/Formalism/SharpRestriction/GlobalSchurBounds/MainIn.lean",
+      "sha256": "a7e100cbbca454fcf16353b8b96341672b26359ed7cd3cbb6554531b858324d5"
+    },
+    {
+      "git_blob": "00acf811793877fe42d18c0d69f2d5833f75bf94",
+      "path": "src/Formalism/SharpRestriction/GlobalSchurBounds/TieGlobal.lean",
+      "sha256": "065799d1ade7de2b196ce5fc384596059f85f5ea952b5582f5040b2807c65b6d"
+    },
+    {
+      "git_blob": "1c01d77eca74ee32a49d3ec089b799c87c0d2c25",
+      "path": "src/Formalism/SharpRestriction/InertJacobiLevels/AsmIface.lean",
+      "sha256": "746e963b4c8c187041017a8e4c50978363efe65a6cbf691c39f7f455167422c4"
+    }
+  ],
+  "identity_controls": [
+    {
+      "baseline": "matched",
+      "control": "rejected, including original call as comment bait",
+      "line": 76,
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/ThmBabOf.lean",
+      "replace": "X q d",
+      "role": "two-primary exceptions for the selected ordered primes",
+      "with": "X d q"
+    },
+    {
+      "baseline": "matched",
+      "control": "rejected, including original call as comment bait",
+      "line": 88,
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/ThmBabOf.lean",
+      "replace": "(ExcA \u222a B'.biUnion g)",
+      "role": "one selector for the two-primary and odd-prime union",
+      "with": "ExcA"
+    },
+    {
+      "baseline": "matched",
+      "control": "rejected, including original call as comment bait",
+      "line": 35,
+      "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/WinPairs.lean",
+      "replace": "q d",
+      "role": "window theorem applied to the selected pair",
+      "with": "d q"
+    },
+    {
+      "baseline": "matched",
+      "control": "rejected, including original call as comment bait",
+      "line": 65,
+      "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/WinPairs.lean",
+      "replace": "e x'",
+      "role": "common pair and page at the rescaled point in the returned data",
+      "with": "e (k*x')"
+    },
+    {
+      "baseline": "matched",
+      "control": "rejected, including original call as comment bait",
+      "line": 129,
+      "path": "src/Development/AutomorphicArithmetic/ShortNorms/supplyOfAdmOf.lean",
+      "replace": "H.toHostRaw",
+      "role": "field identified by the same host and kernel data",
+      "with": "Hother.toHostRaw"
+    },
+    {
+      "baseline": "matched",
+      "control": "rejected, including original call as comment bait",
+      "line": 131,
+      "path": "src/Development/AutomorphicArithmetic/ShortNorms/supplyOfAdmOf.lean",
+      "replace": "H.E",
+      "role": "bound applied to that host field",
+      "with": "Hother.E"
+    },
+    {
+      "baseline": "matched",
+      "control": "rejected, including original call as comment bait",
+      "line": 17,
+      "path": "src/Development/AutomorphicArithmetic/PrimitiveCosets/LevelGmLeOnFamilyScales.lean",
+      "replace": "Fm.D x i0",
+      "role": "chain's selected TT equated to its actual indexed host",
+      "with": "Fm.D x j"
+    },
+    {
+      "baseline": "matched",
+      "control": "rejected, including original call as comment bait",
+      "line": 12,
+      "path": "src/Development/AutomorphicArithmetic/PrimitiveCosets/WindowInequalityOfArtinInputs.lean",
+      "replace": "(Fm.D x i).host.TT",
+      "role": "CoreAtH uses one index for host and TT",
+      "with": "(OtherFm.D x i).host.TT"
+    },
+    {
+      "baseline": "matched",
+      "control": "rejected, including original call as comment bait",
+      "line": 25,
+      "path": "src/Development/AutomorphicArithmetic/PrimitiveCosets/WindowInequalityOfArtinInputs.lean",
+      "replace": "(le_of_max_le_right b) i",
+      "role": "final application uses the same i for the host and its assumptions",
+      "with": "(le_of_max_le_right b) j"
+    }
+  ],
+  "pin": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "spans": [
+    {
+      "citations": [
+        {
+          "document": "FAMILY_ROW.md",
+          "label": "WithChN"
+        }
+      ],
+      "end": 37,
+      "path": "src/Development/AbelianVarietyTheory/Definitions/GlobalTwisting/CountsIrreducibilityConstants.lean",
+      "sha256": "1a382c2c93b58fc2704218d6707f3610b99dbdcce0986a36669586293b967462",
+      "start": 26
+    },
+    {
+      "citations": [
+        {
+          "document": "FAMILY_ROW.md",
+          "label": "The row definition"
+        }
+      ],
+      "end": 79,
+      "path": "src/Development/AbelianVarietyTheory/Definitions/GlobalTwisting/PairRowIffQdRows.lean",
+      "sha256": "55258a19b5e2e5383f66e08a5dd44e5221564c5e0cfba2da6c03940b5ed457ab",
+      "start": 66
+    },
+    {
+      "citations": [
+        {
+          "document": "COMPUTE_PROTOCOL.md",
+          "label": "row and transport"
+        },
+        {
+          "document": "ROW.md",
+          "label": "PairRow"
+        }
+      ],
+      "end": 84,
+      "path": "src/Development/AbelianVarietyTheory/Definitions/GlobalTwisting/PairRowIffQdRows.lean",
+      "sha256": "be4c8d048e7cbbdd0950a7cac019159e82439f387bfcbee8356968b6194ab038",
+      "start": 66
+    },
+    {
+      "citations": [
+        {
+          "document": "COMPUTATION.md",
+          "label": "Transport into a given host"
+        },
+        {
+          "document": "FAMILY_ROW.md",
+          "label": "Indexed row equivalence"
+        }
+      ],
+      "end": 173,
+      "path": "src/Development/AbelianVarietyTheory/Definitions/GlobalTwisting/PairRowIffQdRows.lean",
+      "sha256": "93140ea4e1b17f25c602fdabeae71adb2c01832b5d12548ce0f2c8f743156355",
+      "start": 167
+    },
+    {
+      "citations": [
+        {
+          "document": "FAMILY_ROW.md",
+          "label": "HostGood and supply interface"
+        }
+      ],
+      "end": 123,
+      "path": "src/Development/AbelianVarietyTheory/Definitions/GlobalTwisting/ThinScalesIffHostBound.lean",
+      "sha256": "9d7ff0e4b63660ac9d9e6d7c86657ae6dd68c321cd7d19365ae7562a9a6d508d",
+      "start": 101
+    },
+    {
+      "citations": [
+        {
+          "document": "ROW.md",
+          "label": "Pt.From fields"
+        }
+      ],
+      "end": 177,
+      "path": "src/Development/AbelianVarietyTheory/Definitions/GlobalTwisting/ThinScalesIffHostBound.lean",
+      "sha256": "bcdc6990a4068d12fe4f9e13b45fe3443bdebdd54188e1c84f73ca0c3e4994bd",
+      "start": 160
+    },
+    {
+      "citations": [
+        {
+          "document": "ROW.md",
+          "label": "Family indices"
+        }
+      ],
+      "end": 81,
+      "path": "src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/ExistsFamPOfKits.lean",
+      "sha256": "9b35b552deb7d870bd848581eb5b37da1f727fe8b90062a928f7edd50effd62e",
+      "start": 59
+    },
+    {
+      "citations": [
+        {
+          "document": "EXCEPTIONS.md",
+          "label": "Height and thresholds"
+        }
+      ],
+      "end": 61,
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/CMFieldExponentialBounds/AdmissibleOfPageN.lean",
+      "sha256": "2c9dbd46778d984abc176c0df29eeb18187953ad09a98671ccace7d6f6099f70",
+      "start": 41
+    },
+    {
+      "citations": [
+        {
+          "document": "COMPUTATION.md",
+          "label": "Where the proof requires these bounds"
+        }
+      ],
+      "end": 96,
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/CMFieldExponentialBounds/AdmissibleOfPageN.lean",
+      "sha256": "ad75849fbebe3e5549ce07e5195fb0cf39d3bae5c23fc5e0ee01223234249af0",
+      "start": 70
+    },
+    {
+      "citations": [
+        {
+          "document": "COMPUTE_PROTOCOL.md",
+          "label": "PageN application and additional size conditions"
+        }
+      ],
+      "end": 107,
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/CMFieldExponentialBounds/AdmissibleOfPageN.lean",
+      "sha256": "aef393ef7f527926f29b1c004f5bb9dfb38a7720f98d9fc64663c77cf6342b76",
+      "start": 70
+    },
+    {
+      "citations": [
+        {
+          "document": "EXCEPTIONS.md",
+          "label": "Use of the same primes and window"
+        }
+      ],
+      "end": 101,
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/CMFieldExponentialBounds/AdmissibleOfPageN.lean",
+      "sha256": "35cafe6697b28697bdd0076e9ddae20e5672a55177c8e6eefa1a0b684b79e4de",
+      "start": 72
+    },
+    {
+      "citations": [
+        {
+          "document": "EXCEPTIONS.md",
+          "label": "Three components on E"
+        }
+      ],
+      "end": 133,
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/CMFieldExponentialBounds/AdmissibleOfPageN.lean",
+      "sha256": "0e8598cfe6dc9f1283105f406353aa48683bdd6d373105fa2f1c1d8e93e357cd",
+      "start": 102
+    },
+    {
+      "citations": [
+        {
+          "document": "EXCEPTIONS.md",
+          "label": "Joint count theorem"
+        }
+      ],
+      "end": 33,
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/HeightAndVanishing/JointWinOfCounts.lean",
+      "sha256": "20a5d43f759b46f22f8c27f49049d413a62c15d2d2483c115a6dc7426f965545",
+      "start": 25
+    },
+    {
+      "citations": [
+        {
+          "document": "CENTER_FILTER.md",
+          "label": "Original filter and union"
+        }
+      ],
+      "end": 31,
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/Exc.lean",
+      "sha256": "4ef5be862b2b4ed12845d4025cc20bc83afa776dbc764ab40eb389eaff6b84f0",
+      "start": 7
+    },
+    {
+      "citations": [
+        {
+          "document": "EXCEPTIONS.md",
+          "label": "Finite filtering and cardinality"
+        }
+      ],
+      "end": 42,
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/Exc.lean",
+      "sha256": "573e891a85975f8b8c3519674834291b05e0265ae20db1b35d14b6d381e23a98",
+      "start": 7
+    },
+    {
+      "citations": [
+        {
+          "document": "EXCEPTIONS.md",
+          "label": "The two membership cases"
+        }
+      ],
+      "end": 53,
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/ImportsAlt.lean",
+      "sha256": "c95131ba3a11a8728c282ab6239d0ae566d990161f25d3af61c3f584bae25140",
+      "start": 20
+    },
+    {
+      "citations": [
+        {
+          "document": "CENTER_FILTER.md",
+          "label": "Near-set uniqueness"
+        }
+      ],
+      "end": 43,
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/Near1.lean",
+      "sha256": "bafec0180a607c5be4c1566cb9040c01ed91a5506eccc8f9ba61351a429f1bea",
+      "start": 6
+    },
+    {
+      "citations": [
+        {
+          "document": "EXCEPTIONS.md",
+          "label": "Construction at 2"
+        }
+      ],
+      "end": 47,
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/PartA.lean",
+      "sha256": "371898987640d1d60eb4604269e48145a529fe4dcc48bdbc79e59e216f9effd3",
+      "start": 24
+    },
+    {
+      "citations": [
+        {
+          "document": "EXCEPTIONS.md",
+          "label": "Odd-prime construction"
+        }
+      ],
+      "end": 83,
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/PartB.lean",
+      "sha256": "9e672659afe2d8e84103293b92edde3f29b7840f61223cd67398fe0bec40b82d",
+      "start": 50
+    },
+    {
+      "citations": [
+        {
+          "document": "EXCEPTIONS.md",
+          "label": "Hypotheses on centers"
+        }
+      ],
+      "end": 34,
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/SecondBound.lean",
+      "sha256": "18c50e7ed03eccdc010fa64d0b52d65697b26af7afc5a56fd686d63214024753",
+      "start": 19
+    },
+    {
+      "citations": [
+        {
+          "document": "EXCEPTIONS.md",
+          "label": "Two-primary order of choices"
+        }
+      ],
+      "end": 46,
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/SecondBound.lean",
+      "sha256": "16f50ec9284cceb8cdcea10597226f691afae968579afe84a31ef88cb8cb656e",
+      "start": 36
+    },
+    {
+      "citations": [
+        {
+          "document": "CENTER_FILTER.md",
+          "label": "Definition of goodness"
+        }
+      ],
+      "end": 46,
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/SecondBound.lean",
+      "sha256": "81d6a08d9008b5f7867667812ae7239e4d0f92003332790707ada92f62241371",
+      "start": 42
+    },
+    {
+      "citations": [
+        {
+          "document": "EXCEPTIONS.md",
+          "label": "Choices of odd caps and fields"
+        }
+      ],
+      "end": 60,
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/ThmBabOf.lean",
+      "sha256": "4ca343db926416dd6102af37495d3689f7a3f6b8c4bb74f24146abd9a34cd708",
+      "start": 18
+    },
+    {
+      "citations": [
+        {
+          "document": "COMPUTE_PROTOCOL.md",
+          "label": "union and selector"
+        }
+      ],
+      "end": 103,
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/ThmBabOf.lean",
+      "sha256": "f94ecd9df18e94baddc38cbe4a1128aea2a647adf2bbd8f8d54657c6051dd589",
+      "start": 68
+    },
+    {
+      "citations": [
+        {
+          "document": "EXCEPTIONS.md",
+          "label": "Simultaneous union and restriction"
+        }
+      ],
+      "end": 103,
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/ThmBabOf.lean",
+      "sha256": "777496800db40d1cb42f426f0b8c735802772b4dd4413b8f12908245a826e842",
+      "start": 72
+    },
+    {
+      "citations": [
+        {
+          "document": "source_trace.py",
+          "label": "two-primary exceptions for the selected ordered primes"
+        }
+      ],
+      "end": 76,
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/ThmBabOf.lean",
+      "sha256": "03d20c92aa1d372214ca04c4e4ce2aaa39777c9c6a1c9255a7a2b38d3ecac131",
+      "start": 76
+    },
+    {
+      "citations": [
+        {
+          "document": "source_trace.py",
+          "label": "one selector for the two-primary and odd-prime union"
+        }
+      ],
+      "end": 88,
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/ThmBabOf.lean",
+      "sha256": "7b1a621e7b3127b016f0b881b51b46ec53c6d9ecc94181ede7cb43bd39c6d360",
+      "start": 88
+    },
+    {
+      "citations": [
+        {
+          "document": "CENTER_FILTER.md",
+          "label": "Window interface"
+        }
+      ],
+      "end": 18,
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/Window.lean",
+      "sha256": "22a2a599d7df3ba14ba6071cb445940b551f3732f0e83f06dfc957f370a2e24f",
+      "start": 7
+    },
+    {
+      "citations": [
+        {
+          "document": "EXCEPTIONS.md",
+          "label": "Passage from log to power coordinates"
+        }
+      ],
+      "end": 25,
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/Window.lean",
+      "sha256": "fb4b5c4bb07a780f8e9cac03e7e4e20149a605c38a0bfe11155be1860de70bb6",
+      "start": 7
+    },
+    {
+      "citations": [
+        {
+          "document": "COMPUTATION.md",
+          "label": "Logarithmic transport"
+        }
+      ],
+      "end": 27,
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/Window.lean",
+      "sha256": "66f6b6ec99b2c99146d0ab20d905574076dd63f5ad5e77146f9b857e9ed0decd",
+      "start": 7
+    },
+    {
+      "citations": [
+        {
+          "document": "COMPUTATION.md",
+          "label": "Source recurrence"
+        }
+      ],
+      "end": 45,
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/Window1.lean",
+      "sha256": "77a06d92d5f853c5e9595efd5d00aa59bd28dfa16f716455a2f0df43fb612754",
+      "start": 6
+    },
+    {
+      "citations": [
+        {
+          "document": "EXCEPTIONS.md",
+          "label": "Final inputs and Ct=401"
+        },
+        {
+          "document": "FAMILY_ROW.md",
+          "label": "Exceptional window at 401"
+        }
+      ],
+      "end": 22,
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/HVCore.lean",
+      "sha256": "928e4bcef77021c10310cb2520b0262268900ad60e97411c6e2749a3d38730d1",
+      "start": 18
+    },
+    {
+      "citations": [
+        {
+          "document": "FAMILY_ROW.md",
+          "label": "Automorphy assembly"
+        }
+      ],
+      "end": 74,
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/TopMainZj.lean",
+      "sha256": "3228ca1e98dbee5fac36d67342b292797e608a9705315221fe3448d9b0bd9fda",
+      "start": 55
+    },
+    {
+      "citations": [
+        {
+          "document": "FAMILY_ROW.md",
+          "label": "Galois input"
+        }
+      ],
+      "end": 5,
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/VwinOfRow.lean",
+      "sha256": "6d45282eb0d782d8b4ad8028775528b74606ea95c6f4e0adeba68cbb2e0bbf7f",
+      "start": 4
+    },
+    {
+      "citations": [
+        {
+          "document": "FAMILY_ROW.md",
+          "label": "Counting inputs"
+        }
+      ],
+      "end": 34,
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/WindowBoundOfLiteratureLevel.lean",
+      "sha256": "e4879626bfc3e44b25f1def7c1850e0cb4b0523126b263b648db532dda8404c1",
+      "start": 25
+    },
+    {
+      "citations": [
+        {
+          "document": "EXCEPTIONS.md",
+          "label": "Specializing the B-constants"
+        }
+      ],
+      "end": 24,
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/PrimeSetBoundDataOfPrimitiveChar.lean",
+      "sha256": "53620938755e0c21b539b6cf2f719996aaedc4b14b638e9fd2f9bd24a438219e",
+      "start": 12
+    },
+    {
+      "citations": [
+        {
+          "document": "EXCEPTIONS.md",
+          "label": "Quantifiers and field parameters"
+        }
+      ],
+      "end": 49,
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/PrimeSetBoundDataOfPrimitiveChar.lean",
+      "sha256": "d2de72f0d4d33d38ee83c6f7a3501c11402445e8749ecbaede6a4cd35b7152d0",
+      "start": 23
+    },
+    {
+      "citations": [
+        {
+          "document": "COMPUTATION.md",
+          "label": "BShape"
+        },
+        {
+          "document": "THRESHOLD.md",
+          "label": "Cohomological condition"
+        }
+      ],
+      "end": 49,
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/PrimeSetBoundDataOfPrimitiveChar.lean",
+      "sha256": "12f8b3163dfa77edc8fa55b02d4e78ae81d1c5fd723fe7f16d0352ccc463ebe6",
+      "start": 40
+    },
+    {
+      "citations": [
+        {
+          "document": "EXCEPTIONS.md",
+          "label": "Cyclotomic descriptors"
+        }
+      ],
+      "end": 74,
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/PrimeSetBoundDataOfPrimitiveChar.lean",
+      "sha256": "90849a7c77f68258d8dcb74f6858c73b250431c2d46d2c4ba210788fc503536b",
+      "start": 69
+    },
+    {
+      "citations": [
+        {
+          "document": "EXCEPTIONS.md",
+          "label": "Character specialization"
+        }
+      ],
+      "end": 154,
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/PrimeSetBoundDataOfPrimitiveChar.lean",
+      "sha256": "4c29e744e36efa8c5ba7e884e5a82bf14605c23bb8a60c03c07df733ae0fe6f5",
+      "start": 145
+    },
+    {
+      "citations": [
+        {
+          "document": "EXCEPTIONS.md",
+          "label": "Same-W application"
+        }
+      ],
+      "end": 156,
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/PrimeSetBoundDataOfPrimitiveChar.lean",
+      "sha256": "5ecb4daa4198afb375303325c403bcfd453de0723dbb0ed45fdb4fe100e37665",
+      "start": 145
+    },
+    {
+      "citations": [
+        {
+          "document": "EXCEPTIONS.md",
+          "label": "Pinned definitions"
+        }
+      ],
+      "end": 67,
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/StmtFields.lean",
+      "sha256": "c5169160887182bb34efc3ef0ac36d5b3a4521a20c6808e87cad333316420377",
+      "start": 50
+    },
+    {
+      "citations": [
+        {
+          "document": "ROW.md",
+          "label": "One family"
+        }
+      ],
+      "end": 31,
+      "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/DesWin.lean",
+      "sha256": "235318ba6cbad21ee29d5026e889ff12300d37d35c6871b7025222cc4df6ecc3",
+      "start": 22
+    },
+    {
+      "citations": [
+        {
+          "document": "EXCEPTIONS.md",
+          "label": "One family"
+        },
+        {
+          "document": "FAMILY_ROW.md",
+          "label": "Open the common family once"
+        }
+      ],
+      "end": 31,
+      "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/DesWin.lean",
+      "sha256": "29755f127398c45c99ba0cddbf98ef9183c70a6c026c883c3d2dfd5f69a634d7",
+      "start": 23
+    },
+    {
+      "citations": [
+        {
+          "document": "EXCEPTIONS.md",
+          "label": "VV to divisibility"
+        }
+      ],
+      "end": 130,
+      "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/DivinNOfHypV.lean",
+      "sha256": "20325dee787b2886ef672e596c3b539fc216684714416a9736e2a96a16e83440",
+      "start": 117
+    },
+    {
+      "citations": [
+        {
+          "document": "ROW.md",
+          "label": "VVle binders"
+        }
+      ],
+      "end": 25,
+      "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/ExistsPageN.lean",
+      "sha256": "b0d90f58b93bb7ca7a1bfbfc4946ffe7a29db480af41cdf7cb955f6cbe252a83",
+      "start": 12
+    },
+    {
+      "citations": [
+        {
+          "document": "THRESHOLD.md",
+          "label": "Prime boxes"
+        }
+      ],
+      "end": 37,
+      "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/ExistsPageN.lean",
+      "sha256": "525116fb683768ac15aea86f81ab2d4c8d57bdc834188bba91004fbbcebf8fcb",
+      "start": 27
+    },
+    {
+      "citations": [
+        {
+          "document": "COMPUTATION.md",
+          "label": "WinPair"
+        }
+      ],
+      "end": 39,
+      "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/ExistsPageN.lean",
+      "sha256": "6668d752203bc5c774dddf504d020534a1e4dc3e4343e5a07307b18fd138b594",
+      "start": 27
+    },
+    {
+      "citations": [
+        {
+          "document": "ROW.md",
+          "label": "Quantifiers of VWinAt"
+        }
+      ],
+      "end": 49,
+      "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/ExistsPageN.lean",
+      "sha256": "b929f83bfcb7a67bb2d213799f06a7519a62e2ffb369d6c31c9850d2f184d7d9",
+      "start": 39
+    },
+    {
+      "citations": [
+        {
+          "document": "EXCEPTIONS.md",
+          "label": "VWinAt statement"
+        }
+      ],
+      "end": 51,
+      "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/ExistsPageN.lean",
+      "sha256": "010c5d3d7ce67cb6ee889bf603ad069083076445d1745abdcd856f91f4c905b4",
+      "start": 39
+    },
+    {
+      "citations": [
+        {
+          "document": "ROW.md",
+          "label": "Choice of page"
+        }
+      ],
+      "end": 77,
+      "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/ExistsPageN.lean",
+      "sha256": "c3ea51a09a9a613be5cc4e2b8d6a2f91b83cd2e63ccd3c6fc601bee2f51cbc43",
+      "start": 67
+    },
+    {
+      "citations": [
+        {
+          "document": "ROW.md",
+          "label": "Field and prescribed pair"
+        }
+      ],
+      "end": 28,
+      "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/FieldChi.lean",
+      "sha256": "536ab69386b7f3e5154ebc31012cf87aaf362135579566b0073f5fd1d82de98b",
+      "start": 20
+    },
+    {
+      "citations": [
+        {
+          "document": "FAMILY_ROW.md",
+          "label": "Host-builder wiring"
+        }
+      ],
+      "end": 23,
+      "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/HostOfField.lean",
+      "sha256": "39e63facfc2cee044462c4dfeec6a26d8f03b96aa88636ec936167ac5e8bee6b",
+      "start": 8
+    },
+    {
+      "citations": [
+        {
+          "document": "ROW.md",
+          "label": "Point choices and ties"
+        }
+      ],
+      "end": 62,
+      "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/KitS.lean",
+      "sha256": "bd80a1ba69183369ac331d3245f5504cf460f99256ce28b02de132e000b74abe",
+      "start": 39
+    },
+    {
+      "citations": [
+        {
+          "document": "FAMILY_ROW.md",
+          "label": "Headline"
+        }
+      ],
+      "end": 14,
+      "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean",
+      "sha256": "b93d14f5d6062f92c2631e242e50075d8e6cc728e8b8396b53b481d38a8a6175",
+      "start": 7
+    },
+    {
+      "citations": [
+        {
+          "document": "ROW.md",
+          "label": "PairGood and PairEx"
+        }
+      ],
+      "end": 30,
+      "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/PairGood.lean",
+      "sha256": "39e9928954f0289bcc8208f612672e00c0c819e281cef61f16394ab8c05c5663",
+      "start": 18
+    },
+    {
+      "citations": [
+        {
+          "document": "COMPUTATION.md",
+          "label": "PairGood assumptions"
+        }
+      ],
+      "end": 31,
+      "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/PairGood.lean",
+      "sha256": "afc0c22ebd127066ac72401838ed20f6896fc019b1eef221143b1deb40daae36",
+      "start": 18
+    },
+    {
+      "citations": [
+        {
+          "document": "ROW.md",
+          "label": "Row theorem and sufficient threshold"
+        }
+      ],
+      "end": 349,
+      "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/PairRows.lean",
+      "sha256": "214c51c5d3c57a60f690a7c42b8b7ce33e5ddb40cf827374e258bb8816cd5e3a",
+      "start": 334
+    },
+    {
+      "citations": [
+        {
+          "document": "FAMILY_ROW.md",
+          "label": "Character class"
+        }
+      ],
+      "end": 25,
+      "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/Supply.lean",
+      "sha256": "2b681f114b2e8e818e513406d80e318b9efb2be3744ad040effb2c7b4414f2c9",
+      "start": 16
+    },
+    {
+      "citations": [
+        {
+          "document": "ROW.md",
+          "label": "Transport and character-specific condition"
+        }
+      ],
+      "end": 43,
+      "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/Supply.lean",
+      "sha256": "645364b6e60b8b42923d39c148e944aa9ec90fe32c8128eda58ad6832245ca79",
+      "start": 22
+    },
+    {
+      "citations": [
+        {
+          "document": "FAMILY_ROW.md",
+          "label": "Character requirements"
+        }
+      ],
+      "end": 43,
+      "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/Supply.lean",
+      "sha256": "effb9aef740a1fd08dbe581b0e163a7f37b4d6ac9d4497717b46943d38a7660d",
+      "start": 38
+    },
+    {
+      "citations": [
+        {
+          "document": "FAMILY_ROW.md",
+          "label": "Character and admission"
+        }
+      ],
+      "end": 16,
+      "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/SupplyChi.lean",
+      "sha256": "2fc8f643aa2faafb92245eef1323f7d1b97bfad2151f9cc3bd6a50433b33a56f",
+      "start": 8
+    },
+    {
+      "citations": [
+        {
+          "document": "EXCEPTIONS.md",
+          "label": "Window data"
+        },
+        {
+          "document": "ROW.md",
+          "label": "WinDatum"
+        }
+      ],
+      "end": 26,
+      "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/TwistForm.lean",
+      "sha256": "7ff18df70df3b44f3af912bc96d8355557641fa63d155e5bbdea1a314cd8bb80",
+      "start": 19
+    },
+    {
+      "citations": [
+        {
+          "document": "EXCEPTIONS.md",
+          "label": "Exported quantifiers"
+        }
+      ],
+      "end": 13,
+      "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/WinPairs.lean",
+      "sha256": "90501f315644001ed9388f3ff09e118a590e98bbabdf3578cfce73c92f72a478",
+      "start": 5
+    },
+    {
+      "citations": [
+        {
+          "document": "ROW.md",
+          "label": "Pair-dependent choice of W"
+        }
+      ],
+      "end": 35,
+      "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/WinPairs.lean",
+      "sha256": "45ff105cd4ce9b9ffbb06a84828ff558209618431df3442e673a13cf4985ec02",
+      "start": 10
+    },
+    {
+      "citations": [
+        {
+          "document": "EXCEPTIONS.md",
+          "label": "Select pair before W"
+        }
+      ],
+      "end": 37,
+      "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/WinPairs.lean",
+      "sha256": "598b62f919d26f2dcfae95628dd0f2f3981582453f706361bc4f4d4f332b302d",
+      "start": 20
+    },
+    {
+      "citations": [
+        {
+          "document": "ROW.md",
+          "label": "Original witness choices"
+        }
+      ],
+      "end": 35,
+      "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/WinPairs.lean",
+      "sha256": "8ddd086d47ea82cb4d9184b57b7777e61ee2b965e3485c7769c1a09ff9c0804d",
+      "start": 34
+    },
+    {
+      "citations": [
+        {
+          "document": "source_trace.py",
+          "label": "window theorem applied to the selected pair"
+        }
+      ],
+      "end": 35,
+      "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/WinPairs.lean",
+      "sha256": "7589f3a66ff4be8c042cae8adf1f94c35acb53a02fa2fe73cb44ac600d904c9e",
+      "start": 35
+    },
+    {
+      "citations": [
+        {
+          "document": "EXCEPTIONS.md",
+          "label": "Window geometry and rank rescaling"
+        }
+      ],
+      "end": 73,
+      "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/WinPairs.lean",
+      "sha256": "c2fe8cb3ef4df613593d8684fac1f65e50f9183e097f0c3c7c08b93631660191",
+      "start": 39
+    },
+    {
+      "citations": [
+        {
+          "document": "ROW.md",
+          "label": "Original placement of binders"
+        }
+      ],
+      "end": 65,
+      "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/WinPairs.lean",
+      "sha256": "efc36e73ce0a733ef5b4c5bf6bad65721ee7c0a305c78107d684de0c47fca2ff",
+      "start": 52
+    },
+    {
+      "citations": [
+        {
+          "document": "COMPUTATION.md",
+          "label": "Source rescaling and field-index application"
+        },
+        {
+          "document": "ROW.md",
+          "label": "Returned witnesses and rescaling"
+        }
+      ],
+      "end": 81,
+      "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/WinPairs.lean",
+      "sha256": "7bf8d3f51ec6b910b98ebb05fb98458c8a2da2e03745a58b3456050f891f3b8e",
+      "start": 52
+    },
+    {
+      "citations": [
+        {
+          "document": "source_trace.py",
+          "label": "common pair and page at the rescaled point in the returned data"
+        }
+      ],
+      "end": 65,
+      "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/WinPairs.lean",
+      "sha256": "1dbd97ac51c563700be34bc80830d7b159f97c1f924f331b28042626bde4d84b",
+      "start": 65
+    },
+    {
+      "citations": [
+        {
+          "document": "EXCEPTIONS.md",
+          "label": "Monotonicity at the transported height"
+        }
+      ],
+      "end": 81,
+      "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/WinPairs.lean",
+      "sha256": "d5a255201c02d5b065230af1d3b14f3ff7902b3ba15d46e06f677e4e959b83fa",
+      "start": 74
+    },
+    {
+      "citations": [
+        {
+          "document": "FAMILY_ROW.md",
+          "label": "Quantified TopG"
+        }
+      ],
+      "end": 24,
+      "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/ZeroFreeAllOfTopG.lean",
+      "sha256": "4c7c704ed29b04ff8895b87f6d15cb4113963d26b41727eaaffbfa7bd1bd449f",
+      "start": 12
+    },
+    {
+      "citations": [
+        {
+          "document": "FAMILY_ROW.md",
+          "label": "Family specialization"
+        }
+      ],
+      "end": 33,
+      "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/ZeroFreeAllOfTopG.lean",
+      "sha256": "0715314f8773d91f586f38249824b04132c97cf4bd80c6cd4073c0a7e1bb4802",
+      "start": 16
+    },
+    {
+      "citations": [
+        {
+          "document": "ROW.md",
+          "label": "Finite-set existence"
+        }
+      ],
+      "end": 43,
+      "path": "src/Development/AutomorphicArithmetic/MeanSquareBounds/PairExists.lean",
+      "sha256": "37811ba075590de6c45ebd072d75369ea27fa831b45ba196fb711ad4363819cf",
+      "start": 28
+    },
+    {
+      "citations": [
+        {
+          "document": "EXCEPTIONS.md",
+          "label": "CoreAtH"
+        }
+      ],
+      "end": 44,
+      "path": "src/Development/AutomorphicArithmetic/PrimitiveCosets/CoreAtH.lean",
+      "sha256": "1c3e1f2135a1c3458111663fb4f8d0e35181b53b186dd7533809343d6e403ff9",
+      "start": 31
+    },
+    {
+      "citations": [
+        {
+          "document": "ROW.md",
+          "label": "Extraction"
+        }
+      ],
+      "end": 26,
+      "path": "src/Development/AutomorphicArithmetic/PrimitiveCosets/LevelGmLeOnFamilyScales.lean",
+      "sha256": "a53fa4ac1f9a14734fa9c6b84ba48c6d9b256a7bd69f28461d957768de039db5",
+      "start": 13
+    },
+    {
+      "citations": [
+        {
+          "document": "EXCEPTIONS.md",
+          "label": "Extract the core"
+        },
+        {
+          "document": "FAMILY_ROW.md",
+          "label": "Core extraction"
+        }
+      ],
+      "end": 27,
+      "path": "src/Development/AutomorphicArithmetic/PrimitiveCosets/LevelGmLeOnFamilyScales.lean",
+      "sha256": "ade3d4bd511b85daad8649015b3d0e64639c7241189867356079983734a078c3",
+      "start": 13
+    },
+    {
+      "citations": [
+        {
+          "document": "source_trace.py",
+          "label": "chain's selected TT equated to its actual indexed host"
+        }
+      ],
+      "end": 17,
+      "path": "src/Development/AutomorphicArithmetic/PrimitiveCosets/LevelGmLeOnFamilyScales.lean",
+      "sha256": "f3d984cb30f325348e10361d36eeaf6e4fcb539919629e39b149b3d0db38c66c",
+      "start": 17
+    },
+    {
+      "citations": [
+        {
+          "document": "FAMILY_ROW.md",
+          "label": "Core existential"
+        }
+      ],
+      "end": 12,
+      "path": "src/Development/AutomorphicArithmetic/PrimitiveCosets/WindowInequalityOfArtinInputs.lean",
+      "sha256": "f159861438af6b592b97bedfd9944ca704ab7400e6dac9fd9efcc6c1f7eb5dac",
+      "start": 9
+    },
+    {
+      "citations": [
+        {
+          "document": "source_trace.py",
+          "label": "CoreAtH uses one index for host and TT"
+        }
+      ],
+      "end": 12,
+      "path": "src/Development/AutomorphicArithmetic/PrimitiveCosets/WindowInequalityOfArtinInputs.lean",
+      "sha256": "1297a09a37f6fdb2d978645eac3b05183df060150083b099211fe928815ea2b1",
+      "start": 12
+    },
+    {
+      "citations": [
+        {
+          "document": "ROW.md",
+          "label": "Final consumer"
+        }
+      ],
+      "end": 26,
+      "path": "src/Development/AutomorphicArithmetic/PrimitiveCosets/WindowInequalityOfArtinInputs.lean",
+      "sha256": "07c7533dc9dc25f4c8f8ff24527ba5ff800c21b5bab6605261ad89f384169a8e",
+      "start": 17
+    },
+    {
+      "citations": [
+        {
+          "document": "source_trace.py",
+          "label": "final application uses the same i for the host and its assumptions"
+        }
+      ],
+      "end": 25,
+      "path": "src/Development/AutomorphicArithmetic/PrimitiveCosets/WindowInequalityOfArtinInputs.lean",
+      "sha256": "4b6ff618c39b72436a5f651258b735d23dd582d48d92bd77d50b1b4c1303cb0a",
+      "start": 25
+    },
+    {
+      "citations": [
+        {
+          "document": "FAMILY_ROW.md",
+          "label": "Prime estimates"
+        }
+      ],
+      "end": 7,
+      "path": "src/Development/AutomorphicArithmetic/ShortNorms/Primes.lean",
+      "sha256": "bf09705fcde09c01df2738837b05d79167f6baaa6625bf8f2c0fece6fb2ae97e",
+      "start": 5
+    },
+    {
+      "citations": [
+        {
+          "document": "ROW.md",
+          "label": "Auxiliary data"
+        }
+      ],
+      "end": 210,
+      "path": "src/Development/AutomorphicArithmetic/ShortNorms/hostOfFieldOf.lean",
+      "sha256": "ac39192507daa038362ba95f2cc9bdf696272f59eec82a70d1534bc88d3a1e93",
+      "start": 191
+    },
+    {
+      "citations": [
+        {
+          "document": "ROW.md",
+          "label": "Explicit reuse of hrow"
+        }
+      ],
+      "end": 228,
+      "path": "src/Development/AutomorphicArithmetic/ShortNorms/hostOfFieldOf.lean",
+      "sha256": "6d0755554e3151cb374ee7074b4fe7054d70d53be5127c9b2326ce52c93babe3",
+      "start": 215
+    },
+    {
+      "citations": [
+        {
+          "document": "EXCEPTIONS.md",
+          "label": "PairRow to TT"
+        }
+      ],
+      "end": 227,
+      "path": "src/Development/AutomorphicArithmetic/ShortNorms/hostOfFieldOf.lean",
+      "sha256": "f6888a423107758881f46ef44e04c3fb6d760c921fe138050fc133e590293020",
+      "start": 216
+    },
+    {
+      "citations": [
+        {
+          "document": "FAMILY_ROW.md",
+          "label": "Supply of the good pair"
+        }
+      ],
+      "end": 29,
+      "path": "src/Development/AutomorphicArithmetic/ShortNorms/supplyOfAdmOf.lean",
+      "sha256": "984f2db97ff9c773cc1f39209714bda26a22ceb67fca4eba4bb33182591bc038",
+      "start": 23
+    },
+    {
+      "citations": [
+        {
+          "document": "ROW.md",
+          "label": "Existential set of scales"
+        }
+      ],
+      "end": 68,
+      "path": "src/Development/AutomorphicArithmetic/ShortNorms/supplyOfAdmOf.lean",
+      "sha256": "dbd02ea8e27337dec636f143428ec92437f0e7b817666f58c9d9184a5f30ffcd",
+      "start": 49
+    },
+    {
+      "citations": [
+        {
+          "document": "EXCEPTIONS.md",
+          "label": "Scale membership"
+        }
+      ],
+      "end": 68,
+      "path": "src/Development/AutomorphicArithmetic/ShortNorms/supplyOfAdmOf.lean",
+      "sha256": "000e6495c3d14467883d41e65776ae89c8e51b07769bea9ce41fd51f9285bc07",
+      "start": 55
+    },
+    {
+      "citations": [
+        {
+          "document": "ROW.md",
+          "label": "Field, rank and host equalities"
+        }
+      ],
+      "end": 116,
+      "path": "src/Development/AutomorphicArithmetic/ShortNorms/supplyOfAdmOf.lean",
+      "sha256": "580b1f8a703c80f6656436921972ae2a49a5478992360711217794387e4c3109",
+      "start": 91
+    },
+    {
+      "citations": [
+        {
+          "document": "EXCEPTIONS.md",
+          "label": "Field and frame for these primes"
+        }
+      ],
+      "end": 97,
+      "path": "src/Development/AutomorphicArithmetic/ShortNorms/supplyOfAdmOf.lean",
+      "sha256": "c4d10ffaef563d86c9b24d0819cd1dd1f808c53f26dc917016df83afa78613bb",
+      "start": 93
+    },
+    {
+      "citations": [
+        {
+          "document": "EXCEPTIONS.md",
+          "label": "Host-field transport"
+        },
+        {
+          "document": "EXCEPTIONS.md",
+          "label": "Reuse good and bound"
+        }
+      ],
+      "end": 135,
+      "path": "src/Development/AutomorphicArithmetic/ShortNorms/supplyOfAdmOf.lean",
+      "sha256": "500436884827a0f885d9b04987445d4cb9c252c52b4ada441cf76f4ff65d87bd",
+      "start": 110
+    },
+    {
+      "citations": [
+        {
+          "document": "ROW.md",
+          "label": "Application at H.E"
+        }
+      ],
+      "end": 135,
+      "path": "src/Development/AutomorphicArithmetic/ShortNorms/supplyOfAdmOf.lean",
+      "sha256": "5b0ff2fc7f11ac28eb8c352478aa11e785e3ed69e42f64f32dc8617d7b700b6e",
+      "start": 125
+    },
+    {
+      "citations": [
+        {
+          "document": "source_trace.py",
+          "label": "field identified by the same host and kernel data"
+        }
+      ],
+      "end": 129,
+      "path": "src/Development/AutomorphicArithmetic/ShortNorms/supplyOfAdmOf.lean",
+      "sha256": "99ce6457a53971abac13eaa60848e103b51fab774c1e41520d50159b91ef1bf4",
+      "start": 129
+    },
+    {
+      "citations": [
+        {
+          "document": "source_trace.py",
+          "label": "bound applied to that host field"
+        }
+      ],
+      "end": 131,
+      "path": "src/Development/AutomorphicArithmetic/ShortNorms/supplyOfAdmOf.lean",
+      "sha256": "5f45381f9a932eea799645864bccb176c7dce5045d224dfff6582cb7fba44e97",
+      "start": 131
+    },
+    {
+      "citations": [
+        {
+          "document": "FAMILY_ROW.md",
+          "label": "Literature assembly"
+        }
+      ],
+      "end": 813,
+      "path": "src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean",
+      "sha256": "11a91a9bc545921e425157a88ee6a4de0d797bab57b9a5a0e5f304267129ec40",
+      "start": 810
+    },
+    {
+      "citations": [
+        {
+          "document": "FAMILY_ROW.md",
+          "label": "Green and definite-side inputs"
+        }
+      ],
+      "end": 73,
+      "path": "src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean",
+      "sha256": "de1c66273e0f12a83f51729bc7c08adf5efd7b3debc03f85d1b540c2ee2e609e",
+      "start": 69
+    },
+    {
+      "citations": [
+        {
+          "document": "FAMILY_ROW.md",
+          "label": "TopPlug"
+        }
+      ],
+      "end": 18,
+      "path": "src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopPlug.lean",
+      "sha256": "d72a9b822541ad649c242e17292369c8ed047311489846c72adc742229eb30fe",
+      "start": 12
+    },
+    {
+      "citations": [
+        {
+          "document": "FAMILY_ROW.md",
+          "label": "Actual final design call"
+        }
+      ],
+      "end": 55,
+      "path": "src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopShape.lean",
+      "sha256": "5b092fdcc9235b63a74b3869de06b509b84706acddea6fe1062d5ed24fa375d0",
+      "start": 48
+    },
+    {
+      "citations": [
+        {
+          "document": "FAMILY_ROW.md",
+          "label": "Family equalities"
+        }
+      ],
+      "end": 99,
+      "path": "src/Formalism/SharpRestriction/FamCore.lean",
+      "sha256": "5e4e2a477c2e3ee3f1f1868bae9ddfcc8f487c06f459dcd4800934241a25b6b3",
+      "start": 90
+    },
+    {
+      "citations": [
+        {
+          "document": "COMPUTATION.md",
+          "label": "Exponential boxes and character symbol"
+        }
+      ],
+      "end": 53,
+      "path": "src/Formalism/SharpRestriction/GlobalSchurBounds/GeneralLinearActions/FiltrationCocycleLiftCriterion.lean",
+      "sha256": "02aef87f7088107569da5ab1bb7b7c40758dfb7b05576c6e116ed6226f74747b",
+      "start": 36
+    },
+    {
+      "citations": [
+        {
+          "document": "FAMILY_ROW.md",
+          "label": "Boxes and rows as family properties"
+        }
+      ],
+      "end": 39,
+      "path": "src/Formalism/SharpRestriction/GlobalSchurBounds/MainIn.lean",
+      "sha256": "ad091c8b43e11106639e2b1f53e7ed569ecf4f4db387b92152bdc994e44842b8",
+      "start": 26
+    },
+    {
+      "citations": [
+        {
+          "document": "ROW.md",
+          "label": "Cross-index equalities"
+        }
+      ],
+      "end": 46,
+      "path": "src/Formalism/SharpRestriction/GlobalSchurBounds/TieGlobal.lean",
+      "sha256": "508bb3e72d88c7873a09f8ba74a150f7314430570e6922ab71150838112848e6",
+      "start": 39
+    },
+    {
+      "citations": [
+        {
+          "document": "ROW.md",
+          "label": "Jointly indexed record"
+        }
+      ],
+      "end": 114,
+      "path": "src/Formalism/SharpRestriction/GlobalSchurBounds/TieGlobal.lean",
+      "sha256": "a74d7294d763e859dcbd26a63643129d9b9d033f78ceec3960c83d757e689297",
+      "start": 97
+    },
+    {
+      "citations": [
+        {
+          "document": "COMPUTATION.md",
+          "label": "Scalar Rowq definition"
+        }
+      ],
+      "end": 184,
+      "path": "src/Formalism/SharpRestriction/InertJacobiLevels/AsmIface.lean",
+      "sha256": "ea46108ddac613c7efae8a6cb3aff61549bbf0ca6cbcf63b1c9eb33556a19dc8",
+      "start": 179
+    }
+  ]
+}
