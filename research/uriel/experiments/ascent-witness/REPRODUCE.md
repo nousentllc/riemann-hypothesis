@@ -2,6 +2,8 @@
 
 The experiment uses the original sources at `40e56bab026552e089d7afcfeff08d2defb9c005`, the previous experiment at `4b1c9fbbfb9bc50a3f791c2c1f3d7f2adb336c87`, Lean 4.33.1 and the package revisions recorded in the original Lake manifest. A source checkout containing both Git commits is required. Python 3.11 or newer supplies the build driver. The finite group control uses standard-library Python. The separate number-field calculations require PARI/GP 2.19.1.
 
+The recorded run authenticated 1,103 original source modules. It reused 1,100 original compiled objects and eight earlier experiment modules, then compiled and kernel-replayed the three remaining original modules and all ten new modules. The assumption audit covered 170 local theorem or axiom declarations, including compiler-generated declarations, and checked 58 explicit axiom reports. It found only `propext`, `Classical.choice` and `Quot.sound`. All 14 required final declarations were present. Each of the three type controls accepted the intended use and rejected its paired misuse. [Verification record](results/verification.json)
+
 ## Finite controls and source excerpts
 
 Run the following from the repository root.
