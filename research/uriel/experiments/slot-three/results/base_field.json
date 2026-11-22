@@ -1,0 +1,56 @@
+{
+  "axioms": {
+    "class_number": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "maximal_level": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "root_powers": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "three_not_dvd_class_card": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "cZero_original_blob": "948958d1b327d9da5f24e7b50e69d2e8dded4add",
+  "cZero_original_definition": "def cZero : \u2115 := sSup {c : \u2115 | \u2203 \u03b6 : L, IsPrimitiveRoot \u03b6 (l ^ c)}",
+  "cZero_original_path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/NumberFieldTowers/XTwApplyApply.lean",
+  "compiler_output": "BaseField.lean:32:50: warning: try 'simp' instead of 'simpa'\n\nNote: This linter can be disabled with `set_option linter.unnecessarySimpa false`\n'SlotThree.BaseField.class_number' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SlotThree.BaseField.three_not_dvd_class_card' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SlotThree.BaseField.root_powers' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SlotThree.BaseField.maximal_level' depends on axioms: [propext, Classical.choice, Quot.sound]",
+  "flags": [
+    "-j1",
+    "--tstack=400000",
+    "-DautoImplicit=false",
+    "-DrelaxedAutoImplicit=false",
+    "-DmaxSynthPendingDepth=3",
+    "-Dpp.unicode.fun=true",
+    "-DmaxHeartbeats=4000000"
+  ],
+  "kernel_replay": "replaying BaseField",
+  "olean_sha256": "fdc7776a8b488a98567a0e9a1af6001c26c068f56cbf1926dc4fe06627b802db",
+  "pin": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "source_sha256": "d02d6ba36da0f087b8291f339f883ccbc74dfbf455ca237bd9030e83678ab5e4",
+  "toolchain": {
+    "lean": "819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+    "packages": {
+      "Cli": "6130a47896ce867c6a4a55373441e59e565bad0f",
+      "LeanSearchClient": "5f4d51b81cbd3f6b32b156bfad9056621a040404",
+      "Qq": "92c15be17b7caf78c2ad767ec40f89052d908d81",
+      "aesop": "3448c0bcc5ce01b2d1546e483ec3620e32df3d0e",
+      "batteries": "4488d40d070b9700d4d5a6aa342f0d40c31b2a2d",
+      "importGraph": "16f02aa7642864af59f1ff0e384a015994db9118",
+      "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+      "plausible": "b7eb3304aeae834b12dda98993a37f6a41f6f0bb",
+      "proofwidgets": "4be2e3d5087eeb272cf5a8853b8f9dd025ef5957"
+    },
+    "version": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+  }
+}

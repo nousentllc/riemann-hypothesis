@@ -1,0 +1,231 @@
+{
+  "flags": [
+    "-j1",
+    "--tstack=400000",
+    "-DautoImplicit=false",
+    "-DrelaxedAutoImplicit=false",
+    "-DmaxSynthPendingDepth=3",
+    "-Dpp.unicode.fun=true",
+    "-DmaxHeartbeats=4000000"
+  ],
+  "local": {
+    "compiler_output": "'SlotThree.firstBound_insert' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SlotThree.can_mark_after_exc' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SlotThree.awayBound_cons' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SlotThree.forget_named' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SlotThree.name_with_second' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SlotThree.tower_succ' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SlotThree.tower_can_name' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SlotThree.near_named' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SlotThree.cutoff' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SlotThree.named_filter' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SlotThree.tower_filter_at_one' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SlotThree.strict_integer' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SlotThree.integer_center_iff' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SlotThree.integral_center_iff' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SlotThree.weights_by_residue' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SlotThree.boundary_control' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "module": "SlotThree",
+    "olean_sha256": "e0f05bee484c709e1546fa7dd421779eb0c7b91a174edb9e71e2749fc3cc821f",
+    "source_sha256": "235a2b49da83449662c5f59723cfdaa99d7d15a2952407805770b65949e94b0d"
+  },
+  "modules": {
+    "Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.GaloisCohomologyLength.LevelInertiaLeLevelDec": {
+      "mode": "authenticated cache",
+      "olean_sha256": "92dea32dacfce60e333337e4ff5d1e09d8148182dcc0956432e41a1206a9934a",
+      "source_blob": "497c591dbb6981c12b4e99d280ed1c81d356adaf"
+    },
+    "Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.KummerTheory.FunRepMem": {
+      "mode": "freshly compiled",
+      "olean_sha256": "2b05cf900219036ec35801e76cd3a302d0fe738b930bf04bbaad8036611c7693",
+      "source_blob": "b281490bc855c51d689c41820a958f251491604f"
+    },
+    "Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.KummerTheory.Mk0IdMapCongr": {
+      "mode": "authenticated cache",
+      "olean_sha256": "8bcee54ffb99d1776af179f559112afc25e8f0cbaa89e22646080d7cefc34992",
+      "source_blob": "51d26d55b7fe74a67195fc010e868035094e7cce"
+    },
+    "Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.SelmerTransport.ConjStableShaFam": {
+      "mode": "authenticated cache",
+      "olean_sha256": "c35624a960422a26865a5a2f1bff42b4f70f8fc3472ef0ffa110677ed60a5d3b",
+      "source_blob": "578402a7b2aea9f24d31473aab4486dd43055fb2"
+    },
+    "Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.SelmerTransport.RestrictionMemInvariantH1": {
+      "mode": "authenticated cache",
+      "olean_sha256": "590ae52fe56b6b6c0199b6e35f4b9334eed792a0edc197247e4206ad392a193d",
+      "source_blob": "c66dfa93f1b37f27ebd49f09df5d3a68a4404b85"
+    },
+    "Development.AutomorphicArithmetic.AutomorphicVarieties.GeneratorCountTuples.LemmaK": {
+      "mode": "authenticated cache",
+      "olean_sha256": "657e0a3666618755f23a3434781a3fbf19f2377470bf3d416edc9a3caf2e601b",
+      "source_blob": "8726ea4259cd1f0fcb350eca97a3be2478261c87"
+    },
+    "Development.AutomorphicArithmetic.AutomorphicVarieties.LayeredIsomorphisms.Exc": {
+      "mode": "authenticated cache",
+      "olean_sha256": "9620566815871e2aa097a7a13a928a2bd39f6ad155b148a10addb0da8fcb8402",
+      "source_blob": "d0d49933faebf73a8162c153b8115139e36efa82"
+    },
+    "Development.AutomorphicArithmetic.AutomorphicVarieties.LayeredIsomorphisms.Near1": {
+      "mode": "authenticated cache",
+      "olean_sha256": "0397e3b714cffedba21b5c42dc31442aeeda864eb13d51459d5861c965d8500d",
+      "source_blob": "3ba2c097a7496c4f32255699e57917c9763bd162"
+    },
+    "Development.AutomorphicArithmetic.AutomorphicVarieties.LayeredIsomorphisms.SecondBound": {
+      "mode": "authenticated cache",
+      "olean_sha256": "11b2c6bb66d8c8e7001c7788b9aaf2ee30e9b7766258444bf40023ceb3b8348a",
+      "source_blob": "a2e12927214cad3ce637b33adb435f42992c1c65"
+    },
+    "Development.AutomorphicArithmetic.AutomorphicVarieties.LengthEqAddEigen": {
+      "mode": "authenticated cache",
+      "olean_sha256": "025f5d40786eb9fd25902fb6e0ee6be81f6b476751a70f9011df53c45582e59a",
+      "source_blob": "0ab757164d73378933cd4c261b4bf0f670f2461e"
+    },
+    "Development.AutomorphicArithmetic.AutomorphicVarieties.NumberFieldTowers.XTwApplyApply": {
+      "mode": "freshly compiled",
+      "olean_sha256": "b61b51eba62bbda24faf2ae80a88a21c182d591199b069d85f71b0096a3375cf",
+      "source_blob": "948958d1b327d9da5f24e7b50e69d2e8dded4add"
+    },
+    "Development.AutomorphicArithmetic.AutomorphicVarieties.PartsConj": {
+      "mode": "authenticated cache",
+      "olean_sha256": "3f970c54a97759a14691a97b89c6a6a97c01b05c02dd97212dd680ac6ca5bfc5",
+      "source_blob": "43e9f780e70214bebe56cf4e98a81d4e90e69c83"
+    },
+    "Development.AutomorphicArithmetic.AutomorphicVarieties.PartsSign": {
+      "mode": "authenticated cache",
+      "olean_sha256": "bed4fabdaa8a3a489b9b6ab6ecd5d12ed9dbe843c6ab16c71c6baeab57001cb0",
+      "source_blob": "c2e1cb636ac968a8a871b8fb8cbd3391c185e3f3"
+    },
+    "Development.AutomorphicArithmetic.AutomorphicVarieties.PrimeSetBoundDataOfPrimitiveChar": {
+      "mode": "authenticated cache",
+      "olean_sha256": "24cb6f4901b08c3501d3a158bb11bbd525301542b445b55cf50224dbfc1c0eab",
+      "source_blob": "52224122dd8f9deefef473151d716984f3e1f1ff"
+    },
+    "Development.AutomorphicArithmetic.AutomorphicVarieties.StmtFields": {
+      "mode": "authenticated cache",
+      "olean_sha256": "fff86da7d5a15369c15a4f7c841cc96ec7d9f927114390ce595b33f2ae57e9a6",
+      "source_blob": "857965059bf92dee66f67769d93377548b55a764"
+    },
+    "Development.AutomorphicArithmetic.CharacterBoxes.ExistsPageN": {
+      "mode": "authenticated cache",
+      "olean_sha256": "3eea59f72e776ff9f3c64b2dea4bebccb9bdcd87eec87ba580b1d7cc04c2c323",
+      "source_blob": "398eb8ed3528aa2666e9d3b2b09a582ad4390dd7"
+    },
+    "Development.AutomorphicArithmetic.CyclotomicBounds.ClassNumberBounds.TotallyRealRoots": {
+      "mode": "authenticated cache",
+      "olean_sha256": "190d64e0e29015468e2f1cac6f7446b77241686c7ee52dd0718ea94aa9fa7697",
+      "source_blob": "0e5f58e38656b371ee4972e8ea14b711ed82b3e6"
+    },
+    "Development.AutomorphicArithmetic.CyclotomicBounds.ClassNumberBounds.TotallyRealRoots.GalDefs": {
+      "mode": "authenticated cache",
+      "olean_sha256": "6ad15669075526cc712fb72a81214260c6a887091b399fcedaa161a6be9cded6",
+      "source_blob": "390b675121ff2219b7b688653437eb3b1295b970"
+    },
+    "Development.AutomorphicArithmetic.CyclotomicBounds.ClassNumberBounds.TotallyRealRoots.LeNuIffPowMemPrinc": {
+      "mode": "authenticated cache",
+      "olean_sha256": "c73615c3ccf0b5a9928c95f694514179340e61a2c470eb01865ef6ab63d6706a",
+      "source_blob": "cf49e4c1d813570af7d67f4bcb76d6ca85bce5df"
+    },
+    "Formalism.ConjugateSelfDual.Statement": {
+      "mode": "authenticated cache",
+      "olean_sha256": "274121e87ebbd7248bab793e5cfbe343e3379cfaec27e5dee8ecffd62a591946",
+      "source_blob": "8ac13fd8953cf0cff090de5b89c0aab876c5c929"
+    },
+    "Formalism.FrobeniusOrbits.Statement": {
+      "mode": "authenticated cache",
+      "olean_sha256": "c4d48271a3432c31c04d69a64720bd072a696765d6886e18a981c675d876eb7a",
+      "source_blob": "45d3b672d4649dd27309c092b3f9a24d279dd399"
+    },
+    "Formalism.GaloisCohomology.Statement": {
+      "mode": "authenticated cache",
+      "olean_sha256": "ba9b1a5fac7bc4b0719c8902089acc794bab04479405d767c960e55d291a5242",
+      "source_blob": "0799e9bcd8aa191ffaa90ab005453a53381bacea"
+    },
+    "Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.Analytic": {
+      "mode": "authenticated cache",
+      "olean_sha256": "8d47799074adcae7db33f4a43975b04e086801da40abccde2e1dbecc23888456",
+      "source_blob": "599699b5b35f6fb7bf2ab94f5f0c577b14f35ea1"
+    },
+    "Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.ConjEMemHostFIff": {
+      "mode": "authenticated cache",
+      "olean_sha256": "6b79cd87646aff932c86b1e0bbcd1b0b63f9385eb9fe55d3927413b64c03352b",
+      "source_blob": "0ab34ba6d386bb84908efe66de6ce50108eacddc"
+    },
+    "Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.ExplicitFormulaErrorOfHostConditions": {
+      "mode": "authenticated cache",
+      "olean_sha256": "465bbaf665e39801cb826936181995d3fc35fa693916e69027371d6b93ece9d6",
+      "source_blob": "ed60b4b997cd4703713660b185b9e43fd95559a1"
+    },
+    "Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.PrimePairSizeCondition": {
+      "mode": "authenticated cache",
+      "olean_sha256": "fe2cd8a3677383d1aa175f8175b216289f5713dac8a6cde1ed73bd96491af9af",
+      "source_blob": "aee05935e7bac6625cd4e07fef4912722d796780"
+    },
+    "Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.ZsmulGeneratorEqZeroOfProjection": {
+      "mode": "authenticated cache",
+      "olean_sha256": "b36a40c2ac5ea8af0e598d918d290a99295eb1106bcfb8c76087b1d8c0636ef4",
+      "source_blob": "d13afca4924f8b277ae89b5d1d1e38d349ad99de"
+    },
+    "Formalism.Statement": {
+      "mode": "authenticated cache",
+      "olean_sha256": "4d92c742e703c16a769aaa4aef021cb7a2aba53b2ca383e439470309fdc400c1",
+      "source_blob": "30143706942aa349c77e4037537f381f9c8dbb25"
+    },
+    "Formalism.StatementOC": {
+      "mode": "authenticated cache",
+      "olean_sha256": "c87d718d86dad4c74c7d18a21e224c77ddd3729b284c04b6219cdd5a95bc8886",
+      "source_blob": "12ab19c0176bd4135c2b23a7ee3ac22888df0122"
+    },
+    "Formalism.TameInertiaTowers.StatementField": {
+      "mode": "authenticated cache",
+      "olean_sha256": "11870c47973c44e4c133f065a683afb9ca9e00484951ac95639f39173a895963",
+      "source_blob": "0d8984ee6e59434e27f1560110e63d18acf30b28"
+    },
+    "Formalism.TameInertiaTowers.StatementGroup": {
+      "mode": "authenticated cache",
+      "olean_sha256": "af521889b7e43cd1aa9549f29d9e8feec5fca063cb1d3cc96030213063b7a0a1",
+      "source_blob": "a9c329cd4a0a439dd75bfd7dc0271715ee27f0c0"
+    },
+    "ReciprocityTheory.GaloisValuations.ContinuousConstSMulQuotient": {
+      "mode": "authenticated cache",
+      "olean_sha256": "bfaf29881f94f0b8f3b0718f7ce441a3f3ed36964b6fa19a0a2913e67be7c2d7",
+      "source_blob": "cc7e6464c45dac01a68e484ce0eb884df25d9f4f"
+    },
+    "ReciprocityTheory.GaloisValuations.Global": {
+      "mode": "authenticated cache",
+      "olean_sha256": "ce449619cd414f95b4ca03d81f14688c6282f6a39d43a53a62151951628536ad",
+      "source_blob": "cb4c9727d3c18cfdf185fa0958a4f11d21a5a43f"
+    },
+    "ReciprocityTheory.GaloisValuations.GlobalA": {
+      "mode": "authenticated cache",
+      "olean_sha256": "62856f962bfd1d4cec6c47b9f9e2205244fa6791095436f26b884d710f554ad7",
+      "source_blob": "f193f6e2a17963f821834b9cdc5dee96c52cfbab"
+    },
+    "ReciprocityTheory.GaloisValuations.GlobalB": {
+      "mode": "authenticated cache",
+      "olean_sha256": "d89349a55d2e9ef0ab57a29284ae16a6a1bc93c36ae7f0805bcf34b58333564f",
+      "source_blob": "522d1e58b5accb8a165d6a392d5209c7b285cf65"
+    },
+    "ReciprocityTheory.GaloisValuations.SeparatedDvrSecondCohomologyMem": {
+      "mode": "authenticated cache",
+      "olean_sha256": "49d4fefb9b4a57a76e4c6589148e4fce5a0b261f6498507e4b066cbfd65f490c",
+      "source_blob": "5860d068c8ee7b7d2845256ce5e2871cf3c9c251"
+    },
+    "ReciprocityTheory.Hypotheses.GalCoh": {
+      "mode": "authenticated cache",
+      "olean_sha256": "4dc4f2b80c9dbb5c51df59788e42a6268b7bfa327082d50eace0e14407784c70",
+      "source_blob": "a4e5044d290790dfc54db004228d49cd9fdb77e5"
+    },
+    "ReciprocityTheory.Hypotheses.GalCohDefs": {
+      "mode": "authenticated cache",
+      "olean_sha256": "a8d2674268c62c33d82ccfd9835c2032cfceb66623d105366d0b2077922f09cd",
+      "source_blob": "ac6952d0f1b0e6f8cbc15cd6e662ba1848818cc3"
+    }
+  },
+  "pin": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "rejected_direct_positive_membership": "Control.lean:5:55: error: Type mismatch\n  h\nhas type\n  \u2203 E, FirstBound 3 R c L 64 E\nbut is expected to have type\n  \u2203 E, 1 \u2208 E \u2227 FirstBound 3 R c L 64 E",
+  "replays": {
+    "Development.AutomorphicArithmetic.AutomorphicVarieties.LayeredIsomorphisms.Exc": "replaying Development.AutomorphicArithmetic.AutomorphicVarieties.LayeredIsomorphisms.Exc",
+    "Development.AutomorphicArithmetic.AutomorphicVarieties.NumberFieldTowers.XTwApplyApply": "replaying Development.AutomorphicArithmetic.AutomorphicVarieties.NumberFieldTowers.XTwApplyApply",
+    "SlotThree": "replaying SlotThree"
+  },
+  "toolchain": {
+    "lean": "819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+    "packages": {
+      "Cli": "6130a47896ce867c6a4a55373441e59e565bad0f",
+      "LeanSearchClient": "5f4d51b81cbd3f6b32b156bfad9056621a040404",
+      "Qq": "92c15be17b7caf78c2ad767ec40f89052d908d81",
+      "aesop": "3448c0bcc5ce01b2d1546e483ec3620e32df3d0e",
+      "batteries": "4488d40d070b9700d4d5a6aa342f0d40c31b2a2d",
+      "importGraph": "16f02aa7642864af59f1ff0e384a015994db9118",
+      "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+      "plausible": "b7eb3304aeae834b12dda98993a37f6a41f6f0bb",
+      "proofwidgets": "4be2e3d5087eeb272cf5a8853b8f9dd025ef5957"
+    },
+    "version": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+  }
+}
