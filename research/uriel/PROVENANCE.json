@@ -1,0 +1,61 @@
+{
+  "prepared_at_utc": "2026-11-22T17:47:45.253332+00:00",
+  "purpose": "Source preservation and research; not independent proof verification.",
+  "upstream_url": "https://github.com/leanprover-community/riemann-hypothesis.git",
+  "original_announcement": "https://alpo.ge/remark.pdf",
+  "published_baseline": {
+    "commit": "40e56bab026552e089d7afcfeff08d2defb9c005",
+    "tree": "e517b335d21898fd2506ad538a1e1775c0aaa4e4",
+    "lean_toolchain": "leanprover/lean4:v4.33.1",
+    "tracked_files": 175190,
+    "lean_source_files": 175187,
+    "key_file_sha256": {
+      "lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+      "lake-manifest.json": "fee57ee9ed399d0a638ca955e5ad40a37a36eeb9b6dfd9f5964114fa7bbe4774",
+      "lakefile.toml": "b831ad8cac0babb7bf713433259bdfe5163e58c90734e86d71536d4e30ddec4c",
+      "src/Main.lean": "017645ca448f2fd1f6fd5c4c2cb2c6e96e472725be13f6e180ca6e1574360939",
+      "src/Statements.lean": "79ef7ca776e42abe1f46caee13ea09bd19f1e2d0b1620d8d5d200258f33b47bf"
+    }
+  },
+  "community_snapshot": {
+    "commit": "c259b55f5b1e0c29f82abf235e21a48ad2f9e34e",
+    "tree": "ec3c3638728c2c5f6d3873f1c99567748ab042b0",
+    "lean_toolchain": "leanprover/lean4:v4.36.0",
+    "tracked_files": 149495,
+    "lean_source_files": 149405,
+    "key_file_sha256": {
+      "lean-toolchain": "582a63f8f9c5128067b688778c1051cf1464c3ca9d57b9325025c051c29b774a",
+      "lake-manifest.json": "ee003c5c7a9b2b2a82a142b6633916661c07117199dd143d94d1af63910237df",
+      "lakefile.toml": "e12dd96eb155851de5107571dbfc959e5d9b230ead90331b4778b55b048590bb",
+      "src/Main.lean": "fb2d5fe89a9dfcff8ba95fa5703c865254f8564af06d99dec73304f458818432",
+      "src/Statements.lean": "3ab58a3af2384def08e6f71531c33939a83a1408e31ac5b0e75bf4afa488a463"
+    }
+  },
+  "research_branch": "research/uriel",
+  "research_directory": "research/uriel",
+  "upstream_source_modified": false,
+  "checks_performed": [
+    "Complete Git clone without shallow history",
+    "Published baseline commit exists locally",
+    "Clean upstream checkout before research notes",
+    "Recorded Git trees, file counts, toolchains and selected file SHA-256 values"
+  ],
+  "checks_not_performed": [
+    "Independent complete Lean build",
+    "Independent proof-kernel replay",
+    "Independent arithmetic-core audit"
+  ],
+  "external_verification_records": [
+    {
+      "url": "https://leanprover-community.github.io/blog/posts/riemann-hypothesis/",
+      "published_date": "2026-11-21",
+      "scope": "Reported acceptance of original submitted proof by Lean and Mathlib communities"
+    },
+    {
+      "url": "https://math.mit.edu/~drew/grh/",
+      "observed_record_update_utc": "2026-11-22T16:20:00Z",
+      "scope": "External reported checks of original submission; not a local run"
+    }
+  ],
+  "license_note": "Upstream states the original submission was published without a license. Existing notices and author attribution are preserved; no new license is applied to imported material."
+}
