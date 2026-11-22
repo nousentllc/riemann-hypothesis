@@ -2,7 +2,7 @@
 
 This directory contains our reading notes and prospective experiments on Levent Alpöge's Riemann Hypothesis formalization and the community's subsequent verification and simplification work.
 
-Start with [RESEARCH_NOTES.md](RESEARCH_NOTES.md). Exact source and verification provenance is recorded in [PROVENANCE.json](PROVENANCE.json).
+Start with [PROOF_CONTEXT.md](PROOF_CONTEXT.md), which reconstructs selected analytic, arithmetic, cohomological, and covolume arguments at the original source pin. Its companion traces and [SOURCE_TRACE.json](SOURCE_TRACE.json) record the inspected declarations. The earlier [RESEARCH_NOTES.md](RESEARCH_NOTES.md) is retained as an initial, more limited reading. Import provenance is recorded in [PROVENANCE.json](PROVENANCE.json).
 
 ## Baselines
 
@@ -12,13 +12,13 @@ Start with [RESEARCH_NOTES.md](RESEARCH_NOTES.md). Exact source and verification
 
 The original source remains reachable through Git history and a dedicated local branch. Do not equate a community checkout or one of our research commits with the original release.
 
-## Initial research sequence
+## Current research phase
 
-1. Trace the prime-window criterion through the analytic lemmas to the five public theorem statements. Record exact hypotheses and dependencies.
-2. Reconstruct the relation between theta-lift multiplicity, arithmetic divisibility, size bounds, and the required prime-sum estimate. Mark each explanatory claim with its original source declaration.
-3. Test whether shorter explanations preserve hypotheses, quantifier order, and the reasoning needed to rule out counterexamples. Keep formal evidence and explanatory prose separately identifiable.
+The current task is a deeper mathematical reading of the proof. Proposed applications to AI memory, representation, or governance are deferred until the relevant arguments and assumptions are understood.
 
-Any experiments concerning AI memory, calibration, or governance need their own assumptions and validation. The Riemann result establishes no theorem about those systems.
+The latest notes reconstruct the Mellin-transform and localized-Landau mechanism, the actual arithmetic error bracket and exponent losses, a projection/slope/covolume subargument, and the finite-exception logic behind cohomological windows. They also identify the deeper automorphic and arithmetic-geometric dependencies that remain only traced.
+
+The original source is always read at its pinned commit. A source reading, an algebraic check, a proved conditional implication, and an independently replayed complete proof are recorded as different levels of evidence.
 
 ## Verification status
 

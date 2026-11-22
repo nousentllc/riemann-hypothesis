@@ -1,0 +1,454 @@
+{
+  "prepared_utc": "2026-11-22T18:32:07.038803+00:00",
+  "source_repository": "https://github.com/leanprover-community/riemann-hypothesis",
+  "source_commit": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "working_branch": "research/uriel",
+  "method": "git show at original pin; selected proof-body and interface readings by the research team; elementary algebra checked separately",
+  "scope": "This index records selected inspected files. It is neither the full theorem dependency closure nor a certification of every declaration in the indexed files. Line counts are file metadata, not amounts independently audited.",
+  "full_lean_build": false,
+  "full_kernel_replay": false,
+  "external_verification_record": "https://math.mit.edu/~drew/grh/",
+  "external_record_last_updated_utc": "2026-11-22T16:20:00Z",
+  "files": [
+    {
+      "path": "src/Development/AbelianVarietyTheory/Definitions/Divisors/NormNegCmConstantEqAtAllEmbeddings.lean",
+      "git_blob_sha": "74732888b09b6ffb3947fa3134f508d851e8ccb2",
+      "sha256": "d07c8d791d45bd5f9a8b4e9fd99192dd1a0b8fc61c0471e06c98fc5f96da98c1",
+      "bytes": 33128,
+      "lines": 593,
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Definitions/Divisors/NormNegCmConstantEqAtAllEmbeddings.lean"
+    },
+    {
+      "path": "src/Development/AbelianVarietyTheory/Definitions/GlobalTwisting/PairRowIffQdRows.lean",
+      "git_blob_sha": "688162690ac7cbfe620037fcee8e451e7116f45b",
+      "sha256": "ce62bded2b02505b79892b0593c99e266bfadfba21574e84470ce1f1957b087f",
+      "bytes": 11283,
+      "lines": 220,
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Definitions/GlobalTwisting/PairRowIffQdRows.lean"
+    },
+    {
+      "path": "src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CovolumeFromGramAndBounds.lean",
+      "git_blob_sha": "bdb5d891bb3f738cb8cb8c61218ce2e2863630a4",
+      "sha256": "840e9bdd6a0114433a9a8a7b42c52cc6f69cd5ab6604b3fa95750e3c580e90a7",
+      "bytes": 5827,
+      "lines": 114,
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CovolumeFromGramAndBounds.lean"
+    },
+    {
+      "path": "src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/MajAtAddRight.lean",
+      "git_blob_sha": "333507ec0c9cfc17d024a01ee81f24d74171e4e9",
+      "sha256": "6a1ee253147d270c21ed5f2b763eca2d8b23082f8dc3307ed1abf217fd4efae7",
+      "bytes": 7536,
+      "lines": 144,
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/MajAtAddRight.lean"
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/CMFieldExponentialBounds/AdmissibleOfPageN.lean",
+      "git_blob_sha": "5afd609c06ffbef90f5df59e9915343c913c6257",
+      "sha256": "ded642308ff9cd83eed14643f20899986c271c73f2ee900bccf6f7a32f3b350d",
+      "bytes": 7504,
+      "lines": 137,
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/AutomorphicVarieties/CMFieldExponentialBounds/AdmissibleOfPageN.lean"
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/HeightAndVanishing/JointWinOfCounts.lean",
+      "git_blob_sha": "2f86e49421d870aa158af11ad1388da80b5d70d1",
+      "sha256": "3c71cf0dabc617e3d1ab9fc04939c311e4242912407cdfbc71c8e0764563d558",
+      "bytes": 2436,
+      "lines": 35,
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/AutomorphicVarieties/HeightAndVanishing/JointWinOfCounts.lean"
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/PartA.lean",
+      "git_blob_sha": "c41983a3d9483591b7d7eedfb3b672d72cde101a",
+      "sha256": "73c1660109e43f18debb3b2fd6ccdd4f7022c79c7c8eb7467ca7385cb5e72eb1",
+      "bytes": 4637,
+      "lines": 78,
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/PartA.lean"
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/PartB.lean",
+      "git_blob_sha": "cd8a7cae15738f4054f543cddf4af595a6d1f7dc",
+      "sha256": "4b6133d7cc4a262e1a96e0b0e4bf48f7ce9fdc6d4e8dc4102d3ce039be4055ab",
+      "bytes": 5922,
+      "lines": 95,
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/PartB.lean"
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/SecondBound.lean",
+      "git_blob_sha": "a2e12927214cad3ce637b33adb435f42992c1c65",
+      "sha256": "d0e3d59ca3196bc37ccf563afbe6829d6497e607c533b7984f27d5b8c91a29d6",
+      "bytes": 3291,
+      "lines": 54,
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/SecondBound.lean"
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/ThmBabOf.lean",
+      "git_blob_sha": "d4b0c37c79996fca0b0d30fb53fe798eceb90cff",
+      "sha256": "c263c5de2b26c9ade93525ea218afa71304f44a9916bc97b7e2573f5fd61e33b",
+      "bytes": 6132,
+      "lines": 103,
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/ThmBabOf.lean"
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/ThmBabOfLemmaK.lean",
+      "git_blob_sha": "20c347251400d31a39cf68f964d6648d87f3dda4",
+      "sha256": "8c18862cdb0e969e14e8e7bb0b429a60f3be96587f907194d6604276d692a3ca",
+      "bytes": 776,
+      "lines": 14,
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/ThmBabOfLemmaK.lean"
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/Window.lean",
+      "git_blob_sha": "386bec7e22094a4309c4a8e2846435357f703375",
+      "sha256": "354e0ad1b87c54c46a40486a037d0a10b598ffc1b1d8e840e4f80560090a50be",
+      "bytes": 2173,
+      "lines": 43,
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/Window.lean"
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/Window1.lean",
+      "git_blob_sha": "3d39aa0fc809fe8408a55186f7f4c4364d0a7f4c",
+      "sha256": "9b80fe0dd466a58b0fae61b8d875bce2c40be17d56341c072a95462c41778d88",
+      "bytes": 2288,
+      "lines": 58,
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/Window1.lean"
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/HVCore.lean",
+      "git_blob_sha": "f4b900eb48df14f16eea03d08b7d9ef077f3d4a1",
+      "sha256": "695927bf54a16053ae211e0d1f7ad26217806520d60f884459f9c0d7aac1460d",
+      "bytes": 2281,
+      "lines": 25,
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/HVCore.lean"
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/PrimeSetBoundDataOfPrimitiveChar.lean",
+      "git_blob_sha": "52224122dd8f9deefef473151d716984f3e1f1ff",
+      "sha256": "8d78f096654f4cdd977c71b1b163bb0883c53a295d0928816d96b0d6a8362cf1",
+      "bytes": 8797,
+      "lines": 160,
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/AutomorphicVarieties/PrimeSetBoundDataOfPrimitiveChar.lean"
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/ClaimStrip.lean",
+      "git_blob_sha": "60b3e96d81c2cb7d821d14c978b38bd9fd0d97f8",
+      "sha256": "74498552f19df4bd5b3c296ed247d25d40cabd1057647dd4db1ee7ba1c57ea03",
+      "bytes": 5193,
+      "lines": 104,
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/CharacterBoxes/ClaimStrip.lean"
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/DivinNOfHypV.lean",
+      "git_blob_sha": "5321920359316653b7627951429a6d7555c311b0",
+      "sha256": "cefdce360890e26405199ef8db01d6b0c7e044c4ebebeb6bbcfd23de6148bde0",
+      "bytes": 6424,
+      "lines": 134,
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/CharacterBoxes/DivinNOfHypV.lean"
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/ExistsPageN.lean",
+      "git_blob_sha": "398eb8ed3528aa2666e9d3b2b09a582ad4390dd7",
+      "sha256": "732c3347fb02e410cf9af8831afdbba1d230fc522c3dbbccdb4b708e5dde73db",
+      "bytes": 3776,
+      "lines": 81,
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/CharacterBoxes/ExistsPageN.lean"
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean",
+      "git_blob_sha": "ee340012ab19713a8acfecf8adc6a331cbc2f1a4",
+      "sha256": "a5f71e107087e37b2c598709795b0f56c0a6741cf1e8ab99ee1f97e2fce0fe34",
+      "bytes": 1213,
+      "lines": 14,
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean"
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/DedekindLFunctions/CharFamily.lean",
+      "git_blob_sha": "81c8dfd66d910d083d5bc88c664c7917fdbdfe96",
+      "sha256": "ca0ca8acb80ff4ffc36896204650f9ca16167193a22c36a140402b27cfc8c336",
+      "bytes": 1636,
+      "lines": 49,
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/DedekindLFunctions/CharFamily.lean"
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChCore.lean",
+      "git_blob_sha": "878f5077bc382426c7da988e5a375b85deeaa7de",
+      "sha256": "80ceae1e3c5728267fe7e7848342ca2d754c5363e9b6d8ae2d628c70f26772e0",
+      "bytes": 25006,
+      "lines": 446,
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChCore.lean"
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChTop.lean",
+      "git_blob_sha": "ce06a34a9e0b1b332e10d3b7efb04a06e9ab77f5",
+      "sha256": "9be04f7335746cae6bbdf52a813ae6713a90bf2a555eefc56f538bfd96af954f",
+      "bytes": 3793,
+      "lines": 76,
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ChTop.lean"
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/IteratedDerivLaplace.lean",
+      "git_blob_sha": "c1c05ec801b258064f1e14fb9d7e624eb7345382",
+      "sha256": "3beee9b6dbdb25ae9e3c6fecb83e21cfee34c01e2065b5c5c383ce725f85189b",
+      "bytes": 5641,
+      "lines": 109,
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/IteratedDerivLaplace.lean"
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/LandauDichotomy.lean",
+      "git_blob_sha": "947dae363ce629febcba27b1b70355438f8639a0",
+      "sha256": "f358ff8aecbe34019afe20224ae9a5890c99d55f6b6f7d838c1277e3b1d255ad",
+      "bytes": 4357,
+      "lines": 91,
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/LandauDichotomy.lean"
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/LandauGrowthContra.lean",
+      "git_blob_sha": "bf6f3c703e6ae4f7fa37d4a7fd59eaa2e2aeeeda",
+      "sha256": "2f3e6d7a5d2e7b1cf2b0b92c82f50b2ebb661ab8fb519092795fcade18f88df5",
+      "bytes": 1838,
+      "lines": 44,
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/LandauGrowthContra.lean"
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/LandauNearest.lean",
+      "git_blob_sha": "6a177498987e1ef453727131bf2004bc797a01a2",
+      "sha256": "ae084dbb3f161d2dd369ff224f2117b818243b501ca596d3da2c92d83b65a67c",
+      "bytes": 5357,
+      "lines": 113,
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/LandauNearest.lean"
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/LandauPoleAsym.lean",
+      "git_blob_sha": "e5ec846b37b8879944576a38c83013814a6f1fe7",
+      "sha256": "c70dba4115698a4ee22654f0aaf213b886afe28a2d1d44a8e4370aec72fc3944",
+      "bytes": 4189,
+      "lines": 83,
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/LandauPoleAsym.lean"
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/WindowHypOfRpow.lean",
+      "git_blob_sha": "dde1c159371538875c28374574ca7e452b0450d9",
+      "sha256": "f9238ed2d6c67f1cbe383a33cc3759c00bed31b97a10253fbee59279290c6a5c",
+      "bytes": 2999,
+      "lines": 61,
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/WindowHypOfRpow.lean"
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/landauTails.lean",
+      "git_blob_sha": "0e55797bac5320acf02d9acc832ca53df716e436",
+      "sha256": "5700277144d95eea3d90d3d4e2efa3743c3d892753ed41ed27f6f38a2e92708c",
+      "bytes": 6721,
+      "lines": 135,
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/landauTails.lean"
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/landauWindow.lean",
+      "git_blob_sha": "7915058f10b33a52652290cd887cbccdc00e676a",
+      "sha256": "57f49606e6ffd8cab45672d8d4b9c7ded6c0b6b0d140821cc51b5baeb4f67ab5",
+      "bytes": 9681,
+      "lines": 170,
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/landauWindow.lean"
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/landauWindowIneq.lean",
+      "git_blob_sha": "cda93b0185260d72395d2ef2c90314e0fa7128ef",
+      "sha256": "e3d5d760bcefe1242d4f5b0ced44fc055f1fa8dfe048a2222cf2c39ae812e59c",
+      "bytes": 6547,
+      "lines": 115,
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/landauWindowIneq.lean"
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/lemmaL.lean",
+      "git_blob_sha": "6c37aebd05121b6d68e3532d8529f0ce8357386f",
+      "sha256": "4ce94b876b46e0a3b038c4bfe9ade933c7225170bf07421109ee862fd5941e3d",
+      "bytes": 1053,
+      "lines": 26,
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/lemmaL.lean"
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/mellinGchiModOne.lean",
+      "git_blob_sha": "11776c96437e9a4e53fbc3ff06c5e2e8e3c640bc",
+      "sha256": "57054bee6a57d89958d6a4d862f74083e68afea8ce0af701b49881e2043767c5",
+      "bytes": 9533,
+      "lines": 203,
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/mellinGchiModOne.lean"
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/mellinGchiOfNeOne.lean",
+      "git_blob_sha": "675a25d278977948c8327f0e1e2e31fb3a990a7d",
+      "sha256": "22192caa33f0e9b840298329573ca3ea15e3e5d9e60624efcda3562f8ddff26a",
+      "bytes": 6556,
+      "lines": 146,
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/mellinGchiOfNeOne.lean"
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/poleData.lean",
+      "git_blob_sha": "1f7fdc4409d2f1185700764c51d5c17a907d76e1",
+      "sha256": "78fb8ae795a01ad687440b035c377a9fde71088c726d1ac862ba0fd8bb1fc3c0",
+      "bytes": 20079,
+      "lines": 404,
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/poleData.lean"
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauZeroFreeCriterion.lean",
+      "git_blob_sha": "54fd0de979e0dad6ac7709ad8ecbec8a29e21872",
+      "sha256": "d4c5a8ba961bb0e91121212b697217904bf0ba56c2e89c00435fb7ee416a22d7",
+      "bytes": 2678,
+      "lines": 66,
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauZeroFreeCriterion.lean"
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/PrimitiveCosets/CoreGm.lean",
+      "git_blob_sha": "3ba7a590e84c5993882ea6c5dcf9fdbed5f07d4d",
+      "sha256": "73abeaad38ed40bde0c2f974f53cae9d851e72d23ae389dea129b2bbddc58bc8",
+      "bytes": 4613,
+      "lines": 74,
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/PrimitiveCosets/CoreGm.lean"
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/PrimitiveCosets/Imports.lean",
+      "git_blob_sha": "2dc9b4e690951c66ffe443e279fcada259bcce13",
+      "sha256": "9d38c47879d3c02199f747433f009ba4cf6eb44d7480f031e5763a2ee271950e",
+      "bytes": 1122,
+      "lines": 19,
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/PrimitiveCosets/Imports.lean"
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/CovolXOfSteps.lean",
+      "git_blob_sha": "7ddbd133b4503eb235422ebc9e46641e1da5312f",
+      "sha256": "91523ca83062a562c25a77e794e99d2028103fce290ca0749392aed99ea38c75",
+      "bytes": 2912,
+      "lines": 43,
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/CovolXOfSteps.lean"
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean",
+      "git_blob_sha": "a13ba1f8c38d4dbf2ddd809fbf9610a007936c24",
+      "sha256": "246b74eeb03dae250c45b46c155b3590cb53c2bac86f5e35f4b74338db487068",
+      "bytes": 97393,
+      "lines": 814,
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean"
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean",
+      "git_blob_sha": "42abe20ee235820aaa924dbabce5e1d2c2540380",
+      "sha256": "e761e876e3236895eec1b67b5a2118846ddfcc6883eed367ac6cc78523da15f2",
+      "bytes": 8752,
+      "lines": 76,
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean"
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopCovolG.lean",
+      "git_blob_sha": "62742fab059140fb67f88b2c1e18abd6078992b3",
+      "sha256": "f29362501bf62b9b6a7eb933aa0bdf9065414ecca014cf4a9da2970d791b4928",
+      "bytes": 6400,
+      "lines": 61,
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopCovolG.lean"
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopCovolSlim2Use.lean",
+      "git_blob_sha": "0e1bad41f4b165c0d9b1693f419530309e1da5ba",
+      "sha256": "545f4dbcc8b67e0d001951fcad7abaa8250d335a64a6950adf5ce69fee5f30a0",
+      "bytes": 2836,
+      "lines": 25,
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopCovolSlim2Use.lean"
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopPlug.lean",
+      "git_blob_sha": "c51cb6b5bd4bf2944ace89e00a2990da16bd519a",
+      "sha256": "7d1d7972a4abe1284c5e4da9dd65a6eb605b06efb5e993b298fe5aaed88e9adf",
+      "bytes": 1667,
+      "lines": 19,
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopPlug.lean"
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopShape.lean",
+      "git_blob_sha": "3f791ca182db235c4a8ff582d3f038019320d5cd",
+      "sha256": "9647d4cbe444f79de90c7a5371801e83c58a040499bf03fd61faf37be9e6eaa3",
+      "bytes": 6555,
+      "lines": 57,
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopShape.lean"
+    },
+    {
+      "path": "src/Formalism/GaloisCohomology/Statement.lean",
+      "git_blob_sha": "0799e9bcd8aa191ffaa90ab005453a53381bacea",
+      "sha256": "67dc5835eb4b337dfbbbf7f0accd1198b59793ae70f5af34421a7c35410d632c",
+      "bytes": 8427,
+      "lines": 186,
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/GaloisCohomology/Statement.lean"
+    },
+    {
+      "path": "src/Formalism/LocalRingCardinality/DataParams₂.lean",
+      "git_blob_sha": "50914500995df91e2646d91a6c5c99a7e603a51b",
+      "sha256": "39d84d7e7db5196715f955ac44f45e61a23fcf4ebd5065ca41444f836efd3099",
+      "bytes": 10441,
+      "lines": 274,
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/LocalRingCardinality/DataParams₂.lean"
+    },
+    {
+      "path": "src/Formalism/SizeWindowBrackets/ChainSlopeWindows/LevelOfCongruence.lean",
+      "git_blob_sha": "e08edc360cdf8d5d95d82ef1b805a8ea1a6151ef",
+      "sha256": "b28d36820d558a77dd1b3d15fa0d8f13b130081b82f9439cc61bc676a137efd4",
+      "bytes": 12049,
+      "lines": 246,
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/SizeWindowBrackets/ChainSlopeWindows/LevelOfCongruence.lean"
+    },
+    {
+      "path": "src/Formalism/SizeWindowBrackets/ChainSlopeWindows/LipschitzWeightAndMinimum.lean",
+      "git_blob_sha": "4012be2d32b5475bb420d1cd8da4aa1ebb4c6e6b",
+      "sha256": "90e749885560a742ca12305e0f028da32a95ef10bb42580986306387be48894d",
+      "bytes": 52352,
+      "lines": 993,
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/SizeWindowBrackets/ChainSlopeWindows/LipschitzWeightAndMinimum.lean"
+    },
+    {
+      "path": "src/Formalism/SizeWindowBrackets/ChainSlopeWindows/PChain.lean",
+      "git_blob_sha": "57559bc6dedbabbac7365c9f31fbbab09164edca",
+      "sha256": "be3c0f0ead3ebf13bc147c927c79aa5470d45a67739249d3b04a40d17281bf0d",
+      "bytes": 78841,
+      "lines": 1659,
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/SizeWindowBrackets/ChainSlopeWindows/PChain.lean"
+    },
+    {
+      "path": "src/Formalism/SizeWindowBrackets/ChainSlopeWindows/SubThreeMulLogTwoLe.lean",
+      "git_blob_sha": "28ee72c3eb9d128f39780d53241ebb18ab723374",
+      "sha256": "fd4d5681f52473477e8e04e8aed6dc14d81bc7daf63b354037a02d585dcdd00a",
+      "bytes": 31058,
+      "lines": 614,
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/SizeWindowBrackets/ChainSlopeWindows/SubThreeMulLogTwoLe.lean"
+    },
+    {
+      "path": "src/Formalism/SizeWindowBrackets/ErrorFormsWeakWindowsFalse.lean",
+      "git_blob_sha": "1d1d179d111b5aa668893327264648558f30fdb6",
+      "sha256": "8b8613a5e3934127fb8b52ba402e658414662f63bff8f0e9fb52bedddd1173f2",
+      "bytes": 8391,
+      "lines": 165,
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/SizeWindowBrackets/ErrorFormsWeakWindowsFalse.lean"
+    },
+    {
+      "path": "src/Main.lean",
+      "git_blob_sha": "dbd5db70bc11b35f18fa5751216ab335321e7bfc",
+      "sha256": "017645ca448f2fd1f6fd5c4c2cb2c6e96e472725be13f6e180ca6e1574360939",
+      "bytes": 433,
+      "lines": 12,
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Main.lean"
+    },
+    {
+      "path": "src/Statements.lean",
+      "git_blob_sha": "1cd1bce93344065936b2b392b23306254e0785ef",
+      "sha256": "79ef7ca776e42abe1f46caee13ea09bd19f1e2d0b1620d8d5d200258f33b47bf",
+      "bytes": 783,
+      "lines": 16,
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Statements.lean"
+    },
+    {
+      "path": "src/Supplements/Kernels/MainTheorems.lean",
+      "git_blob_sha": "6a542d7ce969a791fd12ce575f587e6bc29044bf",
+      "sha256": "1e734200b9b6a6d2a968743bd0c433d614bd6606cf538ac6d4f0ff70044dde53",
+      "bytes": 740,
+      "lines": 16,
+      "source_url": "https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Supplements/Kernels/MainTheorems.lean"
+    }
+  ]
+}

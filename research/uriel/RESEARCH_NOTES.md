@@ -1,5 +1,7 @@
 # Riemann Hypothesis proof archive: research entry
 
+**Reading status:** This was our initial selected-source pass. [PROOF_CONTEXT.md](PROOF_CONTEXT.md) supersedes its immediate agenda and provides a deeper reconstruction. Applications are deferred while the proof is studied.
+
 **Prepared:** 22 November 2026.  
 **Original source pin:** `40e56bab026552e089d7afcfeff08d2defb9c005`.  
 **Scope:** Levent Alpöge's announced proof with Claude, covering ordinary RH and the corresponding statements for Dirichlet L-functions. This note records selected source readings and research questions; it does not certify the complete proof or extend its conclusions to other L-functions.
@@ -58,7 +60,7 @@ The [independent architecture guide](https://nasqret.github.io/riemann-rev/guide
 
 The original [poleData.lean](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/poleData.lean) constructs a positive weighted sum of zero multiplicities, `S > 0`, and residue `-S/[rho(rho-1)]`. Positive weights prevent cancellation of the common complex factor. For a real zero in `(0,1)` the residue is positive; for general complex zeros it need not be real or positive. Positivity of `S` establishes noncancellation.
 
-## Research questions and next work
+## Initial research questions (immediate agenda superseded)
 
 1. **Extract the smallest useful obligation.** Reconstruct the dependency path from (W) to RH, recording definitions, assumptions, and the exact quantified conclusion. Determine which analytic lemmas remain useful independently of the arithmetic construction.
 2. **Separate mechanisms from naming.** Identify the precise property that each theta lift preserves or strengthens. Check whether explanatory terms such as multiplicity match the actual formal declarations.

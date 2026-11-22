@@ -1,0 +1,12 @@
+{
+  "source_pin": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "sympy_version": "1.14.0",
+  "normalization_residual": "0",
+  "weak_model_x": 100000,
+  "weak_model_err_text": "100003",
+  "amplified_lower_bound": "100000000000000000000000000000000000000000000000000",
+  "proposed_weak_upper_bound": "1000030000000000000000000000000",
+  "lower_to_upper_ratio_exact": "10000000000000000000000000/100003",
+  "scope": "algebraic rearrangement and final numerical contradiction only",
+  "lean_build_or_kernel_replay": false
+}
