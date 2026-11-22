@@ -1,0 +1,39 @@
+Traceback (most recent call last):
+  File "/Users/jc/.codex/.chatgpt-projects/g-p-68bd11548cb8819196e9c00be786382c/riemann-experiments/research/uriel/experiments/initial/run.py", line 15, in <module>
+    from mechanisms import analytic,arithmetic,cohomology,covolume
+  File "/Users/jc/.codex/.chatgpt-projects/g-p-68bd11548cb8819196e9c00be786382c/riemann-experiments/research/uriel/experiments/initial/mechanisms.py", line 9, in <module>
+    from scipy.integrate import quad
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/scipy/integrate/__init__.py", line 103, in <module>
+    from ._quadrature import *
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/scipy/integrate/_quadrature.py", line 8, in <module>
+    from scipy.special import roots_legendre
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/scipy/special/__init__.py", line 834, in <module>
+    from . import _orthogonal
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/scipy/special/_orthogonal.py", line 81, in <module>
+    from scipy import linalg
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/scipy/__init__.py", line 134, in __getattr__
+    return _importlib.import_module(f'scipy.{name}')
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/importlib/__init__.py", line 88, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/scipy/linalg/__init__.py", line 222, in <module>
+    from ._sketches import *
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/scipy/linalg/_sketches.py", line 10, in <module>
+    from scipy.sparse import csc_matrix
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/scipy/sparse/__init__.py", line 315, in <module>
+    from . import csgraph
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/scipy/sparse/csgraph/__init__.py", line 187, in <module>
+    from ._laplacian import laplacian
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/scipy/sparse/csgraph/_laplacian.py", line 7, in <module>
+    from scipy.sparse.linalg import LinearOperator
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/scipy/sparse/linalg/__init__.py", line 134, in <module>
+    from ._eigen import *
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/scipy/sparse/linalg/_eigen/__init__.py", line 11, in <module>
+    from ._svds import svds
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/scipy/sparse/linalg/_eigen/_svds.py", line 10, in <module>
+    from scipy.sparse.linalg._svdp import _svdp
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/scipy/sparse/linalg/_svdp.py", line 23, in <module>
+    from ._propack import _spropack  # type: ignore[attr-defined]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ImportError: dlopen(/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/scipy/sparse/linalg/_propack/_spropack.cpython-313-darwin.so, 0x0002): tried: '/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/scipy/sparse/linalg/_propack/_spropack.cpython-313-darwin.so' (section '__DATA/__thread_bss' has a zero-fill section type, but offset field is not zero), '/System/Volumes/Preboot/Cryptexes/OS/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/scipy/sparse/linalg/_propack/_spropack.cpython-313-darwin.so' (no such file), '/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/scipy/sparse/linalg/_propack/_spropack.cpython-313-darwin.so' (section '__DATA/__thread_bss' has a zero-fill section type, but offset field is not zero)
