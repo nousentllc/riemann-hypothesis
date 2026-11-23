@@ -1,0 +1,700 @@
+{
+  "pin": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "sources": [
+    {
+      "source": "src/Development/AbelianVarietyTheory/Definitions/GlobalTwisting/PairRowIffQdRows.lean",
+      "git_blob": "688162690ac7cbfe620037fcee8e451e7116f45b",
+      "sha256": "ce62bded2b02505b79892b0593c99e266bfadfba21574e84470ce1f1957b087f",
+      "lines": 220,
+      "cited_at": [
+        [
+          "Which_Primes_Carry_the_Allowance.tex",
+          28,
+          28
+        ],
+        [
+          "evidence/CLASS_TRACE.md",
+          28,
+          84
+        ]
+      ]
+    },
+    {
+      "source": "src/Development/AbelianVarietyTheory/Definitions/GlobalTwisting/ThinScalesIffHostBound.lean",
+      "git_blob": "1de433cc5ce2fa941ca72691bc75a3bccb667634",
+      "sha256": "413712d1bffa0ffc17a269690dbd21597d8eb1dd08452f943dfdcf535f607146",
+      "lines": 252,
+      "cited_at": [
+        [
+          "Which_Primes_Carry_the_Allowance.tex",
+          61,
+          61
+        ]
+      ]
+    },
+    {
+      "source": "src/Development/AbelianVarietyTheory/Definitions/GlobalTwisting/ZerosDisc.lean",
+      "git_blob": "23e05538f0493067c9c836f32453115a1a094d24",
+      "sha256": "77f9fb43606b6186d4196e7e1123c1e1d515617ec3bb99040505208e5eec01a8",
+      "lines": 47,
+      "cited_at": [
+        [
+          "evidence/DROP_TRACE.md",
+          20,
+          24
+        ]
+      ]
+    },
+    {
+      "source": "src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/BrunTitchmarshExistsConst.lean",
+      "git_blob": "6663ae78f9745b23505ca8c88a585bca1e1e06bd",
+      "sha256": "48f13eb32e8a0d95ef0a9c76d5a8753be9e676f9df06ab7aa8eec91f181d1b98",
+      "lines": 126,
+      "cited_at": [
+        [
+          "evidence/DROP_TRACE.md",
+          49,
+          55
+        ]
+      ]
+    },
+    {
+      "source": "src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/ExistsRefill.lean",
+      "git_blob": "dd09c1fa918d614dbb3fef0efb9ad090dfaac96a",
+      "sha256": "b7432a260d77d32cee24b8b05cb7c55cefaebfc63dedaa879701a780cb07c3ac",
+      "lines": 339,
+      "cited_at": [
+        [
+          "evidence/DROP_TRACE.md",
+          274,
+          325
+        ]
+      ]
+    },
+    {
+      "source": "src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/HostExistenceOfChoices.lean",
+      "git_blob": "8bac0d7fe38fa59332ddafc81291f1654e6ef5ca",
+      "sha256": "b87af0635834bc35f52f61667c73786d00547589011f6bbf043badddb2ca496b",
+      "lines": 322,
+      "cited_at": [
+        [
+          "evidence/CLASS_TRACE.md",
+          179,
+          197
+        ],
+        [
+          "evidence/CLASS_TRACE.md",
+          246,
+          285
+        ]
+      ]
+    },
+    {
+      "source": "src/Development/AutomorphicArithmetic/CharacterBoxes/PairRows.lean",
+      "git_blob": "f92f69d4f22ee8dd7bed5e32899838a3254eb54b",
+      "sha256": "d6127d2887d36c090ef5be5510babe63204c02f630c7a6fb3694dc7845d68bbb",
+      "lines": 387,
+      "cited_at": [
+        [
+          "evidence/CLASS_TRACE.md",
+          7,
+          65
+        ]
+      ]
+    },
+    {
+      "source": "src/Development/AutomorphicArithmetic/MeanSquareBounds/PrimeSetTwoBounds.lean",
+      "git_blob": "45616f33334b6ef360b18a8e64c0eb325f9463b8",
+      "sha256": "5add5a8d499ab3c7d84e64e3ea1c529d09b7ecc472a7fa82e700881196861ec2",
+      "lines": 76,
+      "cited_at": [
+        [
+          "evidence/CLASS_TRACE.md",
+          65,
+          72
+        ]
+      ]
+    },
+    {
+      "source": "src/Development/AutomorphicArithmetic/MeanSquareBounds/PsiThin.lean",
+      "git_blob": "9e669a084dd244d41a04f1b9f46ad13cd0b3426c",
+      "sha256": "8b29210bdb3d737657c887b08fb250fdd503d26ebaaffc33c3be16623660c101",
+      "lines": 423,
+      "cited_at": [
+        [
+          "Which_Primes_Carry_the_Allowance.tex",
+          385,
+          385
+        ],
+        [
+          "evidence/CLASS_TRACE.md",
+          385,
+          399
+        ]
+      ]
+    },
+    {
+      "source": "src/Development/AutomorphicArithmetic/MeanSquareBounds/Thin.lean",
+      "git_blob": "d322f531dc42b40bee2cddc76f83f53a2f592ba6",
+      "sha256": "d5aa96b15c21ff10d632117c3b76954759aab3302252056ce613a02c4272169d",
+      "lines": 51,
+      "cited_at": [
+        [
+          "evidence/CLASS_TRACE.md",
+          10,
+          18
+        ]
+      ]
+    },
+    {
+      "source": "src/Formalism/LocalRingCardinality/DataParams₂.lean",
+      "git_blob": "50914500995df91e2646d91a6c5c99a7e603a51b",
+      "sha256": "39d84d7e7db5196715f955ac44f45e61a23fcf4ebd5065ca41444f836efd3099",
+      "lines": 274,
+      "cited_at": [
+        [
+          "Which_Primes_Carry_the_Allowance.tex",
+          29,
+          29
+        ],
+        [
+          "evidence/CLASS_TRACE.md",
+          29,
+          45
+        ],
+        [
+          "evidence/DROP_TRACE.md",
+          39,
+          46
+        ]
+      ]
+    },
+    {
+      "source": "src/Formalism/LocalRingCardinality/HostCls.lean",
+      "git_blob": "a7a9b329340eab5175245043e0abd7656d7fe599",
+      "sha256": "e4ecf1988b1c90ef926e4d676cc503acbd6ac20c2f6f41f711b4d5475ae8526c",
+      "lines": 252,
+      "cited_at": [
+        [
+          "Which_Primes_Carry_the_Allowance.tex",
+          111,
+          111
+        ],
+        [
+          "evidence/CLASS_TRACE.md",
+          111,
+          145
+        ],
+        [
+          "evidence/CLASS_TRACE.md",
+          178,
+          207
+        ]
+      ]
+    },
+    {
+      "source": "src/Formalism/LocalToGlobal/GlobalTheory/LossRequirementsOfSmallShares.lean",
+      "git_blob": "287dcaae544bf078e47910aa5c9986ec501bdbd2",
+      "sha256": "26e56551dde5c2397897ba3d426b8d1db48c00c2847418fa427aa23b807a60a6",
+      "lines": 352,
+      "cited_at": [
+        [
+          "Which_Primes_Carry_the_Allowance.tex",
+          86,
+          86
+        ],
+        [
+          "evidence/DROP_TRACE.md",
+          41,
+          82
+        ],
+        [
+          "evidence/DROP_TRACE.md",
+          86,
+          133
+        ],
+        [
+          "evidence/DROP_TRACE.md",
+          309,
+          336
+        ]
+      ]
+    },
+    {
+      "source": "src/Formalism/LocalToGlobal/GlobalTheory/PowFourLtCeilThresholdPrime.lean",
+      "git_blob": "8166795ec6e846795d7272781119ee7d17d426c0",
+      "sha256": "940eebfa0d8e19a862e36af510c31e007e864ddf9f2a3e839918e733012ab31c",
+      "lines": 2216,
+      "cited_at": [
+        [
+          "README.md",
+          766,
+          815
+        ],
+        [
+          "evidence/DROP_TRACE.md",
+          92,
+          102
+        ],
+        [
+          "evidence/DROP_TRACE.md",
+          516,
+          523
+        ],
+        [
+          "evidence/DROP_TRACE.md",
+          579,
+          593
+        ],
+        [
+          "evidence/DROP_TRACE.md",
+          621,
+          659
+        ],
+        [
+          "evidence/DROP_TRACE.md",
+          659,
+          665
+        ],
+        [
+          "evidence/DROP_TRACE.md",
+          843,
+          895
+        ],
+        [
+          "evidence/DROP_TRACE.md",
+          1242,
+          1265
+        ]
+      ]
+    },
+    {
+      "source": "src/Formalism/LocalToGlobal/GlobalTheory/SuppSat.lean",
+      "git_blob": "80c1d0526b661eae74d87ec3b569d6a459e900ce",
+      "sha256": "47301a06ec1857f3b8e4e50ac7b7b3b0fba9efcbe468b888e18a41824f073f1b",
+      "lines": 145,
+      "cited_at": [
+        [
+          "README.md",
+          26,
+          70
+        ],
+        [
+          "Which_Primes_Carry_the_Allowance.tex",
+          26,
+          26
+        ],
+        [
+          "evidence/DROP_TRACE.md",
+          26,
+          47
+        ],
+        [
+          "evidence/DROP_TRACE.md",
+          73,
+          88
+        ]
+      ]
+    },
+    {
+      "source": "src/Formalism/PeriodIntegrals/ExplicitFormula.lean",
+      "git_blob": "64cc5260677d2744ed2513e36c2df408e01aedab",
+      "sha256": "42c23e43b1e392adabf7f31ae01cd6398c330212479cdc3e7c1b816104cc01c2",
+      "lines": 28,
+      "cited_at": [
+        [
+          "Which_Primes_Carry_the_Allowance.tex",
+          5,
+          5
+        ],
+        [
+          "evidence/CLASS_TRACE.md",
+          5,
+          11
+        ]
+      ]
+    },
+    {
+      "source": "src/Formalism/RankGapBounds/RankGapProofs/PmModulusFacts.lean",
+      "git_blob": "452dbc64517d7a5e1e8b2c7443fd8997a2ea476b",
+      "sha256": "091ea52dd47a21c139fcde10cf947a294efe689a040a2e23bc87a0162d26fc05",
+      "lines": 289,
+      "cited_at": [
+        [
+          "evidence/DROP_TRACE.md",
+          116,
+          134
+        ],
+        [
+          "evidence/DROP_TRACE.md",
+          231,
+          247
+        ]
+      ]
+    },
+    {
+      "source": "src/Formalism/SharpRestriction/ElevenLe.lean",
+      "git_blob": "75f2ab1404c69a5d1330671d96d8f6cd35e74e52",
+      "sha256": "65e8de4c64d63e9deb6c249289b357852279496fa8d14dd66a918a11989406db",
+      "lines": 145,
+      "cited_at": [
+        [
+          "evidence/DROP_TRACE.md",
+          11,
+          33
+        ],
+        [
+          "evidence/DROP_TRACE.md",
+          65,
+          72
+        ]
+      ]
+    },
+    {
+      "source": "src/Formalism/SharpRestriction/GlobalSchurBounds/GeneralLinearActions/FiltrationCocycleLiftCriterion.lean",
+      "git_blob": "7fdcc0d7a632caec8de1b70d957b459a2c3f5fde",
+      "sha256": "f547104b02cfa5b508b5d9fd489d7839de0d90c97d9634893644631224b72c67",
+      "lines": 106,
+      "cited_at": [
+        [
+          "Which_Primes_Carry_the_Allowance.tex",
+          15,
+          15
+        ],
+        [
+          "evidence/CLASS_TRACE.md",
+          36,
+          58
+        ]
+      ]
+    },
+    {
+      "source": "src/Formalism/SharpRestriction/GlobalSchurBounds/Joints.lean",
+      "git_blob": "fe720afd45992b45245906237880b8ab6bf8e04b",
+      "sha256": "529e5ccbc4021dc89fc14a16f863cc0efb6ca26836f5f7805b3799f35c31bfdb",
+      "lines": 1943,
+      "cited_at": [
+        [
+          "Which_Primes_Carry_the_Allowance.tex",
+          982,
+          982
+        ],
+        [
+          "evidence/CLASS_TRACE.md",
+          947,
+          974
+        ],
+        [
+          "evidence/CLASS_TRACE.md",
+          982,
+          1021
+        ]
+      ]
+    },
+    {
+      "source": "src/Formalism/SharpRestriction/GlobalSchurBounds/LossesSmallShares.lean",
+      "git_blob": "70624b10f53b29e43deb89bd9dae257403ecb61e",
+      "sha256": "ba647275567e1662bbc0ae3ebc3e48e0831d354658aeb9071c3cc474a1e6e13e",
+      "lines": 515,
+      "cited_at": [
+        [
+          "evidence/DROP_TRACE.md",
+          396,
+          433
+        ]
+      ]
+    },
+    {
+      "source": "src/Formalism/SharpRestriction/GlobalSchurBounds/MainIn.lean",
+      "git_blob": "52d1c096fc2cf82732bf2a030a2c5e063841106a",
+      "sha256": "a7e100cbbca454fcf16353b8b96341672b26359ed7cd3cbb6554531b858324d5",
+      "lines": 65,
+      "cited_at": [
+        [
+          "Which_Primes_Carry_the_Allowance.tex",
+          12,
+          12
+        ],
+        [
+          "evidence/CLASS_TRACE.md",
+          12,
+          38
+        ]
+      ]
+    },
+    {
+      "source": "src/Formalism/SharpRestriction/GlobalSchurBounds/MainSup.lean",
+      "git_blob": "364960f766dd5994ca8adc07ddf1ec7718b178a6",
+      "sha256": "0a317908f73e9deed3a39ab3056c5531567d849633b2c65615190dfd55e0701d",
+      "lines": 309,
+      "cited_at": [
+        [
+          "Which_Primes_Carry_the_Allowance.tex",
+          48,
+          48
+        ],
+        [
+          "evidence/CLASS_TRACE.md",
+          48,
+          63
+        ]
+      ]
+    },
+    {
+      "source": "src/Formalism/SharpRestriction/GlobalSchurBounds/WeightVectorSmallSharesSeven.lean",
+      "git_blob": "370098c956d2156e2c95069994e4c8cfae490b03",
+      "sha256": "b197e9f1a289e164aaf35530704e14b2d5b937b7434b72c13575d79e2a53c806",
+      "lines": 86,
+      "cited_at": [
+        [
+          "evidence/DROP_TRACE.md",
+          44,
+          73
+        ]
+      ]
+    },
+    {
+      "source": "src/Formalism/SharpRestriction/GlobalTheoremInputs.lean",
+      "git_blob": "ba31f5120ed089d48968754ae577427912d467c5",
+      "sha256": "4d51ccc0586441a159ad6d09ebc0a46b3c462e3c5b296d5a5bd7613266e17bfb",
+      "lines": 168,
+      "cited_at": [
+        [
+          "evidence/DROP_TRACE.md",
+          97,
+          118
+        ]
+      ]
+    },
+    {
+      "source": "src/Formalism/SharpRestriction/GrowthBounds/IsResidueClassZero.lean",
+      "git_blob": "9fbb7879d0519f9a136e190551422881ef5d2f0b",
+      "sha256": "769f9733e1d208e4ee5a9cc89e25123f2ce9182ce295490ff97e569faf87f5a0",
+      "lines": 485,
+      "cited_at": [
+        [
+          "evidence/DROP_TRACE.md",
+          56,
+          66
+        ],
+        [
+          "evidence/DROP_TRACE.md",
+          97,
+          109
+        ]
+      ]
+    },
+    {
+      "source": "src/Formalism/SharpRestriction/GrowthBounds/LogarithmicSums/PartnerCountOfCentral.lean",
+      "git_blob": "f677b9041604e334f1115ae16b96cd61b1c7ee55",
+      "sha256": "12e0fc504d1dd71ac46b7cd72908ae34001b2995b51accb36a031e821b64f998",
+      "lines": 851,
+      "cited_at": [
+        [
+          "README.md",
+          581,
+          585
+        ],
+        [
+          "Which_Primes_Carry_the_Allowance.tex",
+          399,
+          399
+        ],
+        [
+          "Which_Primes_Carry_the_Allowance.tex",
+          581,
+          581
+        ],
+        [
+          "Which_Primes_Carry_the_Allowance.tex",
+          696,
+          696
+        ]
+      ]
+    },
+    {
+      "source": "src/Formalism/SharpRestriction/GrowthBounds/PlaneCountTheoremWithConstants.lean",
+      "git_blob": "8b788f1a1865ddd80a69beb427e319352260150d",
+      "sha256": "bc71270195974136ea0e12372c38192b93116903082f46f055f2daa19bde2081",
+      "lines": 1881,
+      "cited_at": [
+        [
+          "README.md",
+          139,
+          205
+        ],
+        [
+          "README.md",
+          761,
+          807
+        ],
+        [
+          "README.md",
+          867,
+          879
+        ],
+        [
+          "Which_Primes_Carry_the_Allowance.tex",
+          139,
+          139
+        ],
+        [
+          "Which_Primes_Carry_the_Allowance.tex",
+          761,
+          761
+        ]
+      ]
+    },
+    {
+      "source": "src/Formalism/SharpRestriction/ParConsts.lean",
+      "git_blob": "c3a5cddc3af0b027ad62b50a79cdb008712613a6",
+      "sha256": "5527c6bf036e019f4649ca1862b323bdeab0f1b25c2b1475c375e58a0b2edb48",
+      "lines": 103,
+      "cited_at": [
+        [
+          "evidence/DROP_TRACE.md",
+          24,
+          30
+        ]
+      ]
+    },
+    {
+      "source": "src/Formalism/SizeWindowBrackets/ChainSlopeWindows/AdmissibleSchurLemma.lean",
+      "git_blob": "91c8966257416ce67a92357ff67f1ded82bba9c9",
+      "sha256": "d4e83fad0408cf330d72d8afe41c37bb3c39143cc31fb8a1a36070d15bc08045",
+      "lines": 1055,
+      "cited_at": [
+        [
+          "README.md",
+          837,
+          915
+        ],
+        [
+          "Which_Primes_Carry_the_Allowance.tex",
+          530,
+          530
+        ],
+        [
+          "Which_Primes_Carry_the_Allowance.tex",
+          837,
+          837
+        ],
+        [
+          "evidence/DROP_TRACE.md",
+          155,
+          161
+        ]
+      ]
+    },
+    {
+      "source": "src/Formalism/SizeWindowBrackets/ChainSlopeWindows/DiscriminantSettingSatisfied.lean",
+      "git_blob": "edc32424311c076565c2e13b7657f6a5f58cfd84",
+      "sha256": "8dce8d3198be07282b1dc16061a027dab53d785947d59378f001afa0fb580f23",
+      "lines": 243,
+      "cited_at": [
+        [
+          "README.md",
+          162,
+          226
+        ],
+        [
+          "Which_Primes_Carry_the_Allowance.tex",
+          162,
+          162
+        ],
+        [
+          "evidence/lean/README.md",
+          32,
+          74
+        ]
+      ]
+    },
+    {
+      "source": "src/Formalism/SizeWindowBrackets/ChainSlopeWindows/OneLeThresholdMulPowers.lean",
+      "git_blob": "e056ba0d7b0d84078666ab3531c6ca1c6f744235",
+      "sha256": "8e7e5235c4e17ae957475d8aa0346d4087e3848c50be797039b5d621235f899a",
+      "lines": 1181,
+      "cited_at": [
+        [
+          "README.md",
+          444,
+          524
+        ],
+        [
+          "Which_Primes_Carry_the_Allowance.tex",
+          444,
+          444
+        ],
+        [
+          "evidence/DROP_TRACE.md",
+          601,
+          676
+        ],
+        [
+          "evidence/DROP_TRACE.md",
+          1036,
+          1049
+        ]
+      ]
+    },
+    {
+      "source": "src/Formalism/SizeWindowBrackets/PrimeClassLossHypothesesSatisfiable.lean",
+      "git_blob": "3f609406f5456e034f5dfb94e9688fca6c9f95a9",
+      "sha256": "f80e123e454617b3ebef24fd68edaf59371e5fc82e0b735552880a52d5d3ef00",
+      "lines": 169,
+      "cited_at": [
+        [
+          "Which_Primes_Carry_the_Allowance.tex",
+          86,
+          86
+        ],
+        [
+          "evidence/DROP_TRACE.md",
+          36,
+          55
+        ],
+        [
+          "evidence/lean/README.md",
+          86,
+          94
+        ]
+      ]
+    },
+    {
+      "source": "src/Formalism/SizeWindowBrackets/SecondKindBucket.lean",
+      "git_blob": "502d2a6bf146f38b4c51ed87db9cf1ffbc9d7db8",
+      "sha256": "029ad56bb74397c851fb0067d41be779dc0c69b3c8b9db4bae3932908e00f56e",
+      "lines": 297,
+      "cited_at": [
+        [
+          "evidence/lean/README.md",
+          45,
+          48
+        ]
+      ]
+    },
+    {
+      "source": "src/Formalism/SizeWindowBrackets/WindowSettingSatisfiable.lean",
+      "git_blob": "641dc12c8c7005d532889ed7a3044636ba72b3c5",
+      "sha256": "77569696749f9fa24ad13bae6181c0e1bac62a243f9313737f1541b481a53c9b",
+      "lines": 416,
+      "cited_at": [
+        [
+          "evidence/DROP_TRACE.md",
+          65,
+          117
+        ],
+        [
+          "evidence/DROP_TRACE.md",
+          147,
+          164
+        ],
+        [
+          "evidence/DROP_TRACE.md",
+          297,
+          301
+        ]
+      ]
+    }
+  ]
+}

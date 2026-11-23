@@ -1,0 +1,37 @@
+{
+  "module": "PrimeMassSecants",
+  "supplement_sha256": "f69f377300cece00fc8954b0cf470565a526430cd41b2fe074aaeaee5a1e932a",
+  "object_sha256": "e8197e5d9308a4eb0184bf584c5559726771a874fe41162aceab08630049efed",
+  "toolchain": {
+    "lean": "819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+    "version": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+    "packages": {
+      "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+      "plausible": "b7eb3304aeae834b12dda98993a37f6a41f6f0bb",
+      "LeanSearchClient": "5f4d51b81cbd3f6b32b156bfad9056621a040404",
+      "importGraph": "16f02aa7642864af59f1ff0e384a015994db9118",
+      "proofwidgets": "4be2e3d5087eeb272cf5a8853b8f9dd025ef5957",
+      "aesop": "3448c0bcc5ce01b2d1546e483ec3620e32df3d0e",
+      "Qq": "92c15be17b7caf78c2ad767ec40f89052d908d81",
+      "batteries": "4488d40d070b9700d4d5a6aa342f0d40c31b2a2d",
+      "Cli": "6130a47896ce867c6a4a55373441e59e565bad0f"
+    }
+  },
+  "flags": [
+    "-j1",
+    "--tstack=400000",
+    "-DautoImplicit=false",
+    "-DrelaxedAutoImplicit=false",
+    "-DmaxSynthPendingDepth=3",
+    "-Dpp.unicode.fun=true",
+    "-DmaxHeartbeats=4000000"
+  ],
+  "axioms": [
+    "'Uriel.PrimeMass.left_atom' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'Uriel.PrimeMass.right_atom' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'Uriel.PrimeMass.cumulative_bracket' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'Uriel.PrimeMass.triangular_atom' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'Uriel.PrimeMass.bracket_width' depends on axioms: [propext, Classical.choice, Quot.sound]"
+  ],
+  "kernel": "replaying PrimeMassSecants"
+}

@@ -1,0 +1,251 @@
+{
+  "initial_search_cap": 500000,
+  "final_search_cap": 5000000,
+  "first_found_within_initial_cap": [
+    false,
+    true
+  ],
+  "exact_controls": {
+    "exact_secant_cases": 729,
+    "signed_controls": [
+      {
+        "position": 4,
+        "lower": "-3/8",
+        "strict": -1,
+        "inclusive": -1,
+        "upper": "-1"
+      },
+      {
+        "position": 5,
+        "lower": "0",
+        "strict": 0,
+        "inclusive": -1,
+        "upper": "-1"
+      },
+      {
+        "position": 6,
+        "lower": "0",
+        "strict": 0,
+        "inclusive": 0,
+        "upper": "-5/12"
+      }
+    ]
+  },
+  "pairs": [
+    {
+      "q": 163,
+      "d": 711959,
+      "window_support": [],
+      "cutoffs": [
+        {
+          "H": 1000,
+          "prime_count": 46,
+          "theta_over_H": 0.2712517924,
+          "projected_psi_over_H": 0.2712517924,
+          "prime_list_sha256": "f7ae9c71de5bbeb0b111fe87ead9a0d4d4ba1ceac861e94fa9384ee9c1ab4db9",
+          "secants": [
+            {
+              "reciprocal_relative_width": 4,
+              "low": 0.2371548392,
+              "high": 0.2907822679
+            },
+            {
+              "reciprocal_relative_width": 16,
+              "low": 0.260189746,
+              "high": 0.2771196894
+            },
+            {
+              "reciprocal_relative_width": 64,
+              "low": 0.2683001728,
+              "high": 0.2741583208
+            }
+          ]
+        },
+        {
+          "H": 10000,
+          "prime_count": 317,
+          "theta_over_H": 0.2562485441,
+          "projected_psi_over_H": 0.2562485441,
+          "prime_list_sha256": "20f3b10667586ecc13be10cbd44483ab7a5a036fa544a56707efedcdcba19dd6",
+          "secants": [
+            {
+              "reciprocal_relative_width": 4,
+              "low": 0.2145495585,
+              "high": 0.2845421129
+            },
+            {
+              "reciprocal_relative_width": 16,
+              "low": 0.248016191,
+              "high": 0.2651803489
+            },
+            {
+              "reciprocal_relative_width": 64,
+              "low": 0.2543967289,
+              "high": 0.2590156113
+            }
+          ]
+        },
+        {
+          "H": 100000,
+          "prime_count": 2396,
+          "theta_over_H": 0.248773968,
+          "projected_psi_over_H": 0.2488100772,
+          "prime_list_sha256": "26e2f9d4f05d421a4215ff4b29d5da54a941c922bed03c83d822a1982b8b72e2",
+          "secants": [
+            {
+              "reciprocal_relative_width": 4,
+              "low": 0.2152584754,
+              "high": 0.2756583273
+            },
+            {
+              "reciprocal_relative_width": 16,
+              "low": 0.2409395729,
+              "high": 0.2557254304
+            },
+            {
+              "reciprocal_relative_width": 64,
+              "low": 0.2465917174,
+              "high": 0.2504328356
+            }
+          ]
+        },
+        {
+          "H": 1000000,
+          "prime_count": 19649,
+          "theta_over_H": 0.2499506569,
+          "projected_psi_over_H": 0.2499783589,
+          "prime_list_sha256": "ce64439641dd419a6970a840dee3cfd0af43cf98ad056d95e76217565a503a94",
+          "secants": [
+            {
+              "reciprocal_relative_width": 4,
+              "low": 0.2159828491,
+              "high": 0.2788275067
+            },
+            {
+              "reciprocal_relative_width": 16,
+              "low": 0.2419260304,
+              "high": 0.2575099815
+            },
+            {
+              "reciprocal_relative_width": 64,
+              "low": 0.2480296978,
+              "high": 0.2519793117
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "q": 163,
+      "d": 25799,
+      "window_support": [
+        7,
+        11,
+        13,
+        17,
+        19,
+        23,
+        29,
+        31
+      ],
+      "cutoffs": [
+        {
+          "H": 1000,
+          "prime_count": 46,
+          "theta_over_H": 0.247029822,
+          "projected_psi_over_H": 0.2489757322,
+          "prime_list_sha256": "0c2a152fd4213e1b9bc931c22360695b81a9995cee97bc27776fd83ece76f73b",
+          "secants": [
+            {
+              "reciprocal_relative_width": 4,
+              "low": 0.2082940933,
+              "high": 0.2533527116
+            },
+            {
+              "reciprocal_relative_width": 16,
+              "low": 0.2319702758,
+              "high": 0.2489757322
+            },
+            {
+              "reciprocal_relative_width": 64,
+              "low": 0.2404282865,
+              "high": 0.2489757322
+            }
+          ]
+        },
+        {
+          "H": 10000,
+          "prime_count": 318,
+          "theta_over_H": 0.2542915057,
+          "projected_psi_over_H": 0.2555601464,
+          "prime_list_sha256": "677b8c27946ef28c6f5b62438daa1ef9617ece2305cb6072eabc88f5a0efc9c6",
+          "secants": [
+            {
+              "reciprocal_relative_width": 4,
+              "low": 0.2188433947,
+              "high": 0.2836185234
+            },
+            {
+              "reciprocal_relative_width": 16,
+              "low": 0.2460224248,
+              "high": 0.264420045
+            },
+            {
+              "reciprocal_relative_width": 64,
+              "low": 0.2535661821,
+              "high": 0.257817009
+            }
+          ]
+        },
+        {
+          "H": 100000,
+          "prime_count": 2390,
+          "theta_over_H": 0.248101608,
+          "projected_psi_over_H": 0.2483980894,
+          "prime_list_sha256": "709bce7b8ce36e08ff3bd6e5fbdb6e7daecf404f239c9098207e9c2bd04490e0",
+          "secants": [
+            {
+              "reciprocal_relative_width": 4,
+              "low": 0.2153838939,
+              "high": 0.2760136676
+            },
+            {
+              "reciprocal_relative_width": 16,
+              "low": 0.2407127964,
+              "high": 0.2555692676
+            },
+            {
+              "reciprocal_relative_width": 64,
+              "low": 0.2461308087,
+              "high": 0.2498474371
+            }
+          ]
+        },
+        {
+          "H": 1000000,
+          "prime_count": 19503,
+          "theta_over_H": 0.2480312498,
+          "projected_psi_over_H": 0.2480847488,
+          "prime_list_sha256": "50581468780e7112acb173e3f5c12f3e3a9a92111e4d39e543f1c75d25b4db4f",
+          "secants": [
+            {
+              "reciprocal_relative_width": 4,
+              "low": 0.2142142684,
+              "high": 0.2778166976
+            },
+            {
+              "reciprocal_relative_width": 16,
+              "low": 0.2403619484,
+              "high": 0.2561612584
+            },
+            {
+              "reciprocal_relative_width": 64,
+              "low": 0.2462179718,
+              "high": 0.2501296428
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

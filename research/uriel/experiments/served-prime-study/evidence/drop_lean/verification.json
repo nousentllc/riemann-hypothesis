@@ -1,0 +1,190 @@
+{
+  "axioms": [
+    "'Formalism.LFunctionChainParameters.SmallOrderPrimeLosses.ServedPrimes.first_reciprocal_budget' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'Formalism.LFunctionChainParameters.SmallOrderPrimeLosses.ServedPrimes.second_reciprocal_budget' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'Formalism.LFunctionChainParameters.SmallOrderPrimeLosses.ServedPrimes.dropped_log_budget' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'Formalism.LFunctionChainParameters.SmallOrderPrimeLosses.ServedPrimes.combined_budget' depends on axioms: [propext, Classical.choice, Quot.sound]"
+  ],
+  "flags": [
+    "-j1",
+    "--tstack=400000",
+    "-DautoImplicit=false",
+    "-DrelaxedAutoImplicit=false",
+    "-DmaxSynthPendingDepth=3",
+    "-Dpp.unicode.fun=true",
+    "-DmaxHeartbeats=4000000"
+  ],
+  "kernel": {
+    "DroppedPrimeCosts": "replaying DroppedPrimeCosts",
+    "Formalism.SizeWindowBrackets.ChainSlopeWindows.DiscriminantSettingSatisfied": "replaying Formalism.SizeWindowBrackets.ChainSlopeWindows.DiscriminantSettingSatisfied"
+  },
+  "module": "DroppedPrimeCosts",
+  "olean_sha256": "f8f27c6ec8b45a15fbef1115715b85b4e148a047c9315fc778782fe200dd9460",
+  "original_import": "Formalism.SizeWindowBrackets.ChainSlopeWindows.DiscriminantSettingSatisfied",
+  "original_mode": "verified cached objects",
+  "original_project_modules": 36,
+  "originals": {
+    "Formalism.CorankShare.StatementFR": {
+      "olean_sha256": "7c465517b1cefb78ba05c2654da5ffce760a9c575d7eefa06df507a49cb6ed95",
+      "source_git_blob": "bbf952cfa32adb68933c8ab356ae87b6d7323976"
+    },
+    "Formalism.HalfLinks.Statement": {
+      "olean_sha256": "c414686ec01c69242a9225d142bcad576d311fad78444a4147e057fec02242b4",
+      "source_git_blob": "95bf07d4c8c0f63388b0f7ffaf7341a5e657d3e2"
+    },
+    "Formalism.JacobiWeightFamilies.Statement": {
+      "olean_sha256": "a5da205b3f4332ff360cfdad3609c01bec49c994cb894f30f3b3da73b041d390",
+      "source_git_blob": "3c3c26fedaea0f2ccdf697a805bfe2d5fe82a906"
+    },
+    "Formalism.LogFactorialBounds.LocalFactorSplit": {
+      "olean_sha256": "070b7f6d0a036b47cc726db5fd150db3d2da1c33096dd2ef16450b29a591301c",
+      "source_git_blob": "b1e908e11604e132bcd248342e918e62a828effa"
+    },
+    "Formalism.LogFactorialBounds.LocalFactorSplitDv": {
+      "olean_sha256": "e60d0fc9c9558293439478de1775ee9dbec0eaac1960d104d345116ea4704c03",
+      "source_git_blob": "111d37a99c33bff99ad10ca518c3132e566535f7"
+    },
+    "Formalism.LogFactorialBounds.LogFactorialProofs.PrimeSum": {
+      "olean_sha256": "eb5a46abf5a2af5a9b085b49b1bd170382e1c3fe049ec7e28e1d21d9adbc0b99",
+      "source_git_blob": "7088404e0bbc960487bf76f19264941245f88aac"
+    },
+    "Formalism.ProductFormula.StatementOCCM": {
+      "olean_sha256": "d9b416d7a0dd4967dd166c371837d58b123a0cefbb4702a28749df5d42153a1f",
+      "source_git_blob": "a6cf6f171f07e8c92d7c575ce22d37b3c2caee8c"
+    },
+    "Formalism.RankGapBounds.ConjInOrbit": {
+      "olean_sha256": "851ba3bdc036bb9c1ad3a505ff0fc45cb8b9a1f13c275782eb8d4340c05e5c42",
+      "source_git_blob": "52a554e4d83edaf88455d7cd09c1caa968e87393"
+    },
+    "Formalism.RankGapBounds.GridNumericalHypotheses": {
+      "olean_sha256": "558b41f4c978dfd84b00e3dd46a0c53dfaf705249d2b7a65779d75916377d775",
+      "source_git_blob": "cdbf4dd1e5fdd9e4ec0ab5a123c51f42d06169df"
+    },
+    "Formalism.RankGapBounds.MeanBoundSecondForm": {
+      "olean_sha256": "eebcdf6864e51be85452d8f23b8094e10a24377bba1df5b57322fc2e72508025",
+      "source_git_blob": "e4332fd8680d2b2f82e0a1e44a276453e03e2109"
+    },
+    "Formalism.RankGapBounds.RandomSubsetCounterexample": {
+      "olean_sha256": "8d2c408855b01472060c4b364a9450cb44c1f4d15c5efe91ef25789a45bedc36",
+      "source_git_blob": "20cd156f3de8197fe592aee0199b4395f1da26e7"
+    },
+    "Formalism.RankGapBounds.RankAndGapBounds": {
+      "olean_sha256": "5d2f60fb580b4f23ba4ed9c3be8aec51a4ed78f6de4629933b0391f5689523e1",
+      "source_git_blob": "5604bca1c9723fac1bbd6cac598f06a89f70e86b"
+    },
+    "Formalism.RankGapBounds.RankGapProofs.FourNotDvdOddSqAddOne": {
+      "olean_sha256": "084a29bd65645eb737563e79aedc2fa80866f4d26137bec222cdf5948a08b00e",
+      "source_git_blob": "1cb29921c24f18a65721d42d00afc89627be809d"
+    },
+    "Formalism.RankGapBounds.RankGapProofs.PmModulusFacts": {
+      "olean_sha256": "91aae6718b0f9c420908df795d77c21dbb79c55601a18e11564220300e872b9d",
+      "source_git_blob": "452dbc64517d7a5e1e8b2c7443fd8997a2ea476b"
+    },
+    "Formalism.RankGapBounds.RankGapProofs.RandomSubsetLemmaCounterexample": {
+      "olean_sha256": "95577d3ebb8f60de60c57f1bc7d0667ba43dc0cd59a019f181a512fe84f7bd0f",
+      "source_git_blob": "e5673c0b1cd74fc7a2013157e6a753c14c4031e0"
+    },
+    "Formalism.RankGapBounds.RankGapProofs.RankGapDecayHypothesis": {
+      "olean_sha256": "23524fc32cfe8522116b36866998477f75513d44c529169693cc4ed22242a07a",
+      "source_git_blob": "7dfc7c268ed8a3bdf9353301d38b1417ae9aed8e"
+    },
+    "Formalism.SizeWindowBrackets.ChainSlopeWindows.AdmissibleSchurLemma": {
+      "olean_sha256": "362cb1ebfb8b159e7a1481dd6156c91f306db1652e4673dd363d64081a60327f",
+      "source_git_blob": "91c8966257416ce67a92357ff67f1ded82bba9c9"
+    },
+    "Formalism.SizeWindowBrackets.ChainSlopeWindows.DiscriminantSettingSatisfied": {
+      "olean_sha256": "5817be2b5a67eca27d566b2a519eb05c1168062b6b6e2f70e93292d2bf19478d",
+      "source_git_blob": "edc32424311c076565c2e13b7657f6a5f58cfd84"
+    },
+    "Formalism.SizeWindowBrackets.ChainSlopeWindows.OneLeThresholdMulPowers": {
+      "olean_sha256": "782a64eb6c350e35cf74a1401cfe23c10c2bc48f908b93dfb4b0054c3c6d6212",
+      "source_git_blob": "e056ba0d7b0d84078666ab3531c6ca1c6f744235"
+    },
+    "Formalism.SizeWindowBrackets.ErrorFormsWeakWindowsFalse": {
+      "olean_sha256": "49dd480305263fbcfc23f38af0bd46278baed61ed518207078b66ea25c0748b8",
+      "source_git_blob": "1d1d179d111b5aa668893327264648558f30fdb6"
+    },
+    "Formalism.SizeWindowBrackets.FirstPrimeNeSecondPrime": {
+      "olean_sha256": "3a469c830e205b6b10fe3414bfd298737f34737c876d774a93f7f53e347f1a17",
+      "source_git_blob": "18deb7cb85d6f650a69f01fda6e0c789b9f04d89"
+    },
+    "Formalism.SizeWindowBrackets.GrowthBoundGivesRiemannHypothesis": {
+      "olean_sha256": "a08423ea1f121fa7820ad528648d4cd7295802ce285b7f9d50c66c79f389b6fe",
+      "source_git_blob": "a3ece4b4aea97a95ba2977fa9e8d437e72677774"
+    },
+    "Formalism.SizeWindowBrackets.PowerBoundGivesRiemannHypothesis": {
+      "olean_sha256": "d92a5c0345b650a3e2505a2839f42ade92633721e1b5e7b4572d07b8ff5c999a",
+      "source_git_blob": "c7e107026f81cda6d6d78010ed306723a8540ae5"
+    },
+    "Formalism.SizeWindowBrackets.PrimeClassLossHypothesesSatisfiable": {
+      "olean_sha256": "0c93f3a4cbe1af80e58a74365983aca968f29d3ea7c513e781633af2829a9536",
+      "source_git_blob": "3f609406f5456e034f5dfb94e9688fca6c9f95a9"
+    },
+    "Formalism.SizeWindowBrackets.QuotientSlopeBoundsWith": {
+      "olean_sha256": "55f976dc1ac38fc8e8b9dc0f28daa96d5e8542633c4582c7551373ca218a337d",
+      "source_git_blob": "f9f34a9147750e215a6b2f206eb6f9889aa726b6"
+    },
+    "Formalism.SizeWindowBrackets.SecondKindBucket": {
+      "olean_sha256": "1574872252f32beda569d6771ebd353377e76ed46a12eea9b5185e42e4e1ddda",
+      "source_git_blob": "502d2a6bf146f38b4c51ed87db9cf1ffbc9d7db8"
+    },
+    "Formalism.SizeWindowBrackets.WindowSettingSatisfiable": {
+      "olean_sha256": "d3ef08aa2d7f12d32e4eb4127ef468495b1cf86b99de5b4f4fc6de3f605d28d3",
+      "source_git_blob": "641dc12c8c7005d532889ed7a3044636ba72b3c5"
+    },
+    "Formalism.Statement": {
+      "olean_sha256": "4d92c742e703c16a769aaa4aef021cb7a2aba53b2ca383e439470309fdc400c1",
+      "source_git_blob": "30143706942aa349c77e4037537f381f9c8dbb25"
+    },
+    "Formalism.StatementCM": {
+      "olean_sha256": "8c465a6007dfa4f9c2218f168b34c4f2181e8784b58ba26b2021948c670b22c3",
+      "source_git_blob": "9ddfe16d802baf11e79b5b95759eb224637c89d3"
+    },
+    "Formalism.StatementOC": {
+      "olean_sha256": "c87d718d86dad4c74c7d18a21e224c77ddd3729b284c04b6219cdd5a95bc8886",
+      "source_git_blob": "12ab19c0176bd4135c2b23a7ee3ac22888df0122"
+    },
+    "Formalism.StatementU": {
+      "olean_sha256": "0b4bad20aee7b51813ae9962025c887b52bb916a9ded46cb52fb5bd3a312ddc8",
+      "source_git_blob": "2484a3b42fb98ab41015e7cd6a50246f01720470"
+    },
+    "Formalism.ThickAverageLoss.PartnersToFactorsAt": {
+      "olean_sha256": "5c34c99649a2794a9b6a080a18d985cbc99026ce1df17b1a3faae6262af78786",
+      "source_git_blob": "d3c1d8a4d1dcd4b282b14960b5a7b6525115e0af"
+    },
+    "Formalism.ThickAverageLoss.Statement": {
+      "olean_sha256": "ef7a51cf12ba6d9bb508b0f3d383e340d2f5c005d356efe9318a6083405a11da",
+      "source_git_blob": "a267153ffde8fcbe92a87d64df340cfc31a8d127"
+    },
+    "Formalism.WideWeightTheorem.Statement": {
+      "olean_sha256": "80dbb6e34a1b0df290220c4f0d7847addb15531403e16040e51c5a0e1eb7beda",
+      "source_git_blob": "683ee0aa8389dacc04cc27dfa6ff230098337f14"
+    },
+    "Formalism.ZetaNonvanishingChebyshevWeights": {
+      "olean_sha256": "ddffafb46647daa7510d2e621b174e2d917eed0d56c8ba64e189c98112c940c9",
+      "source_git_blob": "b6ce4fd45c8e5256fdd47abd9933fbca8e07de44"
+    },
+    "Formalism.ZetaNonvanishingGeneralWeights": {
+      "olean_sha256": "eb30e448ef72aa8b541987d2183250a3ac0ffd9b1fd93f54779a5b29c6be1b1c",
+      "source_git_blob": "ad16c3a9e418a743407d5ce3202da74426be078f"
+    }
+  },
+  "pin": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "prior_receipt_sha256": "4e20e8e1aff4d37c42ea8c0abf21a0ad186168cc1cfba244780c7da8041c0994",
+  "source_sha256": "6fc61c52972bbe5a5478e462a4b15fc16147fa3cda9cd61213c42fa0420212cf",
+  "toolchain": {
+    "lean": "819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+    "packages": {
+      "Cli": "6130a47896ce867c6a4a55373441e59e565bad0f",
+      "LeanSearchClient": "5f4d51b81cbd3f6b32b156bfad9056621a040404",
+      "Qq": "92c15be17b7caf78c2ad767ec40f89052d908d81",
+      "aesop": "3448c0bcc5ce01b2d1546e483ec3620e32df3d0e",
+      "batteries": "4488d40d070b9700d4d5a6aa342f0d40c31b2a2d",
+      "importGraph": "16f02aa7642864af59f1ff0e384a015994db9118",
+      "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+      "plausible": "b7eb3304aeae834b12dda98993a37f6a41f6f0bb",
+      "proofwidgets": "4be2e3d5087eeb272cf5a8853b8f9dd025ef5957"
+    },
+    "version": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+  }
+}
