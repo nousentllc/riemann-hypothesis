@@ -1,0 +1,540 @@
+{
+  "commit": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "entries": [
+    {
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/CMFieldExponentialBounds/AdmissibleOfPageN.lean",
+      "sha256": "ded642308ff9cd83eed14643f20899986c271c73f2ee900bccf6f7a32f3b350d",
+      "git_blob": "5afd609c06ffbef90f5df59e9915343c913c6257",
+      "ranges": [
+        {
+          "lines": [
+            60,
+            75
+          ],
+          "sha256": "d1a2344f97e1dfeff7d7029390a94a0bbe4bcbadc2e1c161b796df3a64cdfd15",
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/AutomorphicVarieties/CMFieldExponentialBounds/AdmissibleOfPageN.lean#L60-L75"
+        },
+        {
+          "lines": [
+            90,
+            113
+          ],
+          "sha256": "3a26b52027c05cafdab6cb25c745d464ff93122e4082e1f1841eb357083f579b",
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/AutomorphicVarieties/CMFieldExponentialBounds/AdmissibleOfPageN.lean#L90-L113"
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/GeneratorCountTuples/LemmaK.lean",
+      "sha256": "65f1f885b171ff2aaf4478e96a1099e6d8adb3e863f7b35cfa8641028d4ad4be",
+      "git_blob": "8726ea4259cd1f0fcb350eca97a3be2478261c87",
+      "ranges": [
+        {
+          "lines": [
+            9,
+            17
+          ],
+          "sha256": "277106c8401440605f4c56481f8209a5f5dacd3754d518ab8e91cef41f93d9d1",
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/AutomorphicVarieties/GeneratorCountTuples/LemmaK.lean#L9-L17"
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/HeightAndVanishing/JointWinOfCounts.lean",
+      "sha256": "3c71cf0dabc617e3d1ab9fc04939c311e4242912407cdfbc71c8e0764563d558",
+      "git_blob": "2f86e49421d870aa158af11ad1388da80b5d70d1",
+      "ranges": [
+        {
+          "lines": [
+            16,
+            31
+          ],
+          "sha256": "d4f86aae5a764eb31cfb0eae50cfa46b26763aa8a1bd6489310937d36dec86ee",
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/AutomorphicVarieties/HeightAndVanishing/JointWinOfCounts.lean#L16-L31"
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/HeightAndVanishing/LayerLe.lean",
+      "sha256": "248298d006f0013fa87fbee49075d6b750bba77eb403d7b34aeca70feb141e07",
+      "git_blob": "88eec332233203a9222b50ad7e77772490b3cce0",
+      "ranges": [
+        {
+          "lines": [
+            27,
+            44
+          ],
+          "sha256": "5ec1713b29fe529f1d6c3b709d046eb1ac3f2a509fcdca0ef046ae56cb98842d",
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/AutomorphicVarieties/HeightAndVanishing/LayerLe.lean#L27-L44"
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/HeightAndVanishing/ThmHV.lean",
+      "sha256": "c61ade8f3660fff5364b93469ee6ac19164b7f6ad2d3fcd38e2a2b1bcb2577d2",
+      "git_blob": "e5d8b97420078b2d97086d847f6db8e2c8953e63",
+      "ranges": [
+        {
+          "lines": [
+            6,
+            26
+          ],
+          "sha256": "a92df93c75f0bb99bdb9033d55112be7405d9851534584f2bade4a0b69d93c55",
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/AutomorphicVarieties/HeightAndVanishing/ThmHV.lean#L6-L26"
+        },
+        {
+          "lines": [
+            27,
+            40
+          ],
+          "sha256": "1a1adb6e840d5683b1459f22908e7073af47f73c99717b804d5194e00ec9268c",
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/AutomorphicVarieties/HeightAndVanishing/ThmHV.lean#L27-L40"
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/Exc.lean",
+      "sha256": "7bb13ceb4141dea9a35e93dbba8b71b06e44b172584e06c886b0c5a518146cfe",
+      "git_blob": "d0d49933faebf73a8162c153b8115139e36efa82",
+      "ranges": [
+        {
+          "lines": [
+            7,
+            31
+          ],
+          "sha256": "4ef5be862b2b4ed12845d4025cc20bc83afa776dbc764ab40eb389eaff6b84f0",
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/Exc.lean#L7-L31"
+        },
+        {
+          "lines": [
+            32,
+            42
+          ],
+          "sha256": "d6df8ed0e5596c2f3bda0a861fde16a0e9f8226f062aefba62fb0722ccbda5f3",
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/Exc.lean#L32-L42"
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/Final.lean",
+      "sha256": "def019c1ab61e3f781ea87e3f7b6b2adaafeed0cfceb23eca48b8ccf5b6f3c8e",
+      "git_blob": "9ef8bd0c999ab258ea150d5383003b556ac0125b",
+      "ranges": [
+        {
+          "lines": [
+            6,
+            19
+          ],
+          "sha256": "dc7c297695e22b90e4c29d7fbf7a374485c7ab49351b8418ae03b17115bb64a0",
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/Final.lean#L6-L19"
+        },
+        {
+          "lines": [
+            48,
+            68
+          ],
+          "sha256": "a43c923f25f6188bd7c3fae3e82f1259548f64ead2f24fb5683ac63b2b321002",
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/Final.lean#L48-L68"
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/ImportsAlt.lean",
+      "sha256": "64dfdb3fb277bfa34743573339b931a9e3696ff189570dfa2a940e095517cf47",
+      "git_blob": "ef9122254fb295f15e9f01d9512d70a26e6f6884",
+      "ranges": [
+        {
+          "lines": [
+            9,
+            30
+          ],
+          "sha256": "1017c3883319315b86fbd968e927d74bd2108954839fccd58dcf32baf5897cc5",
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/ImportsAlt.lean#L9-L30"
+        },
+        {
+          "lines": [
+            31,
+            48
+          ],
+          "sha256": "f2cca1668954751d99bf9be5f47cfabeff600c36652ab1ad6ecfc7fc60c1407f",
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/ImportsAlt.lean#L31-L48"
+        },
+        {
+          "lines": [
+            49,
+            61
+          ],
+          "sha256": "ea985c164d2439d6300c514697b760f74f82e9ff3b5fcad16aca4b719c55239f",
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/ImportsAlt.lean#L49-L61"
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/Kexp.lean",
+      "sha256": "9b5ee8c9c9b2fed70a419758cc416e75cc5ddd261481c718ae850226d72981ec",
+      "git_blob": "c94d1e1978d487758f6a977f969e60d440f317b7",
+      "ranges": [
+        {
+          "lines": [
+            6,
+            9
+          ],
+          "sha256": "208b063e63f32129ff05d0651097f2d146ee865a629b5532b09e9d8239416c1e",
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/Kexp.lean#L6-L9"
+        },
+        {
+          "lines": [
+            17,
+            37
+          ],
+          "sha256": "baa39571f8af5af8f71704d47d5accd2ebf97747afd3f3abcb24978e4d40eb40",
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/Kexp.lean#L17-L37"
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/Klen.lean",
+      "sha256": "a4a479699418e10e610e89596fd95af23f5f0bd17fcfb22ee29078240db918c1",
+      "git_blob": "8d11cf66702190df2c12069a790cd8c29e43a37f",
+      "ranges": [
+        {
+          "lines": [
+            23,
+            34
+          ],
+          "sha256": "5baa7d1a88d3124e74a035fd17ec57f2d336d8656aa66461b48e7a1d1838e5be",
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/Klen.lean#L23-L34"
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/Layerdisc.lean",
+      "sha256": "0f3c529f7cb9fd7115b668f9a15c493fbd192ccd8f19500c64f90cb89edfb797",
+      "git_blob": "b83f72f825fd063a5b70078bb805a8305070b0e6",
+      "ranges": [
+        {
+          "lines": [
+            8,
+            13
+          ],
+          "sha256": "0fe262b826246f9f6581a41a3d9971ed26be41b9ac478b58c1f422bed0145767",
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/Layerdisc.lean#L8-L13"
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/PartA.lean",
+      "sha256": "73c1660109e43f18debb3b2fd6ccdd4f7022c79c7c8eb7467ca7385cb5e72eb1",
+      "git_blob": "c41983a3d9483591b7d7eedfb3b672d72cde101a",
+      "ranges": [
+        {
+          "lines": [
+            24,
+            40
+          ],
+          "sha256": "29a0d9e6002d0219299a93fa7878f4f7bcca40c42e308b3b504c5d9762f7a8f8",
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/PartA.lean#L24-L40"
+        },
+        {
+          "lines": [
+            45,
+            59
+          ],
+          "sha256": "c0b7c73b273120e0f28035e3d11e6f0aca023219c24b21a19456be2a3ffa724d",
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/PartA.lean#L45-L59"
+        },
+        {
+          "lines": [
+            60,
+            78
+          ],
+          "sha256": "aa3fc9ea8d7dfb047eb441d50153b9e238771b24d11960afae7ed202ca9e5aa9",
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/PartA.lean#L60-L78"
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/PartB.lean",
+      "sha256": "4b6133d7cc4a262e1a96e0b0e4bf48f7ce9fdc6d4e8dc4102d3ce039be4055ab",
+      "git_blob": "cd8a7cae15738f4054f543cddf4af595a6d1f7dc",
+      "ranges": [
+        {
+          "lines": [
+            50,
+            75
+          ],
+          "sha256": "7a67d351ab793457ce28c3d029b66e402bbb6cbafd389d4dea4e18cfe47e6fef",
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/PartB.lean#L50-L75"
+        },
+        {
+          "lines": [
+            76,
+            95
+          ],
+          "sha256": "91ed82939c31284ce2c5c499d175a139269fd5b8f848c3385749f6fbf96ffa37",
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/PartB.lean#L76-L95"
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/Point2.lean",
+      "sha256": "2e4ab589f6336247b0f18f3d0b1fcefac944ff582487421ab6608fbbbc5cf322",
+      "git_blob": "977e6ed246ef1343d9bf537ea845a5565528c0ae",
+      "ranges": [
+        {
+          "lines": [
+            23,
+            31
+          ],
+          "sha256": "67bb577ec9443b1d30871bcb81fa42bd7968e664372dc53bac5f208c0dbc05fa",
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/Point2.lean#L23-L31"
+        },
+        {
+          "lines": [
+            38,
+            49
+          ],
+          "sha256": "cf39a113984ae090b8a9d30b17f1662da0b2d1b8ce59a0dad69a7d8cb782f414",
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/Point2.lean#L38-L49"
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/SecondBound.lean",
+      "sha256": "d0e3d59ca3196bc37ccf563afbe6829d6497e607c533b7984f27d5b8c91a29d6",
+      "git_blob": "a2e12927214cad3ce637b33adb435f42992c1c65",
+      "ranges": [
+        {
+          "lines": [
+            13,
+            30
+          ],
+          "sha256": "d1b4560759d71a2326daa31005b316722174c53b7d1b96af625c1b628453a01e",
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/SecondBound.lean#L13-L30"
+        },
+        {
+          "lines": [
+            42,
+            50
+          ],
+          "sha256": "c8aa99d86825a98ad587c4e1c3c2a42bd001eabe80737dea31e7b136fe2a537b",
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/SecondBound.lean#L42-L50"
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/ThmBabOf.lean",
+      "sha256": "c263c5de2b26c9ade93525ea218afa71304f44a9916bc97b7e2573f5fd61e33b",
+      "git_blob": "d4b0c37c79996fca0b0d30fb53fe798eceb90cff",
+      "ranges": [
+        {
+          "lines": [
+            18,
+            38
+          ],
+          "sha256": "5d70ca525234448286a3fe79d3c5510253e326a00d0e8cd772d167528a87df05",
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/ThmBabOf.lean#L18-L38"
+        },
+        {
+          "lines": [
+            61,
+            81
+          ],
+          "sha256": "d7f358360a5ba4a6721c7cfec24d5d598c4c06263b8f7c677c2a72978097cc1a",
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/ThmBabOf.lean#L61-L81"
+        },
+        {
+          "lines": [
+            82,
+            103
+          ],
+          "sha256": "1eb3731cd4278a444ffeb5da1eab6a7355bd59d89015c3ce12260e98d36f8982",
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/ThmBabOf.lean#L82-L103"
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/Vvat.lean",
+      "sha256": "4707f2abfa05547502a807c190a25ae33857adf1d39cfb14d6bc699086b6e949",
+      "git_blob": "a951bf639d41e5638a196041e22f73e186b2767c",
+      "ranges": [
+        {
+          "lines": [
+            7,
+            20
+          ],
+          "sha256": "40d8bdc12a24f62c182c81ebd5cd2ce767d5cbf238b726a53a256623649aa83c",
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/Vvat.lean#L7-L20"
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/Window.lean",
+      "sha256": "354e0ad1b87c54c46a40486a037d0a10b598ffc1b1d8e840e4f80560090a50be",
+      "git_blob": "386bec7e22094a4309c4a8e2846435357f703375",
+      "ranges": [
+        {
+          "lines": [
+            7,
+            17
+          ],
+          "sha256": "813123064e4a4fc701364acb50cf9cb5bd1a873e0bed9db19b6fa617d3d7f6c5",
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/Window.lean#L7-L17"
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/PrimeSetBoundDataOfPrimitiveChar.lean",
+      "sha256": "8d78f096654f4cdd977c71b1b163bb0883c53a295d0928816d96b0d6a8362cf1",
+      "git_blob": "52224122dd8f9deefef473151d716984f3e1f1ff",
+      "ranges": [
+        {
+          "lines": [
+            34,
+            49
+          ],
+          "sha256": "b27228531b012d9e3259e0319e74b058217b2dce0d9ff63db1f2d3e85887e914",
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/AutomorphicVarieties/PrimeSetBoundDataOfPrimitiveChar.lean#L34-L49"
+        },
+        {
+          "lines": [
+            75,
+            94
+          ],
+          "sha256": "fd35b1d35b7ffee8742ca476012a65096a2e41244416d323a919bd1d5aa19b51",
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/AutomorphicVarieties/PrimeSetBoundDataOfPrimitiveChar.lean#L75-L94"
+        },
+        {
+          "lines": [
+            145,
+            156
+          ],
+          "sha256": "5ecb4daa4198afb375303325c403bcfd453de0723dbb0ed45fdb4fe100e37665",
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/AutomorphicVarieties/PrimeSetBoundDataOfPrimitiveChar.lean#L145-L156"
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/ExistsPageN.lean",
+      "sha256": "732c3347fb02e410cf9af8831afdbba1d230fc522c3dbbccdb4b708e5dde73db",
+      "git_blob": "398eb8ed3528aa2666e9d3b2b09a582ad4390dd7",
+      "ranges": [
+        {
+          "lines": [
+            27,
+            47
+          ],
+          "sha256": "23b730a4c47efe163b4c93d7ab0354de417a27ef3f793fbaaae17b82cbc18b41",
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/CharacterBoxes/ExistsPageN.lean#L27-L47"
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/DedekindLFunctions/CharFamily.lean",
+      "sha256": "ca0ca8acb80ff4ffc36896204650f9ca16167193a22c36a140402b27cfc8c336",
+      "git_blob": "81c8dfd66d910d083d5bc88c664c7917fdbdfe96",
+      "ranges": [
+        {
+          "lines": [
+            10,
+            22
+          ],
+          "sha256": "6116468e787c9eec425ce948e9121e0376e4c3b614f33e1eed5bff7cf6fad5d8",
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/DedekindLFunctions/CharFamily.lean#L10-L22"
+        },
+        {
+          "lines": [
+            24,
+            45
+          ],
+          "sha256": "72012a24df0d69a3aa47771052ec98d8d3df6395ef615ac4aabcd1205da51974",
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/DedekindLFunctions/CharFamily.lean#L24-L45"
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/GchiGrowth.lean",
+      "sha256": "3943c2eba98d5ed2a2e521f4a1986281a8e031f9319e2acc3160de6d521db02e",
+      "git_blob": "0adbad2399f91f6cd547c9195d4464ccb5512d45",
+      "ranges": [
+        {
+          "lines": [
+            9,
+            22
+          ],
+          "sha256": "43335d1c957f2b30b4aa1cad7adae5a8cce5b2263ca73d5a091496fe4bfc89d7",
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/GchiGrowth.lean#L9-L22"
+        },
+        {
+          "lines": [
+            37,
+            60
+          ],
+          "sha256": "cc790d586ba0e326fc1cda0fde6d433898d04ead72619c03b333b5b44ea223b0",
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/GchiGrowth.lean#L37-L60"
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/PrimitiveCosets/CoreGm.lean",
+      "sha256": "73abeaad38ed40bde0c2f974f53cae9d851e72d23ae389dea129b2bbddc58bc8",
+      "git_blob": "3ba7a590e84c5993882ea6c5dcf9fdbed5f07d4d",
+      "ranges": [
+        {
+          "lines": [
+            12,
+            19
+          ],
+          "sha256": "88879fe3b1a9c706fc12e6976866a150a5174f874c68cfac218709f37cf509ea",
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/PrimitiveCosets/CoreGm.lean#L12-L19"
+        },
+        {
+          "lines": [
+            48,
+            74
+          ],
+          "sha256": "b5b5b4d5a3385e207586a2c875684c0ef2eb44718d445eba33720022f9e32203",
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/PrimitiveCosets/CoreGm.lean#L48-L74"
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/PrimitiveCosets/LevelGmLeOnFamilyScales.lean",
+      "sha256": "978ad99fd0d9e2dc25af57715030516195b629ccd9d5a114451fc5402f1d1426",
+      "git_blob": "de994949e6fd2d7238cfcb1c19d361ccdfe904fc",
+      "ranges": [
+        {
+          "lines": [
+            13,
+            26
+          ],
+          "sha256": "a53fa4ac1f9a14734fa9c6b84ba48c6d9b256a7bd69f28461d957768de039db5",
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/PrimitiveCosets/LevelGmLeOnFamilyScales.lean#L13-L26"
+        },
+        {
+          "lines": [
+            28,
+            35
+          ],
+          "sha256": "0428a8266be98557bba4829e9acfc79d9673718cbd7b37b61bf31237cc8214ad",
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/PrimitiveCosets/LevelGmLeOnFamilyScales.lean#L28-L35"
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/PrimitiveCosets/WindowInequalityOfArtinInputs.lean",
+      "sha256": "02d09bb042cbcb56956053a9a4ca75302f5a2cc93583f299005078f4656826aa",
+      "git_blob": "c349e34925ac26b8bc76bd36e9b91562f86d6b8d",
+      "ranges": [
+        {
+          "lines": [
+            11,
+            25
+          ],
+          "sha256": "5c05fc850b1acb443e4937ed3709b2f96f7b4dc34e105e927fb28f9fdd567e9f",
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/PrimitiveCosets/WindowInequalityOfArtinInputs.lean#L11-L25"
+        }
+      ]
+    }
+  ]
+}

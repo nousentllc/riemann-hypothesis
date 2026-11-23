@@ -1,0 +1,23 @@
+{
+  "analytic_log_ratio_derivative_range": [
+    "log(2)",
+    "log(8)"
+  ],
+  "exponent_enclosure": [
+    "0.715008288",
+    "0.715008304"
+  ],
+  "exponent_rationals": [
+    "23991697/33554432",
+    "47983395/67108864"
+  ],
+  "first_minus_third_at_high": [
+    "0.0000000001010265",
+    "0.0000000001010266"
+  ],
+  "first_minus_third_at_low": [
+    "-0.0000000000083621",
+    "-0.0000000000083620"
+  ],
+  "steps": 24
+}

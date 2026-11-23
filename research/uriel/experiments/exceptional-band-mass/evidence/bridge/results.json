@@ -1,0 +1,338 @@
+{
+  "theta": "1/2",
+  "rational_triangle_tests": 4950,
+  "smooth_principal_control": [
+    {
+      "a": 2,
+      "b": 3,
+      "area": [
+        "0.03360467567550",
+        "0.03360467567551"
+      ],
+      "upper": [
+        "0.04166666666666",
+        "0.04166666666667"
+      ]
+    },
+    {
+      "a": 256,
+      "b": 512,
+      "area": [
+        "3725.90637482342420",
+        "3725.90637482342421"
+      ],
+      "upper": [
+        "5461.33333333333333",
+        "5461.33333333333334"
+      ]
+    },
+    {
+      "a": 486,
+      "b": 488,
+      "area": [
+        "0.00136892654795",
+        "0.00136892654796"
+      ],
+      "upper": [
+        "0.00137174211248",
+        "0.00137174211249"
+      ]
+    },
+    {
+      "a": 2048,
+      "b": 2049,
+      "area": [
+        "0.00004068017296",
+        "0.00004068017297"
+      ],
+      "upper": [
+        "0.00004069010416",
+        "0.00004069010417"
+      ]
+    }
+  ],
+  "bands": [
+    {
+      "a": 486,
+      "b": 488,
+      "positive_jumps": 0,
+      "negative_jumps": 1,
+      "knots_and_midpoints": 5,
+      "unweighted_above_chord": [
+        "0.00635345392513",
+        "0.00635345392514"
+      ],
+      "downward_curvature_cap": [
+        "0.00635345392513",
+        "0.00635345392514"
+      ],
+      "weighted_above_chord": [
+        "0.00000059117630",
+        "0.00000059117631"
+      ],
+      "weighted_curvature_cap_upper": "0.00000059300108",
+      "unweighted_used_share": [
+        "0.9999999999",
+        "1.0000000001"
+      ]
+    },
+    {
+      "a": 508,
+      "b": 510,
+      "positive_jumps": 1,
+      "negative_jumps": 0,
+      "knots_and_midpoints": 5,
+      "unweighted_above_chord": [
+        "0.00000000000000",
+        "0.00000000000000"
+      ],
+      "downward_curvature_cap": [
+        "0.00000000000000",
+        "0.00000000000000"
+      ],
+      "weighted_above_chord": [
+        "0.00000000000000",
+        "0.00000000000000"
+      ],
+      "weighted_curvature_cap_upper": "0.00000000000000",
+      "unweighted_used_share": null
+    },
+    {
+      "a": 488,
+      "b": 490,
+      "positive_jumps": 0,
+      "negative_jumps": 0,
+      "knots_and_midpoints": 3,
+      "unweighted_above_chord": [
+        "0.00000000000000",
+        "0.00000000000000"
+      ],
+      "downward_curvature_cap": [
+        "0.00000000000000",
+        "0.00000000000000"
+      ],
+      "weighted_above_chord": [
+        "0.00000000000000",
+        "0.00000000000000"
+      ],
+      "weighted_curvature_cap_upper": "0.00000000000000",
+      "unweighted_used_share": null
+    },
+    {
+      "a": 256,
+      "b": 512,
+      "positive_jumps": 23,
+      "negative_jumps": 23,
+      "knots_and_midpoints": 95,
+      "unweighted_above_chord": [
+        "21.09822955282825",
+        "21.09822955282826"
+      ],
+      "downward_curvature_cap": [
+        "1786.90534088018824",
+        "1786.90534088018825"
+      ],
+      "weighted_above_chord": [
+        "0.00197439735455",
+        "0.00197439735456"
+      ],
+      "weighted_curvature_cap_upper": "0.43625618673833",
+      "unweighted_used_share": [
+        "0.0118071332",
+        "0.0118071333"
+      ]
+    },
+    {
+      "a": 512,
+      "b": 1024,
+      "positive_jumps": 43,
+      "negative_jumps": 37,
+      "knots_and_midpoints": 163,
+      "unweighted_above_chord": [
+        "1.61265468295855",
+        "1.61265468295856"
+      ],
+      "downward_curvature_cap": [
+        "7296.88270269346683",
+        "7296.88270269346684"
+      ],
+      "weighted_above_chord": [
+        "0.00005841342550",
+        "0.00005841342551"
+      ],
+      "weighted_curvature_cap_upper": "0.62984316901824",
+      "unweighted_used_share": [
+        "0.0002210059",
+        "0.0002210060"
+      ]
+    },
+    {
+      "a": 1024,
+      "b": 2048,
+      "positive_jumps": 69,
+      "negative_jumps": 72,
+      "knots_and_midpoints": 285,
+      "unweighted_above_chord": [
+        "2128.01776892311273",
+        "2128.01776892311274"
+      ],
+      "downward_curvature_cap": [
+        "30742.89905622441012",
+        "30742.89905622441013"
+      ],
+      "weighted_above_chord": [
+        "0.03631055434984",
+        "0.03631055434985"
+      ],
+      "weighted_curvature_cap_upper": "0.93819882373732",
+      "unweighted_used_share": [
+        "0.0692198144",
+        "0.0692198145"
+      ]
+    },
+    {
+      "a": 2048,
+      "b": 4096,
+      "positive_jumps": 134,
+      "negative_jumps": 129,
+      "knots_and_midpoints": 529,
+      "unweighted_above_chord": [
+        "205.50770712627038",
+        "205.50770712627039"
+      ],
+      "downward_curvature_cap": [
+        "118476.49619274992301",
+        "118476.49619274992302"
+      ],
+      "weighted_above_chord": [
+        "0.00087657824006",
+        "0.00087657824007"
+      ],
+      "weighted_curvature_cap_upper": "1.27831319990717",
+      "unweighted_used_share": [
+        "0.0017345862",
+        "0.0017345863"
+      ]
+    },
+    {
+      "a": 485,
+      "b": 489,
+      "positive_jumps": 0,
+      "negative_jumps": 1,
+      "knots_and_midpoints": 5,
+      "unweighted_above_chord": [
+        "0.02541381570054",
+        "0.02541381570055"
+      ],
+      "downward_curvature_cap": [
+        "0.02541381570054",
+        "0.02541381570055"
+      ],
+      "weighted_above_chord": [
+        "0.00000236471454",
+        "0.00000236471455"
+      ],
+      "weighted_curvature_cap_upper": "0.00000237934418",
+      "unweighted_used_share": [
+        "0.9999999999",
+        "1.0000000001"
+      ]
+    },
+    {
+      "a": 483,
+      "b": 491,
+      "positive_jumps": 0,
+      "negative_jumps": 1,
+      "knots_and_midpoints": 5,
+      "unweighted_above_chord": [
+        "0.10165526280217",
+        "0.10165526280218"
+      ],
+      "downward_curvature_cap": [
+        "0.10165526280217",
+        "0.10165526280218"
+      ],
+      "weighted_above_chord": [
+        "0.00000945900775",
+        "0.00000945900776"
+      ],
+      "weighted_curvature_cap_upper": "0.00000957655201",
+      "unweighted_used_share": [
+        "0.9999999999",
+        "1.0000000001"
+      ]
+    },
+    {
+      "a": 479,
+      "b": 495,
+      "positive_jumps": 0,
+      "negative_jumps": 2,
+      "knots_and_midpoints": 7,
+      "unweighted_above_chord": [
+        "0.70950223057137",
+        "0.70950223057138"
+      ],
+      "downward_curvature_cap": [
+        "0.70950223057137",
+        "0.70950223057138"
+      ],
+      "weighted_above_chord": [
+        "0.00006590809595",
+        "0.00006590809596"
+      ],
+      "weighted_curvature_cap_upper": "0.00006767846423",
+      "unweighted_used_share": [
+        "0.9999999999",
+        "1.0000000001"
+      ]
+    },
+    {
+      "a": 471,
+      "b": 503,
+      "positive_jumps": 0,
+      "negative_jumps": 4,
+      "knots_and_midpoints": 11,
+      "unweighted_above_chord": [
+        "5.07501342692424",
+        "5.07501342692425"
+      ],
+      "downward_curvature_cap": [
+        "5.07501342692424",
+        "5.07501342692425"
+      ],
+      "weighted_above_chord": [
+        "0.00047197074010",
+        "0.00047197074011"
+      ],
+      "weighted_curvature_cap_upper": "0.00049648466042",
+      "unweighted_used_share": [
+        "0.9999999999",
+        "1.0000000001"
+      ]
+    },
+    {
+      "a": 455,
+      "b": 519,
+      "positive_jumps": 3,
+      "negative_jumps": 7,
+      "knots_and_midpoints": 23,
+      "unweighted_above_chord": [
+        "29.90183785927481",
+        "29.90183785927482"
+      ],
+      "downward_curvature_cap": [
+        "36.35376327534354",
+        "36.35376327534355"
+      ],
+      "weighted_above_chord": [
+        "0.00278854004778",
+        "0.00278854004779"
+      ],
+      "weighted_curvature_cap_upper": "0.00374569386711",
+      "unweighted_used_share": [
+        "0.8225238645",
+        "0.8225238646"
+      ]
+    }
+  ]
+}

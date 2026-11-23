@@ -1,0 +1,31 @@
+{
+  "grid_masks": 1024,
+  "equality_masks": 2,
+  "fragmented": [
+    {
+      "n": 4,
+      "total_length": "3/16",
+      "largest_ratio": "5/4"
+    },
+    {
+      "n": 8,
+      "total_length": "7/64",
+      "largest_ratio": "9/8"
+    },
+    {
+      "n": 16,
+      "total_length": "15/256",
+      "largest_ratio": "17/16"
+    },
+    {
+      "n": 32,
+      "total_length": "31/1024",
+      "largest_ratio": "33/32"
+    },
+    {
+      "n": 64,
+      "total_length": "63/4096",
+      "largest_ratio": "65/64"
+    }
+  ]
+}

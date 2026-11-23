@@ -1,0 +1,18 @@
+{
+  "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "lean": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "declarations": [
+    "hit_iff",
+    "clean_budget",
+    "overlap_at_least",
+    "chain_hits",
+    "one_band_capacity"
+  ],
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "source_sha256": "3b61c8cbfd5e03a42f57e92c262f5bbcfea4e376bfe5716d4041d1d13914469c",
+  "kernel": "replaying WindowGeometry"
+}

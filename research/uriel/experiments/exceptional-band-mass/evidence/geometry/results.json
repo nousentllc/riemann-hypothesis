@@ -1,0 +1,132 @@
+{
+  "rational_grid": {
+    "configurations": 9732,
+    "clean": 9708,
+    "fully_blocked": 24,
+    "at_or_above_threshold": 6960,
+    "strict_adversaries": 36
+  },
+  "one_band_formula_checks": 180,
+  "positive_cases": 94,
+  "intermediate_point_checks": 3060,
+  "one_band_lambda2_B2": [
+    {
+      "r": "1",
+      "J": "2",
+      "fraction": "1",
+      "maximizing_center_over_min_start": "1"
+    },
+    {
+      "r": "5/4",
+      "J": "5/2",
+      "fraction": "11/13",
+      "maximizing_center_over_min_start": "15/13"
+    },
+    {
+      "r": "3/2",
+      "J": "3",
+      "fraction": "5/7",
+      "maximizing_center_over_min_start": "9/7"
+    },
+    {
+      "r": "2",
+      "J": "4",
+      "fraction": "1/2",
+      "maximizing_center_over_min_start": "3/2"
+    },
+    {
+      "r": "5/2",
+      "J": "5",
+      "fraction": "1/3",
+      "maximizing_center_over_min_start": "5/3"
+    },
+    {
+      "r": "3",
+      "J": "6",
+      "fraction": "1/5",
+      "maximizing_center_over_min_start": "9/5"
+    },
+    {
+      "r": "4",
+      "J": "8",
+      "fraction": "0",
+      "maximizing_center_over_min_start": "8"
+    },
+    {
+      "r": "6",
+      "J": "12",
+      "fraction": "0",
+      "maximizing_center_over_min_start": "12"
+    },
+    {
+      "r": "8",
+      "J": "16",
+      "fraction": "0",
+      "maximizing_center_over_min_start": "16"
+    },
+    {
+      "r": "12",
+      "J": "24",
+      "fraction": "0",
+      "maximizing_center_over_min_start": "24"
+    }
+  ],
+  "endpoint_controls": [
+    {
+      "case": "only_right_endpoint_hits",
+      "predicate_fails": true,
+      "area": "0"
+    },
+    {
+      "case": "excluded_right_edge_is_clean",
+      "predicate_fails": false,
+      "area": "0"
+    },
+    {
+      "case": "empty_band",
+      "predicate_fails": false,
+      "area": "0"
+    }
+  ],
+  "integer_label_constructions": [
+    {
+      "R": 1,
+      "J": "7",
+      "sharp_J": "8",
+      "base2_log_X": 56,
+      "base2_log_min_start": 8,
+      "base2_log_integer_labels": [
+        30
+      ]
+    },
+    {
+      "R": 2,
+      "J": "31",
+      "sharp_J": "32",
+      "base2_log_X": 15872,
+      "base2_log_min_start": 512,
+      "base2_log_integer_labels": [
+        2016,
+        7938
+      ]
+    },
+    {
+      "R": 3,
+      "J": "127",
+      "sharp_J": "128",
+      "base2_log_X": 532676608,
+      "base2_log_min_start": 4194304,
+      "base2_log_integer_labels": [
+        16744448,
+        66846976,
+        266865662
+      ]
+    }
+  ],
+  "triangle_control": {
+    "width_in_u": 4,
+    "height": 20,
+    "positive_area_in_u": "40",
+    "negative_pulse_positive_area": "0"
+  }
+}
