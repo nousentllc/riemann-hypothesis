@@ -1,0 +1,41 @@
+{
+  "anchored_transfer": {
+    "patterns": 32,
+    "fixed_count_samples": 220
+  },
+  "orientations": 32768,
+  "even_rate": "119/50",
+  "failed_candidate_orientation_tests": 0,
+  "best_support_sizes": {
+    "13": 20480,
+    "14": 12288
+  },
+  "best_holes": {
+    "2": 32768
+  },
+  "uniform_analytic_ratio": "2962/37825",
+  "worst_best_root_ratio": "10367/124242",
+  "best_orientation_root_ratio": "19253/221426",
+  "worst_certificate": {
+    "orientation": 432,
+    "odd_supports": [
+      1,
+      5,
+      7,
+      9,
+      11,
+      13,
+      15,
+      17,
+      19,
+      21,
+      23,
+      25,
+      27,
+      31
+    ],
+    "exposure_before_half": "62121/89600",
+    "missing_root_steps": 2
+  },
+  "tile_parameters_checked": 23
+}
