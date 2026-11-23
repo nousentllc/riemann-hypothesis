@@ -1,0 +1,11 @@
+{
+  "lean": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "source_sha256": "ab698e9eb7c96d7b9b146c9e9f2e95866d51826384bf4d3c9a8c0fd7f9e6b2ba",
+  "axioms": [
+    "'OuterGap.saturation' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'OuterGap.closedHit' depends on axioms: [propext, Classical.choice, Quot.sound]"
+  ],
+  "replay": "replaying GapGeometry",
+  "scope": "Saturation and the closed hitting interval under the stated outer-supply model, with q=J/4. Sharpness and the arithmetic application are separate written arguments."
+}

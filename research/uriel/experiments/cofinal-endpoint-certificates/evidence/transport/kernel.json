@@ -1,0 +1,20 @@
+{
+  "version": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "mathlib_commit": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "tracked_original_objects": 408,
+  "input_mode": "authenticated cache",
+  "source_sha256": "0c9acfa9f31183361ad5010cb2148f52f7d71e1fd5f97b54529b672cdb1ba8ca",
+  "axioms": [
+    "'MarkedWindows.localDatum' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'MarkedWindows.rawSupply' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'MarkedWindows.widthRoom' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'MarkedWindows.winPairsBelowTwo' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'MarkedWindows.markedComparison' depends on axioms: [propext, Classical.choice, Quot.sound]"
+  ],
+  "kernel": [
+    "replaying Development.AutomorphicArithmetic.CharacterBoxes.PairGood",
+    "replaying Development.AutomorphicArithmetic.CharacterBoxes.TwistForm",
+    "replaying MarkedWindows"
+  ],
+  "scope": "Two original intermediate modules and the supplementary declarations. The host/design/TopG reconstruction is a written audit, and no full build was run."
+}

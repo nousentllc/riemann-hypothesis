@@ -1,0 +1,3 @@
+# Follow-up on the scalar output
+
+Given the original TopG plus a width-specific HostExW for one character, test whether the original comparison theorem and its connected-family output imply the actual level scalar bound on cofinally many windows of that identical width, for every fixed positive exponent tolerance. Try to retain the level, width, and tolerance throughout. Anticipated failure controls are prescribing arbitrary left endpoints, retaining marks after forgetting their support, and obtaining a zero exponent tolerance. Limit verification to the original closure and a small new Lean object.

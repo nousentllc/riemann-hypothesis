@@ -1,0 +1,57 @@
+{
+  "exponents": {
+    "Ct": 2,
+    "eta": 1
+  },
+  "axis": "1 through 8, step 1/4",
+  "counts": {
+    "families": 256,
+    "endpoint_pairs": 103936,
+    "passing_both": 13576,
+    "cross_condition": 6392,
+    "fills": 6392,
+    "equal_cross_obstructed": 82,
+    "below_cross_obstructed": 5374
+  },
+  "overlap_labels": [
+    9,
+    16
+  ],
+  "overlap_control": {
+    "3": {
+      "raw": [
+        9
+      ],
+      "active": []
+    },
+    "4": {
+      "raw": [
+        9,
+        16
+      ],
+      "active": [
+        9
+      ]
+    },
+    "9": {
+      "raw": [
+        16
+      ],
+      "active": [
+        16
+      ]
+    },
+    "16": {
+      "raw": [],
+      "active": []
+    }
+  },
+  "equality_example": {
+    "labels": [
+      4
+    ],
+    "a": "2",
+    "x": "5/2",
+    "b": "4"
+  }
+}

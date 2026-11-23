@@ -1,0 +1,32 @@
+{
+  "Development.AutomorphicArithmetic.AutomorphicVarieties.LayeredIsomorphisms.PartA": {
+    "exit_code": 0,
+    "message": "replaying Development.AutomorphicArithmetic.AutomorphicVarieties.LayeredIsomorphisms.PartA",
+    "passed": true
+  },
+  "Development.AutomorphicArithmetic.AutomorphicVarieties.LayeredIsomorphisms.PartB": {
+    "exit_code": 0,
+    "message": "replaying Development.AutomorphicArithmetic.AutomorphicVarieties.LayeredIsomorphisms.PartB",
+    "passed": true
+  },
+  "Development.AutomorphicArithmetic.AutomorphicVarieties.LayeredIsomorphisms.ThmBabOf": {
+    "exit_code": 0,
+    "message": "replaying Development.AutomorphicArithmetic.AutomorphicVarieties.LayeredIsomorphisms.ThmBabOf",
+    "passed": true
+  },
+  "Development.AutomorphicArithmetic.AutomorphicVarieties.HeightAndVanishing.ThmHV": {
+    "exit_code": 0,
+    "message": "replaying Development.AutomorphicArithmetic.AutomorphicVarieties.HeightAndVanishing.ThmHV",
+    "passed": true
+  },
+  "Development.AutomorphicArithmetic.AutomorphicVarieties.CMFieldExponentialBounds.AdmissibleOfPageN": {
+    "exit_code": 0,
+    "message": "replaying Development.AutomorphicArithmetic.AutomorphicVarieties.CMFieldExponentialBounds.AdmissibleOfPageN",
+    "passed": true
+  },
+  "Development.AutomorphicArithmetic.CharacterBoxes.PairGood": {
+    "exit_code": 0,
+    "message": "replaying Development.AutomorphicArithmetic.CharacterBoxes.PairGood",
+    "passed": true
+  }
+}

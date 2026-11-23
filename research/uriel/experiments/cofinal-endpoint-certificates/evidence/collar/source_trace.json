@@ -1,0 +1,298 @@
+{
+  "commit": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "files": [
+    {
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/Kexp.lean",
+      "git_blob": "c94d1e1978d487758f6a977f969e60d440f317b7",
+      "in_kernel_import_closure": true,
+      "declarations": [
+        {
+          "line": 6,
+          "text": "theorem UpperTheory.V.Win.kexp :"
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/ImportsAlt.lean",
+      "git_blob": "ef9122254fb295f15e9f01d9512d70a26e6f6884",
+      "in_kernel_import_closure": true,
+      "declarations": [
+        {
+          "line": 9,
+          "text": "theorem UpperTheory.V.Win.point :"
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/Point2.lean",
+      "git_blob": "977e6ed246ef1343d9bf537ea845a5565528c0ae",
+      "in_kernel_import_closure": true,
+      "declarations": [
+        {
+          "line": 8,
+          "text": "theorem UpperTheory.V.Win.point2 :"
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/Final.lean",
+      "git_blob": "9ef8bd0c999ab258ea150d5383003b556ac0125b",
+      "in_kernel_import_closure": true,
+      "declarations": [
+        {
+          "line": 6,
+          "text": "theorem UpperTheory.V.Win.final :"
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/PartA.lean",
+      "git_blob": "c41983a3d9483591b7d7eedfb3b672d72cde101a",
+      "in_kernel_import_closure": true,
+      "declarations": [
+        {
+          "line": 24,
+          "text": "theorem UpperTheory.V.Win.partA :"
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/PartB.lean",
+      "git_blob": "cd8a7cae15738f4054f543cddf4af595a6d1f7dc",
+      "in_kernel_import_closure": true,
+      "declarations": [
+        {
+          "line": 50,
+          "text": "theorem UpperTheory.V.Win.partB :"
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/ThmBabOf.lean",
+      "git_blob": "d4b0c37c79996fca0b0d30fb53fe798eceb90cff",
+      "in_kernel_import_closure": true,
+      "declarations": [
+        {
+          "line": 11,
+          "text": "theorem UpperTheory.V.Win.thmBab_of :"
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/PrimeSetBoundDataOfPrimitiveChar.lean",
+      "git_blob": "52224122dd8f9deefef473151d716984f3e1f1ff",
+      "in_kernel_import_closure": true,
+      "declarations": [
+        {
+          "line": 26,
+          "text": "def PrimePair (m q d : \u2115) : Prop := q.Prime \u2227 q % 8 = 3 \u2227 d.Prime \u2227 d % 16 = 7 \u2227 (q * d).Coprime m"
+        },
+        {
+          "line": 32,
+          "text": "def BaAt (M : AbF) (eps : \u211d) (e t : \u211d \u2192 \u2115) (q d : \u2115) (x : \u211d) : Prop :="
+        },
+        {
+          "line": 35,
+          "text": "def BbAt (K : BConst) (B' : Finset \u2115) (L : \u2115 \u2192 AbF) (eps : \u211d) (t : \u211d \u2192 \u2115) (x : \u211d) : Prop :="
+        },
+        {
+          "line": 73,
+          "text": "def Jchi (K : BConst) (Ct eps : \u211d) (\u03c8 : PChar) : \u211d := K.J Ct eps (AbF.ofChar \u03c8) (Bchi \u03c8) (Lchi \u03c8)"
+        },
+        {
+          "line": 96,
+          "text": "theorem BShape.mono {K : BConst} {Ct : \u211d}"
+        },
+        {
+          "line": 106,
+          "text": "theorem ThmBab.a {K : BConst} {Ct : \u211d} (h : ThmBab K Ct) : ThmBa K Ct :="
+        },
+        {
+          "line": 109,
+          "text": "theorem ThmBab.b {K : BConst} {Ct : \u211d} (h : ThmBab K Ct) : ThmBb K Ct :="
+        },
+        {
+          "line": 112,
+          "text": "theorem thmBc_iff {Ct : \u211d} (hC : 1 \u2264 Ct) : ThmBc Ct \u2194 ThmBcFree"
+        },
+        {
+          "line": 136,
+          "text": "theorem primeSetBoundData_of_primitiveChar (\u03c8 : PChar) : OddPrimesWithRootsOfUnity (Bchi \u03c8) (Lchi \u03c8) := fun _ hl =>"
+        },
+        {
+          "line": 139,
+          "text": "theorem BConst.J_pos (K : BConst) {Ct eps : \u211d} (hC : 0 < Ct) (he : 0 < eps) (M : AbF) (B' : Finset \u2115) (L : \u2115 \u2192 AbF) :"
+        },
+        {
+          "line": 145,
+          "text": "theorem jointWin_of {K : BConst} {Ct : \u211d} (hC : 0 < Ct) (hB : ThmBab K Ct) (hV : ThmHV K Ct) : JointWin Ct"
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/HeightAndVanishing/LayerLe.lean",
+      "git_blob": "88eec332233203a9222b50ad7e77772490b3cce0",
+      "in_kernel_import_closure": true,
+      "declarations": [
+        {
+          "line": 39,
+          "text": "def PointHV : Prop :="
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/HeightAndVanishing/ThmHV.lean",
+      "git_blob": "e5d8b97420078b2d97086d847f6db8e2c8953e63",
+      "in_kernel_import_closure": true,
+      "declarations": [
+        {
+          "line": 6,
+          "text": "theorem UpperTheory.V.HV.thmHV :"
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/CMFieldExponentialBounds/AdmissibleOfPageN.lean",
+      "git_blob": "5afd609c06ffbef90f5df59e9915343c913c6257",
+      "in_kernel_import_closure": true,
+      "declarations": [
+        {
+          "line": 18,
+          "text": "theorem VVminusLe.mono {E : Type} [Field E] [NumberField E] [IsCMField E] {t : \u2115} {B B' : \u211d} (h : VVminusLe E t B)"
+        },
+        {
+          "line": 24,
+          "text": "theorem admissible_of_pageN {eps Ct : \u211d} (h0 : 0 < eps) (h1 : eps < 1 / 52) (hC : 1 \u2264 Ct) {e : \u211d \u2192 \u2115}"
+        },
+        {
+          "line": 41,
+          "text": "theorem vwinAt_of_joint {Ct : \u211d} (hC : 1 \u2264 Ct) (hJ : JointWin Ct) (hc : ThmBc Ct) (\u03c8 : PChar) : VWinAt \u03c8 Ct"
+        },
+        {
+          "line": 131,
+          "text": "theorem vwin_of_joint (hJ : JointWin 401) (hc : ThmBc 401) : VWin"
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/ThmBabOfLemmaK.lean",
+      "git_blob": "20c347251400d31a39cf68f964d6648d87f3dda4",
+      "in_kernel_import_closure": false,
+      "declarations": [
+        {
+          "line": 9,
+          "text": "theorem thmBab_of_lemmaK (hP : GlobalTheory.Published.PoitouTateDuality) (hF : LocalFinitenessK) (hT : LocalTateDualityK)"
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/HeightAndVanishing/JointWinOfCounts.lean",
+      "git_blob": "2f86e49421d870aa158af11ad1388da80b5d70d1",
+      "in_kernel_import_closure": false,
+      "declarations": [
+        {
+          "line": 16,
+          "text": "theorem pointHV_of_counts (hP : GlobalTheory.Published.PoitouTateDuality) (hF : LocalFinitenessK) (hT : LocalTateDualityK) {CK : \u211d}"
+        },
+        {
+          "line": 20,
+          "text": "theorem thmHV_of_counts (hP : GlobalTheory.Published.PoitouTateDuality) (hF : LocalFinitenessK) (hT : LocalTateDualityK) {CK : \u211d}"
+        },
+        {
+          "line": 25,
+          "text": "theorem jointWin_of_counts (hP : GlobalTheory.Published.PoitouTateDuality) (hF : LocalFinitenessK) (hT : LocalTateDualityK) {CK : \u211d}"
+        },
+        {
+          "line": 30,
+          "text": "theorem vwin_of_counts (hP : GlobalTheory.Published.PoitouTateDuality) (hF : LocalFinitenessK) (hT : LocalTateDualityK) {CK : \u211d}"
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/OddResidueBounds/ThmBcOfPsiBound.lean",
+      "git_blob": "bfe3402c5df4c227249762f2fd37f07e9edf5e08",
+      "in_kernel_import_closure": false,
+      "declarations": [
+        {
+          "line": 291,
+          "text": "theorem stickBound : \u2203 C : \u211d, 0 \u2264 C \u2227 StickBound C := stick_of killPow lenPow gen"
+        },
+        {
+          "line": 293,
+          "text": "theorem primeBound_of (h : PsiBound) : PrimeBound := prime_of actEx actFacts prodVal atPrime h"
+        },
+        {
+          "line": 295,
+          "text": "theorem thmBcFree_of (h : PsiBound) : ThmBcFree := thmBc_of deg stickBound (primeBound_of h)"
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/HVCore.lean",
+      "git_blob": "f4b900eb48df14f16eea03d08b7d9ef077f3d4a1",
+      "in_kernel_import_closure": false,
+      "declarations": [
+        {
+          "line": 18,
+          "text": "theorem of_four_alt (hN : _root_.GlobalTheory.Mem.LiteralAutomorphy.LiteratureRankNHypothesis) (hK : \u2203 CK : \u211d, LemmaK CK) (h1 : CountI) (h2 : CountII)"
+        },
+        {
+          "line": 23,
+          "text": "theorem modU_of_printsH (hH : _root_.UpperTheory.V.Af.HypothesesH') : _root_.UpperTheory.V.W.ModUAlt := _root_.UpperTheory.V.W.modularity_unitary_of_a"
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/PairGood.lean",
+      "git_blob": "68d04b506355e999c0f6020ee066c4967c1e6939",
+      "in_kernel_import_closure": true,
+      "declarations": [
+        {
+          "line": 18,
+          "text": "structure PairGood (M : \u2115) (eps Y X : \u211d) (q d : \u2115) : Prop where"
+        },
+        {
+          "line": 28,
+          "text": "def PairEx : Prop :="
+        },
+        {
+          "line": 41,
+          "text": "theorem PairGood.mono {M : \u2115} {eps Y X X' : \u211d} {q d : \u2115} (h : PairGood M eps Y X q d) (hX : X' \u2264 X) : PairGood M eps Y X' q d :="
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/WinPairs.lean",
+      "git_blob": "4670fec488d1eb59a3cc52dffc8d0eab16e16b0b",
+      "in_kernel_import_closure": false,
+      "declarations": [
+        {
+          "line": 5,
+          "text": "theorem UpperTheory.Top.winPairs :"
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/CMFieldExponentialBounds/bigpair.lean",
+      "git_blob": "f8f75a07e82e4a64af39a1ef40595425b10f495f",
+      "in_kernel_import_closure": true,
+      "declarations": [
+        {
+          "line": 6,
+          "text": "theorem UpperTheory.V.eventually_winPair_gt_power :"
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/CMFieldExponentialBounds/logpair.lean",
+      "git_blob": "11d54a6ef7b4af2c21bcc21d9ea0541a7bc1f79f",
+      "in_kernel_import_closure": true,
+      "declarations": [
+        {
+          "line": 6,
+          "text": "theorem UpperTheory.V.log_mul_le_rpow_of_winPair :"
+        }
+      ]
+    }
+  ]
+}

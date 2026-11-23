@@ -1,0 +1,114 @@
+{
+  "covered_singletons": 1020,
+  "late_clipping_needed_in_general": true,
+  "closed_threshold_hits": 1020,
+  "strict_interior_hits": 3060,
+  "sharp_schedules": [
+    {
+      "J": "401/100",
+      "q": "401/400",
+      "gaps": 5,
+      "cell_or_boundary_probes": 43,
+      "first_three_open_gaps": [
+        [
+          "16",
+          "401/25"
+        ],
+        [
+          "200801/2500",
+          "80521201/1000000"
+        ],
+        [
+          "40321041601/100000000",
+          "16168737682001/40000000000"
+        ]
+      ]
+    },
+    {
+      "J": "5",
+      "q": "5/4",
+      "gaps": 5,
+      "cell_or_boundary_probes": 43,
+      "first_three_open_gaps": [
+        [
+          "16",
+          "20"
+        ],
+        [
+          "116",
+          "145"
+        ],
+        [
+          "841",
+          "4205/4"
+        ]
+      ]
+    },
+    {
+      "J": "8",
+      "q": "2",
+      "gaps": 5,
+      "cell_or_boundary_probes": 43,
+      "first_three_open_gaps": [
+        [
+          "16",
+          "32"
+        ],
+        [
+          "272",
+          "544"
+        ],
+        [
+          "4624",
+          "9248"
+        ]
+      ]
+    },
+    {
+      "J": "31/2",
+      "q": "31/8",
+      "gaps": 5,
+      "cell_or_boundary_probes": 43,
+      "first_three_open_gaps": [
+        [
+          "16",
+          "62"
+        ],
+        [
+          "977",
+          "30287/8"
+        ],
+        [
+          "954529/16",
+          "29590399/128"
+        ]
+      ]
+    },
+    {
+      "J": "200",
+      "q": "50",
+      "gaps": 5,
+      "cell_or_boundary_probes": 43,
+      "first_three_open_gaps": [
+        [
+          "16",
+          "800"
+        ],
+        [
+          "160016",
+          "8000800"
+        ],
+        [
+          "1600320016",
+          "80016000800"
+        ]
+      ]
+    }
+  ],
+  "sparse_outer_control_J2_gap_ratios": [
+    "2",
+    "8",
+    "128",
+    "32768"
+  ]
+}
