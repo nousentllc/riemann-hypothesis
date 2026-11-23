@@ -1,0 +1,172 @@
+% !TeX program = lualatex
+\documentclass[12pt,letterpaper]{article}
+\usepackage{iftex}\RequireLuaTeX
+\usepackage[margin=.93in,headheight=15pt,headsep=13pt,footskip=25pt]{geometry}
+\usepackage{fontspec}\setmainfont{Latin Modern Roman}\setsansfont{Latin Modern Sans}
+\usepackage{amsmath,amssymb,booktabs,array,tabularx,microtype,xcolor,fancyhdr,hyperref,bookmark}
+\definecolor{ink}{HTML}{182F41}\definecolor{accent}{HTML}{176060}\definecolor{muted}{HTML}{41596A}
+\hypersetup{colorlinks=true,urlcolor=accent,linkcolor=accent,pdftitle={What the original selection rules force},pdfauthor={Uriel Research}}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcommand{\orig}[3]{\href{https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/#1.lean\#L#2}{#3}}
+\newcommand{\para}[1]{\par\medskip\noindent\textbf{#1}\quad}
+\newcommand{\pagepart}[1]{\clearpage\section{#1}}
+\newcommand{\eff}{\mathrm{eff}}
+\newcommand{\gap}{\mathrm{ASK}-\mathrm{Ga}}
+\pagestyle{fancy}\fancyhf{}\fancyhead[L]{\small\sffamily\color{muted}Uriel Research}
+\fancyhead[R]{\small\sffamily\color{muted}Arithmetic witness studies}\fancyfoot[C]{\sffamily\small\thepage}
+\renewcommand{\headrulewidth}{.3pt}\setlength{\parindent}{0pt}\setlength{\parskip}{4pt}
+\setlength{\emergencystretch}{1.5em}\raggedbottom\linespread{1.025}
+\begin{document}
+\thispagestyle{plain}
+{\sffamily\small\color{accent}URIEL RESEARCH\hfill 22 NOVEMBER 2026}\par\vspace{12pt}
+{\Huge\bfseries\color{ink}What the original selection rules force\par}\vspace{5pt}
+{\Large\color{muted}A fixed-witness test for recovery by \(g_0\)}\par\bigskip
+
+\textbf{The original rules permit a positive share of recovery.} At principal conductor one, a retained set can have the original target cardinality to within half a point, pass the published tests and beat the original selector's own average score, yet leave a positive fraction of long prime directions with no adjacent pair in either orientation. On a compatible family of such witnesses, direct gain recovers exactly \(1/128\) of the normalization \(U\) in the limit. That is \(2/45\), or about \(4.44\%\), of that family's local odd-position allowance.
+
+\begin{center}\begin{tabularx}{\linewidth}{@{}p{.36\linewidth}Y@{}}\toprule
+Which witness? & What the analysis determines\\\midrule
+The proof's original, unspecified \(T\) & Its actual recovery remains unknown. The selection theorem returns no membership list or tie-breaking rule that identifies it.\\
+Witnesses allowed by the internal selection score & Both negligible recovery and recovery tending to \(U/128\) are possible. Each witness uses one fixed \(T\) across all of its primes and lifts.\\
+Witnesses tested only against exported bounds & A simpler example permits recovery at least \(U/16\) asymptotically. Its count misses the tighter internal size requirement.\\\bottomrule
+\end{tabularx}\end{center}
+
+The numerical experiment isolated the missing information. At group size 65,536, two masks had the same total count, the same counts in each parity half of the tested orbit, and the same mean of 16 forward pairs per direction. One had no pair in either orientation in \emph{8,192 of 16,384 directions}. The other had a pair in every direction. All three preselected seeds gave those same two counts.
+
+The argument below concerns the necessity of a conclusion about the original choice. Alternative masks provide a test of logical implication. We make no substitution into the original proof. The asymptotic values are deductions using the pinned source and the preceding experiment, distinct from the measurements at finite group size.
+\href{https://github.com/nousentllc/riemann-hypothesis/pull/11}{Previous branch identity and transport into the final gap}.
+
+\pagepart{The selection test that the original witness passes}
+Fix principal conductor one, \(0<\varepsilon<1/52\), a sufficiently late family scale \(x\), its raw host, the ordering of its labels, and its prime steps. The group is cyclic of dyadic order \(n\asymp x^h\), \(h=2+8\varepsilon\). Put \(\delta=x^{-\varepsilon/8}\). For a fixed mask \(T\), let \(B(T)\) be the sum, over source-eligible primes, of the number of retained points on bad orbits, weighted by \(\omega_p=(\log p)/p\). An empty orbit adds zero. Set \(M=C_bx^{-2}\delta n\sum_p\omega_p\), with the original positive constant \(C_b\). The exported obligations give
+\[
+  \delta n/2\le |T|\le2\delta n,\qquad B(T)\le 4M .
+\]
+At conductor one the distinguished coset share is automatic. These two bounds alone are too weak a model of the selection process.
+\orig{Development/AutomorphicArithmetic/ThickFrames/topsChoiceH}{33}{Exported selection theorem}.
+
+In the proof of the selector, points initially have independent inclusion probability \(\delta\). The proof obtains a set of positive weight with score at most the actual mean under that original law,
+\[
+ S(T)=\frac{(|T|-\delta n)^2}{2\delta n}+\frac{B(T)}{4M},
+ \qquad S(T)\le {\mathbb E}_{\delta}S .
+\]
+When \(M=0\) the weighted bad mass vanishes and the second term is interpreted as zero, as in Lean real division. For late \(0<\delta<1\), \emph{every} fixed mask has positive weight. The first term of the expectation is exactly \((1-\delta)/2\). In particular a mask of score \(o(1)\) passes even the internal comparison, regardless of the size of the remaining mean. The selector proves existence by contradiction. It has no instruction to choose a particular mask among those passing the comparison.
+\orig{Development/AutomorphicArithmetic/ThickFrames/select}{42}{Existence lemma},
+\orig{Development/AutomorphicArithmetic/ThickFrames/select}{136}{score actually compared}, and
+\orig{Development/AutomorphicArithmetic/ThickFrames/topsGroup}{101}{original sampling rates}.
+
+\para{What the rest of the proof receives.} The host constructor obtains \(TT\), its two cardinality bounds, the bad-orbit estimate and its coset shares. It installs those data in the host and continues with the same field and prime row. No coordinates of \(TT\) are exposed by this return. Given a concrete finite mask and the local arithmetic inputs, the actual gain comparison can be evaluated. An algorithm searching for a mask satisfying the score would return a possible choice and would need additional identifying information to recover the choice already made.
+\orig{Development/AutomorphicArithmetic/ShortNorms/hostOfFieldOf}{218}{Point of selection and installation}.
+
+\pagepart{A gap in the differences, at the original size}
+Use any additive cyclic coordinate for the host. The least \emph{numeric label} in each step orbit determines its even positions. Thus the full group has a root-even half \(E\) and a root-odd half \(B\). Divide \(B\) into its two children modulo four. In each child, take the residue \emph{modulo sixteen} of its least-label element. Call the corresponding two entire classes \(S_b,S_c\), where \(b\) belongs to the child that is even relative to the base in \(B\). This choice of classes is independent of the prime.
+\orig{Formalism/LocalToGlobal/GlobalTheory/IsResidueClassZero}{267}{Canonical orbit base}.
+
+Take \(N\) nearest to \(\delta n\), and \(k\) nearest to \(\delta n/8\). Keep exactly \(k\) points from each of \(S_b,S_c\), and \(N-2k\) from \(E\). To prove that good choices exist, sample uniformly without replacement in each of these three sets. The effective fractions in the two small classes and in \(E\) are \(2\delta+O(1/n)\) and \(3\delta/2+O(1/n)\), respectively. Every outcome has the required total \(N\). We compare every resulting mask against the source's \emph{original} law and score.
+
+Now fix a step \(d\) divisible by two exactly once. The orbit \(B\) has length \(n/2\). Within it the two allowed classes are opposite parities in a cycle of eight residue classes. Put \(D=(c-b)/2\bmod 8\), an odd residue. An immediate pair between the classes is possible only if \(d/2\equiv D\) or \(-D\bmod 8\). For the other two odd residues, \emph{neither orientation occurs anywhere on this orbit}. Its \(k\) retained odd points are still there. Reordering numeric labels can change \(D\), but preserves the count of blocked directions.
+
+\begin{center}\begin{tabular}{@{}lll@{}}\toprule
+Step within \(B\) & Geometrically possible first edge & Number of classes\\\midrule
+\(d/2=D\) & Even to odd & 1 of 4\\
+\(d/2=-D\) & Odd to even & 1 of 4\\
+\(d/2\ne\pm D\) & Neither & 2 of 4\\\bottomrule
+\end{tabular}\end{center}
+
+There are \(n/4\) steps with this valuation and \(n/8\) blocked steps. The entire mask stays fixed during this count. The construction uses two roles for the root halves. The root-even half absorbs enough points to hit the exact size target. The root-odd half permits long cycles with mixed retained parity and missing differences. A simpler two-class construction on the full group produces more holes but leaves only \(0.525\delta n\) retained points on average. That first attempt identifies an important failure mode in judging a counterexample by the exported bounds alone.
+
+\pagepart{Why the actual window and tile tests still pass}
+The source checks three conditions at each relevant orbit. Their constants matter because a hypothesis about independent inclusion with pointwise rates in \([3\delta/4,\delta]\) would exclude the holes in this construction. We re-estimate the original events. The following table gives the limiting sum of marginal inclusion probabilities on a cell of \(u=\lceil1/\delta\rceil\) consecutive sites, and on its even sites. All eligible orbits are long enough eventually.
+\begin{center}\begin{tabular}{@{}lrr@{}}\toprule
+Occupied orbit type & All sites \(\mu\) & Even sites \(\mu_e\)\\\midrule
+Entire group, odd step & 1 & \(3/4\)\\
+Within \(E\), even step & \(3/2\) & \(3/4\)\\
+Within \(B\), step valuation 1 & \(1/2\) & \(1/4\)\\
+Within \(B\), step valuation 2 & \(1/2\) & \(1/2\)\\
+Within \(B\), step valuation 3 & 1 & 1\\
+Within \(B\), step valuation at least 4 & 2 & 1\\\bottomrule
+\end{tabular}\end{center}
+For valuations two and three, each chosen least element remains the least in its occupied descendant coset. That ensures enough \emph{even} sites for marks. Every eligibility pattern repeats within sixteen positions. Under independent trials at the three marginal rates, the empty-cell and singleton-even probabilities tend uniformly to \(e^{-\mu}\) and \(\mu_e e^{-\mu}\). Both exceed \(0.12\) eventually.
+
+Sampling without replacement needs a relative probability estimate. Condition on one retained point as the source bad-mass test requires. In a stratum with remaining population \(m\) and remaining count \(t\), a particular binary pattern on \(\ell\) inspected points with \(i\) successes has probability
+\[
+ \frac{(t)_i(m-t)_{\ell-i}}{(m)_\ell}
+ \ \le\ \frac{m^\ell}{(m)_\ell}(t/m)^i(1-t/m)^{\ell-i}.
+\]
+Here the falling factorial uses ordered draws. For all three strata together the relative factor is \(1+o(1)\) on blocks inspecting \(O(\delta^{-1}\log x)\) points, because their squared length divided by \(n\) vanishes. This preserves bounds on events with tiny probabilities.
+
+\textbf{Short windows.} With \(K=\lceil8(h+2)/\varepsilon\rceil\), at most \(L_2\) starts see the conditioned point and need \(K\) further successes to fail. Remaining starts need \(K+1\). Since \(L_2=O(1)\), and length \(L\le n\), failure costs \(O(\delta^K+L\delta^{K+1})=o(x^{-2})\).
+\textbf{Tiles.} Skip any trial tile containing the conditioned point. In each prescribed run there remain \(M_0\) disjoint trials with mark probability at least \(0.12^{6r+1}\) under the comparison law. The source takes \(M_0\ge(h+3)\log(x)10^{6r+1}\), so union over starts costs \(o(x^{-2})\).
+\textbf{Long windows.} The source cap gives \(j=N_1-1\ge6eG'\delta\) and \(j\ge(h+3)\log_2x\). Even after conditioning, the failure at a start costs at most \((2.1eG'\delta/j)^j\le0.35^j\), up to the relative factor above. Union over \(L\) starts again gives \(o(x^{-2})\). Thus \(\mathbb EB(T)=o(M)\) for every fixed original \(C_b>0\). With probability tending to one the score is \(o(1)\) along suitable thresholds. \orig{Formalism/SharpRestriction/GrowthBounds/UnramifiedQuadraticSetting}{237}{Source caps} and \orig{Formalism/SubspaceCounting/GoodOrbitIntervalTileCondition}{12}{marked tiles}.
+
+\pagepart{How missing neighbors become actual recovery}
+At a served prime \(p\) and one fixed orbit and lift, let \(A=g_U-\mathrm{Pr}\), \(F=(g_0)_+\). The credited gain is \(\max(A,F)\). Its recovery relative to paying the full specialized price is \(r=(F-A)_+\). Write \(C\) for the sum of excluded positive demands plus the even-source minima. The preceding study established
+\[
+             r=\big(\mathrm{Pr}-C+(-g_0)_+\big)_+,\qquad
+             0\le(-g_0)_+\le dl .
+\]
+Both local tax and unshifted demand cancel in this comparison. The price contains the sum of offsets minus lift shifts at odd tops and a fixed orbit cost. Write \(H=\exp(x^{\varepsilon/3})\), \(a=xb\), \(b'=a/H\), \(\lambda=b/H\), \(U=mNb\) for \(m\) lifts. Each odd offset is \(\lambda+o(\lambda)\) uniformly. \orig{Formalism/SharpRestriction/GrowthBounds/IsResidueClassZero}{241}{Gain, price and common subtraction}.
+
+\para{On a blocked orbit.} Every first step lands on a hole. Even-source first minima therefore use a thin cap, at most \(\lambda/n+\eta+c_G\). For \(p^3\ge2H\) no deeper exclusion carries positive demand. The remaining odd geometric tails are \(O(N_va/p^3)\) for \(N_v\) retained sources. Thus \(C=o(N_v\lambda)\) in the interior \(p\ge H/x,\ p<H\). The \(k\) odd tops pay \(k\lambda\) to leading order. The fixed price and \(dl\), summed over all active orbits at a prime and one lift, are \(o(N\lambda)\) by the source windows. The detailed estimate is in the evidence package. On the blocked orbit \(g_0\) is positive eventually, since each retained first column has supply of order at least \(b'\), a thin cap, and no exclusion.
+
+The two negative prime signs have joint weight \(1/4\). For each direction \(d\) the prior prime-step estimate is \(P_d/H=1/(4n)+O_D(x^{-D})\) for every fixed \(D\), uniformly in the direction of this host. The blocked steps therefore carry total log-weight \(H/32+o(H)\). Dropped primes and omitted tops lose \(o(HN)\) in log-weighted top incidences. A bad orbit is charged by its retained mass. Because \(k/N\to1/8\), its normalized recovery contributes
+\[
+             2\,\frac{1}{32}\,\frac18=\frac1{128}.
+\]
+The factor two is the original rational-prime ledger weight. This number is a share of \(U\), and is already a lower bound even if other orbits also recover gain. \href{https://github.com/nousentllc/riemann-hypothesis/pull/10}{Uniform step weights and omitted-mass argument}.
+
+\para{Why reversal matters.} An even-to-odd retained first edge pays its whole adjusted first supply into \(C\). An odd-to-even edge pays only the positive excess above the target cap. In particular a step with no \emph{forward} edge can still defeat \(g_0\). The blocked steps above remove both. In the fixed 32-cycle rational control, exactly eight of sixteen generator steps took \(g_0\) at both primes and both lifts. The permitted differences predicted every winner.
+
+\pagepart{Closing the other orbits and the final gap}
+We can also make the recovery on the other directions negligible while keeping every original score condition. On each long orbit \(L\ge\sqrt{x}\) having an allowed edge of a specified orientation, at least \(L/16\) such possible edges have disjoint endpoints. Use independent Bernoulli trials at the three exact stratum rates first. Every permitted edge has probability \(\gg\delta^2\). A lower-tail estimate and union over at most \(2n^2\) oriented orbit tests give failure probability \(O(n^2e^{-c\sqrt{x}\delta^2})\). Conditioning on the three exact counts costs at most \((n+1)^3\), because each count is a mode of a binomial distribution centered at that integer. Consequently one mask passes the original score and has \(\gg L\delta^2\) edges wherever that orientation is possible on a long orbit. No independence across primes is needed.
+
+On \(H/x\le p\le H/(1+x^{-1/2})\), an even-to-odd first edge contributes at least \(b'/2\) eventually. For the reverse orientation the source window \(b_y\le b'(1+\beta)\), with \(\beta=O(x^{-2})\), gives an excess of at least \(b'/(2\sqrt{x})\). Even the latter makes \(C/(L\lambda)\gg\sqrt{x}\delta^2\to\infty\). The price plus \(dl\) is at most \(L\lambda(1+o(1))\), so \(A>F\). The remaining occupied orbit types either have zero odd points or are precisely the blocked ones. The thin top prime strip costs \(O((x^{-1/2}+1/H)\log H)=o(1)\) after normalization. Steps of order below \(\sqrt x\) have total log-weight \(o(H)\). Here one can bound \(r\) above by the odd offsets, fixed price and \(dl\). This gives \(\mathcal R_x\to1/128\) for these compatible choices. \orig{Formalism/SharpRestriction/FamCore}{123}{Height window} and \href{https://github.com/nousentllc/riemann-hypothesis/pull/11}{same-witness transport}.
+
+\para{The denominator matters.} The normalized local charge is \(\mathcal K_x=(2N)^{-1}\sum_{t\in T}w(t)+o(1)\), where \(w(t)\) is the fraction of directions on which \(t\) occupies an odd position. The mean score on \(E\) tends to \(1/4\). In the two small classes the root parity is odd, the next bit is equally split, the next two bits are even, and all deeper bits are balanced in the population. Their mean tends to \(1/2+1/8+1/32=21/32\). The variance of the sampled sum of bounded scores is \(O(N)\) under the three fixed counts. Concentration can therefore be imposed with the preceding events. The same mask has
+\[
+ \mathcal K_x\longrightarrow45/256,\quad
+ \mathcal R_x\longrightarrow2/256,\quad
+ (\mathrm{ASK}-\mathrm{Ga})/U\longrightarrow43/256 .
+\]
+Thus \(2/45\) of this allowance is recovered. This is an attained family value. The supremum over all compatible masks remains open.
+
+\para{The other outcome also passes the internal score.} Draw a uniform fixed-size subset of size nearest to \(\delta n\) on the same raw host. The preceding window argument with one stratum has cell means \((1,1/2)\), and the same negligible bad mass. Each long even orbit has a full forward matching before sampling, so the same conditioning argument forces the specialized branch on the significant prime range. Hence the original score also admits \(\mathcal R_x\to0\). It cannot identify either outcome on its own.
+
+\pagepart{An experiment with one mask held fixed across directions}
+Our finite diagnostic tracks \emph{both} orientations, conditioning on the same orbit \(B\). The group has 65,536 positions, the full mask has 4,096 retained points, and the orbit has length 32,768. For a deliberately scrambled labeling we fixed three random seeds in advance. The structured and same-count control each have 512 retained points in either parity child of \(B\), and use the same points outside \(B\). Only the arrangement inside those children changes between masks. Within each test the mask never changes.
+
+\begin{center}\begin{tabular}{@{}lrr@{}}\toprule
+On the same 16,384 directions, seed 17 & Structured & Same-count control\\\midrule
+Mean even-to-odd edges & 16 & 16\\
+Variance of even-to-odd edges & 780.441 & 15.018\\
+Directions with zero even-to-odd edges & 12,288 & 0\\
+Directions with zero in both orientations & 8,192 & 0\\\bottomrule
+\end{tabular}\end{center}
+The other two seeds gave the same zero counts. At \(n=4{,}096\), finite sparsity itself made some control directions empty. With seed 17 the mean was just one, and the two-way zero counts were 514 versus 120 out of 1,024. The structural prediction guaranteed 512 of the 514. The smaller control shows why an observed zero at a single finite scale does not establish a persistent arithmetic obstruction.
+
+\para{Independent checks.} For all 256 masks on eight positions, under natural and scrambled labelings, 6,144 direction/orbit comparisons agreed with direct traversal. The buffered geometry tests visited 10,620 occupied orbits across 54 size/label choices. Another 5,080 finite sampling patterns checked the exact without-replacement probability and its multiplicative bound, including conditioning on a retained point. On 32 positions a source-shaped rational gain evaluation used the same mask throughout each panel, comparing 128 exact values with the preceding implementation. The finite gain tests assume service. The finite cyclic geometry tests alone do not verify the family prime-weight estimate.
+
+\para{A failed strengthening.} The first unbuffered construction passed the exported size interval and the original bad-mass allowance at their constants, yielding a lower bound \(1/16\) of \(U\) on that weaker contract. When seven out of sixteen support classes were proposed to restore the target count while blocking generator differences, only 13,824 of 32,768 possible dyadic label orientations passed that search's constraints. We retained the failure. Requiring the exact size, on any host labeling, led instead to buffering one half and moving the obstruction to directions of valuation one.
+
+\pagepart{A measurable question about the incumbent}
+The local paper by Fraser and Rakhmonov asks how Fourier information controls exceptional directions in a finite-field projection problem. A different group and a different observable occur here. We can apply the underlying second-moment idea directly to this cyclic group. For an orbit of length \(2m\), write \(e(t),o(t)\) for the indicators of its retained even and odd children in additive coordinates, \(t\in\mathbb Z/m\). For generating step \(2r+1\) within the orbit, set
+\[
+ J(r)=\sum_t e(t)o(t+r),\qquad J_{\rm reverse}(r)=J(-r-1).
+\]
+The mean is \(\mu=|e||o|/m\) for \(|e|,|o|\) the two counts. For the unnormalized discrete Fourier transform, orthogonality gives
+\[
+ \frac1m\sum_r(J(r)-\mu)^2
+   =\frac1{m^2}\sum_{\xi\ne0}|\widehat e(\xi)\widehat o(\xi)|^2 .
+\]
+An exact pair-difference histogram and an independent Fourier evaluation agreed in the experiments. In the table, the same mean gives no information about which directions are missing. The frequency-by-frequency products account for the variance difference. The finite-field projection theorem is not required here. \href{https://arxiv.org/abs/2503.15072}{Fraser and Rakhmonov, sections 2 and 8}.
+
+For the incumbent this supplies a deterministic sufficient test. The previous two-branch floor bounds normalized recovery above by
+\[
+ \frac{1}{2nN}\sum_{d\in A}\sum_{v}
+ \big[O_{dv}-(x+1)J_{dv}\big]_+ +o(1).
+\]
+Here \(O_{dv}\) counts retained odd positions, \(J_{dv}\) the forward retained edges, and a length-one orbit contributes zero. Indeed the previous local upper allowance is \(\lambda(O-J)+o(N_v\lambda)\) in the bulk and the signed gap there is at least \(\lambda\min(O-J,xJ)-o(N_v\lambda)\). Summing their difference and enlarging the nonnegative sum to all step-orbits gives the display using the uniform step estimate. Small weighted contributions from other primes were controlled in the preceding experiment. At a given orbit, if \(\mu>O/(x+1)\), its fraction of directions below that threshold is at most \(\sigma^2/(\sigma^2+(\mu-O/(x+1))^2)\) by the one-sided variance inequality. Reverse edges can improve this sufficient test. The proof's original score supplies neither the cross-correlation nor its variance.
+
+\para{A connection to revisable memory.} A summary can preserve all the counts needed for one question and lose the answer to the next one. Here the same-count masks have the same summary and the same mean incidence. Yet the fraction of directions with no edge in either orientation is \(1/2\) versus zero. Any predictor given only that shared summary must err by at least \(1/4\) on one of this pair, in absolute error. This gives an exactly scored example of task-relative sufficiency for our research. It makes no claim about a learned model's performance.
+
+\para{Verification boundary.} The receipt checks the new local gain lemmas against the pinned definitions. Global selection, step weighting, and limiting constants are mathematical deductions assembled in this study. The full Lean endpoint was outside this build. The unresolved empirical item is the membership data for the original arithmetic witness.
+\end{document}

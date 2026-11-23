@@ -1,0 +1,2 @@
+# Secondary scale check
+Before running the spectral panel, also fix a scale control at n=65536, with the same delta and three seeds. For the target orbit its mean directed count in the stratified mask will rise from 1 to 16. Predict that the structural zero directions persist for every seed, while the same-child-count control largely loses its incidental zeros. Use the larger panel for the scale comparison and do not impose an a posteriori zero-probability threshold. Both scales are finite controls outside the asymptotic host parameter windows.

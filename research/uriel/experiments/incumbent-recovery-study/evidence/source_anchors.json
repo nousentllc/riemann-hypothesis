@@ -1,0 +1,321 @@
+{
+  "pin": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "sources": [
+    {
+      "source": "src/Development/AbelianVarietyTheory/Definitions/GlobalTwisting/ThinScalesIffHostBound.lean",
+      "git_blob": "1de433cc5ce2fa941ca72691bc75a3bccb667634",
+      "sha256": "413712d1bffa0ffc17a269690dbd21597d8eb1dd08452f943dfdcf535f607146",
+      "lines": 252,
+      "cited_at": [
+        [
+          "evidence/construction/CONSTRUCTION.md",
+          35,
+          42
+        ]
+      ]
+    },
+    {
+      "source": "src/Development/AutomorphicArithmetic/ShortNorms/hostOfFieldOf.lean",
+      "git_blob": "261b566b0ea0d155ef1a434889d720c3b439735f",
+      "sha256": "fb75c6141fe635f8afd236416d423a493548ce9e834da1b839686331d5d40489",
+      "lines": 255,
+      "cited_at": [
+        [
+          "What_the_Original_Selection_Rules_Force.tex",
+          218,
+          218
+        ]
+      ]
+    },
+    {
+      "source": "src/Development/AutomorphicArithmetic/ThickFrames/MarkedLow.lean",
+      "git_blob": "5be96f404d32887eec97c3a7f56134c05c77be7e",
+      "sha256": "410e5950323b24a916148df5b6aa874242eb7dfae2ec058067e5691d4db56f2a",
+      "lines": 33,
+      "cited_at": [
+        [
+          "evidence/rigidity/AUDIT.md",
+          20,
+          31
+        ]
+      ]
+    },
+    {
+      "source": "src/Development/AutomorphicArithmetic/ThickFrames/TilesLe.lean",
+      "git_blob": "83d94cf2d4488f8864b5a2468874254460aebe04",
+      "sha256": "50a1948391ea373890730b4b74e90ebfa7f152ab764a01257193bc7b6754eb3b",
+      "lines": 105,
+      "cited_at": [
+        [
+          "evidence/rigidity/AUDIT.md",
+          43,
+          67
+        ]
+      ]
+    },
+    {
+      "source": "src/Development/AutomorphicArithmetic/ThickFrames/orbitTerms.lean",
+      "git_blob": "065bd0ae97e6d4da20d104d7cfacf4cab3b8aac7",
+      "sha256": "027e5d3c89ae761d71d1568efeeb27201cd88a0580512adaf5c9b4fd4e2ff0ff",
+      "lines": 261,
+      "cited_at": [
+        [
+          "evidence/construction/CONSTRUCTION.md",
+          97,
+          128
+        ],
+        [
+          "evidence/construction/CONSTRUCTION.md",
+          225,
+          250
+        ],
+        [
+          "evidence/rigidity/AUDIT.md",
+          107,
+          136
+        ]
+      ]
+    },
+    {
+      "source": "src/Development/AutomorphicArithmetic/ThickFrames/select.lean",
+      "git_blob": "32751767563d67d48acb0d4ff4e2e256d03b42e3",
+      "sha256": "498d03b21842694689c0460dc3fc8942ad88b9087a60ee46a870a62b7d490462",
+      "lines": 174,
+      "cited_at": [
+        [
+          "What_the_Original_Selection_Rules_Force.tex",
+          42,
+          42
+        ],
+        [
+          "What_the_Original_Selection_Rules_Force.tex",
+          136,
+          136
+        ],
+        [
+          "evidence/rigidity/AUDIT.md",
+          70,
+          173
+        ]
+      ]
+    },
+    {
+      "source": "src/Development/AutomorphicArithmetic/ThickFrames/topsBase.lean",
+      "git_blob": "d3a34386069e27091a1cd44e9f2bbb52044b591d",
+      "sha256": "88c99c3ee2a40f79a0cb5fd08aa4ad149607b5b8627f4d25198966e9b2a12552",
+      "lines": 139,
+      "cited_at": [
+        [
+          "evidence/construction/CONSTRUCTION.md",
+          42,
+          69
+        ],
+        [
+          "evidence/rigidity/AUDIT.md",
+          79,
+          97
+        ]
+      ]
+    },
+    {
+      "source": "src/Development/AutomorphicArithmetic/ThickFrames/topsChoiceH.lean",
+      "git_blob": "30fc631d84ac2188105d8ee9a92d2ed37ba43b7d",
+      "sha256": "95cf108baaabc12785f6d2885344dfd867ef9898df29258d69cb383110e3db78",
+      "lines": 67,
+      "cited_at": [
+        [
+          "What_the_Original_Selection_Rules_Force.tex",
+          33,
+          33
+        ],
+        [
+          "evidence/construction/CONSTRUCTION.md",
+          30,
+          38
+        ]
+      ]
+    },
+    {
+      "source": "src/Development/AutomorphicArithmetic/ThickFrames/topsGroup.lean",
+      "git_blob": "84d05b484bb41e3c6549da74fb667d83414e2ebd",
+      "sha256": "3bbdc1217940a0c6e5ae0d7ef56208c6c392efbaebde2d95af5e2ba4e925993b",
+      "lines": 143,
+      "cited_at": [
+        [
+          "What_the_Original_Selection_Rules_Force.tex",
+          101,
+          101
+        ],
+        [
+          "evidence/construction/CONSTRUCTION.md",
+          90,
+          123
+        ],
+        [
+          "evidence/rigidity/AUDIT.md",
+          90,
+          125
+        ]
+      ]
+    },
+    {
+      "source": "src/Formalism/LocalToGlobal/GlobalTheory/IsResidueClassZero.lean",
+      "git_blob": "3d9ca6054c07565ada526d97402492b71739937d",
+      "sha256": "7b055c5bb583ff2ffc19c0891b468e05db7926f6039999f09a3d7615c90a171e",
+      "lines": 524,
+      "cited_at": [
+        [
+          "What_the_Original_Selection_Rules_Force.tex",
+          267,
+          267
+        ],
+        [
+          "evidence/construction/CONSTRUCTION.md",
+          264,
+          275
+        ],
+        [
+          "evidence/rigidity/AUDIT.md",
+          264,
+          275
+        ]
+      ]
+    },
+    {
+      "source": "src/Formalism/SharpRestriction/FamCore.lean",
+      "git_blob": "44cd54c38881086724fdf7f10f32b7d8e80e35b3",
+      "sha256": "b261e12923d7dc47037a7b5b458e61ef59d69545f3b40a904a36e6bf8047ec78",
+      "lines": 218,
+      "cited_at": [
+        [
+          "What_the_Original_Selection_Rules_Force.tex",
+          123,
+          123
+        ]
+      ]
+    },
+    {
+      "source": "src/Formalism/SharpRestriction/GrowthBounds/IsResidueClassZero.lean",
+      "git_blob": "9fbb7879d0519f9a136e190551422881ef5d2f0b",
+      "sha256": "769f9733e1d208e4ee5a9cc89e25123f2ce9182ce295490ff97e569faf87f5a0",
+      "lines": 485,
+      "cited_at": [
+        [
+          "What_the_Original_Selection_Rules_Force.tex",
+          241,
+          241
+        ],
+        [
+          "evidence/branch/BRANCH.md",
+          131,
+          160
+        ],
+        [
+          "evidence/branch/BRANCH.md",
+          230,
+          268
+        ],
+        [
+          "evidence/branch/BRANCH.md",
+          335,
+          362
+        ],
+        [
+          "evidence/rigidity/AUDIT.md",
+          234,
+          268
+        ]
+      ]
+    },
+    {
+      "source": "src/Formalism/SharpRestriction/GrowthBounds/LogarithmicSums/PartnerCountOfCentral.lean",
+      "git_blob": "f677b9041604e334f1115ae16b96cd61b1c7ee55",
+      "sha256": "12e0fc504d1dd71ac46b7cd72908ae34001b2995b51accb36a031e821b64f998",
+      "lines": 851,
+      "cited_at": [
+        [
+          "evidence/branch/BRANCH.md",
+          226,
+          251
+        ],
+        [
+          "evidence/branch/BRANCH.md",
+          769,
+          780
+        ]
+      ]
+    },
+    {
+      "source": "src/Formalism/SharpRestriction/GrowthBounds/UnramifiedQuadraticSetting.lean",
+      "git_blob": "c36e22ceab2885a6ab812f6187bfd1a86472a6ec",
+      "sha256": "8131a4bd16451b1acce0980972b44735ff04eade07f6ea91788cde72f5df5b6a",
+      "lines": 254,
+      "cited_at": [
+        [
+          "What_the_Original_Selection_Rules_Force.tex",
+          237,
+          237
+        ],
+        [
+          "evidence/construction/CONSTRUCTION.md",
+          235,
+          252
+        ],
+        [
+          "evidence/rigidity/AUDIT.md",
+          237,
+          252
+        ]
+      ]
+    },
+    {
+      "source": "src/Formalism/SizeWindowBrackets/WindowSettingSatisfiable.lean",
+      "git_blob": "641dc12c8c7005d532889ed7a3044636ba72b3c5",
+      "sha256": "77569696749f9fa24ad13bae6181c0e1bac62a243f9313737f1541b481a53c9b",
+      "lines": 416,
+      "cited_at": [
+        [
+          "evidence/branch/BRANCH.md",
+          65,
+          117
+        ]
+      ]
+    },
+    {
+      "source": "src/Formalism/SubspaceCounting/GoodOrbitIntervalTileCondition.lean",
+      "git_blob": "acb9507aac12f0af981cc734a07b0302ea501026",
+      "sha256": "44168da25c567d057bc885ba30918687f9573495759a62900c7175ac5a8c40bb",
+      "lines": 93,
+      "cited_at": [
+        [
+          "What_the_Original_Selection_Rules_Force.tex",
+          12,
+          12
+        ],
+        [
+          "evidence/construction/CONSTRUCTION.md",
+          9,
+          26
+        ],
+        [
+          "evidence/rigidity/AUDIT.md",
+          9,
+          26
+        ]
+      ]
+    },
+    {
+      "source": "src/Formalism/SubspaceCounting/StatementB.lean",
+      "git_blob": "5d64c1a8e0a7fdca57f1263c345be4d1bbca2d26",
+      "sha256": "5118b67dcbfb14424d56c1eb44dbc290b9d94a386bf5027c46557e1fc51e4017",
+      "lines": 106,
+      "cited_at": [
+        [
+          "evidence/construction/CONSTRUCTION.md",
+          9,
+          14
+        ]
+      ]
+    }
+  ]
+}
