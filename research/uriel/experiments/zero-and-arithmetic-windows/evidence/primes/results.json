@@ -1,0 +1,455 @@
+{
+  "constants": {
+    "beta": {
+      "L": [
+        "0.78539816339744830",
+        "0.78539816339744834"
+      ],
+      "L_prime": [
+        "0.19290131679691234",
+        "0.19290131679691251"
+      ],
+      "direct_terms": 8192,
+      "ordinary_ratio": [
+        "0.245223035",
+        "0.245996207"
+      ],
+      "ratio": [
+        "0.2456095847773140",
+        "0.2456095847773143"
+      ],
+      "terms": 55
+    },
+    "gamma": [
+      "0.5772156649009",
+      "0.5772156649020"
+    ]
+  },
+  "controls": {
+    "mass_certified_below_full_peak_allowance": 12,
+    "overlaps_prior_peak": true,
+    "ratio_below_95pct": 12,
+    "relative_accuracy_passes": 12,
+    "strict_endpoint_misses": 8,
+    "without_logwidth_saturator_mass": [
+      "2.77258872",
+      "2.77258873"
+    ],
+    "wrong_sign_chi4_peak_upper": "-7.72955878"
+  },
+  "fixedpoint_bits": 160,
+  "log_terms": 55,
+  "prime_powers": 604,
+  "protocol_sha256": "93fbb924d8beb0e0578466cdb2f115c54588578ce515bd76fa7a76a621734955",
+  "relative_mesh": 2048,
+  "rows": [
+    {
+      "Y": 16,
+      "cells": 2997,
+      "character": "1",
+      "end": 64,
+      "endpoint_peak": [
+        "0.45957280",
+        "0.45957281"
+      ],
+      "mass": [
+        "0.45865556",
+        "0.45897418"
+      ],
+      "mass_width_below_four_per_mille": true,
+      "peak": [
+        "0.45957280",
+        "0.45957293"
+      ],
+      "peak_logwidth": [
+        "0.63710318",
+        "0.63710336"
+      ],
+      "peak_lower_witness": "16",
+      "ratio": [
+        "0.71990763",
+        "0.72040792"
+      ],
+      "sign_cells": [
+        2997,
+        0,
+        0
+      ],
+      "theta": "1/2"
+    },
+    {
+      "Y": 16,
+      "cells": 2997,
+      "character": "1",
+      "end": 64,
+      "endpoint_peak": [
+        "0.22978640",
+        "0.22978641"
+      ],
+      "mass": [
+        "0.19755697",
+        "0.19771701"
+      ],
+      "mass_width_below_four_per_mille": true,
+      "peak": [
+        "0.22978640",
+        "0.22978647"
+      ],
+      "peak_logwidth": [
+        "0.31855159",
+        "0.31855168"
+      ],
+      "peak_lower_witness": "16",
+      "ratio": [
+        "0.62017246",
+        "0.62067500"
+      ],
+      "sign_cells": [
+        2997,
+        0,
+        0
+      ],
+      "theta": "3/4"
+    },
+    {
+      "Y": 64,
+      "cells": 4382,
+      "character": "1",
+      "end": 512,
+      "endpoint_peak": [
+        "0.22929892",
+        "0.22929893"
+      ],
+      "mass": [
+        "0.29642822",
+        "0.29663998"
+      ],
+      "mass_width_below_four_per_mille": true,
+      "peak": [
+        "0.22929892",
+        "0.22930869"
+      ],
+      "peak_logwidth": [
+        "0.47681371",
+        "0.47683402"
+      ],
+      "peak_lower_witness": "64",
+      "ratio": [
+        "0.62165914",
+        "0.62212971"
+      ],
+      "sign_cells": [
+        4382,
+        0,
+        0
+      ],
+      "theta": "1/2"
+    },
+    {
+      "Y": 64,
+      "cells": 4382,
+      "character": "1",
+      "end": 512,
+      "endpoint_peak": [
+        "0.08106941",
+        "0.08106942"
+      ],
+      "mass": [
+        "0.08533291",
+        "0.08540396"
+      ],
+      "mass_width_below_four_per_mille": true,
+      "peak": [
+        "0.08106941",
+        "0.08107287"
+      ],
+      "peak_logwidth": [
+        "0.16857910",
+        "0.16858629"
+      ],
+      "peak_lower_witness": "64",
+      "ratio": [
+        "0.50616762",
+        "0.50661055"
+      ],
+      "sign_cells": [
+        4382,
+        0,
+        0
+      ],
+      "theta": "3/4"
+    },
+    {
+      "Y": 256,
+      "cells": 5991,
+      "character": "1",
+      "end": 4096,
+      "endpoint_peak": [
+        "0.10712984",
+        "0.10712985"
+      ],
+      "mass": [
+        "0.17134354",
+        "0.17146679"
+      ],
+      "mass_width_below_four_per_mille": true,
+      "peak": [
+        "0.11778690",
+        "0.11781543"
+      ],
+      "peak_logwidth": [
+        "0.32657464",
+        "0.32665372"
+      ],
+      "peak_lower_witness": "2102/7",
+      "ratio": [
+        "0.52454184",
+        "0.52504623"
+      ],
+      "sign_cells": [
+        5991,
+        0,
+        0
+      ],
+      "theta": "1/2"
+    },
+    {
+      "Y": 256,
+      "cells": 5991,
+      "character": "1",
+      "end": 4096,
+      "endpoint_peak": [
+        "0.02678246",
+        "0.02678247"
+      ],
+      "mass": [
+        "0.03335763",
+        "0.03338558"
+      ],
+      "mass_width_below_four_per_mille": true,
+      "peak": [
+        "0.02830204",
+        "0.02831229"
+      ],
+      "peak_logwidth": [
+        "0.07846992",
+        "0.07849832"
+      ],
+      "peak_lower_witness": "2098/7",
+      "ratio": [
+        "0.42494719",
+        "0.42545696"
+      ],
+      "sign_cells": [
+        5991,
+        0,
+        0
+      ],
+      "theta": "3/4"
+    },
+    {
+      "Y": 16,
+      "cells": 2997,
+      "character": "chi4",
+      "end": 64,
+      "endpoint_peak": [
+        "0.14976368",
+        "0.14976369"
+      ],
+      "mass": [
+        "0.19559491",
+        "0.19573041"
+      ],
+      "mass_width_below_four_per_mille": true,
+      "peak": [
+        "0.23297332",
+        "0.23302024"
+      ],
+      "peak_logwidth": [
+        "0.32296960",
+        "0.32303464"
+      ],
+      "peak_lower_witness": "23",
+      "ratio": [
+        "0.60549207",
+        "0.60603352"
+      ],
+      "sign_cells": [
+        2997,
+        0,
+        0
+      ],
+      "theta": "1/2"
+    },
+    {
+      "Y": 16,
+      "cells": 2997,
+      "character": "chi4",
+      "end": 64,
+      "endpoint_peak": [
+        "0.07055178",
+        "0.07055179"
+      ],
+      "mass": [
+        "0.08475289",
+        "0.08482135"
+      ],
+      "mass_width_below_four_per_mille": true,
+      "peak": [
+        "0.10678483",
+        "0.10682185"
+      ],
+      "peak_logwidth": [
+        "0.14803520",
+        "0.14808652"
+      ],
+      "peak_lower_witness": "19",
+      "ratio": [
+        "0.57232013",
+        "0.57298088"
+      ],
+      "sign_cells": [
+        2997,
+        0,
+        0
+      ],
+      "theta": "3/4"
+    },
+    {
+      "Y": 64,
+      "cells": 4382,
+      "character": "chi4",
+      "end": 512,
+      "endpoint_peak": [
+        "0.14976368",
+        "0.14976369"
+      ],
+      "mass": [
+        "0.13249318",
+        "0.13258752"
+      ],
+      "mass_width_below_four_per_mille": true,
+      "peak": [
+        "0.16864225",
+        "0.16868160"
+      ],
+      "peak_logwidth": [
+        "0.35068171",
+        "0.35076353"
+      ],
+      "peak_lower_witness": "67",
+      "ratio": [
+        "0.37772793",
+        "0.37808507"
+      ],
+      "sign_cells": [
+        3842,
+        538,
+        2
+      ],
+      "theta": "1/2"
+    },
+    {
+      "Y": 64,
+      "cells": 4382,
+      "character": "chi4",
+      "end": 512,
+      "endpoint_peak": [
+        "0.05294945",
+        "0.05294946"
+      ],
+      "mass": [
+        "0.03821761",
+        "0.03824936"
+      ],
+      "mass_width_below_four_per_mille": true,
+      "peak": [
+        "0.05894509",
+        "0.05896573"
+      ],
+      "peak_logwidth": [
+        "0.12257288",
+        "0.12261579"
+      ],
+      "peak_lower_witness": "67",
+      "ratio": [
+        "0.31168590",
+        "0.31205393"
+      ],
+      "sign_cells": [
+        3842,
+        538,
+        2
+      ],
+      "theta": "3/4"
+    },
+    {
+      "Y": 256,
+      "cells": 5991,
+      "character": "chi4",
+      "end": 4096,
+      "endpoint_peak": [
+        "0.05018972",
+        "0.05018973"
+      ],
+      "mass": [
+        "0.07943271",
+        "0.07948821"
+      ],
+      "mass_width_below_four_per_mille": true,
+      "peak": [
+        "0.12991742",
+        "0.12994793"
+      ],
+      "peak_logwidth": [
+        "0.36020759",
+        "0.36029217"
+      ],
+      "peak_lower_witness": "487",
+      "ratio": [
+        "0.22046751",
+        "0.22067333"
+      ],
+      "sign_cells": [
+        3676,
+        2305,
+        10
+      ],
+      "theta": "1/2"
+    },
+    {
+      "Y": 256,
+      "cells": 5991,
+      "character": "chi4",
+      "end": 4096,
+      "endpoint_peak": [
+        "0.00867138",
+        "0.00867139"
+      ],
+      "mass": [
+        "0.01443658",
+        "0.01444842"
+      ],
+      "mass_width_below_four_per_mille": true,
+      "peak": [
+        "0.02765573",
+        "0.02766548"
+      ],
+      "peak_logwidth": [
+        "0.07667797",
+        "0.07670498"
+      ],
+      "peak_lower_witness": "487",
+      "ratio": [
+        "0.18820928",
+        "0.18842981"
+      ],
+      "sign_cells": [
+        3676,
+        2305,
+        10
+      ],
+      "theta": "3/4"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "version": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "mathlib_commit": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "analytic_objects_authenticated": 30,
+  "source_sha256": "d8cb1b2f9919f828e65a455ec1a87adbec08522eca88682e3f348579d96b6d81",
+  "axioms": "'Uriel.ArithmeticWindow.selectedWindow' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Uriel.ArithmeticWindow.zeroFreeFromLocalHosts' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Uriel.ArithmeticWindow.fitIff' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Uriel.ArithmeticWindow.cutoffIff' depends on axioms: [propext, Classical.choice, Quot.sound]",
+  "kernel_output": "replaying ArithmeticWindow",
+  "scope": "New conditional bridge and two real-arithmetic equivalences. Given supply, all-index and local-core hypotheses, invokes original analytic theorem. No replay of upstream host construction."
+}

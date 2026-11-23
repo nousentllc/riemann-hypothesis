@@ -1,0 +1,375 @@
+{
+  "original_commit": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "files": [
+    {
+      "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/ExistsPageN.lean",
+      "sha256": "732c3347fb02e410cf9af8831afdbba1d230fc522c3dbbccdb4b708e5dde73db",
+      "git_blob": "398eb8ed3528aa2666e9d3b2b09a582ad4390dd7",
+      "spans": [
+        {
+          "start": 12,
+          "end": 17,
+          "sha256": "3d494bcb05395d72f63f6ff80303dd28e9aa546527bb6be5fabe80543bef0049",
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/CharacterBoxes/ExistsPageN.lean#L12-L17"
+        },
+        {
+          "start": 27,
+          "end": 49,
+          "sha256": "5724d267c83624d71360dfa583c4f004bfc661818699aaf547dcb3083ab81c06",
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/CharacterBoxes/ExistsPageN.lean#L27-L49"
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/PairGood.lean",
+      "sha256": "e5ddbc7f4573275caad502b8414dc3579ed904d1fa6c5f3848080bbd94fb3abb",
+      "git_blob": "68d04b506355e999c0f6020ee066c4967c1e6939",
+      "spans": [
+        {
+          "start": 18,
+          "end": 30,
+          "sha256": "39e9928954f0289bcc8208f612672e00c0c819e281cef61f16394ab8c05c5663",
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/CharacterBoxes/PairGood.lean#L18-L30"
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/TwistForm.lean",
+      "sha256": "f6fcb4d6d30327b91dc81247a280070efc3196de2053cad36cbf14ec1daae2c3",
+      "git_blob": "5e8b1a992a393336dffd3603524526dfccfa1981",
+      "spans": [
+        {
+          "start": 19,
+          "end": 26,
+          "sha256": "7ff18df70df3b44f3af912bc96d8355557641fa63d155e5bbdea1a314cd8bb80",
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/CharacterBoxes/TwistForm.lean#L19-L26"
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/WinPairs.lean",
+      "sha256": "41c1edf737bb6e1a4791d4440488a885889209db750698359ab4d1e237dc2f6e",
+      "git_blob": "4670fec488d1eb59a3cc52dffc8d0eab16e16b0b",
+      "spans": [
+        {
+          "start": 5,
+          "end": 20,
+          "sha256": "e79433f617d5838bcb5e8ed0ba07e7bb295256ef47c76590c22f5327d65b9cf6",
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/CharacterBoxes/WinPairs.lean#L5-L20"
+        },
+        {
+          "start": 23,
+          "end": 52,
+          "sha256": "a052c28759a00011bdc6c9a953a986d43b76b63099d51ab441269bfde848245b",
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/CharacterBoxes/WinPairs.lean#L23-L52"
+        },
+        {
+          "start": 52,
+          "end": 81,
+          "sha256": "7bf8d3f51ec6b910b98ebb05fb98458c8a2da2e03745a58b3456050f891f3b8e",
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/CharacterBoxes/WinPairs.lean#L52-L81"
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/ShortNorms/supplyOfAdmOf.lean",
+      "sha256": "b70c2177d57dfcd03f82784741813b7c6e6b525c69ffec5cae5527f03013a364",
+      "git_blob": "04ca5068e90544580c7684a316ec79c49d3572fc",
+      "spans": [
+        {
+          "start": 13,
+          "end": 30,
+          "sha256": "55fb1daac59e69c62634aa3c8eefbcb81c4bd92478add900b0d54d240871e644",
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/ShortNorms/supplyOfAdmOf.lean#L13-L30"
+        },
+        {
+          "start": 49,
+          "end": 58,
+          "sha256": "65eda0a83d563e237ef8ec06f185ada372c8f595ff36c6d8dbf5f0aa5dfa54ad",
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/ShortNorms/supplyOfAdmOf.lean#L49-L58"
+        },
+        {
+          "start": 110,
+          "end": 135,
+          "sha256": "500436884827a0f885d9b04987445d4cb9c252c52b4ada441cf76f4ff65d87bd",
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/ShortNorms/supplyOfAdmOf.lean#L110-L135"
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/SupplyChi.lean",
+      "sha256": "70a11ba909e03b9153a6beacce24da22f3224b8192ec6980b7f27018961be81b",
+      "git_blob": "339885b77069601fb716a60739369805241e8222",
+      "spans": [
+        {
+          "start": 8,
+          "end": 16,
+          "sha256": "2fc8f643aa2faafb92245eef1323f7d1b97bfad2151f9cc3bd6a50433b33a56f",
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/CharacterBoxes/SupplyChi.lean#L8-L16"
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/PrimeDiscriminants/Scales.lean",
+      "sha256": "2e897e9b0e8db7c1a85636b9e0a033d982a0b091e3bf004ff507ad6e12334068",
+      "git_blob": "c0ccc985076aaada625ebcf8696d5d0f187c57ac",
+      "spans": [
+        {
+          "start": 9,
+          "end": 19,
+          "sha256": "cc419d0285d9796a6580e62a0d35de51bb001776b0b5e6d92e927a0667d0b4a5",
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/PrimeDiscriminants/Scales.lean#L9-L19"
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/Supply.lean",
+      "sha256": "c57b63c82b55380b31aabae74ba797be099cd0edaba3de88387995fea2cfe31f",
+      "git_blob": "b104f034fc9c13758e280d1b7d33ac1ea370663a",
+      "spans": [
+        {
+          "start": 22,
+          "end": 23,
+          "sha256": "18d8d3d7079f5d60499911b139b900eb9399b210d823dcd84fbf7fd688484f15",
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/CharacterBoxes/Supply.lean#L22-L23"
+        },
+        {
+          "start": 42,
+          "end": 44,
+          "sha256": "43ff104ffbdb1d6175bc8fe81a51a2a639b3b7891cfa14d0a4e13e95b2719f45",
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/CharacterBoxes/Supply.lean#L42-L44"
+        }
+      ]
+    },
+    {
+      "path": "src/Formalism/SharpRestriction/FamCore.lean",
+      "sha256": "b261e12923d7dc47037a7b5b458e61ef59d69545f3b40a904a36e6bf8047ec78",
+      "git_blob": "44cd54c38881086724fdf7f10f32b7d8e80e35b3",
+      "spans": [
+        {
+          "start": 71,
+          "end": 95,
+          "sha256": "67bd2602ffe439aa89526691d174e306e3f40f6c18dd470c1806d63075de5323",
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/SharpRestriction/FamCore.lean#L71-L95"
+        },
+        {
+          "start": 155,
+          "end": 156,
+          "sha256": "49cb7c08addc768726fa2b2f5df3e6ccae68ac8b0aa7c17a6330fbed2d456549",
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/SharpRestriction/FamCore.lean#L155-L156"
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/ZeroFreeAllOfTopG.lean",
+      "sha256": "349d9eafe63952c2fa4ccb2055bef7de0144d442c552196183fe48f01958f033",
+      "git_blob": "54d1b4b84e8c4b97c98379f0bf1bd6bf2f3b2da1",
+      "spans": [
+        {
+          "start": 16,
+          "end": 33,
+          "sha256": "0715314f8773d91f586f38249824b04132c97cf4bd80c6cd4073c0a7e1bb4802",
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/CharacterBoxes/ZeroFreeAllOfTopG.lean#L16-L33"
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/DesWin.lean",
+      "sha256": "655762e90a0d7aae940774b631286a6cb942e59f68d7a3c350c05274487bf6ec",
+      "git_blob": "94820ef32775f43f41c61da2b892a121d0549b86",
+      "spans": [
+        {
+          "start": 11,
+          "end": 31,
+          "sha256": "be7ff058ed24a269b9fe2a8db69bef11fb5c733c07be1d034df7e7ed67bcd0c2",
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/CharacterBoxes/DesWin.lean#L11-L31"
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopShape.lean",
+      "sha256": "9647d4cbe444f79de90c7a5371801e83c58a040499bf03fd61faf37be9e6eaa3",
+      "git_blob": "3f791ca182db235c4a8ff582d3f038019320d5cd",
+      "spans": [
+        {
+          "start": 47,
+          "end": 55,
+          "sha256": "5623b68b583d61542623ae6652ade4cce02c601c875bb77a902005bf18162709",
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopShape.lean#L47-L55"
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopPlug.lean",
+      "sha256": "7d1d7972a4abe1284c5e4da9dd65a6eb605b06efb5e993b298fe5aaed88e9adf",
+      "git_blob": "c51cb6b5bd4bf2944ace89e00a2990da16bd519a",
+      "spans": [
+        {
+          "start": 12,
+          "end": 18,
+          "sha256": "d72a9b822541ad649c242e17292369c8ed047311489846c72adc742229eb30fe",
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopPlug.lean#L12-L18"
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/PrimitiveCosets/CoreGm.lean",
+      "sha256": "73abeaad38ed40bde0c2f974f53cae9d851e72d23ae389dea129b2bbddc58bc8",
+      "git_blob": "3ba7a590e84c5993882ea6c5dcf9fdbed5f07d4d",
+      "spans": [
+        {
+          "start": 12,
+          "end": 15,
+          "sha256": "a62dced1e077fdd5bba9ce7051cd28e7237f3090b59afcfb229cd2eed5b18cfc",
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/PrimitiveCosets/CoreGm.lean#L12-L15"
+        },
+        {
+          "start": 21,
+          "end": 32,
+          "sha256": "ed79165bcb227db7478131bc768fca3ace2181e8eb32dc8c704bae64c47b45da",
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/PrimitiveCosets/CoreGm.lean#L21-L32"
+        },
+        {
+          "start": 48,
+          "end": 74,
+          "sha256": "b5b5b4d5a3385e207586a2c875684c0ef2eb44718d445eba33720022f9e32203",
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/PrimitiveCosets/CoreGm.lean#L48-L74"
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/PrimitiveCosets/LevelGmLeOnFamilyScales.lean",
+      "sha256": "978ad99fd0d9e2dc25af57715030516195b629ccd9d5a114451fc5402f1d1426",
+      "git_blob": "de994949e6fd2d7238cfcb1c19d361ccdfe904fc",
+      "spans": [
+        {
+          "start": 13,
+          "end": 30,
+          "sha256": "761fa7ac4ba0115703d2297fec0ad7dca9f29e16e699dec99ca5f38323a712ba",
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/PrimitiveCosets/LevelGmLeOnFamilyScales.lean#L13-L30"
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/PrimitiveCosets/WindowInequalityOfArtinInputs.lean",
+      "sha256": "02d09bb042cbcb56956053a9a4ca75302f5a2cc93583f299005078f4656826aa",
+      "git_blob": "c349e34925ac26b8bc76bd36e9b91562f86d6b8d",
+      "spans": [
+        {
+          "start": 11,
+          "end": 25,
+          "sha256": "5c05fc850b1acb443e4937ed3709b2f96f7b4dc34e105e927fb28f9fdd567e9f",
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/PrimitiveCosets/WindowInequalityOfArtinInputs.lean#L11-L25"
+        }
+      ]
+    },
+    {
+      "path": "src/Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/TopWin.lean",
+      "sha256": "afbbf8ec0a8aca08b7935c6118c76eef06b2eee896805e7de277b9d4e09fc52b",
+      "git_blob": "a6ac464a67f99a546566ee3a3e0fd1db1f4c2550",
+      "spans": [
+        {
+          "start": 23,
+          "end": 36,
+          "sha256": "fe9ca9865d7e243f01ebbe4735635b6a64868c292420e9ca66c8d521331a79a4",
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/TopWin.lean#L23-L36"
+        },
+        {
+          "start": 59,
+          "end": 81,
+          "sha256": "48a2a993bf71002749bd807c574a7586a3f1a056249e803ab7b6c438f0e86013",
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/TopWin.lean#L59-L81"
+        },
+        {
+          "start": 90,
+          "end": 93,
+          "sha256": "0baa65919409ed1897f83ac3576a362568e3f84dccb9f6a93c384bb0f811a114",
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/TopWin.lean#L90-L93"
+        }
+      ]
+    },
+    {
+      "path": "src/Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/Window.lean",
+      "sha256": "882989a78da888b0462d17f285e42e44970a3dee70c1dc8c667fb5a3f985c2f7",
+      "git_blob": "099d96fec932b03a505ea79a81c45bcc3fbf0ea3",
+      "spans": [
+        {
+          "start": 7,
+          "end": 18,
+          "sha256": "6eb54c4995dda4bb6fdf38765c9cf689e0057e468c6ac78d6972a590e22a2225",
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/Window.lean#L7-L18"
+        },
+        {
+          "start": 24,
+          "end": 33,
+          "sha256": "e157a7ed34ffdb04bf7ad2669737667c6cb5ba553e0b534b3f361662aa96b482",
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/Window.lean#L24-L33"
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/PrimitiveCosets/LevelFamily.lean",
+      "sha256": "99ab2af08664a9d1cf3afbe5113894d2b56bb64eb052a378f62d027d0f74354e",
+      "git_blob": "d08c25d0cb674297482bec9a235401c14bfb22fa",
+      "spans": [
+        {
+          "start": 9,
+          "end": 25,
+          "sha256": "e16a280c83d8fa4eaab02981fdbf77fad57e7625b7c2f5a973bac4ae7e9d9a53",
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/PrimitiveCosets/LevelFamily.lean#L9-L25"
+        },
+        {
+          "start": 27,
+          "end": 52,
+          "sha256": "5c36adb0e486f0f23cb851ad13e8cc18b3511e9665cde1d8a297434a35dc20b8",
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/PrimitiveCosets/LevelFamily.lean#L27-L52"
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/PrimitiveCosets/Imports.lean",
+      "sha256": "9d38c47879d3c02199f747433f009ba4cf6eb44d7480f031e5763a2ee271950e",
+      "git_blob": "2dc9b4e690951c66ffe443e279fcada259bcce13",
+      "spans": [
+        {
+          "start": 8,
+          "end": 19,
+          "sha256": "19bb9bf33acd87ed4235fbf6de3839fe8ea0f5be2a652ceb85efba15ff0fb33f",
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/PrimitiveCosets/Imports.lean#L8-L19"
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/WindowHypOfRpow.lean",
+      "sha256": "f9238ed2d6c67f1cbe383a33cc3759c00bed31b97a10253fbee59279290c6a5c",
+      "git_blob": "dde1c159371538875c28374574ca7e452b0450d9",
+      "spans": [
+        {
+          "start": 9,
+          "end": 29,
+          "sha256": "d3dc02760b3b8cbd1763a0e49f4f04c5e1160dfcb1aee6e1046860d784d14ef2",
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/WindowHypOfRpow.lean#L9-L29"
+        },
+        {
+          "start": 31,
+          "end": 57,
+          "sha256": "4ba516a2dacc8e9af00bf4bc5e1109dd7773936a8a7e1fb646ad5b7dd79c21ec",
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/WindowHypOfRpow.lean#L31-L57"
+        }
+      ]
+    },
+    {
+      "path": "src/Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/ExplicitFormulaErrorOfHostConditions.lean",
+      "sha256": "d6b12bcbdc15c1b717c33a712474f9fca18c577a65c41fff2b2937534e5447ba",
+      "git_blob": "ed60b4b997cd4703713660b185b9e43fd95559a1",
+      "spans": [
+        {
+          "start": 121,
+          "end": 125,
+          "sha256": "d25c2186977da680a083fee0c2807f46eefc0a79d29bddcf48d17ed6a5457237",
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/ExplicitFormulaErrorOfHostConditions.lean#L121-L125"
+        }
+      ]
+    }
+  ]
+}

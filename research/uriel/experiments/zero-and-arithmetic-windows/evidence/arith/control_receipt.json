@@ -1,0 +1,128 @@
+{
+  "authenticated_source_files": 22,
+  "host_quantifiers": {
+    "assignments": 256,
+    "examples_bitmasks": {
+      "both_points_own_index": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "separate_but_disjoint": [
+        1,
+        1,
+        1,
+        2
+      ]
+    },
+    "one_index_all_ordinates": 31,
+    "same_index_each_ordinate": 49,
+    "separate_existentials": 81
+  },
+  "observables_and_mass": {
+    "ceiling": 1,
+    "fixed_targets": [
+      [
+        2,
+        0
+      ],
+      [
+        0,
+        2
+      ]
+    ],
+    "normalized_budget": "1",
+    "pointwise_lower_envelope": [
+      0,
+      0
+    ],
+    "tent_height": "8",
+    "tent_positive_areas": [
+      "1/4",
+      "2"
+    ],
+    "tent_widths": [
+      "1/16",
+      "1/2"
+    ]
+  },
+  "scale_margins": {
+    "coverage_without_cutoff": 4,
+    "joint_offset_cases": [
+      {
+        "cutoff": false,
+        "inclusion": false,
+        "k": 2,
+        "offset": -1
+      },
+      {
+        "cutoff": true,
+        "inclusion": true,
+        "k": 2,
+        "offset": 0
+      },
+      {
+        "cutoff": true,
+        "inclusion": true,
+        "k": 2,
+        "offset": 1
+      },
+      {
+        "cutoff": false,
+        "inclusion": false,
+        "k": 3,
+        "offset": -1
+      },
+      {
+        "cutoff": true,
+        "inclusion": true,
+        "k": 3,
+        "offset": 0
+      },
+      {
+        "cutoff": true,
+        "inclusion": true,
+        "k": 3,
+        "offset": 1
+      },
+      {
+        "cutoff": false,
+        "inclusion": false,
+        "k": 5,
+        "offset": -1
+      },
+      {
+        "cutoff": true,
+        "inclusion": true,
+        "k": 5,
+        "offset": 0
+      },
+      {
+        "cutoff": true,
+        "inclusion": true,
+        "k": 5,
+        "offset": 1
+      },
+      {
+        "cutoff": false,
+        "inclusion": false,
+        "k": 11,
+        "offset": -1
+      },
+      {
+        "cutoff": true,
+        "inclusion": true,
+        "k": 11,
+        "offset": 0
+      },
+      {
+        "cutoff": true,
+        "inclusion": true,
+        "k": 11,
+        "offset": 1
+      }
+    ],
+    "unit_boundary": "both equalities"
+  }
+}

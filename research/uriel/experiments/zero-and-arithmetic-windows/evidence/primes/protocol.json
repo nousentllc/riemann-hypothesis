@@ -1,0 +1,12 @@
+{
+  "prior_information": "Earlier conductor-one whole-window peak on [256,4096] was strictly between 0.1177870105 and 0.1177870108. This positive control is known. New mass results and conductor-four results were not computed when this file was written.",
+  "Y": [16, 64, 256],
+  "theta": ["1/2", "3/4"],
+  "delta": "1/2",
+  "characters": ["modulus-one", "primitive-real-modulo-four"],
+  "family": "one unit weight per experiment",
+  "metrics": ["whole-window signed normalized peak", "weighted positive-part integral", "endpoint-only peak", "integral divided by peak times log width"],
+  "predictions": ["On all windows, the positive mass is no larger than the positive normalized peak times the logarithmic width.", "At least one actual window's positive peak is strictly larger than its endpoint-only peak.", "At least one actual window has positive mass strictly smaller than 95% of the peak-based allowance."],
+  "controls": ["old conductor-one peak", "two independent normalization enclosures for conductor four", "replacement of sharp logarithmic factor by a constant integral fails in a saturating model", "wrong normalization sign in the nonprincipal sum", "enumerated prime powers checked by independent trial division"],
+  "method": "Continuous interval enclosures on every prime-power gap. Target relative widths below 0.4% for positive integrals; any unresolved sign or accuracy reported. Square and fourth roots, and natural logarithms computed with integer outward arithmetic."
+}
