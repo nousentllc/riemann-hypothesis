@@ -1,0 +1,67 @@
+{
+  "lean": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "mathlib_commit": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "original_commit": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "previous_gap": "0b9ed6f42cccf214e7e196f2e129ea1e3b1b5987",
+  "source_anchors_verified": 24,
+  "modules": {
+    "SevenDescent": {
+      "source_sha256": "af374465df8a2721d458c4347cc8c95e6c20dab30d775dafcf58aa5d5b3287fb",
+      "kernel": "replaying SevenDescent",
+      "axioms": {
+        "Seven.Descent.quotientBound": "depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "Seven.Descent.moduleZero": "depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "Seven.Descent.layerZero": "depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "Seven.Descent.muSeven": "depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "Seven.Descent.fieldModel": "depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "Seven.Descent.invariantOnModel": "depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "Seven.Descent.kernelOnModel": "depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "Seven.Descent.zeroOnModel": "depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "Seven.Descent.bothParts": "depends on axioms: [propext, Classical.choice, Quot.sound]"
+      }
+    },
+    "SevenWindow": {
+      "source_sha256": "892f7cfd06db586ea86dbf8188940e413b2d20ebb71a38ab875225e0ee8bca0b",
+      "kernel": "replaying SevenWindow",
+      "axioms": {
+        "Seven.Window.directOdd": "depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "Seven.Window.zeroOddRate": "depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "Seven.Window.movingOnly": "depends on axioms: [propext, Classical.choice, Quot.sound]"
+      }
+    },
+    "SevenCaps": {
+      "source_sha256": "75116b9d9cd1b850eda52cc6ba535a798cfa5b65b94c4308cbc3e69145056b26",
+      "kernel": "replaying SevenCaps",
+      "axioms": {
+        "Seven.Caps.zeroFromLayers": "depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "Seven.Caps.threeZero": "depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "Seven.Caps.sevenZero": "depends on axioms: [propext, Classical.choice, Quot.sound]"
+      }
+    },
+    "SevenConclusions": {
+      "source_sha256": "b0e2866e1034ebfa17e138af8a2d52c8923b1d8160109ebf11c788485a2ff060",
+      "kernel": "replaying SevenConclusions",
+      "axioms": {
+        "Seven.Complete.actualTowerFree": "depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "Seven.Complete.actualRankZero": "depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "Seven.Complete.allSigned": "depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "Seven.Complete.localKernel": "depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "Seven.Complete.localSumZero": "depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "Seven.Complete.rankZeroBound": "depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "Seven.Complete.allOdd": "depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "Seven.Complete.onlyMoving": "depends on axioms: [propext, Classical.choice, Quot.sound]"
+      }
+    },
+    "SevenCalibration": {
+      "source_sha256": "ddce33d14c6427efff974171a206c440e2d530b7b5f500bda925c239a59c25d5",
+      "kernel": "replaying SevenCalibration",
+      "axioms": {
+        "Seven.Calibration.rootLevel": "depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "Seven.Calibration.baseOffset": "depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "Seven.Calibration.zeroRankIndex": "does not depend on any axioms",
+        "Seven.Calibration.zeroRankField": "depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "Seven.Calibration.calibratedLayer": "depends on axioms: [propext, Classical.choice, Quot.sound]"
+      }
+    }
+  }
+}

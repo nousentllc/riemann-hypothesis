@@ -1,0 +1,142 @@
+[
+  {
+    "claim": "principal-roster",
+    "evidence_type": "kernel-checked original-type statement",
+    "conclusion": "The actual auxiliary quadratic field Kstar 7 has class number one. The original principal-character roster Bchi is exactly {3,7}.",
+    "scope": "The quadratic roster field and cyclotomic field underlying the seven-slot have different roles. The calculation is specific to the principal character.",
+    "evidence": [
+      "evidence/roster/SevenRoster.lean",
+      "evidence/kernel.json"
+    ]
+  },
+  {
+    "claim": "seven-base",
+    "evidence_type": "kernel-checked arithmetic seed and independent finite controls",
+    "conclusion": "In any conductor-seven cyclotomic field model over the rationals, the integer ring is a PID and the class-group order is prime to seven. The base class number is one.",
+    "scope": "The earlier seven-base class-number and PID lemmas are reused with identified provenance. This input alone gives no result at conductor 49.",
+    "evidence": [
+      "evidence/base/SevenBase.lean",
+      "evidence/base/audit.json",
+      "evidence/base/results.json",
+      "evidence/base/kernel.json"
+    ]
+  },
+  {
+    "claim": "one-place-ascent",
+    "evidence_type": "kernel-checked tower theorem",
+    "conclusion": "For every positive original Fn index n, the seven-primary part of the full class group is trivial. The class-cardinality identity transports this conclusion to standard cyclotomic fields of conductor 7^n.",
+    "scope": "The induction uses a totally complex base, prime-degree Galois step, a unique possible ramified finite place and the base nondivisibility input. It asserts no upper bound on the coprime part of the class group.",
+    "evidence": [
+      "evidence/ascent/SevenAscent.lean",
+      "evidence/ascent/SevenTransport.lean",
+      "evidence/ascent/SevenRamification.lean",
+      "evidence/ascent/SevenCover.lean",
+      "evidence/ascent/SevenInertia.lean",
+      "evidence/ascent/SevenClassStep.lean",
+      "evidence/ascent/source_map.json",
+      "evidence/kernel.json"
+    ]
+  },
+  {
+    "claim": "inertia-controls",
+    "evidence_type": "exact finite group computations",
+    "conclusion": "The nonabelian group of upper unitriangular matrices over F7 has 57 order-seven lines. Two chosen independent inertia directions can normally generate the whole group, invalidating the single-place argument after that premise is removed.",
+    "scope": "Synthetic group tests show where a step of the argument can fail. They do not construct an arithmetic counterexample.",
+    "evidence": [
+      "evidence/ascent/control.py",
+      "evidence/ascent/results.json"
+    ]
+  },
+  {
+    "claim": "carry-congruence",
+    "evidence_type": "ordinary mathematical proof, with selected kernel-checked algebra and finite tests",
+    "conclusion": "The carry-projection and relative class-number formula yield h-minus congruent to one modulo seven at every positive seven-power conductor. Reflection supplies the absence of seven-torsion in the real parts.",
+    "scope": "The complete character-product and reflection argument is on paper. Lean checks the unit lifting, normalized denominator and base residue certificate. Six finite conductors test the projection.",
+    "evidence": [
+      "evidence/base/SevenCarries.lean",
+      "evidence/base/carry_kernel.json",
+      "evidence/base/CARRY_PROTOCOL.md",
+      "evidence/base/carries.py",
+      "evidence/base/carries.json"
+    ]
+  },
+  {
+    "claim": "relative-class-numbers",
+    "evidence_type": "independent exact arithmetic and PARI/GP resultant comparison",
+    "conclusion": "At conductors 7 and 49 the relative class numbers are 1 and 43. At 2401 the computed minus part has 850 decimal digits and is one modulo seven. The irregular control at conductor 37 gives 37.",
+    "scope": "Relative class numbers alone do not compute general full class groups. Bounded direct full-field and subfield certification attempts at conductor 49 are reported separately.",
+    "evidence": [
+      "evidence/numerics/relative.py",
+      "evidence/numerics/results.json",
+      "evidence/numerics/extended.json",
+      "evidence/numerics/independent_norm.py",
+      "evidence/numerics/pari_norms.json",
+      "evidence/base/pari.json",
+      "evidence/base/pari_attempts.json"
+    ]
+  },
+  {
+    "claim": "signed-descent",
+    "evidence_type": "kernel-checked original-type theorem across field representatives",
+    "conclusion": "The actual seven-primary inverse-limit module is subsingleton. On every IsLayer for every model of AbF.cyc 7 and every nonzero signed integral twist, shaInv vanishes and the original local restriction kernel is the bottom subgroup. The original VVat estimate holds with bound zero for every natural cutoff.",
+    "scope": "The signed result omits the zero twist. It gives no upper bound for the whole second cohomology group. The cutoff sum only uses positive weights.",
+    "evidence": [
+      "evidence/descent/SevenDescent.lean",
+      "evidence/descent/SevenConclusions.lean",
+      "evidence/descent/trace.json",
+      "evidence/descent/kernel.json",
+      "evidence/kernel.json"
+    ]
+  },
+  {
+    "claim": "layer-calibration",
+    "evidence_type": "kernel-checked field identification and finite independent diagnostic",
+    "conclusion": "The base root-of-unity offset is one and the zero-rank relative reference index is three. Its corresponding absolute layer has conductor 2401 and rational degree 2058.",
+    "scope": "The numerical class-number comparison concerns the minus part of this field. It does not represent a numerical evaluation of cohomology.",
+    "evidence": [
+      "evidence/descent/SevenCalibration.lean",
+      "evidence/numerics/extended.json",
+      "evidence/kernel.json"
+    ]
+  },
+  {
+    "claim": "fixed-witness",
+    "evidence_type": "kernel-checked fixed-K conditional gap theorem",
+    "conclusion": "The direct odd bound holds at every ordinate. With the original constant witness K preserved, the physical two-selection theorem can use an auxiliary zero odd rate. Only the moving crossover and two moving endpoint screens survive among field conditions.",
+    "scope": "The theorem retains the positive tolerance range, page, pair existence, height, supply and other printed hypotheses. No center, pair, late gap or actual successful moving screen is computed.",
+    "evidence": [
+      "evidence/descent/SevenWindow.lean",
+      "evidence/descent/SevenConclusions.lean",
+      "evidence/descent/controls.json",
+      "evidence/kernel.json"
+    ]
+  },
+  {
+    "claim": "least-rank-redesign",
+    "evidence_type": "kernel-checked conditional choice theorem and exact parameter controls",
+    "conclusion": "A fresh coherent supply choice can assign both principal odd slots rank zero, leaving only the moving rank in Jchi. At equal assumed moving rank and scalar constants the model saves a factor 4*CK*Ct/eps for each removed rank.",
+    "scope": "A supplied existing K can retain redundant odd ranks. The calculation makes no measurement of the moving rank or of an existing witness.",
+    "evidence": [
+      "evidence/descent/SevenCaps.lean",
+      "evidence/ranks/LeastSupply.lean",
+      "evidence/ranks/SevenBudget.lean",
+      "evidence/ranks/derive.py",
+      "evidence/ranks/geometry.py",
+      "evidence/ranks/results.json",
+      "evidence/kernel.json"
+    ]
+  },
+  {
+    "claim": "moving-comparison",
+    "evidence_type": "kernel-checked conditional estimate and exact synthetic controls",
+    "conclusion": "A uniform upper bound H on the companion that satisfies the source comparison gives the target a finite cost at most (t-1)*(1+H) for natural truncated subtraction. The TwoBase specialization keeps the comparison and cap on the same witness.",
+    "scope": "The required cap for the moving companion is open in this study. This comparison is a sufficient condition and assigns no actual two-primary lengths.",
+    "evidence": [
+      "evidence/moving/MovingBudget.lean",
+      "evidence/moving/source_map.json",
+      "evidence/moving/results.json",
+      "evidence/moving/kernel.json",
+      "evidence/kernel.json"
+    ]
+  }
+]

@@ -1,0 +1,1370 @@
+{
+ "Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.GaloisCohomologyLength.LevelInertiaLeLevelDec": [
+  "497c591dbb6981c12b4e99d280ed1c81d356adaf",
+  "92dea32dacfce60e333337e4ff5d1e09d8148182dcc0956432e41a1206a9934a"
+ ],
+ "Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.KummerTheory.ClPullApply": [
+  "fb1e84802e2b12122474dcc94208310f2a629f24",
+  "611c5911b05e96903fb6d3f16cb1527bed83a4737a5f4a3d80f0d4eb171fa6b5"
+ ],
+ "Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.KummerTheory.FnCycMap": [
+  "b1c66a73f248a28a55eb9d802ef2ffea6063d3e0",
+  "40cad424af8a1a176e1b7aabeea87f56efabbd5550797323966510c125555f96"
+ ],
+ "Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.KummerTheory.FunRepMem": [
+  "b281490bc855c51d689c41820a958f251491604f",
+  "2b05cf900219036ec35801e76cd3a302d0fe738b930bf04bbaad8036611c7693"
+ ],
+ "Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.KummerTheory.GalOfCyc": [
+  "a10ece5b093d978271405492457b2907fd49765d",
+  "c078e68e130a5344fdbc35f994fc050557c2780059557d76f079e630cb13e975"
+ ],
+ "Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.KummerTheory.Mk0IdMapCongr": [
+  "51d26d55b7fe74a67195fc010e868035094e7cce",
+  "8bcee54ffb99d1776af179f559112afc25e8f0cbaa89e22646080d7cefc34992"
+ ],
+ "Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.SelmerTransport.ConjStableShaFam": [
+  "578402a7b2aea9f24d31473aab4486dd43055fb2",
+  "c35624a960422a26865a5a2f1bff42b4f70f8fc3472ef0ffa110677ed60a5d3b"
+ ],
+ "Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.SelmerTransport.GalQuot": [
+  "0e9fb81afc68bfc55aa48acf2d67674333ca4a90",
+  "ac6c396b3f2467cae6abbeaec652edcdf66334933d6e46de49d07fe8ad11ecdf"
+ ],
+ "Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.SelmerTransport.RestrictionMemInvariantH1": [
+  "c66dfa93f1b37f27ebd49f09df5d3a68a4404b85",
+  "590ae52fe56b6b6c0199b6e35f4b9334eed792a0edc197247e4206ad392a193d"
+ ],
+ "Development.AutomorphicArithmetic.AutomorphicVarieties.GeneratorCountTuples.LemmaK": [
+  "8726ea4259cd1f0fcb350eca97a3be2478261c87",
+  "657e0a3666618755f23a3434781a3fbf19f2377470bf3d416edc9a3caf2e601b"
+ ],
+ "Development.AutomorphicArithmetic.AutomorphicVarieties.LengthEqAddEigen": [
+  "0ab757164d73378933cd4c261b4bf0f670f2461e",
+  "025f5d40786eb9fd25902fb6e0ee6be81f6b476751a70f9011df53c45582e59a"
+ ],
+ "Development.AutomorphicArithmetic.AutomorphicVarieties.NumberFieldTowers.IdealNormClassCongr": [
+  "78c045be2be2c6c28a0a51bfbb35b1e7033c0acb",
+  "361a3e893ee791fdb159658852c3adc6fb31f3d4fd4700727677e4b096a92a2c"
+ ],
+ "Development.AutomorphicArithmetic.AutomorphicVarieties.NumberFieldTowers.XTwApplyApply": [
+  "948958d1b327d9da5f24e7b50e69d2e8dded4add",
+  "b61b51eba62bbda24faf2ae80a88a21c182d591199b069d85f71b0096a3375cf"
+ ],
+ "Development.AutomorphicArithmetic.AutomorphicVarieties.PartsConj": [
+  "43e9f780e70214bebe56cf4e98a81d4e90e69c83",
+  "3f970c54a97759a14691a97b89c6a6a97c01b05c02dd97212dd680ac6ca5bfc5"
+ ],
+ "Development.AutomorphicArithmetic.AutomorphicVarieties.PartsSign": [
+  "c2e1cb636ac968a8a871b8fb8cbd3391c185e3f3",
+  "bed4fabdaa8a3a489b9b6ab6ecd5d12ed9dbe843c6ab16c71c6baeab57001cb0"
+ ],
+ "Development.AutomorphicArithmetic.AutomorphicVarieties.StmtFields": [
+  "857965059bf92dee66f67769d93377548b55a764",
+  "fff86da7d5a15369c15a4f7c841cc96ec7d9f927114390ce595b33f2ae57e9a6"
+ ],
+ "Development.AutomorphicArithmetic.CharacterBoxes.ExistsPageN": [
+  "398eb8ed3528aa2666e9d3b2b09a582ad4390dd7",
+  "3eea59f72e776ff9f3c64b2dea4bebccb9bdcd87eec87ba580b1d7cc04c2c323"
+ ],
+ "Development.AutomorphicArithmetic.CyclotomicBounds.ClassNumberBounds.TotallyRealRoots": [
+  "0e5f58e38656b371ee4972e8ea14b711ed82b3e6",
+  "190d64e0e29015468e2f1cac6f7446b77241686c7ee52dd0718ea94aa9fa7697"
+ ],
+ "Development.AutomorphicArithmetic.CyclotomicBounds.ClassNumberBounds.TotallyRealRoots.GalDefs": [
+  "390b675121ff2219b7b688653437eb3b1295b970",
+  "6ad15669075526cc712fb72a81214260c6a887091b399fcedaa161a6be9cded6"
+ ],
+ "Development.AutomorphicArithmetic.CyclotomicBounds.ClassNumberBounds.TotallyRealRoots.LeNuIffPowMemPrinc": [
+  "cf49e4c1d813570af7d67f4bcb76d6ca85bce5df",
+  "c73615c3ccf0b5a9928c95f694514179340e61a2c470eb01865ef6ab63d6706a"
+ ],
+ "Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ContinuousToZModPow": [
+  "aa1896dc393b573f9e1c71f028dfc86871b0f7d1",
+  "9226d2e1f400818d95e74ae262538eb5250b2d7827172db29d38ad2a5f5e7249"
+ ],
+ "Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.CyclicSubtraction": [
+  "a591b8e745da9824e0f67c4bdaed07b9de04f0eb",
+  "e6ed424beb98a07c5650389901d735d22b512a1e9b4051a104c2aa48ceca2484"
+ ],
+ "Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ExistsLimitOfApprox": [
+  "6dc3411da1c94de4b8796b8adbfeb1bdab9432e3",
+  "d3b4f11b6822d6a37a9295b54327f8764fcba90f7d6b4801408af627901eb4be"
+ ],
+ "Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ExistsRootOfAdicComplete": [
+  "8eb1c1f3a975c00a107debb989bccf37b7fcfc11",
+  "4fe94766226322b7395c9c2cf143aeaec4f649e2af7196a826166e6ca97ef3b3"
+ ],
+ "Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ExistsUniqueFixedPoint": [
+  "eed0d8929a6c6885b36c23f49c78f163a805a57f",
+  "b0237cfb9fee2483c47b5bde6950fd35ca4f95eb01280c09b3d2be6383664128"
+ ],
+ "Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.ExistsValuationSubLeOne": [
+  "f5bb57ce63368e24775b22f73ff49243bf39f1e9",
+  "7c8425645f9a156275a08f9b59a09b52d79d6f29586f34d0d904b5ab06666c6b"
+ ],
+ "Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.TransferOfCompSubtype": [
+  "5bb8bb6e96eca3b61d4db5d6565384d639794acd",
+  "62e4ffc6ed8c1e154b986330f37dbd8eb3b848c6aa98498786224f3c305a638c"
+ ],
+ "Formalism.ConjugateSelfDual.Statement": [
+  "8ac13fd8953cf0cff090de5b89c0aab876c5c929",
+  "274121e87ebbd7248bab793e5cfbe343e3379cfaec27e5dee8ecffd62a591946"
+ ],
+ "Formalism.FrobeniusOrbits.Statement": [
+  "45d3b672d4649dd27309c092b3f9a24d279dd399",
+  "c4d48271a3432c31c04d69a64720bd072a696765d6886e18a981c675d876eb7a"
+ ],
+ "Formalism.GaloisCohomology.Statement": [
+  "0799e9bcd8aa191ffaa90ab005453a53381bacea",
+  "ba9b1a5fac7bc4b0719c8902089acc794bab04479405d767c960e55d291a5242"
+ ],
+ "Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.Analytic": [
+  "599699b5b35f6fb7bf2ab94f5f0c577b14f35ea1",
+  "8d47799074adcae7db33f4a43975b04e086801da40abccde2e1dbecc23888456"
+ ],
+ "Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.ConjEMemHostFIff": [
+  "0ab34ba6d386bb84908efe66de6ce50108eacddc",
+  "6b79cd87646aff932c86b1e0bbcd1b0b63f9385eb9fe55d3927413b64c03352b"
+ ],
+ "Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.ExplicitFormulaErrorOfHostConditions": [
+  "ed60b4b997cd4703713660b185b9e43fd95559a1",
+  "465bbaf665e39801cb826936181995d3fc35fa693916e69027371d6b93ece9d6"
+ ],
+ "Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.PrimePairSizeCondition": [
+  "aee05935e7bac6625cd4e07fef4912722d796780",
+  "fe2cd8a3677383d1aa175f8175b216289f5713dac8a6cde1ed73bd96491af9af"
+ ],
+ "Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.ZsmulGeneratorEqZeroOfProjection": [
+  "d13afca4924f8b277ae89b5d1d1e38d349ad99de",
+  "b36a40c2ac5ea8af0e598d918d290a99295eb1106bcfb8c76087b1d8c0636ef4"
+ ],
+ "Formalism.Statement": [
+  "30143706942aa349c77e4037537f381f9c8dbb25",
+  "4d92c742e703c16a769aaa4aef021cb7a2aba53b2ca383e439470309fdc400c1"
+ ],
+ "Formalism.StatementOC": [
+  "12ab19c0176bd4135c2b23a7ee3ac22888df0122",
+  "c87d718d86dad4c74c7d18a21e224c77ddd3729b284c04b6219cdd5a95bc8886"
+ ],
+ "Formalism.TameInertiaTowers.StatementField": [
+  "0d8984ee6e59434e27f1560110e63d18acf30b28",
+  "11870c47973c44e4c133f065a683afb9ca9e00484951ac95639f39173a895963"
+ ],
+ "Formalism.TameInertiaTowers.StatementGroup": [
+  "a9c329cd4a0a439dd75bfd7dc0271715ee27f0c0",
+  "af521889b7e43cd1aa9549f29d9e8feec5fca063cb1d3cc96030213063b7a0a1"
+ ],
+ "GroundTheory.GlobalFields.Adele.Approximation": [
+  "2f3c764da368ac36e84e4632804bfa068ce1f5a6",
+  "124ac60052e8c8553d38727dbbdd0a5159903a9a92d6f145293b0bb1fa795cb6"
+ ],
+ "GroundTheory.GlobalFields.Adele.BaseChange": [
+  "07e5bcdd54ed62679ea07899bb135b13370081df",
+  "4d6a0e629c481f96f4499d083f228943b08b1549d2101788ce9ea92e4531f582"
+ ],
+ "GroundTheory.GlobalFields.Adele.BaseChange.AdeleEquiv": [
+  "421888c734cc9ba4ea8d620e77dcea869ebd2217",
+  "169958c6040c56f115a228fcdbfd4878be8064524dcb9bf6dcebc85ebd316a07"
+ ],
+ "GroundTheory.GlobalFields.Adele.BaseChange.FiniteCoord": [
+  "4a3c1c9eff4ef52a72af83830b11ad205ca85829",
+  "db9bebbdb3fa4718e00d53d9393326dc46fba2730b939b87c3e9e781f0ac76e9"
+ ],
+ "GroundTheory.GlobalFields.Adele.BaseChange.FiniteMap": [
+  "2be7a221b42217037ea4a058e27f7262ce670234",
+  "ea2d8fe06a5748a6e248febeb6cd509a837539abfd5f23bf481adcbfe3b016c2"
+ ],
+ "GroundTheory.GlobalFields.Adele.BaseChange.FiniteTensor": [
+  "4a028154f47e886bb70bda96ab24ce543ff212cf",
+  "95f236538d5b8a0690ffcf30080ba34ef77e6006c6cbf6df1b889d03e2e8a4db"
+ ],
+ "GroundTheory.GlobalFields.Adele.Compact": [
+  "73acef0454b57398774efbdbf928302547050943",
+  "12ac92018f7858e221683e7081d1a3b600495c3e021c515eedf1cc2113846b39"
+ ],
+ "GroundTheory.GlobalFields.Adele.Discrete": [
+  "cd239c4ca947b8f95826007fd957ae84f9c4f1f0",
+  "52b76501857e90abea6474d95e4c740600bb6784590e534a2f349ce32ab8e2c0"
+ ],
+ "GroundTheory.GlobalFields.Adele.IdeleBasis": [
+  "b1e7b60ee9fc905683aefc357859b339e0e6c47d",
+  "27a3f60e8b1a81608b7480710cf95ffdc7399f1e63e510d102036a867d812b07"
+ ],
+ "GroundTheory.GlobalFields.Adele.IntegersLattice": [
+  "9d9d62e50ff353b88323bd360a98d8adf4ee0f19",
+  "c76646bf20a397f889d76db081fe796321b99018ddb032e32430f2487e4776ee"
+ ],
+ "GroundTheory.GlobalFields.Adele.Topology": [
+  "c30567d2879243208e681d7384e914707503e8d8",
+  "d5b104e4a586c8a631f40ec6afbe6b93c59366d5663fe3ab996e29817b5f2db8"
+ ],
+ "GroundTheory.GlobalFields.Adele.WeakApprox": [
+  "85ddd4f81a77b44d2430575e03d147a53f881adb",
+  "966eb7345e9ad5480127d00a9b2e3e774980b10f23a072150ca26cac4c1e4189"
+ ],
+ "GroundTheory.GlobalFields.Adele.WeakApproxUnits": [
+  "ea558fc7d2eb43785666c1b4a6876a792802adb2",
+  "00f83b628f803b9323c69855324f1cd1da0366308506a11c41b6dcae3d8e60d0"
+ ],
+ "GroundTheory.GlobalFields.Artin.InflationTower": [
+  "ef2ba83795b2481c3656a298baa146897c2e62aa",
+  "e5b6f7c72871ee394bedb2d9c017a7ea21654eb0ac4df3d4f60cda7b4c6de6f3"
+ ],
+ "GroundTheory.GlobalFields.Artin.LogCharpoly": [
+  "c50fdadfd20e8517668f4d786c51f0f21d3540ed",
+  "44c12de9b5c04cd144601977e3bdd998af84fb4cc8cf88c8927053128b3de6a8"
+ ],
+ "GroundTheory.GlobalFields.Artin.MemInvariantsCompSubtypeIff": [
+  "1eec5740a40c0878615cd207c12d8dc5c45fac7b",
+  "291a69bf45a930db446e834fa5c9a03b462de87ccdbf35f776b165d9bbb24cfe"
+ ],
+ "GroundTheory.GlobalFields.ClassFieldConsequences.CongruenceSubgroupLeStandardOpenSubgroup": [
+  "2d5cfd6d8e110b401f2d742ce4a6b74c9e429710",
+  "15862bc3916acc3745d37e79ad510445a5dcfe563fe4d382b060ae5a3d3248ab"
+ ],
+ "GroundTheory.GlobalFields.ClassFieldConsequences.HilbertClassField": [
+  "a048d8c70777372e0bc6bb356cc756c4a96dbed6",
+  "7d8b53dc84748b05df8c1c41c9f337bf05b265a1862bf47c0ab7c4dab088027f"
+ ],
+ "GroundTheory.GlobalFields.ClassFieldConsequences.IdealRayClass": [
+  "779f6fa63f2624490ff9e1bc06aab737de4e6093",
+  "aaec434a4d0b22ad1d8dcf83285b9476de22c8b21989b76b9269a6b6fa4f25dd"
+ ],
+ "GroundTheory.GlobalFields.ClassFieldConsequences.OpenSubgroup": [
+  "a8d3f1e7d1241e22d32fe9e5569304688960bbb3",
+  "b0aeaf2c0a15fcc6a0a720366a9ae14e016432ef2b351bbe0fefa9ca61e7b1c8"
+ ],
+ "GroundTheory.GlobalFields.ClassFieldConsequences.RayClass": [
+  "543e27f2f7aa04d6a84d7363dad363ae89a8e6af",
+  "82fcf4eddb28221ebc2915b1a0f935b9334021efecdfc94a2cc6a379fae8e908"
+ ],
+ "GroundTheory.GlobalFields.ClassFieldConsequences.RayClassField": [
+  "1292fa260bebbb6c5cc452f581d59e69ecf8e765",
+  "46d4d044101eec9278286f5bf294194bc3674a14ff038c472839f47793827728"
+ ],
+ "GroundTheory.GlobalFields.ClassFieldConsequences.RayClassFieldLocal": [
+  "f8600e04319a43287d0504a49e7541d6a0acaf62",
+  "3eed6f1b17fea2ff96fd4d42939bf6e662116f3e9b8a1e09944a055f25c823d9"
+ ],
+ "GroundTheory.GlobalFields.ClassFieldConsequences.TrivialModulus": [
+  "b574b70b5afc56d71de9aff33a558f19209c4e95",
+  "cde5330625082092858b2d1a9fed8494a015fbd9007c88365dfc5bef84be263b"
+ ],
+ "GroundTheory.GlobalFields.CompletionAtPlace": [
+  "d2dfdd048d6f89c6f7e2e994ec0c621ef789510c",
+  "1ff552d643910df8f4fcc6737d5f92a445934d0f5278dcccc63fc48d72d9555c"
+ ],
+ "GroundTheory.GlobalFields.CompletionAtPlace.Degree": [
+  "3e3fad793eeca778c27e74491ec8eaccd7421927",
+  "0da621018efdacdb4e57ee87bf3a6e1022520495ed99a4d82fa6e5fc505fc22f"
+ ],
+ "GroundTheory.GlobalFields.CompletionAtPlace.Galois": [
+  "bc67de26713223eb56597fc2e630e2625b80b502",
+  "85092ee177b4adfa748043000d3b5f055dc2cc2b1c8669ca1e76bc4b610bd552"
+ ],
+ "GroundTheory.GlobalFields.CompletionAtPlace.Inertia": [
+  "61e463a0fd0910a1ed7aaad10b2fbce4b98263d1",
+  "d602ba03d80244d15a78ef073f37037c465c0e1c2925f8fa1aa64fde32f74c48"
+ ],
+ "GroundTheory.GlobalFields.CompletionAtPlace.Integers": [
+  "b37157bc9ae53066ef1c106f7fcae5995bb0cd5d",
+  "66d9e4e748ca68fedc48a1b3f1f5826dfc9f880a5663319acdc132d9df39684b"
+ ],
+ "GroundTheory.GlobalFields.CyclotomicCharacters.Character": [
+  "724ba9f5e3345210e073336397d55ed9ae88c26b",
+  "4fde5b12a8eac174e30ec763a33f2f90966d01c88237f06d10df0be8506740a2"
+ ],
+ "GroundTheory.GlobalFields.CyclotomicCharacters.ClosedSubgroups": [
+  "d35157529eef14dba16cb8bd5b325eafb07f48b3",
+  "d7e5212518d1a875dc62e0ea6ee26b0a322759eb843e879bf18adf117b495990"
+ ],
+ "GroundTheory.GlobalFields.CyclotomicCharacters.Degree": [
+  "d47b78272d0551cf74ab68f7ac93be7aa558b789",
+  "467c40869fa0fe91221f5aba68749256f0be21b5ee9524e096901dbe8a271b75"
+ ],
+ "GroundTheory.GlobalFields.CyclotomicCharacters.DegreeDecomposition": [
+  "4ff40ef6f18334da7df88daffea30af237d0586d",
+  "4e6bd3292c18d4c096a73e3137d2cb0908c9e85bb4ebc7da94f3aa953fab9e82"
+ ],
+ "GroundTheory.GlobalFields.CyclotomicCharacters.Frobenius": [
+  "29b6cca7a76fdf2cf7364f0adfff0f5c85e2d938",
+  "75905f0b2afa3c8842bd9b1cca82426c6f9a7deab0575e80310b944da2545aaf"
+ ],
+ "GroundTheory.GlobalFields.CyclotomicCharacters.PadicUnitsLog": [
+  "a4671b8a6c490dfb7571267b1b67f31aae643fcb",
+  "daf8771e681fefc2b32be2a277776b8215def320dd3238aa63b047924f4c7dbb"
+ ],
+ "GroundTheory.GlobalFields.CyclotomicCharacters.ProfinitePadic": [
+  "3ffe0a1b115e11d7086df8d3df4123987525e2a5",
+  "bafd2f721a055ebf5944b3849fb4bdd4764495de98f2cea27a3796daf730e11c"
+ ],
+ "GroundTheory.GlobalFields.ExistenceTheorem.ExistsIsAbelianGaloisRangeIdeleClassNormEqOfFini": [
+  "bb75e109e2bed51296c05ebf9acfa00f7c533414",
+  "fec0bded79e2953925bf23493f0a0a1b212d52c9f27d85ad2b62138afbefc4a6"
+ ],
+ "GroundTheory.GlobalFields.ExistenceTheorem.IndexRangePowMonoidHomAdicCompletionMulNorm": [
+  "9c90910757760bef943538412e77ae101d1083f4",
+  "f6a71cf761389f24d58c41599b7fadedb0f5548917409b5c2870e233fc473f71"
+ ],
+ "GroundTheory.GlobalFields.ExistenceTheorem.Kummer": [
+  "b58a33b4fbc0b4e0dc842fb9b836de3c4740b42c",
+  "94380e298853c36e8e196b735462414db6621abfc8ee64238ed7876c6b61dea2"
+ ],
+ "GroundTheory.GlobalFields.ExistenceTheorem.KummerNorm": [
+  "3eeeedb05cefb9ef6eef0e0dacaebd695a57bc05",
+  "e1794972c57e13fb4907709ca8ee7105ecdb00530fcc81749f176c78b69a0857"
+ ],
+ "GroundTheory.GlobalFields.ExistenceTheorem.LocalPowers": [
+  "62db7a1690770608ad990dc017e54810b9213a88",
+  "50d7562b6ea40c7f9d4ed40743c32dee8dbdb5b86fadd54e371913169881feec"
+ ],
+ "GroundTheory.GlobalFields.ExistenceTheorem.NormLimitation": [
+  "78306d8500edfe48b4d42d4d229f22391d9bb271",
+  "9d9a5ea8f287b43568a6330db3c54420f7f36b8d1b3356171c18990c1352b29a"
+ ],
+ "GroundTheory.GlobalFields.ExistenceTheorem.PowerIndex": [
+  "e19dd57c958dc34fea4157ae929b86c163638522",
+  "d4f52a20318298faa8881f859f4dcb688019b5db20c6d421c8380693c8e9f5fd"
+ ],
+ "GroundTheory.GlobalFields.FirstInequality": [
+  "428c0849bb45d0b21e5d155b30103170dfcfe2d8",
+  "06b6a747138e75c29c982966cb788aae872bfd3d9b1f4dffbd3f6687e0e44243"
+ ],
+ "GroundTheory.GlobalFields.FirstInequality.HerbrandClass": [
+  "954e0aa1a1a271f4e02bc0f309fe26005d0956a7",
+  "64cc44fa5f9a30bf89bcd03bf41608a81d093616b70cc855101316b9aaa7af14"
+ ],
+ "GroundTheory.GlobalFields.FirstInequalityStatement": [
+  "7cdc7f4968dccd2358a14ab61d5064290ca576de",
+  "bdbd8c402f4140d6e4b5c1b3ac9cef3333c4d507f15160c39215886b082477aa"
+ ],
+ "GroundTheory.GlobalFields.GlobalArtinMap.ArtinMap": [
+  "d33ff424b87e0490a1a3e915713f70177f510190",
+  "2e02ec48d2cf3698831bc262813d3153e1a57c14e5bcd6e6e11b44d2b4d520e8"
+ ],
+ "GroundTheory.GlobalFields.GlobalReciprocity.DegreeLift": [
+  "4ddf426e5bf25e43347b140b738556cf3c6b6b09",
+  "49edc9db618ae21621f96a352e45c6fa46a49ac4f4dd90f95af04432c00de764"
+ ],
+ "GroundTheory.GlobalFields.GlobalReciprocity.FinitePlaces": [
+  "88e167618c6bff7b9fa46b862cf708e388d2be35",
+  "f96cc0da4a8ebdca66e6a244f83cc3159a6aba027dd2f77f7345374592e9afe1"
+ ],
+ "GroundTheory.GlobalFields.GlobalReciprocity.Frobenius": [
+  "e2862af66663f4d8e885766e7b6fc3b1b06c6d74",
+  "ce7b1f02dec4c9ce362a363b7b4720a52830a50afff3483f83360d3e72618e51"
+ ],
+ "GroundTheory.GlobalFields.GlobalReciprocity.General": [
+  "81f625d4fcf74a58588c7afeb5ddd3062b0d2ba0",
+  "db2c9dd36254397f701be9129be94c78541ec999c2895f47bb4565d876b0b212"
+ ],
+ "GroundTheory.GlobalFields.GlobalReciprocity.InfKerDegreeLeOfLeSupZhatField": [
+  "0fad0e3eb77e43e9f45a013372199f489a57254f",
+  "a301af9c25c3fbc180aafa5302560e4b03696c47d83270fd91168da6a54465ce"
+ ],
+ "GroundTheory.GlobalFields.GlobalReciprocity.Layers": [
+  "dfe15351530e4be225e2b406fe46032db44cab6d",
+  "e35b3394d43060a6ad465a423243ba3889c3aa34cb662b679869c905999a8d8b"
+ ],
+ "GroundTheory.GlobalFields.GlobalReciprocity.LocalSurjective": [
+  "265eced132b9da21734b73ec5c83ed7b8d0fa6fb",
+  "597f85d925c4ef289004c73f43fe5ebe29663d15a5679315b58b58df54af69c7"
+ ],
+ "GroundTheory.GlobalFields.GlobalReciprocity.NormSquare": [
+  "ccc02292e1086bbd4910b301806fc1b9036e537b",
+  "99423a7da278f95b2693f995ab470161dbab98bf4828a23f496680d651050cb7"
+ ],
+ "GroundTheory.GlobalFields.GlobalReciprocity.PrimesAbove": [
+  "b3a0cc0414ea993762799d332c4a543ff4370976",
+  "558bcdfa73788963021582a2e1fe2796160a586f889c57b03f88c02918c16d99"
+ ],
+ "GroundTheory.GlobalFields.GlobalReciprocity.RangeDiagonalLeKerIdeleSymbol": [
+  "df6dc081c82eb465200dc86a82c64a61f87ac25d",
+  "0c4db1010be1f817670e534beb87020ee98af5ef1f7c0a8b9ef6449d0b968cbd"
+ ],
+ "GroundTheory.GlobalFields.GlobalReciprocity.RealPlaces": [
+  "ba23a1a1f86973dccb23fe25fde5957628efd689",
+  "255b69e4a81f2b4e1630a62bbe6ee1c3f5824d7d6a703399a0baa77eb09116c2"
+ ],
+ "GroundTheory.GlobalFields.GlobalReciprocity.RealPlacesQuadratic": [
+  "f9542bfce5aeccd2e3742bb3e3fe21f03892b35e",
+  "c536a154dbc851021810c6d982501b4e6a44ca97570978e4d471c3ffbd6029d7"
+ ],
+ "GroundTheory.GlobalFields.HerbrandQuotients.CycTate": [
+  "7e5c01b6280dfe2d7211fa9d792025fe610052d9",
+  "b9d565a4ee70396f542fbdf8d491d4c682ed26c743332a1793ced8600751ac62"
+ ],
+ "GroundTheory.GlobalFields.HerbrandQuotients.CycTateNegOneOrbitEquivSymmMk": [
+  "2cdd5134e54da38c31f7597c7137a719a7a7d205",
+  "6eb2d76bab72f36540f4de07cb07f42e1d96424e94c8e526990be3c8faebe520"
+ ],
+ "GroundTheory.GlobalFields.HerbrandQuotients.Cyclic": [
+  "896e3e1e6517ccfecff9f2957a355b8d9cb82576",
+  "91708087e364548b97e2d2c354a7d59870fa70fdff17d0b2bca99398f5ef4986"
+ ],
+ "GroundTheory.GlobalFields.HerbrandQuotients.Lattice": [
+  "bbf98f5dcfabb3a2649baba76d5d187806032c61",
+  "ac851cebe228919c9afff1dbf727a47dcd49cc2f28cdb99deca3c56d4118d119"
+ ],
+ "GroundTheory.GlobalFields.HerbrandQuotients.LatticeBridge": [
+  "93ad36b962490d19afa2cb3db8ed546dd77b6d6c",
+  "ef6baff2f6f0d91ccff5d03e18e611f1d417909ba4a8dc5087f61367d8fa125d"
+ ],
+ "GroundTheory.GlobalFields.HerbrandQuotients.Permutation": [
+  "4e89b89318cc0e4c5c67535445b5db00cd03394f",
+  "e8339231655dfd6176751cea5486ec245a549821d572198cc1ea64fc5eb968c3"
+ ],
+ "GroundTheory.GlobalFields.HerbrandQuotients.RationalForm": [
+  "42d79faaa700bc4952de4d70777e7a351e3780ab",
+  "6c133e8f4cbaae39653bba824eed7b00bd29c7535a74c8b3caf81a148bb90d61"
+ ],
+ "GroundTheory.GlobalFields.HerbrandQuotients.SUnits": [
+  "0be7b583f6a21373acd6e56eada587381b5ca23b",
+  "372668072bb0b79be54adfadf312c0c17c7748795491b95f3d2c3b07e7329627"
+ ],
+ "GroundTheory.GlobalFields.HerbrandQuotients.SUnitsExact": [
+  "ba948e5cae0cf9d9ca8d4845e3309ff27184549f",
+  "1e132067fed4f946a7c27cc17c6f59235b71227ffa694a565142672be9c93216"
+ ],
+ "GroundTheory.GlobalFields.HerbrandQuotients.SUnitsPerm": [
+  "b98f3ebeb3e0dd47858916119c01aab3f402de89",
+  "bdcded5df3d3390a3e0eac0107b6b65e1d0996aef91008a972dcb91644772258"
+ ],
+ "GroundTheory.GlobalFields.HerbrandQuotients.SUnitsRep": [
+  "c159f9493dfd6498147af8de6179f391d62e290f",
+  "20b7a1678ab1303f1ca0014af05ffbf76c60246df407de605e1984435eb0e7e0"
+ ],
+ "GroundTheory.GlobalFields.HerbrandQuotients.UnitsHerbrand": [
+  "8d21511f79d281770501a58c6b6f5ff136d0d461",
+  "1e6833e09b9b152f52114a6c5841f6ba3641f89616d03b09f3c5f54d9997e638"
+ ],
+ "GroundTheory.GlobalFields.HerbrandQuotients.UnitsHerbrandValue": [
+  "0fc72f9939e57fcf3e30b913effa8dc244a334e5",
+  "a6f53397c85b9f59fceb4484e15e09e991d18d0fd8317e13470c03ec08e2be89"
+ ],
+ "GroundTheory.GlobalFields.IdeleClassGroup.ConjugateNorm": [
+  "3cbd9c58ad0fe6aab8f94d371aaeb3b56a3c8419",
+  "ad15dbd0531f67cbd1310ce75486edc7da62bb0d4e8e0ca30ed4cafa1dc1b3c1"
+ ],
+ "GroundTheory.GlobalFields.IdeleClassGroup.IdeleClassEquivIdeleClassMapOfComm": [
+  "c5237e8fc4cbc60a17fea241c7093b13a95787be",
+  "3c811e4aa15042a6c8f1c5f44e4d8cac7f9e98d5d7c85e8f86baeae04cff8122"
+ ],
+ "GroundTheory.GlobalFields.IdeleClassGroup.IdeleClassMapIdeleClassMap": [
+  "1704c60cf4072410f5b0d21a1364afabe7f4a780",
+  "e6f1345badbf06f10a3e04449cadab47e9be5a7f2e69ed85d585e68c74629242"
+ ],
+ "GroundTheory.GlobalFields.IdeleClassGroup.Invariants": [
+  "3238054746d6cd9e2bf3f61aa4813989f009488d",
+  "ffd1f42df32f8b0c62a86a4ea0a20e5f86f4892aa45e4f5a0aaf5bb135ac68d4"
+ ],
+ "GroundTheory.GlobalFields.IdeleClassGroup.InvariantsGalois": [
+  "6f334c6b90f8c72e7f8ecdc5a2838ee98f60bce3",
+  "c34c60c454c9ce5272b448a323464714358b760f2bd046b27740edfb3f426abb"
+ ],
+ "GroundTheory.GlobalFields.IdeleClassGroup.NatCardTateOfIsCyclic": [
+  "7a947dea2b45c6d4cf1901685af9a9da84b94ccb",
+  "99c944ab951d8653e1b3066fbc15fe9ca8b4f12660bc74e73c27447aa78945d6"
+ ],
+ "GroundTheory.GlobalFields.IdeleClassGroup.Theory": [
+  "7eb63ff572ca573a82ba5fa034dfe8684da50571",
+  "6dd254b273caa095b6ab3091af8cce30be5509e2c3b9f6a71a4049e8c7579609"
+ ],
+ "GroundTheory.GlobalFields.IdeleGroups.ClassGroup": [
+  "671d684103954e50728db5a018959cd33f04fc49",
+  "ef705eb856eba3169b5c90b21ca69b5fef196f5236c60784ba9c8b2884d9bad8"
+ ],
+ "GroundTheory.GlobalFields.IdeleGroups.GaloisOnAdeles": [
+  "a5821663dde58f28a88e2fae9cf16c0b19f43aa4",
+  "367b28f0bcae510a71f15463749a4ab766e89023bb2946056937830c90a36666"
+ ],
+ "GroundTheory.GlobalFields.IdeleGroups.GaloisOnAdeles.Action": [
+  "0036e9b57b8b16894718df21063cf9f74cfd70a2",
+  "5607ad0a87364a3c349e12d88e9abeae6a146420d964c850547f115c0b810e5a"
+ ],
+ "GroundTheory.GlobalFields.IdeleGroups.GaloisOnAdeles.Places": [
+  "b021a4f437aaebb6c3504d28a17171401c7405ef",
+  "9b136a89495ac967a4a02adcfd94dc8548f5482957c290a8fc5a2711e97fe4d4"
+ ],
+ "GroundTheory.GlobalFields.IdeleGroups.IdeleNorms": [
+  "db2552ecb34a71cdb631223791acf255569e7f47",
+  "6fbffb69a5d5b15c260767d0cc12b155cfcd6d67a96ea6cdd9cc02ced3f9cdc5"
+ ],
+ "GroundTheory.GlobalFields.IdeleGroups.IdeleNorms.BaseChange": [
+  "237fc3e72ba23e08f1704eeca9c9f703409c6e36",
+  "848a85afc7499d56e6627f574c54f309e18eb6e31a033692341f011f2ccd17f1"
+ ],
+ "GroundTheory.GlobalFields.IdeleGroups.IdeleNorms.CompletionsOverBasisRepr": [
+  "cd010205a0b58520dd9d89900df2376a932012c5",
+  "c93b41af126233c65d0daa1e5d5d0814b270e13765696a2105a3f3e239acc62f"
+ ],
+ "GroundTheory.GlobalFields.IdeleGroups.IdeleNorms.InfiniteAdeleRingMapInfiniteAdeleRingMap": [
+  "585986b12157e562203981387cb416833f8355d8",
+  "74c8b9ecc8493e448ad38159110fa2a22097e5b7355b6ec428cf16009339ce91"
+ ],
+ "GroundTheory.GlobalFields.IdeleGroups.IndexFormula": [
+  "d458996357ef2efc593f5f4929817701a8177e8f",
+  "255a6d926810b0cabd466e40b9af01857d04621006d082344574b692b05247ac"
+ ],
+ "GroundTheory.GlobalFields.IdeleGroups.IndexProductFormula": [
+  "3bdeeef82a3f99947dbc1f8616b0146024132b5e",
+  "2b824762e9e83f6f5cb54ba01257df59f75e31a44f2c9b670dc6cdb34dbf3c2b"
+ ],
+ "GroundTheory.GlobalFields.IdeleGroups.InfiniteProjInfiniteEmbeddingOfNe": [
+  "e4767ffb531ac854067e03fa55e011f33b4b9c69",
+  "7346e1f82050f280c3afeb87dd0b8d924f629fa9076f20f51f0c0f3a602f82ea"
+ ],
+ "GroundTheory.GlobalFields.IdeleGroups.LocalConditionIndex": [
+  "c86a0bfe53c7b1f397acc5d825c8d524e061ea47",
+  "83bc0cc713201c7bcca08f44bce2999d650d43734bf0cb5a1f223e6de5c3feed"
+ ],
+ "GroundTheory.GlobalFields.IdeleGroups.LocalHerbrand": [
+  "d3895bd4c58765a5c6e87b4fef6d82b1694e62dd",
+  "b6aaffaa1ea7f587f4c528ffba80953c1b567f3003f9fc081f58747881f6fd5e"
+ ],
+ "GroundTheory.GlobalFields.IdeleGroups.LocalHerbrandInfinite": [
+  "02f39e158ec909d9271a822e5a6c0c32fde53661",
+  "dee87dcecd3c0462e588776023a435e379d9b5f2008cf426751953ab32a73f2d"
+ ],
+ "GroundTheory.GlobalFields.IdeleGroups.LocalNormGroups": [
+  "1b24b1eb306f5eb3e6b3e12d19229c48636084e5",
+  "df4961b59b9ec8f74a8d13bd7fe169c27e1d20f0cc7975cfe52f482861c9717a"
+ ],
+ "GroundTheory.GlobalFields.IdeleGroups.LocalNorms": [
+  "0caff0671b70e4bad5684e9c7062b35e41a743d9",
+  "fa2465562f3b2dcfd11416c1a0209c99f735c4f78467135c87ef20b9687a6dab"
+ ],
+ "GroundTheory.GlobalFields.IdeleGroups.LocalNormsEverywhere": [
+  "dc892852eb90bc23ec3a4f04c1f610f8c69ef328",
+  "666efd67473c272d5e6f35518f954b635fd538540bf07f3091e882f600a057ca"
+ ],
+ "GroundTheory.GlobalFields.IdeleGroups.NormOneCompact": [
+  "c181be1c9b130081f295b32bac338f926d4ac5b4",
+  "ff2660ac69c99ecde37a2a39448f9811ba46a0374a7ac3f3024b4584fbaa44e4"
+ ],
+ "GroundTheory.GlobalFields.IdeleGroups.Rational": [
+  "c1d3dc8e9e6df0ab32ef008afed94e12f46253a7",
+  "05c6b4e8f65a865581e357955d334849b00682f26eea1d92a7e5bceefab4d1ea"
+ ],
+ "GroundTheory.GlobalFields.IdeleGroups.Restricted": [
+  "556cdd417d5c3a4ade88e54bc294de320728fb9e",
+  "ef4ec77759db3d3d2e1ba152e57940ce9617db87c429f545a85009274e807664"
+ ],
+ "GroundTheory.GlobalFields.IdeleGroups.SIdeleGroups": [
+  "bc7a99d57ee477914692b5b6ca405a2692cf5143",
+  "417b48e31085b9e5277348169a66b9cc1617d63e3118932f98db8a8ca232d78a"
+ ],
+ "GroundTheory.GlobalFields.IdeleGroups.SIdeleGroups.Decomposition": [
+  "8ea0efc7d34c290c8b76a5c292d68e8fb7962468",
+  "614dfd0cfe49730befc887aaa13598dbfd1931b6dceb373ae531bd215390d553"
+ ],
+ "GroundTheory.GlobalFields.IdeleGroups.SIdeleGroups.Galois": [
+  "fcdfda7942808000b9e011aae2c2d54bb5518360",
+  "108d2b6c2aca3a8650e5a9f74d73e1599e92ad96d8e2c37a8057f4ab87daf68c"
+ ],
+ "GroundTheory.GlobalFields.IdeleGroups.SIdeleGroups.InfinitePlaces": [
+  "fd96652c63183f5fb9fb515cb14e40484b37884b",
+  "18cdca0441fa3ce07b6d45e2a01752e1b833eb43f7110a03db91e37812499f44"
+ ],
+ "GroundTheory.GlobalFields.IdeleGroups.SIdeleGroups.IntegerUnits": [
+  "ee643bdd09cdb944207e0169857b12a93821dd19",
+  "c21742a90ffcb39ddd012f10fbc43ceef4c36d6b7b38c6d648e6c60602972f4a"
+ ],
+ "GroundTheory.GlobalFields.IdeleGroups.SIdeleGroups.Places": [
+  "ebfb0e333473576537c2a29839e0502a051bba5c",
+  "f68e156397525302ebac7aa769a4ea8ead3fac8793d14cd5c3e1355fac95ade1"
+ ],
+ "GroundTheory.GlobalFields.IdeleGroups.SIdeleHerbrand": [
+  "6468b2ddd8c788c400151c464687d06856fee4d2",
+  "4ad12a2c74fba0990c640d8fba2ef7f0204b70f99e6fe339e28aab74f751c6e1"
+ ],
+ "GroundTheory.GlobalFields.IdeleGroups.SIdeleHerbrand.Places": [
+  "037d4e592c74372982c300d13953439516f3791d",
+  "9a75e01f73bbfada39f16b8dda2816dc52aeea4cd069b26e02f17d4381c13ec6"
+ ],
+ "GroundTheory.GlobalFields.IdeleGroups.SIdeleHerbrand.Product": [
+  "467251bd322c8305a0434ac0d10b7ce01535f96b",
+  "5263658a94d2afc66fb5e4410d602dc5f286cf84c8dd583f07e4be301fca1dd8"
+ ],
+ "GroundTheory.GlobalFields.IdeleGroups.StandardOpenEquiv": [
+  "37aae51ea458f1e48357ba40263bd8f9c3f2895b",
+  "4c1ac56db4c89541260e58c6695e5a9f9afc079c0404b65b5d8d0ce1bcbae3a0"
+ ],
+ "GroundTheory.GlobalFields.IdeleGroups.UnitBound": [
+  "8456a2e40fb002d4edf5971cb0214e5a48bb2dd0",
+  "7ad129e6da5a6f4c638b51444e6dc27e8d9a746fa146d32da2cc7ac99164b03a"
+ ],
+ "GroundTheory.GlobalFields.InfiniteNormIndex.LocalSymbol": [
+  "d7167f25270283e0c0f741caea7f89eb023e639e",
+  "388e2796eef1bc46e43e2779b51c0a728513a1a15962d244ef0b447db4c5bd8e"
+ ],
+ "GroundTheory.GlobalFields.KummerTheory.Degree": [
+  "9e354effbca0950e447f0ccc44a308f51c0cec23",
+  "0d47520f6d8c6cfad9b2dd3ba408b94234abed9d4ef0ddc5df5bf4032f1f1559"
+ ],
+ "GroundTheory.GlobalFields.KummerTheory.KummerIndexLemma": [
+  "44ec17b487f8b4c4897bd5238f8e10487186d181",
+  "db792a4df5488aae7e9dab1482f7a178486eaadea419d57b7ebdb6058f33ca90"
+ ],
+ "GroundTheory.GlobalFields.KummerTheory.KummerIndexLemma.HasEnoughRootsOfUnityOfRingHom": [
+  "f5ecdb5cb50d8facf8c77fe4fd6e16795bca3234",
+  "d0bb9c7c8960b7251b522ed465df350e96c1ef297f125b4b851e67cef309e43f"
+ ],
+ "GroundTheory.GlobalFields.KummerTheory.KummerIndexLemma.Places": [
+  "d19a33616c796e5289ffcea651ed64b1490d9800",
+  "60b7091dfc832dfc2a9375fd81b25cf4e524eb4d4f10ca0c405eac10e032a091"
+ ],
+ "GroundTheory.GlobalFields.KummerTheory.KummerIndexLemma.PowerKernel": [
+  "f14eec3b0b6c398a00dd6f733e1eb657edbbafa8",
+  "198f1a6c9fd002d8fcc5509f4dd650a94a401ba9db730d170e0d21176522d831"
+ ],
+ "GroundTheory.GlobalFields.KummerTheory.KummerIndexLemma.PowerPlaces": [
+  "fe8203c3401a5b86a1a6bd490a4e31435b885ac0",
+  "97726668a0c1326a0de0424b89cc682c0c7af17f0a068dca812b81d2647df059"
+ ],
+ "GroundTheory.GlobalFields.KummerTheory.LocalIndex": [
+  "5bfa0a99cb37a5460fc7616fa6e754632ebac981",
+  "1754d0523baea5f19fda03b97101a6c48f33e06b7e61f28cb8637dc5801c8312"
+ ],
+ "GroundTheory.GlobalFields.KummerTheory.LocalIndexAtPlace": [
+  "7f6ea16fb2889d7e1625e09724e2309968b585a9",
+  "011be6c523c4bd5b2056bf57fb5861778d2ed69276ae2859ffcaa006d0e4cfce"
+ ],
+ "GroundTheory.GlobalFields.KummerTheory.Splitting": [
+  "98b2cab9fed49ffd41e084bd96626b39bca1cdb6",
+  "8009729362aea16831b642d63b87802248286511efc023ca63a09a38de01b83e"
+ ],
+ "GroundTheory.GlobalFields.KummerTheory.SplittingInfinite": [
+  "3d98914f508bc4463deae7bd833b9df59493c3bd",
+  "22d5b592a778f06993cc785657b576816f829d4d0cb3cc1f1e7a0b368653ef16"
+ ],
+ "GroundTheory.GlobalFields.KummerTheory.SplittingKummer": [
+  "50ed99149417c0af05de7a62081ddb279d6010bb",
+  "a3299aca6f977fe85c187fae860bc375df8f4f0e0e93f452ec4447b848d1588b"
+ ],
+ "GroundTheory.GlobalFields.KummerTheory.Unramified": [
+  "092230ae61d0e9e6483f077fa8f94744a90f28b9",
+  "1228bc689b727b084281228f8e625028b18e73d76f40f47c96fbe33e9dd95383"
+ ],
+ "GroundTheory.GlobalFields.LocalAtPlace": [
+  "4991d6e03a7d3b968f185dedee4ac74b6da28c26",
+  "3654a88249c2d35f770d8f8af642dc51e924adbf34dd0f7bac84eea3dbf23e39"
+ ],
+ "GroundTheory.GlobalFields.LocalFieldAtPlace": [
+  "9fa36e50428967fc18a5ad0f48389325c91f2eda",
+  "305f7435b6f24d7738923208a2a0d018ddc1c05165dee2740acf5b1805dbf8ce"
+ ],
+ "GroundTheory.GlobalFields.NormResidueSymbol.Abstract": [
+  "cdbc20558401ca36be46d4cd8d8a2607abd4c35e",
+  "f77ac88948977f4747181c80b61815e030d3c055b7deeb5bea7d8e9b8c6c47d0"
+ ],
+ "GroundTheory.GlobalFields.NormResidueSymbol.AbstractUnique": [
+  "71d67500dc1b8ad29a1f438c4774275bc3d67891",
+  "31af3f7b22f27361c3cfde7134123d29ef8c376489cc8317d079ca1b1fa5cfaf"
+ ],
+ "GroundTheory.GlobalFields.NormResidueSymbol.Cyclotomic": [
+  "dad55f60de1532aa079f630a5b2d8f80ee7d84df",
+  "4545cc41b2ac1f34fd2a8e16c5711394cca0348452e62e2a7c0fb2be64f713f0"
+ ],
+ "GroundTheory.GlobalFields.NormResidueSymbol.CyclotomicBase": [
+  "569cc52f67a0e756766b2b183e1147e9f1e46f99",
+  "24ff6a158d3f8bdec634f1d66549af85eddca231a905728561276158044eaaad"
+ ],
+ "GroundTheory.GlobalFields.NormResidueSymbol.CyclotomicCompositum": [
+  "80d636c451a5ef13e758fa664c227d8224d87487",
+  "873c740ffaef842649d5f68b2e9d3c48a358805fcb23eee84fed4062fb59ee32"
+ ],
+ "GroundTheory.GlobalFields.NormResidueSymbol.CyclotomicImage": [
+  "b58e26ff13efa36adb58da1bfcbd6627f6101858",
+  "18194bfae62bbd9f830c8263f94f866c75b0205934445c1f2e238becb48fef16"
+ ],
+ "GroundTheory.GlobalFields.NormResidueSymbol.Functorial": [
+  "edeba5e5ff7b14bd4eb81a21c86068b895de77bf",
+  "03f897010ca3a3e1c37cdc0bfe3e38caf7d1095e35c632278ad4b9b64a294da1"
+ ],
+ "GroundTheory.GlobalFields.NormResidueSymbol.FunctorialFinite": [
+  "0e6481d1d0d56df53b80dde5334968a4550346e6",
+  "6d5521762b1a95a70c74b3898f0033283cd380165028791078c488bca6cdd17e"
+ ],
+ "GroundTheory.GlobalFields.NormResidueSymbol.FunctorialInfinite": [
+  "3647ea2a4c74fcd864bc49c88e94753fb68123ec",
+  "3a6054d84c40bb84c68cf1440a9c8115102194f254befbfe062dd512205224df"
+ ],
+ "GroundTheory.GlobalFields.NormResidueSymbol.FunctorialLocal": [
+  "7deddd46cc619c214d5b72d06dda952fd92e3599",
+  "cf3ca0a10bbf6d476b586a78271fd72d092c017f1480ea5955a14d0e7fdd6ae2"
+ ],
+ "GroundTheory.GlobalFields.NormResidueSymbol.Infinite": [
+  "4549d688b496ac553f0f69542866ba0e6de87c18",
+  "78be96bfbd619c556e27875790238cc1b2287b97f1180fba00d1902ccda03f8c"
+ ],
+ "GroundTheory.GlobalFields.NormResidueSymbol.RangeFiniteLocalNormLeKerLocalSymbol": [
+  "02b9b13cc95a5f708931272feb20dfc45cadecf4",
+  "6e7a18f613e326ce7b97357165cf5d96f2b7d556abf6ed5f07cbf835aef86c58"
+ ],
+ "GroundTheory.GlobalFields.NormResidueSymbol.RangeIdeleNormLeKerIdeleSymbol": [
+  "fd7fbf831cdbdd082e472afb69ade5ebbdeb1cad",
+  "8b322d4f73cd7fb7375643f1cf72a9e973148192ee814388f57bad15c7c6dd4b"
+ ],
+ "GroundTheory.GlobalFields.NormResidueSymbol.Rational": [
+  "828a016138aa732babc3e232468f5484344dd980",
+  "f7fa9ce7e90e338f6fcd783da635cf5738f010d361f3587163dfddc5c7713eb9"
+ ],
+ "GroundTheory.GlobalFields.NormResidueSymbol.RationalContinuous": [
+  "4862d88daf10a20c815bdde71ff65abf107b9265",
+  "9fe5965e13e020a108f0b88b2ac8da52e316729c15d16b93051308bdd9b37e7f"
+ ],
+ "GroundTheory.GlobalFields.NormResidueSymbol.RationalCyclotomic": [
+  "abc6ea292e9088885844b35308a7c8b0303fd19a",
+  "4d2480c13ef1fe7a544be6085c9fb30356876d7d2443d18eda9cf61ecbb88224"
+ ],
+ "GroundTheory.GlobalFields.NormResidueSymbol.RationalDiagonal": [
+  "8c16d6c8790602b906f466c220ba8b5c9136ff9b",
+  "ca6f321c75787fdc68bf71000725f5bec9f2cbfd216c019b06ad45ac2790ef10"
+ ],
+ "GroundTheory.GlobalFields.NormResidueSymbol.RationalLocal": [
+  "75d20549e57792ab4384adfb75f3a0c5fd2cfb29",
+  "aad65834e56b76776825d4ef27d70aa7807ae02915d938ddaba4269c112ee988"
+ ],
+ "GroundTheory.GlobalFields.NormResidueSymbol.RestrictNormalInfiniteLocalSymbol": [
+  "31810bc3f4dca1829e2973ee9d64fc8a2a26ca89",
+  "349f13d6864b6ab18a71365e4677700fb67398a299d22d7f1926b04300e717f1"
+ ],
+ "GroundTheory.GlobalFields.NormResidueSymbol.Surjective": [
+  "51661c67a03ff0b03d3b9d063389bca5f30bc9d7",
+  "416db0e994192203149a1b53935f6f5bd9b5cd833151471c4274ab08e559bda2"
+ ],
+ "GroundTheory.GlobalFields.PowerSubgroupIndex.Existence": [
+  "16dd57c1ccf39d70a1f8fd4ea2f05758f2dea796",
+  "5ff1e1201fe9d643c30c631795f72090d58568924d81aab867afa6698f2191ff"
+ ],
+ "GroundTheory.GlobalFields.SUnits": [
+  "b20143d8b72f0eb69d1fa25fa0bfeb0b8e1942a0",
+  "c4cee6556bbee96a3bdd480c532dd264ac9094f9152ddc75723f9ae0717ced29"
+ ],
+ "GroundTheory.GlobalFields.SUnitsKernel": [
+  "af88edac633dcc08bfe2ca53551b9814597d3ff6",
+  "f9f84512a3b5c7b4de1e9adad7bde080659399997f4bf97a447e838ce4f5e74c"
+ ],
+ "GroundTheory.GlobalFields.SecondInequality.Cyclic": [
+  "60c87663a32733eef614851b8e536e47941890dd",
+  "e1e9b9cbb2e7a378da9a1036f13e03a01d230eab39a77a4345d7f8fa52541c54"
+ ],
+ "GroundTheory.GlobalFields.SecondInequality.PowFinrankMemRangeInfiniteLocalNorm": [
+  "b7d0b56d79e7b4f6e7873f97c55741ce1f0175aa",
+  "ef908d7ac75754818c7e8550699d3c3b0e0bb76d3488953b983d21aae90f520b"
+ ],
+ "GroundTheory.GlobalFields.SecondInequality.PrimeDegree": [
+  "bc375f99764b2bab65d6f57dfc5a83136ac38ef6",
+  "979a236701b5ce1becd37e81403c7875cadd8da244cbcf32c0db6d3ea4821fb2"
+ ],
+ "GroundTheory.GlobalFields.SecondInequality.Reduction": [
+  "ae03314894f7e315a25cd75b2b33f57e4dc7c50e",
+  "0a7c0d111898843b21946ed635644afd601e714fd2dde556d7fd7fcd35a096de"
+ ],
+ "GroundTheory.GlobalFields.SecondInequality.Statement": [
+  "c022099d59e170aed40b7f928679434b3d61ffd6",
+  "23d68fe3c1a27312933149b44cada510c976780ecd8d4a7f34b610fa900b95c9"
+ ],
+ "GroundTheory.GlobalFields.SemilocalAlgebras.Approximation": [
+  "2d18f73b3fc536e6d5ee5dd6a094229e2f895a3b",
+  "f34090df5320a00bfc7ab8d2a2e35cb6286fb70b0cb047625b59f69208216e9a"
+ ],
+ "GroundTheory.GlobalFields.SemilocalAlgebras.ContinuousCompletionMap": [
+  "fd8c1f7e9818dd7f6910b69c6bf154b2818ecebc",
+  "85dccc36e5469a107cab8a320c0ae4fd49bcd6045cc6c6eb449330ec30d2ccfe"
+ ],
+ "GroundTheory.GlobalFields.SemilocalAlgebras.Finite": [
+  "c1f6130bfbe0340ee0910f3d2e66fa40d41b65c7",
+  "bda0049de0ddd41fa7722c38e8cf6a718e24cc35cc7c7d5fc62c730f094ff783"
+ ],
+ "GroundTheory.GlobalFields.SemilocalAlgebras.Galois": [
+  "c3df11e110be8a7fbf0779acc943363a8756beaf",
+  "5fb7a68fe3436fd54087a89acc7f24e594769ed400beb2117a08f687dc59c6ed"
+ ],
+ "GroundTheory.GlobalFields.SemilocalAlgebras.Infinite": [
+  "48822067131357e79df1f3951dab06df456c4a4f",
+  "21f0f0ebb470de420bb58ff65fa388bf28de9c1aa753b87962a0c56ad8b50299"
+ ],
+ "GroundTheory.GlobalFields.SemilocalAlgebras.InfiniteAdele": [
+  "197498554331ae858da6f94905def3ef9b9f29b2",
+  "475088495291a78c88f73dbf75644fa9272e1d5816b00a1c804cfadae148d51f"
+ ],
+ "GroundTheory.GlobalFields.SemilocalAlgebras.InfiniteAdeleTopology": [
+  "f11dde46266eba78e11b8ee40448f38888f65f76",
+  "479939ee77a9968692c272ce047d6a3b2f42a0adb284e118c15007c0fb047a35"
+ ],
+ "GroundTheory.GlobalFields.SemilocalAlgebras.LocalDegree": [
+  "eb424edb784675f7077ed491e91076360f51e063",
+  "da629b6f7cb5120eda6b062b269d9f20e5eb47009d4c5dc56e42de81a9a32591"
+ ],
+ "GroundTheory.GlobalFields.SemilocalAlgebras.NormTrace": [
+  "9ec514f0d3cd10a5ac28409474b54eeebe4c8042",
+  "9e7b519f716192b6dcaeb510a316a83c9f7b9db79107e66a8a4aa8fbe4d7c583"
+ ],
+ "GroundTheory.GlobalFields.SplittingFromInequality": [
+  "7b40b3a35bdb99d0eeea8d38102ade611b20e10b",
+  "e144613b6bb0a997dac0c461c5ba6eaef183f781ff9ac393cfd863a1049f7627"
+ ],
+ "GroundTheory.GlobalFields.TateThesis.ArchChars": [
+  "0ee193526366bfe8e4b821d445112c47f0b5e653",
+  "2aa3ed186aa5b18371ddccc13a48840db21632488eef3a301157787227466901"
+ ],
+ "GroundTheory.GlobalFields.TateThesis.ArchCharsUnitary": [
+  "325eec466513d84d2e34be44c1ceb4dd5f71949b",
+  "130bcf39eb863bc13c82db8c723ed3c5fb64514fad3ed8c972bec8343da5d9cf"
+ ],
+ "GroundTheory.GlobalFields.TateThesis.ArchCharsUnits": [
+  "939997165237e4d6d1ddedc64189b5d4a3972bf7",
+  "abb33678da9ca69ee302b2325c7aced68e1919ee71b0b37c59984279bcc98474"
+ ],
+ "GroundTheory.GlobalFields.TateThesis.Conductor": [
+  "b6e27b1638258124075f952386ad15d71a7f5cf4",
+  "fdf9a6c529fb59f222b61bcebaee0dc9c4cee0f8c1cfd8a7a888d0f396bdf3c5"
+ ],
+ "GroundTheory.GlobalFields.TateThesis.ConductorIdeal": [
+  "8dbb7a17504bb8d9490cb2db073361da4cbe3742",
+  "8156db274e95a14ad1fff7c6ec4d48245e8b72c4f86c78ea9d5f32a774b370e0"
+ ],
+ "GroundTheory.GlobalFields.TateThesis.HeckeChar": [
+  "4c544bd5536ab56bc3c63dfdaa9241352141131b",
+  "a702344e6bdd3111bcc13fdefbdd7dd49d650d4c7a8b400ea14d279e9cb73096"
+ ],
+ "GroundTheory.GlobalFields.TateThesis.HeckeCharRayClass": [
+  "eeba78a06b7aee37dd5452529ea5f372b1089055",
+  "38c90fe8b020c1cb60a564c531f74155550b8c90209d9f161c67f6a2be513bd4"
+ ],
+ "GroundTheory.GlobalFields.TateThesis.LocalConductor": [
+  "7283967ed9800da26f95e89dfa7e6c47589af0be",
+  "9b85958a58a36221b436606c226e6ba03ee2de111ce3c3e92800911dd4dbc0c1"
+ ],
+ "GroundTheory.GlobalFields.TateThesis.NoSmallSubgroups": [
+  "3604b476b321e355735c11ed806a1e7347c8460a",
+  "6319e9b3b4b99b2c08ddfbe3f95acd6418745b4b31c9eb2652a52d25eb2da3d0"
+ ],
+ "GroundTheory.LocalFields.AbstractLocalReciprocity.CoeNormEqProdSmulNorm": [
+  "2fe046286d9e4671e4ac5799db7747e658385483",
+  "bb30d1a0c24cc96b7ef893b035119996f3617ad63c52d110fa03298cec563db0"
+ ],
+ "GroundTheory.LocalFields.AbstractLocalReciprocity.ExistsEqNsmulOfProjEqZero": [
+  "5fac455f9387fb559bd708dc074263c2390990b2",
+  "6ce950c381bfcdb162dbe218665510f44609d5410d1f11a1d2db58ae4a704909"
+ ],
+ "GroundTheory.LocalFields.AbstractLocalReciprocity.ExistsOpenSubgroupMemFixedModule": [
+  "345781c3259513e84bcaeb27c93a26d67dbcb2ec",
+  "23d6b4f221f03d4ad6fd8567868c805626357e4f4ff2f0609d4a5ecf2d7b5939"
+ ],
+ "GroundTheory.LocalFields.AbstractLocalReciprocity.Frobenius": [
+  "83f088af922427eb78fad983e0c00e513d426f36",
+  "6fed766456659a67b9ba4607a4aa1aeb3c3cfd78fbc790aa5343bd2f39907624"
+ ],
+ "GroundTheory.LocalFields.AbstractLocalReciprocity.Functoriality": [
+  "669dd4311e1948a0abcd9902ed59cc6d8397ab51",
+  "abea46f21a246b95fc9ae6a5411a8014352de0ae5ccda969cbcc9eeb368992c2"
+ ],
+ "GroundTheory.LocalFields.AbstractLocalReciprocity.FunctorialityNorm": [
+  "2eeb3dfd8e9ec09f291cbc639543b8696c894dcf",
+  "7fe7e0f81ad2573d447517f85536658603ceea2d4dbd0655aeb9ea45fda475cd"
+ ],
+ "GroundTheory.LocalFields.AbstractLocalReciprocity.FunctorialityTransfer": [
+  "f4027abed23de44b1129c2e6a508bfa5212f5eb9",
+  "76d8ead3fe42f8e388a09087bbb9c204c63cdd9f10d0772d4a0ebe5410c30983"
+ ],
+ "GroundTheory.LocalFields.AbstractLocalReciprocity.IsoCyclic": [
+  "edb2e0a270f81c0ea3f009848df7882e47b9a197",
+  "b267e98d436f2bb01f45c6668f7cc18b563e82c699a8ea6aabe5e4b63f572c8a"
+ ],
+ "GroundTheory.LocalFields.AbstractLocalReciprocity.IsoPGroup": [
+  "8e35ed6c919778e5ca35da2bdb6c87a56d5f898c",
+  "9756a86bade3d2df699772bde866b4504ae95c15dbd4fe9430ebac602cfe9f2a"
+ ],
+ "GroundTheory.LocalFields.AbstractLocalReciprocity.Isomorphism": [
+  "99ef7256b4c1fffeced0de586e68d526cd113fbf",
+  "86d438c5236be5cab244fee0dd263d4defbf2d5356e41c4c7087076f977979a9"
+ ],
+ "GroundTheory.LocalFields.AbstractLocalReciprocity.KeyLemma": [
+  "7345eb0fe65e898ba8d0be2ef638714a0457f7f2",
+  "2183c3720e5ca8535ca7510d02af2c22542dca16d084feaaa72c4ceaf2f8d015"
+ ],
+ "GroundTheory.LocalFields.AbstractLocalReciprocity.Multiplicative": [
+  "0d287f74be0e1dbc2559e5700428c582cb094b12",
+  "6389b0e9d7b66a6e5fb669f774b2cc1df3a094c379e797b30e3cbe658ec76926"
+ ],
+ "GroundTheory.LocalFields.AbstractLocalReciprocity.NormFormula": [
+  "ca13e06bab4336a99911d8f96238b8d8e7c0a2db",
+  "4ff9cd8b06a163e9191766afcbfab928092184fd4865ab0c6816fdf0be10c363"
+ ],
+ "GroundTheory.LocalFields.AbstractLocalReciprocity.NormGroups": [
+  "6d1394aeecbd61d3e90c7e54fc3b65f9f2dc52f9",
+  "0f4778800fb2069e8c21f9e7317e50f820e8dd5c71cdc786b1d4996d9c5ca54e"
+ ],
+ "GroundTheory.LocalFields.AbstractLocalReciprocity.ProfiniteInteger": [
+  "9ff24590855c691ba9e9952dc8467862ed92e8ba",
+  "9043fcc4ffc252dbd8bddc6757ff105475e94fd9a05ed63cf18387dc08bd273f"
+ ],
+ "GroundTheory.LocalFields.AbstractLocalReciprocity.Reciprocity": [
+  "21cc001146e796b09c9f16c9760da0d3219b6c2c",
+  "e7902dcee2d86680923175af4879075de5619b4456a44edd047d542dda3a3adc"
+ ],
+ "GroundTheory.LocalFields.AbstractLocalReciprocity.ReciprocityAbelianizationRestrictReciprocityLimi": [
+  "17ad51c86686ec69bfab800c0e6d7f8b0205b527",
+  "7c770dcbd5996bc2685adc5d6b96356a7dbd9986b25ab05972bf47ce57514597"
+ ],
+ "GroundTheory.LocalFields.AbstractLocalReciprocity.ReciprocityMap": [
+  "4148c710ea4f497dc8c036ad394819cfe2cfd41f",
+  "44842a1c90438e242473e6b9c73fe243281faab72c62685be5c4d109e011bc27"
+ ],
+ "GroundTheory.LocalFields.AbstractLocalReciprocity.UniqueQuotientSubgroupOfSelf": [
+  "e6426a36db699976df7198a78bd8c4a14e906f68",
+  "9deede0a21ae28f7617101156fd11c1b28010e9285e467d25a4e77c83c17a8d5"
+ ],
+ "GroundTheory.LocalFields.AbstractLocalReciprocity.Unramified": [
+  "2cb83b1e8cfcaf6e3b85065ce9b2b5bb1a7ce81a",
+  "39fd66c96a5c8ecf5b1218bace515ca3f40b1e73aba3063eeeb38cabfd4f3a5b"
+ ],
+ "GroundTheory.LocalFields.AbstractLocalReciprocity.Valuation": [
+  "11195b327de8c6a06747c404b1de079676c0246b",
+  "564f5719a7221ac93ee3fa286eb858413bbf6a53b70fdd75253c17269e7df92e"
+ ],
+ "GroundTheory.LocalFields.CompleteTrivial": [
+  "0d1f370ab606946b83d8f147dcfaa17148231fa0",
+  "2ada6f933ad953834a6eaf94efd6c7f16945fcde6fd39ed3f4a38068d9b84381"
+ ],
+ "GroundTheory.LocalFields.CompleteTrivialLocal": [
+  "8d04c38aa2e22cd01473893ae11c2b417d47b088",
+  "bd0251a780c4dce1ec15bae4eb920ef6a274984ba2129de8a701f11b96b78f70"
+ ],
+ "GroundTheory.LocalFields.CompletedUnramified": [
+  "2a8d7546878f1d3a0931136235d4dcb655f608be",
+  "f56995732417fc995fd0996cf3e9dd676e876352c18d4c23cb0eaf1694060469"
+ ],
+ "GroundTheory.LocalFields.Eisenstein": [
+  "588ecabf88b99610db0f373432dbd6c650ad25ca",
+  "db033a041ecb371d3172b70f085d1f99c00aa852d756ede464c3c80c6d92ec76"
+ ],
+ "GroundTheory.LocalFields.Examples": [
+  "46074cfc2461babced9f517fe9ba00351a850427",
+  "b005cc2242fecc309f9e5c56e7e43bcd2b67cc2c7fa32d4bebf9e26668e96a6f"
+ ],
+ "GroundTheory.LocalFields.ExamplesCharZero": [
+  "90833665e3b98244d0a96b3e02eafd99fb3bdce2",
+  "8bc6eef0d33fd1b085f07c899f4651074e9cb5ffd1e17bb1d8c26b1687e81240"
+ ],
+ "GroundTheory.LocalFields.ExamplesLaurent": [
+  "aaf4ff9eca0fc3bb0d0c4d1e2b358a74dea525cd",
+  "4ae5a55bae294f5299c2925718e0977460dc8a4c38cffe1ead1da49914d5005e"
+ ],
+ "GroundTheory.LocalFields.ExamplesTeichmuller": [
+  "d7cb3ad1f127da78aa5ebb722fecc976d2ff9e3a",
+  "e7d0594466c2290e3c62d06fb136b81e356c0c938224b8034bcddb22574093e8"
+ ],
+ "GroundTheory.LocalFields.Existence": [
+  "33af8a1e6a9049285cc1b409446dca30a07ee9df",
+  "a40fa9a40452b89060d469d71e1657c4482ebc0eb6bccebd1a40dfcf3a89ebed"
+ ],
+ "GroundTheory.LocalFields.ExistenceDictionary": [
+  "8c50ea9e13a66479b73608a5489f725953617eb2",
+  "e02f00b620b25c33ce4d3ee77546c276b6f28c50a6da2969594fcd02a3838bcd"
+ ],
+ "GroundTheory.LocalFields.ExistsUnitFiltrationUnitsLeAndRangePowLe": [
+  "3255cd96bc22afc4f89147a4eab1129cb36fafb3",
+  "f79f16a5109c5c56d9489eebea89b567ac5dda2a9273a90db36209a290c3b7bb"
+ ],
+ "GroundTheory.LocalFields.ExistsUnitFiltrationUnitsLeRangeNormUnits": [
+  "400fb330bdd939e1468e29559ff17dce1fa5c31e",
+  "4a0e46e02d801f9e8f7e1ec384f12b3fbd77617eab8bfdd6c5c29e9b8f24004c"
+ ],
+ "GroundTheory.LocalFields.ExplicitQp": [
+  "85e0994e4d071cd66461cb96853527627ca6fcf6",
+  "2cc98d1e82739e92e9a67aa3e34e6ded52449af4c456b963d180b0a31c80c7fc"
+ ],
+ "GroundTheory.LocalFields.ExtensionsOfDegree": [
+  "50eef9742d31ef0b1515548bd8fed9d0927b6d9b",
+  "56c1a2a381eacd79319dda842b809aa15a9c32d4cae46c2ee9aff55ba8f5e341"
+ ],
+ "GroundTheory.LocalFields.FilteredSurj": [
+  "f25ea9c5497f848becbf86730c9c03a3e921b9d7",
+  "0148e7be3d3681466f01e8a18d2c7d7cd6b670b08dfe4b48374ee1d8617ef439"
+ ],
+ "GroundTheory.LocalFields.FiniteExtension": [
+  "034bed10ee722e12dcd823809df408c723a69d56",
+  "c5bc8dd14b19fb9ced84c1153290eda47ce0b36d1a8c528d461c5d8da0e892e2"
+ ],
+ "GroundTheory.LocalFields.FormalGroups.Basics": [
+  "18b4fd94bf6399156fb808c2e211b007198984aa",
+  "c73c9e900c808fcfa493245b678510b1b3a978c5673690ba19b868a83d40079b"
+ ],
+ "GroundTheory.LocalFields.FormalGroups.FrobeniusTwist": [
+  "b4ad076a5005665fb6bdaa35700163b28f35ca51",
+  "455926bb5e47376073137c74e3a11d70d751a8601dfa6e5a7946d95d271ed4a5"
+ ],
+ "GroundTheory.LocalFields.FormalGroups.Inverse": [
+  "f317bf4f11a7c8fc8f7b82b730028fc6798c03eb",
+  "8fe5b12d7c27682ce176f0323248c44b3d9268c6c646bbca6af6b6764c1aee18"
+ ],
+ "GroundTheory.LocalFields.FormalGroups.LubinTate": [
+  "8f8747c9f86e6b7264391562a77b268ef22704d5",
+  "4e205dcd9a83128342b7f17b787e895380f3258cea4f69a6afe1ff87d9c552c2"
+ ],
+ "GroundTheory.LocalFields.FormalGroups.LubinTateGroup": [
+  "23b849e4765e71d9b593cf479e92ab56742c517f",
+  "a2ba687671be04a49bf59702ec536507a705b50a0f727b121c698b2a9ccd2c62"
+ ],
+ "GroundTheory.LocalFields.FormalGroups.OverUnramified": [
+  "adb1af49368ee5c437f40d8545ef25b64ceeff54",
+  "1f55843c24df208b832439782e538f0d8849fbe09ce714cfe765fd22365fdd38"
+ ],
+ "GroundTheory.LocalFields.FormalGroups.Truncation": [
+  "01079081eb3af74d6fea362819488bef6e461992",
+  "c1f4988484306cc65e6a46e6553843fc3fd7936f9741a2924a087c8cf4b09925"
+ ],
+ "GroundTheory.LocalFields.FormalGroups.TwistedLift": [
+  "83a733954150a493e45367b683d44cc5434920a0",
+  "5c4c9bf64c74e6114cfa9f7f1accbb9bc82a40f7766f1d645af1745464e53c18"
+ ],
+ "GroundTheory.LocalFields.HerbrandCyclic": [
+  "b425b5d9ae3380c21cccbec5abc5b0101639fef4",
+  "af6d09eaa3022eb5bafe2726f21652c909799b6e6dd79448964b4b6669b81532"
+ ],
+ "GroundTheory.LocalFields.HerbrandLocal": [
+  "f6ed82cb3e3ec802a20f33fed8321917fe5c52c6",
+  "2b3ea44c77c464117957c194f1678f8b0abf6726f8203f850aa0753dd621509d"
+ ],
+ "GroundTheory.LocalFields.HerbrandLocalBase": [
+  "74af0e02f578467d84e369f09c455b9de4a8e5e0",
+  "9ebf52a950caba2b255c20c3b2787e0189fea8488ed348aa2042eedb4a587af5"
+ ],
+ "GroundTheory.LocalFields.HilbertCyclic": [
+  "15fecce28c8112d08feb1c687363d0c2ea055a11",
+  "5236f45e8d1df3e96301a7c3bde57c81878bbe812411a9dd8747408ec5184099"
+ ],
+ "GroundTheory.LocalFields.Integers": [
+  "1461f1d26802636bb8d5da5cf6b09cdac4c5f21b",
+  "58cab273b30ce217a77a16aa8537f79f7c4515913cd792c75434ed7e2bb72d16"
+ ],
+ "GroundTheory.LocalFields.Interface": [
+  "f20281ea8b95ce97fe3fc923b38c8a463f55b0aa",
+  "c994c9df6c5975b1b1bfbb48f073b6634591ae8b69d6b838ae1ed0a467ef63ce"
+ ],
+ "GroundTheory.LocalFields.IntermediateField": [
+  "60db5ba3bd43e5f3b4d8b56c7353a442afa64b48",
+  "486e9dd274472e5d7723e00279f3596eed47ba2fb073bd8eb480edfa60df89af"
+ ],
+ "GroundTheory.LocalFields.KroneckerWeber": [
+  "2a97193b5015c7ce57314ecdd3067385ec062dcf",
+  "6cfe67eca253b5baea0baa1613c7c645f4094adbe09794184297d3b66ce34a33"
+ ],
+ "GroundTheory.LocalFields.LocalArtinAbstractField": [
+  "5962891bf031e800efd60d73aa07a673726f89fa",
+  "d1b02189d32e7d39e5011463e3c6b8b591d7d25ceacf0dcae7824f6353913a5e"
+ ],
+ "GroundTheory.LocalFields.LocalArtinBaseChange": [
+  "f5ac7181352e073890bd26707d8a1ced2ea484d9",
+  "fc6c4a4a16700ecb6cbd0d4fa53a18d573d7aeffd3655d8c9f025ed7462e1c91"
+ ],
+ "GroundTheory.LocalFields.LocalArtinCompletion": [
+  "d7aaa1a7cedf0a3655b396f63c169160036d7273",
+  "0503107bab35d5dff8dbfc7dc154b8295a01167edf09ff0db332a0ba3714a840"
+ ],
+ "GroundTheory.LocalFields.LocalArtinFunctoriality": [
+  "82ac7c8f5ead6fdda35313f396018020cb294c27",
+  "a8eb78e85cc643afd2792bacdf60bfec116d3c884b8b6fc47bc211a8c7689cc0"
+ ],
+ "GroundTheory.LocalFields.LocalArtinMap": [
+  "f83a9c9f66dcb68bca56a1aa2d11a5595a10d53b",
+  "f2513e235b35f3651b0dc0e1fa0612fd679a258fb30fcbdc1835c07645ad864b"
+ ],
+ "GroundTheory.LocalFields.LocalArtinTransport": [
+  "0e5b7ce0f8c16e357fb125f932a789c00a75a42f",
+  "570afc5973596928fce62a93afd68326e73329fc6c9278e37b87b691f8c05f09"
+ ],
+ "GroundTheory.LocalFields.LocalArtinUniqueness": [
+  "12a7b4998c40e916759be8ae02a7fab207293e0c",
+  "48c5e2592ab753e93217a26c66a2e5b5f157f6c444d57a69a9a8665af261f2c5"
+ ],
+ "GroundTheory.LocalFields.LocalAxiom": [
+  "211863015a40203a24ecaded1cfe2f59d9522002",
+  "5e3a1292550aeb5183de7a13769ce13c172015630bc6bc898628ee10ad79e4d9"
+ ],
+ "GroundTheory.LocalFields.LocalAxiomDictionary": [
+  "3be3e3d85238ee0865a717bc66de13e1c47e4e12",
+  "4291e4bef5f8a5761e877e3aa4831fafb2527c7c605aa164a18ce560c5039c18"
+ ],
+ "GroundTheory.LocalFields.LocalAxiomTransport": [
+  "7905030a73f3e0ed4491939ba181d25c6c9bc711",
+  "d58c25ccec8cad3775108155ecff5cce4c8faf62baf30d0155e5d63ad1fb1c59"
+ ],
+ "GroundTheory.LocalFields.LocalReciprocityFinite": [
+  "a92739c83a0d9b13bec61a8d4cf82a8cbd0f80ad",
+  "2e57d164806777fab488d5da5e164fa1012a4a35451e8a7edaea9fe72f27fdaf"
+ ],
+ "GroundTheory.LocalFields.LocalReciprocityLimitAbstract": [
+  "8381525e90983140e26c7a61e5c4ccc99b730d79",
+  "e0b50561c1cdfcc159fe0b0973d3a748ced10c413160e1fdd5e216e62d2887f3"
+ ],
+ "GroundTheory.LocalFields.LocalReciprocityUniversal": [
+  "8c9c0833b2b693fd8ee3b54a6072efffbe85f0c4",
+  "a7027c97a014f651909d947b43bf64d403ef001e67fce0da2bd8a32ee1ce3afe"
+ ],
+ "GroundTheory.LocalFields.LubinTateLimit": [
+  "2f88dfc9bb91acd3fa7226459e6bb6ddcacac0f2",
+  "3a7251f3ed22aba423f17a5fe7c7970d913f30de3c90fee869f736adc2f88bc1"
+ ],
+ "GroundTheory.LocalFields.LubinTateLimitGalois": [
+  "db555c0b0fead5a00d7ec8c4e79c8f4417080ad3",
+  "c05574ba9d2e14942eca675f773bd68b49fa54b980f3746678193ea641122ff3"
+ ],
+ "GroundTheory.LocalFields.LubinTatePoints": [
+  "6105b18322ef06b02436d5decbc7b027787e2d73",
+  "8483c5c6b8c5a86d1998381a04429a6182220c398886e72936121fc00c8900a0"
+ ],
+ "GroundTheory.LocalFields.LubinTatePrimitive": [
+  "76506e5f147f4f918a8123404d16e14ff6f2fe64",
+  "814abbfc9c18a2b3805b92f9730784b605e8cd3c102d39f67f7c300385eadf05"
+ ],
+ "GroundTheory.LocalFields.LubinTateReciprocity": [
+  "954fd281c85677393dd23632a35c0ba72fd72d85",
+  "3bd25afb0706c1467851a2b269c12c78c579c219dcf367e213223d83df9a2a8d"
+ ],
+ "GroundTheory.LocalFields.LubinTateReciprocity.Descent": [
+  "7321f3baa43fe5fdff14676150f0d0584412e508",
+  "50afbd96644fe2f7bc06bd77a104e50e6b592c04c51a84e7ce50c52411483c2d"
+ ],
+ "GroundTheory.LocalFields.LubinTateReciprocity.RootEval": [
+  "0710a1c371fffd8edf7a37557050f0e0c3004678",
+  "32894e08e6df214b0709f3a636a4e2c960a8c89ac132babc372fe08c38797b80"
+ ],
+ "GroundTheory.LocalFields.LubinTateReciprocity.TwistedPoint": [
+  "40a8865d564f5e3998245139b3e47d50b5c7b1bb",
+  "cdabe48be2ab84a7adf380d88398358788e3bbd5991266409042525cbed44928"
+ ],
+ "GroundTheory.LocalFields.LubinTateTorsion": [
+  "8c716a87103a142c1c77d92074d918a1c30eb9c2",
+  "2acb0d5f75f7744b6b7dd6790c3417d5683343d682583f351b129ed4ed4644e4"
+ ],
+ "GroundTheory.LocalFields.LubinTateTower": [
+  "7ab7ec7a1ee6bb7e2a1ac1fee0d765a6b15939f0",
+  "74872982077ab0d5b759d64def8daf6eeb120c5b18a26742bce6157bf8e6ab64"
+ ],
+ "GroundTheory.LocalFields.LubinTateTowerMaps": [
+  "7a31cc7374f1f971abcd9a4d00847a039518ce5c",
+  "aa9b1e10889e2d2a5a64b132b7758cba41eb3c65304c9dc797bf2149b6dc7ed8"
+ ],
+ "GroundTheory.LocalFields.LubinTateUnramified": [
+  "9dbd743082b4932859170f44ede84c84183c828a",
+  "c8b4130a59f047788c377a29acb9d4e9b9c2f762253f3149fac93e157d217548"
+ ],
+ "GroundTheory.LocalFields.MainTheorem": [
+  "9e01c63a10ca13eecbeb9ad73f698022aa8894eb",
+  "fc360681748e4bbf463ea608e17e28bd9ca438f67b215c00dbb7e3f80ba8f322"
+ ],
+ "GroundTheory.LocalFields.MaximalAbelianExtension": [
+  "09947c38412eb55b817ffba4da15846e9153ff6c",
+  "581be19db27345d85245b1028f290d3b531ec532d7691e776d08a6f2831521ec"
+ ],
+ "GroundTheory.LocalFields.MaximalUnramified": [
+  "af973f18efadd362516c11edd759cb03384844f5",
+  "55f3b3ea7646ee87cc2c6732c61e3db744d8b1bb5f6d2d124ce8ca77c4256259"
+ ],
+ "GroundTheory.LocalFields.MaximalUnramifiedIntegers": [
+  "2e3d0713119d6cee80504db4627af8215f9baa97",
+  "c6e5a95b2366eaeb92472efe1a21155eeaf665ffe2b12e5bb609434e7c93efbf"
+ ],
+ "GroundTheory.LocalFields.NormCorrespondence": [
+  "b2c2f66af8ab44928e9febbbb8106dcabeae65d1",
+  "b90af10f0614ec247448a0bf4513d499d6270763484906811408c6a13f4475fb"
+ ],
+ "GroundTheory.LocalFields.NormalLattice": [
+  "97cb6cb768749264b061aa255b3f6bed6dddd8a3",
+  "9544ba54c728290459de7ec86fc9e15a2862137a3865a7219f1ebd952a459fe9"
+ ],
+ "GroundTheory.LocalFields.OpenCompletion": [
+  "7c1eeddf79c3e81f6696ce120d99466b1d1dab13",
+  "34a0c8812757e9f05f8dad87269a6b2b552816c4dd0be06d36b1b76801637e84"
+ ],
+ "GroundTheory.LocalFields.PadicExp": [
+  "73626bac1f0446b2231b46b54066b10a01fa9573",
+  "fc5fed0a62484ca6ab315cabb1dbd3c6745098c896762fe0fe40973bc8afda5e"
+ ],
+ "GroundTheory.LocalFields.PadicLogHom": [
+  "fd0bc4efeb2468911357d070746779d329f01b46",
+  "542e57c97dc53297651c9e1352a7850f7a5e8cb1ad4728401fd32b9d07369dae"
+ ],
+ "GroundTheory.LocalFields.PadicLogLinear": [
+  "00b2d73c3e2e6e3bea568fc082efa5bcb45e7bb5",
+  "31c770daef08d6369f1d246014a631f263545f5de37eb40f4cf0f02753767f04"
+ ],
+ "GroundTheory.LocalFields.PadicLogSeries": [
+  "76f9674d633a5abb7d81fdbd6664d848744f65df",
+  "491510f23394aa0d7ee8b6419492da7a63cd95d3d291fe4b41d27e33547b9073"
+ ],
+ "GroundTheory.LocalFields.PrincipalUnitsModule": [
+  "9475be82d44cf163db789a6c43cbe64d8413cefd",
+  "2f44d4cb47d5d14dd801ecefa8badf101a5037383b23f87e27ff6b41bd2b3641"
+ ],
+ "GroundTheory.LocalFields.PrincipalUnitsRank": [
+  "bc05899670df204c7f1b28ba21c666118a4fa0b3",
+  "824af5f0c459f1abf7ebb65409c32d3e95ad74ec7fb46265233ff2f54bdc0444"
+ ],
+ "GroundTheory.LocalFields.Ramification": [
+  "873383bcf23bdc1555dc8823575fc6a1e3330873",
+  "22174dad0d3739ce577c7ccc808ab966d5de361f5d5fbb2a14dcc743642eefef"
+ ],
+ "GroundTheory.LocalFields.RamificationStructure": [
+  "1d7c887fd347256ac8758a66ea081c320627c561",
+  "67ae350259a547b8fa2eedd84c96ae84f70a4b384196569fd76b47e3b722f05e"
+ ],
+ "GroundTheory.LocalFields.RamificationTame": [
+  "c0e42a0a120e693120204c0417195906b268cb72",
+  "8af48efa5204c4309cd89ae4761e69583443a1fb6858b182f7a0a4ec6b5efa16"
+ ],
+ "GroundTheory.LocalFields.RamificationTameStructure": [
+  "9341039f1a9d0ef340cb3785e88ba9e1179ed814",
+  "b635ed70391461765d005c45cc203d7caf4a5c3ef514b659daf0d427b0f32373"
+ ],
+ "GroundTheory.LocalFields.RamificationUnits": [
+  "f0d9eba3af13bc833d16bd8ed05f476aaf908018",
+  "cd309cba748b5bc795d75d976ce282b1784208b468af32a22645aaa10365d70c"
+ ],
+ "GroundTheory.LocalFields.SeparableClosure": [
+  "ffd134dacf1e4c97f31dd5ed2eaf3296c9fb299d",
+  "e99cd57cbb4e53e591c37e3bfe12793e23ea7251203b99c6bb1fa15da2cb199e"
+ ],
+ "GroundTheory.LocalFields.SeparableClosureValuation": [
+  "c1b36d0fea615e1c14595bfae05d1f7d075a5fc3",
+  "0c491525ee210accd00b322f3ead7325382f7644980753aef8da212d5a0f794a"
+ ],
+ "GroundTheory.LocalFields.TameExtension": [
+  "9b3fe9a01d3a6010c63df9fd8e54e8ef7ef25b4a",
+  "3a5e63a74cfac3e930275e2d3e5ab86f8c4de636997262cde4ad9b31b802a508"
+ ],
+ "GroundTheory.LocalFields.Uniqueness": [
+  "aca24721acde3e23274e0544f36816f13cc98156",
+  "61ee6a1a29228032afa6620539414231d8572978c5e18869796f2195fd2ccdbf"
+ ],
+ "GroundTheory.LocalFields.UnitsBasic": [
+  "36c5cf49f3999a61e4d1971476f548907b39d38f",
+  "efd9f4230b90617956f731ac23e8e0014719b0da27e98777865132271b346672"
+ ],
+ "GroundTheory.LocalFields.UnitsGalois": [
+  "4f9e8a154ebdbc8caa371aeec50ac44a7e463b4d",
+  "8ddaeada79c3c341c753208012d0dea12156dfa0bb1cebbb0996d904cf038336"
+ ],
+ "GroundTheory.LocalFields.UnitsPowers": [
+  "518ce1e55e40e04f71144537dcb86f157278e035",
+  "31376a17c47987d731dd1a8e81fa8bae82cc42423444edf47056883730c43cda"
+ ],
+ "GroundTheory.LocalFields.Unramified": [
+  "655e8aa50f1392bf250f07c9d0cdcf1c3d12e423",
+  "c315f571c2982bc066880f5469e5731d563a1592186e7555f9527db240d888e5"
+ ],
+ "GroundTheory.LocalFields.UnramifiedDefs": [
+  "68b1a0b1e0fcfe3b2c373eb54da97822ebf6bab9",
+  "f4ec79abe84c6c7a77fb642f24047e0ca39c2005ff5a2683593f2a73bb6e60ee"
+ ],
+ "GroundTheory.LocalFields.UnramifiedExistence": [
+  "7bfe87da1e3ac73b35fde77603970459f792197f",
+  "5b31c8103c1532ed1201446509c0a22c9ad2b6c4658e56e0e003b3df3cfc46d9"
+ ],
+ "GroundTheory.LocalFields.UnramifiedGalois": [
+  "50701ad42dbbccf989460fb0a0472417fdd41993",
+  "22ebcfed4695d8267e0326b8551c02d6be95e71c2a60c5ac0f0dc41f8926a936"
+ ],
+ "GroundTheory.LocalFields.UnramifiedHensel": [
+  "fcf21e8095a500b7f81da31e001bc39b564df182",
+  "676d8bc08c15bab7317111b8e6cab860236d4ad3fa7de59e894754345ae75df0"
+ ],
+ "GroundTheory.LocalFields.UnramifiedNormSurj": [
+  "5ef895c99c586d218a1377613d1c5535e5f18d7d",
+  "6e1f0e5112fab642ed80c3d6bc8bc5c4584a80cbb53384e4af6c49e8e0c11146"
+ ],
+ "GroundTheory.LocalFields.UnramifiedNorms": [
+  "851a01c203aa836330cf369ccea37e5be07877e2",
+  "a6a1cc8512f7a356dc6dd4a43f46857689c2c6438d61465cf91ebf433a6a98cb"
+ ],
+ "GroundTheory.LocalFields.UnramifiedRootsOfUnity": [
+  "c175bb8ef724dcffe4e7287a5fb7d339f24c1513",
+  "76a4f1adcd7ee6cb3c2d745ac7ccd82751ea0ef3b1e23da6b2c8c6e14bf445d3"
+ ],
+ "GroundTheory.PowerSubgroups.CountableNeighbourhoods.DescentPowerSubgroups": [
+  "55080b14741ecc4ae1d6c9761e261b5be2da545b",
+  "128d2cde9972214eaa56dc798a69efa92c946c4591a5bc17991d86506e8c4cf1"
+ ],
+ "GroundTheory.PowerSubgroups.CountableNeighbourhoods.PowInvariant": [
+  "cdf1e511c3db258311715d36471b61d75d2a962c",
+  "38293d00918c9408f6b44abbc6c2f7471d3c0a92f06b5b665634dc046ad7c65a"
+ ],
+ "GroundTheory.PowerSubgroups.CountableNeighbourhoods.RelIndexSup": [
+  "aa9e4cb505586e25b156fb8b41e741fa95f1b7e2",
+  "98be201f0846ca753a7631ec4f7d3d2430678c28c65482bfe6731e3b20ac44f8"
+ ],
+ "GroundTheory.PowerSubgroups.CountableNeighbourhoods.UnitMulPowAdic": [
+  "8928c280e759266a4b138ba3e259bcde0064e724",
+  "51664114f41c61fffdf1e42de07560118f8949b3c30fbd4e97015327169eb1b6"
+ ],
+ "GroundTheory.ProfiniteCohomology.GaloisModules.CoeGalRootsOfUnityHomApply": [
+  "c28d2a006314a7f75f4724cc35d445f0ba3b6b21",
+  "f311a404a57fa2f93b66442538b024f825720aba29b24d57bcdbffed9d305304"
+ ],
+ "GroundTheory.ProfiniteCohomology.GaloisModules.FixedField": [
+  "b765ca1685396802c1e93dd0939f0eec9d352f18",
+  "e1f98099178cb48da40e97249613b055b809b8ca15e01aa7d50a0dd502ff1a5e"
+ ],
+ "GroundTheory.ProfiniteCohomology.KummerBasic": [
+  "792032f968c6a9a2f3aa0a117977d58e7b3d0c54",
+  "ab071c9f51a4b05670a2ee7dad0fef9a32c2a5e898616f5a1f77b0953dd22539"
+ ],
+ "GroundTheory.ProfiniteCohomology.KummerCorrespondence": [
+  "3c8b1ed7a942a4ffd5ac8b58f5d38e981a10b9ca",
+  "3c99686b16a712c80c519b792c51d46529b4cd8a172fb0b82d1e42574fa3c1ad"
+ ],
+ "GroundTheory.ProfiniteCohomology.KummerFinite": [
+  "e343be3c38e4adca59eb8228fcad591194866dac",
+  "f845b6584167a3070730676fcdd35eb2e6da2de4a7df5228e18111532fffaff3"
+ ],
+ "GroundTheory.ProfiniteCohomology.RestrictedRamification.MaxUnramifiedOutside": [
+  "7b30a833d6fc3eb6ca5d446311c06f3811e2ada2",
+  "aad3c420f4c76a1ac74338aaddce0cdb41966ad6e11bc04b6109b906ff48b9f9"
+ ],
+ "GroundTheory.ProfiniteCohomology.RestrictedRamification.Ramification": [
+  "b29889813d4fee53b3acc1785de8fd12d7af76dd",
+  "6c287bce584fbebabf9b5510a55b019ff0ed26850ac47546572f076e0b1d43dd"
+ ],
+ "GroundTheory.ProfiniteCohomology.RestrictedRamification.Unramified": [
+  "45690ec385f4f1e6d6844f1572c21331ac289f45",
+  "8b72e4ad479588867694cee6e12d2f24441ca9b5098d243f33b4e7f4276d31c1"
+ ],
+ "GroundTheory.TateCohomology.HerbrandAbstract": [
+  "eaad4d5c9e334f778334dd2529f5661466d5edb7",
+  "c2e0d670eaf96a595bee1aaa530414587dbcb2e1b7c298a1f17f0858ea5fa4b9"
+ ],
+ "ReciprocityTheory.GaloisValuations.ContinuousConstSMulQuotient": [
+  "cc7e6464c45dac01a68e484ce0eb884df25d9f4f",
+  "bfaf29881f94f0b8f3b0718f7ce441a3f3ed36964b6fa19a0a2913e67be7c2d7"
+ ],
+ "ReciprocityTheory.GaloisValuations.Global": [
+  "cb4c9727d3c18cfdf185fa0958a4f11d21a5a43f",
+  "ce449619cd414f95b4ca03d81f14688c6282f6a39d43a53a62151951628536ad"
+ ],
+ "ReciprocityTheory.GaloisValuations.GlobalA": [
+  "f193f6e2a17963f821834b9cdc5dee96c52cfbab",
+  "62856f962bfd1d4cec6c47b9f9e2205244fa6791095436f26b884d710f554ad7"
+ ],
+ "ReciprocityTheory.GaloisValuations.GlobalB": [
+  "522d1e58b5accb8a165d6a392d5209c7b285cf65",
+  "d89349a55d2e9ef0ab57a29284ae16a6a1bc93c36ae7f0805bcf34b58333564f"
+ ],
+ "ReciprocityTheory.GaloisValuations.SeparatedDvrSecondCohomologyMem": [
+  "5860d068c8ee7b7d2845256ce5e2871cf3c9c251",
+  "49d4fefb9b4a57a76e4c6589148e4fce5a0b261f6498507e4b066cbfd65f490c"
+ ],
+ "ReciprocityTheory.Hypotheses.GalCoh": [
+  "a4e5044d290790dfc54db004228d49cd9fdb77e5",
+  "4dc4f2b80c9dbb5c51df59788e42a6268b7bfa327082d50eace0e14407784c70"
+ ],
+ "ReciprocityTheory.Hypotheses.GalCohDefs": [
+  "ac6952d0f1b0e6f8cbc15cd6e662ba1848818cc3",
+  "a8d2674268c62c33d82ccfd9835c2032cfceb66623d105366d0b2077922f09cd"
+ ]
+}

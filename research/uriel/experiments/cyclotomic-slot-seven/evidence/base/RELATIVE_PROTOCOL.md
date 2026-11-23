@@ -1,0 +1,5 @@
+# Additional diagnostic, recorded before running the determinant
+
+Test the stronger claim that the whole class group stays trivial. Compute the relative class numbers h-minus at full cyclotomic conductors 7, 49, and 343 by integer determinants of character sums, with 3 and 5 normalization anchors, 23 a non-unit anchor, and 37 an irregular positive control for divisibility. Recompute by changing primitive root to its inverse and independently check characteristic-polynomial products modulo splitting primes. If any upstairs value exceeds one while remaining prime to seven, it concretely distinguishes full-class-number preservation from primary vanishing. The minus quotient alone cannot rule out seven in the plus part. Keep this consequence separate from any full tower proof.
+
+Ownership note, entered before calculation: the main study separately registered this character-product experiment and will run it in numerics/. This base unit instead runs exact polynomial splitting, field invariants and full PARI class-group certification at manageable degree; no duplicate determinant experiment is counted.

@@ -1,0 +1,24 @@
+{
+  "resultant_conductors": [
+    3,
+    9,
+    27,
+    7,
+    49,
+    343,
+    23,
+    37,
+    2401
+  ],
+  "least_supply_derivation": true,
+  "matched_json_receipts": [
+    "base/results.json",
+    "base/carries.json",
+    "ascent/results.json",
+    "descent/controls.json",
+    "ranks/results.json",
+    "moving/results.json",
+    "numerics/results.json",
+    "numerics/extended.json"
+  ]
+}

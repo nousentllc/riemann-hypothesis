@@ -1,0 +1,137 @@
+{
+ "BaseField": {
+  "blob": "1b76096decbcad2627af472aad7a88899e503b5d",
+  "commit": "4b1c9fbbfb9bc50a3f791c2c1f3d7f2adb336c87",
+  "path": "research/uriel/experiments/slot-three/BaseField.lean"
+ },
+ "ClassAscent": {
+  "blob": "e3ec28372fdd8d13e677a5f9a2a5e665621a2506",
+  "commit": "e674cb750ef96b2f5e7cd46586ea4edb9998715a",
+  "path": "research/uriel/experiments/ascent-witness/ClassAscent.lean"
+ },
+ "CoherentFields": {
+  "blob": "aabef94732b308669ce89bdd6cde0e52416903e8",
+  "commit": "0b9ed6f42cccf214e7e196f2e129ea1e3b1b5987",
+  "path": "research/uriel/experiments/prescribed-gap-witnesses/evidence/fields/CoherentFields.lean"
+ },
+ "CyclotomicTransport": {
+  "blob": "0b7008b67793ec8e67a8523cc2630820cd8b58f1",
+  "commit": "4b1c9fbbfb9bc50a3f791c2c1f3d7f2adb336c87",
+  "path": "research/uriel/experiments/slot-three/CyclotomicTransport.lean"
+ },
+ "FieldEndpoints": {
+  "blob": "a5c1301bed80a8155182dd7d2ee5dd8296998118",
+  "commit": "0b9ed6f42cccf214e7e196f2e129ea1e3b1b5987",
+  "path": "research/uriel/experiments/prescribed-gap-witnesses/evidence/fields/FieldEndpoints.lean"
+ },
+ "FieldModel": {
+  "blob": "908f6369283e478fa69d5253475334c8368b02a6",
+  "commit": "4b1c9fbbfb9bc50a3f791c2c1f3d7f2adb336c87",
+  "path": "research/uriel/experiments/slot-three/FieldModel.lean"
+ },
+ "FixedRoster": {
+  "blob": "5f4cf48498939d586942a024b29516100372d4b7",
+  "commit": "0b9ed6f42cccf214e7e196f2e129ea1e3b1b5987",
+  "path": "research/uriel/experiments/prescribed-gap-witnesses/evidence/roster/FixedRoster.lean"
+ },
+ "HilbertNormal": {
+  "blob": "61be5aa1c6986d7dafbc3d9adffc92a6eb99c816",
+  "commit": "e674cb750ef96b2f5e7cd46586ea4edb9998715a",
+  "path": "research/uriel/experiments/ascent-witness/HilbertNormal.lean"
+ },
+ "InertiaDescent": {
+  "blob": "339eb51e1118a56ca28b5c00a522d916dd77be53",
+  "commit": "e674cb750ef96b2f5e7cd46586ea4edb9998715a",
+  "path": "research/uriel/experiments/ascent-witness/InertiaDescent.lean"
+ },
+ "NextLayer": {
+  "blob": "30008d26e0b9c950311f0f224e0242df50039895",
+  "commit": "e674cb750ef96b2f5e7cd46586ea4edb9998715a",
+  "path": "research/uriel/experiments/ascent-witness/NextLayer.lean"
+ },
+ "PairSharing": {
+  "blob": "a9ad86221fe0e78d0a49c6b83949fcdd54460d60",
+  "commit": "0b9ed6f42cccf214e7e196f2e129ea1e3b1b5987",
+  "path": "research/uriel/experiments/prescribed-gap-witnesses/evidence/pairs/PairSharing.lean"
+ },
+ "PhysicalGap": {
+  "blob": "a932bf5939ae7d135ab46d4f17628c02e3c9cd02",
+  "commit": "0b9ed6f42cccf214e7e196f2e129ea1e3b1b5987",
+  "path": "research/uriel/experiments/prescribed-gap-witnesses/evidence/fields/PhysicalGap.lean"
+ },
+ "PrescribedPartB": {
+  "blob": "d55341115a2b884e7ee062de6358a0ddf442b742",
+  "commit": "4b1c9fbbfb9bc50a3f791c2c1f3d7f2adb336c87",
+  "path": "research/uriel/experiments/slot-three/PrescribedPartB.lean"
+ },
+ "PrincipalBridge": {
+  "blob": "618efdae06477157e856a647bc97b64db8bdae11",
+  "commit": "0b9ed6f42cccf214e7e196f2e129ea1e3b1b5987",
+  "path": "research/uriel/experiments/prescribed-gap-witnesses/evidence/join/PrincipalBridge.lean"
+ },
+ "RankZero": {
+  "blob": "7408bc111ebf456767c35a22ed06fa090eeaf106",
+  "commit": "4b1c9fbbfb9bc50a3f791c2c1f3d7f2adb336c87",
+  "path": "research/uriel/experiments/slot-three/RankZero.lean"
+ },
+ "SemilinearTransport": {
+  "blob": "8e6d7061dd92690f4d81b850cb9568e965b7f697",
+  "commit": "e674cb750ef96b2f5e7cd46586ea4edb9998715a",
+  "path": "research/uriel/experiments/ascent-witness/SemilinearTransport.lean"
+ },
+ "SharedLift": {
+  "blob": "d996dd36e36260b27f833e47fba8bbaef23610b6",
+  "commit": "e674cb750ef96b2f5e7cd46586ea4edb9998715a",
+  "path": "research/uriel/experiments/ascent-witness/SharedLift.lean"
+ },
+ "SlotApplication": {
+  "blob": "26addffa257183f19175d90de0c4e470559bfa92",
+  "commit": "4b1c9fbbfb9bc50a3f791c2c1f3d7f2adb336c87",
+  "path": "research/uriel/experiments/slot-three/SlotApplication.lean"
+ },
+ "SlotGap": {
+  "blob": "4aa0c13f85e52f8fc43f9e6f8d455b86e967dcae",
+  "commit": "0b9ed6f42cccf214e7e196f2e129ea1e3b1b5987",
+  "path": "research/uriel/experiments/prescribed-gap-witnesses/evidence/slot/SlotGap.lean"
+ },
+ "SlotThree": {
+  "blob": "b43ee342c38258d935532eefae393947b10d358d",
+  "commit": "4b1c9fbbfb9bc50a3f791c2c1f3d7f2adb336c87",
+  "path": "research/uriel/experiments/slot-three/SlotThree.lean"
+ },
+ "SuccessiveFields": {
+  "blob": "d69a449f92d529785d47600e2d228a5be9693684",
+  "commit": "0b9ed6f42cccf214e7e196f2e129ea1e3b1b5987",
+  "path": "research/uriel/experiments/prescribed-gap-witnesses/evidence/fields/SuccessiveFields.lean"
+ },
+ "SynchronizedSlots": {
+  "blob": "cee005dd9f696cb74466276ef945ca0afefe8a65",
+  "commit": "0b9ed6f42cccf214e7e196f2e129ea1e3b1b5987",
+  "path": "research/uriel/experiments/prescribed-gap-witnesses/evidence/fields/SynchronizedSlots.lean"
+ },
+ "TowerResult": {
+  "blob": "bfc8db3fdd74e138b1557183913af3cbe323d9b5",
+  "commit": "e674cb750ef96b2f5e7cd46586ea4edb9998715a",
+  "path": "research/uriel/experiments/ascent-witness/TowerResult.lean"
+ },
+ "Transfer": {
+  "blob": "7f0317aaf238f2ba1416b0645ceb7c7dbe2b5c2c",
+  "commit": "e674cb750ef96b2f5e7cd46586ea4edb9998715a",
+  "path": "research/uriel/experiments/ascent-witness/Transfer.lean"
+ },
+ "UpstairsExtension": {
+  "blob": "d97d20cca4f4c4fc769a99149c671536b16432ac",
+  "commit": "e674cb750ef96b2f5e7cd46586ea4edb9998715a",
+  "path": "research/uriel/experiments/ascent-witness/UpstairsExtension.lean"
+ },
+ "WitnessRecord": {
+  "blob": "e146f7186f5bf94d3f9e39b3704a946a64b8be37",
+  "commit": "e674cb750ef96b2f5e7cd46586ea4edb9998715a",
+  "path": "research/uriel/experiments/ascent-witness/WitnessRecord.lean"
+ },
+ "ZeroLift": {
+  "blob": "68fb992736b5d1a29d86a25a31546fb846e75223",
+  "commit": "4b1c9fbbfb9bc50a3f791c2c1f3d7f2adb336c87",
+  "path": "research/uriel/experiments/slot-three/ZeroLift.lean"
+ }
+}

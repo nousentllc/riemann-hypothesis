@@ -1,0 +1,17 @@
+{
+  "source": "MovingBudget.lean",
+  "source_sha256": "fdbb3605e71f1277d067780b01be33440b7c967b25511b6a200bd0d84c968884",
+  "source_commit": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "mathlib_commit": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "lean": "4.33.1",
+  "elaboration_exit": 0,
+  "leanchecker_exit": 0,
+  "receipt": [
+    "'Seven.Moving.fromComparison' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'Seven.Moving.baAtMatched' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'Seven.Moving.baAtFromTwoBase' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    " ",
+    "replaying MovingBudget"
+  ],
+  "scope": "The new module was elaborated and replayed against locally cached original imports. The enclosing study supplies replay for the combined set of experiments. The moving assertions are conditional."
+}

@@ -1,0 +1,159 @@
+{
+  "method": "odd characters; certified integer norm by split-prime DFT and CRT",
+  "primary_conductors": [
+    3,
+    9,
+    27,
+    7,
+    49,
+    343,
+    23,
+    37
+  ],
+  "rows": [
+    {
+      "prime": 3,
+      "power": 1,
+      "conductor": 3,
+      "degree": 2,
+      "odd_characters": 1,
+      "generator": 2,
+      "inverse_generator": 2,
+      "relative_class_number": "1",
+      "residue_at_tower_prime": 1,
+      "direct_determinant_and_alternate_generator": true,
+      "certificate": {
+        "moduli": 1,
+        "modulus_bits": 27,
+        "norm_bound_bits": 1,
+        "moduli_and_residues_sha256": "0c9904612e0577005dd768f05cafd86ae2de10f2dbc29f0a20af16db241d3564"
+      }
+    },
+    {
+      "prime": 3,
+      "power": 2,
+      "conductor": 9,
+      "degree": 6,
+      "odd_characters": 3,
+      "generator": 2,
+      "inverse_generator": 5,
+      "relative_class_number": "1",
+      "residue_at_tower_prime": 1,
+      "direct_determinant_and_alternate_generator": true,
+      "certificate": {
+        "moduli": 1,
+        "modulus_bits": 27,
+        "norm_bound_bits": 12,
+        "moduli_and_residues_sha256": "22d71003214dea01cb69b1ab4a9be8e584ab852ddbadc110032776d825701da0"
+      }
+    },
+    {
+      "prime": 3,
+      "power": 3,
+      "conductor": 27,
+      "degree": 18,
+      "odd_characters": 9,
+      "generator": 2,
+      "inverse_generator": 14,
+      "relative_class_number": "1",
+      "residue_at_tower_prime": 1,
+      "direct_determinant_and_alternate_generator": true,
+      "certificate": {
+        "moduli": 3,
+        "modulus_bits": 80,
+        "norm_bound_bits": 63,
+        "moduli_and_residues_sha256": "787107b13fc09088674aaf6fd4e2f8fec0e8402f20f2db06e233ae31c773585e"
+      }
+    },
+    {
+      "prime": 7,
+      "power": 1,
+      "conductor": 7,
+      "degree": 6,
+      "odd_characters": 3,
+      "generator": 3,
+      "inverse_generator": 5,
+      "relative_class_number": "1",
+      "residue_at_tower_prime": 1,
+      "direct_determinant_and_alternate_generator": true,
+      "certificate": {
+        "moduli": 1,
+        "modulus_bits": 27,
+        "norm_bound_bits": 10,
+        "moduli_and_residues_sha256": "516e858dede515044bb4b654cd236338ae668b7c4c54d1c5bc32698e312ada21"
+      }
+    },
+    {
+      "prime": 7,
+      "power": 2,
+      "conductor": 49,
+      "degree": 42,
+      "odd_characters": 21,
+      "generator": 3,
+      "inverse_generator": 33,
+      "relative_class_number": "43",
+      "residue_at_tower_prime": 1,
+      "direct_determinant_and_alternate_generator": true,
+      "certificate": {
+        "moduli": 8,
+        "modulus_bits": 213,
+        "norm_bound_bits": 190,
+        "moduli_and_residues_sha256": "d88f6a977721138f582839a61e12dcbce55036f2a28945513d6cf7ef16b3679d"
+      }
+    },
+    {
+      "prime": 7,
+      "power": 3,
+      "conductor": 343,
+      "degree": 294,
+      "odd_characters": 147,
+      "generator": 3,
+      "inverse_generator": 229,
+      "relative_class_number": "53768973778436007320467014665728692559970176392402520069869257",
+      "residue_at_tower_prime": 1,
+      "direct_determinant_and_alternate_generator": true,
+      "certificate": {
+        "moduli": 81,
+        "modulus_bits": 2153,
+        "norm_bound_bits": 2150,
+        "moduli_and_residues_sha256": "7a7e7c549ebccb4f4cdab59b3a843d2d5e2470dfc9b47a1be5feb85420447854"
+      }
+    },
+    {
+      "prime": 23,
+      "power": 1,
+      "conductor": 23,
+      "degree": 22,
+      "odd_characters": 11,
+      "generator": 5,
+      "inverse_generator": 14,
+      "relative_class_number": "3",
+      "residue_at_tower_prime": 3,
+      "direct_determinant_and_alternate_generator": true,
+      "certificate": {
+        "moduli": 3,
+        "modulus_bits": 80,
+        "norm_bound_bits": 77,
+        "moduli_and_residues_sha256": "ac19a4535aeb4f57f78285e3b23c92f8442775a2b776309b84922f4b82ac9058"
+      }
+    },
+    {
+      "prime": 37,
+      "power": 1,
+      "conductor": 37,
+      "degree": 36,
+      "odd_characters": 18,
+      "generator": 2,
+      "inverse_generator": 19,
+      "relative_class_number": "37",
+      "residue_at_tower_prime": 0,
+      "direct_determinant_and_alternate_generator": true,
+      "certificate": {
+        "moduli": 6,
+        "modulus_bits": 160,
+        "norm_bound_bits": 151,
+        "moduli_and_residues_sha256": "9af7d629a838772a33435849ef5a845d19264591228c5343a284ae8ce0b1e5c8"
+      }
+    }
+  ]
+}

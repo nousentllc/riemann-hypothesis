@@ -1,0 +1,688 @@
+% !TeX program = lualatex
+% Standalone LuaLaTeX manuscript. All vector graphics are encoded after \end{document}.
+% Run latexmk -lualatex The_Fixed_Cyclotomic_Slot_at_Seven.tex (or run lualatex twice).
+% The companion ZIP supplies the expanded evidence, finite tests and scoped Lean replays.
+\documentclass[12pt,letterpaper]{article}
+\usepackage{iftex}\RequireLuaTeX
+\usepackage[margin=.94in,headheight=15pt,headsep=14pt,footskip=27pt]{geometry}
+\usepackage{fontspec}\setmainfont{Latin Modern Roman}\setsansfont{Latin Modern Sans}
+\usepackage{amsmath,amssymb,amsthm,mathtools,booktabs,array,tabularx,longtable,graphicx,microtype,xcolor,fancyhdr,enumitem,hyperref,bookmark}
+\definecolor{ink}{HTML}{183831}\definecolor{accent}{HTML}{095D58}\definecolor{mute}{HTML}{455E55}
+\hypersetup{colorlinks=true,urlcolor=accent,linkcolor=accent,citecolor=accent,pdftitle={The fixed cyclotomic slot at seven},pdfauthor={Uriel Research}}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\setlength{\parindent}{0pt}\setlength{\parskip}{4pt plus 0.7pt}\setlength{\emergencystretch}{3em}\raggedbottom
+\pagestyle{fancy}\fancyhf{}\fancyhead[L]{\small\sffamily\color{mute}Uriel Research}\fancyhead[R]{\small\sffamily\color{mute}The fixed slot at seven}\fancyfoot[C]{\small\sffamily\thepage}
+\renewcommand{\headrulewidth}{.3pt}\setcounter{tocdepth}{1}\setlist{itemsep=2pt,topsep=5pt}
+
+
+
+\directlua{
+  local source = assert(io.open(status.filename, "rb"))
+  local figures, retained = {}, {}
+  local name
+  for line in source:lines() do
+    local start = line:match("^BEGIN FIGURE ([a-z]+)")
+    if start then name = start; figures[name] = {}
+    elseif line:match("^END FIGURE") then name = nil
+    elseif name then table.insert(figures[name], line:match("^[0-9a-f]+"))
+    end
+  end
+  source:close()
+  function bandFigure(key)
+    local hex = table.concat((assert(figures[key], "Missing figure " .. key)))
+    local data = hex:gsub("..", function(pair) return string.char(tonumber(pair,16)) end)
+    local document, fileid = pdfe.new(data, string.len(data), key)
+    retained[key] = document
+    local figure = img.scan{filename = fileid or document, pagebox = "crop",
+                            attr = "/Group<</S/Transparency/K false/I false>>"}
+    node.write(img.node(figure))
+  end
+}
+% Use the same graphicx size calculation as an ordinary vector PDF.
+\makeatletter
+\newsavebox{\bandplotbox}
+\newcommand{\bandfigure}[2]{\begingroup
+  \sbox{\bandplotbox}{\directlua{bandFigure("#2")}}%
+  \Gin@bboxtrue\def\Gin@llx{0}\def\Gin@lly{0}%
+  \Gin@defaultbp\Gin@urx{\wd\bandplotbox}%
+  \Gin@defaultbp\Gin@ury{\ht\bandplotbox}%
+  \def\Ginclude@band##1{\GPT@setup@scale\Ginclude@@pdftex{\usebox\bandplotbox}}%
+  \def\Ginclude@graphics##1{\Gin@setfile{band}{}{##1}}%
+  \includegraphics[width=#1]{#2}\endgroup}
+\makeatother
+
+
+
+
+
+
+
+\begin{document}
+\thispagestyle{plain}
+{\sffamily\small\bfseries\color{accent}URIEL RESEARCH\hfill 23 NOVEMBER 2026}\par\vspace{16pt}
+{\Huge\bfseries\color{ink}The fixed cyclotomic slot at seven\par}\vspace{8pt}
+{\Large\color{mute}Class groups, a vanishing localization kernel, and a prescribed gap with one moving field\par}\vspace{14pt}
+\textbf{Abstract.} For the conductor-one character the fixed odd field at 7 contributes exactly zero at every permitted layer and every positive weight in the arithmetic window bound. We prove this on the original field and layer predicates. The kernel of the localization map is the zero submodule even for negative nonzero integral twists. The base \(\mathbb Q(\zeta_7)\) has class number one. Each successive cyclotomic extension has degree seven and ramifies at only one finite prime. A hypothetical upstairs 7-class produces an everywhere-unramified abelian extension of degree seven downstairs, contradicting the inductive hypothesis. This excludes 7 from the class group orders of the entire tower.
+
+There are substantial ideal class groups in this example. At conductor 49 the relative class number is 43; at 343 it has 62 decimal digits. At 2401, the canonical field for the source's rank-zero reference layer, it has 850 digits. All three relative class numbers are congruent to one modulo seven. We compute them by an exact integer norm, compare independent determinant and class-group calculations, and give a second all-height argument for the residue. The induction in Lean uses arithmetic descent and covers both the real and relative factors.
+
+The earlier slot-three proof and the new slot-seven proof together give the full odd-field estimate at every ordinate. We close the earlier class-number premise that identified the roster. Keeping the original constants, primes and page function, we remove both odd endpoint tests and the odd crossover from the prescribed-gap theorem. A separate construction chooses the least permissible fixed-field ranks; both become zero and the principal search exponent depends only on the moving rank. The remaining pair-dependent field at 2 still needs its own arithmetic estimate.
+\par\medskip
+\textbf{Scope.} The two all-layer length statements are unconditional within the pinned Lean development. The final gap implication retains the stated prime, height, field and moving-screen hypotheses. The package includes the original-source trace, pre-recorded hypotheses, finite calculations and scoped kernel receipts.
+\clearpage\tableofcontents
+
+\section{What it means for a slot to vanish}
+The previous experiment began with an interval chosen before either of two arithmetic selections. To certify the interval it reconstructed a common prime pair and tables of exceptional integer weights. The reconstruction took a successful earlier inspection at the left endpoint and a successful finer inspection at the right. It could then certify every point in between. At conductor one a separate field calculation eliminated the need to inspect the slot at 3: all the cohomological lengths that this slot was supposed to control were already zero. This left a fixed field at 7 and a moving field at 2. The new question asks whether the apparent symmetry between the two fixed odd fields survives contact with their actual towers. \href{https://github.com/nousentllc/riemann-hypothesis/pull/19}{[Prescribed-gap experiment]}
+
+A simple test very nearly gives the wrong research direction. In the base field at 3 and in the base field at 7 every ideal class is principal. If one extrapolates this identity throughout the seven tower, the first upward step already contradicts it. The property needed by the proof is more selective. Given a finite abelian group \(A\), if 7 is coprime to \(|A|\), then raising to the seventh power is a bijection. One can have thousands of independent-looking possibilities for a class and still have only one class modulo seventh powers. The cohomological construction uses the latter quotient. The first experiment should therefore try both properties separately.
+
+\subsection{The precise local statement}
+Write \(L=\mathbb Q(\zeta_7)\). In the source implementation a field descriptor specifies the isomorphism class of a model. An admissible layer over a submitted model \(F\) is a number field \(E\) equipped with the structures and the proposition \(\mathrm{IsLayer}(7,m,F,E)\). The integer \(m\) records the relative degree \([E:F]=7^m\) and the proposition also imposes a cyclotomic extension condition. The checked theorem quantifies over \emph{every} permitted \(F,E\), including all isomorphic realizations of the source descriptor. For every integer \(j\ne0\), the invariant \(\operatorname{shaInv}(E,7,j)\) vanishes. For every allowed local datum \(D\) its actual cohomology kernel \(\operatorname{Sha}(D,j)\) is the bottom submodule. The source's weight sum has the range \(1\le j<t\). For each \(t\), including the empty-range cases 0 and 1, its terms are finite and their sum is zero. In the notation consumed by the arithmetic argument, this is \(\mathrm{VVat}(7,E,t,0)\). \href{https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/AutomorphicVarieties/LengthEqAddEigen.lean#L107-L110}{[Original quantified sum]}\quad\href{https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/AutomorphicVarieties/StmtFields.lean#L46-L50}{[Layer and quadratic field definitions]}
+
+The exclusion of weight zero matters. The descent identity we invoke is stated at nonzero twists. If one redefines an observable by adding its zero-weight summand, the theorem in this paper leaves the extra contribution undetermined. Similarly, \(\operatorname{Sha}(D,j)\) here denotes the source's specific localization kernel. An unqualified assertion about every group called a Tate--Shafarevich group would have a different mathematical meaning.
+
+\subsection{Three proposed explanations and their tests}
+\begin{enumerate}
+\item \emph{Every ideal class becomes principal.} A single certified relative class number greater than one disproves this proposal. The prior slot-three base case supplies a useful calibration but imposes no such constraint at conductor 49.
+\item \emph{Only the seven-primary classes must disappear.} This suffices for the passage to the tower module. A single positive seven-adic valuation of an upstairs class number would defeat the proposed induction. We also include a separate irregular-prime control whose first relative class number is divisible by its tower prime.
+\item \emph{The local equality is enough to simplify the actual gap theorem.} This would fail operationally if the fixed-slot tests were still opaque premises of the only available interface. We trace the construction to the point where a direct field estimate can be substituted; then we investigate whether an unused floor comparison or a rank in the search exponent remains.
+\end{enumerate}
+Thus the finite panel, the all-height class-field induction and the comparison back to the original local datum answer different questions. An affirmative result in any one column is insufficient to fill the others. The two separate global constructions in the last part keep track of the price of changing a witness.
+
+\begin{figure}[htbp]\centering\bandfigure{.98\linewidth}{witness}\caption{The quadratic roster field decides that the slot is present. The sextic base field and its cyclotomic tower decide its contribution. The horizontal step between the two upper boxes records this order of use; they are distinct inputs.}\end{figure}
+
+\section{Two number fields attached to the integer seven}
+It is easy to misidentify the input of the base-class calculation. One field decides which auxiliary primes are present. A different field supplies the cohomological weights associated with an auxiliary prime that is present. At conductor one the former is imaginary quadratic and the latter has degree six. They enter the source at different declarations and have different discriminants. The proof must pass through both identifications to conclude that no odd slot is left.
+
+\subsection{Closing the earlier roster hypothesis}
+For the principal character \(\mathbf1\), the source selects \(p_K=7\) and \(p_1=3\); its character order and conductor are one. These small minima were already checked. The source inserts 3 into the odd prime divisors of a product that now reduces to \(7\cdot h_*\cdot3\). The remaining input is \(h_*=h(K_*(7))\), where \(K_*(p)\) is the splitting field of \(X^2+p\). The previous study gave an elementary norm-Euclidean proof for \(p=7\) and formalized the roster conditional on this class number. This time we use the source's own theorem \texttt{kstar}. It supplies the degree, total complexity and discriminant of exactly the required splitting field. For \(p=7\) these are 2, no real embeddings and discriminant \(-7\). No explicit field isomorphism with a separately implemented quadratic ring is required. \href{https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/AutomorphicVarieties/HeightAndVanishing/SplittingFieldIsoQuadratic.lean#L50-L67}{[The splitting-field identification]}\quad\href{https://github.com/nousentllc/riemann-hypothesis/blob/0b9ed6f42cccf214e7e196f2e129ea1e3b1b5987/research/uriel/experiments/prescribed-gap-witnesses/evidence/roster/FixedRoster.lean}{[Prior roster reduction]}
+
+In a number field of degree \(d\) with \(r_2\) pairs of complex embeddings, every ideal class has an integral representative of norm at most
+\[
+    M=\left(\frac4\pi\right)^{r_2}\frac{d!}{d^d}\sqrt{|\Delta|}.
+\]
+For the quadratic field here this becomes \(2\sqrt7/\pi<2\), since \(\pi>3>\sqrt7\). The only positive norm below two is one; the only integral ideal of norm one is the unit ideal. Consequently every class is trivial. In Lean, Mathlib's small-discriminant criterion directly expresses this strict inequality in squared form. Substituting the source's three field facts under that criterion gives \texttt{SevenRoster.quadratic\_class\_one}. The class-number identity is transported along the equality for \(p_K\), keeping its dependent field instance. The result discharges the outstanding premise and yields the unconditional roster \(B_\chi(\mathbf1)=\{3,7\}\). \href{https://github.com/leanprover-community/mathlib4/blob/0df444a360eaa60ab8c11dca51a86af692955474/Mathlib/NumberTheory/NumberField/ClassNumber.lean}{[Minkowski criterion for class number one]}
+
+\subsection{Why the second base needs a different argument}
+For a slot \(\ell\) in this roster, the fixed descriptor at conductor one is \(\mathrm{AbF.cyc}(\ell)\). The quadratic proof has established which \(\ell\)'s to inspect. It supplies no information about the class group of the sextic field at 7. There the discriminant has absolute value \(7^5\), there are three complex pairs, and the Minkowski bound is just above four. A representative of norm two, three or four must now be examined. The proof succeeds because of the splitting behavior of 2 and 3 in this field; the quadratic shortcut at norm one no longer works. This is the first precise place where simply substituting 7 for 3 in a base calculation loses its justification. The next section gives both the symbolic elimination and the independent arithmetic controls.
+
+
+\section{The base of the seven-primary induction}
+\label{sec:base-seven}
+
+At conductor one the odd slot indexed by seven has the field descriptor for the entire seventh cyclotomic field. The imaginary quadratic field \(\mathbb Q(\sqrt{-7})\) plays a different role in the earlier derivation of the set of indices. Its class number helps determine which indices enter that set. After seven enters, the descriptor at seven asks for a model of \(K=\mathbb Q(\zeta_7)\), of degree six. Applying the class number of the quadratic field a second time here would leave the bottom step of the tower without a proof. Equally, the maximal real subfield \(K^+\) has only degree three. The first assertion we require concerns the full field \(K\). \href{https://github.com/nousentllc/riemann-hypothesis/blob/0b9ed6f42cccf214e7e196f2e129ea1e3b1b5987/research/uriel/experiments/prescribed-gap-witnesses/evidence/roster/FixedRoster.lean}{[Previous formal roster and field descriptor]}
+
+For the induction it suffices to exclude seven from the order of the ideal class group. At the base we can prove more with little additional work. Every ideal class is trivial. We recover a previously compiled local proof of this base fact, identify its precise inputs, and rerun the elaborator and kernel against the pinned version of Mathlib. A new declaration converts the result to the cardinality predicate needed by the ascent. This is a place where the arithmetic at three and at seven takes visibly different forms. The previous base computation could draw directly on low-conductor principal-ideal statements. The elementary discriminant bound that disposes of the entire class group as soon as the norm bound falls below two does not suffice at conductor seven. There is nevertheless a very short list of prime ideals to examine. \href{https://github.com/leanprover-community/mathlib4/blob/0df444a360eaa60ab8c11dca51a86af692955474/Mathlib/NumberTheory/NumberField/Cyclotomic/PID.lean}{[Pinned cyclotomic principal-ideal results]}
+
+\subsection{Minkowski gives a four-integer search}
+
+Write \(n=[K:\mathbb Q]\), \(r_2\) for the number of complex conjugate pairs of embeddings, and \(D_K\) for the signed discriminant. Each ideal class of a number field has a nonzero integral representative of norm at most
+\[
+ M_K=\left(\frac4\pi\right)^{r_2}\frac{n!}{n^n}\sqrt{|D_K|}.
+\]
+Here \(\Phi_7(X)=1+X+\cdots+X^6\), the degree is six, the field is totally complex, and the signed discriminant is \(-7^5=-16807\). For a hand check of the last identity, differentiate \((X-1)\Phi_7(X)=X^7-1\) and evaluate at \(\zeta=\zeta_7\). This gives \(\Phi_7'(\zeta)=7\zeta^6/(\zeta-1)\). The field norm of \(1-\zeta\) equals \(\Phi_7(1)=7\), and the sign in the power-basis discriminant is \((-1)^{6\cdot5/2}=-1\). The cyclotomic power basis is integral, so the polynomial and field discriminants coincide. The supplementary code also computes the polynomial discriminant by integer elimination on the Sylvester matrix. This makes a sign or exponent error in the numerical specialization detectable independently of the Lean cyclotomic discriminant theorem. \href{https://github.com/leanprover-community/mathlib4/blob/0df444a360eaa60ab8c11dca51a86af692955474/Mathlib/NumberTheory/NumberField/Cyclotomic/Basic.lean#L644-L658}{[Prime-conductor field discriminant]}
+
+The directed interval calculation gives
+\[
+ 4.129528331865317\ <\ M_K\ <\ 4.129528331865318 .
+\]
+It uses an alternating arctangent series in Machin's formula for \(\pi\) and integer square root bounds for \(\sqrt{16807}\). The formal argument only needs the rational comparison
+\[
+ M_K\ \le\ \left(\frac{40}{31}\right)^3\frac{720}{6^6}\,130
+  =\frac{10\,400\,000}{2\,413\,071}<5 .
+\]
+Indeed \(\pi>31/10\) and \(16807<130^2\). A class representative therefore has norm at most four. If it is a proper ideal, at least one prime factor has norm at most four. For a prime ideal over a rational prime \(r\), that norm is \(r^f\), where \(f\ge1\) is its inertia degree. Only the rational primes two and three need be checked. The prime over seven, although pivotal in controlling ramification as one ascends, cannot even occur in this particular base ideal representative. \href{https://github.com/leanprover-community/mathlib4/blob/0df444a360eaa60ab8c11dca51a86af692955474/Mathlib/NumberTheory/NumberField/ClassNumber.lean#L77-L93}{[Bound for an ideal representing each class]}
+
+At \(r\ne7\), the inertia degree in \(K\) is the multiplicative order of \(r\) in \((\mathbb Z/7\mathbb Z)^\times\). For two the residues of its first three powers are \(2,4,1\). The two primes over two thus have inertia degree three and norm eight. For three the corresponding list is \(3,2,6,4,5,1\), and three is inert with prime-ideal norm \(3^6=729\). Both norms exceed four. Hence no prime factor proposed by the Minkowski argument can occur. Its representative must have norm one, and the ideal class is trivial. Mathlib's implementation allows one to discharge the more general premise that all primes of small norm are principal. In this instance the collection of input primes for that premise is empty, and the two residue-degree contradictions discharge it. The class-group conclusion follows without constructing a representative of each individual ideal class. \href{https://github.com/leanprover-community/mathlib4/blob/0df444a360eaa60ab8c11dca51a86af692955474/Mathlib/NumberTheory/NumberField/Cyclotomic/Ideal.lean#L289-L306}{[Order and inertia degree]}\quad\href{https://github.com/leanprover-community/mathlib4/blob/0df444a360eaa60ab8c11dca51a86af692955474/Mathlib/NumberTheory/NumberField/ClassNumber.lean#L144-L170}{[Small-prime criterion]}
+
+\subsection{Polynomial checks and the first ramified place}
+
+An elementary experiment tests the norm calculation from the other direction. Reduce \(\Phi_7\) modulo each of the rational primes that mattered above. Over \(\mathbb F_2\) we obtain
+\[
+ \Phi_7(X)=(X^3+X+1)(X^3+X^2+1).
+\]
+Both cubics have no root in \(\mathbb F_2\) and hence are irreducible. Over \(\mathbb F_3\) the full sextic is irreducible. The code independently verifies this by trial division by every monic polynomial through degree three. Over \(\mathbb F_7\) it returns \((X-1)^6\). Thus the same routine identifies two unramified cubic factors, a single unramified sextic, and a repeated linear factor. Since the ring of integers is generated by \(\zeta_7\), reduction of its minimal polynomial gives the residue factors without an index correction. The repeated prime is \((1-\zeta_7)\), with norm seven. Its residue degree is one and its ramification index six over \(\mathbb Q\). The rational prime seven under the field and the fixed index seven of the cohomological predicate perform distinct jobs. The latter determines which primary part is seen in the tower.
+
+At conductors \(7,49,343\), iteration of multiplication modulo the conductor gives the following inertia degrees.
+\[
+\begin{array}{c|rrrrr}
+\text{conductor}&2&3&5&13&29\\ \hline
+7&3&6&6&2&1\\
+49&21&42&42&14&7\\
+343&147&294&294&98&49
+\end{array}
+\]
+For example 29 splits completely at the base, whereas the Frobenius of 29 at the next conductor has order seven. Its base prime ideals already have norm 29, well beyond the Minkowski bound. The rows at 49 and 343 show that the behavior of a fixed rational prime can change at successive levels even though the unique ramifying prime remains seven. They determine the listed local degrees. They are insufficient by themselves to determine all the class groups upstairs, since both the field discriminant and the range of relevant prime ideals grow.
+
+A second control is the familiar Bernoulli test for regularity. The even Bernoulli numbers in the range \(2\le k\le7-3\) are \(B_2=1/6\) and \(B_4=-1/30\). Neither has numerator divisible by seven. At 37 the same rational recurrence finds the irregular index 32, with numerator \(-7709321041217\). The control tests that an algorithm claiming to detect an irregular numerator actually reports one when present. The induction premise in Lean comes from the Minkowski computation directly. Replacing that proof by a bare assertion of regularity would leave open which theorem connects this property to the class groups of the exact tower fields. The all-height arguments supply such a connection explicitly.
+
+\subsection{Finite comparisons with certified class groups}
+
+As an independent check we ran PARI/GP 2.19.1 on the full field at conductor seven, on its real cubic subfield and on two proper subfields at conductor 49. The script computes the defining polynomial for each field, its discriminant, the elementary-divisor description of its class group, and the result of \texttt{bnfcertify}. All four return class number one and a full certification value of one. At conductor 49 the two certified subfields have degrees seven and fourteen. Their field discriminants are \(7^{12}\) and \(-7^{25}\), respectively. The field of degree fourteen here is a genuine complex subfield and a proper subfield of the degree-42 field required for the first full step. A set of class groups from proper subfields need not determine the class group of their compositum. \href{https://pari.math.u-bordeaux.fr/dochtml/html-stable/General_number_fields.html#bnfcertify}{[PARI certification semantics]}
+
+Direct initialization on \(\mathbb Q(\zeta_{49})\) returned the cyclic group of order 43. Full certification of that computation did not finish in the allotted 45 seconds. A separate 65-second trial of the cheaper quotient-only certificate also timed out, as did a 65-second trial on the degree-21 real subfield. A quotient certificate would suffice to prove triviality if the computed group were trivial. Its meaning is weaker when the computed group has order 43. None of these timed-out runs is counted among the four certified fields. There is an independent way to settle this particular value exactly. For \(m=49\), Miller's Theorem 1.1 gives \(h^+_{49}=1\) unconditionally since \(\varphi(49)=42\) is within the theorem's range. The exact odd-character product in the numerical experiment gives \(h^-_{49}=43\). By definition \(h_{49}=h^+_{49}h^-_{49}=43\). The determinant, the published plus-part theorem and the unfinished direct PARI certification are three distinct pieces of evidence. The first two already settle the class number on paper. \href{https://doi.org/10.1112/S1461157014000382}{[Miller, Theorem 1.1 and definition of the relative class number]}
+
+This observation falsifies a plausible but unnecessarily strong induction statement. Although all ideals are principal at the base, the first full extension already has nonprincipal ideals. The power-seven operation on a finite group of order 43 is nevertheless an automorphism. Nothing in that class group contributes to its quotient by seventh powers. A vanishing seven-primary quantity can coexist with a growing nontrivial ideal class group.
+
+
+There is a short witness for the power-map assertion at the very first nontrivial class group. For each class \(c\) at conductor 49, Lagrange's theorem gives \(c^{43}=1\). Since \(7\cdot37=259=1+6\cdot43\), the class \(c^{37}\) is an explicit seventh root of \(c\). In particular, asking for a generator of a nonprincipal ideal class would not reveal any defect in the primary bound. Even that generator would itself have a seventh root in the class group. For contrast, in a cyclic group of order seven every seventh power is the identity, so the quotient by seventh powers has all seven elements. The two elementary group examples isolate the particular obstruction measured by the tower argument. The group of order 43 can already be observed in the number field being tested. The group of order seven is a control illustrating the algebra at the excluded prime.
+
+More generally let \(H\) be a finite abelian group of order coprime to seven. An inverse to seven modulo \(|H|\) makes the same argument work on every class of \(H\) at once. The inverse need not have the same numerical value at successive levels, and the orders \(|H|\) need not be bounded as those levels grow. The uniform conclusion only asserts that the seventh-power quotient is trivial at each level. Keeping that distinction in the induction hypothesis accommodates the rapid growth of the relative class number in the later finite experiments.
+
+
+
+\section{Measuring the ideal classes that survive}
+\label{sec:finite}
+The cohomological proof discards everything of order coprime to seven. An experiment can measure how much information this loses while still predicting the right local invariant. We chose a statistic with enough structure to admit a short audit: the relative class number \(h^-_q=h(\mathbb Q(\zeta_q))/h(\mathbb Q(\zeta_q)^+)\), where the superscript \(+\) denotes the maximal real subfield. This positive integer need not be a prime power. When it exceeds one, the full class group is necessarily nontrivial. When it is coprime to 7, identifying the seven-part of the \emph{full} group additionally requires an argument about the real part. The ascent proof accomplishes this directly; the independent carry proof can use reflection.
+
+\subsection{An integer determinant in place of complex approximations}
+Let \(q=p^n\) for an odd prime \(p\). Write \(2d=\varphi(q)\) and take a generator \(g\) of \((\mathbb Z/q\mathbb Z)^\times\). For \(0\le j< d\) let \(a_j\) be the integer in \([1,q-1]\) representing \(g^j\). The other half of the group is represented by \(q-a_j\), since \(g^d\equiv-1\pmod q\). Introduce
+\[
+        P(T)=\sum_{j=0}^{d-1}(q-2a_j) T^j.
+\]
+For an odd Dirichlet character \(\chi\) let \(z=\chi(g)\). Then \(z^d=-1\), and pairing \(a_j\) with \(q-a_j\) gives
+\[
+         P(z)=-\sum_{a=1}^q a\,\chi(a).
+\]
+The generalized Bernoulli number for this character equals \(q^{-1}\sum a\chi(a)\). If its primitive conductor is smaller, grouping the lifts of a reduced residue gives the same normalized sum: the additional constant is multiplied by the sum of a nontrivial character and cancels. Every odd character here is nontrivial, and its conductor already contains \(p\). Consequently there is no new Euler factor at a prime dividing the modulus.
+
+For prime-power cyclotomic conductor the unit index in the relative class-number formula is one, and the number of roots of unity is \(2q\). Substituting the odd character sums gives the entirely integral computation
+\[
+    h^-_q=\frac{\operatorname{Res}(T^d+1,P(T))}{(2q)^{d-1}}.
+\]
+The exponent \(d-1\) matters. In the product formula each of the \(d\) odd characters supplies a denominator \(2q\), and the roots of unity supply one factor \(2q\) in the numerator. The sign in our definition of \(P\) has absorbed the minus sign in each character factor. This derivation adapts the standard formula to the representation used in the experiment. \href{https://cm.osu.cz/sites/default/files/contents/22-2/cm022-2014-2_133-140.pdf}{[Hirabayashi, relative class numbers, Corollary 1 and §4]}
+
+At \(q=7\) one may take \(g=3\), so that \((a_0,a_1,a_2)=(1,3,2)\) and \(P=5+T+3T^2\). In the ordered basis \(1,T,T^2\) modulo \(T^3+1\) multiplication by \(P\) has matrix
+\[
+  \begin{pmatrix}5&-3&-1\\ 1&5&-3\\ 3&1&5\end{pmatrix}.
+\]
+Its determinant is \(5(25+3)+3(5+9)-(1-15)=196\), and \(196/14^2=1\). This is a useful sign and normalization check. It cannot distinguish a correct formula for higher imprimitive levels from a formula accidentally specialized to prime conductor, hence the higher-power controls.
+
+\subsection{A certificate for resolving a very large integer}
+For \(q\le343\) we computed the determinant directly with integer row operations that divide only by a known preceding pivot. We checked every division for zero remainder, and repeated the norm computation with the inverse primitive generator. Reversal of the generator reorders the characters and leaves their product unchanged. The principal computation uses a different algorithm. If \(s\) is a rational prime congruent to one modulo \(2d\), all the roots of \(T^d+1\) are present in \(\mathbb F_s\). Take an element \(u\) of exact order \(2d\); its odd powers enumerate those roots. Then the resultant modulo \(s\) is the product of \(P\) evaluated at these \(d\) points. We check primality by trial division and the order of \(u\) by the prime divisors of \(2d\). A finite Fourier transform is a fast way to evaluate all the powers with integer arithmetic modulo \(s\).
+
+Reconstruction from these residues needs a stopping rule. Put \(B=(\sum_j |q-2a_j|)^d\). At any complex root of \(T^d+1\) the absolute value of \(P\) is at most the sum inside this expression. The determinant is the product over the roots; its absolute value is at most \(B\). We use distinct moduli until their product exceeds \(2B\). The signed representative in the resulting interval is unique. Finally we divide this integer by \((2q)^{d-1}\), check exact divisibility and check positivity. This makes the finite computation reproducible from the conductor alone. A random modular fingerprint or a decimal near a large integer would offer a weaker verification. The finite arithmetic enters no proof of the all-height induction.
+
+\begin{center}\small\begin{tabularx}{\linewidth}{@{}rrYr@{}}\toprule
+Conductor \(q\)&Odd characters&Relative class number \(h_q^-\)&Residue modulo \(p\)\\\midrule
+3, 9, 27&1, 3, 9&1 at all three levels&1\\
+7&3&1&1\\
+49&21&43&1\\
+343&147&62 digits&1\\
+2401&1029&850 digits&1\\
+23&11&3&3\\
+37&18&37&0\\\bottomrule
+\end{tabularx}\end{center}
+For reference the complete 62-digit value is typeset across two lines, reading the digits consecutively.
+\[\begin{gathered}
+53\,768\,973\,778\,436\,007\,320\,467\,014\,665\,728\\
+692\,559\,970\,176\,392\,402\,520\,069\,869\,257
+\end{gathered}\]
+The expanded output records the complete decimal at 2401, the norm bound and the reconstruction product's bit lengths. The conductor 2401 experiment was specified as a secondary extension before the primary panel was executed. The smaller panel already distinguishes the two main hypotheses. Its larger companion is especially informative because \(j_0(7,0)=3\) counts relative layers \emph{over} \(\mathbb Q(\zeta_7)\): the corresponding canonical absolute tower conductor is \(7^{1+3}=2401\). The high-degree example is thus an actual location used when the fixed-slot cap is set to zero.
+
+\begin{figure}[htbp]\centering\bandfigure{.98\linewidth}{classnumbers}\caption{Decimal lengths of the exact relative class numbers, on a logarithmic scale. The relative class numbers grow across the measured layers while the seven-adic valuation of each relative number remains zero. The plotted length at conductor 2401 comes from its full 850-digit integer.}\end{figure}
+
+\subsection{How to interpret a failure, and how to interpret a pass}
+At conductor 49, the full class number is also 43. Our exact character calculation supplies \(h^-=43\); Miller's unconditional real-subfield theorem supplies \(h^+=1\) at this conductor. A PARI class-group calculation returned the same result with cyclic factor 43. Its full independent certification at degree 42 did not finish inside the specified time budget, so that unfinished computation is unnecessary to the certified mathematical conclusion. The smaller PARI controls record which class group computations actually completed certification. A group of order 43 has no element of order 7, illustrating exactly the group-theoretic input used in the next proof. \href{https://doi.org/10.1112/S1461157014000382}{[Miller, Theorem 1.1 for the real factor]}
+
+The conductor-23 row separates nontriviality from divisibility by the tower prime in a second direction: its relative class number is three. The conductor-37 row supplies an adverse control. Its relative class number is 37, so the full class number is divisible by 37. The statement proved for the seven tower cannot follow from the shape of a prime-power conductor alone. The base nondivisibility hypothesis does work. Conversely, \(h_q^-\equiv1\pmod7\) at four conductors is compatible with many hypothetical sequences after the observed prefix. Our all-height congruence uses the repetition of the carry polynomial and a normalization that remains a unit at each level. The independent class-field proof only needs nondivisibility; it supplies substantially more than finite interpolation, and it places no restriction on the magnitude of the prime-to-seven classes.
+
+In particular the jump from 43 to a 62-digit positive integer has no adverse effect on the estimated length at a fixed slot-seven layer. Both values induce the same outcome after passing to the seven-power quotient. This example explains why a raw class-number growth plot is a poor proxy for the cohomological error budget. The particular prime dividing a class number, the map from its class group to the controlling module, and the descent from that module to the local invariant are each indispensable.
+
+As a separate implementation check, PARI/GP 2.19.1 evaluated the polynomial resultant directly using the inverse of its own primitive root at each of the nine conductors. All nine integers agreed with the reconstruction, including every digit at 2401. The two implementations share the character formula. This cross-check can detect errors in the determinant and reconstruction code; a mistake in the mathematical normalization shared by the two implementations must be tested by the derivation or by an independent class-group calculation.
+
+
+\section{An independent all-height test by carrying base-seven residues}
+\label{sec:seven-carries}
+
+The same class-number question admits an arithmetic route that does not compare adjoining class fields directly. Its input is the classical formula for the relative class number of a prime-power cyclotomic field. It produces the stronger congruence \(h^-_{7^n}\equiv1\pmod7\) for every \(n\ge1\), and uses a reflection theorem to pass from the minus factor to the full class number. This gives an independent check on the primary content of the ascent. Most of the argument in this section is written mathematics. The denominator identity and the finite residue calculation have also been replayed in Lean. \href{https://cm.osu.cz/sites/default/files/contents/22-2/cm022-2014-2_133-140.pdf}{[Hirabayashi, Corollary 1 and the character-product formula in \S4]}
+
+Put \(q=7^n\), \(M=q/7\), \(m=\varphi(q)/2=3M\), and choose the integer \(g=3\) at every height. We have already checked its order six modulo seven. Since \(3^6-1=728\) is divisible by seven exactly once, the binomial expansion of \((1+7^k u)^7\) with \(k\ge1\) and \(7\nmid u\) shows that the valuation of \(3^{6\cdot7^j}-1\) is \(j+1\). This proves that \(g\) has order \(6M\) modulo \(q\). Let \(a_j\) be the least positive residue of \(g^j\) modulo \(q\), and read the index cyclically modulo \(2m\). Define the carry of one multiplication by \(g\) and the two polynomials by
+\[
+ b_j=\frac{g a_j-a_{j+1}}q=\left\lfloor\frac{g a_j}{q}\right\rfloor,
+ \qquad A_q(X)=\sum_{j=0}^{2m-1}a_jX^j,\qquad
+ B_q(X)=\sum_{j=0}^{2m-1}b_jX^j .
+\]
+Here \(b_j\in\{0,1,2\}\). If \(z^m=-1\), the character of the cyclic unit group taking \(g\) to \(z\) is odd. The wraparound in the last term is essential in translating the finite difference into multiplication:
+\[
+ q B_q(z)=(g-z^{-1})A_q(z).
+\]
+Indeed \(\sum_j a_{j+1}z^j=z^{-1}A_q(z)\), including the last term since \(z^{2m}=1\). Summing the raw residues \(a_j\) is ill-suited to reduction modulo seven because the generalized Bernoulli values contain a division by \(q\). The integral carries expose that division before reduction.
+
+\subsection{The cancellation that survives a change of conductor}
+
+For odd characters of a prime-power modulus, the generalized Bernoulli factor can be evaluated as \(A_q(z)/q\) even when the character has smaller conductor. All its conductors have the same only prime divisor seven and odd characters are nontrivial. Equivalently one may sum the lifts of each unit at the smaller conductor. The resulting extra common term vanishes under a nontrivial character. The full cyclotomic field here has \(2q\) roots of unity and Hasse unit index one. Thus the ordinary relative class formula gives the integer-valued identity
+\[
+    h^-_q=\frac{2q(-1)^m}{2^m(g^m+1)}
+           \operatorname{Res}(X^m+1,B_q).
+ \tag{C}
+\]
+The resultant convention is the product of \(B_q(z)\) over all roots of the monic first polynomial. In the denominator, inversion permutes these roots, so \(\prod_z(g-z^{-1})=g^m+1\). At conductor seven one can check the sign directly without a numerical embedding of any character value.
+
+To compare the integral character sums, group the indices of \(B_q\) by their residues modulo six. Write \(t\) for the least positive residue of \(3^i\) modulo seven, and \(t'\) for that of \(3t\). The list of \(a_j\) with \(j\equiv i\pmod6\) consists of exactly the \(M\) integers \(t+7u\), \(0\le u<M\). Its image under one multiplication step is exactly the analogous list for \(t'\). Summing the defining differences gives
+\[
+ \begin{aligned}
+ \sum_{j\equiv i\ (6)} b_j
+ &=\frac{g\{Mt+7M(M-1)/2\}-\{Mt'+7M(M-1)/2\}}{7M}\\
+ &=\left\lfloor\frac{gt}{7}\right\rfloor+\frac{(g-1)(M-1)}2 .
+ \end{aligned}
+\]
+The last summand is independent of the residue class \(i\). Modulo \(X^3+1\) the index pairs \(i\) and \(i+3\) have opposing monomials. All those common terms cancel. In particular the following relation holds over the integers, before any reduction of coefficients:
+\[
+                 B_q(X)\equiv B_7(X)\pmod {X^3+1}.
+\]
+The base orbit is \(1,3,2,6,4,5\). Its carries are \(0,1,0,2,1,2\), whose reduction modulo \(X^3+1\) is \(-2-2X^2\). It follows that the base resultant is \(-16\). The squares of the three complex roots of \(X^3+1\) are all the cube roots of 1, and the product of \(1+w\) over the latter is 2. At the base formula (C) now reads \(-14(-16)/(8\cdot28)=1\).
+
+Now reduce the resultant modulo seven. In characteristic seven,
+\(X^m+1=(X^3+1)^M\) as \(M\) is a power of seven. The resultant commutes with reduction here because its first polynomial is monic and the product can be read as the determinant of multiplication on its quotient algebra. Multiplicativity and the integer projection just proved give
+\[
+ \operatorname{Res}(X^m+1,B_q)
+ \equiv\operatorname{Res}(X^3+1,B_7)^M
+ \equiv5\pmod7 .
+\]
+The last equality uses \(-16\equiv5\) and Frobenius on \(\mathbb F_7\). A hand computation checks the same value without a resultant library. The three roots are \(3,5,6\), with evaluations \(1,4,3\), and their product is 5 modulo seven. Multiplicity matters here. The characteristic-seven polynomial has only three distinct roots after reduction, but each occurs with multiplicity \(M\). Discarding those multiplicities without the Frobenius argument would give no justification for identifying this result with the upstairs determinant.
+
+\subsection{The denominator retains one unit at every height}
+
+Direct reduction of (C) would divide by zero, since both \(q\) and \(3^m+1\) are divisible by seven. Start at \((3^3+1)/7=4\). If \(a+1=7d\), expansion gives
+\[
+ a^7+1=49d(1+7w),\qquad
+ w=-3d+35d^2-245d^3+1029d^4-2401d^5+2401d^6.
+\]
+Replacing \(a=3^m\) by \(a^7\) and \(q\) by \(7q\), the normalized denominator \((a+1)/q\) is multiplied by a factor congruent to one modulo seven. Induction proves the integer identity
+\[
+ 3^{3\cdot7^k}+1=7^{k+1}(4+7b_k),\qquad b_k\in\mathbb Z ,
+\]
+and therefore the normalized denominator is a unit congruent to four at every height. Lean checked this all-height identity by polynomial expansion and induction. Since \(m\) is odd and a multiple of three, \((-1)^m=-1\) and \(2^m\equiv1\pmod7\). Formula (C) can now be reduced legally and gives
+\[
+             h^-_{7^n}\equiv -2\cdot5/4\equiv1\pmod7
+             \qquad(n\ge1).
+\]
+
+On its own a relative class number controls the quotient \(h_q/h^+_q\). An extra theorem is required to exclude a seven-factor in the two class numbers simultaneously. Masley's reflection theorem states that if a prime \(p\) does not divide \(h^-_{\operatorname{lcm}(p,m)}\), it does not divide \(h^+_m\). For the present prime powers the least common multiple is exactly the same conductor \(7^n\). We obtain \(7\nmid h_{7^n}^+\), hence \(7\nmid h_{7^n}\), for every \(n\ge1\). Reflection passes only the nondivisibility statement. It does not supply the congruence \(h_{7^n}^+\equiv1\pmod7\), nor is that stronger claim needed by the ascent. \href{https://doi.org/10.1112/S1461157014000382}{[Miller, \S4, statement of Masley's reflection theorem and its hypotheses]}
+
+The finite controls enumerate every unit residue at each of the first six conductors and evaluate all three reduced character sums directly. At \(q=7^6=117649\), there are 100,842 units. The common additive term in the projection is then 16,806. Subtracting opposite coefficient classes again gives \((-2,0,-2)\). Throughout the panel the resultant residue is 5 and the reduced denominator is 4. Omitting the final base carry changes the three evaluations from \((1,4,3)\) to \((5,5,5)\). Failing to cancel the offending power of seven leaves a zero denominator in every row. Both errors would be easy to miss if one retained only floating-point complex character products. The six finite comparisons support the intermediate identities at concrete heights. The proof that they persist at all heights is the exact projection and induction above.
+
+The carry method and the ramification method give complementary explanations. One explains why every new character level contributes the same nonzero residue to a suitably normalized relative product. The other explains why an unramified seven-quotient upstairs would force a forbidden unramified quotient downstairs. The first has an explicit mod-seven value but requires the relative class formula and reflection. The second establishes primary nondivisibility directly on the whole class group and feeds the existing tower interface. Neither argument has to extract an exceptional center. The invariant to which the tower descends is already controlled before a center would be chosen.
+
+
+\section{How class-number regularity passes from one layer to the next}
+\label{sec:sevenascent}
+
+Let \(F_k=\mathbb Q(\zeta_{7^{k+1}})\), with \(k\ge0\), and let \(h(F)\) denote the ordinary ideal class number of a number field. The base computation supplies \(h(F_0)=1\). The assertion needed in the cohomological argument is
+\[
+                 7\nmid h(F_k)\qquad\text{for every }k\ge0 .
+\]
+A small base class number by itself gives no control over the class number of an extension of larger degree. The reason it propagates here is a restriction on ramification. Each step is Galois of degree seven, and only a single finite prime of the lower field can ramify. A hypothetical nontrivial seven-class in the upper field would supply a characteristic elementary unramified seven-cover. Its symmetries force an unramified degree-seven extension of the lower field. Class field theory then forces seven to divide the very class number assumed prime to seven. Induction can repeat this argument at arbitrarily high levels without estimating the growth of the other prime factors.
+
+This divisibility phenomenon has a classical history. The introduction to Yokoi's research paper on relatively cyclic number fields states the prime-power cyclotomic divisibility criterion of Furtwängler and places it alongside Iwasawa's theorem for cyclic extensions with one ramified prime. The prime-degree case on totally complex fields is the one we need. Our reconstruction goes through the class field and inertia objects imported by the Lean development. The historical theorem supplies an independent explanation of why the answer is to be expected; no axiom asserting that theorem is inserted into the experiment.
+\href{https://doi.org/10.1017/S0027763000024119}{[Yokoi, pp. 31--32]}\quad
+\href{https://github.com/nousentllc/riemann-hypothesis/blob/e674cb750ef96b2f5e7cd46586ea4edb9998715a/research/uriel/experiments/ascent-witness/TowerResult.lean#L19-L69}{[Earlier cubic induction]}
+
+\subsection{Identifying the fields at every level}
+
+The source's tower lives in an algebraic closure of its base, while \(\mathbb Q(\zeta_{7^{k+1}})\) is a convenient model defined directly over \(\mathbb Q\). Before transporting class numbers we have to identify these two constructions. Let \(L=\mathbb Q(\zeta_7)\) and let \(T_n=\mathrm{Fn}(L,\overline L,7,n)\). For \(n\ge1\) the source's \texttt{fnCyc} gives a cyclotomic characterization of \(T_n\) over \(L\). Over \(\mathbb Q\) this adjoins first seventh roots and then the \(7^n\)-th roots. As \(7\mid 7^n\), adjoining both families is equivalent to adjoining the second family. Uniqueness of cyclotomic extensions up to a rational field isomorphism gives
+\[
+   T_n\simeq_{\mathbb Q}\mathbb Q(\zeta_{7^n}).
+\]
+The isomorphism restricts to their rings of integers and induces an isomorphism of ideal class groups. It therefore identifies the cardinality that occurs in the source's tower estimates. A bare numerical equality of field degrees would not give the required class-group equality.\
+\href{https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisLibrary/KummerTheory/FnCycMap.lean}{[Source cyclotomic tower]}
+
+Now take the actual inclusions \(T_{k+1}\hookrightarrow T_{k+2}\) induced by \texttt{Fn\_le\_succ}. Their absolute degrees are \(6\cdot7^k\) and \(6\cdot7^{k+1}\). Multiplication of degrees gives a relative degree of seven. The upper field is Galois over \(\mathbb Q\), hence it is Galois over the lower field. The relative group has prime order and is cyclic. This part of the argument transfers from the cubic tower with a genuine change in the initial absolute degree. Retaining the old factor of two would already predict the wrong dimension at the bottom.
+
+For each \(k\), exactly one prime of \(F_k\) lies above 7. The absolute ramification index there is \(6\cdot7^k\), the absolute residue degree is one, and the same data one layer higher have index \(6\cdot7^{k+1}\) and residue degree one. Multiplication of ramification indices identifies the relative index as 7. Multiplication of residue degrees gives one. Every rational prime \(q\ne7\) is prime to the upper conductor and has absolute ramification index one. For a prime above \(q\) in the intermediate field, the relative ramification index divides this absolute index and hence equals one as well. Every finite prime arises in this way. This proves the uniqueness of the potentially ramified \emph{prime ideal downstairs}. Knowing just that only the rational prime 7 ramifies would allow several different primes of \(F_k\) above it, a distinction on which the induction turns. A primitive \(7^{k+1}\)-th root gives the familiar uniformizer \(\zeta_{7^{k+1}}-1\) for this unique prime. Its principality is a further checked consequence of the identification. The induction below only uses the local ramification data.\
+\href{https://github.com/leanprover-community/mathlib4/blob/0df444a360eaa60ab8c11dca51a86af692955474/Mathlib/NumberTheory/NumberField/Cyclotomic/Ideal.lean}{[Cyclotomic decomposition in the pinned Mathlib]}
+
+\subsection{A descent lemma for a variable prime}
+
+The following argument separates the tower geometry from the arithmetic of the chosen base. Let \(p\) be prime, \(E/F\) a Galois extension of degree \(p\), and \(F\) totally complex. Suppose a designated finite place \(v\) of \(F\) has the property that all other finite places of \(F\) are unramified in \(E\). Then
+\[
+                    p\nmid h(F) \quad\Longrightarrow\quad p\nmid h(E).
+\]
+There is no need to put a condition on the growth of the discriminant or on the norm of ideals. If \(E/F\) happens to be unramified even at \(v\), an abelian unramified extension of degree \(p\) already forces \(p\mid h(F)\). Allowing this case in the lemma makes the hypothesis convenient to supply. Totally complex fields avoid competing conventions for class fields at infinite places. Every extension of a totally complex field is totally complex, as a real embedding of the upper field would restrict to a real embedding of the lower one.
+
+Assume for contradiction that \(p\mid h(E)\). In a fixed algebraic closure of \(E\), let \(H\) be the Hilbert class field of \(E\). Its Galois group \(A=\operatorname{Gal}(H/E)\) is finite abelian and identified with the ideal class group by the Artin map. Let \(A^p\) be the subgroup of \(p\)-th powers, and let \(U=H^{A^p}\). The quotient \(A/A^p\) is nontrivial. Indeed Cauchy's theorem gives an element of order \(p\); the power map has a nontrivial kernel, so on this finite group it cannot be surjective. Every element of the quotient has exponent dividing \(p\). Its cardinality is therefore a positive power of \(p\) strictly greater than one. We have produced an abelian, everywhere-unramified extension \(U/E\) of degree greater than one and of \(p\)-power order. Taking the entire quotient by powers preserves symmetry under conjugation. A single cyclic quotient of order \(p\) chosen arbitrarily need not enjoy that property.
+
+We need \(U/F\) Galois. This step is more than a transitivity rule: a Galois extension of a Galois extension need not be Galois over the original field. An automorphism of the ambient closure over \(F\) restricts on \(E\) to an automorphism of \(E\). The transported Hilbert class field is again an everywhere-unramified abelian extension of \(E\). The class field's maximality, applied in both directions, gives equality with \(H\). Thus \(H/F\) is Galois. Inside \(H\), conjugating an automorphism fixing \(E\) by an automorphism over \(F\) still fixes \(E\) because \(E/F\) is normal. Conjugation preserves \(p\)-th powers. It follows that \(A^p\) is normal in \(\operatorname{Gal}(H/F)\), and the fixed field \(U\) is Galois over \(F\). In Lean the existing semilinear transport handles the Hilbert class field. A new argument by induction on the exponent handles conjugation of powers uniformly in \(p\). The earlier proof's substitution of three successive automorphism applications depended on the literal exponent three.\
+\href{https://github.com/nousentllc/riemann-hypothesis/blob/e674cb750ef96b2f5e7cd46586ea4edb9998715a/research/uriel/experiments/ascent-witness/HilbertNormal.lean}{[Semilinear stability of the Hilbert field]}\quad
+\href{https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/GroundTheory/GlobalFields/ClassFieldConsequences/HilbertClassField.lean}{[Original Hilbert class-field interface]}
+
+Write \(G=\operatorname{Gal}(U/F)\). Multiplication of degrees gives \(|G|=p[U:E]>p\), and \(G\) is a finite \(p\)-group. It can be nonabelian. Choose a prime \(Q\) of \(U\) above \(v\) and let \(I\) be its inertia subgroup in \(G\). The order of inertia equals the ramification index for these local places. Since \(U/E\) is unramified, multiplicativity gives
+\[
+                 |I|=e(Q/v)=e((Q\cap E)/v)\le [E:F]=p.
+\]
+In particular \(I\) is proper in \(G\), including the case of equality \(|I|=p\). We only needed an upper bound here. For the cyclotomic application equality supplies an additional local consistency check.
+
+A proper subgroup of a finite \(p\)-group lies in a maximal subgroup \(M\), and every such maximal subgroup is normal of index \(p\). One route to the latter facts uses nilpotence, its normalizer condition, and the existence of subgroups of consecutive \(p\)-power orders containing a given subgroup. Thus \(M\) contains every conjugate of \(I\). Conjugation in \(G\) acts transitively on the primes of \(U\) above the fixed place \(v\). Consequently \(M\) contains the finite inertia subgroup at \emph{every} place above \(v\). At every other downstairs place the inertia is trivial because both stages are unramified there. Inertia restricts onto inertia in the quotient field. Therefore in \(D=U^M\) all finite inertia is trivial, and no infinite place causes ramification since \(F\) is totally complex. We have produced an abelian unramified extension \(D/F\) of degree \(p\).
+
+Global reciprocity now supplies \([D:F]\mid h(F)\). In the formal reconstruction this divisibility is obtained by comparing the kernels of the reciprocity maps of the Hilbert class field and of \(D/F\). The smaller kernel lies inside the larger one since the finite local units giving the Hilbert congruence condition act trivially on the unramified extension. Surjectivity of the reciprocity maps identifies the indices with the corresponding degrees. This is the contradiction to \(p\nmid h(F)\). The proof has given an obstruction at the previous level rather than assuming the injectivity of an ideal-class norm. Such a norm statement can be studied as a consequence, but using it as a premise without an independent proof would move the most difficult part of the induction out of sight.\
+\href{https://github.com/nousentllc/riemann-hypothesis/blob/e674cb750ef96b2f5e7cd46586ea4edb9998715a/research/uriel/experiments/ascent-witness/ClassAscent.lean#L145-L174}{[Reciprocity and the degree divisor]}\quad
+\href{https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/GroundTheory/GlobalFields/Artin/InflationTower.lean}{[Restriction of inertia in towers]}
+
+\subsection{What the induction proves about the original tower}
+
+In the specialization to seven, the designated place is obtained by taking the unique prime lying above 7 in \(T_{k+1}\). The earlier calculation identifies its relative ramification index and excludes every other finite place. Apply the descent lemma to \(T_{k+2}/T_{k+1}\). If seven divided \(h(T_{k+2})\), an everywhere-unramified degree-seven extension would exist over \(T_{k+1}\). Its degree would divide \(h(T_{k+1})\). The contrapositive gives the inductive implication. At \(k=0\) the lower field \(T_1\) itself meets the invariant characterization of a seventh cyclotomic field over \(\mathbb Q\). The principal-ideal theorem in the base experiment applies to this very field representation. No algorithm for identifying arbitrary abstract class groups across all levels is needed.
+
+To make the scope explicit, put
+\[
+P(k):\quad 7\nmid \big|\operatorname{Cl}(\mathcal O_{T_{k+1}})\big|.
+\]
+The base-field proof gives \(P(0)\), and the generic class-field argument gives \(P(k)\Rightarrow P(k+1)\) for every natural \(k\). Induction gives all the \(P(k)\). Relabeling \(n=k+1\) yields every \(n\ge1\), so in particular every \(n\ge2\) required by the tower-rank interface is available. Transport of the class-group cardinality also gives the same statement on each standard cyclotomic field. The theorem quantifies over the entire sequence at once. Taking a sample at levels 1 and 2, even with exact class numbers, could falsify such a theorem if one value were divisible by seven but could not establish it for larger indices.
+
+Consider a cyclic class-group component of order 43. On that component the seventh-power map is bijective since 7 and 43 are coprime. Its quotient by seventh powers is trivial. The same argument works for any finite abelian group of order prime to seven. A numerical calculation that detects nontrivial ideal classes can therefore coexist with complete vanishing in the source's seven-primary estimate. The descent to local weights reads this primary module. Asking whether every integral ideal in every field in the tower is principal poses a different and much stronger arithmetic question.
+
+Which facts from the cubic argument survived? The class-field identification, stability under semilinear automorphisms, transfer of inertia to quotients, and reciprocity degree divisor are independent of the prime. The geometry of cyclotomic splitting at the bottom, the absolute rank, the actual base field, and the individual norm bounds must be recomputed. Any positive power of seven greater than one works as the cover degree upstairs. The descended extension has degree exactly seven. Confusing these two uses of the prime would make it tempting to choose an arbitrary index-seven subgroup upstairs at the beginning. The proof chooses a characteristic cover first and an index-seven normal subgroup of the full group only after identifying the inertia.
+
+\section{Stress tests for the one-place argument}
+\label{sec:sevencontrols}
+Three finite tests isolate different obligations of the preceding proof. The first permits noncommuting automorphisms and conjugate inertia. The second introduces two independent places that cannot be removed simultaneously by the same quotient. The third changes the ambient group away from a prime-power order. These tests concern logical pressure points in the descent. Identifying one of their groups as the Hilbert group of an actual layer would require additional arithmetic evidence.
+
+\subsection{A nonabelian group with the same local obstruction shape}
+
+Use the upper unitriangular group of order \(7^3\), represented by triples \((a,b,c)\in\mathbb F_7^3\) with multiplication
+\[
+   (a,b,c)(a',b',c')=(a+a', b+b', c+c'+ab').
+\]
+The central direction is \((0,0,c)\). The map \((a,b,c)\mapsto(a,b)\) realizes the abelianization. The index-seven normal subgroups are the inverse images of the eight lines of \(\mathbb F_7^2\). To see that this list is complete, an index-seven subgroup of the finite 7-group is normal and has cyclic quotient, so it contains the commutator subgroup. The commutator formula \([(a,b,c),(a',b',c')]=(0,0,ab'-a'b)\) shows that this subgroup is the entire central coordinate. Thus every such normal subgroup comes from a line in the two-dimensional quotient. Each inverse image has 49 elements.
+
+Every nonidentity element has order seven. Its seventh power has first and second coordinates zero, and the central term is a multiple of seven since \(\binom72=21\). There are \((343-1)/(7-1)=57\) subgroups generated by one such element. One is the central line, contained in all eight normal subgroups. Each of the other 56 projects onto exactly one line of the abelianization and is contained in exactly one of the eight. These counts can be derived by hand and checked by enumerating all triples and closures. They test the universal containment claim for each cyclic order-seven inertia candidate in this finite menu.
+
+Take \(g=(1,0,0)\) as the representative inertia generator. There are seven distinct conjugates of \(g\). Together they generate a subgroup of order 49. It is possible, even in a prime-power group, for the local inertia group to grow substantially after all conjugates are included. The descent only requires the resulting subgroup to fit inside some proper normal subgroup. Here it fills one index-seven normal subgroup exactly. The quotient of order seven kills inertia at every conjugate place even though the local subgroups differ. This example provides an explicit interpretation of the normal-subgroup step in a setting where conjugation affects the calculation.
+
+\subsection{Changing one premise at a time}
+
+For the two-place control, take a second possible inertia generator \(g'=(0,1,0)\). Its abelianized direction is independent of that of \(g\). No line of \(\mathbb F_7^2\) can contain both. In the nonabelian group the two generate all 343 elements, including the center by their commutator. Even in the smaller abelian group \(C_7\times C_7\), each of the two axes separately lies inside a subgroup of index seven and there is no index-seven subgroup containing both axes. Thus selecting a normal group for the first place and then assuming it also handles the second would lose a genuine condition. The single downstairs prime above seven prevents this configuration in our field tower. A collection of independently ramified primes would need additional arithmetic relations among their inertia images to support the same proof.
+
+For the non-prime-power control, let \(G=S_3\) and let inertia be generated by the transposition \((12)\). This subgroup is proper and has two elements. Its conjugates include all three transpositions, which together generate the entire group. No proper normal subgroup can contain it. The control falsifies the proposed shortcut that a proper inertia subgroup always disappears in a nontrivial Galois quotient. The reason the tower statement holds is that the full upper Galois group is a finite \(p\)-group. This depends both on the base step having degree \(p\) and on taking the \(p\)-primary elementary quotient upstairs. Keeping an unrelated prime factor in the cover would remove exactly the property used to put the inertia inside a maximal normal subgroup.
+
+The abelian power-map test also includes cyclic groups of orders 1, 2, 5, 7, 14, 49, 50 and 343. The quotient by seventh powers has order seven in each case whose group order is divisible by seven, and order one in all the others. A group of order 50 supplies a nontrivial negative control. A group of order 49 shows why a quotient of exponent seven need not record higher valuations of a class number. In general the elementary quotient can have dimension greater than one, as the two-axis example shows. The induction uses only the distinction between zero dimension and positive dimension. Replacing that information with a predicted rank would assert substantially more than the proof establishes.
+
+\subsection{Where an analogous field could break the proof}
+
+Three observations give a diagnostic for applying this argument elsewhere. First, knowing only the rational primes that ramify is insufficient. The possible ramification has to be localized at the level of the actual lower number field before using conjugacy upstairs. Second, certifying one finite layer's class number leaves both an induction hypothesis and the local geometry of the next extension to be checked. Third, even with a proof of the all-layers class-number result, a separate cohomological descent theorem is essential to translate it into the exact zero required in an arithmetic window. The subsequent original-type declarations handle the passage from primary class-group information to lengths for every model of the fixed field.
+
+For comparison, suppose several finite places must be considered but all their inertia subgroups have images in a common proper subspace of the largest elementary abelian quotient of \(G\). A nonzero linear functional vanishing on that subspace then determines an index-\(p\) normal kernel containing the inertia at every place. The quotient-field argument goes through with this additional hypothesis. The case of two independent axes illustrates exactly where it fails if the images span. This observation belongs to the group-theoretical interpretation of the test. We have established the field conclusion for the actual single-place tower at seven. Obtaining such dependence relations for a moving field, with local data that vary as the prime pair varies, is an independently specified arithmetic problem.
+
+
+\section{How prime-to-seven class numbers give a zero cohomological contribution}
+\label{sec:seven-descent}
+
+The class-number statement and the statement needed by the window refer to different mathematical objects. The class group is attached to the integers of a field in a cyclotomic tower. The window sums lengths of kernels in twisted Galois cohomology, indexed by positive weights, on a layer over a realization of an abelian field. An inference from the order of a class group at a few levels directly to this sum would skip three changes of object. We follow them explicitly: the quotient by seventh powers at each finite level, the limiting module used by the original source, and the cokernel whose length recovers the layer invariant. This also explains which part of the argument required special arithmetic of 7 and which part applies to other primes.
+
+\subsection{The source's rank-zero input is weaker than triviality of every class group}
+
+Let \(p\) be a prime and \(F\) a number field. Fix the algebraic closure used by the source and write \(F_n=\mathrm{Fn}(F,\overline F,p,n)\). Consider the property
+\[
+ \mathcal T_p(F):\quad \forall n\ge2,\quad p\nmid\#\mathrm{Cl}(\mathcal O_{F_n}).
+\]
+The lower limit 2 is the one consumed by the rank argument here. The arithmetic ascent established a stronger range for the chosen 7-field. There is no demand for a numerical list of orders, nor for every class group in the tower to have order one. For a finite abelian group \(A\), the map \(a\mapsto a^p\) is a bijection when \(\gcd(p,\#A)=1\). For instance an integer \(s\) with \(sp\equiv1\pmod{\#A}\) gives the inverse power map. It follows that \(A/A^p\) has cardinality one. In the source inequality this is exactly the right-hand side \(p^0\) corresponding to rank zero. The argument applies individually to all the groups in \(\mathcal T_p(F)\); it never divides an unknown class number by invoking estimates at adjacent, potentially unrelated levels.
+
+The elementary finite controls target this distinction. The enumerated group \(C_8\times C_9\) has 72 elements. All 72 are seventh powers, hence the tested quotient has one element. The group \(C_{49}\) has quotient of order 7, even though its 7-part has order 49. The group \(C_{49}\times C_7\) gives quotient of order 49 from an input order of 343. A seventh-power quotient measures the number of independent factors detected modulo 7, and can be much smaller than the 7-part of the original group. Its triviality, however, decides the rank-zero input for a finite abelian group. Each of the eleven groups in the experiment was tested by full image enumeration and separately by the product of the elementary greatest-common-divisor formulas. These groups are diagnostic examples; their orders are independent of the class groups of the 7-power cyclotomic fields.
+
+The next transition is genuinely tower-theoretic. The source's \texttt{levelRk} converts each quotient bound into the specified rank bound on its level group. The theorem \texttt{infRk} assembles control through the tower and gives \(\mathrm{XRk}\) with upper index \(1\) and rank parameter zero. Promoting this assertion from index \(1\) to index \(p\), one invokes \texttt{genOfRk} to obtain a surjective homomorphism of \(\mathbb Z_p\)-modules from a free module on zero generators to the module \(X_P\) defined in the source. The free module on an empty index has exactly one element. Surjectivity forces its target to have exactly one element as well.
+
+There are two superficially similar zero statements in this deduction. A finite class group can have a trivial quotient by seventh powers and still possess many ideal classes, as the 72-element example illustrates. The \emph{limiting module} \(X_P\) is itself trivial because the source supplies the surjection with zero generators. Saying only that it has rank zero over a fraction field could leave nonzero torsion. Here the source's stronger generation statement rules that out. In Lean the conclusion is \texttt{Subsingleton (XP p F)}, sufficient to identify any two actual elements of the module. Our declaration \texttt{moduleZero} retains the prime and number field as variables. The input that had to be proved specifically for the 7-study was \(\mathcal T_7(\mathbb Q(\zeta_7))\). \href{https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/AutomorphicVarieties/QuadraticExtensions/LevelRk.lean}{[Finite-level rank]}\quad\href{https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/AutomorphicVarieties/QuadraticExtensions/LevUAnti.lean}{[Passage to the tower]}\quad\href{https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/AutomorphicVarieties/QuadraticExtensions/GenOfRk.lean}{[Surjection from the prescribed number of generators]}
+
+\subsection{The proof works at every nonzero integral twist}
+
+Take a base \(F\) with the roots of unity required by \texttt{HasMuQ}. For 7 this asks for a primitive seventh root. Choose a generator \(\gamma\) as provided by \texttt{genLevel}; its existence is all that is needed. For an allowed layer \(E/F\) of index \(m\) and an integer twist \(j\ne0\), the lower-level declaration \texttt{step0} identifies the invariant \(\mathrm{shaInv}(E,p,j)\) with the length of the cokernel of the endomorphism
+\[
+       T_{j,\gamma}^{\,p^m}-1\quad\text{on }X_P,
+\]
+where \(T_{j,\gamma}\) includes the source's twist. On a zero module every such cokernel is zero, independently of the integer \(m\), the generator and the twist. A numerical eigenvalue approximation would have obscured the actual simplification. Once the module itself is identified, nothing depends on calculating an eigenvalue close to one.
+
+The published wrapper \texttt{descends} consumes a positive natural weight, converts it to a nonzero integer, and invokes \texttt{step0}. Working directly at that invocation proves a stronger corollary: the length vanishes at every \emph{nonzero signed integer} twist, in particular all negative twists. The proof of \texttt{step0} itself uses the nonzero input in the cohomological descent preceding the cokernel identification. Substituting \(j=0\) into an endomorphism of the zero module would still give a zero cokernel, but that substitution alone would not identify the cokernel with the invariant at zero. The window never asks for weight zero. We retain \(j\ne0\) in the signed statement. Similarly, \(m=0\) is an allowed \emph{layer} index and requires no exclusion. The signed-parameter distinction is independently checkable in the actual original declaration. \href{https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/AutomorphicVarieties/NumberFieldTowers/ExistsDescends.lean#L26-L46}{[The signed cokernel identity]}\quad\href{https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/AutomorphicVarieties/AdditiveValuationNorms/Descends.lean#L8-L15}{[Its positive-weight wrapper]}
+
+A separate finite algebra experiment makes the logical direction easier to see. For a cyclic \(\mathbb Z_7\)-module of order \(N=49\), let the tested endomorphism act as multiplication by \(u^{j7^m}-1\pmod {49}\), for a unit \(u\). Its cokernel has order \(\gcd(N,u^{j7^m}-1)\) and length in powers of seven equal to the base-seven logarithm of this order. For \(u=8=1+7\), \(j=1\) and \(m=0,1,2\), the lengths are \(1,2,2\). For \(u=2\) and \(j=1\) the lengths are \(0,0,0\) on the same three layers; for \(u=2\) and \(j=6\) they are \(1,2,2\). The unit 2 is an algebraic control, without any identification with the cyclotomic action over a field containing the seventh roots of unity. In every case negating \(j\) preserves the image, since multiplying an endomorphism of this form by the appropriate negative unit converts one sign to the other. On the group of order one the length is zero in every cell. The finite experiment enumerated 72 cells, with exhaustive image counts checked against the gcd formula. Seeing a few zero cokernels, even at multiple layers, would not justify triviality of an unknown module. Surjectivity from a zero-generator module gives the implication in the direction actually used.
+
+\subsection{Why the bound applies to the same field supplied to the window}
+
+The original predicate \(\mathrm{IsAbField}(\mathrm{AbF.cyc}(7),F)\) describes fields up to an arithmetic identification; it does not require the caller's representation to be literally identical to the standard \(\mathbb Q(\zeta_7)\) type. We therefore exhibit the standard field as a model. Its chosen primitive seventh root \(\zeta\) generates a power basis. The descriptor's trivial subgroup of \((\mathbb Z/7\mathbb Z)^\times\) imposes the congruence \(a\equiv1\pmod7\). For an automorphism acting by \(\zeta\mapsto\zeta^a\), that congruence is equivalent to fixing \(\zeta\). Fixing the power-basis generator fixes the whole field. These data supply the exact model predicate used by the source, including the compatibility of the kernel of the exponent action. An abstract assertion that both fields have degree six would be insufficient to identify the right model.
+
+Given any other admissible representation \(F\) and any input layer \(E/F\) of index \(m\), take a layer \(T\) of the same index over the standard field. The source supplies such a layer for every \(m\). Compare the base models by \texttt{abiso} and transport their layers by \texttt{layeriso}. Invariance of \(\mathrm{shaInv}\) under field isomorphism transports the result from \(T\) to the submitted \(E\). This distinguishes two uses of existence. The proof uses a generator and comparison isomorphisms; no arithmetic choices are needed from the user. It proves a conclusion about \emph{each} submitted layer, rather than returning one particularly favorable layer on which the obstruction happens to vanish.
+
+There is an equivalent interpretation at the level of cohomology classes. For data \(D\) in the original admissible class, the source defines \(\mathrm{Sha}(D,j)\) as a submodule in first cohomology with the indicated twist. This submodule is the intersection of the kernels of all the specified local restrictions. Its length is \(\mathrm{shaLen}(D,j)\), and the original comparison theorem identifies that length with \(\mathrm{shaInv}(E,7,j)\). Length zero over \(\mathbb Z_7\) implies that the submodule is a subsingleton, hence is the bottom submodule. Our \texttt{kernelOnModel} returns precisely that equality. A class which restricts to zero at all the places specified by the datum must itself be zero. This statement allows first cohomology to contain other classes that some local restriction detects. The statement does not imply vanishing of the second-cohomology length called \texttt{VLen}, nor does it describe arbitrary pair-dependent composita that fail the fixed-layer hypothesis. For CM layers the source further splits the total length into nonnegative plus and minus lengths. Both therefore vanish separately at each positive weight. \href{https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/GaloisCohomology/Statement.lean#L65-L81}{[Twists and the source kernel]}\quad\href{https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisLibrary/GaloisCohomologyLength/ShaLenEqShaInv.lean#L58-L62}{[Invariance across local data]}\quad\href{https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/AutomorphicVarieties/LengthEqAddEigen.lean#L88-L92}{[The eigenspace-length decomposition]}
+
+\subsection{Which concrete field would the zero-cap window inspect?}
+
+A zero local cap need not make the index of the inspected field zero. The source uses two indices: \(n\) numbers absolute cyclotomic root levels and \(m\) counts steps above the base's highest root level. Its designated reference index is \(j_0(p,R)=\lfloor\log_p R\rfloor+3\), with the natural-number logarithm defined at zero. At \(p=7,R=0\) this is exactly \(m=3\). To translate that answer into a field, first determine \(c_0\), the supremum of the exponents \(k\) for which the base contains a primitive \(7^k\)-th root. The standard field contains a primitive seventh root. The root-order divisibility criterion in a cyclotomic field of conductor 7 implies that every \(7^k\) occurring here divides \(2\cdot7\). If \(k\ge2\), this would require \(49\mid14\). Hence \(c_0=1\). By definition the canonical representative of a relative layer is \(F_{c_0+m}\). The anchor for the zero cap is consequently \(F_4\simeq\mathbb Q(\zeta_{2401})\), of rational degree \(\varphi(7^4)=7^3(7-1)=2058\). The theorem \texttt{layerUniq} confirms that the original \(\mathrm{IsLayer}\) predicate accepts this representative at \(m=3\), rather than only identifying two integers in a formula.
+
+The finite relative-class-number experiment therefore reaches an actual field singled out by the rank-zero window interface. At conductor 2401 its 850-digit relative class number reduces to 1 modulo 7. Its magnitude is compatible with vanishing of the obstruction studied here. Divisibility by the tower prime controls the seventh-power quotient, whereas a large prime-to-seven factor has no effect on that quotient. There is an additional logical boundary: a relative class number only measures the relative part of the class group. Its residue does not by itself settle the real part, and no calculation at conductor 2401 settles all larger conductors. The ascent proof supplies the stronger all-level conclusion. Conversely, the proof of all-level nondivisibility does not give the 850-digit value. The index calibration explains why both results belong next to each other in the same experiment.
+
+One can now answer the finite question with the original quantifiers intact. At this named degree-2058 field, for any allowed local datum with a nonzero integer twist, the common kernel of its local restrictions is zero. Choosing a different allowed field model for that same layer preserves the assertion. A previously chosen cap bigger than zero might designate a different reference index through \(j_0\); its test is covered by the all-layer result regardless of that value. The named field identifies where the zero-cap design would look. It does not restrict the range of the vanishing theorem. \href{https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/AutomorphicVarieties/NumberFieldTowers/XTwApplyApply.lean#L104-L116}{[Original level offset and canonical field]}\quad\href{https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/AutomorphicVarieties/NumberFieldTowers/LayerUniq.lean#L25-L29}{[The canonical layer is admissible]}
+
+\section{Reassembling the original window with only moving-field endpoint tests}
+\label{sec:only-moving}
+
+The fixed-field estimate requested by the source is \(\mathrm{VVat}(7,E,t,B)\). It stipulates finiteness at all natural weights \(0<j<t\) and an upper bound \(B\) for the sum of their lengths, converted to natural numbers. Such a conversion alone loses information: a conversion applied to the infinite value would not by itself furnish finiteness. The signed invariant result supplies zero in the extended natural numbers before any conversion takes place. The original summation lemma can consequently use per-weight bound zero and total ceiling zero. This proves both clauses at once for \emph{every} integer cutoff \(t\), including the empty cases \(t=0,1\). Taking a larger nonnegative ceiling is immediate. The resulting bound is applicable to a rank-selected layer without having to know the numerical rank: it already holds for every index \(m\).
+
+For the conductor-one character the only odd indices are 3 and 7. Fix the original constants \(K\), an arbitrary real tolerance, the cutoff function and an ordinate. A case split on the index supplies the earlier direct bound in slot 3 and the new one in slot 7. In each branch the model, the algebra structure, and the layer index are those actually submitted by the caller. This gives \(\mathrm{BbAt}\) for the entire conductor-one odd roster, with its original positive exponential ceiling. No center or cutoff-dependent exception from either slot is needed as an input. This conclusion concerns the \emph{arithmetic obligation} rather than what an old exceptional list says. A list already issued by a nonunique rank-one presentation need not become empty when a stronger length theorem becomes available.
+
+\subsection{A subtle leftover floor inequality}
+
+In the previous two-selection result the moving-field and fixed-field components each required an endpoint crossover, even though the theorem accepted direct estimates for any subset \(D\) of the odd roster. Merely setting \(D\) equal to the whole roster makes the explicitly quantified odd screens vacuous: a premise indexed by \(\ell\in B_\chi\) and \(\ell\notin D\) has no cases. The separately displayed scalar inequality \(b^{w_B\varepsilon/C_K}<\lfloor a^{401}\rfloor\) still appears in that theorem's type. Leaving it as an external premise would leave the caller with a genuine odd-side obligation even though every odd field has been settled directly. We remove it without altering the given \(K\).
+
+The local field supply \(\mathrm{Across}(K,w_A,w_B,401)\) consumes, at every odd index, a disjunction: either a successful screen with allowance \(x^{w_B\varepsilon/C_K}\), or the original direct estimate for that index. Take \(w_B\ge0\). On a valid envelope at \(x\ge1\), a screen allowing only weights up to \(x^0=1\) implies the original screen. An independently supplied direct bound is accepted unchanged by the same disjunction. The theorem \texttt{zeroOddRate} therefore exports \(\mathrm{Across}(K,w_A,0,401)\) from the given supply, preserving the old choice of odd tables, the moving table for each pair, their caps, and the rank constant. It increases the outer lower threshold to at least one if necessary, to establish \(x\ge1\) from the ambient guard and positivity of \(J\). These changes concern how much a hypothetical passing screen would imply; no proof that any actual list passes the stronger threshold is necessary. Every actual odd slot receives its direct certificate at the use site.
+
+The usual late-range premise gives \(2\le Y<a\). It follows that \(2\le\lfloor a^{401}\rfloor\). With the zero odd exponent the residual right allowance is exactly one, and the strict floor inequality is automatic. The strict moving inequality \(b^{w_A\varepsilon/C_K}<\lfloor a^{401}\rfloor\) still appears; its role is to transfer the old moving test at \(a\) and the new moving test at \(b\) to each intermediate point. This proof distinguishes a change of screening parameter for a universally supplied disjunction from a change of the underlying field constants or prime pair. The common prime-pair theorem and the field theorem are queried prospectively, as in the preceding experiment. No claim identifies those primes with previously exported existential witnesses for two independent outer requests.
+
+\subsection{The scope of the conclusion}
+
+The terminal assertion first fixes the character, constants and page function, then supplies a late threshold. It then accepts a prescribed interval \([a,b]\) and an outer base \(Y\) with \(Y<a\le b\le Y^J\). It produces a positive right neighborhood and one prime pair, together with its coherent moving table. For every \(V\) in that neighborhood to the right of \(Y\), the pair is legitimate for the query \((V,V^J)\). If the old moving table at outer ceiling \(Y^J\) passes the left endpoint, the new table at \(V^J\) passes the right endpoint, and the moving crossover holds, then
+\[
+   \mathrm{WinDatum}(\mathbf 1,\varepsilon,J,1,x,V,q,d,e(x))
+         \qquad(a\le x\le b).
+\]
+Here the even table is one family evaluated at the two cutoffs. There is no odd table in the public statement, nor any odd crossover left for the caller. The theorem still requires the prime supply, the height theorem, the arithmetic-to-window conversion, and the conditions on the page and scales. The two surviving endpoint tests involve a genuine compositum field varying with the auxiliary pair. Success of those tests on an arbitrary prescribed gap remains a separate question. In particular the conclusion does not make the entire arithmetic construction independent of its prime row or its height bounds.
+
+A final distinction changes the meaning of the word \emph{rank}. The result with a specified existing \(K\) eliminates the two odd endpoint duties while retaining its rank entries in the definition of \(J\). On the other hand, the predicate \(\mathrm{ABound}\) admits a genuinely empty center family as a new witness once the positive layer invariants vanish. Choose the center index \(\mathrm{Fin}(0)\), rank cap zero and exponent \(c=0\). The required root then has order \(p^0=1\), witnessed by one. The away inequality has a zero coefficient and the second field inequality has a zero left side. This gives an actual \(\mathrm{ABound}(7,0,L)\) and independently \(\mathrm{ABound}(3,0,L_3)\) on the known fields. It does not follow that an already chosen \(K\) contained zeros: the original upper-bound witnesses could be generous. A separate choice of constants that takes the certified minimum can realize the zero contributions inside the rank sum itself. In contrast, the upstream predicate \(\mathrm{IsTower}\) includes its own lower condition on a presentation rank. The argument for the empty \(\mathrm{ABound}\) witnesses does not need to assert an impossible zero presentation parameter for \(\mathrm{IsTower}\). \href{https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/SecondBound.lean#L13-L31}{[Original field obligations and allowed caps]}
+
+
+\section{Two ways to spend the information that the odd ranks can be zero}
+
+There are two distinct uses for an exact local computation. One can spend it on a conclusion owed by a witness already in hand. One can also use it at the moment of selecting the witness, changing a parameter that will be carried through every subsequent estimate. These operations answer different questions about the window. We give both results because the distinction determines what one can legitimately do with a pair of prime selections obtained in an earlier experiment.
+
+\subsection{Holding the witness fixed}
+Suppose a coherent supply of constants has already been chosen. Its record \(K\) contains a positive scalar \(C_K\), an even-field rank \(R_0(M)\) and a natural-number rank \(R_\ell(A)\) for a fixed field descriptor \(A\). A rank bounds the number of exceptional weights tracked by a table. The cohomological equality at 3 and 7 yields a direct proof of the corresponding pointwise assertions for the local fields actually present. In particular the original fixed-field estimates can be discharged on the existing interval with its existing pages. This is the route called \texttt{onlyMoving}. Nothing in the logic of this replacement equates either entry previously stored in \(K\) with zero. A valid upper bound of five is still a valid upper bound when the underlying measured sum turns out to vanish.
+
+To see the difference operationally, imagine a historic pair \((q,d)\) with a cutoff and admissible abscissas specified using \(K\). Substituting the exact local theorem for an odd endpoint test is valid for those very values of \(q,d\). Replacing \(K\) altogether would change the formula defining the outer ceiling of the query. The earlier pair might still work there, but that would require a proof about its new envelope. This is the reason we preserved the inherited constants when interpreting the prescribed-gap question.
+
+\subsection{Choosing a new global witness once}
+There is nevertheless a stronger existence result. The earlier coherent construction chose an admissible fixed-field rank using unrestricted classical choice. For a prime \(\ell\), a field descriptor \(A\) and a natural number \(r\), let \(P(\ell,A,r)\) denote the assertion that there is a field model of \(A\) with the original bound \(\mathrm{ABound}(\ell,r)\). Field structure, the number-field instance and primality are included in the predicate. This formulation keeps the model underlying an existence proof attached to the rank it supports. If a rank exists, select
+\[
+    R_\ell(A)=\min\{r\in\mathbb N:P(\ell,A,r)\}.
+\]
+The old harmless default can still be used on unrealized descriptors, where the field-model premise can never be supplied. Whenever rank zero is exhibited, the minimum equals zero by well-ordering. The proof requires no monotonicity theorem in \(r\) and no algorithm deciding \(P\). In particular the use of \texttt{Nat.find} in a noncomputable construction does not implement a search procedure for ranks of arbitrary number fields.
+
+Why is the change harmless to coherence? The arithmetic supply needs the chosen rank to come with a field and the bound at that rank. The minimum itself satisfies \(P\); one unpacks its witness and runs the same construction from that point forward. It first selects tables for the fixed fields and then a moving table for each eligible pair. Those tables obey the same rules under changing cutoff. The rank choice precedes those steps and precedes the tolerance \(\varepsilon\). Consequently one \(K\) works simultaneously over all admissible tolerances and page functions. Choosing new constants separately for every test point could not deliver this statement. The replay script reconstructs \texttt{LeastSupply.lean} from the earlier pinned source by changing only the rank selection and proving the additional minimum property, then compares the resulting text byte for byte. Lean checks the resulting mathematical proof independently of this textual comparison.
+
+For both actual fixed fields we can exhibit \(P(\ell,A,0)\). The local argument constructs a rank-zero bound with no centers. Its finite index type \(\mathrm{Fin}(0)\) has no elements, and every required fixed-field estimate follows from the zero result. A positive index that some intermediate Iwasawa presentation may use is a parameter in a different certificate. Minimality is asserted for the public \(\mathrm{ABound}\) interface. The certificate is sufficient to set both entries to zero in one globally coherent witness. The construction continues to use the original existence input for the moving rank.
+
+\subsection{The exact effect on the exponent}
+For the principal character, the only odd ranks in the sum defining \(R\) are those at 3 and 7. In the new design,
+\[
+  R=R_0(M),\qquad
+  J=2^{R+2}\left(\frac{2 C_K C_t}{\varepsilon}\right)^R
+    =4\left(\frac{4 C_K C_t}{\varepsilon}\right)^R.
+\]
+The Lean theorem \texttt{Seven.Ranks.leastMovingDesign} proves the first factorized expression with \(C_t=401\), together with the prescribed-gap implication on the same \(K\). It assumes the global supply of the scalar bound, fixed and even field estimates, pointwise height input, the original bound at 401 and prime-pair existence. Its tolerance range is \(0<\varepsilon<1/52\). Applying the theorem to a page function requires that function to satisfy the specified page rule for all \(x\ge1\). The field vanishings used in its proof have none of these global assumptions.
+
+At fixed \(C_K,C_t,\varepsilon\) and fixed moving rank, one additional odd rank multiplies \(J\) by \(4C_KC_t/\varepsilon\). For a numerical control set \(C_K=1\), \(C_t=401\), \(\varepsilon=1/64\). The multiplier is exactly 102,656. The entries below concern hypothetical admissible ranks at these parameters; the experiment determines no numerical value for \(R_0(M)\).
+\begin{center}
+\begin{tabular}{rrr}\toprule
+Moving rank & \(J\), odd ranks zero & \(J\), odd ranks total one\\\midrule
+0 & 4 & 410,624\\
+1 & 410,624 & 42,153,017,344\\
+2 & 42,153,017,344 & 4,327,260,148,465,664\\\bottomrule
+\end{tabular}
+\end{center}
+A large difference in exponents has a precise interpretation. For \(Y>1\) held fixed, lowering \(J\) reduces the outer endpoint \(Y^J\). An already prescribed \(b\) can therefore cease to lie in the new query range. Equivalently, at fixed outer \(X>1\), the lower boundary \(X^{1/J}\) increases as \(J\) decreases. Neither operation automatically enlarges a certified interval. What improves is our account of which fields force a cost in this design. The envelope can be expressed using one rank, and its odd ranks can never be charged for the known zero sums. Whether a particular target lies inside it, whether the even endpoints pass and how late all the estimates start remain separate questions. In particular the table compares formulas at matched inputs; it measures no speedup of an implemented selector.
+
+This distinction also gives the experiment a falsifiable sequel. A proposed moving-field bound should be supplied on the field chosen by the original pair. A computation that yields an attractive rank on some other cyclotomic layer cannot be inserted into \(R_0(M)\) or used to pay the remaining endpoint costs until the witness connection and the comparison inequality have been established. The next section derives exactly what that comparison would buy.
+
+
+\section{What the additive unit costs in the moving field}
+
+After the two fixed odd fields have been handled, the moving prime still introduces two fields with different roles. The target \(E\) realizes the compositum at parameters \(M,e(x),q,d\). Given its base \(L_0\), the comparison hypothesis supplies a layer \(L_1/L_0\) of depth \(m\le e(x)+2\). For every positive integer weight \(k\), their cohomological lengths satisfy
+\[
+  a_k(E)\le 1+a_k(L_1),\qquad
+  a_k(F)=\mathrm{shaInv}(F,2,k)\in\mathbb N\cup\{\infty\}.
+\]
+The choice of layer may depend on the target. Once it has been chosen it works for every positive weight. The source makes no reverse comparison in this hypothesis. In particular an upper bound of zero on the companion permits both zero and one at the target. This matters when the next operation is a sum over many weights.
+\href{https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/SecondBound.lean#L36-L44}{[Original even comparison]}
+
+Fix \(x\), write \(t=t(x)\), and suppose the selected layer supplies a finite natural cap \(a_k(L_1)\le H\) for \(1\le k<t\). Every target length in that interval is then finite, with value at most \(H+1\). This finiteness deduction has to precede conversion to a natural number. The original definition asks for finiteness independently of the bound on the sum. For every choice of closure and cohomological data the source identifies its model-dependent length with the same invariant \(a_k(E)\). There are exactly \((t-1)_+=\max(t-1,0)\) integer weights in the interval, including the empty cases \(t=0,1\). Consequently the remaining pointwise goal follows under the explicit sufficient condition
+\[
+   (t-1)_+(H+1)\le \exp\!\left(x^{4\varepsilon/5}\right).
+\]
+The looser factor \(t\) suffices as well. The original summation proof already computes this exact cardinality internally. The new lemma retains it at the public interface and accepts a bound on the very layer used for the comparison.
+\href{https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/Vvat.lean#L7-L19}{[Finite sum and change of model]}
+
+Two quantifier orders give distinct ways to apply the calculation. In the first, for each admissible \(E\) one exhibits a single \((m,L_1)\) satisfying the comparison and the cap on all active weights. In the second, the source's \texttt{TwoBase} supplies the first property and one proves the cap uniformly for all admissible layers up to depth \(e(x)+2\). The uniform proof can be applied to whichever witness the source chose. A one-weight control isolates the danger of weakening both hypotheses to independent existential statements. Take target length three and candidate companions of lengths zero and two. Only the second supports the comparison; only the first meets cap zero. The asserted target bound of one consequently fails. In the actual \texttt{PartA} proof, lines 60 and 72--74 pass the very same \(m,L_1\) into both estimates. Its companion bound comes with discriminant, size and exceptional-set conditions. The present condition does not discharge them.
+\href{https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/PartA.lean#L57-L78}{[Use of the matched witness]}
+
+The comparison alone permits equality at every active weight: assign the companion length \(H\) and the target length \(H+1\) throughout. Enumeration of 15,034 target profiles at \(0\le H\le4\), \(0\le t\le6\) attained the predicted maximum in each of the 35 settings. These are synthetic integer profiles. Attainment for an actual compositum would require a separate cohomological construction. The distinction is visible already at \(H=0,t=3\): the profile \((1,1)\) saturates the total bound of two while the profile \((0,0)\) has the same companion.
+
+Even a vanishing companion can thus have a large conservative budget. For an exact arithmetic stress test take \(\varepsilon=1/64\), \(x=2^{80j}\), \(t=x^{401}\), and \(H=0\). The comparison permits a total of \(2^{32080j}-1\) against a ceiling of \(\exp(2^j)\). Rational enclosures \(2/3<\log 2<25/36\), obtained by the positive series for \(2\operatorname{arctanh}(1/3)\), decide the comparison for every tested \(j\). The sufficient condition fails for \(j=1,\ldots,18\) and holds for \(j=19,\ldots,22\). A failed budget comparison says that this upper bound cannot certify the desired estimate at that point. The true sum could still fit. No class or cohomology of a moving field enters this arithmetic control.
+
+All three implications in \texttt{MovingBudget.lean} passed kernel replay, including the version with the source's \texttt{BaAt} as conclusion. The new result identifies precisely what pointwise evidence would finish that conclusion for a specified \(x\). The experiment supplies neither a value of \(H\) for a real moving layer nor a uniform cutoff at which the source's arithmetic conditions hold. This leaves a concrete mathematical question for the even slot: what finite bound can be established on the particular layer carrying the comparison, over the weights that the chosen arithmetic interval actually uses?
+\href{https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/AutomorphicVarieties/PrimeSetBoundDataOfPrimitiveChar.lean#L32-L41}{[Pointwise and window goals]}
+
+
+\section{What is settled, and what to test next}
+
+The fixed slot at seven can be discharged before the proof asks for a window. Given a field realizing the conductor-one descriptor at seven, any permitted layer, and any nonzero signed twist, the common kernel of its local restriction maps is zero. The statement quantifies over the layer and the cohomological data. It therefore keeps its force after the source chooses a reference layer, exceptional sets, an ordinate, or a cutoff. For the actual window, whose weights run from one up to the cutoff exclusive, every summand is zero. The analogous result at three and the equality of the actual roster with \(\{3,7\}\) close the odd-field part for every ordinate simultaneously.
+
+The surviving class group at conductor 49 explains what made this possible. A cyclic group of order 43 has a seventh root for every element because multiplication by seven permutes the residues modulo 43. Thus taking the quotient by seventh powers sends all 43 classes to the identity class. The same mechanism works for an arbitrary finite abelian group whose order is prime to seven. The one-prime ramification argument propagates nondivisibility upward, supplying this arithmetic condition at \emph{every} layer. The cohomological proof can now apply to all twists at once. Trying to prove that every ideal in every layer is principal would fail at the first extension and would obscure the reason the window estimate succeeds.
+
+\subsection{Three boundaries of the result}
+
+First, a vanishing kernel says that a class with every required local restriction equal to zero must itself be zero. An injective map can have a nontrivial target and a nontrivial cokernel. The calculations here leave the individual local targets, the separate second-cohomology length, and the zero twist outside the conclusion. Second, an upper bound witnessed by empty centers is available at both fixed primes. An earlier existential choice of centers can still contain superfluous entries. The prescribed-gap proof avoids consulting the odd entries altogether. If smaller numerical ranks are needed in the search exponent, the proof must choose its constants coherently again. The least-rank construction records precisely that additional choice.
+
+Third, the remaining moving estimate is conditional. The gap theorem keeps the crossover and two endpoint tests at two, along with its prime-pair, page, and height assumptions. Even when a layer has a finite cap, the comparison for the compositum carries an additive unit per active weight. The results give no numerical height at which these tests pass for a given interval. They do identify the sole remaining field screen in this particular conductor-one reduction. Other characters have their own prime rosters and field descriptors.
+
+\subsection{A test with a definite stopping condition}
+
+The next experiment should follow one actual even comparison back to its construction. Fix a source-admissible prime pair and page, explicitly verifying their predicates, and fix a model of the resulting compositum. Locate the declaration that constructs the companion in \texttt{TwoBase}. Record its depth, the chosen base, and the map or inequality supplying the additive unit. Then choose one positive weight. Can the comparison be strengthened at that weight, or can the companion's length be bounded on exactly the witness selected for that compositum? A calculation on a field identified only by degree would leave the main question untouched.
+\href{https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/SecondBound.lean#L36-L44}{[Moving-field interface]}
+
+A positive outcome would give either a certified bound on the matched layer at that weight, or a structural lemma showing that the comparison loses less there. If the construction supplies existence alone, the stopping record should identify the declaration, its exact quantifiers, and the first piece of field data that cannot be recovered from those hypotheses. Such a result distinguishes two obstacles with different remedies. A deterministic model and an isomorphism can address a representation problem. A missing arithmetic estimate requires a theorem about that model. Either outcome would sharpen our understanding of why the moving field survives the present reduction.
+
+\subsection{How to verify and use the package}
+
+Read the theorem statements in \texttt{SevenConclusions.lean} to check the layer, twist and model quantifiers. Read \texttt{MovingBudget.lean} for the hypotheses needed to recover the remaining pointwise bound. The finite suite runs with \texttt{python3 reproduce.py} from the directory holding the replay driver. It recomputes the packaged panels and compares their values to the saved records. The optional PARI mode checks a second arithmetic implementation. The conductor-49 full class-group certification timed out in the recorded run; its partial result is unnecessary for the ascent proof. The relative class-number calculation and its independent norm checks have their own reproducible records.
+
+For formal verification, the driver's \texttt{--help} lists the original-source, Mathlib and Lean toolchain inputs. The kernel mode checks the dependency sources, compiles the supplementary statements and invokes the independent Lean checker on the resulting modules. The receipt distinguishes cached inputs from rebuilt ones and records the axioms reported for the named conclusions. Its scope is the dependency graph of this experiment. A claim about replaying every theorem in the original archive would require a separate complete build. One may now begin directly with the moving comparison and retain the original odd constants whenever the object of study is the prescribed gap itself.
+
+\subsection{Verification ledger for this run}
+The source audit matched 1,201 imported original modules against the pinned Git tree and 27 earlier research modules against their individual revision and file hashes. The combined run compiled all 17 supplements from the supplied text, independently replayed the resulting 17 objects with \texttt{leanchecker}, and inspected 84 named declaration reports. Each report listed at most propositional extensionality, classical choice and quotient soundness. All 1,228 imported project and previous-research objects used in this combined run were fingerprint-matched cached inputs. The record preserves this distinction so that an incremental replay and a full rebuild cannot be confused. The original development as a whole was not rebuilt.
+
+\begin{center}\small
+\begin{tabularx}{\linewidth}{@{}p{.27\linewidth}Y@{}}\toprule
+Question for the reader & First reproducible check\\\midrule
+Does arithmetic at seven propagate? & \texttt{SevenAscent.lean}, theorem \texttt{allStandardLayers}, quantifies over every positive conductor exponent.\\
+Does the chosen field really have zero length? & \texttt{SevenConclusions.lean}, theorem \texttt{localSumZero}, retains the actual layer and the finite sum with ceiling zero.\\
+Can the same window drop its odd inputs? & In the same file, \texttt{onlyMoving} lists the remaining global hypotheses. The supplied constants occur on both sides.\\
+Can the exponent also drop the odd ranks? & \texttt{SevenBudget.lean}, theorem \texttt{leastMovingDesign}, constructs a coherent choice of constants before the tolerance and page.\\
+What does it cost to use the even comparison? & \texttt{MovingBudget.lean} takes the cap and comparison on a matched layer. The data file records separate synthetic and exact scalar controls.\\\bottomrule
+\end{tabularx}\end{center}
+
+\end{document}
+
+BEGIN FIGURE witness
+255044462d312e340a25938c8b9e205265706f72744c61622047656e6572617465642050444620646f63756d656e7420286f70656e736f
+75726365290a312030206f626a0a3c3c0a2f4631203220302052202f46322033203020520a3e3e0a656e646f626a0a322030206f626a0a
+3c3c0a2f42617365466f6e74202f48656c766574696361202f456e636f64696e67202f57696e416e7369456e636f64696e67202f4e616d
+65202f4631202f53756274797065202f5479706531202f54797065202f466f6e740a3e3e0a656e646f626a0a332030206f626a0a3c3c0a
+2f42617365466f6e74202f48656c7665746963612d426f6c64202f456e636f64696e67202f57696e416e7369456e636f64696e67202f4e
+616d65202f4632202f53756274797065202f5479706531202f54797065202f466f6e740a3e3e0a656e646f626a0a342030206f626a0a3c
+3c0a2f436f6e74656e7473203820302052202f4d65646961426f78205b203020302035303220323336205d202f506172656e7420372030
+2052202f5265736f7572636573203c3c0a2f466f6e74203120302052202f50726f63536574205b202f504446202f54657874202f496d61
+676542202f496d61676543202f496d61676549205d0a3e3e202f526f746174652030202f5472616e73203c3c0a0a3e3e200a20202f5479
+7065202f506167650a3e3e0a656e646f626a0a352030206f626a0a3c3c0a2f506167654d6f6465202f5573654e6f6e65202f5061676573
+203720302052202f54797065202f436174616c6f670a3e3e0a656e646f626a0a362030206f626a0a3c3c0a2f417574686f722028616e6f
+6e796d6f757329202f4372656174696f6e446174652028443a32303030303130313030303030302b30302730302729202f43726561746f
+722028616e6f6e796d6f757329202f4b6579776f726473202829202f4d6f64446174652028443a32303030303130313030303030302b30
+302730302729202f50726f647563657220285265706f72744c616220504446204c696272617279202d205c286f70656e736f757263655c
+2929200a20202f5375626a6563742028756e73706563696669656429202f5469746c652028756e7469746c656429202f54726170706564
+202f46616c73650a3e3e0a656e646f626a0a372030206f626a0a3c3c0a2f436f756e742031202f4b696473205b203420302052205d202f
+54797065202f50616765730a3e3e0a656e646f626a0a382030206f626a0a3c3c0a2f46696c746572205b202f415343494938354465636f
+6465202f466c6174654465636f6465205d202f4c656e67746820313238310a3e3e0a73747265616d0a4761746e253b30314d3e2642455d
+242e4a43246b60325a27684c75745c2d5c705b302952483229344e3a37686f2721412625713e303f66245f323c5e50295f3e6e6e5d595e
+606250693d515a2c21244a35384a5d6a262b4a6c7049656f54396a30362d233c6f6b285f68535c5f3562382434602c703f3f542d726268
+2b587427265e70587457574021294b75605f2d6d704c522d2e455f75455a215166507226666563453c3c316c2551333032702c6e4d6a74
+7162273d2e294f684e6b5469546d64314b75264c4723446a2160422d50393b694c39752121286e4f21574f2273387321476e73532c6748
+7045324d6e255e4a26566f2c67405f6721703765462c2a5929604d6828615758565840443647666d5c2b24544936324325215d6a313a6b
+565a5d6347494468694d2769433c65505d322c5958273a2c6b5d393837354e515d6438212f5172515d2c48326c2a5e2b2e293924573d61
+2d72466356602d6958745d5b29364f2b52516172636f3e64505734362d35464765543c37436b435b373f704f555f34366b4c5b32682149
+3d5d2b2c6d244c315a245c31662d4d736970724e2873303946564f5f435e6e523a7252613d443d62213e57343b6f42604832335a705a45
+5d7225614c655453535e473b4d692755525d6a5b21525528495b2946612e2d4d343830613a715b3848263f213022546e633a4c693a4767
+6b656d374b4251355b31534c4c615f6131594a5c38544e735752304842734f6a4861584b394d65402667705b255a4b36606e4f543d2b39
+736e235a64562b714a582b2d6735225c685a6a515a4e6b4424294b6f3a6e3f38403f3d5f6e414759615832473e716c5048592c5a336456
+5a326d50642427654063422d73564d48375b3728414f62682e4b476f38224c3847522f4324302d222d49725073314a263334496d466448
+493c6b44436726483b2e3753524b4f652a6d515c3d376869667367594f2d43646f4d44552a6c53274b453e24586049755c5d4a3b3f4845
+445068595e3a5b504e2e502169332373367127542f5e274b5a4b5b746f754563455e415e233d63516e2747755b2d72536d4d5723613f4d
+66552853584262286a28284d38592e29413b455b563f44705c69306757633d2b5640412631572b5a2a5e695c70252e6647335b682e526c
+5e60613a5b2570594635624742656969443d446a65422f22535f5b756a427525224121274e236b61366d4c4f404b5b673a74322a724b50
+5d7165306b563262622853224e3e54532b5d385559662b675d2c552f412c653660273f4e3235746e58695e4e414b344f616b5721753f4b
+6c3c215c412a6e4a3b6d6b4f414c4c617141426a6f2e6c503b3d394947286c485b4b7572336c2d485726243c496b4c4e5b4a6b5d68563d
+476b6b6f2e7166313d39634c705c382c72743f314065723f516f633f2b4b5a554e62222a3352477258316a732d45343727644743254623
+5f4f38332954452651302d64314330372b6441535435455d7270244f4f21214f2d723c4c5c335146634247717174606e623772694b2672
+5a2472354965686a323e5c2b3674646625522a643f4331346c5546245d4a2a3c49255f286c4975662e62256c5c3d3a436152692f6e4b3e
+33382373396a5e396b2c5a403857316641523d3e6549476c3d372e2162344c525457535b614121633e4f26685d4b43313254214c615250
+3f65356d5a30635e2f33674b662139706544344d67313b7572736c3b5d522f4f3b4f51616468604b6f395e256c484148295b626625485f
+7e3e656e6473747265616d0a656e646f626a0a787265660a3020390a303030303030303030302036353533352066200a30303030303030
+303631203030303030206e200a30303030303030313032203030303030206e200a30303030303030323039203030303030206e200a3030
+3030303030333231203030303030206e200a30303030303030353134203030303030206e200a3030303030303035383220303030303020
+6e200a30303030303030383433203030303030206e200a30303030303030393032203030303030206e200a747261696c65720a3c3c0a2f
+4944200a5b3c31633137383139386662646661353162323539393564383964343130323034333e3c316331373831393866626466613531
+62323539393564383964343130323034333e5d0a25205265706f72744c61622067656e6572617465642050444620646f63756d656e7420
+2d2d2064696765737420286f70656e736f75726365290a0a2f496e666f2036203020520a2f526f6f742035203020520a2f53697a652039
+0a3e3e0a7374617274787265660a323237340a2525454f460a
+END FIGURE
+
+BEGIN FIGURE classnumbers
+255044462d312e340a25938c8b9e205265706f72744c61622047656e6572617465642050444620646f63756d656e7420286f70656e736f
+75726365290a312030206f626a0a3c3c0a2f4631203220302052202f46322033203020520a3e3e0a656e646f626a0a322030206f626a0a
+3c3c0a2f42617365466f6e74202f48656c766574696361202f456e636f64696e67202f57696e416e7369456e636f64696e67202f4e616d
+65202f4631202f53756274797065202f5479706531202f54797065202f466f6e740a3e3e0a656e646f626a0a332030206f626a0a3c3c0a
+2f42617365466f6e74202f48656c7665746963612d426f6c64202f456e636f64696e67202f57696e416e7369456e636f64696e67202f4e
+616d65202f4632202f53756274797065202f5479706531202f54797065202f466f6e740a3e3e0a656e646f626a0a342030206f626a0a3c
+3c0a2f436f6e74656e7473203820302052202f4d65646961426f78205b203020302035303220323233205d202f506172656e7420372030
+2052202f5265736f7572636573203c3c0a2f466f6e74203120302052202f50726f63536574205b202f504446202f54657874202f496d61
+676542202f496d61676543202f496d61676549205d0a3e3e202f526f746174652030202f5472616e73203c3c0a0a3e3e200a20202f5479
+7065202f506167650a3e3e0a656e646f626a0a352030206f626a0a3c3c0a2f506167654d6f6465202f5573654e6f6e65202f5061676573
+203720302052202f54797065202f436174616c6f670a3e3e0a656e646f626a0a362030206f626a0a3c3c0a2f417574686f722028616e6f
+6e796d6f757329202f4372656174696f6e446174652028443a32303030303130313030303030302b30302730302729202f43726561746f
+722028616e6f6e796d6f757329202f4b6579776f726473202829202f4d6f64446174652028443a32303030303130313030303030302b30
+302730302729202f50726f647563657220285265706f72744c616220504446204c696272617279202d205c286f70656e736f757263655c
+2929200a20202f5375626a6563742028756e73706563696669656429202f5469746c652028756e7469746c656429202f54726170706564
+202f46616c73650a3e3e0a656e646f626a0a372030206f626a0a3c3c0a2f436f756e742031202f4b696473205b203420302052205d202f
+54797065202f50616765730a3e3e0a656e646f626a0a382030206f626a0a3c3c0a2f46696c746572205b202f415343494938354465636f
+6465202f466c6174654465636f6465205d202f4c656e677468203936370a3e3e0a73747265616d0a4761746d39393569513d252932553f
+6e403034232d4c2e5f4e2f64264f6648354f366b21533b486d25726e6e6f6d623439746c3d26404f5d2a3c694021672d25446e5742466d
+2b60523a757074504540542f5a39302e66702831675d4174263f756c575d32415037592b5a6121345e233f3e6d2854386f2a5b6f494d5e
+63577329263350233d2f385f713a72582a2e522a683447494f3e732f56235e5b4a415c6972496d56606b2a23514c4c35676c70273e3127
+49314d673e59646f5343563464475e2d6f523869425d566c72223c5b35556b2448326763476d4e53256d723a214c5d25346a683b4a4250
+67383d33252a5362626b44422e543d4c446b3e6b443131636a5d3d722752496440374351683e4c3529646a57532327664e4668324b475c
+52602329512a37746e22373b4a2b6b41743954356523454c625c4742355c586c35752d4b422228376f4f31316040305d2327303f6f3421
+343e593b365a504842586234254d214c6d443326306060604f3869544153566035214933224d38335253213f4b545367296850692a622b
+6164714753546f74517040754f2d5c4d5234225d274b3422223a6e376e634270302a5e6274395a5e303d70606861515c393d45555e6f29
+412345513f714156564c49325c414c34472751335e352f26534e54482232363b562f35265f623157726f36434370364368403d2a306b3d
+4a70422a524c4e2a64722e4651375d40464a332c3068726829626d4a366242754d5973292170365f712d605374702f37344b2b5e57715c
+655853285a366c3b2b6c5f3a4d59712844543c365c596a3e66366e3b323a426a3c4c665b454542282f234775276d483d6f423955473e35
+6e6a4f59496e6736594e52506263725e3d5a7550303144283c356b4a4a2157324a694722365c6c23455f285a272e646b4b6a406560604c
+553d2542264c625d524b4c6b28273e333c4d604f284339247224756c575958433375752e2e696067453f586f356f4f5d40513b604c2838
+536b36365c693c6e5826303f553439535954412e61245f6952423f425b2b2f3c5572612c5b474f66304a654b453b46432f626c37673642
+27482d716b342936366a5962212c304c553f685c3a23735237466c5e216c63444d3f28666d436051525459496b2d566a6c34326551315d
+5f51365152635f4f55606e3c56474f4b6a29263153595651743631375d2c6d4d44262f6a3d25563b3a5e4d475357364c37492d3b706e2f
+4228546f2d6b753f2a4b703d2b483b61436d5f2e5229706656644d246d5048426123306343495d3c5b633521395e374a4e334562525d6d
+692623722f2f514033236253465f217e3e656e6473747265616d0a656e646f626a0a787265660a3020390a303030303030303030302036
+353533352066200a30303030303030303631203030303030206e200a30303030303030313032203030303030206e200a30303030303030
+323039203030303030206e200a30303030303030333231203030303030206e200a30303030303030353134203030303030206e200a3030
+3030303030353832203030303030206e200a30303030303030383433203030303030206e200a3030303030303039303220303030303020
+6e200a747261696c65720a3c3c0a2f4944200a5b3c31633137383139386662646661353162323539393564383964343130323034333e3c
+31633137383139386662646661353162323539393564383964343130323034333e5d0a25205265706f72744c61622067656e6572617465
+642050444620646f63756d656e74202d2d2064696765737420286f70656e736f75726365290a0a2f496e666f2036203020520a2f526f6f
+742035203020520a2f53697a6520390a3e3e0a7374617274787265660a313935390a2525454f460a
+END FIGURE
