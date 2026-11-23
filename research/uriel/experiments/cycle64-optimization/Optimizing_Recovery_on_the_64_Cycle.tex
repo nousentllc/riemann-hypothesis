@@ -1,0 +1,48 @@
+% !TeX program = lualatex
+\documentclass[12pt,letterpaper]{article}
+\usepackage{iftex}\RequireLuaTeX
+\usepackage[margin=.93in,headheight=15pt,headsep=13pt,footskip=25pt]{geometry}
+\usepackage{fontspec}\setmainfont{Latin Modern Roman}\setsansfont{Latin Modern Sans}
+\usepackage{amsmath,amssymb,booktabs,array,tabularx,graphicx,microtype,xcolor,fancyhdr,hyperref,bookmark}
+\definecolor{ink}{HTML}{182F41}\definecolor{accent}{HTML}{176060}\definecolor{muted}{HTML}{41596A}
+\hypersetup{colorlinks=true,urlcolor=accent,linkcolor=accent,pdftitle={Optimizing recovery on the 64-cycle},pdfauthor={Uriel Research}}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcommand{\orig}[3]{\href{https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/#1.lean\#L#2}{#3}}
+\newcommand{\para}[1]{\par\medskip\noindent\textbf{#1}\quad}
+\newcommand{\eff}{\mathrm{eff}}
+\newcommand{\gap}{\mathrm{ASK}-\mathrm{Ga}}
+\pagestyle{fancy}\fancyhf{}\fancyhead[L]{\small\sffamily\color{muted}Uriel Research}
+\fancyhead[R]{\small\sffamily\color{muted}The 64-cycle and the original selector}\fancyfoot[C]{\sffamily\small\thepage}
+\renewcommand{\headrulewidth}{.3pt}\setlength{\parindent}{0pt}\setlength{\parskip}{4pt}
+\setlength{\emergencystretch}{1.9em}\raggedbottom\linespread{1.025}
+\setcounter{tocdepth}{1}
+\begin{document}
+\thispagestyle{plain}
+{\sffamily\small\color{accent}URIEL RESEARCH\hfill NOVEMBER 2026}\par\vspace{10pt}
+{\Huge\bfseries\color{ink}Optimizing recovery on the 64-cycle\par}\vspace{6pt}
+{\Large\color{muted}Rates, retained residues, and an adverse labeling for the arithmetic selector\par}\medskip
+\input{chapters/findings}
+\medskip
+\textbf{Reading paths.} The eight-leaf calculation on page~\pageref{sec:ledger} introduces the percentage. The support search on page~\pageref{sec:lower-support} shows what changes when positions can move. For the matching upper bound, begin with the two surviving masks on page~\pageref{sec:two-support-census} and their rate comparison on page~\pageref{sec:cycle64-endgame}.
+\clearpage
+\tableofcontents
+\input{chapters/question}
+\input{chapters/model}
+\input{chapters/transport}
+\input{chapters/rates}
+\input{chapters/corner}
+\input{chapters/lower}
+\begin{figure}[htbp]\centering\includegraphics[width=.92\linewidth]{figures/coverage.pdf}
+\caption{Support search before the finer dense-completion check. The green segment ends at the one-tip result; the short orange extension adds the second option. Each count is uniform over the unspecified dense completions of that sparse chart.}\label{fig:coverage}
+\end{figure}
+\input{chapters/geometry}
+\input{chapters/upper}
+\input{chapters/marked}
+\input{chapters/rootmark}
+\input{chapters/census}
+\input{chapters/endgame}
+\input{chapters/exponents}
+\input{chapters/synthesis}
+\appendix
+\input{chapters/audit}
+\end{document}

@@ -1,0 +1,12 @@
+{
+  "scope": "finite weighted deficit weak dual and one rational interior rate ledger; chart enumeration and analytic transport excluded",
+  "version": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "axioms": [
+    "'Cycle64Dual.fractional_toll_bound' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'Cycle64Dual.rational_interior_ledger' depends on axioms: [propext, Classical.choice, Quot.sound]"
+  ],
+  "source_sha256": "e244d2ba58b4434fc2a93727668552f766aaa15d626aa5d7d8e7ff14dca15c08",
+  "object_sha256": "47bfc77e0779c34d2754b9afad4ae0d3bcc7583474207f78499ad888420009ee",
+  "kernel": "replaying Cycle64Dual"
+}

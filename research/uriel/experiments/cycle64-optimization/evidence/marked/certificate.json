@@ -1,0 +1,15 @@
+{
+  "word": 2556884934454963932,
+  "threshold": 10764,
+  "denominator": 100000,
+  "adjusted_residual": -2414976,
+  "multipliers": {},
+  "cuts": 3,
+  "checks": {
+    "upper": "2691/25000",
+    "raw_zero_price_residual": -2414976,
+    "accepted_residual": -2414976,
+    "previous_tick_residual": 519808,
+    "active_cuts": 0
+  }
+}

@@ -1,0 +1,99 @@
+\section{A ceiling that tests every support on one labeling}
+\label{sec:closed-box-oracle}
+
+A successful construction gives the adversary its choice of labeling and responds with a support and rates. An upper bound reverses the laboratory procedure. We choose the labeling first, give the responding construction every support, and ask for its greatest possible advantage. A numerical optimizer that returns a good support has answered the lower-bound question a second time. To answer the upper-bound question one must either eliminate the other supports or prove that their contributions cannot exceed the proposed ceiling.
+
+Our first ceiling applies to fixed 64-period profiles with mean-one inclusion multipliers at most \(12/5\). A supported leaf has a fixed positive multiplier in the arithmetic scale limit. We assume abundant realized edges on every significant long orbit where the periodic support permits an edge, as in the fixed-count construction. Under this condition, missing increments account for the limiting recovery numerator. Its denominator includes the unresolved finer-level allowance inside each active residue. These qualifications identify which optimization is being bounded. A class that can realize systematically few edges within a positively populated pair of residue classes needs a different upper argument. The literal window-score theorem alone does not impose the chosen pointwise cap.
+
+\subsection{Encoding the adversary}
+
+Give \(\mathbb Z/64\mathbb Z\) an additive coordinate. The node denoted by \((s,c)\) consists of residues congruent to \(c\bmod s\), where \(s=1,2,4,8,16,32\) and \(0\le c<s\). Its width is \(w=64/s\). In the adverse word \(W\), bit \(s-1+c\) selects the preferred child. A zero chooses \(c\bmod 2s\), and a one chooses \(c+s\bmod 2s\). Preference is defined by the least numeric label in the node. Every one of the \(2^{63}\) words occurs under some labeling. To construct one, visit all leaves of the preferred child before any leaf of its sibling, recursively. This construction also supplies a concrete permutation for an upper-bound witness.
+
+For a support \(S\), let \(d_v(S)\) count the directed odd increments in the local \(w\)-cycle that join no two occupied leaves of node \(v\). The coefficients of a leaf \(t\in S\) are
+\[
+    u_t(S)=\sum_{v:\,t\text{ in odd child of }v} 2d_v(S),
+    \qquad k_t=1+\sum_{v:\,t\text{ in odd child of }v}w_v .
+\]
+The term 1 in \(k_t\) is the mean deeper exposure in the occupied leaf. The dependence of \(u_t\) on the entire support is essential. Adding even one leaf can allow a previously absent increment, reducing the gain earned by many other leaves simultaneously. Thus applying a single linear program to all 64 rates with fixed coefficients would ignore the principal combinatorial issue.
+
+There is a useful exact structural constraint. Every occupied node must have an occupied preferred child. If its preferred child is empty, its canonical even sites can never supply an even singleton. In the fixed-period setting the relevant step class occupies a fixed positive proportion of directions. An orbit carrying fixed positive mass in this node then fails the marked-tile test at that depth, whereas the permissible relative bad mass vanishes. Once a node is occupied, its canonical minimum must therefore belong to its support, by following its preferred children down to a leaf. This implication is much weaker than quantitative mark feasibility. It is strong enough to reduce the support search, and weakening the remaining constraints gives a legitimate upper bound.
+
+\subsection{Why the continuous rates have a finite certificate}
+
+Write \(z=A/C\), with integers \(A\geq0,C>0\). Because \(k_t\ge1\), the sign of
+\[
+           \sum_{t\in S} a_t\bigl(Cu_t(S)-Ak_t\bigr)
+\]
+decides whether the ratio exceeds \(z\). For its upper bound allow all \(0\le a_t\le12/5\) on the assumed support, with \(\sum a_t=64\), and drop the quantitative window inequalities. This closure can place a zero rate at a leaf still included in the geometry. That point is admissible as a relaxed certificate. A claim of attainability must separately inspect the support and the rate test.
+
+Set \(c_t=Cu_t(S)-Ak_t\). Sort the \(c_t\) in decreasing order. If a leaf of smaller coefficient has positive rate while a higher one is below its cap, transferring as much rate as possible to the higher one weakly improves the objective. A maximizing vertex therefore gives 26 leaves rate \(12/5\) and one leaf rate \(8/5\). There must be at least 27 occupied leaves. Multiplying all rates by five, the maximum over rates on a fixed support is exactly
+\[
+              12\sum_{i=1}^{26}c_{(i)}+8c_{(27)} .
+\]
+This calculation uses integers, including at ties, and it handles unequal rates that a grid search could miss. Replacing the trial ratio by the ratio of a maximizing vertex gives a finite fractional optimization method. Each improvement has a strictly positive surplus and the vertex set is finite. For the final certificate a single exhaustive computation at the reported rational threshold suffices. An explicit vertex with surplus zero certifies equality in the relaxation at that labeling.
+
+\subsection{An envelope for the two half cycles}
+
+Listing all legal supports globally would be expensive. If \(b_w\) counts legal supports on width \(w\), including the empty support, then
+\[
+                  b_1=2,\qquad b_{2w}=1+(b_w-1)b_w .
+\]
+The preferred side is nonempty whenever the parent is nonempty, and the other side may be arbitrary. This gives \(b_{16}=1807\) and \(b_{32}=3{,}263{,}443\). At width 64 the recurrence already gives over ten trillion possibilities. There is no reason to bear their Cartesian product for the most common case.
+
+Temporarily credit no recovery at the 64-leaf root. For each half, form a table \(F(k,j)\) giving its greatest threshold surplus with \(k\) full-rate slots and \(j\in\{0,1\}\) partial-rate slots. Internal gains, the leaf tail and every odd allowance at or below that half remain in the table. For fixed \(k,j\), the odd half incurs the additional root charge \(64 A(12k+8j)\). Thus the greatest surplus in the root-uncredited envelope is
+\[
+ \max_{0\le k\le26,\,j=0,1}
+ \left[F_E(26-k,1-j)+F_O(k,j)-64A(12k+8j)\right].
+\]
+Edges that contribute no recovery at the root no longer couple the left and right supports. Only the total slot counts pass between halves. A zero-mass half can be padded by a required minimum at zero rate in the closed relaxation. The envelope also allows a pair of supports that accidentally do leave a root hole, in which case it undercredits their root recovery. The next sector explicitly restores the full credit on every such pair that carries odd mass, so no support is lost by this decomposition.
+
+Computing the half envelopes follows the same logic one level down. For a base envelope at width 32, combine the independent width-16 tables and charge the canonical odd half its width-32 allowance. Then enumerate pairs of legal quarter supports that can carry a width-32 hole with nonempty odd child. There are only \(1807^2\) pairs before any overlap tests, and width-16 support data are reused. This recursion exploits the fact that an ancestor contributes the same coefficient to every unit of rate in a whole odd child. One need not communicate an entire rate vector to compute this charge.
+
+\subsection{Accounting for every missing root increment}
+
+For root credit to be positive the odd side must be occupied and some odd step \(h\) must be absent. We can index the search by \(h=1,3,\ldots,31\), one representative of each unsigned pair. If the occupied same-parity set is \(E\), the opposite side is forbidden from both \(E+h\) and \(E-h\). In parity-half coordinates these are two cyclic translates on 32 positions. A check in only one direction would allow the reversed edge and overstate the recovered amount.
+
+Given an allowed set \(L\) on a subtree, its largest legal subset is unique. Construct it recursively. If the preferred child has empty legal interior, the entire interior is empty. Otherwise take both child interiors. Every legal subset of \(L\) is contained in this result, because every occupied preferred path must survive. This is a sharper necessary condition than simply counting the residues of \(L\). A hole can forbid a small number of spatial locations while forcing a much larger subtree to be empty through its minimum.
+
+The fast search enumerates one legal preferred half, subtracts the two forbidden translates for each proposed \(h\), and replaces the allowed part of the other half by its legal interior. It discards the branch if the two halves cannot supply 27 leaves. It then lists all legal quarter submasks of that interior whose union can supply the remaining count. A support that lacks several increments is evaluated at its smallest missing unsigned increment. For that support the numerical calculation counts \emph{all} missing increments, adds the full root gain, and sorts the 27 required coefficients. Duplicate removal concerns the number of candidates examined and preserves the amount of gain credited to each candidate. The case of a wholly empty odd half has zero root credit and is covered already by the envelope.
+
+\subsection{Independent audit by propagation of required minima}
+
+The independent verifier represents a support as 64 bits in the original additive coordinate. It computes a prerequisite set \(P(t)\) for each leaf: the leaf itself and the canonical minimum of every node containing it. Inclusion of \(t\) forces every member of \(P(t)\); exclusion of \(s\) forces exclusion of every \(t\) for which \(s\in P(t)\). Fix a forbidden generator \(h\). In a recursive search, inserting a leaf inserts its prerequisites and excludes the two translated neighbors of each inserted point. If an exclusion reaches a prerequisite of an already retained leaf, the branch terminates. If fewer than 27 unbanned leaves remain, it also terminates. Splitting on a still undecided leaf makes these branches exhaustive and disjoint. The final mask gives the literal list of missing cyclic increments by rotation and intersection.
+
+This verifier deliberately uses a different algorithm on the other sector as well. It enumerates all \(3{,}263{,}443\) legal supports on each half, computes their local coefficients, and maximizes the two tables by direct sorting. It shares no quarter-mask interior table with the faster oracle. Agreement on the number of multiply visited root-hole supports, the number of distinct ones and the maximum surplus in each sector provides more information than two executions of the same executable. A separate Python calculation subtracts literal residues on the winning support and checks the equality vertex.
+
+\subsection{An equality vertex at the adverse labeling}
+
+The word \(W=2556884934454963932\) yields a closed-box maximum of \(99/916\), approximately \(10.80786\%\). At this threshold the fast census counted 36,802 compatible support--missing-generator pairs carrying mass on both parities and 33,631 distinct such supports. The independent checker reproduced both counts. In the integer units of the threshold test \(916P-99Q\), with rates multiplied by five, the best surplus in this sector was \(-210{,}792\). In the separate envelope ignoring root credit the maximum was exactly zero. The two sectors show that any profile at this labeling lies at or below the stated cap ceiling.
+
+The equality support has 27 leaves. Write the groups in ordinary residue coordinates as
+\[
+\begin{aligned}
+ E={}&\{0,4,8,10,12,16,20,24,28,32,36,40,44,46,48,52,54,56,60\},\\
+ O={}&\{5,25,33,37,41,47,53,57\}.
+\end{aligned}
+\]
+Give residue 47 rate \(8/5\) and the remaining 26 residues rate \(12/5\). All rates on the displayed support are positive. Computing its ledger directly by subtraction gives the following values, expressed with rates multiplied by five.
+\begin{center}
+\begin{tabular}{@{}rrr@{}}\toprule
+Node width & Recovery numerator & Odd allowance\\\midrule
+64 &0 &5,888\\
+32 &1,344 &3,840\\
+16 &192 &2,688\\
+8  &48 &1,152\\
+4  &0 &528\\
+2  &0 &240\\
+Within-leaf tail &0 &320\\\midrule
+Total &1,584 &14,656\\\bottomrule
+\end{tabular}
+\end{center}
+For example the width-32 node on residue 1 modulo 2 misses eight odd increments and has seven full-rate leaves on its canonical odd side. Its gain entry is consequently \(2\cdot8\cdot7\cdot12=1344\). At the root even one realized adjacent orientation suffices to suppress direct recovery on a significant long orbit. This explains how the largest source of allowance on the first line can contribute no recovered gain. The maximizing relaxed support is an interior-level construction. Any scheme that counts only root holes would miss the actual obstruction furnished by this labeling.
+
+Summing the columns gives \(1584/14656=99/916\). The equality holds in the stated relaxation at the displayed labeling. The rates on 26 leaves are at the closed-box cap, slightly above the primitive homogeneous-leaf rate allowed by the strict paired marked-cell test. Consequently this explicit vertex should not be substituted for the independently certified lower construction. It does identify the rates, positions and subtree levels on which any argument attempting to improve this upper bound must exert additional force.
+
+\subsection{Distinguishing discovery from certification}
+
+The calibration at word zero, which always prefers the additive child \(c\bmod 2s\), gives \(56/297\) for the same relaxation. The literal layout used in the preceding study to make its chosen rule tight gives \(384/2075\). Both ceilings exceed \(18\%\). This is a concrete example of the quantifier change. A labeling can be adverse for a single rule and accommodating for a different support chosen after seeing that labeling. Simply taking the historical hardest case as the adversary would have given little information about the reoptimized 64-cycle problem.
+
+A seeded scan of 120 63-bit words alongside a control first produced a useful candidate with ceiling \(66/523\). Local changes to the preference bits yielded \(180/1649\) and then \(99/916\). Label search remains a constructive search for a counterexample to a larger uniform guarantee. It need not prove that the displayed word is the worst word. Its sole logical task is to produce one word. The exhaustive inner optimization does the work of converting that word into a uniform upper bound. The fixed-word replay and both algorithms are included so that verifying the conclusion does not require repeating the exploratory search. The earlier construction, raw host and baseline branches are recorded in \href{https://github.com/nousentllc/riemann-hypothesis/pull/14}{the original 64-cycle experiment}.

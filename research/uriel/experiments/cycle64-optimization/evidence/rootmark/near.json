@@ -1,0 +1,65 @@
+{
+  "word": 2549776587809433532,
+  "threshold_numerator": 10118,
+  "threshold_denominator": 100000,
+  "integer_units": "rate unit denominator times threshold denominator",
+  "legal_half_masks_each": 3263443,
+  "phase_control": [
+    {
+      "word": 7382425669205845932,
+      "closed_box_ratio": "32/187",
+      "maximum_surplus": 0
+    },
+    {
+      "word": 2549776587809433532,
+      "closed_box_ratio": "58/567",
+      "maximum_surplus": 0
+    }
+  ],
+  "censuses": [
+    {
+      "rate_cap": "23921/10000",
+      "rate_unit_denominator": 10000,
+      "root_hole": -26536285548,
+      "root_pairs": 42384,
+      "distinct_root_supports": 39058,
+      "positive_splits": [
+        {
+          "even_full": 21,
+          "even_partial": 1,
+          "even_masks": 2,
+          "odd_masks": 1,
+          "positive_pairs": 2
+        }
+      ],
+      "positive_uncredited_support_surpluses": {
+        "1230983613671479063": 378878364,
+        "1518083709116552983": 2315139788
+      },
+      "best_other_uncredited": -3191590756,
+      "other_witness": "1518085900086613781"
+    },
+    {
+      "rate_cap": "239213/100000",
+      "rate_unit_denominator": 100000,
+      "root_hole": -265321517244,
+      "root_pairs": 42384,
+      "distinct_root_supports": 39058,
+      "positive_splits": [
+        {
+          "even_full": 21,
+          "even_partial": 1,
+          "even_masks": 2,
+          "odd_masks": 1,
+          "positive_pairs": 2
+        }
+      ],
+      "positive_uncredited_support_surpluses": {
+        "1230983613671479063": 3815630892,
+        "1518083709116552983": 23178487964
+      },
+      "best_other_uncredited": -31863520468,
+      "other_witness": "1518085900086613781"
+    }
+  ]
+}

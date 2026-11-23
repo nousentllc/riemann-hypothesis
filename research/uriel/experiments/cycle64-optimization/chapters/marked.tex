@@ -1,0 +1,50 @@
+\section{How much do quantitative marks cost on an adverse order?}
+\label{sec:priced}
+A box-constrained upper bound is conclusive for every marked rule inside the box. Its maximizing vertex can still violate several of the quantitative constraints used to produce an arithmetic witness. There are two possibilities worth distinguishing. The maximizer might be a poor proxy for admissible profiles, leaving room for a large improvement in the upper bound simply by enforcing marks. Alternatively a nearby marked vector might almost attain the box maximum. In the second case a different adverse labeling, or a different reason that a support cannot arise, is necessary to make progress.
+
+\subsection{First experiment: price the tile inequality}
+At a tree node let \(M\) be total rate, \(E\) preferred-child rate and \(w\) width. For the standard tile test \(\mu=M/w\), \(\nu=E/w\). At an occupied node \(e^{-\mu}\nu^\beta>1/10\), where \(5190/10381\le\beta<1/2\). A weaker necessary condition, convenient because it admits rational separating inequalities, is
+\[
+  E/w \ \ge\ 0.00999\,e^{2M/w}.                       \tag{T}
+\]
+Indeed, if \(e^\mu/10\ge1\), raising that base to \(1/\beta\ge2\) gives at least its square. If the base is below one, the largest possible exponent is \(2+1/5190\). Its extra small factor is bounded below by \(10^{-1/5190}>0.999\). The arithmetic check raises both sides to an integer power and compares rationals. These two cases establish (T) for the whole exponent range.
+
+Fix a tangency point \(u\). Convexity of the exponential gives
+\[
+ g=E-2bM+w b(2u-1)\ \ge0,\qquad
+    b\le0.00999\,e^{2u}.
+\]
+To round \(b\) down safely, distinguish whether the tangent factor \(1+2(\mu-u)\) is positive. If it is negative the inequality follows already from nonnegative preferred mass. If \(u\ge1/2\) this inequality also holds on an empty cell, where \(M=E=0\). On the path to the absolute preferred leaf every node must be occupied, so positive-intercept tangents are permissible there. The distinction prevents an empty valid subtree from being accidentally penalized by a bound meant only for occupied cells.
+
+A family of necessary inequalities \(g_i\ge0\) can certify an upper bound \(z\) if
+\[
+ \max_{\text{supports, closed-box rates}}
+       \bigl(P-zQ+\sum_i\lambda_i g_i\bigr)\ \le0,\qquad \lambda_i\ge0 .
+\]
+The sign of the multiplier is positive because the outer maximization has discarded the constraints. Feasible original points add a nonnegative amount to their surplus before the maximum is taken. Each tangent is affine in rates, so it adds a leaf price and a constant to the exhaustive oracle. Round each coefficient and the constant upwards on a fine grid: every originally feasible point only gains surplus, even if some coefficients are negative. A nonpositive maximal rounded surplus still proves the claimed inequality. Floating-point linear programming proposed multipliers during discovery. Verification uses integer arithmetic and reads the published coefficients.
+
+On word \(2556884934454963932\), at cap \(2393/1000\), this cut search returned \emph{zero} multipliers. The price-free upper threshold was \(10764/100000\), with residual \(-2414976\) in the oracle's integer units; one tick lower its residual was \(519808\). The result is useful as a failure of the proposed intervention. It does not indicate that tile constraints never matter. The next calculation explains why this particular witness left so little room for these prices to work.
+
+\subsection{Second experiment: meet the upper from inside on this word}
+Take the 27 physical residues of the equality example in Section~\ref{sec:closed-box-oracle}. Give every residue except 47 the rate
+\[
+ c=2.3920857150,\qquad a_{47}=64-26c=1.805771410.
+\]
+Compute the literal differences in every node. The 26 ordinary leaves have total coefficients \(132\) for recovery and \(1178\) for allowance. Leaf 47 earns zero recovery and pays 65 units of allowance per unit of rate. Thus the following expression reduces to \(132c/[1178c+65(64-26c)]\).
+\[
+ f(c)=\frac{\sum_{t\ne47}p_t c+p_{47}(64-26c)}
+            {\sum_{t\ne47}q_t c+q_{47}(64-26c)} .
+\]
+The independent implementation evaluates each occupied-cell pair \((\mu,\nu)\) and the homogeneous test below each occupied residue. In all, 69 tests pass at this profile. The smallest lower bound on \(\log(10T_r)\) exceeds \(10^{-11}\). The strict, uniform lower value on this particular word is
+\[
+ \frac{15787765719}{146762605696}=10.7573490155\ldots\%.
+\]
+It is attainable in the sense of the family construction. In particular the small log margin does not translate into a certified numerical value of the first sufficiently late host.
+
+Can the same word rule out \(10.76\%\)? For a profile required to satisfy the standard test at every exponent, a homogeneous leaf at rate \(a>2\) must pass \(e^{-a}(a/2)^{5190/10381}>1/10\). This expression decreases in \(a\) above two. Its failure at \(239209/100000\) therefore bounds every rate by that rational cap. Rerun the exhaustive fixed-label oracle at this cap and at the exact ratio of the above vertex with that new \(c\). Its maximal surplus is zero, including root holes and closed supports. It proves an upper bound on the original fixed-word optimum of
+\[
+ \frac{2631299}{24460416}=10.7573763259\ldots\%.
+\]
+Even allowing the profile to vary with one fixed source exponent, the weaker universal cap \(23921/10000\) gives \(789393/7338112=10.7574400609\ldots\%\). The same program certifies the homogeneous upper failure and maximal residual in each case. The positive example and the bounds surround the uniform standard fixed-word optimum within \(0.000028\) percentage points.
+
+This is a falsifiable diagnosis of why the first approach stalls. On that order a rule really can recover nearly \(10.75735\%\) and meet the quantitative marks. No further refinement of a mathematically valid inequality for the same class and the same labeling can give, for example, a \(10.5\%\) upper bound. Searching for a better \emph{word} becomes essential. It is possible for tile constraints to be economically inactive on one order while ruling out the best entire sector of supports on another. The next comparison exploits precisely that difference.

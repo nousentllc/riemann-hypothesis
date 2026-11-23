@@ -1,0 +1,21 @@
+{
+  "label_word": "2556884934454963932",
+  "witness_lower": "15787765719/146762605696",
+  "full_rate": "478417143/200000000",
+  "residual_rate": "180577141/100000000",
+  "partial_leaf": 47,
+  "occupied_cells_and_leaf_checks": 69,
+  "minimum_log_mark_margin_exceeds": "1/100000000000",
+  "closed_box_checks": [
+    {
+      "cap": "239209/100000",
+      "upper": "2631299/24460416",
+      "maximum_residual": 0
+    },
+    {
+      "cap": "23921/10000",
+      "upper": "789393/7338112",
+      "maximum_residual": 0
+    }
+  ]
+}

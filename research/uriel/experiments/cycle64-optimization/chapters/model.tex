@@ -1,0 +1,41 @@
+\section{A finite ledger one can reconstruct by hand}
+\label{sec:ledger}
+The same tree carries two geometries. Its edges record the minima of the numeric labeling. Its leaves also belong to an additive cyclic group, where a step is measured by subtraction. A permutation preserving the preference tree need not preserve subtraction. This is the first obstacle to classifying all supports just by how many leaves they have at each depth. It is also a common source of spurious numerical improvements.
+
+Write \(s=1,2,4,8,16,32\) for a stride. A node \(v\) has the form \(t\equiv r\bmod s\) and width \(w=64/s\). Its two children are the classes \(r,r+s\bmod 2s\). The preferred child is determined from the label word; its complement is the odd child. The local coordinate for addition is \((t-r)/s\bmod w\). Let \(b_v\) be the sum of \(a_t\) in the odd child, and define
+\[
+ d_v(S)=\#\{h\in\mathbb Z/w:\ h\ {\rm odd},\
+                 (S_v+h)\cap S_v=\varnothing\}.
+\]
+Here \(S_v\) is the physical support in local coordinates. Since adding \(h\) can be reversed, the missing increments come in pairs \(h,-h\), with the width-two case interpreted literally. All fixed-point singleton cases at the bottom of the tree are handled by this definition. The ledger is
+\[
+ P=\sum_v 2d_v(S)b_v,\qquad Q=\sum_t a_t+\sum_v w b_v.
+ \tag{L}\label{eq:ledger-basic}
+\]
+At unit total density the first term in \(Q\) is 64. Section~\ref{sec:arithmetic-transport} derives the common normalization that cancels in \(P/Q\).
+
+\subsection{A calculation on eight leaves}
+Use the natural numerical order and the physical residues \(S=\{0,1,7\}\) modulo eight. Assign equal positive rates to these three positions. Their common value cancels. At the root the allowed odd differences are \(1,7\), and \(3,5\) are missing. Two units lie in the odd child. The numerator contribution is \(2\cdot2\cdot2=8\). Inside that child the two occupied points have local coordinates \(0,3\bmod4\). Both odd increments of this four-cycle occur, so neither earns additional credit. No other cell has both missing steps and positive odd mass. For each of the three leaves the denominator has a baseline one, then a charge equal to the width of each odd ancestor. The coefficients are \(1,9,15\), respectively. The ratio is therefore \(8/25\).
+
+Three alterations of this example isolate three possible mistakes. First, if one lists only increments from an occupied even point to an occupied odd point, a support \(\{0,1\}\) appears to permit just the increment \(1\) at the root. It also permits \(7\), witnessed by the ordered pair \((1,0)\). Counting the latter as absent credits a recovery that is not forced. Second, deleting the baseline from the original example would replace \(25\) by \(22\). The finer levels inside the residue classes survive refinement even when their steps are invisible on the printed cycle. Third, the numerator has weight \(2d_v\), rather than \(d_v\), because the denominator charges the full \(w\) where the possible odd generators number \(w/2\). Uniform weights on the \(w/2\) possibilities give a missing fraction \(2d_v/w\).
+
+This illustration is an accounting example. Its rates need not pass a marked-tile test at the target arithmetic density. Treating every toy mask with a large ratio as an arithmetic example would bypass precisely the part of the argument that forces a hard choice between concentrating mass and keeping windows supplied.
+
+\subsection{A discontinuity at the edge of a support}
+Return to \(\{0,1,7\}\) and give leaf 3 an arbitrarily small positive rate \(\eta\), removing \(\eta\) from leaf 0. Now the root sees \(\pm1,\pm3\). Its entire former credit of eight units disappears as soon as \(\eta>0\). The sum of rates changes continuously, while the geometric lower certificate jumps. At fixed positive \(\eta\) a long orbit eventually realizes an allowed pair even at low local density. Taking \(\eta\to0\) before taking the host to infinity can instead make that pair absent. This order-of-limits issue is why the upper calculation explicitly stores the structural support independently of which rates happen to be nonzero at a relaxed vertex.
+
+For an upper bound we may hold \(S\) fixed while letting some declared rates tend to zero. A fixed-support threshold \(P-zQ\) is linear in the rates and extends to the closed box. Its maximum there bounds the positive-rate interior. One must still optimize over all permissible structural supports. Removing a zero-rate leaf and recomputing \(d_v\) changes the linear problem. It may create apparent recovery on a now-empty preferred branch that would have failed its original mark test. The experiment treats zero-rate closure as an outer operation and publishes whether an equality witness actually needs such a zero.
+
+\subsection{A price for moving one unit}
+For fixed \(S,L\) put
+\[
+ p_t=\sum_{v:\ t\in v_{\rm odd}}2d_v,\qquad
+ q_t=1+\sum_{v:\ t\in v_{\rm odd}}w.
+\]
+Then \(P=\sum p_ta_t\), \(Q=\sum q_ta_t\). At trial recovery level \(z\), moving \(\Delta\) mass from \(i\) to \(j\) changes the surplus \(P-zQ\) by exactly
+\[
+ \Delta\{(p_j-zq_j)-(p_i-zq_i)\}.
+\]
+The ranking of \(p_t/q_t\) by itself is insufficient. A unit must be paid for by decreasing some other rate, and \(q_i\) and \(q_j\) can be very different. On the preceding 64-cycle mask the distinguished singleton has \(q=65\) and earns no blocked credit on the hard labeling. An alternative leaf has \(q=33\) and also earns no such credit. They are both individually unproductive in the numerator, but exchanging them changes the total denominator by 32 units per unit of rate. A minimum even-child rate prevents this exchange from continuing until the more expensive singleton disappears.
+
+The threshold formulation also solves the ratio without dividing by small differences. For every feasible profile \(Q\ge64\). If the maximum of \(P-zQ\) is positive there is a profile exceeding \(z\); if that maximum is nonpositive all are bounded by \(z\). On a finite collection of vertices one can replace \(z\) by the ratio of a maximizing vertex until the optimum residual is zero. The numerical search and the upper certificate have different burdens. A large positive surplus requires just one witness. An upper sign requires an exhaustive maximization or a proved majorant. This fractional-programming transformation is classical. \href{https://doi.org/10.1287/mnsc.13.7.492}{W. Dinkelbach, On nonlinear fractional programming (1967)}.

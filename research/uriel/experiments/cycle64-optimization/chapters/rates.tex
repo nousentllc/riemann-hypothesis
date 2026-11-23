@@ -1,0 +1,130 @@
+\section{The fixed-support benchmark: how much is a better allocation worth?}
+\label{sec:fixed-support-rates}
+
+The ten-percent construction makes two decisions after it reads the labels. It chooses which of the 64 residues may contain retained points. It also chooses the rates at which to sample inside those residues. To measure the value of a rate decision, freeze the map from labels to positive support exactly as in the preceding experiment. Keep its deletion of three leaves in the reservoir, including its tie rule. Permit a separate positive rate on every surviving leaf. Rates may depend on the labeling, and the same rates must work throughout the allowed range \(0<\varepsilon<1/52\). For this section require the strict limiting marked-tile certificate used to pass the original score. This specifies a finite optimization problem with a precise meaning for its upper bound.
+\href{https://github.com/nousentllc/riemann-hypothesis/blob/d67de1f6716496b98c8f0eb9f16b2a38c4f789c4/research/uriel/experiments/ten-percent-study/evidence/alternative/AUDIT.md}{The frozen support decision}.
+
+Its optimal guaranteed share is bracketed by
+\[
+ 10.118989577495 < 100\,z_{\rm frozen} < 10.118989577849 .
+\]
+Here \(z_{\rm frozen}\) is the supremum of fractions. Its rational bounds are \(138740971470/1371095111893\) from below and \(1387409714758/13710951119025\) from above, inclusive. Strictly feasible rational rates realize the lower endpoint. One explicit adverse labeling supplies the upper endpoint. With the three original rate groups kept intact on the exceptional support the corresponding optimum falls to approximately \(10.04085618\%\). This difference measures a loss due specifically to pooling the reservoir leaves at a common rate.
+
+\subsection{Two local constraints determine the limiting rates}
+
+Write \(a_t\) for the scaled inclusion rate on leaf \(t\); thus \(\sum_t a_t=64\). At a node of width \(w\), let \(\mu=\sum_{\rm all} a_t/w\) and \(\nu=\sum_{\rm even} a_t/w\). The selector requires \(3r+1\) empty cells and \(3r\) cells containing precisely one site, of even index, in prescribed order. On the independent comparison law these two probabilities tend to \(e^{-\mu}\) and \(\nu e^{-\mu}\). The per-cell geometric mean of the marked-tile probability in the limit is consequently
+\[
+ T_r(\mu,\nu)=e^{-\mu}\nu^{\beta_r},\qquad
+ \beta_r=\frac{3r}{6r+1}.
+\]
+The sufficient test is \(T_r>1/10\). This value comes from how many successive candidate tiles the source allows at a start. A strict limiting margin lets one use the original budget for the exceptional prime weight after fixed-count sampling. It is a condition on a particular proof of score compatibility. Inverting it is legitimate when bounding the class using this certificate. A different proof of compatibility may admit further profiles.
+\href{https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/SubspaceCounting/GoodOrbitIntervalTileCondition.lean#L12-L26}{Marked cells and windows};
+\href{https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/SharpRestriction/GrowthBounds/UnramifiedQuadraticSetting.lean#L239-L251}{Number of candidate tiles}.
+
+The admissible tile exponent has a useful feature that was invisible under the convenient bound \(r\ge2\). The source sets
+\[
+ r=\left\lceil{32\over\varepsilon}+64\right\rceil+1.
+\]
+Its smallest value is 1730 (for instance at \(\varepsilon=64/3329\)), and it is unbounded as \(\varepsilon\) decreases. Put \(\beta_0=5190/10381\), the exponent at \(r=1730\). For \(\nu>1\) the smallest possible factor uses \(\beta_0\). For \(\nu<1\) the infimum uses \(1/2\). This gives a rigorous uniform test at two endpoints. Their roles are reversed by the sign of \(\log\nu\).
+\href{https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/ThickFrames/MarkedLow.lean#L23-L29}{The definitions of \(h_E,K_E,r_E\)}.
+
+Inside a homogeneous leaf of scaled rate \(c\), the finer-level means are \(c,c/2\). Let \(C\) be the root in \((2,2.4)\) of
+\begin{equation}
+ e^{-C}(C/2)^{\beta_0}=1/10.
+ \label{eq:fixed-rate-cap}
+\end{equation}
+The log derivative above two is \(-1+\beta_0/c<0\), so every rate in the uniform certificate class is at most \(C\). Now look at the exceptional profile. Its sparse half has a single even leaf of rate \(b\), and five odd leaves of total rate \(s\). Its means are \((b+s)/32\) and \(b/32\). The large-\(r\) endpoint yields the necessary bound
+\begin{equation}
+ b\ \ge\ {32\over100}\exp((b+s)/16).
+ \label{eq:fixed-rate-tag}
+\end{equation}
+The eventual positive rate on this weakly productive leaf is consequential. Dropping it would destroy the even singleton marks on that node.
+
+For \(0\le s\le5C\), denote the lower solution of equality in
+\eqref{eq:fixed-rate-tag} by \(h(s)\), and put \(B=h(5C)\). Uniqueness on \((0,1)\) follows since \(b e^{-b/16}\) increases there and \(0.32\exp((1+5C)/16)<1\). Every feasible \(b\) exceeds or equals \(h(s)\). Implicit differentiation gives
+\[
+ 0<h'(s)={h(s)\over16-h(s)}<1/15.
+\]
+This inequality quantifies a trade-off. Removing one unit of sparse odd rate can lower the required singleton rate by less than one fifteenth of a unit. Its opportunity cost can be compared with a gain coefficient of a leaf even when the five sparse rates differ.
+
+\subsection{A two-dimensional reduction for three shared rates}
+
+In the exceptional row let the 22 reservoir leaves share rate \(a\), the singleton rate be \(b\), and the five sparse leaves share \(c\). The original hard labeling simultaneously attains the lower recovered coefficient and upper exposure coefficient in each group. For it the finite limiting profile fraction equals
+\[
+ {20a+96c\over562a+65b+583c}
+ ={1280+2012c-20b\over35968+10016c+868b}
+ =:F_3(c,b),
+ \qquad 22a+b+5c=64.
+\]
+For every other arrangement in that exceptional row the first expression is a lower bound. The common-rate architecture tends to \(c=C,\ b=B,\ a=(64-B-5C)/22\). This supplies more rate to the five sparse leaves and retains positive even mass for the marked-tile rule.
+
+Here is an upper certificate that allows \(c\) to vary as well. Set \(z=F_3(C,B)\); the rational enclosures below give \(0.1<z<0.11\). Subtract \(z\) times the positive denominator from the numerator. Relative to its zero value at \((C,B)\), the result is
+\[
+ -(2012-10016z)(C-c)-(20+868z)(b-B).
+\]
+Any feasible vector has \(c\le C,\ b\ge B-5(C-c)/15\). On \(0.1\le z\le0.11\) the first coefficient exceeds 900, whereas \((20+868z)/3<39\). The displayed difference is nonpositive. This proves an upper limit simultaneously over all three rates. It identifies why a grid search would see its largest entries near a corner, and why pushing the singleton below its threshold cannot improve the answer within this certificate.
+
+\subsection{The per-leaf optimum on the identical support}
+
+For a fixed support write \(p_t,q_t\) for its numerator and denominator coefficients. At each ancestor whose odd child contains \(t\), add \(2d_v\) to \(p_t\) and the node width to \(q_t\), with \(d_v\) the missing odd increments. Each \(q_t\) starts at one for the finer-level exposure. For the actual hard labeling the following is the complete adverse arithmetic needed for an upper bound. The first and second distinguished leaves are physical residues 1 and 2 of the frozen example.
+\begin{center}
+\begin{tabular}{lrr}
+\toprule
+Group or distinguished leaf & \(p_t\) & \(q_t\)\\
+\midrule
+Sparse-half singleton &0&65\\
+Reservoir's six-leaf node, unique even leaf &0&33\\
+Sixteen leaves of the full reservoir child &0&\(1,3,\ldots,31\)\\
+Five odd leaves of the six-leaf node &4&\(49,53,55,57,59\)\\
+Five sparse odd leaves &\(16,20,20,20,20\)&\(97,113,121,125,127\)\\
+\bottomrule
+\end{tabular}
+\end{center}
+The pairing of coefficients within the last row is determined by physical position; the argument below uses only their total and uniform lower residual. These numbers were independently recomputed by literal modular differences for all occupied nodes.
+\href{https://github.com/nousentllc/riemann-hypothesis/blob/d67de1f6716496b98c8f0eb9f16b2a38c4f789c4/research/uriel/experiments/ten-percent-study/evidence/worked_example.json}{The adverse label order and original node ledger}.
+
+Allocate \(c\) to the 26 leaves in the last three rows, \(b\) to the first and \(e=64-26c-b\) to the second. The three-group rule charged the entire reservoir the same rate. The new allocation changes only how the count adjustment is paid: a leaf with no credited recovery and 33 units of exposure absorbs it. Its even-site contribution stays large enough for all marks. The certified fraction on the hard row simplifies to
+\begin{equation}
+ F(c,b)={116c\over 1112c+33e+65b}
+        ={116c\over2112+254c+32b}.
+ \label{eq:fixed-free}
+\end{equation}
+The guaranteed lower bounds \(20\) for reservoir recovery and \(562\) for reservoir exposure still apply with the adjustment: the distinguished leaf has no odd ancestor below that six-leaf node, and its contribution within the whole ledger has denominator 33. Possible extra recovery elsewhere is nonnegative. The adverse labeling attains both bounds.
+
+Let \(z=F(C,B)\) and let \(I\) be the 26 leaves other than the two distinguished ones. Eliminate the rate of the \(q_t=33\) leaf using the total count. Setting \(v_t=p_t-z(q_t-33)\), one obtains for arbitrary feasible rates
+\[
+ P-zQ=-2112z-32zb+\sum_{t\in I}v_t a_t.
+\]
+At the candidate corner this is zero. Every \(v_t\) is positive: in the full child \(v_t\ge2z\), the reservoir's five odd leaves give \(v_t\ge4-26z\), and the sparse five give \(v_t\ge16-94z\). Write \(y=\sum_{\rm sparse}(C-a_t)\). Then \(b\ge h(5C-y)\ge B-y/15\). Subtracting the candidate value gives
+\[
+ P-zQ\ \le\ {32z\over15}y-\sum_{t\in I}v_t(C-a_t)\ \le\ 0.
+\]
+Indeed each sparse residual exceeds \(32z/15\) throughout \(0.1\le z\le0.11\). The last expression is the desired dual certificate. Every one of the 28 rates was free to vary. Reducing an advantageous odd rate to buy relief on the even singleton loses more gain than the saved exposure can restore.
+
+\subsection{Strict attainment at nearby rational rates and all-label transfer}
+
+The numerical endpoints in \eqref{eq:fixed-rate-cap} and \eqref{eq:fixed-rate-tag}
+are \(C\simeq2.39208571505\) and \(B\simeq0.70626413039\). At these parameters the per-leaf count adjustment is about \(1.09950727824\). To obtain a literal certifying point take
+\[
+ c=2.3920857150,\qquad b=0.7062641305,\qquad e=64-26c-b .
+\]
+All displayed terminating decimals are exact rationals. The program checks every distinct linear pair \((\mu,\nu)\) generated by the three possible dense deletion choices. The corner analysis has 23 distinct forms when the reservoir adjustment is singled out and 24 with three common rates. Apart from the two active forms, their smallest certified lower bounds on \(\log(10T_r)\) on an enclosing rectangle exceed 0.147 and 0.046, respectively. This strict slack, combined with continuity, supplies feasible points approaching the corner indefinitely. The two special forms are controlled by taking \(c<C,\ b>h(5c)\). For the quoted rational interior point the smallest log slack is greater than \(4.1\times10^{-11}\).
+
+The 27-leaf ordinary supports use rate \(2.392\) on all 26 leaves except the singleton; the latter has rate \(1.808\). The finite replay verifies the 36 distinct cell forms and rechecks all 127 nonreversing decisions and 15 normalized ordinary reversal decisions. The old unit surplus \(10P-Q\) was at least five over these decisions. If the common rate is \(c_o\) and the new singleton rate is \(b_o\), the certified surplus is at least \(5c_o+65(c_o-b_o)=49.92\). The credited numerator omits any extra root recovery, which remains nonnegative. The ordinary denominator is at most \(c_o(562+7\cdot127)+65b_o=3588.312\), since the reservoir uses at most 562 units and at most seven sparse leaves carry coefficient at most 127 each. These two estimates give at least \(10.1391183\%\). Consequently the same support map works for every labeling at the stronger limiting guarantee in \eqref{eq:fixed-free}.
+
+The familiar fixed-count transfer applies separately on each positive residue class. All rates stay below \(2.4\). The short and long window bounds use that cap, and the anchored comparison on a fixed number of strata preserves the strict mark estimates. The arithmetic scale is taken sufficiently late for the chosen rates. The extremely small margin at the fine rational point cautions against interpreting its last decimal places as evidence for a practical first host. For a hand calculation, \(c=2.392,\ b=0.707,\ e=1.101\) already give \(17342/171387\), or \(10.1186204\%\).
+
+\subsection{Enclosures, adverse controls and the scope of the ceiling}
+
+The reproducibility calculation uses rational intervals for logarithms. After extracting a power of two, every logarithm is evaluated on \(1\le x\le2\). With \(t=(x-1)/(x+1)\), truncate \(2\sum_{j\ge0}t^{2j+1}/(2j+1)\) after \(j=25\). The error is between zero and \(2t^{53}/[53(1-t^2)]\). Directed signs give
+\[
+\begin{split}
+2.3920857150 &< C < 2.3920857151,\\
+0.7062641303 &< B < 0.7062641305 .
+\end{split}
+\]
+The lower anchor test fails even at the smaller outer leaf rate; the upper leaf rate fails the literal leaf test at the smallest permitted source exponent. These are controls for each active constraint. The lower and upper rationals for \(F_3\) give a bracket of width \(2.02\times10^{-10}\) percentage points. For \(F\) the width is \(3.53\times10^{-10}\) percentage points. Replaying each literal node on the hard labeling supplies an independent check on sign, scale and leaf-tail normalization.
+
+Two relaxations clarify the strength of this matching bound. First, if the profile can depend on one fixed \(\varepsilon\), the two endpoint exponents no longer have to apply to the same vector. Uniformly across such choices one may enlarge the cap to the root using exponent \(1/2\) and lower the singleton requirement using \(\beta_0\). The enlarged cap is less than \(2.392096617\). The same derivative argument now bounds \(h'(s)=h(s)/(32\beta_0-h(s))<1/14\), and each sparse residual still dominates \(32z/14\). This gives \(10.11905723\%\) as a safe outer bound on the frozen support rule at any one exponent. Second, dropping all quantitative marks while retaining only \(a_t\le2.4\) gives \(F(2.4,0)=58/567\), about \(10.22928\%\), by the same nonnegative coefficients with \(b\ge0\). The zero singleton is a limiting relaxation with the old support geometry held fixed.
+
+Thus the frozen rule contains a small, measurable amount of rate slack. It also contains a geometric obstruction. Once the admissible rates on this support are optimized, a substantially larger guaranteed share must change the retained classes or enlarge the class of score proofs being considered. This is the reason to run a separate support search and a separate adverse-label upper search on the same 64-cycle.
