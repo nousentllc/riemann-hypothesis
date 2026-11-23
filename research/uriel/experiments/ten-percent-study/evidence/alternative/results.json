@@ -1,0 +1,442 @@
+{
+  "nonreversing": [
+    {
+      "mask": "070f",
+      "cases": 64,
+      "surplus_min": "7360/27"
+    },
+    {
+      "mask": "0331",
+      "cases": 32,
+      "surplus_min": "4288/27"
+    },
+    {
+      "mask": "07d1",
+      "cases": 16,
+      "surplus_min": "1984/9"
+    },
+    {
+      "mask": "0d71",
+      "cases": 8,
+      "surplus_min": "1984/9"
+    },
+    {
+      "mask": "3101",
+      "cases": 4,
+      "surplus_min": "832/9"
+    },
+    {
+      "mask": "5101",
+      "cases": 2,
+      "surplus_min": "2368/27"
+    },
+    {
+      "mask": "d107",
+      "cases": 1,
+      "surplus_min": "4928/27"
+    }
+  ],
+  "reversal": [
+    {
+      "bits": "0000",
+      "mask": "0d11",
+      "weighted": false,
+      "surplus": "832/27",
+      "coordinates": [
+        0,
+        8,
+        4,
+        12,
+        2,
+        10,
+        6,
+        14,
+        1,
+        9,
+        5,
+        13,
+        3,
+        11,
+        7,
+        15
+      ]
+    },
+    {
+      "bits": "0001",
+      "mask": "0d11",
+      "weighted": false,
+      "surplus": "832/27",
+      "coordinates": [
+        0,
+        8,
+        4,
+        12,
+        2,
+        10,
+        14,
+        6,
+        9,
+        1,
+        5,
+        13,
+        3,
+        11,
+        7,
+        15
+      ]
+    },
+    {
+      "bits": "0010",
+      "mask": "1501",
+      "weighted": false,
+      "surplus": "320/27",
+      "coordinates": [
+        0,
+        8,
+        4,
+        12,
+        10,
+        2,
+        6,
+        14,
+        1,
+        9,
+        13,
+        5,
+        3,
+        11,
+        7,
+        15
+      ]
+    },
+    {
+      "bits": "0011",
+      "mask": "1501",
+      "weighted": false,
+      "surplus": "320/3",
+      "coordinates": [
+        0,
+        8,
+        4,
+        12,
+        10,
+        2,
+        14,
+        6,
+        9,
+        1,
+        13,
+        5,
+        3,
+        11,
+        7,
+        15
+      ]
+    },
+    {
+      "bits": "0100",
+      "mask": "0d11",
+      "weighted": false,
+      "surplus": "832/27",
+      "coordinates": [
+        0,
+        8,
+        12,
+        4,
+        2,
+        10,
+        6,
+        14,
+        1,
+        9,
+        5,
+        13,
+        11,
+        3,
+        7,
+        15
+      ]
+    },
+    {
+      "bits": "0101",
+      "mask": "0d11",
+      "weighted": false,
+      "surplus": "832/27",
+      "coordinates": [
+        0,
+        8,
+        12,
+        4,
+        2,
+        10,
+        14,
+        6,
+        9,
+        1,
+        5,
+        13,
+        11,
+        3,
+        7,
+        15
+      ]
+    },
+    {
+      "bits": "0110",
+      "mask": "d101",
+      "weighted": true,
+      "surplus": "14/11",
+      "coordinates": [
+        0,
+        8,
+        12,
+        4,
+        10,
+        2,
+        6,
+        14,
+        1,
+        9,
+        13,
+        5,
+        11,
+        3,
+        7,
+        15
+      ]
+    },
+    {
+      "bits": "0111",
+      "mask": "5101",
+      "weighted": false,
+      "surplus": "4928/27",
+      "coordinates": [
+        0,
+        8,
+        12,
+        4,
+        10,
+        2,
+        14,
+        6,
+        9,
+        1,
+        13,
+        5,
+        11,
+        3,
+        7,
+        15
+      ]
+    },
+    {
+      "bits": "1000",
+      "mask": "1301",
+      "weighted": false,
+      "surplus": "448/27",
+      "coordinates": [
+        0,
+        8,
+        4,
+        12,
+        6,
+        14,
+        2,
+        10,
+        5,
+        13,
+        1,
+        9,
+        3,
+        11,
+        7,
+        15
+      ]
+    },
+    {
+      "bits": "1001",
+      "mask": "1301",
+      "weighted": false,
+      "surplus": "448/27",
+      "coordinates": [
+        0,
+        8,
+        4,
+        12,
+        6,
+        14,
+        10,
+        2,
+        13,
+        5,
+        1,
+        9,
+        3,
+        11,
+        7,
+        15
+      ]
+    },
+    {
+      "bits": "1010",
+      "mask": "1301",
+      "weighted": false,
+      "surplus": "448/27",
+      "coordinates": [
+        0,
+        8,
+        4,
+        12,
+        14,
+        6,
+        2,
+        10,
+        5,
+        13,
+        9,
+        1,
+        3,
+        11,
+        7,
+        15
+      ]
+    },
+    {
+      "bits": "1011",
+      "mask": "1301",
+      "weighted": false,
+      "surplus": "448/27",
+      "coordinates": [
+        0,
+        8,
+        4,
+        12,
+        14,
+        6,
+        10,
+        2,
+        13,
+        5,
+        9,
+        1,
+        3,
+        11,
+        7,
+        15
+      ]
+    },
+    {
+      "bits": "1100",
+      "mask": "1301",
+      "weighted": false,
+      "surplus": "448/27",
+      "coordinates": [
+        0,
+        8,
+        12,
+        4,
+        6,
+        14,
+        2,
+        10,
+        5,
+        13,
+        1,
+        9,
+        11,
+        3,
+        7,
+        15
+      ]
+    },
+    {
+      "bits": "1101",
+      "mask": "1301",
+      "weighted": false,
+      "surplus": "448/27",
+      "coordinates": [
+        0,
+        8,
+        12,
+        4,
+        6,
+        14,
+        10,
+        2,
+        13,
+        5,
+        1,
+        9,
+        11,
+        3,
+        7,
+        15
+      ]
+    },
+    {
+      "bits": "1110",
+      "mask": "1301",
+      "weighted": false,
+      "surplus": "448/27",
+      "coordinates": [
+        0,
+        8,
+        12,
+        4,
+        14,
+        6,
+        2,
+        10,
+        5,
+        13,
+        9,
+        1,
+        11,
+        3,
+        7,
+        15
+      ]
+    },
+    {
+      "bits": "1111",
+      "mask": "1301",
+      "weighted": false,
+      "surplus": "448/27",
+      "coordinates": [
+        0,
+        8,
+        12,
+        4,
+        14,
+        6,
+        10,
+        2,
+        13,
+        5,
+        9,
+        1,
+        11,
+        3,
+        7,
+        15
+      ]
+    }
+  ],
+  "reversal_full_counts": {
+    "0d11/False": 32,
+    "1301/False": 64,
+    "1501/False": 16,
+    "5101/False": 8,
+    "d101/True": 8
+  },
+  "complete_sparse_cases": 16384,
+  "mark_checks": 57,
+  "least_surplus": "14/11",
+  "denominator_upper": 8128,
+  "generic_ratio_lower": "44711/447040",
+  "ordinary_ratio_lower": "1717/17145",
+  "reversal_without_weighted_row_max_menu_surplus": "-2752/27",
+  "weighted_numerator_lower": "12087/44",
+  "weighted_denominator_upper": "60407/22",
+  "uniform_ratio_lower": "12087/120814"
+}

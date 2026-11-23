@@ -1,0 +1,184 @@
+% !TeX program = lualatex
+\documentclass[12pt,letterpaper]{article}
+\usepackage{iftex}\RequireLuaTeX
+\usepackage[margin=.93in,headheight=15pt,headsep=13pt,footskip=25pt]{geometry}
+\usepackage{fontspec}\setmainfont{Latin Modern Roman}\setsansfont{Latin Modern Sans}
+\usepackage{amsmath,amssymb,booktabs,array,tabularx,microtype,xcolor,fancyhdr,hyperref,bookmark}
+\definecolor{ink}{HTML}{182F41}\definecolor{accent}{HTML}{176060}\definecolor{muted}{HTML}{41596A}
+\hypersetup{colorlinks=true,urlcolor=accent,linkcolor=accent,pdftitle={A hand certificate for ten percent},pdfauthor={Uriel Research}}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcommand{\orig}[3]{\href{https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/#1.lean\#L#2}{#3}}
+\newcommand{\para}[1]{\par\medskip\noindent\textbf{#1}\quad}
+\newcommand{\pagepart}[1]{\clearpage\section{#1}}
+\newcommand{\eff}{\mathrm{eff}}
+\newcommand{\gap}{\mathrm{ASK}-\mathrm{Ga}}
+\pagestyle{fancy}\fancyhf{}\fancyhead[L]{\small\sffamily\color{muted}Uriel Research}
+\fancyhead[R]{\small\sffamily\color{muted}Arithmetic witness studies}\fancyfoot[C]{\sffamily\small\thepage}
+\renewcommand{\headrulewidth}{.3pt}\setlength{\parindent}{0pt}\setlength{\parskip}{4pt}
+\setlength{\emergencystretch}{1.5em}\raggedbottom\linespread{1.025}
+\begin{document}
+\thispagestyle{plain}
+{\sffamily\small\color{accent}URIEL RESEARCH\hfill 22 NOVEMBER 2026}\par\vspace{14pt}
+{\Huge\bfseries\color{ink}A hand certificate for ten percent\par}\vspace{7pt}
+{\Large\color{muted}A 64-residue construction for every labeling}\par\bigskip
+
+\textbf{Yes.} On the principal conductor-one hosts of the preceding studies, a pattern on \(\mathbb Z/64\mathbb Z\) guarantees that direct gain \(g_0\) recovers at least
+\[
+                 \frac{12087}{120814}=10.004635224\ldots\%
+\]
+of the same retained set's odd-position allowance in the limit. The target is strictly below this bound, so the recovered share exceeds \(10\%\) at all sufficiently late scales along the constructed families. The arithmetic host can have any numeric labeling. The rule reads that labeling once and produces one profile for all its primes and lifts.
+
+\para{The hand check.} The difficult case uses three groups. Each rate in the table multiplies the original inclusion scale \(\delta\). In the last two columns the entries are summed coefficients per group before multiplication by its common rate.
+\begin{center}\begin{tabular}{@{}lrrr@{}}\toprule
+Group & Rate & Recovery at least & Allowance at most\\\midrule
+22 leaves in the even half & \(411/176\) & 20 & 562\\
+One leaf in the odd half & \(3/4\) & 0 & 65\\
+Five leaves in the odd half & \(19/8\) & 96 & 583\\\bottomrule
+\end{tabular}\end{center}
+The rates sum with multiplicity to 64. Multiply each column by the rates, add, and divide. Ten times the resulting numerator exceeds the denominator by exactly \(14/11\). The other labelings clear the target with more room. Pages 3--6 derive the table and explain how to identify the case from a labeling.
+
+The previous small example guaranteed \(8.3442\%\). The improvement comes from counting missing steps at more than one depth of the cycle and assigning different rates when one particularly unfavorable ordering occurs. Merely optimizing the earlier 32-residue patterns runs into an explicit obstruction at \(6/61=9.83607\%\) in the capped class we tested. \href{https://github.com/nousentllc/riemann-hypothesis/pull/13}{Previous experiment and its high-dimensional limit}.
+
+\para{Scope.} The cycle of size 64 indexes residue classes on a much larger host. Finite differences, fractions and selector margins on these classes were computed exactly. Realization at the original score and transport to the limiting gain use the written arithmetic estimates in the earlier studies. The particular retained set previously chosen in Lean remains unidentified.
+
+\pagepart{Turning a finite count into a recovery certificate}
+For each orbit the least numeric label fixes the first position, hence its even and odd sides. Repeated subdivision gives a binary tree of residue classes. Within a node list leaves by visiting its canonical even child first at every split. These \emph{ranks} run from zero to one less than the node width. They can differ from the actual additive residues, which we use when subtracting positions.
+
+Let a node \(v\) have \(w\) residues in its local cyclic coordinates, starting at \(w=64\) at the root. For its occupied support compute
+\[
+  d_v=\#\{h\in\{1,3,\ldots,w-1\}:
+              \text{there is no occupied pair } t,t+h\bmod w\}.
+\]
+The set of such \(h\) is closed under negation. Write \(b_v\) for the sum of the rate multipliers of the leaves in its canonical odd child. Let \(a_t\) be a leaf rate, with \(\sum_t a_t=64\). The integer and rational bookkeeping is
+\[
+ P=\sum_v 2d_v b_v,\qquad Q=64+\sum_v w b_v,\qquad J=10P-Q.
+\]
+The 64 is the finer-level exposure tail after summing the within-class rate. It must be included even if every coarser step in the support is missing. A leaf's coefficient in \(Q\) is at most \(1+64+32+16+8+4+2=127\), so \(Q\le8128\).
+
+\para{Why it measures gain.} Each blocked local step class has equal leading prime-direction weight. On every occupied served interior orbit with that step, the first successor of a retained position is absent in either orientation. The direct gain is positive there and recovers the odd price to leading order. Each \(d_v\) therefore earns the odd mass in that node. The same prime weights applied to \emph{all} directions yield its allowance contribution \(w b_v\), with the common factors canceled in \(P/Q\). The preceding source trace controls dropped tops and the end strips. These estimates give a limiting lower bound \(P/Q\); omitting positive recoveries elsewhere is valid. \href{https://github.com/nousentllc/riemann-hypothesis/pull/10}{Prime-step weights and exposure}, \href{https://github.com/nousentllc/riemann-hypothesis/pull/11}{same-lift gain identity}, \href{https://github.com/nousentllc/riemann-hypothesis/pull/12}{blocked-step transport}.
+
+\para{Two shortcuts for hand calculation.} In a unit-rate subtree with \(e\) occupied even leaves and \(o\) occupied odd leaves, at most \(2eo\) directed odd increments can occur. Thus \(d_v\ge\max(0,w/2-2eo)\). Its contribution to \(J\) is \(o(20d_v-w)\), and each occupied terminal leaf costs one. Also, the unit-rate allowance coefficients for a full \(w\)-leaf subtree in canonical order are \(1,3,\ldots,2w-1\). Descending to an odd child adds \(w\); descending to an even child adds zero. The sum is \(w^2\).
+
+\pagepart{Building a reservoir with a checkable allowance}
+Write \(E\) for the root's even half and \(B\) for its odd half. The positive-rate classes in \(E\) provide enough points to meet the exact target count while leaving room to make \(B\) sparse. We use one of three rules for \(E\). In the table, the child sizes are numbers of occupied leaves within two width-16 children. All bounds for \(J_E\) here use unit rate. A possible gain at the global root is discarded.
+\begin{center}\begin{tabular}{@{}lrrr@{}}\toprule
+Leaves in \(E\) & Even child & Odd child & \(J_E\) at least\\\midrule
+19 & 16 & 3 & \(-256-32(3)+157=-195\)\\
+21 & 15 & 6 & \(-225-32(6)+86=-331\)\\
+22 & 16 & 6 & \(-256-32(6)+86=-362\)\\\bottomrule
+\end{tabular}\end{center}
+For 15 leaves keep the first 15 canonical ranks, omitting the allowance coefficient \(31\). For three leaves of a width-16 node use ranks \(0,8,12\). The upper two nodes with odd mass have at least four and two missing increments, respectively, by the product count. This gives \(2(80-16)+(40-8)-3=157\).
+
+\para{The six-leaf lemma.} In a width-16 node keep the minimum leaf \(a\) in its even half. In the other half there are eight candidate leaves. Reflection \(z\mapsto2a-z\) pairs the first four of their canonical ranks with the last four. Call the relative map \(i\mapsto p(i)\), where the actual other rank is \(4+p(i)\). Reflection preserves the dyadic partitions, so \(p\) sends sibling pairs to sibling pairs. Delete three of the eight leaves as follows.
+\begin{center}\begin{tabular}{@{}lll@{}}\toprule
+Condition & Deleted ranks & Sum of ranks\\\midrule
+\(p(3)\ge2\) & \(3,6,7\) & 16\\
+\(p(3)=1\) & \(3,5,7\) & 15\\
+\(p(3)=0\), hence \(p(1)\ge2\) & \(1,6,7\) & 14\\\bottomrule
+\end{tabular}\end{center}
+Each deletion includes a reflected pair and leaves the even child occupied in every surviving subtree. The five survivors have inner allowance at most \(64-(3+2\cdot14)=33\). At least two generator increments are blocked at the width-16 node. Its six leaves therefore earn recovery at least \(2\cdot2\cdot5=20\), and their allowance is at most \(16\cdot5+1+33=114\). Thus \(J\ge200-114=86\). In the 22-leaf reservoir the full even child adds 256 to allowance and the split adds \(32\cdot6\). This gives the separate entries \(20\) and \(562\) on page one.
+
+\pagepart{The seven ordinary branches}
+In \(B\), give its even child a single leaf at its canonical minimum \(a\). The other child \(C\) has 16 leaves. Number them \(0,\ldots,15\) by canonical rank. Reflection about \(a\) pairs a rank \(i<8\) with a rank \(8+p(i)\). The map \(p\) of the eight indices preserves binary siblings at each depth. It therefore has seven switches, one at each internal node. Number these breadth first, starting at the root with 0 and proceeding from left to right. A switch is 1 when the node sends its first child to the second child of its image, and 0 otherwise.
+
+Read the switches in the order \(0,2,5,6,1,3,4\). At the first 0 choose the corresponding occupied ranks \(S\subset C\) below. Put \(n=|S|\), use \(26-n\) reservoir leaves, and give all 27 selected leaves rate \(64/27\). The table gives lower bounds before applying that rate. Here \(J_C\) includes the leaf tails within \(C\).
+\begin{center}\begin{tabular}{@{}r l r r r@{}}\toprule
+First 0 & \(S\) in canonical order & \(d_B\) & \(J_C\) & Whole \(J\)\\\midrule
+0 & \(0,1,2,3,8,9,10\) & 8 & \(-73\) & 115\\
+2 & \(0,4,5,8,9\) & 10 & \(-57\) & 67\\
+5 & \(0,4,6,7,8,9,10\) & 8 & \(-95\) & 93\\
+6 & \(0,4,5,6,8,10,11\) & 8 & \(-95\) & 93\\
+1 & \(0,8,12,13\) & 10 & 50 & 39\\
+3 & \(0,8,12,14\) & 10 & 48 & 37\\
+4 & \(0,1,2,8,12,14,15\) & 8 & \(-111\) & 77\\\bottomrule
+\end{tabular}\end{center}
+To check a row, let \(k\) count reflected pairs contained in \(S\). With only one occupied even leaf in \(B\), the two orientations allow exactly \(2(n-k)\) generator increments. Hence \(d_B=16-2(n-k)\). Within \(C\) apply \(d_v\ge\max(0,w/2-2eo)\). Across the root, all \(n+1\) leaves in \(B\) pay 64 units each; its even singleton also pays one terminal unit. Combining these gives
+\[
+           J\ge J_E+J_C-65+n(20d_B-32-64).
+\]
+For example, if switch 0 is 0, \(p\) maps the first four indices to the first four. All four left ranks and three right ranks there are selected, giving three pairs. Thus \(d_B=16-2(7-3)=8\), and \(J\ge-195-73-65+7(160-96)=115\). The successive rows cover \(64,32,16,8,4,2,1\) of the 128 switch words. Only the all-swapped map \(p(i)=7-i\) remains.
+
+\pagepart{The reversed pairing and the five physical positions}
+Give the 32-cycle \(B\) additive coordinates with its minimum at zero. Its first canonical leaf in \(C\) has odd coordinate; multiplication by the inverse of that odd number makes its coordinate one. Thus \(C\) consists of positions \(1+2z\), \(z\bmod16\). Its first eight canonical ranks have even \(z\). If \(\operatorname{rev}\) reverses three binary digits, their coordinates and those of the second eight under full reversal are
+\[
+ z_i=2\operatorname{rev}(g(i)),\qquad
+ z_{8+j}=-1-z_{7-j}\pmod{16}.
+\]
+The dyadic permutation \(g\) fixes 0, leaving four free switches at breadth-first indices \(2,4,5,6\). Call them \(A,B',C',D\) in that order. Use the first applicable row. All rows have \(d_B=8\). These sixteen normalized layouts are small enough to reconstruct by writing down just three binary digits per index.
+\begin{center}\begin{tabular}{@{}llrrr@{}}\toprule
+Condition & Ranks kept in \(C\) & Layouts & \(J_C\ge\) & Unit \(J\ge\)\\\midrule
+\(A=1\) & \(0,8,9,12\) & 8 & 178 & 7\\
+\(C'=0\) & \(0,4,8,10,11\) & 4 & 89 & 13\\
+\(B'=0\) & \(0,8,10,12\) & 2 & 176 & 5\\
+\(D=1\) & \(0,8,12,14\) & 1 & 248 & 77\\
+Remaining layout & \(0,8,12,14,15\) & 1 & 57 & Weighted below\\\bottomrule
+\end{tabular}\end{center}
+For the first four rows use the same formula and rates as on page four. Each coefficient in the table comes from subtracting the occupied physical positions modulo the node width. At the last row use the 22-leaf reservoir. The physical positions retained in \(C\) are now
+\[
+                            \{0,1,7,11,15\}\pmod {16}.
+\]
+Their differences miss exactly the two odd increments \(3,13\). Four points are canonical odd in \(C\). The lower nodes carrying odd mass have respective pairs (width, odd count) \((8,3),(4,2),(2,1)\). Their missing increments add no recovery. Consequently the internal surplus is
+\[
+ 4(20\cdot2-16)-8\cdot3-4\cdot2-2\cdot1-5=57.
+\]
+Eight blocked steps in the parent \(B\) give the five leaves an additional \(5(160-32-64)\) after the outer allowance is charged. Thus their surplus coefficient is 377. Separately their recovery coefficient is \(2\cdot8\cdot5+2\cdot2\cdot4=96\) and their allowance coefficient is \(960-377=583\).
+
+\pagepart{A literal certificate, including the tight labeling}
+Let \(r_E=411/176,\ r_a=3/4,\ r_C=19/8\). The last layout uses 28 leaves and satisfies \(22r_E+r_a+5r_C=64\). Its surplus is bounded by
+\[
+        J\ge 377r_C-362r_E-65r_a=14/11 .
+\]
+The separate bounds on both ledgers give a stronger fraction,
+\[
+  \frac PQ\ \ge\
+  \frac{20r_E+96r_C}{562r_E+65r_a+583r_C}
+  =\frac{12087}{120814}.
+\]
+Every ordinary row has \(J\ge5(64/27)\). With \(Q\le8128\), this gives \(P/Q\ge1/10+5/(10\cdot27\cdot127)>12087/120814\). The exceptional case therefore sets the guarantee for this particular rule.
+
+\para{Actual residues in one example.} Use the natural canonical order in the dense half (the least residue in each dyadic block comes first). In the sparse half let \(a=1\); put the special five positions at \(3+4z\) for the \(z\)'s on page five. The resulting positive-rate classes modulo 64 are
+\[
+\begin{aligned}
+r_E:\quad &0,2,4,6,8,12,14,16,20,22,24,28,\\[-2pt]
+           &32,36,40,44,46,48,52,54,56,60;\\
+r_a:\quad &1;\\
+r_C:\quad &3,7,31,47,63.
+\end{aligned}
+\]
+The saved example records all 64 labels in order, every blocked shift, and each node's denominator. Counting the actual differences, including at the global root, gives exactly \(12087/120814\) for the finite profile formula. This example makes the bound tight for the stated rule. Optimizing all possible 64-residue constructions remains open.
+
+\para{Two revealing failures.} In a natural ordering the simple interval \(0,\ldots,13\bmod32\) reaches \(30/203=14.78\%\). But for the adverse 32-leaf ordering encoded by \(8421923\), a complete search checked \(3{,}024{,}572\) supports. Even allowing arbitrary rates up to \(2.4\delta\) and relaxing the quantitative tile tests, the best ratio in the fixed-period, fully mixed class is \(6/61=9.8361\%\). For a fixed support, numerator and denominator are linear in the rates, so at a threshold one can sort the coefficients and fill the largest to the cap. That gives an exact upper certificate. At modulus 64 a different tempting rule, translating and rescaling contiguous arcs to block six root steps, also fails on a recorded labeling. Width and a favorable example alone do not explain the positive result. The reflection decision and the unequal rates are doing identifiable work.
+
+\pagepart{Passing the original weighted score}
+Fix \(\varepsilon\in(0,1/52)\), a sufficiently late conductor-one scale \(x\), dyadic host size \(n_0\asymp x^h\), \(h=2+8\varepsilon\), and \(\delta=x^{-\varepsilon/8}\). Within each occupied residue class sample a uniform subset of fixed size near \(a_t\delta n_0/64\). Use a bounded rounding adjustment to make total size \(N\) nearest \(\delta n_0\). The source evaluates this same mask with its original score
+\[
+ S(T)=\frac{(N-\delta n_0)^2}{2\delta n_0}+\frac{B(T)}{4M},
+ \quad M=C_b x^{-2}\delta n_0\sum_{p\ {\rm eligible}}\log(p)/p.
+\]
+Here \(B(T)\) is the weighted retained mass on bad orbits. Its term is zero if the eligible weight vanishes. The mean score under the original uniform law is at least \((1-\delta)/2\). Every finite mask has positive weight under that law. \orig{Development/AutomorphicArithmetic/ThickFrames/select}{136}{Internal comparison}, \orig{Development/AutomorphicArithmetic/ThickFrames/topsGroup}{101}{original sampling law}.
+
+On a projected node let \(\mu\) be the mean rate across all its leaves and \(\nu\) the sum of its even-child rates divided by node width. On any cell of \(u=\lceil1/\delta\rceil\) sites these are the limiting total and even-site inclusion means, uniformly in the starting point. Inside a single residue class they are \(a_t,a_t/2\). Under independent trials at these small marginals the empty probability tends to \(e^{-\mu}\) and the even-singleton probability to \(\nu e^{-\mu}\). The source requires \(3r+1\) empty cells and \(3r\) even singletons in a specified order. The sufficient per-cell factor is
+\[
+                  e^{-\mu}\nu^{3r/(6r+1)}>1/10.
+\]
+For \(r\ge2\), check \(e^{2\mu}<100\nu\) if \(\nu\le1\), or \(e^{13\mu}<10^{13}\nu^6\) otherwise. All 57 distinct parameter pairs in the decision rule passed with strict rational Taylor bounds. For example the difficult sparse half has \(\mu=101/256\) and \(\nu=3/128\); the check is \(e^{101/128}<75/32\). Keeping the original proportion of cell types matters here. \orig{Formalism/SubspaceCounting/GoodOrbitIntervalTileCondition}{12}{Marked cells}, \orig{Formalism/SharpRestriction/GrowthBounds/UnramifiedQuadraticSetting}{237}{window constants}.
+
+Condition on one retained tag. In each stratum of remaining size \(m'\), the probability of a local binary pattern of length \(\ell\) is at most \((m')^\ell/(m')_\ell\) times the independent probability at the matched marginals. The combined factor is \(1+o(1)\) on the required blocks of \(O(u\log x)\) sites. The short-window cap gives \(O(\delta^{K}+n_0\delta^{K+1})=o(x^{-2})\), where \(K\ge8(h+2)/\varepsilon\). For long windows the rate cap \(19/8\) gives a factorial-moment base strictly below \(1/2\) using the source's \(6eG'\delta\) threshold. For tiles, skip the tag's tile and use the remaining \(M_0\ge(h+3)10^{6r+1}\log x\) disjoint trials. Each anchored failure probability is \(o(x^{-2})\) after the union over starts. Hence \(\mathbb E B=o(M)\), and some exact-count choices have \(S(T)=o(1)\). Their dyadic exposure also concentrates by the bounded-score variance estimate for sampling without replacement. \href{https://github.com/nousentllc/riemann-hypothesis/blob/f667dea291ef2a5b204810ad63611ef6b718b18a/research/uriel/experiments/recovery-frontier/evidence/profiles/AUDIT.md}{Prior fixed-count and prime-direction transfer}.
+
+\pagepart{What was run and how to reproduce it}
+\textbf{Coverage.} The finite verifier ran all \(128\times128=16{,}384\) sparse relative layouts before using affine normalization. The canonical reservoir proof works for every independent dense-half labeling. These two facts cover the entire 64-leaf tree. The verifier also recomputed the \(57\) cell inequalities with rational upper bounds on the exponential series. The 32-residue search includes a hand-worked favorable labeling and an exhaustive adverse-order ceiling. A separate 64-residue arc control confirms that even a plausible six-hole design can fail its canonical-even obligations.
+
+\textbf{A certificate for your own labeling.} Give the 64 residues in increasing order of their least numeric label as a JSON list. From the study directory, the program below prints all retained classes, their rational rates, the missing steps in every occupied node and the two exact totals. Without an input file it emits the worked example. Its regression check reproduced the example and checked all 2,048 normalized sparse layouts plus 256 fixed-seed labelings; the universal coverage comes from the decision rule.
+\begin{verbatim}
+python3 -B evidence/certificate.py --labels labels.json
+python3 -B evidence/certificate.py --check
+python3 -B evidence/alternative/verify.py --check
+python3 -B evidence/hand/verify.py --check
+\end{verbatim}
+
+\textbf{Kernel checks.} Lean 4.33.1 and \texttt{leanchecker} replayed five supplementary declarations. They check the seven nonreversal row inequalities by finite kernel computation, the last switch word's reversal, the exceptional ledger, the \(14/11\) margin and a conservative scalar conversion to a recovered fraction. In particular the kernel check for the seven rows recomputes the arithmetic for all 127 words. The stronger displayed quotient \(12087/120814\) uses the separate column bounds in the worked argument. The full decision-to-arithmetic transport and the RH development were not rebuilt in this run.
+
+\textbf{Interpretation.} The limiting coefficient can be computed on a small quotient because missing a residue difference rules out every lifted edge in that class. The mask itself remains a choice on the large arithmetic host. A fixed prime cutoff for the inequality would require effective bounds on the original error terms; this experiment supplies none. The finite bound \(6/61\) concerns fixed-rate, edge-realizing 32-residue profiles capped at \(2.4\delta\). It leaves open principled ways to improve the 64-residue guarantee or alter the within-class construction at a smaller modulus.
+
+\textbf{Reproduction record.} The accompanying README gives the full commands, source pin, toolchain and Mathlib revision. The saved JSON separates the literal rates and per-node differences of one example from the all-label coverage results. The SHA-256 manifest covers the manuscript, source, scripts and evidence.
+\end{document}

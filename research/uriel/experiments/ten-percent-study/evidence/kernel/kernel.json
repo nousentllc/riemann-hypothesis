@@ -1,0 +1,15 @@
+{
+  "scope": "finite matching ledgers, exceptional vertex arithmetic, positive-denominator conversion",
+  "version": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "axioms": [
+    "'TenPercent.exceptional_ledger' depends on axioms: [propext]",
+    "'TenPercent.fraction_bound' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'TenPercent.last_swap_word_is_reversal' depends on axioms: [propext]",
+    "'TenPercent.seven_nonreversal_rows' depends on axioms: [propext]",
+    "'TenPercent.weighted_margin' depends on axioms: [propext, Classical.choice, Quot.sound]"
+  ],
+  "source_sha256": "827d795578819cd2ce0eba327b4658cb4400a752f94bc12aea9252484f60024b",
+  "object_sha256": "2a1f0c5ce2b242a411db4e3f9dc8bc285591ff019554da111ad67851e646ff54",
+  "kernel": "replaying TenPercent"
+}

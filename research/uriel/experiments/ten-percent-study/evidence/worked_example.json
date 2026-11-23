@@ -1,0 +1,524 @@
+{
+  "label_order": [
+    0,
+    32,
+    16,
+    48,
+    8,
+    40,
+    24,
+    56,
+    4,
+    36,
+    20,
+    52,
+    12,
+    44,
+    28,
+    60,
+    2,
+    34,
+    18,
+    50,
+    10,
+    42,
+    26,
+    58,
+    6,
+    38,
+    22,
+    54,
+    14,
+    46,
+    30,
+    62,
+    1,
+    33,
+    17,
+    49,
+    9,
+    41,
+    25,
+    57,
+    5,
+    37,
+    21,
+    53,
+    13,
+    45,
+    29,
+    61,
+    3,
+    35,
+    51,
+    19,
+    43,
+    11,
+    27,
+    59,
+    7,
+    39,
+    55,
+    23,
+    47,
+    15,
+    31,
+    63
+  ],
+  "pairing": [
+    7,
+    6,
+    5,
+    4,
+    3,
+    2,
+    1,
+    0
+  ],
+  "rule": "weighted reversal",
+  "sparse_ranks": [
+    0,
+    8,
+    12,
+    14,
+    15
+  ],
+  "rates": {
+    "0": "411/176",
+    "1": "3/4",
+    "2": "411/176",
+    "3": "19/8",
+    "4": "411/176",
+    "6": "411/176",
+    "7": "19/8",
+    "8": "411/176",
+    "12": "411/176",
+    "14": "411/176",
+    "16": "411/176",
+    "20": "411/176",
+    "22": "411/176",
+    "24": "411/176",
+    "28": "411/176",
+    "31": "19/8",
+    "32": "411/176",
+    "36": "411/176",
+    "40": "411/176",
+    "44": "411/176",
+    "46": "411/176",
+    "47": "19/8",
+    "48": "411/176",
+    "52": "411/176",
+    "54": "411/176",
+    "56": "411/176",
+    "60": "411/176",
+    "63": "19/8"
+  },
+  "numerator": "12087/44",
+  "denominator": "60407/22",
+  "ratio": "12087/120814",
+  "denominator_leaf_tail": "64",
+  "nodes": [
+    {
+      "width": 64,
+      "coset": 0,
+      "missing": [],
+      "odd_mass": "101/8",
+      "numerator": "0",
+      "denominator": "808"
+    },
+    {
+      "width": 32,
+      "coset": 0,
+      "missing": [],
+      "odd_mass": "1233/88",
+      "numerator": "0",
+      "denominator": "4932/11"
+    },
+    {
+      "width": 32,
+      "coset": 1,
+      "missing": [
+        5,
+        7,
+        11,
+        13,
+        19,
+        21,
+        25,
+        27
+      ],
+      "odd_mass": "95/8",
+      "numerator": "190",
+      "denominator": "380"
+    },
+    {
+      "width": 16,
+      "coset": 0,
+      "missing": [],
+      "odd_mass": "411/22",
+      "numerator": "0",
+      "denominator": "3288/11"
+    },
+    {
+      "width": 16,
+      "coset": 2,
+      "missing": [
+        7,
+        9
+      ],
+      "odd_mass": "2055/176",
+      "numerator": "2055/44",
+      "denominator": "2055/11"
+    },
+    {
+      "width": 16,
+      "coset": 1,
+      "missing": [
+        1,
+        3,
+        5,
+        7,
+        9,
+        11,
+        13,
+        15
+      ],
+      "odd_mass": "0",
+      "numerator": "0",
+      "denominator": "0"
+    },
+    {
+      "width": 16,
+      "coset": 3,
+      "missing": [
+        3,
+        13
+      ],
+      "odd_mass": "19/2",
+      "numerator": "38",
+      "denominator": "152"
+    },
+    {
+      "width": 8,
+      "coset": 0,
+      "missing": [],
+      "odd_mass": "411/44",
+      "numerator": "0",
+      "denominator": "822/11"
+    },
+    {
+      "width": 8,
+      "coset": 4,
+      "missing": [],
+      "odd_mass": "411/44",
+      "numerator": "0",
+      "denominator": "822/11"
+    },
+    {
+      "width": 8,
+      "coset": 2,
+      "missing": [
+        1,
+        3,
+        5,
+        7
+      ],
+      "odd_mass": "0",
+      "numerator": "0",
+      "denominator": "0"
+    },
+    {
+      "width": 8,
+      "coset": 6,
+      "missing": [],
+      "odd_mass": "411/88",
+      "numerator": "0",
+      "denominator": "411/11"
+    },
+    {
+      "width": 8,
+      "coset": 1,
+      "missing": [
+        1,
+        3,
+        5,
+        7
+      ],
+      "odd_mass": "0",
+      "numerator": "0",
+      "denominator": "0"
+    },
+    {
+      "width": 8,
+      "coset": 3,
+      "missing": [
+        1,
+        3,
+        5,
+        7
+      ],
+      "odd_mass": "0",
+      "numerator": "0",
+      "denominator": "0"
+    },
+    {
+      "width": 8,
+      "coset": 7,
+      "missing": [],
+      "odd_mass": "57/8",
+      "numerator": "0",
+      "denominator": "57"
+    },
+    {
+      "width": 4,
+      "coset": 0,
+      "missing": [],
+      "odd_mass": "411/88",
+      "numerator": "0",
+      "denominator": "411/22"
+    },
+    {
+      "width": 4,
+      "coset": 8,
+      "missing": [],
+      "odd_mass": "411/88",
+      "numerator": "0",
+      "denominator": "411/22"
+    },
+    {
+      "width": 4,
+      "coset": 4,
+      "missing": [],
+      "odd_mass": "411/88",
+      "numerator": "0",
+      "denominator": "411/22"
+    },
+    {
+      "width": 4,
+      "coset": 12,
+      "missing": [],
+      "odd_mass": "411/88",
+      "numerator": "0",
+      "denominator": "411/22"
+    },
+    {
+      "width": 4,
+      "coset": 2,
+      "missing": [
+        1,
+        3
+      ],
+      "odd_mass": "0",
+      "numerator": "0",
+      "denominator": "0"
+    },
+    {
+      "width": 4,
+      "coset": 6,
+      "missing": [],
+      "odd_mass": "411/88",
+      "numerator": "0",
+      "denominator": "411/22"
+    },
+    {
+      "width": 4,
+      "coset": 14,
+      "missing": [
+        1,
+        3
+      ],
+      "odd_mass": "0",
+      "numerator": "0",
+      "denominator": "0"
+    },
+    {
+      "width": 4,
+      "coset": 1,
+      "missing": [
+        1,
+        3
+      ],
+      "odd_mass": "0",
+      "numerator": "0",
+      "denominator": "0"
+    },
+    {
+      "width": 4,
+      "coset": 3,
+      "missing": [
+        1,
+        3
+      ],
+      "odd_mass": "0",
+      "numerator": "0",
+      "denominator": "0"
+    },
+    {
+      "width": 4,
+      "coset": 7,
+      "missing": [
+        1,
+        3
+      ],
+      "odd_mass": "0",
+      "numerator": "0",
+      "denominator": "0"
+    },
+    {
+      "width": 4,
+      "coset": 15,
+      "missing": [],
+      "odd_mass": "19/4",
+      "numerator": "0",
+      "denominator": "19"
+    },
+    {
+      "width": 2,
+      "coset": 0,
+      "missing": [],
+      "odd_mass": "411/176",
+      "numerator": "0",
+      "denominator": "411/88"
+    },
+    {
+      "width": 2,
+      "coset": 16,
+      "missing": [],
+      "odd_mass": "411/176",
+      "numerator": "0",
+      "denominator": "411/88"
+    },
+    {
+      "width": 2,
+      "coset": 8,
+      "missing": [],
+      "odd_mass": "411/176",
+      "numerator": "0",
+      "denominator": "411/88"
+    },
+    {
+      "width": 2,
+      "coset": 24,
+      "missing": [],
+      "odd_mass": "411/176",
+      "numerator": "0",
+      "denominator": "411/88"
+    },
+    {
+      "width": 2,
+      "coset": 4,
+      "missing": [],
+      "odd_mass": "411/176",
+      "numerator": "0",
+      "denominator": "411/88"
+    },
+    {
+      "width": 2,
+      "coset": 20,
+      "missing": [],
+      "odd_mass": "411/176",
+      "numerator": "0",
+      "denominator": "411/88"
+    },
+    {
+      "width": 2,
+      "coset": 12,
+      "missing": [],
+      "odd_mass": "411/176",
+      "numerator": "0",
+      "denominator": "411/88"
+    },
+    {
+      "width": 2,
+      "coset": 28,
+      "missing": [],
+      "odd_mass": "411/176",
+      "numerator": "0",
+      "denominator": "411/88"
+    },
+    {
+      "width": 2,
+      "coset": 2,
+      "missing": [
+        1
+      ],
+      "odd_mass": "0",
+      "numerator": "0",
+      "denominator": "0"
+    },
+    {
+      "width": 2,
+      "coset": 6,
+      "missing": [
+        1
+      ],
+      "odd_mass": "0",
+      "numerator": "0",
+      "denominator": "0"
+    },
+    {
+      "width": 2,
+      "coset": 22,
+      "missing": [],
+      "odd_mass": "411/176",
+      "numerator": "0",
+      "denominator": "411/88"
+    },
+    {
+      "width": 2,
+      "coset": 14,
+      "missing": [],
+      "odd_mass": "411/176",
+      "numerator": "0",
+      "denominator": "411/88"
+    },
+    {
+      "width": 2,
+      "coset": 1,
+      "missing": [
+        1
+      ],
+      "odd_mass": "0",
+      "numerator": "0",
+      "denominator": "0"
+    },
+    {
+      "width": 2,
+      "coset": 3,
+      "missing": [
+        1
+      ],
+      "odd_mass": "0",
+      "numerator": "0",
+      "denominator": "0"
+    },
+    {
+      "width": 2,
+      "coset": 7,
+      "missing": [
+        1
+      ],
+      "odd_mass": "0",
+      "numerator": "0",
+      "denominator": "0"
+    },
+    {
+      "width": 2,
+      "coset": 15,
+      "missing": [
+        1
+      ],
+      "odd_mass": "0",
+      "numerator": "0",
+      "denominator": "0"
+    },
+    {
+      "width": 2,
+      "coset": 31,
+      "missing": [],
+      "odd_mass": "19/8",
+      "numerator": "0",
+      "denominator": "19/4"
+    }
+  ]
+}

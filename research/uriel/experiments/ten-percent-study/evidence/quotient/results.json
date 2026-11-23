@@ -1,0 +1,26 @@
+{
+  "distinct_templates": 13312,
+  "affine_parameter_triples": 53248,
+  "test_orientations": 129,
+  "orientation_zero": {
+    "orientation": "0",
+    "geometric_candidates": 1,
+    "mark_candidates": 1,
+    "best_ratio": "100/533",
+    "best_template": [
+      13,
+      31,
+      25
+    ]
+  },
+  "orientations_passing_ten_percent": 1,
+  "no_even_child_candidate": 81,
+  "no_mark_candidate": 112,
+  "first_even_child_obstruction": {
+    "orientation": "5517290612998927258",
+    "geometric_candidates": 0,
+    "mark_candidates": 0,
+    "best_ratio": "0",
+    "best_template": null
+  }
+}
