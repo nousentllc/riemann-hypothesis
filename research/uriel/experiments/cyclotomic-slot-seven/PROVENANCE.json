@@ -78,6 +78,8 @@
     "evidence/verification/reproduce-finite.json",
     "evidence/verification/reproduce-pari.json",
     "evidence/verification/reproduce-audit.json",
+    "evidence/verification/independent-kernel.json",
+    "evidence/verification/reproduce-full-offline.json",
     "evidence/verification/render.json"
   ]
 }
