@@ -1,0 +1,5 @@
+# Registered follow-up after the primary panel
+
+The primary scalar control has kappa=6 but auxiliary rank 1 and curvature 2. The source requires kappa no larger than the auxiliary rank and, for its parameter choice, no larger than Sc=cG/4. Test whether enforcing these relations changes the opposite mask winners before reporting them as a mechanism. Use n=32, p in {101,1009}, k=16, t=13, m=2, j=1, Nm=k+m(t+1)=44, kappa=15, Sc=32, cG=128, eta=1, all three coefficients dl1, dl2 and Pr1 equal to one, and lower offsets lambda=b/16, thin=lambda/n. Put the scale height at p⁵/2 and b=floor(a/(2p)), and use ceil(a) for the top height. Predict the direct winner for {0,3} and the universal winner for {3,4}. The latter retains both its pointwise penalty and its positive fixed orbit cost. Source obligations for the full frame, scale and service remain outside this control.
+
+As a separate aggregation control treat the two primary masks as two served orbits of one prime. The definition adds their individual maxima. Compute the loss made by maximizing after summing branches.

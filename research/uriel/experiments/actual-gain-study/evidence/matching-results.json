@@ -1,0 +1,1125 @@
+{
+  "n": 8,
+  "panels": 72,
+  "mask_orbit_evaluations": 18432,
+  "edge_free_mask": [
+    0,
+    3
+  ],
+  "correlated_zero_probability": "1",
+  "independent_zero_probability": "81/256",
+  "scale_certificate": {
+    "epsilon": "1/64",
+    "x": "2^8192",
+    "min_long_orbit": "2^4096",
+    "delta": "2^-16",
+    "union_upper": "1/16",
+    "other_family_thresholds_checked": false
+  },
+  "panels_exact": [
+    {
+      "order": 0,
+      "profile": "uniform",
+      "step": 1,
+      "base": 0,
+      "length": 8,
+      "mean": "1",
+      "histogram": [
+        "81/256",
+        "27/64",
+        "27/128",
+        "3/64",
+        "1/256"
+      ],
+      "failure": "81/256",
+      "markov": "2401/4096"
+    },
+    {
+      "order": 0,
+      "profile": "uniform",
+      "step": 2,
+      "base": 0,
+      "length": 4,
+      "mean": "1/2",
+      "histogram": [
+        "9/16",
+        "3/8",
+        "1/16"
+      ],
+      "failure": "9/16",
+      "markov": "49/64"
+    },
+    {
+      "order": 0,
+      "profile": "uniform",
+      "step": 2,
+      "base": 1,
+      "length": 4,
+      "mean": "1/2",
+      "histogram": [
+        "9/16",
+        "3/8",
+        "1/16"
+      ],
+      "failure": "9/16",
+      "markov": "49/64"
+    },
+    {
+      "order": 0,
+      "profile": "uniform",
+      "step": 3,
+      "base": 0,
+      "length": 8,
+      "mean": "1",
+      "histogram": [
+        "81/256",
+        "27/64",
+        "27/128",
+        "3/64",
+        "1/256"
+      ],
+      "failure": "81/256",
+      "markov": "2401/4096"
+    },
+    {
+      "order": 0,
+      "profile": "uniform",
+      "step": 4,
+      "base": 0,
+      "length": 2,
+      "mean": "1/4",
+      "histogram": [
+        "3/4",
+        "1/4"
+      ],
+      "failure": "3/4",
+      "markov": "7/8"
+    },
+    {
+      "order": 0,
+      "profile": "uniform",
+      "step": 4,
+      "base": 1,
+      "length": 2,
+      "mean": "1/4",
+      "histogram": [
+        "3/4",
+        "1/4"
+      ],
+      "failure": "3/4",
+      "markov": "7/8"
+    },
+    {
+      "order": 0,
+      "profile": "uniform",
+      "step": 4,
+      "base": 2,
+      "length": 2,
+      "mean": "1/4",
+      "histogram": [
+        "3/4",
+        "1/4"
+      ],
+      "failure": "3/4",
+      "markov": "7/8"
+    },
+    {
+      "order": 0,
+      "profile": "uniform",
+      "step": 4,
+      "base": 3,
+      "length": 2,
+      "mean": "1/4",
+      "histogram": [
+        "3/4",
+        "1/4"
+      ],
+      "failure": "3/4",
+      "markov": "7/8"
+    },
+    {
+      "order": 0,
+      "profile": "uniform",
+      "step": 5,
+      "base": 0,
+      "length": 8,
+      "mean": "1",
+      "histogram": [
+        "81/256",
+        "27/64",
+        "27/128",
+        "3/64",
+        "1/256"
+      ],
+      "failure": "81/256",
+      "markov": "2401/4096"
+    },
+    {
+      "order": 0,
+      "profile": "uniform",
+      "step": 6,
+      "base": 0,
+      "length": 4,
+      "mean": "1/2",
+      "histogram": [
+        "9/16",
+        "3/8",
+        "1/16"
+      ],
+      "failure": "9/16",
+      "markov": "49/64"
+    },
+    {
+      "order": 0,
+      "profile": "uniform",
+      "step": 6,
+      "base": 1,
+      "length": 4,
+      "mean": "1/2",
+      "histogram": [
+        "9/16",
+        "3/8",
+        "1/16"
+      ],
+      "failure": "9/16",
+      "markov": "49/64"
+    },
+    {
+      "order": 0,
+      "profile": "uniform",
+      "step": 7,
+      "base": 0,
+      "length": 8,
+      "mean": "1",
+      "histogram": [
+        "81/256",
+        "27/64",
+        "27/128",
+        "3/64",
+        "1/256"
+      ],
+      "failure": "81/256",
+      "markov": "2401/4096"
+    },
+    {
+      "order": 0,
+      "profile": "odd_low",
+      "step": 1,
+      "base": 0,
+      "length": 8,
+      "mean": "3/4",
+      "histogram": [
+        "28561/65536",
+        "6591/16384",
+        "4563/32768",
+        "351/16384",
+        "81/65536"
+      ],
+      "failure": "28561/65536",
+      "markov": "707281/1048576"
+    },
+    {
+      "order": 0,
+      "profile": "odd_low",
+      "step": 2,
+      "base": 0,
+      "length": 4,
+      "mean": "1/2",
+      "histogram": [
+        "9/16",
+        "3/8",
+        "1/16"
+      ],
+      "failure": "9/16",
+      "markov": "49/64"
+    },
+    {
+      "order": 0,
+      "profile": "odd_low",
+      "step": 2,
+      "base": 1,
+      "length": 4,
+      "mean": "9/32",
+      "histogram": [
+        "3025/4096",
+        "495/2048",
+        "81/4096"
+      ],
+      "failure": "3025/4096",
+      "markov": "14161/16384"
+    },
+    {
+      "order": 0,
+      "profile": "odd_low",
+      "step": 3,
+      "base": 0,
+      "length": 8,
+      "mean": "3/4",
+      "histogram": [
+        "28561/65536",
+        "6591/16384",
+        "4563/32768",
+        "351/16384",
+        "81/65536"
+      ],
+      "failure": "28561/65536",
+      "markov": "707281/1048576"
+    },
+    {
+      "order": 0,
+      "profile": "odd_low",
+      "step": 4,
+      "base": 0,
+      "length": 2,
+      "mean": "1/4",
+      "histogram": [
+        "3/4",
+        "1/4"
+      ],
+      "failure": "3/4",
+      "markov": "7/8"
+    },
+    {
+      "order": 0,
+      "profile": "odd_low",
+      "step": 4,
+      "base": 1,
+      "length": 2,
+      "mean": "9/64",
+      "histogram": [
+        "55/64",
+        "9/64"
+      ],
+      "failure": "55/64",
+      "markov": "119/128"
+    },
+    {
+      "order": 0,
+      "profile": "odd_low",
+      "step": 4,
+      "base": 2,
+      "length": 2,
+      "mean": "1/4",
+      "histogram": [
+        "3/4",
+        "1/4"
+      ],
+      "failure": "3/4",
+      "markov": "7/8"
+    },
+    {
+      "order": 0,
+      "profile": "odd_low",
+      "step": 4,
+      "base": 3,
+      "length": 2,
+      "mean": "9/64",
+      "histogram": [
+        "55/64",
+        "9/64"
+      ],
+      "failure": "55/64",
+      "markov": "119/128"
+    },
+    {
+      "order": 0,
+      "profile": "odd_low",
+      "step": 5,
+      "base": 0,
+      "length": 8,
+      "mean": "3/4",
+      "histogram": [
+        "28561/65536",
+        "6591/16384",
+        "4563/32768",
+        "351/16384",
+        "81/65536"
+      ],
+      "failure": "28561/65536",
+      "markov": "707281/1048576"
+    },
+    {
+      "order": 0,
+      "profile": "odd_low",
+      "step": 6,
+      "base": 0,
+      "length": 4,
+      "mean": "1/2",
+      "histogram": [
+        "9/16",
+        "3/8",
+        "1/16"
+      ],
+      "failure": "9/16",
+      "markov": "49/64"
+    },
+    {
+      "order": 0,
+      "profile": "odd_low",
+      "step": 6,
+      "base": 1,
+      "length": 4,
+      "mean": "9/32",
+      "histogram": [
+        "3025/4096",
+        "495/2048",
+        "81/4096"
+      ],
+      "failure": "3025/4096",
+      "markov": "14161/16384"
+    },
+    {
+      "order": 0,
+      "profile": "odd_low",
+      "step": 7,
+      "base": 0,
+      "length": 8,
+      "mean": "3/4",
+      "histogram": [
+        "28561/65536",
+        "6591/16384",
+        "4563/32768",
+        "351/16384",
+        "81/65536"
+      ],
+      "failure": "28561/65536",
+      "markov": "707281/1048576"
+    },
+    {
+      "order": 0,
+      "profile": "even_low",
+      "step": 1,
+      "base": 0,
+      "length": 8,
+      "mean": "3/4",
+      "histogram": [
+        "28561/65536",
+        "6591/16384",
+        "4563/32768",
+        "351/16384",
+        "81/65536"
+      ],
+      "failure": "28561/65536",
+      "markov": "707281/1048576"
+    },
+    {
+      "order": 0,
+      "profile": "even_low",
+      "step": 2,
+      "base": 0,
+      "length": 4,
+      "mean": "9/32",
+      "histogram": [
+        "3025/4096",
+        "495/2048",
+        "81/4096"
+      ],
+      "failure": "3025/4096",
+      "markov": "14161/16384"
+    },
+    {
+      "order": 0,
+      "profile": "even_low",
+      "step": 2,
+      "base": 1,
+      "length": 4,
+      "mean": "1/2",
+      "histogram": [
+        "9/16",
+        "3/8",
+        "1/16"
+      ],
+      "failure": "9/16",
+      "markov": "49/64"
+    },
+    {
+      "order": 0,
+      "profile": "even_low",
+      "step": 3,
+      "base": 0,
+      "length": 8,
+      "mean": "3/4",
+      "histogram": [
+        "28561/65536",
+        "6591/16384",
+        "4563/32768",
+        "351/16384",
+        "81/65536"
+      ],
+      "failure": "28561/65536",
+      "markov": "707281/1048576"
+    },
+    {
+      "order": 0,
+      "profile": "even_low",
+      "step": 4,
+      "base": 0,
+      "length": 2,
+      "mean": "9/64",
+      "histogram": [
+        "55/64",
+        "9/64"
+      ],
+      "failure": "55/64",
+      "markov": "119/128"
+    },
+    {
+      "order": 0,
+      "profile": "even_low",
+      "step": 4,
+      "base": 1,
+      "length": 2,
+      "mean": "1/4",
+      "histogram": [
+        "3/4",
+        "1/4"
+      ],
+      "failure": "3/4",
+      "markov": "7/8"
+    },
+    {
+      "order": 0,
+      "profile": "even_low",
+      "step": 4,
+      "base": 2,
+      "length": 2,
+      "mean": "9/64",
+      "histogram": [
+        "55/64",
+        "9/64"
+      ],
+      "failure": "55/64",
+      "markov": "119/128"
+    },
+    {
+      "order": 0,
+      "profile": "even_low",
+      "step": 4,
+      "base": 3,
+      "length": 2,
+      "mean": "1/4",
+      "histogram": [
+        "3/4",
+        "1/4"
+      ],
+      "failure": "3/4",
+      "markov": "7/8"
+    },
+    {
+      "order": 0,
+      "profile": "even_low",
+      "step": 5,
+      "base": 0,
+      "length": 8,
+      "mean": "3/4",
+      "histogram": [
+        "28561/65536",
+        "6591/16384",
+        "4563/32768",
+        "351/16384",
+        "81/65536"
+      ],
+      "failure": "28561/65536",
+      "markov": "707281/1048576"
+    },
+    {
+      "order": 0,
+      "profile": "even_low",
+      "step": 6,
+      "base": 0,
+      "length": 4,
+      "mean": "9/32",
+      "histogram": [
+        "3025/4096",
+        "495/2048",
+        "81/4096"
+      ],
+      "failure": "3025/4096",
+      "markov": "14161/16384"
+    },
+    {
+      "order": 0,
+      "profile": "even_low",
+      "step": 6,
+      "base": 1,
+      "length": 4,
+      "mean": "1/2",
+      "histogram": [
+        "9/16",
+        "3/8",
+        "1/16"
+      ],
+      "failure": "9/16",
+      "markov": "49/64"
+    },
+    {
+      "order": 0,
+      "profile": "even_low",
+      "step": 7,
+      "base": 0,
+      "length": 8,
+      "mean": "3/4",
+      "histogram": [
+        "28561/65536",
+        "6591/16384",
+        "4563/32768",
+        "351/16384",
+        "81/65536"
+      ],
+      "failure": "28561/65536",
+      "markov": "707281/1048576"
+    },
+    {
+      "order": 1,
+      "profile": "uniform",
+      "step": 1,
+      "base": 1,
+      "length": 8,
+      "mean": "1",
+      "histogram": [
+        "81/256",
+        "27/64",
+        "27/128",
+        "3/64",
+        "1/256"
+      ],
+      "failure": "81/256",
+      "markov": "2401/4096"
+    },
+    {
+      "order": 1,
+      "profile": "uniform",
+      "step": 2,
+      "base": 1,
+      "length": 4,
+      "mean": "1/2",
+      "histogram": [
+        "9/16",
+        "3/8",
+        "1/16"
+      ],
+      "failure": "9/16",
+      "markov": "49/64"
+    },
+    {
+      "order": 1,
+      "profile": "uniform",
+      "step": 2,
+      "base": 6,
+      "length": 4,
+      "mean": "1/2",
+      "histogram": [
+        "9/16",
+        "3/8",
+        "1/16"
+      ],
+      "failure": "9/16",
+      "markov": "49/64"
+    },
+    {
+      "order": 1,
+      "profile": "uniform",
+      "step": 3,
+      "base": 1,
+      "length": 8,
+      "mean": "1",
+      "histogram": [
+        "81/256",
+        "27/64",
+        "27/128",
+        "3/64",
+        "1/256"
+      ],
+      "failure": "81/256",
+      "markov": "2401/4096"
+    },
+    {
+      "order": 1,
+      "profile": "uniform",
+      "step": 4,
+      "base": 1,
+      "length": 2,
+      "mean": "1/4",
+      "histogram": [
+        "3/4",
+        "1/4"
+      ],
+      "failure": "3/4",
+      "markov": "7/8"
+    },
+    {
+      "order": 1,
+      "profile": "uniform",
+      "step": 4,
+      "base": 6,
+      "length": 2,
+      "mean": "1/4",
+      "histogram": [
+        "3/4",
+        "1/4"
+      ],
+      "failure": "3/4",
+      "markov": "7/8"
+    },
+    {
+      "order": 1,
+      "profile": "uniform",
+      "step": 4,
+      "base": 3,
+      "length": 2,
+      "mean": "1/4",
+      "histogram": [
+        "3/4",
+        "1/4"
+      ],
+      "failure": "3/4",
+      "markov": "7/8"
+    },
+    {
+      "order": 1,
+      "profile": "uniform",
+      "step": 4,
+      "base": 4,
+      "length": 2,
+      "mean": "1/4",
+      "histogram": [
+        "3/4",
+        "1/4"
+      ],
+      "failure": "3/4",
+      "markov": "7/8"
+    },
+    {
+      "order": 1,
+      "profile": "uniform",
+      "step": 5,
+      "base": 1,
+      "length": 8,
+      "mean": "1",
+      "histogram": [
+        "81/256",
+        "27/64",
+        "27/128",
+        "3/64",
+        "1/256"
+      ],
+      "failure": "81/256",
+      "markov": "2401/4096"
+    },
+    {
+      "order": 1,
+      "profile": "uniform",
+      "step": 6,
+      "base": 1,
+      "length": 4,
+      "mean": "1/2",
+      "histogram": [
+        "9/16",
+        "3/8",
+        "1/16"
+      ],
+      "failure": "9/16",
+      "markov": "49/64"
+    },
+    {
+      "order": 1,
+      "profile": "uniform",
+      "step": 6,
+      "base": 6,
+      "length": 4,
+      "mean": "1/2",
+      "histogram": [
+        "9/16",
+        "3/8",
+        "1/16"
+      ],
+      "failure": "9/16",
+      "markov": "49/64"
+    },
+    {
+      "order": 1,
+      "profile": "uniform",
+      "step": 7,
+      "base": 1,
+      "length": 8,
+      "mean": "1",
+      "histogram": [
+        "81/256",
+        "27/64",
+        "27/128",
+        "3/64",
+        "1/256"
+      ],
+      "failure": "81/256",
+      "markov": "2401/4096"
+    },
+    {
+      "order": 1,
+      "profile": "odd_low",
+      "step": 1,
+      "base": 1,
+      "length": 8,
+      "mean": "3/4",
+      "histogram": [
+        "28561/65536",
+        "6591/16384",
+        "4563/32768",
+        "351/16384",
+        "81/65536"
+      ],
+      "failure": "28561/65536",
+      "markov": "707281/1048576"
+    },
+    {
+      "order": 1,
+      "profile": "odd_low",
+      "step": 2,
+      "base": 1,
+      "length": 4,
+      "mean": "9/32",
+      "histogram": [
+        "3025/4096",
+        "495/2048",
+        "81/4096"
+      ],
+      "failure": "3025/4096",
+      "markov": "14161/16384"
+    },
+    {
+      "order": 1,
+      "profile": "odd_low",
+      "step": 2,
+      "base": 6,
+      "length": 4,
+      "mean": "1/2",
+      "histogram": [
+        "9/16",
+        "3/8",
+        "1/16"
+      ],
+      "failure": "9/16",
+      "markov": "49/64"
+    },
+    {
+      "order": 1,
+      "profile": "odd_low",
+      "step": 3,
+      "base": 1,
+      "length": 8,
+      "mean": "3/4",
+      "histogram": [
+        "28561/65536",
+        "6591/16384",
+        "4563/32768",
+        "351/16384",
+        "81/65536"
+      ],
+      "failure": "28561/65536",
+      "markov": "707281/1048576"
+    },
+    {
+      "order": 1,
+      "profile": "odd_low",
+      "step": 4,
+      "base": 1,
+      "length": 2,
+      "mean": "9/64",
+      "histogram": [
+        "55/64",
+        "9/64"
+      ],
+      "failure": "55/64",
+      "markov": "119/128"
+    },
+    {
+      "order": 1,
+      "profile": "odd_low",
+      "step": 4,
+      "base": 6,
+      "length": 2,
+      "mean": "1/4",
+      "histogram": [
+        "3/4",
+        "1/4"
+      ],
+      "failure": "3/4",
+      "markov": "7/8"
+    },
+    {
+      "order": 1,
+      "profile": "odd_low",
+      "step": 4,
+      "base": 3,
+      "length": 2,
+      "mean": "9/64",
+      "histogram": [
+        "55/64",
+        "9/64"
+      ],
+      "failure": "55/64",
+      "markov": "119/128"
+    },
+    {
+      "order": 1,
+      "profile": "odd_low",
+      "step": 4,
+      "base": 4,
+      "length": 2,
+      "mean": "1/4",
+      "histogram": [
+        "3/4",
+        "1/4"
+      ],
+      "failure": "3/4",
+      "markov": "7/8"
+    },
+    {
+      "order": 1,
+      "profile": "odd_low",
+      "step": 5,
+      "base": 1,
+      "length": 8,
+      "mean": "3/4",
+      "histogram": [
+        "28561/65536",
+        "6591/16384",
+        "4563/32768",
+        "351/16384",
+        "81/65536"
+      ],
+      "failure": "28561/65536",
+      "markov": "707281/1048576"
+    },
+    {
+      "order": 1,
+      "profile": "odd_low",
+      "step": 6,
+      "base": 1,
+      "length": 4,
+      "mean": "9/32",
+      "histogram": [
+        "3025/4096",
+        "495/2048",
+        "81/4096"
+      ],
+      "failure": "3025/4096",
+      "markov": "14161/16384"
+    },
+    {
+      "order": 1,
+      "profile": "odd_low",
+      "step": 6,
+      "base": 6,
+      "length": 4,
+      "mean": "1/2",
+      "histogram": [
+        "9/16",
+        "3/8",
+        "1/16"
+      ],
+      "failure": "9/16",
+      "markov": "49/64"
+    },
+    {
+      "order": 1,
+      "profile": "odd_low",
+      "step": 7,
+      "base": 1,
+      "length": 8,
+      "mean": "3/4",
+      "histogram": [
+        "28561/65536",
+        "6591/16384",
+        "4563/32768",
+        "351/16384",
+        "81/65536"
+      ],
+      "failure": "28561/65536",
+      "markov": "707281/1048576"
+    },
+    {
+      "order": 1,
+      "profile": "even_low",
+      "step": 1,
+      "base": 1,
+      "length": 8,
+      "mean": "3/4",
+      "histogram": [
+        "28561/65536",
+        "6591/16384",
+        "4563/32768",
+        "351/16384",
+        "81/65536"
+      ],
+      "failure": "28561/65536",
+      "markov": "707281/1048576"
+    },
+    {
+      "order": 1,
+      "profile": "even_low",
+      "step": 2,
+      "base": 1,
+      "length": 4,
+      "mean": "1/2",
+      "histogram": [
+        "9/16",
+        "3/8",
+        "1/16"
+      ],
+      "failure": "9/16",
+      "markov": "49/64"
+    },
+    {
+      "order": 1,
+      "profile": "even_low",
+      "step": 2,
+      "base": 6,
+      "length": 4,
+      "mean": "9/32",
+      "histogram": [
+        "3025/4096",
+        "495/2048",
+        "81/4096"
+      ],
+      "failure": "3025/4096",
+      "markov": "14161/16384"
+    },
+    {
+      "order": 1,
+      "profile": "even_low",
+      "step": 3,
+      "base": 1,
+      "length": 8,
+      "mean": "3/4",
+      "histogram": [
+        "28561/65536",
+        "6591/16384",
+        "4563/32768",
+        "351/16384",
+        "81/65536"
+      ],
+      "failure": "28561/65536",
+      "markov": "707281/1048576"
+    },
+    {
+      "order": 1,
+      "profile": "even_low",
+      "step": 4,
+      "base": 1,
+      "length": 2,
+      "mean": "1/4",
+      "histogram": [
+        "3/4",
+        "1/4"
+      ],
+      "failure": "3/4",
+      "markov": "7/8"
+    },
+    {
+      "order": 1,
+      "profile": "even_low",
+      "step": 4,
+      "base": 6,
+      "length": 2,
+      "mean": "9/64",
+      "histogram": [
+        "55/64",
+        "9/64"
+      ],
+      "failure": "55/64",
+      "markov": "119/128"
+    },
+    {
+      "order": 1,
+      "profile": "even_low",
+      "step": 4,
+      "base": 3,
+      "length": 2,
+      "mean": "1/4",
+      "histogram": [
+        "3/4",
+        "1/4"
+      ],
+      "failure": "3/4",
+      "markov": "7/8"
+    },
+    {
+      "order": 1,
+      "profile": "even_low",
+      "step": 4,
+      "base": 4,
+      "length": 2,
+      "mean": "9/64",
+      "histogram": [
+        "55/64",
+        "9/64"
+      ],
+      "failure": "55/64",
+      "markov": "119/128"
+    },
+    {
+      "order": 1,
+      "profile": "even_low",
+      "step": 5,
+      "base": 1,
+      "length": 8,
+      "mean": "3/4",
+      "histogram": [
+        "28561/65536",
+        "6591/16384",
+        "4563/32768",
+        "351/16384",
+        "81/65536"
+      ],
+      "failure": "28561/65536",
+      "markov": "707281/1048576"
+    },
+    {
+      "order": 1,
+      "profile": "even_low",
+      "step": 6,
+      "base": 1,
+      "length": 4,
+      "mean": "1/2",
+      "histogram": [
+        "9/16",
+        "3/8",
+        "1/16"
+      ],
+      "failure": "9/16",
+      "markov": "49/64"
+    },
+    {
+      "order": 1,
+      "profile": "even_low",
+      "step": 6,
+      "base": 6,
+      "length": 4,
+      "mean": "9/32",
+      "histogram": [
+        "3025/4096",
+        "495/2048",
+        "81/4096"
+      ],
+      "failure": "3025/4096",
+      "markov": "14161/16384"
+    },
+    {
+      "order": 1,
+      "profile": "even_low",
+      "step": 7,
+      "base": 1,
+      "length": 8,
+      "mean": "3/4",
+      "histogram": [
+        "28561/65536",
+        "6591/16384",
+        "4563/32768",
+        "351/16384",
+        "81/65536"
+      ],
+      "failure": "28561/65536",
+      "markov": "707281/1048576"
+    }
+  ]
+}

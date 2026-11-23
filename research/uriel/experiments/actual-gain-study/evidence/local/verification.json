@@ -1,0 +1,69 @@
+{
+  "original_pin": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "lean": "819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+  "module": "ActualGain",
+  "supplement_sha256": "55d1d8c1db27c9f61cea6bebcfd836ea1fb3d13a331e146699f19d6b15ac2bfc",
+  "imported_inventory_checked": 1205,
+  "inventory_sha256": "f73a9ec6cb84b11274e6e773f21e44377b779970841cb3b290cc6bf314bf2843",
+  "original_closure": 293,
+  "original_modules_reused": 289,
+  "original_modules_rebuilt": {
+    "Development.AutomorphicArithmetic.OrbitLabellings.EvenAddOrderOfHPOfPowLe": {
+      "git_blob": "ce9ad89dfd62367f7adad58af0d4ee274c60c846",
+      "olean_sha256": "cd2a5102757c7b8a9c9873ae1de53b9d91f7e8d39d810f813f60c5acca19a0f2",
+      "published_olean_sha256": "7008036c73d4541d5f55a9843bcf3d6baa410d11bc0d44faba93a9e6a346f5fb",
+      "matches_published_object": false,
+      "kernel_replay": "replaying Development.AutomorphicArithmetic.OrbitLabellings.EvenAddOrderOfHPOfPowLe"
+    },
+    "Formalism.SharpRestriction.GrowthBounds.LogarithmicSums.Conclusion1OfGainBoundAll": {
+      "git_blob": "a37d19e7affc2c873c5a325fb25af7bf7834d9a0",
+      "olean_sha256": "f14559f9612bc981156e33fb5d2c4900aaa128981de8a0f6573bf3c313332b70",
+      "published_olean_sha256": "2abfb0d26eb3062b812ed5cc984f38302eebc4f767f74ef3cb2fe1b993cb6bdc",
+      "matches_published_object": false,
+      "kernel_replay": "replaying Formalism.SharpRestriction.GrowthBounds.LogarithmicSums.Conclusion1OfGainBoundAll"
+    },
+    "Formalism.SharpRestriction.GrowthBounds.LogarithmicSums.TsumTruncatedShiftLe": {
+      "git_blob": "50b57259d62479c45f43be44634b355db323c9ed",
+      "olean_sha256": "8b0890317293e0ca66f65d6457689f88316a46ed2351f3779be4c5dce3a8a01b",
+      "published_olean_sha256": "197667b17970b24512a5839109212d25eb58a4f50e364e4d66cea50122af0b06",
+      "matches_published_object": false,
+      "kernel_replay": "replaying Formalism.SharpRestriction.GrowthBounds.LogarithmicSums.TsumTruncatedShiftLe"
+    },
+    "Formalism.SharpRestriction.GrowthBounds.LogarithmicSums.PartnerCountOfCentral": {
+      "git_blob": "f677b9041604e334f1115ae16b96cd61b1c7ee55",
+      "olean_sha256": "7017533402887800157c97d7bce41c4f4760b18e22c11462377f4b8c714aa8d4",
+      "published_olean_sha256": "9b189fbb35926b921d6598bfcf9fc1672caf44a82d793086c9f112fa5cb88075",
+      "matches_published_object": false,
+      "kernel_replay": "replaying Formalism.SharpRestriction.GrowthBounds.LogarithmicSums.PartnerCountOfCentral"
+    }
+  },
+  "original_endpoint_replay": "replaying Formalism.SharpRestriction.GrowthBounds.LogarithmicSums.PartnerCountOfCentral",
+  "elaboration": [
+    "'Formalism.MainNotions.AuxBlock8.Pf.St.GainAudit.source_nonneg' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'Formalism.MainNotions.AuxBlock8.Pf.St.GainAudit.demand_split' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'Formalism.MainNotions.AuxBlock8.Pf.St.GainAudit.column_partition' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'Formalism.MainNotions.AuxBlock8.Pf.St.GainAudit.raw_difference' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'Formalism.MainNotions.AuxBlock8.Pf.St.GainAudit.high_charge' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'Formalism.MainNotions.AuxBlock8.Pf.St.GainAudit.served_max' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'Formalism.MainNotions.AuxBlock8.Pf.St.GainAudit.gainP_split' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'Formalism.MainNotions.AuxBlock8.Pf.St.GainAudit.excl_one_iff' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'Formalism.MainNotions.AuxBlock8.Pf.St.GainAudit.excluded_deep_zero' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'Formalism.MainNotions.AuxBlock8.Pf.St.GainAudit.excluded_eq_first' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'Formalism.MainNotions.AuxBlock8.Pf.St.GainAudit.first_directed' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'Formalism.MainNotions.AuxBlock8.Pf.St.GainAudit.odd_head_interval' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'Formalism.MainNotions.AuxBlock8.Pf.St.GainAudit.minima_interval' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'Formalism.MainNotions.AuxBlock8.Pf.St.GainAudit.row_tail' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'Formalism.MainNotions.AuxBlock8.Pf.St.GainAudit.premium_stability' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'Formalism.MainNotions.AuxBlock8.Pf.St.GainAudit.orbit_tail_budget' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'Formalism.MainNotions.AuxBlock8.Pf.St.GainAudit.actual_premium_interval' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'Formalism.MainNotions.AuxBlock8.Pf.St.GainAudit.bulk_credit_interval' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'Formalism.MainNotions.AuxBlock8.Pf.St.GainAudit.sv_premium' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'Formalism.MainNotions.AuxBlock8.Pf.St.GainAudit.served_value' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'Formalism.MainNotions.AuxBlock8.Pf.St.GainAudit.actual_served_interval' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'Formalism.MainNotions.AuxBlock8.Pf.St.GainAudit.decision_interval' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'Formalism.MainNotions.AuxBlock8.Pf.St.GainAudit.cutoff_exists' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'Formalism.MainNotions.AuxBlock8.Pf.St.GainAudit.demand_zero_after' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'Formalism.MainNotions.AuxBlock8.Pf.St.GainAudit.finite_column' depends on axioms: [propext, Classical.choice, Quot.sound]"
+  ],
+  "supplement_replay": "replaying ActualGain"
+}
