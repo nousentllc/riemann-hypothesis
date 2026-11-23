@@ -1,0 +1,47 @@
+{
+  "blocks": 1317624576693536910,
+  "certifying_starts": 11675,
+  "complete_tiles": 727452641127437,
+  "empty_tail": 8,
+  "epsilon": "1/64",
+  "incomplete_tile_length": 4170,
+  "index": 2,
+  "marked_tile_counts": {
+    "edited": 0,
+    "initial": 1
+  },
+  "matched_even": 5270498306774153980,
+  "matched_odd": 3952873730080615485,
+  "normalized_bad_score": {
+    "edited": 9223372036854769465,
+    "initial": 0
+  },
+  "order": 18446744073709551616,
+  "rank_and_density_obstruction_at_3": {
+    "average_occupancy_lower_bound_denominator": 40,
+    "average_occupancy_lower_bound_numerator": 85272,
+    "density_lower_bound_denominator": 40,
+    "density_lower_bound_numerator": 19,
+    "feasible_under_rank_and_density": false,
+    "local_cap": 2112,
+    "rank_lower_short_width": 4488
+  },
+  "rank_k": 36893488147419103232,
+  "retained_size": 9223372036854769465,
+  "short_window": {
+    "edited": {
+      "first_argmax": 31003,
+      "first_argmin": 18446744073709551601,
+      "max": 1940,
+      "min": 963
+    },
+    "initial": {
+      "first_argmax": 31003,
+      "first_argmin": 18446744073709551601,
+      "max": 1940,
+      "min": 964
+    }
+  },
+  "short_window_length": 3872,
+  "x": 134217728
+}
