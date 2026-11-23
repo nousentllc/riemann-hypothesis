@@ -1,0 +1,923 @@
+{
+  "audit_edges": [
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "callee": "UpperTheory.BernoulliSumsFrobeniusOrbits.select",
+      "caller": "UpperTheory.BernoulliSumsFrobeniusOrbits.topsGroup"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "callee": "UpperTheory.BernoulliSumsFrobeniusOrbits.shares_of_counts",
+      "caller": "UpperTheory.BernoulliSumsFrobeniusOrbits.topsGroup"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "callee": "UpperTheory.BernoulliSumsFrobeniusOrbits.orbit_sum",
+      "caller": "UpperTheory.BernoulliSumsFrobeniusOrbits.topsGroup"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "callee": "UpperTheory.BernoulliSumsFrobeniusOrbits.not_good_le",
+      "caller": "UpperTheory.BernoulliSumsFrobeniusOrbits.topsGroup"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "callee": "UpperTheory.BernoulliSumsFrobeniusOrbits.topsGroup",
+      "caller": "UpperTheory.BernoulliSumsFrobeniusOrbits.topsFrame"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "callee": "UpperTheory.BernoulliSumsFrobeniusOrbits.topsFrame",
+      "caller": "UpperTheory.BernoulliSumsFrobeniusOrbits.topsBase"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "callee": "UpperTheory.BernoulliSumsFrobeniusOrbits.topsBase",
+      "caller": "UpperTheory.BernoulliSumsFrobeniusOrbits.topsChoiceH"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "callee": "UpperTheory.BernoulliSumsFrobeniusOrbits.topsChoiceH",
+      "caller": "UpperTheory.T3.hostOfFieldOf"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "callee": "UpperTheory.Top.pairRows",
+      "caller": "UpperTheory.T3.hostOfFieldOf"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "callee": "UpperTheory.Top.boundedTw",
+      "caller": "UpperTheory.T3.supplyOfAdmOf"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "callee": "UpperTheory.Top.winPairs",
+      "caller": "UpperTheory.T3.supplyOfAdmOf"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "callee": "QH.pairEx",
+      "caller": "UpperTheory.T3.supplyOfAdmOf"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "callee": "QH.pair_exists",
+      "caller": "QH.pairEx"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "callee": "QH.kappa4",
+      "caller": "QH.pairEx"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "callee": "UpperTheory.Comparison\u2082.tops_sum",
+      "caller": "UpperTheory.Comparison\u2082.charsA"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "callee": "UpperTheory.Comparison\u2082.charsA",
+      "caller": "UpperTheory.Comparison\u2082.core_gm"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "callee": "UpperTheory.Comparison\u2082.gmA_eq",
+      "caller": "UpperTheory.Comparison\u2082.core_gm"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "callee": "UpperTheory.Comparison\u2082.sigA_le",
+      "caller": "UpperTheory.Comparison\u2082.core_gm"
+    },
+    {
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "callee": "UpperTheory.Top.eFamC_of_cls",
+      "caller": "UpperTheory.Top.zeroFreeAll_of_topG"
+    }
+  ],
+  "axiom_auditor_sha256": "d237167ea8a650442c45130bdd14da760739d109e8b63bad3739ebb9ec870db1",
+  "finite": {
+    "byte_match": true,
+    "enumeration_source_sha256": "d14e96af94e2eb44cbf0538b3108431a7995e765d0d23ded79cd0e963d3a3e21",
+    "result_sha256": "42e6cd32e14ae39f21b50b83694030c94358d0550105acf1145acb2f55280484"
+  },
+  "flags": [
+    "-j1",
+    "--tstack=400000",
+    "-DautoImplicit=false",
+    "-DrelaxedAutoImplicit=false",
+    "-DmaxSynthPendingDepth=3",
+    "-Dpp.unicode.fun=true",
+    "-DmaxHeartbeats=4000000"
+  ],
+  "local": {
+    "Audit": {
+      "direct_imports": [
+        "Development.AutomorphicArithmetic.CharacterBoxes.ZeroFreeAllOfTopG",
+        "Development.AutomorphicArithmetic.ShortNorms.hostOfFieldOf",
+        "Development.AutomorphicArithmetic.ShortNorms.supplyOfAdmOf"
+      ],
+      "kind": "experiment",
+      "olean_sha256": "75197393ba98971ffa4617a2802e1379afb470ccf24f9cd3e23db20161fd2e10",
+      "replay": "replaying Audit",
+      "source_sha256": "2bf51bd1cb58a86b33d54c0788f0dd7a65666fdf3f9b12415662d9b70fa35c78",
+      "theorem_axioms": {}
+    },
+    "Construction": {
+      "direct_imports": [
+        "Development.AutomorphicArithmetic.CoprimeRanks.AdmChi",
+        "StrongHost",
+        "StrongSupply",
+        "StrongWindow"
+      ],
+      "kind": "experiment",
+      "olean_sha256": "eb33ca493e2e3401724ffbf2d2bf99b5393359d58abbf450557c1d056774b27b",
+      "replay": "replaying Construction",
+      "source_sha256": "a7ba0151ff8e131f34502d4320ebaf45e6a553a12fdebad943d2c29f7687e6c2",
+      "theorem_axioms": {
+        "UrielRetained.strong_host_supply": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "UrielRetained.strong_window_from_inputs": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "Enriched": {
+      "direct_imports": [
+        "Development.AbelianVarietyTheory.Definitions.GlobalTwisting.PairRowIffQdRows",
+        "Development.AutomorphicArithmetic.CharacterBoxes.ZeroFreeAllOfTopG"
+      ],
+      "kind": "parent",
+      "olean_sha256": "7c7f6db54407fcb3a882c584a96b881a3045fd61f556bf7ec9c4bf97eb9fbb96",
+      "replay": "replaying Enriched",
+      "source_sha256": "e2555cfc51d868cf39443aa8472aafee05682a02e429058b401c9b643b5cae30",
+      "theorem_axioms": {
+        "UrielJoint.JointAt._proof_1": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "UrielJoint.family_with_joint_witness": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "UrielJoint.jointAt_of_qdRowsF": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "UrielJoint.supply_withRow": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "HostHandoff": {
+      "direct_imports": [
+        "JointControls"
+      ],
+      "kind": "experiment",
+      "olean_sha256": "8fb81a8a92f3fe6865a6a8b60e1f12cd9abacb8e5913721e8bce56c45bd43801",
+      "replay": "replaying HostHandoff",
+      "source_sha256": "cce495f19fbc222da05c5d3df937fff22fe4a260c39491e4f4ac47646f4aca3c",
+      "theorem_axioms": {
+        "UrielRetained.ChosenAt._proof_1": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "UrielRetained.ChosenAt._proof_2": [
+          "propext"
+        ],
+        "UrielRetained.ChosenAt._proof_3": [
+          "propext"
+        ],
+        "UrielRetained.ObservableInputs._proof_1": [
+          "propext"
+        ],
+        "UrielRetained.extend_every_selector_iff": [],
+        "UrielRetained.extend_joint": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "UrielRetained.independently_existing_disjoint": [],
+        "UrielRetained.index_transport_control": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "UrielRetained.of_design": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "UrielRetained.of_original_character_design": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "UrielRetained.shares_transport_control": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "JointControls": {
+      "direct_imports": [
+        "Enriched",
+        "OriginalDesign"
+      ],
+      "kind": "parent",
+      "olean_sha256": "cd57f9ea1d8f27fc6c721a1eabde51d4fcfb5c397b69c0d0b5d402201c6acdf2",
+      "replay": "replaying JointControls",
+      "source_sha256": "7bb133e17745934a37cf6eed7a8b1ae85407b641602fee69316bc920e3e547aa",
+      "theorem_axioms": {
+        "UrielJoint.joint_of_design": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "UrielJoint.joint_of_original_character_design": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "OriginalDesign": {
+      "direct_imports": [
+        "Development.AutomorphicArithmetic.CharacterBoxes.DesWin",
+        "Development.AutomorphicArithmetic.CharacterBoxes.Supply",
+        "Formalism.SharpRestriction.DesignExistsOfChoices"
+      ],
+      "kind": "parent",
+      "olean_sha256": "15129a306c8a450020ac7b5e885a5fd00c1bfb11a858a781ea18c7848cf4a5a9",
+      "replay": "replaying OriginalDesign",
+      "source_sha256": "4a392b2e0b756001b04837dc2193054b66b56dbabc300c24ac3772264ba3fc3e",
+      "theorem_axioms": {
+        "UpperTheory.Top.originalDesign_with_qdRows": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "UrielJoint.DesignDefinitions.WithChN._proof_1": [
+          "propext"
+        ]
+      }
+    },
+    "ShareControl": {
+      "direct_imports": [
+        "Development.AutomorphicArithmetic.PrimitiveCosets.TopsSum",
+        "Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.ExplicitFormulaErrorOfHostConditions",
+        "Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.FrameCyclicGenerator",
+        "Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.FrameFacts"
+      ],
+      "kind": "experiment",
+      "olean_sha256": "0e398d84f3f11fac5eb59e98a0958b6d934bfdb422e5737bb09ae138ddbc8977",
+      "replay": "replaying ShareControl",
+      "source_sha256": "fe1a579222233526ec4a5109ff16b9e813a76cd721181269d3a699f1c7ea2eee",
+      "theorem_axioms": {
+        "Uriel.RetainedShares.characterBound._proof_1": [
+          "propext"
+        ],
+        "Uriel.RetainedShares.character_bound_good": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Uriel.RetainedShares.character_bound_swapped": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Uriel.RetainedShares.character_swap": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Uriel.RetainedShares.matched_controls": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Uriel.RetainedShares.matched_controls._simp_1_1": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Uriel.RetainedShares.omit_card": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Uriel.RetainedShares.paritySign.eq_1": [
+          "Quot.sound",
+          "propext"
+        ],
+        "Uriel.RetainedShares.paritySign_character": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Uriel.RetainedShares.principal_cyclic_level_index": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Uriel.RetainedShares.principal_cyclic_shares": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Uriel.RetainedShares.quotientCharacter._proof_1": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Uriel.RetainedShares.quotientCharacter._proof_2": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Uriel.RetainedShares.quotient_character_conditions": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Uriel.RetainedShares.quotient_character_conditions._simp_1_1": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Uriel.RetainedShares.quotient_character_conditions._simp_1_2": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Uriel.RetainedShares.retainedExcept._proof_1": [
+          "propext"
+        ],
+        "Uriel.RetainedShares.retainedExcept.eq_1": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Uriel.RetainedShares.shares_iff": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "Uriel.RetainedShares.shares_of_index_one": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "_private.ShareControl.0.Uriel.RetainedShares.abs_error": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "_private.ShareControl.0.Uriel.RetainedShares.complex_sum": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "_private.ShareControl.0.Uriel.RetainedShares.coset_count": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "_private.ShareControl.0.Uriel.RetainedShares.generator_coord": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "_private.ShareControl.0.Uriel.RetainedShares.mem_base_iff": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "ShareMargin": {
+      "direct_imports": [
+        "Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.ExplicitFormulaErrorOfHostConditions"
+      ],
+      "kind": "experiment",
+      "olean_sha256": "57f51ff3689c0a78c1681c1af5b724d9ccbe9ea81926e500e8ab31059e6a57d3",
+      "replay": "replaying ShareMargin",
+      "source_sha256": "c632f8a655c8661418797b6bb714a3a3438ef098ee10e342e82fa2f7f31e3262",
+      "theorem_axioms": {
+        "UrielRetained.replace_for_explicit_formula": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "UrielRetained.replace_within_margin": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "UrielRetained.room_from_size": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "UrielRetained.share_margin": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "UrielRetained.share_margin._proof_1_1": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "_private.ShareMargin.0.UrielRetained.count_growth": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "StrongBase": {
+      "direct_imports": [
+        "Development.AutomorphicArithmetic.ThickFrames.MarkedLow",
+        "Formalism.LocalToGlobal.GlobalTheory.IsResidueClassZero",
+        "Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.ExplicitFormulaErrorOfHostConditions",
+        "StrongFrame"
+      ],
+      "kind": "generated",
+      "olean_sha256": "245c100fafad07cb964426274911d716ce94734b165f27b013d43bfa60d12993",
+      "replay": "replaying StrongBase",
+      "source_sha256": "3d4dd3c666b9cebdca31743c140a2c5d89b09039ae8e9271f18329467f80103e",
+      "theorem_axioms": {
+        "UpperTheory.BernoulliSumsFrobeniusOrbits.topsBase_inv": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "_private.StrongBase.0.bsH_orb'": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "_private.StrongBase.0.logb_le'": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "_private.StrongBase.0.ltwo_le'": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "_private.StrongBase.0.ltwo_le'._proof_1_1": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "StrongChoice": {
+      "direct_imports": [
+        "Development.AbelianVarietyTheory.Definitions.GlobalTwisting.PairRowIffQdRows",
+        "Development.AbelianVarietyTheory.Definitions.GlobalTwisting.ThinScalesIffHostBound",
+        "Development.AutomorphicArithmetic.ThickFrames.MarkedLow",
+        "StrongBase"
+      ],
+      "kind": "generated",
+      "olean_sha256": "eec93bcd66fea199c43e8bb2c95d1affd831576f105a0af9fd6f007cdec1c2ff",
+      "replay": "replaying StrongChoice",
+      "source_sha256": "a39c3f631679f0792c494c252a54900e12a167f5132461e595ef31475b66eb22",
+      "theorem_axioms": {
+        "UpperTheory.BernoulliSumsFrobeniusOrbits.topsChoiceH_inv": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "_private.StrongChoice.0.lt_of_classC0'": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "_private.StrongChoice.0.lt_of_classC0'._proof_1_4": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "StrongFrame": {
+      "direct_imports": [
+        "Development.AutomorphicArithmetic.ThickFrames.MarkedLow",
+        "Formalism.SharpRestriction.GrowthBounds.UnramifiedQuadraticSetting",
+        "Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.ExplicitFormulaErrorOfHostConditions",
+        "Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.FrameFacts",
+        "StrongGroup"
+      ],
+      "kind": "generated",
+      "olean_sha256": "1f579ccca828958ec2d8e84dfeabc463a2b2be25e4a1343dde10b6b64274c8c0",
+      "replay": "replaying StrongFrame",
+      "source_sha256": "d721e7f5e6df895718bff5515dca61d98a8fb0a77e1bd38c8685389fb3b32c4c",
+      "theorem_axioms": {
+        "UpperTheory.BernoulliSumsFrobeniusOrbits.topsFrame_inv": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "StrongGroup": {
+      "direct_imports": [
+        "Development.AutomorphicArithmetic.ThickFrames.MarkedLow",
+        "Development.AutomorphicArithmetic.ThickFrames.NotGoodLe",
+        "Development.AutomorphicArithmetic.ThickFrames.SharesOfCounts",
+        "Development.AutomorphicArithmetic.ThickFrames.orbitSum",
+        "Development.AutomorphicArithmetic.ThickFrames.orbitTerms",
+        "Development.AutomorphicArithmetic.ThickFrames.select",
+        "Formalism.SharpRestriction.GrowthBounds.UnramifiedQuadraticSetting"
+      ],
+      "kind": "generated",
+      "olean_sha256": "2cd66d135af49b4f68c5ceb2dd7acea2fdb97fa76d01141aefde51ea5a77982f",
+      "replay": "replaying StrongGroup",
+      "source_sha256": "b351fbcab2aaf05ab90e294bd8a520d0dde0296ccaf3f88130664e83ac58ef23",
+      "theorem_axioms": {
+        "UpperTheory.BernoulliSumsFrobeniusOrbits.topsGroup_inv": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "_private.StrongGroup.0.tg_class_sum": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "_private.StrongGroup.0.tg_num": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "_private.StrongGroup.0.tg_num._simp_1_1": [
+          "propext"
+        ],
+        "_private.StrongGroup.0.tg_num._simp_1_2": [
+          "propext"
+        ],
+        "_private.StrongGroup.0.tg_num._simp_1_3": [
+          "propext"
+        ],
+        "_private.StrongGroup.0.tg_num._simp_1_4": [
+          "propext"
+        ],
+        "_private.StrongGroup.0.tg_num._simp_1_5": [
+          "propext"
+        ],
+        "_private.StrongGroup.0.tg_num._simp_1_6": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "_private.StrongGroup.0.tg_num._simp_1_7": [
+          "propext"
+        ]
+      }
+    },
+    "StrongHost": {
+      "direct_imports": [
+        "Development.AbelianVarietyTheory.Definitions.GlobalTwisting.ThinScalesIffHostBound",
+        "Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.KroneckerTwoNegEqJacobiSymTwo",
+        "Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.NcardPrimesOverOfStabilizer",
+        "Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.NormOneIffOfSqrt",
+        "Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.NormOneModEqOneAndOfDvd",
+        "Development.AutomorphicArithmetic.CharacterBoxes.Imports",
+        "Development.AutomorphicArithmetic.CharacterBoxes.PairRows",
+        "Development.AutomorphicArithmetic.CharacterBoxes.RealBox",
+        "Development.AutomorphicArithmetic.MeanSquareBounds.GaussSumFunctionEq",
+        "Development.AutomorphicArithmetic.ShortNorms.MulLogLeRpowEventually",
+        "Development.AutomorphicArithmetic.ShortNorms.levelData",
+        "Development.AutomorphicArithmetic.ThickFrames.ThickFrame2Large",
+        "StrongChoice"
+      ],
+      "kind": "generated",
+      "olean_sha256": "4bf74db23b162d571196dafdfeeb3042aca501b404aa08a7494ed00944932842",
+      "replay": "replaying StrongHost",
+      "source_sha256": "301c9107e746727a473205f0d9c8954a195cd4dc16b69ad1cf4c50c518763405",
+      "theorem_axioms": {
+        "UpperTheory.T3.hostOfFieldOf_inv": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "UpperTheory.T3.hostOfFieldOf_inv._proof_1_2": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "UpperTheory.T3.hostOfFieldOf_inv._proof_1_3": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "UpperTheory.T3.hostOfFieldOf_inv._simp_1_1": [
+          "propext"
+        ],
+        "UpperTheory.T3.hostOfFieldOf_inv._simp_1_4": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "UpperTheory.T3.hostOfFieldOf_inv._simp_1_5": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "_private.StrongHost.0.hof_Lwv_le": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "_private.StrongHost.0.hof_abs_dlogH_le": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "_private.StrongHost.0.hof_abs_dlogH_le._proof_1_1": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "_private.StrongHost.0.hof_abs_dlogH_le._proof_1_2": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "_private.StrongHost.0.hof_box": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "_private.StrongHost.0.hof_coprime": [
+          "Quot.sound",
+          "propext"
+        ],
+        "_private.StrongHost.0.hof_exists_host": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "_private.StrongHost.0.hof_log_le_rpow": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "_private.StrongHost.0.hof_odd": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "_private.StrongHost.0.hof_quadraticChar_induces": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "_private.StrongHost.0.hof_quadraticChar_induces._proof_1_1": [
+          "Quot.sound",
+          "propext"
+        ],
+        "_private.StrongHost.0.hof_thick": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "_private.StrongHost.0.hof_thick._proof_1_1": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "StrongSupply": {
+      "direct_imports": [
+        "Development.AbelianVarietyTheory.Definitions.GlobalTwisting.ThinScalesIffHostBound",
+        "Development.AutomorphicArithmetic.CharacterBoxes.BoundedTw",
+        "Development.AutomorphicArithmetic.CharacterBoxes.EventuallyRankLeRpowOfLtOneDivFiftytwo",
+        "Development.AutomorphicArithmetic.CharacterBoxes.FieldChi",
+        "Development.AutomorphicArithmetic.CharacterBoxes.Imports",
+        "Development.AutomorphicArithmetic.CharacterBoxes.IsChiField",
+        "Development.AutomorphicArithmetic.CharacterBoxes.PairHyp",
+        "Development.AutomorphicArithmetic.CharacterBoxes.WinPairs",
+        "Development.AutomorphicArithmetic.MeanSquareBounds.pairEx"
+      ],
+      "kind": "generated",
+      "olean_sha256": "890a140913dd69bc1232fc8a7d291d20f1a5d1c03184bb4c3ecc116008f5045b",
+      "replay": "replaying StrongSupply",
+      "source_sha256": "5b088cbfdf5086ee0d17136c878c07b59bcb10af38c5e43712522f166340f2d8",
+      "theorem_axioms": {
+        "UpperTheory.T3.supplyOfAdmOf_inv": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "StrongWindow": {
+      "direct_imports": [
+        "HostHandoff"
+      ],
+      "kind": "experiment",
+      "olean_sha256": "61ee5b62f600498a9c604a1c2661b219bccdd2be1e33047ce47d419503d84ac4",
+      "replay": "replaying StrongWindow",
+      "source_sha256": "3ffe9016fdbe8ab9b3b93c8242ddc77d8b3383619fc025998a241df9a21e5ffc",
+      "theorem_axioms": {
+        "UrielRetained.InverseCharacterBound._proof_1": [
+          "propext"
+        ],
+        "UrielRetained.StrongChosenAt._proof_1": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "UrielRetained.StrongChosenAt._proof_2": [
+          "propext"
+        ],
+        "UrielRetained.StrongChosenAt._proof_3": [
+          "propext"
+        ],
+        "UrielRetained.StrongChosenAt._proof_4": [
+          "propext"
+        ],
+        "UrielRetained.strong_window_of_top": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "_private.StrongWindow.0.UrielRetained.supply_rows": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    }
+  },
+  "parent": "e674cb750ef96b2f5e7cd46586ea4edb9998715a",
+  "pin": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "prior_manifest_sha256": {
+    "bridge_build": "5f0fa8b8fabffb7bf102993909ae6c91998553901dacf5551f91fb80fc682d80",
+    "join_checks": "46417ccd12f8dfee9c1a7bccf17e82948d56032198c7bd1990fee29edaab6b91",
+    "original_build": "0d81bc12fde2dc4a119b21a3c829ea2d36712f1b939f8610202e927ada6b311e"
+  },
+  "scope": "leanchecker replay of recorded local, generated and parent modules against the authenticated targeted project closure and pinned package environment",
+  "source_closure": {
+    "direct_original_imports": [
+      "Development.AbelianVarietyTheory.Definitions.GlobalTwisting.PairRowIffQdRows",
+      "Development.AbelianVarietyTheory.Definitions.GlobalTwisting.ThinScalesIffHostBound",
+      "Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.KroneckerTwoNegEqJacobiSymTwo",
+      "Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.NcardPrimesOverOfStabilizer",
+      "Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.NormOneIffOfSqrt",
+      "Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.NormOneModEqOneAndOfDvd",
+      "Development.AutomorphicArithmetic.CharacterBoxes.BoundedTw",
+      "Development.AutomorphicArithmetic.CharacterBoxes.DesWin",
+      "Development.AutomorphicArithmetic.CharacterBoxes.EventuallyRankLeRpowOfLtOneDivFiftytwo",
+      "Development.AutomorphicArithmetic.CharacterBoxes.FieldChi",
+      "Development.AutomorphicArithmetic.CharacterBoxes.Imports",
+      "Development.AutomorphicArithmetic.CharacterBoxes.IsChiField",
+      "Development.AutomorphicArithmetic.CharacterBoxes.PairHyp",
+      "Development.AutomorphicArithmetic.CharacterBoxes.PairRows",
+      "Development.AutomorphicArithmetic.CharacterBoxes.RealBox",
+      "Development.AutomorphicArithmetic.CharacterBoxes.Supply",
+      "Development.AutomorphicArithmetic.CharacterBoxes.WinPairs",
+      "Development.AutomorphicArithmetic.CharacterBoxes.ZeroFreeAllOfTopG",
+      "Development.AutomorphicArithmetic.CoprimeRanks.AdmChi",
+      "Development.AutomorphicArithmetic.MeanSquareBounds.GaussSumFunctionEq",
+      "Development.AutomorphicArithmetic.MeanSquareBounds.pairEx",
+      "Development.AutomorphicArithmetic.PrimitiveCosets.TopsSum",
+      "Development.AutomorphicArithmetic.ShortNorms.MulLogLeRpowEventually",
+      "Development.AutomorphicArithmetic.ShortNorms.hostOfFieldOf",
+      "Development.AutomorphicArithmetic.ShortNorms.levelData",
+      "Development.AutomorphicArithmetic.ShortNorms.supplyOfAdmOf",
+      "Development.AutomorphicArithmetic.ThickFrames.MarkedLow",
+      "Development.AutomorphicArithmetic.ThickFrames.NotGoodLe",
+      "Development.AutomorphicArithmetic.ThickFrames.SharesOfCounts",
+      "Development.AutomorphicArithmetic.ThickFrames.ThickFrame2Large",
+      "Development.AutomorphicArithmetic.ThickFrames.orbitSum",
+      "Development.AutomorphicArithmetic.ThickFrames.orbitTerms",
+      "Development.AutomorphicArithmetic.ThickFrames.select",
+      "Formalism.LocalToGlobal.GlobalTheory.IsResidueClassZero",
+      "Formalism.SharpRestriction.DesignExistsOfChoices",
+      "Formalism.SharpRestriction.GrowthBounds.UnramifiedQuadraticSetting",
+      "Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.ExplicitFormulaErrorOfHostConditions",
+      "Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.FrameCyclicGenerator",
+      "Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.FrameFacts"
+    ],
+    "original_modules": 1205,
+    "original_objects_rebuilt": {
+      "Development.AbelianVarietyTheory.Proofs.GlobalInterpolation.ExistsRanksRankValFrame": "08017430f4489e614bd88e34e470f8fc9dfb0199442d281c5227e699c71410e6",
+      "Development.AutomorphicArithmetic.CoprimeRanks.AdmChi": "425df4103266c57f3fc3268933270a468dc52cf379b7ab73456ea81f66432fd7",
+      "Development.AutomorphicArithmetic.FrobeniusLocalisation.SizeDefs": "73d5fb3e05aaa70f4557b650aa00433b890c61ce3fb276e0d7ab844fa1c76729"
+    },
+    "original_objects_reused": 1202,
+    "source_blob_and_object_inventory_sha256": "f73a9ec6cb84b11274e6e773f21e44377b779970841cb3b290cc6bf314bf2843"
+  },
+  "toolchain": {
+    "lean": "819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+    "packages": {
+      "Cli": "6130a47896ce867c6a4a55373441e59e565bad0f",
+      "LeanSearchClient": "5f4d51b81cbd3f6b32b156bfad9056621a040404",
+      "Qq": "92c15be17b7caf78c2ad767ec40f89052d908d81",
+      "aesop": "3448c0bcc5ce01b2d1546e483ec3620e32df3d0e",
+      "batteries": "4488d40d070b9700d4d5a6aa342f0d40c31b2a2d",
+      "importGraph": "16f02aa7642864af59f1ff0e384a015994db9118",
+      "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+      "plausible": "b7eb3304aeae834b12dda98993a37f6a41f6f0bb",
+      "proofwidgets": "4be2e3d5087eeb272cf5a8853b8f9dd025ef5957"
+    },
+    "version": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+  }
+}
