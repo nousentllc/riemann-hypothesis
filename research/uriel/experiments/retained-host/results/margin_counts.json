@@ -1,0 +1,14 @@
+{
+  "conditional_example": {
+    "ambient_lower_log2": 2175,
+    "epsilon": "1/64",
+    "log2_scale": 1024,
+    "replacement_lower": "65535 * 2^1148",
+    "retained_lower_log2": 2172
+  },
+  "finite": {
+    "distinct_set_pairs": 12614,
+    "equality_at_positive_distance": 516,
+    "ordered_pairs": 12870
+  }
+}

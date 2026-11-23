@@ -1,0 +1,82 @@
+{
+  "frame_order": 8,
+  "passing_subsets_by_tolerance": {
+    "0": 4,
+    "1/7": 8,
+    "1/8": 4
+  },
+  "permutation_classes": {
+    "interchanging": 576,
+    "mixed": 39168,
+    "preserving": 576
+  },
+  "set_size": 7,
+  "subgroup_generator": 2,
+  "subgroup_index": 2,
+  "subsets_by_omitted_residue": {
+    "0": {
+      "character_sum": -1,
+      "counts": [
+        3,
+        4
+      ],
+      "threshold": "1/7"
+    },
+    "1": {
+      "character_sum": 1,
+      "counts": [
+        4,
+        3
+      ],
+      "threshold": "0"
+    },
+    "2": {
+      "character_sum": -1,
+      "counts": [
+        3,
+        4
+      ],
+      "threshold": "1/7"
+    },
+    "3": {
+      "character_sum": 1,
+      "counts": [
+        4,
+        3
+      ],
+      "threshold": "0"
+    },
+    "4": {
+      "character_sum": -1,
+      "counts": [
+        3,
+        4
+      ],
+      "threshold": "1/7"
+    },
+    "5": {
+      "character_sum": 1,
+      "counts": [
+        4,
+        3
+      ],
+      "threshold": "0"
+    },
+    "6": {
+      "character_sum": -1,
+      "counts": [
+        3,
+        4
+      ],
+      "threshold": "1/7"
+    },
+    "7": {
+      "character_sum": 1,
+      "counts": [
+        4,
+        3
+      ],
+      "threshold": "0"
+    }
+  }
+}
