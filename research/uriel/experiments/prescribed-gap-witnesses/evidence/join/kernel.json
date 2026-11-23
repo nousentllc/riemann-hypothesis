@@ -1,0 +1,59 @@
+{
+  "version": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "original_modules": 1150,
+  "prior_modules": 18,
+  "rebuilt_inputs": [],
+  "supplements": {
+    "SlotGap": {
+      "sha256": "2e0355d3bbd6e4940ea85d61238885f88ce31a64a8fd14dc0fff1346331abbd6",
+      "kernel": "replaying SlotGap",
+      "axiom_count": 5
+    },
+    "FieldEndpoints": {
+      "sha256": "35c57e414157baa16490043a831f176c271a2bae6bfb7825659d21518b7967db",
+      "kernel": "replaying FieldEndpoints",
+      "axiom_count": 15
+    },
+    "CoherentFields": {
+      "sha256": "340c9e9e70405175930c821538259fd9fc8e1384db3187ff33a75aa3b41eb70f",
+      "kernel": "replaying CoherentFields",
+      "axiom_count": 6
+    },
+    "SynchronizedSlots": {
+      "sha256": "6ac6c90d5386a60f887c8ba2d595c72271aee49dc7c9cab476e92aff8f6fe1ab",
+      "kernel": "replaying SynchronizedSlots",
+      "axiom_count": 3
+    },
+    "SuccessiveFields": {
+      "sha256": "3a7f42d5530cc9f0e234ae385eaaa209cedaa0bcc011fc179089386d4a239baa",
+      "kernel": "replaying SuccessiveFields",
+      "axiom_count": 2
+    },
+    "PhysicalGap": {
+      "sha256": "38f47641382ab03be396eb838b46fba9d62d455a4402555663995ae6620740cb",
+      "kernel": "replaying PhysicalGap",
+      "axiom_count": 1
+    },
+    "PairSharing": {
+      "sha256": "a429c5634d78797f369cce842e5442072affeb64de0ff6000fde185e9284267c",
+      "kernel": "replaying PairSharing",
+      "axiom_count": 7
+    },
+    "FixedRoster": {
+      "sha256": "8d51800faa8b3dc885d7d1ba0fa9b9b6e6da9ddee89d5b00a9c92eb9de96e46a",
+      "kernel": "replaying FixedRoster",
+      "axiom_count": 6
+    },
+    "PrincipalBridge": {
+      "sha256": "7fe0d298cb65c27b839cafd0f2e97a9c465047bfcd56e49aeec3e42952e3a8ad",
+      "kernel": "replaying PrincipalBridge",
+      "axiom_count": 3,
+      "axioms": [
+        "'GapFirst.Bridge.four_le_Jchi' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'GapFirst.Bridge.checksAtSeven' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'GapFirst.Bridge.twoSelections' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ]
+    }
+  }
+}

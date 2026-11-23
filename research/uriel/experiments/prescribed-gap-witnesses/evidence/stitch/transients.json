@@ -1,0 +1,42 @@
+{
+  "cases": 135,
+  "candidate_labels": 128,
+  "counts": {
+    "strict": 22,
+    "no_transients": 33,
+    "crossover_false_no_transients": 11,
+    "with_transients": 102
+  },
+  "subset_window_pairs": 34560,
+  "examples": [
+    {
+      "a": "5/4",
+      "b": "3/2",
+      "Ct": 3,
+      "eta": 2,
+      "strict": false,
+      "transients": [],
+      "strict_fails_but_oriented": true
+    },
+    {
+      "a": "2",
+      "b": "4",
+      "Ct": 2,
+      "eta": 1,
+      "strict": false,
+      "transients": [
+        4
+      ],
+      "strict_fails_but_oriented": false
+    },
+    {
+      "a": "2",
+      "b": "16",
+      "Ct": 2,
+      "eta": 1,
+      "strict": false,
+      "transients": [],
+      "strict_fails_but_oriented": true
+    }
+  ]
+}

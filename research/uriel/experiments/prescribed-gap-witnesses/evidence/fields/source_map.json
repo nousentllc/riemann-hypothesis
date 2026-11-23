@@ -1,0 +1,164 @@
+{
+  "pin": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "original": [
+    {
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/SecondBound.lean",
+      "start": 19,
+      "end": 44,
+      "claim": "ABound and FirstBound separate the field and center choices from the numeric cutoff.",
+      "git_blob": "a2e12927214cad3ce637b33adb435f42992c1c65",
+      "sha256": "d0e3d59ca3196bc37ccf563afbe6829d6497e607c533b7984f27d5b8c91a29d6",
+      "span_sha256": "08116f2828ec82af2f321ed3d7734eccf7182e36fc02ca1e1e37cf7f89d3ee92"
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/Exc.lean",
+      "start": 7,
+      "end": 42,
+      "claim": "One family of centers is chosen before Z; its finite union satisfies the stated bound.",
+      "git_blob": "d0d49933faebf73a8162c153b8115139e36efa82",
+      "sha256": "7bb13ceb4141dea9a35e93dbba8b71b06e44b172584e06c886b0c5a518146cfe",
+      "span_sha256": "573e891a85975f8b8c3519674834291b05e0265ae20db1b35d14b6d381e23a98"
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/Near1.lean",
+      "start": 6,
+      "end": 43,
+      "claim": "The ultrametric and integer valuation force a single label per center and cutoff.",
+      "git_blob": "3ba2c097a7496c4f32255699e57917c9763bd162",
+      "sha256": "ce808763ab7c876f1450be042cd5e57cb68961d7f7b12678c945eed5e2b52853",
+      "span_sha256": "bafec0180a607c5be4c1566cb9040c01ed91a5506eccc8f9ba61351a429f1bea"
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/ThmBabOf.lean",
+      "start": 11,
+      "end": 97,
+      "claim": "Select uniform ranks, then obtain pair-specific even bounds, slot-specific odd bounds and the final finite union.",
+      "git_blob": "d4b0c37c79996fca0b0d30fb53fe798eceb90cff",
+      "sha256": "c263c5de2b26c9ade93525ea218afa71304f44a9916bc97b7e2573f5fd61e33b",
+      "span_sha256": "5010e9b871ce2108d019a97d59ac189beaabe543bd88ad0a72e11bea46961dc0"
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/PartA.lean",
+      "start": 24,
+      "end": 77,
+      "claim": "Even field and ABound vary with the prime pair. The outer cutoff turns the centers into a finite list.",
+      "git_blob": "c41983a3d9483591b7d7eedfb3b672d72cde101a",
+      "sha256": "73c1660109e43f18debb3b2fd6ccdd4f7022c79c7c8eb7467ca7385cb5e72eb1",
+      "span_sha256": "a67749c17721bc538588b418e3bcf29222bee1db380b8c1b4baf2c4b16e81339"
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/PartB.lean",
+      "start": 50,
+      "end": 94,
+      "claim": "One odd-slot model produces the bound, which transports to all matching layers.",
+      "git_blob": "cd8a7cae15738f4054f543cddf4af595a6d1f7dc",
+      "sha256": "4b6133d7cc4a262e1a96e0b0e4bf48f7ce9fdc6d4e8dc4102d3ce039be4055ab",
+      "span_sha256": "f1a8609539d136c240c24201ba88ee35815880e8c5fca985257fb85f32a30c8c"
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/Point2.lean",
+      "start": 8,
+      "end": 48,
+      "claim": "FirstBound and SecondBound serve different parts of the numerical upper bound.",
+      "git_blob": "977e6ed246ef1343d9bf537ea845a5565528c0ae",
+      "sha256": "2e4ab589f6336247b0f18f3d0b1fcefac944ff582487421ab6608fbbbc5cf322",
+      "span_sha256": "b6bd8c18e7e4021f2ce37a69dc44537309bee1253afed0045de590928e7e3d64"
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/Window.lean",
+      "start": 7,
+      "end": 40,
+      "claim": "Cardinality avoidance supplies a subwindow selected after the finite union.",
+      "git_blob": "386bec7e22094a4309c4a8e2846435357f703375",
+      "sha256": "354e0ad1b87c54c46a40486a037d0a10b598ffc1b1d8e840e4f80560090a50be",
+      "span_sha256": "44ac53b991a759faf804f9f2854599bd9f19437e775f8b84036749c636bb53bb"
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/QuadraticExtensions/IsAlgClosureRat.lean",
+      "start": 87,
+      "end": 142,
+      "claim": "Uniform rank in the even case and base-specific rank in the odd case feed the two original field inputs.",
+      "git_blob": "15c0d9875f5209459548e7fe5a9670803262ed84",
+      "sha256": "eb9dcd0239166240b7856794bdd79c67ebda19d18f83f76dd93728725fa31420",
+      "span_sha256": "5d0fbcde842b591ed63c1771e4d06dabf1025976c1da01ebc9eef3e86c2f8807"
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/QuadraticExtensions/ModulusAdjoinISqrtNegPrimes.lean",
+      "start": 16,
+      "end": 32,
+      "claim": "The concrete even base includes both prime parameters.",
+      "git_blob": "e77244d53b35c16ec452346ebe6bdcaa97f00eec",
+      "sha256": "36aeb3a9ed33358617756625948ab8ea1115e4cb8fe9dc0fd8243fc679c0aca8",
+      "span_sha256": "1988fd6932e9661f8851409ba4d48db64a52537132a7298e168ec0d166a487fb"
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/PrimeSetBoundDataOfPrimitiveChar.lean",
+      "start": 12,
+      "end": 49,
+      "claim": "Rank budget, ambient exponent and even/odd application interfaces.",
+      "git_blob": "52224122dd8f9deefef473151d716984f3e1f1ff",
+      "sha256": "8d78f096654f4cdd977c71b1b163bb0883c53a295d0928816d96b0d6a8362cf1",
+      "span_sha256": "ff3d9dbbbf955ddb10bc475a786be9298b42373243ef4f77b1d3791b98a32fc5"
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/PrimeSetBoundDataOfPrimitiveChar.lean",
+      "start": 71,
+      "end": 76,
+      "claim": "Lchi fixes the odd base datum independently of q,d.",
+      "git_blob": "52224122dd8f9deefef473151d716984f3e1f1ff",
+      "sha256": "8d78f096654f4cdd977c71b1b163bb0883c53a295d0928816d96b0d6a8362cf1",
+      "span_sha256": "4a8d6fcf61c2a4cbfeb60b37c2e690344006284f3550467f674d9e3944c6cce0"
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/StmtFields.lean",
+      "start": 57,
+      "end": 70,
+      "claim": "Bchi depends on the character and its auxiliary invariants.",
+      "git_blob": "857965059bf92dee66f67769d93377548b55a764",
+      "sha256": "6504b5c58704921aae65b2651c419051c6f0cf3c040bc517dc663cfa19dce50a",
+      "span_sha256": "080531c6cf3cfdf60b85926a7bfb821a1a4d96836a345593494ecc77c8deb2e0"
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/TwistForm.lean",
+      "start": 19,
+      "end": 26,
+      "claim": "All six clauses of WinDatum.",
+      "git_blob": "5e8b1a992a393336dffd3603524526dfccfa1981",
+      "sha256": "f6fcb4d6d30327b91dc81247a280070efc3196de2053cad36cbf14ec1daae2c3",
+      "span_sha256": "7ff18df70df3b44f3af912bc96d8355557641fa63d155e5bbdea1a314cd8bb80"
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/ExistsPageN.lean",
+      "start": 39,
+      "end": 51,
+      "claim": "Page schedule, local VAt and independently selected cofinal windows.",
+      "git_blob": "398eb8ed3528aa2666e9d3b2b09a582ad4390dd7",
+      "sha256": "732c3347fb02e410cf9af8831afdbba1d230fc522c3dbbccdb4b708e5dde73db",
+      "span_sha256": "010c5d3d7ce67cb6ee889bf603ad069083076445d1745abdcd856f91f4c905b4"
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/PairGood.lean",
+      "start": 18,
+      "end": 30,
+      "claim": "Full pair hypotheses include twists, long-interval estimates and zero boxes.",
+      "git_blob": "68d04b506355e999c0f6020ee066c4967c1e6939",
+      "sha256": "e5ddbc7f4573275caad502b8414dc3579ed904d1fa6c5f3848080bbd94fb3abb",
+      "span_sha256": "39e9928954f0289bcc8208f612672e00c0c819e281cef61f16394ab8c05c5663"
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/CMFieldExponentialBounds/AdmissibleOfPageN.lean",
+      "start": 38,
+      "end": 94,
+      "claim": "Original large-scale conversion supplies guards for q,d, auxiliary indices and their logarithm.",
+      "git_blob": "5afd609c06ffbef90f5df59e9915343c913c6257",
+      "sha256": "ded642308ff9cd83eed14643f20899986c271c73f2ee900bccf6f7a32f3b350d",
+      "span_sha256": "33925a814d2d9705fa07d123cee7e491382f624285559d73c3fa72b827abaee8"
+    }
+  ],
+  "prior": {
+    "commit": "d79bd956c6fb2b8a3de51b606765be81d24fb1fc",
+    "path": "research/uriel/experiments/cofinal-endpoint-certificates/evidence/collar/FieldEndpoints.lean",
+    "sha256": "35c57e414157baa16490043a831f176c271a2bae6bfb7825659d21518b7967db",
+    "git_blob": "a5c1301bed80a8155182dd7d2ee5dd8296998118"
+  }
+}

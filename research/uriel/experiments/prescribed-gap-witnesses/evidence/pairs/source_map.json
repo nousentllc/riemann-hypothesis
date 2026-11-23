@@ -1,0 +1,178 @@
+{
+  "pin": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "files": [
+    {
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/CMFieldExponentialBounds/AdmissibleOfPageN.lean",
+      "blob": "5afd609c06ffbef90f5df59e9915343c913c6257",
+      "sha256": "ded642308ff9cd83eed14643f20899986c271c73f2ee900bccf6f7a32f3b350d",
+      "spans": [
+        {
+          "start": 41,
+          "end": 60,
+          "sha256": "47341cbb18c430b653294d655434d891f280b5dac2af13e10a389b25e069fb85"
+        },
+        {
+          "start": 61,
+          "end": 88,
+          "sha256": "9d3e929af1853b7e15cb56cdbe304dbd78229df935febacc386172ad68b310e6"
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/ExistsPageN.lean",
+      "blob": "398eb8ed3528aa2666e9d3b2b09a582ad4390dd7",
+      "sha256": "732c3347fb02e410cf9af8831afdbba1d230fc522c3dbbccdb4b708e5dde73db",
+      "spans": [
+        {
+          "start": 19,
+          "end": 25,
+          "sha256": "d4ae32cde8c653b6a7cb10a32623137d3d973f6b0ce9ea531d92eec1f69ab943"
+        },
+        {
+          "start": 27,
+          "end": 37,
+          "sha256": "525116fb683768ac15aea86f81ab2d4c8d57bdc834188bba91004fbbcebf8fcb"
+        },
+        {
+          "start": 39,
+          "end": 49,
+          "sha256": "b929f83bfcb7a67bb2d213799f06a7519a62e2ffb369d6c31c9850d2f184d7d9"
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/PairGood.lean",
+      "blob": "68d04b506355e999c0f6020ee066c4967c1e6939",
+      "sha256": "e5ddbc7f4573275caad502b8414dc3579ed904d1fa6c5f3848080bbd94fb3abb",
+      "spans": [
+        {
+          "start": 9,
+          "end": 16,
+          "sha256": "b01fd16c6f40ed8b7e669b64cb178f3404eb8d47c4ce62c056cd41ed10584e49"
+        },
+        {
+          "start": 18,
+          "end": 30,
+          "sha256": "39e9928954f0289bcc8208f612672e00c0c819e281cef61f16394ab8c05c5663"
+        },
+        {
+          "start": 41,
+          "end": 42,
+          "sha256": "8b786bd547a9d88a19329353eda2a4554401519c1518fa9c173fcbc19511b04a"
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/WinPairs.lean",
+      "blob": "4670fec488d1eb59a3cc52dffc8d0eab16e16b0b",
+      "sha256": "41c1edf737bb6e1a4791d4440488a885889209db750698359ab4d1e237dc2f6e",
+      "spans": [
+        {
+          "start": 9,
+          "end": 16,
+          "sha256": "f594c002b97cfd96ff9441fe4bc35e212bf79ac4ad18130831167f8ad3d14b37"
+        },
+        {
+          "start": 26,
+          "end": 35,
+          "sha256": "848914cd1bdcf72f10e1511a0e0edfa820a59a7e853e847b2d014f252bfcb5b0"
+        },
+        {
+          "start": 52,
+          "end": 68,
+          "sha256": "4bd00a4e7b5aa78a765ecd7e20070d02a85910565ffdabe6d5ed585aff5d7a4d"
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/MeanSquareBounds/PairExists.lean",
+      "blob": "7e63fdeda04264253733059bf951a4c1635cebaa",
+      "sha256": "e4e59ce3542cdbde727aaef132c495d1aa20d99c42dee8cf058c3f5a407a8db7",
+      "spans": [
+        {
+          "start": 9,
+          "end": 17,
+          "sha256": "ef619ac23c80e834bf43c113eace37e6b09f9b4037990544a3a3298e3b4e38c6"
+        },
+        {
+          "start": 27,
+          "end": 43,
+          "sha256": "a5c2d215193a908a47a3d8107a46356f24d16c6bce4d530891acb2786c628821"
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/MeanSquareBounds/PairShare.lean",
+      "blob": "712579c16be75074705a2c5c00f69e2f5d835cf9",
+      "sha256": "dc43506b1872e1afb8892d25feb9062264c1dd929acc51838131e559a3e0de0b",
+      "spans": [
+        {
+          "start": 27,
+          "end": 36,
+          "sha256": "e3ba747c11a200a14267de539523951fa961b22be4d8b6c714422505b4d7af3c"
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/MeanSquareBounds/PrimeSetTwoBounds.lean",
+      "blob": "45616f33334b6ef360b18a8e64c0eb325f9463b8",
+      "sha256": "5add5a8d499ab3c7d84e64e3ea1c529d09b7ecc472a7fa82e700881196861ec2",
+      "spans": [
+        {
+          "start": 35,
+          "end": 53,
+          "sha256": "a89b4ef5772af154f39b13a4ca587809d6a0375aa763f71bb130d7fc799cbd61"
+        },
+        {
+          "start": 55,
+          "end": 65,
+          "sha256": "404c0a7b209b9aa7ddea09d49670064eabac13468918f32197666dc01be27f8d"
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/MeanSquareBounds/pairEx.lean",
+      "blob": "0020840fcf9b97e9e6e834c591e8516b9875e003",
+      "sha256": "8af18345e99c599e185472a0221b84acf33455b19ea1d77fe5bed311236f9890",
+      "spans": [
+        {
+          "start": 11,
+          "end": 23,
+          "sha256": "29b8c48f86997e2af70f3f1eb5c95549e0d3cc067d43a79d7394a9d095dcb398"
+        },
+        {
+          "start": 112,
+          "end": 130,
+          "sha256": "45da06e5700610d70ee57b9c00b1be705800d44ebc90ad3c0b66203450425424"
+        },
+        {
+          "start": 139,
+          "end": 151,
+          "sha256": "8a0aea2a190c812e6612a0b14acfdb5e65a9e8407ecd0f0ecf607665a601ac17"
+        },
+        {
+          "start": 152,
+          "end": 169,
+          "sha256": "f39df028e7af7497f2258de327ab2478b36abb3fd83eb74ae3819f6ddbae4c57"
+        }
+      ]
+    },
+    {
+      "path": "src/Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/Analytic.lean",
+      "blob": "599699b5b35f6fb7bf2ab94f5f0c577b14f35ea1",
+      "sha256": "52ef51f6acc3ac5bdc351912a0c2934b36b4bbffcc60aea8cc6cfcf886ac3a89",
+      "spans": [
+        {
+          "start": 26,
+          "end": 30,
+          "sha256": "5c6d67d99058d658fece3687d550200158487986ae1cae67c572b04225264443"
+        },
+        {
+          "start": 40,
+          "end": 43,
+          "sha256": "b83bb747e3800b214b4b8a8b65185b95d0274fdd2b528819c25240c76fc8a7c6"
+        }
+      ]
+    }
+  ]
+}

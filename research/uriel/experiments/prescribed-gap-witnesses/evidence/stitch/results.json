@@ -1,0 +1,258 @@
+{
+  "model": "two anchored scalar active-weight screens on closed availability domains",
+  "target": [
+    8,
+    12
+  ],
+  "Ct": 2,
+  "eta": 1,
+  "labels": [
+    4,
+    8,
+    9,
+    10,
+    11,
+    12,
+    32,
+    63,
+    64,
+    80,
+    99,
+    120,
+    143,
+    144
+  ],
+  "lists": 106,
+  "total_list_pairs": 11236,
+  "eligible_left": 37,
+  "eligible_right": 29,
+  "event_and_cell_representatives": 11,
+  "relevant_labels": [
+    9,
+    10,
+    11,
+    12,
+    32,
+    63,
+    64,
+    80,
+    99,
+    120,
+    143
+  ],
+  "unclipped": {
+    "anchored_pairs": 1073,
+    "covered": 658,
+    "covered_disjoint": 523,
+    "covered_disjoint_neither_alone": 215,
+    "covered_neither_alone": 245,
+    "identical_relevant_restrictions": 49,
+    "identical_whole_lists": 7,
+    "left_low_subset_false_bridge": 315,
+    "one_witness_suffices": 413,
+    "requires_handoff_without_shared_good_point": 116,
+    "uncovered": 415,
+    "uncovered_equal_cardinality": 305,
+    "uncovered_shared_label": 30
+  },
+  "clipped": [
+    {
+      "left_end": 12,
+      "right_start": 8,
+      "covered": 658,
+      "touch_only": 165,
+      "covered_without_common_good_point": 116,
+      "clipping_loses_previously_covered": 0
+    },
+    {
+      "left_end": 10,
+      "right_start": 10,
+      "covered": 352,
+      "touch_only": 352,
+      "covered_without_common_good_point": 96,
+      "clipping_loses_previously_covered": 306
+    },
+    {
+      "left_end": 11,
+      "right_start": 9,
+      "covered": 525,
+      "touch_only": 203,
+      "covered_without_common_good_point": 137,
+      "clipping_loses_previously_covered": 133
+    },
+    {
+      "left_end": 9,
+      "right_start": 11,
+      "covered": 0,
+      "touch_only": 0,
+      "covered_without_common_good_point": 0,
+      "clipping_loses_previously_covered": 658
+    }
+  ],
+  "controls": [
+    {
+      "target": [
+        8,
+        12
+      ],
+      "left": [
+        80
+      ],
+      "right": [
+        11
+      ],
+      "exterior": [
+        true,
+        true
+      ],
+      "covered": false,
+      "common_point": false,
+      "minimum_switches": null,
+      "left_first_failure": "9",
+      "right_first_success": "11"
+    },
+    {
+      "target": [
+        8,
+        12
+      ],
+      "left": [
+        120
+      ],
+      "right": [
+        10
+      ],
+      "exterior": [
+        true,
+        true
+      ],
+      "covered": true,
+      "common_point": true,
+      "minimum_switches": 1,
+      "left_first_failure": "11",
+      "right_first_success": "10"
+    },
+    {
+      "target": [
+        8,
+        12
+      ],
+      "left": [
+        99
+      ],
+      "right": [
+        10
+      ],
+      "exterior": [
+        true,
+        true
+      ],
+      "covered": true,
+      "common_point": false,
+      "minimum_switches": 1,
+      "left_first_failure": "10",
+      "right_first_success": "10"
+    },
+    {
+      "target": [
+        8,
+        12
+      ],
+      "left": [
+        4,
+        80
+      ],
+      "right": [
+        4,
+        11
+      ],
+      "exterior": [
+        true,
+        true
+      ],
+      "covered": false,
+      "common_point": false,
+      "minimum_switches": null,
+      "left_first_failure": "9",
+      "right_first_success": "11"
+    },
+    {
+      "target": [
+        8,
+        12
+      ],
+      "left": [
+        4,
+        144
+      ],
+      "right": [
+        8
+      ],
+      "exterior": [
+        true,
+        true
+      ],
+      "covered": true,
+      "common_point": true,
+      "minimum_switches": 0,
+      "left_first_failure": "no activation in target",
+      "right_first_success": "8"
+    },
+    {
+      "target": [
+        8,
+        12
+      ],
+      "left": [
+        143
+      ],
+      "right": [
+        12
+      ],
+      "exterior": [
+        true,
+        true
+      ],
+      "covered": true,
+      "common_point": false,
+      "minimum_switches": 1,
+      "left_first_failure": "12",
+      "right_first_success": "12"
+    }
+  ],
+  "three_switch_control": {
+    "target": [
+      2,
+      256
+    ],
+    "left": [
+      9,
+      6888
+    ],
+    "right": [
+      3,
+      82
+    ],
+    "exterior": [
+      true,
+      true
+    ],
+    "covered": true,
+    "common_point": true,
+    "minimum_switches": 3,
+    "forced_points": {
+      "2": [
+        "L"
+      ],
+      "4": [
+        "R"
+      ],
+      "10": [
+        "L"
+      ],
+      "100": [
+        "R"
+      ]
+    }
+  }
+}

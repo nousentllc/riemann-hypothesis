@@ -1,0 +1,110 @@
+{
+  "target_log": [
+    72,
+    76
+  ],
+  "eps": "1/72",
+  "J": 4,
+  "Ct": 401,
+  "positive_allowance_ceiling": "1/144",
+  "prior_receipt_sha256": "93b478867b86510ac4fdd0e5bdcc332894040987d1d3b3d24386b10ff3961698",
+  "q": 3,
+  "d_bits": 1400,
+  "source_congruences": {
+    "q_mod_8": 3,
+    "d_mod_16": 7,
+    "q_divides_d_plus_1": true
+  },
+  "nearest_integer": 52561,
+  "pivot_logY": [
+    "36.00010006526465928",
+    "36.00010006526465929"
+  ],
+  "offsets": [
+    "-1/1000000000000",
+    "1/1000000000000"
+  ],
+  "queries": [
+    {
+      "logY": [
+        "36.00010006526365928",
+        "36.00010006526365929"
+      ],
+      "z": [
+        "1.1051712252679",
+        "1.1051712252680"
+      ],
+      "H": [
+        "1432.3098703843535",
+        "1432.3098703843536"
+      ],
+      "real_log3_outer_power": [
+        "52560.9999999985399",
+        "52560.9999999985400"
+      ],
+      "strict_precision": 52561,
+      "win_pair": true,
+      "target_in_ambient": true,
+      "odd_small_primes": []
+    },
+    {
+      "logY": [
+        "36.00010006526565928",
+        "36.00010006526565929"
+      ],
+      "z": [
+        "1.1051712252679",
+        "1.1051712252680"
+      ],
+      "H": [
+        "1432.3098703845206",
+        "1432.3098703845207"
+      ],
+      "real_log3_outer_power": [
+        "52561.0000000014600",
+        "52561.0000000014601"
+      ],
+      "strict_precision": 52562,
+      "win_pair": true,
+      "target_in_ambient": true,
+      "odd_small_primes": []
+    }
+  ],
+  "earlier_input_only_d_guard": false,
+  "old_modulus": "3^52561",
+  "new_modulus": "3^52562",
+  "active_cutoff_at_left_exceeds_100": true,
+  "allowance_at_right": [
+    "1.695161095277",
+    "1.695161095278"
+  ],
+  "persistent": {
+    "center": "100",
+    "left_record": [
+      "100"
+    ],
+    "right_record": [
+      "100"
+    ],
+    "passes_everywhere": [
+      false,
+      false
+    ]
+  },
+  "clearing": {
+    "center": "100+3^52561",
+    "left_record": [
+      "100"
+    ],
+    "right_record": [
+      "100+3^52561"
+    ],
+    "new_label_below_later_outer_cutoff_or_equal": true,
+    "new_label_above_all_active_cutoffs": true,
+    "passes_everywhere": [
+      false,
+      true
+    ]
+  },
+  "scope": "Same genuine finite WinPair, two legal rank-one slot-3 center choices and two distinct precisions. q=3 is ineligible for full host assembly. PairGood and the actual global K are not supplied by this finite row."
+}

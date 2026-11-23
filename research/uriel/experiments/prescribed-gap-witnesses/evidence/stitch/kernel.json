@@ -1,0 +1,12 @@
+{
+  "lean": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "source_sha256": "0ba95cbcb2e9795672f5b633f5a26b89ccc70d40b208e1bdf40873f62c3f4112",
+  "axioms": [
+    "'FirstGap.leftFailure' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'FirstGap.rightFailure' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'FirstGap.clippedIff' depends on axioms: [propext, Classical.choice, Quot.sound]"
+  ],
+  "replay": "replaying TwoScreens",
+  "scope": "Two abstract screen-failure equivalences at a strict cutoff crossover and the finite-frontier closed-domain clipping theorem. No selection existence or arithmetic output is assumed by these results."
+}

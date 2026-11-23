@@ -1,0 +1,99 @@
+[
+  {
+    "claim": "pair-identity",
+    "evidence_type": "kernel-checked conditional original-type theorem",
+    "evidence": [
+      "pairs/PairSharing.lean",
+      "pairs/kernel.json",
+      "pairs/cold_kernel.json"
+    ],
+    "conclusion": "One q,d works on every base in a positive right-neighborhood including a preassigned admissible target in the common ambient range.",
+    "scope": "PairEx supplies the existential pair. Width may be very small. Power-separated requests can force different pairs."
+  },
+  {
+    "claim": "cutoff-projection",
+    "evidence_type": "kernel-checked source-derived reconstruction",
+    "evidence": [
+      "fields/CoherentFields.lean",
+      "fields/SuccessiveFields.lean",
+      "fields/PhysicalGap.lean",
+      "fields/kernel.json"
+    ],
+    "conclusion": "On the shared old range, later exceptional membership implies earlier membership. The strict crossover transports two passing tests into source VAt and local WinDatum.",
+    "scope": "Fixed odd field data and pair-specific moving field, late validity, threshold and endpoint conditions required."
+  },
+  {
+    "claim": "joint-bridge",
+    "evidence_type": "kernel-checked conditional original-type theorem",
+    "evidence": [
+      "join/PrincipalBridge.lean",
+      "join/kernel.json"
+    ],
+    "conclusion": "twoSelections returns the same pair, mark and page function on all points of the preassigned gap if the two endpoint tests and crossover pass.",
+    "scope": "Prospective selection. No recovered pair or successful screen on an arbitrary prescribed late gap."
+  },
+  {
+    "claim": "handoff",
+    "evidence_type": "exact finite experiment and supplementary elementary theorem",
+    "evidence": [
+      "stitch/results.json",
+      "stitch/transients.json",
+      "stitch/kernel.json"
+    ],
+    "conclusion": "Different records may cover an interval through an exact handoff; two passing endpoints may leave a half-open hole.",
+    "scope": "Finite menus at Ct=2 and h=1, with validity domains explicitly supplied."
+  },
+  {
+    "claim": "slot-three",
+    "evidence_type": "kernel-checked original local bound",
+    "evidence": [
+      "slot/SlotGap.lean",
+      "slot/kernel.json"
+    ],
+    "conclusion": "Every allowed slot-three layer for conductor one has finite summed length zero. The direct estimate omits precisely that slot from the terminal screen.",
+    "scope": "No reduction of the rank input in the inherited J. No claim about the moving two-field or slot seven."
+  },
+  {
+    "claim": "sparse-center",
+    "evidence_type": "ordinary mathematical proof with kernel-checked center admissibility and finite controls",
+    "evidence": [
+      "slot/SlotGap.lean",
+      "slot/results.json",
+      "slot/probe.py"
+    ],
+    "conclusion": "One admissible integral center and a prior schedule of gaps defeat its filter for all sufficiently late bands and every fixed finite J, even for all envelopes available at each point.",
+    "scope": "Applies to one admissible rank-one presentation. It is not a computation of the global chosen table or of an arithmetic violation."
+  },
+  {
+    "claim": "principal-roster",
+    "evidence_type": "ordinary norm-Euclidean proof plus conditional and unconditional Lean statements",
+    "evidence": [
+      "roster/README.md",
+      "roster/kernel.json",
+      "join/PrincipalBridge.lean"
+    ],
+    "conclusion": "The two odd slots are 3 and 7. The actual 7-base descriptor is cyclotomic.",
+    "scope": "Membership of 7 unconditional in Lean. The exact roster and checksAtSeven use the class-number identity proved on paper."
+  },
+  {
+    "claim": "finite-scalar",
+    "evidence_type": "directed rational interval computation",
+    "evidence": [
+      "scalar/extrema.py",
+      "scalar/results.json"
+    ],
+    "conclusion": "On [8,12], the genuine G/sqrt(x) lies below 2/3 throughout, with its maximum at 8 and minimum at 12.",
+    "scope": "Independent finite analytic computation; thresholds of the arithmetic scheme at this gap are unknown."
+  },
+  {
+    "claim": "changed-precision",
+    "evidence_type": "finite paired witness experiment",
+    "evidence": [
+      "cross/PROTOCOL.md",
+      "cross/run.py",
+      "cross/results.json"
+    ],
+    "conclusion": "The controlled common prime row crosses a true ternary precision boundary on one fixed target.",
+    "scope": "Finite WinPair and the identified admissible local filter. No numerical PairGood zero-box verification or original host at q=3."
+  }
+]

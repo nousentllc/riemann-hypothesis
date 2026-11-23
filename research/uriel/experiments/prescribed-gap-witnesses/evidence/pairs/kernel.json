@@ -1,0 +1,29 @@
+{
+  "source_commit": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "authenticated_original_sources": 21,
+  "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "lean": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "supplement_sha256": "a429c5634d78797f369cce842e5442072affeb64de0ff6000fde185e9284267c",
+  "supplement_olean_sha256": "d178d8c44a611c636f691b98fceacc501c66b74f79b55c61a41f8ed330320999",
+  "freshly_compiled_originals": [],
+  "reused_originals": 21,
+  "declarations": [
+    "SuccessivePairs.incompatibleQ",
+    "SuccessivePairs.incompatibleD",
+    "SuccessivePairs.goodTransport",
+    "SuccessivePairs.guardOpen",
+    "SuccessivePairs.commonNeighborhood",
+    "SuccessivePairs.successiveSelections",
+    "SuccessivePairs.prescribedAmbient"
+  ],
+  "axioms": [
+    "'SuccessivePairs.incompatibleQ' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'SuccessivePairs.incompatibleD' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'SuccessivePairs.goodTransport' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'SuccessivePairs.guardOpen' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'SuccessivePairs.commonNeighborhood' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'SuccessivePairs.successiveSelections' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'SuccessivePairs.prescribedAmbient' depends on axioms: [propext, Classical.choice, Quot.sound]"
+  ],
+  "kernel": "replaying PairSharing"
+}
