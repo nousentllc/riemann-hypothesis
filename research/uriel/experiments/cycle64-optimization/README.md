@@ -2,7 +2,7 @@
 
 For a stationary profile on 64 residues, the best share of odd-position allowance that can be guaranteed over every numerical labeling and every allowed source exponent is **10.11902517624%**, rounded. This result uses the literal marked-tile window certificate for score compatibility and the same fixed-count, edge-realizing host construction throughout. The earlier guarantee was 10.004635224%. The new lower and upper bounds meet in one mathematical expression. The decimal enclosure measures the precision of evaluating that expression.
 
-Read [the paper](Optimizing_Recovery_on_the_64_Cycle.pdf). Its [editable LuaLaTeX master](Optimizing_Recovery_on_the_64_Cycle.tex) loads the chapter sources and the three figures in this directory. Build from this directory with `latexmk -lualatex -halt-on-error Optimizing_Recovery_on_the_64_Cycle.tex` using a normal LuaLaTeX installation with Latin Modern.
+Read [the paper](Optimizing_Recovery_on_the_64_Cycle.pdf). The [standalone LuaLaTeX manuscript](Optimizing_Recovery_on_the_64_Cycle.tex) contains the complete text and all three vector figures. Copy this one file into any directory and build it with `latexmk -lualatex -halt-on-error Optimizing_Recovery_on_the_64_Cycle.tex` using a normal LuaLaTeX installation with Latin Modern.
 
 ## The short calculation
 
@@ -39,7 +39,7 @@ python3 -B evidence/rootmark/near.py
 python3 -B evidence/endgame/project.py
 ```
 
-The [near-threshold receipt](evidence/rootmark/near.json) gives the signed margins at both caps. [The two residual supports](evidence/endgame/projection.json) record exact rationals for the local projection. For a faster entry point, run the last command and then the full near-threshold check. The last command verifies the stored census and derives its implications. The preceding command recomputes the census. Optional discovery uses SciPy for proposals. Rebuilding the figures with `python3 evidence/figures.py` uses Matplotlib; the compiled figures are supplied.
+The [near-threshold receipt](evidence/rootmark/near.json) gives the signed margins at both caps. [The two residual supports](evidence/endgame/projection.json) record exact rationals for the local projection. For a faster entry point, run the last command and then the full near-threshold check. The last command verifies the stored census and derives its implications. The preceding command recomputes the census. Optional discovery uses SciPy for proposals. Rebuilding the figures with `python3 evidence/figures.py` uses Matplotlib and exports the three figures as separate PDFs if needed. The manuscript embeds the vector originals.
 
 For the fresh finite Lean replay use the matching Lean 4.33.1 toolchain and a built Mathlib checkout at commit `0df444a360eaa60ab8c11dca51a86af692955474`:
 
