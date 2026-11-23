@@ -1,0 +1,38 @@
+{
+  "classification": "synthetic rational inequalities",
+  "scalar_cases": 8125,
+  "prime_window": {
+    "configurations": 3472,
+    "inside_exceptional_strips": 224,
+    "outside_strips_matches_adjacency": 3248
+  },
+  "controls": {
+    "H": 1000,
+    "x": 100,
+    "bprime": 10000,
+    "rho": "1/10000",
+    "outside_every_power_band": [
+      {
+        "p": 997,
+        "d": 1,
+        "fraction": "697/997"
+      },
+      {
+        "p": 983,
+        "d": 1,
+        "fraction": "0"
+      },
+      {
+        "p": 983,
+        "d": 3,
+        "fraction": "1"
+      },
+      {
+        "p": 983,
+        "d": 0,
+        "fraction": "1"
+      }
+    ],
+    "unrestricted_b_control_at_p_983": "full charge when b is twice bprime"
+  }
+}

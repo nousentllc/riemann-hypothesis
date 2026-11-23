@@ -1,0 +1,849 @@
+{
+  "pin": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "sources": [
+    {
+      "source": "src/Development/AbelianVarietyTheory/Definitions/GlobalTwisting/PairRowIffQdRows.lean",
+      "git_blob": "688162690ac7cbfe620037fcee8e451e7116f45b",
+      "sha256": "ce62bded2b02505b79892b0593c99e266bfadfba21574e84470ce1f1957b087f",
+      "lines": 220,
+      "cited_at": [
+        [
+          "evidence/FAMILY.md",
+          28,
+          84
+        ]
+      ]
+    },
+    {
+      "source": "src/Development/AbelianVarietyTheory/Definitions/GlobalTwisting/ThinScalesIffHostBound.lean",
+      "git_blob": "1de433cc5ce2fa941ca72691bc75a3bccb667634",
+      "sha256": "413712d1bffa0ffc17a269690dbd21597d8eb1dd08452f943dfdcf535f607146",
+      "lines": 252,
+      "cited_at": [
+        [
+          "evidence/selection/SELECTION.md",
+          19,
+          41
+        ]
+      ]
+    },
+    {
+      "source": "src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/BadCharacterBound.lean",
+      "git_blob": "4007aeaff3e05c077b9d4a11eb07f459d5d75c66",
+      "sha256": "7e9fcc1df1c06de186283d3ffb232a612538ab38f2aab6335bd41220ef4d9bde",
+      "lines": 61,
+      "cited_at": [
+        [
+          "evidence/selection/SELECTION.md",
+          27,
+          55
+        ]
+      ]
+    },
+    {
+      "source": "src/Development/AutomorphicArithmetic/CharacterBoxes/FieldChi.lean",
+      "git_blob": "f3e2032b133ff64406a87e27438cdf467aa05a1f",
+      "sha256": "784b9d6aed0292547065a98f2577d41f82269332559815f38fc85da4f69369b3",
+      "lines": 59,
+      "cited_at": [
+        [
+          "evidence/FAMILY.md",
+          20,
+          30
+        ],
+        [
+          "evidence/selection/SELECTION.md",
+          20,
+          26
+        ]
+      ]
+    },
+    {
+      "source": "src/Development/AutomorphicArithmetic/CharacterBoxes/Supply.lean",
+      "git_blob": "b104f034fc9c13758e280d1b7d33ac1ea370663a",
+      "sha256": "c57b63c82b55380b31aabae74ba797be099cd0edaba3de88387995fea2cfe31f",
+      "lines": 47,
+      "cited_at": [
+        [
+          "evidence/selection/SELECTION.md",
+          22,
+          34
+        ]
+      ]
+    },
+    {
+      "source": "src/Development/AutomorphicArithmetic/ShortNorms/hostOfFieldOf.lean",
+      "git_blob": "261b566b0ea0d155ef1a434889d720c3b439735f",
+      "sha256": "fb75c6141fe635f8afd236416d423a493548ce9e834da1b839686331d5d40489",
+      "lines": 255,
+      "cited_at": [
+        [
+          "Where_the_Odd_Position_Charge_Is_Tight.tex",
+          217,
+          217
+        ],
+        [
+          "evidence/selection/SELECTION.md",
+          217,
+          229
+        ]
+      ]
+    },
+    {
+      "source": "src/Development/AutomorphicArithmetic/ShortNorms/supplyOfAdmOf.lean",
+      "git_blob": "04ca5068e90544580c7684a316ec79c49d3572fc",
+      "sha256": "b70c2177d57dfcd03f82784741813b7c6e6b525c69ffec5cae5527f03013a364",
+      "lines": 135,
+      "cited_at": [
+        [
+          "evidence/selection/SELECTION.md",
+          13,
+          36
+        ],
+        [
+          "evidence/selection/SELECTION.md",
+          92,
+          128
+        ]
+      ]
+    },
+    {
+      "source": "src/Development/AutomorphicArithmetic/ThickFrames/MarkedLow.lean",
+      "git_blob": "5be96f404d32887eec97c3a7f56134c05c77be7e",
+      "sha256": "410e5950323b24a916148df5b6aa874242eb7dfae2ec058067e5691d4db56f2a",
+      "lines": 33,
+      "cited_at": [
+        [
+          "evidence/selection/SELECTION.md",
+          8,
+          29
+        ]
+      ]
+    },
+    {
+      "source": "src/Development/AutomorphicArithmetic/ThickFrames/NotGoodLe.lean",
+      "git_blob": "e830326694c79556247a5f7414b838ea42cede53",
+      "sha256": "eceda7d7c1d2f913174f652208731c368a3e4fcabff1fc82ceee21f79ae064b0",
+      "lines": 138,
+      "cited_at": [
+        [
+          "Where_the_Odd_Position_Charge_Is_Tight.tex",
+          84,
+          84
+        ],
+        [
+          "evidence/selection/SELECTION.md",
+          84,
+          89
+        ]
+      ]
+    },
+    {
+      "source": "src/Development/AutomorphicArithmetic/ThickFrames/orbitSum.lean",
+      "git_blob": "e63add475a7d69b5a9380a730e7a7115380d42b8",
+      "sha256": "d341d057a8e1a8cfee5fbdd65a62b91e81a000c056fcb8d81f877b96699b2aec",
+      "lines": 159,
+      "cited_at": [
+        [
+          "evidence/selection/SELECTION.md",
+          134,
+          148
+        ]
+      ]
+    },
+    {
+      "source": "src/Development/AutomorphicArithmetic/ThickFrames/select.lean",
+      "git_blob": "32751767563d67d48acb0d4ff4e2e256d03b42e3",
+      "sha256": "498d03b21842694689c0460dc3fc8942ad88b9087a60ee46a870a62b7d490462",
+      "lines": 174,
+      "cited_at": [
+        [
+          "evidence/selection/README.md",
+          5,
+          174
+        ],
+        [
+          "evidence/selection/SELECTION.md",
+          70,
+          173
+        ]
+      ]
+    },
+    {
+      "source": "src/Development/AutomorphicArithmetic/ThickFrames/topsBase.lean",
+      "git_blob": "d3a34386069e27091a1cd44e9f2bbb52044b591d",
+      "sha256": "88c99c3ee2a40f79a0cb5fd08aa4ad149607b5b8627f4d25198966e9b2a12552",
+      "lines": 139,
+      "cited_at": [
+        [
+          "evidence/selection/SELECTION.md",
+          79,
+          97
+        ]
+      ]
+    },
+    {
+      "source": "src/Development/AutomorphicArithmetic/ThickFrames/topsGroup.lean",
+      "git_blob": "84d05b484bb41e3c6549da74fb667d83414e2ebd",
+      "sha256": "3bbdc1217940a0c6e5ae0d7ef56208c6c392efbaebde2d95af5e2ba4e925993b",
+      "lines": 143,
+      "cited_at": [
+        [
+          "Where_the_Odd_Position_Charge_Is_Tight.tex",
+          103,
+          103
+        ],
+        [
+          "evidence/selection/README.md",
+          64,
+          143
+        ],
+        [
+          "evidence/selection/SELECTION.md",
+          90,
+          103
+        ],
+        [
+          "evidence/selection/SELECTION.md",
+          103,
+          123
+        ]
+      ]
+    },
+    {
+      "source": "src/Formalism/LocalRingCardinality/DataParams₂.lean",
+      "git_blob": "50914500995df91e2646d91a6c5c99a7e603a51b",
+      "sha256": "39d84d7e7db5196715f955ac44f45e61a23fcf4ebd5065ca41444f836efd3099",
+      "lines": 274,
+      "cited_at": [
+        [
+          "evidence/local/SOURCE.md",
+          27,
+          39
+        ]
+      ]
+    },
+    {
+      "source": "src/Formalism/LocalRingCardinality/HostCls.lean",
+      "git_blob": "a7a9b329340eab5175245043e0abd7656d7fe599",
+      "sha256": "e4ecf1988b1c90ef926e4d676cc503acbd6ac20c2f6f41f711b4d5475ae8526c",
+      "lines": 252,
+      "cited_at": [
+        [
+          "evidence/FAMILY.md",
+          126,
+          145
+        ]
+      ]
+    },
+    {
+      "source": "src/Formalism/LocalToGlobal/GlobalTheory/ArithP.lean",
+      "git_blob": "ea6fc358531da57a2b54c070fd4414e8c4e08eb2",
+      "sha256": "6782feb6a66d037d47f33c1e10a445f9a40675c03befb9f79cbe28620ec35f40",
+      "lines": 363,
+      "cited_at": [
+        [
+          "evidence/FAMILY.md",
+          304,
+          310
+        ]
+      ]
+    },
+    {
+      "source": "src/Formalism/LocalToGlobal/GlobalTheory/IsResidueClassZero.lean",
+      "git_blob": "3d9ca6054c07565ada526d97402492b71739937d",
+      "sha256": "7b055c5bb583ff2ffc19c0891b468e05db7926f6039999f09a3d7615c90a171e",
+      "lines": 524,
+      "cited_at": [
+        [
+          "Where_the_Odd_Position_Charge_Is_Tight.tex",
+          195,
+          195
+        ],
+        [
+          "Where_the_Odd_Position_Charge_Is_Tight.tex",
+          224,
+          224
+        ],
+        [
+          "Where_the_Odd_Position_Charge_Is_Tight.tex",
+          267,
+          267
+        ],
+        [
+          "evidence/FAMILY.md",
+          265,
+          276
+        ],
+        [
+          "evidence/selection/SELECTION.md",
+          86,
+          105
+        ],
+        [
+          "evidence/selection/SELECTION.md",
+          264,
+          275
+        ]
+      ]
+    },
+    {
+      "source": "src/Formalism/LocalToGlobal/GlobalTheory/PowFourLtCeilThresholdPrime.lean",
+      "git_blob": "8166795ec6e846795d7272781119ee7d17d426c0",
+      "sha256": "940eebfa0d8e19a862e36af510c31e007e864ddf9f2a3e839918e733012ab31c",
+      "lines": 2216,
+      "cited_at": [
+        [
+          "evidence/local/SOURCE.md",
+          1353,
+          1369
+        ],
+        [
+          "evidence/transport/TRANSPORT.md",
+          765,
+          815
+        ],
+        [
+          "evidence/transport/TRANSPORT.md",
+          1821,
+          1830
+        ]
+      ]
+    },
+    {
+      "source": "src/Formalism/SharpRestriction/FamCore.lean",
+      "git_blob": "44cd54c38881086724fdf7f10f32b7d8e80e35b3",
+      "sha256": "b261e12923d7dc47037a7b5b458e61ef59d69545f3b40a904a36e6bf8047ec78",
+      "lines": 218,
+      "cited_at": [
+        [
+          "Where_the_Odd_Position_Charge_Is_Tight.tex",
+          123,
+          123
+        ],
+        [
+          "evidence/transport/TRANSPORT.md",
+          123,
+          130
+        ]
+      ]
+    },
+    {
+      "source": "src/Formalism/SharpRestriction/GlobalSchurBounds/Chosen.lean",
+      "git_blob": "9a85f26989d2381da29a40abfe7bd339d20815d8",
+      "sha256": "6ef10b1eee9e750f3cf2f70e389c7a8b59589997412e50b1b2a4c12ffb07e8f9",
+      "lines": 92,
+      "cited_at": [
+        [
+          "Where_the_Odd_Position_Charge_Is_Tight.tex",
+          46,
+          46
+        ],
+        [
+          "evidence/FAMILY.md",
+          18,
+          37
+        ],
+        [
+          "evidence/FAMILY.md",
+          46,
+          51
+        ]
+      ]
+    },
+    {
+      "source": "src/Formalism/SharpRestriction/GlobalSchurBounds/FrameCodeOfAdditive.lean",
+      "git_blob": "a26c19cd46d322546d8a1784c3c3e9aac3acef85",
+      "sha256": "5c045cbc6467d70abac86d5acb3a2f3480dd32e15ccf92b52858da5cdca7e72c",
+      "lines": 560,
+      "cited_at": [
+        [
+          "Where_the_Odd_Position_Charge_Is_Tight.tex",
+          339,
+          339
+        ],
+        [
+          "evidence/FAMILY.md",
+          339,
+          344
+        ]
+      ]
+    },
+    {
+      "source": "src/Formalism/SharpRestriction/GlobalSchurBounds/GeneralLinearActions/FiltrationCocycleLiftCriterion.lean",
+      "git_blob": "7fdcc0d7a632caec8de1b70d957b459a2c3f5fde",
+      "sha256": "f547104b02cfa5b508b5d9fd489d7839de0d90c97d9634893644631224b72c67",
+      "lines": 106,
+      "cited_at": [
+        [
+          "evidence/FAMILY.md",
+          15,
+          28
+        ]
+      ]
+    },
+    {
+      "source": "src/Formalism/SharpRestriction/GlobalSchurBounds/Joints.lean",
+      "git_blob": "fe720afd45992b45245906237880b8ab6bf8e04b",
+      "sha256": "529e5ccbc4021dc89fc14a16f863cc0efb6ca26836f5f7805b3799f35c31bfdb",
+      "lines": 1943,
+      "cited_at": [
+        [
+          "Where_the_Odd_Position_Charge_Is_Tight.tex",
+          1084,
+          1084
+        ],
+        [
+          "evidence/FAMILY.md",
+          855,
+          883
+        ],
+        [
+          "evidence/FAMILY.md",
+          1103,
+          1132
+        ]
+      ]
+    },
+    {
+      "source": "src/Formalism/SharpRestriction/GlobalSchurBounds/LossesSmallShares.lean",
+      "git_blob": "70624b10f53b29e43deb89bd9dae257403ecb61e",
+      "sha256": "ba647275567e1662bbc0ae3ebc3e48e0831d354658aeb9071c3cc474a1e6e13e",
+      "lines": 515,
+      "cited_at": [
+        [
+          "evidence/FAMILY.md",
+          357,
+          389
+        ]
+      ]
+    },
+    {
+      "source": "src/Formalism/SharpRestriction/GlobalSchurBounds/RamificationTwoAndConjugationAtQAndD.lean",
+      "git_blob": "1c1495ef81c77fa96f3c1a70106c1da9e24c0c5d",
+      "sha256": "20bea07e161eccd570a4db88a02b73a5f95cc51edc104d97e62f69aec4c620ee",
+      "lines": 1042,
+      "cited_at": [
+        [
+          "evidence/FAMILY.md",
+          256,
+          305
+        ]
+      ]
+    },
+    {
+      "source": "src/Formalism/SharpRestriction/GrowthBounds/IsResidueClassZero.lean",
+      "git_blob": "9fbb7879d0519f9a136e190551422881ef5d2f0b",
+      "sha256": "769f9733e1d208e4ee5a9cc89e25123f2ce9182ce295490ff97e569faf87f5a0",
+      "lines": 485,
+      "cited_at": [
+        [
+          "evidence/FAMILY.md",
+          35,
+          45
+        ],
+        [
+          "evidence/local/SOURCE.md",
+          131,
+          159
+        ],
+        [
+          "evidence/local/SOURCE.md",
+          207,
+          224
+        ],
+        [
+          "evidence/local/SOURCE.md",
+          305,
+          317
+        ],
+        [
+          "evidence/transport/TRANSPORT.md",
+          56,
+          85
+        ],
+        [
+          "evidence/transport/TRANSPORT.md",
+          139,
+          159
+        ],
+        [
+          "evidence/transport/TRANSPORT.md",
+          279,
+          285
+        ],
+        [
+          "evidence/transport/TRANSPORT.md",
+          353,
+          366
+        ]
+      ]
+    },
+    {
+      "source": "src/Formalism/SharpRestriction/GrowthBounds/LogarithmicSums/Conclusion1OfGainBoundAll.lean",
+      "git_blob": "a37d19e7affc2c873c5a325fb25af7bf7834d9a0",
+      "sha256": "1a0b0309969a995dde24cd1a903dae13173bcd41eead7ea2a0139300965af3a1",
+      "lines": 163,
+      "cited_at": [
+        [
+          "evidence/local/SOURCE.md",
+          71,
+          80
+        ],
+        [
+          "evidence/local/SOURCE.md",
+          99,
+          135
+        ],
+        [
+          "evidence/transport/TRANSPORT.md",
+          99,
+          103
+        ]
+      ]
+    },
+    {
+      "source": "src/Formalism/SharpRestriction/GrowthBounds/LogarithmicSums/GainBoundAllAddOneOfGainBoundAllRequired.lean",
+      "git_blob": "dfe9f7e2fcb214def5642643ea24ad562c40fa10",
+      "sha256": "08e67418f8c9e6246fd3a5020d21aad1710cd323e0221a17d836d419456b7945",
+      "lines": 393,
+      "cited_at": [
+        [
+          "evidence/transport/TRANSPORT.md",
+          284,
+          307
+        ],
+        [
+          "evidence/transport/TRANSPORT.md",
+          339,
+          389
+        ]
+      ]
+    },
+    {
+      "source": "src/Formalism/SharpRestriction/GrowthBounds/LogarithmicSums/NotSingularOfCentral.lean",
+      "git_blob": "c57da93c44237c19538bd07949a705adb0e8171f",
+      "sha256": "c32c6071f19c8349702af5ee94716d23844d478514034d99c62d4c556e3b0ba5",
+      "lines": 741,
+      "cited_at": [
+        [
+          "evidence/transport/TRANSPORT.md",
+          638,
+          728
+        ]
+      ]
+    },
+    {
+      "source": "src/Formalism/SharpRestriction/GrowthBounds/LogarithmicSums/PartnerCountOfCentral.lean",
+      "git_blob": "f677b9041604e334f1115ae16b96cd61b1c7ee55",
+      "sha256": "12e0fc504d1dd71ac46b7cd72908ae34001b2995b51accb36a031e821b64f998",
+      "lines": 851,
+      "cited_at": [
+        [
+          "Where_the_Odd_Position_Charge_Is_Tight.tex",
+          136,
+          136
+        ],
+        [
+          "Where_the_Odd_Position_Charge_Is_Tight.tex",
+          399,
+          399
+        ],
+        [
+          "Where_the_Odd_Position_Charge_Is_Tight.tex",
+          696,
+          696
+        ],
+        [
+          "evidence/local/SOURCE.md",
+          107,
+          134
+        ],
+        [
+          "evidence/local/SOURCE.md",
+          136,
+          193
+        ],
+        [
+          "evidence/local/SOURCE.md",
+          233,
+          245
+        ],
+        [
+          "evidence/local/SOURCE.md",
+          345,
+          367
+        ],
+        [
+          "evidence/local/SOURCE.md",
+          369,
+          437
+        ],
+        [
+          "evidence/local/SOURCE.md",
+          581,
+          591
+        ],
+        [
+          "evidence/local/SOURCE.md",
+          696,
+          841
+        ],
+        [
+          "evidence/selection/SELECTION.md",
+          399,
+          429
+        ],
+        [
+          "evidence/transport/TRANSPORT.md",
+          107,
+          196
+        ],
+        [
+          "evidence/transport/TRANSPORT.md",
+          308,
+          343
+        ],
+        [
+          "evidence/transport/TRANSPORT.md",
+          369,
+          439
+        ],
+        [
+          "evidence/transport/TRANSPORT.md",
+          442,
+          448
+        ],
+        [
+          "evidence/transport/TRANSPORT.md",
+          545,
+          560
+        ],
+        [
+          "evidence/transport/TRANSPORT.md",
+          760,
+          840
+        ],
+        [
+          "evidence/transport/TRANSPORT.md",
+          842,
+          849
+        ]
+      ]
+    },
+    {
+      "source": "src/Formalism/SharpRestriction/GrowthBounds/LogarithmicSums/RemainingCountingStatement.lean",
+      "git_blob": "b9435d525f79b2af1a971259b99c155f7b90ce63",
+      "sha256": "e479d36a04d568fa654a8a4807687be5b0e8c1e4221b7a0b2475c093bce0831f",
+      "lines": 84,
+      "cited_at": [
+        [
+          "evidence/transport/TRANSPORT.md",
+          46,
+          79
+        ]
+      ]
+    },
+    {
+      "source": "src/Formalism/SharpRestriction/GrowthBounds/LogarithmicSums/StarNumB.lean",
+      "git_blob": "7d7dfb6ed5fcb5241d17bcdaf578575c58314d47",
+      "sha256": "e463f63d31e781d6aeab332f11033c93105e2f77e2740b695b8a5f0f1ee44533",
+      "lines": 359,
+      "cited_at": [
+        [
+          "evidence/local/SOURCE.md",
+          219,
+          224
+        ]
+      ]
+    },
+    {
+      "source": "src/Formalism/SharpRestriction/GrowthBounds/PlaneCountTheoremWithConstants.lean",
+      "git_blob": "8b788f1a1865ddd80a69beb427e319352260150d",
+      "sha256": "bc71270195974136ea0e12372c38192b93116903082f46f055f2daa19bde2081",
+      "lines": 1881,
+      "cited_at": [
+        [
+          "evidence/transport/TRANSPORT.md",
+          130,
+          187
+        ],
+        [
+          "evidence/transport/TRANSPORT.md",
+          759,
+          809
+        ]
+      ]
+    },
+    {
+      "source": "src/Formalism/SharpRestriction/GrowthBounds/SmallOrderPrimes.lean",
+      "git_blob": "a35ad58d20f072b48cbb03f619f1bf0f1501e66f",
+      "sha256": "5a737262225108d60f9dbd8ddbe68f39c535da0ca1a0ca0d3894e41f752481b0",
+      "lines": 281,
+      "cited_at": [
+        [
+          "evidence/transport/TRANSPORT.md",
+          15,
+          23
+        ]
+      ]
+    },
+    {
+      "source": "src/Formalism/SharpRestriction/GrowthBounds/UnramifiedQuadraticSetting.lean",
+      "git_blob": "c36e22ceab2885a6ab812f6187bfd1a86472a6ec",
+      "sha256": "8131a4bd16451b1acce0980972b44735ff04eade07f6ea91788cde72f5df5b6a",
+      "lines": 254,
+      "cited_at": [
+        [
+          "Where_the_Odd_Position_Charge_Is_Tight.tex",
+          54,
+          54
+        ],
+        [
+          "Where_the_Odd_Position_Charge_Is_Tight.tex",
+          237,
+          237
+        ],
+        [
+          "evidence/FAMILY.md",
+          237,
+          252
+        ],
+        [
+          "evidence/transport/TRANSPORT.md",
+          237,
+          252
+        ]
+      ]
+    },
+    {
+      "source": "src/Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/ExplicitFormulaErrorOfHostConditions.lean",
+      "git_blob": "ed60b4b997cd4703713660b185b9e43fd95559a1",
+      "sha256": "d6b12bcbdc15c1b717c33a712474f9fca18c577a65c41fff2b2937534e5447ba",
+      "lines": 168,
+      "cited_at": [
+        [
+          "evidence/selection/SELECTION.md",
+          105,
+          121
+        ]
+      ]
+    },
+    {
+      "source": "src/Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/FrameFacts.lean",
+      "git_blob": "22402e8349688ace18526a8fc486eb659a5e7450",
+      "sha256": "4b29bf3a7df92739ba0351614ac7d98ffdc73ea46c0e6c58505c91b2c3ce9e70",
+      "lines": 843,
+      "cited_at": [
+        [
+          "Where_the_Odd_Position_Charge_Is_Tight.tex",
+          249,
+          249
+        ],
+        [
+          "evidence/FAMILY.md",
+          249,
+          262
+        ]
+      ]
+    },
+    {
+      "source": "src/Formalism/SizeWindowBrackets/ChainSlopeWindows/AdmissibleSchurLemma.lean",
+      "git_blob": "91c8966257416ce67a92357ff67f1ded82bba9c9",
+      "sha256": "d4e83fad0408cf330d72d8afe41c37bb3c39143cc31fb8a1a36070d15bc08045",
+      "lines": 1055,
+      "cited_at": [
+        [
+          "evidence/transport/TRANSPORT.md",
+          825,
+          882
+        ]
+      ]
+    },
+    {
+      "source": "src/Formalism/SizeWindowBrackets/ChainSlopeWindows/DiscriminantSettingSatisfied.lean",
+      "git_blob": "edc32424311c076565c2e13b7657f6a5f58cfd84",
+      "sha256": "8dce8d3198be07282b1dc16061a027dab53d785947d59378f001afa0fb580f23",
+      "lines": 243,
+      "cited_at": [
+        [
+          "evidence/transport/TRANSPORT.md",
+          31,
+          75
+        ],
+        [
+          "evidence/transport/TRANSPORT.md",
+          160,
+          222
+        ]
+      ]
+    },
+    {
+      "source": "src/Formalism/SizeWindowBrackets/ChainSlopeWindows/OneLeThresholdMulPowers.lean",
+      "git_blob": "e056ba0d7b0d84078666ab3531c6ca1c6f744235",
+      "sha256": "8e7e5235c4e17ae957475d8aa0346d4087e3848c50be797039b5d621235f899a",
+      "lines": 1181,
+      "cited_at": [
+        [
+          "Where_the_Odd_Position_Charge_Is_Tight.tex",
+          444,
+          444
+        ],
+        [
+          "evidence/transport/TRANSPORT.md",
+          444,
+          522
+        ]
+      ]
+    },
+    {
+      "source": "src/Formalism/SizeWindowBrackets/PrimeClassLossHypothesesSatisfiable.lean",
+      "git_blob": "3f609406f5456e034f5dfb94e9688fca6c9f95a9",
+      "sha256": "f80e123e454617b3ebef24fd68edaf59371e5fc82e0b735552880a52d5d3ef00",
+      "lines": 169,
+      "cited_at": [
+        [
+          "evidence/transport/TRANSPORT.md",
+          12,
+          30
+        ]
+      ]
+    },
+    {
+      "source": "src/Formalism/SubspaceCounting/GoodOrbitIntervalTileCondition.lean",
+      "git_blob": "acb9507aac12f0af981cc734a07b0302ea501026",
+      "sha256": "44168da25c567d057bc885ba30918687f9573495759a62900c7175ac5a8c40bb",
+      "lines": 93,
+      "cited_at": [
+        [
+          "Where_the_Odd_Position_Charge_Is_Tight.tex",
+          21,
+          21
+        ],
+        [
+          "evidence/FAMILY.md",
+          13,
+          26
+        ],
+        [
+          "evidence/transport/TRANSPORT.md",
+          9,
+          26
+        ]
+      ]
+    },
+    {
+      "source": "src/Formalism/SubspaceCounting/StatementB.lean",
+      "git_blob": "5d64c1a8e0a7fdca57f1263c345be4d1bbca2d26",
+      "sha256": "5118b67dcbfb14424d56c1eb44dbc290b9d94a386bf5027c46557e1fc51e4017",
+      "lines": 106,
+      "cited_at": [
+        [
+          "evidence/FAMILY.md",
+          9,
+          14
+        ]
+      ]
+    }
+  ]
+}
