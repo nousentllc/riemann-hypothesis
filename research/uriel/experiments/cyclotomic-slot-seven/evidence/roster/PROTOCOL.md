@@ -1,0 +1,3 @@
+# From the prime roster to an estimate using only the moving field
+
+The prior bridge at 0b9ed6f assumed hStar(PChar.one)=1 to identify the entire odd list. Test whether original kstar at 7 and Mathlib's small-discriminant Minkowski bound remove that premise on the actual splitting field. Keep Q(sqrt(-7)) separate from Q(zeta_7). Aim for a kernel-checked unconditional equality Bchi one={3,7}; then combine with the independent layer-vanishing paths at 3 and 7. Hold the inherited K, rank budget, pair, page and J fixed. Try to remove both odd endpoint screens and, if feasible, any now-unused odd crossover, preserving the original WinDatum conclusion. Mark any surviving supply or active-screen hypothesis.
