@@ -63,16 +63,28 @@
   },
   "paper": {
     "standalone_lualatex": true,
-    "pages": 31,
-    "rendered_pages": 31,
+    "pages": 33,
+    "rendered_pages": 33,
     "annotations": 59,
     "distinct_external_links": 37,
     "vector_figures": [
       "witness",
       "classnumbers"
     ],
-    "tex_sha256": "dc12d1b5dc661a7e64f9d1059263a7c8b37ea3b434d1fe0e3265052f42c01542",
-    "pdf_sha256": "a1577d4fe93ff01f1de60e9ff3cff266b385ad62643eda64d2a98ecc85f57e99"
+    "logo": {
+      "file": "evidence/figures/nous_logo_black.png",
+      "sha256": "bdfff8716596a351b480896d4bc21a7786470d6283c050b4ee801e3a88d061b6",
+      "reference": "Arithmetic Coding, Representation Geometry, and Revisable Memory, Paper 01 editable source, assets/nous_logo_black.png; also identical to the black July 2019 branding master."
+    },
+    "human_ai_disclosure": true,
+    "front_matter": {
+      "cover": 1,
+      "abstract": 2,
+      "contents": 3,
+      "first_section": 4
+    },
+    "tex_sha256": "982e3eae3617c66a73be76dcfd9478af66397fca4fc4228278165f1bba3c22a3",
+    "pdf_sha256": "423d123e62dec14848df01eb632bb15e9e06f9ce6b33c2e8473fcd4d91a54e26"
   },
   "verification_receipts": [
     "evidence/verification/reproduce-finite.json",

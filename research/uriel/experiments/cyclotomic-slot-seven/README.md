@@ -6,7 +6,7 @@ The distinction that explains the result appears at conductor 49. Its relative c
 
 ## Reading the package
 
-The single LuaLaTeX source and matching PDF are **The_Fixed_Cyclotomic_Slot_at_Seven.tex** and **The_Fixed_Cyclotomic_Slot_at_Seven.pdf**. The vector exhibits are embedded in the source. To rebuild the PDF, copy the TeX file to an empty writable directory and run LuaLaTeX twice there. The TeX distribution must contain the packages and fonts named in the preamble. The supplied PDF is ready to read.
+The single LuaLaTeX source and matching PDF are **The_Fixed_Cyclotomic_Slot_at_Seven.tex** and **The_Fixed_Cyclotomic_Slot_at_Seven.pdf**. The two vector exhibits and the original black Nous PNG are embedded in the source. The title, abstract, and contents have their own pages; the main text begins on a fresh page. The paper credits Justin Candler and includes a Human–AI collaboration disclosure describing Uriel’s contributions and the verification process. To rebuild the PDF, copy the TeX file to an empty writable directory and run LuaLaTeX twice there. The TeX distribution must contain the packages and fonts named in the preamble. The supplied PDF is ready to read.
 
 Start with **CLAIMS.json** for the statement, evidence class, exact files and limits of each result. **PROVENANCE.json** records the original, earlier research, formal toolchain and release verification. All paths below are relative to the extracted package.
 
