@@ -1,0 +1,71 @@
+{
+  "original_pin": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "lean": "819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+  "module": "OrbitLoss",
+  "supplement_sha256": "542bafbbadfc4257e5da8a4b947442764fad3a8e965be0b159b7856a53897a7b",
+  "imported_inventory_checked": 1205,
+  "inventory_sha256": "f73a9ec6cb84b11274e6e773f21e44377b779970841cb3b290cc6bf314bf2843",
+  "original_closure": 289,
+  "original_modules_reused": 282,
+  "original_modules_rebuilt": {
+    "Formalism.SharpRestriction.GrowthBounds.LogarithmicSums.Conclusion1OfGainBoundAll": {
+      "git_blob": "a37d19e7affc2c873c5a325fb25af7bf7834d9a0",
+      "olean_sha256": "f14559f9612bc981156e33fb5d2c4900aaa128981de8a0f6573bf3c313332b70",
+      "published_olean_sha256": "2abfb0d26eb3062b812ed5cc984f38302eebc4f767f74ef3cb2fe1b993cb6bdc",
+      "matches_published_object": false,
+      "kernel_replay": "replaying Formalism.SharpRestriction.GrowthBounds.LogarithmicSums.Conclusion1OfGainBoundAll"
+    },
+    "Formalism.SharpRestriction.GrowthBounds.LogarithmicSums.PrimeSums": {
+      "git_blob": "71ac80d66bb05a93246e321f4258d81d7830b22f",
+      "olean_sha256": "bbc9e68c1bfc1b4d1f76567bf9e18fc38571d88b46e2c125056084f3f0448c55",
+      "published_olean_sha256": "f70778266e92f5af494324dcedf9a181d0c732fcd930f7e4a1fa1a79352f0a52",
+      "matches_published_object": false,
+      "kernel_replay": "replaying Formalism.SharpRestriction.GrowthBounds.LogarithmicSums.PrimeSums"
+    },
+    "Formalism.SharpRestriction.GrowthBounds.LogarithmicSums.SummableAndTsumLeTwoMulDivOfLeDivPow": {
+      "git_blob": "5a9eb8949b592ca65eceece0dbe3fe1b4b8a38fb",
+      "olean_sha256": "07c38e7549bad3a264c92573f3d211482e16c0f0dce4a97998f6f88959e5536b",
+      "published_olean_sha256": "0522b7b13894c73311787f7447a6f5dba8431e3af2e1d4f1c18b97ef46019c0a",
+      "matches_published_object": false,
+      "kernel_replay": "replaying Formalism.SharpRestriction.GrowthBounds.LogarithmicSums.SummableAndTsumLeTwoMulDivOfLeDivPow"
+    },
+    "Formalism.SharpRestriction.GrowthBounds.LogarithmicSums.PrimeRpowNegLevelLe": {
+      "git_blob": "2534d4828612d86863a3b3eca1525827d625cbed",
+      "olean_sha256": "21602e5040a85571cb1decf4e94f1a1280dbcb73d68d09eae5f10c72552499be",
+      "published_olean_sha256": "8aac6c1f9e951adf854b4240eca29eea34be7928523fe7fd8d1c54087db2efb2",
+      "matches_published_object": false,
+      "kernel_replay": "replaying Formalism.SharpRestriction.GrowthBounds.LogarithmicSums.PrimeRpowNegLevelLe"
+    },
+    "Formalism.SharpRestriction.GrowthBounds.LogarithmicSums.DfcHigh": {
+      "git_blob": "3ae0d61345dc80d56ce8093ed9e3fb9637f6ae91",
+      "olean_sha256": "c53482b92910761e93aeacd9b661ff2bab62d422676306b2fc36b4367763d7bd",
+      "published_olean_sha256": "ab034d877e870887cb5d79d63c610c32bbfd51a14cacb1c42ac0ce4fe7d59760",
+      "matches_published_object": false,
+      "kernel_replay": "replaying Formalism.SharpRestriction.GrowthBounds.LogarithmicSums.DfcHigh"
+    },
+    "Formalism.SharpRestriction.GrowthBounds.LogarithmicSums.SecondConstantNonneg": {
+      "git_blob": "9a81c995f590ec0a1a7aa4c92729b804f38514dc",
+      "olean_sha256": "2cf3ae8ddb98f8fccf1f496ff92325c886a367a75d1b77d0c6e52eacca22394c",
+      "published_olean_sha256": "2ce9567458e0f42fe5dca7129d6a425f245c5de2253af2f6d381c43daa560d53",
+      "matches_published_object": false,
+      "kernel_replay": "replaying Formalism.SharpRestriction.GrowthBounds.LogarithmicSums.SecondConstantNonneg"
+    },
+    "Formalism.SharpRestriction.GrowthBounds.LogarithmicSums.LatticeChainSuccOfPartial": {
+      "git_blob": "c48148c0af73a80a8647630b9bfc484594b3d641",
+      "olean_sha256": "c03d525e8eaad952627ede8866945aa6f168c18cc96fd54efd6df54e45ffaa68",
+      "published_olean_sha256": "c2f517959175c30ea07247282d8e6aec69b3e144f3861ccd9c9bf8bed9ccc76c",
+      "matches_published_object": false,
+      "kernel_replay": "replaying Formalism.SharpRestriction.GrowthBounds.LogarithmicSums.LatticeChainSuccOfPartial"
+    }
+  },
+  "original_endpoint_replay": "replaying Formalism.SharpRestriction.GrowthBounds.LogarithmicSums.LatticeChainSuccOfPartial",
+  "elaboration": [
+    "'Formalism.MainNotions.AuxBlock8.Pf.G5.orbitLoss_BTT_zero' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'Formalism.MainNotions.AuxBlock8.Pf.G5.orbitLoss_E1_difference' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'Formalism.MainNotions.AuxBlock8.Pf.G5.orbitLoss_relative' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'Formalism.MainNotions.AuxBlock8.Pf.G5.orbitLoss_low' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'Formalism.MainNotions.AuxBlock8.Pf.G5.orbitLoss_global' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'Formalism.MainNotions.AuxBlock8.Pf.G5.orbitLoss_compare' depends on axioms: [propext, Classical.choice, Quot.sound]"
+  ],
+  "supplement_replay": "replaying OrbitLoss"
+}
