@@ -1,0 +1,21 @@
+DC network with + at 12 V and 0 at 0 V. Switch order is s,t,u (1 means closed). A bracketed resistor conducts only when its switch is closed. Each resistor lists its oriented start and end nodes and its resistance in ohms. R1=g>+:9 R2=g>a:3 R3=a>f:9 R4=f>d:2 R5=d>b:7 R6=b>e:4 R7=e>c:2 R8=0>c:8 R9=a>c:3 R10=f>g:7 R11=0>a:6[s] R12=+>d:3[t] R13=g>0:4[u].
+Question: is the signed current of R9 > 1/5 A?
+Initial comparator: voltage at d > 6 V
+Other comparators: M17: signed current of R11 > -1/4 A | M22: signed current of R13 > 0 A
+H means a comparator condition holds and L means it fails. All currents are exact amperes. The last column gives the result of the named current comparison in each setting.
+In the mark column, * explicitly identifies a setting compatible with both observed readings. A dot means no marker is supplied for that row.
+mark ID stu target_current initial M17 M22 target_current_above_threshold
+. EV 010 69/127 H H L Y
+. MT 011 175164/813727 H H H Y
+. PJ 110 22632/115583 H L L N
+* XB 001 58/301 L H H N
+* VU 101 3328/30741 L L H N
+. TV 000 29/65 L H L Y
+. AI 100 208/1005 L L L Y
+. SK 111 12324/400015 H L H N
+
+Observed readings: initial = L; M22 = H.
+The table includes every setting compatible with both readings. Use both readings when identifying which settings remain possible.
+Y means the named claim holds in every compatible setting. N means it fails in every compatible setting. U means both answers are possible.
+For Y or N, list all and only the compatible IDs. For U, list exactly two compatible IDs with opposite target answers. Use no duplicate IDs.
+Both readings have already been supplied. Return only the JSON fields verdict and certificate.
