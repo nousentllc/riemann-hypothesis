@@ -1,0 +1,97 @@
+{
+  "test": "f(s)=max(0,1-|2s-3|), s=|X|^2 in four real coordinates",
+  "limit_over_pi_squared": "3/4",
+  "scope": "The integer-lattice sample is one fixed lattice. The length-mesh sample uses only real fiber density. Neither is the published averaged adelic count.",
+  "scales": [
+    {
+      "k": 1,
+      "epsilon": "1",
+      "lattice_scaled_exact": "0",
+      "length_mesh_scaled_over_pi_squared": "0",
+      "raw_trace_mesh_missing_jacobian_over_pi_squared": "3/2",
+      "raw_trace_mesh_with_jacobian_over_pi_squared": "3/4",
+      "lattice_minus_continuum_approx": -7.4022033008170185
+    },
+    {
+      "k": 2,
+      "epsilon": "1/2",
+      "lattice_scaled_exact": "19/2",
+      "length_mesh_scaled_over_pi_squared": "3/4",
+      "raw_trace_mesh_missing_jacobian_over_pi_squared": "3/2",
+      "raw_trace_mesh_with_jacobian_over_pi_squared": "3/4",
+      "lattice_minus_continuum_approx": 2.0977966991829815
+    },
+    {
+      "k": 3,
+      "epsilon": "1/3",
+      "lattice_scaled_exact": "5216/729",
+      "length_mesh_scaled_over_pi_squared": "20/27",
+      "raw_trace_mesh_missing_jacobian_over_pi_squared": "3/2",
+      "raw_trace_mesh_with_jacobian_over_pi_squared": "3/4",
+      "lattice_minus_continuum_approx": -0.24719644210645608
+    },
+    {
+      "k": 4,
+      "epsilon": "1/4",
+      "lattice_scaled_exact": "1899/256",
+      "length_mesh_scaled_over_pi_squared": "3/4",
+      "raw_trace_mesh_missing_jacobian_over_pi_squared": "3/2",
+      "raw_trace_mesh_with_jacobian_over_pi_squared": "3/4",
+      "lattice_minus_continuum_approx": 0.015765449182981506
+    },
+    {
+      "k": 7,
+      "epsilon": "1/7",
+      "lattice_scaled_exact": "870816/117649",
+      "length_mesh_scaled_over_pi_squared": "1800/2401",
+      "raw_trace_mesh_missing_jacobian_over_pi_squared": "3/2",
+      "raw_trace_mesh_with_jacobian_over_pi_squared": "3/4",
+      "lattice_minus_continuum_approx": -0.00038943074587471926
+    },
+    {
+      "k": 8,
+      "epsilon": "1/8",
+      "lattice_scaled_exact": "30283/4096",
+      "length_mesh_scaled_over_pi_squared": "3/4",
+      "raw_trace_mesh_missing_jacobian_over_pi_squared": "3/2",
+      "raw_trace_mesh_with_jacobian_over_pi_squared": "3/4",
+      "lattice_minus_continuum_approx": -0.008892753942018494
+    },
+    {
+      "k": 15,
+      "epsilon": "1/15",
+      "lattice_scaled_exact": "28101184/3796875",
+      "length_mesh_scaled_over_pi_squared": "12656/16875",
+      "raw_trace_mesh_missing_jacobian_over_pi_squared": "3/2",
+      "raw_trace_mesh_with_jacobian_over_pi_squared": "3/4",
+      "lattice_minus_continuum_approx": -0.0010684201585826614
+    },
+    {
+      "k": 16,
+      "epsilon": "1/16",
+      "lattice_scaled_exact": "7761151/1048576",
+      "length_mesh_scaled_over_pi_squared": "3/4",
+      "raw_trace_mesh_missing_jacobian_over_pi_squared": "3/2",
+      "raw_trace_mesh_with_jacobian_over_pi_squared": "3/4",
+      "lattice_minus_continuum_approx": -0.0005929263663349005
+    },
+    {
+      "k": 31,
+      "epsilon": "1/31",
+      "lattice_scaled_exact": "6569472944/887503681",
+      "length_mesh_scaled_over_pi_squared": "692640/923521",
+      "raw_trace_mesh_missing_jacobian_over_pi_squared": "3/2",
+      "raw_trace_mesh_with_jacobian_over_pi_squared": "3/4",
+      "lattice_minus_continuum_approx": -1.0966698687830956e-05
+    },
+    {
+      "k": 32,
+      "epsilon": "1/32",
+      "lattice_scaled_exact": "496750959/67108864",
+      "length_mesh_scaled_over_pi_squared": "3/4",
+      "raw_trace_mesh_missing_jacobian_over_pi_squared": "3/2",
+      "raw_trace_mesh_with_jacobian_over_pi_squared": "3/4",
+      "lattice_minus_continuum_approx": -3.718755961035214e-05
+    }
+  ]
+}

@@ -1,0 +1,394 @@
+{
+  "commit": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "files": {
+    "src/CompanionTheory/SpectralGeometry/CountingDefinitions/AdelicEulerProducts/IsEulerProd.lean": {
+      "git_blob": "6341eea11489ecd82bda087171023fad7d68415e",
+      "sha256": "ed80c757225192c59eedff933544a99e3edf3669e8522c2211ab7a8106490b61",
+      "cited_ranges": [
+        {
+          "first": 50,
+          "last": 66,
+          "sha256": "7e148b21b4b41775d4de32598464537b24fc0a181bf42ddb625bcd8b034f7947"
+        },
+        {
+          "first": 73,
+          "last": 86,
+          "sha256": "209a074b776ddf42c899abe19e08a895484024345074f90a19e782f555783b9c"
+        }
+      ]
+    },
+    "src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/ArchimedeanBinaryGramDensity.lean": {
+      "git_blob": "7d8779e669bb6a24811c4505b8e60c9ba07468f1",
+      "sha256": "7653153ff0957d7318c4d9b74471123278f7a1c29e758da62392f8d5ec18bc37",
+      "cited_ranges": [
+        {
+          "first": 23,
+          "last": 50,
+          "sha256": "e70ff2e8e1c1627ffa38012059bf5f1ba02e4b8a92ab15b18d0f886f97a27677"
+        },
+        {
+          "first": 72,
+          "last": 131,
+          "sha256": "86937b304e647483160b9d992be7ae4049c88109668bbb174dc04c8838e5efd7"
+        },
+        {
+          "first": 152,
+          "last": 171,
+          "sha256": "33869cc19796c01975b9e85ad209a5200db54beed8062644df753b04cd9ca146"
+        },
+        {
+          "first": 187,
+          "last": 218,
+          "sha256": "df4e5d6caefc0151a3681c1c8e98a1f69de9b951b04cf332cf12f1f16373de9f"
+        },
+        {
+          "first": 272,
+          "last": 285,
+          "sha256": "da0222774a37ff028955ce6d38b74aec3b5977062c1c2aa719265f9bb63a54de"
+        }
+      ]
+    },
+    "src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/ArchimedeanBinaryGramIntegral.lean": {
+      "git_blob": "349395395214b2382a43e8f20ec715b88e43a146",
+      "sha256": "3d04aa4cba2932c9fdac2f73a455a0cf9e08dc9507100afd0134ecb1ea93e43b",
+      "cited_ranges": [
+        {
+          "first": 100,
+          "last": 145,
+          "sha256": "5903abe1896da3b66a181574ccb86b87f089d6b0e432e3f979bfe0277f536a23"
+        }
+      ]
+    },
+    "src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/Cocompactness.lean": {
+      "git_blob": "4b552555068eae1f477035570c7d7b1164b57e40",
+      "sha256": "3b4c1d764db222dbc610b7694c0c85349bffaaccf053d833c2287d021d0ab9b7",
+      "cited_ranges": [
+        {
+          "first": 14,
+          "last": 24,
+          "sha256": "53694daa3dcf7160146598605ee65fcd4a5de7c5bffee482a72c8cb02e3b4c5b"
+        }
+      ]
+    },
+    "src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/CountingFormula.lean": {
+      "git_blob": "2cb2a40055a80b2fa4196f6b76a6092b17ca33ba",
+      "sha256": "1684f9ac69aea5da9f9e3bc137c606ba468c2dd34a1a7995666a0f7ecd194f0b",
+      "cited_ranges": [
+        {
+          "first": 41,
+          "last": 86,
+          "sha256": "7135413cd8a837af5030d410ffddfc8844ebc2ba573f5daefe664051a127c073"
+        },
+        {
+          "first": 91,
+          "last": 99,
+          "sha256": "c284a17b855fd5a27b7e0e50923de011e6eda5d20e48011753730437f12e6deb"
+        },
+        {
+          "first": 125,
+          "last": 145,
+          "sha256": "74d4f9f0e85ee9c64e283be1a44e7ae24a0770c4aa275c073255276fa8172c08"
+        }
+      ]
+    },
+    "src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/Equidistribution.lean": {
+      "git_blob": "07fee8e268959e9a945848e1b7dff1f036e84c44",
+      "sha256": "b0dffa7cad2def5b3f4e35b6aa3db9fd505a136853ab1d0e2db154657a9ba21f",
+      "cited_ranges": [
+        {
+          "first": 157,
+          "last": 208,
+          "sha256": "4c823440b7298365b7edb8288ce3463cad86048967a375f4028570d3dadd6bf8"
+        },
+        {
+          "first": 244,
+          "last": 255,
+          "sha256": "caf6ee609e491a4e55944e200ea090d244f0a3cb7e26b6028887de38454200e2"
+        }
+      ]
+    },
+    "src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/EulerProductConvergenceBound.lean": {
+      "git_blob": "80a9b01c5e29960708c171ebaebf7f020a1e6680",
+      "sha256": "aa26c148b27ea9cd5fe8fcbdb508d3336ab5b0a5a9cbb0c8b845ab6a1522d2ea",
+      "cited_ranges": [
+        {
+          "first": 99,
+          "last": 167,
+          "sha256": "1772a4ea72821597c2074de8fe262c63e7ef89306f3f689841dba446ceaa9a96"
+        }
+      ]
+    },
+    "src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/FiniteProductDifferenceBound.lean": {
+      "git_blob": "19d5cab59e4426fcc55baf59816392296ee6cbd9",
+      "sha256": "2999c0f965a5fa53d85ac99d55fc34b409b167d57ba56d0c1ac1d9a0c291eac0",
+      "cited_ranges": [
+        {
+          "first": 5,
+          "last": 23,
+          "sha256": "29a48094565dcd9d573491792df368005414d0b0eca3193e3f6a45aa8697b949"
+        }
+      ]
+    },
+    "src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/LatticeCosetScaledRiemannSum.lean": {
+      "git_blob": "2867ffb0f356708639d6fcfadaa7a79cbb1c71a0",
+      "sha256": "8e1d782a66e978843881fa1163a7afbd6cca3c8e9e65bfc380d37ed40ba2079e",
+      "cited_ranges": [
+        {
+          "first": 32,
+          "last": 47,
+          "sha256": "5d0d99b0da258fc1d48d4f7843faa632b568e4e710e09cfa1dfb17988d080241"
+        },
+        {
+          "first": 83,
+          "last": 124,
+          "sha256": "c5dc123bb1356a4b179eaa89eef6a5336ba0b7cdf945403118f94987dc293ee6"
+        }
+      ]
+    },
+    "src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/LatticePointCountScaling.lean": {
+      "git_blob": "2b804e4a80c91feb15b8f7474a01c29703416ef2",
+      "sha256": "9f00bd9e5f94e495d6eba07b25f46205af7a7923d4df1191ab6038f59c4a87c0",
+      "cited_ranges": [
+        {
+          "first": 75,
+          "last": 110,
+          "sha256": "bcd2cc697309a8018dacd2dd7facb00e2cdd1d4d3256132759373e93114d7ab6"
+        },
+        {
+          "first": 152,
+          "last": 236,
+          "sha256": "618c42c98e404002c2d000a81a71b4f724d76606514e52714a3cfd91cf122e3f"
+        }
+      ]
+    },
+    "src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/LeftSideFormula.lean": {
+      "git_blob": "2b83189dd0cbd78883dca9a5965f601c97f51c0b",
+      "sha256": "917ce788d3ff5c884919cbfda1bdfd08df81e8287c6ea008e02d22286a99f19f",
+      "cited_ranges": [
+        {
+          "first": 217,
+          "last": 241,
+          "sha256": "c671f96b4f665b6635e4f8ae9c7c5adfd75d0dc89eec7d168847b87253cbe898"
+        },
+        {
+          "first": 268,
+          "last": 300,
+          "sha256": "7514a247446bcae17d89da98f8c2de70dbe552cad476e3e2adf325de3f46379e"
+        },
+        {
+          "first": 379,
+          "last": 402,
+          "sha256": "f35f561e02a53542f19747038fe148f4c1e57ccb2de1ea45e4b2a07ccd6886d7"
+        },
+        {
+          "first": 572,
+          "last": 604,
+          "sha256": "d7af7b52a3502c1e64e7667429ef6fa03a458aca98b505fda14b47dc43535db7"
+        },
+        {
+          "first": 707,
+          "last": 717,
+          "sha256": "d2475164f3371679ecf1955da439e3b9603ad9a3cc90f10629c129b9cde24263"
+        },
+        {
+          "first": 743,
+          "last": 797,
+          "sha256": "f05e8dca34702d2845c794294238f5e20ec8ba1065b1e1740f4e97bd2a38dc95"
+        }
+      ]
+    },
+    "src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/LocalBinaryGramDensity.lean": {
+      "git_blob": "aae98c79d40b1c37a43d2cfdcdf37ce6c3e60f23",
+      "sha256": "a753c0a058b9817e4fda0715814bef4603cab6810d7e18bf8ef2493a0becda67",
+      "cited_ranges": [
+        {
+          "first": 81,
+          "last": 113,
+          "sha256": "24bb6b2b20897bf440390bb6a956a846d51c35ae28298a4202b4a57d28c76eae"
+        }
+      ]
+    },
+    "src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/LocalBinaryGramIntegral.lean": {
+      "git_blob": "419458440dbfad8158e26bab045c485228074daa",
+      "sha256": "d99832997228bc3782e049b023c8872af593cb75a7b40263940b0f1ad4b4d1cd",
+      "cited_ranges": [
+        {
+          "first": 150,
+          "last": 160,
+          "sha256": "407dffd4494c0d9c26399df674dd8823c7d53c705c5ff3e3f273f066c93358c1"
+        }
+      ]
+    },
+    "src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/LocalMassFormula.lean": {
+      "git_blob": "6c3bf02e00f15cd5e350b0e06168a80d53c6df98",
+      "sha256": "bf5e1588b9ff9f499f068b4dd6859032f530881a1326621d5d49553ab741525c",
+      "cited_ranges": [
+        {
+          "first": 233,
+          "last": 267,
+          "sha256": "f05449720352af7ee0e160b8df1846f60cb047bcfe2be809ba6d6ed7565fb19e"
+        }
+      ]
+    },
+    "src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/MeanValueFormula.lean": {
+      "git_blob": "389f51091fe9bff7a10a12b0703b177d86325806",
+      "sha256": "be64ef891e6cd43269eb65e0d6e5e8505f67de3abd2ac858dc59c79b7b0727bc",
+      "cited_ranges": [
+        {
+          "first": 177,
+          "last": 205,
+          "sha256": "2120a84d3c6c59b97382510a060526bb9d531654eef63e9fac6fbd623402e569"
+        },
+        {
+          "first": 245,
+          "last": 264,
+          "sha256": "e09bf50011e15828f31ee9cc1a74aa3b0c41ed6b110e6d356053bd9c49d2945f"
+        },
+        {
+          "first": 362,
+          "last": 389,
+          "sha256": "86352aa1f6abb8b8c061d8aa1ea0708df1ab44b4b8903dc4435df7073ba7b060"
+        }
+      ]
+    },
+    "src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/NormThetaMul.lean": {
+      "git_blob": "80ba82cc61fc45e3cd36b354f8b382ecc85e15bb",
+      "sha256": "9aed4651aae9b771449573380fdbb5549e8c95da0fcdcecf8d2ceba9c91734d0",
+      "cited_ranges": [
+        {
+          "first": 16,
+          "last": 24,
+          "sha256": "dc335a320cbeaf0e497f942d57b7268fc60c1d35acc115a95f57ad1ec62665d3"
+        },
+        {
+          "first": 37,
+          "last": 71,
+          "sha256": "9b68d348bc08cb9a1a3c1ff145b0cf8cfdbd26869be86d3be52b96f5ab11ada1"
+        }
+      ]
+    },
+    "src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/OneVectorFormulaOfParts.lean": {
+      "git_blob": "af611f5d3f089aaa6a951303b76a15914fa20dcb",
+      "sha256": "4dd4624bf887efb370e22f78583b42048595efe2a0e0d5ab81cf86b76ce37a39",
+      "cited_ranges": [
+        {
+          "first": 11,
+          "last": 40,
+          "sha256": "8e7b5dc69cb49ed434cdaa3b96708fe138a73745aa70ad17d41d3018f2439d05"
+        }
+      ]
+    },
+    "src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/TestFunctionExists.lean": {
+      "git_blob": "99289fdb5876579cdb14da05fcb572e9ca85beed",
+      "sha256": "d6c18110f63a38c24ba6d20718ddb1f7c7966fc159265ba23d64f7ec3ea68370",
+      "cited_ranges": [
+        {
+          "first": 16,
+          "last": 48,
+          "sha256": "e59a22a0908a3e9e361e911aab296e5e7c0d59851a843ad46cd8420a325a67db"
+        },
+        {
+          "first": 54,
+          "last": 72,
+          "sha256": "8fc48d4e4a3c5020941da568940729fbf530eeec8d499f4387547a12b4f2a306"
+        },
+        {
+          "first": 85,
+          "last": 157,
+          "sha256": "e4c24313b2219a67702b068b72c5010046ce3ae616a97da3589c263fbb4379f5"
+        }
+      ]
+    },
+    "src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/VectorLengthFormulaOfParts.lean": {
+      "git_blob": "0d592470f81604bd8d132d9c384e132e452ac6a0",
+      "sha256": "ef162b987c723c53d847e87d1eaa579d2bb0c23d271f22167f55e28a725fcb8b",
+      "cited_ranges": [
+        {
+          "first": 206,
+          "last": 244,
+          "sha256": "fd76048207bb6ec7cec148e4bfd60b11be21f7b9759a9ffb9b9c9846273a6951"
+        }
+      ]
+    },
+    "src/Development/WeilBound/RepresentationTheoryGL/SiegelWeilProof/BinaryMassMeans/MeanVal.lean": {
+      "git_blob": "8788a8990ce28466affc8a19e30351489bd5689b",
+      "sha256": "6fe0ccd9db8b96dae92a71b544b1db7eee910e6230d519ef7efb479c332c1ba4",
+      "cited_ranges": [
+        {
+          "first": 18,
+          "last": 47,
+          "sha256": "2fea51c2486974b45f5437e02f22499a3febc35c2f15adf6b546901d668d1fce"
+        },
+        {
+          "first": 67,
+          "last": 88,
+          "sha256": "49a8e0d2449a1735179785a1030255dc4b5f77583ddb80cfa7b18a8767ec23b2"
+        }
+      ]
+    },
+    "src/Development/WeilBound/RepresentationTheoryGL/SiegelWeilProof/BinaryMassMeans/OneVecBinary.lean": {
+      "git_blob": "c99715d14bb7c3404ff86e5ffc848a76137781b4",
+      "sha256": "9079cc3552c2ebabb996d3eb30ff10f57a2c4cbc6c9215795ae7ceb4dd5cc275",
+      "cited_ranges": [
+        {
+          "first": 15,
+          "last": 27,
+          "sha256": "768922e17bbfe35cf5d7410a110bb1a356c9ee03014487786a64020ba89283d9"
+        }
+      ]
+    },
+    "src/Development/WeilBound/RepresentationTheoryGL/SiegelWeilProof/BinaryMassMeans/SingleRowSide/Srside.lean": {
+      "git_blob": "c1ebcf92dd2945bce2e64eeb89bc40d28fa70028",
+      "sha256": "88a3b7ad7787c0b0be37012a290cf18ac4a663551674c3e6f0ea4b07ce5c3b48",
+      "cited_ranges": [
+        {
+          "first": 16,
+          "last": 39,
+          "sha256": "22f2a0480dc4ad449b268c1583e48e0f175ab62603154ebf75ef9a079e6adad7"
+        },
+        {
+          "first": 40,
+          "last": 61,
+          "sha256": "4758c1b39e88338b30dea283e59be67960eaff1736b65f9b913afe61faf8ade2"
+        }
+      ]
+    },
+    "src/Formalism/SharpRestriction/GlobalSchurBounds/GeneralLinearActions/GenusMassVolumes.lean": {
+      "git_blob": "525618b770cb535fd890f10277af11ffbe76af40",
+      "sha256": "a33d33e6070c63f1e118c2a0ce992d57e8de5fb28105a072ca0b9cb6ee48a02b",
+      "cited_ranges": [
+        {
+          "first": 183,
+          "last": 189,
+          "sha256": "b950433ae8a12c3bf999d097fb824a9b406c74bb3d63a3fbe0954d95a4d9cf32"
+        }
+      ]
+    }
+  },
+  "project_import_header_closures": {
+    "Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CountingFormula": {
+      "project_modules_including_root": 821,
+      "sorted_names_sha256": "1a4b0694824a5cb3b42f237d4569b7cdfb226ec10e430244e1996f5e9e4a731b"
+    },
+    "Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TestFunctionExists": {
+      "project_modules_including_root": 109,
+      "sorted_names_sha256": "b9eeba0d7a1f691858a54c7ed678904665c9c337514d804770c5ee1fa288041b"
+    },
+    "Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LeftSideFormula": {
+      "project_modules_including_root": 3796,
+      "sorted_names_sha256": "fce3cb6d7e5b360072d19bc28935363a0a16bfb72e39fc2105ff4154bfed4bad"
+    },
+    "Development.AutomorphicSpectrum.Proofs.BlockDecomposition.MeanValueFormula": {
+      "project_modules_including_root": 116,
+      "sorted_names_sha256": "4fd3264e083655ada82bddbe063db4c16d2a431de3e2e3bdfa9a57bbf3bfdc13"
+    },
+    "Development.WeilBound.RepresentationTheoryGL.SiegelWeilProof.BinaryMassMeans.SingleRowSide.Srside": {
+      "project_modules_including_root": 1327,
+      "sorted_names_sha256": "4db590839a3c5657747e294986804b11cf8d1529278f81d03c63b635321c1e13"
+    },
+    "Development.WeilBound.RepresentationTheoryGL.SiegelWeilProof.BinaryMassMeans.OneVecBinary": {
+      "project_modules_including_root": 8802,
+      "sorted_names_sha256": "46b938b1c8bb32a67bb1a7fa854d37f2cc5ab6e032193ebe5af11b9b77e9d6ff"
+    }
+  }
+}

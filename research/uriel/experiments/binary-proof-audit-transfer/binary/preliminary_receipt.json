@@ -1,0 +1,119 @@
+{
+  "status": "Stopped duplicate preliminary run after 26 complete original modules and one extract reported. The complete published-package run is reported separately.",
+  "options": "Relative filename and default Lean package, using original source bytes and compiler options from replay.py.",
+  "published_manifest_sha256": "375cbee2fc3fc0f5088ef2e6dc9a5ac5530924310dc62422ec65aac9dc4c1d25",
+  "original_modules": {
+    "CompanionTheory.SpectralGeometry.CountingDefinitions.AdelicEulerProducts.IsEulerProd": {
+      "built_sha256": "fc5ce17c0283ee5be6b607ce01f9d78737f5ab4989b1f2aacef83651b411fa1d",
+      "published_sha256": "9c6671d55b43f5508facfa738d991dd9a7e2e2ac172d0e6419485e64f8e53960"
+    },
+    "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.CoordinateHaarMeasure": {
+      "built_sha256": "1288845776bd43b91b06b698d63d3f3616b64d8553af93628e54403d6a4d9109",
+      "published_sha256": "94f5b2682482a830bff935e84e4c64032e655c5dde5de4c9fe1dc2ab238197f8"
+    },
+    "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.HermitianMatricesLocallyCompactBorel": {
+      "built_sha256": "f630384660584ef6e14d2fec19026310a160bffe83089d84439e3702916627c7",
+      "published_sha256": "b8ea5252774fd6f1142dac80019f31d8b407a8017ff5657b6fc7be8f0619df80"
+    },
+    "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.InfiniteAdeleHaarMapEqScaledVolume": {
+      "built_sha256": "508b770681997231f447090f98cba98e526d5c82d56c5a3901b0a2a58cd970cc",
+      "published_sha256": "a49c7cb538fe2cdfa88cd614299378a8b5049a9308bb5e95f6318c620d86f36d"
+    },
+    "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.InfiniteAdelesLocalRingTotallyReal": {
+      "built_sha256": "baab3b79e4b56faf0a7a7eec5d7ec1f4b13d59c5a627908d2bcedad7f7c8e2d1",
+      "published_sha256": "6356169ed3596ff1eb657acb38b8919b2dd1f21137b3cc0eabffab3e210ae369"
+    },
+    "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.TensorInvolutionAlgebraProperties": {
+      "built_sha256": "4bbdeeed379b6e53656d0180f397f03414847be8102fb9442a77ffa0c5557605",
+      "published_sha256": "1a727a2fc4c0cd1e67a61c3a9a678d7c086bf962d60433f511c5df20d87d478d"
+    },
+    "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.TensorInvolutionAlgebraPropertiesStatement": {
+      "built_sha256": "ce59af55f5bd7e4bf0f1fba4f6685604c42cd40404a48fc82c9350cbc6aaa031",
+      "published_sha256": "86da56a9250b8617f15d3b67a5b645e370c840e4bee95f7a47ee4b66346500dc"
+    },
+    "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.TensorLocallyCompactRing": {
+      "built_sha256": "44aeb5baa226a04f21517737f6585a2bc12b2221f609c5e450d05752df100d3c",
+      "published_sha256": "f717ea179b4eb0423dc4723d0d0223c8565da642729bc6c5981b2f4b83b87c4a"
+    },
+    "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.TensorLocallyCompactRingStatement": {
+      "built_sha256": "151d434172eb65ba0ec0d5b670ff2a3f36e70c9370c6528410b26716ae956648",
+      "published_sha256": "44ff5fd71b10dfca324853f155687da3742e49e323025d4a842d1496e0980785"
+    },
+    "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.UnitsOpenEmbeddingLocalTensor": {
+      "built_sha256": "8544f4ab9aeb81bf985c131f81e58cc9835391beda1a07ec042f8cbf7d0d1cb8",
+      "published_sha256": "fc59b7ac5515f33389b6322cb0c32caf52a16dcafa6772e5956f0cb2ea85a500"
+    },
+    "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.UnitsOpenEmbeddingLocalTensorStatement": {
+      "built_sha256": "fc28a5d410b9a062460b46bb93cf28aea2013c0ccdebda44fc89535c082bcc3b",
+      "published_sha256": "1d1c2fad99af85cff4e832554e58f6a68abc77d7107ebdd80ab43dc9fc1cabcd"
+    },
+    "Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ArchimedeanBinaryGramDensity": {
+      "built_sha256": "e8214289f681a22a33d6c52721dc20a442a6edac3abf1f68a7f2d8113858b62e",
+      "published_sha256": "659a20a262419c5b66efcaac2148ebdf2a2a30ae47508d803389569e5d559677"
+    },
+    "Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ArchimedeanFundamentalDomainIntegers": {
+      "built_sha256": "65cc5d39faaeeb44320ee2ee36087959b57eb51465bd20ac6fe01d6aa9b31e70",
+      "published_sha256": "d3da1d88911a2345e84a17c707d377ff961868519f2c4fc643f038dce838dd7e"
+    },
+    "Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ArchimedeanFundamentalDomainIntegersStatement": {
+      "built_sha256": "ad19edcc87002e8fbd674b0bc677c51f192291882b66a47df53ac88684b82bc3",
+      "published_sha256": "07aea70ce6068beb689b178ad2ac06bed9cd5ecd7f82ce72557545e2186ed451"
+    },
+    "Development.AutomorphicSpectrum.Proofs.BlockDecomposition.CosetOff": {
+      "built_sha256": "d81a65ae5605aa6e3fec4e102bedd578b6b5d568254f279a7e30b85a9304f190",
+      "published_sha256": "695e1bf30c7cb695f5c93f6affc4cf531d69914ccb9c9a8f87eaafc9e7ca2166"
+    },
+    "Development.AutomorphicSpectrum.Proofs.BlockDecomposition.EulerProductConvergenceBound": {
+      "built_sha256": "dff4eb189a44c657485c134966674f8baf90a64905aa1431c50015c1ce5459ba",
+      "published_sha256": "6494bc03d426a9396b5f2d325675c0f88e53408d854f67287f98ca0644443ba1"
+    },
+    "Development.AutomorphicSpectrum.Proofs.BlockDecomposition.FiniteProductDifferenceBound": {
+      "built_sha256": "11c87b3dfbe03a416ea7a740680f57ef4a49a115353b4dcc16facce314065508",
+      "published_sha256": "ff8696f76013041aec814cbcf3cf0853db9d6ccf55f27e479d23eb5aa2bcdfe1"
+    },
+    "Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LatticePointCountScaling": {
+      "built_sha256": "9a250e19af77475d35f258c2c9afcc29b50bcde0ae86b3178120eff306badcd1",
+      "published_sha256": "351a0ccfcecc2d963f0a2f827e55f280392a0e60d50b757b0e0d8421a87bafe4"
+    },
+    "Development.AutomorphicSpectrum.Proofs.BlockDecomposition.LatticePointCountScalingStatement": {
+      "built_sha256": "7eb3e6a3611f8bf9c636ba2e7cd567f99b9643965a1139d7242e76be5eaa6b44",
+      "published_sha256": "f6a9cfe90650f2d45e7b1c4089dcd84cb11384151658a45ea64b14457146726c"
+    },
+    "Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ScalingMeasureProductArchimedean": {
+      "built_sha256": "ccd9d1cf2b47c056b18136a58cc167d41f2cc1066879116e5004c064958a3b08",
+      "published_sha256": "623d8b9417b135977a2d61b1cad1286bc8eba05eada26cf7285a6c3227f6d965"
+    },
+    "Development.AutomorphicSpectrum.Proofs.BlockDecomposition.TruncSum": {
+      "built_sha256": "7e1cc3b9e0eafde1a26be5df093b2b09a978558e02d2286f6d6bfacd97d112fb",
+      "published_sha256": "6318285609fd79857733a50e2ab2f066e66fbd9dd2b3094d984ed94d15182236"
+    },
+    "Development.WeilBound.RepresentationTheoryGL.SiegelWeilProof.BinaryMassMeans.MeanVal": {
+      "built_sha256": "cc1251a789b10d5bc79630327e5bfb088d25a1a5d45e1dd46a752500ffe644de",
+      "published_sha256": "718725793f13ca03358a557a891e98b270181fb966b15b7ebc48844948e2ecab"
+    },
+    "Formalism.SatakeDualWeyl.Statement": {
+      "built_sha256": "60b7288b143dc934c3dacec8704f131bddb7e2d892974d9a4183c22fc67b7255",
+      "published_sha256": "b1aae3896f79db0b2241a168078828fa867ea268ec314980b74d97b647ad5942"
+    },
+    "Formalism.SharpRestriction.GlobalSchurBounds.GeneralLinearActions.GenusMassVolumes": {
+      "built_sha256": "a1407149d5eef60f8e968a95d34443ca3d765a8b98f0c0eae37c0e7525db36ef",
+      "published_sha256": "8f252e5cda906917d891525e3940c3e12c180926cab229db787390a831cb5f45"
+    },
+    "Formalism.UnipotentAdelicQuotients.SWXSDefs": {
+      "built_sha256": "95b0e32bdf48e93463990db7ff36b6ea55c43a9c7719962f0b573d748afa0b10",
+      "published_sha256": "690f4d954a59f54d5ea472d097f12145f9d54118c7c62b55919c0902be0b6586"
+    },
+    "Formalism.UnipotentAdelicQuotients.SiegelWeilUnitaryConvergent": {
+      "built_sha256": "a1526be0652fbfa2d03b1f629c127cc343917d62fc3370570baa4c356d905088",
+      "published_sha256": "15f096fcb09e0f7e3cbfb99ca5a1f1e546489ecbd67ac10b8b79f125a0afa04e"
+    }
+  },
+  "matches": 0,
+  "archimedean_kernel_replay": {
+    "module": "Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ArchimedeanBinaryGramDensity",
+    "program": "leanchecker -v",
+    "exit": 0,
+    "stdout": "replaying Development.AutomorphicSpectrum.Proofs.BlockDecomposition.ArchimedeanBinaryGramDensity"
+  },
+  "interpretation": "Two serialization inputs varied together: relative source label and package metadata. This control alone does not isolate the cause of a digest difference."
+}
