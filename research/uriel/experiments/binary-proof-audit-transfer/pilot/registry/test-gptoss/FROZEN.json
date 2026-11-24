@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-24T13:17:36.866205+00:00",
+  "seed": 2026112417,
+  "model": {
+    "tag": "gpt-oss:20b",
+    "digest": "17052f91a42e97930aa6e28a6c6c06a983e6a58dbb00434885a0cf5313e376f7",
+    "max_tokens": 2048,
+    "think": "low"
+  },
+  "ollama": "0.40.4",
+  "direct_api_spend_cap_usd": 0,
+  "session_count": 48,
+  "max_requests": 96,
+  "sha256": {
+    "circuits/cases.py": "cf797eb456971adf7c7786bfb4f88a2f41cf83c3aa57881266f02c0e1db12f9f",
+    "circuits/design.json": "d366d951e419b67a7fb74d1bfb2a9f2193f08452ef84f07d2049f7819f9020e4",
+    "circuits/network.py": "1ed34fc4691d546f697c94af8210b77b865c86636217eb71f507db94c4ecf013",
+    "formal/cases.py": "e68fad6d0776b5ffda78c67256392699a06d5841d3a1c48964770f84b8012129",
+    "pilot/DESIGN.md": "7ede1abb6b0d0343bd1e81fb5aa602d10ad3f326cf579a8778cac0de6ed1f7ce",
+    "pilot/analysis.py": "ee3096442394745b69b6b1b347bb6b24713383d8a60b4674d9ac6700f8aaced5",
+    "pilot/domain.py": "faf54e797b9d7ca75e72619491d107c629f4d5a6ea090acd2c86da12db8b1618",
+    "pilot/instructions/general.txt": "e65b2e340d4431fac0d461d2f3b545a9d863db2f9295fa630868ee84f9d604fa",
+    "pilot/instructions/method.txt": "d1e2ec77b9d9c10766ef85afea35617e34322566463dab7614094546325c9519",
+    "pilot/run.py": "e02a1981c1cfdf089d8e5da3001778f7a8e0024ccecab8831f4bd0c2e1e593bc",
+    "pilot/scorer_checks.py": "89344ba2710c3327dd8eb37e4707533462060811f2dcfef36525a36c48b41d3e",
+    "pilot/register_scored.py": "66f28f9d164fe7a0a1a645e934e2b3c0b7638b21103c5a75eca7e2a0f60abcc5",
+    "pilot/development_decision.json": "b1e2a2e7f1c8b26c7debfb2f330e70700c087b9424e425565ff20c627574b92f",
+    "pilot/MENU_AMENDMENT.md": "de479f6907d5fa539dcb9237a229fc2e3d8bee391c052a8237779430522b5983",
+    "formal/score_cases.py": "34316c960972956add7cd875331047e9ba727dd823fe29e800d3b03577d28600",
+    "formal/sources.json": "efef03414fba2cbdbbe5fbc849abbefae1e29d464a4473dd517c32f406642652",
+    "formal/receipt.json": "9be786581ac63018ce8d8ef67ca8474ba93ebf044d5b0f926c99988cde8fab30",
+    "circuits/verification.json": "8150ef18a5bd5be2ae217071da306e78743107eaef2c41a0fafc71c89c9e6fd5",
+    "diagnostics/diagnostic.json": "e9992d2fd88e4efc590e94e51760bb07be78f287cadac438634de4edff6eefcb",
+    "diagnostics/scored_diagnostic.json": "1abf95ccb7105ce7b6387aa0922321907e78962ee58543681d8d005611ab124f",
+    "formal/score_views.py": "a2da1425611cea97860bd3a6204fd34772a9380011d42ed8a1123365447cf564",
+    "formal/score_menu_receipt.json": "01d0079665271f4ba167ddd481518533bbf91e8f8d7cf4ee6e718858e3dae214",
+    "diagnostics/audit.py": "4ab392c609d75147d216b4ef7939f61f78bcb8db2f73aef207ff0cf7b48e8851",
+    "diagnostics/PROTOCOL.md": "77bb91232c502f1b469536807a49e1b6288818e5084cfac7dbc748cd325f2657",
+    "pilot/verify_run.py": "59481482e7c1e4649e0853507afffa9222007c653ff2af69ac60d9cfa1278cc7",
+    "pilot/registry/test-gptoss/records.json": "447761dafd30f55866ebd9af9d24e2a4ee4823fafb01c0c3097c52f5c418342c",
+    "pilot/registry/test-gptoss/order.json": "d8e6cd69e523b3374b981c21fc10ef28d00f76d80c5d441e17ac9355cbdf844a"
+  }
+}
