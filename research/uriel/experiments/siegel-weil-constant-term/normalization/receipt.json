@@ -1,0 +1,18 @@
+{
+  "pin": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "source": "src/Development/AutomorphicSpectrum/Proofs/BlockDecomposition/CountingFormulaOfComponents.lean",
+  "git_blob": "b203937f218bcd8e7bad7571378e0e85877cfa01",
+  "span": [
+    249,
+    273
+  ],
+  "fragment_sha256": "3a7bb0cfdcf69a8d570fc6079db8e51c1d7734cbf4181295bb63664ee9f2905a",
+  "module_sha256": "539581bbee2c563eba8ee4ed1fbb2a8459dcb5723b49cbda8cbab666584c0108",
+  "lean": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "output": [
+    "'GlobalTheory.CompanionTheory.RgBaseCnt.limit_cancel' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SWCheck.norm_kernel_index' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SWCheck.trivial_index' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "replaying IndexAndLimit"
+  ],
+  "scope": "Exact original limit_cancel, and new conditional group index lemmas. The global norm theorem and the automorphic limits were traced in source and lie outside this module."
+}

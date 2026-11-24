@@ -1,0 +1,229 @@
+{
+  "source_commit": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "lean": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "source_spans_checked": 20,
+  "compared_to_pinned_git_tree": true,
+  "module_replay": {
+    "Formalism.UnipotentAdelicQuotients.SWXSDefs": {
+      "scope": "complete original",
+      "sha256": "ac8bd494d1be925d35d6e3a10263ca6f4b4f699d0853e8e5eb660d43a9bcd9ab",
+      "compiler_warnings": [
+        "Formalism/UnipotentAdelicQuotients/SWXSDefs.lean:21:0: warning: automatically included section variable(s) unused in theorem `HeckeCharacterZeroLocus.SiegelWeilU.cT_one`:",
+        "Formalism/UnipotentAdelicQuotients/SWXSDefs.lean:111:15: warning: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead",
+        "Formalism/UnipotentAdelicQuotients/SWXSDefs.lean:115:15: warning: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead"
+      ],
+      "leanchecker": "replaying Formalism.UnipotentAdelicQuotients.SWXSDefs"
+    },
+    "ReciprocityTheory.Chebotarev.NZIdeal": {
+      "scope": "complete original",
+      "sha256": "e083549b1f90a660b6ac404526287c5006655160626838296d1fc966c094fd43",
+      "compiler_warnings": [],
+      "leanchecker": "replaying ReciprocityTheory.Chebotarev.NZIdeal"
+    },
+    "ReciprocityTheory.Chebotarev.EulerSum": {
+      "scope": "complete original",
+      "sha256": "b859be5c3ebfe892b9366a279b9aedaf1cff54a69f1490e3374a6f0bb62d41fe",
+      "compiler_warnings": [],
+      "leanchecker": "replaying ReciprocityTheory.Chebotarev.EulerSum"
+    },
+    "Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.SiegelWeilActions.Exch": {
+      "scope": "complete original",
+      "sha256": "a58782297be263b956dcca8d5c40a45d7913527dfceb5dfe92364d2f02e27154",
+      "compiler_warnings": [],
+      "leanchecker": "replaying Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.SiegelWeilActions.Exch"
+    },
+    "OriginalSlices": {
+      "scope": "original declarations in reduced import environment",
+      "sha256": "4520f5f3499c4bd87b6eb2723da70130965684e21a2ec15fa384f896c3de2b56",
+      "compiler_warnings": [],
+      "leanchecker": "replaying OriginalSlices"
+    },
+    "NormalFactors": {
+      "scope": "original declarations in reduced import environment",
+      "sha256": "bfbf3a922ba176a7428994fe708418ec392720f70bba8ccfcbd6b3e8a6ca0db8",
+      "compiler_warnings": [
+        "NormalFactors.lean:62:0: warning: automatically included section variable(s) unused in theorem `PositivityTheory.SiegelWeilFormula.Gen.WQ.eSp_sq`:",
+        "NormalFactors.lean:65:0: warning: automatically included section variable(s) unused in theorem `PositivityTheory.SiegelWeilFormula.Gen.WQ.norm_eSp`:",
+        "NormalFactors.lean:119:0: warning: automatically included section variable(s) unused in theorem `PositivityTheory.SiegelWeilFormula.Gen.WQ.lam_tendsto`:",
+        "NormalFactors.lean:264:2: warning: Try this: ",
+        "NormalFactors.lean:270:15: warning: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead"
+      ],
+      "leanchecker": "replaying NormalFactors"
+    },
+    "Controls": {
+      "scope": "new local conclusions and boundary counterexample",
+      "sha256": "091710db803e38641c3a2009512bb1021eded451a79b71c8a9655ee014c85e20",
+      "compiler_warnings": [],
+      "leanchecker": "replaying Controls"
+    }
+  },
+  "axioms": {
+    "PositivityTheory.SiegelWeilFormula.Act.exch": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "ReciprocityTheory.Cheb.summable_absNorm_rpow_ideal": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PositivityTheory.SiegelWeilFormula.Gen.W.euler_prod": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PositivityTheory.SiegelWeilFormula.Gen.W.unramifiedPart_differentiable": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PositivityTheory.SiegelWeilFormula.Gen.W.norm_unit_pow": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PositivityTheory.SiegelWeilFormula.Gen.W.eq_of_eqOn_right": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PositivityTheory.SiegelWeilFormula.Gen.W.hasProd_split": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PositivityTheory.SiegelWeilFormula.Gen.WQ.unrX_differentiable": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PositivityTheory.SiegelWeilFormula.Gen.WQ.hasProd_split'": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PositivityTheory.SiegelWeilFormula.Gen.WQ.fix_point": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PositivityTheory.SiegelWeilFormula.Gen.WQ.pow_sub_of_sq": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PositivityTheory.SiegelWeilFormula.Gen.WQ.mul_div_cancel_of_eq": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PositivityTheory.SiegelWeilFormula.Gen.WQ.unrX_zero_split": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PositivityTheory.SiegelWeilFormula.Gen.WL.det_mul_eq_zero_of_lt": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PositivityTheory.SiegelWeilFormula.Gen.WL.count": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PositivityTheory.SiegelWeilFormula.Gen.WL.analyticAt_update_zero": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PositivityTheory.SiegelWeilFormula.Gen.W.unr_prod": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PositivityTheory.SiegelWeilFormula.Gen.W.exists_finset_of_cofinite": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PositivityTheory.SiegelWeilFormula.Gen.WQ.eSp_sq": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PositivityTheory.SiegelWeilFormula.Gen.WQ.norm_eSp": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PositivityTheory.SiegelWeilFormula.Gen.WQ.eSp_pow_sub": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PositivityTheory.SiegelWeilFormula.Gen.WQ.one_sub_eSp_ne": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PositivityTheory.SiegelWeilFormula.Gen.WQ.val_gt": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PositivityTheory.SiegelWeilFormula.Gen.WQ.lam_tendsto": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PositivityTheory.SiegelWeilFormula.Gen.WQ.lpack": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PositivityTheory.SiegelWeilFormula.Gen.WL.densZero": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PositivityTheory.SiegelWeilFormula.Gen.WL.eSp_pow": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "PositivityTheory.SiegelWeilFormula.Gen.WL.hasProd_split'": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "UrielCheck.SiegelWeil.min_euler_exponent": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "UrielCheck.SiegelWeil.scalar_at_special_point": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "UrielCheck.SiegelWeil.order_budget": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "UrielCheck.SiegelWeil.equal_order_control": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "UrielCheck.SiegelWeil.one_surplus_germ": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "whole_constant_term_or_siegel_weil_replayed": false
+}

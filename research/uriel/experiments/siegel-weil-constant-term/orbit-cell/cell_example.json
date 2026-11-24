@@ -1,0 +1,60 @@
+{
+  "field": "Q(i)/Q; framed matrices in Q",
+  "T": [
+    [
+      "2",
+      "1"
+    ],
+    [
+      "1",
+      "1"
+    ]
+  ],
+  "beta1": [
+    [
+      "0",
+      "1"
+    ],
+    [
+      "1",
+      "0"
+    ]
+  ],
+  "kernel_u": [
+    "0",
+    "1"
+  ],
+  "dual_y": [
+    "1",
+    "0"
+  ],
+  "ell_arch": "-1/8",
+  "ell_finite": 0,
+  "singular_C_rank": 1,
+  "conjugated_levi": [
+    [
+      "1",
+      "0"
+    ],
+    [
+      "-1/8",
+      "1"
+    ]
+  ],
+  "conjugated_levi_det": "1",
+  "trace_Tbeta": "2",
+  "trace_character_input": "1/2",
+  "phase_T_nondegenerate": "-1",
+  "phase_T_zero": "1",
+  "recovered_open_cell_parameter": [
+    [
+      "2",
+      "1"
+    ],
+    [
+      "1",
+      "1"
+    ]
+  ],
+  "scope": "exact algebra and phase; no adelic integral was evaluated"
+}

@@ -1,0 +1,135 @@
+{
+  "field": "Q(i)",
+  "form": "x^2 + y^2",
+  "excluded_prime": 2,
+  "scope": "Finite local arithmetic control at unramified primes; no global theta or Eisenstein value evaluated.",
+  "unit_fibers": 1016,
+  "cases": [
+    {
+      "prime": 3,
+      "power": 1,
+      "residue_modulus": 3,
+      "splitting": "inert",
+      "tested_unit_fibers": 2,
+      "pairs_per_unit_fiber": 4,
+      "density": "4/3"
+    },
+    {
+      "prime": 3,
+      "power": 2,
+      "residue_modulus": 9,
+      "splitting": "inert",
+      "tested_unit_fibers": 6,
+      "pairs_per_unit_fiber": 12,
+      "density": "4/3"
+    },
+    {
+      "prime": 5,
+      "power": 1,
+      "residue_modulus": 5,
+      "splitting": "split",
+      "tested_unit_fibers": 4,
+      "pairs_per_unit_fiber": 4,
+      "density": "4/5"
+    },
+    {
+      "prime": 5,
+      "power": 2,
+      "residue_modulus": 25,
+      "splitting": "split",
+      "tested_unit_fibers": 20,
+      "pairs_per_unit_fiber": 20,
+      "density": "4/5"
+    },
+    {
+      "prime": 7,
+      "power": 1,
+      "residue_modulus": 7,
+      "splitting": "inert",
+      "tested_unit_fibers": 6,
+      "pairs_per_unit_fiber": 8,
+      "density": "8/7"
+    },
+    {
+      "prime": 7,
+      "power": 2,
+      "residue_modulus": 49,
+      "splitting": "inert",
+      "tested_unit_fibers": 42,
+      "pairs_per_unit_fiber": 56,
+      "density": "8/7"
+    },
+    {
+      "prime": 11,
+      "power": 1,
+      "residue_modulus": 11,
+      "splitting": "inert",
+      "tested_unit_fibers": 10,
+      "pairs_per_unit_fiber": 12,
+      "density": "12/11"
+    },
+    {
+      "prime": 11,
+      "power": 2,
+      "residue_modulus": 121,
+      "splitting": "inert",
+      "tested_unit_fibers": 110,
+      "pairs_per_unit_fiber": 132,
+      "density": "12/11"
+    },
+    {
+      "prime": 13,
+      "power": 1,
+      "residue_modulus": 13,
+      "splitting": "split",
+      "tested_unit_fibers": 12,
+      "pairs_per_unit_fiber": 12,
+      "density": "12/13"
+    },
+    {
+      "prime": 13,
+      "power": 2,
+      "residue_modulus": 169,
+      "splitting": "split",
+      "tested_unit_fibers": 156,
+      "pairs_per_unit_fiber": 156,
+      "density": "12/13"
+    },
+    {
+      "prime": 17,
+      "power": 1,
+      "residue_modulus": 17,
+      "splitting": "split",
+      "tested_unit_fibers": 16,
+      "pairs_per_unit_fiber": 16,
+      "density": "16/17"
+    },
+    {
+      "prime": 17,
+      "power": 2,
+      "residue_modulus": 289,
+      "splitting": "split",
+      "tested_unit_fibers": 272,
+      "pairs_per_unit_fiber": 272,
+      "density": "16/17"
+    },
+    {
+      "prime": 19,
+      "power": 1,
+      "residue_modulus": 19,
+      "splitting": "inert",
+      "tested_unit_fibers": 18,
+      "pairs_per_unit_fiber": 20,
+      "density": "20/19"
+    },
+    {
+      "prime": 19,
+      "power": 2,
+      "residue_modulus": 361,
+      "splitting": "inert",
+      "tested_unit_fibers": 342,
+      "pairs_per_unit_fiber": 380,
+      "density": "20/19"
+    }
+  ]
+}

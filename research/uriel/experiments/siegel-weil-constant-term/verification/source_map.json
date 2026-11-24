@@ -1,0 +1,318 @@
+{
+  "WhittakerGlobalFactors/UnrPDifferentiable.lean": {
+    "repository_path": "src/Development/WeilBound/CoreStatements/AutomorphicKernels/SiegelWeilFormula/WhittakerGlobalFactors/UnrPDifferentiable.lean",
+    "blob": "df02681cd90b1844d4a22f7d7f81f582947feb76",
+    "targets": {
+      "OriginalSlices.lean": [
+        {
+          "original_lines": [
+            11,
+            60
+          ],
+          "target_lines": [
+            9,
+            58
+          ],
+          "sha256": "b83cb11a0fe48b678ccbef3f922f0d873b2788644e05c918abb9c31aad07177e"
+        },
+        {
+          "original_lines": [
+            84,
+            99
+          ],
+          "target_lines": [
+            60,
+            75
+          ],
+          "sha256": "9df8ae8073f9d93c48c395efb15dea4a0f63b34b66c5aa440a63a7f568e15d44"
+        }
+      ],
+      "NormalFactors.lean": [
+        {
+          "original_lines": [
+            62,
+            82
+          ],
+          "target_lines": [
+            27,
+            47
+          ],
+          "sha256": "d6fcd67ea63b4c71121ece75b6612040025020f24d2802be48fe2126dede1949"
+        }
+      ]
+    }
+  },
+  "WhittakerEqualRank/UnrXDifferentiable.lean": {
+    "repository_path": "src/Development/WeilBound/CoreStatements/AutomorphicKernels/SiegelWeilFormula/WhittakerEqualRank/UnrXDifferentiable.lean",
+    "blob": "b555f3e0b401e23fad0040d2bcf3a42cb844c62d",
+    "targets": {
+      "OriginalSlices.lean": [
+        {
+          "original_lines": [
+            11,
+            19
+          ],
+          "target_lines": [
+            82,
+            90
+          ],
+          "sha256": "2c2d8772d403f4cf8476313528dd3149fd8140f79dc4043cfa22b376b70c57dc"
+        },
+        {
+          "original_lines": [
+            46,
+            57
+          ],
+          "target_lines": [
+            92,
+            103
+          ],
+          "sha256": "5de7143d6eaf70c7477ae50dd5bfa68019aac1ba89a5c74fc5384c960125fa9e"
+        }
+      ],
+      "NormalFactors.lean": [
+        {
+          "original_lines": [
+            21,
+            44
+          ],
+          "target_lines": [
+            60,
+            83
+          ],
+          "sha256": "296733b0306a9eab5358b2f70e02aa4839826dc8cfbfaa721e8f3b3b97e55ac6"
+        }
+      ]
+    }
+  },
+  "WhittakerEqualRank/MulDivCancelOfEq.lean": {
+    "repository_path": "src/Development/WeilBound/CoreStatements/AutomorphicKernels/SiegelWeilFormula/WhittakerEqualRank/MulDivCancelOfEq.lean",
+    "blob": "6f2235d11a38a7b187f257f8123e739f629e1b52",
+    "targets": {
+      "OriginalSlices.lean": [
+        {
+          "original_lines": [
+            10,
+            36
+          ],
+          "target_lines": [
+            105,
+            131
+          ],
+          "sha256": "4b6422a27ed7ad2b7122bbf1de3c13c8d5ec50a9cf3f494dc4ad52cd0c92a326"
+        }
+      ],
+      "NormalFactors.lean": [
+        {
+          "original_lines": [
+            38,
+            138
+          ],
+          "target_lines": [
+            152,
+            252
+          ],
+          "sha256": "757f77b6d2cfa34b789e66d3b5315bc2f6fbff30e68623a35f7ca36e7c22c0cd"
+        }
+      ]
+    }
+  },
+  "WhittakerLowRank/AnalyticAtUpdateZero.lean": {
+    "repository_path": "src/Development/WeilBound/CoreStatements/AutomorphicKernels/SiegelWeilFormula/WhittakerLowRank/AnalyticAtUpdateZero.lean",
+    "blob": "ed9638cce8a3e6658e2a351bb6870128419d5773",
+    "targets": {
+      "OriginalSlices.lean": [
+        {
+          "original_lines": [
+            11,
+            28
+          ],
+          "target_lines": [
+            137,
+            154
+          ],
+          "sha256": "d3486593d17e6333e295d19ac00ab15ebe20cd986e1abb30dc65ad18da8d4995"
+        },
+        {
+          "original_lines": [
+            61,
+            105
+          ],
+          "target_lines": [
+            156,
+            200
+          ],
+          "sha256": "8c89f820c3bc9f5606f5f5127e109e0f6c0b93b14e91c643de39770ea5e68093"
+        }
+      ],
+      "NormalFactors.lean": [
+        {
+          "original_lines": [
+            30,
+            59
+          ],
+          "target_lines": [
+            258,
+            287
+          ],
+          "sha256": "52710126ba6915e0443660886a0c808d7531622b7a098c8b9756b9a4eaa35bfb"
+        },
+        {
+          "original_lines": [
+            107,
+            109
+          ],
+          "target_lines": [
+            289,
+            291
+          ],
+          "sha256": "795f8467cf42820553037e9f52b25e238397f49c2ef0794a0728ac0dd1e05f76"
+        }
+      ]
+    }
+  },
+  "SiegelWeilActions/Exch.lean": {
+    "repository_path": "src/Development/WeilBound/CoreStatements/AutomorphicKernels/SiegelWeilFormula/SiegelWeilActions/Exch.lean",
+    "blob": "7cb8448e5c4bb5d0552043ed2da9af6656ce291c",
+    "targets": {
+      "Exch.lean": [
+        {
+          "original_lines": [
+            1,
+            39
+          ],
+          "target_lines": [
+            1,
+            39
+          ],
+          "sha256": "a58782297be263b956dcca8d5c40a45d7913527dfceb5dfe92364d2f02e27154"
+        }
+      ]
+    }
+  },
+  "WhitGenLowOf.lean": {
+    "repository_path": "src/Development/WeilBound/CoreStatements/AutomorphicKernels/SiegelWeilFormula/WhitGenLowOf.lean",
+    "blob": "96867c012bee7c72532f6fb52fcf490c8a184771",
+    "targets": {
+      "NormalFactors.lean": [
+        {
+          "original_lines": [
+            10,
+            14
+          ],
+          "target_lines": [
+            11,
+            15
+          ],
+          "sha256": "655095a705afc90e52443e319ee8679f51505341301518cb3d7c6ffdb2fbfabb"
+        },
+        {
+          "original_lines": [
+            123,
+            128
+          ],
+          "target_lines": [
+            17,
+            22
+          ],
+          "sha256": "b6d493410608cf90a746466c9734a90847c39f5810e030e8cd3fb166964f8c30"
+        }
+      ]
+    }
+  },
+  "WhittakerGlobalFactors/ExistsFinsetOfCofinite.lean": {
+    "repository_path": "src/Development/WeilBound/CoreStatements/AutomorphicKernels/SiegelWeilFormula/WhittakerGlobalFactors/ExistsFinsetOfCofinite.lean",
+    "blob": "94ac1bd7069744e43c27d5d0f6c6f4e96adaa048",
+    "targets": {
+      "NormalFactors.lean": [
+        {
+          "original_lines": [
+            24,
+            28
+          ],
+          "target_lines": [
+            49,
+            53
+          ],
+          "sha256": "e39156a3e0bac103361f305ebdb0638c4c21210ba3b1cd07fa0f62897162fe5e"
+        }
+      ]
+    }
+  },
+  "WhittakerEqualRank/LamTendsto.lean": {
+    "repository_path": "src/Development/WeilBound/CoreStatements/AutomorphicKernels/SiegelWeilFormula/WhittakerEqualRank/LamTendsto.lean",
+    "blob": "d676661a227a6736e243f10d4f832d01c7a4290a",
+    "targets": {
+      "NormalFactors.lean": [
+        {
+          "original_lines": [
+            10,
+            75
+          ],
+          "target_lines": [
+            85,
+            150
+          ],
+          "sha256": "ab73efae1a739c41a3e723fbf835c57286a65aa22b21425018cf1b8d34852271"
+        }
+      ]
+    }
+  },
+  "Formalism/UnipotentAdelicQuotients/SWXSDefs.lean": {
+    "repository_path": "src/Formalism/UnipotentAdelicQuotients/SWXSDefs.lean",
+    "blob": "6c1a75de26546f6911ec40e3ff61e9cf33e5634f",
+    "targets": {
+      "support/Formalism/UnipotentAdelicQuotients/SWXSDefs.lean": [
+        {
+          "original_lines": [
+            1,
+            312
+          ],
+          "target_lines": [
+            1,
+            312
+          ],
+          "sha256": "ac8bd494d1be925d35d6e3a10263ca6f4b4f699d0853e8e5eb660d43a9bcd9ab"
+        }
+      ]
+    }
+  },
+  "ReciprocityTheory/Chebotarev/EulerSum.lean": {
+    "repository_path": "src/ReciprocityTheory/Chebotarev/EulerSum.lean",
+    "blob": "ae0202d5945d2fca8cb44c0dbc409d0298a405df",
+    "targets": {
+      "support/ReciprocityTheory/Chebotarev/EulerSum.lean": [
+        {
+          "original_lines": [
+            1,
+            145
+          ],
+          "target_lines": [
+            1,
+            145
+          ],
+          "sha256": "b859be5c3ebfe892b9366a279b9aedaf1cff54a69f1490e3374a6f0bb62d41fe"
+        }
+      ]
+    }
+  },
+  "ReciprocityTheory/Chebotarev/NZIdeal.lean": {
+    "repository_path": "src/ReciprocityTheory/Chebotarev/NZIdeal.lean",
+    "blob": "687df8cba6613a81a5c1e3137abffea337a2d365",
+    "targets": {
+      "support/ReciprocityTheory/Chebotarev/NZIdeal.lean": [
+        {
+          "original_lines": [
+            1,
+            32
+          ],
+          "target_lines": [
+            1,
+            32
+          ],
+          "sha256": "e083549b1f90a660b6ac404526287c5006655160626838296d1fc966c094fd43"
+        }
+      ]
+    }
+  }
+}

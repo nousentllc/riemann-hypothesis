@@ -1,0 +1,31 @@
+# Kernel checks for the constant term and the three rank regimes
+
+The proof uses separate arguments on the two sides of equal rank. These checks reach the actual local Gram measures and Euler factors used in those arguments. The complete Siegel–Weil identity and its arithmetic application remain outside the replay.
+
+| Branch or operation | What was checked | Remaining input |
+|---|---|---|
+| The Eisenstein constant-term split, far to the right | The complete original module `SiegelWeilActions.Exch` allows the countable sum to pass through two integrals. It uses summability of the integrals of the norms. | The application `Act.lhs_eq_tsum_k` has to furnish that summability for the actual kernel. Identifying the two orbit contributions is a further argument. |
+| Fewer columns than rows, $n<M$ | Original `W.euler_prod`, `W.unr_prod`, `W.eq_of_eqOn_right`, and `W.hasProd_split`. The good-prime Euler product is holomorphic on $\Re z>0$ and agrees with the product there. The sum over actual prime norms uses the complete original `EulerSum` module. | The archimedean factor, bad finite factors, adelic factorization, and theta-density identity that identify this product with a coefficient. |
+| Equal rank, $n=M$ | Original `WQ.unrX_zero_split` isolates the final factor. Original `WQ.lam_tendsto` identifies the boundary limit, and `WQ.lpack` proves the assembled product identity at zero under the published `LOrd` hypothesis. | Constructing `LOrd` and furnishing the global density formula with its mean normalization. Together they determine what the scalar product represents in the global identity. |
+| More columns than rows, $M<n$ | Original `WL.det_mul_eq_zero_of_lt` and `WL.densZero` force the local Gram density to vanish on the nonsingular locus. Original `WL.count` and `WL.analyticAt_update_zero` turn a strict surplus of numerator order into a holomorphic extension with value zero. | The archimedean order estimate, Euler-product order bounds, local Whittaker transforms, and adelic factorization that furnish the punctured identity in the first place. |
+
+**Equal-rank normalization.** Write $q_v$ for the ideal norm and $\epsilon_v\in\{1,-1\}$ for the splitting sign. At rank $M=n>0$ and $z=0$, the last factor is $1-\epsilon_v/q_v$. The remaining exponents are at least two. The unmodified `lpack` proof constructs a meromorphic $K$, analytic at zero, together with $\lambda$ and $P$ satisfying
+$$
+ K(0)\prod_{v\in S}(1-\epsilon_v/q_v)=\lambda P .
+$$
+Here $\lambda$ is a one-sided limit and $P$ is the product of the normalized local factors outside the finite set $S$. The proof divides only by finite local factors known to be nonzero and uses the analytic value at one for the borderline factor. An evaluation of $K(0)$ or a conclusion about its nonvanishing would require more information about $\lambda$ and $P$. The factor of two in the equal-rank Whittaker identification enters through the separately supplied mean normalization. [Original equal-rank calculation](https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/WeilBound/CoreStatements/AutomorphicKernels/SiegelWeilFormula/WhittakerEqualRank/WqMain.lean#L64-L90)
+
+**The possible pole is exactly one order short of the available budget.** Put $d=[F:\mathbb Q]$, $c=|S|$ and $a=d(n-M)$. The source clears a denominator of order $K$ and proves $K+1=a+c$. The $c$ finite places account for one numerator zero apiece. The archimedean integral contributes order at least $a$. In the source's punctured identity the scalar $2^K$ comes from the slope of the affine change in $z$. This power is independent of the global mean multiplier of two. The new `one_surplus_germ` gives the explicit germ $G(z)=(z-z_0)B(z)$ after assigning the value zero at $z_0$, with analytic $B=2^{-K}A$ in the source application. The unit surplus guarantees at least one zero. The remaining factor can itself vanish. [Original calculation of the denominator and numerator](https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/WeilBound/CoreStatements/AutomorphicKernels/SiegelWeilFormula/WhittakerLowRank/WhitGenLowOf.lean#L108-L157)
+
+**A sharp control.** Setting $A=G=c_0=1$ and matching the numerator and denominator exponents $N=K$ satisfies the same punctured identity with equality of exponents. Filling in zero now gives a discontinuous function. This is proved in `Controls.lean` for every $K$. At the tied exponent the punctured identity permits a nonzero central value. The example tests the analytic hypotheses with constant functions.
+
+## Reproduction
+
+Use Python 3, a Lean 4.33.1 SDK at commit `819816b2e0a3bf405af45ae5c7af2491d8f5bee6`, and a built Mathlib checkout at `0df444a360eaa60ab8c11dca51a86af692955474`. The command below runs from this directory. The two optional source arguments enable independent comparison against the pinned original Git tree and its extracted files. A checkout containing every Git blob can use `--git` alone. Omitting both arguments still compiles and replays every proof and checks the packaged byte ranges against their recorded hashes.
+
+```sh
+python3 -B replay.py --sdk "$LEAN_SDK" --mathlib "$MATHLIB_CHECKOUT" \
+  --git "$ORIGINAL_GIT" --source "$EXTRACTED_ORIGINAL" --out replay-result.json
+```
+
+Four modules compile under their original names with their exact original files and imports. Three other modules contain original declarations in reduced import environments or new boundary tests. Each compiles in a fresh temporary directory and receives a separate `leanchecker -v` replay. The Mathlib dependencies come from its pinned build cache. The script also runs `#print axioms` for the declarations listed in `Audit.lean`. The original extracts retain the source statements and proof bodies. The enclosing files replace their long project import chains. Re-elaboration in these smaller environments can choose different instances or proof terms. The source map records the original and packaged locations of each byte-exact passage. Consult `kernel_receipt.json` for the exact replayed modules, source hashes, surviving compiler warnings, and per-declaration axioms.

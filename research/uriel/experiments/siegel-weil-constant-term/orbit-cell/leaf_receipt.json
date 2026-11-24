@@ -1,0 +1,55 @@
+{
+  "pinned_commit": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "mathlib_commit": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "lean_toolchain": "4.33.1",
+  "module": "Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.UnfoldingCompactness.ExistsBetaPf",
+  "declaration": "PositivityTheory.SiegelWeilFormula.kunf.exists_beta_pf",
+  "source_git_blob": "707f101c4cb4d729a5e229776ef003aef9417a9d",
+  "raw_sha256": "79a11b8b298165e099c453b014a024b2b37eee6299fe1caaa5bf674bfacd641b",
+  "complete_source_blobs_verified": 38,
+  "scope": "One original module rebuilt and checked; precompiled Mathlib dependencies.",
+  "commands": [
+    {
+      "arguments": [
+        "lean",
+        "--version"
+      ],
+      "exit_code": 0,
+      "elapsed_s": 0.292,
+      "stdout": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)\n",
+      "stderr": ""
+    },
+    {
+      "arguments": [
+        "lean",
+        "-o",
+        "Development/WeilBound/CoreStatements/AutomorphicKernels/SiegelWeilFormula/UnfoldingCompactness/ExistsBetaPf.olean",
+        "Development/WeilBound/CoreStatements/AutomorphicKernels/SiegelWeilFormula/UnfoldingCompactness/ExistsBetaPf.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_s": 37.292,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "arguments": [
+        "lean",
+        "AxiomReport.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_s": 14.175,
+      "stdout": "'PositivityTheory.SiegelWeilFormula.kunf.exists_beta_pf' depends on axioms: [propext, Classical.choice, Quot.sound]\n",
+      "stderr": ""
+    },
+    {
+      "arguments": [
+        "leanchecker",
+        "Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.UnfoldingCompactness.ExistsBetaPf"
+      ],
+      "exit_code": 0,
+      "elapsed_s": 5.66,
+      "stdout": "",
+      "stderr": ""
+    }
+  ]
+}

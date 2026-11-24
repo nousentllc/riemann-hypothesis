@@ -1,0 +1,72 @@
+{
+  "pin": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "sources": {
+    "src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/SiegelWeilAnisotropic.lean": {
+      "blob": "b6fc0f9626a08d4589c4e662c986eefaa1480ed2",
+      "lines": [
+        13,
+        14
+      ],
+      "sha256": "299ab14dfa761e3e40d4426102992b7ce91e65f4dad382a202cafe91d83010d2"
+    },
+    "src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LaurentConstEqOfTendsto.lean": {
+      "blob": "5fbfb267c6341a18bd8ffe42b6052f2af9053409",
+      "lines": [
+        8,
+        30
+      ],
+      "sha256": "88493ab3799b4aa1bec82cf2a53f2b8d59fe5e3c4d1366f43b0f7292e91a9b94"
+    },
+    "src/Development/WeilBound/CoreStatements/AutomorphicKernels/SiegelWeilFormula/AdelicDilations/ExpNeOfLt.lean": {
+      "blob": "8214159335009d04c57924614b348e08d1b612a6",
+      "lines": [
+        13,
+        20
+      ],
+      "sha256": "4838bb0db8babeb223c4481e6d34773fead089452344868da21c74cf47f9a87a"
+    },
+    "src/Development/AbelianVarietyTheory/Definitions/Foundations/EventuallyEqOfIsPreconnected.lean": {
+      "blob": "5c2f15ec4081a873b60918e25866c9af5c04ac31",
+      "lines": "whole file",
+      "sha256": "5349d0913754c8518f0263c5914bea8ed9f494207bc90d7717134414352118e0"
+    },
+    "src/Development/WeilBound/CoreStatements/AutomorphicKernels/SiegelWeilFormula/AdelicDilations/IsExtAtOfDiff.lean": {
+      "blob": "7a79c77e00affe229c88b89f0eef23832a4272ed",
+      "lines": "whole file",
+      "sha256": "65d2c1c9eb3361ab21bfe7b52366d02b6640921b53c488d93439103527eb43f3"
+    }
+  },
+  "modules": {
+    "Development.AbelianVarietyTheory.Proofs.DivisorProofs.LaurentConstEqOfTendsto": {
+      "sha256": "c986381f5221466a8996f287eb707d3f2f9e738559fda9d9044a94d38fb126e4",
+      "logs": [
+        "",
+        "replaying Development.AbelianVarietyTheory.Proofs.DivisorProofs.LaurentConstEqOfTendsto"
+      ]
+    },
+    "Development.AbelianVarietyTheory.Definitions.Foundations.EventuallyEqOfIsPreconnected": {
+      "sha256": "5349d0913754c8518f0263c5914bea8ed9f494207bc90d7717134414352118e0",
+      "logs": [
+        "",
+        "replaying Development.AbelianVarietyTheory.Definitions.Foundations.EventuallyEqOfIsPreconnected"
+      ]
+    },
+    "Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.AdelicDilations.IsExtAtOfDiff": {
+      "sha256": "65d2c1c9eb3361ab21bfe7b52366d02b6640921b53c488d93439103527eb43f3",
+      "logs": [
+        "Development/WeilBound/CoreStatements/AutomorphicKernels/SiegelWeilFormula/AdelicDilations/IsExtAtOfDiff.lean:66:19: warning: Variable name `hp` is not explicitly referenced.\n\nHint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:\n  [apply] _hp\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`\nDevelopment/WeilBound/CoreStatements/AutomorphicKernels/SiegelWeilFormula/AdelicDilations/IsExtAtOfDiff.lean:133:58: warning: Variable name `hp` is not explicitly referenced.\n\nHint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:\n  [apply] _hp\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`",
+        "replaying Development.WeilBound.CoreStatements.AutomorphicKernels.SiegelWeilFormula.AdelicDilations.IsExtAtOfDiff"
+      ]
+    },
+    "SeparationControl": {
+      "sha256": "273569b1bfde4571fd38e4496e5211b3771fe62bdffaf344db1c2d04f063ae26",
+      "logs": [
+        "'PositivityTheory.SiegelWeilFormula.AStep.lawSep' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PositivityTheory.SiegelWeilFormula.AStep.wrap' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PositivityTheory.SiegelWeilFormula.AStep.exp_ne_of_lt' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PositivityTheory.SiegelWeilFormula.AStep.separation_control' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PositivityTheory.SiegelWeilFormula.AStep.collision_control' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "replaying SeparationControl"
+      ]
+    }
+  },
+  "scope": "Reduced upstream context using the exact LaurentConst definition and uniqueness proof. The two original continuation modules are complete and compiled under their original names. No adelic inputs instantiated.",
+  "lean": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474"
+}
