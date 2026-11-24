@@ -1,0 +1,891 @@
+{
+  "previous_graph_sizes": {
+    "D1": [
+      3,
+      6
+    ],
+    "D2": [
+      5,
+      7
+    ],
+    "C1": [
+      4,
+      7
+    ],
+    "C2": [
+      5,
+      8
+    ],
+    "C3": [
+      5,
+      9
+    ],
+    "C4": [
+      6,
+      9
+    ],
+    "C5": [
+      6,
+      10
+    ],
+    "C6": [
+      7,
+      10
+    ],
+    "T1": [
+      5,
+      10
+    ],
+    "T2": [
+      6,
+      11
+    ],
+    "T3": [
+      6,
+      12
+    ],
+    "T4": [
+      7,
+      11
+    ],
+    "T5": [
+      7,
+      12
+    ],
+    "T6": [
+      8,
+      11
+    ]
+  },
+  "new_graph_sizes": {
+    "F1": [
+      6,
+      13
+    ],
+    "F2": [
+      7,
+      13
+    ],
+    "F3": [
+      7,
+      14
+    ],
+    "F4": [
+      8,
+      12
+    ],
+    "F5": [
+      8,
+      13
+    ],
+    "F6": [
+      8,
+      14
+    ]
+  },
+  "physical_checks": {
+    "switch_states": 48,
+    "node_voltages": 352,
+    "branch_currents": 632,
+    "target_current_equal_to_threshold": 2,
+    "negative_target_current": 25,
+    "meter_predictions": 96
+  },
+  "H_to_Y": 3,
+  "H_to_N": 3,
+  "record_counts": {
+    "N": 6,
+    "Y": 6,
+    "U": 6
+  },
+  "initial_count": 4,
+  "one_forced_lamp_alone_count": 4,
+  "intersection_count": 2,
+  "all_one_lamp_truths_mixed": true,
+  "families": {
+    "F1": {
+      "shape": [
+        6,
+        13
+      ],
+      "H_means": "Y",
+      "records": {
+        "forced-00": "N",
+        "forced-01": "Y",
+        "forced-02": "U"
+      }
+    },
+    "F2": {
+      "shape": [
+        7,
+        13
+      ],
+      "H_means": "Y",
+      "records": {
+        "forced-03": "Y",
+        "forced-04": "U",
+        "forced-05": "N"
+      }
+    },
+    "F3": {
+      "shape": [
+        7,
+        14
+      ],
+      "H_means": "Y",
+      "records": {
+        "forced-06": "U",
+        "forced-07": "N",
+        "forced-08": "Y"
+      }
+    },
+    "F4": {
+      "shape": [
+        8,
+        12
+      ],
+      "H_means": "N",
+      "records": {
+        "forced-09": "Y",
+        "forced-10": "N",
+        "forced-11": "U"
+      }
+    },
+    "F5": {
+      "shape": [
+        8,
+        13
+      ],
+      "H_means": "N",
+      "records": {
+        "forced-12": "N",
+        "forced-13": "U",
+        "forced-14": "Y"
+      }
+    },
+    "F6": {
+      "shape": [
+        8,
+        14
+      ],
+      "H_means": "N",
+      "records": {
+        "forced-15": "U",
+        "forced-16": "Y",
+        "forced-17": "N"
+      }
+    }
+  },
+  "records": {
+    "forced-00": {
+      "family": "DC-F1",
+      "kind": "decisive",
+      "verdict": "N",
+      "initial": [
+        "LE",
+        "PT",
+        "RK",
+        "ZD"
+      ],
+      "meter_alone": [
+        "FS",
+        "KK",
+        "LE",
+        "RK"
+      ],
+      "joint": [
+        "LE",
+        "RK"
+      ],
+      "meter": "M7",
+      "reading": "L",
+      "both_possible_replies": {
+        "L": {
+          "ids": [
+            "LE",
+            "RK"
+          ],
+          "verdict": "N"
+        },
+        "H": {
+          "ids": [
+            "PT",
+            "ZD"
+          ],
+          "verdict": "Y"
+        }
+      }
+    },
+    "forced-01": {
+      "family": "DC-F1",
+      "kind": "decisive",
+      "verdict": "Y",
+      "initial": [
+        "LE",
+        "PT",
+        "RK",
+        "ZD"
+      ],
+      "meter_alone": [
+        "IP",
+        "PT",
+        "QX",
+        "ZD"
+      ],
+      "joint": [
+        "PT",
+        "ZD"
+      ],
+      "meter": "M7",
+      "reading": "H",
+      "both_possible_replies": {
+        "L": {
+          "ids": [
+            "LE",
+            "RK"
+          ],
+          "verdict": "N"
+        },
+        "H": {
+          "ids": [
+            "PT",
+            "ZD"
+          ],
+          "verdict": "Y"
+        }
+      }
+    },
+    "forced-02": {
+      "family": "DC-F1",
+      "kind": "ambiguous",
+      "verdict": "U",
+      "initial": [
+        "LE",
+        "PT",
+        "RK",
+        "ZD"
+      ],
+      "meter_alone": [
+        "IP",
+        "LE",
+        "QX",
+        "ZD"
+      ],
+      "joint": [
+        "LE",
+        "ZD"
+      ],
+      "meter": "M4",
+      "reading": "L",
+      "both_possible_replies": {
+        "L": {
+          "ids": [
+            "LE",
+            "ZD"
+          ],
+          "verdict": "U"
+        },
+        "H": {
+          "ids": [
+            "PT",
+            "RK"
+          ],
+          "verdict": "U"
+        }
+      }
+    },
+    "forced-03": {
+      "family": "DC-F2",
+      "kind": "decisive",
+      "verdict": "Y",
+      "initial": [
+        "BV",
+        "DS",
+        "IT",
+        "XN"
+      ],
+      "meter_alone": [
+        "BV",
+        "CF",
+        "DS",
+        "GD"
+      ],
+      "joint": [
+        "BV",
+        "DS"
+      ],
+      "meter": "M7",
+      "reading": "H",
+      "both_possible_replies": {
+        "L": {
+          "ids": [
+            "IT",
+            "XN"
+          ],
+          "verdict": "N"
+        },
+        "H": {
+          "ids": [
+            "BV",
+            "DS"
+          ],
+          "verdict": "Y"
+        }
+      }
+    },
+    "forced-04": {
+      "family": "DC-F2",
+      "kind": "ambiguous",
+      "verdict": "U",
+      "initial": [
+        "BV",
+        "DS",
+        "IT",
+        "XN"
+      ],
+      "meter_alone": [
+        "DS",
+        "GD",
+        "VB",
+        "XN"
+      ],
+      "joint": [
+        "DS",
+        "XN"
+      ],
+      "meter": "M8",
+      "reading": "H",
+      "both_possible_replies": {
+        "L": {
+          "ids": [
+            "BV",
+            "IT"
+          ],
+          "verdict": "U"
+        },
+        "H": {
+          "ids": [
+            "DS",
+            "XN"
+          ],
+          "verdict": "U"
+        }
+      }
+    },
+    "forced-05": {
+      "family": "DC-F2",
+      "kind": "decisive",
+      "verdict": "N",
+      "initial": [
+        "BV",
+        "DS",
+        "IT",
+        "XN"
+      ],
+      "meter_alone": [
+        "IB",
+        "IT",
+        "VB",
+        "XN"
+      ],
+      "joint": [
+        "IT",
+        "XN"
+      ],
+      "meter": "M7",
+      "reading": "L",
+      "both_possible_replies": {
+        "L": {
+          "ids": [
+            "IT",
+            "XN"
+          ],
+          "verdict": "N"
+        },
+        "H": {
+          "ids": [
+            "BV",
+            "DS"
+          ],
+          "verdict": "Y"
+        }
+      }
+    },
+    "forced-06": {
+      "family": "DC-F3",
+      "kind": "ambiguous",
+      "verdict": "U",
+      "initial": [
+        "DE",
+        "HR",
+        "RY",
+        "SS"
+      ],
+      "meter_alone": [
+        "AB",
+        "DE",
+        "SS",
+        "UT"
+      ],
+      "joint": [
+        "DE",
+        "SS"
+      ],
+      "meter": "M2",
+      "reading": "L",
+      "both_possible_replies": {
+        "L": {
+          "ids": [
+            "DE",
+            "SS"
+          ],
+          "verdict": "U"
+        },
+        "H": {
+          "ids": [
+            "HR",
+            "RY"
+          ],
+          "verdict": "U"
+        }
+      }
+    },
+    "forced-07": {
+      "family": "DC-F3",
+      "kind": "decisive",
+      "verdict": "N",
+      "initial": [
+        "DE",
+        "HR",
+        "RY",
+        "SS"
+      ],
+      "meter_alone": [
+        "AB",
+        "AO",
+        "DE",
+        "HR"
+      ],
+      "joint": [
+        "DE",
+        "HR"
+      ],
+      "meter": "M7",
+      "reading": "L",
+      "both_possible_replies": {
+        "L": {
+          "ids": [
+            "DE",
+            "HR"
+          ],
+          "verdict": "N"
+        },
+        "H": {
+          "ids": [
+            "RY",
+            "SS"
+          ],
+          "verdict": "Y"
+        }
+      }
+    },
+    "forced-08": {
+      "family": "DC-F3",
+      "kind": "decisive",
+      "verdict": "Y",
+      "initial": [
+        "DE",
+        "HR",
+        "RY",
+        "SS"
+      ],
+      "meter_alone": [
+        "JO",
+        "RY",
+        "SS",
+        "UT"
+      ],
+      "joint": [
+        "RY",
+        "SS"
+      ],
+      "meter": "M7",
+      "reading": "H",
+      "both_possible_replies": {
+        "L": {
+          "ids": [
+            "DE",
+            "HR"
+          ],
+          "verdict": "N"
+        },
+        "H": {
+          "ids": [
+            "RY",
+            "SS"
+          ],
+          "verdict": "Y"
+        }
+      }
+    },
+    "forced-09": {
+      "family": "DC-F4",
+      "kind": "decisive",
+      "verdict": "Y",
+      "initial": [
+        "AQ",
+        "DL",
+        "NV",
+        "WM"
+      ],
+      "meter_alone": [
+        "DL",
+        "EB",
+        "NV",
+        "YO"
+      ],
+      "joint": [
+        "DL",
+        "NV"
+      ],
+      "meter": "M2",
+      "reading": "L",
+      "both_possible_replies": {
+        "L": {
+          "ids": [
+            "DL",
+            "NV"
+          ],
+          "verdict": "Y"
+        },
+        "H": {
+          "ids": [
+            "AQ",
+            "WM"
+          ],
+          "verdict": "N"
+        }
+      }
+    },
+    "forced-10": {
+      "family": "DC-F4",
+      "kind": "decisive",
+      "verdict": "N",
+      "initial": [
+        "AQ",
+        "DL",
+        "NV",
+        "WM"
+      ],
+      "meter_alone": [
+        "AQ",
+        "EG",
+        "UB",
+        "WM"
+      ],
+      "joint": [
+        "AQ",
+        "WM"
+      ],
+      "meter": "M2",
+      "reading": "H",
+      "both_possible_replies": {
+        "L": {
+          "ids": [
+            "DL",
+            "NV"
+          ],
+          "verdict": "Y"
+        },
+        "H": {
+          "ids": [
+            "AQ",
+            "WM"
+          ],
+          "verdict": "N"
+        }
+      }
+    },
+    "forced-11": {
+      "family": "DC-F4",
+      "kind": "ambiguous",
+      "verdict": "U",
+      "initial": [
+        "AQ",
+        "DL",
+        "NV",
+        "WM"
+      ],
+      "meter_alone": [
+        "DL",
+        "EB",
+        "UB",
+        "WM"
+      ],
+      "joint": [
+        "DL",
+        "WM"
+      ],
+      "meter": "M3",
+      "reading": "H",
+      "both_possible_replies": {
+        "L": {
+          "ids": [
+            "AQ",
+            "NV"
+          ],
+          "verdict": "U"
+        },
+        "H": {
+          "ids": [
+            "DL",
+            "WM"
+          ],
+          "verdict": "U"
+        }
+      }
+    },
+    "forced-12": {
+      "family": "DC-F5",
+      "kind": "decisive",
+      "verdict": "N",
+      "initial": [
+        "CZ",
+        "HK",
+        "LQ",
+        "TH"
+      ],
+      "meter_alone": [
+        "CZ",
+        "HK",
+        "HY",
+        "OA"
+      ],
+      "joint": [
+        "CZ",
+        "HK"
+      ],
+      "meter": "M2",
+      "reading": "H",
+      "both_possible_replies": {
+        "L": {
+          "ids": [
+            "LQ",
+            "TH"
+          ],
+          "verdict": "Y"
+        },
+        "H": {
+          "ids": [
+            "CZ",
+            "HK"
+          ],
+          "verdict": "N"
+        }
+      }
+    },
+    "forced-13": {
+      "family": "DC-F5",
+      "kind": "ambiguous",
+      "verdict": "U",
+      "initial": [
+        "CZ",
+        "HK",
+        "LQ",
+        "TH"
+      ],
+      "meter_alone": [
+        "CZ",
+        "HY",
+        "JV",
+        "TH"
+      ],
+      "joint": [
+        "CZ",
+        "TH"
+      ],
+      "meter": "M7",
+      "reading": "L",
+      "both_possible_replies": {
+        "L": {
+          "ids": [
+            "CZ",
+            "TH"
+          ],
+          "verdict": "U"
+        },
+        "H": {
+          "ids": [
+            "HK",
+            "LQ"
+          ],
+          "verdict": "U"
+        }
+      }
+    },
+    "forced-14": {
+      "family": "DC-F5",
+      "kind": "decisive",
+      "verdict": "Y",
+      "initial": [
+        "CZ",
+        "HK",
+        "LQ",
+        "TH"
+      ],
+      "meter_alone": [
+        "BN",
+        "JV",
+        "LQ",
+        "TH"
+      ],
+      "joint": [
+        "LQ",
+        "TH"
+      ],
+      "meter": "M2",
+      "reading": "L",
+      "both_possible_replies": {
+        "L": {
+          "ids": [
+            "LQ",
+            "TH"
+          ],
+          "verdict": "Y"
+        },
+        "H": {
+          "ids": [
+            "CZ",
+            "HK"
+          ],
+          "verdict": "N"
+        }
+      }
+    },
+    "forced-15": {
+      "family": "DC-F6",
+      "kind": "ambiguous",
+      "verdict": "U",
+      "initial": [
+        "GW",
+        "LB",
+        "WB",
+        "YW"
+      ],
+      "meter_alone": [
+        "LB",
+        "LI",
+        "SR",
+        "YW"
+      ],
+      "joint": [
+        "LB",
+        "YW"
+      ],
+      "meter": "M5",
+      "reading": "H",
+      "both_possible_replies": {
+        "L": {
+          "ids": [
+            "GW",
+            "WB"
+          ],
+          "verdict": "U"
+        },
+        "H": {
+          "ids": [
+            "LB",
+            "YW"
+          ],
+          "verdict": "U"
+        }
+      }
+    },
+    "forced-16": {
+      "family": "DC-F6",
+      "kind": "decisive",
+      "verdict": "Y",
+      "initial": [
+        "GW",
+        "LB",
+        "WB",
+        "YW"
+      ],
+      "meter_alone": [
+        "IZ",
+        "LI",
+        "WB",
+        "YW"
+      ],
+      "joint": [
+        "WB",
+        "YW"
+      ],
+      "meter": "M8",
+      "reading": "L",
+      "both_possible_replies": {
+        "L": {
+          "ids": [
+            "WB",
+            "YW"
+          ],
+          "verdict": "Y"
+        },
+        "H": {
+          "ids": [
+            "GW",
+            "LB"
+          ],
+          "verdict": "N"
+        }
+      }
+    },
+    "forced-17": {
+      "family": "DC-F6",
+      "kind": "decisive",
+      "verdict": "N",
+      "initial": [
+        "GW",
+        "LB",
+        "WB",
+        "YW"
+      ],
+      "meter_alone": [
+        "GW",
+        "LB",
+        "PV",
+        "SR"
+      ],
+      "joint": [
+        "GW",
+        "LB"
+      ],
+      "meter": "M8",
+      "reading": "H",
+      "both_possible_replies": {
+        "L": {
+          "ids": [
+            "WB",
+            "YW"
+          ],
+          "verdict": "Y"
+        },
+        "H": {
+          "ids": [
+            "GW",
+            "LB"
+          ],
+          "verdict": "N"
+        }
+      }
+    }
+  },
+  "sha256": {
+    "network.py": "79362c66225a92426f23ce4aadfe0422188cd55c6fb0af1b47d601dd9e5a5b1d",
+    "select_panel.py": "9297f7408e52ec31a06c8a1ff8e8acea315536ec5c41a9eb6d6b14a5663caebe",
+    "cases.py": "629f07e5d473ae119cc42f749dfd2ef73993fe2acde98b0802eb121d2ea132fd",
+    "design.json": "3648578632bb833566a44cb35e91c8bd8c514775a101695a3b0f8c374a82ff55",
+    "records.json": "3eef6da61e42511831a85b17de404b2123dbf4a9156d78457185bfede1b21fdb",
+    "check.py": "2fe45001e7fcad8a399f506a83968fcda69a80bf9f60e60fe55f3620ee32ed54"
+  }
+}

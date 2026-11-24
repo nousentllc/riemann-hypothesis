@@ -1,0 +1,14 @@
+DC network with + at 12 V and 0 at 0 V. Switch order is s,t,u (1 means closed). A bracketed resistor conducts only when its switch is closed. Each resistor lists its oriented start and end nodes and its resistance in ohms. R1=+>b:7 R2=e>b:4 R3=e>c:6 R4=c>d:6 R5=f>d:5 R6=a>f:8 R7=a>0:3 R8=b>c:8 R9=f>b:8 R10=f>c:6 R11=f>+:7[s] R12=+>e:3[t] R13=e>a:8[u].
+Question: is the signed current of R2 > -53052/763883 A?
+Initial comparator: voltage at f > 23/3 V
+Other comparators: M2: signed current of R13 > 0 A | M7: signed current of R12 > 0 A
+H means a comparator condition holds and L means it fails. All currents are exact amperes. The last column gives the result of the named current comparison in each setting.
+ID stu target_current initial M2 M7 target_current_above_threshold
+LQ 110 25599/255604 H L H Y
+TH 100 -3264/49325 H L L Y
+
+Observed readings: initial = H; M2 = L.
+The table includes every setting compatible with both readings. Use both readings when identifying which settings remain possible.
+Y means the named claim holds in every compatible setting. N means it fails in every compatible setting. U means both answers are possible.
+For Y or N, list all and only the compatible IDs. For U, list exactly two compatible IDs with opposite target answers. Use no duplicate IDs.
+Both readings have already been supplied. Return only the JSON fields verdict and certificate.

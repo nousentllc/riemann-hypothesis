@@ -1,0 +1,3 @@
+# Pre-inference runtime amendment
+
+The initial design, saved at local commit b597994, specified Ollama 0.40.4 from the previous circuit study. Before any experiment prompt was sent, a server-version query stopped the attempted freeze. The local service returned 0.40.18. Its listed gpt-oss:20b model SHA-256 digest still matched the prior study exactly. No experiment packets or model responses were collected by this preflight. The forced-reading study pins the installed 0.40.18 server version in both arms; the records, logged model/decoding settings, order policy, and endpoints are identical to the original design. Comparisons with predecessor outcomes are descriptive. The server version is an additional difference between experiments.

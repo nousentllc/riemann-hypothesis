@@ -1,0 +1,2108 @@
+{
+  "forced-00": {
+    "family": "DC-F1",
+    "states": {
+      "FS": {
+        "bits": "000",
+        "target_current": "2536/29157",
+        "answer": true,
+        "initial": "L",
+        "obs": {
+          "M4": "H",
+          "M7": "L"
+        }
+      },
+      "KK": {
+        "bits": "001",
+        "target_current": "-21604/38813",
+        "answer": false,
+        "initial": "L",
+        "obs": {
+          "M4": "H",
+          "M7": "L"
+        }
+      },
+      "PT": {
+        "bits": "010",
+        "target_current": "259548/638549",
+        "answer": true,
+        "initial": "H",
+        "obs": {
+          "M4": "H",
+          "M7": "H"
+        }
+      },
+      "RK": {
+        "bits": "011",
+        "target_current": "-209472/848569",
+        "answer": false,
+        "initial": "H",
+        "obs": {
+          "M4": "H",
+          "M7": "L"
+        }
+      },
+      "IP": {
+        "bits": "100",
+        "target_current": "188808/631385",
+        "answer": true,
+        "initial": "L",
+        "obs": {
+          "M4": "L",
+          "M7": "H"
+        }
+      },
+      "QX": {
+        "bits": "101",
+        "target_current": "-299652/839677",
+        "answer": false,
+        "initial": "L",
+        "obs": {
+          "M4": "L",
+          "M7": "H"
+        }
+      },
+      "ZD": {
+        "bits": "110",
+        "target_current": "2473428/4507271",
+        "answer": true,
+        "initial": "H",
+        "obs": {
+          "M4": "L",
+          "M7": "H"
+        }
+      },
+      "LE": {
+        "bits": "111",
+        "target_current": "-678432/5985943",
+        "answer": false,
+        "initial": "H",
+        "obs": {
+          "M4": "L",
+          "M7": "L"
+        }
+      }
+    },
+    "target_threshold": "0",
+    "initial_reading": "H",
+    "meter": "M7",
+    "reading": "L",
+    "kind": "decisive",
+    "eligible": [
+      "PT",
+      "ZD",
+      "LE",
+      "RK"
+    ],
+    "survivors": [
+      "LE",
+      "RK"
+    ],
+    "description": "DC network with + at 12 V and 0 at 0 V. Switch order is s,t,u (1 means closed). A bracketed resistor conducts only when its switch is closed. Each resistor lists its oriented start and end nodes and its resistance in ohms. R1=+>a:2 R2=a>d:9 R3=d>c:6 R4=b>c:2 R5=b>0:2 R6=0>c:2 R7=0>d:7 R8=c>a:9 R9=+>b:5 R10=+>d:3 R11=b>d:5[s] R12=a>b:5[t] R13=c>+:3[u].",
+    "signed_branch": "R4",
+    "state_order": [
+      "QX",
+      "FS",
+      "PT",
+      "KK",
+      "IP",
+      "ZD",
+      "LE",
+      "RK"
+    ],
+    "menu": {
+      "M4": "signed current of R11 > -1/3 A",
+      "M7": "signed current of R10 > 14/9 A"
+    },
+    "initial_description": "signed current of R12 > 0 A"
+  },
+  "forced-01": {
+    "family": "DC-F1",
+    "states": {
+      "FS": {
+        "bits": "000",
+        "target_current": "2536/29157",
+        "answer": true,
+        "initial": "L",
+        "obs": {
+          "M4": "H",
+          "M7": "L"
+        }
+      },
+      "KK": {
+        "bits": "001",
+        "target_current": "-21604/38813",
+        "answer": false,
+        "initial": "L",
+        "obs": {
+          "M4": "H",
+          "M7": "L"
+        }
+      },
+      "PT": {
+        "bits": "010",
+        "target_current": "259548/638549",
+        "answer": true,
+        "initial": "H",
+        "obs": {
+          "M4": "H",
+          "M7": "H"
+        }
+      },
+      "RK": {
+        "bits": "011",
+        "target_current": "-209472/848569",
+        "answer": false,
+        "initial": "H",
+        "obs": {
+          "M4": "H",
+          "M7": "L"
+        }
+      },
+      "IP": {
+        "bits": "100",
+        "target_current": "188808/631385",
+        "answer": true,
+        "initial": "L",
+        "obs": {
+          "M4": "L",
+          "M7": "H"
+        }
+      },
+      "QX": {
+        "bits": "101",
+        "target_current": "-299652/839677",
+        "answer": false,
+        "initial": "L",
+        "obs": {
+          "M4": "L",
+          "M7": "H"
+        }
+      },
+      "ZD": {
+        "bits": "110",
+        "target_current": "2473428/4507271",
+        "answer": true,
+        "initial": "H",
+        "obs": {
+          "M4": "L",
+          "M7": "H"
+        }
+      },
+      "LE": {
+        "bits": "111",
+        "target_current": "-678432/5985943",
+        "answer": false,
+        "initial": "H",
+        "obs": {
+          "M4": "L",
+          "M7": "L"
+        }
+      }
+    },
+    "target_threshold": "0",
+    "initial_reading": "H",
+    "meter": "M7",
+    "reading": "H",
+    "kind": "decisive",
+    "eligible": [
+      "PT",
+      "ZD",
+      "LE",
+      "RK"
+    ],
+    "survivors": [
+      "PT",
+      "ZD"
+    ],
+    "description": "DC network with + at 12 V and 0 at 0 V. Switch order is s,t,u (1 means closed). A bracketed resistor conducts only when its switch is closed. Each resistor lists its oriented start and end nodes and its resistance in ohms. R1=+>a:2 R2=a>d:9 R3=d>c:6 R4=b>c:2 R5=b>0:2 R6=0>c:2 R7=0>d:7 R8=c>a:9 R9=+>b:5 R10=+>d:3 R11=b>d:5[s] R12=a>b:5[t] R13=c>+:3[u].",
+    "signed_branch": "R4",
+    "state_order": [
+      "QX",
+      "FS",
+      "PT",
+      "KK",
+      "IP",
+      "ZD",
+      "LE",
+      "RK"
+    ],
+    "menu": {
+      "M4": "signed current of R11 > -1/3 A",
+      "M7": "signed current of R10 > 14/9 A"
+    },
+    "initial_description": "signed current of R12 > 0 A"
+  },
+  "forced-02": {
+    "family": "DC-F1",
+    "states": {
+      "FS": {
+        "bits": "000",
+        "target_current": "2536/29157",
+        "answer": true,
+        "initial": "L",
+        "obs": {
+          "M4": "H",
+          "M7": "L"
+        }
+      },
+      "KK": {
+        "bits": "001",
+        "target_current": "-21604/38813",
+        "answer": false,
+        "initial": "L",
+        "obs": {
+          "M4": "H",
+          "M7": "L"
+        }
+      },
+      "PT": {
+        "bits": "010",
+        "target_current": "259548/638549",
+        "answer": true,
+        "initial": "H",
+        "obs": {
+          "M4": "H",
+          "M7": "H"
+        }
+      },
+      "RK": {
+        "bits": "011",
+        "target_current": "-209472/848569",
+        "answer": false,
+        "initial": "H",
+        "obs": {
+          "M4": "H",
+          "M7": "L"
+        }
+      },
+      "IP": {
+        "bits": "100",
+        "target_current": "188808/631385",
+        "answer": true,
+        "initial": "L",
+        "obs": {
+          "M4": "L",
+          "M7": "H"
+        }
+      },
+      "QX": {
+        "bits": "101",
+        "target_current": "-299652/839677",
+        "answer": false,
+        "initial": "L",
+        "obs": {
+          "M4": "L",
+          "M7": "H"
+        }
+      },
+      "ZD": {
+        "bits": "110",
+        "target_current": "2473428/4507271",
+        "answer": true,
+        "initial": "H",
+        "obs": {
+          "M4": "L",
+          "M7": "H"
+        }
+      },
+      "LE": {
+        "bits": "111",
+        "target_current": "-678432/5985943",
+        "answer": false,
+        "initial": "H",
+        "obs": {
+          "M4": "L",
+          "M7": "L"
+        }
+      }
+    },
+    "target_threshold": "0",
+    "initial_reading": "H",
+    "meter": "M4",
+    "reading": "L",
+    "kind": "ambiguous",
+    "eligible": [
+      "PT",
+      "ZD",
+      "LE",
+      "RK"
+    ],
+    "survivors": [
+      "ZD",
+      "LE"
+    ],
+    "description": "DC network with + at 12 V and 0 at 0 V. Switch order is s,t,u (1 means closed). A bracketed resistor conducts only when its switch is closed. Each resistor lists its oriented start and end nodes and its resistance in ohms. R1=+>a:2 R2=a>d:9 R3=d>c:6 R4=b>c:2 R5=b>0:2 R6=0>c:2 R7=0>d:7 R8=c>a:9 R9=+>b:5 R10=+>d:3 R11=b>d:5[s] R12=a>b:5[t] R13=c>+:3[u].",
+    "signed_branch": "R4",
+    "state_order": [
+      "QX",
+      "FS",
+      "PT",
+      "KK",
+      "IP",
+      "ZD",
+      "LE",
+      "RK"
+    ],
+    "menu": {
+      "M4": "signed current of R11 > -1/3 A",
+      "M7": "signed current of R10 > 14/9 A"
+    },
+    "initial_description": "signed current of R12 > 0 A"
+  },
+  "forced-03": {
+    "family": "DC-F2",
+    "states": {
+      "CF": {
+        "bits": "000",
+        "target_current": "-816/23065",
+        "answer": true,
+        "initial": "H",
+        "obs": {
+          "M7": "H",
+          "M8": "L"
+        }
+      },
+      "BV": {
+        "bits": "001",
+        "target_current": "-1677/44180",
+        "answer": true,
+        "initial": "L",
+        "obs": {
+          "M7": "H",
+          "M8": "L"
+        }
+      },
+      "IB": {
+        "bits": "010",
+        "target_current": "-41772/428405",
+        "answer": true,
+        "initial": "H",
+        "obs": {
+          "M7": "L",
+          "M8": "L"
+        }
+      },
+      "IT": {
+        "bits": "011",
+        "target_current": "-30762/210385",
+        "answer": false,
+        "initial": "L",
+        "obs": {
+          "M7": "L",
+          "M8": "L"
+        }
+      },
+      "GD": {
+        "bits": "100",
+        "target_current": "-34656/322987",
+        "answer": false,
+        "initial": "H",
+        "obs": {
+          "M7": "H",
+          "M8": "H"
+        }
+      },
+      "DS": {
+        "bits": "101",
+        "target_current": "-159168/1606309",
+        "answer": true,
+        "initial": "L",
+        "obs": {
+          "M7": "H",
+          "M8": "H"
+        }
+      },
+      "VB": {
+        "bits": "110",
+        "target_current": "-872784/3801551",
+        "answer": false,
+        "initial": "H",
+        "obs": {
+          "M7": "L",
+          "M8": "H"
+        }
+      },
+      "XN": {
+        "bits": "111",
+        "target_current": "-474510/1838143",
+        "answer": false,
+        "initial": "L",
+        "obs": {
+          "M7": "L",
+          "M8": "H"
+        }
+      }
+    },
+    "target_threshold": "-1/10",
+    "initial_reading": "L",
+    "meter": "M7",
+    "reading": "H",
+    "kind": "decisive",
+    "eligible": [
+      "XN",
+      "BV",
+      "IT",
+      "DS"
+    ],
+    "survivors": [
+      "BV",
+      "DS"
+    ],
+    "description": "DC network with + at 12 V and 0 at 0 V. Switch order is s,t,u (1 means closed). A bracketed resistor conducts only when its switch is closed. Each resistor lists its oriented start and end nodes and its resistance in ohms. R1=+>b:5 R2=c>b:7 R3=a>c:2 R4=e>a:9 R5=d>e:5 R6=0>d:4 R7=a>d:2 R8=c>0:4 R9=c>e:3 R10=a>b:8 R11=+>a:7[s] R12=0>e:3[t] R13=d>+:8[u].",
+    "signed_branch": "R4",
+    "state_order": [
+      "XN",
+      "VB",
+      "CF",
+      "BV",
+      "IT",
+      "IB",
+      "DS",
+      "GD"
+    ],
+    "menu": {
+      "M7": "signed current of R12 > -1/3 A",
+      "M8": "signed current of R11 > 0 A"
+    },
+    "initial_description": "signed current of R13 > -1/2 A"
+  },
+  "forced-04": {
+    "family": "DC-F2",
+    "states": {
+      "CF": {
+        "bits": "000",
+        "target_current": "-816/23065",
+        "answer": true,
+        "initial": "H",
+        "obs": {
+          "M7": "H",
+          "M8": "L"
+        }
+      },
+      "BV": {
+        "bits": "001",
+        "target_current": "-1677/44180",
+        "answer": true,
+        "initial": "L",
+        "obs": {
+          "M7": "H",
+          "M8": "L"
+        }
+      },
+      "IB": {
+        "bits": "010",
+        "target_current": "-41772/428405",
+        "answer": true,
+        "initial": "H",
+        "obs": {
+          "M7": "L",
+          "M8": "L"
+        }
+      },
+      "IT": {
+        "bits": "011",
+        "target_current": "-30762/210385",
+        "answer": false,
+        "initial": "L",
+        "obs": {
+          "M7": "L",
+          "M8": "L"
+        }
+      },
+      "GD": {
+        "bits": "100",
+        "target_current": "-34656/322987",
+        "answer": false,
+        "initial": "H",
+        "obs": {
+          "M7": "H",
+          "M8": "H"
+        }
+      },
+      "DS": {
+        "bits": "101",
+        "target_current": "-159168/1606309",
+        "answer": true,
+        "initial": "L",
+        "obs": {
+          "M7": "H",
+          "M8": "H"
+        }
+      },
+      "VB": {
+        "bits": "110",
+        "target_current": "-872784/3801551",
+        "answer": false,
+        "initial": "H",
+        "obs": {
+          "M7": "L",
+          "M8": "H"
+        }
+      },
+      "XN": {
+        "bits": "111",
+        "target_current": "-474510/1838143",
+        "answer": false,
+        "initial": "L",
+        "obs": {
+          "M7": "L",
+          "M8": "H"
+        }
+      }
+    },
+    "target_threshold": "-1/10",
+    "initial_reading": "L",
+    "meter": "M8",
+    "reading": "H",
+    "kind": "ambiguous",
+    "eligible": [
+      "XN",
+      "BV",
+      "IT",
+      "DS"
+    ],
+    "survivors": [
+      "XN",
+      "DS"
+    ],
+    "description": "DC network with + at 12 V and 0 at 0 V. Switch order is s,t,u (1 means closed). A bracketed resistor conducts only when its switch is closed. Each resistor lists its oriented start and end nodes and its resistance in ohms. R1=+>b:5 R2=c>b:7 R3=a>c:2 R4=e>a:9 R5=d>e:5 R6=0>d:4 R7=a>d:2 R8=c>0:4 R9=c>e:3 R10=a>b:8 R11=+>a:7[s] R12=0>e:3[t] R13=d>+:8[u].",
+    "signed_branch": "R4",
+    "state_order": [
+      "XN",
+      "VB",
+      "CF",
+      "BV",
+      "IT",
+      "IB",
+      "DS",
+      "GD"
+    ],
+    "menu": {
+      "M7": "signed current of R12 > -1/3 A",
+      "M8": "signed current of R11 > 0 A"
+    },
+    "initial_description": "signed current of R13 > -1/2 A"
+  },
+  "forced-05": {
+    "family": "DC-F2",
+    "states": {
+      "CF": {
+        "bits": "000",
+        "target_current": "-816/23065",
+        "answer": true,
+        "initial": "H",
+        "obs": {
+          "M7": "H",
+          "M8": "L"
+        }
+      },
+      "BV": {
+        "bits": "001",
+        "target_current": "-1677/44180",
+        "answer": true,
+        "initial": "L",
+        "obs": {
+          "M7": "H",
+          "M8": "L"
+        }
+      },
+      "IB": {
+        "bits": "010",
+        "target_current": "-41772/428405",
+        "answer": true,
+        "initial": "H",
+        "obs": {
+          "M7": "L",
+          "M8": "L"
+        }
+      },
+      "IT": {
+        "bits": "011",
+        "target_current": "-30762/210385",
+        "answer": false,
+        "initial": "L",
+        "obs": {
+          "M7": "L",
+          "M8": "L"
+        }
+      },
+      "GD": {
+        "bits": "100",
+        "target_current": "-34656/322987",
+        "answer": false,
+        "initial": "H",
+        "obs": {
+          "M7": "H",
+          "M8": "H"
+        }
+      },
+      "DS": {
+        "bits": "101",
+        "target_current": "-159168/1606309",
+        "answer": true,
+        "initial": "L",
+        "obs": {
+          "M7": "H",
+          "M8": "H"
+        }
+      },
+      "VB": {
+        "bits": "110",
+        "target_current": "-872784/3801551",
+        "answer": false,
+        "initial": "H",
+        "obs": {
+          "M7": "L",
+          "M8": "H"
+        }
+      },
+      "XN": {
+        "bits": "111",
+        "target_current": "-474510/1838143",
+        "answer": false,
+        "initial": "L",
+        "obs": {
+          "M7": "L",
+          "M8": "H"
+        }
+      }
+    },
+    "target_threshold": "-1/10",
+    "initial_reading": "L",
+    "meter": "M7",
+    "reading": "L",
+    "kind": "decisive",
+    "eligible": [
+      "XN",
+      "BV",
+      "IT",
+      "DS"
+    ],
+    "survivors": [
+      "XN",
+      "IT"
+    ],
+    "description": "DC network with + at 12 V and 0 at 0 V. Switch order is s,t,u (1 means closed). A bracketed resistor conducts only when its switch is closed. Each resistor lists its oriented start and end nodes and its resistance in ohms. R1=+>b:5 R2=c>b:7 R3=a>c:2 R4=e>a:9 R5=d>e:5 R6=0>d:4 R7=a>d:2 R8=c>0:4 R9=c>e:3 R10=a>b:8 R11=+>a:7[s] R12=0>e:3[t] R13=d>+:8[u].",
+    "signed_branch": "R4",
+    "state_order": [
+      "XN",
+      "VB",
+      "CF",
+      "BV",
+      "IT",
+      "IB",
+      "DS",
+      "GD"
+    ],
+    "menu": {
+      "M7": "signed current of R12 > -1/3 A",
+      "M8": "signed current of R11 > 0 A"
+    },
+    "initial_description": "signed current of R13 > -1/2 A"
+  },
+  "forced-06": {
+    "family": "DC-F3",
+    "states": {
+      "SS": {
+        "bits": "000",
+        "target_current": "3015900/8220727",
+        "answer": true,
+        "initial": "H",
+        "obs": {
+          "M2": "L",
+          "M7": "H"
+        }
+      },
+      "RY": {
+        "bits": "001",
+        "target_current": "251325/925174",
+        "answer": true,
+        "initial": "H",
+        "obs": {
+          "M2": "H",
+          "M7": "H"
+        }
+      },
+      "DE": {
+        "bits": "010",
+        "target_current": "737220/2970469",
+        "answer": false,
+        "initial": "H",
+        "obs": {
+          "M2": "L",
+          "M7": "L"
+        }
+      },
+      "HR": {
+        "bits": "011",
+        "target_current": "3351/31567",
+        "answer": false,
+        "initial": "H",
+        "obs": {
+          "M2": "H",
+          "M7": "L"
+        }
+      },
+      "UT": {
+        "bits": "100",
+        "target_current": "4628340/13296187",
+        "answer": true,
+        "initial": "L",
+        "obs": {
+          "M2": "L",
+          "M7": "H"
+        }
+      },
+      "JO": {
+        "bits": "101",
+        "target_current": "4026096/22022635",
+        "answer": false,
+        "initial": "L",
+        "obs": {
+          "M2": "H",
+          "M7": "H"
+        }
+      },
+      "AB": {
+        "bits": "110",
+        "target_current": "1296753/4825451",
+        "answer": true,
+        "initial": "L",
+        "obs": {
+          "M2": "L",
+          "M7": "L"
+        }
+      },
+      "AO": {
+        "bits": "111",
+        "target_current": "6206352/79159427",
+        "answer": false,
+        "initial": "L",
+        "obs": {
+          "M2": "H",
+          "M7": "L"
+        }
+      }
+    },
+    "target_threshold": "1/4",
+    "initial_reading": "H",
+    "meter": "M2",
+    "reading": "L",
+    "kind": "ambiguous",
+    "eligible": [
+      "RY",
+      "DE",
+      "SS",
+      "HR"
+    ],
+    "survivors": [
+      "DE",
+      "SS"
+    ],
+    "description": "DC network with + at 12 V and 0 at 0 V. Switch order is s,t,u (1 means closed). A bracketed resistor conducts only when its switch is closed. Each resistor lists its oriented start and end nodes and its resistance in ohms. R1=a>+:9 R2=c>a:5 R3=b>c:5 R4=b>e:3 R5=d>e:7 R6=d>0:7 R7=d>b:7 R8=+>c:6 R9=a>d:9 R10=e>c:4 R11=c>d:5 R12=b>0:2[s] R13=0>c:9[t] R14=+>d:9[u].",
+    "signed_branch": "R11",
+    "state_order": [
+      "RY",
+      "AO",
+      "DE",
+      "UT",
+      "SS",
+      "AB",
+      "HR",
+      "JO"
+    ],
+    "menu": {
+      "M2": "signed current of R14 > 0 A",
+      "M7": "signed current of R13 > -1/3 A"
+    },
+    "initial_description": "voltage at b > 3 V"
+  },
+  "forced-07": {
+    "family": "DC-F3",
+    "states": {
+      "SS": {
+        "bits": "000",
+        "target_current": "3015900/8220727",
+        "answer": true,
+        "initial": "H",
+        "obs": {
+          "M2": "L",
+          "M7": "H"
+        }
+      },
+      "RY": {
+        "bits": "001",
+        "target_current": "251325/925174",
+        "answer": true,
+        "initial": "H",
+        "obs": {
+          "M2": "H",
+          "M7": "H"
+        }
+      },
+      "DE": {
+        "bits": "010",
+        "target_current": "737220/2970469",
+        "answer": false,
+        "initial": "H",
+        "obs": {
+          "M2": "L",
+          "M7": "L"
+        }
+      },
+      "HR": {
+        "bits": "011",
+        "target_current": "3351/31567",
+        "answer": false,
+        "initial": "H",
+        "obs": {
+          "M2": "H",
+          "M7": "L"
+        }
+      },
+      "UT": {
+        "bits": "100",
+        "target_current": "4628340/13296187",
+        "answer": true,
+        "initial": "L",
+        "obs": {
+          "M2": "L",
+          "M7": "H"
+        }
+      },
+      "JO": {
+        "bits": "101",
+        "target_current": "4026096/22022635",
+        "answer": false,
+        "initial": "L",
+        "obs": {
+          "M2": "H",
+          "M7": "H"
+        }
+      },
+      "AB": {
+        "bits": "110",
+        "target_current": "1296753/4825451",
+        "answer": true,
+        "initial": "L",
+        "obs": {
+          "M2": "L",
+          "M7": "L"
+        }
+      },
+      "AO": {
+        "bits": "111",
+        "target_current": "6206352/79159427",
+        "answer": false,
+        "initial": "L",
+        "obs": {
+          "M2": "H",
+          "M7": "L"
+        }
+      }
+    },
+    "target_threshold": "1/4",
+    "initial_reading": "H",
+    "meter": "M7",
+    "reading": "L",
+    "kind": "decisive",
+    "eligible": [
+      "RY",
+      "DE",
+      "SS",
+      "HR"
+    ],
+    "survivors": [
+      "DE",
+      "HR"
+    ],
+    "description": "DC network with + at 12 V and 0 at 0 V. Switch order is s,t,u (1 means closed). A bracketed resistor conducts only when its switch is closed. Each resistor lists its oriented start and end nodes and its resistance in ohms. R1=a>+:9 R2=c>a:5 R3=b>c:5 R4=b>e:3 R5=d>e:7 R6=d>0:7 R7=d>b:7 R8=+>c:6 R9=a>d:9 R10=e>c:4 R11=c>d:5 R12=b>0:2[s] R13=0>c:9[t] R14=+>d:9[u].",
+    "signed_branch": "R11",
+    "state_order": [
+      "RY",
+      "AO",
+      "DE",
+      "UT",
+      "SS",
+      "AB",
+      "HR",
+      "JO"
+    ],
+    "menu": {
+      "M2": "signed current of R14 > 0 A",
+      "M7": "signed current of R13 > -1/3 A"
+    },
+    "initial_description": "voltage at b > 3 V"
+  },
+  "forced-08": {
+    "family": "DC-F3",
+    "states": {
+      "SS": {
+        "bits": "000",
+        "target_current": "3015900/8220727",
+        "answer": true,
+        "initial": "H",
+        "obs": {
+          "M2": "L",
+          "M7": "H"
+        }
+      },
+      "RY": {
+        "bits": "001",
+        "target_current": "251325/925174",
+        "answer": true,
+        "initial": "H",
+        "obs": {
+          "M2": "H",
+          "M7": "H"
+        }
+      },
+      "DE": {
+        "bits": "010",
+        "target_current": "737220/2970469",
+        "answer": false,
+        "initial": "H",
+        "obs": {
+          "M2": "L",
+          "M7": "L"
+        }
+      },
+      "HR": {
+        "bits": "011",
+        "target_current": "3351/31567",
+        "answer": false,
+        "initial": "H",
+        "obs": {
+          "M2": "H",
+          "M7": "L"
+        }
+      },
+      "UT": {
+        "bits": "100",
+        "target_current": "4628340/13296187",
+        "answer": true,
+        "initial": "L",
+        "obs": {
+          "M2": "L",
+          "M7": "H"
+        }
+      },
+      "JO": {
+        "bits": "101",
+        "target_current": "4026096/22022635",
+        "answer": false,
+        "initial": "L",
+        "obs": {
+          "M2": "H",
+          "M7": "H"
+        }
+      },
+      "AB": {
+        "bits": "110",
+        "target_current": "1296753/4825451",
+        "answer": true,
+        "initial": "L",
+        "obs": {
+          "M2": "L",
+          "M7": "L"
+        }
+      },
+      "AO": {
+        "bits": "111",
+        "target_current": "6206352/79159427",
+        "answer": false,
+        "initial": "L",
+        "obs": {
+          "M2": "H",
+          "M7": "L"
+        }
+      }
+    },
+    "target_threshold": "1/4",
+    "initial_reading": "H",
+    "meter": "M7",
+    "reading": "H",
+    "kind": "decisive",
+    "eligible": [
+      "RY",
+      "DE",
+      "SS",
+      "HR"
+    ],
+    "survivors": [
+      "RY",
+      "SS"
+    ],
+    "description": "DC network with + at 12 V and 0 at 0 V. Switch order is s,t,u (1 means closed). A bracketed resistor conducts only when its switch is closed. Each resistor lists its oriented start and end nodes and its resistance in ohms. R1=a>+:9 R2=c>a:5 R3=b>c:5 R4=b>e:3 R5=d>e:7 R6=d>0:7 R7=d>b:7 R8=+>c:6 R9=a>d:9 R10=e>c:4 R11=c>d:5 R12=b>0:2[s] R13=0>c:9[t] R14=+>d:9[u].",
+    "signed_branch": "R11",
+    "state_order": [
+      "RY",
+      "AO",
+      "DE",
+      "UT",
+      "SS",
+      "AB",
+      "HR",
+      "JO"
+    ],
+    "menu": {
+      "M2": "signed current of R14 > 0 A",
+      "M7": "signed current of R13 > -1/3 A"
+    },
+    "initial_description": "voltage at b > 3 V"
+  },
+  "forced-09": {
+    "family": "DC-F4",
+    "states": {
+      "WM": {
+        "bits": "000",
+        "target_current": "-72/473",
+        "answer": false,
+        "initial": "L",
+        "obs": {
+          "M2": "H",
+          "M3": "H"
+        }
+      },
+      "UB": {
+        "bits": "001",
+        "target_current": "-44/663",
+        "answer": true,
+        "initial": "H",
+        "obs": {
+          "M2": "H",
+          "M3": "H"
+        }
+      },
+      "EG": {
+        "bits": "010",
+        "target_current": "-576/2045",
+        "answer": false,
+        "initial": "H",
+        "obs": {
+          "M2": "H",
+          "M3": "L"
+        }
+      },
+      "EB": {
+        "bits": "011",
+        "target_current": "-3924/22955",
+        "answer": false,
+        "initial": "H",
+        "obs": {
+          "M2": "L",
+          "M3": "H"
+        }
+      },
+      "NV": {
+        "bits": "100",
+        "target_current": "-36/335",
+        "answer": true,
+        "initial": "L",
+        "obs": {
+          "M2": "L",
+          "M3": "L"
+        }
+      },
+      "DL": {
+        "bits": "101",
+        "target_current": "252/3973",
+        "answer": true,
+        "initial": "L",
+        "obs": {
+          "M2": "L",
+          "M3": "H"
+        }
+      },
+      "AQ": {
+        "bits": "110",
+        "target_current": "-288/1411",
+        "answer": false,
+        "initial": "L",
+        "obs": {
+          "M2": "H",
+          "M3": "L"
+        }
+      },
+      "YO": {
+        "bits": "111",
+        "target_current": "-72/2167",
+        "answer": true,
+        "initial": "H",
+        "obs": {
+          "M2": "L",
+          "M3": "L"
+        }
+      }
+    },
+    "target_threshold": "-1/7",
+    "initial_reading": "L",
+    "meter": "M2",
+    "reading": "L",
+    "kind": "decisive",
+    "eligible": [
+      "DL",
+      "WM",
+      "NV",
+      "AQ"
+    ],
+    "survivors": [
+      "DL",
+      "NV"
+    ],
+    "description": "DC network with + at 12 V and 0 at 0 V. Switch order is s,t,u (1 means closed). A bracketed resistor conducts only when its switch is closed. Each resistor lists its oriented start and end nodes and its resistance in ohms. R1=e>+:4 R2=e>f:6 R3=c>f:3 R4=d>c:3 R5=b>d:3 R6=b>a:8 R7=0>a:8 R8=d>e:8 R9=e>b:8 R10=e>0:8[s] R11=a>d:2[t] R12=+>d:7[u].",
+    "signed_branch": "R8",
+    "state_order": [
+      "EB",
+      "DL",
+      "UB",
+      "EG",
+      "WM",
+      "NV",
+      "AQ",
+      "YO"
+    ],
+    "menu": {
+      "M2": "signed current of R9 > 117/670 A",
+      "M3": "voltage at c > 8 V"
+    },
+    "initial_description": "voltage at a > 9/2 V"
+  },
+  "forced-10": {
+    "family": "DC-F4",
+    "states": {
+      "WM": {
+        "bits": "000",
+        "target_current": "-72/473",
+        "answer": false,
+        "initial": "L",
+        "obs": {
+          "M2": "H",
+          "M3": "H"
+        }
+      },
+      "UB": {
+        "bits": "001",
+        "target_current": "-44/663",
+        "answer": true,
+        "initial": "H",
+        "obs": {
+          "M2": "H",
+          "M3": "H"
+        }
+      },
+      "EG": {
+        "bits": "010",
+        "target_current": "-576/2045",
+        "answer": false,
+        "initial": "H",
+        "obs": {
+          "M2": "H",
+          "M3": "L"
+        }
+      },
+      "EB": {
+        "bits": "011",
+        "target_current": "-3924/22955",
+        "answer": false,
+        "initial": "H",
+        "obs": {
+          "M2": "L",
+          "M3": "H"
+        }
+      },
+      "NV": {
+        "bits": "100",
+        "target_current": "-36/335",
+        "answer": true,
+        "initial": "L",
+        "obs": {
+          "M2": "L",
+          "M3": "L"
+        }
+      },
+      "DL": {
+        "bits": "101",
+        "target_current": "252/3973",
+        "answer": true,
+        "initial": "L",
+        "obs": {
+          "M2": "L",
+          "M3": "H"
+        }
+      },
+      "AQ": {
+        "bits": "110",
+        "target_current": "-288/1411",
+        "answer": false,
+        "initial": "L",
+        "obs": {
+          "M2": "H",
+          "M3": "L"
+        }
+      },
+      "YO": {
+        "bits": "111",
+        "target_current": "-72/2167",
+        "answer": true,
+        "initial": "H",
+        "obs": {
+          "M2": "L",
+          "M3": "L"
+        }
+      }
+    },
+    "target_threshold": "-1/7",
+    "initial_reading": "L",
+    "meter": "M2",
+    "reading": "H",
+    "kind": "decisive",
+    "eligible": [
+      "DL",
+      "WM",
+      "NV",
+      "AQ"
+    ],
+    "survivors": [
+      "WM",
+      "AQ"
+    ],
+    "description": "DC network with + at 12 V and 0 at 0 V. Switch order is s,t,u (1 means closed). A bracketed resistor conducts only when its switch is closed. Each resistor lists its oriented start and end nodes and its resistance in ohms. R1=e>+:4 R2=e>f:6 R3=c>f:3 R4=d>c:3 R5=b>d:3 R6=b>a:8 R7=0>a:8 R8=d>e:8 R9=e>b:8 R10=e>0:8[s] R11=a>d:2[t] R12=+>d:7[u].",
+    "signed_branch": "R8",
+    "state_order": [
+      "EB",
+      "DL",
+      "UB",
+      "EG",
+      "WM",
+      "NV",
+      "AQ",
+      "YO"
+    ],
+    "menu": {
+      "M2": "signed current of R9 > 117/670 A",
+      "M3": "voltage at c > 8 V"
+    },
+    "initial_description": "voltage at a > 9/2 V"
+  },
+  "forced-11": {
+    "family": "DC-F4",
+    "states": {
+      "WM": {
+        "bits": "000",
+        "target_current": "-72/473",
+        "answer": false,
+        "initial": "L",
+        "obs": {
+          "M2": "H",
+          "M3": "H"
+        }
+      },
+      "UB": {
+        "bits": "001",
+        "target_current": "-44/663",
+        "answer": true,
+        "initial": "H",
+        "obs": {
+          "M2": "H",
+          "M3": "H"
+        }
+      },
+      "EG": {
+        "bits": "010",
+        "target_current": "-576/2045",
+        "answer": false,
+        "initial": "H",
+        "obs": {
+          "M2": "H",
+          "M3": "L"
+        }
+      },
+      "EB": {
+        "bits": "011",
+        "target_current": "-3924/22955",
+        "answer": false,
+        "initial": "H",
+        "obs": {
+          "M2": "L",
+          "M3": "H"
+        }
+      },
+      "NV": {
+        "bits": "100",
+        "target_current": "-36/335",
+        "answer": true,
+        "initial": "L",
+        "obs": {
+          "M2": "L",
+          "M3": "L"
+        }
+      },
+      "DL": {
+        "bits": "101",
+        "target_current": "252/3973",
+        "answer": true,
+        "initial": "L",
+        "obs": {
+          "M2": "L",
+          "M3": "H"
+        }
+      },
+      "AQ": {
+        "bits": "110",
+        "target_current": "-288/1411",
+        "answer": false,
+        "initial": "L",
+        "obs": {
+          "M2": "H",
+          "M3": "L"
+        }
+      },
+      "YO": {
+        "bits": "111",
+        "target_current": "-72/2167",
+        "answer": true,
+        "initial": "H",
+        "obs": {
+          "M2": "L",
+          "M3": "L"
+        }
+      }
+    },
+    "target_threshold": "-1/7",
+    "initial_reading": "L",
+    "meter": "M3",
+    "reading": "H",
+    "kind": "ambiguous",
+    "eligible": [
+      "DL",
+      "WM",
+      "NV",
+      "AQ"
+    ],
+    "survivors": [
+      "DL",
+      "WM"
+    ],
+    "description": "DC network with + at 12 V and 0 at 0 V. Switch order is s,t,u (1 means closed). A bracketed resistor conducts only when its switch is closed. Each resistor lists its oriented start and end nodes and its resistance in ohms. R1=e>+:4 R2=e>f:6 R3=c>f:3 R4=d>c:3 R5=b>d:3 R6=b>a:8 R7=0>a:8 R8=d>e:8 R9=e>b:8 R10=e>0:8[s] R11=a>d:2[t] R12=+>d:7[u].",
+    "signed_branch": "R8",
+    "state_order": [
+      "EB",
+      "DL",
+      "UB",
+      "EG",
+      "WM",
+      "NV",
+      "AQ",
+      "YO"
+    ],
+    "menu": {
+      "M2": "signed current of R9 > 117/670 A",
+      "M3": "voltage at c > 8 V"
+    },
+    "initial_description": "voltage at a > 9/2 V"
+  },
+  "forced-12": {
+    "family": "DC-F5",
+    "states": {
+      "JV": {
+        "bits": "000",
+        "target_current": "-1632/13789",
+        "answer": false,
+        "initial": "L",
+        "obs": {
+          "M2": "L",
+          "M7": "L"
+        }
+      },
+      "HY": {
+        "bits": "001",
+        "target_current": "-19416/53657",
+        "answer": false,
+        "initial": "L",
+        "obs": {
+          "M2": "H",
+          "M7": "L"
+        }
+      },
+      "BN": {
+        "bits": "010",
+        "target_current": "14628/92953",
+        "answer": true,
+        "initial": "L",
+        "obs": {
+          "M2": "L",
+          "M7": "H"
+        }
+      },
+      "OA": {
+        "bits": "011",
+        "target_current": "-3048/277805",
+        "answer": true,
+        "initial": "L",
+        "obs": {
+          "M2": "H",
+          "M7": "H"
+        }
+      },
+      "TH": {
+        "bits": "100",
+        "target_current": "-3264/49325",
+        "answer": true,
+        "initial": "H",
+        "obs": {
+          "M2": "L",
+          "M7": "L"
+        }
+      },
+      "CZ": {
+        "bits": "101",
+        "target_current": "-462696/1303327",
+        "answer": false,
+        "initial": "H",
+        "obs": {
+          "M2": "H",
+          "M7": "L"
+        }
+      },
+      "LQ": {
+        "bits": "110",
+        "target_current": "25599/255604",
+        "answer": true,
+        "initial": "H",
+        "obs": {
+          "M2": "L",
+          "M7": "H"
+        }
+      },
+      "HK": {
+        "bits": "111",
+        "target_current": "-53052/763883",
+        "answer": false,
+        "initial": "H",
+        "obs": {
+          "M2": "H",
+          "M7": "H"
+        }
+      }
+    },
+    "target_threshold": "-53052/763883",
+    "initial_reading": "H",
+    "meter": "M2",
+    "reading": "H",
+    "kind": "decisive",
+    "eligible": [
+      "LQ",
+      "TH",
+      "HK",
+      "CZ"
+    ],
+    "survivors": [
+      "HK",
+      "CZ"
+    ],
+    "description": "DC network with + at 12 V and 0 at 0 V. Switch order is s,t,u (1 means closed). A bracketed resistor conducts only when its switch is closed. Each resistor lists its oriented start and end nodes and its resistance in ohms. R1=+>b:7 R2=e>b:4 R3=e>c:6 R4=c>d:6 R5=f>d:5 R6=a>f:8 R7=a>0:3 R8=b>c:8 R9=f>b:8 R10=f>c:6 R11=f>+:7[s] R12=+>e:3[t] R13=e>a:8[u].",
+    "signed_branch": "R2",
+    "state_order": [
+      "BN",
+      "LQ",
+      "HY",
+      "JV",
+      "OA",
+      "TH",
+      "HK",
+      "CZ"
+    ],
+    "menu": {
+      "M2": "signed current of R13 > 0 A",
+      "M7": "signed current of R12 > 0 A"
+    },
+    "initial_description": "voltage at f > 23/3 V"
+  },
+  "forced-13": {
+    "family": "DC-F5",
+    "states": {
+      "JV": {
+        "bits": "000",
+        "target_current": "-1632/13789",
+        "answer": false,
+        "initial": "L",
+        "obs": {
+          "M2": "L",
+          "M7": "L"
+        }
+      },
+      "HY": {
+        "bits": "001",
+        "target_current": "-19416/53657",
+        "answer": false,
+        "initial": "L",
+        "obs": {
+          "M2": "H",
+          "M7": "L"
+        }
+      },
+      "BN": {
+        "bits": "010",
+        "target_current": "14628/92953",
+        "answer": true,
+        "initial": "L",
+        "obs": {
+          "M2": "L",
+          "M7": "H"
+        }
+      },
+      "OA": {
+        "bits": "011",
+        "target_current": "-3048/277805",
+        "answer": true,
+        "initial": "L",
+        "obs": {
+          "M2": "H",
+          "M7": "H"
+        }
+      },
+      "TH": {
+        "bits": "100",
+        "target_current": "-3264/49325",
+        "answer": true,
+        "initial": "H",
+        "obs": {
+          "M2": "L",
+          "M7": "L"
+        }
+      },
+      "CZ": {
+        "bits": "101",
+        "target_current": "-462696/1303327",
+        "answer": false,
+        "initial": "H",
+        "obs": {
+          "M2": "H",
+          "M7": "L"
+        }
+      },
+      "LQ": {
+        "bits": "110",
+        "target_current": "25599/255604",
+        "answer": true,
+        "initial": "H",
+        "obs": {
+          "M2": "L",
+          "M7": "H"
+        }
+      },
+      "HK": {
+        "bits": "111",
+        "target_current": "-53052/763883",
+        "answer": false,
+        "initial": "H",
+        "obs": {
+          "M2": "H",
+          "M7": "H"
+        }
+      }
+    },
+    "target_threshold": "-53052/763883",
+    "initial_reading": "H",
+    "meter": "M7",
+    "reading": "L",
+    "kind": "ambiguous",
+    "eligible": [
+      "LQ",
+      "TH",
+      "HK",
+      "CZ"
+    ],
+    "survivors": [
+      "TH",
+      "CZ"
+    ],
+    "description": "DC network with + at 12 V and 0 at 0 V. Switch order is s,t,u (1 means closed). A bracketed resistor conducts only when its switch is closed. Each resistor lists its oriented start and end nodes and its resistance in ohms. R1=+>b:7 R2=e>b:4 R3=e>c:6 R4=c>d:6 R5=f>d:5 R6=a>f:8 R7=a>0:3 R8=b>c:8 R9=f>b:8 R10=f>c:6 R11=f>+:7[s] R12=+>e:3[t] R13=e>a:8[u].",
+    "signed_branch": "R2",
+    "state_order": [
+      "BN",
+      "LQ",
+      "HY",
+      "JV",
+      "OA",
+      "TH",
+      "HK",
+      "CZ"
+    ],
+    "menu": {
+      "M2": "signed current of R13 > 0 A",
+      "M7": "signed current of R12 > 0 A"
+    },
+    "initial_description": "voltage at f > 23/3 V"
+  },
+  "forced-14": {
+    "family": "DC-F5",
+    "states": {
+      "JV": {
+        "bits": "000",
+        "target_current": "-1632/13789",
+        "answer": false,
+        "initial": "L",
+        "obs": {
+          "M2": "L",
+          "M7": "L"
+        }
+      },
+      "HY": {
+        "bits": "001",
+        "target_current": "-19416/53657",
+        "answer": false,
+        "initial": "L",
+        "obs": {
+          "M2": "H",
+          "M7": "L"
+        }
+      },
+      "BN": {
+        "bits": "010",
+        "target_current": "14628/92953",
+        "answer": true,
+        "initial": "L",
+        "obs": {
+          "M2": "L",
+          "M7": "H"
+        }
+      },
+      "OA": {
+        "bits": "011",
+        "target_current": "-3048/277805",
+        "answer": true,
+        "initial": "L",
+        "obs": {
+          "M2": "H",
+          "M7": "H"
+        }
+      },
+      "TH": {
+        "bits": "100",
+        "target_current": "-3264/49325",
+        "answer": true,
+        "initial": "H",
+        "obs": {
+          "M2": "L",
+          "M7": "L"
+        }
+      },
+      "CZ": {
+        "bits": "101",
+        "target_current": "-462696/1303327",
+        "answer": false,
+        "initial": "H",
+        "obs": {
+          "M2": "H",
+          "M7": "L"
+        }
+      },
+      "LQ": {
+        "bits": "110",
+        "target_current": "25599/255604",
+        "answer": true,
+        "initial": "H",
+        "obs": {
+          "M2": "L",
+          "M7": "H"
+        }
+      },
+      "HK": {
+        "bits": "111",
+        "target_current": "-53052/763883",
+        "answer": false,
+        "initial": "H",
+        "obs": {
+          "M2": "H",
+          "M7": "H"
+        }
+      }
+    },
+    "target_threshold": "-53052/763883",
+    "initial_reading": "H",
+    "meter": "M2",
+    "reading": "L",
+    "kind": "decisive",
+    "eligible": [
+      "LQ",
+      "TH",
+      "HK",
+      "CZ"
+    ],
+    "survivors": [
+      "LQ",
+      "TH"
+    ],
+    "description": "DC network with + at 12 V and 0 at 0 V. Switch order is s,t,u (1 means closed). A bracketed resistor conducts only when its switch is closed. Each resistor lists its oriented start and end nodes and its resistance in ohms. R1=+>b:7 R2=e>b:4 R3=e>c:6 R4=c>d:6 R5=f>d:5 R6=a>f:8 R7=a>0:3 R8=b>c:8 R9=f>b:8 R10=f>c:6 R11=f>+:7[s] R12=+>e:3[t] R13=e>a:8[u].",
+    "signed_branch": "R2",
+    "state_order": [
+      "BN",
+      "LQ",
+      "HY",
+      "JV",
+      "OA",
+      "TH",
+      "HK",
+      "CZ"
+    ],
+    "menu": {
+      "M2": "signed current of R13 > 0 A",
+      "M7": "signed current of R12 > 0 A"
+    },
+    "initial_description": "voltage at f > 23/3 V"
+  },
+  "forced-15": {
+    "family": "DC-F6",
+    "states": {
+      "YW": {
+        "bits": "000",
+        "target_current": "4350/10423",
+        "answer": true,
+        "initial": "L",
+        "obs": {
+          "M5": "H",
+          "M8": "L"
+        }
+      },
+      "WB": {
+        "bits": "001",
+        "target_current": "282480/555061",
+        "answer": true,
+        "initial": "L",
+        "obs": {
+          "M5": "L",
+          "M8": "L"
+        }
+      },
+      "LB": {
+        "bits": "010",
+        "target_current": "185490/680137",
+        "answer": false,
+        "initial": "L",
+        "obs": {
+          "M5": "H",
+          "M8": "H"
+        }
+      },
+      "GW": {
+        "bits": "011",
+        "target_current": "1059990/2759743",
+        "answer": false,
+        "initial": "L",
+        "obs": {
+          "M5": "L",
+          "M8": "H"
+        }
+      },
+      "LI": {
+        "bits": "100",
+        "target_current": "528/1373",
+        "answer": false,
+        "initial": "H",
+        "obs": {
+          "M5": "H",
+          "M8": "L"
+        }
+      },
+      "IZ": {
+        "bits": "101",
+        "target_current": "2423856/4835339",
+        "answer": true,
+        "initial": "H",
+        "obs": {
+          "M5": "L",
+          "M8": "L"
+        }
+      },
+      "SR": {
+        "bits": "110",
+        "target_current": "1553526/5939231",
+        "answer": false,
+        "initial": "H",
+        "obs": {
+          "M5": "H",
+          "M8": "H"
+        }
+      },
+      "PV": {
+        "bits": "111",
+        "target_current": "9261858/23912345",
+        "answer": true,
+        "initial": "H",
+        "obs": {
+          "M5": "L",
+          "M8": "H"
+        }
+      }
+    },
+    "target_threshold": "528/1373",
+    "initial_reading": "L",
+    "meter": "M5",
+    "reading": "H",
+    "kind": "ambiguous",
+    "eligible": [
+      "GW",
+      "YW",
+      "LB",
+      "WB"
+    ],
+    "survivors": [
+      "YW",
+      "LB"
+    ],
+    "description": "DC network with + at 12 V and 0 at 0 V. Switch order is s,t,u (1 means closed). A bracketed resistor conducts only when its switch is closed. Each resistor lists its oriented start and end nodes and its resistance in ohms. R1=+>e:3 R2=c>e:5 R3=c>a:4 R4=b>a:2 R5=b>f:6 R6=d>f:7 R7=d>0:6 R8=b>0:4 R9=f>e:9 R10=f>c:8 R11=f>a:2 R12=d>+:5[s] R13=+>a:8[t] R14=0>a:6[u].",
+    "signed_branch": "R3",
+    "state_order": [
+      "SR",
+      "GW",
+      "PV",
+      "YW",
+      "IZ",
+      "LB",
+      "WB",
+      "LI"
+    ],
+    "menu": {
+      "M5": "signed current of R14 > -1/3 A",
+      "M8": "signed current of R13 > 0 A"
+    },
+    "initial_description": "voltage at d > 3 V"
+  },
+  "forced-16": {
+    "family": "DC-F6",
+    "states": {
+      "YW": {
+        "bits": "000",
+        "target_current": "4350/10423",
+        "answer": true,
+        "initial": "L",
+        "obs": {
+          "M5": "H",
+          "M8": "L"
+        }
+      },
+      "WB": {
+        "bits": "001",
+        "target_current": "282480/555061",
+        "answer": true,
+        "initial": "L",
+        "obs": {
+          "M5": "L",
+          "M8": "L"
+        }
+      },
+      "LB": {
+        "bits": "010",
+        "target_current": "185490/680137",
+        "answer": false,
+        "initial": "L",
+        "obs": {
+          "M5": "H",
+          "M8": "H"
+        }
+      },
+      "GW": {
+        "bits": "011",
+        "target_current": "1059990/2759743",
+        "answer": false,
+        "initial": "L",
+        "obs": {
+          "M5": "L",
+          "M8": "H"
+        }
+      },
+      "LI": {
+        "bits": "100",
+        "target_current": "528/1373",
+        "answer": false,
+        "initial": "H",
+        "obs": {
+          "M5": "H",
+          "M8": "L"
+        }
+      },
+      "IZ": {
+        "bits": "101",
+        "target_current": "2423856/4835339",
+        "answer": true,
+        "initial": "H",
+        "obs": {
+          "M5": "L",
+          "M8": "L"
+        }
+      },
+      "SR": {
+        "bits": "110",
+        "target_current": "1553526/5939231",
+        "answer": false,
+        "initial": "H",
+        "obs": {
+          "M5": "H",
+          "M8": "H"
+        }
+      },
+      "PV": {
+        "bits": "111",
+        "target_current": "9261858/23912345",
+        "answer": true,
+        "initial": "H",
+        "obs": {
+          "M5": "L",
+          "M8": "H"
+        }
+      }
+    },
+    "target_threshold": "528/1373",
+    "initial_reading": "L",
+    "meter": "M8",
+    "reading": "L",
+    "kind": "decisive",
+    "eligible": [
+      "GW",
+      "YW",
+      "LB",
+      "WB"
+    ],
+    "survivors": [
+      "YW",
+      "WB"
+    ],
+    "description": "DC network with + at 12 V and 0 at 0 V. Switch order is s,t,u (1 means closed). A bracketed resistor conducts only when its switch is closed. Each resistor lists its oriented start and end nodes and its resistance in ohms. R1=+>e:3 R2=c>e:5 R3=c>a:4 R4=b>a:2 R5=b>f:6 R6=d>f:7 R7=d>0:6 R8=b>0:4 R9=f>e:9 R10=f>c:8 R11=f>a:2 R12=d>+:5[s] R13=+>a:8[t] R14=0>a:6[u].",
+    "signed_branch": "R3",
+    "state_order": [
+      "SR",
+      "GW",
+      "PV",
+      "YW",
+      "IZ",
+      "LB",
+      "WB",
+      "LI"
+    ],
+    "menu": {
+      "M5": "signed current of R14 > -1/3 A",
+      "M8": "signed current of R13 > 0 A"
+    },
+    "initial_description": "voltage at d > 3 V"
+  },
+  "forced-17": {
+    "family": "DC-F6",
+    "states": {
+      "YW": {
+        "bits": "000",
+        "target_current": "4350/10423",
+        "answer": true,
+        "initial": "L",
+        "obs": {
+          "M5": "H",
+          "M8": "L"
+        }
+      },
+      "WB": {
+        "bits": "001",
+        "target_current": "282480/555061",
+        "answer": true,
+        "initial": "L",
+        "obs": {
+          "M5": "L",
+          "M8": "L"
+        }
+      },
+      "LB": {
+        "bits": "010",
+        "target_current": "185490/680137",
+        "answer": false,
+        "initial": "L",
+        "obs": {
+          "M5": "H",
+          "M8": "H"
+        }
+      },
+      "GW": {
+        "bits": "011",
+        "target_current": "1059990/2759743",
+        "answer": false,
+        "initial": "L",
+        "obs": {
+          "M5": "L",
+          "M8": "H"
+        }
+      },
+      "LI": {
+        "bits": "100",
+        "target_current": "528/1373",
+        "answer": false,
+        "initial": "H",
+        "obs": {
+          "M5": "H",
+          "M8": "L"
+        }
+      },
+      "IZ": {
+        "bits": "101",
+        "target_current": "2423856/4835339",
+        "answer": true,
+        "initial": "H",
+        "obs": {
+          "M5": "L",
+          "M8": "L"
+        }
+      },
+      "SR": {
+        "bits": "110",
+        "target_current": "1553526/5939231",
+        "answer": false,
+        "initial": "H",
+        "obs": {
+          "M5": "H",
+          "M8": "H"
+        }
+      },
+      "PV": {
+        "bits": "111",
+        "target_current": "9261858/23912345",
+        "answer": true,
+        "initial": "H",
+        "obs": {
+          "M5": "L",
+          "M8": "H"
+        }
+      }
+    },
+    "target_threshold": "528/1373",
+    "initial_reading": "L",
+    "meter": "M8",
+    "reading": "H",
+    "kind": "decisive",
+    "eligible": [
+      "GW",
+      "YW",
+      "LB",
+      "WB"
+    ],
+    "survivors": [
+      "GW",
+      "LB"
+    ],
+    "description": "DC network with + at 12 V and 0 at 0 V. Switch order is s,t,u (1 means closed). A bracketed resistor conducts only when its switch is closed. Each resistor lists its oriented start and end nodes and its resistance in ohms. R1=+>e:3 R2=c>e:5 R3=c>a:4 R4=b>a:2 R5=b>f:6 R6=d>f:7 R7=d>0:6 R8=b>0:4 R9=f>e:9 R10=f>c:8 R11=f>a:2 R12=d>+:5[s] R13=+>a:8[t] R14=0>a:6[u].",
+    "signed_branch": "R3",
+    "state_order": [
+      "SR",
+      "GW",
+      "PV",
+      "YW",
+      "IZ",
+      "LB",
+      "WB",
+      "LI"
+    ],
+    "menu": {
+      "M5": "signed current of R14 > -1/3 A",
+      "M8": "signed current of R13 > 0 A"
+    },
+    "initial_description": "voltage at d > 3 V"
+  }
+}

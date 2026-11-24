@@ -1,0 +1,1197 @@
+{
+  "filtered_rows_verified": 36,
+  "full_rows_verified": 144,
+  "high_lamp_direction": {
+    "N": 3,
+    "Y": 3
+  },
+  "one_lamp_available_verdicts": {
+    "forced": {
+      "U": 18
+    },
+    "initial": {
+      "U": 18
+    }
+  },
+  "paired_sessions": 36,
+  "physical_layouts": 6,
+  "policy_baselines": {
+    "counts": {
+      "filtered_copy_all_first_sign": {
+        "ambiguous": {
+          "certified": 0,
+          "exact_ids": 6,
+          "sign": 0
+        },
+        "decisive": {
+          "certified": 12,
+          "exact_ids": 12,
+          "sign": 12
+        }
+      },
+      "filtered_copy_all_unanimity": {
+        "ambiguous": {
+          "certified": 6,
+          "exact_ids": 6,
+          "sign": 6
+        },
+        "decisive": {
+          "certified": 12,
+          "exact_ids": 12,
+          "sign": 12
+        }
+      },
+      "full_copy_all_first_sign": {
+        "ambiguous": {
+          "certified": 0,
+          "exact_ids": 0,
+          "sign": 0
+        },
+        "decisive": {
+          "certified": 0,
+          "exact_ids": 0,
+          "sign": 6
+        }
+      },
+      "full_copy_all_unanimity": {
+        "ambiguous": {
+          "certified": 0,
+          "exact_ids": 0,
+          "sign": 6
+        },
+        "decisive": {
+          "certified": 0,
+          "exact_ids": 0,
+          "sign": 0
+        }
+      },
+      "full_copy_first_two_unanimity": {
+        "ambiguous": {
+          "certified": 0,
+          "exact_ids": 0,
+          "sign": 3
+        },
+        "decisive": {
+          "certified": 0,
+          "exact_ids": 0,
+          "sign": 3
+        }
+      },
+      "full_forced_lamp_only": {
+        "ambiguous": {
+          "certified": 0,
+          "exact_ids": 0,
+          "sign": 6
+        },
+        "decisive": {
+          "certified": 0,
+          "exact_ids": 0,
+          "sign": 0
+        }
+      },
+      "full_initial_lamp_only": {
+        "ambiguous": {
+          "certified": 0,
+          "exact_ids": 0,
+          "sign": 6
+        },
+        "decisive": {
+          "certified": 0,
+          "exact_ids": 0,
+          "sign": 0
+        }
+      }
+    },
+    "definition": "Unanimity gives Y if all listed rows meet the target, N if none, U otherwise. Each policy submits the complete list it selected. First-sign ignores later rows when choosing the verdict.",
+    "per_record": {
+      "forced-00": {
+        "filtered_copy_all_first_sign": {
+          "certified": true,
+          "exact_ids": true,
+          "sign": true
+        },
+        "filtered_copy_all_unanimity": {
+          "certified": true,
+          "exact_ids": true,
+          "sign": true
+        },
+        "full_copy_all_first_sign": {
+          "certified": false,
+          "exact_ids": false,
+          "sign": true
+        },
+        "full_copy_all_unanimity": {
+          "certified": false,
+          "exact_ids": false,
+          "sign": false
+        },
+        "full_copy_first_two_unanimity": {
+          "certified": false,
+          "exact_ids": false,
+          "sign": false
+        },
+        "full_forced_lamp_only": {
+          "certified": false,
+          "exact_ids": false,
+          "sign": false
+        },
+        "full_initial_lamp_only": {
+          "certified": false,
+          "exact_ids": false,
+          "sign": false
+        }
+      },
+      "forced-01": {
+        "filtered_copy_all_first_sign": {
+          "certified": true,
+          "exact_ids": true,
+          "sign": true
+        },
+        "filtered_copy_all_unanimity": {
+          "certified": true,
+          "exact_ids": true,
+          "sign": true
+        },
+        "full_copy_all_first_sign": {
+          "certified": false,
+          "exact_ids": false,
+          "sign": false
+        },
+        "full_copy_all_unanimity": {
+          "certified": false,
+          "exact_ids": false,
+          "sign": false
+        },
+        "full_copy_first_two_unanimity": {
+          "certified": false,
+          "exact_ids": false,
+          "sign": false
+        },
+        "full_forced_lamp_only": {
+          "certified": false,
+          "exact_ids": false,
+          "sign": false
+        },
+        "full_initial_lamp_only": {
+          "certified": false,
+          "exact_ids": false,
+          "sign": false
+        }
+      },
+      "forced-02": {
+        "filtered_copy_all_first_sign": {
+          "certified": false,
+          "exact_ids": true,
+          "sign": false
+        },
+        "filtered_copy_all_unanimity": {
+          "certified": true,
+          "exact_ids": true,
+          "sign": true
+        },
+        "full_copy_all_first_sign": {
+          "certified": false,
+          "exact_ids": false,
+          "sign": false
+        },
+        "full_copy_all_unanimity": {
+          "certified": false,
+          "exact_ids": false,
+          "sign": true
+        },
+        "full_copy_first_two_unanimity": {
+          "certified": false,
+          "exact_ids": false,
+          "sign": true
+        },
+        "full_forced_lamp_only": {
+          "certified": false,
+          "exact_ids": false,
+          "sign": true
+        },
+        "full_initial_lamp_only": {
+          "certified": false,
+          "exact_ids": false,
+          "sign": true
+        }
+      },
+      "forced-03": {
+        "filtered_copy_all_first_sign": {
+          "certified": true,
+          "exact_ids": true,
+          "sign": true
+        },
+        "filtered_copy_all_unanimity": {
+          "certified": true,
+          "exact_ids": true,
+          "sign": true
+        },
+        "full_copy_all_first_sign": {
+          "certified": false,
+          "exact_ids": false,
+          "sign": false
+        },
+        "full_copy_all_unanimity": {
+          "certified": false,
+          "exact_ids": false,
+          "sign": false
+        },
+        "full_copy_first_two_unanimity": {
+          "certified": false,
+          "exact_ids": false,
+          "sign": false
+        },
+        "full_forced_lamp_only": {
+          "certified": false,
+          "exact_ids": false,
+          "sign": false
+        },
+        "full_initial_lamp_only": {
+          "certified": false,
+          "exact_ids": false,
+          "sign": false
+        }
+      },
+      "forced-04": {
+        "filtered_copy_all_first_sign": {
+          "certified": false,
+          "exact_ids": true,
+          "sign": false
+        },
+        "filtered_copy_all_unanimity": {
+          "certified": true,
+          "exact_ids": true,
+          "sign": true
+        },
+        "full_copy_all_first_sign": {
+          "certified": false,
+          "exact_ids": false,
+          "sign": false
+        },
+        "full_copy_all_unanimity": {
+          "certified": false,
+          "exact_ids": false,
+          "sign": true
+        },
+        "full_copy_first_two_unanimity": {
+          "certified": false,
+          "exact_ids": false,
+          "sign": false
+        },
+        "full_forced_lamp_only": {
+          "certified": false,
+          "exact_ids": false,
+          "sign": true
+        },
+        "full_initial_lamp_only": {
+          "certified": false,
+          "exact_ids": false,
+          "sign": true
+        }
+      },
+      "forced-05": {
+        "filtered_copy_all_first_sign": {
+          "certified": true,
+          "exact_ids": true,
+          "sign": true
+        },
+        "filtered_copy_all_unanimity": {
+          "certified": true,
+          "exact_ids": true,
+          "sign": true
+        },
+        "full_copy_all_first_sign": {
+          "certified": false,
+          "exact_ids": false,
+          "sign": true
+        },
+        "full_copy_all_unanimity": {
+          "certified": false,
+          "exact_ids": false,
+          "sign": false
+        },
+        "full_copy_first_two_unanimity": {
+          "certified": false,
+          "exact_ids": false,
+          "sign": true
+        },
+        "full_forced_lamp_only": {
+          "certified": false,
+          "exact_ids": false,
+          "sign": false
+        },
+        "full_initial_lamp_only": {
+          "certified": false,
+          "exact_ids": false,
+          "sign": false
+        }
+      },
+      "forced-06": {
+        "filtered_copy_all_first_sign": {
+          "certified": false,
+          "exact_ids": true,
+          "sign": false
+        },
+        "filtered_copy_all_unanimity": {
+          "certified": true,
+          "exact_ids": true,
+          "sign": true
+        },
+        "full_copy_all_first_sign": {
+          "certified": false,
+          "exact_ids": false,
+          "sign": false
+        },
+        "full_copy_all_unanimity": {
+          "certified": false,
+          "exact_ids": false,
+          "sign": true
+        },
+        "full_copy_first_two_unanimity": {
+          "certified": false,
+          "exact_ids": false,
+          "sign": true
+        },
+        "full_forced_lamp_only": {
+          "certified": false,
+          "exact_ids": false,
+          "sign": true
+        },
+        "full_initial_lamp_only": {
+          "certified": false,
+          "exact_ids": false,
+          "sign": true
+        }
+      },
+      "forced-07": {
+        "filtered_copy_all_first_sign": {
+          "certified": true,
+          "exact_ids": true,
+          "sign": true
+        },
+        "filtered_copy_all_unanimity": {
+          "certified": true,
+          "exact_ids": true,
+          "sign": true
+        },
+        "full_copy_all_first_sign": {
+          "certified": false,
+          "exact_ids": false,
+          "sign": false
+        },
+        "full_copy_all_unanimity": {
+          "certified": false,
+          "exact_ids": false,
+          "sign": false
+        },
+        "full_copy_first_two_unanimity": {
+          "certified": false,
+          "exact_ids": false,
+          "sign": false
+        },
+        "full_forced_lamp_only": {
+          "certified": false,
+          "exact_ids": false,
+          "sign": false
+        },
+        "full_initial_lamp_only": {
+          "certified": false,
+          "exact_ids": false,
+          "sign": false
+        }
+      },
+      "forced-08": {
+        "filtered_copy_all_first_sign": {
+          "certified": true,
+          "exact_ids": true,
+          "sign": true
+        },
+        "filtered_copy_all_unanimity": {
+          "certified": true,
+          "exact_ids": true,
+          "sign": true
+        },
+        "full_copy_all_first_sign": {
+          "certified": false,
+          "exact_ids": false,
+          "sign": true
+        },
+        "full_copy_all_unanimity": {
+          "certified": false,
+          "exact_ids": false,
+          "sign": false
+        },
+        "full_copy_first_two_unanimity": {
+          "certified": false,
+          "exact_ids": false,
+          "sign": false
+        },
+        "full_forced_lamp_only": {
+          "certified": false,
+          "exact_ids": false,
+          "sign": false
+        },
+        "full_initial_lamp_only": {
+          "certified": false,
+          "exact_ids": false,
+          "sign": false
+        }
+      },
+      "forced-09": {
+        "filtered_copy_all_first_sign": {
+          "certified": true,
+          "exact_ids": true,
+          "sign": true
+        },
+        "filtered_copy_all_unanimity": {
+          "certified": true,
+          "exact_ids": true,
+          "sign": true
+        },
+        "full_copy_all_first_sign": {
+          "certified": false,
+          "exact_ids": false,
+          "sign": false
+        },
+        "full_copy_all_unanimity": {
+          "certified": false,
+          "exact_ids": false,
+          "sign": false
+        },
+        "full_copy_first_two_unanimity": {
+          "certified": false,
+          "exact_ids": false,
+          "sign": false
+        },
+        "full_forced_lamp_only": {
+          "certified": false,
+          "exact_ids": false,
+          "sign": false
+        },
+        "full_initial_lamp_only": {
+          "certified": false,
+          "exact_ids": false,
+          "sign": false
+        }
+      },
+      "forced-10": {
+        "filtered_copy_all_first_sign": {
+          "certified": true,
+          "exact_ids": true,
+          "sign": true
+        },
+        "filtered_copy_all_unanimity": {
+          "certified": true,
+          "exact_ids": true,
+          "sign": true
+        },
+        "full_copy_all_first_sign": {
+          "certified": false,
+          "exact_ids": false,
+          "sign": true
+        },
+        "full_copy_all_unanimity": {
+          "certified": false,
+          "exact_ids": false,
+          "sign": false
+        },
+        "full_copy_first_two_unanimity": {
+          "certified": false,
+          "exact_ids": false,
+          "sign": false
+        },
+        "full_forced_lamp_only": {
+          "certified": false,
+          "exact_ids": false,
+          "sign": false
+        },
+        "full_initial_lamp_only": {
+          "certified": false,
+          "exact_ids": false,
+          "sign": false
+        }
+      },
+      "forced-11": {
+        "filtered_copy_all_first_sign": {
+          "certified": false,
+          "exact_ids": true,
+          "sign": false
+        },
+        "filtered_copy_all_unanimity": {
+          "certified": true,
+          "exact_ids": true,
+          "sign": true
+        },
+        "full_copy_all_first_sign": {
+          "certified": false,
+          "exact_ids": false,
+          "sign": false
+        },
+        "full_copy_all_unanimity": {
+          "certified": false,
+          "exact_ids": false,
+          "sign": true
+        },
+        "full_copy_first_two_unanimity": {
+          "certified": false,
+          "exact_ids": false,
+          "sign": true
+        },
+        "full_forced_lamp_only": {
+          "certified": false,
+          "exact_ids": false,
+          "sign": true
+        },
+        "full_initial_lamp_only": {
+          "certified": false,
+          "exact_ids": false,
+          "sign": true
+        }
+      },
+      "forced-12": {
+        "filtered_copy_all_first_sign": {
+          "certified": true,
+          "exact_ids": true,
+          "sign": true
+        },
+        "filtered_copy_all_unanimity": {
+          "certified": true,
+          "exact_ids": true,
+          "sign": true
+        },
+        "full_copy_all_first_sign": {
+          "certified": false,
+          "exact_ids": false,
+          "sign": false
+        },
+        "full_copy_all_unanimity": {
+          "certified": false,
+          "exact_ids": false,
+          "sign": false
+        },
+        "full_copy_first_two_unanimity": {
+          "certified": false,
+          "exact_ids": false,
+          "sign": false
+        },
+        "full_forced_lamp_only": {
+          "certified": false,
+          "exact_ids": false,
+          "sign": false
+        },
+        "full_initial_lamp_only": {
+          "certified": false,
+          "exact_ids": false,
+          "sign": false
+        }
+      },
+      "forced-13": {
+        "filtered_copy_all_first_sign": {
+          "certified": false,
+          "exact_ids": true,
+          "sign": false
+        },
+        "filtered_copy_all_unanimity": {
+          "certified": true,
+          "exact_ids": true,
+          "sign": true
+        },
+        "full_copy_all_first_sign": {
+          "certified": false,
+          "exact_ids": false,
+          "sign": false
+        },
+        "full_copy_all_unanimity": {
+          "certified": false,
+          "exact_ids": false,
+          "sign": true
+        },
+        "full_copy_first_two_unanimity": {
+          "certified": false,
+          "exact_ids": false,
+          "sign": false
+        },
+        "full_forced_lamp_only": {
+          "certified": false,
+          "exact_ids": false,
+          "sign": true
+        },
+        "full_initial_lamp_only": {
+          "certified": false,
+          "exact_ids": false,
+          "sign": true
+        }
+      },
+      "forced-14": {
+        "filtered_copy_all_first_sign": {
+          "certified": true,
+          "exact_ids": true,
+          "sign": true
+        },
+        "filtered_copy_all_unanimity": {
+          "certified": true,
+          "exact_ids": true,
+          "sign": true
+        },
+        "full_copy_all_first_sign": {
+          "certified": false,
+          "exact_ids": false,
+          "sign": true
+        },
+        "full_copy_all_unanimity": {
+          "certified": false,
+          "exact_ids": false,
+          "sign": false
+        },
+        "full_copy_first_two_unanimity": {
+          "certified": false,
+          "exact_ids": false,
+          "sign": true
+        },
+        "full_forced_lamp_only": {
+          "certified": false,
+          "exact_ids": false,
+          "sign": false
+        },
+        "full_initial_lamp_only": {
+          "certified": false,
+          "exact_ids": false,
+          "sign": false
+        }
+      },
+      "forced-15": {
+        "filtered_copy_all_first_sign": {
+          "certified": false,
+          "exact_ids": true,
+          "sign": false
+        },
+        "filtered_copy_all_unanimity": {
+          "certified": true,
+          "exact_ids": true,
+          "sign": true
+        },
+        "full_copy_all_first_sign": {
+          "certified": false,
+          "exact_ids": false,
+          "sign": false
+        },
+        "full_copy_all_unanimity": {
+          "certified": false,
+          "exact_ids": false,
+          "sign": true
+        },
+        "full_copy_first_two_unanimity": {
+          "certified": false,
+          "exact_ids": false,
+          "sign": false
+        },
+        "full_forced_lamp_only": {
+          "certified": false,
+          "exact_ids": false,
+          "sign": true
+        },
+        "full_initial_lamp_only": {
+          "certified": false,
+          "exact_ids": false,
+          "sign": true
+        }
+      },
+      "forced-16": {
+        "filtered_copy_all_first_sign": {
+          "certified": true,
+          "exact_ids": true,
+          "sign": true
+        },
+        "filtered_copy_all_unanimity": {
+          "certified": true,
+          "exact_ids": true,
+          "sign": true
+        },
+        "full_copy_all_first_sign": {
+          "certified": false,
+          "exact_ids": false,
+          "sign": false
+        },
+        "full_copy_all_unanimity": {
+          "certified": false,
+          "exact_ids": false,
+          "sign": false
+        },
+        "full_copy_first_two_unanimity": {
+          "certified": false,
+          "exact_ids": false,
+          "sign": false
+        },
+        "full_forced_lamp_only": {
+          "certified": false,
+          "exact_ids": false,
+          "sign": false
+        },
+        "full_initial_lamp_only": {
+          "certified": false,
+          "exact_ids": false,
+          "sign": false
+        }
+      },
+      "forced-17": {
+        "filtered_copy_all_first_sign": {
+          "certified": true,
+          "exact_ids": true,
+          "sign": true
+        },
+        "filtered_copy_all_unanimity": {
+          "certified": true,
+          "exact_ids": true,
+          "sign": true
+        },
+        "full_copy_all_first_sign": {
+          "certified": false,
+          "exact_ids": false,
+          "sign": true
+        },
+        "full_copy_all_unanimity": {
+          "certified": false,
+          "exact_ids": false,
+          "sign": false
+        },
+        "full_copy_first_two_unanimity": {
+          "certified": false,
+          "exact_ids": false,
+          "sign": true
+        },
+        "full_forced_lamp_only": {
+          "certified": false,
+          "exact_ids": false,
+          "sign": false
+        },
+        "full_initial_lamp_only": {
+          "certified": false,
+          "exact_ids": false,
+          "sign": false
+        }
+      }
+    }
+  },
+  "record_oracle": {
+    "forced-00": {
+      "family": "DC-F1",
+      "forced_meter": "M7",
+      "forced_only": [
+        "FS",
+        "KK",
+        "LE",
+        "RK"
+      ],
+      "forced_value": "L",
+      "initial_only": [
+        "LE",
+        "PT",
+        "RK",
+        "ZD"
+      ],
+      "joint": [
+        "LE",
+        "RK"
+      ],
+      "kind": "decisive",
+      "verdict": "N"
+    },
+    "forced-01": {
+      "family": "DC-F1",
+      "forced_meter": "M7",
+      "forced_only": [
+        "IP",
+        "PT",
+        "QX",
+        "ZD"
+      ],
+      "forced_value": "H",
+      "initial_only": [
+        "LE",
+        "PT",
+        "RK",
+        "ZD"
+      ],
+      "joint": [
+        "PT",
+        "ZD"
+      ],
+      "kind": "decisive",
+      "verdict": "Y"
+    },
+    "forced-02": {
+      "family": "DC-F1",
+      "forced_meter": "M4",
+      "forced_only": [
+        "IP",
+        "LE",
+        "QX",
+        "ZD"
+      ],
+      "forced_value": "L",
+      "initial_only": [
+        "LE",
+        "PT",
+        "RK",
+        "ZD"
+      ],
+      "joint": [
+        "LE",
+        "ZD"
+      ],
+      "kind": "ambiguous",
+      "verdict": "U"
+    },
+    "forced-03": {
+      "family": "DC-F2",
+      "forced_meter": "M7",
+      "forced_only": [
+        "BV",
+        "CF",
+        "DS",
+        "GD"
+      ],
+      "forced_value": "H",
+      "initial_only": [
+        "BV",
+        "DS",
+        "IT",
+        "XN"
+      ],
+      "joint": [
+        "BV",
+        "DS"
+      ],
+      "kind": "decisive",
+      "verdict": "Y"
+    },
+    "forced-04": {
+      "family": "DC-F2",
+      "forced_meter": "M8",
+      "forced_only": [
+        "DS",
+        "GD",
+        "VB",
+        "XN"
+      ],
+      "forced_value": "H",
+      "initial_only": [
+        "BV",
+        "DS",
+        "IT",
+        "XN"
+      ],
+      "joint": [
+        "DS",
+        "XN"
+      ],
+      "kind": "ambiguous",
+      "verdict": "U"
+    },
+    "forced-05": {
+      "family": "DC-F2",
+      "forced_meter": "M7",
+      "forced_only": [
+        "IB",
+        "IT",
+        "VB",
+        "XN"
+      ],
+      "forced_value": "L",
+      "initial_only": [
+        "BV",
+        "DS",
+        "IT",
+        "XN"
+      ],
+      "joint": [
+        "IT",
+        "XN"
+      ],
+      "kind": "decisive",
+      "verdict": "N"
+    },
+    "forced-06": {
+      "family": "DC-F3",
+      "forced_meter": "M2",
+      "forced_only": [
+        "AB",
+        "DE",
+        "SS",
+        "UT"
+      ],
+      "forced_value": "L",
+      "initial_only": [
+        "DE",
+        "HR",
+        "RY",
+        "SS"
+      ],
+      "joint": [
+        "DE",
+        "SS"
+      ],
+      "kind": "ambiguous",
+      "verdict": "U"
+    },
+    "forced-07": {
+      "family": "DC-F3",
+      "forced_meter": "M7",
+      "forced_only": [
+        "AB",
+        "AO",
+        "DE",
+        "HR"
+      ],
+      "forced_value": "L",
+      "initial_only": [
+        "DE",
+        "HR",
+        "RY",
+        "SS"
+      ],
+      "joint": [
+        "DE",
+        "HR"
+      ],
+      "kind": "decisive",
+      "verdict": "N"
+    },
+    "forced-08": {
+      "family": "DC-F3",
+      "forced_meter": "M7",
+      "forced_only": [
+        "JO",
+        "RY",
+        "SS",
+        "UT"
+      ],
+      "forced_value": "H",
+      "initial_only": [
+        "DE",
+        "HR",
+        "RY",
+        "SS"
+      ],
+      "joint": [
+        "RY",
+        "SS"
+      ],
+      "kind": "decisive",
+      "verdict": "Y"
+    },
+    "forced-09": {
+      "family": "DC-F4",
+      "forced_meter": "M2",
+      "forced_only": [
+        "DL",
+        "EB",
+        "NV",
+        "YO"
+      ],
+      "forced_value": "L",
+      "initial_only": [
+        "AQ",
+        "DL",
+        "NV",
+        "WM"
+      ],
+      "joint": [
+        "DL",
+        "NV"
+      ],
+      "kind": "decisive",
+      "verdict": "Y"
+    },
+    "forced-10": {
+      "family": "DC-F4",
+      "forced_meter": "M2",
+      "forced_only": [
+        "AQ",
+        "EG",
+        "UB",
+        "WM"
+      ],
+      "forced_value": "H",
+      "initial_only": [
+        "AQ",
+        "DL",
+        "NV",
+        "WM"
+      ],
+      "joint": [
+        "AQ",
+        "WM"
+      ],
+      "kind": "decisive",
+      "verdict": "N"
+    },
+    "forced-11": {
+      "family": "DC-F4",
+      "forced_meter": "M3",
+      "forced_only": [
+        "DL",
+        "EB",
+        "UB",
+        "WM"
+      ],
+      "forced_value": "H",
+      "initial_only": [
+        "AQ",
+        "DL",
+        "NV",
+        "WM"
+      ],
+      "joint": [
+        "DL",
+        "WM"
+      ],
+      "kind": "ambiguous",
+      "verdict": "U"
+    },
+    "forced-12": {
+      "family": "DC-F5",
+      "forced_meter": "M2",
+      "forced_only": [
+        "CZ",
+        "HK",
+        "HY",
+        "OA"
+      ],
+      "forced_value": "H",
+      "initial_only": [
+        "CZ",
+        "HK",
+        "LQ",
+        "TH"
+      ],
+      "joint": [
+        "CZ",
+        "HK"
+      ],
+      "kind": "decisive",
+      "verdict": "N"
+    },
+    "forced-13": {
+      "family": "DC-F5",
+      "forced_meter": "M7",
+      "forced_only": [
+        "CZ",
+        "HY",
+        "JV",
+        "TH"
+      ],
+      "forced_value": "L",
+      "initial_only": [
+        "CZ",
+        "HK",
+        "LQ",
+        "TH"
+      ],
+      "joint": [
+        "CZ",
+        "TH"
+      ],
+      "kind": "ambiguous",
+      "verdict": "U"
+    },
+    "forced-14": {
+      "family": "DC-F5",
+      "forced_meter": "M2",
+      "forced_only": [
+        "BN",
+        "JV",
+        "LQ",
+        "TH"
+      ],
+      "forced_value": "L",
+      "initial_only": [
+        "CZ",
+        "HK",
+        "LQ",
+        "TH"
+      ],
+      "joint": [
+        "LQ",
+        "TH"
+      ],
+      "kind": "decisive",
+      "verdict": "Y"
+    },
+    "forced-15": {
+      "family": "DC-F6",
+      "forced_meter": "M5",
+      "forced_only": [
+        "LB",
+        "LI",
+        "SR",
+        "YW"
+      ],
+      "forced_value": "H",
+      "initial_only": [
+        "GW",
+        "LB",
+        "WB",
+        "YW"
+      ],
+      "joint": [
+        "LB",
+        "YW"
+      ],
+      "kind": "ambiguous",
+      "verdict": "U"
+    },
+    "forced-16": {
+      "family": "DC-F6",
+      "forced_meter": "M8",
+      "forced_only": [
+        "IZ",
+        "LI",
+        "WB",
+        "YW"
+      ],
+      "forced_value": "L",
+      "initial_only": [
+        "GW",
+        "LB",
+        "WB",
+        "YW"
+      ],
+      "joint": [
+        "WB",
+        "YW"
+      ],
+      "kind": "decisive",
+      "verdict": "Y"
+    },
+    "forced-17": {
+      "family": "DC-F6",
+      "forced_meter": "M8",
+      "forced_only": [
+        "GW",
+        "LB",
+        "PV",
+        "SR"
+      ],
+      "forced_value": "H",
+      "initial_only": [
+        "GW",
+        "LB",
+        "WB",
+        "YW"
+      ],
+      "joint": [
+        "GW",
+        "LB"
+      ],
+      "kind": "decisive",
+      "verdict": "N"
+    }
+  },
+  "records": 18,
+  "target_counts": {
+    "N": 6,
+    "U": 6,
+    "Y": 6
+  }
+}

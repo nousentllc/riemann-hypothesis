@@ -1,0 +1,134 @@
+{
+  "F1": {
+    "layout": "+/a/2 a/d/9 d/c/6 b/c/2 b/0/2 0/c/2 0/d/7 c/a/9 +/b/5 +/d/3 b/d/5/s a/b/5/t c/+/3/u",
+    "target": [
+      "I4",
+      "0"
+    ],
+    "initial": [
+      "I12",
+      "0"
+    ],
+    "initial_reading": "H",
+    "decisive": [
+      "I10",
+      "14/9"
+    ],
+    "other": [
+      "I11",
+      "-1/3"
+    ],
+    "other_reading": "L",
+    "selected_trial": 6
+  },
+  "F2": {
+    "layout": "+/b/5 c/b/7 a/c/2 e/a/9 d/e/5 0/d/4 a/d/2 c/0/4 c/e/3 a/b/8 +/a/7/s 0/e/3/t d/+/8/u",
+    "target": [
+      "I4",
+      "-1/10"
+    ],
+    "initial": [
+      "I13",
+      "-1/2"
+    ],
+    "initial_reading": "L",
+    "decisive": [
+      "I12",
+      "-1/3"
+    ],
+    "other": [
+      "I11",
+      "0"
+    ],
+    "other_reading": "H",
+    "selected_trial": 0
+  },
+  "F3": {
+    "layout": "a/+/9 c/a/5 b/c/5 b/e/3 d/e/7 d/0/7 d/b/7 +/c/6 a/d/9 e/c/4 c/d/5 b/0/2/s 0/c/9/t +/d/9/u",
+    "target": [
+      "I11",
+      "1/4"
+    ],
+    "initial": [
+      "Vb",
+      "3"
+    ],
+    "initial_reading": "H",
+    "decisive": [
+      "I13",
+      "-1/3"
+    ],
+    "other": [
+      "I14",
+      "0"
+    ],
+    "other_reading": "L",
+    "selected_trial": 13
+  },
+  "F4": {
+    "layout": "e/+/4 e/f/6 c/f/3 d/c/3 b/d/3 b/a/8 0/a/8 d/e/8 e/b/8 e/0/8/s a/d/2/t +/d/7/u",
+    "target": [
+      "I8",
+      "-1/7"
+    ],
+    "initial": [
+      "Va",
+      "9/2"
+    ],
+    "initial_reading": "L",
+    "decisive": [
+      "I9",
+      "117/670"
+    ],
+    "other": [
+      "Vc",
+      "8"
+    ],
+    "other_reading": "H",
+    "selected_trial": 13
+  },
+  "F5": {
+    "layout": "+/b/7 e/b/4 e/c/6 c/d/6 f/d/5 a/f/8 a/0/3 b/c/8 f/b/8 f/c/6 f/+/7/s +/e/3/t e/a/8/u",
+    "target": [
+      "I2",
+      "-53052/763883"
+    ],
+    "initial": [
+      "Vf",
+      "23/3"
+    ],
+    "initial_reading": "H",
+    "decisive": [
+      "I13",
+      "0"
+    ],
+    "other": [
+      "I12",
+      "0"
+    ],
+    "other_reading": "L",
+    "selected_trial": 1
+  },
+  "F6": {
+    "layout": "+/e/3 c/e/5 c/a/4 b/a/2 b/f/6 d/f/7 d/0/6 b/0/4 f/e/9 f/c/8 f/a/2 d/+/5/s +/a/8/t 0/a/6/u",
+    "target": [
+      "I3",
+      "528/1373"
+    ],
+    "initial": [
+      "Vd",
+      "3"
+    ],
+    "initial_reading": "L",
+    "decisive": [
+      "I13",
+      "0"
+    ],
+    "other": [
+      "I14",
+      "-1/3"
+    ],
+    "other_reading": "H",
+    "selected_trial": 10
+  }
+}
