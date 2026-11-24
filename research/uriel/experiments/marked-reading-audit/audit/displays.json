@@ -1,0 +1,1138 @@
+{
+  "distinct_strata": 4,
+  "exact_marker_substitutions": 48,
+  "exact_removed_rows": 144,
+  "filtered_rows": 48,
+  "full_rows": 192,
+  "high_decisive": {
+    "N": 3,
+    "Y": 3
+  },
+  "marked_rows": 192,
+  "negative_control_rejections": [
+    "wrong_survivor_mark_equal_number",
+    "one_genuine_filtered_survivor_missing",
+    "grammar_restricted_to_two_ids",
+    "order_swap_preserving_wave_counts"
+  ],
+  "one_lamp_both_signs_in_every_record": true,
+  "record_oracle": {
+    "marked-00": {
+      "family": "DC-G1",
+      "initial_only": [
+        "BU",
+        "DA",
+        "KF",
+        "SY"
+      ],
+      "initial_value": "H",
+      "joint": [
+        "DA",
+        "KF"
+      ],
+      "kind": "decisive",
+      "meter": "M11",
+      "reading": "L",
+      "schema_order": [
+        "KM",
+        "KF",
+        "GF",
+        "BU",
+        "GE",
+        "DA",
+        "PN",
+        "SY"
+      ],
+      "second_only": [
+        "DA",
+        "GE",
+        "KF",
+        "PN"
+      ],
+      "target_yes": [
+        "BU",
+        "GF",
+        "PN",
+        "SY"
+      ],
+      "verdict": "N"
+    },
+    "marked-01": {
+      "family": "DC-G1",
+      "initial_only": [
+        "BU",
+        "DA",
+        "KF",
+        "SY"
+      ],
+      "initial_value": "H",
+      "joint": [
+        "BU",
+        "SY"
+      ],
+      "kind": "decisive",
+      "meter": "M11",
+      "reading": "H",
+      "schema_order": [
+        "KM",
+        "KF",
+        "GF",
+        "BU",
+        "GE",
+        "DA",
+        "PN",
+        "SY"
+      ],
+      "second_only": [
+        "BU",
+        "GF",
+        "KM",
+        "SY"
+      ],
+      "target_yes": [
+        "BU",
+        "GF",
+        "PN",
+        "SY"
+      ],
+      "verdict": "Y"
+    },
+    "marked-02": {
+      "family": "DC-G1",
+      "initial_only": [
+        "BU",
+        "DA",
+        "KF",
+        "SY"
+      ],
+      "initial_value": "H",
+      "joint": [
+        "DA",
+        "SY"
+      ],
+      "kind": "ambiguous",
+      "meter": "M19",
+      "reading": "L",
+      "schema_order": [
+        "KM",
+        "KF",
+        "GF",
+        "BU",
+        "GE",
+        "DA",
+        "PN",
+        "SY"
+      ],
+      "second_only": [
+        "DA",
+        "GE",
+        "PN",
+        "SY"
+      ],
+      "target_yes": [
+        "BU",
+        "GF",
+        "PN",
+        "SY"
+      ],
+      "verdict": "U"
+    },
+    "marked-03": {
+      "family": "DC-G1",
+      "initial_only": [
+        "BU",
+        "DA",
+        "KF",
+        "SY"
+      ],
+      "initial_value": "H",
+      "joint": [
+        "BU",
+        "KF"
+      ],
+      "kind": "ambiguous",
+      "meter": "M19",
+      "reading": "H",
+      "schema_order": [
+        "KM",
+        "KF",
+        "GF",
+        "BU",
+        "GE",
+        "DA",
+        "PN",
+        "SY"
+      ],
+      "second_only": [
+        "BU",
+        "GF",
+        "KF",
+        "KM"
+      ],
+      "target_yes": [
+        "BU",
+        "GF",
+        "PN",
+        "SY"
+      ],
+      "verdict": "U"
+    },
+    "marked-04": {
+      "family": "DC-G2",
+      "initial_only": [
+        "AA",
+        "TR",
+        "VD",
+        "YS"
+      ],
+      "initial_value": "L",
+      "joint": [
+        "TR",
+        "YS"
+      ],
+      "kind": "decisive",
+      "meter": "M16",
+      "reading": "H",
+      "schema_order": [
+        "YS",
+        "TR",
+        "VD",
+        "AA",
+        "BD",
+        "ZH",
+        "TA",
+        "ZM"
+      ],
+      "second_only": [
+        "BD",
+        "TR",
+        "YS",
+        "ZH"
+      ],
+      "target_yes": [
+        "AA",
+        "VD",
+        "ZH",
+        "ZM"
+      ],
+      "verdict": "N"
+    },
+    "marked-05": {
+      "family": "DC-G2",
+      "initial_only": [
+        "AA",
+        "TR",
+        "VD",
+        "YS"
+      ],
+      "initial_value": "L",
+      "joint": [
+        "VD",
+        "YS"
+      ],
+      "kind": "ambiguous",
+      "meter": "M22",
+      "reading": "L",
+      "schema_order": [
+        "YS",
+        "TR",
+        "VD",
+        "AA",
+        "BD",
+        "ZH",
+        "TA",
+        "ZM"
+      ],
+      "second_only": [
+        "BD",
+        "TA",
+        "VD",
+        "YS"
+      ],
+      "target_yes": [
+        "AA",
+        "VD",
+        "ZH",
+        "ZM"
+      ],
+      "verdict": "U"
+    },
+    "marked-06": {
+      "family": "DC-G2",
+      "initial_only": [
+        "AA",
+        "TR",
+        "VD",
+        "YS"
+      ],
+      "initial_value": "L",
+      "joint": [
+        "AA",
+        "TR"
+      ],
+      "kind": "ambiguous",
+      "meter": "M22",
+      "reading": "H",
+      "schema_order": [
+        "YS",
+        "TR",
+        "VD",
+        "AA",
+        "BD",
+        "ZH",
+        "TA",
+        "ZM"
+      ],
+      "second_only": [
+        "AA",
+        "TR",
+        "ZH",
+        "ZM"
+      ],
+      "target_yes": [
+        "AA",
+        "VD",
+        "ZH",
+        "ZM"
+      ],
+      "verdict": "U"
+    },
+    "marked-07": {
+      "family": "DC-G2",
+      "initial_only": [
+        "AA",
+        "TR",
+        "VD",
+        "YS"
+      ],
+      "initial_value": "L",
+      "joint": [
+        "AA",
+        "VD"
+      ],
+      "kind": "decisive",
+      "meter": "M16",
+      "reading": "L",
+      "schema_order": [
+        "YS",
+        "TR",
+        "VD",
+        "AA",
+        "BD",
+        "ZH",
+        "TA",
+        "ZM"
+      ],
+      "second_only": [
+        "AA",
+        "TA",
+        "VD",
+        "ZM"
+      ],
+      "target_yes": [
+        "AA",
+        "VD",
+        "ZH",
+        "ZM"
+      ],
+      "verdict": "Y"
+    },
+    "marked-08": {
+      "family": "DC-G3",
+      "initial_only": [
+        "BQ",
+        "FA",
+        "KD",
+        "WP"
+      ],
+      "initial_value": "L",
+      "joint": [
+        "BQ",
+        "KD"
+      ],
+      "kind": "ambiguous",
+      "meter": "M21",
+      "reading": "L",
+      "schema_order": [
+        "GK",
+        "ES",
+        "FE",
+        "DN",
+        "WP",
+        "BQ",
+        "FA",
+        "KD"
+      ],
+      "second_only": [
+        "BQ",
+        "DN",
+        "ES",
+        "KD"
+      ],
+      "target_yes": [
+        "BQ",
+        "ES",
+        "GK",
+        "WP"
+      ],
+      "verdict": "U"
+    },
+    "marked-09": {
+      "family": "DC-G3",
+      "initial_only": [
+        "BQ",
+        "FA",
+        "KD",
+        "WP"
+      ],
+      "initial_value": "L",
+      "joint": [
+        "FA",
+        "WP"
+      ],
+      "kind": "ambiguous",
+      "meter": "M21",
+      "reading": "H",
+      "schema_order": [
+        "GK",
+        "ES",
+        "FE",
+        "DN",
+        "WP",
+        "BQ",
+        "FA",
+        "KD"
+      ],
+      "second_only": [
+        "FA",
+        "FE",
+        "GK",
+        "WP"
+      ],
+      "target_yes": [
+        "BQ",
+        "ES",
+        "GK",
+        "WP"
+      ],
+      "verdict": "U"
+    },
+    "marked-10": {
+      "family": "DC-G3",
+      "initial_only": [
+        "BQ",
+        "FA",
+        "KD",
+        "WP"
+      ],
+      "initial_value": "L",
+      "joint": [
+        "FA",
+        "KD"
+      ],
+      "kind": "decisive",
+      "meter": "M22",
+      "reading": "L",
+      "schema_order": [
+        "GK",
+        "ES",
+        "FE",
+        "DN",
+        "WP",
+        "BQ",
+        "FA",
+        "KD"
+      ],
+      "second_only": [
+        "DN",
+        "ES",
+        "FA",
+        "KD"
+      ],
+      "target_yes": [
+        "BQ",
+        "ES",
+        "GK",
+        "WP"
+      ],
+      "verdict": "N"
+    },
+    "marked-11": {
+      "family": "DC-G3",
+      "initial_only": [
+        "BQ",
+        "FA",
+        "KD",
+        "WP"
+      ],
+      "initial_value": "L",
+      "joint": [
+        "BQ",
+        "WP"
+      ],
+      "kind": "decisive",
+      "meter": "M22",
+      "reading": "H",
+      "schema_order": [
+        "GK",
+        "ES",
+        "FE",
+        "DN",
+        "WP",
+        "BQ",
+        "FA",
+        "KD"
+      ],
+      "second_only": [
+        "BQ",
+        "FE",
+        "GK",
+        "WP"
+      ],
+      "target_yes": [
+        "BQ",
+        "ES",
+        "GK",
+        "WP"
+      ],
+      "verdict": "Y"
+    },
+    "marked-12": {
+      "family": "DC-G4",
+      "initial_only": [
+        "DX",
+        "DY",
+        "NA",
+        "VP"
+      ],
+      "initial_value": "H",
+      "joint": [
+        "DY",
+        "VP"
+      ],
+      "kind": "ambiguous",
+      "meter": "M17",
+      "reading": "H",
+      "schema_order": [
+        "FH",
+        "FI",
+        "NA",
+        "DX",
+        "QV",
+        "BY",
+        "DY",
+        "VP"
+      ],
+      "second_only": [
+        "BY",
+        "DY",
+        "QV",
+        "VP"
+      ],
+      "target_yes": [
+        "BY",
+        "DX",
+        "FI",
+        "VP"
+      ],
+      "verdict": "U"
+    },
+    "marked-13": {
+      "family": "DC-G4",
+      "initial_only": [
+        "DX",
+        "DY",
+        "NA",
+        "VP"
+      ],
+      "initial_value": "H",
+      "joint": [
+        "DX",
+        "VP"
+      ],
+      "kind": "decisive",
+      "meter": "M22",
+      "reading": "L",
+      "schema_order": [
+        "FH",
+        "FI",
+        "NA",
+        "DX",
+        "QV",
+        "BY",
+        "DY",
+        "VP"
+      ],
+      "second_only": [
+        "BY",
+        "DX",
+        "QV",
+        "VP"
+      ],
+      "target_yes": [
+        "BY",
+        "DX",
+        "FI",
+        "VP"
+      ],
+      "verdict": "Y"
+    },
+    "marked-14": {
+      "family": "DC-G4",
+      "initial_only": [
+        "DX",
+        "DY",
+        "NA",
+        "VP"
+      ],
+      "initial_value": "H",
+      "joint": [
+        "DY",
+        "NA"
+      ],
+      "kind": "decisive",
+      "meter": "M22",
+      "reading": "H",
+      "schema_order": [
+        "FH",
+        "FI",
+        "NA",
+        "DX",
+        "QV",
+        "BY",
+        "DY",
+        "VP"
+      ],
+      "second_only": [
+        "DY",
+        "FH",
+        "FI",
+        "NA"
+      ],
+      "target_yes": [
+        "BY",
+        "DX",
+        "FI",
+        "VP"
+      ],
+      "verdict": "N"
+    },
+    "marked-15": {
+      "family": "DC-G4",
+      "initial_only": [
+        "DX",
+        "DY",
+        "NA",
+        "VP"
+      ],
+      "initial_value": "H",
+      "joint": [
+        "DX",
+        "NA"
+      ],
+      "kind": "ambiguous",
+      "meter": "M17",
+      "reading": "L",
+      "schema_order": [
+        "FH",
+        "FI",
+        "NA",
+        "DX",
+        "QV",
+        "BY",
+        "DY",
+        "VP"
+      ],
+      "second_only": [
+        "DX",
+        "FH",
+        "FI",
+        "NA"
+      ],
+      "target_yes": [
+        "BY",
+        "DX",
+        "FI",
+        "VP"
+      ],
+      "verdict": "U"
+    },
+    "marked-16": {
+      "family": "DC-G5",
+      "initial_only": [
+        "JH",
+        "LX",
+        "NS",
+        "SU"
+      ],
+      "initial_value": "H",
+      "joint": [
+        "JH",
+        "LX"
+      ],
+      "kind": "decisive",
+      "meter": "M13",
+      "reading": "L",
+      "schema_order": [
+        "NJ",
+        "CH",
+        "LX",
+        "IV",
+        "SU",
+        "NS",
+        "JH",
+        "ZS"
+      ],
+      "second_only": [
+        "IV",
+        "JH",
+        "LX",
+        "ZS"
+      ],
+      "target_yes": [
+        "CH",
+        "NS",
+        "SU",
+        "ZS"
+      ],
+      "verdict": "N"
+    },
+    "marked-17": {
+      "family": "DC-G5",
+      "initial_only": [
+        "JH",
+        "LX",
+        "NS",
+        "SU"
+      ],
+      "initial_value": "H",
+      "joint": [
+        "NS",
+        "SU"
+      ],
+      "kind": "decisive",
+      "meter": "M13",
+      "reading": "H",
+      "schema_order": [
+        "NJ",
+        "CH",
+        "LX",
+        "IV",
+        "SU",
+        "NS",
+        "JH",
+        "ZS"
+      ],
+      "second_only": [
+        "CH",
+        "NJ",
+        "NS",
+        "SU"
+      ],
+      "target_yes": [
+        "CH",
+        "NS",
+        "SU",
+        "ZS"
+      ],
+      "verdict": "Y"
+    },
+    "marked-18": {
+      "family": "DC-G5",
+      "initial_only": [
+        "JH",
+        "LX",
+        "NS",
+        "SU"
+      ],
+      "initial_value": "H",
+      "joint": [
+        "JH",
+        "NS"
+      ],
+      "kind": "ambiguous",
+      "meter": "M22",
+      "reading": "L",
+      "schema_order": [
+        "NJ",
+        "CH",
+        "LX",
+        "IV",
+        "SU",
+        "NS",
+        "JH",
+        "ZS"
+      ],
+      "second_only": [
+        "IV",
+        "JH",
+        "NS",
+        "ZS"
+      ],
+      "target_yes": [
+        "CH",
+        "NS",
+        "SU",
+        "ZS"
+      ],
+      "verdict": "U"
+    },
+    "marked-19": {
+      "family": "DC-G5",
+      "initial_only": [
+        "JH",
+        "LX",
+        "NS",
+        "SU"
+      ],
+      "initial_value": "H",
+      "joint": [
+        "LX",
+        "SU"
+      ],
+      "kind": "ambiguous",
+      "meter": "M22",
+      "reading": "H",
+      "schema_order": [
+        "NJ",
+        "CH",
+        "LX",
+        "IV",
+        "SU",
+        "NS",
+        "JH",
+        "ZS"
+      ],
+      "second_only": [
+        "CH",
+        "LX",
+        "NJ",
+        "SU"
+      ],
+      "target_yes": [
+        "CH",
+        "NS",
+        "SU",
+        "ZS"
+      ],
+      "verdict": "U"
+    },
+    "marked-20": {
+      "family": "DC-G6",
+      "initial_only": [
+        "AI",
+        "TV",
+        "VU",
+        "XB"
+      ],
+      "initial_value": "L",
+      "joint": [
+        "VU",
+        "XB"
+      ],
+      "kind": "decisive",
+      "meter": "M22",
+      "reading": "H",
+      "schema_order": [
+        "TV",
+        "XB",
+        "EV",
+        "MT",
+        "AI",
+        "VU",
+        "PJ",
+        "SK"
+      ],
+      "second_only": [
+        "MT",
+        "SK",
+        "VU",
+        "XB"
+      ],
+      "target_yes": [
+        "AI",
+        "EV",
+        "MT",
+        "TV"
+      ],
+      "verdict": "N"
+    },
+    "marked-21": {
+      "family": "DC-G6",
+      "initial_only": [
+        "AI",
+        "TV",
+        "VU",
+        "XB"
+      ],
+      "initial_value": "L",
+      "joint": [
+        "AI",
+        "VU"
+      ],
+      "kind": "ambiguous",
+      "meter": "M17",
+      "reading": "L",
+      "schema_order": [
+        "TV",
+        "XB",
+        "EV",
+        "MT",
+        "AI",
+        "VU",
+        "PJ",
+        "SK"
+      ],
+      "second_only": [
+        "AI",
+        "PJ",
+        "SK",
+        "VU"
+      ],
+      "target_yes": [
+        "AI",
+        "EV",
+        "MT",
+        "TV"
+      ],
+      "verdict": "U"
+    },
+    "marked-22": {
+      "family": "DC-G6",
+      "initial_only": [
+        "AI",
+        "TV",
+        "VU",
+        "XB"
+      ],
+      "initial_value": "L",
+      "joint": [
+        "TV",
+        "XB"
+      ],
+      "kind": "ambiguous",
+      "meter": "M17",
+      "reading": "H",
+      "schema_order": [
+        "TV",
+        "XB",
+        "EV",
+        "MT",
+        "AI",
+        "VU",
+        "PJ",
+        "SK"
+      ],
+      "second_only": [
+        "EV",
+        "MT",
+        "TV",
+        "XB"
+      ],
+      "target_yes": [
+        "AI",
+        "EV",
+        "MT",
+        "TV"
+      ],
+      "verdict": "U"
+    },
+    "marked-23": {
+      "family": "DC-G6",
+      "initial_only": [
+        "AI",
+        "TV",
+        "VU",
+        "XB"
+      ],
+      "initial_value": "L",
+      "joint": [
+        "AI",
+        "TV"
+      ],
+      "kind": "decisive",
+      "meter": "M22",
+      "reading": "L",
+      "schema_order": [
+        "TV",
+        "XB",
+        "EV",
+        "MT",
+        "AI",
+        "VU",
+        "PJ",
+        "SK"
+      ],
+      "second_only": [
+        "AI",
+        "EV",
+        "PJ",
+        "TV"
+      ],
+      "target_yes": [
+        "AI",
+        "EV",
+        "MT",
+        "TV"
+      ],
+      "verdict": "Y"
+    }
+  },
+  "request_sha256": {
+    "marked-00": {
+      "filtered": "9215de0d0758a39c12300586f0960a0f380be672333d3dea500d369f9f4f5182",
+      "marked": "c57df88abd00a6fe445f13f64d22ad04f35d3dce7e60b0f4af1250e252d8a80f",
+      "unmarked": "25eb4bdf52537b44494cca56a968de8ff6f63037b43f4287dcf70512848f3fc7"
+    },
+    "marked-01": {
+      "filtered": "d282891fd16abe85b9984e2ff60ed522f806483a7726916db114897290fd3f79",
+      "marked": "1c85f265d17cc10937b5e9c1759b68181171a3a45931d84b2a2bb13edfb3d2a7",
+      "unmarked": "db51a5e5de615c746aa69e42ef4e1b02249440178a0a912bd996728c4d8c88d8"
+    },
+    "marked-02": {
+      "filtered": "00760d59a306b916292cc58c5aab86f733984151a6bb1bae9da3de37cd0f1a61",
+      "marked": "6b09e5bf67373ba1d357321cfce8c20d59339b702a69e1e5973872a146abc030",
+      "unmarked": "5f38a0d13b430a4046b02ae673df7e464ab5171ed3b73ce1fcb1e51db41b43c4"
+    },
+    "marked-03": {
+      "filtered": "111899782334ecc14b4c5f69eaea37c536de0ecea6450188515a22631efdb158",
+      "marked": "acb3be7c4ecb6942d4e917358830be825028635cf23d15ccdef5c2fac0c09be8",
+      "unmarked": "6accc8da8b258db6afdc5e0007460a74608856aecea615c69b28c3ef623f7f1f"
+    },
+    "marked-04": {
+      "filtered": "1dd185af8f13d1929fdd010cee1dd3a7e757d3149c493a6b79ffd3a9a75010b6",
+      "marked": "42de2edfede9d1edcd748fd522c4adb5c9ddcb0c98dc31577b42070c9c11cbf6",
+      "unmarked": "dcadb937f1640dfe58a625a281e8dece97d868e49269876e0ddf53dacfe2fccc"
+    },
+    "marked-05": {
+      "filtered": "84ba2522ad69b0b3dce35124b28f49cd78819cd1b0df772c7e7fc1aca5f193ae",
+      "marked": "f592cf67e783b46616dff78ba7ef57a15152a64012f86183e289261b6a9e1bd8",
+      "unmarked": "c467b979b3613180c16f4eee7d5df83c82686f4b12b04e48924ab3fd889f6b5f"
+    },
+    "marked-06": {
+      "filtered": "68c64b31c1f4e3c2fdd3facc788544b449fe6fb00af6534f473fb0be5dd5950f",
+      "marked": "023de08c61eb62f5035fbc2586bdecd4737a99856c263f1f800848c90b072168",
+      "unmarked": "8e9fed91df6702335bf419d559e93cc5686a7e32592125a0055d30002acec355"
+    },
+    "marked-07": {
+      "filtered": "9d12bfdb75d94b263f8d807bc1187dbec948645e296483e77531124ce429e065",
+      "marked": "7df45ef0212baa765a44d0c7a14410203646b0801060d923df64a329cc04beb3",
+      "unmarked": "e6527582a74325141d0225ac38159c4d384e1d252ab29229d36a3700f03e8123"
+    },
+    "marked-08": {
+      "filtered": "707dea0f023d4cdc51dba0c6fcc7e398da309e03f2017c193ac43b163049a603",
+      "marked": "63042766992530c9f0faa019895e9c60bc18db4e9e956a7456bf94afae60060f",
+      "unmarked": "93e611b57e1064324f850ffe1df363685d6c18c92356c857b9cced91a4ad39a7"
+    },
+    "marked-09": {
+      "filtered": "771ccdfffee7f6fc4b7762103d449139811bec61d7630750c7beda505b5ebcbc",
+      "marked": "5bb9d5cbdf8d68e5dec3c8df710799883d803eba40317b8e890389ed5a18b7b3",
+      "unmarked": "22e0205aa8558fdfde9ca9f366bbb756e4d9bdcad4835aff1e3408e2f85097e5"
+    },
+    "marked-10": {
+      "filtered": "3b40562b82288b631ef162a13a31a499c4c6f1da07369a5d319dd4406bf3c9c3",
+      "marked": "7fcb9102f6649e5399c75ca506e83214bdc54931fa2a0975ac168399adbe0a89",
+      "unmarked": "793891279a2fc9f692eb106bc5f0f41b97db4edc93339b178b917acf49d9c04d"
+    },
+    "marked-11": {
+      "filtered": "50f0459bac3885fd9a2a46aa7f2a7fbc20796e7290e6247c156f66749184b832",
+      "marked": "75707693cd2a8f1269628e6ec715438e6f555cae54fe6f4b99432b7cee2f60d2",
+      "unmarked": "4d7be9d61505ebe5e628b23b8b1cbd194a5427475af1fe437ef904b637147096"
+    },
+    "marked-12": {
+      "filtered": "2d854ff28333cdeb3dfc2cb9a943981eeb839e365e7b05b358b2d659657bcc43",
+      "marked": "3ab176358b1d47458e1225a674898cf963a4d3c195244ff6b322ff4f613857a4",
+      "unmarked": "b8f7f7047b8b308338dcafaf399c337b80e33334b3d46e158ba64cfb49668831"
+    },
+    "marked-13": {
+      "filtered": "b065358ffc2fd14594148ebba612460ff4efb1434bea24eb0eaba13716848d06",
+      "marked": "9c786608bdac271c65b3d597dbdb042293d4f2ccb71501cd270cee113e4dfe66",
+      "unmarked": "8140d5e72a1850b936e2aec450126fbe5f75946ac818831e11f484bb58acd1cc"
+    },
+    "marked-14": {
+      "filtered": "43ee0afa9351c58564f2e09f72ec2171b6a1b5524dd10554ea605c924cc76dee",
+      "marked": "3f10528b2e9fa5101ae6e9be8f4ca0c1172a2cdebb82cac2ed18fcec02df2319",
+      "unmarked": "b307d82085ae25ad3484aeaf2875affc32b13ba90b7531eaa62e98340baf6945"
+    },
+    "marked-15": {
+      "filtered": "d6438c509d79fb9b76817f9f4d6b756aac78be51102c702ddcd013de9f6e6a7d",
+      "marked": "562f6ce24da5aa5318c3ba63f79de9cdc2e3e2e49ef57c938b6538723aafb69b",
+      "unmarked": "fe768f66aa9b3f0d74155c539b065aa92249da9da9acaaba0dcb3dc313201e6f"
+    },
+    "marked-16": {
+      "filtered": "91eb9b8ee0e77eceb2781841c8cb5c9ef1278d39d3cff3201c4b9408fda5402f",
+      "marked": "1930cefaf1e65c0c02ec807a81a70c4d4585d39f25fc09ead238653a7be1feeb",
+      "unmarked": "d32122365b243bdb9f672385fb852e1b566568652ded350ba68e4688b0043b5f"
+    },
+    "marked-17": {
+      "filtered": "09ea5339d448489a1f64a21537f55ae2d78cfff3572408588ee118fe11f533b2",
+      "marked": "65005dde4638c274a44a6a667ce5b9273286f7eb72ea334df00a7376ef7d9f5b",
+      "unmarked": "e0b7fc954a3b94b010fd00f5a0c2fb832d000dc1d8006edc18c19af83940920c"
+    },
+    "marked-18": {
+      "filtered": "d40fbdc83b18645dd54b4315fc69e8443ccadbd80d61426d2b9ba778722b8aa9",
+      "marked": "5b81bcffe2ca516bf0a95e1c3e862bab26069549fff27f563884fbb3e756412b",
+      "unmarked": "abb615b9f936be4ca6ca417759b110643d5fa6864b0a7c72c38e1bd898001c8e"
+    },
+    "marked-19": {
+      "filtered": "7be25c9714d9d0a5857378c692bc86d329eaf104df5fc69e7e17fb605ecc1422",
+      "marked": "05ddc625e04a5956685a17eb0b467baa35288fbeab2bcd9fc726739578355609",
+      "unmarked": "c249dea83f39d7b50c8d7143f5421c095bb287031b170dd4c0f95a9bc45e773b"
+    },
+    "marked-20": {
+      "filtered": "69317b0099d1439c62ecde6facd61aefc4cc23729776f98957a575325cd58586",
+      "marked": "b9cbac1a0c41184276f0a332cef01ef67b967aba2bcd89c02562d6e14d12c118",
+      "unmarked": "4eb87bd5e27f2b2f99e767f1e648094b7c775cd0e33b75049d0501999586e461"
+    },
+    "marked-21": {
+      "filtered": "919acc7f584ec4dd3e7f0689fdaec8136df849ab135af7f3f147e3324ef0472f",
+      "marked": "794c9ef58376d68ef0ca0970de31f50f11cc1d7108b29252bb85574651e7da70",
+      "unmarked": "cfd850393c2d655d8c695b3446cbfd141aef0a5bff4890af71368cf1d71be0c5"
+    },
+    "marked-22": {
+      "filtered": "494ae792dc99e46dd64968f3d4cbdef0f12debaa08646e532562e85f77e25433",
+      "marked": "83ff80b8dc1f66eedccc23347f3e4f79cfcb993ef879101f557e9d33ecb039b5",
+      "unmarked": "bf0ff538716b7642488ba631760c07832ce8cef9079e010145cc89cc10e94bec"
+    },
+    "marked-23": {
+      "filtered": "f9dcc5a874b38ba869e293587659c1aad7b869243d28ea45d9bc13e56ba61431",
+      "marked": "e5127a83f457da7b5f14a61f44bd82ca867a5734cd380f3c69bdb6e59236bd8f",
+      "unmarked": "b182dd643e83108f832955cd36de5815f82eb58e662e81193999e1df406a0759"
+    }
+  },
+  "schedules": {
+    "ambiguous_H": {
+      "filtered/marked/unmarked": 1,
+      "filtered/unmarked/marked": 1,
+      "marked/filtered/unmarked": 1,
+      "marked/unmarked/filtered": 1,
+      "unmarked/filtered/marked": 1,
+      "unmarked/marked/filtered": 1
+    },
+    "ambiguous_L": {
+      "filtered/marked/unmarked": 1,
+      "filtered/unmarked/marked": 1,
+      "marked/filtered/unmarked": 1,
+      "marked/unmarked/filtered": 1,
+      "unmarked/filtered/marked": 1,
+      "unmarked/marked/filtered": 1
+    },
+    "decisive_H": {
+      "filtered/marked/unmarked": 1,
+      "filtered/unmarked/marked": 1,
+      "marked/filtered/unmarked": 1,
+      "marked/unmarked/filtered": 1,
+      "unmarked/filtered/marked": 1,
+      "unmarked/marked/filtered": 1
+    },
+    "decisive_L": {
+      "filtered/marked/unmarked": 1,
+      "filtered/unmarked/marked": 1,
+      "marked/filtered/unmarked": 1,
+      "marked/unmarked/filtered": 1,
+      "unmarked/filtered/marked": 1,
+      "unmarked/marked/filtered": 1
+    }
+  },
+  "verified_requests": 72
+}

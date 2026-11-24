@@ -1,0 +1,28 @@
+{
+  "request_sha256": "25eb4bdf52537b44494cca56a968de8ff6f63037b43f4287dcf70512848f3fc7",
+  "started": "2026-11-24T18:44:32.305210+00:00",
+  "answer": {
+    "verdict": "N",
+    "certificate": [
+      "PN",
+      "DA",
+      "KF",
+      "GF",
+      "KM",
+      "GE",
+      "SY",
+      "BU"
+    ]
+  },
+  "status": "ok",
+  "content": "{\n  \"verdict\": \"N\",\n  \"certificate\": [\n  \"PN\",\n  \"DA\",\n  \"KF\",\n  \"GF\",\n  \"KM\",\n  \"GE\",\n  \"SY\",\n  \"BU\"\n  ]\n}",
+  "usage": {
+    "prompt_eval_count": 751,
+    "eval_count": 371,
+    "total_duration": 34673524542,
+    "load_duration": 3494917,
+    "eval_duration": 30680340000,
+    "done_reason": "stop"
+  },
+  "ended": "2026-11-24T18:45:06.985036+00:00"
+}

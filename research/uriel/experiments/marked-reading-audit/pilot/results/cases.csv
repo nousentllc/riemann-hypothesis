@@ -1,0 +1,73 @@
+record,family,kind,meter,reading,arm,expected,verdict,certificate,required_ids,sign,ids,certified,submitted_implies,coherent,two_distinct,unsupported,extra,omitted,duplicate,status
+marked-00,DC-G1,decisive,M11,L,unmarked,N,N,PN DA KF GF KM GE SY BU,DA KF,True,False,False,U,False,False,False,BU GE GF KM PN SY,,False,ok
+marked-00,DC-G1,decisive,M11,L,marked,N,N,DA KF,DA KF,True,True,True,N,True,True,False,,,False,ok
+marked-00,DC-G1,decisive,M11,L,filtered,N,N,DA KF,DA KF,True,True,True,N,True,True,False,,,False,ok
+marked-01,DC-G1,decisive,M11,H,unmarked,Y,U,KF SY,BU SY,False,False,False,U,True,True,False,KF,BU,False,ok
+marked-01,DC-G1,decisive,M11,H,marked,Y,Y,SY BU,BU SY,True,True,True,Y,True,True,False,,,False,ok
+marked-01,DC-G1,decisive,M11,H,filtered,Y,Y,SY BU,BU SY,True,True,True,Y,True,True,False,,,False,ok
+marked-02,DC-G1,ambiguous,M19,L,unmarked,U,U,SY DA,DA SY,True,True,True,U,True,True,False,,,False,ok
+marked-02,DC-G1,ambiguous,M19,L,marked,U,U,DA SY,DA SY,True,True,True,U,True,True,False,,,False,ok
+marked-02,DC-G1,ambiguous,M19,L,filtered,U,U,DA SY,DA SY,True,True,True,U,True,True,False,,,False,ok
+marked-03,DC-G1,ambiguous,M19,H,unmarked,U,Y,SY BU,BU KF,False,False,False,Y,True,True,True,SY,KF,False,ok
+marked-03,DC-G1,ambiguous,M19,H,marked,U,U,KF BU,BU KF,True,True,True,U,True,True,False,,,False,ok
+marked-03,DC-G1,ambiguous,M19,H,filtered,U,U,KF BU,BU KF,True,True,True,U,True,True,False,,,False,ok
+marked-04,DC-G2,decisive,M16,H,unmarked,N,N,TR,TR YS,True,False,False,N,True,False,False,,YS,False,ok
+marked-04,DC-G2,decisive,M16,H,marked,N,N,TR YS,TR YS,True,True,True,N,True,True,False,,,False,ok
+marked-04,DC-G2,decisive,M16,H,filtered,N,N,TR YS,TR YS,True,True,True,N,True,True,False,,,False,ok
+marked-05,DC-G2,ambiguous,M22,L,unmarked,U,N,TA,VD YS,False,False,False,N,True,False,True,TA,VD YS,False,ok
+marked-05,DC-G2,ambiguous,M22,L,marked,U,Y,VD,VD YS,False,False,False,Y,True,False,True,,YS,False,ok
+marked-05,DC-G2,ambiguous,M22,L,filtered,U,Y,YS VD,VD YS,False,True,False,U,False,True,True,,,False,ok
+marked-06,DC-G2,ambiguous,M22,H,unmarked,U,N,TR YS,AA TR,False,False,False,N,True,True,True,YS,AA,False,ok
+marked-06,DC-G2,ambiguous,M22,H,marked,U,U,AA TR,AA TR,True,True,True,U,True,True,False,,,False,ok
+marked-06,DC-G2,ambiguous,M22,H,filtered,U,U,AA TR,AA TR,True,True,True,U,True,True,False,,,False,ok
+marked-07,DC-G2,decisive,M16,L,unmarked,Y,N,TA,AA VD,False,False,False,N,True,False,True,TA,AA VD,False,ok
+marked-07,DC-G2,decisive,M16,L,marked,Y,Y,AA VD,AA VD,True,True,True,Y,True,True,False,,,False,ok
+marked-07,DC-G2,decisive,M16,L,filtered,Y,Y,AA VD,AA VD,True,True,True,Y,True,True,False,,,False,ok
+marked-08,DC-G3,ambiguous,M21,L,unmarked,U,U,BQ FA,BQ KD,True,False,False,U,True,True,False,FA,KD,False,ok
+marked-08,DC-G3,ambiguous,M21,L,marked,U,U,BQ KD,BQ KD,True,True,True,U,True,True,False,,,False,ok
+marked-08,DC-G3,ambiguous,M21,L,filtered,U,U,BQ KD,BQ KD,True,True,True,U,True,True,False,,,False,ok
+marked-09,DC-G3,ambiguous,M21,H,unmarked,U,U,FA WP,FA WP,True,True,True,U,True,True,False,,,False,ok
+marked-09,DC-G3,ambiguous,M21,H,marked,U,U,FA WP,FA WP,True,True,True,U,True,True,False,,,False,ok
+marked-09,DC-G3,ambiguous,M21,H,filtered,U,U,FA WP,FA WP,True,True,True,U,True,True,False,,,False,ok
+marked-10,DC-G3,decisive,M22,L,unmarked,N,U,BQ KD,FA KD,False,False,False,U,True,True,False,BQ,FA,False,ok
+marked-10,DC-G3,decisive,M22,L,marked,N,N,FA KD,FA KD,True,True,True,N,True,True,False,,,False,ok
+marked-10,DC-G3,decisive,M22,L,filtered,N,N,FA KD,FA KD,True,True,True,N,True,True,False,,,False,ok
+marked-11,DC-G3,decisive,M22,H,unmarked,Y,U,FA WP,BQ WP,False,False,False,U,True,True,False,FA,BQ,False,ok
+marked-11,DC-G3,decisive,M22,H,marked,Y,Y,BQ WP,BQ WP,True,True,True,Y,True,True,False,,,False,ok
+marked-11,DC-G3,decisive,M22,H,filtered,Y,U,BQ WP,BQ WP,False,True,False,Y,False,True,False,,,False,ok
+marked-12,DC-G4,ambiguous,M17,H,unmarked,U,U,DY VP,DY VP,True,True,True,U,True,True,False,,,False,ok
+marked-12,DC-G4,ambiguous,M17,H,marked,U,U,DY VP,DY VP,True,True,True,U,True,True,False,,,False,ok
+marked-12,DC-G4,ambiguous,M17,H,filtered,U,U,DY VP,DY VP,True,True,True,U,True,True,False,,,False,ok
+marked-13,DC-G4,decisive,M22,L,unmarked,Y,Y,NA DX,DX VP,True,False,False,U,False,True,False,NA,VP,False,ok
+marked-13,DC-G4,decisive,M22,L,marked,Y,U,NA DX,DX VP,False,False,False,U,True,True,False,NA,VP,False,ok
+marked-13,DC-G4,decisive,M22,L,filtered,Y,,,DX VP,False,False,False,,False,False,False,,DX VP,False,invalid
+marked-14,DC-G4,decisive,M22,H,unmarked,N,U,DY VP,DY NA,False,False,False,U,True,True,False,VP,NA,False,ok
+marked-14,DC-G4,decisive,M22,H,marked,N,U,DY VP,DY NA,False,False,False,U,True,True,False,VP,NA,False,ok
+marked-14,DC-G4,decisive,M22,H,filtered,N,N,DY NA,DY NA,True,True,True,N,True,True,False,,,False,ok
+marked-15,DC-G4,ambiguous,M17,L,unmarked,U,U,NA DX,DX NA,True,True,True,U,True,True,False,,,False,ok
+marked-15,DC-G4,ambiguous,M17,L,marked,U,N,NA DX,DX NA,False,True,False,U,False,True,True,,,False,ok
+marked-15,DC-G4,ambiguous,M17,L,filtered,U,U,DX NA,DX NA,True,True,True,U,True,True,False,,,False,ok
+marked-16,DC-G5,decisive,M13,L,unmarked,N,Y,CH NS ZS SU,JH LX,False,False,False,Y,True,False,True,CH NS SU ZS,JH LX,False,ok
+marked-16,DC-G5,decisive,M13,L,marked,N,N,NJ LX,JH LX,True,False,False,N,True,True,False,NJ,JH,False,ok
+marked-16,DC-G5,decisive,M13,L,filtered,N,N,JH LX,JH LX,True,True,True,N,True,True,False,,,False,ok
+marked-17,DC-G5,decisive,M13,H,unmarked,Y,Y,NS SU,NS SU,True,True,True,Y,True,True,False,,,False,ok
+marked-17,DC-G5,decisive,M13,H,marked,Y,Y,NS SU,NS SU,True,True,True,Y,True,True,False,,,False,ok
+marked-17,DC-G5,decisive,M13,H,filtered,Y,Y,NS SU,NS SU,True,True,True,Y,True,True,False,,,False,ok
+marked-18,DC-G5,ambiguous,M22,L,unmarked,U,N,JH LX,JH NS,False,False,False,N,True,True,True,LX,NS,False,ok
+marked-18,DC-G5,ambiguous,M22,L,marked,U,U,NS JH,JH NS,True,True,True,U,True,True,False,,,False,ok
+marked-18,DC-G5,ambiguous,M22,L,filtered,U,U,NS JH,JH NS,True,True,True,U,True,True,False,,,False,ok
+marked-19,DC-G5,ambiguous,M22,H,unmarked,U,Y,CH NS SU,LX SU,False,False,False,Y,True,False,True,CH NS,LX,False,ok
+marked-19,DC-G5,ambiguous,M22,H,marked,U,U,LX SU,LX SU,True,True,True,U,True,True,False,,,False,ok
+marked-19,DC-G5,ambiguous,M22,H,filtered,U,U,LX SU,LX SU,True,True,True,U,True,True,False,,,False,ok
+marked-20,DC-G6,decisive,M22,H,unmarked,N,Y,TV,VU XB,False,False,False,Y,True,False,True,TV,VU XB,False,ok
+marked-20,DC-G6,decisive,M22,H,marked,N,U,XB TV,VU XB,False,False,False,U,True,True,False,TV,VU,False,ok
+marked-20,DC-G6,decisive,M22,H,filtered,N,N,XB VU,VU XB,True,True,True,N,True,True,False,,,False,ok
+marked-21,DC-G6,ambiguous,M17,L,unmarked,U,Y,VU TV AI,AI VU,False,False,False,U,False,False,True,TV,,False,ok
+marked-21,DC-G6,ambiguous,M17,L,marked,U,U,TV PJ,AI VU,True,False,False,U,True,True,False,PJ TV,AI VU,False,ok
+marked-21,DC-G6,ambiguous,M17,L,filtered,U,U,VU AI,AI VU,True,True,True,U,True,True,False,,,False,ok
+marked-22,DC-G6,ambiguous,M17,H,unmarked,U,U,TV XB,TV XB,True,True,True,U,True,True,False,,,False,ok
+marked-22,DC-G6,ambiguous,M17,H,marked,U,N,EV MT PJ XB VU TV AI SK,TV XB,False,False,False,U,False,False,True,AI EV MT PJ SK VU,,False,ok
+marked-22,DC-G6,ambiguous,M17,H,filtered,U,U,XB TV,TV XB,True,True,True,U,True,True,False,,,False,ok
+marked-23,DC-G6,decisive,M22,L,unmarked,Y,U,TV PJ,AI TV,False,False,False,U,True,True,False,PJ,AI,False,ok
+marked-23,DC-G6,decisive,M22,L,marked,Y,Y,TV AI,AI TV,True,True,True,Y,True,True,False,,,False,ok
+marked-23,DC-G6,decisive,M22,L,filtered,Y,U,TV AI,AI TV,False,True,False,Y,False,True,False,,,False,ok

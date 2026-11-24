@@ -1,0 +1,22 @@
+{
+  "request_sha256": "b9cbac1a0c41184276f0a332cef01ef67b967aba2bcd89c02562d6e14d12c118",
+  "started": "2026-11-24T18:39:31.438679+00:00",
+  "answer": {
+    "verdict": "U",
+    "certificate": [
+      "XB",
+      "TV"
+    ]
+  },
+  "status": "ok",
+  "content": "{\n  \"verdict\": \"U\",\n  \"certificate\": [\"XB\", \"TV\"]\n}",
+  "usage": {
+    "prompt_eval_count": 720,
+    "eval_count": 199,
+    "total_duration": 20306504708,
+    "load_duration": 2278750,
+    "eval_duration": 16138784000,
+    "done_reason": "stop"
+  },
+  "ended": "2026-11-24T18:39:51.751589+00:00"
+}

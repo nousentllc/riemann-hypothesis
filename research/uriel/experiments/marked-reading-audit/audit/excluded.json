@@ -1,0 +1,2450 @@
+{
+  "all_cases": {
+    "marked-00_filtered": {
+      "category": "certified",
+      "certified": true,
+      "duplicate_count": 0,
+      "exact_ids": true,
+      "excluded_occurrences": [],
+      "extra": [],
+      "omitted": [],
+      "own_label_coherence": true,
+      "own_label_verdict": "N",
+      "status": "ok",
+      "submitted": [
+        "DA",
+        "KF"
+      ],
+      "verdict": "N",
+      "verdict_matches": true
+    },
+    "marked-00_marked": {
+      "category": "certified",
+      "certified": true,
+      "duplicate_count": 0,
+      "exact_ids": true,
+      "excluded_occurrences": [],
+      "extra": [],
+      "omitted": [],
+      "own_label_coherence": true,
+      "own_label_verdict": "N",
+      "status": "ok",
+      "submitted": [
+        "DA",
+        "KF"
+      ],
+      "verdict": "N",
+      "verdict_matches": true
+    },
+    "marked-00_unmarked": {
+      "category": "witness_defect_only",
+      "certified": false,
+      "duplicate_count": 0,
+      "exact_ids": false,
+      "excluded_occurrences": [
+        {
+          "category": "second_only",
+          "id": "PN"
+        },
+        {
+          "category": "neither",
+          "id": "GF"
+        },
+        {
+          "category": "neither",
+          "id": "KM"
+        },
+        {
+          "category": "second_only",
+          "id": "GE"
+        },
+        {
+          "category": "initial_only",
+          "id": "SY"
+        },
+        {
+          "category": "initial_only",
+          "id": "BU"
+        }
+      ],
+      "extra": [
+        "BU",
+        "GE",
+        "GF",
+        "KM",
+        "PN",
+        "SY"
+      ],
+      "omitted": [],
+      "own_label_coherence": false,
+      "own_label_verdict": "U",
+      "status": "ok",
+      "submitted": [
+        "PN",
+        "DA",
+        "KF",
+        "GF",
+        "KM",
+        "GE",
+        "SY",
+        "BU"
+      ],
+      "verdict": "N",
+      "verdict_matches": true
+    },
+    "marked-01_filtered": {
+      "category": "certified",
+      "certified": true,
+      "duplicate_count": 0,
+      "exact_ids": true,
+      "excluded_occurrences": [],
+      "extra": [],
+      "omitted": [],
+      "own_label_coherence": true,
+      "own_label_verdict": "Y",
+      "status": "ok",
+      "submitted": [
+        "SY",
+        "BU"
+      ],
+      "verdict": "Y",
+      "verdict_matches": true
+    },
+    "marked-01_marked": {
+      "category": "certified",
+      "certified": true,
+      "duplicate_count": 0,
+      "exact_ids": true,
+      "excluded_occurrences": [],
+      "extra": [],
+      "omitted": [],
+      "own_label_coherence": true,
+      "own_label_verdict": "Y",
+      "status": "ok",
+      "submitted": [
+        "SY",
+        "BU"
+      ],
+      "verdict": "Y",
+      "verdict_matches": true
+    },
+    "marked-01_unmarked": {
+      "category": "both_defects",
+      "certified": false,
+      "duplicate_count": 0,
+      "exact_ids": false,
+      "excluded_occurrences": [
+        {
+          "category": "initial_only",
+          "id": "KF"
+        }
+      ],
+      "extra": [
+        "KF"
+      ],
+      "omitted": [
+        "BU"
+      ],
+      "own_label_coherence": true,
+      "own_label_verdict": "U",
+      "status": "ok",
+      "submitted": [
+        "KF",
+        "SY"
+      ],
+      "verdict": "U",
+      "verdict_matches": false
+    },
+    "marked-02_filtered": {
+      "category": "certified",
+      "certified": true,
+      "duplicate_count": 0,
+      "exact_ids": true,
+      "excluded_occurrences": [],
+      "extra": [],
+      "omitted": [],
+      "own_label_coherence": true,
+      "own_label_verdict": "U",
+      "status": "ok",
+      "submitted": [
+        "DA",
+        "SY"
+      ],
+      "verdict": "U",
+      "verdict_matches": true
+    },
+    "marked-02_marked": {
+      "category": "certified",
+      "certified": true,
+      "duplicate_count": 0,
+      "exact_ids": true,
+      "excluded_occurrences": [],
+      "extra": [],
+      "omitted": [],
+      "own_label_coherence": true,
+      "own_label_verdict": "U",
+      "status": "ok",
+      "submitted": [
+        "DA",
+        "SY"
+      ],
+      "verdict": "U",
+      "verdict_matches": true
+    },
+    "marked-02_unmarked": {
+      "category": "certified",
+      "certified": true,
+      "duplicate_count": 0,
+      "exact_ids": true,
+      "excluded_occurrences": [],
+      "extra": [],
+      "omitted": [],
+      "own_label_coherence": true,
+      "own_label_verdict": "U",
+      "status": "ok",
+      "submitted": [
+        "SY",
+        "DA"
+      ],
+      "verdict": "U",
+      "verdict_matches": true
+    },
+    "marked-03_filtered": {
+      "category": "certified",
+      "certified": true,
+      "duplicate_count": 0,
+      "exact_ids": true,
+      "excluded_occurrences": [],
+      "extra": [],
+      "omitted": [],
+      "own_label_coherence": true,
+      "own_label_verdict": "U",
+      "status": "ok",
+      "submitted": [
+        "KF",
+        "BU"
+      ],
+      "verdict": "U",
+      "verdict_matches": true
+    },
+    "marked-03_marked": {
+      "category": "certified",
+      "certified": true,
+      "duplicate_count": 0,
+      "exact_ids": true,
+      "excluded_occurrences": [],
+      "extra": [],
+      "omitted": [],
+      "own_label_coherence": true,
+      "own_label_verdict": "U",
+      "status": "ok",
+      "submitted": [
+        "KF",
+        "BU"
+      ],
+      "verdict": "U",
+      "verdict_matches": true
+    },
+    "marked-03_unmarked": {
+      "category": "both_defects",
+      "certified": false,
+      "duplicate_count": 0,
+      "exact_ids": false,
+      "excluded_occurrences": [
+        {
+          "category": "initial_only",
+          "id": "SY"
+        }
+      ],
+      "extra": [
+        "SY"
+      ],
+      "omitted": [
+        "KF"
+      ],
+      "own_label_coherence": true,
+      "own_label_verdict": "Y",
+      "status": "ok",
+      "submitted": [
+        "SY",
+        "BU"
+      ],
+      "verdict": "Y",
+      "verdict_matches": false
+    },
+    "marked-04_filtered": {
+      "category": "certified",
+      "certified": true,
+      "duplicate_count": 0,
+      "exact_ids": true,
+      "excluded_occurrences": [],
+      "extra": [],
+      "omitted": [],
+      "own_label_coherence": true,
+      "own_label_verdict": "N",
+      "status": "ok",
+      "submitted": [
+        "TR",
+        "YS"
+      ],
+      "verdict": "N",
+      "verdict_matches": true
+    },
+    "marked-04_marked": {
+      "category": "certified",
+      "certified": true,
+      "duplicate_count": 0,
+      "exact_ids": true,
+      "excluded_occurrences": [],
+      "extra": [],
+      "omitted": [],
+      "own_label_coherence": true,
+      "own_label_verdict": "N",
+      "status": "ok",
+      "submitted": [
+        "TR",
+        "YS"
+      ],
+      "verdict": "N",
+      "verdict_matches": true
+    },
+    "marked-04_unmarked": {
+      "category": "witness_defect_only",
+      "certified": false,
+      "duplicate_count": 0,
+      "exact_ids": false,
+      "excluded_occurrences": [],
+      "extra": [],
+      "omitted": [
+        "YS"
+      ],
+      "own_label_coherence": true,
+      "own_label_verdict": "N",
+      "status": "ok",
+      "submitted": [
+        "TR"
+      ],
+      "verdict": "N",
+      "verdict_matches": true
+    },
+    "marked-05_filtered": {
+      "category": "verdict_defect_only",
+      "certified": false,
+      "duplicate_count": 0,
+      "exact_ids": true,
+      "excluded_occurrences": [],
+      "extra": [],
+      "omitted": [],
+      "own_label_coherence": false,
+      "own_label_verdict": "U",
+      "status": "ok",
+      "submitted": [
+        "YS",
+        "VD"
+      ],
+      "verdict": "Y",
+      "verdict_matches": false
+    },
+    "marked-05_marked": {
+      "category": "both_defects",
+      "certified": false,
+      "duplicate_count": 0,
+      "exact_ids": false,
+      "excluded_occurrences": [],
+      "extra": [],
+      "omitted": [
+        "YS"
+      ],
+      "own_label_coherence": true,
+      "own_label_verdict": "Y",
+      "status": "ok",
+      "submitted": [
+        "VD"
+      ],
+      "verdict": "Y",
+      "verdict_matches": false
+    },
+    "marked-05_unmarked": {
+      "category": "both_defects",
+      "certified": false,
+      "duplicate_count": 0,
+      "exact_ids": false,
+      "excluded_occurrences": [
+        {
+          "category": "second_only",
+          "id": "TA"
+        }
+      ],
+      "extra": [
+        "TA"
+      ],
+      "omitted": [
+        "VD",
+        "YS"
+      ],
+      "own_label_coherence": true,
+      "own_label_verdict": "N",
+      "status": "ok",
+      "submitted": [
+        "TA"
+      ],
+      "verdict": "N",
+      "verdict_matches": false
+    },
+    "marked-06_filtered": {
+      "category": "certified",
+      "certified": true,
+      "duplicate_count": 0,
+      "exact_ids": true,
+      "excluded_occurrences": [],
+      "extra": [],
+      "omitted": [],
+      "own_label_coherence": true,
+      "own_label_verdict": "U",
+      "status": "ok",
+      "submitted": [
+        "AA",
+        "TR"
+      ],
+      "verdict": "U",
+      "verdict_matches": true
+    },
+    "marked-06_marked": {
+      "category": "certified",
+      "certified": true,
+      "duplicate_count": 0,
+      "exact_ids": true,
+      "excluded_occurrences": [],
+      "extra": [],
+      "omitted": [],
+      "own_label_coherence": true,
+      "own_label_verdict": "U",
+      "status": "ok",
+      "submitted": [
+        "AA",
+        "TR"
+      ],
+      "verdict": "U",
+      "verdict_matches": true
+    },
+    "marked-06_unmarked": {
+      "category": "both_defects",
+      "certified": false,
+      "duplicate_count": 0,
+      "exact_ids": false,
+      "excluded_occurrences": [
+        {
+          "category": "initial_only",
+          "id": "YS"
+        }
+      ],
+      "extra": [
+        "YS"
+      ],
+      "omitted": [
+        "AA"
+      ],
+      "own_label_coherence": true,
+      "own_label_verdict": "N",
+      "status": "ok",
+      "submitted": [
+        "TR",
+        "YS"
+      ],
+      "verdict": "N",
+      "verdict_matches": false
+    },
+    "marked-07_filtered": {
+      "category": "certified",
+      "certified": true,
+      "duplicate_count": 0,
+      "exact_ids": true,
+      "excluded_occurrences": [],
+      "extra": [],
+      "omitted": [],
+      "own_label_coherence": true,
+      "own_label_verdict": "Y",
+      "status": "ok",
+      "submitted": [
+        "AA",
+        "VD"
+      ],
+      "verdict": "Y",
+      "verdict_matches": true
+    },
+    "marked-07_marked": {
+      "category": "certified",
+      "certified": true,
+      "duplicate_count": 0,
+      "exact_ids": true,
+      "excluded_occurrences": [],
+      "extra": [],
+      "omitted": [],
+      "own_label_coherence": true,
+      "own_label_verdict": "Y",
+      "status": "ok",
+      "submitted": [
+        "AA",
+        "VD"
+      ],
+      "verdict": "Y",
+      "verdict_matches": true
+    },
+    "marked-07_unmarked": {
+      "category": "both_defects",
+      "certified": false,
+      "duplicate_count": 0,
+      "exact_ids": false,
+      "excluded_occurrences": [
+        {
+          "category": "second_only",
+          "id": "TA"
+        }
+      ],
+      "extra": [
+        "TA"
+      ],
+      "omitted": [
+        "AA",
+        "VD"
+      ],
+      "own_label_coherence": true,
+      "own_label_verdict": "N",
+      "status": "ok",
+      "submitted": [
+        "TA"
+      ],
+      "verdict": "N",
+      "verdict_matches": false
+    },
+    "marked-08_filtered": {
+      "category": "certified",
+      "certified": true,
+      "duplicate_count": 0,
+      "exact_ids": true,
+      "excluded_occurrences": [],
+      "extra": [],
+      "omitted": [],
+      "own_label_coherence": true,
+      "own_label_verdict": "U",
+      "status": "ok",
+      "submitted": [
+        "BQ",
+        "KD"
+      ],
+      "verdict": "U",
+      "verdict_matches": true
+    },
+    "marked-08_marked": {
+      "category": "certified",
+      "certified": true,
+      "duplicate_count": 0,
+      "exact_ids": true,
+      "excluded_occurrences": [],
+      "extra": [],
+      "omitted": [],
+      "own_label_coherence": true,
+      "own_label_verdict": "U",
+      "status": "ok",
+      "submitted": [
+        "BQ",
+        "KD"
+      ],
+      "verdict": "U",
+      "verdict_matches": true
+    },
+    "marked-08_unmarked": {
+      "category": "witness_defect_only",
+      "certified": false,
+      "duplicate_count": 0,
+      "exact_ids": false,
+      "excluded_occurrences": [
+        {
+          "category": "initial_only",
+          "id": "FA"
+        }
+      ],
+      "extra": [
+        "FA"
+      ],
+      "omitted": [
+        "KD"
+      ],
+      "own_label_coherence": true,
+      "own_label_verdict": "U",
+      "status": "ok",
+      "submitted": [
+        "BQ",
+        "FA"
+      ],
+      "verdict": "U",
+      "verdict_matches": true
+    },
+    "marked-09_filtered": {
+      "category": "certified",
+      "certified": true,
+      "duplicate_count": 0,
+      "exact_ids": true,
+      "excluded_occurrences": [],
+      "extra": [],
+      "omitted": [],
+      "own_label_coherence": true,
+      "own_label_verdict": "U",
+      "status": "ok",
+      "submitted": [
+        "FA",
+        "WP"
+      ],
+      "verdict": "U",
+      "verdict_matches": true
+    },
+    "marked-09_marked": {
+      "category": "certified",
+      "certified": true,
+      "duplicate_count": 0,
+      "exact_ids": true,
+      "excluded_occurrences": [],
+      "extra": [],
+      "omitted": [],
+      "own_label_coherence": true,
+      "own_label_verdict": "U",
+      "status": "ok",
+      "submitted": [
+        "FA",
+        "WP"
+      ],
+      "verdict": "U",
+      "verdict_matches": true
+    },
+    "marked-09_unmarked": {
+      "category": "certified",
+      "certified": true,
+      "duplicate_count": 0,
+      "exact_ids": true,
+      "excluded_occurrences": [],
+      "extra": [],
+      "omitted": [],
+      "own_label_coherence": true,
+      "own_label_verdict": "U",
+      "status": "ok",
+      "submitted": [
+        "FA",
+        "WP"
+      ],
+      "verdict": "U",
+      "verdict_matches": true
+    },
+    "marked-10_filtered": {
+      "category": "certified",
+      "certified": true,
+      "duplicate_count": 0,
+      "exact_ids": true,
+      "excluded_occurrences": [],
+      "extra": [],
+      "omitted": [],
+      "own_label_coherence": true,
+      "own_label_verdict": "N",
+      "status": "ok",
+      "submitted": [
+        "FA",
+        "KD"
+      ],
+      "verdict": "N",
+      "verdict_matches": true
+    },
+    "marked-10_marked": {
+      "category": "certified",
+      "certified": true,
+      "duplicate_count": 0,
+      "exact_ids": true,
+      "excluded_occurrences": [],
+      "extra": [],
+      "omitted": [],
+      "own_label_coherence": true,
+      "own_label_verdict": "N",
+      "status": "ok",
+      "submitted": [
+        "FA",
+        "KD"
+      ],
+      "verdict": "N",
+      "verdict_matches": true
+    },
+    "marked-10_unmarked": {
+      "category": "both_defects",
+      "certified": false,
+      "duplicate_count": 0,
+      "exact_ids": false,
+      "excluded_occurrences": [
+        {
+          "category": "initial_only",
+          "id": "BQ"
+        }
+      ],
+      "extra": [
+        "BQ"
+      ],
+      "omitted": [
+        "FA"
+      ],
+      "own_label_coherence": true,
+      "own_label_verdict": "U",
+      "status": "ok",
+      "submitted": [
+        "BQ",
+        "KD"
+      ],
+      "verdict": "U",
+      "verdict_matches": false
+    },
+    "marked-11_filtered": {
+      "category": "verdict_defect_only",
+      "certified": false,
+      "duplicate_count": 0,
+      "exact_ids": true,
+      "excluded_occurrences": [],
+      "extra": [],
+      "omitted": [],
+      "own_label_coherence": false,
+      "own_label_verdict": "Y",
+      "status": "ok",
+      "submitted": [
+        "BQ",
+        "WP"
+      ],
+      "verdict": "U",
+      "verdict_matches": false
+    },
+    "marked-11_marked": {
+      "category": "certified",
+      "certified": true,
+      "duplicate_count": 0,
+      "exact_ids": true,
+      "excluded_occurrences": [],
+      "extra": [],
+      "omitted": [],
+      "own_label_coherence": true,
+      "own_label_verdict": "Y",
+      "status": "ok",
+      "submitted": [
+        "BQ",
+        "WP"
+      ],
+      "verdict": "Y",
+      "verdict_matches": true
+    },
+    "marked-11_unmarked": {
+      "category": "both_defects",
+      "certified": false,
+      "duplicate_count": 0,
+      "exact_ids": false,
+      "excluded_occurrences": [
+        {
+          "category": "initial_only",
+          "id": "FA"
+        }
+      ],
+      "extra": [
+        "FA"
+      ],
+      "omitted": [
+        "BQ"
+      ],
+      "own_label_coherence": true,
+      "own_label_verdict": "U",
+      "status": "ok",
+      "submitted": [
+        "FA",
+        "WP"
+      ],
+      "verdict": "U",
+      "verdict_matches": false
+    },
+    "marked-12_filtered": {
+      "category": "certified",
+      "certified": true,
+      "duplicate_count": 0,
+      "exact_ids": true,
+      "excluded_occurrences": [],
+      "extra": [],
+      "omitted": [],
+      "own_label_coherence": true,
+      "own_label_verdict": "U",
+      "status": "ok",
+      "submitted": [
+        "DY",
+        "VP"
+      ],
+      "verdict": "U",
+      "verdict_matches": true
+    },
+    "marked-12_marked": {
+      "category": "certified",
+      "certified": true,
+      "duplicate_count": 0,
+      "exact_ids": true,
+      "excluded_occurrences": [],
+      "extra": [],
+      "omitted": [],
+      "own_label_coherence": true,
+      "own_label_verdict": "U",
+      "status": "ok",
+      "submitted": [
+        "DY",
+        "VP"
+      ],
+      "verdict": "U",
+      "verdict_matches": true
+    },
+    "marked-12_unmarked": {
+      "category": "certified",
+      "certified": true,
+      "duplicate_count": 0,
+      "exact_ids": true,
+      "excluded_occurrences": [],
+      "extra": [],
+      "omitted": [],
+      "own_label_coherence": true,
+      "own_label_verdict": "U",
+      "status": "ok",
+      "submitted": [
+        "DY",
+        "VP"
+      ],
+      "verdict": "U",
+      "verdict_matches": true
+    },
+    "marked-13_filtered": {
+      "category": "no_completed_answer",
+      "certified": false,
+      "duplicate_count": null,
+      "exact_ids": false,
+      "excluded_occurrences": [],
+      "extra": null,
+      "omitted": null,
+      "own_label_coherence": null,
+      "own_label_verdict": null,
+      "status": "invalid",
+      "submitted": null,
+      "verdict": null,
+      "verdict_matches": false
+    },
+    "marked-13_marked": {
+      "category": "both_defects",
+      "certified": false,
+      "duplicate_count": 0,
+      "exact_ids": false,
+      "excluded_occurrences": [
+        {
+          "category": "initial_only",
+          "id": "NA"
+        }
+      ],
+      "extra": [
+        "NA"
+      ],
+      "omitted": [
+        "VP"
+      ],
+      "own_label_coherence": true,
+      "own_label_verdict": "U",
+      "status": "ok",
+      "submitted": [
+        "NA",
+        "DX"
+      ],
+      "verdict": "U",
+      "verdict_matches": false
+    },
+    "marked-13_unmarked": {
+      "category": "witness_defect_only",
+      "certified": false,
+      "duplicate_count": 0,
+      "exact_ids": false,
+      "excluded_occurrences": [
+        {
+          "category": "initial_only",
+          "id": "NA"
+        }
+      ],
+      "extra": [
+        "NA"
+      ],
+      "omitted": [
+        "VP"
+      ],
+      "own_label_coherence": false,
+      "own_label_verdict": "U",
+      "status": "ok",
+      "submitted": [
+        "NA",
+        "DX"
+      ],
+      "verdict": "Y",
+      "verdict_matches": true
+    },
+    "marked-14_filtered": {
+      "category": "certified",
+      "certified": true,
+      "duplicate_count": 0,
+      "exact_ids": true,
+      "excluded_occurrences": [],
+      "extra": [],
+      "omitted": [],
+      "own_label_coherence": true,
+      "own_label_verdict": "N",
+      "status": "ok",
+      "submitted": [
+        "DY",
+        "NA"
+      ],
+      "verdict": "N",
+      "verdict_matches": true
+    },
+    "marked-14_marked": {
+      "category": "both_defects",
+      "certified": false,
+      "duplicate_count": 0,
+      "exact_ids": false,
+      "excluded_occurrences": [
+        {
+          "category": "initial_only",
+          "id": "VP"
+        }
+      ],
+      "extra": [
+        "VP"
+      ],
+      "omitted": [
+        "NA"
+      ],
+      "own_label_coherence": true,
+      "own_label_verdict": "U",
+      "status": "ok",
+      "submitted": [
+        "DY",
+        "VP"
+      ],
+      "verdict": "U",
+      "verdict_matches": false
+    },
+    "marked-14_unmarked": {
+      "category": "both_defects",
+      "certified": false,
+      "duplicate_count": 0,
+      "exact_ids": false,
+      "excluded_occurrences": [
+        {
+          "category": "initial_only",
+          "id": "VP"
+        }
+      ],
+      "extra": [
+        "VP"
+      ],
+      "omitted": [
+        "NA"
+      ],
+      "own_label_coherence": true,
+      "own_label_verdict": "U",
+      "status": "ok",
+      "submitted": [
+        "DY",
+        "VP"
+      ],
+      "verdict": "U",
+      "verdict_matches": false
+    },
+    "marked-15_filtered": {
+      "category": "certified",
+      "certified": true,
+      "duplicate_count": 0,
+      "exact_ids": true,
+      "excluded_occurrences": [],
+      "extra": [],
+      "omitted": [],
+      "own_label_coherence": true,
+      "own_label_verdict": "U",
+      "status": "ok",
+      "submitted": [
+        "DX",
+        "NA"
+      ],
+      "verdict": "U",
+      "verdict_matches": true
+    },
+    "marked-15_marked": {
+      "category": "verdict_defect_only",
+      "certified": false,
+      "duplicate_count": 0,
+      "exact_ids": true,
+      "excluded_occurrences": [],
+      "extra": [],
+      "omitted": [],
+      "own_label_coherence": false,
+      "own_label_verdict": "U",
+      "status": "ok",
+      "submitted": [
+        "NA",
+        "DX"
+      ],
+      "verdict": "N",
+      "verdict_matches": false
+    },
+    "marked-15_unmarked": {
+      "category": "certified",
+      "certified": true,
+      "duplicate_count": 0,
+      "exact_ids": true,
+      "excluded_occurrences": [],
+      "extra": [],
+      "omitted": [],
+      "own_label_coherence": true,
+      "own_label_verdict": "U",
+      "status": "ok",
+      "submitted": [
+        "NA",
+        "DX"
+      ],
+      "verdict": "U",
+      "verdict_matches": true
+    },
+    "marked-16_filtered": {
+      "category": "certified",
+      "certified": true,
+      "duplicate_count": 0,
+      "exact_ids": true,
+      "excluded_occurrences": [],
+      "extra": [],
+      "omitted": [],
+      "own_label_coherence": true,
+      "own_label_verdict": "N",
+      "status": "ok",
+      "submitted": [
+        "JH",
+        "LX"
+      ],
+      "verdict": "N",
+      "verdict_matches": true
+    },
+    "marked-16_marked": {
+      "category": "witness_defect_only",
+      "certified": false,
+      "duplicate_count": 0,
+      "exact_ids": false,
+      "excluded_occurrences": [
+        {
+          "category": "neither",
+          "id": "NJ"
+        }
+      ],
+      "extra": [
+        "NJ"
+      ],
+      "omitted": [
+        "JH"
+      ],
+      "own_label_coherence": true,
+      "own_label_verdict": "N",
+      "status": "ok",
+      "submitted": [
+        "NJ",
+        "LX"
+      ],
+      "verdict": "N",
+      "verdict_matches": true
+    },
+    "marked-16_unmarked": {
+      "category": "both_defects",
+      "certified": false,
+      "duplicate_count": 0,
+      "exact_ids": false,
+      "excluded_occurrences": [
+        {
+          "category": "neither",
+          "id": "CH"
+        },
+        {
+          "category": "initial_only",
+          "id": "NS"
+        },
+        {
+          "category": "second_only",
+          "id": "ZS"
+        },
+        {
+          "category": "initial_only",
+          "id": "SU"
+        }
+      ],
+      "extra": [
+        "CH",
+        "NS",
+        "SU",
+        "ZS"
+      ],
+      "omitted": [
+        "JH",
+        "LX"
+      ],
+      "own_label_coherence": true,
+      "own_label_verdict": "Y",
+      "status": "ok",
+      "submitted": [
+        "CH",
+        "NS",
+        "ZS",
+        "SU"
+      ],
+      "verdict": "Y",
+      "verdict_matches": false
+    },
+    "marked-17_filtered": {
+      "category": "certified",
+      "certified": true,
+      "duplicate_count": 0,
+      "exact_ids": true,
+      "excluded_occurrences": [],
+      "extra": [],
+      "omitted": [],
+      "own_label_coherence": true,
+      "own_label_verdict": "Y",
+      "status": "ok",
+      "submitted": [
+        "NS",
+        "SU"
+      ],
+      "verdict": "Y",
+      "verdict_matches": true
+    },
+    "marked-17_marked": {
+      "category": "certified",
+      "certified": true,
+      "duplicate_count": 0,
+      "exact_ids": true,
+      "excluded_occurrences": [],
+      "extra": [],
+      "omitted": [],
+      "own_label_coherence": true,
+      "own_label_verdict": "Y",
+      "status": "ok",
+      "submitted": [
+        "NS",
+        "SU"
+      ],
+      "verdict": "Y",
+      "verdict_matches": true
+    },
+    "marked-17_unmarked": {
+      "category": "certified",
+      "certified": true,
+      "duplicate_count": 0,
+      "exact_ids": true,
+      "excluded_occurrences": [],
+      "extra": [],
+      "omitted": [],
+      "own_label_coherence": true,
+      "own_label_verdict": "Y",
+      "status": "ok",
+      "submitted": [
+        "NS",
+        "SU"
+      ],
+      "verdict": "Y",
+      "verdict_matches": true
+    },
+    "marked-18_filtered": {
+      "category": "certified",
+      "certified": true,
+      "duplicate_count": 0,
+      "exact_ids": true,
+      "excluded_occurrences": [],
+      "extra": [],
+      "omitted": [],
+      "own_label_coherence": true,
+      "own_label_verdict": "U",
+      "status": "ok",
+      "submitted": [
+        "NS",
+        "JH"
+      ],
+      "verdict": "U",
+      "verdict_matches": true
+    },
+    "marked-18_marked": {
+      "category": "certified",
+      "certified": true,
+      "duplicate_count": 0,
+      "exact_ids": true,
+      "excluded_occurrences": [],
+      "extra": [],
+      "omitted": [],
+      "own_label_coherence": true,
+      "own_label_verdict": "U",
+      "status": "ok",
+      "submitted": [
+        "NS",
+        "JH"
+      ],
+      "verdict": "U",
+      "verdict_matches": true
+    },
+    "marked-18_unmarked": {
+      "category": "both_defects",
+      "certified": false,
+      "duplicate_count": 0,
+      "exact_ids": false,
+      "excluded_occurrences": [
+        {
+          "category": "initial_only",
+          "id": "LX"
+        }
+      ],
+      "extra": [
+        "LX"
+      ],
+      "omitted": [
+        "NS"
+      ],
+      "own_label_coherence": true,
+      "own_label_verdict": "N",
+      "status": "ok",
+      "submitted": [
+        "JH",
+        "LX"
+      ],
+      "verdict": "N",
+      "verdict_matches": false
+    },
+    "marked-19_filtered": {
+      "category": "certified",
+      "certified": true,
+      "duplicate_count": 0,
+      "exact_ids": true,
+      "excluded_occurrences": [],
+      "extra": [],
+      "omitted": [],
+      "own_label_coherence": true,
+      "own_label_verdict": "U",
+      "status": "ok",
+      "submitted": [
+        "LX",
+        "SU"
+      ],
+      "verdict": "U",
+      "verdict_matches": true
+    },
+    "marked-19_marked": {
+      "category": "certified",
+      "certified": true,
+      "duplicate_count": 0,
+      "exact_ids": true,
+      "excluded_occurrences": [],
+      "extra": [],
+      "omitted": [],
+      "own_label_coherence": true,
+      "own_label_verdict": "U",
+      "status": "ok",
+      "submitted": [
+        "LX",
+        "SU"
+      ],
+      "verdict": "U",
+      "verdict_matches": true
+    },
+    "marked-19_unmarked": {
+      "category": "both_defects",
+      "certified": false,
+      "duplicate_count": 0,
+      "exact_ids": false,
+      "excluded_occurrences": [
+        {
+          "category": "second_only",
+          "id": "CH"
+        },
+        {
+          "category": "initial_only",
+          "id": "NS"
+        }
+      ],
+      "extra": [
+        "CH",
+        "NS"
+      ],
+      "omitted": [
+        "LX"
+      ],
+      "own_label_coherence": true,
+      "own_label_verdict": "Y",
+      "status": "ok",
+      "submitted": [
+        "CH",
+        "NS",
+        "SU"
+      ],
+      "verdict": "Y",
+      "verdict_matches": false
+    },
+    "marked-20_filtered": {
+      "category": "certified",
+      "certified": true,
+      "duplicate_count": 0,
+      "exact_ids": true,
+      "excluded_occurrences": [],
+      "extra": [],
+      "omitted": [],
+      "own_label_coherence": true,
+      "own_label_verdict": "N",
+      "status": "ok",
+      "submitted": [
+        "XB",
+        "VU"
+      ],
+      "verdict": "N",
+      "verdict_matches": true
+    },
+    "marked-20_marked": {
+      "category": "both_defects",
+      "certified": false,
+      "duplicate_count": 0,
+      "exact_ids": false,
+      "excluded_occurrences": [
+        {
+          "category": "initial_only",
+          "id": "TV"
+        }
+      ],
+      "extra": [
+        "TV"
+      ],
+      "omitted": [
+        "VU"
+      ],
+      "own_label_coherence": true,
+      "own_label_verdict": "U",
+      "status": "ok",
+      "submitted": [
+        "XB",
+        "TV"
+      ],
+      "verdict": "U",
+      "verdict_matches": false
+    },
+    "marked-20_unmarked": {
+      "category": "both_defects",
+      "certified": false,
+      "duplicate_count": 0,
+      "exact_ids": false,
+      "excluded_occurrences": [
+        {
+          "category": "initial_only",
+          "id": "TV"
+        }
+      ],
+      "extra": [
+        "TV"
+      ],
+      "omitted": [
+        "VU",
+        "XB"
+      ],
+      "own_label_coherence": true,
+      "own_label_verdict": "Y",
+      "status": "ok",
+      "submitted": [
+        "TV"
+      ],
+      "verdict": "Y",
+      "verdict_matches": false
+    },
+    "marked-21_filtered": {
+      "category": "certified",
+      "certified": true,
+      "duplicate_count": 0,
+      "exact_ids": true,
+      "excluded_occurrences": [],
+      "extra": [],
+      "omitted": [],
+      "own_label_coherence": true,
+      "own_label_verdict": "U",
+      "status": "ok",
+      "submitted": [
+        "VU",
+        "AI"
+      ],
+      "verdict": "U",
+      "verdict_matches": true
+    },
+    "marked-21_marked": {
+      "category": "witness_defect_only",
+      "certified": false,
+      "duplicate_count": 0,
+      "exact_ids": false,
+      "excluded_occurrences": [
+        {
+          "category": "initial_only",
+          "id": "TV"
+        },
+        {
+          "category": "second_only",
+          "id": "PJ"
+        }
+      ],
+      "extra": [
+        "PJ",
+        "TV"
+      ],
+      "omitted": [
+        "AI",
+        "VU"
+      ],
+      "own_label_coherence": true,
+      "own_label_verdict": "U",
+      "status": "ok",
+      "submitted": [
+        "TV",
+        "PJ"
+      ],
+      "verdict": "U",
+      "verdict_matches": true
+    },
+    "marked-21_unmarked": {
+      "category": "both_defects",
+      "certified": false,
+      "duplicate_count": 0,
+      "exact_ids": false,
+      "excluded_occurrences": [
+        {
+          "category": "initial_only",
+          "id": "TV"
+        }
+      ],
+      "extra": [
+        "TV"
+      ],
+      "omitted": [],
+      "own_label_coherence": false,
+      "own_label_verdict": "U",
+      "status": "ok",
+      "submitted": [
+        "VU",
+        "TV",
+        "AI"
+      ],
+      "verdict": "Y",
+      "verdict_matches": false
+    },
+    "marked-22_filtered": {
+      "category": "certified",
+      "certified": true,
+      "duplicate_count": 0,
+      "exact_ids": true,
+      "excluded_occurrences": [],
+      "extra": [],
+      "omitted": [],
+      "own_label_coherence": true,
+      "own_label_verdict": "U",
+      "status": "ok",
+      "submitted": [
+        "XB",
+        "TV"
+      ],
+      "verdict": "U",
+      "verdict_matches": true
+    },
+    "marked-22_marked": {
+      "category": "both_defects",
+      "certified": false,
+      "duplicate_count": 0,
+      "exact_ids": false,
+      "excluded_occurrences": [
+        {
+          "category": "second_only",
+          "id": "EV"
+        },
+        {
+          "category": "second_only",
+          "id": "MT"
+        },
+        {
+          "category": "neither",
+          "id": "PJ"
+        },
+        {
+          "category": "initial_only",
+          "id": "VU"
+        },
+        {
+          "category": "initial_only",
+          "id": "AI"
+        },
+        {
+          "category": "neither",
+          "id": "SK"
+        }
+      ],
+      "extra": [
+        "AI",
+        "EV",
+        "MT",
+        "PJ",
+        "SK",
+        "VU"
+      ],
+      "omitted": [],
+      "own_label_coherence": false,
+      "own_label_verdict": "U",
+      "status": "ok",
+      "submitted": [
+        "EV",
+        "MT",
+        "PJ",
+        "XB",
+        "VU",
+        "TV",
+        "AI",
+        "SK"
+      ],
+      "verdict": "N",
+      "verdict_matches": false
+    },
+    "marked-22_unmarked": {
+      "category": "certified",
+      "certified": true,
+      "duplicate_count": 0,
+      "exact_ids": true,
+      "excluded_occurrences": [],
+      "extra": [],
+      "omitted": [],
+      "own_label_coherence": true,
+      "own_label_verdict": "U",
+      "status": "ok",
+      "submitted": [
+        "TV",
+        "XB"
+      ],
+      "verdict": "U",
+      "verdict_matches": true
+    },
+    "marked-23_filtered": {
+      "category": "verdict_defect_only",
+      "certified": false,
+      "duplicate_count": 0,
+      "exact_ids": true,
+      "excluded_occurrences": [],
+      "extra": [],
+      "omitted": [],
+      "own_label_coherence": false,
+      "own_label_verdict": "Y",
+      "status": "ok",
+      "submitted": [
+        "TV",
+        "AI"
+      ],
+      "verdict": "U",
+      "verdict_matches": false
+    },
+    "marked-23_marked": {
+      "category": "certified",
+      "certified": true,
+      "duplicate_count": 0,
+      "exact_ids": true,
+      "excluded_occurrences": [],
+      "extra": [],
+      "omitted": [],
+      "own_label_coherence": true,
+      "own_label_verdict": "Y",
+      "status": "ok",
+      "submitted": [
+        "TV",
+        "AI"
+      ],
+      "verdict": "Y",
+      "verdict_matches": true
+    },
+    "marked-23_unmarked": {
+      "category": "both_defects",
+      "certified": false,
+      "duplicate_count": 0,
+      "exact_ids": false,
+      "excluded_occurrences": [
+        {
+          "category": "second_only",
+          "id": "PJ"
+        }
+      ],
+      "extra": [
+        "PJ"
+      ],
+      "omitted": [
+        "AI"
+      ],
+      "own_label_coherence": true,
+      "own_label_verdict": "U",
+      "status": "ok",
+      "submitted": [
+        "TV",
+        "PJ"
+      ],
+      "verdict": "U",
+      "verdict_matches": false
+    }
+  },
+  "false_definites_on_mixed": {
+    "filtered": [
+      {
+        "cited_refutation": true,
+        "cited_support": true,
+        "compatible_refuting_id": "YS",
+        "compatible_supporting_id": "VD",
+        "layout": "DC-G2",
+        "meter": "M22",
+        "other_certified": true,
+        "other_joint": [
+          "AA",
+          "TR"
+        ],
+        "other_mixed_record": "marked-06",
+        "other_reading": "H",
+        "other_returned": "U",
+        "other_submitted": [
+          "AA",
+          "TR"
+        ],
+        "own_label_coherence": false,
+        "reading": "L",
+        "record": "marked-05",
+        "returned": "Y",
+        "submitted": [
+          "YS",
+          "VD"
+        ]
+      }
+    ],
+    "marked": [
+      {
+        "cited_refutation": false,
+        "cited_support": true,
+        "compatible_refuting_id": "YS",
+        "compatible_supporting_id": "VD",
+        "layout": "DC-G2",
+        "meter": "M22",
+        "other_certified": true,
+        "other_joint": [
+          "AA",
+          "TR"
+        ],
+        "other_mixed_record": "marked-06",
+        "other_reading": "H",
+        "other_returned": "U",
+        "other_submitted": [
+          "AA",
+          "TR"
+        ],
+        "own_label_coherence": true,
+        "reading": "L",
+        "record": "marked-05",
+        "returned": "Y",
+        "submitted": [
+          "VD"
+        ]
+      },
+      {
+        "cited_refutation": true,
+        "cited_support": true,
+        "compatible_refuting_id": "DX",
+        "compatible_supporting_id": "NA",
+        "layout": "DC-G4",
+        "meter": "M17",
+        "other_certified": true,
+        "other_joint": [
+          "DY",
+          "VP"
+        ],
+        "other_mixed_record": "marked-12",
+        "other_reading": "H",
+        "other_returned": "U",
+        "other_submitted": [
+          "DY",
+          "VP"
+        ],
+        "own_label_coherence": false,
+        "reading": "L",
+        "record": "marked-15",
+        "returned": "N",
+        "submitted": [
+          "NA",
+          "DX"
+        ]
+      },
+      {
+        "cited_refutation": true,
+        "cited_support": true,
+        "compatible_refuting_id": "TV",
+        "compatible_supporting_id": "XB",
+        "layout": "DC-G6",
+        "meter": "M17",
+        "other_certified": false,
+        "other_joint": [
+          "AI",
+          "VU"
+        ],
+        "other_mixed_record": "marked-21",
+        "other_reading": "L",
+        "other_returned": "U",
+        "other_submitted": [
+          "TV",
+          "PJ"
+        ],
+        "own_label_coherence": false,
+        "reading": "H",
+        "record": "marked-22",
+        "returned": "N",
+        "submitted": [
+          "EV",
+          "MT",
+          "PJ",
+          "XB",
+          "VU",
+          "TV",
+          "AI",
+          "SK"
+        ]
+      }
+    ],
+    "unmarked": [
+      {
+        "cited_refutation": false,
+        "cited_support": true,
+        "compatible_refuting_id": "KF",
+        "compatible_supporting_id": "BU",
+        "layout": "DC-G1",
+        "meter": "M19",
+        "other_certified": true,
+        "other_joint": [
+          "DA",
+          "SY"
+        ],
+        "other_mixed_record": "marked-02",
+        "other_reading": "L",
+        "other_returned": "U",
+        "other_submitted": [
+          "SY",
+          "DA"
+        ],
+        "own_label_coherence": true,
+        "reading": "H",
+        "record": "marked-03",
+        "returned": "Y",
+        "submitted": [
+          "SY",
+          "BU"
+        ]
+      },
+      {
+        "cited_refutation": false,
+        "cited_support": false,
+        "compatible_refuting_id": "VD",
+        "compatible_supporting_id": "YS",
+        "layout": "DC-G2",
+        "meter": "M22",
+        "other_certified": false,
+        "other_joint": [
+          "AA",
+          "TR"
+        ],
+        "other_mixed_record": "marked-06",
+        "other_reading": "H",
+        "other_returned": "N",
+        "other_submitted": [
+          "TR",
+          "YS"
+        ],
+        "own_label_coherence": true,
+        "reading": "L",
+        "record": "marked-05",
+        "returned": "N",
+        "submitted": [
+          "TA"
+        ]
+      },
+      {
+        "cited_refutation": false,
+        "cited_support": true,
+        "compatible_refuting_id": "AA",
+        "compatible_supporting_id": "TR",
+        "layout": "DC-G2",
+        "meter": "M22",
+        "other_certified": false,
+        "other_joint": [
+          "VD",
+          "YS"
+        ],
+        "other_mixed_record": "marked-05",
+        "other_reading": "L",
+        "other_returned": "N",
+        "other_submitted": [
+          "TA"
+        ],
+        "own_label_coherence": true,
+        "reading": "H",
+        "record": "marked-06",
+        "returned": "N",
+        "submitted": [
+          "TR",
+          "YS"
+        ]
+      },
+      {
+        "cited_refutation": false,
+        "cited_support": true,
+        "compatible_refuting_id": "NS",
+        "compatible_supporting_id": "JH",
+        "layout": "DC-G5",
+        "meter": "M22",
+        "other_certified": false,
+        "other_joint": [
+          "LX",
+          "SU"
+        ],
+        "other_mixed_record": "marked-19",
+        "other_reading": "H",
+        "other_returned": "Y",
+        "other_submitted": [
+          "CH",
+          "NS",
+          "SU"
+        ],
+        "own_label_coherence": true,
+        "reading": "L",
+        "record": "marked-18",
+        "returned": "N",
+        "submitted": [
+          "JH",
+          "LX"
+        ]
+      },
+      {
+        "cited_refutation": false,
+        "cited_support": true,
+        "compatible_refuting_id": "LX",
+        "compatible_supporting_id": "SU",
+        "layout": "DC-G5",
+        "meter": "M22",
+        "other_certified": false,
+        "other_joint": [
+          "JH",
+          "NS"
+        ],
+        "other_mixed_record": "marked-18",
+        "other_reading": "L",
+        "other_returned": "N",
+        "other_submitted": [
+          "JH",
+          "LX"
+        ],
+        "own_label_coherence": true,
+        "reading": "H",
+        "record": "marked-19",
+        "returned": "Y",
+        "submitted": [
+          "CH",
+          "NS",
+          "SU"
+        ]
+      },
+      {
+        "cited_refutation": true,
+        "cited_support": true,
+        "compatible_refuting_id": "VU",
+        "compatible_supporting_id": "AI",
+        "layout": "DC-G6",
+        "meter": "M17",
+        "other_certified": true,
+        "other_joint": [
+          "TV",
+          "XB"
+        ],
+        "other_mixed_record": "marked-22",
+        "other_reading": "H",
+        "other_returned": "U",
+        "other_submitted": [
+          "TV",
+          "XB"
+        ],
+        "own_label_coherence": false,
+        "reading": "L",
+        "record": "marked-21",
+        "returned": "Y",
+        "submitted": [
+          "VU",
+          "TV",
+          "AI"
+        ]
+      }
+    ]
+  },
+  "marked_filtered_unilateral_certifications": [
+    {
+      "certified_display": "marked",
+      "failed": {
+        "category": "verdict_defect_only",
+        "certified": false,
+        "duplicate_count": 0,
+        "exact_ids": true,
+        "excluded_occurrences": [],
+        "extra": [],
+        "omitted": [],
+        "own_label_coherence": false,
+        "own_label_verdict": "Y",
+        "status": "ok",
+        "submitted": [
+          "BQ",
+          "WP"
+        ],
+        "verdict": "U",
+        "verdict_matches": false
+      },
+      "failed_display": "filtered",
+      "joint": [
+        "BQ",
+        "WP"
+      ],
+      "kind": "decisive",
+      "layout": "DC-G3",
+      "record": "marked-11",
+      "successful": {
+        "category": "certified",
+        "certified": true,
+        "duplicate_count": 0,
+        "exact_ids": true,
+        "excluded_occurrences": [],
+        "extra": [],
+        "omitted": [],
+        "own_label_coherence": true,
+        "own_label_verdict": "Y",
+        "status": "ok",
+        "submitted": [
+          "BQ",
+          "WP"
+        ],
+        "verdict": "Y",
+        "verdict_matches": true
+      },
+      "warranted": "Y"
+    },
+    {
+      "certified_display": "filtered",
+      "failed": {
+        "category": "both_defects",
+        "certified": false,
+        "duplicate_count": 0,
+        "exact_ids": false,
+        "excluded_occurrences": [
+          {
+            "category": "initial_only",
+            "id": "VP"
+          }
+        ],
+        "extra": [
+          "VP"
+        ],
+        "omitted": [
+          "NA"
+        ],
+        "own_label_coherence": true,
+        "own_label_verdict": "U",
+        "status": "ok",
+        "submitted": [
+          "DY",
+          "VP"
+        ],
+        "verdict": "U",
+        "verdict_matches": false
+      },
+      "failed_display": "marked",
+      "joint": [
+        "DY",
+        "NA"
+      ],
+      "kind": "decisive",
+      "layout": "DC-G4",
+      "record": "marked-14",
+      "successful": {
+        "category": "certified",
+        "certified": true,
+        "duplicate_count": 0,
+        "exact_ids": true,
+        "excluded_occurrences": [],
+        "extra": [],
+        "omitted": [],
+        "own_label_coherence": true,
+        "own_label_verdict": "N",
+        "status": "ok",
+        "submitted": [
+          "DY",
+          "NA"
+        ],
+        "verdict": "N",
+        "verdict_matches": true
+      },
+      "warranted": "N"
+    },
+    {
+      "certified_display": "filtered",
+      "failed": {
+        "category": "verdict_defect_only",
+        "certified": false,
+        "duplicate_count": 0,
+        "exact_ids": true,
+        "excluded_occurrences": [],
+        "extra": [],
+        "omitted": [],
+        "own_label_coherence": false,
+        "own_label_verdict": "U",
+        "status": "ok",
+        "submitted": [
+          "NA",
+          "DX"
+        ],
+        "verdict": "N",
+        "verdict_matches": false
+      },
+      "failed_display": "marked",
+      "joint": [
+        "DX",
+        "NA"
+      ],
+      "kind": "ambiguous",
+      "layout": "DC-G4",
+      "record": "marked-15",
+      "successful": {
+        "category": "certified",
+        "certified": true,
+        "duplicate_count": 0,
+        "exact_ids": true,
+        "excluded_occurrences": [],
+        "extra": [],
+        "omitted": [],
+        "own_label_coherence": true,
+        "own_label_verdict": "U",
+        "status": "ok",
+        "submitted": [
+          "DX",
+          "NA"
+        ],
+        "verdict": "U",
+        "verdict_matches": true
+      },
+      "warranted": "U"
+    },
+    {
+      "certified_display": "filtered",
+      "failed": {
+        "category": "witness_defect_only",
+        "certified": false,
+        "duplicate_count": 0,
+        "exact_ids": false,
+        "excluded_occurrences": [
+          {
+            "category": "neither",
+            "id": "NJ"
+          }
+        ],
+        "extra": [
+          "NJ"
+        ],
+        "omitted": [
+          "JH"
+        ],
+        "own_label_coherence": true,
+        "own_label_verdict": "N",
+        "status": "ok",
+        "submitted": [
+          "NJ",
+          "LX"
+        ],
+        "verdict": "N",
+        "verdict_matches": true
+      },
+      "failed_display": "marked",
+      "joint": [
+        "JH",
+        "LX"
+      ],
+      "kind": "decisive",
+      "layout": "DC-G5",
+      "record": "marked-16",
+      "successful": {
+        "category": "certified",
+        "certified": true,
+        "duplicate_count": 0,
+        "exact_ids": true,
+        "excluded_occurrences": [],
+        "extra": [],
+        "omitted": [],
+        "own_label_coherence": true,
+        "own_label_verdict": "N",
+        "status": "ok",
+        "submitted": [
+          "JH",
+          "LX"
+        ],
+        "verdict": "N",
+        "verdict_matches": true
+      },
+      "warranted": "N"
+    },
+    {
+      "certified_display": "filtered",
+      "failed": {
+        "category": "both_defects",
+        "certified": false,
+        "duplicate_count": 0,
+        "exact_ids": false,
+        "excluded_occurrences": [
+          {
+            "category": "initial_only",
+            "id": "TV"
+          }
+        ],
+        "extra": [
+          "TV"
+        ],
+        "omitted": [
+          "VU"
+        ],
+        "own_label_coherence": true,
+        "own_label_verdict": "U",
+        "status": "ok",
+        "submitted": [
+          "XB",
+          "TV"
+        ],
+        "verdict": "U",
+        "verdict_matches": false
+      },
+      "failed_display": "marked",
+      "joint": [
+        "VU",
+        "XB"
+      ],
+      "kind": "decisive",
+      "layout": "DC-G6",
+      "record": "marked-20",
+      "successful": {
+        "category": "certified",
+        "certified": true,
+        "duplicate_count": 0,
+        "exact_ids": true,
+        "excluded_occurrences": [],
+        "extra": [],
+        "omitted": [],
+        "own_label_coherence": true,
+        "own_label_verdict": "N",
+        "status": "ok",
+        "submitted": [
+          "XB",
+          "VU"
+        ],
+        "verdict": "N",
+        "verdict_matches": true
+      },
+      "warranted": "N"
+    },
+    {
+      "certified_display": "filtered",
+      "failed": {
+        "category": "witness_defect_only",
+        "certified": false,
+        "duplicate_count": 0,
+        "exact_ids": false,
+        "excluded_occurrences": [
+          {
+            "category": "initial_only",
+            "id": "TV"
+          },
+          {
+            "category": "second_only",
+            "id": "PJ"
+          }
+        ],
+        "extra": [
+          "PJ",
+          "TV"
+        ],
+        "omitted": [
+          "AI",
+          "VU"
+        ],
+        "own_label_coherence": true,
+        "own_label_verdict": "U",
+        "status": "ok",
+        "submitted": [
+          "TV",
+          "PJ"
+        ],
+        "verdict": "U",
+        "verdict_matches": true
+      },
+      "failed_display": "marked",
+      "joint": [
+        "AI",
+        "VU"
+      ],
+      "kind": "ambiguous",
+      "layout": "DC-G6",
+      "record": "marked-21",
+      "successful": {
+        "category": "certified",
+        "certified": true,
+        "duplicate_count": 0,
+        "exact_ids": true,
+        "excluded_occurrences": [],
+        "extra": [],
+        "omitted": [],
+        "own_label_coherence": true,
+        "own_label_verdict": "U",
+        "status": "ok",
+        "submitted": [
+          "VU",
+          "AI"
+        ],
+        "verdict": "U",
+        "verdict_matches": true
+      },
+      "warranted": "U"
+    },
+    {
+      "certified_display": "filtered",
+      "failed": {
+        "category": "both_defects",
+        "certified": false,
+        "duplicate_count": 0,
+        "exact_ids": false,
+        "excluded_occurrences": [
+          {
+            "category": "second_only",
+            "id": "EV"
+          },
+          {
+            "category": "second_only",
+            "id": "MT"
+          },
+          {
+            "category": "neither",
+            "id": "PJ"
+          },
+          {
+            "category": "initial_only",
+            "id": "VU"
+          },
+          {
+            "category": "initial_only",
+            "id": "AI"
+          },
+          {
+            "category": "neither",
+            "id": "SK"
+          }
+        ],
+        "extra": [
+          "AI",
+          "EV",
+          "MT",
+          "PJ",
+          "SK",
+          "VU"
+        ],
+        "omitted": [],
+        "own_label_coherence": false,
+        "own_label_verdict": "U",
+        "status": "ok",
+        "submitted": [
+          "EV",
+          "MT",
+          "PJ",
+          "XB",
+          "VU",
+          "TV",
+          "AI",
+          "SK"
+        ],
+        "verdict": "N",
+        "verdict_matches": false
+      },
+      "failed_display": "marked",
+      "joint": [
+        "TV",
+        "XB"
+      ],
+      "kind": "ambiguous",
+      "layout": "DC-G6",
+      "record": "marked-22",
+      "successful": {
+        "category": "certified",
+        "certified": true,
+        "duplicate_count": 0,
+        "exact_ids": true,
+        "excluded_occurrences": [],
+        "extra": [],
+        "omitted": [],
+        "own_label_coherence": true,
+        "own_label_verdict": "U",
+        "status": "ok",
+        "submitted": [
+          "XB",
+          "TV"
+        ],
+        "verdict": "U",
+        "verdict_matches": true
+      },
+      "warranted": "U"
+    },
+    {
+      "certified_display": "marked",
+      "failed": {
+        "category": "verdict_defect_only",
+        "certified": false,
+        "duplicate_count": 0,
+        "exact_ids": true,
+        "excluded_occurrences": [],
+        "extra": [],
+        "omitted": [],
+        "own_label_coherence": false,
+        "own_label_verdict": "Y",
+        "status": "ok",
+        "submitted": [
+          "TV",
+          "AI"
+        ],
+        "verdict": "U",
+        "verdict_matches": false
+      },
+      "failed_display": "filtered",
+      "joint": [
+        "AI",
+        "TV"
+      ],
+      "kind": "decisive",
+      "layout": "DC-G6",
+      "record": "marked-23",
+      "successful": {
+        "category": "certified",
+        "certified": true,
+        "duplicate_count": 0,
+        "exact_ids": true,
+        "excluded_occurrences": [],
+        "extra": [],
+        "omitted": [],
+        "own_label_coherence": true,
+        "own_label_verdict": "Y",
+        "status": "ok",
+        "submitted": [
+          "TV",
+          "AI"
+        ],
+        "verdict": "Y",
+        "verdict_matches": true
+      },
+      "warranted": "Y"
+    }
+  ],
+  "summaries": {
+    "filtered": {
+      "attempted": 24,
+      "completed": 23,
+      "excluded_id_occurrences": 0,
+      "false_definites_on_mixed": {
+        "both_records_on_layout": 0,
+        "cited_refuting_id": 1,
+        "layouts": 1,
+        "mixed_layouts": 6,
+        "mixed_records": 12,
+        "omitted_refuting_id": 0,
+        "records": 1
+      },
+      "occurrences_by_category": {
+        "initial_only": 0,
+        "neither": 0,
+        "second_only": 0
+      },
+      "response_category_counts": {
+        "certified": 20,
+        "no_completed_answer": 1,
+        "verdict_defect_only": 3
+      },
+      "responses_by_category_nonexclusive": {
+        "initial_only": 0,
+        "neither": 0,
+        "second_only": 0
+      },
+      "responses_with_any_excluded_id": 0,
+      "submitted_id_occurrences": 46
+    },
+    "marked": {
+      "attempted": 24,
+      "completed": 24,
+      "excluded_id_occurrences": 12,
+      "false_definites_on_mixed": {
+        "both_records_on_layout": 0,
+        "cited_refuting_id": 2,
+        "layouts": 3,
+        "mixed_layouts": 6,
+        "mixed_records": 12,
+        "omitted_refuting_id": 1,
+        "records": 3
+      },
+      "occurrences_by_category": {
+        "initial_only": 6,
+        "neither": 3,
+        "second_only": 3
+      },
+      "response_category_counts": {
+        "both_defects": 5,
+        "certified": 16,
+        "verdict_defect_only": 1,
+        "witness_defect_only": 2
+      },
+      "responses_by_category_nonexclusive": {
+        "initial_only": 5,
+        "neither": 2,
+        "second_only": 2
+      },
+      "responses_with_any_excluded_id": 6,
+      "submitted_id_occurrences": 53
+    },
+    "unmarked": {
+      "attempted": 24,
+      "completed": 24,
+      "excluded_id_occurrences": 26,
+      "false_definites_on_mixed": {
+        "both_records_on_layout": 2,
+        "cited_refuting_id": 1,
+        "layouts": 4,
+        "mixed_layouts": 6,
+        "mixed_records": 12,
+        "omitted_refuting_id": 5,
+        "records": 6
+      },
+      "occurrences_by_category": {
+        "initial_only": 16,
+        "neither": 3,
+        "second_only": 7
+      },
+      "response_category_counts": {
+        "both_defects": 14,
+        "certified": 6,
+        "witness_defect_only": 4
+      },
+      "responses_by_category_nonexclusive": {
+        "initial_only": 14,
+        "neither": 2,
+        "second_only": 6
+      },
+      "responses_with_any_excluded_id": 17,
+      "submitted_id_occurrences": 54
+    }
+  },
+  "synthetic_unique_subset_verdict_cases": 2295
+}

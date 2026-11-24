@@ -1,0 +1,1893 @@
+{
+  "arms": {
+    "filtered": {
+      "certified": 20,
+      "coherent_pair": 20,
+      "exact": 23,
+      "inadmissible_among_coherent_pairs": 0,
+      "inadmissible_among_two_distinct": 0,
+      "missing": 1,
+      "mixed_twins_both_U_but_incomplete": 0,
+      "mixed_twins_same_nonempty_ids": 0,
+      "two_distinct": 23,
+      "unsupported_mixed": 1,
+      "warranted": 20
+    },
+    "marked": {
+      "certified": 16,
+      "coherent_pair": 21,
+      "exact": 17,
+      "inadmissible_among_coherent_pairs": 5,
+      "inadmissible_among_two_distinct": 5,
+      "missing": 0,
+      "mixed_twins_both_U_but_incomplete": 0,
+      "mixed_twins_same_nonempty_ids": 0,
+      "two_distinct": 22,
+      "unsupported_mixed": 3,
+      "warranted": 18
+    },
+    "unmarked": {
+      "certified": 6,
+      "coherent_pair": 15,
+      "exact": 6,
+      "inadmissible_among_coherent_pairs": 9,
+      "inadmissible_among_two_distinct": 10,
+      "missing": 0,
+      "mixed_twins_both_U_but_incomplete": 1,
+      "mixed_twins_same_nonempty_ids": 0,
+      "two_distinct": 16,
+      "unsupported_mixed": 6,
+      "warranted": 10
+    }
+  },
+  "cases": {
+    "marked-00_filtered": {
+      "certified": true,
+      "coherent_pair": true,
+      "exact": true,
+      "expected": "N",
+      "extra": [],
+      "missing": false,
+      "omitted": [],
+      "submitted": [
+        "DA",
+        "KF"
+      ],
+      "surviving": [
+        "DA",
+        "KF"
+      ],
+      "two_distinct": true,
+      "unsupported_mixed": false,
+      "verdict": "N",
+      "warranted": true
+    },
+    "marked-00_marked": {
+      "certified": true,
+      "coherent_pair": true,
+      "exact": true,
+      "expected": "N",
+      "extra": [],
+      "missing": false,
+      "omitted": [],
+      "submitted": [
+        "DA",
+        "KF"
+      ],
+      "surviving": [
+        "DA",
+        "KF"
+      ],
+      "two_distinct": true,
+      "unsupported_mixed": false,
+      "verdict": "N",
+      "warranted": true
+    },
+    "marked-00_unmarked": {
+      "certified": false,
+      "coherent_pair": false,
+      "exact": false,
+      "expected": "N",
+      "extra": [
+        "BU",
+        "GE",
+        "GF",
+        "KM",
+        "PN",
+        "SY"
+      ],
+      "missing": false,
+      "omitted": [],
+      "submitted": [
+        "PN",
+        "DA",
+        "KF",
+        "GF",
+        "KM",
+        "GE",
+        "SY",
+        "BU"
+      ],
+      "surviving": [
+        "DA",
+        "KF"
+      ],
+      "two_distinct": false,
+      "unsupported_mixed": false,
+      "verdict": "N",
+      "warranted": true
+    },
+    "marked-01_filtered": {
+      "certified": true,
+      "coherent_pair": true,
+      "exact": true,
+      "expected": "Y",
+      "extra": [],
+      "missing": false,
+      "omitted": [],
+      "submitted": [
+        "SY",
+        "BU"
+      ],
+      "surviving": [
+        "BU",
+        "SY"
+      ],
+      "two_distinct": true,
+      "unsupported_mixed": false,
+      "verdict": "Y",
+      "warranted": true
+    },
+    "marked-01_marked": {
+      "certified": true,
+      "coherent_pair": true,
+      "exact": true,
+      "expected": "Y",
+      "extra": [],
+      "missing": false,
+      "omitted": [],
+      "submitted": [
+        "SY",
+        "BU"
+      ],
+      "surviving": [
+        "BU",
+        "SY"
+      ],
+      "two_distinct": true,
+      "unsupported_mixed": false,
+      "verdict": "Y",
+      "warranted": true
+    },
+    "marked-01_unmarked": {
+      "certified": false,
+      "coherent_pair": true,
+      "exact": false,
+      "expected": "Y",
+      "extra": [
+        "KF"
+      ],
+      "missing": false,
+      "omitted": [
+        "BU"
+      ],
+      "submitted": [
+        "KF",
+        "SY"
+      ],
+      "surviving": [
+        "BU",
+        "SY"
+      ],
+      "two_distinct": true,
+      "unsupported_mixed": false,
+      "verdict": "U",
+      "warranted": false
+    },
+    "marked-02_filtered": {
+      "certified": true,
+      "coherent_pair": true,
+      "exact": true,
+      "expected": "U",
+      "extra": [],
+      "missing": false,
+      "omitted": [],
+      "submitted": [
+        "DA",
+        "SY"
+      ],
+      "surviving": [
+        "DA",
+        "SY"
+      ],
+      "two_distinct": true,
+      "unsupported_mixed": false,
+      "verdict": "U",
+      "warranted": true
+    },
+    "marked-02_marked": {
+      "certified": true,
+      "coherent_pair": true,
+      "exact": true,
+      "expected": "U",
+      "extra": [],
+      "missing": false,
+      "omitted": [],
+      "submitted": [
+        "DA",
+        "SY"
+      ],
+      "surviving": [
+        "DA",
+        "SY"
+      ],
+      "two_distinct": true,
+      "unsupported_mixed": false,
+      "verdict": "U",
+      "warranted": true
+    },
+    "marked-02_unmarked": {
+      "certified": true,
+      "coherent_pair": true,
+      "exact": true,
+      "expected": "U",
+      "extra": [],
+      "missing": false,
+      "omitted": [],
+      "submitted": [
+        "SY",
+        "DA"
+      ],
+      "surviving": [
+        "DA",
+        "SY"
+      ],
+      "two_distinct": true,
+      "unsupported_mixed": false,
+      "verdict": "U",
+      "warranted": true
+    },
+    "marked-03_filtered": {
+      "certified": true,
+      "coherent_pair": true,
+      "exact": true,
+      "expected": "U",
+      "extra": [],
+      "missing": false,
+      "omitted": [],
+      "submitted": [
+        "KF",
+        "BU"
+      ],
+      "surviving": [
+        "BU",
+        "KF"
+      ],
+      "two_distinct": true,
+      "unsupported_mixed": false,
+      "verdict": "U",
+      "warranted": true
+    },
+    "marked-03_marked": {
+      "certified": true,
+      "coherent_pair": true,
+      "exact": true,
+      "expected": "U",
+      "extra": [],
+      "missing": false,
+      "omitted": [],
+      "submitted": [
+        "KF",
+        "BU"
+      ],
+      "surviving": [
+        "BU",
+        "KF"
+      ],
+      "two_distinct": true,
+      "unsupported_mixed": false,
+      "verdict": "U",
+      "warranted": true
+    },
+    "marked-03_unmarked": {
+      "certified": false,
+      "coherent_pair": true,
+      "exact": false,
+      "expected": "U",
+      "extra": [
+        "SY"
+      ],
+      "missing": false,
+      "omitted": [
+        "KF"
+      ],
+      "submitted": [
+        "SY",
+        "BU"
+      ],
+      "surviving": [
+        "BU",
+        "KF"
+      ],
+      "two_distinct": true,
+      "unsupported_mixed": true,
+      "verdict": "Y",
+      "warranted": false
+    },
+    "marked-04_filtered": {
+      "certified": true,
+      "coherent_pair": true,
+      "exact": true,
+      "expected": "N",
+      "extra": [],
+      "missing": false,
+      "omitted": [],
+      "submitted": [
+        "TR",
+        "YS"
+      ],
+      "surviving": [
+        "TR",
+        "YS"
+      ],
+      "two_distinct": true,
+      "unsupported_mixed": false,
+      "verdict": "N",
+      "warranted": true
+    },
+    "marked-04_marked": {
+      "certified": true,
+      "coherent_pair": true,
+      "exact": true,
+      "expected": "N",
+      "extra": [],
+      "missing": false,
+      "omitted": [],
+      "submitted": [
+        "TR",
+        "YS"
+      ],
+      "surviving": [
+        "TR",
+        "YS"
+      ],
+      "two_distinct": true,
+      "unsupported_mixed": false,
+      "verdict": "N",
+      "warranted": true
+    },
+    "marked-04_unmarked": {
+      "certified": false,
+      "coherent_pair": false,
+      "exact": false,
+      "expected": "N",
+      "extra": [],
+      "missing": false,
+      "omitted": [
+        "YS"
+      ],
+      "submitted": [
+        "TR"
+      ],
+      "surviving": [
+        "TR",
+        "YS"
+      ],
+      "two_distinct": false,
+      "unsupported_mixed": false,
+      "verdict": "N",
+      "warranted": true
+    },
+    "marked-05_filtered": {
+      "certified": false,
+      "coherent_pair": false,
+      "exact": true,
+      "expected": "U",
+      "extra": [],
+      "missing": false,
+      "omitted": [],
+      "submitted": [
+        "YS",
+        "VD"
+      ],
+      "surviving": [
+        "VD",
+        "YS"
+      ],
+      "two_distinct": true,
+      "unsupported_mixed": true,
+      "verdict": "Y",
+      "warranted": false
+    },
+    "marked-05_marked": {
+      "certified": false,
+      "coherent_pair": false,
+      "exact": false,
+      "expected": "U",
+      "extra": [],
+      "missing": false,
+      "omitted": [
+        "YS"
+      ],
+      "submitted": [
+        "VD"
+      ],
+      "surviving": [
+        "VD",
+        "YS"
+      ],
+      "two_distinct": false,
+      "unsupported_mixed": true,
+      "verdict": "Y",
+      "warranted": false
+    },
+    "marked-05_unmarked": {
+      "certified": false,
+      "coherent_pair": false,
+      "exact": false,
+      "expected": "U",
+      "extra": [
+        "TA"
+      ],
+      "missing": false,
+      "omitted": [
+        "VD",
+        "YS"
+      ],
+      "submitted": [
+        "TA"
+      ],
+      "surviving": [
+        "VD",
+        "YS"
+      ],
+      "two_distinct": false,
+      "unsupported_mixed": true,
+      "verdict": "N",
+      "warranted": false
+    },
+    "marked-06_filtered": {
+      "certified": true,
+      "coherent_pair": true,
+      "exact": true,
+      "expected": "U",
+      "extra": [],
+      "missing": false,
+      "omitted": [],
+      "submitted": [
+        "AA",
+        "TR"
+      ],
+      "surviving": [
+        "AA",
+        "TR"
+      ],
+      "two_distinct": true,
+      "unsupported_mixed": false,
+      "verdict": "U",
+      "warranted": true
+    },
+    "marked-06_marked": {
+      "certified": true,
+      "coherent_pair": true,
+      "exact": true,
+      "expected": "U",
+      "extra": [],
+      "missing": false,
+      "omitted": [],
+      "submitted": [
+        "AA",
+        "TR"
+      ],
+      "surviving": [
+        "AA",
+        "TR"
+      ],
+      "two_distinct": true,
+      "unsupported_mixed": false,
+      "verdict": "U",
+      "warranted": true
+    },
+    "marked-06_unmarked": {
+      "certified": false,
+      "coherent_pair": true,
+      "exact": false,
+      "expected": "U",
+      "extra": [
+        "YS"
+      ],
+      "missing": false,
+      "omitted": [
+        "AA"
+      ],
+      "submitted": [
+        "TR",
+        "YS"
+      ],
+      "surviving": [
+        "AA",
+        "TR"
+      ],
+      "two_distinct": true,
+      "unsupported_mixed": true,
+      "verdict": "N",
+      "warranted": false
+    },
+    "marked-07_filtered": {
+      "certified": true,
+      "coherent_pair": true,
+      "exact": true,
+      "expected": "Y",
+      "extra": [],
+      "missing": false,
+      "omitted": [],
+      "submitted": [
+        "AA",
+        "VD"
+      ],
+      "surviving": [
+        "AA",
+        "VD"
+      ],
+      "two_distinct": true,
+      "unsupported_mixed": false,
+      "verdict": "Y",
+      "warranted": true
+    },
+    "marked-07_marked": {
+      "certified": true,
+      "coherent_pair": true,
+      "exact": true,
+      "expected": "Y",
+      "extra": [],
+      "missing": false,
+      "omitted": [],
+      "submitted": [
+        "AA",
+        "VD"
+      ],
+      "surviving": [
+        "AA",
+        "VD"
+      ],
+      "two_distinct": true,
+      "unsupported_mixed": false,
+      "verdict": "Y",
+      "warranted": true
+    },
+    "marked-07_unmarked": {
+      "certified": false,
+      "coherent_pair": false,
+      "exact": false,
+      "expected": "Y",
+      "extra": [
+        "TA"
+      ],
+      "missing": false,
+      "omitted": [
+        "AA",
+        "VD"
+      ],
+      "submitted": [
+        "TA"
+      ],
+      "surviving": [
+        "AA",
+        "VD"
+      ],
+      "two_distinct": false,
+      "unsupported_mixed": false,
+      "verdict": "N",
+      "warranted": false
+    },
+    "marked-08_filtered": {
+      "certified": true,
+      "coherent_pair": true,
+      "exact": true,
+      "expected": "U",
+      "extra": [],
+      "missing": false,
+      "omitted": [],
+      "submitted": [
+        "BQ",
+        "KD"
+      ],
+      "surviving": [
+        "BQ",
+        "KD"
+      ],
+      "two_distinct": true,
+      "unsupported_mixed": false,
+      "verdict": "U",
+      "warranted": true
+    },
+    "marked-08_marked": {
+      "certified": true,
+      "coherent_pair": true,
+      "exact": true,
+      "expected": "U",
+      "extra": [],
+      "missing": false,
+      "omitted": [],
+      "submitted": [
+        "BQ",
+        "KD"
+      ],
+      "surviving": [
+        "BQ",
+        "KD"
+      ],
+      "two_distinct": true,
+      "unsupported_mixed": false,
+      "verdict": "U",
+      "warranted": true
+    },
+    "marked-08_unmarked": {
+      "certified": false,
+      "coherent_pair": true,
+      "exact": false,
+      "expected": "U",
+      "extra": [
+        "FA"
+      ],
+      "missing": false,
+      "omitted": [
+        "KD"
+      ],
+      "submitted": [
+        "BQ",
+        "FA"
+      ],
+      "surviving": [
+        "BQ",
+        "KD"
+      ],
+      "two_distinct": true,
+      "unsupported_mixed": false,
+      "verdict": "U",
+      "warranted": true
+    },
+    "marked-09_filtered": {
+      "certified": true,
+      "coherent_pair": true,
+      "exact": true,
+      "expected": "U",
+      "extra": [],
+      "missing": false,
+      "omitted": [],
+      "submitted": [
+        "FA",
+        "WP"
+      ],
+      "surviving": [
+        "FA",
+        "WP"
+      ],
+      "two_distinct": true,
+      "unsupported_mixed": false,
+      "verdict": "U",
+      "warranted": true
+    },
+    "marked-09_marked": {
+      "certified": true,
+      "coherent_pair": true,
+      "exact": true,
+      "expected": "U",
+      "extra": [],
+      "missing": false,
+      "omitted": [],
+      "submitted": [
+        "FA",
+        "WP"
+      ],
+      "surviving": [
+        "FA",
+        "WP"
+      ],
+      "two_distinct": true,
+      "unsupported_mixed": false,
+      "verdict": "U",
+      "warranted": true
+    },
+    "marked-09_unmarked": {
+      "certified": true,
+      "coherent_pair": true,
+      "exact": true,
+      "expected": "U",
+      "extra": [],
+      "missing": false,
+      "omitted": [],
+      "submitted": [
+        "FA",
+        "WP"
+      ],
+      "surviving": [
+        "FA",
+        "WP"
+      ],
+      "two_distinct": true,
+      "unsupported_mixed": false,
+      "verdict": "U",
+      "warranted": true
+    },
+    "marked-10_filtered": {
+      "certified": true,
+      "coherent_pair": true,
+      "exact": true,
+      "expected": "N",
+      "extra": [],
+      "missing": false,
+      "omitted": [],
+      "submitted": [
+        "FA",
+        "KD"
+      ],
+      "surviving": [
+        "FA",
+        "KD"
+      ],
+      "two_distinct": true,
+      "unsupported_mixed": false,
+      "verdict": "N",
+      "warranted": true
+    },
+    "marked-10_marked": {
+      "certified": true,
+      "coherent_pair": true,
+      "exact": true,
+      "expected": "N",
+      "extra": [],
+      "missing": false,
+      "omitted": [],
+      "submitted": [
+        "FA",
+        "KD"
+      ],
+      "surviving": [
+        "FA",
+        "KD"
+      ],
+      "two_distinct": true,
+      "unsupported_mixed": false,
+      "verdict": "N",
+      "warranted": true
+    },
+    "marked-10_unmarked": {
+      "certified": false,
+      "coherent_pair": true,
+      "exact": false,
+      "expected": "N",
+      "extra": [
+        "BQ"
+      ],
+      "missing": false,
+      "omitted": [
+        "FA"
+      ],
+      "submitted": [
+        "BQ",
+        "KD"
+      ],
+      "surviving": [
+        "FA",
+        "KD"
+      ],
+      "two_distinct": true,
+      "unsupported_mixed": false,
+      "verdict": "U",
+      "warranted": false
+    },
+    "marked-11_filtered": {
+      "certified": false,
+      "coherent_pair": false,
+      "exact": true,
+      "expected": "Y",
+      "extra": [],
+      "missing": false,
+      "omitted": [],
+      "submitted": [
+        "BQ",
+        "WP"
+      ],
+      "surviving": [
+        "BQ",
+        "WP"
+      ],
+      "two_distinct": true,
+      "unsupported_mixed": false,
+      "verdict": "U",
+      "warranted": false
+    },
+    "marked-11_marked": {
+      "certified": true,
+      "coherent_pair": true,
+      "exact": true,
+      "expected": "Y",
+      "extra": [],
+      "missing": false,
+      "omitted": [],
+      "submitted": [
+        "BQ",
+        "WP"
+      ],
+      "surviving": [
+        "BQ",
+        "WP"
+      ],
+      "two_distinct": true,
+      "unsupported_mixed": false,
+      "verdict": "Y",
+      "warranted": true
+    },
+    "marked-11_unmarked": {
+      "certified": false,
+      "coherent_pair": true,
+      "exact": false,
+      "expected": "Y",
+      "extra": [
+        "FA"
+      ],
+      "missing": false,
+      "omitted": [
+        "BQ"
+      ],
+      "submitted": [
+        "FA",
+        "WP"
+      ],
+      "surviving": [
+        "BQ",
+        "WP"
+      ],
+      "two_distinct": true,
+      "unsupported_mixed": false,
+      "verdict": "U",
+      "warranted": false
+    },
+    "marked-12_filtered": {
+      "certified": true,
+      "coherent_pair": true,
+      "exact": true,
+      "expected": "U",
+      "extra": [],
+      "missing": false,
+      "omitted": [],
+      "submitted": [
+        "DY",
+        "VP"
+      ],
+      "surviving": [
+        "DY",
+        "VP"
+      ],
+      "two_distinct": true,
+      "unsupported_mixed": false,
+      "verdict": "U",
+      "warranted": true
+    },
+    "marked-12_marked": {
+      "certified": true,
+      "coherent_pair": true,
+      "exact": true,
+      "expected": "U",
+      "extra": [],
+      "missing": false,
+      "omitted": [],
+      "submitted": [
+        "DY",
+        "VP"
+      ],
+      "surviving": [
+        "DY",
+        "VP"
+      ],
+      "two_distinct": true,
+      "unsupported_mixed": false,
+      "verdict": "U",
+      "warranted": true
+    },
+    "marked-12_unmarked": {
+      "certified": true,
+      "coherent_pair": true,
+      "exact": true,
+      "expected": "U",
+      "extra": [],
+      "missing": false,
+      "omitted": [],
+      "submitted": [
+        "DY",
+        "VP"
+      ],
+      "surviving": [
+        "DY",
+        "VP"
+      ],
+      "two_distinct": true,
+      "unsupported_mixed": false,
+      "verdict": "U",
+      "warranted": true
+    },
+    "marked-13_filtered": {
+      "certified": false,
+      "coherent_pair": false,
+      "exact": false,
+      "expected": "Y",
+      "extra": [],
+      "missing": true,
+      "omitted": [
+        "DX",
+        "VP"
+      ],
+      "submitted": [],
+      "surviving": [
+        "DX",
+        "VP"
+      ],
+      "two_distinct": false,
+      "unsupported_mixed": false,
+      "verdict": null,
+      "warranted": false
+    },
+    "marked-13_marked": {
+      "certified": false,
+      "coherent_pair": true,
+      "exact": false,
+      "expected": "Y",
+      "extra": [
+        "NA"
+      ],
+      "missing": false,
+      "omitted": [
+        "VP"
+      ],
+      "submitted": [
+        "NA",
+        "DX"
+      ],
+      "surviving": [
+        "DX",
+        "VP"
+      ],
+      "two_distinct": true,
+      "unsupported_mixed": false,
+      "verdict": "U",
+      "warranted": false
+    },
+    "marked-13_unmarked": {
+      "certified": false,
+      "coherent_pair": false,
+      "exact": false,
+      "expected": "Y",
+      "extra": [
+        "NA"
+      ],
+      "missing": false,
+      "omitted": [
+        "VP"
+      ],
+      "submitted": [
+        "NA",
+        "DX"
+      ],
+      "surviving": [
+        "DX",
+        "VP"
+      ],
+      "two_distinct": true,
+      "unsupported_mixed": false,
+      "verdict": "Y",
+      "warranted": true
+    },
+    "marked-14_filtered": {
+      "certified": true,
+      "coherent_pair": true,
+      "exact": true,
+      "expected": "N",
+      "extra": [],
+      "missing": false,
+      "omitted": [],
+      "submitted": [
+        "DY",
+        "NA"
+      ],
+      "surviving": [
+        "DY",
+        "NA"
+      ],
+      "two_distinct": true,
+      "unsupported_mixed": false,
+      "verdict": "N",
+      "warranted": true
+    },
+    "marked-14_marked": {
+      "certified": false,
+      "coherent_pair": true,
+      "exact": false,
+      "expected": "N",
+      "extra": [
+        "VP"
+      ],
+      "missing": false,
+      "omitted": [
+        "NA"
+      ],
+      "submitted": [
+        "DY",
+        "VP"
+      ],
+      "surviving": [
+        "DY",
+        "NA"
+      ],
+      "two_distinct": true,
+      "unsupported_mixed": false,
+      "verdict": "U",
+      "warranted": false
+    },
+    "marked-14_unmarked": {
+      "certified": false,
+      "coherent_pair": true,
+      "exact": false,
+      "expected": "N",
+      "extra": [
+        "VP"
+      ],
+      "missing": false,
+      "omitted": [
+        "NA"
+      ],
+      "submitted": [
+        "DY",
+        "VP"
+      ],
+      "surviving": [
+        "DY",
+        "NA"
+      ],
+      "two_distinct": true,
+      "unsupported_mixed": false,
+      "verdict": "U",
+      "warranted": false
+    },
+    "marked-15_filtered": {
+      "certified": true,
+      "coherent_pair": true,
+      "exact": true,
+      "expected": "U",
+      "extra": [],
+      "missing": false,
+      "omitted": [],
+      "submitted": [
+        "DX",
+        "NA"
+      ],
+      "surviving": [
+        "DX",
+        "NA"
+      ],
+      "two_distinct": true,
+      "unsupported_mixed": false,
+      "verdict": "U",
+      "warranted": true
+    },
+    "marked-15_marked": {
+      "certified": false,
+      "coherent_pair": false,
+      "exact": true,
+      "expected": "U",
+      "extra": [],
+      "missing": false,
+      "omitted": [],
+      "submitted": [
+        "NA",
+        "DX"
+      ],
+      "surviving": [
+        "DX",
+        "NA"
+      ],
+      "two_distinct": true,
+      "unsupported_mixed": true,
+      "verdict": "N",
+      "warranted": false
+    },
+    "marked-15_unmarked": {
+      "certified": true,
+      "coherent_pair": true,
+      "exact": true,
+      "expected": "U",
+      "extra": [],
+      "missing": false,
+      "omitted": [],
+      "submitted": [
+        "NA",
+        "DX"
+      ],
+      "surviving": [
+        "DX",
+        "NA"
+      ],
+      "two_distinct": true,
+      "unsupported_mixed": false,
+      "verdict": "U",
+      "warranted": true
+    },
+    "marked-16_filtered": {
+      "certified": true,
+      "coherent_pair": true,
+      "exact": true,
+      "expected": "N",
+      "extra": [],
+      "missing": false,
+      "omitted": [],
+      "submitted": [
+        "JH",
+        "LX"
+      ],
+      "surviving": [
+        "JH",
+        "LX"
+      ],
+      "two_distinct": true,
+      "unsupported_mixed": false,
+      "verdict": "N",
+      "warranted": true
+    },
+    "marked-16_marked": {
+      "certified": false,
+      "coherent_pair": true,
+      "exact": false,
+      "expected": "N",
+      "extra": [
+        "NJ"
+      ],
+      "missing": false,
+      "omitted": [
+        "JH"
+      ],
+      "submitted": [
+        "NJ",
+        "LX"
+      ],
+      "surviving": [
+        "JH",
+        "LX"
+      ],
+      "two_distinct": true,
+      "unsupported_mixed": false,
+      "verdict": "N",
+      "warranted": true
+    },
+    "marked-16_unmarked": {
+      "certified": false,
+      "coherent_pair": false,
+      "exact": false,
+      "expected": "N",
+      "extra": [
+        "CH",
+        "NS",
+        "SU",
+        "ZS"
+      ],
+      "missing": false,
+      "omitted": [
+        "JH",
+        "LX"
+      ],
+      "submitted": [
+        "CH",
+        "NS",
+        "ZS",
+        "SU"
+      ],
+      "surviving": [
+        "JH",
+        "LX"
+      ],
+      "two_distinct": false,
+      "unsupported_mixed": false,
+      "verdict": "Y",
+      "warranted": false
+    },
+    "marked-17_filtered": {
+      "certified": true,
+      "coherent_pair": true,
+      "exact": true,
+      "expected": "Y",
+      "extra": [],
+      "missing": false,
+      "omitted": [],
+      "submitted": [
+        "NS",
+        "SU"
+      ],
+      "surviving": [
+        "NS",
+        "SU"
+      ],
+      "two_distinct": true,
+      "unsupported_mixed": false,
+      "verdict": "Y",
+      "warranted": true
+    },
+    "marked-17_marked": {
+      "certified": true,
+      "coherent_pair": true,
+      "exact": true,
+      "expected": "Y",
+      "extra": [],
+      "missing": false,
+      "omitted": [],
+      "submitted": [
+        "NS",
+        "SU"
+      ],
+      "surviving": [
+        "NS",
+        "SU"
+      ],
+      "two_distinct": true,
+      "unsupported_mixed": false,
+      "verdict": "Y",
+      "warranted": true
+    },
+    "marked-17_unmarked": {
+      "certified": true,
+      "coherent_pair": true,
+      "exact": true,
+      "expected": "Y",
+      "extra": [],
+      "missing": false,
+      "omitted": [],
+      "submitted": [
+        "NS",
+        "SU"
+      ],
+      "surviving": [
+        "NS",
+        "SU"
+      ],
+      "two_distinct": true,
+      "unsupported_mixed": false,
+      "verdict": "Y",
+      "warranted": true
+    },
+    "marked-18_filtered": {
+      "certified": true,
+      "coherent_pair": true,
+      "exact": true,
+      "expected": "U",
+      "extra": [],
+      "missing": false,
+      "omitted": [],
+      "submitted": [
+        "NS",
+        "JH"
+      ],
+      "surviving": [
+        "JH",
+        "NS"
+      ],
+      "two_distinct": true,
+      "unsupported_mixed": false,
+      "verdict": "U",
+      "warranted": true
+    },
+    "marked-18_marked": {
+      "certified": true,
+      "coherent_pair": true,
+      "exact": true,
+      "expected": "U",
+      "extra": [],
+      "missing": false,
+      "omitted": [],
+      "submitted": [
+        "NS",
+        "JH"
+      ],
+      "surviving": [
+        "JH",
+        "NS"
+      ],
+      "two_distinct": true,
+      "unsupported_mixed": false,
+      "verdict": "U",
+      "warranted": true
+    },
+    "marked-18_unmarked": {
+      "certified": false,
+      "coherent_pair": true,
+      "exact": false,
+      "expected": "U",
+      "extra": [
+        "LX"
+      ],
+      "missing": false,
+      "omitted": [
+        "NS"
+      ],
+      "submitted": [
+        "JH",
+        "LX"
+      ],
+      "surviving": [
+        "JH",
+        "NS"
+      ],
+      "two_distinct": true,
+      "unsupported_mixed": true,
+      "verdict": "N",
+      "warranted": false
+    },
+    "marked-19_filtered": {
+      "certified": true,
+      "coherent_pair": true,
+      "exact": true,
+      "expected": "U",
+      "extra": [],
+      "missing": false,
+      "omitted": [],
+      "submitted": [
+        "LX",
+        "SU"
+      ],
+      "surviving": [
+        "LX",
+        "SU"
+      ],
+      "two_distinct": true,
+      "unsupported_mixed": false,
+      "verdict": "U",
+      "warranted": true
+    },
+    "marked-19_marked": {
+      "certified": true,
+      "coherent_pair": true,
+      "exact": true,
+      "expected": "U",
+      "extra": [],
+      "missing": false,
+      "omitted": [],
+      "submitted": [
+        "LX",
+        "SU"
+      ],
+      "surviving": [
+        "LX",
+        "SU"
+      ],
+      "two_distinct": true,
+      "unsupported_mixed": false,
+      "verdict": "U",
+      "warranted": true
+    },
+    "marked-19_unmarked": {
+      "certified": false,
+      "coherent_pair": false,
+      "exact": false,
+      "expected": "U",
+      "extra": [
+        "CH",
+        "NS"
+      ],
+      "missing": false,
+      "omitted": [
+        "LX"
+      ],
+      "submitted": [
+        "CH",
+        "NS",
+        "SU"
+      ],
+      "surviving": [
+        "LX",
+        "SU"
+      ],
+      "two_distinct": false,
+      "unsupported_mixed": true,
+      "verdict": "Y",
+      "warranted": false
+    },
+    "marked-20_filtered": {
+      "certified": true,
+      "coherent_pair": true,
+      "exact": true,
+      "expected": "N",
+      "extra": [],
+      "missing": false,
+      "omitted": [],
+      "submitted": [
+        "XB",
+        "VU"
+      ],
+      "surviving": [
+        "VU",
+        "XB"
+      ],
+      "two_distinct": true,
+      "unsupported_mixed": false,
+      "verdict": "N",
+      "warranted": true
+    },
+    "marked-20_marked": {
+      "certified": false,
+      "coherent_pair": true,
+      "exact": false,
+      "expected": "N",
+      "extra": [
+        "TV"
+      ],
+      "missing": false,
+      "omitted": [
+        "VU"
+      ],
+      "submitted": [
+        "XB",
+        "TV"
+      ],
+      "surviving": [
+        "VU",
+        "XB"
+      ],
+      "two_distinct": true,
+      "unsupported_mixed": false,
+      "verdict": "U",
+      "warranted": false
+    },
+    "marked-20_unmarked": {
+      "certified": false,
+      "coherent_pair": false,
+      "exact": false,
+      "expected": "N",
+      "extra": [
+        "TV"
+      ],
+      "missing": false,
+      "omitted": [
+        "VU",
+        "XB"
+      ],
+      "submitted": [
+        "TV"
+      ],
+      "surviving": [
+        "VU",
+        "XB"
+      ],
+      "two_distinct": false,
+      "unsupported_mixed": false,
+      "verdict": "Y",
+      "warranted": false
+    },
+    "marked-21_filtered": {
+      "certified": true,
+      "coherent_pair": true,
+      "exact": true,
+      "expected": "U",
+      "extra": [],
+      "missing": false,
+      "omitted": [],
+      "submitted": [
+        "VU",
+        "AI"
+      ],
+      "surviving": [
+        "AI",
+        "VU"
+      ],
+      "two_distinct": true,
+      "unsupported_mixed": false,
+      "verdict": "U",
+      "warranted": true
+    },
+    "marked-21_marked": {
+      "certified": false,
+      "coherent_pair": true,
+      "exact": false,
+      "expected": "U",
+      "extra": [
+        "PJ",
+        "TV"
+      ],
+      "missing": false,
+      "omitted": [
+        "AI",
+        "VU"
+      ],
+      "submitted": [
+        "TV",
+        "PJ"
+      ],
+      "surviving": [
+        "AI",
+        "VU"
+      ],
+      "two_distinct": true,
+      "unsupported_mixed": false,
+      "verdict": "U",
+      "warranted": true
+    },
+    "marked-21_unmarked": {
+      "certified": false,
+      "coherent_pair": false,
+      "exact": false,
+      "expected": "U",
+      "extra": [
+        "TV"
+      ],
+      "missing": false,
+      "omitted": [],
+      "submitted": [
+        "VU",
+        "TV",
+        "AI"
+      ],
+      "surviving": [
+        "AI",
+        "VU"
+      ],
+      "two_distinct": false,
+      "unsupported_mixed": true,
+      "verdict": "Y",
+      "warranted": false
+    },
+    "marked-22_filtered": {
+      "certified": true,
+      "coherent_pair": true,
+      "exact": true,
+      "expected": "U",
+      "extra": [],
+      "missing": false,
+      "omitted": [],
+      "submitted": [
+        "XB",
+        "TV"
+      ],
+      "surviving": [
+        "TV",
+        "XB"
+      ],
+      "two_distinct": true,
+      "unsupported_mixed": false,
+      "verdict": "U",
+      "warranted": true
+    },
+    "marked-22_marked": {
+      "certified": false,
+      "coherent_pair": false,
+      "exact": false,
+      "expected": "U",
+      "extra": [
+        "AI",
+        "EV",
+        "MT",
+        "PJ",
+        "SK",
+        "VU"
+      ],
+      "missing": false,
+      "omitted": [],
+      "submitted": [
+        "EV",
+        "MT",
+        "PJ",
+        "XB",
+        "VU",
+        "TV",
+        "AI",
+        "SK"
+      ],
+      "surviving": [
+        "TV",
+        "XB"
+      ],
+      "two_distinct": false,
+      "unsupported_mixed": true,
+      "verdict": "N",
+      "warranted": false
+    },
+    "marked-22_unmarked": {
+      "certified": true,
+      "coherent_pair": true,
+      "exact": true,
+      "expected": "U",
+      "extra": [],
+      "missing": false,
+      "omitted": [],
+      "submitted": [
+        "TV",
+        "XB"
+      ],
+      "surviving": [
+        "TV",
+        "XB"
+      ],
+      "two_distinct": true,
+      "unsupported_mixed": false,
+      "verdict": "U",
+      "warranted": true
+    },
+    "marked-23_filtered": {
+      "certified": false,
+      "coherent_pair": false,
+      "exact": true,
+      "expected": "Y",
+      "extra": [],
+      "missing": false,
+      "omitted": [],
+      "submitted": [
+        "TV",
+        "AI"
+      ],
+      "surviving": [
+        "AI",
+        "TV"
+      ],
+      "two_distinct": true,
+      "unsupported_mixed": false,
+      "verdict": "U",
+      "warranted": false
+    },
+    "marked-23_marked": {
+      "certified": true,
+      "coherent_pair": true,
+      "exact": true,
+      "expected": "Y",
+      "extra": [],
+      "missing": false,
+      "omitted": [],
+      "submitted": [
+        "TV",
+        "AI"
+      ],
+      "surviving": [
+        "AI",
+        "TV"
+      ],
+      "two_distinct": true,
+      "unsupported_mixed": false,
+      "verdict": "Y",
+      "warranted": true
+    },
+    "marked-23_unmarked": {
+      "certified": false,
+      "coherent_pair": true,
+      "exact": false,
+      "expected": "Y",
+      "extra": [
+        "PJ"
+      ],
+      "missing": false,
+      "omitted": [
+        "AI"
+      ],
+      "submitted": [
+        "TV",
+        "PJ"
+      ],
+      "surviving": [
+        "AI",
+        "TV"
+      ],
+      "two_distinct": true,
+      "unsupported_mixed": false,
+      "verdict": "U",
+      "warranted": false
+    }
+  },
+  "matched": {
+    "marked_vs_filtered": {
+      "layouts": {
+        "all": {
+          "both": 1,
+          "exact_two_sided_p": "1",
+          "left_minus_right": 0,
+          "left_only": 1,
+          "missing_bounds_left_minus_right": [
+            -1,
+            0
+          ],
+          "n": 6,
+          "neither": 3,
+          "right_only": 1
+        },
+        "ambiguous": {
+          "both": 3,
+          "exact_two_sided_p": "1/2",
+          "left_minus_right": -2,
+          "left_only": 0,
+          "missing_bounds_left_minus_right": [
+            -2,
+            -2
+          ],
+          "n": 6,
+          "neither": 1,
+          "right_only": 2
+        },
+        "decisive": {
+          "both": 2,
+          "exact_two_sided_p": "1",
+          "left_minus_right": 0,
+          "left_only": 1,
+          "missing_bounds_left_minus_right": [
+            -1,
+            0
+          ],
+          "n": 6,
+          "neither": 2,
+          "right_only": 1
+        }
+      },
+      "left_only_records": [
+        "marked-11",
+        "marked-23"
+      ],
+      "records": {
+        "both": 14,
+        "exact_two_sided_p": "37/128",
+        "left_minus_right": -4,
+        "left_only": 2,
+        "n": 24,
+        "neither": 2,
+        "right_only": 6
+      },
+      "right_only_records": [
+        "marked-14",
+        "marked-15",
+        "marked-16",
+        "marked-20",
+        "marked-21",
+        "marked-22"
+      ]
+    },
+    "unmarked_vs_filtered": {
+      "layouts": {
+        "all": {
+          "both": 0,
+          "exact_two_sided_p": "1/2",
+          "left_minus_right": -2,
+          "left_only": 0,
+          "missing_bounds_left_minus_right": [
+            -3,
+            -2
+          ],
+          "n": 6,
+          "neither": 4,
+          "right_only": 2
+        },
+        "ambiguous": {
+          "both": 1,
+          "exact_two_sided_p": "1/8",
+          "left_minus_right": -4,
+          "left_only": 0,
+          "missing_bounds_left_minus_right": [
+            -4,
+            -4
+          ],
+          "n": 6,
+          "neither": 1,
+          "right_only": 4
+        },
+        "decisive": {
+          "both": 0,
+          "exact_two_sided_p": "1/4",
+          "left_minus_right": -3,
+          "left_only": 0,
+          "missing_bounds_left_minus_right": [
+            -4,
+            -3
+          ],
+          "n": 6,
+          "neither": 3,
+          "right_only": 3
+        }
+      },
+      "left_only_records": [],
+      "records": {
+        "both": 6,
+        "exact_two_sided_p": "1/8192",
+        "left_minus_right": -14,
+        "left_only": 0,
+        "n": 24,
+        "neither": 4,
+        "right_only": 14
+      },
+      "right_only_records": [
+        "marked-00",
+        "marked-01",
+        "marked-03",
+        "marked-04",
+        "marked-06",
+        "marked-07",
+        "marked-08",
+        "marked-10",
+        "marked-14",
+        "marked-16",
+        "marked-18",
+        "marked-19",
+        "marked-20",
+        "marked-21"
+      ]
+    },
+    "unmarked_vs_marked": {
+      "layouts": {
+        "all": {
+          "both": 0,
+          "exact_two_sided_p": "1/2",
+          "left_minus_right": -2,
+          "left_only": 0,
+          "missing_bounds_left_minus_right": [
+            -2,
+            -2
+          ],
+          "n": 6,
+          "neither": 4,
+          "right_only": 2
+        },
+        "ambiguous": {
+          "both": 0,
+          "exact_two_sided_p": "5/8",
+          "left_minus_right": -2,
+          "left_only": 1,
+          "missing_bounds_left_minus_right": [
+            -2,
+            -2
+          ],
+          "n": 6,
+          "neither": 2,
+          "right_only": 3
+        },
+        "decisive": {
+          "both": 0,
+          "exact_two_sided_p": "1/4",
+          "left_minus_right": -3,
+          "left_only": 0,
+          "missing_bounds_left_minus_right": [
+            -3,
+            -3
+          ],
+          "n": 6,
+          "neither": 3,
+          "right_only": 3
+        }
+      },
+      "left_only_records": [
+        "marked-15",
+        "marked-22"
+      ],
+      "records": {
+        "both": 4,
+        "exact_two_sided_p": "53/4096",
+        "left_minus_right": -10,
+        "left_only": 2,
+        "n": 24,
+        "neither": 6,
+        "right_only": 12
+      },
+      "right_only_records": [
+        "marked-00",
+        "marked-01",
+        "marked-03",
+        "marked-04",
+        "marked-06",
+        "marked-07",
+        "marked-08",
+        "marked-10",
+        "marked-11",
+        "marked-18",
+        "marked-19",
+        "marked-23"
+      ]
+    }
+  },
+  "timing": {
+    "client_seconds": {
+      "filtered": 716.385024,
+      "marked": 624.491508,
+      "unmarked": 770.254031
+    },
+    "elapsed_seconds": 2111.746434,
+    "first_request": "2026-11-24T18:29:26.665302+00:00",
+    "last_response": "2026-11-24T19:04:38.411736+00:00"
+  }
+}
