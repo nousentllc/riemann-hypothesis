@@ -1,0 +1,207 @@
+{
+  "quota": 6,
+  "solved": {
+    "position_1": 2,
+    "position_2": 2,
+    "position_3": 2,
+    "first_max_balance": 2
+  },
+  "records": {
+    "circuit-00": {
+      "menu": [
+        "M7",
+        "M6",
+        "M2"
+      ],
+      "accessible_split_sizes": [
+        {
+          "L": 2,
+          "H": 2
+        },
+        {
+          "H": 2,
+          "L": 2
+        },
+        {
+          "L": 2,
+          "H": 2
+        }
+      ],
+      "balance": [
+        2,
+        2,
+        2
+      ],
+      "crossing_pairs": [
+        0,
+        2,
+        2
+      ],
+      "decisive": "M7",
+      "first_max_balance": "M7"
+    },
+    "circuit-03": {
+      "menu": [
+        "M3",
+        "M2",
+        "M6"
+      ],
+      "accessible_split_sizes": [
+        {
+          "L": 2,
+          "H": 2
+        },
+        {
+          "L": 2,
+          "H": 2
+        },
+        {
+          "H": 4
+        }
+      ],
+      "balance": [
+        2,
+        2,
+        0
+      ],
+      "crossing_pairs": [
+        2,
+        0,
+        4
+      ],
+      "decisive": "M2",
+      "first_max_balance": "M3"
+    },
+    "circuit-05": {
+      "menu": [
+        "M4",
+        "M2",
+        "M8"
+      ],
+      "accessible_split_sizes": [
+        {
+          "L": 2,
+          "H": 2
+        },
+        {
+          "L": 2,
+          "H": 2
+        },
+        {
+          "H": 2,
+          "L": 2
+        }
+      ],
+      "balance": [
+        2,
+        2,
+        2
+      ],
+      "crossing_pairs": [
+        2,
+        2,
+        0
+      ],
+      "decisive": "M8",
+      "first_max_balance": "M4"
+    },
+    "circuit-06": {
+      "menu": [
+        "M6",
+        "M3",
+        "M5"
+      ],
+      "accessible_split_sizes": [
+        {
+          "L": 2,
+          "H": 2
+        },
+        {
+          "H": 2,
+          "L": 2
+        },
+        {
+          "H": 2,
+          "L": 2
+        }
+      ],
+      "balance": [
+        2,
+        2,
+        2
+      ],
+      "crossing_pairs": [
+        0,
+        2,
+        2
+      ],
+      "decisive": "M6",
+      "first_max_balance": "M6"
+    },
+    "circuit-09": {
+      "menu": [
+        "M6",
+        "M7",
+        "M3"
+      ],
+      "accessible_split_sizes": [
+        {
+          "H": 2,
+          "L": 2
+        },
+        {
+          "L": 2,
+          "H": 2
+        },
+        {
+          "H": 2,
+          "L": 2
+        }
+      ],
+      "balance": [
+        2,
+        2,
+        2
+      ],
+      "crossing_pairs": [
+        2,
+        0,
+        2
+      ],
+      "decisive": "M7",
+      "first_max_balance": "M6"
+    },
+    "circuit-10": {
+      "menu": [
+        "M3",
+        "M6",
+        "M4"
+      ],
+      "accessible_split_sizes": [
+        {
+          "L": 2,
+          "H": 2
+        },
+        {
+          "L": 4
+        },
+        {
+          "L": 2,
+          "H": 2
+        }
+      ],
+      "balance": [
+        2,
+        0,
+        2
+      ],
+      "crossing_pairs": [
+        2,
+        4,
+        0
+      ],
+      "decisive": "M4",
+      "first_max_balance": "M3"
+    }
+  }
+}

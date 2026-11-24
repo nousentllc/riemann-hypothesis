@@ -1,0 +1,22 @@
+DC circuit at + = 12 V and 0 = 0 V. Three hidden switches s,t,u each have two positions (1 closed). A bracketed resistor conducts only with that switch closed. Edge format source>destination:ohms defines positive current. R1=+>a:7 R2=a>b:7 R3=b>c:7 R4=c>0:5 R5=+>d:4 R6=d>e:3 R7=e>0:3 R8=b>e:4 R9=a>d:5[s] R10=c>e:4[t] R11=b>d:6[u].
+Question: is the signed current of R2 > 600/1243 A?
+The calibration table lists all possible switch settings. Finite meter comparators report H for strictly above their threshold, L otherwise. All currents are exact amperes. Initial comparator: signed current of R4 > 1/2 A. Lookup comparators: M6 = voltage at c > 2 V; M3 = signed current of R7 > 3648/2773 A; M5 = signed current of R9 > 0 A.
+ID stu target_current initial M6 M3 M5 target_current_above_threshold
+AU 111 98880/250349 H H L H N
+BG 011 600/1243 H H L L N
+GR 110 960/1979 H H L H Y
+IK 100 17808/35771 L L H H Y
+KN 101 22488/56075 L H H H N
+NK 010 4784/9047 H H L L Y
+OH 000 870/1633 L L L L Y
+XV 001 1338/2773 L H L L N
+
+Observed now:
+The initial comparator reading is L.
+
+Optional lookup menu:
+M6: voltage at c > 2 V
+M3: signed current of R7 > 3648/2773 A
+M5: signed current of R9 > 0 A
+
+Use only the packet. Y means the named claim holds in every compatible state, N means it fails in every compatible state, and U means both outcomes are possible. Give the initial verdict and certificate before using a lookup. For Y or N list ALL and ONLY the compatible state IDs, with no duplicates. For U list exactly TWO compatible state IDs that give opposite answers. Choose at most one lookup to obtain the strongest verdict attainable, or NONE to submit this as your final answer. Return the JSON fields verdict, certificate, lookup.

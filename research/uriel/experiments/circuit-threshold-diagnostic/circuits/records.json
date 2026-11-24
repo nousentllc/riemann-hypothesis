@@ -1,0 +1,1322 @@
+{
+  "circuit-00": {
+    "family": "DC-T1",
+    "variant": "1",
+    "text": "DC circuit at + = 12 V and 0 = 0 V. Three hidden switches s,t,u each have two positions (1 closed). A bracketed resistor conducts only with that switch closed. Edge format source>destination:ohms defines positive current. R1=+>a:3 R2=a>b:4 R3=b>0:3 R4=+>c:4 R5=c>0:5 R6=b>c:3 R7=+>0:2 R8=+>b:5[s] R9=a>0:5[t] R10=a>c:6[u].\nQuestion: is the signed current of R2 > 1/2 A?\nThe calibration table lists all possible switch settings. Finite meter comparators report H for strictly above their threshold, L otherwise. All currents are exact amperes. Initial comparator: voltage at b > 5 V. Lookup comparators: M7 = voltage at a > 7 V; M6 = signed current of R6 > -2/9 A; M2 = signed current of R10 > 0 A.\nID stu target_current initial M7 M6 M2\nBB 110 9924/29657 H L H L\nGB 111 26028/84679 H L L H\nGN 101 8748/12833 H H L H\nHA 010 1500/2303 L L L L\nOW 100 1770/2141 H H H L\nRD 011 8100/13157 L L L H\nSH 001 1836/1975 L H L H\nTT 000 708/659 L H L L",
+    "states": {
+      "TT": {
+        "answer": true,
+        "obs": {
+          "M7": "H",
+          "M6": "L",
+          "M2": "L"
+        },
+        "bits": "000",
+        "target_current": "708/659",
+        "initial": "L"
+      },
+      "SH": {
+        "answer": true,
+        "obs": {
+          "M7": "H",
+          "M6": "L",
+          "M2": "H"
+        },
+        "bits": "001",
+        "target_current": "1836/1975",
+        "initial": "L"
+      },
+      "HA": {
+        "answer": true,
+        "obs": {
+          "M7": "L",
+          "M6": "L",
+          "M2": "L"
+        },
+        "bits": "010",
+        "target_current": "1500/2303",
+        "initial": "L"
+      },
+      "RD": {
+        "answer": true,
+        "obs": {
+          "M7": "L",
+          "M6": "L",
+          "M2": "H"
+        },
+        "bits": "011",
+        "target_current": "8100/13157",
+        "initial": "L"
+      },
+      "OW": {
+        "answer": true,
+        "obs": {
+          "M7": "H",
+          "M6": "H",
+          "M2": "L"
+        },
+        "bits": "100",
+        "target_current": "1770/2141",
+        "initial": "H"
+      },
+      "GN": {
+        "answer": true,
+        "obs": {
+          "M7": "H",
+          "M6": "L",
+          "M2": "H"
+        },
+        "bits": "101",
+        "target_current": "8748/12833",
+        "initial": "H"
+      },
+      "BB": {
+        "answer": false,
+        "obs": {
+          "M7": "L",
+          "M6": "H",
+          "M2": "L"
+        },
+        "bits": "110",
+        "target_current": "9924/29657",
+        "initial": "H"
+      },
+      "GB": {
+        "answer": false,
+        "obs": {
+          "M7": "L",
+          "M6": "L",
+          "M2": "H"
+        },
+        "bits": "111",
+        "target_current": "26028/84679",
+        "initial": "H"
+      }
+    },
+    "eligible": [
+      "BB",
+      "GB",
+      "GN",
+      "OW"
+    ],
+    "actual": "OW",
+    "menu": {
+      "M7": "voltage at a > 7 V",
+      "M6": "signed current of R6 > -2/9 A",
+      "M2": "signed current of R10 > 0 A"
+    },
+    "domain": "circuits",
+    "target_threshold": "1/2",
+    "evidence": "The initial comparator reading is H."
+  },
+  "circuit-01": {
+    "family": "DC-T1",
+    "variant": "2",
+    "text": "DC circuit at + = 12 V and 0 = 0 V. Three hidden switches s,t,u each have two positions (1 closed). A bracketed resistor conducts only with that switch closed. Edge format source>destination:ohms defines positive current. R1=+>a:3 R2=a>b:4 R3=b>0:3 R4=+>c:4 R5=c>0:5 R6=b>c:3 R7=+>0:2 R8=+>b:5[s] R9=a>0:5[t] R10=a>c:6[u].\nQuestion: is the signed current of R2 > 1/2 A?\nThe calibration table lists all possible switch settings. Finite meter comparators report H for strictly above their threshold, L otherwise. All currents are exact amperes. Initial comparator: voltage at b > 5 V. Lookup comparators: M7 = voltage at a > 7 V; M6 = signed current of R6 > -2/9 A; M2 = signed current of R10 > 0 A.\nID stu target_current initial M7 M6 M2\nBB 110 9924/29657 H L H L\nGB 111 26028/84679 H L L H\nGN 101 8748/12833 H H L H\nHA 010 1500/2303 L L L L\nOW 100 1770/2141 H H H L\nRD 011 8100/13157 L L L H\nSH 001 1836/1975 L H L H\nTT 000 708/659 L H L L",
+    "states": {
+      "TT": {
+        "answer": true,
+        "obs": {
+          "M7": "H",
+          "M6": "L",
+          "M2": "L"
+        },
+        "bits": "000",
+        "target_current": "708/659",
+        "initial": "L"
+      },
+      "SH": {
+        "answer": true,
+        "obs": {
+          "M7": "H",
+          "M6": "L",
+          "M2": "H"
+        },
+        "bits": "001",
+        "target_current": "1836/1975",
+        "initial": "L"
+      },
+      "HA": {
+        "answer": true,
+        "obs": {
+          "M7": "L",
+          "M6": "L",
+          "M2": "L"
+        },
+        "bits": "010",
+        "target_current": "1500/2303",
+        "initial": "L"
+      },
+      "RD": {
+        "answer": true,
+        "obs": {
+          "M7": "L",
+          "M6": "L",
+          "M2": "H"
+        },
+        "bits": "011",
+        "target_current": "8100/13157",
+        "initial": "L"
+      },
+      "OW": {
+        "answer": true,
+        "obs": {
+          "M7": "H",
+          "M6": "H",
+          "M2": "L"
+        },
+        "bits": "100",
+        "target_current": "1770/2141",
+        "initial": "H"
+      },
+      "GN": {
+        "answer": true,
+        "obs": {
+          "M7": "H",
+          "M6": "L",
+          "M2": "H"
+        },
+        "bits": "101",
+        "target_current": "8748/12833",
+        "initial": "H"
+      },
+      "BB": {
+        "answer": false,
+        "obs": {
+          "M7": "L",
+          "M6": "H",
+          "M2": "L"
+        },
+        "bits": "110",
+        "target_current": "9924/29657",
+        "initial": "H"
+      },
+      "GB": {
+        "answer": false,
+        "obs": {
+          "M7": "L",
+          "M6": "L",
+          "M2": "H"
+        },
+        "bits": "111",
+        "target_current": "26028/84679",
+        "initial": "H"
+      }
+    },
+    "eligible": [
+      "HA",
+      "RD",
+      "SH",
+      "TT"
+    ],
+    "actual": "TT",
+    "menu": {
+      "M7": "voltage at a > 7 V",
+      "M6": "signed current of R6 > -2/9 A",
+      "M2": "signed current of R10 > 0 A"
+    },
+    "domain": "circuits",
+    "target_threshold": "1/2",
+    "evidence": "The initial comparator reading is L."
+  },
+  "circuit-02": {
+    "family": "DC-T2",
+    "variant": "1",
+    "text": "DC circuit at + = 12 V and 0 = 0 V. Three hidden switches s,t,u each have two positions (1 closed). A bracketed resistor conducts only with that switch closed. Edge format source>destination:ohms defines positive current. R1=+>a:2 R2=a>b:5 R3=b>0:4 R4=+>c:5 R5=c>d:4 R6=d>0:3 R7=b>c:3 R8=a>d:5 R9=b>d:5[s] R10=+>b:3[t] R11=c>0:4[u].\nQuestion: is the signed current of R7 > -1/6 A?\nThe calibration table lists all possible switch settings. Finite meter comparators report H for strictly above their threshold, L otherwise. All currents are exact amperes. Initial comparator: voltage at d > 22/5 V. Lookup comparators: M3 = voltage at b > 7 V; M2 = signed current of R8 > 7/8 A; M6 = voltage at c > 5 V.\nID stu target_current initial M3 M2 M6\nEQ 011 38112/85549 L L H H\nEX 001 -8208/55265 L L H L\nGL 100 -7896/14255 H L L H\nRX 110 -4296/21523 H H L H\nTI 101 -14544/83645 L L H L\nUC 111 40416/122857 H L H H\nYP 000 -2436/4705 L L H H\nZL 010 -636/7493 H H H H",
+    "states": {
+      "YP": {
+        "answer": false,
+        "obs": {
+          "M3": "L",
+          "M2": "H",
+          "M6": "H"
+        },
+        "bits": "000",
+        "target_current": "-2436/4705",
+        "initial": "L"
+      },
+      "EX": {
+        "answer": true,
+        "obs": {
+          "M3": "L",
+          "M2": "H",
+          "M6": "L"
+        },
+        "bits": "001",
+        "target_current": "-8208/55265",
+        "initial": "L"
+      },
+      "ZL": {
+        "answer": true,
+        "obs": {
+          "M3": "H",
+          "M2": "H",
+          "M6": "H"
+        },
+        "bits": "010",
+        "target_current": "-636/7493",
+        "initial": "H"
+      },
+      "EQ": {
+        "answer": true,
+        "obs": {
+          "M3": "L",
+          "M2": "H",
+          "M6": "H"
+        },
+        "bits": "011",
+        "target_current": "38112/85549",
+        "initial": "L"
+      },
+      "GL": {
+        "answer": false,
+        "obs": {
+          "M3": "L",
+          "M2": "L",
+          "M6": "H"
+        },
+        "bits": "100",
+        "target_current": "-7896/14255",
+        "initial": "H"
+      },
+      "TI": {
+        "answer": false,
+        "obs": {
+          "M3": "L",
+          "M2": "H",
+          "M6": "L"
+        },
+        "bits": "101",
+        "target_current": "-14544/83645",
+        "initial": "L"
+      },
+      "RX": {
+        "answer": false,
+        "obs": {
+          "M3": "H",
+          "M2": "L",
+          "M6": "H"
+        },
+        "bits": "110",
+        "target_current": "-4296/21523",
+        "initial": "H"
+      },
+      "UC": {
+        "answer": true,
+        "obs": {
+          "M3": "L",
+          "M2": "H",
+          "M6": "H"
+        },
+        "bits": "111",
+        "target_current": "40416/122857",
+        "initial": "H"
+      }
+    },
+    "eligible": [
+      "EQ",
+      "EX",
+      "TI",
+      "YP"
+    ],
+    "actual": "EQ",
+    "menu": {
+      "M3": "voltage at b > 7 V",
+      "M2": "signed current of R8 > 7/8 A",
+      "M6": "voltage at c > 5 V"
+    },
+    "domain": "circuits",
+    "target_threshold": "-1/6",
+    "evidence": "The initial comparator reading is L."
+  },
+  "circuit-03": {
+    "family": "DC-T2",
+    "variant": "2",
+    "text": "DC circuit at + = 12 V and 0 = 0 V. Three hidden switches s,t,u each have two positions (1 closed). A bracketed resistor conducts only with that switch closed. Edge format source>destination:ohms defines positive current. R1=+>a:2 R2=a>b:5 R3=b>0:4 R4=+>c:5 R5=c>d:4 R6=d>0:3 R7=b>c:3 R8=a>d:5 R9=b>d:5[s] R10=+>b:3[t] R11=c>0:4[u].\nQuestion: is the signed current of R7 > -1/6 A?\nThe calibration table lists all possible switch settings. Finite meter comparators report H for strictly above their threshold, L otherwise. All currents are exact amperes. Initial comparator: voltage at d > 22/5 V. Lookup comparators: M3 = voltage at b > 7 V; M2 = signed current of R8 > 7/8 A; M6 = voltage at c > 5 V.\nID stu target_current initial M3 M2 M6\nEQ 011 38112/85549 L L H H\nEX 001 -8208/55265 L L H L\nGL 100 -7896/14255 H L L H\nRX 110 -4296/21523 H H L H\nTI 101 -14544/83645 L L H L\nUC 111 40416/122857 H L H H\nYP 000 -2436/4705 L L H H\nZL 010 -636/7493 H H H H",
+    "states": {
+      "YP": {
+        "answer": false,
+        "obs": {
+          "M3": "L",
+          "M2": "H",
+          "M6": "H"
+        },
+        "bits": "000",
+        "target_current": "-2436/4705",
+        "initial": "L"
+      },
+      "EX": {
+        "answer": true,
+        "obs": {
+          "M3": "L",
+          "M2": "H",
+          "M6": "L"
+        },
+        "bits": "001",
+        "target_current": "-8208/55265",
+        "initial": "L"
+      },
+      "ZL": {
+        "answer": true,
+        "obs": {
+          "M3": "H",
+          "M2": "H",
+          "M6": "H"
+        },
+        "bits": "010",
+        "target_current": "-636/7493",
+        "initial": "H"
+      },
+      "EQ": {
+        "answer": true,
+        "obs": {
+          "M3": "L",
+          "M2": "H",
+          "M6": "H"
+        },
+        "bits": "011",
+        "target_current": "38112/85549",
+        "initial": "L"
+      },
+      "GL": {
+        "answer": false,
+        "obs": {
+          "M3": "L",
+          "M2": "L",
+          "M6": "H"
+        },
+        "bits": "100",
+        "target_current": "-7896/14255",
+        "initial": "H"
+      },
+      "TI": {
+        "answer": false,
+        "obs": {
+          "M3": "L",
+          "M2": "H",
+          "M6": "L"
+        },
+        "bits": "101",
+        "target_current": "-14544/83645",
+        "initial": "L"
+      },
+      "RX": {
+        "answer": false,
+        "obs": {
+          "M3": "H",
+          "M2": "L",
+          "M6": "H"
+        },
+        "bits": "110",
+        "target_current": "-4296/21523",
+        "initial": "H"
+      },
+      "UC": {
+        "answer": true,
+        "obs": {
+          "M3": "L",
+          "M2": "H",
+          "M6": "H"
+        },
+        "bits": "111",
+        "target_current": "40416/122857",
+        "initial": "H"
+      }
+    },
+    "eligible": [
+      "GL",
+      "RX",
+      "UC",
+      "ZL"
+    ],
+    "actual": "RX",
+    "menu": {
+      "M3": "voltage at b > 7 V",
+      "M2": "signed current of R8 > 7/8 A",
+      "M6": "voltage at c > 5 V"
+    },
+    "domain": "circuits",
+    "target_threshold": "-1/6",
+    "evidence": "The initial comparator reading is H."
+  },
+  "circuit-04": {
+    "family": "DC-T3",
+    "variant": "1",
+    "text": "DC circuit at + = 12 V and 0 = 0 V. Three hidden switches s,t,u each have two positions (1 closed). A bracketed resistor conducts only with that switch closed. Edge format source>destination:ohms defines positive current. R1=+>a:5 R2=a>c:3 R3=c>0:4 R4=+>b:3 R5=b>d:5 R6=d>0:2 R7=a>b:2 R8=c>d:5 R9=b>c:3 R10=a>d:3[s] R11=+>c:5[t] R12=b>0:5[u].\nQuestion: is the signed current of R7 > 1/4 A?\nThe calibration table lists all possible switch settings. Finite meter comparators report H for strictly above their threshold, L otherwise. All currents are exact amperes. Initial comparator: signed current of R12 > 0 A. Lookup comparators: M4 = voltage at b > 6 V; M2 = voltage at c > 5 V; M8 = signed current of R10 > 0 A.\nID stu target_current initial M4 M2 M8\nBI 010 11100/80989 L H H L\nCU 101 -38484/1231441 H L L H\nGQ 110 -44325/157982 L H H H\nHB 001 13092/39527 H L L L\nMG 011 21156/50243 H H H L\nMU 000 1068/12581 L H L L\nSZ 100 -7461/24622 L H L H\nZK 111 46188/1561429 H H H H",
+    "states": {
+      "MU": {
+        "answer": false,
+        "obs": {
+          "M4": "H",
+          "M2": "L",
+          "M8": "L"
+        },
+        "bits": "000",
+        "target_current": "1068/12581",
+        "initial": "L"
+      },
+      "HB": {
+        "answer": true,
+        "obs": {
+          "M4": "L",
+          "M2": "L",
+          "M8": "L"
+        },
+        "bits": "001",
+        "target_current": "13092/39527",
+        "initial": "H"
+      },
+      "BI": {
+        "answer": false,
+        "obs": {
+          "M4": "H",
+          "M2": "H",
+          "M8": "L"
+        },
+        "bits": "010",
+        "target_current": "11100/80989",
+        "initial": "L"
+      },
+      "MG": {
+        "answer": true,
+        "obs": {
+          "M4": "H",
+          "M2": "H",
+          "M8": "L"
+        },
+        "bits": "011",
+        "target_current": "21156/50243",
+        "initial": "H"
+      },
+      "SZ": {
+        "answer": false,
+        "obs": {
+          "M4": "H",
+          "M2": "L",
+          "M8": "H"
+        },
+        "bits": "100",
+        "target_current": "-7461/24622",
+        "initial": "L"
+      },
+      "CU": {
+        "answer": false,
+        "obs": {
+          "M4": "L",
+          "M2": "L",
+          "M8": "H"
+        },
+        "bits": "101",
+        "target_current": "-38484/1231441",
+        "initial": "H"
+      },
+      "GQ": {
+        "answer": false,
+        "obs": {
+          "M4": "H",
+          "M2": "H",
+          "M8": "H"
+        },
+        "bits": "110",
+        "target_current": "-44325/157982",
+        "initial": "L"
+      },
+      "ZK": {
+        "answer": false,
+        "obs": {
+          "M4": "H",
+          "M2": "H",
+          "M8": "H"
+        },
+        "bits": "111",
+        "target_current": "46188/1561429",
+        "initial": "H"
+      }
+    },
+    "eligible": [
+      "BI",
+      "GQ",
+      "MU",
+      "SZ"
+    ],
+    "actual": "GQ",
+    "menu": {
+      "M4": "voltage at b > 6 V",
+      "M2": "voltage at c > 5 V",
+      "M8": "signed current of R10 > 0 A"
+    },
+    "domain": "circuits",
+    "target_threshold": "1/4",
+    "evidence": "The initial comparator reading is L."
+  },
+  "circuit-05": {
+    "family": "DC-T3",
+    "variant": "2",
+    "text": "DC circuit at + = 12 V and 0 = 0 V. Three hidden switches s,t,u each have two positions (1 closed). A bracketed resistor conducts only with that switch closed. Edge format source>destination:ohms defines positive current. R1=+>a:5 R2=a>c:3 R3=c>0:4 R4=+>b:3 R5=b>d:5 R6=d>0:2 R7=a>b:2 R8=c>d:5 R9=b>c:3 R10=a>d:3[s] R11=+>c:5[t] R12=b>0:5[u].\nQuestion: is the signed current of R7 > 1/4 A?\nThe calibration table lists all possible switch settings. Finite meter comparators report H for strictly above their threshold, L otherwise. All currents are exact amperes. Initial comparator: signed current of R12 > 0 A. Lookup comparators: M4 = voltage at b > 6 V; M2 = voltage at c > 5 V; M8 = signed current of R10 > 0 A.\nID stu target_current initial M4 M2 M8\nBI 010 11100/80989 L H H L\nCU 101 -38484/1231441 H L L H\nGQ 110 -44325/157982 L H H H\nHB 001 13092/39527 H L L L\nMG 011 21156/50243 H H H L\nMU 000 1068/12581 L H L L\nSZ 100 -7461/24622 L H L H\nZK 111 46188/1561429 H H H H",
+    "states": {
+      "MU": {
+        "answer": false,
+        "obs": {
+          "M4": "H",
+          "M2": "L",
+          "M8": "L"
+        },
+        "bits": "000",
+        "target_current": "1068/12581",
+        "initial": "L"
+      },
+      "HB": {
+        "answer": true,
+        "obs": {
+          "M4": "L",
+          "M2": "L",
+          "M8": "L"
+        },
+        "bits": "001",
+        "target_current": "13092/39527",
+        "initial": "H"
+      },
+      "BI": {
+        "answer": false,
+        "obs": {
+          "M4": "H",
+          "M2": "H",
+          "M8": "L"
+        },
+        "bits": "010",
+        "target_current": "11100/80989",
+        "initial": "L"
+      },
+      "MG": {
+        "answer": true,
+        "obs": {
+          "M4": "H",
+          "M2": "H",
+          "M8": "L"
+        },
+        "bits": "011",
+        "target_current": "21156/50243",
+        "initial": "H"
+      },
+      "SZ": {
+        "answer": false,
+        "obs": {
+          "M4": "H",
+          "M2": "L",
+          "M8": "H"
+        },
+        "bits": "100",
+        "target_current": "-7461/24622",
+        "initial": "L"
+      },
+      "CU": {
+        "answer": false,
+        "obs": {
+          "M4": "L",
+          "M2": "L",
+          "M8": "H"
+        },
+        "bits": "101",
+        "target_current": "-38484/1231441",
+        "initial": "H"
+      },
+      "GQ": {
+        "answer": false,
+        "obs": {
+          "M4": "H",
+          "M2": "H",
+          "M8": "H"
+        },
+        "bits": "110",
+        "target_current": "-44325/157982",
+        "initial": "L"
+      },
+      "ZK": {
+        "answer": false,
+        "obs": {
+          "M4": "H",
+          "M2": "H",
+          "M8": "H"
+        },
+        "bits": "111",
+        "target_current": "46188/1561429",
+        "initial": "H"
+      }
+    },
+    "eligible": [
+      "CU",
+      "HB",
+      "MG",
+      "ZK"
+    ],
+    "actual": "CU",
+    "menu": {
+      "M4": "voltage at b > 6 V",
+      "M2": "voltage at c > 5 V",
+      "M8": "signed current of R10 > 0 A"
+    },
+    "domain": "circuits",
+    "target_threshold": "1/4",
+    "evidence": "The initial comparator reading is H."
+  },
+  "circuit-06": {
+    "family": "DC-T4",
+    "variant": "1",
+    "text": "DC circuit at + = 12 V and 0 = 0 V. Three hidden switches s,t,u each have two positions (1 closed). A bracketed resistor conducts only with that switch closed. Edge format source>destination:ohms defines positive current. R1=+>a:7 R2=a>b:7 R3=b>c:7 R4=c>0:5 R5=+>d:4 R6=d>e:3 R7=e>0:3 R8=b>e:4 R9=a>d:5[s] R10=c>e:4[t] R11=b>d:6[u].\nQuestion: is the signed current of R2 > 600/1243 A?\nThe calibration table lists all possible switch settings. Finite meter comparators report H for strictly above their threshold, L otherwise. All currents are exact amperes. Initial comparator: signed current of R4 > 1/2 A. Lookup comparators: M6 = voltage at c > 2 V; M3 = signed current of R7 > 3648/2773 A; M5 = signed current of R9 > 0 A.\nID stu target_current initial M6 M3 M5\nAU 111 98880/250349 H H L H\nBG 011 600/1243 H H L L\nGR 110 960/1979 H H L H\nIK 100 17808/35771 L L H H\nKN 101 22488/56075 L H H H\nNK 010 4784/9047 H H L L\nOH 000 870/1633 L L L L\nXV 001 1338/2773 L H L L",
+    "states": {
+      "OH": {
+        "answer": true,
+        "obs": {
+          "M6": "L",
+          "M3": "L",
+          "M5": "L"
+        },
+        "bits": "000",
+        "target_current": "870/1633",
+        "initial": "L"
+      },
+      "XV": {
+        "answer": false,
+        "obs": {
+          "M6": "H",
+          "M3": "L",
+          "M5": "L"
+        },
+        "bits": "001",
+        "target_current": "1338/2773",
+        "initial": "L"
+      },
+      "NK": {
+        "answer": true,
+        "obs": {
+          "M6": "H",
+          "M3": "L",
+          "M5": "L"
+        },
+        "bits": "010",
+        "target_current": "4784/9047",
+        "initial": "H"
+      },
+      "BG": {
+        "answer": false,
+        "obs": {
+          "M6": "H",
+          "M3": "L",
+          "M5": "L"
+        },
+        "bits": "011",
+        "target_current": "600/1243",
+        "initial": "H"
+      },
+      "IK": {
+        "answer": true,
+        "obs": {
+          "M6": "L",
+          "M3": "H",
+          "M5": "H"
+        },
+        "bits": "100",
+        "target_current": "17808/35771",
+        "initial": "L"
+      },
+      "KN": {
+        "answer": false,
+        "obs": {
+          "M6": "H",
+          "M3": "H",
+          "M5": "H"
+        },
+        "bits": "101",
+        "target_current": "22488/56075",
+        "initial": "L"
+      },
+      "GR": {
+        "answer": true,
+        "obs": {
+          "M6": "H",
+          "M3": "L",
+          "M5": "H"
+        },
+        "bits": "110",
+        "target_current": "960/1979",
+        "initial": "H"
+      },
+      "AU": {
+        "answer": false,
+        "obs": {
+          "M6": "H",
+          "M3": "L",
+          "M5": "H"
+        },
+        "bits": "111",
+        "target_current": "98880/250349",
+        "initial": "H"
+      }
+    },
+    "eligible": [
+      "IK",
+      "KN",
+      "OH",
+      "XV"
+    ],
+    "actual": "XV",
+    "menu": {
+      "M6": "voltage at c > 2 V",
+      "M3": "signed current of R7 > 3648/2773 A",
+      "M5": "signed current of R9 > 0 A"
+    },
+    "domain": "circuits",
+    "target_threshold": "600/1243",
+    "evidence": "The initial comparator reading is L."
+  },
+  "circuit-07": {
+    "family": "DC-T4",
+    "variant": "2",
+    "text": "DC circuit at + = 12 V and 0 = 0 V. Three hidden switches s,t,u each have two positions (1 closed). A bracketed resistor conducts only with that switch closed. Edge format source>destination:ohms defines positive current. R1=+>a:7 R2=a>b:7 R3=b>c:7 R4=c>0:5 R5=+>d:4 R6=d>e:3 R7=e>0:3 R8=b>e:4 R9=a>d:5[s] R10=c>e:4[t] R11=b>d:6[u].\nQuestion: is the signed current of R2 > 600/1243 A?\nThe calibration table lists all possible switch settings. Finite meter comparators report H for strictly above their threshold, L otherwise. All currents are exact amperes. Initial comparator: signed current of R4 > 1/2 A. Lookup comparators: M6 = voltage at c > 2 V; M3 = signed current of R7 > 3648/2773 A; M5 = signed current of R9 > 0 A.\nID stu target_current initial M6 M3 M5\nAU 111 98880/250349 H H L H\nBG 011 600/1243 H H L L\nGR 110 960/1979 H H L H\nIK 100 17808/35771 L L H H\nKN 101 22488/56075 L H H H\nNK 010 4784/9047 H H L L\nOH 000 870/1633 L L L L\nXV 001 1338/2773 L H L L",
+    "states": {
+      "OH": {
+        "answer": true,
+        "obs": {
+          "M6": "L",
+          "M3": "L",
+          "M5": "L"
+        },
+        "bits": "000",
+        "target_current": "870/1633",
+        "initial": "L"
+      },
+      "XV": {
+        "answer": false,
+        "obs": {
+          "M6": "H",
+          "M3": "L",
+          "M5": "L"
+        },
+        "bits": "001",
+        "target_current": "1338/2773",
+        "initial": "L"
+      },
+      "NK": {
+        "answer": true,
+        "obs": {
+          "M6": "H",
+          "M3": "L",
+          "M5": "L"
+        },
+        "bits": "010",
+        "target_current": "4784/9047",
+        "initial": "H"
+      },
+      "BG": {
+        "answer": false,
+        "obs": {
+          "M6": "H",
+          "M3": "L",
+          "M5": "L"
+        },
+        "bits": "011",
+        "target_current": "600/1243",
+        "initial": "H"
+      },
+      "IK": {
+        "answer": true,
+        "obs": {
+          "M6": "L",
+          "M3": "H",
+          "M5": "H"
+        },
+        "bits": "100",
+        "target_current": "17808/35771",
+        "initial": "L"
+      },
+      "KN": {
+        "answer": false,
+        "obs": {
+          "M6": "H",
+          "M3": "H",
+          "M5": "H"
+        },
+        "bits": "101",
+        "target_current": "22488/56075",
+        "initial": "L"
+      },
+      "GR": {
+        "answer": true,
+        "obs": {
+          "M6": "H",
+          "M3": "L",
+          "M5": "H"
+        },
+        "bits": "110",
+        "target_current": "960/1979",
+        "initial": "H"
+      },
+      "AU": {
+        "answer": false,
+        "obs": {
+          "M6": "H",
+          "M3": "L",
+          "M5": "H"
+        },
+        "bits": "111",
+        "target_current": "98880/250349",
+        "initial": "H"
+      }
+    },
+    "eligible": [
+      "AU",
+      "BG",
+      "GR",
+      "NK"
+    ],
+    "actual": "NK",
+    "menu": {
+      "M6": "voltage at c > 2 V",
+      "M3": "signed current of R7 > 3648/2773 A",
+      "M5": "signed current of R9 > 0 A"
+    },
+    "domain": "circuits",
+    "target_threshold": "600/1243",
+    "evidence": "The initial comparator reading is H."
+  },
+  "circuit-08": {
+    "family": "DC-T5",
+    "variant": "1",
+    "text": "DC circuit at + = 12 V and 0 = 0 V. Three hidden switches s,t,u each have two positions (1 closed). A bracketed resistor conducts only with that switch closed. Edge format source>destination:ohms defines positive current. R1=+>a:5 R2=a>b:2 R3=b>c:3 R4=c>0:3 R5=+>d:4 R6=d>e:2 R7=e>0:4 R8=b>e:5 R9=b>d:3 R10=a>e:4[s] R11=+>b:3[t] R12=c>d:4[u].\nQuestion: is the signed current of R9 > -1/4 A?\nThe calibration table lists all possible switch settings. Finite meter comparators report H for strictly above their threshold, L otherwise. All currents are exact amperes. Initial comparator: voltage at a > 8 V. Lookup comparators: M6 = signed current of R1 > 1 A; M7 = signed current of R3 > 3/4 A; M3 = signed current of R10 > 0 A.\nID stu target_current initial M6 M7 M3\nAD 101 -39348/204673 L H L H\nDB 001 -246/2989 L L L L\nLO 010 20/471 H L H L\nMC 110 -320/4047 H L H H\nQK 011 4388/15827 H L H L\nQT 100 -1620/3839 L H H H\nTZ 000 -1380/4447 L L H L\nYG 111 17396/107849 H L H H",
+    "states": {
+      "TZ": {
+        "answer": false,
+        "obs": {
+          "M6": "L",
+          "M7": "H",
+          "M3": "L"
+        },
+        "bits": "000",
+        "target_current": "-1380/4447",
+        "initial": "L"
+      },
+      "DB": {
+        "answer": true,
+        "obs": {
+          "M6": "L",
+          "M7": "L",
+          "M3": "L"
+        },
+        "bits": "001",
+        "target_current": "-246/2989",
+        "initial": "L"
+      },
+      "LO": {
+        "answer": true,
+        "obs": {
+          "M6": "L",
+          "M7": "H",
+          "M3": "L"
+        },
+        "bits": "010",
+        "target_current": "20/471",
+        "initial": "H"
+      },
+      "QK": {
+        "answer": true,
+        "obs": {
+          "M6": "L",
+          "M7": "H",
+          "M3": "L"
+        },
+        "bits": "011",
+        "target_current": "4388/15827",
+        "initial": "H"
+      },
+      "QT": {
+        "answer": false,
+        "obs": {
+          "M6": "H",
+          "M7": "H",
+          "M3": "H"
+        },
+        "bits": "100",
+        "target_current": "-1620/3839",
+        "initial": "L"
+      },
+      "AD": {
+        "answer": true,
+        "obs": {
+          "M6": "H",
+          "M7": "L",
+          "M3": "H"
+        },
+        "bits": "101",
+        "target_current": "-39348/204673",
+        "initial": "L"
+      },
+      "MC": {
+        "answer": true,
+        "obs": {
+          "M6": "L",
+          "M7": "H",
+          "M3": "H"
+        },
+        "bits": "110",
+        "target_current": "-320/4047",
+        "initial": "H"
+      },
+      "YG": {
+        "answer": true,
+        "obs": {
+          "M6": "L",
+          "M7": "H",
+          "M3": "H"
+        },
+        "bits": "111",
+        "target_current": "17396/107849",
+        "initial": "H"
+      }
+    },
+    "eligible": [
+      "LO",
+      "MC",
+      "QK",
+      "YG"
+    ],
+    "actual": "MC",
+    "menu": {
+      "M6": "signed current of R1 > 1 A",
+      "M7": "signed current of R3 > 3/4 A",
+      "M3": "signed current of R10 > 0 A"
+    },
+    "domain": "circuits",
+    "target_threshold": "-1/4",
+    "evidence": "The initial comparator reading is H."
+  },
+  "circuit-09": {
+    "family": "DC-T5",
+    "variant": "2",
+    "text": "DC circuit at + = 12 V and 0 = 0 V. Three hidden switches s,t,u each have two positions (1 closed). A bracketed resistor conducts only with that switch closed. Edge format source>destination:ohms defines positive current. R1=+>a:5 R2=a>b:2 R3=b>c:3 R4=c>0:3 R5=+>d:4 R6=d>e:2 R7=e>0:4 R8=b>e:5 R9=b>d:3 R10=a>e:4[s] R11=+>b:3[t] R12=c>d:4[u].\nQuestion: is the signed current of R9 > -1/4 A?\nThe calibration table lists all possible switch settings. Finite meter comparators report H for strictly above their threshold, L otherwise. All currents are exact amperes. Initial comparator: voltage at a > 8 V. Lookup comparators: M6 = signed current of R1 > 1 A; M7 = signed current of R3 > 3/4 A; M3 = signed current of R10 > 0 A.\nID stu target_current initial M6 M7 M3\nAD 101 -39348/204673 L H L H\nDB 001 -246/2989 L L L L\nLO 010 20/471 H L H L\nMC 110 -320/4047 H L H H\nQK 011 4388/15827 H L H L\nQT 100 -1620/3839 L H H H\nTZ 000 -1380/4447 L L H L\nYG 111 17396/107849 H L H H",
+    "states": {
+      "TZ": {
+        "answer": false,
+        "obs": {
+          "M6": "L",
+          "M7": "H",
+          "M3": "L"
+        },
+        "bits": "000",
+        "target_current": "-1380/4447",
+        "initial": "L"
+      },
+      "DB": {
+        "answer": true,
+        "obs": {
+          "M6": "L",
+          "M7": "L",
+          "M3": "L"
+        },
+        "bits": "001",
+        "target_current": "-246/2989",
+        "initial": "L"
+      },
+      "LO": {
+        "answer": true,
+        "obs": {
+          "M6": "L",
+          "M7": "H",
+          "M3": "L"
+        },
+        "bits": "010",
+        "target_current": "20/471",
+        "initial": "H"
+      },
+      "QK": {
+        "answer": true,
+        "obs": {
+          "M6": "L",
+          "M7": "H",
+          "M3": "L"
+        },
+        "bits": "011",
+        "target_current": "4388/15827",
+        "initial": "H"
+      },
+      "QT": {
+        "answer": false,
+        "obs": {
+          "M6": "H",
+          "M7": "H",
+          "M3": "H"
+        },
+        "bits": "100",
+        "target_current": "-1620/3839",
+        "initial": "L"
+      },
+      "AD": {
+        "answer": true,
+        "obs": {
+          "M6": "H",
+          "M7": "L",
+          "M3": "H"
+        },
+        "bits": "101",
+        "target_current": "-39348/204673",
+        "initial": "L"
+      },
+      "MC": {
+        "answer": true,
+        "obs": {
+          "M6": "L",
+          "M7": "H",
+          "M3": "H"
+        },
+        "bits": "110",
+        "target_current": "-320/4047",
+        "initial": "H"
+      },
+      "YG": {
+        "answer": true,
+        "obs": {
+          "M6": "L",
+          "M7": "H",
+          "M3": "H"
+        },
+        "bits": "111",
+        "target_current": "17396/107849",
+        "initial": "H"
+      }
+    },
+    "eligible": [
+      "AD",
+      "DB",
+      "QT",
+      "TZ"
+    ],
+    "actual": "AD",
+    "menu": {
+      "M6": "signed current of R1 > 1 A",
+      "M7": "signed current of R3 > 3/4 A",
+      "M3": "signed current of R10 > 0 A"
+    },
+    "domain": "circuits",
+    "target_threshold": "-1/4",
+    "evidence": "The initial comparator reading is L."
+  },
+  "circuit-10": {
+    "family": "DC-T6",
+    "variant": "1",
+    "text": "DC circuit at + = 12 V and 0 = 0 V. Three hidden switches s,t,u each have two positions (1 closed). A bracketed resistor conducts only with that switch closed. Edge format source>destination:ohms defines positive current. R1=+>a:3 R2=a>b:4 R3=b>c:2 R4=c>0:3 R5=+>d:2 R6=d>e:4 R7=e>f:3 R8=f>0:4 R9=a>e:3[s] R10=b>f:4[t] R11=c>d:4[u].\nQuestion: is the signed current of R6 > 408/539 A?\nThe calibration table lists all possible switch settings. Finite meter comparators report H for strictly above their threshold, L otherwise. All currents are exact amperes. Initial comparator: signed current of R7 > 8/9 A. Lookup comparators: M3 = voltage at a > 9 V; M6 = signed current of R1 > 6/5 A; M4 = voltage at f > 33/8 V.\nID stu target_current initial M3 M6 M4\nEA 010 1332/1511 L L L L\nIC 001 324/413 L H L L\nOF 101 1620/3329 H L L L\nOO 111 9024/20407 L L L H\nPP 000 12/13 H L L L\nWU 011 903/1391 L H L H\nXL 110 408/539 H L H H\nXY 100 16/21 H L H H",
+    "states": {
+      "PP": {
+        "answer": true,
+        "obs": {
+          "M3": "L",
+          "M6": "L",
+          "M4": "L"
+        },
+        "bits": "000",
+        "target_current": "12/13",
+        "initial": "H"
+      },
+      "IC": {
+        "answer": true,
+        "obs": {
+          "M3": "H",
+          "M6": "L",
+          "M4": "L"
+        },
+        "bits": "001",
+        "target_current": "324/413",
+        "initial": "L"
+      },
+      "EA": {
+        "answer": true,
+        "obs": {
+          "M3": "L",
+          "M6": "L",
+          "M4": "L"
+        },
+        "bits": "010",
+        "target_current": "1332/1511",
+        "initial": "L"
+      },
+      "WU": {
+        "answer": false,
+        "obs": {
+          "M3": "H",
+          "M6": "L",
+          "M4": "H"
+        },
+        "bits": "011",
+        "target_current": "903/1391",
+        "initial": "L"
+      },
+      "XY": {
+        "answer": true,
+        "obs": {
+          "M3": "L",
+          "M6": "H",
+          "M4": "H"
+        },
+        "bits": "100",
+        "target_current": "16/21",
+        "initial": "H"
+      },
+      "OF": {
+        "answer": false,
+        "obs": {
+          "M3": "L",
+          "M6": "L",
+          "M4": "L"
+        },
+        "bits": "101",
+        "target_current": "1620/3329",
+        "initial": "H"
+      },
+      "XL": {
+        "answer": false,
+        "obs": {
+          "M3": "L",
+          "M6": "H",
+          "M4": "H"
+        },
+        "bits": "110",
+        "target_current": "408/539",
+        "initial": "H"
+      },
+      "OO": {
+        "answer": false,
+        "obs": {
+          "M3": "L",
+          "M6": "L",
+          "M4": "H"
+        },
+        "bits": "111",
+        "target_current": "9024/20407",
+        "initial": "L"
+      }
+    },
+    "eligible": [
+      "EA",
+      "IC",
+      "OO",
+      "WU"
+    ],
+    "actual": "IC",
+    "menu": {
+      "M3": "voltage at a > 9 V",
+      "M6": "signed current of R1 > 6/5 A",
+      "M4": "voltage at f > 33/8 V"
+    },
+    "domain": "circuits",
+    "target_threshold": "408/539",
+    "evidence": "The initial comparator reading is L."
+  },
+  "circuit-11": {
+    "family": "DC-T6",
+    "variant": "2",
+    "text": "DC circuit at + = 12 V and 0 = 0 V. Three hidden switches s,t,u each have two positions (1 closed). A bracketed resistor conducts only with that switch closed. Edge format source>destination:ohms defines positive current. R1=+>a:3 R2=a>b:4 R3=b>c:2 R4=c>0:3 R5=+>d:2 R6=d>e:4 R7=e>f:3 R8=f>0:4 R9=a>e:3[s] R10=b>f:4[t] R11=c>d:4[u].\nQuestion: is the signed current of R6 > 408/539 A?\nThe calibration table lists all possible switch settings. Finite meter comparators report H for strictly above their threshold, L otherwise. All currents are exact amperes. Initial comparator: signed current of R7 > 8/9 A. Lookup comparators: M3 = voltage at a > 9 V; M6 = signed current of R1 > 6/5 A; M4 = voltage at f > 33/8 V.\nID stu target_current initial M3 M6 M4\nEA 010 1332/1511 L L L L\nIC 001 324/413 L H L L\nOF 101 1620/3329 H L L L\nOO 111 9024/20407 L L L H\nPP 000 12/13 H L L L\nWU 011 903/1391 L H L H\nXL 110 408/539 H L H H\nXY 100 16/21 H L H H",
+    "states": {
+      "PP": {
+        "answer": true,
+        "obs": {
+          "M3": "L",
+          "M6": "L",
+          "M4": "L"
+        },
+        "bits": "000",
+        "target_current": "12/13",
+        "initial": "H"
+      },
+      "IC": {
+        "answer": true,
+        "obs": {
+          "M3": "H",
+          "M6": "L",
+          "M4": "L"
+        },
+        "bits": "001",
+        "target_current": "324/413",
+        "initial": "L"
+      },
+      "EA": {
+        "answer": true,
+        "obs": {
+          "M3": "L",
+          "M6": "L",
+          "M4": "L"
+        },
+        "bits": "010",
+        "target_current": "1332/1511",
+        "initial": "L"
+      },
+      "WU": {
+        "answer": false,
+        "obs": {
+          "M3": "H",
+          "M6": "L",
+          "M4": "H"
+        },
+        "bits": "011",
+        "target_current": "903/1391",
+        "initial": "L"
+      },
+      "XY": {
+        "answer": true,
+        "obs": {
+          "M3": "L",
+          "M6": "H",
+          "M4": "H"
+        },
+        "bits": "100",
+        "target_current": "16/21",
+        "initial": "H"
+      },
+      "OF": {
+        "answer": false,
+        "obs": {
+          "M3": "L",
+          "M6": "L",
+          "M4": "L"
+        },
+        "bits": "101",
+        "target_current": "1620/3329",
+        "initial": "H"
+      },
+      "XL": {
+        "answer": false,
+        "obs": {
+          "M3": "L",
+          "M6": "H",
+          "M4": "H"
+        },
+        "bits": "110",
+        "target_current": "408/539",
+        "initial": "H"
+      },
+      "OO": {
+        "answer": false,
+        "obs": {
+          "M3": "L",
+          "M6": "L",
+          "M4": "H"
+        },
+        "bits": "111",
+        "target_current": "9024/20407",
+        "initial": "L"
+      }
+    },
+    "eligible": [
+      "OF",
+      "PP",
+      "XL",
+      "XY"
+    ],
+    "actual": "PP",
+    "menu": {
+      "M3": "voltage at a > 9 V",
+      "M6": "signed current of R1 > 6/5 A",
+      "M4": "voltage at f > 33/8 V"
+    },
+    "domain": "circuits",
+    "target_threshold": "408/539",
+    "evidence": "The initial comparator reading is H."
+  }
+}

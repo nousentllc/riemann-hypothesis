@@ -1,0 +1,843 @@
+{
+  "topology_invariant": "vertex count, edge count including each separately controllable resistor",
+  "historical_topologies": {
+    "D1": [
+      3,
+      6
+    ],
+    "D2": [
+      5,
+      7
+    ],
+    "C1": [
+      4,
+      7
+    ],
+    "C2": [
+      5,
+      8
+    ],
+    "C3": [
+      5,
+      9
+    ],
+    "C4": [
+      6,
+      9
+    ],
+    "C5": [
+      6,
+      10
+    ],
+    "C6": [
+      7,
+      10
+    ]
+  },
+  "fresh_topologies": {
+    "T1": [
+      5,
+      10
+    ],
+    "T2": [
+      6,
+      11
+    ],
+    "T3": [
+      6,
+      12
+    ],
+    "T4": [
+      7,
+      11
+    ],
+    "T5": [
+      7,
+      12
+    ],
+    "T6": [
+      8,
+      11
+    ]
+  },
+  "physical_checks": {
+    "switch_states": 48,
+    "node_voltages": 312,
+    "branch_currents": 536,
+    "target_equalities": 2,
+    "negative_target_currents": 14,
+    "menu_predictions": 144
+  },
+  "reachable_lookup_cells": 61,
+  "record_classes": {
+    "ambiguous/U": 3,
+    "lookup/N": 3,
+    "lookup/Y": 3,
+    "settled/N": 1,
+    "settled/Y": 2
+  },
+  "guaranteed_position_counts": {
+    "1": 2,
+    "2": 2,
+    "3": 2
+  },
+  "record_oracles": {
+    "circuit-00": {
+      "kind": "lookup",
+      "attainable": "Y",
+      "eligible": [
+        "BB",
+        "GB",
+        "GN",
+        "OW"
+      ],
+      "actual": "OW",
+      "guaranteed": [
+        "M7"
+      ],
+      "varying_meters": [
+        "M7",
+        "M6",
+        "M2"
+      ],
+      "all_possible_replies": {
+        "M7": {
+          "L": {
+            "states": [
+              "BB",
+              "GB"
+            ],
+            "sign": "N"
+          },
+          "H": {
+            "states": [
+              "GN",
+              "OW"
+            ],
+            "sign": "Y"
+          }
+        },
+        "M6": {
+          "L": {
+            "states": [
+              "GB",
+              "GN"
+            ],
+            "sign": "U"
+          },
+          "H": {
+            "states": [
+              "BB",
+              "OW"
+            ],
+            "sign": "U"
+          }
+        },
+        "M2": {
+          "L": {
+            "states": [
+              "BB",
+              "OW"
+            ],
+            "sign": "U"
+          },
+          "H": {
+            "states": [
+              "GB",
+              "GN"
+            ],
+            "sign": "U"
+          }
+        }
+      }
+    },
+    "circuit-01": {
+      "kind": "settled",
+      "attainable": "Y",
+      "eligible": [
+        "HA",
+        "RD",
+        "SH",
+        "TT"
+      ],
+      "actual": "TT",
+      "guaranteed": [],
+      "varying_meters": [
+        "M7",
+        "M2"
+      ],
+      "all_possible_replies": {
+        "M7": {
+          "L": {
+            "states": [
+              "HA",
+              "RD"
+            ],
+            "sign": "Y"
+          },
+          "H": {
+            "states": [
+              "SH",
+              "TT"
+            ],
+            "sign": "Y"
+          }
+        },
+        "M6": {
+          "L": {
+            "states": [
+              "HA",
+              "RD",
+              "SH",
+              "TT"
+            ],
+            "sign": "Y"
+          }
+        },
+        "M2": {
+          "L": {
+            "states": [
+              "HA",
+              "TT"
+            ],
+            "sign": "Y"
+          },
+          "H": {
+            "states": [
+              "RD",
+              "SH"
+            ],
+            "sign": "Y"
+          }
+        }
+      }
+    },
+    "circuit-02": {
+      "kind": "ambiguous",
+      "attainable": "U",
+      "eligible": [
+        "EQ",
+        "EX",
+        "TI",
+        "YP"
+      ],
+      "actual": "EQ",
+      "guaranteed": [],
+      "varying_meters": [
+        "M6"
+      ],
+      "all_possible_replies": {
+        "M3": {
+          "L": {
+            "states": [
+              "EQ",
+              "EX",
+              "TI",
+              "YP"
+            ],
+            "sign": "U"
+          }
+        },
+        "M2": {
+          "H": {
+            "states": [
+              "EQ",
+              "EX",
+              "TI",
+              "YP"
+            ],
+            "sign": "U"
+          }
+        },
+        "M6": {
+          "L": {
+            "states": [
+              "EX",
+              "TI"
+            ],
+            "sign": "U"
+          },
+          "H": {
+            "states": [
+              "EQ",
+              "YP"
+            ],
+            "sign": "U"
+          }
+        }
+      }
+    },
+    "circuit-03": {
+      "kind": "lookup",
+      "attainable": "N",
+      "eligible": [
+        "GL",
+        "RX",
+        "UC",
+        "ZL"
+      ],
+      "actual": "RX",
+      "guaranteed": [
+        "M2"
+      ],
+      "varying_meters": [
+        "M3",
+        "M2"
+      ],
+      "all_possible_replies": {
+        "M3": {
+          "L": {
+            "states": [
+              "GL",
+              "UC"
+            ],
+            "sign": "U"
+          },
+          "H": {
+            "states": [
+              "RX",
+              "ZL"
+            ],
+            "sign": "U"
+          }
+        },
+        "M2": {
+          "L": {
+            "states": [
+              "GL",
+              "RX"
+            ],
+            "sign": "N"
+          },
+          "H": {
+            "states": [
+              "UC",
+              "ZL"
+            ],
+            "sign": "Y"
+          }
+        },
+        "M6": {
+          "H": {
+            "states": [
+              "GL",
+              "RX",
+              "UC",
+              "ZL"
+            ],
+            "sign": "U"
+          }
+        }
+      }
+    },
+    "circuit-04": {
+      "kind": "settled",
+      "attainable": "N",
+      "eligible": [
+        "BI",
+        "GQ",
+        "MU",
+        "SZ"
+      ],
+      "actual": "GQ",
+      "guaranteed": [],
+      "varying_meters": [
+        "M2",
+        "M8"
+      ],
+      "all_possible_replies": {
+        "M4": {
+          "H": {
+            "states": [
+              "BI",
+              "GQ",
+              "MU",
+              "SZ"
+            ],
+            "sign": "N"
+          }
+        },
+        "M2": {
+          "L": {
+            "states": [
+              "MU",
+              "SZ"
+            ],
+            "sign": "N"
+          },
+          "H": {
+            "states": [
+              "BI",
+              "GQ"
+            ],
+            "sign": "N"
+          }
+        },
+        "M8": {
+          "L": {
+            "states": [
+              "BI",
+              "MU"
+            ],
+            "sign": "N"
+          },
+          "H": {
+            "states": [
+              "GQ",
+              "SZ"
+            ],
+            "sign": "N"
+          }
+        }
+      }
+    },
+    "circuit-05": {
+      "kind": "lookup",
+      "attainable": "N",
+      "eligible": [
+        "CU",
+        "HB",
+        "MG",
+        "ZK"
+      ],
+      "actual": "CU",
+      "guaranteed": [
+        "M8"
+      ],
+      "varying_meters": [
+        "M4",
+        "M2",
+        "M8"
+      ],
+      "all_possible_replies": {
+        "M4": {
+          "L": {
+            "states": [
+              "CU",
+              "HB"
+            ],
+            "sign": "U"
+          },
+          "H": {
+            "states": [
+              "MG",
+              "ZK"
+            ],
+            "sign": "U"
+          }
+        },
+        "M2": {
+          "L": {
+            "states": [
+              "CU",
+              "HB"
+            ],
+            "sign": "U"
+          },
+          "H": {
+            "states": [
+              "MG",
+              "ZK"
+            ],
+            "sign": "U"
+          }
+        },
+        "M8": {
+          "L": {
+            "states": [
+              "HB",
+              "MG"
+            ],
+            "sign": "Y"
+          },
+          "H": {
+            "states": [
+              "CU",
+              "ZK"
+            ],
+            "sign": "N"
+          }
+        }
+      }
+    },
+    "circuit-06": {
+      "kind": "lookup",
+      "attainable": "N",
+      "eligible": [
+        "IK",
+        "KN",
+        "OH",
+        "XV"
+      ],
+      "actual": "XV",
+      "guaranteed": [
+        "M6"
+      ],
+      "varying_meters": [
+        "M6",
+        "M3",
+        "M5"
+      ],
+      "all_possible_replies": {
+        "M6": {
+          "L": {
+            "states": [
+              "IK",
+              "OH"
+            ],
+            "sign": "Y"
+          },
+          "H": {
+            "states": [
+              "KN",
+              "XV"
+            ],
+            "sign": "N"
+          }
+        },
+        "M3": {
+          "L": {
+            "states": [
+              "OH",
+              "XV"
+            ],
+            "sign": "U"
+          },
+          "H": {
+            "states": [
+              "IK",
+              "KN"
+            ],
+            "sign": "U"
+          }
+        },
+        "M5": {
+          "L": {
+            "states": [
+              "OH",
+              "XV"
+            ],
+            "sign": "U"
+          },
+          "H": {
+            "states": [
+              "IK",
+              "KN"
+            ],
+            "sign": "U"
+          }
+        }
+      }
+    },
+    "circuit-07": {
+      "kind": "ambiguous",
+      "attainable": "U",
+      "eligible": [
+        "AU",
+        "BG",
+        "GR",
+        "NK"
+      ],
+      "actual": "NK",
+      "guaranteed": [],
+      "varying_meters": [
+        "M5"
+      ],
+      "all_possible_replies": {
+        "M6": {
+          "H": {
+            "states": [
+              "AU",
+              "BG",
+              "GR",
+              "NK"
+            ],
+            "sign": "U"
+          }
+        },
+        "M3": {
+          "L": {
+            "states": [
+              "AU",
+              "BG",
+              "GR",
+              "NK"
+            ],
+            "sign": "U"
+          }
+        },
+        "M5": {
+          "L": {
+            "states": [
+              "BG",
+              "NK"
+            ],
+            "sign": "U"
+          },
+          "H": {
+            "states": [
+              "AU",
+              "GR"
+            ],
+            "sign": "U"
+          }
+        }
+      }
+    },
+    "circuit-08": {
+      "kind": "settled",
+      "attainable": "Y",
+      "eligible": [
+        "LO",
+        "MC",
+        "QK",
+        "YG"
+      ],
+      "actual": "MC",
+      "guaranteed": [],
+      "varying_meters": [
+        "M3"
+      ],
+      "all_possible_replies": {
+        "M6": {
+          "L": {
+            "states": [
+              "LO",
+              "MC",
+              "QK",
+              "YG"
+            ],
+            "sign": "Y"
+          }
+        },
+        "M7": {
+          "H": {
+            "states": [
+              "LO",
+              "MC",
+              "QK",
+              "YG"
+            ],
+            "sign": "Y"
+          }
+        },
+        "M3": {
+          "L": {
+            "states": [
+              "LO",
+              "QK"
+            ],
+            "sign": "Y"
+          },
+          "H": {
+            "states": [
+              "MC",
+              "YG"
+            ],
+            "sign": "Y"
+          }
+        }
+      }
+    },
+    "circuit-09": {
+      "kind": "lookup",
+      "attainable": "Y",
+      "eligible": [
+        "AD",
+        "DB",
+        "QT",
+        "TZ"
+      ],
+      "actual": "AD",
+      "guaranteed": [
+        "M7"
+      ],
+      "varying_meters": [
+        "M6",
+        "M7",
+        "M3"
+      ],
+      "all_possible_replies": {
+        "M6": {
+          "L": {
+            "states": [
+              "DB",
+              "TZ"
+            ],
+            "sign": "U"
+          },
+          "H": {
+            "states": [
+              "AD",
+              "QT"
+            ],
+            "sign": "U"
+          }
+        },
+        "M7": {
+          "L": {
+            "states": [
+              "AD",
+              "DB"
+            ],
+            "sign": "Y"
+          },
+          "H": {
+            "states": [
+              "QT",
+              "TZ"
+            ],
+            "sign": "N"
+          }
+        },
+        "M3": {
+          "L": {
+            "states": [
+              "DB",
+              "TZ"
+            ],
+            "sign": "U"
+          },
+          "H": {
+            "states": [
+              "AD",
+              "QT"
+            ],
+            "sign": "U"
+          }
+        }
+      }
+    },
+    "circuit-10": {
+      "kind": "lookup",
+      "attainable": "Y",
+      "eligible": [
+        "EA",
+        "IC",
+        "OO",
+        "WU"
+      ],
+      "actual": "IC",
+      "guaranteed": [
+        "M4"
+      ],
+      "varying_meters": [
+        "M3",
+        "M4"
+      ],
+      "all_possible_replies": {
+        "M3": {
+          "L": {
+            "states": [
+              "EA",
+              "OO"
+            ],
+            "sign": "U"
+          },
+          "H": {
+            "states": [
+              "IC",
+              "WU"
+            ],
+            "sign": "U"
+          }
+        },
+        "M6": {
+          "L": {
+            "states": [
+              "EA",
+              "IC",
+              "OO",
+              "WU"
+            ],
+            "sign": "U"
+          }
+        },
+        "M4": {
+          "L": {
+            "states": [
+              "EA",
+              "IC"
+            ],
+            "sign": "Y"
+          },
+          "H": {
+            "states": [
+              "OO",
+              "WU"
+            ],
+            "sign": "N"
+          }
+        }
+      }
+    },
+    "circuit-11": {
+      "kind": "ambiguous",
+      "attainable": "U",
+      "eligible": [
+        "OF",
+        "PP",
+        "XL",
+        "XY"
+      ],
+      "actual": "PP",
+      "guaranteed": [],
+      "varying_meters": [
+        "M6",
+        "M4"
+      ],
+      "all_possible_replies": {
+        "M3": {
+          "L": {
+            "states": [
+              "OF",
+              "PP",
+              "XL",
+              "XY"
+            ],
+            "sign": "U"
+          }
+        },
+        "M6": {
+          "L": {
+            "states": [
+              "OF",
+              "PP"
+            ],
+            "sign": "U"
+          },
+          "H": {
+            "states": [
+              "XL",
+              "XY"
+            ],
+            "sign": "U"
+          }
+        },
+        "M4": {
+          "L": {
+            "states": [
+              "OF",
+              "PP"
+            ],
+            "sign": "U"
+          },
+          "H": {
+            "states": [
+              "XL",
+              "XY"
+            ],
+            "sign": "U"
+          }
+        }
+      }
+    }
+  },
+  "sha256": {
+    "cases.py": "baa82c5753bfa6a1851e98badc8649c8206bdf09b8662360067ce8b708a74824",
+    "network.py": "6821a06c0d754f1f5fea0c548b2ec3767bc4554d66da66321d95f0399b95471d",
+    "design.json": "799cb6228a3b5c0035e26a53a9d33fdbd792834c06bbc929cc9f5465c28a36f0",
+    "records.json": "b184fbf5b863cd6aa634806adee8a79f58ea621297ff0d65ecc87daeb7af35cc",
+    "check.py": "6c61a512218dc7a2d0aa50664481ff74a85cb77e2f2614ec470642b064ae1a13"
+  }
+}

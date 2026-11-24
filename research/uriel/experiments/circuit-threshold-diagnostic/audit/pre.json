@@ -1,0 +1,55 @@
+{
+  "actionable_signs": {
+    "N": 3,
+    "Y": 3
+  },
+  "balance_heuristic": {
+    "circuit-00": {
+      "compatible_states": 4,
+      "max_balance_ties": 3,
+      "uniform_ties_decisive_probability": "1/3"
+    },
+    "circuit-03": {
+      "compatible_states": 4,
+      "max_balance_ties": 2,
+      "uniform_ties_decisive_probability": "1/2"
+    },
+    "circuit-05": {
+      "compatible_states": 4,
+      "max_balance_ties": 3,
+      "uniform_ties_decisive_probability": "1/3"
+    },
+    "circuit-06": {
+      "compatible_states": 4,
+      "max_balance_ties": 3,
+      "uniform_ties_decisive_probability": "1/3"
+    },
+    "circuit-09": {
+      "compatible_states": 4,
+      "max_balance_ties": 3,
+      "uniform_ties_decisive_probability": "1/3"
+    },
+    "circuit-10": {
+      "compatible_states": 4,
+      "max_balance_ties": 2,
+      "uniform_ties_decisive_probability": "1/2"
+    }
+  },
+  "decisive_menu_positions": {
+    "1": 2,
+    "2": 2,
+    "3": 2
+  },
+  "expected_decisive_uniform_balanced_ties": "7/3",
+  "families": 6,
+  "presentations_verified": 24,
+  "records": 12,
+  "sessions_scheduled": 24,
+  "signed_fraction_comparisons_verified": 96,
+  "stratum_counts": {
+    "ambiguous": 3,
+    "lookup": 6,
+    "settled": 3
+  },
+  "unique_family_candidate_rows": 48
+}

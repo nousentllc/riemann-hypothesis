@@ -1,0 +1,98 @@
+[
+  {
+    "record": "circuit-07",
+    "arm": "raw"
+  },
+  {
+    "record": "circuit-02",
+    "arm": "labeled"
+  },
+  {
+    "record": "circuit-08",
+    "arm": "raw"
+  },
+  {
+    "record": "circuit-05",
+    "arm": "labeled"
+  },
+  {
+    "record": "circuit-03",
+    "arm": "raw"
+  },
+  {
+    "record": "circuit-11",
+    "arm": "labeled"
+  },
+  {
+    "record": "circuit-06",
+    "arm": "labeled"
+  },
+  {
+    "record": "circuit-04",
+    "arm": "raw"
+  },
+  {
+    "record": "circuit-09",
+    "arm": "labeled"
+  },
+  {
+    "record": "circuit-01",
+    "arm": "labeled"
+  },
+  {
+    "record": "circuit-10",
+    "arm": "raw"
+  },
+  {
+    "record": "circuit-00",
+    "arm": "raw"
+  },
+  {
+    "record": "circuit-08",
+    "arm": "labeled"
+  },
+  {
+    "record": "circuit-05",
+    "arm": "raw"
+  },
+  {
+    "record": "circuit-04",
+    "arm": "labeled"
+  },
+  {
+    "record": "circuit-07",
+    "arm": "labeled"
+  },
+  {
+    "record": "circuit-00",
+    "arm": "labeled"
+  },
+  {
+    "record": "circuit-11",
+    "arm": "raw"
+  },
+  {
+    "record": "circuit-09",
+    "arm": "raw"
+  },
+  {
+    "record": "circuit-10",
+    "arm": "labeled"
+  },
+  {
+    "record": "circuit-06",
+    "arm": "raw"
+  },
+  {
+    "record": "circuit-02",
+    "arm": "raw"
+  },
+  {
+    "record": "circuit-01",
+    "arm": "raw"
+  },
+  {
+    "record": "circuit-03",
+    "arm": "labeled"
+  }
+]
