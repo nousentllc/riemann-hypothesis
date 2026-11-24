@@ -1,0 +1,443 @@
+{
+  "files": {
+    "panel.json": "419af1ee0a4ac77e2dba7809cf8454cbf4640468bf7812b1d1aca8b411509af2",
+    "sources.json": "e7cfc4937f53372792c7d5d87b9b72b479c0b958a5f2fda914da647aa2bb8923",
+    "instrument.py": "323eddb27522d415725b8fb4b0377dcfbfd976e0f91184a656edaf1a9026d4cd",
+    "study.py": "53592207c45bca5e451b4f14941bf0aee5c76a5c44b5d11f11d24842d4a93ab6",
+    "PROTOCOL.md": "71f6b02024fed33baca7cfdddcff2250345a9b8cb782b644e4c38dc410bbf19b"
+  },
+  "schedule": [
+    {
+      "record": "scope-20",
+      "question": "both",
+      "arm": "conflict",
+      "target": "NY",
+      "family": "DC-K6",
+      "prior_replay": true,
+      "sha256": "e29efbe4d34ce5af1b35e75129df3d410f45dd3a0435c887fe42496d83edb679"
+    },
+    {
+      "record": "scope-20",
+      "question": "both",
+      "arm": "faithful",
+      "target": "NY",
+      "family": "DC-K6",
+      "prior_replay": false,
+      "sha256": "d53bdb7f0f5bab6a282b136a049f50e3ba979583c184823e8f9ffc643052f335"
+    },
+    {
+      "record": "scope-23",
+      "question": "both",
+      "arm": "conflict",
+      "target": "DD",
+      "family": "DC-K6",
+      "prior_replay": false,
+      "sha256": "1ce5f6c8a31efbc33dc16cb62b59f246d7ed4792510deb2001546bcdbe806c69"
+    },
+    {
+      "record": "scope-23",
+      "question": "both",
+      "arm": "faithful",
+      "target": "DD",
+      "family": "DC-K6",
+      "prior_replay": true,
+      "sha256": "17deca44838072af4108d1f8fe48de7c619f9b8219b7328123b15ae1db136c9a"
+    },
+    {
+      "record": "scope-14",
+      "question": "any",
+      "arm": "faithful",
+      "target": "PY",
+      "family": "DC-K4",
+      "prior_replay": true,
+      "sha256": "be1ddd1f9f4c4b4b5751d7984d2d5653d5acd7a069cb68e12df309731d642664"
+    },
+    {
+      "record": "scope-14",
+      "question": "any",
+      "arm": "conflict",
+      "target": "PY",
+      "family": "DC-K4",
+      "prior_replay": false,
+      "sha256": "1c07604d08532c85bf5168515e1b52a949f84a4e36eeaa85d698710831f1abf9"
+    },
+    {
+      "record": "scope-07",
+      "question": "any",
+      "arm": "conflict",
+      "target": "CE",
+      "family": "DC-K2",
+      "prior_replay": false,
+      "sha256": "a53c96bf0110cbb0443ba62bb6e461cc9d58857e85fd5abe8fcc82bf1a6ee5f1"
+    },
+    {
+      "record": "scope-07",
+      "question": "any",
+      "arm": "faithful",
+      "target": "CE",
+      "family": "DC-K2",
+      "prior_replay": true,
+      "sha256": "d2aa4b14df3f2a7efa8190f797ce6bea8784ef07d9f959c967f83ad9bf68934a"
+    },
+    {
+      "record": "scope-20",
+      "question": "any",
+      "arm": "conflict",
+      "target": "NY",
+      "family": "DC-K6",
+      "prior_replay": true,
+      "sha256": "e418af458d6b57793e77e45b493471201d9121bfee75a3f8656838981507df36"
+    },
+    {
+      "record": "scope-20",
+      "question": "any",
+      "arm": "faithful",
+      "target": "NY",
+      "family": "DC-K6",
+      "prior_replay": false,
+      "sha256": "fe024ebf07a5e111198298f13e18c9dba408f2649064d5604b482d2dda4ce2ec"
+    },
+    {
+      "record": "scope-13",
+      "question": "any",
+      "arm": "faithful",
+      "target": "CO",
+      "family": "DC-K4",
+      "prior_replay": true,
+      "sha256": "6ccddf3d8bfb4117fabf0a0e11261dabacdd728d5b1777622c108128ff6d8293"
+    },
+    {
+      "record": "scope-13",
+      "question": "any",
+      "arm": "conflict",
+      "target": "CO",
+      "family": "DC-K4",
+      "prior_replay": false,
+      "sha256": "8d7171423c6d9272e810c95c5b165b4b3bf3afd4ee3d9467c591a4e97be08bca"
+    },
+    {
+      "record": "scope-00",
+      "question": "both",
+      "arm": "faithful",
+      "target": "UH",
+      "family": "DC-K1",
+      "prior_replay": false,
+      "sha256": "c20d80525626301c0a9bec8cccbc82432a641996e85d9597e2699a12a09a1754"
+    },
+    {
+      "record": "scope-00",
+      "question": "both",
+      "arm": "conflict",
+      "target": "UH",
+      "family": "DC-K1",
+      "prior_replay": true,
+      "sha256": "a979b45dfc28509f869c2af261b340871adbde1fc91476807c88025b6896b317"
+    },
+    {
+      "record": "scope-11",
+      "question": "both",
+      "arm": "faithful",
+      "target": "FB",
+      "family": "DC-K3",
+      "prior_replay": true,
+      "sha256": "93dc8716edd539cfbaa8f97607f21cd071a1183a6f062638b541718ce4edf343"
+    },
+    {
+      "record": "scope-11",
+      "question": "both",
+      "arm": "conflict",
+      "target": "FB",
+      "family": "DC-K3",
+      "prior_replay": false,
+      "sha256": "d77d6736c25dd08a38c546edc28d9419bc52eefa2e50edd3228f817a990a4050"
+    },
+    {
+      "record": "scope-04",
+      "question": "both",
+      "arm": "conflict",
+      "target": "CM",
+      "family": "DC-K2",
+      "prior_replay": true,
+      "sha256": "92c06784de1673c2a451c8132d8443dc8c0deb48ac653f54790f216240a049b9"
+    },
+    {
+      "record": "scope-04",
+      "question": "both",
+      "arm": "faithful",
+      "target": "CM",
+      "family": "DC-K2",
+      "prior_replay": false,
+      "sha256": "d88cb4f5e5f77011425e96112486c4185b9ae7a0069fd4cbc771af66aa8b4c70"
+    },
+    {
+      "record": "scope-23",
+      "question": "any",
+      "arm": "faithful",
+      "target": "DD",
+      "family": "DC-K6",
+      "prior_replay": true,
+      "sha256": "591ba61614538bad28de1d60b0f9c8b980059d1796985297a4b654944497ce27"
+    },
+    {
+      "record": "scope-23",
+      "question": "any",
+      "arm": "conflict",
+      "target": "DD",
+      "family": "DC-K6",
+      "prior_replay": false,
+      "sha256": "f5bc81cc0613e3bb04748332a0f7edc393cbeecbae30b7f40df3bba6ca9b342a"
+    },
+    {
+      "record": "scope-01",
+      "question": "any",
+      "arm": "conflict",
+      "target": "ER",
+      "family": "DC-K1",
+      "prior_replay": false,
+      "sha256": "4a95a8cba34e9726069e123de2da71e5493ebaef7450b548451633900e2a3a53"
+    },
+    {
+      "record": "scope-01",
+      "question": "any",
+      "arm": "faithful",
+      "target": "ER",
+      "family": "DC-K1",
+      "prior_replay": true,
+      "sha256": "255a55e96b4011cda2e7c6732c1a3beb473bc2ba9d95aec9b73eff43363c7131"
+    },
+    {
+      "record": "scope-17",
+      "question": "any",
+      "arm": "conflict",
+      "target": "LY",
+      "family": "DC-K5",
+      "prior_replay": false,
+      "sha256": "fb06ccb52c209da6ddd8065967a35278747a0710ef51f7d845a48e643f2f7bbc"
+    },
+    {
+      "record": "scope-17",
+      "question": "any",
+      "arm": "faithful",
+      "target": "LY",
+      "family": "DC-K5",
+      "prior_replay": true,
+      "sha256": "77de7cb8d07ba122dc9a15a3cd0eb41be4dd1a9edc3dce7b016ecf5e56a194c3"
+    },
+    {
+      "record": "scope-14",
+      "question": "both",
+      "arm": "faithful",
+      "target": "PY",
+      "family": "DC-K4",
+      "prior_replay": true,
+      "sha256": "f04535220a690d78e6bb58acf292791bcdbc37e4756932e9c0552a14039f1315"
+    },
+    {
+      "record": "scope-14",
+      "question": "both",
+      "arm": "conflict",
+      "target": "PY",
+      "family": "DC-K4",
+      "prior_replay": false,
+      "sha256": "b270ea9a0b8f6fddd8a2cb3a4cd61b1eddbc4fd643767efe6f30803881fc4539"
+    },
+    {
+      "record": "scope-10",
+      "question": "both",
+      "arm": "conflict",
+      "target": "DV",
+      "family": "DC-K3",
+      "prior_replay": true,
+      "sha256": "401394fce23c9a0eb7d03e70ebbf3d456cdcf89a867c1f3d5d03b3d45b2fa5a8"
+    },
+    {
+      "record": "scope-10",
+      "question": "both",
+      "arm": "faithful",
+      "target": "DV",
+      "family": "DC-K3",
+      "prior_replay": false,
+      "sha256": "0a3e3dab8046b41f5d52225f4c69857a6b3770600c6dbe95bee89067484d9c3d"
+    },
+    {
+      "record": "scope-11",
+      "question": "any",
+      "arm": "faithful",
+      "target": "FB",
+      "family": "DC-K3",
+      "prior_replay": true,
+      "sha256": "dd7efc087b05d00cfc1ac2df42190582f341ce14b1d9854c676a8d5803c24ad7"
+    },
+    {
+      "record": "scope-11",
+      "question": "any",
+      "arm": "conflict",
+      "target": "FB",
+      "family": "DC-K3",
+      "prior_replay": false,
+      "sha256": "b6072d83c0a2c2bd69c2c765f2344e2615efc399b0afd5d745e96cc0bc306506"
+    },
+    {
+      "record": "scope-10",
+      "question": "any",
+      "arm": "faithful",
+      "target": "DV",
+      "family": "DC-K3",
+      "prior_replay": false,
+      "sha256": "8c2a9dd953b32c2b10c33a332f69b389eff70372decb593649f615ae1e1f0612"
+    },
+    {
+      "record": "scope-10",
+      "question": "any",
+      "arm": "conflict",
+      "target": "DV",
+      "family": "DC-K3",
+      "prior_replay": true,
+      "sha256": "da1e673fb375db5895352849074e4bb56cd1d36cf63932ee3ea6bce231d93de8"
+    },
+    {
+      "record": "scope-00",
+      "question": "any",
+      "arm": "faithful",
+      "target": "UH",
+      "family": "DC-K1",
+      "prior_replay": false,
+      "sha256": "0e9eba1a02494328a5ab557d954c5dd044a12fd576554e876c4ecfe41d569a17"
+    },
+    {
+      "record": "scope-00",
+      "question": "any",
+      "arm": "conflict",
+      "target": "UH",
+      "family": "DC-K1",
+      "prior_replay": true,
+      "sha256": "60efd787a69ff661297b33562830c3e014b5d4804913330175c4e4f8d711d5b9"
+    },
+    {
+      "record": "scope-13",
+      "question": "both",
+      "arm": "faithful",
+      "target": "CO",
+      "family": "DC-K4",
+      "prior_replay": true,
+      "sha256": "0a77f2d648bafffa1ac9ad4c0b9028f84015c8ba2be1fe53d0a416ac50cd0e32"
+    },
+    {
+      "record": "scope-13",
+      "question": "both",
+      "arm": "conflict",
+      "target": "CO",
+      "family": "DC-K4",
+      "prior_replay": false,
+      "sha256": "834a8b1b78cfa443e968df482845c3654dc3f789a60f7abd17dfbb2188f50e2a"
+    },
+    {
+      "record": "scope-17",
+      "question": "both",
+      "arm": "faithful",
+      "target": "LY",
+      "family": "DC-K5",
+      "prior_replay": true,
+      "sha256": "e1590761a776847003c95e2fb1326b6e5752f461a963ac05accb061d1b4e2412"
+    },
+    {
+      "record": "scope-17",
+      "question": "both",
+      "arm": "conflict",
+      "target": "LY",
+      "family": "DC-K5",
+      "prior_replay": false,
+      "sha256": "19cb917cadb9b990529df55181a8f88c5a2eaa2ae8db64e4f1acfd7373de3973"
+    },
+    {
+      "record": "scope-16",
+      "question": "any",
+      "arm": "conflict",
+      "target": "II",
+      "family": "DC-K5",
+      "prior_replay": true,
+      "sha256": "459bcb321e443e7c1adedf0c85ca9b7b887150b3bc65020ee42d95f549e895eb"
+    },
+    {
+      "record": "scope-16",
+      "question": "any",
+      "arm": "faithful",
+      "target": "II",
+      "family": "DC-K5",
+      "prior_replay": false,
+      "sha256": "2e42f0f8038cde62dc479a9d35445eedec87344999423874069220cc470411e3"
+    },
+    {
+      "record": "scope-16",
+      "question": "both",
+      "arm": "faithful",
+      "target": "II",
+      "family": "DC-K5",
+      "prior_replay": false,
+      "sha256": "8769e5b872fce0de041fca44698d80fcf7ca60ccf497524fa214ca6d72e715a1"
+    },
+    {
+      "record": "scope-16",
+      "question": "both",
+      "arm": "conflict",
+      "target": "II",
+      "family": "DC-K5",
+      "prior_replay": true,
+      "sha256": "27cad4d3bd5f5db1750393f37553fa11b27237574c8caa4d04b263d00aaf0164"
+    },
+    {
+      "record": "scope-04",
+      "question": "any",
+      "arm": "conflict",
+      "target": "CM",
+      "family": "DC-K2",
+      "prior_replay": true,
+      "sha256": "b341c02bd7eaf78c0888368eb7f7e410e8a5bf3dd33176564229aa40679cd3ca"
+    },
+    {
+      "record": "scope-04",
+      "question": "any",
+      "arm": "faithful",
+      "target": "CM",
+      "family": "DC-K2",
+      "prior_replay": false,
+      "sha256": "04f08e251897a56fbf83e0fd47274205a152f3cb6de9b15d60e44ab6dabada24"
+    },
+    {
+      "record": "scope-01",
+      "question": "both",
+      "arm": "conflict",
+      "target": "ER",
+      "family": "DC-K1",
+      "prior_replay": false,
+      "sha256": "8764305efae9dd44f0d34421aeb029c59ac01c6a54dcab8dfe9911493809ec85"
+    },
+    {
+      "record": "scope-01",
+      "question": "both",
+      "arm": "faithful",
+      "target": "ER",
+      "family": "DC-K1",
+      "prior_replay": true,
+      "sha256": "b2a1cd1a844eec8a18aea357c90ede77d4737aa4bf105edbe69a9a7dce036e84"
+    },
+    {
+      "record": "scope-07",
+      "question": "both",
+      "arm": "conflict",
+      "target": "CE",
+      "family": "DC-K2",
+      "prior_replay": false,
+      "sha256": "ad71e6058728335d49176b0f1c0797a2608bbe287cc5ac68a609a73bc3be1a8d"
+    },
+    {
+      "record": "scope-07",
+      "question": "both",
+      "arm": "faithful",
+      "target": "CE",
+      "family": "DC-K2",
+      "prior_replay": true,
+      "sha256": "06bfa6583623631f9a76077b1b02df88dfe11e5910311b15f34405c3011da32e"
+    }
+  ]
+}
