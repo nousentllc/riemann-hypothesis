@@ -1,0 +1,56 @@
+{
+  "attainable_gate_outcomes": [
+    true
+  ],
+  "can_change_registered_gate": false,
+  "class_assignments_failing_gate": 0,
+  "class_assignments_passing_gate": 9,
+  "distinct_layouts": 6,
+  "joint_extremes": {
+    "best_for_filtered": {
+      "net_certified_ambiguous_controls": 4,
+      "net_complete_decisive_families": 5,
+      "net_exact_decisive_ID_sets": 9
+    },
+    "worst_for_filtered": {
+      "net_certified_ambiguous_controls": 4,
+      "net_complete_decisive_families": 4,
+      "net_exact_decisive_ID_sets": 7
+    }
+  },
+  "method": "Missing-session equivalence classes enumerated jointly per layout; no probability weighting.",
+  "missing_sessions": {
+    "filtered": 2,
+    "full": 0
+  },
+  "missing_status_counts": {
+    "filtered": {
+      "error": 2
+    },
+    "full": {}
+  },
+  "note": "Counts refer to possible classes of score patterns. Their frequencies are combinatorial and do not estimate probabilities.",
+  "possible_distinct_endpoint_triples": 4,
+  "possible_endpoint_class_assignments": 9,
+  "records_per_arm": 18,
+  "registered_gate": true,
+  "registered_values": {
+    "net_certified_ambiguous_controls": 4,
+    "net_complete_decisive_families": 4,
+    "net_exact_decisive_ID_sets": 7
+  },
+  "sharp_ranges": {
+    "net_certified_ambiguous_controls": [
+      4,
+      4
+    ],
+    "net_complete_decisive_families": [
+      4,
+      5
+    ],
+    "net_exact_decisive_ID_sets": [
+      7,
+      9
+    ]
+  }
+}

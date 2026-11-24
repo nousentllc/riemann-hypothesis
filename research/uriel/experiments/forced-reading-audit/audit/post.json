@@ -1,0 +1,1022 @@
+{
+  "cases": {
+    "forced-00_filtered": {
+      "certified": false,
+      "duplicate_count": 0,
+      "exact_ids": false,
+      "excludes": [],
+      "family": "DC-F1",
+      "ids": [],
+      "invalid_or_missing": true,
+      "kind": "decisive",
+      "omits": [
+        "LE",
+        "RK"
+      ],
+      "request_hash": "5d670cbea3003639ff8e5f5234df6411109651980ab959393a9a4f3870d08d1d",
+      "required_ids": [
+        "LE",
+        "RK"
+      ],
+      "response_status": "error",
+      "sign": false,
+      "target": "N",
+      "unsupported": false,
+      "verdict": null
+    },
+    "forced-00_full": {
+      "certified": false,
+      "duplicate_count": 0,
+      "exact_ids": false,
+      "excludes": [
+        "FS",
+        "QX"
+      ],
+      "family": "DC-F1",
+      "ids": [
+        "FS",
+        "QX"
+      ],
+      "invalid_or_missing": false,
+      "kind": "decisive",
+      "omits": [
+        "LE",
+        "RK"
+      ],
+      "request_hash": "b165ab5152ef4e44f0e672f1fc9094e67d1b19f27a23ae7f3f992fd6f0031a07",
+      "required_ids": [
+        "LE",
+        "RK"
+      ],
+      "response_status": "ok",
+      "sign": false,
+      "target": "N",
+      "unsupported": false,
+      "verdict": "U"
+    },
+    "forced-01_filtered": {
+      "certified": false,
+      "duplicate_count": 0,
+      "exact_ids": false,
+      "excludes": [],
+      "family": "DC-F1",
+      "ids": [],
+      "invalid_or_missing": true,
+      "kind": "decisive",
+      "omits": [
+        "PT",
+        "ZD"
+      ],
+      "request_hash": "995b943b15480a7b469423b768381939ffc0117c0846d61e268f0bb1b3915784",
+      "required_ids": [
+        "PT",
+        "ZD"
+      ],
+      "response_status": "error",
+      "sign": false,
+      "target": "Y",
+      "unsupported": false,
+      "verdict": null
+    },
+    "forced-01_full": {
+      "certified": false,
+      "duplicate_count": 0,
+      "exact_ids": false,
+      "excludes": [],
+      "family": "DC-F1",
+      "ids": [
+        "PT"
+      ],
+      "invalid_or_missing": false,
+      "kind": "decisive",
+      "omits": [
+        "ZD"
+      ],
+      "request_hash": "83fac5fa780c6dd7ecb5bfc605036e8e43b5cadf02865ee03c06d299ed1940b7",
+      "required_ids": [
+        "PT",
+        "ZD"
+      ],
+      "response_status": "ok",
+      "sign": true,
+      "target": "Y",
+      "unsupported": false,
+      "verdict": "Y"
+    },
+    "forced-02_filtered": {
+      "certified": true,
+      "duplicate_count": 0,
+      "exact_ids": true,
+      "excludes": [],
+      "family": "DC-F1",
+      "ids": [
+        "ZD",
+        "LE"
+      ],
+      "invalid_or_missing": false,
+      "kind": "ambiguous",
+      "omits": [],
+      "request_hash": "3147a4b62cac8c0631e9285108b109d3e3b556dd43efaad31e4b6afcf7e3f756",
+      "required_ids": [
+        "LE",
+        "ZD"
+      ],
+      "response_status": "ok",
+      "sign": true,
+      "target": "U",
+      "unsupported": false,
+      "verdict": "U"
+    },
+    "forced-02_full": {
+      "certified": false,
+      "duplicate_count": 0,
+      "exact_ids": false,
+      "excludes": [
+        "QX"
+      ],
+      "family": "DC-F1",
+      "ids": [
+        "QX",
+        "LE"
+      ],
+      "invalid_or_missing": false,
+      "kind": "ambiguous",
+      "omits": [
+        "ZD"
+      ],
+      "request_hash": "212511136897dd7034fc8036e4279b4ea765110b539ec1a4f47dfa3e90e68dfb",
+      "required_ids": [
+        "LE",
+        "ZD"
+      ],
+      "response_status": "ok",
+      "sign": false,
+      "target": "U",
+      "unsupported": true,
+      "verdict": "N"
+    },
+    "forced-03_filtered": {
+      "certified": true,
+      "duplicate_count": 0,
+      "exact_ids": true,
+      "excludes": [],
+      "family": "DC-F2",
+      "ids": [
+        "BV",
+        "DS"
+      ],
+      "invalid_or_missing": false,
+      "kind": "decisive",
+      "omits": [],
+      "request_hash": "d5c3b5879b3ce35efc7f7d8b50ceb317e09dbd4a63beb07220d268a1751b0c11",
+      "required_ids": [
+        "BV",
+        "DS"
+      ],
+      "response_status": "ok",
+      "sign": true,
+      "target": "Y",
+      "unsupported": false,
+      "verdict": "Y"
+    },
+    "forced-03_full": {
+      "certified": true,
+      "duplicate_count": 0,
+      "exact_ids": true,
+      "excludes": [],
+      "family": "DC-F2",
+      "ids": [
+        "BV",
+        "DS"
+      ],
+      "invalid_or_missing": false,
+      "kind": "decisive",
+      "omits": [],
+      "request_hash": "920a3490d4ae696d2008681b5bf18d048f54c855514d3ea8bd1ca52799dc2dc4",
+      "required_ids": [
+        "BV",
+        "DS"
+      ],
+      "response_status": "ok",
+      "sign": true,
+      "target": "Y",
+      "unsupported": false,
+      "verdict": "Y"
+    },
+    "forced-04_filtered": {
+      "certified": false,
+      "duplicate_count": 0,
+      "exact_ids": false,
+      "excludes": [],
+      "family": "DC-F2",
+      "ids": [
+        "DS"
+      ],
+      "invalid_or_missing": false,
+      "kind": "ambiguous",
+      "omits": [
+        "XN"
+      ],
+      "request_hash": "1a7141f16dce497910fa08422d6ce5b61d9168790a9b7e1f995c6bd3f21787e9",
+      "required_ids": [
+        "DS",
+        "XN"
+      ],
+      "response_status": "ok",
+      "sign": false,
+      "target": "U",
+      "unsupported": true,
+      "verdict": "Y"
+    },
+    "forced-04_full": {
+      "certified": false,
+      "duplicate_count": 0,
+      "exact_ids": false,
+      "excludes": [
+        "BV"
+      ],
+      "family": "DC-F2",
+      "ids": [
+        "BV",
+        "DS"
+      ],
+      "invalid_or_missing": false,
+      "kind": "ambiguous",
+      "omits": [
+        "XN"
+      ],
+      "request_hash": "e83b8ff5d5fecbdd860b5f5ff6331fa7361911777e307549ae96fbde2314356c",
+      "required_ids": [
+        "DS",
+        "XN"
+      ],
+      "response_status": "ok",
+      "sign": false,
+      "target": "U",
+      "unsupported": true,
+      "verdict": "Y"
+    },
+    "forced-05_filtered": {
+      "certified": true,
+      "duplicate_count": 0,
+      "exact_ids": true,
+      "excludes": [],
+      "family": "DC-F2",
+      "ids": [
+        "XN",
+        "IT"
+      ],
+      "invalid_or_missing": false,
+      "kind": "decisive",
+      "omits": [],
+      "request_hash": "d04561467218dbd17f0a648414799ad6ef50d60efe6713236cf0440db2aca1c9",
+      "required_ids": [
+        "IT",
+        "XN"
+      ],
+      "response_status": "ok",
+      "sign": true,
+      "target": "N",
+      "unsupported": false,
+      "verdict": "N"
+    },
+    "forced-05_full": {
+      "certified": true,
+      "duplicate_count": 0,
+      "exact_ids": true,
+      "excludes": [],
+      "family": "DC-F2",
+      "ids": [
+        "XN",
+        "IT"
+      ],
+      "invalid_or_missing": false,
+      "kind": "decisive",
+      "omits": [],
+      "request_hash": "3c8695e7418f362339bf1cb2d3bba0865b0036e205b4f46bbc95875a4356428a",
+      "required_ids": [
+        "IT",
+        "XN"
+      ],
+      "response_status": "ok",
+      "sign": true,
+      "target": "N",
+      "unsupported": false,
+      "verdict": "N"
+    },
+    "forced-06_filtered": {
+      "certified": true,
+      "duplicate_count": 0,
+      "exact_ids": true,
+      "excludes": [],
+      "family": "DC-F3",
+      "ids": [
+        "DE",
+        "SS"
+      ],
+      "invalid_or_missing": false,
+      "kind": "ambiguous",
+      "omits": [],
+      "request_hash": "7a731b606ddfde44f23c00942932b9ad0815ef6ea27c73e61687dc005a863c2a",
+      "required_ids": [
+        "DE",
+        "SS"
+      ],
+      "response_status": "ok",
+      "sign": true,
+      "target": "U",
+      "unsupported": false,
+      "verdict": "U"
+    },
+    "forced-06_full": {
+      "certified": true,
+      "duplicate_count": 0,
+      "exact_ids": true,
+      "excludes": [],
+      "family": "DC-F3",
+      "ids": [
+        "DE",
+        "SS"
+      ],
+      "invalid_or_missing": false,
+      "kind": "ambiguous",
+      "omits": [],
+      "request_hash": "8bc4ac783ee1f52cacef870b7fc7246b483c25ad83d267397f7472a13f570a0c",
+      "required_ids": [
+        "DE",
+        "SS"
+      ],
+      "response_status": "ok",
+      "sign": true,
+      "target": "U",
+      "unsupported": false,
+      "verdict": "U"
+    },
+    "forced-07_filtered": {
+      "certified": true,
+      "duplicate_count": 0,
+      "exact_ids": true,
+      "excludes": [],
+      "family": "DC-F3",
+      "ids": [
+        "DE",
+        "HR"
+      ],
+      "invalid_or_missing": false,
+      "kind": "decisive",
+      "omits": [],
+      "request_hash": "25b02862d5af4736bba898b1c8d018fd6229cea63842a422e49d61a0b14f82a3",
+      "required_ids": [
+        "DE",
+        "HR"
+      ],
+      "response_status": "ok",
+      "sign": true,
+      "target": "N",
+      "unsupported": false,
+      "verdict": "N"
+    },
+    "forced-07_full": {
+      "certified": false,
+      "duplicate_count": 0,
+      "exact_ids": false,
+      "excludes": [
+        "SS"
+      ],
+      "family": "DC-F3",
+      "ids": [
+        "DE",
+        "SS"
+      ],
+      "invalid_or_missing": false,
+      "kind": "decisive",
+      "omits": [
+        "HR"
+      ],
+      "request_hash": "be03dbe0fb227c42e991ffd1560577a26f3a465a7349bf7cba138359204d0977",
+      "required_ids": [
+        "DE",
+        "HR"
+      ],
+      "response_status": "ok",
+      "sign": false,
+      "target": "N",
+      "unsupported": false,
+      "verdict": "U"
+    },
+    "forced-08_filtered": {
+      "certified": true,
+      "duplicate_count": 0,
+      "exact_ids": true,
+      "excludes": [],
+      "family": "DC-F3",
+      "ids": [
+        "RY",
+        "SS"
+      ],
+      "invalid_or_missing": false,
+      "kind": "decisive",
+      "omits": [],
+      "request_hash": "4756392b82842172b67b62b85f54637de5cee7d0f579a79bda83e7a681738f61",
+      "required_ids": [
+        "RY",
+        "SS"
+      ],
+      "response_status": "ok",
+      "sign": true,
+      "target": "Y",
+      "unsupported": false,
+      "verdict": "Y"
+    },
+    "forced-08_full": {
+      "certified": false,
+      "duplicate_count": 0,
+      "exact_ids": false,
+      "excludes": [
+        "UT"
+      ],
+      "family": "DC-F3",
+      "ids": [
+        "RY",
+        "UT",
+        "SS"
+      ],
+      "invalid_or_missing": false,
+      "kind": "decisive",
+      "omits": [],
+      "request_hash": "1134006787ce93136e83c65824a1a797cd0a825a98638fb4664748dd005fd862",
+      "required_ids": [
+        "RY",
+        "SS"
+      ],
+      "response_status": "ok",
+      "sign": true,
+      "target": "Y",
+      "unsupported": false,
+      "verdict": "Y"
+    },
+    "forced-09_filtered": {
+      "certified": true,
+      "duplicate_count": 0,
+      "exact_ids": true,
+      "excludes": [],
+      "family": "DC-F4",
+      "ids": [
+        "DL",
+        "NV"
+      ],
+      "invalid_or_missing": false,
+      "kind": "decisive",
+      "omits": [],
+      "request_hash": "954f52ba523552f170efec30aa88b1ce67ee53bb0e3df2e1eac019c2b0eb366d",
+      "required_ids": [
+        "DL",
+        "NV"
+      ],
+      "response_status": "ok",
+      "sign": true,
+      "target": "Y",
+      "unsupported": false,
+      "verdict": "Y"
+    },
+    "forced-09_full": {
+      "certified": true,
+      "duplicate_count": 0,
+      "exact_ids": true,
+      "excludes": [],
+      "family": "DC-F4",
+      "ids": [
+        "DL",
+        "NV"
+      ],
+      "invalid_or_missing": false,
+      "kind": "decisive",
+      "omits": [],
+      "request_hash": "89bd2275585d120c4862d8d50f5ccf49b8ff65cfd5c3d0208a0402f004163838",
+      "required_ids": [
+        "DL",
+        "NV"
+      ],
+      "response_status": "ok",
+      "sign": true,
+      "target": "Y",
+      "unsupported": false,
+      "verdict": "Y"
+    },
+    "forced-10_filtered": {
+      "certified": true,
+      "duplicate_count": 0,
+      "exact_ids": true,
+      "excludes": [],
+      "family": "DC-F4",
+      "ids": [
+        "WM",
+        "AQ"
+      ],
+      "invalid_or_missing": false,
+      "kind": "decisive",
+      "omits": [],
+      "request_hash": "a95e18fb481d4a41be2e98ca071a64b8c6b37006de22cbe8219993d2e830d821",
+      "required_ids": [
+        "AQ",
+        "WM"
+      ],
+      "response_status": "ok",
+      "sign": true,
+      "target": "N",
+      "unsupported": false,
+      "verdict": "N"
+    },
+    "forced-10_full": {
+      "certified": false,
+      "duplicate_count": 0,
+      "exact_ids": false,
+      "excludes": [
+        "EB"
+      ],
+      "family": "DC-F4",
+      "ids": [
+        "EB",
+        "WM",
+        "AQ"
+      ],
+      "invalid_or_missing": false,
+      "kind": "decisive",
+      "omits": [],
+      "request_hash": "b4ccb9c108a81d6ed60bdca9c656aa31e0fd4a25b35c21080b8d5ae51f63fce5",
+      "required_ids": [
+        "AQ",
+        "WM"
+      ],
+      "response_status": "ok",
+      "sign": true,
+      "target": "N",
+      "unsupported": false,
+      "verdict": "N"
+    },
+    "forced-11_filtered": {
+      "certified": true,
+      "duplicate_count": 0,
+      "exact_ids": true,
+      "excludes": [],
+      "family": "DC-F4",
+      "ids": [
+        "DL",
+        "WM"
+      ],
+      "invalid_or_missing": false,
+      "kind": "ambiguous",
+      "omits": [],
+      "request_hash": "a5b3102fecd5099d3d6523cade9cf0b900ac86db30f41327ba70b01fa2ef4608",
+      "required_ids": [
+        "DL",
+        "WM"
+      ],
+      "response_status": "ok",
+      "sign": true,
+      "target": "U",
+      "unsupported": false,
+      "verdict": "U"
+    },
+    "forced-11_full": {
+      "certified": false,
+      "duplicate_count": 0,
+      "exact_ids": false,
+      "excludes": [
+        "AQ"
+      ],
+      "family": "DC-F4",
+      "ids": [
+        "WM",
+        "AQ"
+      ],
+      "invalid_or_missing": false,
+      "kind": "ambiguous",
+      "omits": [
+        "DL"
+      ],
+      "request_hash": "151350c9943e0aecd08a256fe5d7baf0cacab4e7122bc4aecc09f75c39826fb9",
+      "required_ids": [
+        "DL",
+        "WM"
+      ],
+      "response_status": "ok",
+      "sign": false,
+      "target": "U",
+      "unsupported": true,
+      "verdict": "N"
+    },
+    "forced-12_filtered": {
+      "certified": true,
+      "duplicate_count": 0,
+      "exact_ids": true,
+      "excludes": [],
+      "family": "DC-F5",
+      "ids": [
+        "HK",
+        "CZ"
+      ],
+      "invalid_or_missing": false,
+      "kind": "decisive",
+      "omits": [],
+      "request_hash": "964487c4dc8d9685008f3b5f75a1cad1cea18d27223bef9826979250165c46c3",
+      "required_ids": [
+        "CZ",
+        "HK"
+      ],
+      "response_status": "ok",
+      "sign": true,
+      "target": "N",
+      "unsupported": false,
+      "verdict": "N"
+    },
+    "forced-12_full": {
+      "certified": false,
+      "duplicate_count": 0,
+      "exact_ids": false,
+      "excludes": [
+        "LQ"
+      ],
+      "family": "DC-F5",
+      "ids": [
+        "LQ",
+        "HK"
+      ],
+      "invalid_or_missing": false,
+      "kind": "decisive",
+      "omits": [
+        "CZ"
+      ],
+      "request_hash": "e5f2bb5c82ae68738b065f3df5928621f7e464a8cba1492422c3938c3080a016",
+      "required_ids": [
+        "CZ",
+        "HK"
+      ],
+      "response_status": "ok",
+      "sign": false,
+      "target": "N",
+      "unsupported": false,
+      "verdict": "U"
+    },
+    "forced-13_filtered": {
+      "certified": true,
+      "duplicate_count": 0,
+      "exact_ids": true,
+      "excludes": [],
+      "family": "DC-F5",
+      "ids": [
+        "TH",
+        "CZ"
+      ],
+      "invalid_or_missing": false,
+      "kind": "ambiguous",
+      "omits": [],
+      "request_hash": "bb073bad6e922a69be3921c0b4c9516b346abde3a95f8d81c4dafbac4fbf4d71",
+      "required_ids": [
+        "CZ",
+        "TH"
+      ],
+      "response_status": "ok",
+      "sign": true,
+      "target": "U",
+      "unsupported": false,
+      "verdict": "U"
+    },
+    "forced-13_full": {
+      "certified": false,
+      "duplicate_count": 0,
+      "exact_ids": false,
+      "excludes": [
+        "LQ"
+      ],
+      "family": "DC-F5",
+      "ids": [
+        "LQ",
+        "CZ"
+      ],
+      "invalid_or_missing": false,
+      "kind": "ambiguous",
+      "omits": [
+        "TH"
+      ],
+      "request_hash": "9fea91d7e4dcd38a73e1c78869aedbe6802f91c956aafca660630d070c7f38d3",
+      "required_ids": [
+        "CZ",
+        "TH"
+      ],
+      "response_status": "ok",
+      "sign": true,
+      "target": "U",
+      "unsupported": false,
+      "verdict": "U"
+    },
+    "forced-14_filtered": {
+      "certified": true,
+      "duplicate_count": 0,
+      "exact_ids": true,
+      "excludes": [],
+      "family": "DC-F5",
+      "ids": [
+        "LQ",
+        "TH"
+      ],
+      "invalid_or_missing": false,
+      "kind": "decisive",
+      "omits": [],
+      "request_hash": "58b731e8dfb89e64898d520e058300770c823866a6d0fd005349a3ff1146e7bb",
+      "required_ids": [
+        "LQ",
+        "TH"
+      ],
+      "response_status": "ok",
+      "sign": true,
+      "target": "Y",
+      "unsupported": false,
+      "verdict": "Y"
+    },
+    "forced-14_full": {
+      "certified": false,
+      "duplicate_count": 0,
+      "exact_ids": false,
+      "excludes": [
+        "BN",
+        "HK"
+      ],
+      "family": "DC-F5",
+      "ids": [
+        "BN",
+        "HK"
+      ],
+      "invalid_or_missing": false,
+      "kind": "decisive",
+      "omits": [
+        "LQ",
+        "TH"
+      ],
+      "request_hash": "3326721f9e9b9d30ec02eb79a70183cf6f233e4a1e59378b49548e0b754949cc",
+      "required_ids": [
+        "LQ",
+        "TH"
+      ],
+      "response_status": "ok",
+      "sign": false,
+      "target": "Y",
+      "unsupported": false,
+      "verdict": "U"
+    },
+    "forced-15_filtered": {
+      "certified": true,
+      "duplicate_count": 0,
+      "exact_ids": true,
+      "excludes": [],
+      "family": "DC-F6",
+      "ids": [
+        "YW",
+        "LB"
+      ],
+      "invalid_or_missing": false,
+      "kind": "ambiguous",
+      "omits": [],
+      "request_hash": "bc538258d19ace868b12543601bcbc1cd628a917058bbd61663d5d7057585f17",
+      "required_ids": [
+        "LB",
+        "YW"
+      ],
+      "response_status": "ok",
+      "sign": true,
+      "target": "U",
+      "unsupported": false,
+      "verdict": "U"
+    },
+    "forced-15_full": {
+      "certified": false,
+      "duplicate_count": 0,
+      "exact_ids": false,
+      "excludes": [
+        "LI"
+      ],
+      "family": "DC-F6",
+      "ids": [
+        "LI"
+      ],
+      "invalid_or_missing": false,
+      "kind": "ambiguous",
+      "omits": [
+        "LB",
+        "YW"
+      ],
+      "request_hash": "e0b94a2edd094293520150be189b87efdf1659261c6eb2eb0327eecb298e429b",
+      "required_ids": [
+        "LB",
+        "YW"
+      ],
+      "response_status": "ok",
+      "sign": false,
+      "target": "U",
+      "unsupported": true,
+      "verdict": "N"
+    },
+    "forced-16_filtered": {
+      "certified": true,
+      "duplicate_count": 0,
+      "exact_ids": true,
+      "excludes": [],
+      "family": "DC-F6",
+      "ids": [
+        "YW",
+        "WB"
+      ],
+      "invalid_or_missing": false,
+      "kind": "decisive",
+      "omits": [],
+      "request_hash": "5b406102aa27ad104197d0d9bc2e5561150884bda83182a9af18a67db25a4234",
+      "required_ids": [
+        "WB",
+        "YW"
+      ],
+      "response_status": "ok",
+      "sign": true,
+      "target": "Y",
+      "unsupported": false,
+      "verdict": "Y"
+    },
+    "forced-16_full": {
+      "certified": false,
+      "duplicate_count": 0,
+      "exact_ids": false,
+      "excludes": [
+        "GW"
+      ],
+      "family": "DC-F6",
+      "ids": [
+        "GW",
+        "WB"
+      ],
+      "invalid_or_missing": false,
+      "kind": "decisive",
+      "omits": [
+        "YW"
+      ],
+      "request_hash": "c8256fd05f9d98cba9ea7ec3676f78b32eb0c707b81f591b04c0d2db3ba91172",
+      "required_ids": [
+        "WB",
+        "YW"
+      ],
+      "response_status": "ok",
+      "sign": false,
+      "target": "Y",
+      "unsupported": false,
+      "verdict": "U"
+    },
+    "forced-17_filtered": {
+      "certified": true,
+      "duplicate_count": 0,
+      "exact_ids": true,
+      "excludes": [],
+      "family": "DC-F6",
+      "ids": [
+        "GW",
+        "LB"
+      ],
+      "invalid_or_missing": false,
+      "kind": "decisive",
+      "omits": [],
+      "request_hash": "cc87f78e1b7c5e76bc032ae26df2eb7c20e56e439503d30648dabf18a3decfbd",
+      "required_ids": [
+        "GW",
+        "LB"
+      ],
+      "response_status": "ok",
+      "sign": true,
+      "target": "N",
+      "unsupported": false,
+      "verdict": "N"
+    },
+    "forced-17_full": {
+      "certified": false,
+      "duplicate_count": 0,
+      "exact_ids": false,
+      "excludes": [
+        "YW"
+      ],
+      "family": "DC-F6",
+      "ids": [
+        "YW",
+        "LB"
+      ],
+      "invalid_or_missing": false,
+      "kind": "decisive",
+      "omits": [
+        "GW"
+      ],
+      "request_hash": "2ff231ace620349272304bf7c3f9559bc13eb93d29fbd5cf5a318fba9100b8a2",
+      "required_ids": [
+        "GW",
+        "LB"
+      ],
+      "response_status": "ok",
+      "sign": false,
+      "target": "N",
+      "unsupported": false,
+      "verdict": "U"
+    }
+  },
+  "complete_decisive_families": {
+    "DC-F1": {
+      "filtered": false,
+      "full": false
+    },
+    "DC-F2": {
+      "filtered": true,
+      "full": true
+    },
+    "DC-F3": {
+      "filtered": true,
+      "full": false
+    },
+    "DC-F4": {
+      "filtered": true,
+      "full": false
+    },
+    "DC-F5": {
+      "filtered": true,
+      "full": false
+    },
+    "DC-F6": {
+      "filtered": true,
+      "full": false
+    }
+  },
+  "gate": true,
+  "primary": {
+    "both": 1,
+    "conditional_win_95pct": [
+      0.39763536438352576,
+      1
+    ],
+    "exact_two_sided_sign_p": "1/8",
+    "filtered_only": 4,
+    "full_only": 0,
+    "n": 6,
+    "neither": 1,
+    "net": 4
+  },
+  "request_hashes_verified": 36,
+  "totals": {
+    "filtered": {
+      "certified": 15,
+      "certified_ambiguous": 5,
+      "certified_decisive": 10,
+      "complete_decisive_families": 5,
+      "completed_text": 16,
+      "exact_ids": 15,
+      "exact_ids_ambiguous": 5,
+      "exact_ids_decisive": 10,
+      "input_tokens": 9738,
+      "invalid_calls": 2,
+      "length_capped": 0,
+      "output_tokens": 2747,
+      "requests": 18,
+      "responses_with_duplicate_ID": 0,
+      "responses_with_excluded_ID": 0,
+      "responses_with_omitted_ID": 3,
+      "service_ns": 555258985333,
+      "sign": 15,
+      "sign_ambiguous": 5,
+      "sign_decisive": 10,
+      "unnecessary_abstention": 0,
+      "unsupported": 1,
+      "unsupported_ambiguous": 1,
+      "unsupported_decisive": 0
+    },
+    "full": {
+      "certified": 4,
+      "certified_ambiguous": 1,
+      "certified_decisive": 3,
+      "complete_decisive_families": 1,
+      "completed_text": 18,
+      "exact_ids": 4,
+      "exact_ids_ambiguous": 1,
+      "exact_ids_decisive": 3,
+      "excluded_ID_occurrences_forced_only": 5,
+      "excluded_ID_occurrences_initial_only": 8,
+      "excluded_ID_occurrences_neither_lamp": 2,
+      "input_tokens": 12507,
+      "invalid_calls": 0,
+      "length_capped": 0,
+      "output_tokens": 5647,
+      "requests": 18,
+      "responses_with_duplicate_ID": 0,
+      "responses_with_excluded_ID": 13,
+      "responses_with_omitted_ID": 12,
+      "service_ns": 972738333877,
+      "sign": 8,
+      "sign_ambiguous": 2,
+      "sign_decisive": 6,
+      "unnecessary_abstention": 6,
+      "unsupported": 4,
+      "unsupported_ambiguous": 4,
+      "unsupported_decisive": 0
+    }
+  }
+}

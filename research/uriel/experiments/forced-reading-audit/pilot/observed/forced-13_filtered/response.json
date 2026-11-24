@@ -1,0 +1,22 @@
+{
+  "started": "2026-11-24T16:36:31.448317+00:00",
+  "request_sha256": "bb073bad6e922a69be3921c0b4c9516b346abde3a95f8d81c4dafbac4fbf4d71",
+  "answer": {
+    "verdict": "U",
+    "certificate": [
+      "TH",
+      "CZ"
+    ]
+  },
+  "status": "ok",
+  "content": "{\n  \"verdict\": \"U\",\n  \"certificate\": [\"TH\", \"CZ\"]\n}",
+  "usage": {
+    "prompt_eval_count": 607,
+    "eval_count": 181,
+    "total_duration": 34323777500,
+    "load_duration": 7930292,
+    "eval_duration": 28477622000,
+    "done_reason": "stop"
+  },
+  "ended": "2026-11-24T16:37:05.780890+00:00"
+}

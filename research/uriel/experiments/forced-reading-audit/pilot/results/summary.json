@@ -1,0 +1,102 @@
+{
+  "totals": {
+    "full": {
+      "sessions": 18,
+      "parseable": 18,
+      "invalid": 0,
+      "length_limited": 0,
+      "prompt_tokens": 12507,
+      "generated_tokens": 5647,
+      "service_ns": 972738333877,
+      "unnecessary_abstention": 6,
+      "ids": 4,
+      "ids_decisive": 3,
+      "sign": 8,
+      "sign_decisive": 6,
+      "certified": 4,
+      "certified_decisive": 3,
+      "unsupported": 4,
+      "unsupported_decisive": 0,
+      "ids_ambiguous": 1,
+      "sign_ambiguous": 2,
+      "certified_ambiguous": 1,
+      "unsupported_ambiguous": 4,
+      "complete_decisive_families": 1,
+      "opposite_decisive_verdicts": 2,
+      "both_decisive_signs_warranted": 2
+    },
+    "filtered": {
+      "sessions": 18,
+      "parseable": 16,
+      "invalid": 2,
+      "length_limited": 0,
+      "prompt_tokens": 9738,
+      "generated_tokens": 2747,
+      "service_ns": 555258985333,
+      "unnecessary_abstention": 0,
+      "ids": 15,
+      "ids_decisive": 10,
+      "sign": 15,
+      "sign_decisive": 10,
+      "certified": 15,
+      "certified_decisive": 10,
+      "unsupported": 1,
+      "unsupported_decisive": 0,
+      "ids_ambiguous": 5,
+      "sign_ambiguous": 5,
+      "certified_ambiguous": 5,
+      "unsupported_ambiguous": 1,
+      "complete_decisive_families": 5,
+      "opposite_decisive_verdicts": 5,
+      "both_decisive_signs_warranted": 5
+    }
+  },
+  "primary": {
+    "n": 6,
+    "both": 1,
+    "neither": 1,
+    "full_only": 0,
+    "filtered_only": 4,
+    "net": 4,
+    "discordant": 4,
+    "two_sided_sign_p": 0.125,
+    "conditional_win_95pct": [
+      0.3976353643835252,
+      1
+    ]
+  },
+  "families": [
+    {
+      "family": "DC-F1",
+      "full": false,
+      "filtered": false
+    },
+    {
+      "family": "DC-F2",
+      "full": true,
+      "filtered": true
+    },
+    {
+      "family": "DC-F3",
+      "full": false,
+      "filtered": true
+    },
+    {
+      "family": "DC-F4",
+      "full": false,
+      "filtered": true
+    },
+    {
+      "family": "DC-F5",
+      "full": false,
+      "filtered": true
+    },
+    {
+      "family": "DC-F6",
+      "full": false,
+      "filtered": true
+    }
+  ],
+  "development_signal": true,
+  "paid_api_usd": 0
+}

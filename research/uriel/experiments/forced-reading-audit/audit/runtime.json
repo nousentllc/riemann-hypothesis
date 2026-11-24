@@ -1,0 +1,24 @@
+{
+  "paid_api_usd": 0,
+  "timestamped_dispatch_span_seconds": 2141.500954,
+  "totals": {
+    "filtered": {
+      "generated_token_reports": 16,
+      "reported_generated_tokens": 2747,
+      "service_reports": 16,
+      "service_seconds": 555.258985333,
+      "sessions": 18,
+      "timestamped": 18,
+      "wall_seconds": 1161.608332
+    },
+    "full": {
+      "generated_token_reports": 18,
+      "reported_generated_tokens": 5647,
+      "service_reports": 18,
+      "service_seconds": 972.738333877,
+      "sessions": 18,
+      "timestamped": 18,
+      "wall_seconds": 976.140582
+    }
+  }
+}

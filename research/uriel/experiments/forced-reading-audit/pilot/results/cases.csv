@@ -1,0 +1,37 @@
+record,family,kind,arm,expected,verdict,certificate,required_ids,sign,ids,certified,unsupported,extra,omitted,duplicate,status,barrier
+forced-00,DC-F1,decisive,full,N,U,FS QX,LE RK,False,False,False,False,FS QX,LE RK,False,ok,verdict and IDs
+forced-00,DC-F1,decisive,filtered,N,,,LE RK,False,False,False,False,,LE RK,False,error,missing
+forced-01,DC-F1,decisive,full,Y,Y,PT,PT ZD,True,False,False,False,,ZD,False,ok,IDs
+forced-01,DC-F1,decisive,filtered,Y,,,PT ZD,False,False,False,False,,PT ZD,False,error,missing
+forced-02,DC-F1,ambiguous,full,U,N,QX LE,LE ZD,False,False,False,True,QX,ZD,False,ok,verdict and IDs
+forced-02,DC-F1,ambiguous,filtered,U,U,ZD LE,LE ZD,True,True,True,False,,,False,ok,pass
+forced-03,DC-F2,decisive,full,Y,Y,BV DS,BV DS,True,True,True,False,,,False,ok,pass
+forced-03,DC-F2,decisive,filtered,Y,Y,BV DS,BV DS,True,True,True,False,,,False,ok,pass
+forced-04,DC-F2,ambiguous,full,U,Y,BV DS,DS XN,False,False,False,True,BV,XN,False,ok,verdict and IDs
+forced-04,DC-F2,ambiguous,filtered,U,Y,DS,DS XN,False,False,False,True,,XN,False,ok,verdict and IDs
+forced-05,DC-F2,decisive,full,N,N,XN IT,IT XN,True,True,True,False,,,False,ok,pass
+forced-05,DC-F2,decisive,filtered,N,N,XN IT,IT XN,True,True,True,False,,,False,ok,pass
+forced-06,DC-F3,ambiguous,full,U,U,DE SS,DE SS,True,True,True,False,,,False,ok,pass
+forced-06,DC-F3,ambiguous,filtered,U,U,DE SS,DE SS,True,True,True,False,,,False,ok,pass
+forced-07,DC-F3,decisive,full,N,U,DE SS,DE HR,False,False,False,False,SS,HR,False,ok,verdict and IDs
+forced-07,DC-F3,decisive,filtered,N,N,DE HR,DE HR,True,True,True,False,,,False,ok,pass
+forced-08,DC-F3,decisive,full,Y,Y,RY UT SS,RY SS,True,False,False,False,UT,,False,ok,IDs
+forced-08,DC-F3,decisive,filtered,Y,Y,RY SS,RY SS,True,True,True,False,,,False,ok,pass
+forced-09,DC-F4,decisive,full,Y,Y,DL NV,DL NV,True,True,True,False,,,False,ok,pass
+forced-09,DC-F4,decisive,filtered,Y,Y,DL NV,DL NV,True,True,True,False,,,False,ok,pass
+forced-10,DC-F4,decisive,full,N,N,EB WM AQ,AQ WM,True,False,False,False,EB,,False,ok,IDs
+forced-10,DC-F4,decisive,filtered,N,N,WM AQ,AQ WM,True,True,True,False,,,False,ok,pass
+forced-11,DC-F4,ambiguous,full,U,N,WM AQ,DL WM,False,False,False,True,AQ,DL,False,ok,verdict and IDs
+forced-11,DC-F4,ambiguous,filtered,U,U,DL WM,DL WM,True,True,True,False,,,False,ok,pass
+forced-12,DC-F5,decisive,full,N,U,LQ HK,CZ HK,False,False,False,False,LQ,CZ,False,ok,verdict and IDs
+forced-12,DC-F5,decisive,filtered,N,N,HK CZ,CZ HK,True,True,True,False,,,False,ok,pass
+forced-13,DC-F5,ambiguous,full,U,U,LQ CZ,CZ TH,True,False,False,False,LQ,TH,False,ok,IDs
+forced-13,DC-F5,ambiguous,filtered,U,U,TH CZ,CZ TH,True,True,True,False,,,False,ok,pass
+forced-14,DC-F5,decisive,full,Y,U,BN HK,LQ TH,False,False,False,False,BN HK,LQ TH,False,ok,verdict and IDs
+forced-14,DC-F5,decisive,filtered,Y,Y,LQ TH,LQ TH,True,True,True,False,,,False,ok,pass
+forced-15,DC-F6,ambiguous,full,U,N,LI,LB YW,False,False,False,True,LI,LB YW,False,ok,verdict and IDs
+forced-15,DC-F6,ambiguous,filtered,U,U,YW LB,LB YW,True,True,True,False,,,False,ok,pass
+forced-16,DC-F6,decisive,full,Y,U,GW WB,WB YW,False,False,False,False,GW,YW,False,ok,verdict and IDs
+forced-16,DC-F6,decisive,filtered,Y,Y,YW WB,WB YW,True,True,True,False,,,False,ok,pass
+forced-17,DC-F6,decisive,full,N,U,YW LB,GW LB,False,False,False,False,YW,GW,False,ok,verdict and IDs
+forced-17,DC-F6,decisive,filtered,N,N,GW LB,GW LB,True,True,True,False,,,False,ok,pass

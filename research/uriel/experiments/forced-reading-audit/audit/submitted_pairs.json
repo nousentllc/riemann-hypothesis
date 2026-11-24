@@ -1,0 +1,365 @@
+{
+  "cases": {
+    "forced-00_filtered": {
+      "duplicate_occurrences": 0,
+      "extra_occurrences": {},
+      "parseable": false,
+      "unique_pair": false
+    },
+    "forced-00_full": {
+      "admissible": false,
+      "consistent_with_named_pair": true,
+      "duplicate_occurrences": 0,
+      "extra_occurrences": {
+        "both": 1,
+        "initial_only": 1
+      },
+      "named_pair_verdict": "U",
+      "parseable": true,
+      "unique_pair": true
+    },
+    "forced-01_filtered": {
+      "duplicate_occurrences": 0,
+      "extra_occurrences": {},
+      "parseable": false,
+      "unique_pair": false
+    },
+    "forced-01_full": {
+      "duplicate_occurrences": 0,
+      "extra_occurrences": {},
+      "parseable": true,
+      "unique_pair": false
+    },
+    "forced-02_filtered": {
+      "admissible": true,
+      "consistent_with_named_pair": true,
+      "duplicate_occurrences": 0,
+      "extra_occurrences": {},
+      "named_pair_verdict": "U",
+      "parseable": true,
+      "unique_pair": true
+    },
+    "forced-02_full": {
+      "admissible": false,
+      "consistent_with_named_pair": true,
+      "duplicate_occurrences": 0,
+      "extra_occurrences": {
+        "initial_only": 1
+      },
+      "named_pair_verdict": "N",
+      "parseable": true,
+      "unique_pair": true
+    },
+    "forced-03_filtered": {
+      "admissible": true,
+      "consistent_with_named_pair": true,
+      "duplicate_occurrences": 0,
+      "extra_occurrences": {},
+      "named_pair_verdict": "Y",
+      "parseable": true,
+      "unique_pair": true
+    },
+    "forced-03_full": {
+      "admissible": true,
+      "consistent_with_named_pair": true,
+      "duplicate_occurrences": 0,
+      "extra_occurrences": {},
+      "named_pair_verdict": "Y",
+      "parseable": true,
+      "unique_pair": true
+    },
+    "forced-04_filtered": {
+      "duplicate_occurrences": 0,
+      "extra_occurrences": {},
+      "parseable": true,
+      "unique_pair": false
+    },
+    "forced-04_full": {
+      "admissible": false,
+      "consistent_with_named_pair": true,
+      "duplicate_occurrences": 0,
+      "extra_occurrences": {
+        "meter_only": 1
+      },
+      "named_pair_verdict": "Y",
+      "parseable": true,
+      "unique_pair": true
+    },
+    "forced-05_filtered": {
+      "admissible": true,
+      "consistent_with_named_pair": true,
+      "duplicate_occurrences": 0,
+      "extra_occurrences": {},
+      "named_pair_verdict": "N",
+      "parseable": true,
+      "unique_pair": true
+    },
+    "forced-05_full": {
+      "admissible": true,
+      "consistent_with_named_pair": true,
+      "duplicate_occurrences": 0,
+      "extra_occurrences": {},
+      "named_pair_verdict": "N",
+      "parseable": true,
+      "unique_pair": true
+    },
+    "forced-06_filtered": {
+      "admissible": true,
+      "consistent_with_named_pair": true,
+      "duplicate_occurrences": 0,
+      "extra_occurrences": {},
+      "named_pair_verdict": "U",
+      "parseable": true,
+      "unique_pair": true
+    },
+    "forced-06_full": {
+      "admissible": true,
+      "consistent_with_named_pair": true,
+      "duplicate_occurrences": 0,
+      "extra_occurrences": {},
+      "named_pair_verdict": "U",
+      "parseable": true,
+      "unique_pair": true
+    },
+    "forced-07_filtered": {
+      "admissible": true,
+      "consistent_with_named_pair": true,
+      "duplicate_occurrences": 0,
+      "extra_occurrences": {},
+      "named_pair_verdict": "N",
+      "parseable": true,
+      "unique_pair": true
+    },
+    "forced-07_full": {
+      "admissible": false,
+      "consistent_with_named_pair": true,
+      "duplicate_occurrences": 0,
+      "extra_occurrences": {
+        "meter_only": 1
+      },
+      "named_pair_verdict": "U",
+      "parseable": true,
+      "unique_pair": true
+    },
+    "forced-08_filtered": {
+      "admissible": true,
+      "consistent_with_named_pair": true,
+      "duplicate_occurrences": 0,
+      "extra_occurrences": {},
+      "named_pair_verdict": "Y",
+      "parseable": true,
+      "unique_pair": true
+    },
+    "forced-08_full": {
+      "duplicate_occurrences": 0,
+      "extra_occurrences": {
+        "initial_only": 1
+      },
+      "parseable": true,
+      "unique_pair": false
+    },
+    "forced-09_filtered": {
+      "admissible": true,
+      "consistent_with_named_pair": true,
+      "duplicate_occurrences": 0,
+      "extra_occurrences": {},
+      "named_pair_verdict": "Y",
+      "parseable": true,
+      "unique_pair": true
+    },
+    "forced-09_full": {
+      "admissible": true,
+      "consistent_with_named_pair": true,
+      "duplicate_occurrences": 0,
+      "extra_occurrences": {},
+      "named_pair_verdict": "Y",
+      "parseable": true,
+      "unique_pair": true
+    },
+    "forced-10_filtered": {
+      "admissible": true,
+      "consistent_with_named_pair": true,
+      "duplicate_occurrences": 0,
+      "extra_occurrences": {},
+      "named_pair_verdict": "N",
+      "parseable": true,
+      "unique_pair": true
+    },
+    "forced-10_full": {
+      "duplicate_occurrences": 0,
+      "extra_occurrences": {
+        "both": 1
+      },
+      "parseable": true,
+      "unique_pair": false
+    },
+    "forced-11_filtered": {
+      "admissible": true,
+      "consistent_with_named_pair": true,
+      "duplicate_occurrences": 0,
+      "extra_occurrences": {},
+      "named_pair_verdict": "U",
+      "parseable": true,
+      "unique_pair": true
+    },
+    "forced-11_full": {
+      "admissible": false,
+      "consistent_with_named_pair": true,
+      "duplicate_occurrences": 0,
+      "extra_occurrences": {
+        "meter_only": 1
+      },
+      "named_pair_verdict": "N",
+      "parseable": true,
+      "unique_pair": true
+    },
+    "forced-12_filtered": {
+      "admissible": true,
+      "consistent_with_named_pair": true,
+      "duplicate_occurrences": 0,
+      "extra_occurrences": {},
+      "named_pair_verdict": "N",
+      "parseable": true,
+      "unique_pair": true
+    },
+    "forced-12_full": {
+      "admissible": false,
+      "consistent_with_named_pair": true,
+      "duplicate_occurrences": 0,
+      "extra_occurrences": {
+        "meter_only": 1
+      },
+      "named_pair_verdict": "U",
+      "parseable": true,
+      "unique_pair": true
+    },
+    "forced-13_filtered": {
+      "admissible": true,
+      "consistent_with_named_pair": true,
+      "duplicate_occurrences": 0,
+      "extra_occurrences": {},
+      "named_pair_verdict": "U",
+      "parseable": true,
+      "unique_pair": true
+    },
+    "forced-13_full": {
+      "admissible": false,
+      "consistent_with_named_pair": true,
+      "duplicate_occurrences": 0,
+      "extra_occurrences": {
+        "meter_only": 1
+      },
+      "named_pair_verdict": "U",
+      "parseable": true,
+      "unique_pair": true
+    },
+    "forced-14_filtered": {
+      "admissible": true,
+      "consistent_with_named_pair": true,
+      "duplicate_occurrences": 0,
+      "extra_occurrences": {},
+      "named_pair_verdict": "Y",
+      "parseable": true,
+      "unique_pair": true
+    },
+    "forced-14_full": {
+      "admissible": false,
+      "consistent_with_named_pair": true,
+      "duplicate_occurrences": 0,
+      "extra_occurrences": {
+        "initial_only": 1,
+        "meter_only": 1
+      },
+      "named_pair_verdict": "U",
+      "parseable": true,
+      "unique_pair": true
+    },
+    "forced-15_filtered": {
+      "admissible": true,
+      "consistent_with_named_pair": true,
+      "duplicate_occurrences": 0,
+      "extra_occurrences": {},
+      "named_pair_verdict": "U",
+      "parseable": true,
+      "unique_pair": true
+    },
+    "forced-15_full": {
+      "duplicate_occurrences": 0,
+      "extra_occurrences": {
+        "initial_only": 1
+      },
+      "parseable": true,
+      "unique_pair": false
+    },
+    "forced-16_filtered": {
+      "admissible": true,
+      "consistent_with_named_pair": true,
+      "duplicate_occurrences": 0,
+      "extra_occurrences": {},
+      "named_pair_verdict": "Y",
+      "parseable": true,
+      "unique_pair": true
+    },
+    "forced-16_full": {
+      "admissible": false,
+      "consistent_with_named_pair": true,
+      "duplicate_occurrences": 0,
+      "extra_occurrences": {
+        "meter_only": 1
+      },
+      "named_pair_verdict": "U",
+      "parseable": true,
+      "unique_pair": true
+    },
+    "forced-17_filtered": {
+      "admissible": true,
+      "consistent_with_named_pair": true,
+      "duplicate_occurrences": 0,
+      "extra_occurrences": {},
+      "named_pair_verdict": "N",
+      "parseable": true,
+      "unique_pair": true
+    },
+    "forced-17_full": {
+      "admissible": false,
+      "consistent_with_named_pair": true,
+      "duplicate_occurrences": 0,
+      "extra_occurrences": {
+        "meter_only": 1
+      },
+      "named_pair_verdict": "U",
+      "parseable": true,
+      "unique_pair": true
+    }
+  },
+  "totals": {
+    "filtered": {
+      "counts": {
+        "consistent_but_inadmissible": 0,
+        "duplicate_occurrences": 0,
+        "pair_consistent": 15,
+        "pair_inadmissible": 0,
+        "parseable": 16,
+        "sessions": 18,
+        "unique_pairs": 15
+      },
+      "extra_occurrences": {}
+    },
+    "full": {
+      "counts": {
+        "consistent_but_inadmissible": 10,
+        "duplicate_occurrences": 0,
+        "pair_consistent": 14,
+        "pair_inadmissible": 10,
+        "parseable": 18,
+        "sessions": 18,
+        "unique_pairs": 14
+      },
+      "extra_occurrences": {
+        "both": 2,
+        "initial_only": 5,
+        "meter_only": 8
+      }
+    }
+  }
+}

@@ -1,0 +1,3 @@
+Supplemental manuscript diagnostic fixed without model results, 24 November 2026.
+For each valid response naming two distinct recognized IDs, inspect whether the verdict is the common sign of those two candidate labels or U if both signs occur. Classify candidate-ID occurrences extraneous to the required set according to the first lamp only, forced meter only, or both contradicted. Count all occurrences (duplicates separately), report denominators, no inferential test and no changes to the prospective endpoints. This consistency measure describes a relationship among public outputs and cannot recover private reasoning.
+
