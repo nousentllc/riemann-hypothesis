@@ -1,0 +1,19 @@
+{
+  "request_sha256": "aef37e57795ca80aad3d842f4611e2101abdd481a66f054e6caf765a8aa06d0c",
+  "started": "2026-11-24T20:47:43.544012+00:00",
+  "answer": {
+    "FB": "Y",
+    "VW": "Y"
+  },
+  "status": "ok",
+  "content": "{\"FB\":\"Y\",\"VW\":\"Y\"}",
+  "usage": {
+    "prompt_eval_count": 446,
+    "eval_count": 223,
+    "total_duration": 42403107333,
+    "load_duration": 7059083,
+    "eval_duration": 39473368000,
+    "done_reason": "stop"
+  },
+  "ended": "2026-11-24T20:48:25.954944+00:00"
+}

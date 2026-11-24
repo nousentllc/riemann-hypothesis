@@ -1,0 +1,19 @@
+{
+  "request_sha256": "6c6a6a1970e4e0f88c3fdb06eaa0b4f99ac09cea4bd492233ae955e0c38d48c1",
+  "started": "2026-11-24T20:30:05.162484+00:00",
+  "answer": {
+    "UG": "Y",
+    "IM": "N"
+  },
+  "status": "ok",
+  "content": "{\"UG\":\"Y\",\"IM\":\"N\"}",
+  "usage": {
+    "prompt_eval_count": 454,
+    "eval_count": 44,
+    "total_duration": 7783461417,
+    "load_duration": 3164125,
+    "eval_duration": 4158548000,
+    "done_reason": "stop"
+  },
+  "ended": "2026-11-24T20:30:12.950760+00:00"
+}

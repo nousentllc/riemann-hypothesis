@@ -1,0 +1,2673 @@
+{
+  "registration": {
+    "commit": "96b7664fc17d6d27a7409b49664b5c6f5eb01469",
+    "tree": "b21a44c5924b90c1bc4cd9d8f48863615842622c",
+    "committed_at": "2026-11-24T15:26:34-05:00",
+    "url": "https://github.com/nousentllc/riemann-hypothesis/commit/96b7664fc17d6d27a7409b49664b5c6f5eb01469"
+  },
+  "verified_requests": 72,
+  "cases": {
+    "scope-14": {
+      "family": "DC-K4",
+      "pattern": "NN",
+      "ordered_ids": [
+        "KR",
+        "PY"
+      ],
+      "true_labels": {
+        "KR": "N",
+        "PY": "N"
+      },
+      "expected": "NN",
+      "checkpoint_status": "ok",
+      "reported_labels": {
+        "KR": "N",
+        "PY": "N"
+      },
+      "reported_pattern": "NN",
+      "exact_checkpoint": true,
+      "labels_hits": 2,
+      "order": [
+        "both",
+        "any"
+      ],
+      "status": {
+        "any": "ok",
+        "both": "ok"
+      },
+      "any": "N",
+      "both": "N",
+      "complete": true,
+      "signature": "NN",
+      "joint_warranted": true,
+      "joint_follows_report": true,
+      "possible_signatures": [
+        "NN"
+      ]
+    },
+    "scope-16": {
+      "family": "DC-K5",
+      "pattern": "NN",
+      "ordered_ids": [
+        "LK",
+        "II"
+      ],
+      "true_labels": {
+        "LK": "N",
+        "II": "N"
+      },
+      "expected": "NN",
+      "checkpoint_status": "ok",
+      "reported_labels": {
+        "LK": "N",
+        "II": "Y"
+      },
+      "reported_pattern": "NY",
+      "exact_checkpoint": false,
+      "labels_hits": 1,
+      "order": [
+        "any",
+        "both"
+      ],
+      "status": {
+        "any": "ok",
+        "both": "ok"
+      },
+      "any": "Y",
+      "both": "N",
+      "complete": true,
+      "signature": "YN",
+      "joint_warranted": false,
+      "joint_follows_report": true,
+      "possible_signatures": [
+        "YN"
+      ]
+    },
+    "scope-18": {
+      "family": "DC-K5",
+      "pattern": "NY",
+      "ordered_ids": [
+        "LK",
+        "RU"
+      ],
+      "true_labels": {
+        "LK": "N",
+        "RU": "Y"
+      },
+      "expected": "YN",
+      "checkpoint_status": "ok",
+      "reported_labels": {
+        "LK": "Y",
+        "RU": "N"
+      },
+      "reported_pattern": "YN",
+      "exact_checkpoint": false,
+      "labels_hits": 0,
+      "order": [
+        "any",
+        "both"
+      ],
+      "status": {
+        "any": "ok",
+        "both": "ok"
+      },
+      "any": "Y",
+      "both": "N",
+      "complete": true,
+      "signature": "YN",
+      "joint_warranted": true,
+      "joint_follows_report": true,
+      "possible_signatures": [
+        "YN"
+      ]
+    },
+    "scope-19": {
+      "family": "DC-K5",
+      "pattern": "YN",
+      "ordered_ids": [
+        "LY",
+        "II"
+      ],
+      "true_labels": {
+        "LY": "Y",
+        "II": "N"
+      },
+      "expected": "YN",
+      "checkpoint_status": "ok",
+      "reported_labels": {
+        "LY": "Y",
+        "II": "N"
+      },
+      "reported_pattern": "YN",
+      "exact_checkpoint": true,
+      "labels_hits": 2,
+      "order": [
+        "both",
+        "any"
+      ],
+      "status": {
+        "any": "ok",
+        "both": "ok"
+      },
+      "any": "Y",
+      "both": "N",
+      "complete": true,
+      "signature": "YN",
+      "joint_warranted": true,
+      "joint_follows_report": true,
+      "possible_signatures": [
+        "YN"
+      ]
+    },
+    "scope-21": {
+      "family": "DC-K6",
+      "pattern": "NY",
+      "ordered_ids": [
+        "NY",
+        "DD"
+      ],
+      "true_labels": {
+        "NY": "N",
+        "DD": "Y"
+      },
+      "expected": "YN",
+      "checkpoint_status": "ok",
+      "reported_labels": {
+        "NY": "N",
+        "DD": "Y"
+      },
+      "reported_pattern": "NY",
+      "exact_checkpoint": true,
+      "labels_hits": 2,
+      "order": [
+        "both",
+        "any"
+      ],
+      "status": {
+        "any": "ok",
+        "both": "ok"
+      },
+      "any": "Y",
+      "both": "N",
+      "complete": true,
+      "signature": "YN",
+      "joint_warranted": true,
+      "joint_follows_report": true,
+      "possible_signatures": [
+        "YN"
+      ]
+    },
+    "scope-05": {
+      "family": "DC-K2",
+      "pattern": "YN",
+      "ordered_ids": [
+        "UG",
+        "IM"
+      ],
+      "true_labels": {
+        "UG": "Y",
+        "IM": "N"
+      },
+      "expected": "YN",
+      "checkpoint_status": "ok",
+      "reported_labels": {
+        "UG": "Y",
+        "IM": "N"
+      },
+      "reported_pattern": "YN",
+      "exact_checkpoint": true,
+      "labels_hits": 2,
+      "order": [
+        "both",
+        "any"
+      ],
+      "status": {
+        "any": "ok",
+        "both": "ok"
+      },
+      "any": "Y",
+      "both": "N",
+      "complete": true,
+      "signature": "YN",
+      "joint_warranted": true,
+      "joint_follows_report": true,
+      "possible_signatures": [
+        "YN"
+      ]
+    },
+    "scope-23": {
+      "family": "DC-K6",
+      "pattern": "YY",
+      "ordered_ids": [
+        "HQ",
+        "DD"
+      ],
+      "true_labels": {
+        "HQ": "Y",
+        "DD": "Y"
+      },
+      "expected": "YY",
+      "checkpoint_status": "ok",
+      "reported_labels": {
+        "HQ": "Y",
+        "DD": "Y"
+      },
+      "reported_pattern": "YY",
+      "exact_checkpoint": true,
+      "labels_hits": 2,
+      "order": [
+        "any",
+        "both"
+      ],
+      "status": {
+        "any": "ok",
+        "both": "ok"
+      },
+      "any": "Y",
+      "both": "Y",
+      "complete": true,
+      "signature": "YY",
+      "joint_warranted": true,
+      "joint_follows_report": true,
+      "possible_signatures": [
+        "YY"
+      ]
+    },
+    "scope-07": {
+      "family": "DC-K2",
+      "pattern": "YY",
+      "ordered_ids": [
+        "UG",
+        "CE"
+      ],
+      "true_labels": {
+        "UG": "Y",
+        "CE": "Y"
+      },
+      "expected": "YY",
+      "checkpoint_status": "ok",
+      "reported_labels": {
+        "UG": "Y",
+        "CE": "Y"
+      },
+      "reported_pattern": "YY",
+      "exact_checkpoint": true,
+      "labels_hits": 2,
+      "order": [
+        "both",
+        "any"
+      ],
+      "status": {
+        "any": "ok",
+        "both": "ok"
+      },
+      "any": "Y",
+      "both": "Y",
+      "complete": true,
+      "signature": "YY",
+      "joint_warranted": true,
+      "joint_follows_report": true,
+      "possible_signatures": [
+        "YY"
+      ]
+    },
+    "scope-09": {
+      "family": "DC-K3",
+      "pattern": "NY",
+      "ordered_ids": [
+        "DV",
+        "FB"
+      ],
+      "true_labels": {
+        "DV": "N",
+        "FB": "Y"
+      },
+      "expected": "YN",
+      "checkpoint_status": "ok",
+      "reported_labels": {
+        "DV": "N",
+        "FB": "Y"
+      },
+      "reported_pattern": "NY",
+      "exact_checkpoint": true,
+      "labels_hits": 2,
+      "order": [
+        "both",
+        "any"
+      ],
+      "status": {
+        "any": "ok",
+        "both": "ok"
+      },
+      "any": "Y",
+      "both": "N",
+      "complete": true,
+      "signature": "YN",
+      "joint_warranted": true,
+      "joint_follows_report": true,
+      "possible_signatures": [
+        "YN"
+      ]
+    },
+    "scope-17": {
+      "family": "DC-K5",
+      "pattern": "YY",
+      "ordered_ids": [
+        "LY",
+        "RU"
+      ],
+      "true_labels": {
+        "LY": "Y",
+        "RU": "Y"
+      },
+      "expected": "YY",
+      "checkpoint_status": "ok",
+      "reported_labels": {
+        "LY": "Y",
+        "RU": "Y"
+      },
+      "reported_pattern": "YY",
+      "exact_checkpoint": true,
+      "labels_hits": 2,
+      "order": [
+        "both",
+        "any"
+      ],
+      "status": {
+        "any": "ok",
+        "both": "ok"
+      },
+      "any": "Y",
+      "both": "Y",
+      "complete": true,
+      "signature": "YY",
+      "joint_warranted": true,
+      "joint_follows_report": true,
+      "possible_signatures": [
+        "YY"
+      ]
+    },
+    "scope-10": {
+      "family": "DC-K3",
+      "pattern": "NN",
+      "ordered_ids": [
+        "DV",
+        "PI"
+      ],
+      "true_labels": {
+        "DV": "N",
+        "PI": "N"
+      },
+      "expected": "NN",
+      "checkpoint_status": "ok",
+      "reported_labels": {
+        "DV": "Y",
+        "PI": "N"
+      },
+      "reported_pattern": "YN",
+      "exact_checkpoint": false,
+      "labels_hits": 1,
+      "order": [
+        "both",
+        "any"
+      ],
+      "status": {
+        "any": "ok",
+        "both": "ok"
+      },
+      "any": "Y",
+      "both": "N",
+      "complete": true,
+      "signature": "YN",
+      "joint_warranted": false,
+      "joint_follows_report": true,
+      "possible_signatures": [
+        "YN"
+      ]
+    },
+    "scope-02": {
+      "family": "DC-K1",
+      "pattern": "YN",
+      "ordered_ids": [
+        "ER",
+        "PH"
+      ],
+      "true_labels": {
+        "ER": "Y",
+        "PH": "N"
+      },
+      "expected": "YN",
+      "checkpoint_status": "ok",
+      "reported_labels": {
+        "ER": "Y",
+        "PH": "N"
+      },
+      "reported_pattern": "YN",
+      "exact_checkpoint": true,
+      "labels_hits": 2,
+      "order": [
+        "both",
+        "any"
+      ],
+      "status": {
+        "any": "ok",
+        "both": "ok"
+      },
+      "any": "Y",
+      "both": "N",
+      "complete": true,
+      "signature": "YN",
+      "joint_warranted": true,
+      "joint_follows_report": true,
+      "possible_signatures": [
+        "YN"
+      ]
+    },
+    "scope-13": {
+      "family": "DC-K4",
+      "pattern": "YY",
+      "ordered_ids": [
+        "HM",
+        "CO"
+      ],
+      "true_labels": {
+        "HM": "Y",
+        "CO": "Y"
+      },
+      "expected": "YY",
+      "checkpoint_status": "ok",
+      "reported_labels": {
+        "HM": "Y",
+        "CO": "Y"
+      },
+      "reported_pattern": "YY",
+      "exact_checkpoint": true,
+      "labels_hits": 2,
+      "order": [
+        "any",
+        "both"
+      ],
+      "status": {
+        "any": "ok",
+        "both": "ok"
+      },
+      "any": "Y",
+      "both": "Y",
+      "complete": true,
+      "signature": "YY",
+      "joint_warranted": true,
+      "joint_follows_report": true,
+      "possible_signatures": [
+        "YY"
+      ]
+    },
+    "scope-04": {
+      "family": "DC-K2",
+      "pattern": "NN",
+      "ordered_ids": [
+        "CM",
+        "IM"
+      ],
+      "true_labels": {
+        "CM": "N",
+        "IM": "N"
+      },
+      "expected": "NN",
+      "checkpoint_status": "ok",
+      "reported_labels": {
+        "CM": "Y",
+        "IM": "N"
+      },
+      "reported_pattern": "YN",
+      "exact_checkpoint": false,
+      "labels_hits": 1,
+      "order": [
+        "any",
+        "both"
+      ],
+      "status": {
+        "any": "ok",
+        "both": "ok"
+      },
+      "any": "Y",
+      "both": "N",
+      "complete": true,
+      "signature": "YN",
+      "joint_warranted": false,
+      "joint_follows_report": true,
+      "possible_signatures": [
+        "YN"
+      ]
+    },
+    "scope-20": {
+      "family": "DC-K6",
+      "pattern": "NN",
+      "ordered_ids": [
+        "NY",
+        "UA"
+      ],
+      "true_labels": {
+        "NY": "N",
+        "UA": "N"
+      },
+      "expected": "NN",
+      "checkpoint_status": "ok",
+      "reported_labels": {
+        "NY": "Y",
+        "UA": "N"
+      },
+      "reported_pattern": "YN",
+      "exact_checkpoint": false,
+      "labels_hits": 1,
+      "order": [
+        "both",
+        "any"
+      ],
+      "status": {
+        "any": "ok",
+        "both": "ok"
+      },
+      "any": "Y",
+      "both": "N",
+      "complete": true,
+      "signature": "YN",
+      "joint_warranted": false,
+      "joint_follows_report": true,
+      "possible_signatures": [
+        "YN"
+      ]
+    },
+    "scope-22": {
+      "family": "DC-K6",
+      "pattern": "YN",
+      "ordered_ids": [
+        "HQ",
+        "UA"
+      ],
+      "true_labels": {
+        "HQ": "Y",
+        "UA": "N"
+      },
+      "expected": "YN",
+      "checkpoint_status": "ok",
+      "reported_labels": {
+        "HQ": "Y",
+        "UA": "N"
+      },
+      "reported_pattern": "YN",
+      "exact_checkpoint": true,
+      "labels_hits": 2,
+      "order": [
+        "any",
+        "both"
+      ],
+      "status": {
+        "any": "ok",
+        "both": "ok"
+      },
+      "any": "Y",
+      "both": "N",
+      "complete": true,
+      "signature": "YN",
+      "joint_warranted": true,
+      "joint_follows_report": true,
+      "possible_signatures": [
+        "YN"
+      ]
+    },
+    "scope-00": {
+      "family": "DC-K1",
+      "pattern": "NN",
+      "ordered_ids": [
+        "UH",
+        "PH"
+      ],
+      "true_labels": {
+        "UH": "N",
+        "PH": "N"
+      },
+      "expected": "NN",
+      "checkpoint_status": "ok",
+      "reported_labels": {
+        "UH": "Y",
+        "PH": "N"
+      },
+      "reported_pattern": "YN",
+      "exact_checkpoint": false,
+      "labels_hits": 1,
+      "order": [
+        "any",
+        "both"
+      ],
+      "status": {
+        "any": "ok",
+        "both": "ok"
+      },
+      "any": "Y",
+      "both": "N",
+      "complete": true,
+      "signature": "YN",
+      "joint_warranted": false,
+      "joint_follows_report": true,
+      "possible_signatures": [
+        "YN"
+      ]
+    },
+    "scope-01": {
+      "family": "DC-K1",
+      "pattern": "YY",
+      "ordered_ids": [
+        "ER",
+        "JM"
+      ],
+      "true_labels": {
+        "ER": "Y",
+        "JM": "Y"
+      },
+      "expected": "YY",
+      "checkpoint_status": "ok",
+      "reported_labels": {
+        "ER": "Y",
+        "JM": "Y"
+      },
+      "reported_pattern": "YY",
+      "exact_checkpoint": true,
+      "labels_hits": 2,
+      "order": [
+        "both",
+        "any"
+      ],
+      "status": {
+        "any": "ok",
+        "both": "ok"
+      },
+      "any": "Y",
+      "both": "Y",
+      "complete": true,
+      "signature": "YY",
+      "joint_warranted": true,
+      "joint_follows_report": true,
+      "possible_signatures": [
+        "YY"
+      ]
+    },
+    "scope-15": {
+      "family": "DC-K4",
+      "pattern": "NY",
+      "ordered_ids": [
+        "KR",
+        "CO"
+      ],
+      "true_labels": {
+        "KR": "N",
+        "CO": "Y"
+      },
+      "expected": "YN",
+      "checkpoint_status": "ok",
+      "reported_labels": {
+        "KR": "N",
+        "CO": "Y"
+      },
+      "reported_pattern": "NY",
+      "exact_checkpoint": true,
+      "labels_hits": 2,
+      "order": [
+        "both",
+        "any"
+      ],
+      "status": {
+        "any": "ok",
+        "both": "ok"
+      },
+      "any": "Y",
+      "both": "N",
+      "complete": true,
+      "signature": "YN",
+      "joint_warranted": true,
+      "joint_follows_report": true,
+      "possible_signatures": [
+        "YN"
+      ]
+    },
+    "scope-12": {
+      "family": "DC-K4",
+      "pattern": "YN",
+      "ordered_ids": [
+        "HM",
+        "PY"
+      ],
+      "true_labels": {
+        "HM": "Y",
+        "PY": "N"
+      },
+      "expected": "YN",
+      "checkpoint_status": "ok",
+      "reported_labels": {
+        "HM": "Y",
+        "PY": "N"
+      },
+      "reported_pattern": "YN",
+      "exact_checkpoint": true,
+      "labels_hits": 2,
+      "order": [
+        "any",
+        "both"
+      ],
+      "status": {
+        "any": "ok",
+        "both": "ok"
+      },
+      "any": "Y",
+      "both": "N",
+      "complete": true,
+      "signature": "YN",
+      "joint_warranted": true,
+      "joint_follows_report": true,
+      "possible_signatures": [
+        "YN"
+      ]
+    },
+    "scope-08": {
+      "family": "DC-K3",
+      "pattern": "YN",
+      "ordered_ids": [
+        "VW",
+        "PI"
+      ],
+      "true_labels": {
+        "VW": "Y",
+        "PI": "N"
+      },
+      "expected": "YN",
+      "checkpoint_status": "ok",
+      "reported_labels": {
+        "VW": "Y",
+        "PI": "N"
+      },
+      "reported_pattern": "YN",
+      "exact_checkpoint": true,
+      "labels_hits": 2,
+      "order": [
+        "any",
+        "both"
+      ],
+      "status": {
+        "any": "ok",
+        "both": "ok"
+      },
+      "any": "Y",
+      "both": "N",
+      "complete": true,
+      "signature": "YN",
+      "joint_warranted": true,
+      "joint_follows_report": true,
+      "possible_signatures": [
+        "YN"
+      ]
+    },
+    "scope-11": {
+      "family": "DC-K3",
+      "pattern": "YY",
+      "ordered_ids": [
+        "FB",
+        "VW"
+      ],
+      "true_labels": {
+        "FB": "Y",
+        "VW": "Y"
+      },
+      "expected": "YY",
+      "checkpoint_status": "ok",
+      "reported_labels": {
+        "FB": "Y",
+        "VW": "Y"
+      },
+      "reported_pattern": "YY",
+      "exact_checkpoint": true,
+      "labels_hits": 2,
+      "order": [
+        "any",
+        "both"
+      ],
+      "status": {
+        "any": "ok",
+        "both": "ok"
+      },
+      "any": "Y",
+      "both": "Y",
+      "complete": true,
+      "signature": "YY",
+      "joint_warranted": true,
+      "joint_follows_report": true,
+      "possible_signatures": [
+        "YY"
+      ]
+    },
+    "scope-03": {
+      "family": "DC-K1",
+      "pattern": "NY",
+      "ordered_ids": [
+        "UH",
+        "JM"
+      ],
+      "true_labels": {
+        "UH": "N",
+        "JM": "Y"
+      },
+      "expected": "YN",
+      "checkpoint_status": "ok",
+      "reported_labels": {
+        "UH": "N",
+        "JM": "Y"
+      },
+      "reported_pattern": "NY",
+      "exact_checkpoint": true,
+      "labels_hits": 2,
+      "order": [
+        "any",
+        "both"
+      ],
+      "status": {
+        "any": "ok",
+        "both": "ok"
+      },
+      "any": "Y",
+      "both": "N",
+      "complete": true,
+      "signature": "YN",
+      "joint_warranted": true,
+      "joint_follows_report": true,
+      "possible_signatures": [
+        "YN"
+      ]
+    },
+    "scope-06": {
+      "family": "DC-K2",
+      "pattern": "NY",
+      "ordered_ids": [
+        "CM",
+        "CE"
+      ],
+      "true_labels": {
+        "CM": "N",
+        "CE": "Y"
+      },
+      "expected": "YN",
+      "checkpoint_status": "ok",
+      "reported_labels": {
+        "CM": "N",
+        "CE": "Y"
+      },
+      "reported_pattern": "NY",
+      "exact_checkpoint": true,
+      "labels_hits": 2,
+      "order": [
+        "any",
+        "both"
+      ],
+      "status": {
+        "any": "ok",
+        "both": "ok"
+      },
+      "any": "Y",
+      "both": "N",
+      "complete": true,
+      "signature": "YN",
+      "joint_warranted": true,
+      "joint_follows_report": true,
+      "possible_signatures": [
+        "YN"
+      ]
+    }
+  },
+  "stage_order": [
+    {
+      "record": "scope-14",
+      "stage": "labels",
+      "request_sha256": "c93a56ed6483ef9812df40f32e9e904c355a5582adf22a6e857d66a32764a37a",
+      "started": "2026-11-24T20:26:56.684868+00:00",
+      "ended": "2026-11-24T20:27:27.898701+00:00",
+      "seconds": 31.213833,
+      "status": "ok",
+      "finish": "stop",
+      "usage": {
+        "prompt_eval_count": 431,
+        "eval_count": 190,
+        "total_duration": 31110446500,
+        "load_duration": 17253901000,
+        "eval_duration": 11691543000
+      }
+    },
+    {
+      "record": "scope-14",
+      "stage": "both",
+      "request_sha256": "f04535220a690d78e6bb58acf292791bcdbc37e4756932e9c0552a14039f1315",
+      "started": "2026-11-24T20:27:27.921832+00:00",
+      "ended": "2026-11-24T20:27:30.175219+00:00",
+      "seconds": 2.253387,
+      "status": "ok",
+      "finish": "stop",
+      "usage": {
+        "prompt_eval_count": 478,
+        "eval_count": 26,
+        "total_duration": 2238084125,
+        "load_duration": 23222375,
+        "eval_duration": 1612964000
+      }
+    },
+    {
+      "record": "scope-14",
+      "stage": "any",
+      "request_sha256": "be1ddd1f9f4c4b4b5751d7984d2d5653d5acd7a069cb68e12df309731d642664",
+      "started": "2026-11-24T20:27:30.178454+00:00",
+      "ended": "2026-11-24T20:27:32.079577+00:00",
+      "seconds": 1.901123,
+      "status": "ok",
+      "finish": "stop",
+      "usage": {
+        "prompt_eval_count": 480,
+        "eval_count": 23,
+        "total_duration": 1895736375,
+        "load_duration": 5439792,
+        "eval_duration": 1248717000
+      }
+    },
+    {
+      "record": "scope-16",
+      "stage": "labels",
+      "request_sha256": "19cf830a9b566fb2c0c551ace595aa312f91716178d97a758b3eff060c9be0ab",
+      "started": "2026-11-24T20:27:32.083897+00:00",
+      "ended": "2026-11-24T20:27:42.617791+00:00",
+      "seconds": 10.533894,
+      "status": "ok",
+      "finish": "stop",
+      "usage": {
+        "prompt_eval_count": 438,
+        "eval_count": 148,
+        "total_duration": 10504617500,
+        "load_duration": 1861458,
+        "eval_duration": 9117650000
+      }
+    },
+    {
+      "record": "scope-16",
+      "stage": "any",
+      "request_sha256": "459bcb321e443e7c1adedf0c85ca9b7b887150b3bc65020ee42d95f549e895eb",
+      "started": "2026-11-24T20:27:42.626998+00:00",
+      "ended": "2026-11-24T20:27:46.273425+00:00",
+      "seconds": 3.646427,
+      "status": "ok",
+      "finish": "stop",
+      "usage": {
+        "prompt_eval_count": 487,
+        "eval_count": 54,
+        "total_duration": 3628097292,
+        "load_duration": 21076750,
+        "eval_duration": 3010739000
+      }
+    },
+    {
+      "record": "scope-16",
+      "stage": "both",
+      "request_sha256": "27cad4d3bd5f5db1750393f37553fa11b27237574c8caa4d04b263d00aaf0164",
+      "started": "2026-11-24T20:27:46.275600+00:00",
+      "ended": "2026-11-24T20:27:49.881330+00:00",
+      "seconds": 3.60573,
+      "status": "ok",
+      "finish": "stop",
+      "usage": {
+        "prompt_eval_count": 485,
+        "eval_count": 45,
+        "total_duration": 3598165500,
+        "load_duration": 5684334,
+        "eval_duration": 2996262000
+      }
+    },
+    {
+      "record": "scope-18",
+      "stage": "labels",
+      "request_sha256": "db115de499d76917ed416655c7f8b0298551c9e58b8e43015cd8a2ea1e5a142c",
+      "started": "2026-11-24T20:27:49.883968+00:00",
+      "ended": "2026-11-24T20:28:49.366001+00:00",
+      "seconds": 59.482033,
+      "status": "ok",
+      "finish": "stop",
+      "usage": {
+        "prompt_eval_count": 438,
+        "eval_count": 795,
+        "total_duration": 59338316875,
+        "load_duration": 11194542,
+        "eval_duration": 58447686000
+      }
+    },
+    {
+      "record": "scope-18",
+      "stage": "any",
+      "request_sha256": "7784be86005b733e446172143d5951d8d449a1c573b6ea83d43d1bff717b2077",
+      "started": "2026-11-24T20:28:49.377984+00:00",
+      "ended": "2026-11-24T20:28:54.532958+00:00",
+      "seconds": 5.154974,
+      "status": "ok",
+      "finish": "stop",
+      "usage": {
+        "prompt_eval_count": 487,
+        "eval_count": 48,
+        "total_duration": 5127937959,
+        "load_duration": 29614750,
+        "eval_duration": 3978280000
+      }
+    },
+    {
+      "record": "scope-18",
+      "stage": "both",
+      "request_sha256": "3a0265aa98c7d2acb508aca8cd4b4ff810a6b52fcb9403ae6986ffcac9756016",
+      "started": "2026-11-24T20:28:54.534793+00:00",
+      "ended": "2026-11-24T20:29:02.522621+00:00",
+      "seconds": 7.987828,
+      "status": "ok",
+      "finish": "stop",
+      "usage": {
+        "prompt_eval_count": 485,
+        "eval_count": 78,
+        "total_duration": 7982257000,
+        "load_duration": 3724542,
+        "eval_duration": 6791127000
+      }
+    },
+    {
+      "record": "scope-19",
+      "stage": "labels",
+      "request_sha256": "a005cae5cdddcc57a3543c7269689cc284059c3d42cad9d5001df44f37329bb6",
+      "started": "2026-11-24T20:29:02.526768+00:00",
+      "ended": "2026-11-24T20:29:17.221236+00:00",
+      "seconds": 14.694468,
+      "status": "ok",
+      "finish": "stop",
+      "usage": {
+        "prompt_eval_count": 437,
+        "eval_count": 117,
+        "total_duration": 14682034791,
+        "load_duration": 6058250,
+        "eval_duration": 11930416000
+      }
+    },
+    {
+      "record": "scope-19",
+      "stage": "both",
+      "request_sha256": "2eb58453f699eda95593bdd0da6a181a8a5d88ce22e909f725b2e965822d6a94",
+      "started": "2026-11-24T20:29:17.224516+00:00",
+      "ended": "2026-11-24T20:29:27.682859+00:00",
+      "seconds": 10.458343,
+      "status": "ok",
+      "finish": "stop",
+      "usage": {
+        "prompt_eval_count": 484,
+        "eval_count": 73,
+        "total_duration": 10449841291,
+        "load_duration": 4502041,
+        "eval_duration": 8955606000
+      }
+    },
+    {
+      "record": "scope-19",
+      "stage": "any",
+      "request_sha256": "e4a0b959e6a3e3e73a3fe8bf361d0e4d0a5f8b9879585f2ef05d8b91e9286dca",
+      "started": "2026-11-24T20:29:27.686289+00:00",
+      "ended": "2026-11-24T20:29:34.025560+00:00",
+      "seconds": 6.339271,
+      "status": "ok",
+      "finish": "stop",
+      "usage": {
+        "prompt_eval_count": 486,
+        "eval_count": 39,
+        "total_duration": 6333119416,
+        "load_duration": 5864875,
+        "eval_duration": 4136558000
+      }
+    },
+    {
+      "record": "scope-21",
+      "stage": "labels",
+      "request_sha256": "38c8ec05f5aed4783c2b8fe89c25174e19b0b31036b177e2e93817101957c232",
+      "started": "2026-11-24T20:29:34.034826+00:00",
+      "ended": "2026-11-24T20:29:50.590307+00:00",
+      "seconds": 16.555481,
+      "status": "ok",
+      "finish": "stop",
+      "usage": {
+        "prompt_eval_count": 421,
+        "eval_count": 107,
+        "total_duration": 16547387500,
+        "load_duration": 1821667,
+        "eval_duration": 12896401000
+      }
+    },
+    {
+      "record": "scope-21",
+      "stage": "both",
+      "request_sha256": "446411c3867f2ff92a2102160edcfc6101917a40877f822275cee877819a260b",
+      "started": "2026-11-24T20:29:50.593014+00:00",
+      "ended": "2026-11-24T20:29:57.791045+00:00",
+      "seconds": 7.198031,
+      "status": "ok",
+      "finish": "stop",
+      "usage": {
+        "prompt_eval_count": 468,
+        "eval_count": 52,
+        "total_duration": 7193578792,
+        "load_duration": 3716542,
+        "eval_duration": 5553648000
+      }
+    },
+    {
+      "record": "scope-21",
+      "stage": "any",
+      "request_sha256": "33904c7b660d4071c88ba5620252d849aa449a8d3bce6a9bfbb5dae4295b2e20",
+      "started": "2026-11-24T20:29:57.792651+00:00",
+      "ended": "2026-11-24T20:30:05.156321+00:00",
+      "seconds": 7.36367,
+      "status": "ok",
+      "finish": "stop",
+      "usage": {
+        "prompt_eval_count": 470,
+        "eval_count": 42,
+        "total_duration": 7360002459,
+        "load_duration": 4624709,
+        "eval_duration": 4629061000
+      }
+    },
+    {
+      "record": "scope-05",
+      "stage": "labels",
+      "request_sha256": "6c6a6a1970e4e0f88c3fdb06eaa0b4f99ac09cea4bd492233ae955e0c38d48c1",
+      "started": "2026-11-24T20:30:05.162484+00:00",
+      "ended": "2026-11-24T20:30:12.950760+00:00",
+      "seconds": 7.788276,
+      "status": "ok",
+      "finish": "stop",
+      "usage": {
+        "prompt_eval_count": 454,
+        "eval_count": 44,
+        "total_duration": 7783461417,
+        "load_duration": 3164125,
+        "eval_duration": 4158548000
+      }
+    },
+    {
+      "record": "scope-05",
+      "stage": "both",
+      "request_sha256": "b623773102e94a9f9a74245555fa54a6f2459b5e5cd5e74c3b59205548bced57",
+      "started": "2026-11-24T20:30:12.952980+00:00",
+      "ended": "2026-11-24T20:30:20.327222+00:00",
+      "seconds": 7.374242,
+      "status": "ok",
+      "finish": "stop",
+      "usage": {
+        "prompt_eval_count": 501,
+        "eval_count": 50,
+        "total_duration": 7371577083,
+        "load_duration": 2849416,
+        "eval_duration": 5911133000
+      }
+    },
+    {
+      "record": "scope-05",
+      "stage": "any",
+      "request_sha256": "3d500ad9ce07ac9f488f8a3ef30f0ce57fc16a235d270a40eab878bbb90f175d",
+      "started": "2026-11-24T20:30:20.329580+00:00",
+      "ended": "2026-11-24T20:30:25.878773+00:00",
+      "seconds": 5.549193,
+      "status": "ok",
+      "finish": "stop",
+      "usage": {
+        "prompt_eval_count": 503,
+        "eval_count": 38,
+        "total_duration": 5545571917,
+        "load_duration": 2059292,
+        "eval_duration": 3668022000
+      }
+    },
+    {
+      "record": "scope-23",
+      "stage": "labels",
+      "request_sha256": "fd45400a531f4ccdc42b24166e36acc6a5fbd081f66f440d2ea3173435a84683",
+      "started": "2026-11-24T20:30:25.883842+00:00",
+      "ended": "2026-11-24T20:31:15.726516+00:00",
+      "seconds": 49.842674,
+      "status": "ok",
+      "finish": "stop",
+      "usage": {
+        "prompt_eval_count": 422,
+        "eval_count": 444,
+        "total_duration": 49834571875,
+        "load_duration": 5207667,
+        "eval_duration": 46132264000
+      }
+    },
+    {
+      "record": "scope-23",
+      "stage": "any",
+      "request_sha256": "591ba61614538bad28de1d60b0f9c8b980059d1796985297a4b654944497ce27",
+      "started": "2026-11-24T20:31:15.729814+00:00",
+      "ended": "2026-11-24T20:31:19.165128+00:00",
+      "seconds": 3.435314,
+      "status": "ok",
+      "finish": "stop",
+      "usage": {
+        "prompt_eval_count": 471,
+        "eval_count": 24,
+        "total_duration": 3429861125,
+        "load_duration": 3652542,
+        "eval_duration": 2035968000
+      }
+    },
+    {
+      "record": "scope-23",
+      "stage": "both",
+      "request_sha256": "17deca44838072af4108d1f8fe48de7c619f9b8219b7328123b15ae1db136c9a",
+      "started": "2026-11-24T20:31:19.167225+00:00",
+      "ended": "2026-11-24T20:31:23.340566+00:00",
+      "seconds": 4.173341,
+      "status": "ok",
+      "finish": "stop",
+      "usage": {
+        "prompt_eval_count": 469,
+        "eval_count": 31,
+        "total_duration": 4169698167,
+        "load_duration": 1867000,
+        "eval_duration": 2706246000
+      }
+    },
+    {
+      "record": "scope-07",
+      "stage": "labels",
+      "request_sha256": "00d3034a61bd4cc58b06e2c2e83c0cb541bf2848af13baf495253b2da360afc6",
+      "started": "2026-11-24T20:31:23.344860+00:00",
+      "ended": "2026-11-24T20:31:39.660103+00:00",
+      "seconds": 16.315243,
+      "status": "ok",
+      "finish": "stop",
+      "usage": {
+        "prompt_eval_count": 454,
+        "eval_count": 137,
+        "total_duration": 16311658959,
+        "load_duration": 1465375,
+        "eval_duration": 13325242000
+      }
+    },
+    {
+      "record": "scope-07",
+      "stage": "both",
+      "request_sha256": "06bfa6583623631f9a76077b1b02df88dfe11e5910311b15f34405c3011da32e",
+      "started": "2026-11-24T20:31:39.663391+00:00",
+      "ended": "2026-11-24T20:31:44.331615+00:00",
+      "seconds": 4.668224,
+      "status": "ok",
+      "finish": "stop",
+      "usage": {
+        "prompt_eval_count": 501,
+        "eval_count": 31,
+        "total_duration": 4665205125,
+        "load_duration": 4665666,
+        "eval_duration": 3075636000
+      }
+    },
+    {
+      "record": "scope-07",
+      "stage": "any",
+      "request_sha256": "d2aa4b14df3f2a7efa8190f797ce6bea8784ef07d9f959c967f83ad9bf68934a",
+      "started": "2026-11-24T20:31:44.333302+00:00",
+      "ended": "2026-11-24T20:31:48.095267+00:00",
+      "seconds": 3.761965,
+      "status": "ok",
+      "finish": "stop",
+      "usage": {
+        "prompt_eval_count": 503,
+        "eval_count": 24,
+        "total_duration": 3758430250,
+        "load_duration": 2652958,
+        "eval_duration": 2036877000
+      }
+    },
+    {
+      "record": "scope-09",
+      "stage": "labels",
+      "request_sha256": "85bc65302c44ae7bf873b3845632f2cac59496246bf280199349098a06ceb832",
+      "started": "2026-11-24T20:31:48.098481+00:00",
+      "ended": "2026-11-24T20:32:01.250283+00:00",
+      "seconds": 13.151802,
+      "status": "ok",
+      "finish": "stop",
+      "usage": {
+        "prompt_eval_count": 445,
+        "eval_count": 98,
+        "total_duration": 13145286958,
+        "load_duration": 2294083,
+        "eval_duration": 9099082000
+      }
+    },
+    {
+      "record": "scope-09",
+      "stage": "both",
+      "request_sha256": "7adb718d13c0529c86b30c0538c816b17b77f516f92a6c38925306eef8d0d656",
+      "started": "2026-11-24T20:32:01.253668+00:00",
+      "ended": "2026-11-24T20:32:07.400094+00:00",
+      "seconds": 6.146426,
+      "status": "ok",
+      "finish": "stop",
+      "usage": {
+        "prompt_eval_count": 492,
+        "eval_count": 55,
+        "total_duration": 6137205542,
+        "load_duration": 3214750,
+        "eval_duration": 4808164000
+      }
+    },
+    {
+      "record": "scope-09",
+      "stage": "any",
+      "request_sha256": "cbbd5429ac6b49d90f2ea2a178dd094738b8bcf9483e13aef99d913bf8513ca4",
+      "started": "2026-11-24T20:32:07.404135+00:00",
+      "ended": "2026-11-24T20:32:12.402216+00:00",
+      "seconds": 4.998081,
+      "status": "ok",
+      "finish": "stop",
+      "usage": {
+        "prompt_eval_count": 494,
+        "eval_count": 42,
+        "total_duration": 4993859750,
+        "load_duration": 2557459,
+        "eval_duration": 3556044000
+      }
+    },
+    {
+      "record": "scope-17",
+      "stage": "labels",
+      "request_sha256": "8d157958ce9d755d0a2d0a949593c585a3c015518db5ee2697bc0f1fdd47ef5d",
+      "started": "2026-11-24T20:32:12.405847+00:00",
+      "ended": "2026-11-24T20:32:36.198530+00:00",
+      "seconds": 23.792683,
+      "status": "ok",
+      "finish": "stop",
+      "usage": {
+        "prompt_eval_count": 437,
+        "eval_count": 226,
+        "total_duration": 23788165625,
+        "load_duration": 4466292,
+        "eval_duration": 20963786000
+      }
+    },
+    {
+      "record": "scope-17",
+      "stage": "both",
+      "request_sha256": "e1590761a776847003c95e2fb1326b6e5752f461a963ac05accb061d1b4e2412",
+      "started": "2026-11-24T20:32:36.201150+00:00",
+      "ended": "2026-11-24T20:32:39.403706+00:00",
+      "seconds": 3.202556,
+      "status": "ok",
+      "finish": "stop",
+      "usage": {
+        "prompt_eval_count": 484,
+        "eval_count": 20,
+        "total_duration": 3186766208,
+        "load_duration": 2820375,
+        "eval_duration": 1866942000
+      }
+    },
+    {
+      "record": "scope-17",
+      "stage": "any",
+      "request_sha256": "77de7cb8d07ba122dc9a15a3cd0eb41be4dd1a9edc3dce7b016ecf5e56a194c3",
+      "started": "2026-11-24T20:32:39.406083+00:00",
+      "ended": "2026-11-24T20:32:43.380754+00:00",
+      "seconds": 3.974671,
+      "status": "ok",
+      "finish": "stop",
+      "usage": {
+        "prompt_eval_count": 486,
+        "eval_count": 24,
+        "total_duration": 3971005792,
+        "load_duration": 1701292,
+        "eval_duration": 2290267000
+      }
+    },
+    {
+      "record": "scope-10",
+      "stage": "labels",
+      "request_sha256": "cf7f0a883eb03f1165e2a4a6dd617875e476620b38a9ae9ccb374950a7c86d02",
+      "started": "2026-11-24T20:32:43.384445+00:00",
+      "ended": "2026-11-24T20:33:19.623914+00:00",
+      "seconds": 36.239469,
+      "status": "ok",
+      "finish": "stop",
+      "usage": {
+        "prompt_eval_count": 445,
+        "eval_count": 320,
+        "total_duration": 36233057625,
+        "load_duration": 4293875,
+        "eval_duration": 31861359000
+      }
+    },
+    {
+      "record": "scope-10",
+      "stage": "both",
+      "request_sha256": "401394fce23c9a0eb7d03e70ebbf3d456cdcf89a867c1f3d5d03b3d45b2fa5a8",
+      "started": "2026-11-24T20:33:19.627235+00:00",
+      "ended": "2026-11-24T20:33:25.861786+00:00",
+      "seconds": 6.234551,
+      "status": "ok",
+      "finish": "stop",
+      "usage": {
+        "prompt_eval_count": 492,
+        "eval_count": 50,
+        "total_duration": 6228872666,
+        "load_duration": 3330166,
+        "eval_duration": 4679894000
+      }
+    },
+    {
+      "record": "scope-10",
+      "stage": "any",
+      "request_sha256": "da1e673fb375db5895352849074e4bb56cd1d36cf63932ee3ea6bce231d93de8",
+      "started": "2026-11-24T20:33:25.864580+00:00",
+      "ended": "2026-11-24T20:33:30.474097+00:00",
+      "seconds": 4.609517,
+      "status": "ok",
+      "finish": "stop",
+      "usage": {
+        "prompt_eval_count": 494,
+        "eval_count": 37,
+        "total_duration": 4605146667,
+        "load_duration": 2412208,
+        "eval_duration": 3158076000
+      }
+    },
+    {
+      "record": "scope-02",
+      "stage": "labels",
+      "request_sha256": "ed7749e946c1b951ab7c56a808170cc3fb1e8d300aa6c9ed03fa7917d0c2f43f",
+      "started": "2026-11-24T20:33:30.477976+00:00",
+      "ended": "2026-11-24T20:33:44.194123+00:00",
+      "seconds": 13.716147,
+      "status": "ok",
+      "finish": "stop",
+      "usage": {
+        "prompt_eval_count": 451,
+        "eval_count": 125,
+        "total_duration": 13712517459,
+        "load_duration": 1840834,
+        "eval_duration": 10577017000
+      }
+    },
+    {
+      "record": "scope-02",
+      "stage": "both",
+      "request_sha256": "e277de90da478990a1914272d94c3628c62ecc13a7b9f7fe116cfc86e5413f7e",
+      "started": "2026-11-24T20:33:44.195829+00:00",
+      "ended": "2026-11-24T20:33:49.706279+00:00",
+      "seconds": 5.51045,
+      "status": "ok",
+      "finish": "stop",
+      "usage": {
+        "prompt_eval_count": 498,
+        "eval_count": 50,
+        "total_duration": 5507523209,
+        "load_duration": 4066375,
+        "eval_duration": 4305620000
+      }
+    },
+    {
+      "record": "scope-02",
+      "stage": "any",
+      "request_sha256": "7d3a5cc6a1db7336d753ba8753aa30c3e7afd15d66c47c67532b70971bdab8c5",
+      "started": "2026-11-24T20:33:49.708913+00:00",
+      "ended": "2026-11-24T20:33:54.679697+00:00",
+      "seconds": 4.970784,
+      "status": "ok",
+      "finish": "stop",
+      "usage": {
+        "prompt_eval_count": 500,
+        "eval_count": 38,
+        "total_duration": 4967689083,
+        "load_duration": 2047375,
+        "eval_duration": 3332567000
+      }
+    },
+    {
+      "record": "scope-13",
+      "stage": "labels",
+      "request_sha256": "8d0d00351078092cca26bf11b16053af03a7132f4e5f0eeae5d8d768afd60a8d",
+      "started": "2026-11-24T20:33:54.683274+00:00",
+      "ended": "2026-11-24T20:34:15.228904+00:00",
+      "seconds": 20.54563,
+      "status": "ok",
+      "finish": "stop",
+      "usage": {
+        "prompt_eval_count": 429,
+        "eval_count": 180,
+        "total_duration": 20540567583,
+        "load_duration": 1942291,
+        "eval_duration": 16739785000
+      }
+    },
+    {
+      "record": "scope-13",
+      "stage": "any",
+      "request_sha256": "6ccddf3d8bfb4117fabf0a0e11261dabacdd728d5b1777622c108128ff6d8293",
+      "started": "2026-11-24T20:34:15.231213+00:00",
+      "ended": "2026-11-24T20:34:18.646828+00:00",
+      "seconds": 3.415615,
+      "status": "ok",
+      "finish": "stop",
+      "usage": {
+        "prompt_eval_count": 478,
+        "eval_count": 24,
+        "total_duration": 3408214542,
+        "load_duration": 2878792,
+        "eval_duration": 2081264999
+      }
+    },
+    {
+      "record": "scope-13",
+      "stage": "both",
+      "request_sha256": "0a77f2d648bafffa1ac9ad4c0b9028f84015c8ba2be1fe53d0a416ac50cd0e32",
+      "started": "2026-11-24T20:34:18.649878+00:00",
+      "ended": "2026-11-24T20:34:23.050955+00:00",
+      "seconds": 4.401077,
+      "status": "ok",
+      "finish": "stop",
+      "usage": {
+        "prompt_eval_count": 476,
+        "eval_count": 31,
+        "total_duration": 4396218792,
+        "load_duration": 4433000,
+        "eval_duration": 2731996000
+      }
+    },
+    {
+      "record": "scope-04",
+      "stage": "labels",
+      "request_sha256": "7cc539db0eea588ab2eadd47d3cc4d60c7ae4a83dc6f3b63def5654f61eaefe1",
+      "started": "2026-11-24T20:34:23.052908+00:00",
+      "ended": "2026-11-24T20:37:49.369227+00:00",
+      "seconds": 206.316319,
+      "status": "ok",
+      "finish": "stop",
+      "usage": {
+        "prompt_eval_count": 454,
+        "eval_count": 1250,
+        "total_duration": 206281029750,
+        "load_duration": 1923333,
+        "eval_duration": 203419999000
+      }
+    },
+    {
+      "record": "scope-04",
+      "stage": "any",
+      "request_sha256": "b341c02bd7eaf78c0888368eb7f7e410e8a5bf3dd33176564229aa40679cd3ca",
+      "started": "2026-11-24T20:37:49.380155+00:00",
+      "ended": "2026-11-24T20:38:04.861549+00:00",
+      "seconds": 15.481394,
+      "status": "ok",
+      "finish": "stop",
+      "usage": {
+        "prompt_eval_count": 503,
+        "eval_count": 38,
+        "total_duration": 15032589500,
+        "load_duration": 49781875,
+        "eval_duration": 10986435000
+      }
+    },
+    {
+      "record": "scope-04",
+      "stage": "both",
+      "request_sha256": "92c06784de1673c2a451c8132d8443dc8c0deb48ac653f54790f216240a049b9",
+      "started": "2026-11-24T20:38:05.065674+00:00",
+      "ended": "2026-11-24T20:38:30.041220+00:00",
+      "seconds": 24.975546,
+      "status": "ok",
+      "finish": "stop",
+      "usage": {
+        "prompt_eval_count": 501,
+        "eval_count": 72,
+        "total_duration": 24269734125,
+        "load_duration": 64040042,
+        "eval_duration": 20969873000
+      }
+    },
+    {
+      "record": "scope-20",
+      "stage": "labels",
+      "request_sha256": "c0a450914f4c706e5aa5e8c612db1a90b7cfae9b7c0dad0061f65548315c09e5",
+      "started": "2026-11-24T20:38:30.068790+00:00",
+      "ended": "2026-11-24T20:38:59.831874+00:00",
+      "seconds": 29.763084,
+      "status": "ok",
+      "finish": "stop",
+      "usage": {
+        "prompt_eval_count": 421,
+        "eval_count": 102,
+        "total_duration": 29736821459,
+        "load_duration": 7583417,
+        "eval_duration": 22761472000
+      }
+    },
+    {
+      "record": "scope-20",
+      "stage": "both",
+      "request_sha256": "e29efbe4d34ce5af1b35e75129df3d410f45dd3a0435c887fe42496d83edb679",
+      "started": "2026-11-24T20:38:59.837285+00:00",
+      "ended": "2026-11-24T20:39:13.267460+00:00",
+      "seconds": 13.430175,
+      "status": "ok",
+      "finish": "stop",
+      "usage": {
+        "prompt_eval_count": 468,
+        "eval_count": 50,
+        "total_duration": 13413125250,
+        "load_duration": 10766667,
+        "eval_duration": 10353973000
+      }
+    },
+    {
+      "record": "scope-20",
+      "stage": "any",
+      "request_sha256": "e418af458d6b57793e77e45b493471201d9121bfee75a3f8656838981507df36",
+      "started": "2026-11-24T20:39:13.272243+00:00",
+      "ended": "2026-11-24T20:39:22.010691+00:00",
+      "seconds": 8.738448,
+      "status": "ok",
+      "finish": "stop",
+      "usage": {
+        "prompt_eval_count": 470,
+        "eval_count": 31,
+        "total_duration": 8727941958,
+        "load_duration": 7978750,
+        "eval_duration": 5762533000
+      }
+    },
+    {
+      "record": "scope-22",
+      "stage": "labels",
+      "request_sha256": "7f0b00cc16f2d0082e202b0bc2e27cae05a22b59c807ac3bf620c6e5fc18dff6",
+      "started": "2026-11-24T20:39:22.016939+00:00",
+      "ended": "2026-11-24T20:39:49.747150+00:00",
+      "seconds": 27.730211,
+      "status": "ok",
+      "finish": "stop",
+      "usage": {
+        "prompt_eval_count": 422,
+        "eval_count": 126,
+        "total_duration": 27719567042,
+        "load_duration": 4982042,
+        "eval_duration": 24800878000
+      }
+    },
+    {
+      "record": "scope-22",
+      "stage": "any",
+      "request_sha256": "786ae3481957dace86088fa5e08d12f89882a20fb52046b9b6a717dead0c85fe",
+      "started": "2026-11-24T20:39:49.751760+00:00",
+      "ended": "2026-11-24T20:40:00.711666+00:00",
+      "seconds": 10.959906,
+      "status": "ok",
+      "finish": "stop",
+      "usage": {
+        "prompt_eval_count": 471,
+        "eval_count": 37,
+        "total_duration": 10952362500,
+        "load_duration": 5836125,
+        "eval_duration": 7677916000
+      }
+    },
+    {
+      "record": "scope-22",
+      "stage": "both",
+      "request_sha256": "6480bd3cf28fed77ead45d9e15aa31b7ff710ea3b74c5149c1e45fd9d70c78a3",
+      "started": "2026-11-24T20:40:00.715340+00:00",
+      "ended": "2026-11-24T20:40:13.618648+00:00",
+      "seconds": 12.903308,
+      "status": "ok",
+      "finish": "stop",
+      "usage": {
+        "prompt_eval_count": 469,
+        "eval_count": 50,
+        "total_duration": 12895728375,
+        "load_duration": 3934125,
+        "eval_duration": 10526151000
+      }
+    },
+    {
+      "record": "scope-00",
+      "stage": "labels",
+      "request_sha256": "9052081e2d16f145168d10dea4a67fe1223418aadc09d4aa1497be778c32e26c",
+      "started": "2026-11-24T20:40:13.623951+00:00",
+      "ended": "2026-11-24T20:43:33.476015+00:00",
+      "seconds": 199.852064,
+      "status": "ok",
+      "finish": "stop",
+      "usage": {
+        "prompt_eval_count": 451,
+        "eval_count": 881,
+        "total_duration": 199830380166,
+        "load_duration": 6100541,
+        "eval_duration": 194982986000
+      }
+    },
+    {
+      "record": "scope-00",
+      "stage": "any",
+      "request_sha256": "60efd787a69ff661297b33562830c3e014b5d4804913330175c4e4f8d711d5b9",
+      "started": "2026-11-24T20:43:33.480957+00:00",
+      "ended": "2026-11-24T20:43:46.326466+00:00",
+      "seconds": 12.845509,
+      "status": "ok",
+      "finish": "stop",
+      "usage": {
+        "prompt_eval_count": 500,
+        "eval_count": 31,
+        "total_duration": 12826349250,
+        "load_duration": 27669709,
+        "eval_duration": 8644671000
+      }
+    },
+    {
+      "record": "scope-00",
+      "stage": "both",
+      "request_sha256": "a979b45dfc28509f869c2af261b340871adbde1fc91476807c88025b6896b317",
+      "started": "2026-11-24T20:43:46.335363+00:00",
+      "ended": "2026-11-24T20:44:04.736687+00:00",
+      "seconds": 18.401324,
+      "status": "ok",
+      "finish": "stop",
+      "usage": {
+        "prompt_eval_count": 498,
+        "eval_count": 66,
+        "total_duration": 18394541666,
+        "load_duration": 9564041,
+        "eval_duration": 15345204000
+      }
+    },
+    {
+      "record": "scope-01",
+      "stage": "labels",
+      "request_sha256": "e3d11c4f99bcaacca656635dfe2962e22fd4a7895aa881d22793787c4f8a4a4e",
+      "started": "2026-11-24T20:44:04.739395+00:00",
+      "ended": "2026-11-24T20:44:50.827175+00:00",
+      "seconds": 46.08778,
+      "status": "ok",
+      "finish": "stop",
+      "usage": {
+        "prompt_eval_count": 451,
+        "eval_count": 181,
+        "total_duration": 45500747000,
+        "load_duration": 5313416,
+        "eval_duration": 38871564000
+      }
+    },
+    {
+      "record": "scope-01",
+      "stage": "both",
+      "request_sha256": "b2a1cd1a844eec8a18aea357c90ede77d4737aa4bf105edbe69a9a7dce036e84",
+      "started": "2026-11-24T20:44:50.893029+00:00",
+      "ended": "2026-11-24T20:44:58.087262+00:00",
+      "seconds": 7.194233,
+      "status": "ok",
+      "finish": "stop",
+      "usage": {
+        "prompt_eval_count": 498,
+        "eval_count": 31,
+        "total_duration": 7186273459,
+        "load_duration": 18435084,
+        "eval_duration": 5627679000
+      }
+    },
+    {
+      "record": "scope-01",
+      "stage": "any",
+      "request_sha256": "255a55e96b4011cda2e7c6732c1a3beb473bc2ba9d95aec9b73eff43363c7131",
+      "started": "2026-11-24T20:44:58.090765+00:00",
+      "ended": "2026-11-24T20:45:05.743951+00:00",
+      "seconds": 7.653186,
+      "status": "ok",
+      "finish": "stop",
+      "usage": {
+        "prompt_eval_count": 500,
+        "eval_count": 22,
+        "total_duration": 7574967750,
+        "load_duration": 26534959,
+        "eval_duration": 4339239000
+      }
+    },
+    {
+      "record": "scope-15",
+      "stage": "labels",
+      "request_sha256": "89941321cccd1aed92c61e205c68386a39417fda145bce06ff7e0476f4eff84e",
+      "started": "2026-11-24T20:45:05.804562+00:00",
+      "ended": "2026-11-24T20:46:00.261611+00:00",
+      "seconds": 54.457049,
+      "status": "ok",
+      "finish": "stop",
+      "usage": {
+        "prompt_eval_count": 429,
+        "eval_count": 246,
+        "total_duration": 53308797209,
+        "load_duration": 14242375,
+        "eval_duration": 45204352000
+      }
+    },
+    {
+      "record": "scope-15",
+      "stage": "both",
+      "request_sha256": "08034759c60e65aaad32aa1a3b1c44e829fff5fb1d0dee877b673aeed10846a3",
+      "started": "2026-11-24T20:46:00.379566+00:00",
+      "ended": "2026-11-24T20:46:12.092711+00:00",
+      "seconds": 11.713145,
+      "status": "ok",
+      "finish": "stop",
+      "usage": {
+        "prompt_eval_count": 476,
+        "eval_count": 64,
+        "total_duration": 11559021542,
+        "load_duration": 94367917,
+        "eval_duration": 10059355000
+      }
+    },
+    {
+      "record": "scope-15",
+      "stage": "any",
+      "request_sha256": "b448076b98be66c9a66838e68426b404134736077e65cb240b4da4504a94a148",
+      "started": "2026-11-24T20:46:12.103490+00:00",
+      "ended": "2026-11-24T20:46:20.542417+00:00",
+      "seconds": 8.438927,
+      "status": "ok",
+      "finish": "stop",
+      "usage": {
+        "prompt_eval_count": 478,
+        "eval_count": 42,
+        "total_duration": 8406492792,
+        "load_duration": 6732667,
+        "eval_duration": 5934292000
+      }
+    },
+    {
+      "record": "scope-12",
+      "stage": "labels",
+      "request_sha256": "8efd58d44c2b0f07da3d6da09c996174d42d7c66315f70fec8f995fd2e0d5af2",
+      "started": "2026-11-24T20:46:20.635594+00:00",
+      "ended": "2026-11-24T20:46:47.962346+00:00",
+      "seconds": 27.326752,
+      "status": "ok",
+      "finish": "stop",
+      "usage": {
+        "prompt_eval_count": 431,
+        "eval_count": 130,
+        "total_duration": 26969710584,
+        "load_duration": 13255709,
+        "eval_duration": 24605535000
+      }
+    },
+    {
+      "record": "scope-12",
+      "stage": "any",
+      "request_sha256": "21b3dffeafea0cc07733395314ce12f66aef06d6c0cf0398ff681d6a2bad524e",
+      "started": "2026-11-24T20:46:48.002221+00:00",
+      "ended": "2026-11-24T20:47:00.031569+00:00",
+      "seconds": 12.029348,
+      "status": "ok",
+      "finish": "stop",
+      "usage": {
+        "prompt_eval_count": 480,
+        "eval_count": 37,
+        "total_duration": 10922628709,
+        "load_duration": 1023569500,
+        "eval_duration": 6961056000
+      }
+    },
+    {
+      "record": "scope-12",
+      "stage": "both",
+      "request_sha256": "b273568bc64af0bf549fdd82646e153ac40aa584ce921266700ff1b8e769a59b",
+      "started": "2026-11-24T20:47:00.052394+00:00",
+      "ended": "2026-11-24T20:47:11.019425+00:00",
+      "seconds": 10.967031,
+      "status": "ok",
+      "finish": "stop",
+      "usage": {
+        "prompt_eval_count": 478,
+        "eval_count": 50,
+        "total_duration": 10926931792,
+        "load_duration": 100423583,
+        "eval_duration": 8530825000
+      }
+    },
+    {
+      "record": "scope-08",
+      "stage": "labels",
+      "request_sha256": "67b64962757a9cb2ae63874a7a748b61bcc2d822e8413b63f69d3f1ea5f26ad5",
+      "started": "2026-11-24T20:47:11.066366+00:00",
+      "ended": "2026-11-24T20:47:23.265172+00:00",
+      "seconds": 12.198806,
+      "status": "ok",
+      "finish": "stop",
+      "usage": {
+        "prompt_eval_count": 446,
+        "eval_count": 36,
+        "total_duration": 12088541250,
+        "load_duration": 42643625,
+        "eval_duration": 5645896000
+      }
+    },
+    {
+      "record": "scope-08",
+      "stage": "any",
+      "request_sha256": "186f8641db09ea337a46b9724b4069d26281f7bf519f8d37899928e1805afdd1",
+      "started": "2026-11-24T20:47:23.273203+00:00",
+      "ended": "2026-11-24T20:47:30.181706+00:00",
+      "seconds": 6.908503,
+      "status": "ok",
+      "finish": "stop",
+      "usage": {
+        "prompt_eval_count": 495,
+        "eval_count": 37,
+        "total_duration": 6894944666,
+        "load_duration": 14538791,
+        "eval_duration": 4987950000
+      }
+    },
+    {
+      "record": "scope-08",
+      "stage": "both",
+      "request_sha256": "4e8bcfd22c63ee929375fc5e6e3b930292b9a0315c43e7e2e5cffb399e5e9672",
+      "started": "2026-11-24T20:47:30.186298+00:00",
+      "ended": "2026-11-24T20:47:43.539373+00:00",
+      "seconds": 13.353075,
+      "status": "ok",
+      "finish": "stop",
+      "usage": {
+        "prompt_eval_count": 493,
+        "eval_count": 58,
+        "total_duration": 13344589417,
+        "load_duration": 12664709,
+        "eval_duration": 9645903000
+      }
+    },
+    {
+      "record": "scope-11",
+      "stage": "labels",
+      "request_sha256": "aef37e57795ca80aad3d842f4611e2101abdd481a66f054e6caf765a8aa06d0c",
+      "started": "2026-11-24T20:47:43.544012+00:00",
+      "ended": "2026-11-24T20:48:25.954944+00:00",
+      "seconds": 42.410932,
+      "status": "ok",
+      "finish": "stop",
+      "usage": {
+        "prompt_eval_count": 446,
+        "eval_count": 223,
+        "total_duration": 42403107333,
+        "load_duration": 7059083,
+        "eval_duration": 39473368000
+      }
+    },
+    {
+      "record": "scope-11",
+      "stage": "any",
+      "request_sha256": "dd7efc087b05d00cfc1ac2df42190582f341ce14b1d9854c676a8d5803c24ad7",
+      "started": "2026-11-24T20:48:25.956896+00:00",
+      "ended": "2026-11-24T20:48:32.427376+00:00",
+      "seconds": 6.47048,
+      "status": "ok",
+      "finish": "stop",
+      "usage": {
+        "prompt_eval_count": 495,
+        "eval_count": 22,
+        "total_duration": 6450769334,
+        "load_duration": 7431167,
+        "eval_duration": 3533152000
+      }
+    },
+    {
+      "record": "scope-11",
+      "stage": "both",
+      "request_sha256": "93dc8716edd539cfbaa8f97607f21cd071a1183a6f062638b541718ce4edf343",
+      "started": "2026-11-24T20:48:32.442439+00:00",
+      "ended": "2026-11-24T20:48:39.014756+00:00",
+      "seconds": 6.572317,
+      "status": "ok",
+      "finish": "stop",
+      "usage": {
+        "prompt_eval_count": 493,
+        "eval_count": 20,
+        "total_duration": 6534703000,
+        "load_duration": 33142750,
+        "eval_duration": 4011934000
+      }
+    },
+    {
+      "record": "scope-03",
+      "stage": "labels",
+      "request_sha256": "5c118109b07d159700329af49bea13eb43a4720290246b341b8ca7a8797f4371",
+      "started": "2026-11-24T20:48:39.045531+00:00",
+      "ended": "2026-11-24T20:49:18.911520+00:00",
+      "seconds": 39.865989,
+      "status": "ok",
+      "finish": "stop",
+      "usage": {
+        "prompt_eval_count": 451,
+        "eval_count": 119,
+        "total_duration": 39582613125,
+        "load_duration": 22303208,
+        "eval_duration": 32027314000
+      }
+    },
+    {
+      "record": "scope-03",
+      "stage": "any",
+      "request_sha256": "843c6b668d52c337cff574bd1c2e938040c0037978ac2b9f66000fae6c0a563c",
+      "started": "2026-11-24T20:49:18.917841+00:00",
+      "ended": "2026-11-24T20:49:31.778929+00:00",
+      "seconds": 12.861088,
+      "status": "ok",
+      "finish": "stop",
+      "usage": {
+        "prompt_eval_count": 500,
+        "eval_count": 31,
+        "total_duration": 12844999916,
+        "load_duration": 13434333,
+        "eval_duration": 9336793000
+      }
+    },
+    {
+      "record": "scope-03",
+      "stage": "both",
+      "request_sha256": "6747b28e598edae5d77937a292cd767559394b2a2a4a32b48a3f421fcc19e482",
+      "started": "2026-11-24T20:49:31.788666+00:00",
+      "ended": "2026-11-24T20:49:48.897290+00:00",
+      "seconds": 17.108624,
+      "status": "ok",
+      "finish": "stop",
+      "usage": {
+        "prompt_eval_count": 498,
+        "eval_count": 50,
+        "total_duration": 17087654000,
+        "load_duration": 28343709,
+        "eval_duration": 13498005000
+      }
+    },
+    {
+      "record": "scope-06",
+      "stage": "labels",
+      "request_sha256": "5c60c72a4786853fc778332e471154b64260356edaa0c3ceb2626010b876f9b0",
+      "started": "2026-11-24T20:49:48.913767+00:00",
+      "ended": "2026-11-24T20:50:07.968951+00:00",
+      "seconds": 19.055184,
+      "status": "ok",
+      "finish": "stop",
+      "usage": {
+        "prompt_eval_count": 454,
+        "eval_count": 47,
+        "total_duration": 19047878500,
+        "load_duration": 4454250,
+        "eval_duration": 11201110000
+      }
+    },
+    {
+      "record": "scope-06",
+      "stage": "any",
+      "request_sha256": "03cb78ad3f2ed69b8aadaf3e04943340aa5f6b852b6325db01faf1cb216e8394",
+      "started": "2026-11-24T20:50:07.971488+00:00",
+      "ended": "2026-11-24T20:50:22.887715+00:00",
+      "seconds": 14.916227,
+      "status": "ok",
+      "finish": "stop",
+      "usage": {
+        "prompt_eval_count": 503,
+        "eval_count": 42,
+        "total_duration": 14911047333,
+        "load_duration": 4514833,
+        "eval_duration": 10934460000
+      }
+    },
+    {
+      "record": "scope-06",
+      "stage": "both",
+      "request_sha256": "fb1ce94660cb8e59c33f85eef98eef8ba6a24bab51dc5d0a7a61464fbc1497af",
+      "started": "2026-11-24T20:50:22.891216+00:00",
+      "ended": "2026-11-24T20:50:47.563406+00:00",
+      "seconds": 24.67219,
+      "status": "ok",
+      "finish": "stop",
+      "usage": {
+        "prompt_eval_count": 501,
+        "eval_count": 55,
+        "total_duration": 24418561333,
+        "load_duration": 5878542,
+        "eval_duration": 20146443000
+      }
+    }
+  ],
+  "cohorts": {
+    "mixed_all": {
+      "n": 12,
+      "signature_counts": {
+        "YY": 0,
+        "YN": 12,
+        "NY": 0,
+        "NN": 0,
+        "incomplete": 0
+      },
+      "signature_bounds": {
+        "YY": [
+          0,
+          0
+        ],
+        "YN": [
+          12,
+          12
+        ],
+        "NY": [
+          0,
+          0
+        ],
+        "NN": [
+          0,
+          0
+        ]
+      }
+    },
+    "mixed_accurate_complete": {
+      "n": 11,
+      "signature_counts": {
+        "YY": 0,
+        "YN": 11,
+        "NY": 0,
+        "NN": 0,
+        "incomplete": 0
+      },
+      "signature_bounds": {
+        "YY": [
+          0,
+          0
+        ],
+        "YN": [
+          11,
+          11
+        ],
+        "NY": [
+          0,
+          0
+        ],
+        "NN": [
+          0,
+          0
+        ]
+      }
+    },
+    "YY": {
+      "n": 6,
+      "signature_counts": {
+        "YY": 6,
+        "YN": 0,
+        "NY": 0,
+        "NN": 0,
+        "incomplete": 0
+      },
+      "signature_bounds": {
+        "YY": [
+          6,
+          6
+        ],
+        "YN": [
+          0,
+          0
+        ],
+        "NY": [
+          0,
+          0
+        ],
+        "NN": [
+          0,
+          0
+        ]
+      }
+    },
+    "YN": {
+      "n": 6,
+      "signature_counts": {
+        "YY": 0,
+        "YN": 6,
+        "NY": 0,
+        "NN": 0,
+        "incomplete": 0
+      },
+      "signature_bounds": {
+        "YY": [
+          0,
+          0
+        ],
+        "YN": [
+          6,
+          6
+        ],
+        "NY": [
+          0,
+          0
+        ],
+        "NN": [
+          0,
+          0
+        ]
+      }
+    },
+    "NY": {
+      "n": 6,
+      "signature_counts": {
+        "YY": 0,
+        "YN": 6,
+        "NY": 0,
+        "NN": 0,
+        "incomplete": 0
+      },
+      "signature_bounds": {
+        "YY": [
+          0,
+          0
+        ],
+        "YN": [
+          6,
+          6
+        ],
+        "NY": [
+          0,
+          0
+        ],
+        "NN": [
+          0,
+          0
+        ]
+      }
+    },
+    "NN": {
+      "n": 6,
+      "signature_counts": {
+        "YY": 0,
+        "YN": 5,
+        "NY": 0,
+        "NN": 1,
+        "incomplete": 0
+      },
+      "signature_bounds": {
+        "YY": [
+          0,
+          0
+        ],
+        "YN": [
+          5,
+          5
+        ],
+        "NY": [
+          0,
+          0
+        ],
+        "NN": [
+          1,
+          1
+        ]
+      }
+    }
+  },
+  "policy_fit": {
+    "scope": {
+      "all": {
+        "n": 24,
+        "matched": 19,
+        "possible": 19,
+        "mismatch": 5,
+        "undetermined": 0
+      },
+      "mixed": {
+        "n": 12,
+        "matched": 12,
+        "possible": 12,
+        "mismatch": 0,
+        "undetermined": 0
+      },
+      "accurate_complete": {
+        "n": 18,
+        "matched": 18,
+        "possible": 18,
+        "mismatch": 0,
+        "undetermined": 0
+      },
+      "mixed_accurate_complete": {
+        "n": 11,
+        "matched": 11,
+        "possible": 11,
+        "mismatch": 0,
+        "undetermined": 0
+      }
+    },
+    "or_on_both": {
+      "all": {
+        "n": 24,
+        "matched": 7,
+        "possible": 7,
+        "mismatch": 17,
+        "undetermined": 0
+      },
+      "mixed": {
+        "n": 12,
+        "matched": 0,
+        "possible": 0,
+        "mismatch": 12,
+        "undetermined": 0
+      },
+      "accurate_complete": {
+        "n": 18,
+        "matched": 7,
+        "possible": 7,
+        "mismatch": 11,
+        "undetermined": 0
+      },
+      "mixed_accurate_complete": {
+        "n": 11,
+        "matched": 0,
+        "possible": 0,
+        "mismatch": 11,
+        "undetermined": 0
+      }
+    },
+    "and_on_both": {
+      "all": {
+        "n": 24,
+        "matched": 7,
+        "possible": 7,
+        "mismatch": 17,
+        "undetermined": 0
+      },
+      "mixed": {
+        "n": 12,
+        "matched": 0,
+        "possible": 0,
+        "mismatch": 12,
+        "undetermined": 0
+      },
+      "accurate_complete": {
+        "n": 18,
+        "matched": 7,
+        "possible": 7,
+        "mismatch": 11,
+        "undetermined": 0
+      },
+      "mixed_accurate_complete": {
+        "n": 11,
+        "matched": 0,
+        "possible": 0,
+        "mismatch": 11,
+        "undetermined": 0
+      }
+    },
+    "reversed": {
+      "all": {
+        "n": 24,
+        "matched": 7,
+        "possible": 7,
+        "mismatch": 17,
+        "undetermined": 0
+      },
+      "mixed": {
+        "n": 12,
+        "matched": 0,
+        "possible": 0,
+        "mismatch": 12,
+        "undetermined": 0
+      },
+      "accurate_complete": {
+        "n": 18,
+        "matched": 7,
+        "possible": 7,
+        "mismatch": 11,
+        "undetermined": 0
+      },
+      "mixed_accurate_complete": {
+        "n": 11,
+        "matched": 0,
+        "possible": 0,
+        "mismatch": 11,
+        "undetermined": 0
+      }
+    },
+    "always_yes": {
+      "all": {
+        "n": 24,
+        "matched": 6,
+        "possible": 6,
+        "mismatch": 18,
+        "undetermined": 0
+      },
+      "mixed": {
+        "n": 12,
+        "matched": 0,
+        "possible": 0,
+        "mismatch": 12,
+        "undetermined": 0
+      },
+      "accurate_complete": {
+        "n": 18,
+        "matched": 6,
+        "possible": 6,
+        "mismatch": 12,
+        "undetermined": 0
+      },
+      "mixed_accurate_complete": {
+        "n": 11,
+        "matched": 0,
+        "possible": 0,
+        "mismatch": 11,
+        "undetermined": 0
+      }
+    },
+    "always_no": {
+      "all": {
+        "n": 24,
+        "matched": 1,
+        "possible": 1,
+        "mismatch": 23,
+        "undetermined": 0
+      },
+      "mixed": {
+        "n": 12,
+        "matched": 0,
+        "possible": 0,
+        "mismatch": 12,
+        "undetermined": 0
+      },
+      "accurate_complete": {
+        "n": 18,
+        "matched": 1,
+        "possible": 1,
+        "mismatch": 17,
+        "undetermined": 0
+      },
+      "mixed_accurate_complete": {
+        "n": 11,
+        "matched": 0,
+        "possible": 0,
+        "mismatch": 11,
+        "undetermined": 0
+      }
+    },
+    "wording_only": {
+      "all": {
+        "n": 24,
+        "matched": 17,
+        "possible": 17,
+        "mismatch": 7,
+        "undetermined": 0
+      },
+      "mixed": {
+        "n": 12,
+        "matched": 12,
+        "possible": 12,
+        "mismatch": 0,
+        "undetermined": 0
+      },
+      "accurate_complete": {
+        "n": 18,
+        "matched": 11,
+        "possible": 11,
+        "mismatch": 7,
+        "undetermined": 0
+      },
+      "mixed_accurate_complete": {
+        "n": 11,
+        "matched": 11,
+        "possible": 11,
+        "mismatch": 0,
+        "undetermined": 0
+      }
+    },
+    "first_row_twice": {
+      "all": {
+        "n": 24,
+        "matched": 7,
+        "possible": 7,
+        "mismatch": 17,
+        "undetermined": 0
+      },
+      "mixed": {
+        "n": 12,
+        "matched": 0,
+        "possible": 0,
+        "mismatch": 12,
+        "undetermined": 0
+      },
+      "accurate_complete": {
+        "n": 18,
+        "matched": 7,
+        "possible": 7,
+        "mismatch": 11,
+        "undetermined": 0
+      },
+      "mixed_accurate_complete": {
+        "n": 11,
+        "matched": 0,
+        "possible": 0,
+        "mismatch": 11,
+        "undetermined": 0
+      }
+    },
+    "second_row_twice": {
+      "all": {
+        "n": 24,
+        "matched": 7,
+        "possible": 7,
+        "mismatch": 17,
+        "undetermined": 0
+      },
+      "mixed": {
+        "n": 12,
+        "matched": 0,
+        "possible": 0,
+        "mismatch": 12,
+        "undetermined": 0
+      },
+      "accurate_complete": {
+        "n": 18,
+        "matched": 7,
+        "possible": 7,
+        "mismatch": 11,
+        "undetermined": 0
+      },
+      "mixed_accurate_complete": {
+        "n": 11,
+        "matched": 0,
+        "possible": 0,
+        "mismatch": 11,
+        "undetermined": 0
+      }
+    }
+  },
+  "reference_disagreement": {
+    "types": {
+      "exact": 18,
+      "inaccurate_and_distinguishable": 5,
+      "inaccurate_but_permutation_equivalent": 1
+    },
+    "by_question": {
+      "any": {
+        "different_references": 5,
+        "followed_physical": 0,
+        "followed_report": 5,
+        "missing": 0
+      },
+      "both": {
+        "different_references": 0,
+        "followed_physical": 0,
+        "followed_report": 0,
+        "missing": 0
+      }
+    },
+    "records": {
+      "scope-16": {
+        "transcription_type": "inaccurate_and_distinguishable",
+        "discriminating_branches": {
+          "any": {
+            "physical": "N",
+            "reported": "Y",
+            "delivered": "Y",
+            "outcome": "followed_report"
+          }
+        }
+      },
+      "scope-18": {
+        "transcription_type": "inaccurate_but_permutation_equivalent",
+        "discriminating_branches": {}
+      },
+      "scope-10": {
+        "transcription_type": "inaccurate_and_distinguishable",
+        "discriminating_branches": {
+          "any": {
+            "physical": "N",
+            "reported": "Y",
+            "delivered": "Y",
+            "outcome": "followed_report"
+          }
+        }
+      },
+      "scope-04": {
+        "transcription_type": "inaccurate_and_distinguishable",
+        "discriminating_branches": {
+          "any": {
+            "physical": "N",
+            "reported": "Y",
+            "delivered": "Y",
+            "outcome": "followed_report"
+          }
+        }
+      },
+      "scope-20": {
+        "transcription_type": "inaccurate_and_distinguishable",
+        "discriminating_branches": {
+          "any": {
+            "physical": "N",
+            "reported": "Y",
+            "delivered": "Y",
+            "outcome": "followed_report"
+          }
+        }
+      },
+      "scope-00": {
+        "transcription_type": "inaccurate_and_distinguishable",
+        "discriminating_branches": {
+          "any": {
+            "physical": "N",
+            "reported": "Y",
+            "delivered": "Y",
+            "outcome": "followed_report"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,458 @@
+{
+  "scope-14": {
+    "truth": {
+      "KR": "N",
+      "PY": "N"
+    },
+    "pattern": "NN",
+    "expected": "NN",
+    "seed": 2026112493,
+    "order": [
+      "both",
+      "any"
+    ],
+    "family": "DC-K4",
+    "labels_request_hash": "c93a56ed6483ef9812df40f32e9e904c355a5582adf22a6e857d66a32764a37a",
+    "template_hashes": {
+      "any": "c507f78dd41621eeef2e82898f1c4cf55091cbb483e20f22ebf4ea007183dba1",
+      "both": "17df994050fbc63758f3d83558a1c97952091d450339f7f7b14aa4cc1a8e980a"
+    }
+  },
+  "scope-16": {
+    "truth": {
+      "LK": "N",
+      "II": "N"
+    },
+    "pattern": "NN",
+    "expected": "NN",
+    "seed": 2026112495,
+    "order": [
+      "any",
+      "both"
+    ],
+    "family": "DC-K5",
+    "labels_request_hash": "19cf830a9b566fb2c0c551ace595aa312f91716178d97a758b3eff060c9be0ab",
+    "template_hashes": {
+      "any": "da55f352be55df4e029cdf2beddfed39d76685d286dbe48f53b9ba844b4baf72",
+      "both": "797381d005bba02ec0dd9ac19840efe319697345e4c7e0752dc6ae7f804819a7"
+    }
+  },
+  "scope-18": {
+    "truth": {
+      "LK": "N",
+      "RU": "Y"
+    },
+    "pattern": "NY",
+    "expected": "YN",
+    "seed": 2026112497,
+    "order": [
+      "any",
+      "both"
+    ],
+    "family": "DC-K5",
+    "labels_request_hash": "db115de499d76917ed416655c7f8b0298551c9e58b8e43015cd8a2ea1e5a142c",
+    "template_hashes": {
+      "any": "06d8bf87caada5079da28fffd142b5dff9412a6b34b025a17e3d7db734364130",
+      "both": "8c6d4c47255fca02d2a698a7ee6c5469c7555a99eb0f3f54732c1f5418df2901"
+    }
+  },
+  "scope-19": {
+    "truth": {
+      "LY": "Y",
+      "II": "N"
+    },
+    "pattern": "YN",
+    "expected": "YN",
+    "seed": 2026112498,
+    "order": [
+      "both",
+      "any"
+    ],
+    "family": "DC-K5",
+    "labels_request_hash": "a005cae5cdddcc57a3543c7269689cc284059c3d42cad9d5001df44f37329bb6",
+    "template_hashes": {
+      "any": "65baf2a146cb15786295053f8ecbcc4dc6d86d88442ad30ffbbb740ffd981a92",
+      "both": "c833888a159536cd4b5d4aefe4d03717400d49a01d355398e78360e1a1d3afee"
+    }
+  },
+  "scope-21": {
+    "truth": {
+      "NY": "N",
+      "DD": "Y"
+    },
+    "pattern": "NY",
+    "expected": "YN",
+    "seed": 2026112500,
+    "order": [
+      "both",
+      "any"
+    ],
+    "family": "DC-K6",
+    "labels_request_hash": "38c8ec05f5aed4783c2b8fe89c25174e19b0b31036b177e2e93817101957c232",
+    "template_hashes": {
+      "any": "1c43eb1fba2ec8d4dd8ff4bc2e3f3813ace323608cf8ca6d93a76f0a8ba0362b",
+      "both": "7bf04a69f39836e7f5d201c320e5e35fe203ecbfd2dd4440ee703192bfda5c79"
+    }
+  },
+  "scope-05": {
+    "truth": {
+      "UG": "Y",
+      "IM": "N"
+    },
+    "pattern": "YN",
+    "expected": "YN",
+    "seed": 2026112484,
+    "order": [
+      "both",
+      "any"
+    ],
+    "family": "DC-K2",
+    "labels_request_hash": "6c6a6a1970e4e0f88c3fdb06eaa0b4f99ac09cea4bd492233ae955e0c38d48c1",
+    "template_hashes": {
+      "any": "116c2f9cd6ae91f4109a475717f32d2248ea0a4f3369016131257b6315abd96f",
+      "both": "1d49e31a4797e70c8c8b8a811b6c0efe2d5c85cb62404bcc25211afe1be64016"
+    }
+  },
+  "scope-23": {
+    "truth": {
+      "HQ": "Y",
+      "DD": "Y"
+    },
+    "pattern": "YY",
+    "expected": "YY",
+    "seed": 2026112502,
+    "order": [
+      "any",
+      "both"
+    ],
+    "family": "DC-K6",
+    "labels_request_hash": "fd45400a531f4ccdc42b24166e36acc6a5fbd081f66f440d2ea3173435a84683",
+    "template_hashes": {
+      "any": "f99e33862f84108c96af83126b433120bf4c380aff912040bf0462de8fabe598",
+      "both": "16db9e8ca446685376ec3ea925ded7a8a8ac48dc4e6573e2df77f59415d42ae6"
+    }
+  },
+  "scope-07": {
+    "truth": {
+      "UG": "Y",
+      "CE": "Y"
+    },
+    "pattern": "YY",
+    "expected": "YY",
+    "seed": 2026112486,
+    "order": [
+      "both",
+      "any"
+    ],
+    "family": "DC-K2",
+    "labels_request_hash": "00d3034a61bd4cc58b06e2c2e83c0cb541bf2848af13baf495253b2da360afc6",
+    "template_hashes": {
+      "any": "7f16a4ca6f81acb44a7918840c057aaecef8a8c06c695946a266065242dc52a4",
+      "both": "f8aa135bf830585ae63dbfe83103bea003943af4c31520a652e9b933537de169"
+    }
+  },
+  "scope-09": {
+    "truth": {
+      "DV": "N",
+      "FB": "Y"
+    },
+    "pattern": "NY",
+    "expected": "YN",
+    "seed": 2026112488,
+    "order": [
+      "both",
+      "any"
+    ],
+    "family": "DC-K3",
+    "labels_request_hash": "85bc65302c44ae7bf873b3845632f2cac59496246bf280199349098a06ceb832",
+    "template_hashes": {
+      "any": "92878f9c03ea8774ee0eabdc31af11902d215d60edfe3092c0bf3e09084e2b75",
+      "both": "26b9ca4f06fd77a929954bcb0c1d5cebbdd1f54470f100afccd30dc87560b96a"
+    }
+  },
+  "scope-17": {
+    "truth": {
+      "LY": "Y",
+      "RU": "Y"
+    },
+    "pattern": "YY",
+    "expected": "YY",
+    "seed": 2026112496,
+    "order": [
+      "both",
+      "any"
+    ],
+    "family": "DC-K5",
+    "labels_request_hash": "8d157958ce9d755d0a2d0a949593c585a3c015518db5ee2697bc0f1fdd47ef5d",
+    "template_hashes": {
+      "any": "1acae02f800ba0b81f117ea6d5b8c58d89864a5296f7ac10e6d89c05dae4b131",
+      "both": "4ef9b36f9b5efb7ab9ac85b504ba856f7ed1bab16cbac39bd7975e1336f7b4a4"
+    }
+  },
+  "scope-10": {
+    "truth": {
+      "DV": "N",
+      "PI": "N"
+    },
+    "pattern": "NN",
+    "expected": "NN",
+    "seed": 2026112489,
+    "order": [
+      "both",
+      "any"
+    ],
+    "family": "DC-K3",
+    "labels_request_hash": "cf7f0a883eb03f1165e2a4a6dd617875e476620b38a9ae9ccb374950a7c86d02",
+    "template_hashes": {
+      "any": "9a6b18fb2c958d566f18647d1f70eda98943ed74c8642c919886a4c39bfa46cc",
+      "both": "e915124d85d32d71b778a9f3f7d3aa260e37744bddae1a5c445b4697511026c0"
+    }
+  },
+  "scope-02": {
+    "truth": {
+      "ER": "Y",
+      "PH": "N"
+    },
+    "pattern": "YN",
+    "expected": "YN",
+    "seed": 2026112481,
+    "order": [
+      "both",
+      "any"
+    ],
+    "family": "DC-K1",
+    "labels_request_hash": "ed7749e946c1b951ab7c56a808170cc3fb1e8d300aa6c9ed03fa7917d0c2f43f",
+    "template_hashes": {
+      "any": "704f189bfc17a10aa47acc56b0d97bc586995f12dc0874914cc6439b66840ad0",
+      "both": "7448284f53f03387219704dc3a628a664c55717120fe9aa9919368609e260e00"
+    }
+  },
+  "scope-13": {
+    "truth": {
+      "HM": "Y",
+      "CO": "Y"
+    },
+    "pattern": "YY",
+    "expected": "YY",
+    "seed": 2026112492,
+    "order": [
+      "any",
+      "both"
+    ],
+    "family": "DC-K4",
+    "labels_request_hash": "8d0d00351078092cca26bf11b16053af03a7132f4e5f0eeae5d8d768afd60a8d",
+    "template_hashes": {
+      "any": "a5291bf66a9f52fe11941c783139b6eef73a87854004c8757b5c755c9bbdfe70",
+      "both": "b4b27056793a9c6b3bfb3e044a25e33049d2df3c4acd840011cf68c0ce15fb13"
+    }
+  },
+  "scope-04": {
+    "truth": {
+      "CM": "N",
+      "IM": "N"
+    },
+    "pattern": "NN",
+    "expected": "NN",
+    "seed": 2026112483,
+    "order": [
+      "any",
+      "both"
+    ],
+    "family": "DC-K2",
+    "labels_request_hash": "7cc539db0eea588ab2eadd47d3cc4d60c7ae4a83dc6f3b63def5654f61eaefe1",
+    "template_hashes": {
+      "any": "45dd684ceffa5a0967e0d291fa967a7de18537652ab2eb7bae54c1c54236ae6a",
+      "both": "9ee341438724314b87e4f9afd1b5cdf7e154082cff26fa0ea57d991cfb78a68d"
+    }
+  },
+  "scope-20": {
+    "truth": {
+      "NY": "N",
+      "UA": "N"
+    },
+    "pattern": "NN",
+    "expected": "NN",
+    "seed": 2026112499,
+    "order": [
+      "both",
+      "any"
+    ],
+    "family": "DC-K6",
+    "labels_request_hash": "c0a450914f4c706e5aa5e8c612db1a90b7cfae9b7c0dad0061f65548315c09e5",
+    "template_hashes": {
+      "any": "a13fbabb3aa0dab942ae36ef8b279fe1036051764ba98f924d3e8681b95e433e",
+      "both": "7844a269d3e360734e3bfc938b58efa55435e32b9fd15175ede9e17cc15ac0dc"
+    }
+  },
+  "scope-22": {
+    "truth": {
+      "HQ": "Y",
+      "UA": "N"
+    },
+    "pattern": "YN",
+    "expected": "YN",
+    "seed": 2026112501,
+    "order": [
+      "any",
+      "both"
+    ],
+    "family": "DC-K6",
+    "labels_request_hash": "7f0b00cc16f2d0082e202b0bc2e27cae05a22b59c807ac3bf620c6e5fc18dff6",
+    "template_hashes": {
+      "any": "432cf54d90cca33c93f81a4d94ae175cc89c48a7fbe52367040e5a9a38da14ee",
+      "both": "d9c99c9dc45cf825c30b0c98344efe58bd4e2ddc642e57d7ffe1173a3f5e60f9"
+    }
+  },
+  "scope-00": {
+    "truth": {
+      "UH": "N",
+      "PH": "N"
+    },
+    "pattern": "NN",
+    "expected": "NN",
+    "seed": 2026112479,
+    "order": [
+      "any",
+      "both"
+    ],
+    "family": "DC-K1",
+    "labels_request_hash": "9052081e2d16f145168d10dea4a67fe1223418aadc09d4aa1497be778c32e26c",
+    "template_hashes": {
+      "any": "b870ab45ceb8fd18a6e4ca171504478365d6645b28ac53de863db79bafc936bf",
+      "both": "86cb61349f2a2aee5845d2cf955616f89ba2c223a936ff93ac2fdcbab7b2659c"
+    }
+  },
+  "scope-01": {
+    "truth": {
+      "ER": "Y",
+      "JM": "Y"
+    },
+    "pattern": "YY",
+    "expected": "YY",
+    "seed": 2026112480,
+    "order": [
+      "both",
+      "any"
+    ],
+    "family": "DC-K1",
+    "labels_request_hash": "e3d11c4f99bcaacca656635dfe2962e22fd4a7895aa881d22793787c4f8a4a4e",
+    "template_hashes": {
+      "any": "d9b5134d30bd4073c03fa0b05619416646ebb98cc056509633d541cff6b0e42c",
+      "both": "3901bcb5b47c420cca8412a2b8d1e8d005bbacc3354b68264006df8528d36156"
+    }
+  },
+  "scope-15": {
+    "truth": {
+      "KR": "N",
+      "CO": "Y"
+    },
+    "pattern": "NY",
+    "expected": "YN",
+    "seed": 2026112494,
+    "order": [
+      "both",
+      "any"
+    ],
+    "family": "DC-K4",
+    "labels_request_hash": "89941321cccd1aed92c61e205c68386a39417fda145bce06ff7e0476f4eff84e",
+    "template_hashes": {
+      "any": "13dde3ed89756ea43ea62ac2561b3c3539a796adc7e3677da79df0aa69e3a64e",
+      "both": "b840856081014f3b3f4874b2256eb6e3e5c8bf8f50602d80c5f0bc45b31c80e5"
+    }
+  },
+  "scope-12": {
+    "truth": {
+      "HM": "Y",
+      "PY": "N"
+    },
+    "pattern": "YN",
+    "expected": "YN",
+    "seed": 2026112491,
+    "order": [
+      "any",
+      "both"
+    ],
+    "family": "DC-K4",
+    "labels_request_hash": "8efd58d44c2b0f07da3d6da09c996174d42d7c66315f70fec8f995fd2e0d5af2",
+    "template_hashes": {
+      "any": "d1251228bf4fe2bc16f2811c1fc73b19efa052bace28e4b21086c7c9eb5e16c3",
+      "both": "baec5785750db884aa91ce325988aa9b9607bc8fd1b23bf8fd90ce8173226ca7"
+    }
+  },
+  "scope-08": {
+    "truth": {
+      "VW": "Y",
+      "PI": "N"
+    },
+    "pattern": "YN",
+    "expected": "YN",
+    "seed": 2026112487,
+    "order": [
+      "any",
+      "both"
+    ],
+    "family": "DC-K3",
+    "labels_request_hash": "67b64962757a9cb2ae63874a7a748b61bcc2d822e8413b63f69d3f1ea5f26ad5",
+    "template_hashes": {
+      "any": "de7c27b9f046766be008bb1978eb8359428f00cda9a47d71a40ec7a10df58b9c",
+      "both": "103f55a05ac73f8d84d3f17cad44b893cd13c48e06ac3ed4c0deecb65e78f953"
+    }
+  },
+  "scope-11": {
+    "truth": {
+      "FB": "Y",
+      "VW": "Y"
+    },
+    "pattern": "YY",
+    "expected": "YY",
+    "seed": 2026112490,
+    "order": [
+      "any",
+      "both"
+    ],
+    "family": "DC-K3",
+    "labels_request_hash": "aef37e57795ca80aad3d842f4611e2101abdd481a66f054e6caf765a8aa06d0c",
+    "template_hashes": {
+      "any": "bc366b0036140d64823d6ca361b9c6e35fd676e6e62a56cfc5858380c91b5ad2",
+      "both": "776d29a02900c4e6d1fc08c7e8957cd0efed9a913191a304c084b3e0696d04ac"
+    }
+  },
+  "scope-03": {
+    "truth": {
+      "UH": "N",
+      "JM": "Y"
+    },
+    "pattern": "NY",
+    "expected": "YN",
+    "seed": 2026112482,
+    "order": [
+      "any",
+      "both"
+    ],
+    "family": "DC-K1",
+    "labels_request_hash": "5c118109b07d159700329af49bea13eb43a4720290246b341b8ca7a8797f4371",
+    "template_hashes": {
+      "any": "0bb013c8716e03168088eebc2468e3d13ea0aef8a30c1321cedbbf39ac5faab6",
+      "both": "24b5a1261c40b38592685707a38b7fdcc2c91aa940229cf1daf8297281c22aba"
+    }
+  },
+  "scope-06": {
+    "truth": {
+      "CM": "N",
+      "CE": "Y"
+    },
+    "pattern": "NY",
+    "expected": "YN",
+    "seed": 2026112485,
+    "order": [
+      "any",
+      "both"
+    ],
+    "family": "DC-K2",
+    "labels_request_hash": "5c60c72a4786853fc778332e471154b64260356edaa0c3ceb2626010b876f9b0",
+    "template_hashes": {
+      "any": "f161903af6c7c88abc38fa41e4bf475cfa023d876258d16fa48fe9e7d3afe783",
+      "both": "956c902749f471ff5a433d33eaecc191ebb61e19593638d5239402695c1e7d62"
+    }
+  }
+}

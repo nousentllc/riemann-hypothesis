@@ -1,0 +1,19 @@
+{
+  "request_sha256": "c0a450914f4c706e5aa5e8c612db1a90b7cfae9b7c0dad0061f65548315c09e5",
+  "started": "2026-11-24T20:38:30.068790+00:00",
+  "answer": {
+    "NY": "Y",
+    "UA": "N"
+  },
+  "status": "ok",
+  "content": "{\"NY\":\"Y\",\"UA\":\"N\"}",
+  "usage": {
+    "prompt_eval_count": 421,
+    "eval_count": 102,
+    "total_duration": 29736821459,
+    "load_duration": 7583417,
+    "eval_duration": 22761472000,
+    "done_reason": "stop"
+  },
+  "ended": "2026-11-24T20:38:59.831874+00:00"
+}

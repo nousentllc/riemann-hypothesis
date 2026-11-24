@@ -1,0 +1,19 @@
+{
+  "request_sha256": "e3d11c4f99bcaacca656635dfe2962e22fd4a7895aa881d22793787c4f8a4a4e",
+  "started": "2026-11-24T20:44:04.739395+00:00",
+  "answer": {
+    "ER": "Y",
+    "JM": "Y"
+  },
+  "status": "ok",
+  "content": "{\"ER\":\"Y\",\"JM\":\"Y\"}",
+  "usage": {
+    "prompt_eval_count": 451,
+    "eval_count": 181,
+    "total_duration": 45500747000,
+    "load_duration": 5313416,
+    "eval_duration": 38871564000,
+    "done_reason": "stop"
+  },
+  "ended": "2026-11-24T20:44:50.827175+00:00"
+}

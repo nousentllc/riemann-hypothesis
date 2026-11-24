@@ -1,0 +1,19 @@
+{
+  "request_sha256": "fd45400a531f4ccdc42b24166e36acc6a5fbd081f66f440d2ea3173435a84683",
+  "started": "2026-11-24T20:30:25.883842+00:00",
+  "answer": {
+    "HQ": "Y",
+    "DD": "Y"
+  },
+  "status": "ok",
+  "content": "{\"HQ\":\"Y\",\"DD\":\"Y\"}",
+  "usage": {
+    "prompt_eval_count": 422,
+    "eval_count": 444,
+    "total_duration": 49834571875,
+    "load_duration": 5207667,
+    "eval_duration": 46132264000,
+    "done_reason": "stop"
+  },
+  "ended": "2026-11-24T20:31:15.726516+00:00"
+}

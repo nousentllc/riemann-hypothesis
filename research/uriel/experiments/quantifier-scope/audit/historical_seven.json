@@ -3,6 +3,29 @@
   "previous_contract": "Three-way consensus (Y, N, U) and witness IDs",
   "records": 24,
   "delivered_after_accurate_checkpoint": 18,
+  "physically_mixed_with_accurate_checkpoint_and_delivered_final": 8,
+  "conditional_cells": [
+    {
+      "warranted": "N",
+      "delivered": "N",
+      "records": 4
+    },
+    {
+      "warranted": "U",
+      "delivered": "U",
+      "records": 1
+    },
+    {
+      "warranted": "U",
+      "delivered": "Y",
+      "records": 7
+    },
+    {
+      "warranted": "Y",
+      "delivered": "Y",
+      "records": 6
+    }
+  ],
   "cases": {
     "label-02": {
       "family": "DC-J1",

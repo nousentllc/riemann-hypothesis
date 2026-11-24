@@ -1,0 +1,19 @@
+{
+  "request_sha256": "67b64962757a9cb2ae63874a7a748b61bcc2d822e8413b63f69d3f1ea5f26ad5",
+  "started": "2026-11-24T20:47:11.066366+00:00",
+  "answer": {
+    "VW": "Y",
+    "PI": "N"
+  },
+  "status": "ok",
+  "content": "{\"VW\":\"Y\",\"PI\":\"N\"}",
+  "usage": {
+    "prompt_eval_count": 446,
+    "eval_count": 36,
+    "total_duration": 12088541250,
+    "load_duration": 42643625,
+    "eval_duration": 5645896000,
+    "done_reason": "stop"
+  },
+  "ended": "2026-11-24T20:47:23.265172+00:00"
+}

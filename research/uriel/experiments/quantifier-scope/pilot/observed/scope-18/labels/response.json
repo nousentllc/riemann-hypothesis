@@ -1,0 +1,19 @@
+{
+  "request_sha256": "db115de499d76917ed416655c7f8b0298551c9e58b8e43015cd8a2ea1e5a142c",
+  "started": "2026-11-24T20:27:49.883968+00:00",
+  "answer": {
+    "LK": "Y",
+    "RU": "N"
+  },
+  "status": "ok",
+  "content": "{\"LK\":\"Y\",\"RU\":\"N\"}",
+  "usage": {
+    "prompt_eval_count": 438,
+    "eval_count": 795,
+    "total_duration": 59338316875,
+    "load_duration": 11194542,
+    "eval_duration": 58447686000,
+    "done_reason": "stop"
+  },
+  "ended": "2026-11-24T20:28:49.366001+00:00"
+}

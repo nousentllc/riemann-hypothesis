@@ -1,0 +1,18 @@
+{
+  "request_sha256": "b623773102e94a9f9a74245555fa54a6f2459b5e5cd5e74c3b59205548bced57",
+  "started": "2026-11-24T20:30:12.952980+00:00",
+  "answer": {
+    "answer": "N"
+  },
+  "status": "ok",
+  "content": "{\"answer\":\"N\"}",
+  "usage": {
+    "prompt_eval_count": 501,
+    "eval_count": 50,
+    "total_duration": 7371577083,
+    "load_duration": 2849416,
+    "eval_duration": 5911133000,
+    "done_reason": "stop"
+  },
+  "ended": "2026-11-24T20:30:20.327222+00:00"
+}

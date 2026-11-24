@@ -1,5 +1,6 @@
 __pycache__/
 *.pyc
 *.started
+!pilot/observed/scope-*/*/response.started
 run.lock
 .DS_Store

@@ -1,0 +1,19 @@
+{
+  "request_sha256": "85bc65302c44ae7bf873b3845632f2cac59496246bf280199349098a06ceb832",
+  "started": "2026-11-24T20:31:48.098481+00:00",
+  "answer": {
+    "DV": "N",
+    "FB": "Y"
+  },
+  "status": "ok",
+  "content": "{\"DV\":\"N\",\"FB\":\"Y\"}",
+  "usage": {
+    "prompt_eval_count": 445,
+    "eval_count": 98,
+    "total_duration": 13145286958,
+    "load_duration": 2294083,
+    "eval_duration": 9099082000,
+    "done_reason": "stop"
+  },
+  "ended": "2026-11-24T20:32:01.250283+00:00"
+}

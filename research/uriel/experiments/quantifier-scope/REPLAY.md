@@ -15,3 +15,12 @@ After any failed checkpoint the two branch folders are absent and the planned re
 The research ZIP contains the paper, its self-contained LuaLaTeX source, the frozen protocol, all inputs, model receipts, per-case outputs, local Git bundle and checksum manifest. From the extracted study folder use the offline commands in the README. The Python verification uses the standard library. It requires neither an API key nor a model server. Recompiling the manuscript requires LuaLaTeX and the packages listed in its preamble. The original Nous PNG is embedded in the single source. The cover, abstract, contents and body have separate opening pages, and the paper includes the human–AI collaboration disclosure.
 
 The durable preregistration predates inference. To repeat model collection independently, restore the standalone study history from the bundled repository and open a separate worktree at its initial protocol commit, before the observed folders existed. The public branch and the standalone local history have different tree roots. Use `python3 -B pilot/run.py preflight` and `python3 -B pilot/run.py collect` there. The collector calls only local Ollama at loopback port 11434. The server version is 0.40.18 and the model is gpt-oss:20b, digest 17052f91a42e97930aa6e28a6c6c06a983e6a58dbb00434885a0cf5313e376f7. The shared checkpoint seed and the sibling seed are bound to the record; each child has the same model and decoding budget. A fresh inference run can differ with runtime or hardware. Replaying archived evidence issues no new inferences.
+
+The [public registration](https://github.com/nousentllc/riemann-hypothesis/commit/96b7664fc17d6d27a7409b49664b5c6f5eb01469) was committed at 15:26:34 Eastern on November 24, 2026. The corresponding standalone protocol commit in the ZIP's study-history.bundle is `79856d4508469b735fa27b8b7d06b8dc9232a132`.
+
+```sh
+git clone study-history.bundle scope-replay
+git -C scope-replay worktree add --detach ../scope-pre-run 79856d4508469b735fa27b8b7d06b8dc9232a132
+```
+
+If you have a clone of the full research fork, supply its path to `python3 -B audit/parent_anchors.py`. This optional check reads 17 Git blobs at the pinned parent and matches the registry of 32 prior layouts and 256 prior row IDs, plus the 14 visible receipts behind the seven motivating verdicts. The [archived anchor report](audit/parent_anchors.json) lists both the Git object identifier and SHA-256 digest of each source.

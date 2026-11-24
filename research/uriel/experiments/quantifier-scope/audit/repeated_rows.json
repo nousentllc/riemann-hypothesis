@@ -1,0 +1,751 @@
+{
+  "analysis": "Post hoc same-row comparison",
+  "unique_printed_rows": 24,
+  "row_transcriptions": 48,
+  "rows": [
+    {
+      "family": "DC-K1",
+      "id": "ER",
+      "label": "Y",
+      "views": [
+        {
+          "record": "scope-01",
+          "position": 1,
+          "partner": "JM",
+          "sentence": "ER 011 -33062112/280596283 H H L Y",
+          "physical_label": "Y",
+          "report": "Y",
+          "pattern": "YY",
+          "expected": "YY",
+          "response": "YY"
+        },
+        {
+          "record": "scope-02",
+          "position": 1,
+          "partner": "PH",
+          "sentence": "ER 011 -33062112/280596283 H H L Y",
+          "physical_label": "Y",
+          "report": "Y",
+          "pattern": "YN",
+          "expected": "YN",
+          "response": "YN"
+        }
+      ],
+      "matching": 2,
+      "delivered": 2
+    },
+    {
+      "family": "DC-K1",
+      "id": "JM",
+      "label": "Y",
+      "views": [
+        {
+          "record": "scope-01",
+          "position": 2,
+          "partner": "ER",
+          "sentence": "JM 111 -4221639/44567974 H H H Y",
+          "physical_label": "Y",
+          "report": "Y",
+          "pattern": "YY",
+          "expected": "YY",
+          "response": "YY"
+        },
+        {
+          "record": "scope-03",
+          "position": 2,
+          "partner": "UH",
+          "sentence": "JM 111 -4221639/44567974 H H H Y",
+          "physical_label": "Y",
+          "report": "Y",
+          "pattern": "NY",
+          "expected": "YN",
+          "response": "YN"
+        }
+      ],
+      "matching": 2,
+      "delivered": 2
+    },
+    {
+      "family": "DC-K1",
+      "id": "PH",
+      "label": "N",
+      "views": [
+        {
+          "record": "scope-00",
+          "position": 2,
+          "partner": "UH",
+          "sentence": "PH 001 -32067864/198392179 H L L N",
+          "physical_label": "N",
+          "report": "N",
+          "pattern": "NN",
+          "expected": "NN",
+          "response": "YN"
+        },
+        {
+          "record": "scope-02",
+          "position": 2,
+          "partner": "ER",
+          "sentence": "PH 001 -32067864/198392179 H L L N",
+          "physical_label": "N",
+          "report": "N",
+          "pattern": "YN",
+          "expected": "YN",
+          "response": "YN"
+        }
+      ],
+      "matching": 2,
+      "delivered": 2
+    },
+    {
+      "family": "DC-K1",
+      "id": "UH",
+      "label": "N",
+      "views": [
+        {
+          "record": "scope-00",
+          "position": 1,
+          "partner": "PH",
+          "sentence": "UH 101 -4638141/31551037 H L H N",
+          "physical_label": "N",
+          "report": "Y",
+          "pattern": "NN",
+          "expected": "NN",
+          "response": "YN"
+        },
+        {
+          "record": "scope-03",
+          "position": 1,
+          "partner": "JM",
+          "sentence": "UH 101 -4638141/31551037 H L H N",
+          "physical_label": "N",
+          "report": "N",
+          "pattern": "NY",
+          "expected": "YN",
+          "response": "YN"
+        }
+      ],
+      "matching": 1,
+      "delivered": 2
+    },
+    {
+      "family": "DC-K2",
+      "id": "CE",
+      "label": "Y",
+      "views": [
+        {
+          "record": "scope-06",
+          "position": 2,
+          "partner": "CM",
+          "sentence": "CE 100 26016333/111720272 L H L Y",
+          "physical_label": "Y",
+          "report": "Y",
+          "pattern": "NY",
+          "expected": "YN",
+          "response": "YN"
+        },
+        {
+          "record": "scope-07",
+          "position": 2,
+          "partner": "UG",
+          "sentence": "CE 100 26016333/111720272 L H L Y",
+          "physical_label": "Y",
+          "report": "Y",
+          "pattern": "YY",
+          "expected": "YY",
+          "response": "YY"
+        }
+      ],
+      "matching": 2,
+      "delivered": 2
+    },
+    {
+      "family": "DC-K2",
+      "id": "CM",
+      "label": "N",
+      "views": [
+        {
+          "record": "scope-04",
+          "position": 1,
+          "partner": "IM",
+          "sentence": "CM 110 -178740108/817988743 L H H N",
+          "physical_label": "N",
+          "report": "Y",
+          "pattern": "NN",
+          "expected": "NN",
+          "response": "YN"
+        },
+        {
+          "record": "scope-06",
+          "position": 1,
+          "partner": "CE",
+          "sentence": "CM 110 -178740108/817988743 L H H N",
+          "physical_label": "N",
+          "report": "N",
+          "pattern": "NY",
+          "expected": "YN",
+          "response": "YN"
+        }
+      ],
+      "matching": 1,
+      "delivered": 2
+    },
+    {
+      "family": "DC-K2",
+      "id": "IM",
+      "label": "N",
+      "views": [
+        {
+          "record": "scope-04",
+          "position": 2,
+          "partner": "CM",
+          "sentence": "IM 010 -31493928/140257213 L L H N",
+          "physical_label": "N",
+          "report": "N",
+          "pattern": "NN",
+          "expected": "NN",
+          "response": "YN"
+        },
+        {
+          "record": "scope-05",
+          "position": 2,
+          "partner": "UG",
+          "sentence": "IM 010 -31493928/140257213 L L H N",
+          "physical_label": "N",
+          "report": "N",
+          "pattern": "YN",
+          "expected": "YN",
+          "response": "YN"
+        }
+      ],
+      "matching": 2,
+      "delivered": 2
+    },
+    {
+      "family": "DC-K2",
+      "id": "UG",
+      "label": "Y",
+      "views": [
+        {
+          "record": "scope-05",
+          "position": 1,
+          "partner": "IM",
+          "sentence": "UG 000 1446801/6385384 L L L Y",
+          "physical_label": "Y",
+          "report": "Y",
+          "pattern": "YN",
+          "expected": "YN",
+          "response": "YN"
+        },
+        {
+          "record": "scope-07",
+          "position": 1,
+          "partner": "CE",
+          "sentence": "UG 000 1446801/6385384 L L L Y",
+          "physical_label": "Y",
+          "report": "Y",
+          "pattern": "YY",
+          "expected": "YY",
+          "response": "YY"
+        }
+      ],
+      "matching": 2,
+      "delivered": 2
+    },
+    {
+      "family": "DC-K3",
+      "id": "DV",
+      "label": "N",
+      "views": [
+        {
+          "record": "scope-09",
+          "position": 1,
+          "partner": "FB",
+          "sentence": "DV 101 -743780/11652879 L H L N",
+          "physical_label": "N",
+          "report": "N",
+          "pattern": "NY",
+          "expected": "YN",
+          "response": "YN"
+        },
+        {
+          "record": "scope-10",
+          "position": 1,
+          "partner": "PI",
+          "sentence": "DV 101 -743780/11652879 L H L N",
+          "physical_label": "N",
+          "report": "Y",
+          "pattern": "NN",
+          "expected": "NN",
+          "response": "YN"
+        }
+      ],
+      "matching": 1,
+      "delivered": 2
+    },
+    {
+      "family": "DC-K3",
+      "id": "FB",
+      "label": "Y",
+      "views": [
+        {
+          "record": "scope-09",
+          "position": 2,
+          "partner": "DV",
+          "sentence": "FB 111 20539980/238573211 L H H Y",
+          "physical_label": "Y",
+          "report": "Y",
+          "pattern": "NY",
+          "expected": "YN",
+          "response": "YN"
+        },
+        {
+          "record": "scope-11",
+          "position": 1,
+          "partner": "VW",
+          "sentence": "FB 111 20539980/238573211 L H H Y",
+          "physical_label": "Y",
+          "report": "Y",
+          "pattern": "YY",
+          "expected": "YY",
+          "response": "YY"
+        }
+      ],
+      "matching": 2,
+      "delivered": 2
+    },
+    {
+      "family": "DC-K3",
+      "id": "PI",
+      "label": "N",
+      "views": [
+        {
+          "record": "scope-08",
+          "position": 2,
+          "partner": "VW",
+          "sentence": "PI 100 -1196060/17406033 L L L N",
+          "physical_label": "N",
+          "report": "N",
+          "pattern": "YN",
+          "expected": "YN",
+          "response": "YN"
+        },
+        {
+          "record": "scope-10",
+          "position": 2,
+          "partner": "DV",
+          "sentence": "PI 100 -1196060/17406033 L L L N",
+          "physical_label": "N",
+          "report": "N",
+          "pattern": "NN",
+          "expected": "NN",
+          "response": "YN"
+        }
+      ],
+      "matching": 2,
+      "delivered": 2
+    },
+    {
+      "family": "DC-K3",
+      "id": "VW",
+      "label": "Y",
+      "views": [
+        {
+          "record": "scope-08",
+          "position": 1,
+          "partner": "PI",
+          "sentence": "VW 110 28889460/356360597 L L H Y",
+          "physical_label": "Y",
+          "report": "Y",
+          "pattern": "YN",
+          "expected": "YN",
+          "response": "YN"
+        },
+        {
+          "record": "scope-11",
+          "position": 2,
+          "partner": "FB",
+          "sentence": "VW 110 28889460/356360597 L L H Y",
+          "physical_label": "Y",
+          "report": "Y",
+          "pattern": "YY",
+          "expected": "YY",
+          "response": "YY"
+        }
+      ],
+      "matching": 2,
+      "delivered": 2
+    },
+    {
+      "family": "DC-K4",
+      "id": "CO",
+      "label": "Y",
+      "views": [
+        {
+          "record": "scope-13",
+          "position": 2,
+          "partner": "HM",
+          "sentence": "CO 000 24/631 H L L Y",
+          "physical_label": "Y",
+          "report": "Y",
+          "pattern": "YY",
+          "expected": "YY",
+          "response": "YY"
+        },
+        {
+          "record": "scope-15",
+          "position": 2,
+          "partner": "KR",
+          "sentence": "CO 000 24/631 H L L Y",
+          "physical_label": "Y",
+          "report": "Y",
+          "pattern": "NY",
+          "expected": "YN",
+          "response": "YN"
+        }
+      ],
+      "matching": 2,
+      "delivered": 2
+    },
+    {
+      "family": "DC-K4",
+      "id": "HM",
+      "label": "Y",
+      "views": [
+        {
+          "record": "scope-12",
+          "position": 1,
+          "partner": "PY",
+          "sentence": "HM 001 1224/22481 H H L Y",
+          "physical_label": "Y",
+          "report": "Y",
+          "pattern": "YN",
+          "expected": "YN",
+          "response": "YN"
+        },
+        {
+          "record": "scope-13",
+          "position": 1,
+          "partner": "CO",
+          "sentence": "HM 001 1224/22481 H H L Y",
+          "physical_label": "Y",
+          "report": "Y",
+          "pattern": "YY",
+          "expected": "YY",
+          "response": "YY"
+        }
+      ],
+      "matching": 2,
+      "delivered": 2
+    },
+    {
+      "family": "DC-K4",
+      "id": "KR",
+      "label": "N",
+      "views": [
+        {
+          "record": "scope-14",
+          "position": 1,
+          "partner": "PY",
+          "sentence": "KR 100 -10968/121867 H L H N",
+          "physical_label": "N",
+          "report": "N",
+          "pattern": "NN",
+          "expected": "NN",
+          "response": "NN"
+        },
+        {
+          "record": "scope-15",
+          "position": 1,
+          "partner": "CO",
+          "sentence": "KR 100 -10968/121867 H L H N",
+          "physical_label": "N",
+          "report": "N",
+          "pattern": "NY",
+          "expected": "YN",
+          "response": "YN"
+        }
+      ],
+      "matching": 2,
+      "delivered": 2
+    },
+    {
+      "family": "DC-K4",
+      "id": "PY",
+      "label": "N",
+      "views": [
+        {
+          "record": "scope-12",
+          "position": 2,
+          "partner": "HM",
+          "sentence": "PY 101 -25352/458963 H H H N",
+          "physical_label": "N",
+          "report": "N",
+          "pattern": "YN",
+          "expected": "YN",
+          "response": "YN"
+        },
+        {
+          "record": "scope-14",
+          "position": 2,
+          "partner": "KR",
+          "sentence": "PY 101 -25352/458963 H H H N",
+          "physical_label": "N",
+          "report": "N",
+          "pattern": "NN",
+          "expected": "NN",
+          "response": "NN"
+        }
+      ],
+      "matching": 2,
+      "delivered": 2
+    },
+    {
+      "family": "DC-K5",
+      "id": "II",
+      "label": "N",
+      "views": [
+        {
+          "record": "scope-16",
+          "position": 2,
+          "partner": "LK",
+          "sentence": "II 011 -22788/81115 H L H N",
+          "physical_label": "N",
+          "report": "Y",
+          "pattern": "NN",
+          "expected": "NN",
+          "response": "YN"
+        },
+        {
+          "record": "scope-19",
+          "position": 2,
+          "partner": "LY",
+          "sentence": "II 011 -22788/81115 H L H N",
+          "physical_label": "N",
+          "report": "N",
+          "pattern": "YN",
+          "expected": "YN",
+          "response": "YN"
+        }
+      ],
+      "matching": 1,
+      "delivered": 2
+    },
+    {
+      "family": "DC-K5",
+      "id": "LK",
+      "label": "N",
+      "views": [
+        {
+          "record": "scope-16",
+          "position": 1,
+          "partner": "II",
+          "sentence": "LK 010 -366036/1306267 H L L N",
+          "physical_label": "N",
+          "report": "N",
+          "pattern": "NN",
+          "expected": "NN",
+          "response": "YN"
+        },
+        {
+          "record": "scope-18",
+          "position": 1,
+          "partner": "RU",
+          "sentence": "LK 010 -366036/1306267 H L L N",
+          "physical_label": "N",
+          "report": "Y",
+          "pattern": "NY",
+          "expected": "YN",
+          "response": "YN"
+        }
+      ],
+      "matching": 1,
+      "delivered": 2
+    },
+    {
+      "family": "DC-K5",
+      "id": "LY",
+      "label": "Y",
+      "views": [
+        {
+          "record": "scope-17",
+          "position": 1,
+          "partner": "RU",
+          "sentence": "LY 001 -4668/19469 H H H Y",
+          "physical_label": "Y",
+          "report": "Y",
+          "pattern": "YY",
+          "expected": "YY",
+          "response": "YY"
+        },
+        {
+          "record": "scope-19",
+          "position": 1,
+          "partner": "II",
+          "sentence": "LY 001 -4668/19469 H H H Y",
+          "physical_label": "Y",
+          "report": "Y",
+          "pattern": "YN",
+          "expected": "YN",
+          "response": "YN"
+        }
+      ],
+      "matching": 2,
+      "delivered": 2
+    },
+    {
+      "family": "DC-K5",
+      "id": "RU",
+      "label": "Y",
+      "views": [
+        {
+          "record": "scope-17",
+          "position": 2,
+          "partner": "LY",
+          "sentence": "RU 000 -7748/34431 H H L Y",
+          "physical_label": "Y",
+          "report": "Y",
+          "pattern": "YY",
+          "expected": "YY",
+          "response": "YY"
+        },
+        {
+          "record": "scope-18",
+          "position": 2,
+          "partner": "LK",
+          "sentence": "RU 000 -7748/34431 H H L Y",
+          "physical_label": "Y",
+          "report": "N",
+          "pattern": "NY",
+          "expected": "YN",
+          "response": "YN"
+        }
+      ],
+      "matching": 1,
+      "delivered": 2
+    },
+    {
+      "family": "DC-K6",
+      "id": "DD",
+      "label": "Y",
+      "views": [
+        {
+          "record": "scope-21",
+          "position": 2,
+          "partner": "NY",
+          "sentence": "DD 101 -24/467 L L L Y",
+          "physical_label": "Y",
+          "report": "Y",
+          "pattern": "NY",
+          "expected": "YN",
+          "response": "YN"
+        },
+        {
+          "record": "scope-23",
+          "position": 2,
+          "partner": "HQ",
+          "sentence": "DD 101 -24/467 L L L Y",
+          "physical_label": "Y",
+          "report": "Y",
+          "pattern": "YY",
+          "expected": "YY",
+          "response": "YY"
+        }
+      ],
+      "matching": 2,
+      "delivered": 2
+    },
+    {
+      "family": "DC-K6",
+      "id": "HQ",
+      "label": "Y",
+      "views": [
+        {
+          "record": "scope-22",
+          "position": 1,
+          "partner": "UA",
+          "sentence": "HQ 111 -24/1457 L L H Y",
+          "physical_label": "Y",
+          "report": "Y",
+          "pattern": "YN",
+          "expected": "YN",
+          "response": "YN"
+        },
+        {
+          "record": "scope-23",
+          "position": 1,
+          "partner": "DD",
+          "sentence": "HQ 111 -24/1457 L L H Y",
+          "physical_label": "Y",
+          "report": "Y",
+          "pattern": "YY",
+          "expected": "YY",
+          "response": "YY"
+        }
+      ],
+      "matching": 2,
+      "delivered": 2
+    },
+    {
+      "family": "DC-K6",
+      "id": "NY",
+      "label": "N",
+      "views": [
+        {
+          "record": "scope-20",
+          "position": 1,
+          "partner": "UA",
+          "sentence": "NY 000 -60/229 L H L N",
+          "physical_label": "N",
+          "report": "Y",
+          "pattern": "NN",
+          "expected": "NN",
+          "response": "YN"
+        },
+        {
+          "record": "scope-21",
+          "position": 1,
+          "partner": "DD",
+          "sentence": "NY 000 -60/229 L H L N",
+          "physical_label": "N",
+          "report": "N",
+          "pattern": "NY",
+          "expected": "YN",
+          "response": "YN"
+        }
+      ],
+      "matching": 1,
+      "delivered": 2
+    },
+    {
+      "family": "DC-K6",
+      "id": "UA",
+      "label": "N",
+      "views": [
+        {
+          "record": "scope-20",
+          "position": 2,
+          "partner": "NY",
+          "sentence": "UA 001 -240/791 L H H N",
+          "physical_label": "N",
+          "report": "N",
+          "pattern": "NN",
+          "expected": "NN",
+          "response": "YN"
+        },
+        {
+          "record": "scope-22",
+          "position": 2,
+          "partner": "HQ",
+          "sentence": "UA 001 -240/791 L H H N",
+          "physical_label": "N",
+          "report": "N",
+          "pattern": "YN",
+          "expected": "YN",
+          "response": "YN"
+        }
+      ],
+      "matching": 2,
+      "delivered": 2
+    }
+  ]
+}

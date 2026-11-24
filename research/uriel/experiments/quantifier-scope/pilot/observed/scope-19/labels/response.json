@@ -1,0 +1,19 @@
+{
+  "request_sha256": "a005cae5cdddcc57a3543c7269689cc284059c3d42cad9d5001df44f37329bb6",
+  "started": "2026-11-24T20:29:02.526768+00:00",
+  "answer": {
+    "LY": "Y",
+    "II": "N"
+  },
+  "status": "ok",
+  "content": "{\"LY\":\"Y\",\"II\":\"N\"}",
+  "usage": {
+    "prompt_eval_count": 437,
+    "eval_count": 117,
+    "total_duration": 14682034791,
+    "load_duration": 6058250,
+    "eval_duration": 11930416000,
+    "done_reason": "stop"
+  },
+  "ended": "2026-11-24T20:29:17.221236+00:00"
+}

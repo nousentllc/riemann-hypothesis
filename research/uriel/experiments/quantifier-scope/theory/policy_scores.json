@@ -1,0 +1,483 @@
+{
+  "best_maps": [
+    [
+      "YY",
+      "YN",
+      "YN",
+      "YN"
+    ]
+  ],
+  "best_matches": 23,
+  "fair_layout_sign_reference": "1/32",
+  "joint_score_histogram": {
+    "0": 54,
+    "1": 27,
+    "5": 27,
+    "6": 54,
+    "7": 27,
+    "11": 27,
+    "12": 18,
+    "13": 9,
+    "17": 9,
+    "18": 2,
+    "19": 1,
+    "23": 1
+  },
+  "mixed_layout_net": {
+    "DC-K1": 2,
+    "DC-K2": 2,
+    "DC-K3": 2,
+    "DC-K4": 2,
+    "DC-K5": 2,
+    "DC-K6": 2
+  },
+  "mixed_separation_minus_double_yes": 12,
+  "named": {
+    "always_no": {
+      "accurate_complete": {
+        "matched": 1,
+        "mismatch": 17,
+        "n": 18,
+        "possible": 1,
+        "undetermined": 0
+      },
+      "all": {
+        "matched": 1,
+        "mismatch": 23,
+        "n": 24,
+        "possible": 1,
+        "undetermined": 0
+      },
+      "mixed": {
+        "matched": 0,
+        "mismatch": 12,
+        "n": 12,
+        "possible": 0,
+        "undetermined": 0
+      },
+      "mixed_accurate_complete": {
+        "matched": 0,
+        "mismatch": 11,
+        "n": 11,
+        "possible": 0,
+        "undetermined": 0
+      }
+    },
+    "always_yes": {
+      "accurate_complete": {
+        "matched": 6,
+        "mismatch": 12,
+        "n": 18,
+        "possible": 6,
+        "undetermined": 0
+      },
+      "all": {
+        "matched": 6,
+        "mismatch": 18,
+        "n": 24,
+        "possible": 6,
+        "undetermined": 0
+      },
+      "mixed": {
+        "matched": 0,
+        "mismatch": 12,
+        "n": 12,
+        "possible": 0,
+        "undetermined": 0
+      },
+      "mixed_accurate_complete": {
+        "matched": 0,
+        "mismatch": 11,
+        "n": 11,
+        "possible": 0,
+        "undetermined": 0
+      }
+    },
+    "and_on_both": {
+      "accurate_complete": {
+        "matched": 7,
+        "mismatch": 11,
+        "n": 18,
+        "possible": 7,
+        "undetermined": 0
+      },
+      "all": {
+        "matched": 7,
+        "mismatch": 17,
+        "n": 24,
+        "possible": 7,
+        "undetermined": 0
+      },
+      "mixed": {
+        "matched": 0,
+        "mismatch": 12,
+        "n": 12,
+        "possible": 0,
+        "undetermined": 0
+      },
+      "mixed_accurate_complete": {
+        "matched": 0,
+        "mismatch": 11,
+        "n": 11,
+        "possible": 0,
+        "undetermined": 0
+      }
+    },
+    "first_row_twice": {
+      "accurate_complete": {
+        "matched": 7,
+        "mismatch": 11,
+        "n": 18,
+        "possible": 7,
+        "undetermined": 0
+      },
+      "all": {
+        "matched": 7,
+        "mismatch": 17,
+        "n": 24,
+        "possible": 7,
+        "undetermined": 0
+      },
+      "mixed": {
+        "matched": 0,
+        "mismatch": 12,
+        "n": 12,
+        "possible": 0,
+        "undetermined": 0
+      },
+      "mixed_accurate_complete": {
+        "matched": 0,
+        "mismatch": 11,
+        "n": 11,
+        "possible": 0,
+        "undetermined": 0
+      }
+    },
+    "or_on_both": {
+      "accurate_complete": {
+        "matched": 7,
+        "mismatch": 11,
+        "n": 18,
+        "possible": 7,
+        "undetermined": 0
+      },
+      "all": {
+        "matched": 7,
+        "mismatch": 17,
+        "n": 24,
+        "possible": 7,
+        "undetermined": 0
+      },
+      "mixed": {
+        "matched": 0,
+        "mismatch": 12,
+        "n": 12,
+        "possible": 0,
+        "undetermined": 0
+      },
+      "mixed_accurate_complete": {
+        "matched": 0,
+        "mismatch": 11,
+        "n": 11,
+        "possible": 0,
+        "undetermined": 0
+      }
+    },
+    "reversed": {
+      "accurate_complete": {
+        "matched": 7,
+        "mismatch": 11,
+        "n": 18,
+        "possible": 7,
+        "undetermined": 0
+      },
+      "all": {
+        "matched": 7,
+        "mismatch": 17,
+        "n": 24,
+        "possible": 7,
+        "undetermined": 0
+      },
+      "mixed": {
+        "matched": 0,
+        "mismatch": 12,
+        "n": 12,
+        "possible": 0,
+        "undetermined": 0
+      },
+      "mixed_accurate_complete": {
+        "matched": 0,
+        "mismatch": 11,
+        "n": 11,
+        "possible": 0,
+        "undetermined": 0
+      }
+    },
+    "scope": {
+      "accurate_complete": {
+        "matched": 18,
+        "mismatch": 0,
+        "n": 18,
+        "possible": 18,
+        "undetermined": 0
+      },
+      "all": {
+        "matched": 19,
+        "mismatch": 5,
+        "n": 24,
+        "possible": 19,
+        "undetermined": 0
+      },
+      "mixed": {
+        "matched": 12,
+        "mismatch": 0,
+        "n": 12,
+        "possible": 12,
+        "undetermined": 0
+      },
+      "mixed_accurate_complete": {
+        "matched": 11,
+        "mismatch": 0,
+        "n": 11,
+        "possible": 11,
+        "undetermined": 0
+      }
+    },
+    "second_row_twice": {
+      "accurate_complete": {
+        "matched": 7,
+        "mismatch": 11,
+        "n": 18,
+        "possible": 7,
+        "undetermined": 0
+      },
+      "all": {
+        "matched": 7,
+        "mismatch": 17,
+        "n": 24,
+        "possible": 7,
+        "undetermined": 0
+      },
+      "mixed": {
+        "matched": 0,
+        "mismatch": 12,
+        "n": 12,
+        "possible": 0,
+        "undetermined": 0
+      },
+      "mixed_accurate_complete": {
+        "matched": 0,
+        "mismatch": 11,
+        "n": 11,
+        "possible": 0,
+        "undetermined": 0
+      }
+    },
+    "wording_only": {
+      "accurate_complete": {
+        "matched": 11,
+        "mismatch": 7,
+        "n": 18,
+        "possible": 11,
+        "undetermined": 0
+      },
+      "all": {
+        "matched": 17,
+        "mismatch": 7,
+        "n": 24,
+        "possible": 17,
+        "undetermined": 0
+      },
+      "mixed": {
+        "matched": 12,
+        "mismatch": 0,
+        "n": 12,
+        "possible": 12,
+        "undetermined": 0
+      },
+      "mixed_accurate_complete": {
+        "matched": 11,
+        "mismatch": 0,
+        "n": 11,
+        "possible": 11,
+        "undetermined": 0
+      }
+    }
+  },
+  "pattern_order": [
+    "YY",
+    "NN",
+    "YN",
+    "NY"
+  ],
+  "records": [
+    {
+      "accurate_complete": false,
+      "layout": "DC-K1",
+      "record": "scope-00",
+      "response": "YN",
+      "truth": "NN"
+    },
+    {
+      "accurate_complete": true,
+      "layout": "DC-K1",
+      "record": "scope-01",
+      "response": "YY",
+      "truth": "YY"
+    },
+    {
+      "accurate_complete": true,
+      "layout": "DC-K1",
+      "record": "scope-02",
+      "response": "YN",
+      "truth": "YN"
+    },
+    {
+      "accurate_complete": true,
+      "layout": "DC-K1",
+      "record": "scope-03",
+      "response": "YN",
+      "truth": "NY"
+    },
+    {
+      "accurate_complete": false,
+      "layout": "DC-K2",
+      "record": "scope-04",
+      "response": "YN",
+      "truth": "NN"
+    },
+    {
+      "accurate_complete": true,
+      "layout": "DC-K2",
+      "record": "scope-05",
+      "response": "YN",
+      "truth": "YN"
+    },
+    {
+      "accurate_complete": true,
+      "layout": "DC-K2",
+      "record": "scope-06",
+      "response": "YN",
+      "truth": "NY"
+    },
+    {
+      "accurate_complete": true,
+      "layout": "DC-K2",
+      "record": "scope-07",
+      "response": "YY",
+      "truth": "YY"
+    },
+    {
+      "accurate_complete": true,
+      "layout": "DC-K3",
+      "record": "scope-08",
+      "response": "YN",
+      "truth": "YN"
+    },
+    {
+      "accurate_complete": true,
+      "layout": "DC-K3",
+      "record": "scope-09",
+      "response": "YN",
+      "truth": "NY"
+    },
+    {
+      "accurate_complete": false,
+      "layout": "DC-K3",
+      "record": "scope-10",
+      "response": "YN",
+      "truth": "NN"
+    },
+    {
+      "accurate_complete": true,
+      "layout": "DC-K3",
+      "record": "scope-11",
+      "response": "YY",
+      "truth": "YY"
+    },
+    {
+      "accurate_complete": true,
+      "layout": "DC-K4",
+      "record": "scope-12",
+      "response": "YN",
+      "truth": "YN"
+    },
+    {
+      "accurate_complete": true,
+      "layout": "DC-K4",
+      "record": "scope-13",
+      "response": "YY",
+      "truth": "YY"
+    },
+    {
+      "accurate_complete": true,
+      "layout": "DC-K4",
+      "record": "scope-14",
+      "response": "NN",
+      "truth": "NN"
+    },
+    {
+      "accurate_complete": true,
+      "layout": "DC-K4",
+      "record": "scope-15",
+      "response": "YN",
+      "truth": "NY"
+    },
+    {
+      "accurate_complete": false,
+      "layout": "DC-K5",
+      "record": "scope-16",
+      "response": "YN",
+      "truth": "NN"
+    },
+    {
+      "accurate_complete": true,
+      "layout": "DC-K5",
+      "record": "scope-17",
+      "response": "YY",
+      "truth": "YY"
+    },
+    {
+      "accurate_complete": false,
+      "layout": "DC-K5",
+      "record": "scope-18",
+      "response": "YN",
+      "truth": "NY"
+    },
+    {
+      "accurate_complete": true,
+      "layout": "DC-K5",
+      "record": "scope-19",
+      "response": "YN",
+      "truth": "YN"
+    },
+    {
+      "accurate_complete": false,
+      "layout": "DC-K6",
+      "record": "scope-20",
+      "response": "YN",
+      "truth": "NN"
+    },
+    {
+      "accurate_complete": true,
+      "layout": "DC-K6",
+      "record": "scope-21",
+      "response": "YN",
+      "truth": "NY"
+    },
+    {
+      "accurate_complete": true,
+      "layout": "DC-K6",
+      "record": "scope-22",
+      "response": "YN",
+      "truth": "YN"
+    },
+    {
+      "accurate_complete": true,
+      "layout": "DC-K6",
+      "record": "scope-23",
+      "response": "YY",
+      "truth": "YY"
+    }
+  ]
+}

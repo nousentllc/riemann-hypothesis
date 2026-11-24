@@ -1,0 +1,46 @@
+{
+  "model": "gpt-oss:20b",
+  "messages": [
+    {
+      "role": "system",
+      "content": "Read the supplied record. Answer only the question in the current turn using the required JSON format."
+    },
+    {
+      "role": "user",
+      "content": "DC network with + at 12 V and 0 at 0 V. Switch order is s,t,u (1 means closed). A bracketed resistor conducts only when its switch is closed. Each resistor lists its oriented start and end nodes and its resistance in ohms. R1=d>+:6 R2=c>d:3 R3=f>c:7 R4=f>g:5 R5=e>g:7 R6=e>a:6 R7=b>a:8 R8=b>0:5 R9=e>f:2 R10=e>d:8 R11=f>b:8 R12=c>e:4 R13=0>a:7 R14=f>+:9[s] R15=b>e:3[t] R16=d>f:3[u].\nThe target label is Y if the signed current of R7 > 0 A, and N otherwise.\nInitial comparator: signed current of R13 > -2/5 A\nOther comparators: M39: signed current of R16 > 0 A | M41: signed current of R12 > 40580352/174200465 A\nH means a comparator condition holds and L means it fails. All currents are exact amperes.\nID stu target_current initial M39 M41 target_label\nVW 110 28889460/356360597 L L H Y\nPI 100 -1196060/17406033 L L L N\n\nObserved readings: initial = L; M39 = L.\nThe table shows exactly the two survivors compatible with the observed readings.\nReport the target label for each survivor. Return only a JSON object with keys VW and PI, each having value Y or N."
+    },
+    {
+      "role": "assistant",
+      "content": "{\"VW\":\"Y\",\"PI\":\"N\"}"
+    },
+    {
+      "role": "user",
+      "content": "Is the target label Y for at least one of the two survivors? Return only the JSON field answer, using Y for yes and N for no."
+    }
+  ],
+  "format": {
+    "type": "object",
+    "properties": {
+      "answer": {
+        "type": "string",
+        "enum": [
+          "Y",
+          "N"
+        ]
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "additionalProperties": false
+  },
+  "stream": false,
+  "keep_alive": "9m",
+  "think": "low",
+  "options": {
+    "seed": 2026112487,
+    "temperature": 0,
+    "num_ctx": 8192,
+    "num_predict": 2048
+  }
+}
