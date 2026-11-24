@@ -1,0 +1,19 @@
+{
+  "request_sha256": "3470b7625ad29cd86edefc0e3550f642b72939282d83813f32c4e316ac2f3eb5",
+  "started": "2026-11-24T19:50:22.892687+00:00",
+  "answer": {
+    "QD": "Y",
+    "AF": "Y"
+  },
+  "status": "ok",
+  "content": "{\n  \"QD\": \"Y\",\n  \"AF\": \"Y\"\n}",
+  "usage": {
+    "prompt_eval_count": 655,
+    "eval_count": 355,
+    "total_duration": 42994948167,
+    "load_duration": 3143625,
+    "eval_duration": 39061685000,
+    "done_reason": "stop"
+  },
+  "ended": "2026-11-24T19:51:05.898372+00:00"
+}

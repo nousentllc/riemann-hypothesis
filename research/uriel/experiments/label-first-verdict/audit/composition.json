@@ -1,0 +1,205 @@
+{
+  "controls": {
+    "(0, True, False, False)": 8,
+    "(0, True, True, True)": 4,
+    "(1, False, False, False)": 8,
+    "(1, False, False, True)": 8,
+    "(1, False, True, False)": 8,
+    "(2, False, False, False)": 2,
+    "(2, False, False, True)": 2,
+    "(2, False, True, False)": 2,
+    "(2, True, False, False)": 4,
+    "(2, True, True, True)": 2
+  },
+  "flows": {
+    "both": 11,
+    "neither": 6,
+    "replay_only": 7
+  },
+  "paired_delivery": {
+    "missing/warranted": [
+      "label-16"
+    ],
+    "missing/wrong": [
+      "label-19"
+    ],
+    "warranted/missing": [
+      "label-06"
+    ],
+    "warranted/warranted": [
+      "label-01",
+      "label-09",
+      "label-10",
+      "label-11",
+      "label-17"
+    ],
+    "warranted/wrong": [
+      "label-02",
+      "label-03",
+      "label-05",
+      "label-08",
+      "label-12",
+      "label-14",
+      "label-18",
+      "label-21",
+      "label-22"
+    ],
+    "wrong/warranted": [
+      "label-04",
+      "label-07",
+      "label-13",
+      "label-20",
+      "label-23"
+    ],
+    "wrong/wrong": [
+      "label-00",
+      "label-15"
+    ]
+  },
+  "records": {
+    "label-00": {
+      "cell": "neither",
+      "model": "Y",
+      "replay": "U",
+      "truth": "N"
+    },
+    "label-01": {
+      "cell": "both",
+      "model": "Y",
+      "replay": "Y",
+      "truth": "Y"
+    },
+    "label-02": {
+      "cell": "replay_only",
+      "model": "Y",
+      "replay": "U",
+      "truth": "U"
+    },
+    "label-03": {
+      "cell": "replay_only",
+      "model": "Y",
+      "replay": "U",
+      "truth": "U"
+    },
+    "label-04": {
+      "cell": "both",
+      "model": "N",
+      "replay": "N",
+      "truth": "N"
+    },
+    "label-05": {
+      "cell": "neither",
+      "model": "N",
+      "replay": "N",
+      "truth": "U"
+    },
+    "label-06": {
+      "cell": "neither",
+      "model": null,
+      "replay": null,
+      "truth": "U"
+    },
+    "label-07": {
+      "cell": "both",
+      "model": "Y",
+      "replay": "Y",
+      "truth": "Y"
+    },
+    "label-08": {
+      "cell": "replay_only",
+      "model": "Y",
+      "replay": "U",
+      "truth": "U"
+    },
+    "label-09": {
+      "cell": "both",
+      "model": "U",
+      "replay": "U",
+      "truth": "U"
+    },
+    "label-10": {
+      "cell": "both",
+      "model": "N",
+      "replay": "N",
+      "truth": "N"
+    },
+    "label-11": {
+      "cell": "both",
+      "model": "Y",
+      "replay": "Y",
+      "truth": "Y"
+    },
+    "label-12": {
+      "cell": "replay_only",
+      "model": "Y",
+      "replay": "U",
+      "truth": "U"
+    },
+    "label-13": {
+      "cell": "both",
+      "model": "Y",
+      "replay": "Y",
+      "truth": "Y"
+    },
+    "label-14": {
+      "cell": "neither",
+      "model": "Y",
+      "replay": "U",
+      "truth": "N"
+    },
+    "label-15": {
+      "cell": "replay_only",
+      "model": "Y",
+      "replay": "U",
+      "truth": "U"
+    },
+    "label-16": {
+      "cell": "both",
+      "model": "N",
+      "replay": "N",
+      "truth": "N"
+    },
+    "label-17": {
+      "cell": "both",
+      "model": "Y",
+      "replay": "Y",
+      "truth": "Y"
+    },
+    "label-18": {
+      "cell": "neither",
+      "model": "N",
+      "replay": "N",
+      "truth": "U"
+    },
+    "label-19": {
+      "cell": "replay_only",
+      "model": "Y",
+      "replay": "U",
+      "truth": "U"
+    },
+    "label-20": {
+      "cell": "both",
+      "model": "N",
+      "replay": "N",
+      "truth": "N"
+    },
+    "label-21": {
+      "cell": "replay_only",
+      "model": "Y",
+      "replay": "U",
+      "truth": "U"
+    },
+    "label-22": {
+      "cell": "neither",
+      "model": "N",
+      "replay": "N",
+      "truth": "U"
+    },
+    "label-23": {
+      "cell": "both",
+      "model": "Y",
+      "replay": "Y",
+      "truth": "Y"
+    }
+  }
+}

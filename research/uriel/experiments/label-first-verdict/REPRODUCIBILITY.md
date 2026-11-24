@@ -1,0 +1,19 @@
+# Reproducing the evidence
+
+The pinned [parent study](https://github.com/nousentllc/riemann-hypothesis/tree/2462c0f0b4b7c34052121dacab60833d58b34c4a/research/uriel/experiments/marked-reading-audit) supplies the direct filtered prompt template, original three motivating errors, local model settings and physical generator family. The [new preregistration](https://github.com/nousentllc/riemann-hypothesis/tree/fba1c3a576af959ea195cd849a2245fdd3532cd4/research/uriel/experiments/label-first-verdict) contains fresh graph specifications, calibration tables, 48 stage-one prompts, the conditional verdict templates, schedule, scoring program and protocol. The prior study used a different panel and a different primary endpoint. Its three selected errors do not enter this study's denominator.
+
+## Offline replay
+
+Run the commands in the study README from the study root with Python 3.11 or later. No third-party Python library, API key, inference service or internet connection is required. The circuit generation step recreates and compares all six selected designs. The forest checker verifies every state. The outcome audit rebuilds the actual request bodies and re-evaluates the visible responses. The supplemental reducer consumes only archived first-stage maps. Run `python3 -B audit/selftest.py` to exercise the independent checker on an isolated synthetic fixture including a missing checkpoint, missing final, inaccurate transcription, contradictory aggregate and altered conversation history. The synthetic decisions stay in a temporary directory.
+
+Each directory under `pilot/observed` is one scheduled workflow. In the direct arm, `direct/` contains a request and corresponding response. In the other arm, `labels/` contains the committed report. A valid map unlocks `verdict/`. Save and compare the actual text of the assistant's visible response when checking that transition. Reformatting JSON changes its bytes and is detected by the history audit; merely checking that two decoded maps have the same values would miss this change. Content hashes use the runner's sorted-key JSON serialization, including its default separators. Audit timestamps are UTC.
+
+## A fresh inference replication
+
+The ZIP includes `study-history.bundle`. Cloning the bundle restores a standalone Git repository and the local study history. In a separate worktree at the local preregistration commit `6c6e3c0b9bb3d51b04c6e82f9f5321f87c2b5861` the panel and frozen runner exist and the outcome directory has never been created. Run `python3 -B pilot/run.py preflight` there before `python3 -B pilot/run.py collect`. This issues new local inferences. Running the collector in the completed archive reuses existing receipts. Distinguish the results of a fresh run from replaying this archive.
+
+The pinned environment uses Ollama 0.40.18 at loopback port 11434, tag `gpt-oss:20b`, digest `17052f91a42e97930aa6e28a6c6c06a983e6a58dbb00434885a0cf5313e376f7`, low reasoning effort, temperature zero, 8192 context and 2048 output tokens per inference. The socket timeout is 900 seconds. Direct and staged verdicts use a common record seed. Label generation uses that seed plus 1000. Server-state changes, hardware or scheduling can change completion times and local generation behavior on a new run.
+
+## Paper and package
+
+`Label_First.tex` is the only TeX source. Run LuaLaTeX at least twice in a writable directory. The manuscript embeds the original Nous PNG. The supplied PDF and source are stored beside one another at the first level of the ZIP's study folder. The checksum inventory covers their bytes, every research file and the portable Git bundle. Source provenance and manifest checking can establish what was released and regenerated; they do not substitute for examining a substantive case or an inference assumption.

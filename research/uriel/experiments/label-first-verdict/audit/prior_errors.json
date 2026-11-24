@@ -1,0 +1,32 @@
+{
+  "marked-05": {
+    "parent_sha": "2462c0f0b4b7c34052121dacab60833d58b34c4a",
+    "source": "pilot/observed/marked-05_filtered/response.json",
+    "receipt_sha256": "1db442be79ba4f8ada225cf1f32fd438c95f0af4565bb23ac3240fa0c997b216",
+    "true_labels": {
+      "YS": "N",
+      "VD": "Y"
+    },
+    "visible": "{\n  \"verdict\": \"Y\",\n  \"certificate\": [\"YS\", \"VD\"]\n}"
+  },
+  "marked-11": {
+    "parent_sha": "2462c0f0b4b7c34052121dacab60833d58b34c4a",
+    "source": "pilot/observed/marked-11_filtered/response.json",
+    "receipt_sha256": "a88192ae2753ce349ea5f64f85074757eaa1b553b4e2cb8ece23ee7fd8e2c672",
+    "true_labels": {
+      "BQ": "Y",
+      "WP": "Y"
+    },
+    "visible": "{\n  \"verdict\": \"U\",\n  \"certificate\": [\n    \"BQ\",\n    \"WP\"\n  ]\n}"
+  },
+  "marked-23": {
+    "parent_sha": "2462c0f0b4b7c34052121dacab60833d58b34c4a",
+    "source": "pilot/observed/marked-23_filtered/response.json",
+    "receipt_sha256": "50d321999d974b9fe5a2ec99c7c1ca29f2d638873e5783f28479eb2623215e95",
+    "true_labels": {
+      "TV": "Y",
+      "AI": "Y"
+    },
+    "visible": "{\n  \"verdict\": \"U\",\n  \"certificate\": [\"TV\", \"AI\"]\n}"
+  }
+}

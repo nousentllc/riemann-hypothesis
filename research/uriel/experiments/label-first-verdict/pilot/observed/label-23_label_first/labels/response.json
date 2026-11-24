@@ -1,0 +1,19 @@
+{
+  "request_sha256": "31152f94a047fae4549acf423b8fd1b17e30b1f90d47308d456235db79b542fd",
+  "started": "2026-11-24T19:45:20.515735+00:00",
+  "answer": {
+    "FM": "Y",
+    "OL": "Y"
+  },
+  "status": "ok",
+  "content": "{\"FM\":\"Y\",\"OL\":\"Y\"}",
+  "usage": {
+    "prompt_eval_count": 663,
+    "eval_count": 255,
+    "total_duration": 17076832708,
+    "load_duration": 3371042,
+    "eval_duration": 14950258000,
+    "done_reason": "stop"
+  },
+  "ended": "2026-11-24T19:45:37.598136+00:00"
+}

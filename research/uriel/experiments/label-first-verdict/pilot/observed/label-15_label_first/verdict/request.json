@@ -1,0 +1,66 @@
+{
+  "model": "gpt-oss:20b",
+  "messages": [
+    {
+      "role": "system",
+      "content": "Track the same object through every step. Identify the exact fact that would settle the claim and locate where the record first supplies it. Test your initial conclusion by trying to build two cases that obey every observation so far but give opposite answers. If both survive, record which hidden feature makes them disagree. Before requesting evidence, predict how each candidate case would answer each available lookup. Choose a reading that separates opposite conclusions across the surviving cases. If all cases already agree, identify the common conclusion and collect the complete evidence for it. After a lookup, remove only cases that contradict the returned value. Test the claim again on those that remain. Preserve the identifiers supporting the verdict so another researcher can reconstruct it."
+    },
+    {
+      "role": "user",
+      "content": "DC network with + at 12 V and 0 at 0 V. Switch order is s,t,u (1 means closed). A bracketed resistor conducts only when its switch is closed. Each resistor lists its oriented start and end nodes and its resistance in ohms. R1=g>+:4 R2=g>b:3 R3=b>f:4 R4=e>f:3 R5=e>d:9 R6=c>d:4 R7=a>c:2 R8=0>a:6 R9=c>0:3 R10=f>0:8 R11=+>a:5 R12=e>0:6 R13=e>a:4[s] R14=0>g:8[t] R15=d>g:8[u].\nQuestion: is the signed current of R7 > 1072431/1442767 A?\nInitial comparator: voltage at f > 3 V\nOther comparators: M27: voltage at d > 3 V | M37: voltage at e > 5/2 V\nH means a comparator condition holds and L means it fails. All currents are exact amperes. The last column gives the result of the named current comparison in each setting.\nIn the mark column, * explicitly identifies a setting compatible with both observed readings. A dot means no marker is supplied for that row.\nmark ID stu target_current initial M27 M37 target_current_above_threshold\n. SQ 000 342000/400549 H L L Y\n. HP 001 1072431/1442767 H H L N\n\nObserved readings: initial = H; M37 = L.\nThe table includes every setting compatible with both readings. Use both readings when identifying which settings remain possible.\nY means the named claim holds in every compatible setting. N means it fails in every compatible setting. U means both answers are possible.\nFor Y or N, list all and only the compatible IDs. For U, list exactly two compatible IDs with opposite target answers. Use no duplicate IDs.\nBefore giving any verdict, report the target_current_above_threshold label for each displayed survivor. Return only a JSON object with keys SQ and HP, each having value Y or N. The verdict will be requested separately."
+    },
+    {
+      "role": "assistant",
+      "content": "{\"SQ\":\"Y\",\"HP\":\"N\"}"
+    },
+    {
+      "role": "user",
+      "content": "Both readings have already been supplied. Return only the JSON fields verdict and certificate."
+    }
+  ],
+  "format": {
+    "type": "object",
+    "properties": {
+      "verdict": {
+        "type": "string",
+        "enum": [
+          "Y",
+          "N",
+          "U"
+        ]
+      },
+      "certificate": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "enum": [
+            "SQ",
+            "HP",
+            "GT",
+            "HS",
+            "DT",
+            "BL",
+            "OD",
+            "ET"
+          ]
+        },
+        "minItems": 1,
+        "maxItems": 8
+      }
+    },
+    "required": [
+      "verdict",
+      "certificate"
+    ],
+    "additionalProperties": false
+  },
+  "stream": false,
+  "keep_alive": "9m",
+  "think": "low",
+  "options": {
+    "seed": 2026112482,
+    "temperature": 0,
+    "num_ctx": 8192,
+    "num_predict": 2048
+  }
+}

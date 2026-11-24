@@ -1,0 +1,49 @@
+record,family,arm,kind,pattern,truth,true_labels,reported_labels,reported_verdict,verdict,certificate,label_hits,exact_pair,coherent,status,delivered,warranted,wrong,ids_exact,certified
+label-00,DC-J1,direct,decisive,NN,N,EO=N RM=N,,,U,EO RM,,,,ok,True,False,True,True,False
+label-00,DC-J1,label_first,decisive,NN,N,EO=N RM=N,EO=Y RM=N,U,Y,EO,1,False,False,ok,True,False,True,False,False
+label-01,DC-J1,direct,decisive,YY,Y,FV=Y KS=Y,,,Y,FV KS,,,,ok,True,True,False,True,True
+label-01,DC-J1,label_first,decisive,YY,Y,FV=Y KS=Y,FV=Y KS=Y,Y,Y,FV KS,2,True,True,ok,True,True,False,True,True
+label-02,DC-J1,direct,ambiguous,YN,U,FV=Y RM=N,,,U,FV RM,,,,ok,True,True,False,True,True
+label-02,DC-J1,label_first,ambiguous,YN,U,FV=Y RM=N,FV=Y RM=N,U,Y,FV RM,2,True,False,ok,True,False,True,True,False
+label-03,DC-J1,direct,ambiguous,NY,U,EO=N KS=Y,,,U,EO KS,,,,ok,True,True,False,True,True
+label-03,DC-J1,label_first,ambiguous,NY,U,EO=N KS=Y,EO=N KS=Y,U,Y,KS,2,True,False,ok,True,False,True,False,False
+label-04,DC-J2,direct,decisive,NN,N,BR=N WK=N,,,U,BR WK,,,,ok,True,False,True,True,False
+label-04,DC-J2,label_first,decisive,NN,N,BR=N WK=N,BR=N WK=N,N,N,BR WK,2,True,True,ok,True,True,False,True,True
+label-05,DC-J2,direct,ambiguous,NY,U,BR=N NN=Y,,,U,BR NN,,,,ok,True,True,False,True,True
+label-05,DC-J2,label_first,ambiguous,NY,U,BR=N NN=Y,BR=N NN=N,N,N,NN,1,False,True,ok,True,False,True,False,False
+label-06,DC-J2,direct,ambiguous,YN,U,BF=Y WK=N,,,U,BF WK,,,,ok,True,True,False,True,True
+label-06,DC-J2,label_first,ambiguous,YN,U,BF=Y WK=N,,,,,,,,gated,False,False,False,False,False
+label-07,DC-J2,direct,decisive,YY,Y,BF=Y NN=Y,,,U,BF NN,,,,ok,True,False,True,True,False
+label-07,DC-J2,label_first,decisive,YY,Y,BF=Y NN=Y,BF=Y NN=Y,Y,Y,BF NN,2,True,True,ok,True,True,False,True,True
+label-08,DC-J3,direct,ambiguous,NY,U,NR=N IO=Y,,,U,NR IO,,,,ok,True,True,False,True,True
+label-08,DC-J3,label_first,ambiguous,NY,U,NR=N IO=Y,NR=N IO=Y,U,Y,IO,2,True,False,ok,True,False,True,False,False
+label-09,DC-J3,direct,ambiguous,YN,U,TX=Y PA=N,,,U,TX PA,,,,ok,True,True,False,True,True
+label-09,DC-J3,label_first,ambiguous,YN,U,TX=Y PA=N,TX=Y PA=N,U,U,TX PA,2,True,True,ok,True,True,False,True,True
+label-10,DC-J3,direct,decisive,NN,N,NR=N PA=N,,,N,NR PA,,,,ok,True,True,False,True,True
+label-10,DC-J3,label_first,decisive,NN,N,NR=N PA=N,NR=N PA=N,N,N,NR PA,2,True,True,ok,True,True,False,True,True
+label-11,DC-J3,direct,decisive,YY,Y,TX=Y IO=Y,,,Y,TX IO,,,,ok,True,True,False,True,True
+label-11,DC-J3,label_first,decisive,YY,Y,TX=Y IO=Y,TX=Y IO=Y,Y,Y,TX IO,2,True,True,ok,True,True,False,True,True
+label-12,DC-J4,direct,ambiguous,NY,U,BL=N DT=Y,,,U,BL DT,,,,ok,True,True,False,True,True
+label-12,DC-J4,label_first,ambiguous,NY,U,BL=N DT=Y,BL=N DT=Y,U,Y,DT,2,True,False,ok,True,False,True,False,False
+label-13,DC-J4,direct,decisive,YY,Y,SQ=Y DT=Y,,,U,SQ DT,,,,ok,True,False,True,True,False
+label-13,DC-J4,label_first,decisive,YY,Y,SQ=Y DT=Y,SQ=Y DT=Y,Y,Y,SQ DT,2,True,True,ok,True,True,False,True,True
+label-14,DC-J4,direct,decisive,NN,N,BL=N HP=N,,,N,BL HP,,,,ok,True,True,False,True,True
+label-14,DC-J4,label_first,decisive,NN,N,BL=N HP=N,BL=Y HP=N,U,Y,BL,1,False,False,ok,True,False,True,False,False
+label-15,DC-J4,direct,ambiguous,YN,U,SQ=Y HP=N,,,N,SQ,,,,ok,True,False,True,False,False
+label-15,DC-J4,label_first,ambiguous,YN,U,SQ=Y HP=N,SQ=Y HP=N,U,Y,SQ,2,True,False,ok,True,False,True,False,False
+label-16,DC-J5,direct,decisive,NN,N,ZU=N KV=N,,,,,,,,invalid,False,False,False,False,False
+label-16,DC-J5,label_first,decisive,NN,N,ZU=N KV=N,ZU=N KV=N,N,N,ZU KV,2,True,True,ok,True,True,False,True,True
+label-17,DC-J5,direct,decisive,YY,Y,QD=Y AF=Y,,,Y,QD AF,,,,ok,True,True,False,True,True
+label-17,DC-J5,label_first,decisive,YY,Y,QD=Y AF=Y,QD=Y AF=Y,Y,Y,QD AF,2,True,True,ok,True,True,False,True,True
+label-18,DC-J5,direct,ambiguous,YN,U,QD=Y KV=N,,,U,QD KV,,,,ok,True,True,False,True,True
+label-18,DC-J5,label_first,ambiguous,YN,U,QD=Y KV=N,QD=N KV=N,N,N,QD KV,1,False,True,ok,True,False,True,True,False
+label-19,DC-J5,direct,ambiguous,NY,U,ZU=N AF=Y,,,,,,,,invalid,False,False,False,False,False
+label-19,DC-J5,label_first,ambiguous,NY,U,ZU=N AF=Y,ZU=N AF=Y,U,Y,AF,2,True,False,ok,True,False,True,False,False
+label-20,DC-J6,direct,decisive,NN,N,LM=N EM=N,,,U,LM EM,,,,ok,True,False,True,True,False
+label-20,DC-J6,label_first,decisive,NN,N,LM=N EM=N,LM=N EM=N,N,N,LM EM,2,True,True,ok,True,True,False,True,True
+label-21,DC-J6,direct,ambiguous,YN,U,FM=Y EM=N,,,U,EW EW,,,,ok,True,True,False,False,False
+label-21,DC-J6,label_first,ambiguous,YN,U,FM=Y EM=N,FM=Y EM=N,U,Y,FM EM,2,True,False,ok,True,False,True,True,False
+label-22,DC-J6,direct,ambiguous,NY,U,LM=N OL=Y,,,U,LM OL,,,,ok,True,True,False,True,True
+label-22,DC-J6,label_first,ambiguous,NY,U,LM=N OL=Y,LM=N OL=N,N,N,LM OL,1,False,True,ok,True,False,True,True,False
+label-23,DC-J6,direct,decisive,YY,Y,FM=Y OL=Y,,,U,FM OL,,,,ok,True,False,True,True,False
+label-23,DC-J6,label_first,decisive,YY,Y,FM=Y OL=Y,FM=Y OL=Y,Y,Y,FM OL,2,True,True,ok,True,True,False,True,True

@@ -1,0 +1,19 @@
+{
+  "request_sha256": "280a46112ec8dd9fc46e13457be36d028dfe38a4801e285f34e4f74ccfe5d1ad",
+  "started": "2026-11-24T20:01:11.945934+00:00",
+  "answer": {
+    "TX": "Y",
+    "PA": "N"
+  },
+  "status": "ok",
+  "content": "{\"TX\":\"Y\",\"PA\":\"N\"}",
+  "usage": {
+    "prompt_eval_count": 676,
+    "eval_count": 341,
+    "total_duration": 45569998459,
+    "load_duration": 5356875,
+    "eval_duration": 42200019000,
+    "done_reason": "stop"
+  },
+  "ended": "2026-11-24T20:01:57.911355+00:00"
+}

@@ -1,0 +1,66 @@
+{
+  "model": "gpt-oss:20b",
+  "messages": [
+    {
+      "role": "system",
+      "content": "Track the same object through every step. Identify the exact fact that would settle the claim and locate where the record first supplies it. Test your initial conclusion by trying to build two cases that obey every observation so far but give opposite answers. If both survive, record which hidden feature makes them disagree. Before requesting evidence, predict how each candidate case would answer each available lookup. Choose a reading that separates opposite conclusions across the surviving cases. If all cases already agree, identify the common conclusion and collect the complete evidence for it. After a lookup, remove only cases that contradict the returned value. Test the claim again on those that remain. Preserve the identifiers supporting the verdict so another researcher can reconstruct it."
+    },
+    {
+      "role": "user",
+      "content": "DC network with + at 12 V and 0 at 0 V. Switch order is s,t,u (1 means closed). A bracketed resistor conducts only when its switch is closed. Each resistor lists its oriented start and end nodes and its resistance in ohms. R1=d>+:6 R2=a>d:4 R3=f>a:7 R4=b>f:7 R5=b>e:7 R6=c>e:4 R7=0>c:7 R8=e>a:7 R9=a>c:5 R10=f>e:7 R11=f>0:6 R12=c>b:2 R13=b>+:6 R14=+>c:4[s] R15=0>a:6[t] R16=c>d:3[u].\nQuestion: is the signed current of R8 > 0 A?\nInitial comparator: signed current of R7 > -7/8 A\nOther comparators: M24: signed current of R16 > -1/6 A | M30: signed current of R2 > -6/11 A\nH means a comparator condition holds and L means it fails. All currents are exact amperes. The last column gives the result of the named current comparison in each setting.\nIn the mark column, * explicitly identifies a setting compatible with both observed readings. A dot means no marker is supplied for that row.\nmark ID stu target_current initial M24 M30 target_current_above_threshold\n. BR 101 -764112/25279915 L L H N\n. NN 111 3452277/27200006 L L L Y\n\nObserved readings: initial = L; M24 = L.\nThe table includes every setting compatible with both readings. Use both readings when identifying which settings remain possible.\nY means the named claim holds in every compatible setting. N means it fails in every compatible setting. U means both answers are possible.\nFor Y or N, list all and only the compatible IDs. For U, list exactly two compatible IDs with opposite target answers. Use no duplicate IDs.\nBefore giving any verdict, report the target_current_above_threshold label for each displayed survivor. Return only a JSON object with keys BR and NN, each having value Y or N. The verdict will be requested separately."
+    },
+    {
+      "role": "assistant",
+      "content": "{\"BR\":\"N\",\"NN\":\"N\"}"
+    },
+    {
+      "role": "user",
+      "content": "Both readings have already been supplied. Return only the JSON fields verdict and certificate."
+    }
+  ],
+  "format": {
+    "type": "object",
+    "properties": {
+      "verdict": {
+        "type": "string",
+        "enum": [
+          "Y",
+          "N",
+          "U"
+        ]
+      },
+      "certificate": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "enum": [
+            "LR",
+            "CV",
+            "QJ",
+            "VN",
+            "WK",
+            "BR",
+            "BF",
+            "NN"
+          ]
+        },
+        "minItems": 1,
+        "maxItems": 8
+      }
+    },
+    "required": [
+      "verdict",
+      "certificate"
+    ],
+    "additionalProperties": false
+  },
+  "stream": false,
+  "keep_alive": "9m",
+  "think": "low",
+  "options": {
+    "seed": 2026112472,
+    "temperature": 0,
+    "num_ctx": 8192,
+    "num_predict": 2048
+  }
+}

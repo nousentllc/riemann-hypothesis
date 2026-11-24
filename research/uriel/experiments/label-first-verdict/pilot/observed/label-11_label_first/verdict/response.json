@@ -1,0 +1,22 @@
+{
+  "request_sha256": "5ad102b02f08b7c426f20d504ded1865230297195c58a7370f9a346887f6c521",
+  "started": "2026-11-24T20:03:51.601175+00:00",
+  "answer": {
+    "verdict": "Y",
+    "certificate": [
+      "TX",
+      "IO"
+    ]
+  },
+  "status": "ok",
+  "content": "{\"verdict\":\"Y\",\"certificate\":[\"TX\",\"IO\"]}",
+  "usage": {
+    "prompt_eval_count": 712,
+    "eval_count": 54,
+    "total_duration": 6355538208,
+    "load_duration": 3933250,
+    "eval_duration": 4450206000,
+    "done_reason": "stop"
+  },
+  "ended": "2026-11-24T20:03:57.962907+00:00"
+}

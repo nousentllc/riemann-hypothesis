@@ -1,0 +1,189 @@
+{
+  "totals": {
+    "direct": {
+      "n": 24,
+      "delivered": 22,
+      "missing": 2,
+      "wrong": 7,
+      "warranted": 15,
+      "certified": 14,
+      "ids_exact": 20
+    },
+    "label_first": {
+      "n": 24,
+      "delivered": 23,
+      "missing": 1,
+      "wrong": 12,
+      "warranted": 11,
+      "certified": 11,
+      "ids_exact": 15,
+      "reported": 23,
+      "labels_correct": 41,
+      "both_labels_correct": 18,
+      "accurate_labels_wrong_verdict": 7,
+      "inaccurate_labels_warranted_verdict": 0,
+      "coherent": 14,
+      "incoherent": 9
+    }
+  },
+  "by_family": {
+    "DC-J1": {
+      "direct": 3,
+      "label_first": 1
+    },
+    "DC-J2": {
+      "direct": 2,
+      "label_first": 2
+    },
+    "DC-J3": {
+      "direct": 4,
+      "label_first": 3
+    },
+    "DC-J4": {
+      "direct": 2,
+      "label_first": 1
+    },
+    "DC-J5": {
+      "direct": 2,
+      "label_first": 2
+    },
+    "DC-J6": {
+      "direct": 2,
+      "label_first": 2
+    }
+  },
+  "by_pattern": {
+    "NN": {
+      "direct": 2,
+      "label_first": 4
+    },
+    "YY": {
+      "direct": 3,
+      "label_first": 6
+    },
+    "YN": {
+      "direct": 5,
+      "label_first": 1
+    },
+    "NY": {
+      "direct": 5,
+      "label_first": 0
+    }
+  },
+  "paired": {
+    "warranted": {
+      "both": [
+        "label-01",
+        "label-09",
+        "label-10",
+        "label-11",
+        "label-17"
+      ],
+      "neither": [
+        "label-00",
+        "label-15",
+        "label-19"
+      ],
+      "direct_only": [
+        "label-02",
+        "label-03",
+        "label-05",
+        "label-06",
+        "label-08",
+        "label-12",
+        "label-14",
+        "label-18",
+        "label-21",
+        "label-22"
+      ],
+      "label_first_only": [
+        "label-04",
+        "label-07",
+        "label-13",
+        "label-16",
+        "label-20",
+        "label-23"
+      ]
+    },
+    "certified": {
+      "both": [
+        "label-01",
+        "label-09",
+        "label-10",
+        "label-11",
+        "label-17"
+      ],
+      "neither": [
+        "label-00",
+        "label-15",
+        "label-19",
+        "label-21"
+      ],
+      "direct_only": [
+        "label-02",
+        "label-03",
+        "label-05",
+        "label-06",
+        "label-08",
+        "label-12",
+        "label-14",
+        "label-18",
+        "label-22"
+      ],
+      "label_first_only": [
+        "label-04",
+        "label-07",
+        "label-13",
+        "label-16",
+        "label-20",
+        "label-23"
+      ]
+    }
+  },
+  "stage_status": {
+    "direct": {
+      "ok": 22,
+      "invalid": 2
+    },
+    "labels": {
+      "ok": 23,
+      "invalid": 1
+    },
+    "verdict": {
+      "ok": 23
+    }
+  },
+  "usage": {
+    "direct": {
+      "issued": 24,
+      "length": 2,
+      "usage_available": 24,
+      "generated_tokens": 9126,
+      "prompt_tokens": 15504,
+      "service_ns": 888314720080
+    },
+    "labels": {
+      "issued": 24,
+      "length": 1,
+      "usage_available": 24,
+      "generated_tokens": 6904,
+      "prompt_tokens": 16156,
+      "service_ns": 707570411750
+    },
+    "verdict": {
+      "issued": 23,
+      "length": 0,
+      "usage_available": 23,
+      "generated_tokens": 2127,
+      "prompt_tokens": 16288,
+      "service_ns": 256698192375
+    }
+  },
+  "observed_net": -4,
+  "missing_net_bounds": [
+    -6,
+    -3
+  ],
+  "layout_sign_flip_two_sided": "1/4",
+  "paid_api_usd": 0
+}

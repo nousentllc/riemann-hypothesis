@@ -1,0 +1,21 @@
+{
+  "request_sha256": "a37f6b27745998f39ea6c451e7089eb1c608d39e43d26d8a27df96dcc32d434d",
+  "started": "2026-11-24T20:10:01.908462+00:00",
+  "answer": {
+    "verdict": "N",
+    "certificate": [
+      "NN"
+    ]
+  },
+  "status": "ok",
+  "content": "{\"verdict\":\"N\",\"certificate\":[\"NN\"]}",
+  "usage": {
+    "prompt_eval_count": 723,
+    "eval_count": 103,
+    "total_duration": 14919605958,
+    "load_duration": 452198083,
+    "eval_duration": 12131808000,
+    "done_reason": "stop"
+  },
+  "ended": "2026-11-24T20:10:17.399786+00:00"
+}

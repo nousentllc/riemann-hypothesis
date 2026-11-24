@@ -1,0 +1,1586 @@
+{
+  "cases": {
+    "label-00_direct": {
+      "certificate": "EO RM",
+      "certified": false,
+      "committed_labels": null,
+      "final_status": "ok",
+      "ids_exact": true,
+      "label_hits": null,
+      "pattern": "NN",
+      "public_labels": {
+        "EO": "N",
+        "RM": "N"
+      },
+      "reported_verdict": null,
+      "truth": "N",
+      "verdict": "U",
+      "warranted": false
+    },
+    "label-00_label_first": {
+      "certificate": "EO",
+      "certified": false,
+      "committed_labels": {
+        "EO": "Y",
+        "RM": "N"
+      },
+      "final_status": "ok",
+      "ids_exact": false,
+      "label_hits": 1,
+      "pattern": "NN",
+      "public_labels": {
+        "EO": "N",
+        "RM": "N"
+      },
+      "reported_verdict": "U",
+      "truth": "N",
+      "verdict": "Y",
+      "warranted": false
+    },
+    "label-01_direct": {
+      "certificate": "FV KS",
+      "certified": true,
+      "committed_labels": null,
+      "final_status": "ok",
+      "ids_exact": true,
+      "label_hits": null,
+      "pattern": "YY",
+      "public_labels": {
+        "FV": "Y",
+        "KS": "Y"
+      },
+      "reported_verdict": null,
+      "truth": "Y",
+      "verdict": "Y",
+      "warranted": true
+    },
+    "label-01_label_first": {
+      "certificate": "FV KS",
+      "certified": true,
+      "committed_labels": {
+        "FV": "Y",
+        "KS": "Y"
+      },
+      "final_status": "ok",
+      "ids_exact": true,
+      "label_hits": 2,
+      "pattern": "YY",
+      "public_labels": {
+        "FV": "Y",
+        "KS": "Y"
+      },
+      "reported_verdict": "Y",
+      "truth": "Y",
+      "verdict": "Y",
+      "warranted": true
+    },
+    "label-02_direct": {
+      "certificate": "FV RM",
+      "certified": true,
+      "committed_labels": null,
+      "final_status": "ok",
+      "ids_exact": true,
+      "label_hits": null,
+      "pattern": "YN",
+      "public_labels": {
+        "FV": "Y",
+        "RM": "N"
+      },
+      "reported_verdict": null,
+      "truth": "U",
+      "verdict": "U",
+      "warranted": true
+    },
+    "label-02_label_first": {
+      "certificate": "FV RM",
+      "certified": false,
+      "committed_labels": {
+        "FV": "Y",
+        "RM": "N"
+      },
+      "final_status": "ok",
+      "ids_exact": true,
+      "label_hits": 2,
+      "pattern": "YN",
+      "public_labels": {
+        "FV": "Y",
+        "RM": "N"
+      },
+      "reported_verdict": "U",
+      "truth": "U",
+      "verdict": "Y",
+      "warranted": false
+    },
+    "label-03_direct": {
+      "certificate": "EO KS",
+      "certified": true,
+      "committed_labels": null,
+      "final_status": "ok",
+      "ids_exact": true,
+      "label_hits": null,
+      "pattern": "NY",
+      "public_labels": {
+        "EO": "N",
+        "KS": "Y"
+      },
+      "reported_verdict": null,
+      "truth": "U",
+      "verdict": "U",
+      "warranted": true
+    },
+    "label-03_label_first": {
+      "certificate": "KS",
+      "certified": false,
+      "committed_labels": {
+        "EO": "N",
+        "KS": "Y"
+      },
+      "final_status": "ok",
+      "ids_exact": false,
+      "label_hits": 2,
+      "pattern": "NY",
+      "public_labels": {
+        "EO": "N",
+        "KS": "Y"
+      },
+      "reported_verdict": "U",
+      "truth": "U",
+      "verdict": "Y",
+      "warranted": false
+    },
+    "label-04_direct": {
+      "certificate": "BR WK",
+      "certified": false,
+      "committed_labels": null,
+      "final_status": "ok",
+      "ids_exact": true,
+      "label_hits": null,
+      "pattern": "NN",
+      "public_labels": {
+        "BR": "N",
+        "WK": "N"
+      },
+      "reported_verdict": null,
+      "truth": "N",
+      "verdict": "U",
+      "warranted": false
+    },
+    "label-04_label_first": {
+      "certificate": "BR WK",
+      "certified": true,
+      "committed_labels": {
+        "BR": "N",
+        "WK": "N"
+      },
+      "final_status": "ok",
+      "ids_exact": true,
+      "label_hits": 2,
+      "pattern": "NN",
+      "public_labels": {
+        "BR": "N",
+        "WK": "N"
+      },
+      "reported_verdict": "N",
+      "truth": "N",
+      "verdict": "N",
+      "warranted": true
+    },
+    "label-05_direct": {
+      "certificate": "BR NN",
+      "certified": true,
+      "committed_labels": null,
+      "final_status": "ok",
+      "ids_exact": true,
+      "label_hits": null,
+      "pattern": "NY",
+      "public_labels": {
+        "BR": "N",
+        "NN": "Y"
+      },
+      "reported_verdict": null,
+      "truth": "U",
+      "verdict": "U",
+      "warranted": true
+    },
+    "label-05_label_first": {
+      "certificate": "NN",
+      "certified": false,
+      "committed_labels": {
+        "BR": "N",
+        "NN": "N"
+      },
+      "final_status": "ok",
+      "ids_exact": false,
+      "label_hits": 1,
+      "pattern": "NY",
+      "public_labels": {
+        "BR": "N",
+        "NN": "Y"
+      },
+      "reported_verdict": "N",
+      "truth": "U",
+      "verdict": "N",
+      "warranted": false
+    },
+    "label-06_direct": {
+      "certificate": "BF WK",
+      "certified": true,
+      "committed_labels": null,
+      "final_status": "ok",
+      "ids_exact": true,
+      "label_hits": null,
+      "pattern": "YN",
+      "public_labels": {
+        "BF": "Y",
+        "WK": "N"
+      },
+      "reported_verdict": null,
+      "truth": "U",
+      "verdict": "U",
+      "warranted": true
+    },
+    "label-06_label_first": {
+      "certificate": "",
+      "certified": false,
+      "committed_labels": null,
+      "final_status": "gated",
+      "ids_exact": false,
+      "label_hits": null,
+      "pattern": "YN",
+      "public_labels": {
+        "BF": "Y",
+        "WK": "N"
+      },
+      "reported_verdict": null,
+      "truth": "U",
+      "verdict": null,
+      "warranted": false
+    },
+    "label-07_direct": {
+      "certificate": "BF NN",
+      "certified": false,
+      "committed_labels": null,
+      "final_status": "ok",
+      "ids_exact": true,
+      "label_hits": null,
+      "pattern": "YY",
+      "public_labels": {
+        "BF": "Y",
+        "NN": "Y"
+      },
+      "reported_verdict": null,
+      "truth": "Y",
+      "verdict": "U",
+      "warranted": false
+    },
+    "label-07_label_first": {
+      "certificate": "BF NN",
+      "certified": true,
+      "committed_labels": {
+        "BF": "Y",
+        "NN": "Y"
+      },
+      "final_status": "ok",
+      "ids_exact": true,
+      "label_hits": 2,
+      "pattern": "YY",
+      "public_labels": {
+        "BF": "Y",
+        "NN": "Y"
+      },
+      "reported_verdict": "Y",
+      "truth": "Y",
+      "verdict": "Y",
+      "warranted": true
+    },
+    "label-08_direct": {
+      "certificate": "NR IO",
+      "certified": true,
+      "committed_labels": null,
+      "final_status": "ok",
+      "ids_exact": true,
+      "label_hits": null,
+      "pattern": "NY",
+      "public_labels": {
+        "IO": "Y",
+        "NR": "N"
+      },
+      "reported_verdict": null,
+      "truth": "U",
+      "verdict": "U",
+      "warranted": true
+    },
+    "label-08_label_first": {
+      "certificate": "IO",
+      "certified": false,
+      "committed_labels": {
+        "IO": "Y",
+        "NR": "N"
+      },
+      "final_status": "ok",
+      "ids_exact": false,
+      "label_hits": 2,
+      "pattern": "NY",
+      "public_labels": {
+        "IO": "Y",
+        "NR": "N"
+      },
+      "reported_verdict": "U",
+      "truth": "U",
+      "verdict": "Y",
+      "warranted": false
+    },
+    "label-09_direct": {
+      "certificate": "TX PA",
+      "certified": true,
+      "committed_labels": null,
+      "final_status": "ok",
+      "ids_exact": true,
+      "label_hits": null,
+      "pattern": "YN",
+      "public_labels": {
+        "PA": "N",
+        "TX": "Y"
+      },
+      "reported_verdict": null,
+      "truth": "U",
+      "verdict": "U",
+      "warranted": true
+    },
+    "label-09_label_first": {
+      "certificate": "TX PA",
+      "certified": true,
+      "committed_labels": {
+        "PA": "N",
+        "TX": "Y"
+      },
+      "final_status": "ok",
+      "ids_exact": true,
+      "label_hits": 2,
+      "pattern": "YN",
+      "public_labels": {
+        "PA": "N",
+        "TX": "Y"
+      },
+      "reported_verdict": "U",
+      "truth": "U",
+      "verdict": "U",
+      "warranted": true
+    },
+    "label-10_direct": {
+      "certificate": "NR PA",
+      "certified": true,
+      "committed_labels": null,
+      "final_status": "ok",
+      "ids_exact": true,
+      "label_hits": null,
+      "pattern": "NN",
+      "public_labels": {
+        "NR": "N",
+        "PA": "N"
+      },
+      "reported_verdict": null,
+      "truth": "N",
+      "verdict": "N",
+      "warranted": true
+    },
+    "label-10_label_first": {
+      "certificate": "NR PA",
+      "certified": true,
+      "committed_labels": {
+        "NR": "N",
+        "PA": "N"
+      },
+      "final_status": "ok",
+      "ids_exact": true,
+      "label_hits": 2,
+      "pattern": "NN",
+      "public_labels": {
+        "NR": "N",
+        "PA": "N"
+      },
+      "reported_verdict": "N",
+      "truth": "N",
+      "verdict": "N",
+      "warranted": true
+    },
+    "label-11_direct": {
+      "certificate": "TX IO",
+      "certified": true,
+      "committed_labels": null,
+      "final_status": "ok",
+      "ids_exact": true,
+      "label_hits": null,
+      "pattern": "YY",
+      "public_labels": {
+        "IO": "Y",
+        "TX": "Y"
+      },
+      "reported_verdict": null,
+      "truth": "Y",
+      "verdict": "Y",
+      "warranted": true
+    },
+    "label-11_label_first": {
+      "certificate": "TX IO",
+      "certified": true,
+      "committed_labels": {
+        "IO": "Y",
+        "TX": "Y"
+      },
+      "final_status": "ok",
+      "ids_exact": true,
+      "label_hits": 2,
+      "pattern": "YY",
+      "public_labels": {
+        "IO": "Y",
+        "TX": "Y"
+      },
+      "reported_verdict": "Y",
+      "truth": "Y",
+      "verdict": "Y",
+      "warranted": true
+    },
+    "label-12_direct": {
+      "certificate": "BL DT",
+      "certified": true,
+      "committed_labels": null,
+      "final_status": "ok",
+      "ids_exact": true,
+      "label_hits": null,
+      "pattern": "NY",
+      "public_labels": {
+        "BL": "N",
+        "DT": "Y"
+      },
+      "reported_verdict": null,
+      "truth": "U",
+      "verdict": "U",
+      "warranted": true
+    },
+    "label-12_label_first": {
+      "certificate": "DT",
+      "certified": false,
+      "committed_labels": {
+        "BL": "N",
+        "DT": "Y"
+      },
+      "final_status": "ok",
+      "ids_exact": false,
+      "label_hits": 2,
+      "pattern": "NY",
+      "public_labels": {
+        "BL": "N",
+        "DT": "Y"
+      },
+      "reported_verdict": "U",
+      "truth": "U",
+      "verdict": "Y",
+      "warranted": false
+    },
+    "label-13_direct": {
+      "certificate": "SQ DT",
+      "certified": false,
+      "committed_labels": null,
+      "final_status": "ok",
+      "ids_exact": true,
+      "label_hits": null,
+      "pattern": "YY",
+      "public_labels": {
+        "DT": "Y",
+        "SQ": "Y"
+      },
+      "reported_verdict": null,
+      "truth": "Y",
+      "verdict": "U",
+      "warranted": false
+    },
+    "label-13_label_first": {
+      "certificate": "SQ DT",
+      "certified": true,
+      "committed_labels": {
+        "DT": "Y",
+        "SQ": "Y"
+      },
+      "final_status": "ok",
+      "ids_exact": true,
+      "label_hits": 2,
+      "pattern": "YY",
+      "public_labels": {
+        "DT": "Y",
+        "SQ": "Y"
+      },
+      "reported_verdict": "Y",
+      "truth": "Y",
+      "verdict": "Y",
+      "warranted": true
+    },
+    "label-14_direct": {
+      "certificate": "BL HP",
+      "certified": true,
+      "committed_labels": null,
+      "final_status": "ok",
+      "ids_exact": true,
+      "label_hits": null,
+      "pattern": "NN",
+      "public_labels": {
+        "BL": "N",
+        "HP": "N"
+      },
+      "reported_verdict": null,
+      "truth": "N",
+      "verdict": "N",
+      "warranted": true
+    },
+    "label-14_label_first": {
+      "certificate": "BL",
+      "certified": false,
+      "committed_labels": {
+        "BL": "Y",
+        "HP": "N"
+      },
+      "final_status": "ok",
+      "ids_exact": false,
+      "label_hits": 1,
+      "pattern": "NN",
+      "public_labels": {
+        "BL": "N",
+        "HP": "N"
+      },
+      "reported_verdict": "U",
+      "truth": "N",
+      "verdict": "Y",
+      "warranted": false
+    },
+    "label-15_direct": {
+      "certificate": "SQ",
+      "certified": false,
+      "committed_labels": null,
+      "final_status": "ok",
+      "ids_exact": false,
+      "label_hits": null,
+      "pattern": "YN",
+      "public_labels": {
+        "HP": "N",
+        "SQ": "Y"
+      },
+      "reported_verdict": null,
+      "truth": "U",
+      "verdict": "N",
+      "warranted": false
+    },
+    "label-15_label_first": {
+      "certificate": "SQ",
+      "certified": false,
+      "committed_labels": {
+        "HP": "N",
+        "SQ": "Y"
+      },
+      "final_status": "ok",
+      "ids_exact": false,
+      "label_hits": 2,
+      "pattern": "YN",
+      "public_labels": {
+        "HP": "N",
+        "SQ": "Y"
+      },
+      "reported_verdict": "U",
+      "truth": "U",
+      "verdict": "Y",
+      "warranted": false
+    },
+    "label-16_direct": {
+      "certificate": "",
+      "certified": false,
+      "committed_labels": null,
+      "final_status": "invalid",
+      "ids_exact": false,
+      "label_hits": null,
+      "pattern": "NN",
+      "public_labels": {
+        "KV": "N",
+        "ZU": "N"
+      },
+      "reported_verdict": null,
+      "truth": "N",
+      "verdict": null,
+      "warranted": false
+    },
+    "label-16_label_first": {
+      "certificate": "ZU KV",
+      "certified": true,
+      "committed_labels": {
+        "KV": "N",
+        "ZU": "N"
+      },
+      "final_status": "ok",
+      "ids_exact": true,
+      "label_hits": 2,
+      "pattern": "NN",
+      "public_labels": {
+        "KV": "N",
+        "ZU": "N"
+      },
+      "reported_verdict": "N",
+      "truth": "N",
+      "verdict": "N",
+      "warranted": true
+    },
+    "label-17_direct": {
+      "certificate": "QD AF",
+      "certified": true,
+      "committed_labels": null,
+      "final_status": "ok",
+      "ids_exact": true,
+      "label_hits": null,
+      "pattern": "YY",
+      "public_labels": {
+        "AF": "Y",
+        "QD": "Y"
+      },
+      "reported_verdict": null,
+      "truth": "Y",
+      "verdict": "Y",
+      "warranted": true
+    },
+    "label-17_label_first": {
+      "certificate": "QD AF",
+      "certified": true,
+      "committed_labels": {
+        "AF": "Y",
+        "QD": "Y"
+      },
+      "final_status": "ok",
+      "ids_exact": true,
+      "label_hits": 2,
+      "pattern": "YY",
+      "public_labels": {
+        "AF": "Y",
+        "QD": "Y"
+      },
+      "reported_verdict": "Y",
+      "truth": "Y",
+      "verdict": "Y",
+      "warranted": true
+    },
+    "label-18_direct": {
+      "certificate": "QD KV",
+      "certified": true,
+      "committed_labels": null,
+      "final_status": "ok",
+      "ids_exact": true,
+      "label_hits": null,
+      "pattern": "YN",
+      "public_labels": {
+        "KV": "N",
+        "QD": "Y"
+      },
+      "reported_verdict": null,
+      "truth": "U",
+      "verdict": "U",
+      "warranted": true
+    },
+    "label-18_label_first": {
+      "certificate": "QD KV",
+      "certified": false,
+      "committed_labels": {
+        "KV": "N",
+        "QD": "N"
+      },
+      "final_status": "ok",
+      "ids_exact": true,
+      "label_hits": 1,
+      "pattern": "YN",
+      "public_labels": {
+        "KV": "N",
+        "QD": "Y"
+      },
+      "reported_verdict": "N",
+      "truth": "U",
+      "verdict": "N",
+      "warranted": false
+    },
+    "label-19_direct": {
+      "certificate": "",
+      "certified": false,
+      "committed_labels": null,
+      "final_status": "invalid",
+      "ids_exact": false,
+      "label_hits": null,
+      "pattern": "NY",
+      "public_labels": {
+        "AF": "Y",
+        "ZU": "N"
+      },
+      "reported_verdict": null,
+      "truth": "U",
+      "verdict": null,
+      "warranted": false
+    },
+    "label-19_label_first": {
+      "certificate": "AF",
+      "certified": false,
+      "committed_labels": {
+        "AF": "Y",
+        "ZU": "N"
+      },
+      "final_status": "ok",
+      "ids_exact": false,
+      "label_hits": 2,
+      "pattern": "NY",
+      "public_labels": {
+        "AF": "Y",
+        "ZU": "N"
+      },
+      "reported_verdict": "U",
+      "truth": "U",
+      "verdict": "Y",
+      "warranted": false
+    },
+    "label-20_direct": {
+      "certificate": "LM EM",
+      "certified": false,
+      "committed_labels": null,
+      "final_status": "ok",
+      "ids_exact": true,
+      "label_hits": null,
+      "pattern": "NN",
+      "public_labels": {
+        "EM": "N",
+        "LM": "N"
+      },
+      "reported_verdict": null,
+      "truth": "N",
+      "verdict": "U",
+      "warranted": false
+    },
+    "label-20_label_first": {
+      "certificate": "LM EM",
+      "certified": true,
+      "committed_labels": {
+        "EM": "N",
+        "LM": "N"
+      },
+      "final_status": "ok",
+      "ids_exact": true,
+      "label_hits": 2,
+      "pattern": "NN",
+      "public_labels": {
+        "EM": "N",
+        "LM": "N"
+      },
+      "reported_verdict": "N",
+      "truth": "N",
+      "verdict": "N",
+      "warranted": true
+    },
+    "label-21_direct": {
+      "certificate": "EW EW",
+      "certified": false,
+      "committed_labels": null,
+      "final_status": "ok",
+      "ids_exact": false,
+      "label_hits": null,
+      "pattern": "YN",
+      "public_labels": {
+        "EM": "N",
+        "FM": "Y"
+      },
+      "reported_verdict": null,
+      "truth": "U",
+      "verdict": "U",
+      "warranted": true
+    },
+    "label-21_label_first": {
+      "certificate": "FM EM",
+      "certified": false,
+      "committed_labels": {
+        "EM": "N",
+        "FM": "Y"
+      },
+      "final_status": "ok",
+      "ids_exact": true,
+      "label_hits": 2,
+      "pattern": "YN",
+      "public_labels": {
+        "EM": "N",
+        "FM": "Y"
+      },
+      "reported_verdict": "U",
+      "truth": "U",
+      "verdict": "Y",
+      "warranted": false
+    },
+    "label-22_direct": {
+      "certificate": "LM OL",
+      "certified": true,
+      "committed_labels": null,
+      "final_status": "ok",
+      "ids_exact": true,
+      "label_hits": null,
+      "pattern": "NY",
+      "public_labels": {
+        "LM": "N",
+        "OL": "Y"
+      },
+      "reported_verdict": null,
+      "truth": "U",
+      "verdict": "U",
+      "warranted": true
+    },
+    "label-22_label_first": {
+      "certificate": "LM OL",
+      "certified": false,
+      "committed_labels": {
+        "LM": "N",
+        "OL": "N"
+      },
+      "final_status": "ok",
+      "ids_exact": true,
+      "label_hits": 1,
+      "pattern": "NY",
+      "public_labels": {
+        "LM": "N",
+        "OL": "Y"
+      },
+      "reported_verdict": "N",
+      "truth": "U",
+      "verdict": "N",
+      "warranted": false
+    },
+    "label-23_direct": {
+      "certificate": "FM OL",
+      "certified": false,
+      "committed_labels": null,
+      "final_status": "ok",
+      "ids_exact": true,
+      "label_hits": null,
+      "pattern": "YY",
+      "public_labels": {
+        "FM": "Y",
+        "OL": "Y"
+      },
+      "reported_verdict": null,
+      "truth": "Y",
+      "verdict": "U",
+      "warranted": false
+    },
+    "label-23_label_first": {
+      "certificate": "FM OL",
+      "certified": true,
+      "committed_labels": {
+        "FM": "Y",
+        "OL": "Y"
+      },
+      "final_status": "ok",
+      "ids_exact": true,
+      "label_hits": 2,
+      "pattern": "YY",
+      "public_labels": {
+        "FM": "Y",
+        "OL": "Y"
+      },
+      "reported_verdict": "Y",
+      "truth": "Y",
+      "verdict": "Y",
+      "warranted": true
+    }
+  },
+  "counts": {
+    "direct": {
+      "certified": 14,
+      "missing": 2,
+      "warranted": 15,
+      "wrong": 7
+    },
+    "label_first": {
+      "certified": 11,
+      "missing": 1,
+      "warranted": 11,
+      "wrong": 12
+    }
+  },
+  "fair_sign_distribution": {
+    "-4": 8,
+    "-2": 16,
+    "0": 16,
+    "2": 16,
+    "4": 8
+  },
+  "families": {
+    "DC-J1": {
+      "direct": 3,
+      "label_first": 1
+    },
+    "DC-J2": {
+      "direct": 2,
+      "label_first": 2
+    },
+    "DC-J3": {
+      "direct": 4,
+      "label_first": 3
+    },
+    "DC-J4": {
+      "direct": 2,
+      "label_first": 1
+    },
+    "DC-J5": {
+      "direct": 2,
+      "label_first": 2
+    },
+    "DC-J6": {
+      "direct": 2,
+      "label_first": 2
+    }
+  },
+  "label_flow": {
+    "accurate labels / warranted verdict": 11,
+    "accurate labels / wrong verdict": 7,
+    "inaccurate labels / wrong verdict": 5,
+    "missing labels / missing verdict": 1
+  },
+  "p_exact": "1/4",
+  "stage_order": [
+    {
+      "arm": "direct",
+      "end": "2026-11-24T19:43:23.809914+00:00",
+      "record": "label-15",
+      "seconds": 36.569071,
+      "stage": "direct",
+      "start": "2026-11-24T19:42:47.240843+00:00",
+      "status": "ok"
+    },
+    {
+      "arm": "label_first",
+      "end": "2026-11-24T19:43:31.835468+00:00",
+      "record": "label-18",
+      "seconds": 8.016636,
+      "stage": "labels",
+      "start": "2026-11-24T19:43:23.818832+00:00",
+      "status": "ok"
+    },
+    {
+      "arm": "label_first",
+      "end": "2026-11-24T19:43:35.995381+00:00",
+      "record": "label-18",
+      "seconds": 4.156095,
+      "stage": "verdict",
+      "start": "2026-11-24T19:43:31.839286+00:00",
+      "status": "ok"
+    },
+    {
+      "arm": "direct",
+      "end": "2026-11-24T19:44:08.400311+00:00",
+      "record": "label-20",
+      "seconds": 32.391651,
+      "stage": "direct",
+      "start": "2026-11-24T19:43:36.008660+00:00",
+      "status": "ok"
+    },
+    {
+      "arm": "label_first",
+      "end": "2026-11-24T19:44:20.246196+00:00",
+      "record": "label-08",
+      "seconds": 11.837526,
+      "stage": "labels",
+      "start": "2026-11-24T19:44:08.408670+00:00",
+      "status": "ok"
+    },
+    {
+      "arm": "label_first",
+      "end": "2026-11-24T19:44:25.235276+00:00",
+      "record": "label-08",
+      "seconds": 4.986568,
+      "stage": "verdict",
+      "start": "2026-11-24T19:44:20.248708+00:00",
+      "status": "ok"
+    },
+    {
+      "arm": "label_first",
+      "end": "2026-11-24T19:44:41.965210+00:00",
+      "record": "label-07",
+      "seconds": 16.725751,
+      "stage": "labels",
+      "start": "2026-11-24T19:44:25.239459+00:00",
+      "status": "ok"
+    },
+    {
+      "arm": "label_first",
+      "end": "2026-11-24T19:44:45.735343+00:00",
+      "record": "label-07",
+      "seconds": 3.759089,
+      "stage": "verdict",
+      "start": "2026-11-24T19:44:41.976254+00:00",
+      "status": "ok"
+    },
+    {
+      "arm": "direct",
+      "end": "2026-11-24T19:44:51.883505+00:00",
+      "record": "label-05",
+      "seconds": 6.142636,
+      "stage": "direct",
+      "start": "2026-11-24T19:44:45.740869+00:00",
+      "status": "ok"
+    },
+    {
+      "arm": "label_first",
+      "end": "2026-11-24T19:45:04.904797+00:00",
+      "record": "label-14",
+      "seconds": 12.999454,
+      "stage": "labels",
+      "start": "2026-11-24T19:44:51.905343+00:00",
+      "status": "ok"
+    },
+    {
+      "arm": "label_first",
+      "end": "2026-11-24T19:45:09.246697+00:00",
+      "record": "label-14",
+      "seconds": 4.339088,
+      "stage": "verdict",
+      "start": "2026-11-24T19:45:04.907609+00:00",
+      "status": "ok"
+    },
+    {
+      "arm": "label_first",
+      "end": "2026-11-24T19:45:16.589573+00:00",
+      "record": "label-12",
+      "seconds": 7.338219,
+      "stage": "labels",
+      "start": "2026-11-24T19:45:09.251354+00:00",
+      "status": "ok"
+    },
+    {
+      "arm": "label_first",
+      "end": "2026-11-24T19:45:20.502472+00:00",
+      "record": "label-12",
+      "seconds": 3.909765,
+      "stage": "verdict",
+      "start": "2026-11-24T19:45:16.592707+00:00",
+      "status": "ok"
+    },
+    {
+      "arm": "label_first",
+      "end": "2026-11-24T19:45:37.598136+00:00",
+      "record": "label-23",
+      "seconds": 17.082401,
+      "stage": "labels",
+      "start": "2026-11-24T19:45:20.515735+00:00",
+      "status": "ok"
+    },
+    {
+      "arm": "label_first",
+      "end": "2026-11-24T19:45:45.067079+00:00",
+      "record": "label-23",
+      "seconds": 7.466044,
+      "stage": "verdict",
+      "start": "2026-11-24T19:45:37.601035+00:00",
+      "status": "ok"
+    },
+    {
+      "arm": "label_first",
+      "end": "2026-11-24T19:48:33.519984+00:00",
+      "record": "label-06",
+      "seconds": 168.448635,
+      "stage": "labels",
+      "start": "2026-11-24T19:45:45.071349+00:00",
+      "status": "invalid"
+    },
+    {
+      "arm": "direct",
+      "end": "2026-11-24T19:48:41.527560+00:00",
+      "record": "label-04",
+      "seconds": 7.994212,
+      "stage": "direct",
+      "start": "2026-11-24T19:48:33.533348+00:00",
+      "status": "ok"
+    },
+    {
+      "arm": "direct",
+      "end": "2026-11-24T19:49:01.761044+00:00",
+      "record": "label-01",
+      "seconds": 20.228419,
+      "stage": "direct",
+      "start": "2026-11-24T19:48:41.532625+00:00",
+      "status": "ok"
+    },
+    {
+      "arm": "direct",
+      "end": "2026-11-24T19:49:14.526501+00:00",
+      "record": "label-11",
+      "seconds": 12.761298,
+      "stage": "direct",
+      "start": "2026-11-24T19:49:01.765203+00:00",
+      "status": "ok"
+    },
+    {
+      "arm": "label_first",
+      "end": "2026-11-24T19:49:46.039313+00:00",
+      "record": "label-21",
+      "seconds": 31.509122,
+      "stage": "labels",
+      "start": "2026-11-24T19:49:14.530191+00:00",
+      "status": "ok"
+    },
+    {
+      "arm": "label_first",
+      "end": "2026-11-24T19:49:55.782242+00:00",
+      "record": "label-21",
+      "seconds": 9.740024,
+      "stage": "verdict",
+      "start": "2026-11-24T19:49:46.042218+00:00",
+      "status": "ok"
+    },
+    {
+      "arm": "label_first",
+      "end": "2026-11-24T19:50:13.366493+00:00",
+      "record": "label-03",
+      "seconds": 17.579542,
+      "stage": "labels",
+      "start": "2026-11-24T19:49:55.786951+00:00",
+      "status": "ok"
+    },
+    {
+      "arm": "label_first",
+      "end": "2026-11-24T19:50:22.890028+00:00",
+      "record": "label-03",
+      "seconds": 9.521171,
+      "stage": "verdict",
+      "start": "2026-11-24T19:50:13.368857+00:00",
+      "status": "ok"
+    },
+    {
+      "arm": "label_first",
+      "end": "2026-11-24T19:51:05.898372+00:00",
+      "record": "label-17",
+      "seconds": 43.005685,
+      "stage": "labels",
+      "start": "2026-11-24T19:50:22.892687+00:00",
+      "status": "ok"
+    },
+    {
+      "arm": "label_first",
+      "end": "2026-11-24T19:51:11.316784+00:00",
+      "record": "label-17",
+      "seconds": 5.411861,
+      "stage": "verdict",
+      "start": "2026-11-24T19:51:05.904923+00:00",
+      "status": "ok"
+    },
+    {
+      "arm": "label_first",
+      "end": "2026-11-24T19:51:53.547260+00:00",
+      "record": "label-10",
+      "seconds": 42.22735,
+      "stage": "labels",
+      "start": "2026-11-24T19:51:11.319910+00:00",
+      "status": "ok"
+    },
+    {
+      "arm": "label_first",
+      "end": "2026-11-24T19:52:03.867318+00:00",
+      "record": "label-10",
+      "seconds": 10.315735,
+      "stage": "verdict",
+      "start": "2026-11-24T19:51:53.551583+00:00",
+      "status": "ok"
+    },
+    {
+      "arm": "direct",
+      "end": "2026-11-24T19:54:56.810888+00:00",
+      "record": "label-16",
+      "seconds": 172.935675,
+      "stage": "direct",
+      "start": "2026-11-24T19:52:03.875213+00:00",
+      "status": "invalid"
+    },
+    {
+      "arm": "direct",
+      "end": "2026-11-24T19:57:51.651954+00:00",
+      "record": "label-19",
+      "seconds": 174.832783,
+      "stage": "direct",
+      "start": "2026-11-24T19:54:56.819171+00:00",
+      "status": "invalid"
+    },
+    {
+      "arm": "direct",
+      "end": "2026-11-24T19:58:01.924968+00:00",
+      "record": "label-09",
+      "seconds": 10.268314,
+      "stage": "direct",
+      "start": "2026-11-24T19:57:51.656654+00:00",
+      "status": "ok"
+    },
+    {
+      "arm": "direct",
+      "end": "2026-11-24T19:58:27.659922+00:00",
+      "record": "label-22",
+      "seconds": 25.730536,
+      "stage": "direct",
+      "start": "2026-11-24T19:58:01.929386+00:00",
+      "status": "ok"
+    },
+    {
+      "arm": "label_first",
+      "end": "2026-11-24T19:58:39.739706+00:00",
+      "record": "label-00",
+      "seconds": 12.062105,
+      "stage": "labels",
+      "start": "2026-11-24T19:58:27.677601+00:00",
+      "status": "ok"
+    },
+    {
+      "arm": "label_first",
+      "end": "2026-11-24T19:58:49.919512+00:00",
+      "record": "label-00",
+      "seconds": 10.17712,
+      "stage": "verdict",
+      "start": "2026-11-24T19:58:39.742392+00:00",
+      "status": "ok"
+    },
+    {
+      "arm": "direct",
+      "end": "2026-11-24T19:59:09.285639+00:00",
+      "record": "label-13",
+      "seconds": 19.362535,
+      "stage": "direct",
+      "start": "2026-11-24T19:58:49.923104+00:00",
+      "status": "ok"
+    },
+    {
+      "arm": "direct",
+      "end": "2026-11-24T19:59:25.248082+00:00",
+      "record": "label-02",
+      "seconds": 15.958856,
+      "stage": "direct",
+      "start": "2026-11-24T19:59:09.289226+00:00",
+      "status": "ok"
+    },
+    {
+      "arm": "direct",
+      "end": "2026-11-24T20:00:02.383323+00:00",
+      "record": "label-17",
+      "seconds": 37.129923,
+      "stage": "direct",
+      "start": "2026-11-24T19:59:25.253400+00:00",
+      "status": "ok"
+    },
+    {
+      "arm": "direct",
+      "end": "2026-11-24T20:01:11.940149+00:00",
+      "record": "label-21",
+      "seconds": 69.549316,
+      "stage": "direct",
+      "start": "2026-11-24T20:00:02.390833+00:00",
+      "status": "ok"
+    },
+    {
+      "arm": "label_first",
+      "end": "2026-11-24T20:01:57.911355+00:00",
+      "record": "label-09",
+      "seconds": 45.965421,
+      "stage": "labels",
+      "start": "2026-11-24T20:01:11.945934+00:00",
+      "status": "ok"
+    },
+    {
+      "arm": "label_first",
+      "end": "2026-11-24T20:02:20.879153+00:00",
+      "record": "label-09",
+      "seconds": 22.917427,
+      "stage": "verdict",
+      "start": "2026-11-24T20:01:57.961726+00:00",
+      "status": "ok"
+    },
+    {
+      "arm": "direct",
+      "end": "2026-11-24T20:02:53.575746+00:00",
+      "record": "label-00",
+      "seconds": 32.653673,
+      "stage": "direct",
+      "start": "2026-11-24T20:02:20.922073+00:00",
+      "status": "ok"
+    },
+    {
+      "arm": "direct",
+      "end": "2026-11-24T20:03:24.491861+00:00",
+      "record": "label-18",
+      "seconds": 30.909571,
+      "stage": "direct",
+      "start": "2026-11-24T20:02:53.582290+00:00",
+      "status": "ok"
+    },
+    {
+      "arm": "direct",
+      "end": "2026-11-24T20:03:36.074823+00:00",
+      "record": "label-14",
+      "seconds": 11.576462,
+      "stage": "direct",
+      "start": "2026-11-24T20:03:24.498361+00:00",
+      "status": "ok"
+    },
+    {
+      "arm": "label_first",
+      "end": "2026-11-24T20:03:51.598685+00:00",
+      "record": "label-11",
+      "seconds": 15.517357,
+      "stage": "labels",
+      "start": "2026-11-24T20:03:36.081328+00:00",
+      "status": "ok"
+    },
+    {
+      "arm": "label_first",
+      "end": "2026-11-24T20:03:57.962907+00:00",
+      "record": "label-11",
+      "seconds": 6.361732,
+      "stage": "verdict",
+      "start": "2026-11-24T20:03:51.601175+00:00",
+      "status": "ok"
+    },
+    {
+      "arm": "label_first",
+      "end": "2026-11-24T20:04:28.663123+00:00",
+      "record": "label-16",
+      "seconds": 30.695065,
+      "stage": "labels",
+      "start": "2026-11-24T20:03:57.968058+00:00",
+      "status": "ok"
+    },
+    {
+      "arm": "label_first",
+      "end": "2026-11-24T20:05:28.318586+00:00",
+      "record": "label-16",
+      "seconds": 59.652031,
+      "stage": "verdict",
+      "start": "2026-11-24T20:04:28.666555+00:00",
+      "status": "ok"
+    },
+    {
+      "arm": "label_first",
+      "end": "2026-11-24T20:05:53.084935+00:00",
+      "record": "label-01",
+      "seconds": 24.745641,
+      "stage": "labels",
+      "start": "2026-11-24T20:05:28.339294+00:00",
+      "status": "ok"
+    },
+    {
+      "arm": "label_first",
+      "end": "2026-11-24T20:06:02.961142+00:00",
+      "record": "label-01",
+      "seconds": 9.866462,
+      "stage": "verdict",
+      "start": "2026-11-24T20:05:53.094680+00:00",
+      "status": "ok"
+    },
+    {
+      "arm": "direct",
+      "end": "2026-11-24T20:06:22.899534+00:00",
+      "record": "label-10",
+      "seconds": 19.894605,
+      "stage": "direct",
+      "start": "2026-11-24T20:06:03.004929+00:00",
+      "status": "ok"
+    },
+    {
+      "arm": "direct",
+      "end": "2026-11-24T20:06:51.022700+00:00",
+      "record": "label-23",
+      "seconds": 28.112587,
+      "stage": "direct",
+      "start": "2026-11-24T20:06:22.910113+00:00",
+      "status": "ok"
+    },
+    {
+      "arm": "direct",
+      "end": "2026-11-24T20:07:21.969113+00:00",
+      "record": "label-06",
+      "seconds": 30.901704,
+      "stage": "direct",
+      "start": "2026-11-24T20:06:51.067409+00:00",
+      "status": "ok"
+    },
+    {
+      "arm": "direct",
+      "end": "2026-11-24T20:07:46.443249+00:00",
+      "record": "label-03",
+      "seconds": 24.419038,
+      "stage": "direct",
+      "start": "2026-11-24T20:07:22.024211+00:00",
+      "status": "ok"
+    },
+    {
+      "arm": "label_first",
+      "end": "2026-11-24T20:08:05.464449+00:00",
+      "record": "label-13",
+      "seconds": 19.000176,
+      "stage": "labels",
+      "start": "2026-11-24T20:07:46.464273+00:00",
+      "status": "ok"
+    },
+    {
+      "arm": "label_first",
+      "end": "2026-11-24T20:08:11.823061+00:00",
+      "record": "label-13",
+      "seconds": 6.345014,
+      "stage": "verdict",
+      "start": "2026-11-24T20:08:05.478047+00:00",
+      "status": "ok"
+    },
+    {
+      "arm": "direct",
+      "end": "2026-11-24T20:08:22.843470+00:00",
+      "record": "label-07",
+      "seconds": 11.004296,
+      "stage": "direct",
+      "start": "2026-11-24T20:08:11.839174+00:00",
+      "status": "ok"
+    },
+    {
+      "arm": "label_first",
+      "end": "2026-11-24T20:08:40.383869+00:00",
+      "record": "label-20",
+      "seconds": 17.48517,
+      "stage": "labels",
+      "start": "2026-11-24T20:08:22.898699+00:00",
+      "status": "ok"
+    },
+    {
+      "arm": "label_first",
+      "end": "2026-11-24T20:08:53.908092+00:00",
+      "record": "label-20",
+      "seconds": 13.474844,
+      "stage": "verdict",
+      "start": "2026-11-24T20:08:40.433248+00:00",
+      "status": "ok"
+    },
+    {
+      "arm": "label_first",
+      "end": "2026-11-24T20:09:28.277089+00:00",
+      "record": "label-02",
+      "seconds": 34.326346,
+      "stage": "labels",
+      "start": "2026-11-24T20:08:53.950743+00:00",
+      "status": "ok"
+    },
+    {
+      "arm": "label_first",
+      "end": "2026-11-24T20:09:42.715151+00:00",
+      "record": "label-02",
+      "seconds": 14.211363,
+      "stage": "verdict",
+      "start": "2026-11-24T20:09:28.503788+00:00",
+      "status": "ok"
+    },
+    {
+      "arm": "label_first",
+      "end": "2026-11-24T20:10:01.776901+00:00",
+      "record": "label-05",
+      "seconds": 18.799295,
+      "stage": "labels",
+      "start": "2026-11-24T20:09:42.977606+00:00",
+      "status": "ok"
+    },
+    {
+      "arm": "label_first",
+      "end": "2026-11-24T20:10:17.399786+00:00",
+      "record": "label-05",
+      "seconds": 15.491324,
+      "stage": "verdict",
+      "start": "2026-11-24T20:10:01.908462+00:00",
+      "status": "ok"
+    },
+    {
+      "arm": "label_first",
+      "end": "2026-11-24T20:10:35.781655+00:00",
+      "record": "label-19",
+      "seconds": 18.257273,
+      "stage": "labels",
+      "start": "2026-11-24T20:10:17.524382+00:00",
+      "status": "ok"
+    },
+    {
+      "arm": "label_first",
+      "end": "2026-11-24T20:10:44.633954+00:00",
+      "record": "label-19",
+      "seconds": 8.809928,
+      "stage": "verdict",
+      "start": "2026-11-24T20:10:35.824026+00:00",
+      "status": "ok"
+    },
+    {
+      "arm": "label_first",
+      "end": "2026-11-24T20:11:23.696336+00:00",
+      "record": "label-22",
+      "seconds": 38.998902,
+      "stage": "labels",
+      "start": "2026-11-24T20:10:44.697434+00:00",
+      "status": "ok"
+    },
+    {
+      "arm": "label_first",
+      "end": "2026-11-24T20:11:35.327398+00:00",
+      "record": "label-22",
+      "seconds": 11.47019,
+      "stage": "verdict",
+      "start": "2026-11-24T20:11:23.857208+00:00",
+      "status": "ok"
+    },
+    {
+      "arm": "label_first",
+      "end": "2026-11-24T20:12:15.560115+00:00",
+      "record": "label-15",
+      "seconds": 40.207491,
+      "stage": "labels",
+      "start": "2026-11-24T20:11:35.352624+00:00",
+      "status": "ok"
+    },
+    {
+      "arm": "label_first",
+      "end": "2026-11-24T20:12:27.029644+00:00",
+      "record": "label-15",
+      "seconds": 11.354896,
+      "stage": "verdict",
+      "start": "2026-11-24T20:12:15.674748+00:00",
+      "status": "ok"
+    },
+    {
+      "arm": "direct",
+      "end": "2026-11-24T20:12:53.482544+00:00",
+      "record": "label-08",
+      "seconds": 26.397482,
+      "stage": "direct",
+      "start": "2026-11-24T20:12:27.085062+00:00",
+      "status": "ok"
+    },
+    {
+      "arm": "label_first",
+      "end": "2026-11-24T20:13:13.405577+00:00",
+      "record": "label-04",
+      "seconds": 19.80132,
+      "stage": "labels",
+      "start": "2026-11-24T20:12:53.604257+00:00",
+      "status": "ok"
+    },
+    {
+      "arm": "label_first",
+      "end": "2026-11-24T20:13:19.788733+00:00",
+      "record": "label-04",
+      "seconds": 6.357159,
+      "stage": "verdict",
+      "start": "2026-11-24T20:13:13.431574+00:00",
+      "status": "ok"
+    },
+    {
+      "arm": "direct",
+      "end": "2026-11-24T20:13:52.517895+00:00",
+      "record": "label-12",
+      "seconds": 32.699991,
+      "stage": "direct",
+      "start": "2026-11-24T20:13:19.817904+00:00",
+      "status": "ok"
+    }
+  ],
+  "verified_requests": 71,
+  "verified_workflows": 48
+}

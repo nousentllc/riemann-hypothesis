@@ -1,0 +1,19 @@
+{
+  "request_sha256": "6cd604160afad66378396a7e6611a9885a396c264a2b68bb82df71b7e518822e",
+  "started": "2026-11-24T19:49:14.530191+00:00",
+  "answer": {
+    "FM": "Y",
+    "EM": "N"
+  },
+  "status": "ok",
+  "content": "{\"FM\":\"Y\",\"EM\":\"N\"}",
+  "usage": {
+    "prompt_eval_count": 664,
+    "eval_count": 421,
+    "total_duration": 31501841667,
+    "load_duration": 5381083,
+    "eval_duration": 28897369000,
+    "done_reason": "stop"
+  },
+  "ended": "2026-11-24T19:49:46.039313+00:00"
+}
