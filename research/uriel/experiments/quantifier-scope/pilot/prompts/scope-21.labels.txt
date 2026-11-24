@@ -1,0 +1,12 @@
+DC network with + at 12 V and 0 at 0 V. Switch order is s,t,u (1 means closed). A bracketed resistor conducts only when its switch is closed. Each resistor lists its oriented start and end nodes and its resistance in ohms. R1=i>+:9 R2=i>f:3 R3=e>f:4 R4=e>h:9 R5=g>h:3 R6=c>g:8 R7=c>a:2 R8=a>d:5 R9=b>d:5 R10=b>0:5 R11=f>+:8 R12=h>d:2[s] R13=b>g:5[t] R14=d>0:6[u].
+The target label is Y if the signed current of R6 > -12/149 A, and N otherwise.
+Initial comparator: signed current of R10 > 60/229 A
+Other comparators: M45: voltage at c > 3 V | M54: signed current of R9 > -1/6 A
+H means a comparator condition holds and L means it fails. All currents are exact amperes.
+ID stu target_current initial M45 M54 target_label
+NY 000 -60/229 L H L N
+DD 101 -24/467 L L L Y
+
+Observed readings: initial = L; M54 = L.
+The table shows exactly the two survivors compatible with the observed readings.
+Report the target label for each survivor. Return only a JSON object with keys NY and DD, each having value Y or N.

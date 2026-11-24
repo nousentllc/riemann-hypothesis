@@ -1,0 +1,1206 @@
+{
+  "previous_graph_sizes": {
+    "D1": [
+      3,
+      6
+    ],
+    "D2": [
+      5,
+      7
+    ],
+    "C1": [
+      4,
+      7
+    ],
+    "C2": [
+      5,
+      8
+    ],
+    "C3": [
+      5,
+      9
+    ],
+    "C4": [
+      6,
+      9
+    ],
+    "C5": [
+      6,
+      10
+    ],
+    "C6": [
+      7,
+      10
+    ],
+    "T1": [
+      5,
+      10
+    ],
+    "T2": [
+      6,
+      11
+    ],
+    "T3": [
+      6,
+      12
+    ],
+    "T4": [
+      7,
+      11
+    ],
+    "T5": [
+      7,
+      12
+    ],
+    "T6": [
+      8,
+      11
+    ],
+    "F1": [
+      6,
+      13
+    ],
+    "F2": [
+      7,
+      13
+    ],
+    "F3": [
+      7,
+      14
+    ],
+    "F4": [
+      8,
+      12
+    ],
+    "F5": [
+      8,
+      13
+    ],
+    "F6": [
+      8,
+      14
+    ],
+    "G1": [
+      6,
+      14
+    ],
+    "G2": [
+      7,
+      15
+    ],
+    "G3": [
+      8,
+      15
+    ],
+    "G4": [
+      9,
+      11
+    ],
+    "G5": [
+      9,
+      12
+    ],
+    "G6": [
+      9,
+      13
+    ],
+    "J1": [
+      7,
+      16
+    ],
+    "J2": [
+      8,
+      16
+    ],
+    "J3": [
+      9,
+      14
+    ],
+    "J4": [
+      9,
+      15
+    ],
+    "J5": [
+      10,
+      12
+    ],
+    "J6": [
+      10,
+      13
+    ]
+  },
+  "new_graph_sizes": {
+    "K1": [
+      7,
+      17
+    ],
+    "K2": [
+      8,
+      17
+    ],
+    "K3": [
+      9,
+      16
+    ],
+    "K4": [
+      10,
+      14
+    ],
+    "K5": [
+      10,
+      15
+    ],
+    "K6": [
+      11,
+      14
+    ]
+  },
+  "physical_checks": {
+    "switch_states": 48,
+    "node_voltages": 440,
+    "branch_currents": 744,
+    "target_current_equal_to_threshold": 2,
+    "negative_target_current": 34,
+    "meter_predictions": 96
+  },
+  "previous_unique_state_ids": 256,
+  "new_unique_state_ids": 48,
+  "H_to_Y": 3,
+  "H_to_N": 3,
+  "record_counts": {
+    "N": 6,
+    "Y": 6,
+    "U": 12
+  },
+  "initial_count": 4,
+  "one_forced_lamp_alone_count": 4,
+  "intersection_count": 2,
+  "all_one_lamp_truths_mixed": true,
+  "families": {
+    "K1": {
+      "shape": [
+        7,
+        17
+      ],
+      "H_means": "Y",
+      "records": {
+        "scope-00": "N",
+        "scope-01": "Y",
+        "scope-02": "U",
+        "scope-03": "U"
+      }
+    },
+    "K2": {
+      "shape": [
+        8,
+        17
+      ],
+      "H_means": "N",
+      "records": {
+        "scope-04": "N",
+        "scope-05": "U",
+        "scope-06": "U",
+        "scope-07": "Y"
+      }
+    },
+    "K3": {
+      "shape": [
+        9,
+        16
+      ],
+      "H_means": "Y",
+      "records": {
+        "scope-08": "U",
+        "scope-09": "U",
+        "scope-10": "N",
+        "scope-11": "Y"
+      }
+    },
+    "K4": {
+      "shape": [
+        10,
+        14
+      ],
+      "H_means": "N",
+      "records": {
+        "scope-12": "U",
+        "scope-13": "Y",
+        "scope-14": "N",
+        "scope-15": "U"
+      }
+    },
+    "K5": {
+      "shape": [
+        10,
+        15
+      ],
+      "H_means": "Y",
+      "records": {
+        "scope-16": "N",
+        "scope-17": "Y",
+        "scope-18": "U",
+        "scope-19": "U"
+      }
+    },
+    "K6": {
+      "shape": [
+        11,
+        14
+      ],
+      "H_means": "N",
+      "records": {
+        "scope-20": "N",
+        "scope-21": "U",
+        "scope-22": "U",
+        "scope-23": "Y"
+      }
+    }
+  },
+  "records": {
+    "scope-00": {
+      "family": "DC-K1",
+      "kind": "decisive",
+      "verdict": "N",
+      "initial": [
+        "ER",
+        "JM",
+        "PH",
+        "UH"
+      ],
+      "meter_alone": [
+        "PH",
+        "PW",
+        "TG",
+        "UH"
+      ],
+      "joint": [
+        "PH",
+        "UH"
+      ],
+      "meter": "M39",
+      "reading": "L",
+      "both_possible_replies": {
+        "L": {
+          "ids": [
+            "PH",
+            "UH"
+          ],
+          "verdict": "N"
+        },
+        "H": {
+          "ids": [
+            "ER",
+            "JM"
+          ],
+          "verdict": "Y"
+        }
+      }
+    },
+    "scope-01": {
+      "family": "DC-K1",
+      "kind": "decisive",
+      "verdict": "Y",
+      "initial": [
+        "ER",
+        "JM",
+        "PH",
+        "UH"
+      ],
+      "meter_alone": [
+        "DP",
+        "ER",
+        "JM",
+        "OC"
+      ],
+      "joint": [
+        "ER",
+        "JM"
+      ],
+      "meter": "M39",
+      "reading": "H",
+      "both_possible_replies": {
+        "L": {
+          "ids": [
+            "PH",
+            "UH"
+          ],
+          "verdict": "N"
+        },
+        "H": {
+          "ids": [
+            "ER",
+            "JM"
+          ],
+          "verdict": "Y"
+        }
+      }
+    },
+    "scope-02": {
+      "family": "DC-K1",
+      "kind": "ambiguous",
+      "verdict": "U",
+      "initial": [
+        "ER",
+        "JM",
+        "PH",
+        "UH"
+      ],
+      "meter_alone": [
+        "ER",
+        "OC",
+        "PH",
+        "PW"
+      ],
+      "joint": [
+        "ER",
+        "PH"
+      ],
+      "meter": "M47",
+      "reading": "L",
+      "both_possible_replies": {
+        "L": {
+          "ids": [
+            "ER",
+            "PH"
+          ],
+          "verdict": "U"
+        },
+        "H": {
+          "ids": [
+            "JM",
+            "UH"
+          ],
+          "verdict": "U"
+        }
+      }
+    },
+    "scope-03": {
+      "family": "DC-K1",
+      "kind": "ambiguous",
+      "verdict": "U",
+      "initial": [
+        "ER",
+        "JM",
+        "PH",
+        "UH"
+      ],
+      "meter_alone": [
+        "DP",
+        "JM",
+        "TG",
+        "UH"
+      ],
+      "joint": [
+        "JM",
+        "UH"
+      ],
+      "meter": "M47",
+      "reading": "H",
+      "both_possible_replies": {
+        "L": {
+          "ids": [
+            "ER",
+            "PH"
+          ],
+          "verdict": "U"
+        },
+        "H": {
+          "ids": [
+            "JM",
+            "UH"
+          ],
+          "verdict": "U"
+        }
+      }
+    },
+    "scope-04": {
+      "family": "DC-K2",
+      "kind": "decisive",
+      "verdict": "N",
+      "initial": [
+        "CE",
+        "CM",
+        "IM",
+        "UG"
+      ],
+      "meter_alone": [
+        "CM",
+        "CY",
+        "IM",
+        "ZR"
+      ],
+      "joint": [
+        "CM",
+        "IM"
+      ],
+      "meter": "M52",
+      "reading": "H",
+      "both_possible_replies": {
+        "L": {
+          "ids": [
+            "CE",
+            "UG"
+          ],
+          "verdict": "Y"
+        },
+        "H": {
+          "ids": [
+            "CM",
+            "IM"
+          ],
+          "verdict": "N"
+        }
+      }
+    },
+    "scope-05": {
+      "family": "DC-K2",
+      "kind": "ambiguous",
+      "verdict": "U",
+      "initial": [
+        "CE",
+        "CM",
+        "IM",
+        "UG"
+      ],
+      "meter_alone": [
+        "AT",
+        "DQ",
+        "IM",
+        "UG"
+      ],
+      "joint": [
+        "IM",
+        "UG"
+      ],
+      "meter": "M41",
+      "reading": "L",
+      "both_possible_replies": {
+        "L": {
+          "ids": [
+            "IM",
+            "UG"
+          ],
+          "verdict": "U"
+        },
+        "H": {
+          "ids": [
+            "CE",
+            "CM"
+          ],
+          "verdict": "U"
+        }
+      }
+    },
+    "scope-06": {
+      "family": "DC-K2",
+      "kind": "ambiguous",
+      "verdict": "U",
+      "initial": [
+        "CE",
+        "CM",
+        "IM",
+        "UG"
+      ],
+      "meter_alone": [
+        "CE",
+        "CM",
+        "CY",
+        "ZR"
+      ],
+      "joint": [
+        "CE",
+        "CM"
+      ],
+      "meter": "M41",
+      "reading": "H",
+      "both_possible_replies": {
+        "L": {
+          "ids": [
+            "IM",
+            "UG"
+          ],
+          "verdict": "U"
+        },
+        "H": {
+          "ids": [
+            "CE",
+            "CM"
+          ],
+          "verdict": "U"
+        }
+      }
+    },
+    "scope-07": {
+      "family": "DC-K2",
+      "kind": "decisive",
+      "verdict": "Y",
+      "initial": [
+        "CE",
+        "CM",
+        "IM",
+        "UG"
+      ],
+      "meter_alone": [
+        "AT",
+        "CE",
+        "DQ",
+        "UG"
+      ],
+      "joint": [
+        "CE",
+        "UG"
+      ],
+      "meter": "M52",
+      "reading": "L",
+      "both_possible_replies": {
+        "L": {
+          "ids": [
+            "CE",
+            "UG"
+          ],
+          "verdict": "Y"
+        },
+        "H": {
+          "ids": [
+            "CM",
+            "IM"
+          ],
+          "verdict": "N"
+        }
+      }
+    },
+    "scope-08": {
+      "family": "DC-K3",
+      "kind": "ambiguous",
+      "verdict": "U",
+      "initial": [
+        "DV",
+        "FB",
+        "PI",
+        "VW"
+      ],
+      "meter_alone": [
+        "PI",
+        "RL",
+        "VW",
+        "XT"
+      ],
+      "joint": [
+        "PI",
+        "VW"
+      ],
+      "meter": "M39",
+      "reading": "L",
+      "both_possible_replies": {
+        "L": {
+          "ids": [
+            "PI",
+            "VW"
+          ],
+          "verdict": "U"
+        },
+        "H": {
+          "ids": [
+            "DV",
+            "FB"
+          ],
+          "verdict": "U"
+        }
+      }
+    },
+    "scope-09": {
+      "family": "DC-K3",
+      "kind": "ambiguous",
+      "verdict": "U",
+      "initial": [
+        "DV",
+        "FB",
+        "PI",
+        "VW"
+      ],
+      "meter_alone": [
+        "DV",
+        "FB",
+        "UE",
+        "ZI"
+      ],
+      "joint": [
+        "DV",
+        "FB"
+      ],
+      "meter": "M39",
+      "reading": "H",
+      "both_possible_replies": {
+        "L": {
+          "ids": [
+            "PI",
+            "VW"
+          ],
+          "verdict": "U"
+        },
+        "H": {
+          "ids": [
+            "DV",
+            "FB"
+          ],
+          "verdict": "U"
+        }
+      }
+    },
+    "scope-10": {
+      "family": "DC-K3",
+      "kind": "decisive",
+      "verdict": "N",
+      "initial": [
+        "DV",
+        "FB",
+        "PI",
+        "VW"
+      ],
+      "meter_alone": [
+        "DV",
+        "PI",
+        "UE",
+        "ZI"
+      ],
+      "joint": [
+        "DV",
+        "PI"
+      ],
+      "meter": "M41",
+      "reading": "L",
+      "both_possible_replies": {
+        "L": {
+          "ids": [
+            "DV",
+            "PI"
+          ],
+          "verdict": "N"
+        },
+        "H": {
+          "ids": [
+            "FB",
+            "VW"
+          ],
+          "verdict": "Y"
+        }
+      }
+    },
+    "scope-11": {
+      "family": "DC-K3",
+      "kind": "decisive",
+      "verdict": "Y",
+      "initial": [
+        "DV",
+        "FB",
+        "PI",
+        "VW"
+      ],
+      "meter_alone": [
+        "FB",
+        "RL",
+        "VW",
+        "XT"
+      ],
+      "joint": [
+        "FB",
+        "VW"
+      ],
+      "meter": "M41",
+      "reading": "H",
+      "both_possible_replies": {
+        "L": {
+          "ids": [
+            "DV",
+            "PI"
+          ],
+          "verdict": "N"
+        },
+        "H": {
+          "ids": [
+            "FB",
+            "VW"
+          ],
+          "verdict": "Y"
+        }
+      }
+    },
+    "scope-12": {
+      "family": "DC-K4",
+      "kind": "ambiguous",
+      "verdict": "U",
+      "initial": [
+        "CO",
+        "HM",
+        "KR",
+        "PY"
+      ],
+      "meter_alone": [
+        "HM",
+        "IE",
+        "PY",
+        "RW"
+      ],
+      "joint": [
+        "HM",
+        "PY"
+      ],
+      "meter": "M39",
+      "reading": "H",
+      "both_possible_replies": {
+        "L": {
+          "ids": [
+            "CO",
+            "KR"
+          ],
+          "verdict": "U"
+        },
+        "H": {
+          "ids": [
+            "HM",
+            "PY"
+          ],
+          "verdict": "U"
+        }
+      }
+    },
+    "scope-13": {
+      "family": "DC-K4",
+      "kind": "decisive",
+      "verdict": "Y",
+      "initial": [
+        "CO",
+        "HM",
+        "KR",
+        "PY"
+      ],
+      "meter_alone": [
+        "CO",
+        "HM",
+        "IE",
+        "RW"
+      ],
+      "joint": [
+        "CO",
+        "HM"
+      ],
+      "meter": "M54",
+      "reading": "L",
+      "both_possible_replies": {
+        "L": {
+          "ids": [
+            "CO",
+            "HM"
+          ],
+          "verdict": "Y"
+        },
+        "H": {
+          "ids": [
+            "KR",
+            "PY"
+          ],
+          "verdict": "N"
+        }
+      }
+    },
+    "scope-14": {
+      "family": "DC-K4",
+      "kind": "decisive",
+      "verdict": "N",
+      "initial": [
+        "CO",
+        "HM",
+        "KR",
+        "PY"
+      ],
+      "meter_alone": [
+        "BP",
+        "KR",
+        "PO",
+        "PY"
+      ],
+      "joint": [
+        "KR",
+        "PY"
+      ],
+      "meter": "M54",
+      "reading": "H",
+      "both_possible_replies": {
+        "L": {
+          "ids": [
+            "CO",
+            "HM"
+          ],
+          "verdict": "Y"
+        },
+        "H": {
+          "ids": [
+            "KR",
+            "PY"
+          ],
+          "verdict": "N"
+        }
+      }
+    },
+    "scope-15": {
+      "family": "DC-K4",
+      "kind": "ambiguous",
+      "verdict": "U",
+      "initial": [
+        "CO",
+        "HM",
+        "KR",
+        "PY"
+      ],
+      "meter_alone": [
+        "BP",
+        "CO",
+        "KR",
+        "PO"
+      ],
+      "joint": [
+        "CO",
+        "KR"
+      ],
+      "meter": "M39",
+      "reading": "L",
+      "both_possible_replies": {
+        "L": {
+          "ids": [
+            "CO",
+            "KR"
+          ],
+          "verdict": "U"
+        },
+        "H": {
+          "ids": [
+            "HM",
+            "PY"
+          ],
+          "verdict": "U"
+        }
+      }
+    },
+    "scope-16": {
+      "family": "DC-K5",
+      "kind": "decisive",
+      "verdict": "N",
+      "initial": [
+        "II",
+        "LK",
+        "LY",
+        "RU"
+      ],
+      "meter_alone": [
+        "II",
+        "KX",
+        "LK",
+        "MM"
+      ],
+      "joint": [
+        "II",
+        "LK"
+      ],
+      "meter": "M45",
+      "reading": "L",
+      "both_possible_replies": {
+        "L": {
+          "ids": [
+            "II",
+            "LK"
+          ],
+          "verdict": "N"
+        },
+        "H": {
+          "ids": [
+            "LY",
+            "RU"
+          ],
+          "verdict": "Y"
+        }
+      }
+    },
+    "scope-17": {
+      "family": "DC-K5",
+      "kind": "decisive",
+      "verdict": "Y",
+      "initial": [
+        "II",
+        "LK",
+        "LY",
+        "RU"
+      ],
+      "meter_alone": [
+        "EZ",
+        "LY",
+        "RU",
+        "TQ"
+      ],
+      "joint": [
+        "LY",
+        "RU"
+      ],
+      "meter": "M45",
+      "reading": "H",
+      "both_possible_replies": {
+        "L": {
+          "ids": [
+            "II",
+            "LK"
+          ],
+          "verdict": "N"
+        },
+        "H": {
+          "ids": [
+            "LY",
+            "RU"
+          ],
+          "verdict": "Y"
+        }
+      }
+    },
+    "scope-18": {
+      "family": "DC-K5",
+      "kind": "ambiguous",
+      "verdict": "U",
+      "initial": [
+        "II",
+        "LK",
+        "LY",
+        "RU"
+      ],
+      "meter_alone": [
+        "KX",
+        "LK",
+        "RU",
+        "TQ"
+      ],
+      "joint": [
+        "LK",
+        "RU"
+      ],
+      "meter": "M56",
+      "reading": "L",
+      "both_possible_replies": {
+        "L": {
+          "ids": [
+            "LK",
+            "RU"
+          ],
+          "verdict": "U"
+        },
+        "H": {
+          "ids": [
+            "II",
+            "LY"
+          ],
+          "verdict": "U"
+        }
+      }
+    },
+    "scope-19": {
+      "family": "DC-K5",
+      "kind": "ambiguous",
+      "verdict": "U",
+      "initial": [
+        "II",
+        "LK",
+        "LY",
+        "RU"
+      ],
+      "meter_alone": [
+        "EZ",
+        "II",
+        "LY",
+        "MM"
+      ],
+      "joint": [
+        "II",
+        "LY"
+      ],
+      "meter": "M56",
+      "reading": "H",
+      "both_possible_replies": {
+        "L": {
+          "ids": [
+            "LK",
+            "RU"
+          ],
+          "verdict": "U"
+        },
+        "H": {
+          "ids": [
+            "II",
+            "LY"
+          ],
+          "verdict": "U"
+        }
+      }
+    },
+    "scope-20": {
+      "family": "DC-K6",
+      "kind": "decisive",
+      "verdict": "N",
+      "initial": [
+        "DD",
+        "HQ",
+        "NY",
+        "UA"
+      ],
+      "meter_alone": [
+        "AX",
+        "FW",
+        "NY",
+        "UA"
+      ],
+      "joint": [
+        "NY",
+        "UA"
+      ],
+      "meter": "M45",
+      "reading": "H",
+      "both_possible_replies": {
+        "L": {
+          "ids": [
+            "DD",
+            "HQ"
+          ],
+          "verdict": "Y"
+        },
+        "H": {
+          "ids": [
+            "NY",
+            "UA"
+          ],
+          "verdict": "N"
+        }
+      }
+    },
+    "scope-21": {
+      "family": "DC-K6",
+      "kind": "ambiguous",
+      "verdict": "U",
+      "initial": [
+        "DD",
+        "HQ",
+        "NY",
+        "UA"
+      ],
+      "meter_alone": [
+        "AX",
+        "DD",
+        "FW",
+        "NY"
+      ],
+      "joint": [
+        "DD",
+        "NY"
+      ],
+      "meter": "M54",
+      "reading": "L",
+      "both_possible_replies": {
+        "L": {
+          "ids": [
+            "DD",
+            "NY"
+          ],
+          "verdict": "U"
+        },
+        "H": {
+          "ids": [
+            "HQ",
+            "UA"
+          ],
+          "verdict": "U"
+        }
+      }
+    },
+    "scope-22": {
+      "family": "DC-K6",
+      "kind": "ambiguous",
+      "verdict": "U",
+      "initial": [
+        "DD",
+        "HQ",
+        "NY",
+        "UA"
+      ],
+      "meter_alone": [
+        "HQ",
+        "MA",
+        "MD",
+        "UA"
+      ],
+      "joint": [
+        "HQ",
+        "UA"
+      ],
+      "meter": "M54",
+      "reading": "H",
+      "both_possible_replies": {
+        "L": {
+          "ids": [
+            "DD",
+            "NY"
+          ],
+          "verdict": "U"
+        },
+        "H": {
+          "ids": [
+            "HQ",
+            "UA"
+          ],
+          "verdict": "U"
+        }
+      }
+    },
+    "scope-23": {
+      "family": "DC-K6",
+      "kind": "decisive",
+      "verdict": "Y",
+      "initial": [
+        "DD",
+        "HQ",
+        "NY",
+        "UA"
+      ],
+      "meter_alone": [
+        "DD",
+        "HQ",
+        "MA",
+        "MD"
+      ],
+      "joint": [
+        "DD",
+        "HQ"
+      ],
+      "meter": "M45",
+      "reading": "L",
+      "both_possible_replies": {
+        "L": {
+          "ids": [
+            "DD",
+            "HQ"
+          ],
+          "verdict": "Y"
+        },
+        "H": {
+          "ids": [
+            "NY",
+            "UA"
+          ],
+          "verdict": "N"
+        }
+      }
+    }
+  },
+  "sha256": {
+    "historical_ids.json": "da8a311347bbe93c10f0fb76fa00da34e743334ebe907a1bd41eb63de60e7ebe",
+    "network.py": "af094122af2f1747788438be1ede55dabcc052698c8bf6b920fe54136aa76b49",
+    "select_panel.py": "24d2c8a354726e06ce2cf788f6fb12138f276713dd7d4950e94468b4324f9495",
+    "cases.py": "a0ddd995fdd241f03ff0ac8a50f95a045bbfeee0b497fa934367d52dd2b15acf",
+    "design.json": "e0fd44b63650495a78931344221e31607aad40e1fff939cc66df9080ad1bbab5",
+    "records.json": "f6e718a2c0707916b141ef9ae4bad4e1535d5fe3fbe0c9e882ecb74207083ad0",
+    "check.py": "70d274e99ca4143ecf6fdc147b31d82840cef0d1a36d412b3da0f764dd808f2c"
+  }
+}

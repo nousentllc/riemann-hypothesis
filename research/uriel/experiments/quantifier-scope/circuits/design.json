@@ -1,0 +1,128 @@
+{
+  "K1": {
+    "layout": "b/+/7 c/b/5 a/c/6 a/d/4 d/e/6 0/e/4 b/e/6 e/c/7 c/+/6 +/a/5 c/0/9 +/e/6 d/0/5 0/b/3 c/d/3/s a/0/5/t +/d/8/u",
+    "target": [
+      "I8",
+      "-1/8"
+    ],
+    "initial": [
+      "Vd",
+      "5"
+    ],
+    "initial_reading": "H",
+    "decisive": [
+      "I10",
+      "1"
+    ],
+    "other": [
+      "I15",
+      "0"
+    ],
+    "selected_trial": 1
+  },
+  "K2": {
+    "layout": "+/a/5 a/d/2 b/d/5 f/b/5 e/f/5 e/c/7 c/0/5 e/b/5 0/b/2 0/e/9 a/b/9 a/c/8 +/e/6 0/d/9 d/f/4/s c/+/3/t e/d/2/u",
+    "target": [
+      "I6",
+      "0"
+    ],
+    "initial": [
+      "I17",
+      "0"
+    ],
+    "initial_reading": "L",
+    "decisive": [
+      "I4",
+      "164845866/734431451"
+    ],
+    "other": [
+      "I15",
+      "0"
+    ],
+    "selected_trial": 13
+  },
+  "K3": {
+    "layout": "d/+/6 c/d/3 f/c/7 f/g/5 e/g/7 e/a/6 b/a/8 b/0/5 e/f/2 e/d/8 f/b/8 c/e/4 0/a/7 f/+/9/s b/e/3/t d/f/3/u",
+    "target": [
+      "I7",
+      "0"
+    ],
+    "initial": [
+      "I13",
+      "-2/5"
+    ],
+    "initial_reading": "L",
+    "decisive": [
+      "I12",
+      "40580352/174200465"
+    ],
+    "other": [
+      "I16",
+      "0"
+    ],
+    "selected_trial": 6
+  },
+  "K4": {
+    "layout": "d/+/7 g/d/6 c/g/2 c/e/6 a/e/4 a/f/5 f/h/4 h/b/6 0/b/9 0/e/7 a/b/6 f/c/8/s a/c/3/t f/b/7/u",
+    "target": [
+      "I6",
+      "25784/1172455"
+    ],
+    "initial": [
+      "Vc",
+      "4"
+    ],
+    "initial_reading": "H",
+    "decisive": [
+      "I7",
+      "62636/1172455"
+    ],
+    "other": [
+      "I14",
+      "0"
+    ],
+    "selected_trial": 1
+  },
+  "K5": {
+    "layout": "+/e/7 d/e/4 d/f/3 f/h/5 g/h/3 g/c/2 b/c/8 a/b/2 0/a/9 +/g/7 a/h/5 c/e/2 f/0/9/s a/c/9/t c/f/5/u",
+    "target": [
+      "I12",
+      "-1/4"
+    ],
+    "initial": [
+      "Va",
+      "6"
+    ],
+    "initial_reading": "H",
+    "decisive": [
+      "I14",
+      "-1/6"
+    ],
+    "other": [
+      "I15",
+      "0"
+    ],
+    "selected_trial": 2
+  },
+  "K6": {
+    "layout": "i/+/9 i/f/3 e/f/4 e/h/9 g/h/3 c/g/8 c/a/2 a/d/5 b/d/5 b/0/5 f/+/8 h/d/2/s b/g/5/t d/0/6/u",
+    "target": [
+      "I6",
+      "-12/149"
+    ],
+    "initial": [
+      "I10",
+      "60/229"
+    ],
+    "initial_reading": "L",
+    "decisive": [
+      "Vc",
+      "3"
+    ],
+    "other": [
+      "I9",
+      "-1/6"
+    ],
+    "selected_trial": 13
+  }
+}

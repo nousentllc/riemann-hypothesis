@@ -1,0 +1,1 @@
+Read the supplied record. Answer only the question in the current turn using the required JSON format.

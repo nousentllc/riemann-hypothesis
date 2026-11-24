@@ -1,0 +1,94 @@
+{
+  "minimal_named_distinguishing_subsets": [
+    [
+      "YY",
+      "YN"
+    ],
+    [
+      "YY",
+      "NY"
+    ],
+    [
+      "NN",
+      "YN"
+    ],
+    [
+      "NN",
+      "NY"
+    ]
+  ],
+  "output_order": [
+    "any",
+    "both"
+  ],
+  "pattern_order": [
+    "YY",
+    "NN",
+    "YN",
+    "NY"
+  ],
+  "total_two_bit_maps": 256,
+  "truth_tables": {
+    "always_no": {
+      "NN": "NN",
+      "NY": "NN",
+      "YN": "NN",
+      "YY": "NN"
+    },
+    "always_yes": {
+      "NN": "YY",
+      "NY": "YY",
+      "YN": "YY",
+      "YY": "YY"
+    },
+    "and_on_both": {
+      "NN": "NN",
+      "NY": "NN",
+      "YN": "NN",
+      "YY": "YY"
+    },
+    "first_row_twice": {
+      "NN": "NN",
+      "NY": "NN",
+      "YN": "YY",
+      "YY": "YY"
+    },
+    "or_on_both": {
+      "NN": "NN",
+      "NY": "YY",
+      "YN": "YY",
+      "YY": "YY"
+    },
+    "reversed": {
+      "NN": "NN",
+      "NY": "NY",
+      "YN": "NY",
+      "YY": "YY"
+    },
+    "scope": {
+      "NN": "NN",
+      "NY": "YN",
+      "YN": "YN",
+      "YY": "YY"
+    },
+    "second_row_twice": {
+      "NN": "NN",
+      "NY": "YY",
+      "YN": "NN",
+      "YY": "YY"
+    },
+    "wording_only": {
+      "NN": "YN",
+      "NY": "YN",
+      "YN": "YN",
+      "YY": "YN"
+    }
+  },
+  "unrestricted_maps_compatible_after_k_distinct_rows": [
+    256,
+    64,
+    16,
+    4,
+    1
+  ]
+}

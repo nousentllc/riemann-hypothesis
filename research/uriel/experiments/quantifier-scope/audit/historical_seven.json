@@ -1,0 +1,141 @@
+{
+  "commit": "e7a01b2d19e61e77b97ece9f1b48d48bb761e186",
+  "previous_contract": "Three-way consensus (Y, N, U) and witness IDs",
+  "records": 24,
+  "delivered_after_accurate_checkpoint": 18,
+  "cases": {
+    "label-02": {
+      "family": "DC-J1",
+      "ordered_ids": [
+        "FV",
+        "RM"
+      ],
+      "truth": {
+        "FV": "Y",
+        "RM": "N"
+      },
+      "warranted": "U",
+      "checkpoint_text": "{\"FV\":\"Y\",\"RM\":\"N\"}",
+      "final_text": "{\"verdict\":\"Y\",\"certificate\":[\"FV\",\"RM\"]}",
+      "evidence": "both",
+      "checkpoint_source": "https://github.com/nousentllc/riemann-hypothesis/blob/e7a01b2d19e61e77b97ece9f1b48d48bb761e186/research/uriel/experiments/label-first-verdict/pilot/observed/label-02_label_first/labels/response.json",
+      "final_source": "https://github.com/nousentllc/riemann-hypothesis/blob/e7a01b2d19e61e77b97ece9f1b48d48bb761e186/research/uriel/experiments/label-first-verdict/pilot/observed/label-02_label_first/verdict/response.json",
+      "checkpoint_sha256": "3c4da7c1f8da7d1c899fc7c09a2026e2fdc3ea665656b5937879c9a6b7991f68",
+      "final_sha256": "4890be238bd10b68478d00a6940b33b90b9c6371b7a8c5b8b1f2d406a5b5dc5c"
+    },
+    "label-03": {
+      "family": "DC-J1",
+      "ordered_ids": [
+        "EO",
+        "KS"
+      ],
+      "truth": {
+        "EO": "N",
+        "KS": "Y"
+      },
+      "warranted": "U",
+      "checkpoint_text": "{\"EO\":\"N\",\"KS\":\"Y\"}",
+      "final_text": "{\"verdict\":\"Y\",\"certificate\":[\"KS\"]}",
+      "evidence": "positive_only",
+      "checkpoint_source": "https://github.com/nousentllc/riemann-hypothesis/blob/e7a01b2d19e61e77b97ece9f1b48d48bb761e186/research/uriel/experiments/label-first-verdict/pilot/observed/label-03_label_first/labels/response.json",
+      "final_source": "https://github.com/nousentllc/riemann-hypothesis/blob/e7a01b2d19e61e77b97ece9f1b48d48bb761e186/research/uriel/experiments/label-first-verdict/pilot/observed/label-03_label_first/verdict/response.json",
+      "checkpoint_sha256": "be1954e40246c7d4990f7de5ca153a704f44ca82482dcc54208bf09bd3605688",
+      "final_sha256": "5bd56fae7be1ec98be015a99906aa165dc71743d97dba9dc354038508f58c554"
+    },
+    "label-08": {
+      "family": "DC-J3",
+      "ordered_ids": [
+        "NR",
+        "IO"
+      ],
+      "truth": {
+        "NR": "N",
+        "IO": "Y"
+      },
+      "warranted": "U",
+      "checkpoint_text": "{\n  \"NR\": \"N\",\n  \"IO\": \"Y\"\n}",
+      "final_text": "{\n  \"verdict\": \"Y\",\n  \"certificate\": [\"IO\"]\n}",
+      "evidence": "positive_only",
+      "checkpoint_source": "https://github.com/nousentllc/riemann-hypothesis/blob/e7a01b2d19e61e77b97ece9f1b48d48bb761e186/research/uriel/experiments/label-first-verdict/pilot/observed/label-08_label_first/labels/response.json",
+      "final_source": "https://github.com/nousentllc/riemann-hypothesis/blob/e7a01b2d19e61e77b97ece9f1b48d48bb761e186/research/uriel/experiments/label-first-verdict/pilot/observed/label-08_label_first/verdict/response.json",
+      "checkpoint_sha256": "25a36b83949684b6251a302666d4b926c4132eab7ac0b1c9f7acf8c9e507535c",
+      "final_sha256": "1d74c4dabc5a9cc8d72e0ce38515a6c358707fbf8870cbdd256f5105a6995f2e"
+    },
+    "label-12": {
+      "family": "DC-J4",
+      "ordered_ids": [
+        "BL",
+        "DT"
+      ],
+      "truth": {
+        "BL": "N",
+        "DT": "Y"
+      },
+      "warranted": "U",
+      "checkpoint_text": "{\"BL\":\"N\",\"DT\":\"Y\"}",
+      "final_text": "{\"verdict\":\"Y\",\"certificate\":[\"DT\"]}",
+      "evidence": "positive_only",
+      "checkpoint_source": "https://github.com/nousentllc/riemann-hypothesis/blob/e7a01b2d19e61e77b97ece9f1b48d48bb761e186/research/uriel/experiments/label-first-verdict/pilot/observed/label-12_label_first/labels/response.json",
+      "final_source": "https://github.com/nousentllc/riemann-hypothesis/blob/e7a01b2d19e61e77b97ece9f1b48d48bb761e186/research/uriel/experiments/label-first-verdict/pilot/observed/label-12_label_first/verdict/response.json",
+      "checkpoint_sha256": "52df831293d78de01b0215f197de28568c7971587695b8addea7aa254f736ce5",
+      "final_sha256": "e06d60b4abb034247236d57b2a9f3d0bb23ceb71428e8ecac76704f99991750f"
+    },
+    "label-15": {
+      "family": "DC-J4",
+      "ordered_ids": [
+        "SQ",
+        "HP"
+      ],
+      "truth": {
+        "SQ": "Y",
+        "HP": "N"
+      },
+      "warranted": "U",
+      "checkpoint_text": "{\"SQ\":\"Y\",\"HP\":\"N\"}",
+      "final_text": "{\"verdict\":\"Y\",\"certificate\":[\"SQ\"]}",
+      "evidence": "positive_only",
+      "checkpoint_source": "https://github.com/nousentllc/riemann-hypothesis/blob/e7a01b2d19e61e77b97ece9f1b48d48bb761e186/research/uriel/experiments/label-first-verdict/pilot/observed/label-15_label_first/labels/response.json",
+      "final_source": "https://github.com/nousentllc/riemann-hypothesis/blob/e7a01b2d19e61e77b97ece9f1b48d48bb761e186/research/uriel/experiments/label-first-verdict/pilot/observed/label-15_label_first/verdict/response.json",
+      "checkpoint_sha256": "0ff0e05ab84f5f9ce1993a5f9a9e620ee951b95fee83f76504c864ce1a95e073",
+      "final_sha256": "a119a704b18e95dc0ba5fc0f4e1f4771856442e81b2d4f7b0158f3b9b895c02a"
+    },
+    "label-19": {
+      "family": "DC-J5",
+      "ordered_ids": [
+        "ZU",
+        "AF"
+      ],
+      "truth": {
+        "ZU": "N",
+        "AF": "Y"
+      },
+      "warranted": "U",
+      "checkpoint_text": "{\"ZU\":\"N\",\"AF\":\"Y\"}",
+      "final_text": "{\"verdict\":\"Y\",\"certificate\":[\"AF\"]}",
+      "evidence": "positive_only",
+      "checkpoint_source": "https://github.com/nousentllc/riemann-hypothesis/blob/e7a01b2d19e61e77b97ece9f1b48d48bb761e186/research/uriel/experiments/label-first-verdict/pilot/observed/label-19_label_first/labels/response.json",
+      "final_source": "https://github.com/nousentllc/riemann-hypothesis/blob/e7a01b2d19e61e77b97ece9f1b48d48bb761e186/research/uriel/experiments/label-first-verdict/pilot/observed/label-19_label_first/verdict/response.json",
+      "checkpoint_sha256": "139d2dbf20833c1c5827c880f3ed3c5d31ea109c3b5cd8ee17e8c54fe9112021",
+      "final_sha256": "a0ed05fc6b43afa03df46e22ecf1cfa6ca87d8c9ff02b1660ffde6a0b1b72c27"
+    },
+    "label-21": {
+      "family": "DC-J6",
+      "ordered_ids": [
+        "FM",
+        "EM"
+      ],
+      "truth": {
+        "FM": "Y",
+        "EM": "N"
+      },
+      "warranted": "U",
+      "checkpoint_text": "{\"FM\":\"Y\",\"EM\":\"N\"}",
+      "final_text": "{\"verdict\":\"Y\",\"certificate\":[\"FM\",\"EM\"]}",
+      "evidence": "both",
+      "checkpoint_source": "https://github.com/nousentllc/riemann-hypothesis/blob/e7a01b2d19e61e77b97ece9f1b48d48bb761e186/research/uriel/experiments/label-first-verdict/pilot/observed/label-21_label_first/labels/response.json",
+      "final_source": "https://github.com/nousentllc/riemann-hypothesis/blob/e7a01b2d19e61e77b97ece9f1b48d48bb761e186/research/uriel/experiments/label-first-verdict/pilot/observed/label-21_label_first/verdict/response.json",
+      "checkpoint_sha256": "efc15240f24493c909094bd3b0a6785d26fcd1e0828149d179e841145da7d208",
+      "final_sha256": "d838c46c13f3f1501f84d98a959ee7dc0a613cdf115f0fcb75b7c8084d867494"
+    }
+  }
+}
