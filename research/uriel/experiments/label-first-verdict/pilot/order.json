@@ -1,0 +1,266 @@
+[
+  {
+    "record": "label-15",
+    "arm": "direct",
+    "first_request_hash": "1962274cf7b0a31c9fd5cda4cb0158263a13cd32685b6d6cc5757f8c52212150"
+  },
+  {
+    "record": "label-18",
+    "arm": "label_first",
+    "first_request_hash": "ba66e2e7d91f4309fd18a0d4c1819248d66f2f4b0ffe00935086fea165d3d0b8",
+    "verdict_template_hash": "faae28c63201b12711abdcefe11ac43076bd53024fcb91ea7a4cf9ddf92dc115"
+  },
+  {
+    "record": "label-20",
+    "arm": "direct",
+    "first_request_hash": "d49798796033803408706546162a4dc2bc0851b91e38325ee9684c6d3eabb61d"
+  },
+  {
+    "record": "label-08",
+    "arm": "label_first",
+    "first_request_hash": "a46e4465a7e88881b836e9b605e875c1835b7977dfa5cca517afc35dd311feec",
+    "verdict_template_hash": "79399d06f01b3b8725f57a3762e6b76f1e14646dd599f5b8a15889ed313257e6"
+  },
+  {
+    "record": "label-07",
+    "arm": "label_first",
+    "first_request_hash": "8e1204dd08d9026cae578728ef4f2b250c9514b7e162c9ed982f210aab08289a",
+    "verdict_template_hash": "c2f778e49e1c5696e64d85e9b6087ff78b16fdb404999e513327fa66987a8b93"
+  },
+  {
+    "record": "label-05",
+    "arm": "direct",
+    "first_request_hash": "5c61861f68e127340788f7cc1bbe24def034813bb6aad381a4be7f34a8acd121"
+  },
+  {
+    "record": "label-14",
+    "arm": "label_first",
+    "first_request_hash": "a24207083e8c6c4cd1b1fea087ec41bd77acb7a3642aef8d918ef09b0d8307a6",
+    "verdict_template_hash": "a4a2ba756ecb94914300de07dbecd1c11a59b512974f71f3f89aaa802087f922"
+  },
+  {
+    "record": "label-12",
+    "arm": "label_first",
+    "first_request_hash": "feb9e0658dd491e5e4e89e8f7fcf5d1e3489b752a2417944d893b4c11eb28a2f",
+    "verdict_template_hash": "7cd8e41cf830272e5605b781d671c70fb32e64132a53f28561aec186f996eb64"
+  },
+  {
+    "record": "label-23",
+    "arm": "label_first",
+    "first_request_hash": "31152f94a047fae4549acf423b8fd1b17e30b1f90d47308d456235db79b542fd",
+    "verdict_template_hash": "dcaa4500826491826d567a9f354095a9131d03545016c1c518c6d1496fae4e45"
+  },
+  {
+    "record": "label-06",
+    "arm": "label_first",
+    "first_request_hash": "5337d96d7004f0b0fd8cf7f110f7a663995b27b11c898f136fade2c5f4c02b07",
+    "verdict_template_hash": "5e57b68d048c4cc792029e11e23394732f4c41d1314f87a1fe10878ca1eff707"
+  },
+  {
+    "record": "label-04",
+    "arm": "direct",
+    "first_request_hash": "31025841bbf9c9a005e182441ab245ed002e46ad33d0d6adcb64158e29cb34ae"
+  },
+  {
+    "record": "label-01",
+    "arm": "direct",
+    "first_request_hash": "71fd71272ea88c24ccedeb1a4af6694ec553233120cc0079a9a68e4a60d444f6"
+  },
+  {
+    "record": "label-11",
+    "arm": "direct",
+    "first_request_hash": "39b8fa83d8aecb745db4bf5ded8c50d3aabe6b70293979e30c78e15245d70ee2"
+  },
+  {
+    "record": "label-21",
+    "arm": "label_first",
+    "first_request_hash": "6cd604160afad66378396a7e6611a9885a396c264a2b68bb82df71b7e518822e",
+    "verdict_template_hash": "7b7686e9c9461d55d1489afe81732ec4629f5081d73ffee1d6a5f604674e0102"
+  },
+  {
+    "record": "label-03",
+    "arm": "label_first",
+    "first_request_hash": "5cf4867655dd4e254343fe58d724d5e04fa73eeb9a891776aefacfd8b8115c93",
+    "verdict_template_hash": "cc8a823b123892de3303d8a95e7e1acbe9904605716f58ad4a5b64d2f21c5cda"
+  },
+  {
+    "record": "label-17",
+    "arm": "label_first",
+    "first_request_hash": "3470b7625ad29cd86edefc0e3550f642b72939282d83813f32c4e316ac2f3eb5",
+    "verdict_template_hash": "d68d915a55ca22d72ca46b793278c974db684f9cbd2f79dc7e0a04cd6e0875ec"
+  },
+  {
+    "record": "label-10",
+    "arm": "label_first",
+    "first_request_hash": "a9331cf3d9f095b93282fb86ae49035b80a5981d6eda6678a1262431eb41656d",
+    "verdict_template_hash": "6e8707974bd17094706835046195bd59cdbdbee52f5f0f5ef722156c1402208f"
+  },
+  {
+    "record": "label-16",
+    "arm": "direct",
+    "first_request_hash": "5a76057bc909fbb5c2009e2a5b36154aaea4de959f28006557bcb7b944495e29"
+  },
+  {
+    "record": "label-19",
+    "arm": "direct",
+    "first_request_hash": "6d3ffaa31a424e483773ef75082e216fbc2c5a6c2f2f9632c96049a3e60e7f2a"
+  },
+  {
+    "record": "label-09",
+    "arm": "direct",
+    "first_request_hash": "984b148ce5903adef851d643a0c2ebbd87b1700e83720781948f531e2415875b"
+  },
+  {
+    "record": "label-22",
+    "arm": "direct",
+    "first_request_hash": "cd0ce3222f9ddd267414ce3953844593ac1a5ea687928fe71e1ab026d2d338f3"
+  },
+  {
+    "record": "label-00",
+    "arm": "label_first",
+    "first_request_hash": "ed60b12a8948359f840230a6c9d2c6706c52664937cc520c5053a5265399ad14",
+    "verdict_template_hash": "248605f1d6730e7e61d53d0126b2742636fbf94dac66ad791ee44fa16ce79a37"
+  },
+  {
+    "record": "label-13",
+    "arm": "direct",
+    "first_request_hash": "ba26a3ff4799f94a2e0ec5e2aec7e02f1b26845d0d7017a62831b7b9d6cc96a9"
+  },
+  {
+    "record": "label-02",
+    "arm": "direct",
+    "first_request_hash": "85fc0017f62587b74b18da93eb01a2094fa7490bf7ab7a2352babec892b32acd"
+  },
+  {
+    "record": "label-17",
+    "arm": "direct",
+    "first_request_hash": "86ab1fb9daed9ba14f062e88f25f9d5b0bd842aba85b0f52594d3b82fd7204c4"
+  },
+  {
+    "record": "label-21",
+    "arm": "direct",
+    "first_request_hash": "45feb94109ac47102f9811d3a0ac84f6778096da6f579ce381749386cbd3c833"
+  },
+  {
+    "record": "label-09",
+    "arm": "label_first",
+    "first_request_hash": "280a46112ec8dd9fc46e13457be36d028dfe38a4801e285f34e4f74ccfe5d1ad",
+    "verdict_template_hash": "8622d9c5b5e1fed38af71c3a77fdae85329add3b794af65c81360e37200e9dcb"
+  },
+  {
+    "record": "label-00",
+    "arm": "direct",
+    "first_request_hash": "626651db8519050489f924269ee6fb1d1e4058b1c4bae16620fd6cfa659c877e"
+  },
+  {
+    "record": "label-18",
+    "arm": "direct",
+    "first_request_hash": "767343787c435053200e79bccff40435d560a8a4db479b3d088d3cf3c861937e"
+  },
+  {
+    "record": "label-14",
+    "arm": "direct",
+    "first_request_hash": "acb41594cb58bcf8af9aa9c276c2bed24b7fcb68c723d46b16d4d21ebe348e23"
+  },
+  {
+    "record": "label-11",
+    "arm": "label_first",
+    "first_request_hash": "ac2ce40bc766484c1af074e1709d2c494e55fd7c4de9b415b0ab22a7d0903aed",
+    "verdict_template_hash": "ce0f7c0b22a7c3ccde462ed2af96f56015d8203e17140f44371af1583697d4bc"
+  },
+  {
+    "record": "label-16",
+    "arm": "label_first",
+    "first_request_hash": "7fd747b8a83c688ffb1dcf137d65571fd96c9e35f18786fd1e2c748b9afa4637",
+    "verdict_template_hash": "ea7375201e352c1fdca510c973fdc1dcdd62fcecfc23e1e39f839d8a5e0b0255"
+  },
+  {
+    "record": "label-01",
+    "arm": "label_first",
+    "first_request_hash": "8014765b1a5654cda1b68c4beaa12fb63a1f4c5e2f62a414d129146113e61d1c",
+    "verdict_template_hash": "958b86d811f351c97ef3cc5db79c3e7d28f14068be05175605a0e42d7c99d217"
+  },
+  {
+    "record": "label-10",
+    "arm": "direct",
+    "first_request_hash": "573a24668a8f5864438d0de9a22687a47048ee3218b00252f5f6685e84398840"
+  },
+  {
+    "record": "label-23",
+    "arm": "direct",
+    "first_request_hash": "c84359b9d121061259d2d414896af71254b4d284c1aea2f0c1714bcc03fb2472"
+  },
+  {
+    "record": "label-06",
+    "arm": "direct",
+    "first_request_hash": "3ac54ca4894f4ff3e0e0701d541458beff736dd5add8fbca555e6b1e84f505ad"
+  },
+  {
+    "record": "label-03",
+    "arm": "direct",
+    "first_request_hash": "1e736a7724fcce6e006897a1b8023eebc4904dca9dbe3f22a4118ba6df2c474d"
+  },
+  {
+    "record": "label-13",
+    "arm": "label_first",
+    "first_request_hash": "7417c6a8d22cbb2dcf4002db790021e34ef82cdf4ed5106aecf76138b1a7ff7a",
+    "verdict_template_hash": "c3253acc0d0faee60cabff85cca113f3cf457a66054676a18f235c22762b61ee"
+  },
+  {
+    "record": "label-07",
+    "arm": "direct",
+    "first_request_hash": "8099fec0d0364ab1d3d2cda3a5b07db75dc2bfe6e99e3ca708cec74a045562bf"
+  },
+  {
+    "record": "label-20",
+    "arm": "label_first",
+    "first_request_hash": "877238ca66b8c11eedfe7d0fe569647661557571d65d8722392a7157a999b2f3",
+    "verdict_template_hash": "83baa63d9da742e165ff72b454635a3950f1b6831c4945b36e4808bab50f665c"
+  },
+  {
+    "record": "label-02",
+    "arm": "label_first",
+    "first_request_hash": "39257a8a52591fb24ac43ecc84f7a74d5eaef98c0b4167c6607bda1d81fb72a5",
+    "verdict_template_hash": "3cf05a9508ab0579f56820c41f03d41bea3ee448497d82cd967c5c29eb5728b2"
+  },
+  {
+    "record": "label-05",
+    "arm": "label_first",
+    "first_request_hash": "083500fa1015be9aff752aada34561ce240be62707bd47060e0cd62851af7ea7",
+    "verdict_template_hash": "4f04da1333a924017b6fd7b0ec4c5c4068ad2f41f0d8b97c4059fa624893981d"
+  },
+  {
+    "record": "label-19",
+    "arm": "label_first",
+    "first_request_hash": "f1c21d0ed7dbce03bbd2a0d9016231f02e0018bdcd489ea9b154c854b3067e38",
+    "verdict_template_hash": "bb78678c331b3f618a08b8c2c75555216dc7ee7332e9933bb48a307f3ed520f0"
+  },
+  {
+    "record": "label-22",
+    "arm": "label_first",
+    "first_request_hash": "d75d29435525e84c4729c7be0efd45b58344b3145457f14f7bacfd7d2b19542b",
+    "verdict_template_hash": "cef84f6534293e13f4d1041730e3f9d0fbbf970f50cf32c7def8bf07dc5dddce"
+  },
+  {
+    "record": "label-15",
+    "arm": "label_first",
+    "first_request_hash": "1e6eafe4d901f9c14a3958d8771c6028312c25db04e189306d699a7f45f675ec",
+    "verdict_template_hash": "9fe2240d45c430eb328c16b422b867e4d018921601a99fd4b3902f3f7c2144bd"
+  },
+  {
+    "record": "label-08",
+    "arm": "direct",
+    "first_request_hash": "6cc7014ab246d8ece697e82982e690ec7dc7ed9540d84498001b5dfa99df10c4"
+  },
+  {
+    "record": "label-04",
+    "arm": "label_first",
+    "first_request_hash": "84b83aba4143a4fbbeaa0f75a5d3be59be76e4ab88814ef995c43e7dfbf95087",
+    "verdict_template_hash": "45d02ec8dfae5329c36dc8af579345365d35dbeffb2e7009a3c3c0d4520daf98"
+  },
+  {
+    "record": "label-12",
+    "arm": "direct",
+    "first_request_hash": "496f76319f0dc21298e6bf653fa2acac4473fade7c3142555ae3f2cb2c37acca"
+  }
+]

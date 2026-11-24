@@ -1,0 +1,128 @@
+{
+  "J1": {
+    "layout": "+/b/5 d/b/9 d/e/6 c/e/2 c/a/6 0/a/2 b/0/6 c/b/6 c/0/7 c/d/5 e/+/9 +/c/7 e/a/3 d/a/6/s a/+/4/t +/d/3/u",
+    "target": [
+      "I2",
+      "0"
+    ],
+    "initial": [
+      "I14",
+      "0"
+    ],
+    "initial_reading": "H",
+    "decisive": [
+      "Ve",
+      "44/7"
+    ],
+    "other": [
+      "Va",
+      "4"
+    ],
+    "selected_trial": 12
+  },
+  "J2": {
+    "layout": "d/+/6 a/d/4 f/a/7 b/f/7 b/e/7 c/e/4 0/c/7 e/a/7 a/c/5 f/e/7 f/0/6 c/b/2 b/+/6 +/c/4/s 0/a/6/t c/d/3/u",
+    "target": [
+      "I8",
+      "0"
+    ],
+    "initial": [
+      "I7",
+      "-7/8"
+    ],
+    "initial_reading": "L",
+    "decisive": [
+      "I2",
+      "-6/11"
+    ],
+    "other": [
+      "I16",
+      "-1/6"
+    ],
+    "selected_trial": 1
+  },
+  "J3": {
+    "layout": "+/a/9 a/e/6 e/f/7 f/b/5 b/c/9 c/g/7 d/g/8 0/d/5 c/+/5 +/f/3 a/b/2 g/e/5/s f/0/4/t e/+/6/u",
+    "target": [
+      "I2",
+      "29347/510556"
+    ],
+    "initial": [
+      "Vf",
+      "8"
+    ],
+    "initial_reading": "L",
+    "decisive": [
+      "I14",
+      "-1782/108775"
+    ],
+    "other": [
+      "I6",
+      "2/5"
+    ],
+    "selected_trial": 14
+  },
+  "J4": {
+    "layout": "g/+/4 g/b/3 b/f/4 e/f/3 e/d/9 c/d/4 a/c/2 0/a/6 c/0/3 f/0/8 +/a/5 e/0/6 e/a/4/s 0/g/8/t d/g/8/u",
+    "target": [
+      "I7",
+      "1072431/1442767"
+    ],
+    "initial": [
+      "Vf",
+      "3"
+    ],
+    "initial_reading": "H",
+    "decisive": [
+      "Vd",
+      "3"
+    ],
+    "other": [
+      "Ve",
+      "5/2"
+    ],
+    "selected_trial": 1
+  },
+  "J5": {
+    "layout": "+/f/9 b/f/7 g/b/3 g/d/5 d/a/4 c/a/8 h/c/6 h/e/5 0/e/9 +/h/9/s g/+/6/t h/b/6/u",
+    "target": [
+      "I3",
+      "-2/31"
+    ],
+    "initial": [
+      "I4",
+      "1/8"
+    ],
+    "initial_reading": "H",
+    "decisive": [
+      "Va",
+      "35/4"
+    ],
+    "other": [
+      "Vb",
+      "10"
+    ],
+    "selected_trial": 2
+  },
+  "J6": {
+    "layout": "+/c/6 c/f/6 e/f/7 e/d/4 g/d/3 h/g/2 a/h/9 b/a/2 0/b/6 a/c/9 +/h/3/s +/a/7/t a/d/7/u",
+    "target": [
+      "I5",
+      "0"
+    ],
+    "initial": [
+      "I13",
+      "-756/22207"
+    ],
+    "initial_reading": "L",
+    "decisive": [
+      "I1",
+      "272/793"
+    ],
+    "other": [
+      "I12",
+      "0"
+    ],
+    "selected_trial": 7
+  }
+}

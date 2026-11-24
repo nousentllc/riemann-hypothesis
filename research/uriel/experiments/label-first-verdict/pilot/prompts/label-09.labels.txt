@@ -1,0 +1,15 @@
+DC network with + at 12 V and 0 at 0 V. Switch order is s,t,u (1 means closed). A bracketed resistor conducts only when its switch is closed. Each resistor lists its oriented start and end nodes and its resistance in ohms. R1=+>a:9 R2=a>e:6 R3=e>f:7 R4=f>b:5 R5=b>c:9 R6=c>g:7 R7=d>g:8 R8=0>d:5 R9=c>+:5 R10=+>f:3 R11=a>b:2 R12=g>e:5[s] R13=f>0:4[t] R14=e>+:6[u].
+Question: is the signed current of R2 > 29347/510556 A?
+Initial comparator: voltage at f > 8 V
+Other comparators: M27: signed current of R6 > 2/5 A | M34: signed current of R14 > -1782/108775 A
+H means a comparator condition holds and L means it fails. All currents are exact amperes. The last column gives the result of the named current comparison in each setting.
+In the mark column, * explicitly identifies a setting compatible with both observed readings. A dot means no marker is supplied for that row.
+mark ID stu target_current initial M27 M34 target_current_above_threshold
+. TX 010 5697/45010 L H H Y
+. PA 011 -17568/651985 L H L N
+
+Observed readings: initial = L; M27 = H.
+The table includes every setting compatible with both readings. Use both readings when identifying which settings remain possible.
+Y means the named claim holds in every compatible setting. N means it fails in every compatible setting. U means both answers are possible.
+For Y or N, list all and only the compatible IDs. For U, list exactly two compatible IDs with opposite target answers. Use no duplicate IDs.
+Before giving any verdict, report the target_current_above_threshold label for each displayed survivor. Return only a JSON object with keys TX and PA, each having value Y or N. The verdict will be requested separately.
