@@ -1,0 +1,27 @@
+{
+  "five_original_errors": {
+    "n": 5,
+    "paired_report_prediction": 5,
+    "patterns": {
+      "NY": 5
+    }
+  },
+  "affected": {
+    "n": 12,
+    "paired_report_prediction": 12,
+    "patterns": {
+      "NY": 6,
+      "YN": 6
+    }
+  },
+  "invariant": {
+    "n": 12,
+    "paired_report_prediction": 12,
+    "patterns": {
+      "NN": 6,
+      "YY": 6
+    }
+  },
+  "replays": 24,
+  "usable": 48
+}

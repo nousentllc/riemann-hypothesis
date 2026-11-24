@@ -1,0 +1,46 @@
+{
+  "model": "gpt-oss:20b",
+  "messages": [
+    {
+      "role": "system",
+      "content": "Read the supplied record. Answer only the question in the current turn using the required JSON format."
+    },
+    {
+      "role": "user",
+      "content": "DC network with + at 12 V and 0 at 0 V. Switch order is s,t,u (1 means closed). A bracketed resistor conducts only when its switch is closed. Each resistor lists its oriented start and end nodes and its resistance in ohms. R1=d>+:7 R2=g>d:6 R3=c>g:2 R4=c>e:6 R5=a>e:4 R6=a>f:5 R7=f>h:4 R8=h>b:6 R9=0>b:9 R10=0>e:7 R11=a>b:6 R12=f>c:8[s] R13=a>c:3[t] R14=f>b:7[u].\nThe target label is Y if the signed current of R6 > 25784/1172455 A, and N otherwise.\nInitial comparator: voltage at c > 4 V\nOther comparators: M39: signed current of R14 > 0 A | M54: signed current of R7 > 62636/1172455 A\nH means a comparator condition holds and L means it fails. All currents are exact amperes.\nID stu target_current initial M39 M54 target_label\nKR 100 -10968/121867 H L H N\nPY 101 -25352/458963 H H H N\n\nObserved readings: initial = H; M54 = H.\nThe table shows exactly the two survivors compatible with the observed readings.\nReport the target label for each survivor. Return only a JSON object with keys KR and PY, each having value Y or N."
+    },
+    {
+      "role": "assistant",
+      "content": "{\"KR\":\"N\",\"PY\":\"Y\"}"
+    },
+    {
+      "role": "user",
+      "content": "Is the target label Y for both of the two survivors? Return only the JSON field answer, using Y for yes and N for no."
+    }
+  ],
+  "format": {
+    "type": "object",
+    "properties": {
+      "answer": {
+        "type": "string",
+        "enum": [
+          "Y",
+          "N"
+        ]
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "additionalProperties": false
+  },
+  "stream": false,
+  "keep_alive": "9m",
+  "think": "low",
+  "options": {
+    "seed": 2026112493,
+    "temperature": 0,
+    "num_ctx": 8192,
+    "num_predict": 2048
+  }
+}

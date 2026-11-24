@@ -1,0 +1,46 @@
+{
+  "model": "gpt-oss:20b",
+  "messages": [
+    {
+      "role": "system",
+      "content": "Read the supplied record. Answer only the question in the current turn using the required JSON format."
+    },
+    {
+      "role": "user",
+      "content": "DC network with + at 12 V and 0 at 0 V. Switch order is s,t,u (1 means closed). A bracketed resistor conducts only when its switch is closed. Each resistor lists its oriented start and end nodes and its resistance in ohms. R1=b>+:7 R2=c>b:5 R3=a>c:6 R4=a>d:4 R5=d>e:6 R6=0>e:4 R7=b>e:6 R8=e>c:7 R9=c>+:6 R10=+>a:5 R11=c>0:9 R12=+>e:6 R13=d>0:5 R14=0>b:3 R15=c>d:3[s] R16=a>0:5[t] R17=+>d:8[u].\nThe target label is Y if the signed current of R8 > -1/8 A, and N otherwise.\nInitial comparator: voltage at d > 5 V\nOther comparators: M39: signed current of R10 > 1 A | M47: signed current of R15 > 0 A\nH means a comparator condition holds and L means it fails. All currents are exact amperes.\nID stu target_current initial M39 M47 target_label\nER 011 -33062112/280596283 H H L Y\nJM 111 -4221639/44567974 H H H Y\n\nObserved readings: initial = H; M39 = H.\nThe table shows exactly the two survivors compatible with the observed readings.\nReport the target label for each survivor. Return only a JSON object with keys ER and JM, each having value Y or N."
+    },
+    {
+      "role": "assistant",
+      "content": "{\"ER\":\"N\",\"JM\":\"Y\"}"
+    },
+    {
+      "role": "user",
+      "content": "Is the target label Y for at least one of the two survivors? Return only the JSON field answer, using Y for yes and N for no."
+    }
+  ],
+  "format": {
+    "type": "object",
+    "properties": {
+      "answer": {
+        "type": "string",
+        "enum": [
+          "Y",
+          "N"
+        ]
+      }
+    },
+    "required": [
+      "answer"
+    ],
+    "additionalProperties": false
+  },
+  "stream": false,
+  "keep_alive": "9m",
+  "think": "low",
+  "options": {
+    "seed": 2026112480,
+    "temperature": 0,
+    "num_ctx": 8192,
+    "num_predict": 2048
+  }
+}
