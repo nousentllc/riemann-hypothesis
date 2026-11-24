@@ -1,0 +1,26 @@
+{
+  "started": "2026-11-24T14:14:38.706641+00:00",
+  "request_sha256": "7197e8883508f9d9944e9cae9291cdc90d2dea99e0681541101c2d4ae4fcb4b3",
+  "answer": {
+    "verdict": "N",
+    "certificate": [
+      "AU",
+      "GR",
+      "IK",
+      "KN",
+      "NK",
+      "XV"
+    ]
+  },
+  "status": "ok",
+  "content": "{\n  \"verdict\": \"N\",\n  \"certificate\": [\n   \"AU\",\n  \"GR\",\n  \"IK\",\n  \"KN\",\n  \"NK\",\n  \"XV\"\n  ]\n}",
+  "usage": {
+    "prompt_eval_count": 817,
+    "eval_count": 473,
+    "total_duration": 29197651708,
+    "load_duration": 14162042,
+    "eval_duration": 28543755000,
+    "done_reason": "stop"
+  },
+  "ended": "2026-11-24T14:15:07.909554+00:00"
+}

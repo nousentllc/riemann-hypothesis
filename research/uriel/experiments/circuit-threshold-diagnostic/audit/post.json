@@ -1,0 +1,713 @@
+{
+  "actionable_pairs": {
+    "both": 0,
+    "labeled_only": 1,
+    "neither": 4,
+    "raw_only": 1
+  },
+  "actionable_secondary": {
+    "both": 0,
+    "conditional_win_95pct": null,
+    "labeled_only": 0,
+    "neither": 6,
+    "net": 0,
+    "raw_only": 0,
+    "two_sided_sign_p": "1"
+  },
+  "cases": {
+    "circuit-00_labeled": {
+      "actual_reply": {
+        "item": "M2",
+        "value": "L"
+      },
+      "arm": "labeled",
+      "chosen": "M2",
+      "decisive": [
+        "M7"
+      ],
+      "final": "U",
+      "final_certified": true,
+      "final_warrant": "U",
+      "initial": "U",
+      "initial_valid": true,
+      "kind": "lookup",
+      "possible_ids_after": [
+        "BB",
+        "OW"
+      ],
+      "productive": false,
+      "record": "circuit-00",
+      "success": false,
+      "target": "Y",
+      "unsupported": 0
+    },
+    "circuit-00_raw": {
+      "actual_reply": null,
+      "arm": "raw",
+      "chosen": "NONE",
+      "decisive": [
+        "M7"
+      ],
+      "final": "U",
+      "final_certified": false,
+      "final_warrant": "U",
+      "initial": "U",
+      "initial_valid": false,
+      "kind": "lookup",
+      "possible_ids_after": [
+        "BB",
+        "GB",
+        "GN",
+        "OW"
+      ],
+      "productive": false,
+      "record": "circuit-00",
+      "success": false,
+      "target": "Y",
+      "unsupported": 0
+    },
+    "circuit-01_labeled": {
+      "actual_reply": null,
+      "arm": "labeled",
+      "chosen": "NONE",
+      "decisive": null,
+      "final": "U",
+      "final_certified": false,
+      "final_warrant": "Y",
+      "initial": "U",
+      "initial_valid": false,
+      "kind": "settled",
+      "possible_ids_after": [
+        "HA",
+        "RD",
+        "SH",
+        "TT"
+      ],
+      "productive": false,
+      "record": "circuit-01",
+      "success": false,
+      "target": "Y",
+      "unsupported": 0
+    },
+    "circuit-01_raw": {
+      "actual_reply": null,
+      "arm": "raw",
+      "chosen": "NONE",
+      "decisive": null,
+      "final": "U",
+      "final_certified": false,
+      "final_warrant": "Y",
+      "initial": "U",
+      "initial_valid": false,
+      "kind": "settled",
+      "possible_ids_after": [
+        "HA",
+        "RD",
+        "SH",
+        "TT"
+      ],
+      "productive": false,
+      "record": "circuit-01",
+      "success": false,
+      "target": "Y",
+      "unsupported": 0
+    },
+    "circuit-02_labeled": {
+      "actual_reply": {
+        "item": "M6",
+        "value": "H"
+      },
+      "arm": "labeled",
+      "chosen": "M6",
+      "decisive": null,
+      "final": "Y",
+      "final_certified": false,
+      "final_warrant": "U",
+      "initial": "U",
+      "initial_valid": true,
+      "kind": "ambiguous",
+      "possible_ids_after": [
+        "EQ",
+        "YP"
+      ],
+      "productive": false,
+      "record": "circuit-02",
+      "success": false,
+      "target": "U",
+      "unsupported": 1
+    },
+    "circuit-02_raw": {
+      "actual_reply": null,
+      "arm": "raw",
+      "chosen": "NONE",
+      "decisive": null,
+      "final": "U",
+      "final_certified": false,
+      "final_warrant": "U",
+      "initial": "U",
+      "initial_valid": false,
+      "kind": "ambiguous",
+      "possible_ids_after": [
+        "EQ",
+        "EX",
+        "TI",
+        "YP"
+      ],
+      "productive": false,
+      "record": "circuit-02",
+      "success": false,
+      "target": "U",
+      "unsupported": 0
+    },
+    "circuit-03_labeled": {
+      "actual_reply": {
+        "item": "M2",
+        "value": "L"
+      },
+      "arm": "labeled",
+      "chosen": "M2",
+      "decisive": [
+        "M2"
+      ],
+      "final": "Y",
+      "final_certified": false,
+      "final_warrant": "N",
+      "initial": "U",
+      "initial_valid": false,
+      "kind": "lookup",
+      "possible_ids_after": [
+        "GL",
+        "RX"
+      ],
+      "productive": true,
+      "record": "circuit-03",
+      "success": false,
+      "target": "N",
+      "unsupported": 1
+    },
+    "circuit-03_raw": {
+      "actual_reply": null,
+      "arm": "raw",
+      "chosen": "NONE",
+      "decisive": [
+        "M2"
+      ],
+      "final": "U",
+      "final_certified": true,
+      "final_warrant": "U",
+      "initial": "U",
+      "initial_valid": true,
+      "kind": "lookup",
+      "possible_ids_after": [
+        "GL",
+        "RX",
+        "UC",
+        "ZL"
+      ],
+      "productive": false,
+      "record": "circuit-03",
+      "success": false,
+      "target": "N",
+      "unsupported": 0
+    },
+    "circuit-04_labeled": {
+      "actual_reply": null,
+      "arm": "labeled",
+      "chosen": "NONE",
+      "decisive": null,
+      "final": "U",
+      "final_certified": false,
+      "final_warrant": "N",
+      "initial": "U",
+      "initial_valid": false,
+      "kind": "settled",
+      "possible_ids_after": [
+        "BI",
+        "GQ",
+        "MU",
+        "SZ"
+      ],
+      "productive": false,
+      "record": "circuit-04",
+      "success": false,
+      "target": "N",
+      "unsupported": 0
+    },
+    "circuit-04_raw": {
+      "actual_reply": {
+        "item": "M8",
+        "value": "H"
+      },
+      "arm": "raw",
+      "chosen": "M8",
+      "decisive": null,
+      "final": "U",
+      "final_certified": false,
+      "final_warrant": "N",
+      "initial": "U",
+      "initial_valid": false,
+      "kind": "settled",
+      "possible_ids_after": [
+        "GQ",
+        "SZ"
+      ],
+      "productive": false,
+      "record": "circuit-04",
+      "success": false,
+      "target": "N",
+      "unsupported": 0
+    },
+    "circuit-05_labeled": {
+      "actual_reply": null,
+      "arm": "labeled",
+      "chosen": "NONE",
+      "decisive": [
+        "M8"
+      ],
+      "final": "U",
+      "final_certified": true,
+      "final_warrant": "U",
+      "initial": "U",
+      "initial_valid": true,
+      "kind": "lookup",
+      "possible_ids_after": [
+        "CU",
+        "HB",
+        "MG",
+        "ZK"
+      ],
+      "productive": false,
+      "record": "circuit-05",
+      "success": false,
+      "target": "N",
+      "unsupported": 0
+    },
+    "circuit-05_raw": {
+      "actual_reply": null,
+      "arm": "raw",
+      "chosen": "NONE",
+      "decisive": [
+        "M8"
+      ],
+      "final": "U",
+      "final_certified": true,
+      "final_warrant": "U",
+      "initial": "U",
+      "initial_valid": true,
+      "kind": "lookup",
+      "possible_ids_after": [
+        "CU",
+        "HB",
+        "MG",
+        "ZK"
+      ],
+      "productive": false,
+      "record": "circuit-05",
+      "success": false,
+      "target": "N",
+      "unsupported": 0
+    },
+    "circuit-06_labeled": {
+      "actual_reply": {
+        "item": "M5",
+        "value": "L"
+      },
+      "arm": "labeled",
+      "chosen": "M5",
+      "decisive": [
+        "M6"
+      ],
+      "final": "N",
+      "final_certified": false,
+      "final_warrant": "U",
+      "initial": "U",
+      "initial_valid": false,
+      "kind": "lookup",
+      "possible_ids_after": [
+        "OH",
+        "XV"
+      ],
+      "productive": false,
+      "record": "circuit-06",
+      "success": false,
+      "target": "N",
+      "unsupported": 1
+    },
+    "circuit-06_raw": {
+      "actual_reply": {
+        "item": "M5",
+        "value": "L"
+      },
+      "arm": "raw",
+      "chosen": "M5",
+      "decisive": [
+        "M6"
+      ],
+      "final": "Y",
+      "final_certified": false,
+      "final_warrant": "U",
+      "initial": "U",
+      "initial_valid": false,
+      "kind": "lookup",
+      "possible_ids_after": [
+        "OH",
+        "XV"
+      ],
+      "productive": false,
+      "record": "circuit-06",
+      "success": false,
+      "target": "N",
+      "unsupported": 1
+    },
+    "circuit-07_labeled": {
+      "actual_reply": {
+        "item": "M5",
+        "value": "L"
+      },
+      "arm": "labeled",
+      "chosen": "M5",
+      "decisive": null,
+      "final": "Y",
+      "final_certified": false,
+      "final_warrant": "U",
+      "initial": "U",
+      "initial_valid": true,
+      "kind": "ambiguous",
+      "possible_ids_after": [
+        "BG",
+        "NK"
+      ],
+      "productive": false,
+      "record": "circuit-07",
+      "success": false,
+      "target": "U",
+      "unsupported": 1
+    },
+    "circuit-07_raw": {
+      "actual_reply": {
+        "item": "M3",
+        "value": "L"
+      },
+      "arm": "raw",
+      "chosen": "M3",
+      "decisive": null,
+      "final": "Y",
+      "final_certified": false,
+      "final_warrant": "U",
+      "initial": "U",
+      "initial_valid": true,
+      "kind": "ambiguous",
+      "possible_ids_after": [
+        "AU",
+        "BG",
+        "GR",
+        "NK"
+      ],
+      "productive": false,
+      "record": "circuit-07",
+      "success": false,
+      "target": "U",
+      "unsupported": 1
+    },
+    "circuit-08_labeled": {
+      "actual_reply": null,
+      "arm": "labeled",
+      "chosen": "NONE",
+      "decisive": null,
+      "final": "U",
+      "final_certified": false,
+      "final_warrant": "Y",
+      "initial": "U",
+      "initial_valid": false,
+      "kind": "settled",
+      "possible_ids_after": [
+        "LO",
+        "MC",
+        "QK",
+        "YG"
+      ],
+      "productive": false,
+      "record": "circuit-08",
+      "success": false,
+      "target": "Y",
+      "unsupported": 0
+    },
+    "circuit-08_raw": {
+      "actual_reply": null,
+      "arm": "raw",
+      "chosen": "NONE",
+      "decisive": null,
+      "final": "U",
+      "final_certified": false,
+      "final_warrant": "Y",
+      "initial": "U",
+      "initial_valid": false,
+      "kind": "settled",
+      "possible_ids_after": [
+        "LO",
+        "MC",
+        "QK",
+        "YG"
+      ],
+      "productive": false,
+      "record": "circuit-08",
+      "success": false,
+      "target": "Y",
+      "unsupported": 0
+    },
+    "circuit-09_labeled": {
+      "actual_reply": {
+        "item": "M3",
+        "value": "H"
+      },
+      "arm": "labeled",
+      "chosen": "M3",
+      "decisive": [
+        "M7"
+      ],
+      "final": "Y",
+      "final_certified": false,
+      "final_warrant": "U",
+      "initial": "U",
+      "initial_valid": true,
+      "kind": "lookup",
+      "possible_ids_after": [
+        "AD",
+        "QT"
+      ],
+      "productive": false,
+      "record": "circuit-09",
+      "success": false,
+      "target": "Y",
+      "unsupported": 1
+    },
+    "circuit-09_raw": {
+      "actual_reply": {
+        "item": "M7",
+        "value": "L"
+      },
+      "arm": "raw",
+      "chosen": "M7",
+      "decisive": [
+        "M7"
+      ],
+      "final": "Y",
+      "final_certified": false,
+      "final_warrant": "Y",
+      "initial": "U",
+      "initial_valid": true,
+      "kind": "lookup",
+      "possible_ids_after": [
+        "AD",
+        "DB"
+      ],
+      "productive": true,
+      "record": "circuit-09",
+      "success": false,
+      "target": "Y",
+      "unsupported": 0
+    },
+    "circuit-10_labeled": {
+      "actual_reply": null,
+      "arm": "labeled",
+      "chosen": "NONE",
+      "decisive": [
+        "M4"
+      ],
+      "final": "U",
+      "final_certified": false,
+      "final_warrant": "U",
+      "initial": "U",
+      "initial_valid": false,
+      "kind": "lookup",
+      "possible_ids_after": [
+        "EA",
+        "IC",
+        "OO",
+        "WU"
+      ],
+      "productive": false,
+      "record": "circuit-10",
+      "success": false,
+      "target": "Y",
+      "unsupported": 0
+    },
+    "circuit-10_raw": {
+      "actual_reply": {
+        "item": "M3",
+        "value": "H"
+      },
+      "arm": "raw",
+      "chosen": "M3",
+      "decisive": [
+        "M4"
+      ],
+      "final": "Y",
+      "final_certified": false,
+      "final_warrant": "U",
+      "initial": "U",
+      "initial_valid": false,
+      "kind": "lookup",
+      "possible_ids_after": [
+        "IC",
+        "WU"
+      ],
+      "productive": false,
+      "record": "circuit-10",
+      "success": false,
+      "target": "Y",
+      "unsupported": 1
+    },
+    "circuit-11_labeled": {
+      "actual_reply": null,
+      "arm": "labeled",
+      "chosen": "NONE",
+      "decisive": null,
+      "final": "U",
+      "final_certified": true,
+      "final_warrant": "U",
+      "initial": "U",
+      "initial_valid": true,
+      "kind": "ambiguous",
+      "possible_ids_after": [
+        "OF",
+        "PP",
+        "XL",
+        "XY"
+      ],
+      "productive": false,
+      "record": "circuit-11",
+      "success": true,
+      "target": "U",
+      "unsupported": 0
+    },
+    "circuit-11_raw": {
+      "actual_reply": null,
+      "arm": "raw",
+      "chosen": "NONE",
+      "decisive": null,
+      "final": "U",
+      "final_certified": true,
+      "final_warrant": "U",
+      "initial": "U",
+      "initial_valid": true,
+      "kind": "ambiguous",
+      "possible_ids_after": [
+        "OF",
+        "PP",
+        "XL",
+        "XY"
+      ],
+      "productive": false,
+      "record": "circuit-11",
+      "success": true,
+      "target": "U",
+      "unsupported": 0
+    }
+  },
+  "exact_two_sided_primary_p": "1",
+  "independently_scored_sessions": 24,
+  "panel": {
+    "actionable_signs": {
+      "N": 3,
+      "Y": 3
+    },
+    "balance_heuristic": {
+      "circuit-00": {
+        "compatible_states": 4,
+        "max_balance_ties": 3,
+        "uniform_ties_decisive_probability": "1/3"
+      },
+      "circuit-03": {
+        "compatible_states": 4,
+        "max_balance_ties": 2,
+        "uniform_ties_decisive_probability": "1/2"
+      },
+      "circuit-05": {
+        "compatible_states": 4,
+        "max_balance_ties": 3,
+        "uniform_ties_decisive_probability": "1/3"
+      },
+      "circuit-06": {
+        "compatible_states": 4,
+        "max_balance_ties": 3,
+        "uniform_ties_decisive_probability": "1/3"
+      },
+      "circuit-09": {
+        "compatible_states": 4,
+        "max_balance_ties": 3,
+        "uniform_ties_decisive_probability": "1/3"
+      },
+      "circuit-10": {
+        "compatible_states": 4,
+        "max_balance_ties": 2,
+        "uniform_ties_decisive_probability": "1/2"
+      }
+    },
+    "decisive_menu_positions": {
+      "1": 2,
+      "2": 2,
+      "3": 2
+    },
+    "expected_decisive_uniform_balanced_ties": "7/3",
+    "families": 6,
+    "presentations_verified": 24,
+    "records": 12,
+    "sessions_scheduled": 24,
+    "signed_fraction_comparisons_verified": 96,
+    "stratum_counts": {
+      "ambiguous": 3,
+      "lookup": 6,
+      "settled": 3
+    },
+    "unique_family_candidate_rows": 48
+  },
+  "representation_follow_up_gate": false,
+  "request_hashes_checked": 35,
+  "totals": {
+    "labeled": {
+      "actionable_certified": 0,
+      "certified": 1,
+      "complete_families": 0,
+      "initial_certificate": 6,
+      "initial_licensed": 9,
+      "input_tokens": 13860,
+      "invalid_calls": 0,
+      "length_limited": 0,
+      "licensed_final": 4,
+      "output_tokens": 6743,
+      "parseable_final": 12,
+      "productive": 1,
+      "requests": 18,
+      "scored_sessions": 12,
+      "service_nanoseconds": 455337394582,
+      "target_final": 3,
+      "terminal_certificate": 3,
+      "unnecessary_lookup_settled": 0,
+      "unsupported": 5,
+      "used_lookup": 6
+    },
+    "raw": {
+      "actionable_certified": 0,
+      "certified": 1,
+      "complete_families": 0,
+      "initial_certificate": 5,
+      "initial_licensed": 9,
+      "input_tokens": 12838,
+      "invalid_calls": 0,
+      "length_limited": 0,
+      "licensed_final": 6,
+      "output_tokens": 7741,
+      "parseable_final": 12,
+      "productive": 1,
+      "requests": 17,
+      "scored_sessions": 12,
+      "service_nanoseconds": 541657111419,
+      "target_final": 4,
+      "terminal_certificate": 3,
+      "unnecessary_lookup_settled": 1,
+      "unsupported": 3,
+      "used_lookup": 5
+    }
+  }
+}

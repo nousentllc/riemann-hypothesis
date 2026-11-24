@@ -1,0 +1,27 @@
+{
+  "record": "circuit-10",
+  "arm": "labeled",
+  "first": {
+    "started": "2026-11-24T14:23:16.186927+00:00",
+    "request_sha256": "2d2f27994d7a15f0defe6b6a06c23a10cc086f20e6bc7884ec5a5e284328ea1b",
+    "answer": {
+      "verdict": "U",
+      "certificate": [
+        "EA",
+        "OF"
+      ],
+      "lookup": "NONE"
+    },
+    "status": "ok",
+    "content": "{\n  \"verdict\": \"U\",\n  \"certificate\": [\"EA\", \"OF\"],\n  \"lookup\": \"NONE\"\n}",
+    "usage": {
+      "prompt_eval_count": 743,
+      "eval_count": 760,
+      "total_duration": 52894864042,
+      "load_duration": 5083042,
+      "eval_duration": 49490556000,
+      "done_reason": "stop"
+    },
+    "ended": "2026-11-24T14:24:09.090925+00:00"
+  }
+}

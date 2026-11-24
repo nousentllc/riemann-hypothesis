@@ -1,0 +1,144 @@
+{
+  "totals": {
+    "raw": {
+      "sessions": 12,
+      "productive": 1,
+      "actionable_certified": 0,
+      "certified": 1,
+      "unsupported": 3,
+      "initial_certified": 5,
+      "initial_licensed": 9,
+      "used_lookup": 5,
+      "unnecessary_lookup_settled": 1,
+      "attainable_final_sign": 4,
+      "parseable_final": 12,
+      "calls": 17,
+      "invalid_calls": 0,
+      "length_limited": 0,
+      "generated_tokens": 7741,
+      "prompt_tokens": 12838,
+      "service_ns": 541657111419,
+      "complete_families": 0
+    },
+    "labeled": {
+      "sessions": 12,
+      "productive": 1,
+      "actionable_certified": 0,
+      "certified": 1,
+      "unsupported": 5,
+      "initial_certified": 6,
+      "initial_licensed": 9,
+      "used_lookup": 6,
+      "unnecessary_lookup_settled": 0,
+      "attainable_final_sign": 3,
+      "parseable_final": 12,
+      "calls": 18,
+      "invalid_calls": 0,
+      "length_limited": 0,
+      "generated_tokens": 6743,
+      "prompt_tokens": 13860,
+      "service_ns": 455337394582,
+      "complete_families": 0
+    }
+  },
+  "primary": {
+    "n": 6,
+    "both": 0,
+    "neither": 4,
+    "labeled_only": 1,
+    "raw_only": 1,
+    "net": 0,
+    "discordant": 2,
+    "two_sided_sign_p": 1,
+    "conditional_win_95pct": [
+      0.012579117093425018,
+      0.9874208829065749
+    ]
+  },
+  "actionable_secondary": {
+    "n": 6,
+    "both": 0,
+    "neither": 6,
+    "labeled_only": 0,
+    "raw_only": 0,
+    "net": 0,
+    "discordant": 0,
+    "two_sided_sign_p": 1,
+    "conditional_win_95pct": null
+  },
+  "strata": {
+    "raw": {
+      "lookup": {
+        "n": 6,
+        "certified": 0,
+        "initial_certified": 3,
+        "unsupported": 2,
+        "productive": 1,
+        "first_barrier": {
+          "no usable request": 3,
+          "wrong meter": 2,
+          "certificate": 1
+        }
+      },
+      "settled": {
+        "n": 3,
+        "certified": 0,
+        "initial_certified": 0,
+        "unsupported": 0,
+        "productive": 0,
+        "first_barrier": {
+          "decision or missing": 3
+        }
+      },
+      "ambiguous": {
+        "n": 3,
+        "certified": 1,
+        "initial_certified": 2,
+        "unsupported": 1,
+        "productive": 0,
+        "first_barrier": {
+          "decision or missing": 1,
+          "pass": 1,
+          "certificate": 1
+        }
+      }
+    },
+    "labeled": {
+      "lookup": {
+        "n": 6,
+        "certified": 0,
+        "initial_certified": 3,
+        "unsupported": 3,
+        "productive": 1,
+        "first_barrier": {
+          "no usable request": 2,
+          "wrong meter": 3,
+          "decision or missing": 1
+        }
+      },
+      "settled": {
+        "n": 3,
+        "certified": 0,
+        "initial_certified": 0,
+        "unsupported": 0,
+        "productive": 0,
+        "first_barrier": {
+          "decision or missing": 3
+        }
+      },
+      "ambiguous": {
+        "n": 3,
+        "certified": 1,
+        "initial_certified": 3,
+        "unsupported": 2,
+        "productive": 0,
+        "first_barrier": {
+          "decision or missing": 2,
+          "pass": 1
+        }
+      }
+    }
+  },
+  "paid_api_usd": 0,
+  "development_signal": false
+}

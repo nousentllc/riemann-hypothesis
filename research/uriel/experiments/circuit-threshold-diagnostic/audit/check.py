@@ -3,6 +3,7 @@ import argparse
 import csv
 from collections import Counter, defaultdict
 from fractions import Fraction
+from itertools import product
 from hashlib import sha256
 import json
 from pathlib import Path
@@ -204,6 +205,31 @@ def parse_stage(stage, path, row, first):
     return answer
 
 
+def signed_pairs(case_ids, conclusion, metric):
+    counts = Counter((conclusion[rid+'_raw'][metric],conclusion[rid+'_labeled'][metric]) for rid in case_ids)
+    w, l = counts[False,True],counts[True,False]
+    n = w+l
+    words = [sum(bits) for bits in product((0,1),repeat=n)]
+    outside = sum(k<=min(w,l) or k>=max(w,l) for k in words)
+    pvalue = Fraction(outside,2**n)
+    interval = None
+    if n:
+        # Invert two one-sided ordered-binomial tails using exact arithmetic on dyadic grids.
+        def bound(right_tail):
+            a, b = Fraction(0), Fraction(1)
+            for _ in range(50):
+                x = (a+b)/2
+                tail = sum(x**k*(1-x)**(n-k) for k in words if (k>=w if right_tail else k<=w))
+                if (right_tail and tail<Fraction(1,40)) or (not right_tail and tail>Fraction(1,40)):
+                    a = x
+                else:
+                    b = x
+            return float((a+b)/2)
+        interval = [0 if w==0 else bound(True),1 if l==0 else bound(False)]
+    return dict(both=counts[True,True],neither=counts[False,False],raw_only=l,labeled_only=w,
+                net=w-l,two_sided_sign_p=str(pvalue),conditional_win_95pct=interval)
+
+
 def inspect_results(rows,cases,jobs,pre):
     if not (PILOT/'results'/'summary.json').is_file():
         raise ValueError('Score release unavailable. Do not inspect incomplete runs.')
@@ -214,7 +240,8 @@ def inspect_results(rows,cases,jobs,pre):
     conclusion = {}
     names = ('productive','actionable_certified','certified','unsupported','requests','parseable_final',
              'scored_sessions','initial_certificate','target_final','licensed_final','terminal_certificate',
-             'service_nanoseconds','input_tokens','output_tokens')
+             'service_nanoseconds','input_tokens','output_tokens','used_lookup','initial_licensed',
+             'length_limited','invalid_calls','unnecessary_lookup_settled')
     totals = {a:Counter(dict.fromkeys(names,0)) for a in ARMS}
     for job in jobs:
         rid,arm = job['record'],job['arm']
@@ -247,6 +274,8 @@ def inspect_results(rows,cases,jobs,pre):
             check(digest==stage['request_sha256'],f'{key}: {stage_name} request bytes differed.')
             tally['requests'] += 1
             usage = stage.get('usage',{})
+            tally['length_limited'] += int(usage.get('done_reason') == 'length')
+            tally['invalid_calls'] += int(stage['status'] != 'ok')
             tally['input_tokens'] += usage.get('prompt_eval_count') or 0
             tally['output_tokens'] += usage.get('eval_count') or 0
             tally['service_nanoseconds'] += usage.get('total_duration') or 0
@@ -277,14 +306,25 @@ def inspect_results(rows,cases,jobs,pre):
         tally['unsupported'] += unsupported
         tally['parseable_final'] += int(final_vote is not None)
         tally['initial_certificate'] += int(initial_cert)
+        tally['initial_licensed'] += int(initial_vote == c['initial'])
+        tally['used_lookup'] += int(observed in c['menu'])
+        tally['unnecessary_lookup_settled'] += int(observed in c['menu'] and c['kind']=='settled')
         tally['target_final'] += int(c['target']==final_vote)
         tally['licensed_final'] += int(final_vote==warranted)
         tally['terminal_certificate'] += int(valid_final)
         score = table[rid,arm]
-        comparison = dict(target=c['target'],kind=c['kind'],productive=productive,success=success,unsupported=unsupported)
+        barrier = ('pass' if success else ('wrong meter' if observed in c['menu'] else 'no usable request')
+                   if c['kind']=='lookup' and not productive else 'decision or missing'
+                   if final_vote!=c['target'] else 'certificate')
+        comparison = dict(target=c['target'],kind=c['kind'],productive=productive,success=success,unsupported=unsupported,
+                          family=c['family'],variant=row['variant'],initial_warrant=c['initial'],initial_certified=initial_cert,
+                          initial_licensed=initial_vote == c['initial'],final_warrant=warranted,final_certified=valid_final,
+                          initial_unsupported=initial_vote in ('Y','N') and initial_vote!=c['initial'],first_failure=barrier,
+                          decisive_meter=''.join(c['certain']) if c['kind']=='lookup' else '')
         for k,value in comparison.items():
             check(score[k].lower()==str(value).lower(),f'{key}: independent {k} differs from table.')
-        for k,value in {'initial':initial_vote,'final':final_vote,'lookup':observed}.items():
+        for k,value in {'initial':initial_vote,'final':final_vote,'lookup':observed,
+                        'returned':session.get('observation',{}).get('value')}.items():
             check(score[k]==('' if value is None else value),f'{key}: independent {k} differs from table.')
         conclusion[key] = dict(record=rid,arm=arm,kind=c['kind'],initial=initial_vote,initial_valid=initial_cert,
                                chosen=observed,decisive=c['certain'] if c['kind']=='lookup' else None,
@@ -292,19 +332,35 @@ def inspect_results(rows,cases,jobs,pre):
                                final_certified=valid_final,possible_ids_after=sorted(pool),target=c['target'],
                                success=success,productive=productive,unsupported=unsupported)
     for arm,tally in totals.items():
-        for k in ('productive','actionable_certified','certified','unsupported'):
-            check(tally[k]==official['totals'][arm].get(k,0), f'{arm}: independent total {k} differs.')
-    paired = Counter()
-    for rid,c in cases.items():
-        if c['kind']!='lookup':
-            continue
-        raw = conclusion[rid+'_raw']['productive']
-        labeled = conclusion[rid+'_labeled']['productive']
-        label = ('both' if raw else 'labeled_only') if labeled else ('raw_only' if raw else 'neither')
-        paired[label] += 1
+        family_members = defaultdict(list)
+        for rid,c in cases.items():
+            family_members[c['family']].append(conclusion[rid+'_'+arm]['success'])
+        tally['complete_families'] = sum(all(v) for v in family_members.values())
+        aliases = dict(initial_certificate='initial_certified',requests='calls',scored_sessions='sessions',
+                       target_final='attainable_final_sign',service_nanoseconds='service_ns',input_tokens='prompt_tokens',
+                       output_tokens='generated_tokens')
+        for k,count in tally.items():
+            if k not in ('terminal_certificate','licensed_final'):
+                check(count==official['totals'][arm][aliases.get(k,k)], f'{arm}: independent total {k} differs.')
+    primary_ids = [rid for rid,c in cases.items() if c['kind']=='lookup']
+    paired = signed_pairs(primary_ids,conclusion,'productive')
+    secondary = signed_pairs(primary_ids,conclusion,'success')
     gate = (totals['labeled']['productive']-totals['raw']['productive']>=2
             and totals['labeled']['actionable_certified']-totals['raw']['actionable_certified']>=1)
-    return dict(independently_scored_sessions=len(conclusion),request_hashes_checked=sum(t['requests'] for t in totals.values()),
+    check(gate is official['development_signal'], 'Development gate differs from independent gate.')
+    for name,result in (('primary',paired),('actionable_secondary',secondary)):
+        other = official[name]
+        for k in ('both','neither','raw_only','labeled_only','net'):
+            check(result[k]==other[k], f'{name} pair count {k} disagreed.')
+        check(abs(float(Fraction(result['two_sided_sign_p']))-other['two_sided_sign_p'])<1e-13,
+              f'{name} exact sign test differs.')
+        bounds = result['conditional_win_95pct']
+        ref = other['conditional_win_95pct']
+        check((bounds is None and ref is None) or
+              (bounds is not None and ref is not None and all(abs(v-x)<1e-12 for v,x in zip(bounds,ref))),
+              f'{name} conditional interval differs.')
+    return dict(exact_two_sided_primary_p=paired['two_sided_sign_p'],independently_scored_sessions=len(conclusion),
+                actionable_secondary=secondary, request_hashes_checked=sum(t['requests'] for t in totals.values()),
                 totals=totals,actionable_pairs={k:paired[k] for k in ('both','neither','raw_only','labeled_only')},
                 representation_follow_up_gate=gate,cases=conclusion,panel=pre)
 

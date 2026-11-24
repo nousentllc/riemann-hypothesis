@@ -1,0 +1,53 @@
+{
+  "record": "circuit-06",
+  "arm": "raw",
+  "first": {
+    "started": "2026-11-24T14:24:09.100101+00:00",
+    "request_sha256": "a2ef6931b8da5dceb3e7bb353759d42a160c35264f1e2c8a70290ea8d4557f8e",
+    "answer": {
+      "verdict": "U",
+      "certificate": [
+        "BG",
+        "IK"
+      ],
+      "lookup": "M5"
+    },
+    "status": "ok",
+    "content": "{\n  \"verdict\": \"U\",\n  \"certificate\": [\"BG\",\"IK\"],\n  \"lookup\": \"M5\"\n}",
+    "usage": {
+      "prompt_eval_count": 740,
+      "eval_count": 878,
+      "total_duration": 57445960792,
+      "load_duration": 16623167,
+      "eval_duration": 54247695000,
+      "done_reason": "stop"
+    },
+    "ended": "2026-11-24T14:25:06.555031+00:00"
+  },
+  "observation": {
+    "item": "M5",
+    "value": "L"
+  },
+  "second": {
+    "started": "2026-11-24T14:25:06.558510+00:00",
+    "request_sha256": "856b16c2e778885821e2cbf9e43ed982a186e6a2656f82b39588051a0535f8f8",
+    "answer": {
+      "verdict": "Y",
+      "certificate": [
+        "IK",
+        "OH"
+      ]
+    },
+    "status": "ok",
+    "content": "{\n  \"verdict\": \"Y\",\n  \"certificate\": [\"IK\",\"OH\"]\n}",
+    "usage": {
+      "prompt_eval_count": 803,
+      "eval_count": 189,
+      "total_duration": 11899447709,
+      "load_duration": 23628042,
+      "eval_duration": 11084536000,
+      "done_reason": "stop"
+    },
+    "ended": "2026-11-24T14:25:18.462997+00:00"
+  }
+}

@@ -1,0 +1,5724 @@
+{
+  "protocol_sha256": "dd4d602f60698426db74a783138ce0427b790af08f392ded9071832a4829dd91",
+  "rules": {
+    "absolute_current_absolute_threshold": {
+      "actionable_changed_strongest": [
+        "circuit-03",
+        "circuit-09"
+      ],
+      "actionable_meter_transitions": {
+        "no_guaranteed_meter": 1,
+        "same_guaranteed_set": 5
+      },
+      "changed_physical_truths": 15,
+      "changed_settings": [
+        {
+          "altered": true,
+          "current": "-2436/4705",
+          "family": "DC-T2",
+          "id": "YP",
+          "registered": false,
+          "threshold": "-1/6"
+        },
+        {
+          "altered": false,
+          "current": "-8208/55265",
+          "family": "DC-T2",
+          "id": "EX",
+          "registered": true,
+          "threshold": "-1/6"
+        },
+        {
+          "altered": false,
+          "current": "-636/7493",
+          "family": "DC-T2",
+          "id": "ZL",
+          "registered": true,
+          "threshold": "-1/6"
+        },
+        {
+          "altered": true,
+          "current": "-7896/14255",
+          "family": "DC-T2",
+          "id": "GL",
+          "registered": false,
+          "threshold": "-1/6"
+        },
+        {
+          "altered": true,
+          "current": "-14544/83645",
+          "family": "DC-T2",
+          "id": "TI",
+          "registered": false,
+          "threshold": "-1/6"
+        },
+        {
+          "altered": true,
+          "current": "-4296/21523",
+          "family": "DC-T2",
+          "id": "RX",
+          "registered": false,
+          "threshold": "-1/6"
+        },
+        {
+          "altered": true,
+          "current": "-7461/24622",
+          "family": "DC-T3",
+          "id": "SZ",
+          "registered": false,
+          "threshold": "1/4"
+        },
+        {
+          "altered": true,
+          "current": "-44325/157982",
+          "family": "DC-T3",
+          "id": "GQ",
+          "registered": false,
+          "threshold": "1/4"
+        },
+        {
+          "altered": true,
+          "current": "-1380/4447",
+          "family": "DC-T5",
+          "id": "TZ",
+          "registered": false,
+          "threshold": "-1/4"
+        },
+        {
+          "altered": false,
+          "current": "-246/2989",
+          "family": "DC-T5",
+          "id": "DB",
+          "registered": true,
+          "threshold": "-1/4"
+        },
+        {
+          "altered": false,
+          "current": "20/471",
+          "family": "DC-T5",
+          "id": "LO",
+          "registered": true,
+          "threshold": "-1/4"
+        },
+        {
+          "altered": true,
+          "current": "-1620/3839",
+          "family": "DC-T5",
+          "id": "QT",
+          "registered": false,
+          "threshold": "-1/4"
+        },
+        {
+          "altered": false,
+          "current": "-39348/204673",
+          "family": "DC-T5",
+          "id": "AD",
+          "registered": true,
+          "threshold": "-1/4"
+        },
+        {
+          "altered": false,
+          "current": "-320/4047",
+          "family": "DC-T5",
+          "id": "MC",
+          "registered": true,
+          "threshold": "-1/4"
+        },
+        {
+          "altered": false,
+          "current": "17396/107849",
+          "family": "DC-T5",
+          "id": "YG",
+          "registered": true,
+          "threshold": "-1/4"
+        }
+      ],
+      "control_all_certificates_lost": [
+        "circuit-04",
+        "circuit-08"
+      ],
+      "control_any_certificate_lost": [
+        "circuit-02",
+        "circuit-04",
+        "circuit-08"
+      ],
+      "control_certificate_counts": {
+        "lost": 4,
+        "original": 15,
+        "retained": 11
+      },
+      "control_changed_strongest": [
+        "circuit-02",
+        "circuit-04",
+        "circuit-08"
+      ],
+      "records": {
+        "circuit-00": {
+          "altered": {
+            "cells": {
+              "M2": {
+                "H": {
+                  "sign": "U",
+                  "states": [
+                    "GB",
+                    "GN"
+                  ]
+                },
+                "L": {
+                  "sign": "U",
+                  "states": [
+                    "BB",
+                    "OW"
+                  ]
+                }
+              },
+              "M6": {
+                "H": {
+                  "sign": "U",
+                  "states": [
+                    "BB",
+                    "OW"
+                  ]
+                },
+                "L": {
+                  "sign": "U",
+                  "states": [
+                    "GB",
+                    "GN"
+                  ]
+                }
+              },
+              "M7": {
+                "H": {
+                  "sign": "Y",
+                  "states": [
+                    "GN",
+                    "OW"
+                  ]
+                },
+                "L": {
+                  "sign": "N",
+                  "states": [
+                    "BB",
+                    "GB"
+                  ]
+                }
+              }
+            },
+            "decisive_on_actual": [
+              "M7"
+            ],
+            "guaranteed": [
+              "M7"
+            ],
+            "initial": "U",
+            "kind": "guaranteed_lookup",
+            "strongest_on_actual": "Y"
+          },
+          "lost_initial_certificates": [],
+          "meter_transition": "same_guaranteed_set",
+          "registered_guaranteed": [
+            "M7"
+          ],
+          "registered_initial": "U",
+          "registered_kind": "guaranteed_lookup",
+          "registered_strongest": "Y",
+          "retained_initial_certificates": [
+            [
+              "U",
+              [
+                "BB",
+                "GN"
+              ]
+            ],
+            [
+              "U",
+              [
+                "BB",
+                "OW"
+              ]
+            ],
+            [
+              "U",
+              [
+                "GB",
+                "GN"
+              ]
+            ],
+            [
+              "U",
+              [
+                "GB",
+                "OW"
+              ]
+            ]
+          ]
+        },
+        "circuit-01": {
+          "altered": {
+            "cells": {
+              "M2": {
+                "H": {
+                  "sign": "Y",
+                  "states": [
+                    "RD",
+                    "SH"
+                  ]
+                },
+                "L": {
+                  "sign": "Y",
+                  "states": [
+                    "HA",
+                    "TT"
+                  ]
+                }
+              },
+              "M6": {
+                "L": {
+                  "sign": "Y",
+                  "states": [
+                    "HA",
+                    "RD",
+                    "SH",
+                    "TT"
+                  ]
+                }
+              },
+              "M7": {
+                "H": {
+                  "sign": "Y",
+                  "states": [
+                    "SH",
+                    "TT"
+                  ]
+                },
+                "L": {
+                  "sign": "Y",
+                  "states": [
+                    "HA",
+                    "RD"
+                  ]
+                }
+              }
+            },
+            "decisive_on_actual": [],
+            "guaranteed": [],
+            "initial": "Y",
+            "kind": "settled",
+            "strongest_on_actual": "Y"
+          },
+          "lost_initial_certificates": [],
+          "meter_transition": null,
+          "registered_guaranteed": [],
+          "registered_initial": "Y",
+          "registered_kind": "settled",
+          "registered_strongest": "Y",
+          "retained_initial_certificates": [
+            [
+              "Y",
+              [
+                "HA",
+                "RD",
+                "SH",
+                "TT"
+              ]
+            ]
+          ]
+        },
+        "circuit-02": {
+          "altered": {
+            "cells": {
+              "M2": {
+                "H": {
+                  "sign": "U",
+                  "states": [
+                    "EQ",
+                    "EX",
+                    "TI",
+                    "YP"
+                  ]
+                }
+              },
+              "M3": {
+                "L": {
+                  "sign": "U",
+                  "states": [
+                    "EQ",
+                    "EX",
+                    "TI",
+                    "YP"
+                  ]
+                }
+              },
+              "M6": {
+                "H": {
+                  "sign": "Y",
+                  "states": [
+                    "EQ",
+                    "YP"
+                  ]
+                },
+                "L": {
+                  "sign": "U",
+                  "states": [
+                    "EX",
+                    "TI"
+                  ]
+                }
+              }
+            },
+            "decisive_on_actual": [
+              "M6"
+            ],
+            "guaranteed": [],
+            "initial": "U",
+            "kind": "contingent_lookup",
+            "strongest_on_actual": "Y"
+          },
+          "lost_initial_certificates": [
+            [
+              "U",
+              [
+                "EQ",
+                "TI"
+              ]
+            ],
+            [
+              "U",
+              [
+                "EQ",
+                "YP"
+              ]
+            ]
+          ],
+          "meter_transition": null,
+          "registered_guaranteed": [],
+          "registered_initial": "U",
+          "registered_kind": "ambiguous",
+          "registered_strongest": "U",
+          "retained_initial_certificates": [
+            [
+              "U",
+              [
+                "EX",
+                "TI"
+              ]
+            ],
+            [
+              "U",
+              [
+                "EX",
+                "YP"
+              ]
+            ]
+          ]
+        },
+        "circuit-03": {
+          "altered": {
+            "cells": {
+              "M2": {
+                "H": {
+                  "sign": "U",
+                  "states": [
+                    "UC",
+                    "ZL"
+                  ]
+                },
+                "L": {
+                  "sign": "Y",
+                  "states": [
+                    "GL",
+                    "RX"
+                  ]
+                }
+              },
+              "M3": {
+                "H": {
+                  "sign": "U",
+                  "states": [
+                    "RX",
+                    "ZL"
+                  ]
+                },
+                "L": {
+                  "sign": "Y",
+                  "states": [
+                    "GL",
+                    "UC"
+                  ]
+                }
+              },
+              "M6": {
+                "H": {
+                  "sign": "U",
+                  "states": [
+                    "GL",
+                    "RX",
+                    "UC",
+                    "ZL"
+                  ]
+                }
+              }
+            },
+            "decisive_on_actual": [
+              "M2"
+            ],
+            "guaranteed": [],
+            "initial": "U",
+            "kind": "contingent_lookup",
+            "strongest_on_actual": "Y"
+          },
+          "lost_initial_certificates": [
+            [
+              "U",
+              [
+                "GL",
+                "UC"
+              ]
+            ],
+            [
+              "U",
+              [
+                "RX",
+                "UC"
+              ]
+            ]
+          ],
+          "meter_transition": "no_guaranteed_meter",
+          "registered_guaranteed": [
+            "M2"
+          ],
+          "registered_initial": "U",
+          "registered_kind": "guaranteed_lookup",
+          "registered_strongest": "N",
+          "retained_initial_certificates": [
+            [
+              "U",
+              [
+                "GL",
+                "ZL"
+              ]
+            ],
+            [
+              "U",
+              [
+                "RX",
+                "ZL"
+              ]
+            ]
+          ]
+        },
+        "circuit-04": {
+          "altered": {
+            "cells": {
+              "M2": {
+                "H": {
+                  "sign": "U",
+                  "states": [
+                    "BI",
+                    "GQ"
+                  ]
+                },
+                "L": {
+                  "sign": "U",
+                  "states": [
+                    "MU",
+                    "SZ"
+                  ]
+                }
+              },
+              "M4": {
+                "H": {
+                  "sign": "U",
+                  "states": [
+                    "BI",
+                    "GQ",
+                    "MU",
+                    "SZ"
+                  ]
+                }
+              },
+              "M8": {
+                "H": {
+                  "sign": "Y",
+                  "states": [
+                    "GQ",
+                    "SZ"
+                  ]
+                },
+                "L": {
+                  "sign": "N",
+                  "states": [
+                    "BI",
+                    "MU"
+                  ]
+                }
+              }
+            },
+            "decisive_on_actual": [
+              "M8"
+            ],
+            "guaranteed": [
+              "M8"
+            ],
+            "initial": "U",
+            "kind": "guaranteed_lookup",
+            "strongest_on_actual": "Y"
+          },
+          "lost_initial_certificates": [
+            [
+              "N",
+              [
+                "BI",
+                "GQ",
+                "MU",
+                "SZ"
+              ]
+            ]
+          ],
+          "meter_transition": null,
+          "registered_guaranteed": [],
+          "registered_initial": "N",
+          "registered_kind": "settled",
+          "registered_strongest": "N",
+          "retained_initial_certificates": []
+        },
+        "circuit-05": {
+          "altered": {
+            "cells": {
+              "M2": {
+                "H": {
+                  "sign": "U",
+                  "states": [
+                    "MG",
+                    "ZK"
+                  ]
+                },
+                "L": {
+                  "sign": "U",
+                  "states": [
+                    "CU",
+                    "HB"
+                  ]
+                }
+              },
+              "M4": {
+                "H": {
+                  "sign": "U",
+                  "states": [
+                    "MG",
+                    "ZK"
+                  ]
+                },
+                "L": {
+                  "sign": "U",
+                  "states": [
+                    "CU",
+                    "HB"
+                  ]
+                }
+              },
+              "M8": {
+                "H": {
+                  "sign": "N",
+                  "states": [
+                    "CU",
+                    "ZK"
+                  ]
+                },
+                "L": {
+                  "sign": "Y",
+                  "states": [
+                    "HB",
+                    "MG"
+                  ]
+                }
+              }
+            },
+            "decisive_on_actual": [
+              "M8"
+            ],
+            "guaranteed": [
+              "M8"
+            ],
+            "initial": "U",
+            "kind": "guaranteed_lookup",
+            "strongest_on_actual": "N"
+          },
+          "lost_initial_certificates": [],
+          "meter_transition": "same_guaranteed_set",
+          "registered_guaranteed": [
+            "M8"
+          ],
+          "registered_initial": "U",
+          "registered_kind": "guaranteed_lookup",
+          "registered_strongest": "N",
+          "retained_initial_certificates": [
+            [
+              "U",
+              [
+                "CU",
+                "HB"
+              ]
+            ],
+            [
+              "U",
+              [
+                "CU",
+                "MG"
+              ]
+            ],
+            [
+              "U",
+              [
+                "HB",
+                "ZK"
+              ]
+            ],
+            [
+              "U",
+              [
+                "MG",
+                "ZK"
+              ]
+            ]
+          ]
+        },
+        "circuit-06": {
+          "altered": {
+            "cells": {
+              "M3": {
+                "H": {
+                  "sign": "U",
+                  "states": [
+                    "IK",
+                    "KN"
+                  ]
+                },
+                "L": {
+                  "sign": "U",
+                  "states": [
+                    "OH",
+                    "XV"
+                  ]
+                }
+              },
+              "M5": {
+                "H": {
+                  "sign": "U",
+                  "states": [
+                    "IK",
+                    "KN"
+                  ]
+                },
+                "L": {
+                  "sign": "U",
+                  "states": [
+                    "OH",
+                    "XV"
+                  ]
+                }
+              },
+              "M6": {
+                "H": {
+                  "sign": "N",
+                  "states": [
+                    "KN",
+                    "XV"
+                  ]
+                },
+                "L": {
+                  "sign": "Y",
+                  "states": [
+                    "IK",
+                    "OH"
+                  ]
+                }
+              }
+            },
+            "decisive_on_actual": [
+              "M6"
+            ],
+            "guaranteed": [
+              "M6"
+            ],
+            "initial": "U",
+            "kind": "guaranteed_lookup",
+            "strongest_on_actual": "N"
+          },
+          "lost_initial_certificates": [],
+          "meter_transition": "same_guaranteed_set",
+          "registered_guaranteed": [
+            "M6"
+          ],
+          "registered_initial": "U",
+          "registered_kind": "guaranteed_lookup",
+          "registered_strongest": "N",
+          "retained_initial_certificates": [
+            [
+              "U",
+              [
+                "IK",
+                "KN"
+              ]
+            ],
+            [
+              "U",
+              [
+                "IK",
+                "XV"
+              ]
+            ],
+            [
+              "U",
+              [
+                "KN",
+                "OH"
+              ]
+            ],
+            [
+              "U",
+              [
+                "OH",
+                "XV"
+              ]
+            ]
+          ]
+        },
+        "circuit-07": {
+          "altered": {
+            "cells": {
+              "M3": {
+                "L": {
+                  "sign": "U",
+                  "states": [
+                    "AU",
+                    "BG",
+                    "GR",
+                    "NK"
+                  ]
+                }
+              },
+              "M5": {
+                "H": {
+                  "sign": "U",
+                  "states": [
+                    "AU",
+                    "GR"
+                  ]
+                },
+                "L": {
+                  "sign": "U",
+                  "states": [
+                    "BG",
+                    "NK"
+                  ]
+                }
+              },
+              "M6": {
+                "H": {
+                  "sign": "U",
+                  "states": [
+                    "AU",
+                    "BG",
+                    "GR",
+                    "NK"
+                  ]
+                }
+              }
+            },
+            "decisive_on_actual": [],
+            "guaranteed": [],
+            "initial": "U",
+            "kind": "ambiguous",
+            "strongest_on_actual": "U"
+          },
+          "lost_initial_certificates": [],
+          "meter_transition": null,
+          "registered_guaranteed": [],
+          "registered_initial": "U",
+          "registered_kind": "ambiguous",
+          "registered_strongest": "U",
+          "retained_initial_certificates": [
+            [
+              "U",
+              [
+                "AU",
+                "GR"
+              ]
+            ],
+            [
+              "U",
+              [
+                "AU",
+                "NK"
+              ]
+            ],
+            [
+              "U",
+              [
+                "BG",
+                "GR"
+              ]
+            ],
+            [
+              "U",
+              [
+                "BG",
+                "NK"
+              ]
+            ]
+          ]
+        },
+        "circuit-08": {
+          "altered": {
+            "cells": {
+              "M3": {
+                "H": {
+                  "sign": "N",
+                  "states": [
+                    "MC",
+                    "YG"
+                  ]
+                },
+                "L": {
+                  "sign": "U",
+                  "states": [
+                    "LO",
+                    "QK"
+                  ]
+                }
+              },
+              "M6": {
+                "L": {
+                  "sign": "U",
+                  "states": [
+                    "LO",
+                    "MC",
+                    "QK",
+                    "YG"
+                  ]
+                }
+              },
+              "M7": {
+                "H": {
+                  "sign": "U",
+                  "states": [
+                    "LO",
+                    "MC",
+                    "QK",
+                    "YG"
+                  ]
+                }
+              }
+            },
+            "decisive_on_actual": [
+              "M3"
+            ],
+            "guaranteed": [],
+            "initial": "U",
+            "kind": "contingent_lookup",
+            "strongest_on_actual": "N"
+          },
+          "lost_initial_certificates": [
+            [
+              "Y",
+              [
+                "LO",
+                "MC",
+                "QK",
+                "YG"
+              ]
+            ]
+          ],
+          "meter_transition": null,
+          "registered_guaranteed": [],
+          "registered_initial": "Y",
+          "registered_kind": "settled",
+          "registered_strongest": "Y",
+          "retained_initial_certificates": []
+        },
+        "circuit-09": {
+          "altered": {
+            "cells": {
+              "M3": {
+                "H": {
+                  "sign": "U",
+                  "states": [
+                    "AD",
+                    "QT"
+                  ]
+                },
+                "L": {
+                  "sign": "U",
+                  "states": [
+                    "DB",
+                    "TZ"
+                  ]
+                }
+              },
+              "M6": {
+                "H": {
+                  "sign": "U",
+                  "states": [
+                    "AD",
+                    "QT"
+                  ]
+                },
+                "L": {
+                  "sign": "U",
+                  "states": [
+                    "DB",
+                    "TZ"
+                  ]
+                }
+              },
+              "M7": {
+                "H": {
+                  "sign": "Y",
+                  "states": [
+                    "QT",
+                    "TZ"
+                  ]
+                },
+                "L": {
+                  "sign": "N",
+                  "states": [
+                    "AD",
+                    "DB"
+                  ]
+                }
+              }
+            },
+            "decisive_on_actual": [
+              "M7"
+            ],
+            "guaranteed": [
+              "M7"
+            ],
+            "initial": "U",
+            "kind": "guaranteed_lookup",
+            "strongest_on_actual": "N"
+          },
+          "lost_initial_certificates": [],
+          "meter_transition": "same_guaranteed_set",
+          "registered_guaranteed": [
+            "M7"
+          ],
+          "registered_initial": "U",
+          "registered_kind": "guaranteed_lookup",
+          "registered_strongest": "Y",
+          "retained_initial_certificates": [
+            [
+              "U",
+              [
+                "AD",
+                "QT"
+              ]
+            ],
+            [
+              "U",
+              [
+                "AD",
+                "TZ"
+              ]
+            ],
+            [
+              "U",
+              [
+                "DB",
+                "QT"
+              ]
+            ],
+            [
+              "U",
+              [
+                "DB",
+                "TZ"
+              ]
+            ]
+          ]
+        },
+        "circuit-10": {
+          "altered": {
+            "cells": {
+              "M3": {
+                "H": {
+                  "sign": "U",
+                  "states": [
+                    "IC",
+                    "WU"
+                  ]
+                },
+                "L": {
+                  "sign": "U",
+                  "states": [
+                    "EA",
+                    "OO"
+                  ]
+                }
+              },
+              "M4": {
+                "H": {
+                  "sign": "N",
+                  "states": [
+                    "OO",
+                    "WU"
+                  ]
+                },
+                "L": {
+                  "sign": "Y",
+                  "states": [
+                    "EA",
+                    "IC"
+                  ]
+                }
+              },
+              "M6": {
+                "L": {
+                  "sign": "U",
+                  "states": [
+                    "EA",
+                    "IC",
+                    "OO",
+                    "WU"
+                  ]
+                }
+              }
+            },
+            "decisive_on_actual": [
+              "M4"
+            ],
+            "guaranteed": [
+              "M4"
+            ],
+            "initial": "U",
+            "kind": "guaranteed_lookup",
+            "strongest_on_actual": "Y"
+          },
+          "lost_initial_certificates": [],
+          "meter_transition": "same_guaranteed_set",
+          "registered_guaranteed": [
+            "M4"
+          ],
+          "registered_initial": "U",
+          "registered_kind": "guaranteed_lookup",
+          "registered_strongest": "Y",
+          "retained_initial_certificates": [
+            [
+              "U",
+              [
+                "EA",
+                "OO"
+              ]
+            ],
+            [
+              "U",
+              [
+                "EA",
+                "WU"
+              ]
+            ],
+            [
+              "U",
+              [
+                "IC",
+                "OO"
+              ]
+            ],
+            [
+              "U",
+              [
+                "IC",
+                "WU"
+              ]
+            ]
+          ]
+        },
+        "circuit-11": {
+          "altered": {
+            "cells": {
+              "M3": {
+                "L": {
+                  "sign": "U",
+                  "states": [
+                    "OF",
+                    "PP",
+                    "XL",
+                    "XY"
+                  ]
+                }
+              },
+              "M4": {
+                "H": {
+                  "sign": "U",
+                  "states": [
+                    "XL",
+                    "XY"
+                  ]
+                },
+                "L": {
+                  "sign": "U",
+                  "states": [
+                    "OF",
+                    "PP"
+                  ]
+                }
+              },
+              "M6": {
+                "H": {
+                  "sign": "U",
+                  "states": [
+                    "XL",
+                    "XY"
+                  ]
+                },
+                "L": {
+                  "sign": "U",
+                  "states": [
+                    "OF",
+                    "PP"
+                  ]
+                }
+              }
+            },
+            "decisive_on_actual": [],
+            "guaranteed": [],
+            "initial": "U",
+            "kind": "ambiguous",
+            "strongest_on_actual": "U"
+          },
+          "lost_initial_certificates": [],
+          "meter_transition": null,
+          "registered_guaranteed": [],
+          "registered_initial": "U",
+          "registered_kind": "ambiguous",
+          "registered_strongest": "U",
+          "retained_initial_certificates": [
+            [
+              "U",
+              [
+                "OF",
+                "PP"
+              ]
+            ],
+            [
+              "U",
+              [
+                "OF",
+                "XY"
+              ]
+            ],
+            [
+              "U",
+              [
+                "PP",
+                "XL"
+              ]
+            ],
+            [
+              "U",
+              [
+                "XL",
+                "XY"
+              ]
+            ]
+          ]
+        }
+      }
+    },
+    "absolute_current_signed_threshold": {
+      "actionable_changed_strongest": [
+        "circuit-03"
+      ],
+      "actionable_meter_transitions": {
+        "already_settled": 2,
+        "same_guaranteed_set": 4
+      },
+      "changed_physical_truths": 8,
+      "changed_settings": [
+        {
+          "altered": true,
+          "current": "-2436/4705",
+          "family": "DC-T2",
+          "id": "YP",
+          "registered": false,
+          "threshold": "-1/6"
+        },
+        {
+          "altered": true,
+          "current": "-7896/14255",
+          "family": "DC-T2",
+          "id": "GL",
+          "registered": false,
+          "threshold": "-1/6"
+        },
+        {
+          "altered": true,
+          "current": "-14544/83645",
+          "family": "DC-T2",
+          "id": "TI",
+          "registered": false,
+          "threshold": "-1/6"
+        },
+        {
+          "altered": true,
+          "current": "-4296/21523",
+          "family": "DC-T2",
+          "id": "RX",
+          "registered": false,
+          "threshold": "-1/6"
+        },
+        {
+          "altered": true,
+          "current": "-7461/24622",
+          "family": "DC-T3",
+          "id": "SZ",
+          "registered": false,
+          "threshold": "1/4"
+        },
+        {
+          "altered": true,
+          "current": "-44325/157982",
+          "family": "DC-T3",
+          "id": "GQ",
+          "registered": false,
+          "threshold": "1/4"
+        },
+        {
+          "altered": true,
+          "current": "-1380/4447",
+          "family": "DC-T5",
+          "id": "TZ",
+          "registered": false,
+          "threshold": "-1/4"
+        },
+        {
+          "altered": true,
+          "current": "-1620/3839",
+          "family": "DC-T5",
+          "id": "QT",
+          "registered": false,
+          "threshold": "-1/4"
+        }
+      ],
+      "control_all_certificates_lost": [
+        "circuit-02",
+        "circuit-04"
+      ],
+      "control_any_certificate_lost": [
+        "circuit-02",
+        "circuit-04"
+      ],
+      "control_certificate_counts": {
+        "lost": 5,
+        "original": 15,
+        "retained": 10
+      },
+      "control_changed_strongest": [
+        "circuit-02",
+        "circuit-04"
+      ],
+      "records": {
+        "circuit-00": {
+          "altered": {
+            "cells": {
+              "M2": {
+                "H": {
+                  "sign": "U",
+                  "states": [
+                    "GB",
+                    "GN"
+                  ]
+                },
+                "L": {
+                  "sign": "U",
+                  "states": [
+                    "BB",
+                    "OW"
+                  ]
+                }
+              },
+              "M6": {
+                "H": {
+                  "sign": "U",
+                  "states": [
+                    "BB",
+                    "OW"
+                  ]
+                },
+                "L": {
+                  "sign": "U",
+                  "states": [
+                    "GB",
+                    "GN"
+                  ]
+                }
+              },
+              "M7": {
+                "H": {
+                  "sign": "Y",
+                  "states": [
+                    "GN",
+                    "OW"
+                  ]
+                },
+                "L": {
+                  "sign": "N",
+                  "states": [
+                    "BB",
+                    "GB"
+                  ]
+                }
+              }
+            },
+            "decisive_on_actual": [
+              "M7"
+            ],
+            "guaranteed": [
+              "M7"
+            ],
+            "initial": "U",
+            "kind": "guaranteed_lookup",
+            "strongest_on_actual": "Y"
+          },
+          "lost_initial_certificates": [],
+          "meter_transition": "same_guaranteed_set",
+          "registered_guaranteed": [
+            "M7"
+          ],
+          "registered_initial": "U",
+          "registered_kind": "guaranteed_lookup",
+          "registered_strongest": "Y",
+          "retained_initial_certificates": [
+            [
+              "U",
+              [
+                "BB",
+                "GN"
+              ]
+            ],
+            [
+              "U",
+              [
+                "BB",
+                "OW"
+              ]
+            ],
+            [
+              "U",
+              [
+                "GB",
+                "GN"
+              ]
+            ],
+            [
+              "U",
+              [
+                "GB",
+                "OW"
+              ]
+            ]
+          ]
+        },
+        "circuit-01": {
+          "altered": {
+            "cells": {
+              "M2": {
+                "H": {
+                  "sign": "Y",
+                  "states": [
+                    "RD",
+                    "SH"
+                  ]
+                },
+                "L": {
+                  "sign": "Y",
+                  "states": [
+                    "HA",
+                    "TT"
+                  ]
+                }
+              },
+              "M6": {
+                "L": {
+                  "sign": "Y",
+                  "states": [
+                    "HA",
+                    "RD",
+                    "SH",
+                    "TT"
+                  ]
+                }
+              },
+              "M7": {
+                "H": {
+                  "sign": "Y",
+                  "states": [
+                    "SH",
+                    "TT"
+                  ]
+                },
+                "L": {
+                  "sign": "Y",
+                  "states": [
+                    "HA",
+                    "RD"
+                  ]
+                }
+              }
+            },
+            "decisive_on_actual": [],
+            "guaranteed": [],
+            "initial": "Y",
+            "kind": "settled",
+            "strongest_on_actual": "Y"
+          },
+          "lost_initial_certificates": [],
+          "meter_transition": null,
+          "registered_guaranteed": [],
+          "registered_initial": "Y",
+          "registered_kind": "settled",
+          "registered_strongest": "Y",
+          "retained_initial_certificates": [
+            [
+              "Y",
+              [
+                "HA",
+                "RD",
+                "SH",
+                "TT"
+              ]
+            ]
+          ]
+        },
+        "circuit-02": {
+          "altered": {
+            "cells": {
+              "M2": {
+                "H": {
+                  "sign": "Y",
+                  "states": [
+                    "EQ",
+                    "EX",
+                    "TI",
+                    "YP"
+                  ]
+                }
+              },
+              "M3": {
+                "L": {
+                  "sign": "Y",
+                  "states": [
+                    "EQ",
+                    "EX",
+                    "TI",
+                    "YP"
+                  ]
+                }
+              },
+              "M6": {
+                "H": {
+                  "sign": "Y",
+                  "states": [
+                    "EQ",
+                    "YP"
+                  ]
+                },
+                "L": {
+                  "sign": "Y",
+                  "states": [
+                    "EX",
+                    "TI"
+                  ]
+                }
+              }
+            },
+            "decisive_on_actual": [],
+            "guaranteed": [],
+            "initial": "Y",
+            "kind": "settled",
+            "strongest_on_actual": "Y"
+          },
+          "lost_initial_certificates": [
+            [
+              "U",
+              [
+                "EQ",
+                "TI"
+              ]
+            ],
+            [
+              "U",
+              [
+                "EQ",
+                "YP"
+              ]
+            ],
+            [
+              "U",
+              [
+                "EX",
+                "TI"
+              ]
+            ],
+            [
+              "U",
+              [
+                "EX",
+                "YP"
+              ]
+            ]
+          ],
+          "meter_transition": null,
+          "registered_guaranteed": [],
+          "registered_initial": "U",
+          "registered_kind": "ambiguous",
+          "registered_strongest": "U",
+          "retained_initial_certificates": []
+        },
+        "circuit-03": {
+          "altered": {
+            "cells": {
+              "M2": {
+                "H": {
+                  "sign": "Y",
+                  "states": [
+                    "UC",
+                    "ZL"
+                  ]
+                },
+                "L": {
+                  "sign": "Y",
+                  "states": [
+                    "GL",
+                    "RX"
+                  ]
+                }
+              },
+              "M3": {
+                "H": {
+                  "sign": "Y",
+                  "states": [
+                    "RX",
+                    "ZL"
+                  ]
+                },
+                "L": {
+                  "sign": "Y",
+                  "states": [
+                    "GL",
+                    "UC"
+                  ]
+                }
+              },
+              "M6": {
+                "H": {
+                  "sign": "Y",
+                  "states": [
+                    "GL",
+                    "RX",
+                    "UC",
+                    "ZL"
+                  ]
+                }
+              }
+            },
+            "decisive_on_actual": [],
+            "guaranteed": [],
+            "initial": "Y",
+            "kind": "settled",
+            "strongest_on_actual": "Y"
+          },
+          "lost_initial_certificates": [
+            [
+              "U",
+              [
+                "GL",
+                "UC"
+              ]
+            ],
+            [
+              "U",
+              [
+                "GL",
+                "ZL"
+              ]
+            ],
+            [
+              "U",
+              [
+                "RX",
+                "UC"
+              ]
+            ],
+            [
+              "U",
+              [
+                "RX",
+                "ZL"
+              ]
+            ]
+          ],
+          "meter_transition": "already_settled",
+          "registered_guaranteed": [
+            "M2"
+          ],
+          "registered_initial": "U",
+          "registered_kind": "guaranteed_lookup",
+          "registered_strongest": "N",
+          "retained_initial_certificates": []
+        },
+        "circuit-04": {
+          "altered": {
+            "cells": {
+              "M2": {
+                "H": {
+                  "sign": "U",
+                  "states": [
+                    "BI",
+                    "GQ"
+                  ]
+                },
+                "L": {
+                  "sign": "U",
+                  "states": [
+                    "MU",
+                    "SZ"
+                  ]
+                }
+              },
+              "M4": {
+                "H": {
+                  "sign": "U",
+                  "states": [
+                    "BI",
+                    "GQ",
+                    "MU",
+                    "SZ"
+                  ]
+                }
+              },
+              "M8": {
+                "H": {
+                  "sign": "Y",
+                  "states": [
+                    "GQ",
+                    "SZ"
+                  ]
+                },
+                "L": {
+                  "sign": "N",
+                  "states": [
+                    "BI",
+                    "MU"
+                  ]
+                }
+              }
+            },
+            "decisive_on_actual": [
+              "M8"
+            ],
+            "guaranteed": [
+              "M8"
+            ],
+            "initial": "U",
+            "kind": "guaranteed_lookup",
+            "strongest_on_actual": "Y"
+          },
+          "lost_initial_certificates": [
+            [
+              "N",
+              [
+                "BI",
+                "GQ",
+                "MU",
+                "SZ"
+              ]
+            ]
+          ],
+          "meter_transition": null,
+          "registered_guaranteed": [],
+          "registered_initial": "N",
+          "registered_kind": "settled",
+          "registered_strongest": "N",
+          "retained_initial_certificates": []
+        },
+        "circuit-05": {
+          "altered": {
+            "cells": {
+              "M2": {
+                "H": {
+                  "sign": "U",
+                  "states": [
+                    "MG",
+                    "ZK"
+                  ]
+                },
+                "L": {
+                  "sign": "U",
+                  "states": [
+                    "CU",
+                    "HB"
+                  ]
+                }
+              },
+              "M4": {
+                "H": {
+                  "sign": "U",
+                  "states": [
+                    "MG",
+                    "ZK"
+                  ]
+                },
+                "L": {
+                  "sign": "U",
+                  "states": [
+                    "CU",
+                    "HB"
+                  ]
+                }
+              },
+              "M8": {
+                "H": {
+                  "sign": "N",
+                  "states": [
+                    "CU",
+                    "ZK"
+                  ]
+                },
+                "L": {
+                  "sign": "Y",
+                  "states": [
+                    "HB",
+                    "MG"
+                  ]
+                }
+              }
+            },
+            "decisive_on_actual": [
+              "M8"
+            ],
+            "guaranteed": [
+              "M8"
+            ],
+            "initial": "U",
+            "kind": "guaranteed_lookup",
+            "strongest_on_actual": "N"
+          },
+          "lost_initial_certificates": [],
+          "meter_transition": "same_guaranteed_set",
+          "registered_guaranteed": [
+            "M8"
+          ],
+          "registered_initial": "U",
+          "registered_kind": "guaranteed_lookup",
+          "registered_strongest": "N",
+          "retained_initial_certificates": [
+            [
+              "U",
+              [
+                "CU",
+                "HB"
+              ]
+            ],
+            [
+              "U",
+              [
+                "CU",
+                "MG"
+              ]
+            ],
+            [
+              "U",
+              [
+                "HB",
+                "ZK"
+              ]
+            ],
+            [
+              "U",
+              [
+                "MG",
+                "ZK"
+              ]
+            ]
+          ]
+        },
+        "circuit-06": {
+          "altered": {
+            "cells": {
+              "M3": {
+                "H": {
+                  "sign": "U",
+                  "states": [
+                    "IK",
+                    "KN"
+                  ]
+                },
+                "L": {
+                  "sign": "U",
+                  "states": [
+                    "OH",
+                    "XV"
+                  ]
+                }
+              },
+              "M5": {
+                "H": {
+                  "sign": "U",
+                  "states": [
+                    "IK",
+                    "KN"
+                  ]
+                },
+                "L": {
+                  "sign": "U",
+                  "states": [
+                    "OH",
+                    "XV"
+                  ]
+                }
+              },
+              "M6": {
+                "H": {
+                  "sign": "N",
+                  "states": [
+                    "KN",
+                    "XV"
+                  ]
+                },
+                "L": {
+                  "sign": "Y",
+                  "states": [
+                    "IK",
+                    "OH"
+                  ]
+                }
+              }
+            },
+            "decisive_on_actual": [
+              "M6"
+            ],
+            "guaranteed": [
+              "M6"
+            ],
+            "initial": "U",
+            "kind": "guaranteed_lookup",
+            "strongest_on_actual": "N"
+          },
+          "lost_initial_certificates": [],
+          "meter_transition": "same_guaranteed_set",
+          "registered_guaranteed": [
+            "M6"
+          ],
+          "registered_initial": "U",
+          "registered_kind": "guaranteed_lookup",
+          "registered_strongest": "N",
+          "retained_initial_certificates": [
+            [
+              "U",
+              [
+                "IK",
+                "KN"
+              ]
+            ],
+            [
+              "U",
+              [
+                "IK",
+                "XV"
+              ]
+            ],
+            [
+              "U",
+              [
+                "KN",
+                "OH"
+              ]
+            ],
+            [
+              "U",
+              [
+                "OH",
+                "XV"
+              ]
+            ]
+          ]
+        },
+        "circuit-07": {
+          "altered": {
+            "cells": {
+              "M3": {
+                "L": {
+                  "sign": "U",
+                  "states": [
+                    "AU",
+                    "BG",
+                    "GR",
+                    "NK"
+                  ]
+                }
+              },
+              "M5": {
+                "H": {
+                  "sign": "U",
+                  "states": [
+                    "AU",
+                    "GR"
+                  ]
+                },
+                "L": {
+                  "sign": "U",
+                  "states": [
+                    "BG",
+                    "NK"
+                  ]
+                }
+              },
+              "M6": {
+                "H": {
+                  "sign": "U",
+                  "states": [
+                    "AU",
+                    "BG",
+                    "GR",
+                    "NK"
+                  ]
+                }
+              }
+            },
+            "decisive_on_actual": [],
+            "guaranteed": [],
+            "initial": "U",
+            "kind": "ambiguous",
+            "strongest_on_actual": "U"
+          },
+          "lost_initial_certificates": [],
+          "meter_transition": null,
+          "registered_guaranteed": [],
+          "registered_initial": "U",
+          "registered_kind": "ambiguous",
+          "registered_strongest": "U",
+          "retained_initial_certificates": [
+            [
+              "U",
+              [
+                "AU",
+                "GR"
+              ]
+            ],
+            [
+              "U",
+              [
+                "AU",
+                "NK"
+              ]
+            ],
+            [
+              "U",
+              [
+                "BG",
+                "GR"
+              ]
+            ],
+            [
+              "U",
+              [
+                "BG",
+                "NK"
+              ]
+            ]
+          ]
+        },
+        "circuit-08": {
+          "altered": {
+            "cells": {
+              "M3": {
+                "H": {
+                  "sign": "Y",
+                  "states": [
+                    "MC",
+                    "YG"
+                  ]
+                },
+                "L": {
+                  "sign": "Y",
+                  "states": [
+                    "LO",
+                    "QK"
+                  ]
+                }
+              },
+              "M6": {
+                "L": {
+                  "sign": "Y",
+                  "states": [
+                    "LO",
+                    "MC",
+                    "QK",
+                    "YG"
+                  ]
+                }
+              },
+              "M7": {
+                "H": {
+                  "sign": "Y",
+                  "states": [
+                    "LO",
+                    "MC",
+                    "QK",
+                    "YG"
+                  ]
+                }
+              }
+            },
+            "decisive_on_actual": [],
+            "guaranteed": [],
+            "initial": "Y",
+            "kind": "settled",
+            "strongest_on_actual": "Y"
+          },
+          "lost_initial_certificates": [],
+          "meter_transition": null,
+          "registered_guaranteed": [],
+          "registered_initial": "Y",
+          "registered_kind": "settled",
+          "registered_strongest": "Y",
+          "retained_initial_certificates": [
+            [
+              "Y",
+              [
+                "LO",
+                "MC",
+                "QK",
+                "YG"
+              ]
+            ]
+          ]
+        },
+        "circuit-09": {
+          "altered": {
+            "cells": {
+              "M3": {
+                "H": {
+                  "sign": "Y",
+                  "states": [
+                    "AD",
+                    "QT"
+                  ]
+                },
+                "L": {
+                  "sign": "Y",
+                  "states": [
+                    "DB",
+                    "TZ"
+                  ]
+                }
+              },
+              "M6": {
+                "H": {
+                  "sign": "Y",
+                  "states": [
+                    "AD",
+                    "QT"
+                  ]
+                },
+                "L": {
+                  "sign": "Y",
+                  "states": [
+                    "DB",
+                    "TZ"
+                  ]
+                }
+              },
+              "M7": {
+                "H": {
+                  "sign": "Y",
+                  "states": [
+                    "QT",
+                    "TZ"
+                  ]
+                },
+                "L": {
+                  "sign": "Y",
+                  "states": [
+                    "AD",
+                    "DB"
+                  ]
+                }
+              }
+            },
+            "decisive_on_actual": [],
+            "guaranteed": [],
+            "initial": "Y",
+            "kind": "settled",
+            "strongest_on_actual": "Y"
+          },
+          "lost_initial_certificates": [
+            [
+              "U",
+              [
+                "AD",
+                "QT"
+              ]
+            ],
+            [
+              "U",
+              [
+                "AD",
+                "TZ"
+              ]
+            ],
+            [
+              "U",
+              [
+                "DB",
+                "QT"
+              ]
+            ],
+            [
+              "U",
+              [
+                "DB",
+                "TZ"
+              ]
+            ]
+          ],
+          "meter_transition": "already_settled",
+          "registered_guaranteed": [
+            "M7"
+          ],
+          "registered_initial": "U",
+          "registered_kind": "guaranteed_lookup",
+          "registered_strongest": "Y",
+          "retained_initial_certificates": []
+        },
+        "circuit-10": {
+          "altered": {
+            "cells": {
+              "M3": {
+                "H": {
+                  "sign": "U",
+                  "states": [
+                    "IC",
+                    "WU"
+                  ]
+                },
+                "L": {
+                  "sign": "U",
+                  "states": [
+                    "EA",
+                    "OO"
+                  ]
+                }
+              },
+              "M4": {
+                "H": {
+                  "sign": "N",
+                  "states": [
+                    "OO",
+                    "WU"
+                  ]
+                },
+                "L": {
+                  "sign": "Y",
+                  "states": [
+                    "EA",
+                    "IC"
+                  ]
+                }
+              },
+              "M6": {
+                "L": {
+                  "sign": "U",
+                  "states": [
+                    "EA",
+                    "IC",
+                    "OO",
+                    "WU"
+                  ]
+                }
+              }
+            },
+            "decisive_on_actual": [
+              "M4"
+            ],
+            "guaranteed": [
+              "M4"
+            ],
+            "initial": "U",
+            "kind": "guaranteed_lookup",
+            "strongest_on_actual": "Y"
+          },
+          "lost_initial_certificates": [],
+          "meter_transition": "same_guaranteed_set",
+          "registered_guaranteed": [
+            "M4"
+          ],
+          "registered_initial": "U",
+          "registered_kind": "guaranteed_lookup",
+          "registered_strongest": "Y",
+          "retained_initial_certificates": [
+            [
+              "U",
+              [
+                "EA",
+                "OO"
+              ]
+            ],
+            [
+              "U",
+              [
+                "EA",
+                "WU"
+              ]
+            ],
+            [
+              "U",
+              [
+                "IC",
+                "OO"
+              ]
+            ],
+            [
+              "U",
+              [
+                "IC",
+                "WU"
+              ]
+            ]
+          ]
+        },
+        "circuit-11": {
+          "altered": {
+            "cells": {
+              "M3": {
+                "L": {
+                  "sign": "U",
+                  "states": [
+                    "OF",
+                    "PP",
+                    "XL",
+                    "XY"
+                  ]
+                }
+              },
+              "M4": {
+                "H": {
+                  "sign": "U",
+                  "states": [
+                    "XL",
+                    "XY"
+                  ]
+                },
+                "L": {
+                  "sign": "U",
+                  "states": [
+                    "OF",
+                    "PP"
+                  ]
+                }
+              },
+              "M6": {
+                "H": {
+                  "sign": "U",
+                  "states": [
+                    "XL",
+                    "XY"
+                  ]
+                },
+                "L": {
+                  "sign": "U",
+                  "states": [
+                    "OF",
+                    "PP"
+                  ]
+                }
+              }
+            },
+            "decisive_on_actual": [],
+            "guaranteed": [],
+            "initial": "U",
+            "kind": "ambiguous",
+            "strongest_on_actual": "U"
+          },
+          "lost_initial_certificates": [],
+          "meter_transition": null,
+          "registered_guaranteed": [],
+          "registered_initial": "U",
+          "registered_kind": "ambiguous",
+          "registered_strongest": "U",
+          "retained_initial_certificates": [
+            [
+              "U",
+              [
+                "OF",
+                "PP"
+              ]
+            ],
+            [
+              "U",
+              [
+                "OF",
+                "XY"
+              ]
+            ],
+            [
+              "U",
+              [
+                "PP",
+                "XL"
+              ]
+            ],
+            [
+              "U",
+              [
+                "XL",
+                "XY"
+              ]
+            ]
+          ]
+        }
+      }
+    },
+    "inclusive": {
+      "actionable_changed_strongest": [],
+      "actionable_meter_transitions": {
+        "same_guaranteed_set": 6
+      },
+      "changed_physical_truths": 2,
+      "changed_settings": [
+        {
+          "altered": true,
+          "current": "600/1243",
+          "family": "DC-T4",
+          "id": "BG",
+          "registered": false,
+          "threshold": "600/1243"
+        },
+        {
+          "altered": true,
+          "current": "408/539",
+          "family": "DC-T6",
+          "id": "XL",
+          "registered": false,
+          "threshold": "408/539"
+        }
+      ],
+      "control_all_certificates_lost": [],
+      "control_any_certificate_lost": [
+        "circuit-07",
+        "circuit-11"
+      ],
+      "control_certificate_counts": {
+        "lost": 4,
+        "original": 15,
+        "retained": 11
+      },
+      "control_changed_strongest": [
+        "circuit-07"
+      ],
+      "records": {
+        "circuit-00": {
+          "altered": {
+            "cells": {
+              "M2": {
+                "H": {
+                  "sign": "U",
+                  "states": [
+                    "GB",
+                    "GN"
+                  ]
+                },
+                "L": {
+                  "sign": "U",
+                  "states": [
+                    "BB",
+                    "OW"
+                  ]
+                }
+              },
+              "M6": {
+                "H": {
+                  "sign": "U",
+                  "states": [
+                    "BB",
+                    "OW"
+                  ]
+                },
+                "L": {
+                  "sign": "U",
+                  "states": [
+                    "GB",
+                    "GN"
+                  ]
+                }
+              },
+              "M7": {
+                "H": {
+                  "sign": "Y",
+                  "states": [
+                    "GN",
+                    "OW"
+                  ]
+                },
+                "L": {
+                  "sign": "N",
+                  "states": [
+                    "BB",
+                    "GB"
+                  ]
+                }
+              }
+            },
+            "decisive_on_actual": [
+              "M7"
+            ],
+            "guaranteed": [
+              "M7"
+            ],
+            "initial": "U",
+            "kind": "guaranteed_lookup",
+            "strongest_on_actual": "Y"
+          },
+          "lost_initial_certificates": [],
+          "meter_transition": "same_guaranteed_set",
+          "registered_guaranteed": [
+            "M7"
+          ],
+          "registered_initial": "U",
+          "registered_kind": "guaranteed_lookup",
+          "registered_strongest": "Y",
+          "retained_initial_certificates": [
+            [
+              "U",
+              [
+                "BB",
+                "GN"
+              ]
+            ],
+            [
+              "U",
+              [
+                "BB",
+                "OW"
+              ]
+            ],
+            [
+              "U",
+              [
+                "GB",
+                "GN"
+              ]
+            ],
+            [
+              "U",
+              [
+                "GB",
+                "OW"
+              ]
+            ]
+          ]
+        },
+        "circuit-01": {
+          "altered": {
+            "cells": {
+              "M2": {
+                "H": {
+                  "sign": "Y",
+                  "states": [
+                    "RD",
+                    "SH"
+                  ]
+                },
+                "L": {
+                  "sign": "Y",
+                  "states": [
+                    "HA",
+                    "TT"
+                  ]
+                }
+              },
+              "M6": {
+                "L": {
+                  "sign": "Y",
+                  "states": [
+                    "HA",
+                    "RD",
+                    "SH",
+                    "TT"
+                  ]
+                }
+              },
+              "M7": {
+                "H": {
+                  "sign": "Y",
+                  "states": [
+                    "SH",
+                    "TT"
+                  ]
+                },
+                "L": {
+                  "sign": "Y",
+                  "states": [
+                    "HA",
+                    "RD"
+                  ]
+                }
+              }
+            },
+            "decisive_on_actual": [],
+            "guaranteed": [],
+            "initial": "Y",
+            "kind": "settled",
+            "strongest_on_actual": "Y"
+          },
+          "lost_initial_certificates": [],
+          "meter_transition": null,
+          "registered_guaranteed": [],
+          "registered_initial": "Y",
+          "registered_kind": "settled",
+          "registered_strongest": "Y",
+          "retained_initial_certificates": [
+            [
+              "Y",
+              [
+                "HA",
+                "RD",
+                "SH",
+                "TT"
+              ]
+            ]
+          ]
+        },
+        "circuit-02": {
+          "altered": {
+            "cells": {
+              "M2": {
+                "H": {
+                  "sign": "U",
+                  "states": [
+                    "EQ",
+                    "EX",
+                    "TI",
+                    "YP"
+                  ]
+                }
+              },
+              "M3": {
+                "L": {
+                  "sign": "U",
+                  "states": [
+                    "EQ",
+                    "EX",
+                    "TI",
+                    "YP"
+                  ]
+                }
+              },
+              "M6": {
+                "H": {
+                  "sign": "U",
+                  "states": [
+                    "EQ",
+                    "YP"
+                  ]
+                },
+                "L": {
+                  "sign": "U",
+                  "states": [
+                    "EX",
+                    "TI"
+                  ]
+                }
+              }
+            },
+            "decisive_on_actual": [],
+            "guaranteed": [],
+            "initial": "U",
+            "kind": "ambiguous",
+            "strongest_on_actual": "U"
+          },
+          "lost_initial_certificates": [],
+          "meter_transition": null,
+          "registered_guaranteed": [],
+          "registered_initial": "U",
+          "registered_kind": "ambiguous",
+          "registered_strongest": "U",
+          "retained_initial_certificates": [
+            [
+              "U",
+              [
+                "EQ",
+                "TI"
+              ]
+            ],
+            [
+              "U",
+              [
+                "EQ",
+                "YP"
+              ]
+            ],
+            [
+              "U",
+              [
+                "EX",
+                "TI"
+              ]
+            ],
+            [
+              "U",
+              [
+                "EX",
+                "YP"
+              ]
+            ]
+          ]
+        },
+        "circuit-03": {
+          "altered": {
+            "cells": {
+              "M2": {
+                "H": {
+                  "sign": "Y",
+                  "states": [
+                    "UC",
+                    "ZL"
+                  ]
+                },
+                "L": {
+                  "sign": "N",
+                  "states": [
+                    "GL",
+                    "RX"
+                  ]
+                }
+              },
+              "M3": {
+                "H": {
+                  "sign": "U",
+                  "states": [
+                    "RX",
+                    "ZL"
+                  ]
+                },
+                "L": {
+                  "sign": "U",
+                  "states": [
+                    "GL",
+                    "UC"
+                  ]
+                }
+              },
+              "M6": {
+                "H": {
+                  "sign": "U",
+                  "states": [
+                    "GL",
+                    "RX",
+                    "UC",
+                    "ZL"
+                  ]
+                }
+              }
+            },
+            "decisive_on_actual": [
+              "M2"
+            ],
+            "guaranteed": [
+              "M2"
+            ],
+            "initial": "U",
+            "kind": "guaranteed_lookup",
+            "strongest_on_actual": "N"
+          },
+          "lost_initial_certificates": [],
+          "meter_transition": "same_guaranteed_set",
+          "registered_guaranteed": [
+            "M2"
+          ],
+          "registered_initial": "U",
+          "registered_kind": "guaranteed_lookup",
+          "registered_strongest": "N",
+          "retained_initial_certificates": [
+            [
+              "U",
+              [
+                "GL",
+                "UC"
+              ]
+            ],
+            [
+              "U",
+              [
+                "GL",
+                "ZL"
+              ]
+            ],
+            [
+              "U",
+              [
+                "RX",
+                "UC"
+              ]
+            ],
+            [
+              "U",
+              [
+                "RX",
+                "ZL"
+              ]
+            ]
+          ]
+        },
+        "circuit-04": {
+          "altered": {
+            "cells": {
+              "M2": {
+                "H": {
+                  "sign": "N",
+                  "states": [
+                    "BI",
+                    "GQ"
+                  ]
+                },
+                "L": {
+                  "sign": "N",
+                  "states": [
+                    "MU",
+                    "SZ"
+                  ]
+                }
+              },
+              "M4": {
+                "H": {
+                  "sign": "N",
+                  "states": [
+                    "BI",
+                    "GQ",
+                    "MU",
+                    "SZ"
+                  ]
+                }
+              },
+              "M8": {
+                "H": {
+                  "sign": "N",
+                  "states": [
+                    "GQ",
+                    "SZ"
+                  ]
+                },
+                "L": {
+                  "sign": "N",
+                  "states": [
+                    "BI",
+                    "MU"
+                  ]
+                }
+              }
+            },
+            "decisive_on_actual": [],
+            "guaranteed": [],
+            "initial": "N",
+            "kind": "settled",
+            "strongest_on_actual": "N"
+          },
+          "lost_initial_certificates": [],
+          "meter_transition": null,
+          "registered_guaranteed": [],
+          "registered_initial": "N",
+          "registered_kind": "settled",
+          "registered_strongest": "N",
+          "retained_initial_certificates": [
+            [
+              "N",
+              [
+                "BI",
+                "GQ",
+                "MU",
+                "SZ"
+              ]
+            ]
+          ]
+        },
+        "circuit-05": {
+          "altered": {
+            "cells": {
+              "M2": {
+                "H": {
+                  "sign": "U",
+                  "states": [
+                    "MG",
+                    "ZK"
+                  ]
+                },
+                "L": {
+                  "sign": "U",
+                  "states": [
+                    "CU",
+                    "HB"
+                  ]
+                }
+              },
+              "M4": {
+                "H": {
+                  "sign": "U",
+                  "states": [
+                    "MG",
+                    "ZK"
+                  ]
+                },
+                "L": {
+                  "sign": "U",
+                  "states": [
+                    "CU",
+                    "HB"
+                  ]
+                }
+              },
+              "M8": {
+                "H": {
+                  "sign": "N",
+                  "states": [
+                    "CU",
+                    "ZK"
+                  ]
+                },
+                "L": {
+                  "sign": "Y",
+                  "states": [
+                    "HB",
+                    "MG"
+                  ]
+                }
+              }
+            },
+            "decisive_on_actual": [
+              "M8"
+            ],
+            "guaranteed": [
+              "M8"
+            ],
+            "initial": "U",
+            "kind": "guaranteed_lookup",
+            "strongest_on_actual": "N"
+          },
+          "lost_initial_certificates": [],
+          "meter_transition": "same_guaranteed_set",
+          "registered_guaranteed": [
+            "M8"
+          ],
+          "registered_initial": "U",
+          "registered_kind": "guaranteed_lookup",
+          "registered_strongest": "N",
+          "retained_initial_certificates": [
+            [
+              "U",
+              [
+                "CU",
+                "HB"
+              ]
+            ],
+            [
+              "U",
+              [
+                "CU",
+                "MG"
+              ]
+            ],
+            [
+              "U",
+              [
+                "HB",
+                "ZK"
+              ]
+            ],
+            [
+              "U",
+              [
+                "MG",
+                "ZK"
+              ]
+            ]
+          ]
+        },
+        "circuit-06": {
+          "altered": {
+            "cells": {
+              "M3": {
+                "H": {
+                  "sign": "U",
+                  "states": [
+                    "IK",
+                    "KN"
+                  ]
+                },
+                "L": {
+                  "sign": "U",
+                  "states": [
+                    "OH",
+                    "XV"
+                  ]
+                }
+              },
+              "M5": {
+                "H": {
+                  "sign": "U",
+                  "states": [
+                    "IK",
+                    "KN"
+                  ]
+                },
+                "L": {
+                  "sign": "U",
+                  "states": [
+                    "OH",
+                    "XV"
+                  ]
+                }
+              },
+              "M6": {
+                "H": {
+                  "sign": "N",
+                  "states": [
+                    "KN",
+                    "XV"
+                  ]
+                },
+                "L": {
+                  "sign": "Y",
+                  "states": [
+                    "IK",
+                    "OH"
+                  ]
+                }
+              }
+            },
+            "decisive_on_actual": [
+              "M6"
+            ],
+            "guaranteed": [
+              "M6"
+            ],
+            "initial": "U",
+            "kind": "guaranteed_lookup",
+            "strongest_on_actual": "N"
+          },
+          "lost_initial_certificates": [],
+          "meter_transition": "same_guaranteed_set",
+          "registered_guaranteed": [
+            "M6"
+          ],
+          "registered_initial": "U",
+          "registered_kind": "guaranteed_lookup",
+          "registered_strongest": "N",
+          "retained_initial_certificates": [
+            [
+              "U",
+              [
+                "IK",
+                "KN"
+              ]
+            ],
+            [
+              "U",
+              [
+                "IK",
+                "XV"
+              ]
+            ],
+            [
+              "U",
+              [
+                "KN",
+                "OH"
+              ]
+            ],
+            [
+              "U",
+              [
+                "OH",
+                "XV"
+              ]
+            ]
+          ]
+        },
+        "circuit-07": {
+          "altered": {
+            "cells": {
+              "M3": {
+                "L": {
+                  "sign": "U",
+                  "states": [
+                    "AU",
+                    "BG",
+                    "GR",
+                    "NK"
+                  ]
+                }
+              },
+              "M5": {
+                "H": {
+                  "sign": "U",
+                  "states": [
+                    "AU",
+                    "GR"
+                  ]
+                },
+                "L": {
+                  "sign": "Y",
+                  "states": [
+                    "BG",
+                    "NK"
+                  ]
+                }
+              },
+              "M6": {
+                "H": {
+                  "sign": "U",
+                  "states": [
+                    "AU",
+                    "BG",
+                    "GR",
+                    "NK"
+                  ]
+                }
+              }
+            },
+            "decisive_on_actual": [
+              "M5"
+            ],
+            "guaranteed": [],
+            "initial": "U",
+            "kind": "contingent_lookup",
+            "strongest_on_actual": "Y"
+          },
+          "lost_initial_certificates": [
+            [
+              "U",
+              [
+                "BG",
+                "GR"
+              ]
+            ],
+            [
+              "U",
+              [
+                "BG",
+                "NK"
+              ]
+            ]
+          ],
+          "meter_transition": null,
+          "registered_guaranteed": [],
+          "registered_initial": "U",
+          "registered_kind": "ambiguous",
+          "registered_strongest": "U",
+          "retained_initial_certificates": [
+            [
+              "U",
+              [
+                "AU",
+                "GR"
+              ]
+            ],
+            [
+              "U",
+              [
+                "AU",
+                "NK"
+              ]
+            ]
+          ]
+        },
+        "circuit-08": {
+          "altered": {
+            "cells": {
+              "M3": {
+                "H": {
+                  "sign": "Y",
+                  "states": [
+                    "MC",
+                    "YG"
+                  ]
+                },
+                "L": {
+                  "sign": "Y",
+                  "states": [
+                    "LO",
+                    "QK"
+                  ]
+                }
+              },
+              "M6": {
+                "L": {
+                  "sign": "Y",
+                  "states": [
+                    "LO",
+                    "MC",
+                    "QK",
+                    "YG"
+                  ]
+                }
+              },
+              "M7": {
+                "H": {
+                  "sign": "Y",
+                  "states": [
+                    "LO",
+                    "MC",
+                    "QK",
+                    "YG"
+                  ]
+                }
+              }
+            },
+            "decisive_on_actual": [],
+            "guaranteed": [],
+            "initial": "Y",
+            "kind": "settled",
+            "strongest_on_actual": "Y"
+          },
+          "lost_initial_certificates": [],
+          "meter_transition": null,
+          "registered_guaranteed": [],
+          "registered_initial": "Y",
+          "registered_kind": "settled",
+          "registered_strongest": "Y",
+          "retained_initial_certificates": [
+            [
+              "Y",
+              [
+                "LO",
+                "MC",
+                "QK",
+                "YG"
+              ]
+            ]
+          ]
+        },
+        "circuit-09": {
+          "altered": {
+            "cells": {
+              "M3": {
+                "H": {
+                  "sign": "U",
+                  "states": [
+                    "AD",
+                    "QT"
+                  ]
+                },
+                "L": {
+                  "sign": "U",
+                  "states": [
+                    "DB",
+                    "TZ"
+                  ]
+                }
+              },
+              "M6": {
+                "H": {
+                  "sign": "U",
+                  "states": [
+                    "AD",
+                    "QT"
+                  ]
+                },
+                "L": {
+                  "sign": "U",
+                  "states": [
+                    "DB",
+                    "TZ"
+                  ]
+                }
+              },
+              "M7": {
+                "H": {
+                  "sign": "N",
+                  "states": [
+                    "QT",
+                    "TZ"
+                  ]
+                },
+                "L": {
+                  "sign": "Y",
+                  "states": [
+                    "AD",
+                    "DB"
+                  ]
+                }
+              }
+            },
+            "decisive_on_actual": [
+              "M7"
+            ],
+            "guaranteed": [
+              "M7"
+            ],
+            "initial": "U",
+            "kind": "guaranteed_lookup",
+            "strongest_on_actual": "Y"
+          },
+          "lost_initial_certificates": [],
+          "meter_transition": "same_guaranteed_set",
+          "registered_guaranteed": [
+            "M7"
+          ],
+          "registered_initial": "U",
+          "registered_kind": "guaranteed_lookup",
+          "registered_strongest": "Y",
+          "retained_initial_certificates": [
+            [
+              "U",
+              [
+                "AD",
+                "QT"
+              ]
+            ],
+            [
+              "U",
+              [
+                "AD",
+                "TZ"
+              ]
+            ],
+            [
+              "U",
+              [
+                "DB",
+                "QT"
+              ]
+            ],
+            [
+              "U",
+              [
+                "DB",
+                "TZ"
+              ]
+            ]
+          ]
+        },
+        "circuit-10": {
+          "altered": {
+            "cells": {
+              "M3": {
+                "H": {
+                  "sign": "U",
+                  "states": [
+                    "IC",
+                    "WU"
+                  ]
+                },
+                "L": {
+                  "sign": "U",
+                  "states": [
+                    "EA",
+                    "OO"
+                  ]
+                }
+              },
+              "M4": {
+                "H": {
+                  "sign": "N",
+                  "states": [
+                    "OO",
+                    "WU"
+                  ]
+                },
+                "L": {
+                  "sign": "Y",
+                  "states": [
+                    "EA",
+                    "IC"
+                  ]
+                }
+              },
+              "M6": {
+                "L": {
+                  "sign": "U",
+                  "states": [
+                    "EA",
+                    "IC",
+                    "OO",
+                    "WU"
+                  ]
+                }
+              }
+            },
+            "decisive_on_actual": [
+              "M4"
+            ],
+            "guaranteed": [
+              "M4"
+            ],
+            "initial": "U",
+            "kind": "guaranteed_lookup",
+            "strongest_on_actual": "Y"
+          },
+          "lost_initial_certificates": [],
+          "meter_transition": "same_guaranteed_set",
+          "registered_guaranteed": [
+            "M4"
+          ],
+          "registered_initial": "U",
+          "registered_kind": "guaranteed_lookup",
+          "registered_strongest": "Y",
+          "retained_initial_certificates": [
+            [
+              "U",
+              [
+                "EA",
+                "OO"
+              ]
+            ],
+            [
+              "U",
+              [
+                "EA",
+                "WU"
+              ]
+            ],
+            [
+              "U",
+              [
+                "IC",
+                "OO"
+              ]
+            ],
+            [
+              "U",
+              [
+                "IC",
+                "WU"
+              ]
+            ]
+          ]
+        },
+        "circuit-11": {
+          "altered": {
+            "cells": {
+              "M3": {
+                "L": {
+                  "sign": "U",
+                  "states": [
+                    "OF",
+                    "PP",
+                    "XL",
+                    "XY"
+                  ]
+                }
+              },
+              "M4": {
+                "H": {
+                  "sign": "Y",
+                  "states": [
+                    "XL",
+                    "XY"
+                  ]
+                },
+                "L": {
+                  "sign": "U",
+                  "states": [
+                    "OF",
+                    "PP"
+                  ]
+                }
+              },
+              "M6": {
+                "H": {
+                  "sign": "Y",
+                  "states": [
+                    "XL",
+                    "XY"
+                  ]
+                },
+                "L": {
+                  "sign": "U",
+                  "states": [
+                    "OF",
+                    "PP"
+                  ]
+                }
+              }
+            },
+            "decisive_on_actual": [],
+            "guaranteed": [],
+            "initial": "U",
+            "kind": "ambiguous",
+            "strongest_on_actual": "U"
+          },
+          "lost_initial_certificates": [
+            [
+              "U",
+              [
+                "PP",
+                "XL"
+              ]
+            ],
+            [
+              "U",
+              [
+                "XL",
+                "XY"
+              ]
+            ]
+          ],
+          "meter_transition": null,
+          "registered_guaranteed": [],
+          "registered_initial": "U",
+          "registered_kind": "ambiguous",
+          "registered_strongest": "U",
+          "retained_initial_certificates": [
+            [
+              "U",
+              [
+                "OF",
+                "PP"
+              ]
+            ],
+            [
+              "U",
+              [
+                "OF",
+                "XY"
+              ]
+            ]
+          ]
+        }
+      }
+    },
+    "registered_strict": {
+      "actionable_changed_strongest": [],
+      "actionable_meter_transitions": {
+        "same_guaranteed_set": 6
+      },
+      "changed_physical_truths": 0,
+      "changed_settings": [],
+      "control_all_certificates_lost": [],
+      "control_any_certificate_lost": [],
+      "control_certificate_counts": {
+        "lost": 0,
+        "original": 15,
+        "retained": 15
+      },
+      "control_changed_strongest": [],
+      "records": {
+        "circuit-00": {
+          "altered": {
+            "cells": {
+              "M2": {
+                "H": {
+                  "sign": "U",
+                  "states": [
+                    "GB",
+                    "GN"
+                  ]
+                },
+                "L": {
+                  "sign": "U",
+                  "states": [
+                    "BB",
+                    "OW"
+                  ]
+                }
+              },
+              "M6": {
+                "H": {
+                  "sign": "U",
+                  "states": [
+                    "BB",
+                    "OW"
+                  ]
+                },
+                "L": {
+                  "sign": "U",
+                  "states": [
+                    "GB",
+                    "GN"
+                  ]
+                }
+              },
+              "M7": {
+                "H": {
+                  "sign": "Y",
+                  "states": [
+                    "GN",
+                    "OW"
+                  ]
+                },
+                "L": {
+                  "sign": "N",
+                  "states": [
+                    "BB",
+                    "GB"
+                  ]
+                }
+              }
+            },
+            "decisive_on_actual": [
+              "M7"
+            ],
+            "guaranteed": [
+              "M7"
+            ],
+            "initial": "U",
+            "kind": "guaranteed_lookup",
+            "strongest_on_actual": "Y"
+          },
+          "lost_initial_certificates": [],
+          "meter_transition": "same_guaranteed_set",
+          "registered_guaranteed": [
+            "M7"
+          ],
+          "registered_initial": "U",
+          "registered_kind": "guaranteed_lookup",
+          "registered_strongest": "Y",
+          "retained_initial_certificates": [
+            [
+              "U",
+              [
+                "BB",
+                "GN"
+              ]
+            ],
+            [
+              "U",
+              [
+                "BB",
+                "OW"
+              ]
+            ],
+            [
+              "U",
+              [
+                "GB",
+                "GN"
+              ]
+            ],
+            [
+              "U",
+              [
+                "GB",
+                "OW"
+              ]
+            ]
+          ]
+        },
+        "circuit-01": {
+          "altered": {
+            "cells": {
+              "M2": {
+                "H": {
+                  "sign": "Y",
+                  "states": [
+                    "RD",
+                    "SH"
+                  ]
+                },
+                "L": {
+                  "sign": "Y",
+                  "states": [
+                    "HA",
+                    "TT"
+                  ]
+                }
+              },
+              "M6": {
+                "L": {
+                  "sign": "Y",
+                  "states": [
+                    "HA",
+                    "RD",
+                    "SH",
+                    "TT"
+                  ]
+                }
+              },
+              "M7": {
+                "H": {
+                  "sign": "Y",
+                  "states": [
+                    "SH",
+                    "TT"
+                  ]
+                },
+                "L": {
+                  "sign": "Y",
+                  "states": [
+                    "HA",
+                    "RD"
+                  ]
+                }
+              }
+            },
+            "decisive_on_actual": [],
+            "guaranteed": [],
+            "initial": "Y",
+            "kind": "settled",
+            "strongest_on_actual": "Y"
+          },
+          "lost_initial_certificates": [],
+          "meter_transition": null,
+          "registered_guaranteed": [],
+          "registered_initial": "Y",
+          "registered_kind": "settled",
+          "registered_strongest": "Y",
+          "retained_initial_certificates": [
+            [
+              "Y",
+              [
+                "HA",
+                "RD",
+                "SH",
+                "TT"
+              ]
+            ]
+          ]
+        },
+        "circuit-02": {
+          "altered": {
+            "cells": {
+              "M2": {
+                "H": {
+                  "sign": "U",
+                  "states": [
+                    "EQ",
+                    "EX",
+                    "TI",
+                    "YP"
+                  ]
+                }
+              },
+              "M3": {
+                "L": {
+                  "sign": "U",
+                  "states": [
+                    "EQ",
+                    "EX",
+                    "TI",
+                    "YP"
+                  ]
+                }
+              },
+              "M6": {
+                "H": {
+                  "sign": "U",
+                  "states": [
+                    "EQ",
+                    "YP"
+                  ]
+                },
+                "L": {
+                  "sign": "U",
+                  "states": [
+                    "EX",
+                    "TI"
+                  ]
+                }
+              }
+            },
+            "decisive_on_actual": [],
+            "guaranteed": [],
+            "initial": "U",
+            "kind": "ambiguous",
+            "strongest_on_actual": "U"
+          },
+          "lost_initial_certificates": [],
+          "meter_transition": null,
+          "registered_guaranteed": [],
+          "registered_initial": "U",
+          "registered_kind": "ambiguous",
+          "registered_strongest": "U",
+          "retained_initial_certificates": [
+            [
+              "U",
+              [
+                "EQ",
+                "TI"
+              ]
+            ],
+            [
+              "U",
+              [
+                "EQ",
+                "YP"
+              ]
+            ],
+            [
+              "U",
+              [
+                "EX",
+                "TI"
+              ]
+            ],
+            [
+              "U",
+              [
+                "EX",
+                "YP"
+              ]
+            ]
+          ]
+        },
+        "circuit-03": {
+          "altered": {
+            "cells": {
+              "M2": {
+                "H": {
+                  "sign": "Y",
+                  "states": [
+                    "UC",
+                    "ZL"
+                  ]
+                },
+                "L": {
+                  "sign": "N",
+                  "states": [
+                    "GL",
+                    "RX"
+                  ]
+                }
+              },
+              "M3": {
+                "H": {
+                  "sign": "U",
+                  "states": [
+                    "RX",
+                    "ZL"
+                  ]
+                },
+                "L": {
+                  "sign": "U",
+                  "states": [
+                    "GL",
+                    "UC"
+                  ]
+                }
+              },
+              "M6": {
+                "H": {
+                  "sign": "U",
+                  "states": [
+                    "GL",
+                    "RX",
+                    "UC",
+                    "ZL"
+                  ]
+                }
+              }
+            },
+            "decisive_on_actual": [
+              "M2"
+            ],
+            "guaranteed": [
+              "M2"
+            ],
+            "initial": "U",
+            "kind": "guaranteed_lookup",
+            "strongest_on_actual": "N"
+          },
+          "lost_initial_certificates": [],
+          "meter_transition": "same_guaranteed_set",
+          "registered_guaranteed": [
+            "M2"
+          ],
+          "registered_initial": "U",
+          "registered_kind": "guaranteed_lookup",
+          "registered_strongest": "N",
+          "retained_initial_certificates": [
+            [
+              "U",
+              [
+                "GL",
+                "UC"
+              ]
+            ],
+            [
+              "U",
+              [
+                "GL",
+                "ZL"
+              ]
+            ],
+            [
+              "U",
+              [
+                "RX",
+                "UC"
+              ]
+            ],
+            [
+              "U",
+              [
+                "RX",
+                "ZL"
+              ]
+            ]
+          ]
+        },
+        "circuit-04": {
+          "altered": {
+            "cells": {
+              "M2": {
+                "H": {
+                  "sign": "N",
+                  "states": [
+                    "BI",
+                    "GQ"
+                  ]
+                },
+                "L": {
+                  "sign": "N",
+                  "states": [
+                    "MU",
+                    "SZ"
+                  ]
+                }
+              },
+              "M4": {
+                "H": {
+                  "sign": "N",
+                  "states": [
+                    "BI",
+                    "GQ",
+                    "MU",
+                    "SZ"
+                  ]
+                }
+              },
+              "M8": {
+                "H": {
+                  "sign": "N",
+                  "states": [
+                    "GQ",
+                    "SZ"
+                  ]
+                },
+                "L": {
+                  "sign": "N",
+                  "states": [
+                    "BI",
+                    "MU"
+                  ]
+                }
+              }
+            },
+            "decisive_on_actual": [],
+            "guaranteed": [],
+            "initial": "N",
+            "kind": "settled",
+            "strongest_on_actual": "N"
+          },
+          "lost_initial_certificates": [],
+          "meter_transition": null,
+          "registered_guaranteed": [],
+          "registered_initial": "N",
+          "registered_kind": "settled",
+          "registered_strongest": "N",
+          "retained_initial_certificates": [
+            [
+              "N",
+              [
+                "BI",
+                "GQ",
+                "MU",
+                "SZ"
+              ]
+            ]
+          ]
+        },
+        "circuit-05": {
+          "altered": {
+            "cells": {
+              "M2": {
+                "H": {
+                  "sign": "U",
+                  "states": [
+                    "MG",
+                    "ZK"
+                  ]
+                },
+                "L": {
+                  "sign": "U",
+                  "states": [
+                    "CU",
+                    "HB"
+                  ]
+                }
+              },
+              "M4": {
+                "H": {
+                  "sign": "U",
+                  "states": [
+                    "MG",
+                    "ZK"
+                  ]
+                },
+                "L": {
+                  "sign": "U",
+                  "states": [
+                    "CU",
+                    "HB"
+                  ]
+                }
+              },
+              "M8": {
+                "H": {
+                  "sign": "N",
+                  "states": [
+                    "CU",
+                    "ZK"
+                  ]
+                },
+                "L": {
+                  "sign": "Y",
+                  "states": [
+                    "HB",
+                    "MG"
+                  ]
+                }
+              }
+            },
+            "decisive_on_actual": [
+              "M8"
+            ],
+            "guaranteed": [
+              "M8"
+            ],
+            "initial": "U",
+            "kind": "guaranteed_lookup",
+            "strongest_on_actual": "N"
+          },
+          "lost_initial_certificates": [],
+          "meter_transition": "same_guaranteed_set",
+          "registered_guaranteed": [
+            "M8"
+          ],
+          "registered_initial": "U",
+          "registered_kind": "guaranteed_lookup",
+          "registered_strongest": "N",
+          "retained_initial_certificates": [
+            [
+              "U",
+              [
+                "CU",
+                "HB"
+              ]
+            ],
+            [
+              "U",
+              [
+                "CU",
+                "MG"
+              ]
+            ],
+            [
+              "U",
+              [
+                "HB",
+                "ZK"
+              ]
+            ],
+            [
+              "U",
+              [
+                "MG",
+                "ZK"
+              ]
+            ]
+          ]
+        },
+        "circuit-06": {
+          "altered": {
+            "cells": {
+              "M3": {
+                "H": {
+                  "sign": "U",
+                  "states": [
+                    "IK",
+                    "KN"
+                  ]
+                },
+                "L": {
+                  "sign": "U",
+                  "states": [
+                    "OH",
+                    "XV"
+                  ]
+                }
+              },
+              "M5": {
+                "H": {
+                  "sign": "U",
+                  "states": [
+                    "IK",
+                    "KN"
+                  ]
+                },
+                "L": {
+                  "sign": "U",
+                  "states": [
+                    "OH",
+                    "XV"
+                  ]
+                }
+              },
+              "M6": {
+                "H": {
+                  "sign": "N",
+                  "states": [
+                    "KN",
+                    "XV"
+                  ]
+                },
+                "L": {
+                  "sign": "Y",
+                  "states": [
+                    "IK",
+                    "OH"
+                  ]
+                }
+              }
+            },
+            "decisive_on_actual": [
+              "M6"
+            ],
+            "guaranteed": [
+              "M6"
+            ],
+            "initial": "U",
+            "kind": "guaranteed_lookup",
+            "strongest_on_actual": "N"
+          },
+          "lost_initial_certificates": [],
+          "meter_transition": "same_guaranteed_set",
+          "registered_guaranteed": [
+            "M6"
+          ],
+          "registered_initial": "U",
+          "registered_kind": "guaranteed_lookup",
+          "registered_strongest": "N",
+          "retained_initial_certificates": [
+            [
+              "U",
+              [
+                "IK",
+                "KN"
+              ]
+            ],
+            [
+              "U",
+              [
+                "IK",
+                "XV"
+              ]
+            ],
+            [
+              "U",
+              [
+                "KN",
+                "OH"
+              ]
+            ],
+            [
+              "U",
+              [
+                "OH",
+                "XV"
+              ]
+            ]
+          ]
+        },
+        "circuit-07": {
+          "altered": {
+            "cells": {
+              "M3": {
+                "L": {
+                  "sign": "U",
+                  "states": [
+                    "AU",
+                    "BG",
+                    "GR",
+                    "NK"
+                  ]
+                }
+              },
+              "M5": {
+                "H": {
+                  "sign": "U",
+                  "states": [
+                    "AU",
+                    "GR"
+                  ]
+                },
+                "L": {
+                  "sign": "U",
+                  "states": [
+                    "BG",
+                    "NK"
+                  ]
+                }
+              },
+              "M6": {
+                "H": {
+                  "sign": "U",
+                  "states": [
+                    "AU",
+                    "BG",
+                    "GR",
+                    "NK"
+                  ]
+                }
+              }
+            },
+            "decisive_on_actual": [],
+            "guaranteed": [],
+            "initial": "U",
+            "kind": "ambiguous",
+            "strongest_on_actual": "U"
+          },
+          "lost_initial_certificates": [],
+          "meter_transition": null,
+          "registered_guaranteed": [],
+          "registered_initial": "U",
+          "registered_kind": "ambiguous",
+          "registered_strongest": "U",
+          "retained_initial_certificates": [
+            [
+              "U",
+              [
+                "AU",
+                "GR"
+              ]
+            ],
+            [
+              "U",
+              [
+                "AU",
+                "NK"
+              ]
+            ],
+            [
+              "U",
+              [
+                "BG",
+                "GR"
+              ]
+            ],
+            [
+              "U",
+              [
+                "BG",
+                "NK"
+              ]
+            ]
+          ]
+        },
+        "circuit-08": {
+          "altered": {
+            "cells": {
+              "M3": {
+                "H": {
+                  "sign": "Y",
+                  "states": [
+                    "MC",
+                    "YG"
+                  ]
+                },
+                "L": {
+                  "sign": "Y",
+                  "states": [
+                    "LO",
+                    "QK"
+                  ]
+                }
+              },
+              "M6": {
+                "L": {
+                  "sign": "Y",
+                  "states": [
+                    "LO",
+                    "MC",
+                    "QK",
+                    "YG"
+                  ]
+                }
+              },
+              "M7": {
+                "H": {
+                  "sign": "Y",
+                  "states": [
+                    "LO",
+                    "MC",
+                    "QK",
+                    "YG"
+                  ]
+                }
+              }
+            },
+            "decisive_on_actual": [],
+            "guaranteed": [],
+            "initial": "Y",
+            "kind": "settled",
+            "strongest_on_actual": "Y"
+          },
+          "lost_initial_certificates": [],
+          "meter_transition": null,
+          "registered_guaranteed": [],
+          "registered_initial": "Y",
+          "registered_kind": "settled",
+          "registered_strongest": "Y",
+          "retained_initial_certificates": [
+            [
+              "Y",
+              [
+                "LO",
+                "MC",
+                "QK",
+                "YG"
+              ]
+            ]
+          ]
+        },
+        "circuit-09": {
+          "altered": {
+            "cells": {
+              "M3": {
+                "H": {
+                  "sign": "U",
+                  "states": [
+                    "AD",
+                    "QT"
+                  ]
+                },
+                "L": {
+                  "sign": "U",
+                  "states": [
+                    "DB",
+                    "TZ"
+                  ]
+                }
+              },
+              "M6": {
+                "H": {
+                  "sign": "U",
+                  "states": [
+                    "AD",
+                    "QT"
+                  ]
+                },
+                "L": {
+                  "sign": "U",
+                  "states": [
+                    "DB",
+                    "TZ"
+                  ]
+                }
+              },
+              "M7": {
+                "H": {
+                  "sign": "N",
+                  "states": [
+                    "QT",
+                    "TZ"
+                  ]
+                },
+                "L": {
+                  "sign": "Y",
+                  "states": [
+                    "AD",
+                    "DB"
+                  ]
+                }
+              }
+            },
+            "decisive_on_actual": [
+              "M7"
+            ],
+            "guaranteed": [
+              "M7"
+            ],
+            "initial": "U",
+            "kind": "guaranteed_lookup",
+            "strongest_on_actual": "Y"
+          },
+          "lost_initial_certificates": [],
+          "meter_transition": "same_guaranteed_set",
+          "registered_guaranteed": [
+            "M7"
+          ],
+          "registered_initial": "U",
+          "registered_kind": "guaranteed_lookup",
+          "registered_strongest": "Y",
+          "retained_initial_certificates": [
+            [
+              "U",
+              [
+                "AD",
+                "QT"
+              ]
+            ],
+            [
+              "U",
+              [
+                "AD",
+                "TZ"
+              ]
+            ],
+            [
+              "U",
+              [
+                "DB",
+                "QT"
+              ]
+            ],
+            [
+              "U",
+              [
+                "DB",
+                "TZ"
+              ]
+            ]
+          ]
+        },
+        "circuit-10": {
+          "altered": {
+            "cells": {
+              "M3": {
+                "H": {
+                  "sign": "U",
+                  "states": [
+                    "IC",
+                    "WU"
+                  ]
+                },
+                "L": {
+                  "sign": "U",
+                  "states": [
+                    "EA",
+                    "OO"
+                  ]
+                }
+              },
+              "M4": {
+                "H": {
+                  "sign": "N",
+                  "states": [
+                    "OO",
+                    "WU"
+                  ]
+                },
+                "L": {
+                  "sign": "Y",
+                  "states": [
+                    "EA",
+                    "IC"
+                  ]
+                }
+              },
+              "M6": {
+                "L": {
+                  "sign": "U",
+                  "states": [
+                    "EA",
+                    "IC",
+                    "OO",
+                    "WU"
+                  ]
+                }
+              }
+            },
+            "decisive_on_actual": [
+              "M4"
+            ],
+            "guaranteed": [
+              "M4"
+            ],
+            "initial": "U",
+            "kind": "guaranteed_lookup",
+            "strongest_on_actual": "Y"
+          },
+          "lost_initial_certificates": [],
+          "meter_transition": "same_guaranteed_set",
+          "registered_guaranteed": [
+            "M4"
+          ],
+          "registered_initial": "U",
+          "registered_kind": "guaranteed_lookup",
+          "registered_strongest": "Y",
+          "retained_initial_certificates": [
+            [
+              "U",
+              [
+                "EA",
+                "OO"
+              ]
+            ],
+            [
+              "U",
+              [
+                "EA",
+                "WU"
+              ]
+            ],
+            [
+              "U",
+              [
+                "IC",
+                "OO"
+              ]
+            ],
+            [
+              "U",
+              [
+                "IC",
+                "WU"
+              ]
+            ]
+          ]
+        },
+        "circuit-11": {
+          "altered": {
+            "cells": {
+              "M3": {
+                "L": {
+                  "sign": "U",
+                  "states": [
+                    "OF",
+                    "PP",
+                    "XL",
+                    "XY"
+                  ]
+                }
+              },
+              "M4": {
+                "H": {
+                  "sign": "U",
+                  "states": [
+                    "XL",
+                    "XY"
+                  ]
+                },
+                "L": {
+                  "sign": "U",
+                  "states": [
+                    "OF",
+                    "PP"
+                  ]
+                }
+              },
+              "M6": {
+                "H": {
+                  "sign": "U",
+                  "states": [
+                    "XL",
+                    "XY"
+                  ]
+                },
+                "L": {
+                  "sign": "U",
+                  "states": [
+                    "OF",
+                    "PP"
+                  ]
+                }
+              }
+            },
+            "decisive_on_actual": [],
+            "guaranteed": [],
+            "initial": "U",
+            "kind": "ambiguous",
+            "strongest_on_actual": "U"
+          },
+          "lost_initial_certificates": [],
+          "meter_transition": null,
+          "registered_guaranteed": [],
+          "registered_initial": "U",
+          "registered_kind": "ambiguous",
+          "registered_strongest": "U",
+          "retained_initial_certificates": [
+            [
+              "U",
+              [
+                "OF",
+                "PP"
+              ]
+            ],
+            [
+              "U",
+              [
+                "OF",
+                "XY"
+              ]
+            ],
+            [
+              "U",
+              [
+                "PP",
+                "XL"
+              ]
+            ],
+            [
+              "U",
+              [
+                "XL",
+                "XY"
+              ]
+            ]
+          ]
+        }
+      }
+    },
+    "rounded_tenths_strict": {
+      "actionable_changed_strongest": [
+        "circuit-09",
+        "circuit-10"
+      ],
+      "actionable_meter_transitions": {
+        "already_settled": 1,
+        "no_guaranteed_meter": 2,
+        "same_guaranteed_set": 3
+      },
+      "changed_physical_truths": 7,
+      "changed_settings": [
+        {
+          "altered": false,
+          "current": "870/1633",
+          "family": "DC-T4",
+          "id": "OH",
+          "registered": true,
+          "threshold": "600/1243"
+        },
+        {
+          "altered": false,
+          "current": "4784/9047",
+          "family": "DC-T4",
+          "id": "NK",
+          "registered": true,
+          "threshold": "600/1243"
+        },
+        {
+          "altered": false,
+          "current": "17808/35771",
+          "family": "DC-T4",
+          "id": "IK",
+          "registered": true,
+          "threshold": "600/1243"
+        },
+        {
+          "altered": false,
+          "current": "960/1979",
+          "family": "DC-T4",
+          "id": "GR",
+          "registered": true,
+          "threshold": "600/1243"
+        },
+        {
+          "altered": false,
+          "current": "-39348/204673",
+          "family": "DC-T5",
+          "id": "AD",
+          "registered": true,
+          "threshold": "-1/4"
+        },
+        {
+          "altered": false,
+          "current": "324/413",
+          "family": "DC-T6",
+          "id": "IC",
+          "registered": true,
+          "threshold": "408/539"
+        },
+        {
+          "altered": false,
+          "current": "16/21",
+          "family": "DC-T6",
+          "id": "XY",
+          "registered": true,
+          "threshold": "408/539"
+        }
+      ],
+      "control_all_certificates_lost": [
+        "circuit-07"
+      ],
+      "control_any_certificate_lost": [
+        "circuit-07",
+        "circuit-11"
+      ],
+      "control_certificate_counts": {
+        "lost": 6,
+        "original": 15,
+        "retained": 9
+      },
+      "control_changed_strongest": [
+        "circuit-07"
+      ],
+      "records": {
+        "circuit-00": {
+          "altered": {
+            "cells": {
+              "M2": {
+                "H": {
+                  "sign": "U",
+                  "states": [
+                    "GB",
+                    "GN"
+                  ]
+                },
+                "L": {
+                  "sign": "U",
+                  "states": [
+                    "BB",
+                    "OW"
+                  ]
+                }
+              },
+              "M6": {
+                "H": {
+                  "sign": "U",
+                  "states": [
+                    "BB",
+                    "OW"
+                  ]
+                },
+                "L": {
+                  "sign": "U",
+                  "states": [
+                    "GB",
+                    "GN"
+                  ]
+                }
+              },
+              "M7": {
+                "H": {
+                  "sign": "Y",
+                  "states": [
+                    "GN",
+                    "OW"
+                  ]
+                },
+                "L": {
+                  "sign": "N",
+                  "states": [
+                    "BB",
+                    "GB"
+                  ]
+                }
+              }
+            },
+            "decisive_on_actual": [
+              "M7"
+            ],
+            "guaranteed": [
+              "M7"
+            ],
+            "initial": "U",
+            "kind": "guaranteed_lookup",
+            "strongest_on_actual": "Y"
+          },
+          "lost_initial_certificates": [],
+          "meter_transition": "same_guaranteed_set",
+          "registered_guaranteed": [
+            "M7"
+          ],
+          "registered_initial": "U",
+          "registered_kind": "guaranteed_lookup",
+          "registered_strongest": "Y",
+          "retained_initial_certificates": [
+            [
+              "U",
+              [
+                "BB",
+                "GN"
+              ]
+            ],
+            [
+              "U",
+              [
+                "BB",
+                "OW"
+              ]
+            ],
+            [
+              "U",
+              [
+                "GB",
+                "GN"
+              ]
+            ],
+            [
+              "U",
+              [
+                "GB",
+                "OW"
+              ]
+            ]
+          ]
+        },
+        "circuit-01": {
+          "altered": {
+            "cells": {
+              "M2": {
+                "H": {
+                  "sign": "Y",
+                  "states": [
+                    "RD",
+                    "SH"
+                  ]
+                },
+                "L": {
+                  "sign": "Y",
+                  "states": [
+                    "HA",
+                    "TT"
+                  ]
+                }
+              },
+              "M6": {
+                "L": {
+                  "sign": "Y",
+                  "states": [
+                    "HA",
+                    "RD",
+                    "SH",
+                    "TT"
+                  ]
+                }
+              },
+              "M7": {
+                "H": {
+                  "sign": "Y",
+                  "states": [
+                    "SH",
+                    "TT"
+                  ]
+                },
+                "L": {
+                  "sign": "Y",
+                  "states": [
+                    "HA",
+                    "RD"
+                  ]
+                }
+              }
+            },
+            "decisive_on_actual": [],
+            "guaranteed": [],
+            "initial": "Y",
+            "kind": "settled",
+            "strongest_on_actual": "Y"
+          },
+          "lost_initial_certificates": [],
+          "meter_transition": null,
+          "registered_guaranteed": [],
+          "registered_initial": "Y",
+          "registered_kind": "settled",
+          "registered_strongest": "Y",
+          "retained_initial_certificates": [
+            [
+              "Y",
+              [
+                "HA",
+                "RD",
+                "SH",
+                "TT"
+              ]
+            ]
+          ]
+        },
+        "circuit-02": {
+          "altered": {
+            "cells": {
+              "M2": {
+                "H": {
+                  "sign": "U",
+                  "states": [
+                    "EQ",
+                    "EX",
+                    "TI",
+                    "YP"
+                  ]
+                }
+              },
+              "M3": {
+                "L": {
+                  "sign": "U",
+                  "states": [
+                    "EQ",
+                    "EX",
+                    "TI",
+                    "YP"
+                  ]
+                }
+              },
+              "M6": {
+                "H": {
+                  "sign": "U",
+                  "states": [
+                    "EQ",
+                    "YP"
+                  ]
+                },
+                "L": {
+                  "sign": "U",
+                  "states": [
+                    "EX",
+                    "TI"
+                  ]
+                }
+              }
+            },
+            "decisive_on_actual": [],
+            "guaranteed": [],
+            "initial": "U",
+            "kind": "ambiguous",
+            "strongest_on_actual": "U"
+          },
+          "lost_initial_certificates": [],
+          "meter_transition": null,
+          "registered_guaranteed": [],
+          "registered_initial": "U",
+          "registered_kind": "ambiguous",
+          "registered_strongest": "U",
+          "retained_initial_certificates": [
+            [
+              "U",
+              [
+                "EQ",
+                "TI"
+              ]
+            ],
+            [
+              "U",
+              [
+                "EQ",
+                "YP"
+              ]
+            ],
+            [
+              "U",
+              [
+                "EX",
+                "TI"
+              ]
+            ],
+            [
+              "U",
+              [
+                "EX",
+                "YP"
+              ]
+            ]
+          ]
+        },
+        "circuit-03": {
+          "altered": {
+            "cells": {
+              "M2": {
+                "H": {
+                  "sign": "Y",
+                  "states": [
+                    "UC",
+                    "ZL"
+                  ]
+                },
+                "L": {
+                  "sign": "N",
+                  "states": [
+                    "GL",
+                    "RX"
+                  ]
+                }
+              },
+              "M3": {
+                "H": {
+                  "sign": "U",
+                  "states": [
+                    "RX",
+                    "ZL"
+                  ]
+                },
+                "L": {
+                  "sign": "U",
+                  "states": [
+                    "GL",
+                    "UC"
+                  ]
+                }
+              },
+              "M6": {
+                "H": {
+                  "sign": "U",
+                  "states": [
+                    "GL",
+                    "RX",
+                    "UC",
+                    "ZL"
+                  ]
+                }
+              }
+            },
+            "decisive_on_actual": [
+              "M2"
+            ],
+            "guaranteed": [
+              "M2"
+            ],
+            "initial": "U",
+            "kind": "guaranteed_lookup",
+            "strongest_on_actual": "N"
+          },
+          "lost_initial_certificates": [],
+          "meter_transition": "same_guaranteed_set",
+          "registered_guaranteed": [
+            "M2"
+          ],
+          "registered_initial": "U",
+          "registered_kind": "guaranteed_lookup",
+          "registered_strongest": "N",
+          "retained_initial_certificates": [
+            [
+              "U",
+              [
+                "GL",
+                "UC"
+              ]
+            ],
+            [
+              "U",
+              [
+                "GL",
+                "ZL"
+              ]
+            ],
+            [
+              "U",
+              [
+                "RX",
+                "UC"
+              ]
+            ],
+            [
+              "U",
+              [
+                "RX",
+                "ZL"
+              ]
+            ]
+          ]
+        },
+        "circuit-04": {
+          "altered": {
+            "cells": {
+              "M2": {
+                "H": {
+                  "sign": "N",
+                  "states": [
+                    "BI",
+                    "GQ"
+                  ]
+                },
+                "L": {
+                  "sign": "N",
+                  "states": [
+                    "MU",
+                    "SZ"
+                  ]
+                }
+              },
+              "M4": {
+                "H": {
+                  "sign": "N",
+                  "states": [
+                    "BI",
+                    "GQ",
+                    "MU",
+                    "SZ"
+                  ]
+                }
+              },
+              "M8": {
+                "H": {
+                  "sign": "N",
+                  "states": [
+                    "GQ",
+                    "SZ"
+                  ]
+                },
+                "L": {
+                  "sign": "N",
+                  "states": [
+                    "BI",
+                    "MU"
+                  ]
+                }
+              }
+            },
+            "decisive_on_actual": [],
+            "guaranteed": [],
+            "initial": "N",
+            "kind": "settled",
+            "strongest_on_actual": "N"
+          },
+          "lost_initial_certificates": [],
+          "meter_transition": null,
+          "registered_guaranteed": [],
+          "registered_initial": "N",
+          "registered_kind": "settled",
+          "registered_strongest": "N",
+          "retained_initial_certificates": [
+            [
+              "N",
+              [
+                "BI",
+                "GQ",
+                "MU",
+                "SZ"
+              ]
+            ]
+          ]
+        },
+        "circuit-05": {
+          "altered": {
+            "cells": {
+              "M2": {
+                "H": {
+                  "sign": "U",
+                  "states": [
+                    "MG",
+                    "ZK"
+                  ]
+                },
+                "L": {
+                  "sign": "U",
+                  "states": [
+                    "CU",
+                    "HB"
+                  ]
+                }
+              },
+              "M4": {
+                "H": {
+                  "sign": "U",
+                  "states": [
+                    "MG",
+                    "ZK"
+                  ]
+                },
+                "L": {
+                  "sign": "U",
+                  "states": [
+                    "CU",
+                    "HB"
+                  ]
+                }
+              },
+              "M8": {
+                "H": {
+                  "sign": "N",
+                  "states": [
+                    "CU",
+                    "ZK"
+                  ]
+                },
+                "L": {
+                  "sign": "Y",
+                  "states": [
+                    "HB",
+                    "MG"
+                  ]
+                }
+              }
+            },
+            "decisive_on_actual": [
+              "M8"
+            ],
+            "guaranteed": [
+              "M8"
+            ],
+            "initial": "U",
+            "kind": "guaranteed_lookup",
+            "strongest_on_actual": "N"
+          },
+          "lost_initial_certificates": [],
+          "meter_transition": "same_guaranteed_set",
+          "registered_guaranteed": [
+            "M8"
+          ],
+          "registered_initial": "U",
+          "registered_kind": "guaranteed_lookup",
+          "registered_strongest": "N",
+          "retained_initial_certificates": [
+            [
+              "U",
+              [
+                "CU",
+                "HB"
+              ]
+            ],
+            [
+              "U",
+              [
+                "CU",
+                "MG"
+              ]
+            ],
+            [
+              "U",
+              [
+                "HB",
+                "ZK"
+              ]
+            ],
+            [
+              "U",
+              [
+                "MG",
+                "ZK"
+              ]
+            ]
+          ]
+        },
+        "circuit-06": {
+          "altered": {
+            "cells": {
+              "M3": {
+                "H": {
+                  "sign": "N",
+                  "states": [
+                    "IK",
+                    "KN"
+                  ]
+                },
+                "L": {
+                  "sign": "N",
+                  "states": [
+                    "OH",
+                    "XV"
+                  ]
+                }
+              },
+              "M5": {
+                "H": {
+                  "sign": "N",
+                  "states": [
+                    "IK",
+                    "KN"
+                  ]
+                },
+                "L": {
+                  "sign": "N",
+                  "states": [
+                    "OH",
+                    "XV"
+                  ]
+                }
+              },
+              "M6": {
+                "H": {
+                  "sign": "N",
+                  "states": [
+                    "KN",
+                    "XV"
+                  ]
+                },
+                "L": {
+                  "sign": "N",
+                  "states": [
+                    "IK",
+                    "OH"
+                  ]
+                }
+              }
+            },
+            "decisive_on_actual": [],
+            "guaranteed": [],
+            "initial": "N",
+            "kind": "settled",
+            "strongest_on_actual": "N"
+          },
+          "lost_initial_certificates": [
+            [
+              "U",
+              [
+                "IK",
+                "KN"
+              ]
+            ],
+            [
+              "U",
+              [
+                "IK",
+                "XV"
+              ]
+            ],
+            [
+              "U",
+              [
+                "KN",
+                "OH"
+              ]
+            ],
+            [
+              "U",
+              [
+                "OH",
+                "XV"
+              ]
+            ]
+          ],
+          "meter_transition": "already_settled",
+          "registered_guaranteed": [
+            "M6"
+          ],
+          "registered_initial": "U",
+          "registered_kind": "guaranteed_lookup",
+          "registered_strongest": "N",
+          "retained_initial_certificates": []
+        },
+        "circuit-07": {
+          "altered": {
+            "cells": {
+              "M3": {
+                "L": {
+                  "sign": "N",
+                  "states": [
+                    "AU",
+                    "BG",
+                    "GR",
+                    "NK"
+                  ]
+                }
+              },
+              "M5": {
+                "H": {
+                  "sign": "N",
+                  "states": [
+                    "AU",
+                    "GR"
+                  ]
+                },
+                "L": {
+                  "sign": "N",
+                  "states": [
+                    "BG",
+                    "NK"
+                  ]
+                }
+              },
+              "M6": {
+                "H": {
+                  "sign": "N",
+                  "states": [
+                    "AU",
+                    "BG",
+                    "GR",
+                    "NK"
+                  ]
+                }
+              }
+            },
+            "decisive_on_actual": [],
+            "guaranteed": [],
+            "initial": "N",
+            "kind": "settled",
+            "strongest_on_actual": "N"
+          },
+          "lost_initial_certificates": [
+            [
+              "U",
+              [
+                "AU",
+                "GR"
+              ]
+            ],
+            [
+              "U",
+              [
+                "AU",
+                "NK"
+              ]
+            ],
+            [
+              "U",
+              [
+                "BG",
+                "GR"
+              ]
+            ],
+            [
+              "U",
+              [
+                "BG",
+                "NK"
+              ]
+            ]
+          ],
+          "meter_transition": null,
+          "registered_guaranteed": [],
+          "registered_initial": "U",
+          "registered_kind": "ambiguous",
+          "registered_strongest": "U",
+          "retained_initial_certificates": []
+        },
+        "circuit-08": {
+          "altered": {
+            "cells": {
+              "M3": {
+                "H": {
+                  "sign": "Y",
+                  "states": [
+                    "MC",
+                    "YG"
+                  ]
+                },
+                "L": {
+                  "sign": "Y",
+                  "states": [
+                    "LO",
+                    "QK"
+                  ]
+                }
+              },
+              "M6": {
+                "L": {
+                  "sign": "Y",
+                  "states": [
+                    "LO",
+                    "MC",
+                    "QK",
+                    "YG"
+                  ]
+                }
+              },
+              "M7": {
+                "H": {
+                  "sign": "Y",
+                  "states": [
+                    "LO",
+                    "MC",
+                    "QK",
+                    "YG"
+                  ]
+                }
+              }
+            },
+            "decisive_on_actual": [],
+            "guaranteed": [],
+            "initial": "Y",
+            "kind": "settled",
+            "strongest_on_actual": "Y"
+          },
+          "lost_initial_certificates": [],
+          "meter_transition": null,
+          "registered_guaranteed": [],
+          "registered_initial": "Y",
+          "registered_kind": "settled",
+          "registered_strongest": "Y",
+          "retained_initial_certificates": [
+            [
+              "Y",
+              [
+                "LO",
+                "MC",
+                "QK",
+                "YG"
+              ]
+            ]
+          ]
+        },
+        "circuit-09": {
+          "altered": {
+            "cells": {
+              "M3": {
+                "H": {
+                  "sign": "N",
+                  "states": [
+                    "AD",
+                    "QT"
+                  ]
+                },
+                "L": {
+                  "sign": "U",
+                  "states": [
+                    "DB",
+                    "TZ"
+                  ]
+                }
+              },
+              "M6": {
+                "H": {
+                  "sign": "N",
+                  "states": [
+                    "AD",
+                    "QT"
+                  ]
+                },
+                "L": {
+                  "sign": "U",
+                  "states": [
+                    "DB",
+                    "TZ"
+                  ]
+                }
+              },
+              "M7": {
+                "H": {
+                  "sign": "N",
+                  "states": [
+                    "QT",
+                    "TZ"
+                  ]
+                },
+                "L": {
+                  "sign": "U",
+                  "states": [
+                    "AD",
+                    "DB"
+                  ]
+                }
+              }
+            },
+            "decisive_on_actual": [
+              "M3",
+              "M6"
+            ],
+            "guaranteed": [],
+            "initial": "U",
+            "kind": "contingent_lookup",
+            "strongest_on_actual": "N"
+          },
+          "lost_initial_certificates": [
+            [
+              "U",
+              [
+                "AD",
+                "QT"
+              ]
+            ],
+            [
+              "U",
+              [
+                "AD",
+                "TZ"
+              ]
+            ]
+          ],
+          "meter_transition": "no_guaranteed_meter",
+          "registered_guaranteed": [
+            "M7"
+          ],
+          "registered_initial": "U",
+          "registered_kind": "guaranteed_lookup",
+          "registered_strongest": "Y",
+          "retained_initial_certificates": [
+            [
+              "U",
+              [
+                "DB",
+                "QT"
+              ]
+            ],
+            [
+              "U",
+              [
+                "DB",
+                "TZ"
+              ]
+            ]
+          ]
+        },
+        "circuit-10": {
+          "altered": {
+            "cells": {
+              "M3": {
+                "H": {
+                  "sign": "N",
+                  "states": [
+                    "IC",
+                    "WU"
+                  ]
+                },
+                "L": {
+                  "sign": "U",
+                  "states": [
+                    "EA",
+                    "OO"
+                  ]
+                }
+              },
+              "M4": {
+                "H": {
+                  "sign": "N",
+                  "states": [
+                    "OO",
+                    "WU"
+                  ]
+                },
+                "L": {
+                  "sign": "U",
+                  "states": [
+                    "EA",
+                    "IC"
+                  ]
+                }
+              },
+              "M6": {
+                "L": {
+                  "sign": "U",
+                  "states": [
+                    "EA",
+                    "IC",
+                    "OO",
+                    "WU"
+                  ]
+                }
+              }
+            },
+            "decisive_on_actual": [
+              "M3"
+            ],
+            "guaranteed": [],
+            "initial": "U",
+            "kind": "contingent_lookup",
+            "strongest_on_actual": "N"
+          },
+          "lost_initial_certificates": [
+            [
+              "U",
+              [
+                "IC",
+                "OO"
+              ]
+            ],
+            [
+              "U",
+              [
+                "IC",
+                "WU"
+              ]
+            ]
+          ],
+          "meter_transition": "no_guaranteed_meter",
+          "registered_guaranteed": [
+            "M4"
+          ],
+          "registered_initial": "U",
+          "registered_kind": "guaranteed_lookup",
+          "registered_strongest": "Y",
+          "retained_initial_certificates": [
+            [
+              "U",
+              [
+                "EA",
+                "OO"
+              ]
+            ],
+            [
+              "U",
+              [
+                "EA",
+                "WU"
+              ]
+            ]
+          ]
+        },
+        "circuit-11": {
+          "altered": {
+            "cells": {
+              "M3": {
+                "L": {
+                  "sign": "U",
+                  "states": [
+                    "OF",
+                    "PP",
+                    "XL",
+                    "XY"
+                  ]
+                }
+              },
+              "M4": {
+                "H": {
+                  "sign": "N",
+                  "states": [
+                    "XL",
+                    "XY"
+                  ]
+                },
+                "L": {
+                  "sign": "U",
+                  "states": [
+                    "OF",
+                    "PP"
+                  ]
+                }
+              },
+              "M6": {
+                "H": {
+                  "sign": "N",
+                  "states": [
+                    "XL",
+                    "XY"
+                  ]
+                },
+                "L": {
+                  "sign": "U",
+                  "states": [
+                    "OF",
+                    "PP"
+                  ]
+                }
+              }
+            },
+            "decisive_on_actual": [],
+            "guaranteed": [],
+            "initial": "U",
+            "kind": "ambiguous",
+            "strongest_on_actual": "U"
+          },
+          "lost_initial_certificates": [
+            [
+              "U",
+              [
+                "OF",
+                "XY"
+              ]
+            ],
+            [
+              "U",
+              [
+                "XL",
+                "XY"
+              ]
+            ]
+          ],
+          "meter_transition": null,
+          "registered_guaranteed": [],
+          "registered_initial": "U",
+          "registered_kind": "ambiguous",
+          "registered_strongest": "U",
+          "retained_initial_certificates": [
+            [
+              "U",
+              [
+                "OF",
+                "PP"
+              ]
+            ],
+            [
+              "U",
+              [
+                "PP",
+                "XL"
+              ]
+            ]
+          ]
+        }
+      }
+    }
+  },
+  "source_sha256": "b184fbf5b863cd6aa634806adee8a79f58ea621297ff0d65ecc87daeb7af35cc"
+}

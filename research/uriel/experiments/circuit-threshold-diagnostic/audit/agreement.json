@@ -1,0 +1,125 @@
+{
+  "definition": "Agreement uses +1 for Y/H and N/L, -1 for Y/L and N/H.",
+  "scope": "Frozen case construction; outcome-independent descriptive diagnostic.",
+  "state_restriction": "Four admissible rows conditioned on the observed initial lamp; eight before it.",
+  "inverse_lamp_semantics": 4,
+  "expectation_under_uniform_unfiltered_ties": "4",
+  "records": {
+    "circuit-00": {
+      "family": "DC-T1",
+      "correct_meter": "M7",
+      "H_licenses": "Y",
+      "agreement_on_admissible_rows": {
+        "M7": 4,
+        "M6": 0,
+        "M2": 0
+      },
+      "agreement_on_all_rows": {
+        "M7": 4,
+        "M6": -4,
+        "M2": 0
+      },
+      "globally_maximal": [
+        "M7",
+        "M6"
+      ],
+      "unfiltered_success_probability": "1/2"
+    },
+    "circuit-03": {
+      "family": "DC-T2",
+      "correct_meter": "M2",
+      "H_licenses": "Y",
+      "agreement_on_admissible_rows": {
+        "M3": 0,
+        "M2": 4,
+        "M6": 0
+      },
+      "agreement_on_all_rows": {
+        "M3": 0,
+        "M2": 4,
+        "M6": 0
+      },
+      "globally_maximal": [
+        "M2"
+      ],
+      "unfiltered_success_probability": "1"
+    },
+    "circuit-05": {
+      "family": "DC-T3",
+      "correct_meter": "M8",
+      "H_licenses": "N",
+      "agreement_on_admissible_rows": {
+        "M4": 0,
+        "M2": 0,
+        "M8": -4
+      },
+      "agreement_on_all_rows": {
+        "M4": -4,
+        "M2": 0,
+        "M8": -4
+      },
+      "globally_maximal": [
+        "M4",
+        "M8"
+      ],
+      "unfiltered_success_probability": "1/2"
+    },
+    "circuit-06": {
+      "family": "DC-T4",
+      "correct_meter": "M6",
+      "H_licenses": "N",
+      "agreement_on_admissible_rows": {
+        "M6": -4,
+        "M3": 0,
+        "M5": 0
+      },
+      "agreement_on_all_rows": {
+        "M6": -4,
+        "M3": 0,
+        "M5": 0
+      },
+      "globally_maximal": [
+        "M6"
+      ],
+      "unfiltered_success_probability": "1"
+    },
+    "circuit-09": {
+      "family": "DC-T5",
+      "correct_meter": "M7",
+      "H_licenses": "N",
+      "agreement_on_admissible_rows": {
+        "M6": 0,
+        "M7": -4,
+        "M3": 0
+      },
+      "agreement_on_all_rows": {
+        "M6": -4,
+        "M7": 0,
+        "M3": 0
+      },
+      "globally_maximal": [
+        "M6"
+      ],
+      "unfiltered_success_probability": "0"
+    },
+    "circuit-10": {
+      "family": "DC-T6",
+      "correct_meter": "M4",
+      "H_licenses": "N",
+      "agreement_on_admissible_rows": {
+        "M3": 0,
+        "M6": 0,
+        "M4": -4
+      },
+      "agreement_on_all_rows": {
+        "M3": 0,
+        "M6": 0,
+        "M4": -4
+      },
+      "globally_maximal": [
+        "M4"
+      ],
+      "unfiltered_success_probability": "1"
+    }
+  }
+}

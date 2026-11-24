@@ -1,0 +1,52 @@
+{
+  "record": "circuit-09",
+  "arm": "labeled",
+  "first": {
+    "started": "2026-11-24T14:15:58.118540+00:00",
+    "request_sha256": "78a835ef7d8c6facb31675f932de4380b5fef9b3f4b8a4e73a2912e8bccd65dc",
+    "answer": {
+      "verdict": "U",
+      "certificate": [
+        "AD",
+        "QT"
+      ],
+      "lookup": "M3"
+    },
+    "status": "ok",
+    "content": "{\n  \"verdict\": \"U\",\n  \"certificate\": [\"AD\", \"QT\"],\n  \"lookup\": \"M3\"\n}",
+    "usage": {
+      "prompt_eval_count": 756,
+      "eval_count": 326,
+      "total_duration": 25642995208,
+      "load_duration": 10528708,
+      "eval_duration": 21850848000,
+      "done_reason": "stop"
+    },
+    "ended": "2026-11-24T14:16:23.897364+00:00"
+  },
+  "observation": {
+    "item": "M3",
+    "value": "H"
+  },
+  "second": {
+    "started": "2026-11-24T14:16:23.904587+00:00",
+    "request_sha256": "b9ef8ef774c4850167364cb0c441ea97905fe3aded559ab95ca0937578ad72a1",
+    "answer": {
+      "verdict": "Y",
+      "certificate": [
+        "QT"
+      ]
+    },
+    "status": "ok",
+    "content": "{\n  \"verdict\": \"Y\",\n  \"certificate\": [\"QT\"]\n}",
+    "usage": {
+      "prompt_eval_count": 820,
+      "eval_count": 91,
+      "total_duration": 7299692750,
+      "load_duration": 16076000,
+      "eval_duration": 6359526000,
+      "done_reason": "stop"
+    },
+    "ended": "2026-11-24T14:16:31.219122+00:00"
+  }
+}

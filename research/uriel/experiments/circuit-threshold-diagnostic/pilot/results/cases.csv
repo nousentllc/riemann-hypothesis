@@ -1,0 +1,25 @@
+record,family,variant,arm,kind,target,initial,initial_warrant,initial_licensed,initial_certified,initial_unsupported,lookup,decisive_meter,returned,productive,final,final_warrant,final_certified,success,unsupported,first_failure
+circuit-00,DC-T1,1,raw,lookup,Y,U,U,True,False,False,NONE,M7,,False,U,U,False,False,0,no usable request
+circuit-00,DC-T1,1,labeled,lookup,Y,U,U,True,True,False,M2,M7,L,False,U,U,True,False,0,wrong meter
+circuit-01,DC-T1,2,raw,settled,Y,U,Y,False,False,False,NONE,,,False,U,Y,False,False,0,decision or missing
+circuit-01,DC-T1,2,labeled,settled,Y,U,Y,False,False,False,NONE,,,False,U,Y,False,False,0,decision or missing
+circuit-02,DC-T2,1,raw,ambiguous,U,U,U,True,False,False,NONE,,,False,U,U,False,False,0,certificate
+circuit-02,DC-T2,1,labeled,ambiguous,U,U,U,True,True,False,M6,,H,False,Y,U,False,False,1,decision or missing
+circuit-03,DC-T2,2,raw,lookup,N,U,U,True,True,False,NONE,M2,,False,U,U,True,False,0,no usable request
+circuit-03,DC-T2,2,labeled,lookup,N,U,U,True,False,False,M2,M2,L,True,Y,N,False,False,1,decision or missing
+circuit-04,DC-T3,1,raw,settled,N,U,N,False,False,False,M8,,H,False,U,N,False,False,0,decision or missing
+circuit-04,DC-T3,1,labeled,settled,N,U,N,False,False,False,NONE,,,False,U,N,False,False,0,decision or missing
+circuit-05,DC-T3,2,raw,lookup,N,U,U,True,True,False,NONE,M8,,False,U,U,True,False,0,no usable request
+circuit-05,DC-T3,2,labeled,lookup,N,U,U,True,True,False,NONE,M8,,False,U,U,True,False,0,no usable request
+circuit-06,DC-T4,1,raw,lookup,N,U,U,True,False,False,M5,M6,L,False,Y,U,False,False,1,wrong meter
+circuit-06,DC-T4,1,labeled,lookup,N,U,U,True,False,False,M5,M6,L,False,N,U,False,False,1,wrong meter
+circuit-07,DC-T4,2,raw,ambiguous,U,U,U,True,True,False,M3,,L,False,Y,U,False,False,1,decision or missing
+circuit-07,DC-T4,2,labeled,ambiguous,U,U,U,True,True,False,M5,,L,False,Y,U,False,False,1,decision or missing
+circuit-08,DC-T5,1,raw,settled,Y,U,Y,False,False,False,NONE,,,False,U,Y,False,False,0,decision or missing
+circuit-08,DC-T5,1,labeled,settled,Y,U,Y,False,False,False,NONE,,,False,U,Y,False,False,0,decision or missing
+circuit-09,DC-T5,2,raw,lookup,Y,U,U,True,True,False,M7,M7,L,True,Y,Y,False,False,0,certificate
+circuit-09,DC-T5,2,labeled,lookup,Y,U,U,True,True,False,M3,M7,H,False,Y,U,False,False,1,wrong meter
+circuit-10,DC-T6,1,raw,lookup,Y,U,U,True,False,False,M3,M4,H,False,Y,U,False,False,1,wrong meter
+circuit-10,DC-T6,1,labeled,lookup,Y,U,U,True,False,False,NONE,M4,,False,U,U,False,False,0,no usable request
+circuit-11,DC-T6,2,raw,ambiguous,U,U,U,True,True,False,NONE,,,False,U,U,True,True,0,pass
+circuit-11,DC-T6,2,labeled,ambiguous,U,U,U,True,True,False,NONE,,,False,U,U,True,True,0,pass

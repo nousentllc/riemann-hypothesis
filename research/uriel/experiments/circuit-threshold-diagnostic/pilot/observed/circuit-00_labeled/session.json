@@ -1,0 +1,53 @@
+{
+  "record": "circuit-00",
+  "arm": "labeled",
+  "first": {
+    "started": "2026-11-24T14:20:18.306887+00:00",
+    "request_sha256": "8cc54cd47185bb2630330ce497857e8eafce93acc7d271c2ec269fda4474c016",
+    "answer": {
+      "verdict": "U",
+      "certificate": [
+        "BB",
+        "GN"
+      ],
+      "lookup": "M2"
+    },
+    "status": "ok",
+    "content": "{\n  \"verdict\": \"U\",\n  \"certificate\": [\"BB\", \"GN\"],\n  \"lookup\": \"M2\"\n}",
+    "usage": {
+      "prompt_eval_count": 742,
+      "eval_count": 541,
+      "total_duration": 41341373125,
+      "load_duration": 1687875,
+      "eval_duration": 37963822000,
+      "done_reason": "stop"
+    },
+    "ended": "2026-11-24T14:20:59.663056+00:00"
+  },
+  "observation": {
+    "item": "M2",
+    "value": "L"
+  },
+  "second": {
+    "started": "2026-11-24T14:20:59.666648+00:00",
+    "request_sha256": "92799cdcc9c832a56c09bc87bd2cfde8559b59999d80d1517d5b5bb1d3c1b08d",
+    "answer": {
+      "verdict": "U",
+      "certificate": [
+        "BB",
+        "OW"
+      ]
+    },
+    "status": "ok",
+    "content": "{\n  \"verdict\": \"U\",\n  \"certificate\": [\"BB\", \"OW\"]\n}",
+    "usage": {
+      "prompt_eval_count": 806,
+      "eval_count": 256,
+      "total_duration": 17377408666,
+      "load_duration": 21176791,
+      "eval_duration": 16403674000,
+      "done_reason": "stop"
+    },
+    "ended": "2026-11-24T14:21:17.048781+00:00"
+  }
+}

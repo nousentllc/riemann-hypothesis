@@ -1,0 +1,23 @@
+{
+  "started": "2026-11-24T14:14:12.440015+00:00",
+  "request_sha256": "81a79a68707c2c30382858b7578eecd6a8b1a3edfbccbb635d93d888c3195d5b",
+  "answer": {
+    "verdict": "U",
+    "certificate": [
+      "BG",
+      "OH"
+    ],
+    "lookup": "M5"
+  },
+  "status": "ok",
+  "content": "{\n  \"verdict\": \"U\",\n  \"certificate\": [\"BG\", \"OH\"],\n  \"lookup\": \"M5\"\n}",
+  "usage": {
+    "prompt_eval_count": 753,
+    "eval_count": 417,
+    "total_duration": 26251847042,
+    "load_duration": 15892792,
+    "eval_duration": 23770905000,
+    "done_reason": "stop"
+  },
+  "ended": "2026-11-24T14:14:38.702922+00:00"
+}
