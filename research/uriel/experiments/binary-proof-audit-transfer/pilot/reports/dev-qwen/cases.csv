@@ -1,0 +1,9 @@
+domain,family,variant,record,arm,kind,target,initial,initial_licensed,initial_expected,initial_certified,initial_guessed,initial_wrong_sign,initial_unnecessary_abstention,lookup,productive,final,final_expected_seen,final_licensed_seen,final_guessed,final_wrong_sign,final_certified_seen,missed_resolvable,unsupported,success
+formal,pairs-in-bins,1,formal-03,method,settled,N,U,False,N,False,False,False,True,c,False,Y,N,False,False,True,False,True,1,False
+circuits,DC-D1,1,circuits-00,method,settled,N,U,False,N,False,False,False,True,M7,False,N,N,True,False,False,False,False,0,False
+circuits,DC-D2,1,circuits-01,method,ambiguous,U,U,True,U,False,False,False,False,M7,False,Y,U,False,True,False,False,False,1,False
+formal,pairs-in-bins,1,formal-03,general,settled,N,U,False,N,False,False,False,True,c,False,N,N,True,False,False,False,False,0,False
+formal,pair-encoding,1,formal-02,method,ambiguous,U,U,True,U,True,False,False,False,c,False,Y,U,False,True,False,False,False,1,False
+circuits,DC-D1,1,circuits-00,general,settled,N,U,False,N,False,False,False,True,M7,False,N,N,True,False,False,False,False,0,False
+circuits,DC-D2,1,circuits-01,general,ambiguous,U,U,True,U,False,False,False,False,M7,False,Y,U,False,True,False,False,False,1,False
+formal,pair-encoding,1,formal-02,general,ambiguous,U,U,True,U,True,False,False,False,c,False,Y,U,False,True,False,False,False,1,False

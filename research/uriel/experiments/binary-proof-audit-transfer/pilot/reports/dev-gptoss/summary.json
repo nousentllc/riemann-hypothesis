@@ -1,0 +1,95 @@
+{
+  "registry": "dev-gptoss",
+  "totals": {
+    "general": {
+      "sessions": 4,
+      "recorded": 4,
+      "parseable_final": 3,
+      "certified_cases": 2,
+      "unsupported": 0,
+      "certified_determinate": 1,
+      "missed_resolvable": 1,
+      "right_final_without_valid_certificate": 0,
+      "used_lookup": 0,
+      "productive_lookups": 0,
+      "missed_opportunity": 0,
+      "unnecessary_initial_abstention": 1,
+      "attainable_final_verdict": 2,
+      "calls": 4,
+      "prompt_tokens": 2394,
+      "generated_tokens": 3471,
+      "service_nanoseconds": 274066757249,
+      "unfinished_calls": 1
+    },
+    "method": {
+      "sessions": 4,
+      "recorded": 4,
+      "parseable_final": 4,
+      "certified_cases": 3,
+      "unsupported": 0,
+      "certified_determinate": 1,
+      "missed_resolvable": 1,
+      "right_final_without_valid_certificate": 0,
+      "used_lookup": 1,
+      "productive_lookups": 0,
+      "missed_opportunity": 0,
+      "unnecessary_initial_abstention": 1,
+      "attainable_final_verdict": 3,
+      "calls": 5,
+      "prompt_tokens": 3122,
+      "generated_tokens": 2657,
+      "service_nanoseconds": 218351538167,
+      "unfinished_calls": 0
+    }
+  },
+  "by_domain": {
+    "circuits": {
+      "general": 0,
+      "method": 1,
+      "gain": 1
+    },
+    "formal": {
+      "general": 2,
+      "method": 2,
+      "gain": 0
+    }
+  },
+  "families": [
+    {
+      "domain": "circuits",
+      "family": "DC-D1",
+      "general": false,
+      "method": false
+    },
+    {
+      "domain": "circuits",
+      "family": "DC-D2",
+      "general": false,
+      "method": true
+    },
+    {
+      "domain": "formal",
+      "family": "pair-encoding",
+      "general": true,
+      "method": true
+    },
+    {
+      "domain": "formal",
+      "family": "pairs-in-bins",
+      "general": true,
+      "method": true
+    }
+  ],
+  "method_wins": 1,
+  "method_losses": 0,
+  "ties": 3,
+  "paired": {
+    "discordant": 1,
+    "two_sided_sign_p": 1,
+    "conditional_win_95pct": [
+      0.024999999999999967,
+      1
+    ]
+  },
+  "direct_api_usd": 0
+}

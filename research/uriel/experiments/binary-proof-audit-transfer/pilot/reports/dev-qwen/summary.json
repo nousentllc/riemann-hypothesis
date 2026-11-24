@@ -1,0 +1,92 @@
+{
+  "registry": "dev-qwen",
+  "totals": {
+    "general": {
+      "sessions": 4,
+      "recorded": 4,
+      "parseable_final": 4,
+      "certified_cases": 0,
+      "unsupported": 2,
+      "certified_determinate": 0,
+      "missed_resolvable": 0,
+      "right_final_without_valid_certificate": 2,
+      "used_lookup": 4,
+      "productive_lookups": 0,
+      "missed_opportunity": 0,
+      "unnecessary_initial_abstention": 2,
+      "attainable_final_verdict": 2,
+      "calls": 8,
+      "prompt_tokens": 4702,
+      "generated_tokens": 208,
+      "service_nanoseconds": 11828414791,
+      "unfinished_calls": 0
+    },
+    "method": {
+      "sessions": 4,
+      "recorded": 4,
+      "parseable_final": 4,
+      "certified_cases": 0,
+      "unsupported": 3,
+      "certified_determinate": 0,
+      "missed_resolvable": 1,
+      "right_final_without_valid_certificate": 1,
+      "used_lookup": 4,
+      "productive_lookups": 0,
+      "missed_opportunity": 0,
+      "unnecessary_initial_abstention": 2,
+      "attainable_final_verdict": 1,
+      "calls": 8,
+      "prompt_tokens": 4655,
+      "generated_tokens": 219,
+      "service_nanoseconds": 17280772332,
+      "unfinished_calls": 0
+    }
+  },
+  "by_domain": {
+    "circuits": {
+      "general": 0,
+      "method": 0,
+      "gain": 0
+    },
+    "formal": {
+      "general": 0,
+      "method": 0,
+      "gain": 0
+    }
+  },
+  "families": [
+    {
+      "domain": "circuits",
+      "family": "DC-D1",
+      "general": false,
+      "method": false
+    },
+    {
+      "domain": "circuits",
+      "family": "DC-D2",
+      "general": false,
+      "method": false
+    },
+    {
+      "domain": "formal",
+      "family": "pair-encoding",
+      "general": false,
+      "method": false
+    },
+    {
+      "domain": "formal",
+      "family": "pairs-in-bins",
+      "general": false,
+      "method": false
+    }
+  ],
+  "method_wins": 0,
+  "method_losses": 0,
+  "ties": 4,
+  "paired": {
+    "discordant": 0,
+    "two_sided_sign_p": 1,
+    "conditional_win_95pct": null
+  },
+  "direct_api_usd": 0
+}

@@ -1,0 +1,27 @@
+{
+  "record": "formal-16",
+  "arm": "method",
+  "first": {
+    "started": "2026-11-24T13:33:54.322442+00:00",
+    "request_sha256": "3072dbb5f4da9308fcd5c0d9cbcd599631264959a24ef7208f7d4c6d744f3f01",
+    "answer": {
+      "verdict": "U",
+      "certificate": [
+        "P",
+        "S"
+      ],
+      "lookup": "NONE"
+    },
+    "status": "ok",
+    "content": "{\n  \"verdict\": \"U\",\n  \"certificate\": [\"P\", \"S\"],\n  \"lookup\": \"NONE\"\n}",
+    "usage": {
+      "prompt_eval_count": 541,
+      "eval_count": 302,
+      "total_duration": 23911630667,
+      "load_duration": 12772042,
+      "eval_duration": 20142697000,
+      "done_reason": "stop"
+    },
+    "ended": "2026-11-24T13:34:18.276705+00:00"
+  }
+}

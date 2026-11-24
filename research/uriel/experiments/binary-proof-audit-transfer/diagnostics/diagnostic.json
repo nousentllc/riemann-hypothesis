@@ -1,0 +1,595 @@
+{
+  "by_domain": {
+    "circuits": {
+      "action_policy_with_perfect_reader": {
+        "expected_decision": {
+          "cases": 12,
+          "families": 6,
+          "productive_lookups": 4
+        },
+        "most_balanced": {
+          "cases": 9,
+          "families": 3,
+          "productive_lookups": 1
+        },
+        "most_distinct": {
+          "cases": 9,
+          "families": 3,
+          "productive_lookups": 1
+        },
+        "none": {
+          "cases": 8,
+          "families": 2,
+          "productive_lookups": 0
+        },
+        "oracle": {
+          "cases": 12,
+          "families": 6,
+          "productive_lookups": 4
+        },
+        "position1": {
+          "cases": 9,
+          "families": 3,
+          "productive_lookups": 1
+        },
+        "position2": {
+          "cases": 10,
+          "families": 4,
+          "productive_lookups": 2
+        },
+        "position3": {
+          "cases": 9,
+          "families": 3,
+          "productive_lookups": 1
+        }
+      },
+      "final_label_diagnostics": {
+        "label_only_fixed": {
+          "always_N": 4,
+          "always_U": 4,
+          "always_Y": 4,
+          "first_printed_ID_sign": 5,
+          "first_source_ID_sign": 4,
+          "last_printed_ID_sign": 6,
+          "last_source_ID_sign": 4,
+          "lex_first_compatible_sign": 5,
+          "majority_compatible_tie_U": 9
+        },
+        "leave_one_family_out_label_only": {
+          "eligible_size": 7,
+          "evidence_last_token": 0,
+          "first_eligible_ID_character": 0,
+          "first_eligible_row_ordinal": 2,
+          "first_menu_ID": 1,
+          "total_menu_description_chars": 0
+        },
+        "oracle_frequencies": {
+          "N": 4,
+          "U": 4,
+          "Y": 4
+        }
+      },
+      "finite_table": [
+        {
+          "eligible_count": 3,
+          "family": "DC-C1",
+          "kind": "settled",
+          "option_cells": [
+            1,
+            2,
+            2
+          ],
+          "target_across_actuals": [
+            "Y"
+          ],
+          "useful_positions": [],
+          "variant": "1"
+        },
+        {
+          "eligible_count": 5,
+          "family": "DC-C1",
+          "kind": "lookup",
+          "option_cells": [
+            2,
+            2,
+            1
+          ],
+          "target_across_actuals": [
+            "N",
+            "Y"
+          ],
+          "useful_positions": [
+            2
+          ],
+          "variant": "2"
+        },
+        {
+          "eligible_count": 5,
+          "family": "DC-C2",
+          "kind": "ambiguous",
+          "option_cells": [
+            2,
+            2,
+            2
+          ],
+          "target_across_actuals": [
+            "U"
+          ],
+          "useful_positions": [],
+          "variant": "1"
+        },
+        {
+          "eligible_count": 3,
+          "family": "DC-C2",
+          "kind": "settled",
+          "option_cells": [
+            2,
+            2,
+            1
+          ],
+          "target_across_actuals": [
+            "N"
+          ],
+          "useful_positions": [],
+          "variant": "2"
+        },
+        {
+          "eligible_count": 4,
+          "family": "DC-C3",
+          "kind": "lookup",
+          "option_cells": [
+            2,
+            2,
+            2
+          ],
+          "target_across_actuals": [
+            "N",
+            "Y"
+          ],
+          "useful_positions": [
+            1
+          ],
+          "variant": "1"
+        },
+        {
+          "eligible_count": 4,
+          "family": "DC-C3",
+          "kind": "ambiguous",
+          "option_cells": [
+            1,
+            1,
+            1
+          ],
+          "target_across_actuals": [
+            "U"
+          ],
+          "useful_positions": [],
+          "variant": "2"
+        },
+        {
+          "eligible_count": 3,
+          "family": "DC-C4",
+          "kind": "lookup",
+          "option_cells": [
+            1,
+            2,
+            2
+          ],
+          "target_across_actuals": [
+            "N",
+            "Y"
+          ],
+          "useful_positions": [
+            3
+          ],
+          "variant": "1"
+        },
+        {
+          "eligible_count": 5,
+          "family": "DC-C4",
+          "kind": "settled",
+          "option_cells": [
+            2,
+            2,
+            2
+          ],
+          "target_across_actuals": [
+            "N"
+          ],
+          "useful_positions": [],
+          "variant": "2"
+        },
+        {
+          "eligible_count": 4,
+          "family": "DC-C5",
+          "kind": "settled",
+          "option_cells": [
+            1,
+            2,
+            2
+          ],
+          "target_across_actuals": [
+            "Y"
+          ],
+          "useful_positions": [],
+          "variant": "1"
+        },
+        {
+          "eligible_count": 4,
+          "family": "DC-C5",
+          "kind": "ambiguous",
+          "option_cells": [
+            2,
+            1,
+            1
+          ],
+          "target_across_actuals": [
+            "U"
+          ],
+          "useful_positions": [],
+          "variant": "2"
+        },
+        {
+          "eligible_count": 4,
+          "family": "DC-C6",
+          "kind": "ambiguous",
+          "option_cells": [
+            1,
+            1,
+            2
+          ],
+          "target_across_actuals": [
+            "U"
+          ],
+          "useful_positions": [],
+          "variant": "1"
+        },
+        {
+          "eligible_count": 4,
+          "family": "DC-C6",
+          "kind": "lookup",
+          "option_cells": [
+            2,
+            2,
+            2
+          ],
+          "target_across_actuals": [
+            "N",
+            "Y"
+          ],
+          "useful_positions": [
+            2
+          ],
+          "variant": "2"
+        }
+      ],
+      "initial_label_diagnostics": {
+        "label_only_fixed": {
+          "always_N": 2,
+          "always_U": 8,
+          "always_Y": 2,
+          "first_printed_ID_sign": 3,
+          "first_source_ID_sign": 1,
+          "last_printed_ID_sign": 4,
+          "last_source_ID_sign": 3,
+          "lex_first_compatible_sign": 4,
+          "majority_compatible_tie_U": 7
+        },
+        "leave_one_family_out_label_only": {
+          "eligible_size": 5,
+          "evidence_last_token": 8,
+          "first_eligible_ID_character": 7,
+          "first_eligible_row_ordinal": 7,
+          "first_menu_ID": 4,
+          "total_menu_description_chars": 8
+        },
+        "oracle_frequencies": {
+          "N": 2,
+          "U": 8,
+          "Y": 2
+        }
+      },
+      "pairs_single_visible_change": 6,
+      "projection_invariant": 12
+    },
+    "formal": {
+      "action_policy_with_perfect_reader": {
+        "expected_decision": {
+          "cases": 12,
+          "families": 6,
+          "productive_lookups": 4
+        },
+        "most_balanced": {
+          "cases": 12,
+          "families": 6,
+          "productive_lookups": 4
+        },
+        "most_distinct": {
+          "cases": 12,
+          "families": 6,
+          "productive_lookups": 4
+        },
+        "none": {
+          "cases": 8,
+          "families": 2,
+          "productive_lookups": 0
+        },
+        "oracle": {
+          "cases": 12,
+          "families": 6,
+          "productive_lookups": 4
+        },
+        "position1": {
+          "cases": 8,
+          "families": 2,
+          "productive_lookups": 0
+        },
+        "position2": {
+          "cases": 9,
+          "families": 3,
+          "productive_lookups": 1
+        },
+        "position3": {
+          "cases": 11,
+          "families": 5,
+          "productive_lookups": 3
+        }
+      },
+      "final_label_diagnostics": {
+        "label_only_fixed": {
+          "always_N": 4,
+          "always_U": 4,
+          "always_Y": 4,
+          "first_printed_ID_sign": 4,
+          "first_source_ID_sign": 4,
+          "last_printed_ID_sign": 5,
+          "last_source_ID_sign": 5,
+          "lex_first_compatible_sign": 8,
+          "majority_compatible_tie_U": 9
+        },
+        "leave_one_family_out_label_only": {
+          "eligible_size": 2,
+          "evidence_last_token": 0,
+          "first_eligible_ID_character": 0,
+          "first_eligible_row_ordinal": 0,
+          "first_menu_ID": 0,
+          "total_menu_description_chars": 0
+        },
+        "oracle_frequencies": {
+          "N": 4,
+          "U": 4,
+          "Y": 4
+        }
+      },
+      "finite_table": [
+        {
+          "eligible_count": 3,
+          "family": "unions",
+          "kind": "settled",
+          "option_cells": [
+            2,
+            2,
+            2
+          ],
+          "target_across_actuals": [
+            "Y"
+          ],
+          "useful_positions": [],
+          "variant": "1"
+        },
+        {
+          "eligible_count": 3,
+          "family": "unions",
+          "kind": "lookup",
+          "option_cells": [
+            1,
+            1,
+            2
+          ],
+          "target_across_actuals": [
+            "N",
+            "Y"
+          ],
+          "useful_positions": [
+            3
+          ],
+          "variant": "2"
+        },
+        {
+          "eligible_count": 2,
+          "family": "determinants",
+          "kind": "ambiguous",
+          "option_cells": [
+            1,
+            1,
+            1
+          ],
+          "target_across_actuals": [
+            "U"
+          ],
+          "useful_positions": [],
+          "variant": "1"
+        },
+        {
+          "eligible_count": 3,
+          "family": "determinants",
+          "kind": "settled",
+          "option_cells": [
+            3,
+            2,
+            1
+          ],
+          "target_across_actuals": [
+            "N"
+          ],
+          "useful_positions": [],
+          "variant": "2"
+        },
+        {
+          "eligible_count": 3,
+          "family": "neighbors",
+          "kind": "lookup",
+          "option_cells": [
+            1,
+            1,
+            2
+          ],
+          "target_across_actuals": [
+            "N",
+            "Y"
+          ],
+          "useful_positions": [
+            3
+          ],
+          "variant": "1"
+        },
+        {
+          "eligible_count": 3,
+          "family": "neighbors",
+          "kind": "ambiguous",
+          "option_cells": [
+            1,
+            1,
+            1
+          ],
+          "target_across_actuals": [
+            "U"
+          ],
+          "useful_positions": [],
+          "variant": "2"
+        },
+        {
+          "eligible_count": 3,
+          "family": "quadratics",
+          "kind": "lookup",
+          "option_cells": [
+            1,
+            1,
+            2
+          ],
+          "target_across_actuals": [
+            "N",
+            "Y"
+          ],
+          "useful_positions": [
+            3
+          ],
+          "variant": "1"
+        },
+        {
+          "eligible_count": 3,
+          "family": "quadratics",
+          "kind": "settled",
+          "option_cells": [
+            2,
+            1,
+            2
+          ],
+          "target_across_actuals": [
+            "Y"
+          ],
+          "useful_positions": [],
+          "variant": "2"
+        },
+        {
+          "eligible_count": 3,
+          "family": "swaps",
+          "kind": "settled",
+          "option_cells": [
+            1,
+            2,
+            2
+          ],
+          "target_across_actuals": [
+            "N"
+          ],
+          "useful_positions": [],
+          "variant": "1"
+        },
+        {
+          "eligible_count": 3,
+          "family": "swaps",
+          "kind": "ambiguous",
+          "option_cells": [
+            1,
+            1,
+            1
+          ],
+          "target_across_actuals": [
+            "U"
+          ],
+          "useful_positions": [],
+          "variant": "2"
+        },
+        {
+          "eligible_count": 3,
+          "family": "hamming",
+          "kind": "ambiguous",
+          "option_cells": [
+            1,
+            1,
+            1
+          ],
+          "target_across_actuals": [
+            "U"
+          ],
+          "useful_positions": [],
+          "variant": "1"
+        },
+        {
+          "eligible_count": 3,
+          "family": "hamming",
+          "kind": "lookup",
+          "option_cells": [
+            1,
+            2,
+            1
+          ],
+          "target_across_actuals": [
+            "N",
+            "Y"
+          ],
+          "useful_positions": [
+            2
+          ],
+          "variant": "2"
+        }
+      ],
+      "initial_label_diagnostics": {
+        "label_only_fixed": {
+          "always_N": 2,
+          "always_U": 8,
+          "always_Y": 2,
+          "first_printed_ID_sign": 4,
+          "first_source_ID_sign": 4,
+          "last_printed_ID_sign": 3,
+          "last_source_ID_sign": 3,
+          "lex_first_compatible_sign": 4,
+          "majority_compatible_tie_U": 5
+        },
+        "leave_one_family_out_label_only": {
+          "eligible_size": 8,
+          "evidence_last_token": 5,
+          "first_eligible_ID_character": 8,
+          "first_eligible_row_ordinal": 6,
+          "first_menu_ID": 8,
+          "total_menu_description_chars": 8
+        },
+        "oracle_frequencies": {
+          "N": 2,
+          "U": 8,
+          "Y": 2
+        }
+      },
+      "pairs_single_visible_change": 6,
+      "projection_invariant": 12
+    }
+  },
+  "families": 12,
+  "generators": {
+    "circuits": "cf797eb456971adf7c7786bfb4f88a2f41cf83c3aa57881266f02c0e1db12f9f",
+    "formal": "e68fad6d0776b5ffda78c67256392699a06d5841d3a1c48964770f84b8012129"
+  },
+  "records": 24,
+  "version": "original"
+}

@@ -1,0 +1,144 @@
+{
+  "registry": "test-gptoss",
+  "totals": {
+    "general": {
+      "sessions": 24,
+      "recorded": 24,
+      "parseable_final": 23,
+      "certified_cases": 7,
+      "unsupported": 6,
+      "certified_determinate": 3,
+      "missed_resolvable": 12,
+      "right_final_without_valid_certificate": 2,
+      "used_lookup": 3,
+      "productive_lookups": 0,
+      "missed_opportunity": 8,
+      "unnecessary_initial_abstention": 5,
+      "attainable_final_verdict": 9,
+      "calls": 27,
+      "prompt_tokens": 17065,
+      "generated_tokens": 13974,
+      "service_nanoseconds": 1143212209622,
+      "unfinished_calls": 1
+    },
+    "method": {
+      "sessions": 24,
+      "recorded": 24,
+      "parseable_final": 23,
+      "certified_cases": 11,
+      "unsupported": 5,
+      "certified_determinate": 5,
+      "missed_resolvable": 9,
+      "right_final_without_valid_certificate": 3,
+      "used_lookup": 5,
+      "productive_lookups": 1,
+      "missed_opportunity": 7,
+      "unnecessary_initial_abstention": 4,
+      "attainable_final_verdict": 14,
+      "calls": 29,
+      "prompt_tokens": 18425,
+      "generated_tokens": 14473,
+      "service_nanoseconds": 1079401887044,
+      "unfinished_calls": 1
+    }
+  },
+  "by_domain": {
+    "circuits": {
+      "general": 0,
+      "method": 0,
+      "gain": 0
+    },
+    "formal": {
+      "general": 0,
+      "method": 3,
+      "gain": 3
+    }
+  },
+  "families": [
+    {
+      "domain": "circuits",
+      "family": "DC-C1",
+      "general": false,
+      "method": false
+    },
+    {
+      "domain": "circuits",
+      "family": "DC-C2",
+      "general": false,
+      "method": false
+    },
+    {
+      "domain": "circuits",
+      "family": "DC-C3",
+      "general": false,
+      "method": false
+    },
+    {
+      "domain": "circuits",
+      "family": "DC-C4",
+      "general": false,
+      "method": false
+    },
+    {
+      "domain": "circuits",
+      "family": "DC-C5",
+      "general": false,
+      "method": false
+    },
+    {
+      "domain": "circuits",
+      "family": "DC-C6",
+      "general": false,
+      "method": false
+    },
+    {
+      "domain": "formal",
+      "family": "determinants",
+      "general": false,
+      "method": true
+    },
+    {
+      "domain": "formal",
+      "family": "hamming",
+      "general": false,
+      "method": false
+    },
+    {
+      "domain": "formal",
+      "family": "neighbors",
+      "general": false,
+      "method": false
+    },
+    {
+      "domain": "formal",
+      "family": "quadratics",
+      "general": false,
+      "method": false
+    },
+    {
+      "domain": "formal",
+      "family": "swaps",
+      "general": false,
+      "method": true
+    },
+    {
+      "domain": "formal",
+      "family": "unions",
+      "general": false,
+      "method": true
+    }
+  ],
+  "method_wins": 3,
+  "method_losses": 0,
+  "ties": 9,
+  "paired": {
+    "discordant": 3,
+    "two_sided_sign_p": 0.25,
+    "conditional_win_95pct": [
+      0.2924017738212864,
+      1
+    ]
+  },
+  "direct_api_usd": 0,
+  "advance": false
+}

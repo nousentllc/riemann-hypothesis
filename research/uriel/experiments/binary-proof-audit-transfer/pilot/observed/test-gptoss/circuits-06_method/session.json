@@ -1,0 +1,27 @@
+{
+  "record": "circuits-06",
+  "arm": "method",
+  "first": {
+    "started": "2026-11-24T13:34:57.736986+00:00",
+    "request_sha256": "b0c73fcd335b591905745684301310ecaab2b9e6c313521b5dedb1d45109e88f",
+    "answer": {
+      "verdict": "U",
+      "certificate": [
+        "AK",
+        "EY"
+      ],
+      "lookup": "NONE"
+    },
+    "status": "ok",
+    "content": "{\n  \"verdict\": \"U\",\n  \"certificate\": [\"AK\", \"EY\"],\n  \"lookup\": \"NONE\"\n}",
+    "usage": {
+      "prompt_eval_count": 710,
+      "eval_count": 469,
+      "total_duration": 34664590834,
+      "load_duration": 10853584,
+      "eval_duration": 30710699000,
+      "done_reason": "stop"
+    },
+    "ended": "2026-11-24T13:35:32.417731+00:00"
+  }
+}

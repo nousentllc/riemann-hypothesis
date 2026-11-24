@@ -1,0 +1,52 @@
+{
+  "record": "circuits-10",
+  "arm": "general",
+  "first": {
+    "started": "2026-11-24T13:49:49.006500+00:00",
+    "request_sha256": "2504970466db0c3bc3246eef92fef24b5a0d5ed98af1b3b5f73090c6cb611416",
+    "answer": {
+      "verdict": "Y",
+      "certificate": [
+        "TL"
+      ],
+      "lookup": "M8"
+    },
+    "status": "ok",
+    "content": "{\"verdict\":\"Y\",\"certificate\":[\"TL\"],\"lookup\":\"M8\"}",
+    "usage": {
+      "prompt_eval_count": 722,
+      "eval_count": 785,
+      "total_duration": 56999278417,
+      "load_duration": 14595792,
+      "eval_duration": 53447395000,
+      "done_reason": "stop"
+    },
+    "ended": "2026-11-24T13:50:46.017521+00:00"
+  },
+  "second": {
+    "started": "2026-11-24T13:50:46.018710+00:00",
+    "request_sha256": "da16c4b1e9ccf10e2d57960aa1102ef53ba708084e9729bb40cc238aa4caaf09",
+    "answer": {
+      "verdict": "Y",
+      "certificate": [
+        "AN",
+        "FN",
+        "HJ",
+        "MY",
+        "QR",
+        "YF"
+      ]
+    },
+    "status": "ok",
+    "content": "{\"verdict\":\"Y\",\"certificate\":[\"AN\",\"FN\",\"HJ\",\"MY\",\"QR\",\"YF\"]}",
+    "usage": {
+      "prompt_eval_count": 774,
+      "eval_count": 250,
+      "total_duration": 17229998916,
+      "load_duration": 12178291,
+      "eval_duration": 16203669000,
+      "done_reason": "stop"
+    },
+    "ended": "2026-11-24T13:51:03.257090+00:00"
+  }
+}

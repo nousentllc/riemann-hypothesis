@@ -1,0 +1,20 @@
+{
+  "record": "circuits-01",
+  "arm": "method",
+  "first": {
+    "started": "2026-11-24T13:51:03.259136+00:00",
+    "request_sha256": "0b77d8377b91b4d07ee9ddfa08a792e8de16d442192717174fa5778c9ed981a2",
+    "answer": null,
+    "status": "invalid",
+    "content": "",
+    "usage": {
+      "prompt_eval_count": 695,
+      "eval_count": 2048,
+      "total_duration": 145908764875,
+      "load_duration": 8598667,
+      "eval_duration": 142357118000,
+      "done_reason": "length"
+    },
+    "ended": "2026-11-24T13:53:29.202538+00:00"
+  }
+}

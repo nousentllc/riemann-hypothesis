@@ -1,0 +1,7 @@
+{
+  "attempted": "qwen",
+  "selected": "gptoss",
+  "development_floor": true,
+  "development_ceiling": false,
+  "ready_for_scored_run": false
+}

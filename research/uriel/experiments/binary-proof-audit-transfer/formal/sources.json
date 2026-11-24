@@ -1,0 +1,160 @@
+{
+  "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "files": {
+    "unions": {
+      "path": "Mathlib/Data/Finset/Card.lean",
+      "blob": "4e5dc19df677dc5a9aa4a46067990ce08624547d",
+      "sha256": "174ec68882bf10567b17c3f4d278d6647cef92574dadfa8f7f0821b949967c8f",
+      "spans": [
+        {
+          "lines": [
+            558,
+            562
+          ],
+          "anchor": "card_union_add_card_inter",
+          "sha256": "857830fd65ff58c7a5f2e3e5df48b7bdfd5153b8018bd73dcd00f9ebde8362f1",
+          "link": "https://github.com/leanprover-community/mathlib4/blob/0df444a360eaa60ab8c11dca51a86af692955474/Mathlib/Data/Finset/Card.lean#L558-L562"
+        }
+      ]
+    },
+    "determinants": {
+      "path": "Mathlib/LinearAlgebra/Matrix/Determinant/Basic.lean",
+      "blob": "9f47c32c8ab7db3de8e5a201746f3b26357590f5",
+      "sha256": "37646a248748fd65e37c20a21b4a20fea11539d4312aae4f277e4faef8ed2b87",
+      "spans": [
+        {
+          "lines": [
+            807,
+            815
+          ],
+          "anchor": "det_fin_two",
+          "sha256": "8a3ab59c12f221d6806ce9f5451b00adbf4f6afd7630e3c40d5661096de62825",
+          "link": "https://github.com/leanprover-community/mathlib4/blob/0df444a360eaa60ab8c11dca51a86af692955474/Mathlib/LinearAlgebra/Matrix/Determinant/Basic.lean#L807-L815"
+        }
+      ]
+    },
+    "neighbors": {
+      "path": "Mathlib/Combinatorics/SimpleGraph/Basic.lean",
+      "blob": "8ce12ed2ddcb403bf3c6271ac11e916867938535",
+      "sha256": "e45d2248020078b2b2f853e6c6000af23cc0808e28ef54fda0471924bc4c9f8a",
+      "spans": [
+        {
+          "lines": [
+            915,
+            919
+          ],
+          "anchor": "mem_commonNeighbors",
+          "sha256": "cbaca2828ebe3a1bb4b9d16465b4423c31e448145b69ca358e3437909f3226cc",
+          "link": "https://github.com/leanprover-community/mathlib4/blob/0df444a360eaa60ab8c11dca51a86af692955474/Mathlib/Combinatorics/SimpleGraph/Basic.lean#L915-L919"
+        }
+      ]
+    },
+    "quadratics": {
+      "path": "Mathlib/Algebra/QuadraticDiscriminant.lean",
+      "blob": "3b663b49b48ba3a1cb6f0d899b7ee13af867b5af",
+      "sha256": "7a62a7b18ade09ec1e81d986b870dd17a35fc854c628450de689bee90312ae5e",
+      "spans": [
+        {
+          "lines": [
+            99,
+            115
+          ],
+          "anchor": "discrim_eq_zero_iff",
+          "sha256": "283eef3499e6017fa361f7754e64e6ed64476bd06d49b68c643a5b303b95bcdc",
+          "link": "https://github.com/leanprover-community/mathlib4/blob/0df444a360eaa60ab8c11dca51a86af692955474/Mathlib/Algebra/QuadraticDiscriminant.lean#L99-L115"
+        }
+      ]
+    },
+    "swaps": {
+      "path": "Mathlib/GroupTheory/Perm/Sign.lean",
+      "blob": "59fb103146af1783e2b38c5f0c38915eb2667c35",
+      "sha256": "6fac3d1f4623fd990cf25076df982698dbcb13e9d685e723adcc8edad0e6d158",
+      "spans": [
+        {
+          "lines": [
+            365,
+            368
+          ],
+          "anchor": "sign_mul",
+          "sha256": "097bb0b9df5150b45b4e754b35dd22782c7f6b248814fcec95c3e768ff7e54c8",
+          "link": "https://github.com/leanprover-community/mathlib4/blob/0df444a360eaa60ab8c11dca51a86af692955474/Mathlib/GroupTheory/Perm/Sign.lean#L365-L368"
+        },
+        {
+          "lines": [
+            389,
+            395
+          ],
+          "anchor": "sign_swap'",
+          "sha256": "b8450bbef34132d99e1f7eedbde1a67772200ccfc67a6a7ebf6cdbfc89dc1f53",
+          "link": "https://github.com/leanprover-community/mathlib4/blob/0df444a360eaa60ab8c11dca51a86af692955474/Mathlib/GroupTheory/Perm/Sign.lean#L389-L395"
+        }
+      ]
+    },
+    "hamming": {
+      "path": "Mathlib/InformationTheory/Hamming.lean",
+      "blob": "800095468b359fb295427c716ac68c5465f06073",
+      "sha256": "7d247632b790bfc237d79d3c040fb7f21d9cff00d190a67e120ccb73056460a6",
+      "spans": [
+        {
+          "lines": [
+            40,
+            42
+          ],
+          "anchor": "hammingDist",
+          "sha256": "a26ad4fe43ef8da0f42c3ea0f37ff1c4ab3bcb002e22df641c8c695337b3ce3e",
+          "link": "https://github.com/leanprover-community/mathlib4/blob/0df444a360eaa60ab8c11dca51a86af692955474/Mathlib/InformationTheory/Hamming.lean#L40-L42"
+        },
+        {
+          "lines": [
+            59,
+            66
+          ],
+          "anchor": "hammingDist_triangle",
+          "sha256": "7b372f8f00efa2fda2dae29e44a8a189062eb099c0a8784b4eff07880501a37e",
+          "link": "https://github.com/leanprover-community/mathlib4/blob/0df444a360eaa60ab8c11dca51a86af692955474/Mathlib/InformationTheory/Hamming.lean#L59-L66"
+        }
+      ]
+    },
+    "pairs-in-bins": {
+      "path": "Mathlib/Data/Nat/Choose/Basic.lean",
+      "blob": "1cd090d71c8175e5f2071d939d30394b4c56d9de",
+      "sha256": "3abe93f2b0d22bf844405a917c97a6677a02d39df76429280df4b5ad0dfc6b0d",
+      "spans": [
+        {
+          "lines": [
+            110,
+            116
+          ],
+          "anchor": "choose_two_right",
+          "sha256": "57f1bd811e5c87a21b1913c2bcac98e94d4d6b50e68920564f8c84230530f526",
+          "link": "https://github.com/leanprover-community/mathlib4/blob/0df444a360eaa60ab8c11dca51a86af692955474/Mathlib/Data/Nat/Choose/Basic.lean#L110-L116"
+        }
+      ]
+    },
+    "pair-encoding": {
+      "path": "Mathlib/Data/Nat/Pairing.lean",
+      "blob": "eebe7c9f10f407214f68a67d10a2417581b67060",
+      "sha256": "0e249b5c997eb2b9ed9be7c1a0b0ae71dbf9366c7426eaaec9a915160f3b30dd",
+      "spans": [
+        {
+          "lines": [
+            36,
+            39
+          ],
+          "anchor": "def pair ",
+          "sha256": "f7dc3b239480ed8bf93eff98cd0f2abc6ef986fb7492a89a5d26240c159c175a",
+          "link": "https://github.com/leanprover-community/mathlib4/blob/0df444a360eaa60ab8c11dca51a86af692955474/Mathlib/Data/Nat/Pairing.lean#L36-L39"
+        },
+        {
+          "lines": [
+            79,
+            83
+          ],
+          "anchor": "pair_eq_pair",
+          "sha256": "14555c56964cb506391e40daf6c15ee07e811992b08d96d8badea40073493102",
+          "link": "https://github.com/leanprover-community/mathlib4/blob/0df444a360eaa60ab8c11dca51a86af692955474/Mathlib/Data/Nat/Pairing.lean#L79-L83"
+        }
+      ]
+    }
+  }
+}

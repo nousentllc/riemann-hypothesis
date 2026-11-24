@@ -1,0 +1,301 @@
+{
+  "circuits-00": {
+    "family": "DC-D1",
+    "variant": "1",
+    "text": "DC circuit at + = 12 V and 0 = 0 V. Three hidden switches s,t,u each have two positions (1 closed). A bracketed resistor conducts only with that switch closed. Edge format source>destination:ohms defines positive current. R1=+>a:3 R2=a>0:2 R3=+>0:5 R4=+>a:2[s] R5=a>0:4[t] R6=+>a:7[u].\nQuestion: is the signed current of R2 > 7/2 A?\nThe calibration table lists all possible switch settings. Finite meter comparators report H for strictly above their threshold, L otherwise. All currents are exact amperes. Initial comparator: voltage at a > 6 V. Lookup comparators: M7 = signed current of R5 > 0 A; M5 = signed current of R6 > 1 A; M3 = signed current of R4 > 0 A.\nID stu target_current initial M7 M5 M3\nBW 110 60/19 H H L H\nCD 101 123/31 H L L H\nEK 011 240/103 L H H L\nEP 100 15/4 H L L H\nLH 010 24/13 L H L L\nNF 001 120/41 L L L L\nOK 111 492/145 H H L H\nRO 000 12/5 L L L L",
+    "states": {
+      "RO": {
+        "answer": false,
+        "obs": {
+          "M7": "L",
+          "M5": "L",
+          "M3": "L"
+        }
+      },
+      "NF": {
+        "answer": false,
+        "obs": {
+          "M7": "L",
+          "M5": "L",
+          "M3": "L"
+        }
+      },
+      "LH": {
+        "answer": false,
+        "obs": {
+          "M7": "H",
+          "M5": "L",
+          "M3": "L"
+        }
+      },
+      "EK": {
+        "answer": false,
+        "obs": {
+          "M7": "H",
+          "M5": "H",
+          "M3": "L"
+        }
+      },
+      "EP": {
+        "answer": true,
+        "obs": {
+          "M7": "L",
+          "M5": "L",
+          "M3": "H"
+        }
+      },
+      "CD": {
+        "answer": true,
+        "obs": {
+          "M7": "L",
+          "M5": "L",
+          "M3": "H"
+        }
+      },
+      "BW": {
+        "answer": false,
+        "obs": {
+          "M7": "H",
+          "M5": "L",
+          "M3": "H"
+        }
+      },
+      "OK": {
+        "answer": false,
+        "obs": {
+          "M7": "H",
+          "M5": "L",
+          "M3": "H"
+        }
+      }
+    },
+    "eligible": [
+      "EK",
+      "LH",
+      "NF",
+      "RO"
+    ],
+    "actual": "EK",
+    "menu": {
+      "M7": "signed current of R5 > 0 A",
+      "M5": "signed current of R6 > 1 A",
+      "M3": "signed current of R4 > 0 A"
+    },
+    "evidence": "The initial comparator reading is L.",
+    "domain": "circuits"
+  },
+  "circuits-01": {
+    "family": "DC-D2",
+    "variant": "1",
+    "text": "DC circuit at + = 12 V and 0 = 0 V. Three hidden switches s,t,u each have two positions (1 closed). A bracketed resistor conducts only with that switch closed. Edge format source>destination:ohms defines positive current. R1=+>a:4 R2=a>0:6 R3=a>b:2 R4=a>c:3 R5=b>0:7[s] R6=c>0:4[t] R7=b>c:5[u].\nQuestion: is the signed current of R4 > 1/2 A?\nThe calibration table lists all possible switch settings. Finite meter comparators report H for strictly above their threshold, L otherwise. All currents are exact amperes. Initial comparator: voltage at a > 5 V. Lookup comparators: M7 = voltage at b > 5 V; M6 = signed current of R1 > 7/4 A; M3 = signed current of R2 > 3/4 A.\nID stu target_current initial M7 M6 M3\nFT 111 2412/4225 L L H L\nFY 010 36/47 H H L H\nJQ 011 252/425 H L L H\nMJ 000 0 H H L H\nON 110 108/169 L L H L\nPK 001 0 H H L H\nRV 101 36/275 H L L H\nZC 100 0 H L L H",
+    "states": {
+      "MJ": {
+        "answer": false,
+        "obs": {
+          "M7": "H",
+          "M6": "L",
+          "M3": "H"
+        }
+      },
+      "PK": {
+        "answer": false,
+        "obs": {
+          "M7": "H",
+          "M6": "L",
+          "M3": "H"
+        }
+      },
+      "FY": {
+        "answer": true,
+        "obs": {
+          "M7": "H",
+          "M6": "L",
+          "M3": "H"
+        }
+      },
+      "JQ": {
+        "answer": true,
+        "obs": {
+          "M7": "L",
+          "M6": "L",
+          "M3": "H"
+        }
+      },
+      "ZC": {
+        "answer": false,
+        "obs": {
+          "M7": "L",
+          "M6": "L",
+          "M3": "H"
+        }
+      },
+      "RV": {
+        "answer": false,
+        "obs": {
+          "M7": "L",
+          "M6": "L",
+          "M3": "H"
+        }
+      },
+      "ON": {
+        "answer": true,
+        "obs": {
+          "M7": "L",
+          "M6": "H",
+          "M3": "L"
+        }
+      },
+      "FT": {
+        "answer": true,
+        "obs": {
+          "M7": "L",
+          "M6": "H",
+          "M3": "L"
+        }
+      }
+    },
+    "eligible": [
+      "FY",
+      "JQ",
+      "MJ",
+      "PK",
+      "RV",
+      "ZC"
+    ],
+    "actual": "PK",
+    "menu": {
+      "M7": "voltage at b > 5 V",
+      "M6": "signed current of R1 > 7/4 A",
+      "M3": "signed current of R2 > 3/4 A"
+    },
+    "evidence": "The initial comparator reading is H.",
+    "domain": "circuits"
+  },
+  "formal-02": {
+    "family": "pair-encoding",
+    "variant": "1",
+    "text": "Are the natural-number encodings of the two ordered pairs equal?\nNat.pair_eq_pair states that encoded pairs are equal exactly if their first components agree and their second components agree.\nExactly one listed candidate describes the object in this record. Read each indicator as 1 for yes and 0 for no.\nK: left=(0,0), right=(0,0).\nS: left=(0,1), right=(0,1).\nV: left=(0,2), right=(0,2).\nP: left=(1,2), right=(1,2).\nG: left=(1,1), right=(1,2).",
+    "states": {
+      "K": {
+        "answer": true,
+        "obs": {
+          "c": "0",
+          "b": "1",
+          "a": "0"
+        }
+      },
+      "S": {
+        "answer": true,
+        "obs": {
+          "c": "0",
+          "b": "0",
+          "a": "0"
+        }
+      },
+      "V": {
+        "answer": true,
+        "obs": {
+          "c": "0",
+          "b": "0",
+          "a": "1"
+        }
+      },
+      "P": {
+        "answer": true,
+        "obs": {
+          "c": "1",
+          "b": "0",
+          "a": "1"
+        }
+      },
+      "G": {
+        "answer": false,
+        "obs": {
+          "c": "1",
+          "b": "0",
+          "a": "1"
+        }
+      }
+    },
+    "eligible": [
+      "P",
+      "G"
+    ],
+    "actual": "P",
+    "menu": {
+      "a": "indicator right second component is 2",
+      "b": "indicator left second component is 0",
+      "c": "first component of right pair"
+    },
+    "evidence": "The first component of left pair is 1.",
+    "domain": "formal"
+  },
+  "formal-03": {
+    "family": "pairs-in-bins",
+    "variant": "1",
+    "text": "Do the two separate bins contain at least 12 unordered within-bin pairs in total?\nA bin of n distinct members contains n*(n-1)/2 unordered pairs (Nat.choose_two_right). Cross-bin pairs are excluded.\nExactly one listed candidate describes the object in this record. Read each indicator as 1 for yes and 0 for no.\nP: L=2, R=4.\nS: L=5, R=5.\nK: L=7, R=7.\nJ: L=5, R=1.\nV: L=4, R=2.\nG: L=2, R=3.",
+    "states": {
+      "P": {
+        "answer": false,
+        "obs": {
+          "c": "0",
+          "b": "1",
+          "a": "0"
+        }
+      },
+      "S": {
+        "answer": true,
+        "obs": {
+          "c": "1",
+          "b": "1",
+          "a": "1"
+        }
+      },
+      "K": {
+        "answer": true,
+        "obs": {
+          "c": "1",
+          "b": "1",
+          "a": "1"
+        }
+      },
+      "J": {
+        "answer": false,
+        "obs": {
+          "c": "1",
+          "b": "0",
+          "a": "1"
+        }
+      },
+      "V": {
+        "answer": false,
+        "obs": {
+          "c": "0",
+          "b": "0",
+          "a": "1"
+        }
+      },
+      "G": {
+        "answer": false,
+        "obs": {
+          "c": "1",
+          "b": "0",
+          "a": "0"
+        }
+      }
+    },
+    "eligible": [
+      "P",
+      "V",
+      "G"
+    ],
+    "actual": "V",
+    "menu": {
+      "a": "indicator L>3",
+      "b": "indicator R>3",
+      "c": "remainder of R on division by two"
+    },
+    "evidence": "The remainder of L on division by two is 0.",
+    "domain": "formal"
+  }
+}

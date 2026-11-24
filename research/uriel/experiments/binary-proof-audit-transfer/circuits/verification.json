@@ -1,0 +1,44 @@
+{
+  "branch_currents_verified": 528,
+  "code_hashes": {
+    "cases.py": "cf797eb456971adf7c7786bfb4f88a2f41cf83c3aa57881266f02c0e1db12f9f",
+    "check.py": "da3adb2f52b5efb58b2259ae3891b13aa79d303f4d403b46fcc33d3aa4b3e918",
+    "design.json": "d366d951e419b67a7fb74d1bfb2a9f2193f08452ef84f07d2049f7819f9020e4",
+    "network.py": "1ed34fc4691d546f697c94af8210b77b865c86636217eb71f507db94c4ecf013"
+  },
+  "distinct_state_labels": 64,
+  "methods": [
+    "exact rational nodal elimination",
+    "independent positive two-root spanning forest sum",
+    "signed Kirchhoff residual, power conservation, packet reconstruction"
+  ],
+  "network_topologies": 8,
+  "node_voltages_verified": 328,
+  "packet_menu_predictions_verified": 192,
+  "splits": {
+    "dev": {
+      "classes": {
+        "lookup_true": 1,
+        "open": 1,
+        "settled_false": 1,
+        "settled_true": 1
+      },
+      "families": 2,
+      "reachable_lookup_cells": 16,
+      "records": 4
+    },
+    "test": {
+      "classes": {
+        "lookup_false": 2,
+        "lookup_true": 2,
+        "open": 4,
+        "settled_false": 2,
+        "settled_true": 2
+      },
+      "families": 6,
+      "reachable_lookup_cells": 60,
+      "records": 12
+    }
+  },
+  "switch_states": 64
+}

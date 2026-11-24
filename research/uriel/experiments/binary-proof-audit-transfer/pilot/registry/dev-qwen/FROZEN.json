@@ -1,0 +1,28 @@
+{
+  "at": "2026-11-24T13:07:54.438580+00:00",
+  "model": {
+    "tag": "qwen2.5:3b",
+    "digest": "357c53fb659c5076de1d65ccb0b397446227b71a42be9d1603d46168015c9e4b",
+    "max_tokens": 512
+  },
+  "ollama": "0.40.4",
+  "seed": 2026112417,
+  "direct_api_spend_cap_usd": 0,
+  "session_count": 8,
+  "max_requests": 16,
+  "sha256": {
+    "circuits/cases.py": "cf797eb456971adf7c7786bfb4f88a2f41cf83c3aa57881266f02c0e1db12f9f",
+    "circuits/design.json": "d366d951e419b67a7fb74d1bfb2a9f2193f08452ef84f07d2049f7819f9020e4",
+    "circuits/network.py": "1ed34fc4691d546f697c94af8210b77b865c86636217eb71f507db94c4ecf013",
+    "formal/cases.py": "e68fad6d0776b5ffda78c67256392699a06d5841d3a1c48964770f84b8012129",
+    "pilot/DESIGN.md": "7ede1abb6b0d0343bd1e81fb5aa602d10ad3f326cf579a8778cac0de6ed1f7ce",
+    "pilot/analysis.py": "ee3096442394745b69b6b1b347bb6b24713383d8a60b4674d9ac6700f8aaced5",
+    "pilot/domain.py": "faf54e797b9d7ca75e72619491d107c629f4d5a6ea090acd2c86da12db8b1618",
+    "pilot/instructions/general.txt": "e65b2e340d4431fac0d461d2f3b545a9d863db2f9295fa630868ee84f9d604fa",
+    "pilot/instructions/method.txt": "d1e2ec77b9d9c10766ef85afea35617e34322566463dab7614094546325c9519",
+    "pilot/run.py": "e02a1981c1cfdf089d8e5da3001778f7a8e0024ccecab8831f4bd0c2e1e593bc",
+    "pilot/scorer_checks.py": "89344ba2710c3327dd8eb37e4707533462060811f2dcfef36525a36c48b41d3e",
+    "pilot/registry/dev-qwen/records.json": "70bc3850923dde6a20350b03e4127c88c411e9e0dc94ef94b9e010ee7590ad29",
+    "pilot/registry/dev-qwen/order.json": "e5fbe5759bee3825ed4d9bc3afa99198f7f9e6df078c7f79f18e5a03f067e0f0"
+  }
+}

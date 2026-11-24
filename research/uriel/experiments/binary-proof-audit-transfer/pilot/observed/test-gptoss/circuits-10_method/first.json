@@ -1,0 +1,23 @@
+{
+  "started": "2026-11-24T13:42:28.990666+00:00",
+  "request_sha256": "bba5b70dd4b45b0f2d8199f454c30516016f27569f4134cb8d8644d4da13c9b2",
+  "answer": {
+    "verdict": "U",
+    "certificate": [
+      "AN",
+      "FN"
+    ],
+    "lookup": "M8"
+  },
+  "status": "ok",
+  "content": "{\n  \"verdict\": \"U\",\n  \"certificate\": [\"AN\", \"FN\"],\n  \"lookup\": \"M8\"\n}",
+  "usage": {
+    "prompt_eval_count": 716,
+    "eval_count": 596,
+    "total_duration": 43526845708,
+    "load_duration": 21898625,
+    "eval_duration": 40123256000,
+    "done_reason": "stop"
+  },
+  "ended": "2026-11-24T13:43:12.541704+00:00"
+}

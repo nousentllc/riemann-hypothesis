@@ -1,0 +1,49 @@
+{
+  "record": "formal-03",
+  "arm": "method",
+  "first": {
+    "started": "2026-11-24T13:08:08.994887+00:00",
+    "request_sha256": "2f6cee07e4a3e5b44eb84af9cd409ef972d0fb8751473f3eacd42d76743886d6",
+    "answer": {
+      "verdict": "U",
+      "certificate": [
+        "P",
+        "S"
+      ],
+      "lookup": "c"
+    },
+    "status": "ok",
+    "content": "{\n  \"verdict\": \"U\",\n  \"certificate\": [\"P\", \"S\"],\n  \"lookup\": \"c\"\n}",
+    "usage": {
+      "prompt_eval_count": 434,
+      "eval_count": 28,
+      "total_duration": 6532355083,
+      "load_duration": 4359574042,
+      "eval_duration": 874040000,
+      "done_reason": "stop"
+    },
+    "ended": "2026-11-24T13:08:15.530185+00:00"
+  },
+  "second": {
+    "started": "2026-11-24T13:08:15.531027+00:00",
+    "request_sha256": "95dd632b7c4ab619877c00692613bd946c83bff5af34215669f2a392cf16ed97",
+    "answer": {
+      "verdict": "Y",
+      "certificate": [
+        "P",
+        "S"
+      ]
+    },
+    "status": "ok",
+    "content": "{\n  \"verdict\": \"Y\",\n  \"certificate\": [\"P\", \"S\"]\n}",
+    "usage": {
+      "prompt_eval_count": 497,
+      "eval_count": 21,
+      "total_duration": 909066959,
+      "load_duration": 901125,
+      "eval_duration": 720921000,
+      "done_reason": "stop"
+    },
+    "ended": "2026-11-24T13:08:16.441413+00:00"
+  }
+}

@@ -1,0 +1,1073 @@
+{
+  "diagnostics": {
+    "general": {
+      "circuits-settled": {
+        "n": 4,
+        "initial_warranted": 0,
+        "initial_certified": 0,
+        "requested_measurement": 0,
+        "guaranteed_resolution_selected": 0,
+        "wrong_or_unavailable_measurement": 0,
+        "same_lookup_perfect_reasoner_ceiling": 4,
+        "first_failure_decision_or_missing": 4,
+        "attained_verdict": 0,
+        "attained_verdict_valid_certificate": 0,
+        "unnecessary_query_on_settled": 0,
+        "final_abstained_despite_decisive_evidence": 4,
+        "unlicensed_initial_then_certified": 0
+      },
+      "circuits-lookup": {
+        "n": 4,
+        "initial_warranted": 2,
+        "initial_certified": 1,
+        "requested_measurement": 0,
+        "guaranteed_resolution_selected": 0,
+        "wrong_or_unavailable_measurement": 4,
+        "same_lookup_perfect_reasoner_ceiling": 0,
+        "first_failure_evidence_selection": 4,
+        "attained_verdict": 0,
+        "attained_verdict_valid_certificate": 0,
+        "unnecessary_query_on_settled": 0,
+        "final_abstained_despite_decisive_evidence": 0,
+        "unlicensed_initial_then_certified": 0
+      },
+      "circuits-ambiguous": {
+        "n": 4,
+        "initial_warranted": 3,
+        "initial_certified": 2,
+        "requested_measurement": 1,
+        "guaranteed_resolution_selected": 0,
+        "wrong_or_unavailable_measurement": 0,
+        "same_lookup_perfect_reasoner_ceiling": 4,
+        "first_failure_pass": 2,
+        "attained_verdict": 3,
+        "attained_verdict_valid_certificate": 2,
+        "unnecessary_query_on_settled": 0,
+        "final_abstained_despite_decisive_evidence": 0,
+        "unlicensed_initial_then_certified": 0,
+        "first_failure_certificate": 1,
+        "first_failure_decision_or_missing": 1
+      },
+      "formal-ambiguous": {
+        "n": 4,
+        "initial_warranted": 3,
+        "initial_certified": 3,
+        "requested_measurement": 1,
+        "guaranteed_resolution_selected": 0,
+        "wrong_or_unavailable_measurement": 0,
+        "same_lookup_perfect_reasoner_ceiling": 4,
+        "first_failure_decision_or_missing": 2,
+        "attained_verdict": 2,
+        "attained_verdict_valid_certificate": 2,
+        "unnecessary_query_on_settled": 0,
+        "final_abstained_despite_decisive_evidence": 0,
+        "unlicensed_initial_then_certified": 0,
+        "first_failure_pass": 2
+      },
+      "formal-settled": {
+        "n": 4,
+        "initial_warranted": 3,
+        "initial_certified": 3,
+        "requested_measurement": 1,
+        "guaranteed_resolution_selected": 0,
+        "wrong_or_unavailable_measurement": 0,
+        "same_lookup_perfect_reasoner_ceiling": 4,
+        "first_failure_pass": 3,
+        "attained_verdict": 4,
+        "attained_verdict_valid_certificate": 3,
+        "unnecessary_query_on_settled": 1,
+        "final_abstained_despite_decisive_evidence": 0,
+        "unlicensed_initial_then_certified": 0,
+        "first_failure_certificate": 1
+      },
+      "formal-lookup": {
+        "n": 4,
+        "initial_warranted": 3,
+        "initial_certified": 3,
+        "requested_measurement": 0,
+        "guaranteed_resolution_selected": 0,
+        "wrong_or_unavailable_measurement": 4,
+        "same_lookup_perfect_reasoner_ceiling": 0,
+        "first_failure_evidence_selection": 4,
+        "attained_verdict": 0,
+        "attained_verdict_valid_certificate": 0,
+        "unnecessary_query_on_settled": 0,
+        "final_abstained_despite_decisive_evidence": 0,
+        "unlicensed_initial_then_certified": 0
+      }
+    },
+    "method": {
+      "circuits-settled": {
+        "n": 4,
+        "initial_warranted": 0,
+        "initial_certified": 0,
+        "requested_measurement": 1,
+        "guaranteed_resolution_selected": 0,
+        "wrong_or_unavailable_measurement": 0,
+        "same_lookup_perfect_reasoner_ceiling": 4,
+        "first_failure_decision_or_missing": 4,
+        "attained_verdict": 0,
+        "attained_verdict_valid_certificate": 0,
+        "unnecessary_query_on_settled": 1,
+        "final_abstained_despite_decisive_evidence": 3,
+        "unlicensed_initial_then_certified": 0
+      },
+      "circuits-lookup": {
+        "n": 4,
+        "initial_warranted": 3,
+        "initial_certified": 1,
+        "requested_measurement": 1,
+        "guaranteed_resolution_selected": 0,
+        "wrong_or_unavailable_measurement": 4,
+        "same_lookup_perfect_reasoner_ceiling": 0,
+        "first_failure_evidence_selection": 4,
+        "attained_verdict": 1,
+        "attained_verdict_valid_certificate": 0,
+        "unnecessary_query_on_settled": 0,
+        "final_abstained_despite_decisive_evidence": 0,
+        "unlicensed_initial_then_certified": 0
+      },
+      "circuits-ambiguous": {
+        "n": 4,
+        "initial_warranted": 4,
+        "initial_certified": 2,
+        "requested_measurement": 1,
+        "guaranteed_resolution_selected": 0,
+        "wrong_or_unavailable_measurement": 0,
+        "same_lookup_perfect_reasoner_ceiling": 4,
+        "first_failure_pass": 2,
+        "attained_verdict": 3,
+        "attained_verdict_valid_certificate": 2,
+        "unnecessary_query_on_settled": 0,
+        "final_abstained_despite_decisive_evidence": 0,
+        "unlicensed_initial_then_certified": 0,
+        "first_failure_certificate": 1,
+        "first_failure_decision_or_missing": 1
+      },
+      "formal-ambiguous": {
+        "n": 4,
+        "initial_warranted": 4,
+        "initial_certified": 4,
+        "requested_measurement": 0,
+        "guaranteed_resolution_selected": 0,
+        "wrong_or_unavailable_measurement": 0,
+        "same_lookup_perfect_reasoner_ceiling": 4,
+        "first_failure_pass": 4,
+        "attained_verdict": 4,
+        "attained_verdict_valid_certificate": 4,
+        "unnecessary_query_on_settled": 0,
+        "final_abstained_despite_decisive_evidence": 0,
+        "unlicensed_initial_then_certified": 0
+      },
+      "formal-settled": {
+        "n": 4,
+        "initial_warranted": 4,
+        "initial_certified": 4,
+        "requested_measurement": 0,
+        "guaranteed_resolution_selected": 0,
+        "wrong_or_unavailable_measurement": 0,
+        "same_lookup_perfect_reasoner_ceiling": 4,
+        "first_failure_pass": 4,
+        "attained_verdict": 4,
+        "attained_verdict_valid_certificate": 4,
+        "unnecessary_query_on_settled": 0,
+        "final_abstained_despite_decisive_evidence": 0,
+        "unlicensed_initial_then_certified": 0
+      },
+      "formal-lookup": {
+        "n": 4,
+        "initial_warranted": 3,
+        "initial_certified": 3,
+        "requested_measurement": 2,
+        "guaranteed_resolution_selected": 1,
+        "wrong_or_unavailable_measurement": 3,
+        "same_lookup_perfect_reasoner_ceiling": 1,
+        "first_failure_evidence_selection": 3,
+        "attained_verdict": 2,
+        "attained_verdict_valid_certificate": 1,
+        "unnecessary_query_on_settled": 0,
+        "final_abstained_despite_decisive_evidence": 0,
+        "unlicensed_initial_then_certified": 0,
+        "first_failure_pass": 1
+      }
+    }
+  },
+  "paired_cases": [
+    {
+      "general": false,
+      "method": false,
+      "n": 13
+    },
+    {
+      "general": false,
+      "method": true,
+      "n": 4
+    },
+    {
+      "general": true,
+      "method": false,
+      "n": 0
+    },
+    {
+      "general": true,
+      "method": true,
+      "n": 7
+    }
+  ],
+  "pairs": [
+    {
+      "record": "circuits-00",
+      "domain": "circuits",
+      "family": "DC-C1",
+      "variant": "1",
+      "outcome": {
+        "general": false,
+        "method": false
+      },
+      "lookup": {
+        "general": "NONE",
+        "method": "M2"
+      }
+    },
+    {
+      "record": "circuits-01",
+      "domain": "circuits",
+      "family": "DC-C1",
+      "variant": "2",
+      "outcome": {
+        "general": false,
+        "method": false
+      },
+      "lookup": {
+        "general": "NONE",
+        "method": null
+      }
+    },
+    {
+      "record": "circuits-02",
+      "domain": "circuits",
+      "family": "DC-C2",
+      "variant": "1",
+      "outcome": {
+        "general": true,
+        "method": true
+      },
+      "lookup": {
+        "general": "NONE",
+        "method": "NONE"
+      }
+    },
+    {
+      "record": "circuits-03",
+      "domain": "circuits",
+      "family": "DC-C2",
+      "variant": "2",
+      "outcome": {
+        "general": false,
+        "method": false
+      },
+      "lookup": {
+        "general": "NONE",
+        "method": "NONE"
+      }
+    },
+    {
+      "record": "circuits-04",
+      "domain": "circuits",
+      "family": "DC-C3",
+      "variant": "1",
+      "outcome": {
+        "general": false,
+        "method": false
+      },
+      "lookup": {
+        "general": null,
+        "method": "M8"
+      }
+    },
+    {
+      "record": "circuits-05",
+      "domain": "circuits",
+      "family": "DC-C3",
+      "variant": "2",
+      "outcome": {
+        "general": true,
+        "method": true
+      },
+      "lookup": {
+        "general": "NONE",
+        "method": "NONE"
+      }
+    },
+    {
+      "record": "circuits-06",
+      "domain": "circuits",
+      "family": "DC-C4",
+      "variant": "1",
+      "outcome": {
+        "general": false,
+        "method": false
+      },
+      "lookup": {
+        "general": "NONE",
+        "method": "NONE"
+      }
+    },
+    {
+      "record": "circuits-07",
+      "domain": "circuits",
+      "family": "DC-C4",
+      "variant": "2",
+      "outcome": {
+        "general": false,
+        "method": false
+      },
+      "lookup": {
+        "general": "NONE",
+        "method": "NONE"
+      }
+    },
+    {
+      "record": "circuits-08",
+      "domain": "circuits",
+      "family": "DC-C5",
+      "variant": "1",
+      "outcome": {
+        "general": false,
+        "method": false
+      },
+      "lookup": {
+        "general": "NONE",
+        "method": "NONE"
+      }
+    },
+    {
+      "record": "circuits-09",
+      "domain": "circuits",
+      "family": "DC-C5",
+      "variant": "2",
+      "outcome": {
+        "general": false,
+        "method": false
+      },
+      "lookup": {
+        "general": "NONE",
+        "method": "NONE"
+      }
+    },
+    {
+      "record": "circuits-10",
+      "domain": "circuits",
+      "family": "DC-C6",
+      "variant": "1",
+      "outcome": {
+        "general": false,
+        "method": false
+      },
+      "lookup": {
+        "general": "M8",
+        "method": "M8"
+      }
+    },
+    {
+      "record": "circuits-11",
+      "domain": "circuits",
+      "family": "DC-C6",
+      "variant": "2",
+      "outcome": {
+        "general": false,
+        "method": false
+      },
+      "lookup": {
+        "general": "NONE",
+        "method": "NONE"
+      }
+    },
+    {
+      "record": "formal-12",
+      "domain": "formal",
+      "family": "determinants",
+      "variant": "1",
+      "outcome": {
+        "general": false,
+        "method": true
+      },
+      "lookup": {
+        "general": "NONE",
+        "method": "NONE"
+      }
+    },
+    {
+      "record": "formal-13",
+      "domain": "formal",
+      "family": "determinants",
+      "variant": "2",
+      "outcome": {
+        "general": true,
+        "method": true
+      },
+      "lookup": {
+        "general": "NONE",
+        "method": "NONE"
+      }
+    },
+    {
+      "record": "formal-14",
+      "domain": "formal",
+      "family": "hamming",
+      "variant": "1",
+      "outcome": {
+        "general": true,
+        "method": true
+      },
+      "lookup": {
+        "general": "NONE",
+        "method": "NONE"
+      }
+    },
+    {
+      "record": "formal-15",
+      "domain": "formal",
+      "family": "hamming",
+      "variant": "2",
+      "outcome": {
+        "general": false,
+        "method": false
+      },
+      "lookup": {
+        "general": "NONE",
+        "method": "a"
+      }
+    },
+    {
+      "record": "formal-16",
+      "domain": "formal",
+      "family": "neighbors",
+      "variant": "1",
+      "outcome": {
+        "general": false,
+        "method": false
+      },
+      "lookup": {
+        "general": "NONE",
+        "method": "NONE"
+      }
+    },
+    {
+      "record": "formal-17",
+      "domain": "formal",
+      "family": "neighbors",
+      "variant": "2",
+      "outcome": {
+        "general": true,
+        "method": true
+      },
+      "lookup": {
+        "general": "NONE",
+        "method": "NONE"
+      }
+    },
+    {
+      "record": "formal-18",
+      "domain": "formal",
+      "family": "quadratics",
+      "variant": "1",
+      "outcome": {
+        "general": false,
+        "method": false
+      },
+      "lookup": {
+        "general": "NONE",
+        "method": "NONE"
+      }
+    },
+    {
+      "record": "formal-19",
+      "domain": "formal",
+      "family": "quadratics",
+      "variant": "2",
+      "outcome": {
+        "general": true,
+        "method": true
+      },
+      "lookup": {
+        "general": "NONE",
+        "method": "NONE"
+      }
+    },
+    {
+      "record": "formal-20",
+      "domain": "formal",
+      "family": "swaps",
+      "variant": "1",
+      "outcome": {
+        "general": true,
+        "method": true
+      },
+      "lookup": {
+        "general": "NONE",
+        "method": "NONE"
+      }
+    },
+    {
+      "record": "formal-21",
+      "domain": "formal",
+      "family": "swaps",
+      "variant": "2",
+      "outcome": {
+        "general": false,
+        "method": true
+      },
+      "lookup": {
+        "general": "a",
+        "method": "NONE"
+      }
+    },
+    {
+      "record": "formal-22",
+      "domain": "formal",
+      "family": "unions",
+      "variant": "1",
+      "outcome": {
+        "general": false,
+        "method": true
+      },
+      "lookup": {
+        "general": "a",
+        "method": "NONE"
+      }
+    },
+    {
+      "record": "formal-23",
+      "domain": "formal",
+      "family": "unions",
+      "variant": "2",
+      "outcome": {
+        "general": false,
+        "method": true
+      },
+      "lookup": {
+        "general": "NONE",
+        "method": "b"
+      }
+    }
+  ],
+  "errors": [
+    {
+      "record": "circuits-00",
+      "family": "DC-C1",
+      "variant": "1",
+      "arm": "general",
+      "type": "settled",
+      "initial_warrant": "Y",
+      "initial": "U",
+      "lookup": "NONE",
+      "decisive_available": [
+        "M3",
+        "M8",
+        "M2"
+      ],
+      "final": "U",
+      "final_warrant": "Y",
+      "attainable": "Y",
+      "certificate_valid_for_received_evidence": false
+    },
+    {
+      "record": "circuits-00",
+      "family": "DC-C1",
+      "variant": "1",
+      "arm": "method",
+      "type": "settled",
+      "initial_warrant": "Y",
+      "initial": "U",
+      "lookup": "M2",
+      "decisive_available": [
+        "M3",
+        "M8",
+        "M2"
+      ],
+      "final": "N",
+      "final_warrant": "Y",
+      "attainable": "Y",
+      "certificate_valid_for_received_evidence": false
+    },
+    {
+      "record": "circuits-01",
+      "family": "DC-C1",
+      "variant": "2",
+      "arm": "general",
+      "type": "lookup",
+      "initial_warrant": "U",
+      "initial": "U",
+      "lookup": "NONE",
+      "decisive_available": [
+        "M8"
+      ],
+      "final": "U",
+      "final_warrant": "U",
+      "attainable": "N",
+      "certificate_valid_for_received_evidence": true
+    },
+    {
+      "record": "circuits-01",
+      "family": "DC-C1",
+      "variant": "2",
+      "arm": "method",
+      "type": "lookup",
+      "initial_warrant": "U",
+      "initial": null,
+      "lookup": null,
+      "decisive_available": [
+        "M8"
+      ],
+      "final": null,
+      "final_warrant": "U",
+      "attainable": "N",
+      "certificate_valid_for_received_evidence": false
+    },
+    {
+      "record": "circuits-03",
+      "family": "DC-C2",
+      "variant": "2",
+      "arm": "general",
+      "type": "settled",
+      "initial_warrant": "N",
+      "initial": "U",
+      "lookup": "NONE",
+      "decisive_available": [
+        "M5",
+        "M6",
+        "M7"
+      ],
+      "final": "U",
+      "final_warrant": "N",
+      "attainable": "N",
+      "certificate_valid_for_received_evidence": false
+    },
+    {
+      "record": "circuits-03",
+      "family": "DC-C2",
+      "variant": "2",
+      "arm": "method",
+      "type": "settled",
+      "initial_warrant": "N",
+      "initial": "U",
+      "lookup": "NONE",
+      "decisive_available": [
+        "M5",
+        "M6",
+        "M7"
+      ],
+      "final": "U",
+      "final_warrant": "N",
+      "attainable": "N",
+      "certificate_valid_for_received_evidence": false
+    },
+    {
+      "record": "circuits-04",
+      "family": "DC-C3",
+      "variant": "1",
+      "arm": "general",
+      "type": "lookup",
+      "initial_warrant": "U",
+      "initial": null,
+      "lookup": null,
+      "decisive_available": [
+        "M5"
+      ],
+      "final": null,
+      "final_warrant": "U",
+      "attainable": "Y",
+      "certificate_valid_for_received_evidence": false
+    },
+    {
+      "record": "circuits-04",
+      "family": "DC-C3",
+      "variant": "1",
+      "arm": "method",
+      "type": "lookup",
+      "initial_warrant": "U",
+      "initial": "U",
+      "lookup": "M8",
+      "decisive_available": [
+        "M5"
+      ],
+      "final": "Y",
+      "final_warrant": "U",
+      "attainable": "Y",
+      "certificate_valid_for_received_evidence": false
+    },
+    {
+      "record": "circuits-06",
+      "family": "DC-C4",
+      "variant": "1",
+      "arm": "general",
+      "type": "lookup",
+      "initial_warrant": "U",
+      "initial": "U",
+      "lookup": "NONE",
+      "decisive_available": [
+        "M5"
+      ],
+      "final": "U",
+      "final_warrant": "U",
+      "attainable": "N",
+      "certificate_valid_for_received_evidence": false
+    },
+    {
+      "record": "circuits-06",
+      "family": "DC-C4",
+      "variant": "1",
+      "arm": "method",
+      "type": "lookup",
+      "initial_warrant": "U",
+      "initial": "U",
+      "lookup": "NONE",
+      "decisive_available": [
+        "M5"
+      ],
+      "final": "U",
+      "final_warrant": "U",
+      "attainable": "N",
+      "certificate_valid_for_received_evidence": false
+    },
+    {
+      "record": "circuits-07",
+      "family": "DC-C4",
+      "variant": "2",
+      "arm": "general",
+      "type": "settled",
+      "initial_warrant": "N",
+      "initial": "U",
+      "lookup": "NONE",
+      "decisive_available": [
+        "M6",
+        "M8",
+        "M5"
+      ],
+      "final": "U",
+      "final_warrant": "N",
+      "attainable": "N",
+      "certificate_valid_for_received_evidence": false
+    },
+    {
+      "record": "circuits-07",
+      "family": "DC-C4",
+      "variant": "2",
+      "arm": "method",
+      "type": "settled",
+      "initial_warrant": "N",
+      "initial": "U",
+      "lookup": "NONE",
+      "decisive_available": [
+        "M6",
+        "M8",
+        "M5"
+      ],
+      "final": "U",
+      "final_warrant": "N",
+      "attainable": "N",
+      "certificate_valid_for_received_evidence": false
+    },
+    {
+      "record": "circuits-08",
+      "family": "DC-C5",
+      "variant": "1",
+      "arm": "general",
+      "type": "settled",
+      "initial_warrant": "Y",
+      "initial": "U",
+      "lookup": "NONE",
+      "decisive_available": [
+        "M4",
+        "M5",
+        "M3"
+      ],
+      "final": "U",
+      "final_warrant": "Y",
+      "attainable": "Y",
+      "certificate_valid_for_received_evidence": false
+    },
+    {
+      "record": "circuits-08",
+      "family": "DC-C5",
+      "variant": "1",
+      "arm": "method",
+      "type": "settled",
+      "initial_warrant": "Y",
+      "initial": "U",
+      "lookup": "NONE",
+      "decisive_available": [
+        "M4",
+        "M5",
+        "M3"
+      ],
+      "final": "U",
+      "final_warrant": "Y",
+      "attainable": "Y",
+      "certificate_valid_for_received_evidence": false
+    },
+    {
+      "record": "circuits-09",
+      "family": "DC-C5",
+      "variant": "2",
+      "arm": "general",
+      "type": "ambiguous",
+      "initial_warrant": "U",
+      "initial": "U",
+      "lookup": "NONE",
+      "decisive_available": [],
+      "final": "U",
+      "final_warrant": "U",
+      "attainable": "U",
+      "certificate_valid_for_received_evidence": false
+    },
+    {
+      "record": "circuits-09",
+      "family": "DC-C5",
+      "variant": "2",
+      "arm": "method",
+      "type": "ambiguous",
+      "initial_warrant": "U",
+      "initial": "U",
+      "lookup": "NONE",
+      "decisive_available": [],
+      "final": "U",
+      "final_warrant": "U",
+      "attainable": "U",
+      "certificate_valid_for_received_evidence": false
+    },
+    {
+      "record": "circuits-10",
+      "family": "DC-C6",
+      "variant": "1",
+      "arm": "general",
+      "type": "ambiguous",
+      "initial_warrant": "U",
+      "initial": "Y",
+      "lookup": "M8",
+      "decisive_available": [],
+      "final": "Y",
+      "final_warrant": "U",
+      "attainable": "U",
+      "certificate_valid_for_received_evidence": false
+    },
+    {
+      "record": "circuits-10",
+      "family": "DC-C6",
+      "variant": "1",
+      "arm": "method",
+      "type": "ambiguous",
+      "initial_warrant": "U",
+      "initial": "U",
+      "lookup": "M8",
+      "decisive_available": [],
+      "final": "Y",
+      "final_warrant": "U",
+      "attainable": "U",
+      "certificate_valid_for_received_evidence": false
+    },
+    {
+      "record": "circuits-11",
+      "family": "DC-C6",
+      "variant": "2",
+      "arm": "general",
+      "type": "lookup",
+      "initial_warrant": "U",
+      "initial": "N",
+      "lookup": "NONE",
+      "decisive_available": [
+        "M8"
+      ],
+      "final": "N",
+      "final_warrant": "U",
+      "attainable": "Y",
+      "certificate_valid_for_received_evidence": false
+    },
+    {
+      "record": "circuits-11",
+      "family": "DC-C6",
+      "variant": "2",
+      "arm": "method",
+      "type": "lookup",
+      "initial_warrant": "U",
+      "initial": "U",
+      "lookup": "NONE",
+      "decisive_available": [
+        "M8"
+      ],
+      "final": "U",
+      "final_warrant": "U",
+      "attainable": "Y",
+      "certificate_valid_for_received_evidence": true
+    },
+    {
+      "record": "formal-12",
+      "family": "determinants",
+      "variant": "1",
+      "arm": "general",
+      "type": "ambiguous",
+      "initial_warrant": "U",
+      "initial": "Y",
+      "lookup": "NONE",
+      "decisive_available": [],
+      "final": "Y",
+      "final_warrant": "U",
+      "attainable": "U",
+      "certificate_valid_for_received_evidence": false
+    },
+    {
+      "record": "formal-15",
+      "family": "hamming",
+      "variant": "2",
+      "arm": "general",
+      "type": "lookup",
+      "initial_warrant": "U",
+      "initial": "U",
+      "lookup": "NONE",
+      "decisive_available": [
+        "b"
+      ],
+      "final": "U",
+      "final_warrant": "U",
+      "attainable": "Y",
+      "certificate_valid_for_received_evidence": true
+    },
+    {
+      "record": "formal-15",
+      "family": "hamming",
+      "variant": "2",
+      "arm": "method",
+      "type": "lookup",
+      "initial_warrant": "U",
+      "initial": "U",
+      "lookup": "a",
+      "decisive_available": [
+        "b"
+      ],
+      "final": "Y",
+      "final_warrant": "U",
+      "attainable": "Y",
+      "certificate_valid_for_received_evidence": false
+    },
+    {
+      "record": "formal-16",
+      "family": "neighbors",
+      "variant": "1",
+      "arm": "general",
+      "type": "lookup",
+      "initial_warrant": "U",
+      "initial": "U",
+      "lookup": "NONE",
+      "decisive_available": [
+        "a"
+      ],
+      "final": "U",
+      "final_warrant": "U",
+      "attainable": "Y",
+      "certificate_valid_for_received_evidence": true
+    },
+    {
+      "record": "formal-16",
+      "family": "neighbors",
+      "variant": "1",
+      "arm": "method",
+      "type": "lookup",
+      "initial_warrant": "U",
+      "initial": "U",
+      "lookup": "NONE",
+      "decisive_available": [
+        "a"
+      ],
+      "final": "U",
+      "final_warrant": "U",
+      "attainable": "Y",
+      "certificate_valid_for_received_evidence": true
+    },
+    {
+      "record": "formal-18",
+      "family": "quadratics",
+      "variant": "1",
+      "arm": "general",
+      "type": "lookup",
+      "initial_warrant": "U",
+      "initial": "Y",
+      "lookup": "NONE",
+      "decisive_available": [
+        "c"
+      ],
+      "final": "Y",
+      "final_warrant": "U",
+      "attainable": "N",
+      "certificate_valid_for_received_evidence": false
+    },
+    {
+      "record": "formal-18",
+      "family": "quadratics",
+      "variant": "1",
+      "arm": "method",
+      "type": "lookup",
+      "initial_warrant": "U",
+      "initial": "Y",
+      "lookup": "NONE",
+      "decisive_available": [
+        "c"
+      ],
+      "final": "Y",
+      "final_warrant": "U",
+      "attainable": "N",
+      "certificate_valid_for_received_evidence": false
+    },
+    {
+      "record": "formal-21",
+      "family": "swaps",
+      "variant": "2",
+      "arm": "general",
+      "type": "ambiguous",
+      "initial_warrant": "U",
+      "initial": "U",
+      "lookup": "a",
+      "decisive_available": [],
+      "final": "N",
+      "final_warrant": "U",
+      "attainable": "U",
+      "certificate_valid_for_received_evidence": false
+    },
+    {
+      "record": "formal-22",
+      "family": "unions",
+      "variant": "1",
+      "arm": "general",
+      "type": "settled",
+      "initial_warrant": "Y",
+      "initial": "U",
+      "lookup": "a",
+      "decisive_available": [
+        "a",
+        "b",
+        "c"
+      ],
+      "final": "Y",
+      "final_warrant": "Y",
+      "attainable": "Y",
+      "certificate_valid_for_received_evidence": false
+    },
+    {
+      "record": "formal-23",
+      "family": "unions",
+      "variant": "2",
+      "arm": "general",
+      "type": "lookup",
+      "initial_warrant": "U",
+      "initial": "U",
+      "lookup": "NONE",
+      "decisive_available": [
+        "b"
+      ],
+      "final": "U",
+      "final_warrant": "U",
+      "attainable": "N",
+      "certificate_valid_for_received_evidence": true
+    }
+  ]
+}

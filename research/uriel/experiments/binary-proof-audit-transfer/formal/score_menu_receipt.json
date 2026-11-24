@@ -1,0 +1,485 @@
+{
+  "status": "passed",
+  "dev_byte_equivalence": true,
+  "original_dev_hash": "e3e67aa0d94306caf7d43fbd428ec124df88cdb7040d4c1f69676d781488f7e2",
+  "scored_input_hash": "2e32514de005c13d649fdd2a5d8a81115d75624fb706afe196ab8d5279679ef0",
+  "sources_and_finite_object_truths": "same as original receipt.json",
+  "formal_scored_records": 12,
+  "rows": [
+    {
+      "family": "unions",
+      "variant": "1",
+      "type": "settled",
+      "varies": [
+        "b",
+        "c"
+      ],
+      "guarantees": [
+        "a",
+        "b",
+        "c"
+      ],
+      "decisive_on_designated_object": [
+        "a",
+        "b",
+        "c"
+      ],
+      "partitions": {
+        "a": {
+          "1": [
+            "S",
+            "V",
+            "K"
+          ]
+        },
+        "b": {
+          "2": [
+            "S",
+            "V"
+          ],
+          "3": [
+            "K"
+          ]
+        },
+        "c": {
+          "0": [
+            "S"
+          ],
+          "1": [
+            "V",
+            "K"
+          ]
+        }
+      }
+    },
+    {
+      "family": "unions",
+      "variant": "2",
+      "type": "lookup",
+      "varies": [
+        "a",
+        "b"
+      ],
+      "guarantees": [
+        "b"
+      ],
+      "decisive_on_designated_object": [
+        "b"
+      ],
+      "partitions": {
+        "a": {
+          "1": [
+            "P",
+            "J"
+          ],
+          "0": [
+            "G"
+          ]
+        },
+        "b": {
+          "1": [
+            "P",
+            "G"
+          ],
+          "2": [
+            "J"
+          ]
+        },
+        "c": {
+          "0": [
+            "P",
+            "G",
+            "J"
+          ]
+        }
+      }
+    },
+    {
+      "family": "determinants",
+      "variant": "1",
+      "type": "ambiguous",
+      "varies": [],
+      "guarantees": [],
+      "decisive_on_designated_object": [],
+      "partitions": {
+        "a": {
+          "3": [
+            "S",
+            "J"
+          ]
+        },
+        "b": {
+          "1": [
+            "S",
+            "J"
+          ]
+        },
+        "c": {
+          "0": [
+            "S",
+            "J"
+          ]
+        }
+      }
+    },
+    {
+      "family": "determinants",
+      "variant": "2",
+      "type": "settled",
+      "varies": [
+        "a",
+        "b"
+      ],
+      "guarantees": [
+        "a",
+        "b",
+        "c"
+      ],
+      "decisive_on_designated_object": [
+        "a",
+        "b",
+        "c"
+      ],
+      "partitions": {
+        "a": {
+          "1": [
+            "G"
+          ],
+          "3": [
+            "P"
+          ],
+          "2": [
+            "K"
+          ]
+        },
+        "b": {
+          "1": [
+            "G",
+            "K"
+          ],
+          "4": [
+            "P"
+          ]
+        },
+        "c": {
+          "1": [
+            "G",
+            "P",
+            "K"
+          ]
+        }
+      }
+    },
+    {
+      "family": "neighbors",
+      "variant": "1",
+      "type": "lookup",
+      "varies": [
+        "a",
+        "c"
+      ],
+      "guarantees": [
+        "a"
+      ],
+      "decisive_on_designated_object": [
+        "a"
+      ],
+      "partitions": {
+        "a": {
+          "1": [
+            "P",
+            "V"
+          ],
+          "2": [
+            "S"
+          ]
+        },
+        "b": {
+          "1": [
+            "P",
+            "V",
+            "S"
+          ]
+        },
+        "c": {
+          "0": [
+            "P",
+            "S"
+          ],
+          "1": [
+            "V"
+          ]
+        }
+      }
+    },
+    {
+      "family": "neighbors",
+      "variant": "2",
+      "type": "ambiguous",
+      "varies": [],
+      "guarantees": [],
+      "decisive_on_designated_object": [],
+      "partitions": {
+        "a": {
+          "0": [
+            "J",
+            "K",
+            "G"
+          ]
+        },
+        "b": {
+          "1": [
+            "J",
+            "K",
+            "G"
+          ]
+        },
+        "c": {
+          "0": [
+            "J",
+            "K",
+            "G"
+          ]
+        }
+      }
+    },
+    {
+      "family": "quadratics",
+      "variant": "1",
+      "type": "lookup",
+      "varies": [
+        "b",
+        "c"
+      ],
+      "guarantees": [
+        "c"
+      ],
+      "decisive_on_designated_object": [
+        "c"
+      ],
+      "partitions": {
+        "a": {
+          "0": [
+            "K",
+            "V",
+            "J"
+          ]
+        },
+        "b": {
+          "0": [
+            "K",
+            "V"
+          ],
+          "1": [
+            "J"
+          ]
+        },
+        "c": {
+          "4": [
+            "K",
+            "J"
+          ],
+          "6": [
+            "V"
+          ]
+        }
+      }
+    },
+    {
+      "family": "quadratics",
+      "variant": "2",
+      "type": "settled",
+      "varies": [
+        "a",
+        "c"
+      ],
+      "guarantees": [
+        "a",
+        "b",
+        "c"
+      ],
+      "decisive_on_designated_object": [
+        "a",
+        "b",
+        "c"
+      ],
+      "partitions": {
+        "a": {
+          "1": [
+            "S"
+          ],
+          "0": [
+            "G",
+            "P"
+          ]
+        },
+        "b": {
+          "0": [
+            "S",
+            "G",
+            "P"
+          ]
+        },
+        "c": {
+          "4": [
+            "S",
+            "P"
+          ],
+          "0": [
+            "G"
+          ]
+        }
+      }
+    },
+    {
+      "family": "swaps",
+      "variant": "1",
+      "type": "settled",
+      "varies": [
+        "b",
+        "c"
+      ],
+      "guarantees": [
+        "a",
+        "b",
+        "c"
+      ],
+      "decisive_on_designated_object": [
+        "a",
+        "b",
+        "c"
+      ],
+      "partitions": {
+        "a": {
+          "1": [
+            "S",
+            "P",
+            "K"
+          ]
+        },
+        "b": {
+          "0": [
+            "S",
+            "P"
+          ],
+          "1": [
+            "K"
+          ]
+        },
+        "c": {
+          "0": [
+            "S"
+          ],
+          "1": [
+            "P",
+            "K"
+          ]
+        }
+      }
+    },
+    {
+      "family": "swaps",
+      "variant": "2",
+      "type": "ambiguous",
+      "varies": [],
+      "guarantees": [],
+      "decisive_on_designated_object": [],
+      "partitions": {
+        "a": {
+          "0": [
+            "V",
+            "G",
+            "J"
+          ]
+        },
+        "b": {
+          "0": [
+            "V",
+            "G",
+            "J"
+          ]
+        },
+        "c": {
+          "0": [
+            "V",
+            "G",
+            "J"
+          ]
+        }
+      }
+    },
+    {
+      "family": "hamming",
+      "variant": "1",
+      "type": "ambiguous",
+      "varies": [],
+      "guarantees": [],
+      "decisive_on_designated_object": [],
+      "partitions": {
+        "a": {
+          "0": [
+            "K",
+            "J",
+            "V"
+          ]
+        },
+        "b": {
+          "1": [
+            "K",
+            "J",
+            "V"
+          ]
+        },
+        "c": {
+          "0": [
+            "K",
+            "J",
+            "V"
+          ]
+        }
+      }
+    },
+    {
+      "family": "hamming",
+      "variant": "2",
+      "type": "lookup",
+      "varies": [
+        "a",
+        "b"
+      ],
+      "guarantees": [
+        "b"
+      ],
+      "decisive_on_designated_object": [
+        "b"
+      ],
+      "partitions": {
+        "a": {
+          "0": [
+            "S",
+            "P"
+          ],
+          "1": [
+            "G"
+          ]
+        },
+        "b": {
+          "0": [
+            "S"
+          ],
+          "1": [
+            "G",
+            "P"
+          ]
+        },
+        "c": {
+          "1": [
+            "S",
+            "G",
+            "P"
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,195 @@
+{
+  "lean": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "sources": 8,
+  "kernel_checked_state_claims": 46,
+  "axiom_union": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "replay": "replaying FiniteContexts",
+  "source_sha256": "0ac460da67d4be2d1104f7f3c32ba1c5c9ca13ed6d16ab1f778a68ed4dc38625",
+  "scope": "Finite formal target propositions are kernel checked. Record views and lookup reachability are exhaustively checked in Python. Original Mathlib dependencies loaded from pinned cache.",
+  "cases": {
+    "unions": [
+      {
+        "variant": "1",
+        "actual": "V",
+        "initial_models": 3,
+        "type": "settled",
+        "objective_truth": true,
+        "decisive_lookups": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "variant": "2",
+        "actual": "P",
+        "initial_models": 3,
+        "type": "lookup",
+        "objective_truth": false,
+        "decisive_lookups": [
+          "c"
+        ]
+      }
+    ],
+    "determinants": [
+      {
+        "variant": "1",
+        "actual": "J",
+        "initial_models": 2,
+        "type": "ambiguous",
+        "objective_truth": true,
+        "decisive_lookups": []
+      },
+      {
+        "variant": "2",
+        "actual": "K",
+        "initial_models": 3,
+        "type": "settled",
+        "objective_truth": false,
+        "decisive_lookups": [
+          "a",
+          "b",
+          "c"
+        ]
+      }
+    ],
+    "neighbors": [
+      {
+        "variant": "1",
+        "actual": "P",
+        "initial_models": 3,
+        "type": "lookup",
+        "objective_truth": true,
+        "decisive_lookups": [
+          "c"
+        ]
+      },
+      {
+        "variant": "2",
+        "actual": "G",
+        "initial_models": 3,
+        "type": "ambiguous",
+        "objective_truth": false,
+        "decisive_lookups": []
+      }
+    ],
+    "quadratics": [
+      {
+        "variant": "1",
+        "actual": "K",
+        "initial_models": 3,
+        "type": "lookup",
+        "objective_truth": false,
+        "decisive_lookups": [
+          "c"
+        ]
+      },
+      {
+        "variant": "2",
+        "actual": "P",
+        "initial_models": 3,
+        "type": "settled",
+        "objective_truth": true,
+        "decisive_lookups": [
+          "a",
+          "b",
+          "c"
+        ]
+      }
+    ],
+    "swaps": [
+      {
+        "variant": "1",
+        "actual": "K",
+        "initial_models": 3,
+        "type": "settled",
+        "objective_truth": false,
+        "decisive_lookups": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "variant": "2",
+        "actual": "G",
+        "initial_models": 3,
+        "type": "ambiguous",
+        "objective_truth": false,
+        "decisive_lookups": []
+      }
+    ],
+    "hamming": [
+      {
+        "variant": "1",
+        "actual": "J",
+        "initial_models": 3,
+        "type": "ambiguous",
+        "objective_truth": true,
+        "decisive_lookups": []
+      },
+      {
+        "variant": "2",
+        "actual": "P",
+        "initial_models": 3,
+        "type": "lookup",
+        "objective_truth": true,
+        "decisive_lookups": [
+          "b"
+        ]
+      }
+    ],
+    "pairs-in-bins": [
+      {
+        "variant": "1",
+        "actual": "V",
+        "initial_models": 3,
+        "type": "settled",
+        "objective_truth": false,
+        "decisive_lookups": [
+          "a",
+          "b",
+          "c"
+        ]
+      },
+      {
+        "variant": "2",
+        "actual": "K",
+        "initial_models": 3,
+        "type": "lookup",
+        "objective_truth": true,
+        "decisive_lookups": [
+          "b"
+        ]
+      }
+    ],
+    "pair-encoding": [
+      {
+        "variant": "1",
+        "actual": "P",
+        "initial_models": 2,
+        "type": "ambiguous",
+        "objective_truth": true,
+        "decisive_lookups": []
+      },
+      {
+        "variant": "2",
+        "actual": "S",
+        "initial_models": 3,
+        "type": "settled",
+        "objective_truth": true,
+        "decisive_lookups": [
+          "a",
+          "b",
+          "c"
+        ]
+      }
+    ]
+  },
+  "independently_recomputed_record_views": 16
+}

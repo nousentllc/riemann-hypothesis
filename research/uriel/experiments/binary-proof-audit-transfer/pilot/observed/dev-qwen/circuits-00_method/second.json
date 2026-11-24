@@ -1,0 +1,28 @@
+{
+  "started": "2026-11-24T13:08:18.935100+00:00",
+  "request_sha256": "c2da8c50fd96e64dfe698c58fda748c079a91d87f873548e87e6311f0b12e2bb",
+  "answer": {
+    "verdict": "N",
+    "certificate": [
+      "BW",
+      "CD",
+      "EK",
+      "EP",
+      "LH",
+      "NF",
+      "OK",
+      "RO"
+    ]
+  },
+  "status": "ok",
+  "content": "{\n  \"verdict\": \"N\",\n  \"certificate\": [\"BW\", \"CD\", \"EK\", \"EP\", \"LH\", \"NF\", \"OK\", \"RO\"]\n}",
+  "usage": {
+    "prompt_eval_count": 730,
+    "eval_count": 40,
+    "total_duration": 1533022833,
+    "load_duration": 1441625,
+    "eval_duration": 1332378000,
+    "done_reason": "stop"
+  },
+  "ended": "2026-11-24T13:08:20.469697+00:00"
+}

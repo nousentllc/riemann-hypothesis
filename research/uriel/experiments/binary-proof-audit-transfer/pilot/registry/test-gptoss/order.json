@@ -1,0 +1,194 @@
+[
+  {
+    "record": "circuits-08",
+    "arm": "method"
+  },
+  {
+    "record": "formal-22",
+    "arm": "method"
+  },
+  {
+    "record": "formal-17",
+    "arm": "general"
+  },
+  {
+    "record": "circuits-11",
+    "arm": "general"
+  },
+  {
+    "record": "formal-22",
+    "arm": "general"
+  },
+  {
+    "record": "circuits-08",
+    "arm": "general"
+  },
+  {
+    "record": "formal-19",
+    "arm": "method"
+  },
+  {
+    "record": "formal-21",
+    "arm": "general"
+  },
+  {
+    "record": "circuits-04",
+    "arm": "general"
+  },
+  {
+    "record": "circuits-00",
+    "arm": "method"
+  },
+  {
+    "record": "circuits-06",
+    "arm": "general"
+  },
+  {
+    "record": "formal-23",
+    "arm": "general"
+  },
+  {
+    "record": "circuits-09",
+    "arm": "general"
+  },
+  {
+    "record": "circuits-07",
+    "arm": "general"
+  },
+  {
+    "record": "formal-23",
+    "arm": "method"
+  },
+  {
+    "record": "formal-16",
+    "arm": "method"
+  },
+  {
+    "record": "formal-18",
+    "arm": "method"
+  },
+  {
+    "record": "formal-13",
+    "arm": "general"
+  },
+  {
+    "record": "circuits-06",
+    "arm": "method"
+  },
+  {
+    "record": "formal-21",
+    "arm": "method"
+  },
+  {
+    "record": "formal-16",
+    "arm": "general"
+  },
+  {
+    "record": "circuits-03",
+    "arm": "method"
+  },
+  {
+    "record": "circuits-02",
+    "arm": "method"
+  },
+  {
+    "record": "circuits-11",
+    "arm": "method"
+  },
+  {
+    "record": "formal-19",
+    "arm": "general"
+  },
+  {
+    "record": "circuits-01",
+    "arm": "general"
+  },
+  {
+    "record": "circuits-07",
+    "arm": "method"
+  },
+  {
+    "record": "formal-14",
+    "arm": "general"
+  },
+  {
+    "record": "circuits-00",
+    "arm": "general"
+  },
+  {
+    "record": "formal-20",
+    "arm": "method"
+  },
+  {
+    "record": "circuits-10",
+    "arm": "method"
+  },
+  {
+    "record": "circuits-03",
+    "arm": "general"
+  },
+  {
+    "record": "formal-18",
+    "arm": "general"
+  },
+  {
+    "record": "formal-12",
+    "arm": "general"
+  },
+  {
+    "record": "formal-14",
+    "arm": "method"
+  },
+  {
+    "record": "circuits-09",
+    "arm": "method"
+  },
+  {
+    "record": "formal-13",
+    "arm": "method"
+  },
+  {
+    "record": "formal-15",
+    "arm": "method"
+  },
+  {
+    "record": "circuits-05",
+    "arm": "method"
+  },
+  {
+    "record": "formal-15",
+    "arm": "general"
+  },
+  {
+    "record": "circuits-04",
+    "arm": "method"
+  },
+  {
+    "record": "formal-17",
+    "arm": "method"
+  },
+  {
+    "record": "circuits-05",
+    "arm": "general"
+  },
+  {
+    "record": "circuits-10",
+    "arm": "general"
+  },
+  {
+    "record": "circuits-01",
+    "arm": "method"
+  },
+  {
+    "record": "circuits-02",
+    "arm": "general"
+  },
+  {
+    "record": "formal-20",
+    "arm": "general"
+  },
+  {
+    "record": "formal-12",
+    "arm": "method"
+  }
+]

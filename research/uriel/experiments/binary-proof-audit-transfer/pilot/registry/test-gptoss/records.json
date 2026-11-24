@@ -1,0 +1,1821 @@
+{
+  "circuits-00": {
+    "family": "DC-C1",
+    "variant": "1",
+    "text": "DC circuit at + = 12 V and 0 = 0 V. Three hidden switches s,t,u each have two positions (1 closed). A bracketed resistor conducts only with that switch closed. Edge format source>destination:ohms defines positive current. R1=+>a:2 R2=a>b:4 R3=b>0:3 R4=a>0:5 R5=+>b:3[s] R6=a>b:2[t] R7=b>0:5[u].\nQuestion: is the signed current of R4 > 47/33 A?\nThe calibration table lists all possible switch settings. Finite meter comparators report H for strictly above their threshold, L otherwise. All currents are exact amperes. Initial comparator: voltage at b > 11/2 V. Lookup comparators: M3 = signed current of R6 > 1 A; M8 = signed current of R1 > 133/62 A; M2 = voltage at a > 8 V.\nID stu target_current initial M3 M8 M2\nFF 011 924/779 L H H L\nIQ 101 924/599 L L L L\nJL 010 156/121 L L H L\nKT 100 156/97 H L L H\nRP 001 564/409 L L H L\nWA 110 276/179 H L H L\nWG 000 84/59 L L H L\nWO 111 1524/1069 H L H L",
+    "states": {
+      "WG": {
+        "answer": false,
+        "obs": {
+          "M3": "L",
+          "M8": "H",
+          "M2": "L"
+        }
+      },
+      "RP": {
+        "answer": false,
+        "obs": {
+          "M3": "L",
+          "M8": "H",
+          "M2": "L"
+        }
+      },
+      "JL": {
+        "answer": false,
+        "obs": {
+          "M3": "L",
+          "M8": "H",
+          "M2": "L"
+        }
+      },
+      "FF": {
+        "answer": false,
+        "obs": {
+          "M3": "H",
+          "M8": "H",
+          "M2": "L"
+        }
+      },
+      "KT": {
+        "answer": true,
+        "obs": {
+          "M3": "L",
+          "M8": "L",
+          "M2": "H"
+        }
+      },
+      "IQ": {
+        "answer": true,
+        "obs": {
+          "M3": "L",
+          "M8": "L",
+          "M2": "L"
+        }
+      },
+      "WA": {
+        "answer": true,
+        "obs": {
+          "M3": "L",
+          "M8": "H",
+          "M2": "L"
+        }
+      },
+      "WO": {
+        "answer": true,
+        "obs": {
+          "M3": "L",
+          "M8": "H",
+          "M2": "L"
+        }
+      }
+    },
+    "eligible": [
+      "KT",
+      "WA",
+      "WO"
+    ],
+    "actual": "WO",
+    "menu": {
+      "M3": "signed current of R6 > 1 A",
+      "M8": "signed current of R1 > 133/62 A",
+      "M2": "voltage at a > 8 V"
+    },
+    "evidence": "The initial comparator reading is H.",
+    "domain": "circuits"
+  },
+  "circuits-01": {
+    "family": "DC-C1",
+    "variant": "2",
+    "text": "DC circuit at + = 12 V and 0 = 0 V. Three hidden switches s,t,u each have two positions (1 closed). A bracketed resistor conducts only with that switch closed. Edge format source>destination:ohms defines positive current. R1=+>a:2 R2=a>b:4 R3=b>0:3 R4=a>0:5 R5=+>b:3[s] R6=a>b:2[t] R7=b>0:5[u].\nQuestion: is the signed current of R4 > 47/33 A?\nThe calibration table lists all possible switch settings. Finite meter comparators report H for strictly above their threshold, L otherwise. All currents are exact amperes. Initial comparator: voltage at b > 11/2 V. Lookup comparators: M3 = signed current of R6 > 1 A; M8 = signed current of R1 > 133/62 A; M2 = voltage at a > 8 V.\nID stu target_current initial M3 M8 M2\nFF 011 924/779 L H H L\nIQ 101 924/599 L L L L\nJL 010 156/121 L L H L\nKT 100 156/97 H L L H\nRP 001 564/409 L L H L\nWA 110 276/179 H L H L\nWG 000 84/59 L L H L\nWO 111 1524/1069 H L H L",
+    "states": {
+      "WG": {
+        "answer": false,
+        "obs": {
+          "M3": "L",
+          "M8": "H",
+          "M2": "L"
+        }
+      },
+      "RP": {
+        "answer": false,
+        "obs": {
+          "M3": "L",
+          "M8": "H",
+          "M2": "L"
+        }
+      },
+      "JL": {
+        "answer": false,
+        "obs": {
+          "M3": "L",
+          "M8": "H",
+          "M2": "L"
+        }
+      },
+      "FF": {
+        "answer": false,
+        "obs": {
+          "M3": "H",
+          "M8": "H",
+          "M2": "L"
+        }
+      },
+      "KT": {
+        "answer": true,
+        "obs": {
+          "M3": "L",
+          "M8": "L",
+          "M2": "H"
+        }
+      },
+      "IQ": {
+        "answer": true,
+        "obs": {
+          "M3": "L",
+          "M8": "L",
+          "M2": "L"
+        }
+      },
+      "WA": {
+        "answer": true,
+        "obs": {
+          "M3": "L",
+          "M8": "H",
+          "M2": "L"
+        }
+      },
+      "WO": {
+        "answer": true,
+        "obs": {
+          "M3": "L",
+          "M8": "H",
+          "M2": "L"
+        }
+      }
+    },
+    "eligible": [
+      "FF",
+      "IQ",
+      "JL",
+      "RP",
+      "WG"
+    ],
+    "actual": "JL",
+    "menu": {
+      "M3": "signed current of R6 > 1 A",
+      "M8": "signed current of R1 > 133/62 A",
+      "M2": "voltage at a > 8 V"
+    },
+    "evidence": "The initial comparator reading is L.",
+    "domain": "circuits"
+  },
+  "circuits-02": {
+    "family": "DC-C2",
+    "variant": "1",
+    "text": "DC circuit at + = 12 V and 0 = 0 V. Three hidden switches s,t,u each have two positions (1 closed). A bracketed resistor conducts only with that switch closed. Edge format source>destination:ohms defines positive current. R1=+>a:3 R2=a>b:4 R3=b>c:3 R4=c>0:2 R5=a>c:6 R6=+>b:2[s] R7=b>0:3[t] R8=a>0:2[u].\nQuestion: is the signed current of R3 > 1 A?\nThe calibration table lists all possible switch settings. Finite meter comparators report H for strictly above their threshold, L otherwise. All currents are exact amperes. Initial comparator: signed current of R2 > 1/2 A. Lookup comparators: M5 = signed current of R1 > 7/3 A; M6 = signed current of R5 > 7/9 A; M7 = voltage at c > 7/2 V.\nID stu target_current initial M5 M6 M7\nED 110 364/367 L L H H\nKU 100 396/263 L L H H\nLW 001 72/209 L H L L\nMF 101 684/473 L L L L\nMW 111 652/649 L H L L\nNQ 000 72/107 H L H L\nVS 011 8/77 H H L L\nWW 010 40/211 H L L L",
+    "states": {
+      "NQ": {
+        "answer": false,
+        "obs": {
+          "M5": "L",
+          "M6": "H",
+          "M7": "L"
+        }
+      },
+      "LW": {
+        "answer": false,
+        "obs": {
+          "M5": "H",
+          "M6": "L",
+          "M7": "L"
+        }
+      },
+      "WW": {
+        "answer": false,
+        "obs": {
+          "M5": "L",
+          "M6": "L",
+          "M7": "L"
+        }
+      },
+      "VS": {
+        "answer": false,
+        "obs": {
+          "M5": "H",
+          "M6": "L",
+          "M7": "L"
+        }
+      },
+      "KU": {
+        "answer": true,
+        "obs": {
+          "M5": "L",
+          "M6": "H",
+          "M7": "H"
+        }
+      },
+      "MF": {
+        "answer": true,
+        "obs": {
+          "M5": "L",
+          "M6": "L",
+          "M7": "L"
+        }
+      },
+      "ED": {
+        "answer": false,
+        "obs": {
+          "M5": "L",
+          "M6": "H",
+          "M7": "H"
+        }
+      },
+      "MW": {
+        "answer": true,
+        "obs": {
+          "M5": "H",
+          "M6": "L",
+          "M7": "L"
+        }
+      }
+    },
+    "eligible": [
+      "ED",
+      "KU",
+      "LW",
+      "MF",
+      "MW"
+    ],
+    "actual": "MW",
+    "menu": {
+      "M5": "signed current of R1 > 7/3 A",
+      "M6": "signed current of R5 > 7/9 A",
+      "M7": "voltage at c > 7/2 V"
+    },
+    "evidence": "The initial comparator reading is L.",
+    "domain": "circuits"
+  },
+  "circuits-03": {
+    "family": "DC-C2",
+    "variant": "2",
+    "text": "DC circuit at + = 12 V and 0 = 0 V. Three hidden switches s,t,u each have two positions (1 closed). A bracketed resistor conducts only with that switch closed. Edge format source>destination:ohms defines positive current. R1=+>a:3 R2=a>b:4 R3=b>c:3 R4=c>0:2 R5=a>c:6 R6=+>b:2[s] R7=b>0:3[t] R8=a>0:2[u].\nQuestion: is the signed current of R3 > 1 A?\nThe calibration table lists all possible switch settings. Finite meter comparators report H for strictly above their threshold, L otherwise. All currents are exact amperes. Initial comparator: signed current of R2 > 1/2 A. Lookup comparators: M5 = signed current of R1 > 7/3 A; M6 = signed current of R5 > 7/9 A; M7 = voltage at c > 7/2 V.\nID stu target_current initial M5 M6 M7\nED 110 364/367 L L H H\nKU 100 396/263 L L H H\nLW 001 72/209 L H L L\nMF 101 684/473 L L L L\nMW 111 652/649 L H L L\nNQ 000 72/107 H L H L\nVS 011 8/77 H H L L\nWW 010 40/211 H L L L",
+    "states": {
+      "NQ": {
+        "answer": false,
+        "obs": {
+          "M5": "L",
+          "M6": "H",
+          "M7": "L"
+        }
+      },
+      "LW": {
+        "answer": false,
+        "obs": {
+          "M5": "H",
+          "M6": "L",
+          "M7": "L"
+        }
+      },
+      "WW": {
+        "answer": false,
+        "obs": {
+          "M5": "L",
+          "M6": "L",
+          "M7": "L"
+        }
+      },
+      "VS": {
+        "answer": false,
+        "obs": {
+          "M5": "H",
+          "M6": "L",
+          "M7": "L"
+        }
+      },
+      "KU": {
+        "answer": true,
+        "obs": {
+          "M5": "L",
+          "M6": "H",
+          "M7": "H"
+        }
+      },
+      "MF": {
+        "answer": true,
+        "obs": {
+          "M5": "L",
+          "M6": "L",
+          "M7": "L"
+        }
+      },
+      "ED": {
+        "answer": false,
+        "obs": {
+          "M5": "L",
+          "M6": "H",
+          "M7": "H"
+        }
+      },
+      "MW": {
+        "answer": true,
+        "obs": {
+          "M5": "H",
+          "M6": "L",
+          "M7": "L"
+        }
+      }
+    },
+    "eligible": [
+      "NQ",
+      "VS",
+      "WW"
+    ],
+    "actual": "NQ",
+    "menu": {
+      "M5": "signed current of R1 > 7/3 A",
+      "M6": "signed current of R5 > 7/9 A",
+      "M7": "voltage at c > 7/2 V"
+    },
+    "evidence": "The initial comparator reading is H.",
+    "domain": "circuits"
+  },
+  "circuits-04": {
+    "family": "DC-C3",
+    "variant": "1",
+    "text": "DC circuit at + = 12 V and 0 = 0 V. Three hidden switches s,t,u each have two positions (1 closed). A bracketed resistor conducts only with that switch closed. Edge format source>destination:ohms defines positive current. R1=+>a:2 R2=a>b:3 R3=b>0:4 R4=+>c:3 R5=c>0:6 R6=a>c:4 R7=b>c:5[s] R8=+>b:2[t] R9=a>0:3[u].\nQuestion: is the signed current of R2 > 2/3 A?\nThe calibration table lists all possible switch settings. Finite meter comparators report H for strictly above their threshold, L otherwise. All currents are exact amperes. Initial comparator: signed current of R4 > 18/13 A. Lookup comparators: M5 = signed current of R9 > 13/6 A; M8 = signed current of R7 > 0 A; M3 = voltage at c > 219/28 V.\nID stu target_current initial M5 M8 M3\nGI 110 65/127 L L L H\nGY 111 -26/209 H H H H\nJJ 100 25/23 L L L H\nJY 101 386/583 H H L L\nNZ 010 18/35 L L L H\nPS 000 22/17 L L L H\nRI 011 -1/8 H H L L\nWE 001 11/12 H L L L",
+    "states": {
+      "PS": {
+        "answer": true,
+        "obs": {
+          "M5": "L",
+          "M8": "L",
+          "M3": "H"
+        }
+      },
+      "WE": {
+        "answer": true,
+        "obs": {
+          "M5": "L",
+          "M8": "L",
+          "M3": "L"
+        }
+      },
+      "NZ": {
+        "answer": false,
+        "obs": {
+          "M5": "L",
+          "M8": "L",
+          "M3": "H"
+        }
+      },
+      "RI": {
+        "answer": false,
+        "obs": {
+          "M5": "H",
+          "M8": "L",
+          "M3": "L"
+        }
+      },
+      "JJ": {
+        "answer": true,
+        "obs": {
+          "M5": "L",
+          "M8": "L",
+          "M3": "H"
+        }
+      },
+      "JY": {
+        "answer": false,
+        "obs": {
+          "M5": "H",
+          "M8": "L",
+          "M3": "L"
+        }
+      },
+      "GI": {
+        "answer": false,
+        "obs": {
+          "M5": "L",
+          "M8": "L",
+          "M3": "H"
+        }
+      },
+      "GY": {
+        "answer": false,
+        "obs": {
+          "M5": "H",
+          "M8": "H",
+          "M3": "H"
+        }
+      }
+    },
+    "eligible": [
+      "GY",
+      "JY",
+      "RI",
+      "WE"
+    ],
+    "actual": "WE",
+    "menu": {
+      "M5": "signed current of R9 > 13/6 A",
+      "M8": "signed current of R7 > 0 A",
+      "M3": "voltage at c > 219/28 V"
+    },
+    "evidence": "The initial comparator reading is H.",
+    "domain": "circuits"
+  },
+  "circuits-05": {
+    "family": "DC-C3",
+    "variant": "2",
+    "text": "DC circuit at + = 12 V and 0 = 0 V. Three hidden switches s,t,u each have two positions (1 closed). A bracketed resistor conducts only with that switch closed. Edge format source>destination:ohms defines positive current. R1=+>a:2 R2=a>b:3 R3=b>0:4 R4=+>c:3 R5=c>0:6 R6=a>c:4 R7=b>c:5[s] R8=+>b:2[t] R9=a>0:3[u].\nQuestion: is the signed current of R2 > 2/3 A?\nThe calibration table lists all possible switch settings. Finite meter comparators report H for strictly above their threshold, L otherwise. All currents are exact amperes. Initial comparator: signed current of R4 > 18/13 A. Lookup comparators: M5 = signed current of R9 > 13/6 A; M8 = signed current of R7 > 0 A; M3 = voltage at c > 219/28 V.\nID stu target_current initial M5 M8 M3\nGI 110 65/127 L L L H\nGY 111 -26/209 H H H H\nJJ 100 25/23 L L L H\nJY 101 386/583 H H L L\nNZ 010 18/35 L L L H\nPS 000 22/17 L L L H\nRI 011 -1/8 H H L L\nWE 001 11/12 H L L L",
+    "states": {
+      "PS": {
+        "answer": true,
+        "obs": {
+          "M5": "L",
+          "M8": "L",
+          "M3": "H"
+        }
+      },
+      "WE": {
+        "answer": true,
+        "obs": {
+          "M5": "L",
+          "M8": "L",
+          "M3": "L"
+        }
+      },
+      "NZ": {
+        "answer": false,
+        "obs": {
+          "M5": "L",
+          "M8": "L",
+          "M3": "H"
+        }
+      },
+      "RI": {
+        "answer": false,
+        "obs": {
+          "M5": "H",
+          "M8": "L",
+          "M3": "L"
+        }
+      },
+      "JJ": {
+        "answer": true,
+        "obs": {
+          "M5": "L",
+          "M8": "L",
+          "M3": "H"
+        }
+      },
+      "JY": {
+        "answer": false,
+        "obs": {
+          "M5": "H",
+          "M8": "L",
+          "M3": "L"
+        }
+      },
+      "GI": {
+        "answer": false,
+        "obs": {
+          "M5": "L",
+          "M8": "L",
+          "M3": "H"
+        }
+      },
+      "GY": {
+        "answer": false,
+        "obs": {
+          "M5": "H",
+          "M8": "H",
+          "M3": "H"
+        }
+      }
+    },
+    "eligible": [
+      "GI",
+      "JJ",
+      "NZ",
+      "PS"
+    ],
+    "actual": "JJ",
+    "menu": {
+      "M5": "signed current of R9 > 13/6 A",
+      "M8": "signed current of R7 > 0 A",
+      "M3": "voltage at c > 219/28 V"
+    },
+    "evidence": "The initial comparator reading is L.",
+    "domain": "circuits"
+  },
+  "circuits-06": {
+    "family": "DC-C4",
+    "variant": "1",
+    "text": "DC circuit at + = 12 V and 0 = 0 V. Three hidden switches s,t,u each have two positions (1 closed). A bracketed resistor conducts only with that switch closed. Edge format source>destination:ohms defines positive current. R1=+>a:2 R2=a>b:4 R3=b>c:3 R4=c>d:2 R5=d>0:5 R6=b>d:4 R7=+>c:3[s] R8=a>0:2[t] R9=b>0:3[u].\nQuestion: is the signed current of R6 > 1/3 A?\nThe calibration table lists all possible switch settings. Finite meter comparators report H for strictly above their threshold, L otherwise. All currents are exact amperes. Initial comparator: voltage at a > 19/2 V. Lookup comparators: M6 = signed current of R8 > 3 A; M8 = signed current of R4 > 1/2 A; M5 = signed current of R9 > 0 A.\nID stu target_current initial M6 M8 M5\nAK 010 3/11 L L L L\nEY 110 156/739 L H H L\nKC 111 -24/209 L L H H\nMQ 011 18/131 L L L H\nMR 001 20/83 L L L H\nQL 100 12/25 H L H L\nSA 000 60/119 H L L L\nZA 101 12/481 H L H H",
+    "states": {
+      "SA": {
+        "answer": true,
+        "obs": {
+          "M6": "L",
+          "M8": "L",
+          "M5": "L"
+        }
+      },
+      "MR": {
+        "answer": false,
+        "obs": {
+          "M6": "L",
+          "M8": "L",
+          "M5": "H"
+        }
+      },
+      "AK": {
+        "answer": false,
+        "obs": {
+          "M6": "L",
+          "M8": "L",
+          "M5": "L"
+        }
+      },
+      "MQ": {
+        "answer": false,
+        "obs": {
+          "M6": "L",
+          "M8": "L",
+          "M5": "H"
+        }
+      },
+      "QL": {
+        "answer": true,
+        "obs": {
+          "M6": "L",
+          "M8": "H",
+          "M5": "L"
+        }
+      },
+      "ZA": {
+        "answer": false,
+        "obs": {
+          "M6": "L",
+          "M8": "H",
+          "M5": "H"
+        }
+      },
+      "EY": {
+        "answer": false,
+        "obs": {
+          "M6": "H",
+          "M8": "H",
+          "M5": "L"
+        }
+      },
+      "KC": {
+        "answer": false,
+        "obs": {
+          "M6": "L",
+          "M8": "H",
+          "M5": "H"
+        }
+      }
+    },
+    "eligible": [
+      "QL",
+      "SA",
+      "ZA"
+    ],
+    "actual": "ZA",
+    "menu": {
+      "M6": "signed current of R8 > 3 A",
+      "M8": "signed current of R4 > 1/2 A",
+      "M5": "signed current of R9 > 0 A"
+    },
+    "evidence": "The initial comparator reading is H.",
+    "domain": "circuits"
+  },
+  "circuits-07": {
+    "family": "DC-C4",
+    "variant": "2",
+    "text": "DC circuit at + = 12 V and 0 = 0 V. Three hidden switches s,t,u each have two positions (1 closed). A bracketed resistor conducts only with that switch closed. Edge format source>destination:ohms defines positive current. R1=+>a:2 R2=a>b:4 R3=b>c:3 R4=c>d:2 R5=d>0:5 R6=b>d:4 R7=+>c:3[s] R8=a>0:2[t] R9=b>0:3[u].\nQuestion: is the signed current of R6 > 1/3 A?\nThe calibration table lists all possible switch settings. Finite meter comparators report H for strictly above their threshold, L otherwise. All currents are exact amperes. Initial comparator: voltage at a > 19/2 V. Lookup comparators: M6 = signed current of R8 > 3 A; M8 = signed current of R4 > 1/2 A; M5 = signed current of R9 > 0 A.\nID stu target_current initial M6 M8 M5\nAK 010 3/11 L L L L\nEY 110 156/739 L H H L\nKC 111 -24/209 L L H H\nMQ 011 18/131 L L L H\nMR 001 20/83 L L L H\nQL 100 12/25 H L H L\nSA 000 60/119 H L L L\nZA 101 12/481 H L H H",
+    "states": {
+      "SA": {
+        "answer": true,
+        "obs": {
+          "M6": "L",
+          "M8": "L",
+          "M5": "L"
+        }
+      },
+      "MR": {
+        "answer": false,
+        "obs": {
+          "M6": "L",
+          "M8": "L",
+          "M5": "H"
+        }
+      },
+      "AK": {
+        "answer": false,
+        "obs": {
+          "M6": "L",
+          "M8": "L",
+          "M5": "L"
+        }
+      },
+      "MQ": {
+        "answer": false,
+        "obs": {
+          "M6": "L",
+          "M8": "L",
+          "M5": "H"
+        }
+      },
+      "QL": {
+        "answer": true,
+        "obs": {
+          "M6": "L",
+          "M8": "H",
+          "M5": "L"
+        }
+      },
+      "ZA": {
+        "answer": false,
+        "obs": {
+          "M6": "L",
+          "M8": "H",
+          "M5": "H"
+        }
+      },
+      "EY": {
+        "answer": false,
+        "obs": {
+          "M6": "H",
+          "M8": "H",
+          "M5": "L"
+        }
+      },
+      "KC": {
+        "answer": false,
+        "obs": {
+          "M6": "L",
+          "M8": "H",
+          "M5": "H"
+        }
+      }
+    },
+    "eligible": [
+      "AK",
+      "EY",
+      "KC",
+      "MQ",
+      "MR"
+    ],
+    "actual": "KC",
+    "menu": {
+      "M6": "signed current of R8 > 3 A",
+      "M8": "signed current of R4 > 1/2 A",
+      "M5": "signed current of R9 > 0 A"
+    },
+    "evidence": "The initial comparator reading is L.",
+    "domain": "circuits"
+  },
+  "circuits-08": {
+    "family": "DC-C5",
+    "variant": "1",
+    "text": "DC circuit at + = 12 V and 0 = 0 V. Three hidden switches s,t,u each have two positions (1 closed). A bracketed resistor conducts only with that switch closed. Edge format source>destination:ohms defines positive current. R1=+>a:3 R2=a>b:2 R3=b>0:4 R4=+>c:2 R5=c>d:3 R6=d>0:3 R7=a>c:2 R8=a>d:5[s] R9=b>c:2[t] R10=b>d:4[u].\nQuestion: is the signed current of R6 > 3/2 A?\nThe calibration table lists all possible switch settings. Finite meter comparators report H for strictly above their threshold, L otherwise. All currents are exact amperes. Initial comparator: voltage at a > 33/4 V. Lookup comparators: M4 = signed current of R5 > 11/8 A; M5 = voltage at b > 73/14 V; M3 = signed current of R2 > 7/8 A.\nID stu target_current initial M4 M5 M3\nHI 100 284/165 L L H H\nHN 101 17112/9923 L L L H\nOE 010 288/211 H L H H\nOI 110 5172/3121 L L H L\nWX 111 3624/2077 L L H L\nXD 000 16/11 H H H H\nYK 011 472/303 H L H H\nYT 001 2232/1447 H H H H",
+    "states": {
+      "XD": {
+        "answer": false,
+        "obs": {
+          "M4": "H",
+          "M5": "H",
+          "M3": "H"
+        }
+      },
+      "YT": {
+        "answer": true,
+        "obs": {
+          "M4": "H",
+          "M5": "H",
+          "M3": "H"
+        }
+      },
+      "OE": {
+        "answer": false,
+        "obs": {
+          "M4": "L",
+          "M5": "H",
+          "M3": "H"
+        }
+      },
+      "YK": {
+        "answer": true,
+        "obs": {
+          "M4": "L",
+          "M5": "H",
+          "M3": "H"
+        }
+      },
+      "HI": {
+        "answer": true,
+        "obs": {
+          "M4": "L",
+          "M5": "H",
+          "M3": "H"
+        }
+      },
+      "HN": {
+        "answer": true,
+        "obs": {
+          "M4": "L",
+          "M5": "L",
+          "M3": "H"
+        }
+      },
+      "OI": {
+        "answer": true,
+        "obs": {
+          "M4": "L",
+          "M5": "H",
+          "M3": "L"
+        }
+      },
+      "WX": {
+        "answer": true,
+        "obs": {
+          "M4": "L",
+          "M5": "H",
+          "M3": "L"
+        }
+      }
+    },
+    "eligible": [
+      "HI",
+      "HN",
+      "OI",
+      "WX"
+    ],
+    "actual": "OI",
+    "menu": {
+      "M4": "signed current of R5 > 11/8 A",
+      "M5": "voltage at b > 73/14 V",
+      "M3": "signed current of R2 > 7/8 A"
+    },
+    "evidence": "The initial comparator reading is L.",
+    "domain": "circuits"
+  },
+  "circuits-09": {
+    "family": "DC-C5",
+    "variant": "2",
+    "text": "DC circuit at + = 12 V and 0 = 0 V. Three hidden switches s,t,u each have two positions (1 closed). A bracketed resistor conducts only with that switch closed. Edge format source>destination:ohms defines positive current. R1=+>a:3 R2=a>b:2 R3=b>0:4 R4=+>c:2 R5=c>d:3 R6=d>0:3 R7=a>c:2 R8=a>d:5[s] R9=b>c:2[t] R10=b>d:4[u].\nQuestion: is the signed current of R6 > 3/2 A?\nThe calibration table lists all possible switch settings. Finite meter comparators report H for strictly above their threshold, L otherwise. All currents are exact amperes. Initial comparator: voltage at a > 33/4 V. Lookup comparators: M4 = signed current of R5 > 11/8 A; M5 = voltage at b > 73/14 V; M3 = signed current of R2 > 7/8 A.\nID stu target_current initial M4 M5 M3\nHI 100 284/165 L L H H\nHN 101 17112/9923 L L L H\nOE 010 288/211 H L H H\nOI 110 5172/3121 L L H L\nWX 111 3624/2077 L L H L\nXD 000 16/11 H H H H\nYK 011 472/303 H L H H\nYT 001 2232/1447 H H H H",
+    "states": {
+      "XD": {
+        "answer": false,
+        "obs": {
+          "M4": "H",
+          "M5": "H",
+          "M3": "H"
+        }
+      },
+      "YT": {
+        "answer": true,
+        "obs": {
+          "M4": "H",
+          "M5": "H",
+          "M3": "H"
+        }
+      },
+      "OE": {
+        "answer": false,
+        "obs": {
+          "M4": "L",
+          "M5": "H",
+          "M3": "H"
+        }
+      },
+      "YK": {
+        "answer": true,
+        "obs": {
+          "M4": "L",
+          "M5": "H",
+          "M3": "H"
+        }
+      },
+      "HI": {
+        "answer": true,
+        "obs": {
+          "M4": "L",
+          "M5": "H",
+          "M3": "H"
+        }
+      },
+      "HN": {
+        "answer": true,
+        "obs": {
+          "M4": "L",
+          "M5": "L",
+          "M3": "H"
+        }
+      },
+      "OI": {
+        "answer": true,
+        "obs": {
+          "M4": "L",
+          "M5": "H",
+          "M3": "L"
+        }
+      },
+      "WX": {
+        "answer": true,
+        "obs": {
+          "M4": "L",
+          "M5": "H",
+          "M3": "L"
+        }
+      }
+    },
+    "eligible": [
+      "OE",
+      "XD",
+      "YK",
+      "YT"
+    ],
+    "actual": "YT",
+    "menu": {
+      "M4": "signed current of R5 > 11/8 A",
+      "M5": "voltage at b > 73/14 V",
+      "M3": "signed current of R2 > 7/8 A"
+    },
+    "evidence": "The initial comparator reading is H.",
+    "domain": "circuits"
+  },
+  "circuits-10": {
+    "family": "DC-C6",
+    "variant": "1",
+    "text": "DC circuit at + = 12 V and 0 = 0 V. Three hidden switches s,t,u each have two positions (1 closed). A bracketed resistor conducts only with that switch closed. Edge format source>destination:ohms defines positive current. R1=+>a:2 R2=a>b:5 R3=b>c:2 R4=c>d:3 R5=d>e:2 R6=e>0:4 R7=b>d:5 R8=+>c:3[s] R9=a>e:3[t] R10=d>0:2[u].\nQuestion: is the signed current of R3 > -1/9 A?\nThe calibration table lists all possible switch settings. Finite meter comparators report H for strictly above their threshold, L otherwise. All currents are exact amperes. Initial comparator: signed current of R5 > 1/2 A. Lookup comparators: M6 = signed current of R9 > 1 A; M8 = signed current of R10 > 2 A; M3 = voltage at b > 22/3 V.\nID stu target_current initial M6 M8 M3\nAN 111 -138/491 L H H L\nFN 000 12/31 H L L L\nHJ 011 6/17 L H L L\nMY 100 -12/193 H L L H\nQR 110 -60/343 H L L H\nTL 010 4/23 L H L H\nVL 001 6/11 L L L L\nYF 101 -6/53 H L L L",
+    "states": {
+      "FN": {
+        "answer": true,
+        "obs": {
+          "M6": "L",
+          "M8": "L",
+          "M3": "L"
+        }
+      },
+      "VL": {
+        "answer": true,
+        "obs": {
+          "M6": "L",
+          "M8": "L",
+          "M3": "L"
+        }
+      },
+      "TL": {
+        "answer": true,
+        "obs": {
+          "M6": "H",
+          "M8": "L",
+          "M3": "H"
+        }
+      },
+      "HJ": {
+        "answer": true,
+        "obs": {
+          "M6": "H",
+          "M8": "L",
+          "M3": "L"
+        }
+      },
+      "MY": {
+        "answer": true,
+        "obs": {
+          "M6": "L",
+          "M8": "L",
+          "M3": "H"
+        }
+      },
+      "YF": {
+        "answer": false,
+        "obs": {
+          "M6": "L",
+          "M8": "L",
+          "M3": "L"
+        }
+      },
+      "QR": {
+        "answer": false,
+        "obs": {
+          "M6": "L",
+          "M8": "L",
+          "M3": "H"
+        }
+      },
+      "AN": {
+        "answer": false,
+        "obs": {
+          "M6": "H",
+          "M8": "H",
+          "M3": "L"
+        }
+      }
+    },
+    "eligible": [
+      "FN",
+      "MY",
+      "QR",
+      "YF"
+    ],
+    "actual": "MY",
+    "menu": {
+      "M6": "signed current of R9 > 1 A",
+      "M8": "signed current of R10 > 2 A",
+      "M3": "voltage at b > 22/3 V"
+    },
+    "evidence": "The initial comparator reading is H.",
+    "domain": "circuits"
+  },
+  "circuits-11": {
+    "family": "DC-C6",
+    "variant": "2",
+    "text": "DC circuit at + = 12 V and 0 = 0 V. Three hidden switches s,t,u each have two positions (1 closed). A bracketed resistor conducts only with that switch closed. Edge format source>destination:ohms defines positive current. R1=+>a:2 R2=a>b:5 R3=b>c:2 R4=c>d:3 R5=d>e:2 R6=e>0:4 R7=b>d:5 R8=+>c:3[s] R9=a>e:3[t] R10=d>0:2[u].\nQuestion: is the signed current of R3 > -1/9 A?\nThe calibration table lists all possible switch settings. Finite meter comparators report H for strictly above their threshold, L otherwise. All currents are exact amperes. Initial comparator: signed current of R5 > 1/2 A. Lookup comparators: M6 = signed current of R9 > 1 A; M8 = signed current of R10 > 2 A; M3 = voltage at b > 22/3 V.\nID stu target_current initial M6 M8 M3\nAN 111 -138/491 L H H L\nFN 000 12/31 H L L L\nHJ 011 6/17 L H L L\nMY 100 -12/193 H L L H\nQR 110 -60/343 H L L H\nTL 010 4/23 L H L H\nVL 001 6/11 L L L L\nYF 101 -6/53 H L L L",
+    "states": {
+      "FN": {
+        "answer": true,
+        "obs": {
+          "M6": "L",
+          "M8": "L",
+          "M3": "L"
+        }
+      },
+      "VL": {
+        "answer": true,
+        "obs": {
+          "M6": "L",
+          "M8": "L",
+          "M3": "L"
+        }
+      },
+      "TL": {
+        "answer": true,
+        "obs": {
+          "M6": "H",
+          "M8": "L",
+          "M3": "H"
+        }
+      },
+      "HJ": {
+        "answer": true,
+        "obs": {
+          "M6": "H",
+          "M8": "L",
+          "M3": "L"
+        }
+      },
+      "MY": {
+        "answer": true,
+        "obs": {
+          "M6": "L",
+          "M8": "L",
+          "M3": "H"
+        }
+      },
+      "YF": {
+        "answer": false,
+        "obs": {
+          "M6": "L",
+          "M8": "L",
+          "M3": "L"
+        }
+      },
+      "QR": {
+        "answer": false,
+        "obs": {
+          "M6": "L",
+          "M8": "L",
+          "M3": "H"
+        }
+      },
+      "AN": {
+        "answer": false,
+        "obs": {
+          "M6": "H",
+          "M8": "H",
+          "M3": "L"
+        }
+      }
+    },
+    "eligible": [
+      "AN",
+      "HJ",
+      "TL",
+      "VL"
+    ],
+    "actual": "HJ",
+    "menu": {
+      "M6": "signed current of R9 > 1 A",
+      "M8": "signed current of R10 > 2 A",
+      "M3": "voltage at b > 22/3 V"
+    },
+    "evidence": "The initial comparator reading is L.",
+    "domain": "circuits"
+  },
+  "formal-12": {
+    "family": "determinants",
+    "variant": "1",
+    "text": "Does the given square integer matrix have determinant zero?\nFor a 2 by 2 matrix with rows (a,b),(c,d), its determinant equals a*d-b*c (Matrix.det_fin_two).\nExactly one listed candidate describes the object in this record. Read each indicator as 1 for yes and 0 for no.\nG: rows (2,1) and (1,4).\nS: rows (3,1) and (3,3).\nJ: rows (3,1) and (3,1).\nP: rows (2,4) and (3,2).\nK: rows (2,1) and (2,4).",
+    "states": {
+      "G": {
+        "answer": false,
+        "obs": {
+          "b": "1",
+          "a": "1",
+          "c": "1"
+        }
+      },
+      "S": {
+        "answer": false,
+        "obs": {
+          "b": "1",
+          "a": "3",
+          "c": "0"
+        }
+      },
+      "J": {
+        "answer": true,
+        "obs": {
+          "b": "1",
+          "a": "3",
+          "c": "0"
+        }
+      },
+      "P": {
+        "answer": false,
+        "obs": {
+          "b": "4",
+          "a": "3",
+          "c": "1"
+        }
+      },
+      "K": {
+        "answer": false,
+        "obs": {
+          "b": "1",
+          "a": "2",
+          "c": "1"
+        }
+      }
+    },
+    "eligible": [
+      "S",
+      "J"
+    ],
+    "actual": "J",
+    "menu": {
+      "a": "bottom-left entry c",
+      "b": "top-right entry b",
+      "c": "indicator that bottom-right entry d is even"
+    },
+    "evidence": "The top-left entry a is 3.",
+    "domain": "formal"
+  },
+  "formal-13": {
+    "family": "determinants",
+    "variant": "2",
+    "text": "Does the given square integer matrix have determinant zero?\nFor a 2 by 2 matrix with rows (a,b),(c,d), its determinant equals a*d-b*c (Matrix.det_fin_two).\nExactly one listed candidate describes the object in this record. Read each indicator as 1 for yes and 0 for no.\nG: rows (2,1) and (1,4).\nS: rows (3,1) and (3,3).\nJ: rows (3,1) and (3,1).\nP: rows (2,4) and (3,2).\nK: rows (2,1) and (2,4).",
+    "states": {
+      "G": {
+        "answer": false,
+        "obs": {
+          "b": "1",
+          "a": "1",
+          "c": "1"
+        }
+      },
+      "S": {
+        "answer": false,
+        "obs": {
+          "b": "1",
+          "a": "3",
+          "c": "0"
+        }
+      },
+      "J": {
+        "answer": true,
+        "obs": {
+          "b": "1",
+          "a": "3",
+          "c": "0"
+        }
+      },
+      "P": {
+        "answer": false,
+        "obs": {
+          "b": "4",
+          "a": "3",
+          "c": "1"
+        }
+      },
+      "K": {
+        "answer": false,
+        "obs": {
+          "b": "1",
+          "a": "2",
+          "c": "1"
+        }
+      }
+    },
+    "eligible": [
+      "G",
+      "P",
+      "K"
+    ],
+    "actual": "K",
+    "menu": {
+      "a": "bottom-left entry c",
+      "b": "top-right entry b",
+      "c": "indicator that bottom-right entry d is even"
+    },
+    "evidence": "The top-left entry a is 2.",
+    "domain": "formal"
+  },
+  "formal-14": {
+    "family": "hamming",
+    "variant": "1",
+    "text": "Is the triangle inequality for x,y,z an equality, d(x,z)=d(x,y)+d(y,z)?\nFor binary words Hamming distance counts differing coordinates. For a common intermediate word y, d(x,z)<=d(x,y)+d(y,z) (hammingDist_triangle).\nExactly one listed candidate describes the object in this record. Read each indicator as 1 for yes and 0 for no.\nS: x=000, y=101, z=110.\nK: x=010, y=000, z=011.\nJ: x=100, y=011, z=011.\nG: x=000, y=100, z=101.\nV: x=010, y=011, z=101.\nP: x=000, y=101, z=101.",
+    "states": {
+      "S": {
+        "answer": false,
+        "obs": {
+          "a": "0",
+          "b": "0",
+          "c": "1"
+        }
+      },
+      "K": {
+        "answer": false,
+        "obs": {
+          "a": "0",
+          "b": "1",
+          "c": "0"
+        }
+      },
+      "J": {
+        "answer": true,
+        "obs": {
+          "a": "0",
+          "b": "1",
+          "c": "0"
+        }
+      },
+      "G": {
+        "answer": true,
+        "obs": {
+          "a": "1",
+          "b": "1",
+          "c": "1"
+        }
+      },
+      "V": {
+        "answer": true,
+        "obs": {
+          "a": "0",
+          "b": "1",
+          "c": "0"
+        }
+      },
+      "P": {
+        "answer": true,
+        "obs": {
+          "a": "0",
+          "b": "1",
+          "c": "1"
+        }
+      }
+    },
+    "eligible": [
+      "K",
+      "J",
+      "V"
+    ],
+    "actual": "J",
+    "menu": {
+      "a": "indicator that y has exactly one one",
+      "b": "last bit of z",
+      "c": "first bit of y"
+    },
+    "evidence": "The number of ones in x is 1.",
+    "domain": "formal"
+  },
+  "formal-15": {
+    "family": "hamming",
+    "variant": "2",
+    "text": "Is the triangle inequality for x,y,z an equality, d(x,z)=d(x,y)+d(y,z)?\nFor binary words Hamming distance counts differing coordinates. For a common intermediate word y, d(x,z)<=d(x,y)+d(y,z) (hammingDist_triangle).\nExactly one listed candidate describes the object in this record. Read each indicator as 1 for yes and 0 for no.\nS: x=000, y=101, z=110.\nK: x=010, y=000, z=011.\nJ: x=100, y=011, z=011.\nG: x=000, y=100, z=101.\nV: x=010, y=011, z=101.\nP: x=000, y=101, z=101.",
+    "states": {
+      "S": {
+        "answer": false,
+        "obs": {
+          "a": "0",
+          "b": "0",
+          "c": "1"
+        }
+      },
+      "K": {
+        "answer": false,
+        "obs": {
+          "a": "0",
+          "b": "1",
+          "c": "0"
+        }
+      },
+      "J": {
+        "answer": true,
+        "obs": {
+          "a": "0",
+          "b": "1",
+          "c": "0"
+        }
+      },
+      "G": {
+        "answer": true,
+        "obs": {
+          "a": "1",
+          "b": "1",
+          "c": "1"
+        }
+      },
+      "V": {
+        "answer": true,
+        "obs": {
+          "a": "0",
+          "b": "1",
+          "c": "0"
+        }
+      },
+      "P": {
+        "answer": true,
+        "obs": {
+          "a": "0",
+          "b": "1",
+          "c": "1"
+        }
+      }
+    },
+    "eligible": [
+      "S",
+      "G",
+      "P"
+    ],
+    "actual": "P",
+    "menu": {
+      "a": "indicator that y has exactly one one",
+      "b": "last bit of z",
+      "c": "first bit of y"
+    },
+    "evidence": "The number of ones in x is 0.",
+    "domain": "formal"
+  },
+  "formal-16": {
+    "family": "neighbors",
+    "variant": "1",
+    "text": "Is vertex 1 a common neighbor of vertices 0 and 2?\nIn a simple graph, u is in commonNeighbors(v,w) exactly if v-u and w-u are both edges (SimpleGraph.mem_commonNeighbors). The displayed edge list is complete and undirected.\nExactly one listed candidate describes the object in this record. Read each indicator as 1 for yes and 0 for no.\nJ: edges 0-4 1-4.\nK: edges 0-1 1-2.\nG: edges 0-4 1-2.\nP: edges 0-1 1-2 1-4 2-3.\nV: edges 0-1 1-2 2-3 2-4.\nS: edges 0-1 1-4 2-3 3-4.",
+    "states": {
+      "J": {
+        "answer": false,
+        "obs": {
+          "a": "0",
+          "b": "1",
+          "c": "0"
+        }
+      },
+      "K": {
+        "answer": true,
+        "obs": {
+          "a": "0",
+          "b": "1",
+          "c": "0"
+        }
+      },
+      "G": {
+        "answer": false,
+        "obs": {
+          "a": "0",
+          "b": "1",
+          "c": "0"
+        }
+      },
+      "P": {
+        "answer": true,
+        "obs": {
+          "a": "1",
+          "b": "1",
+          "c": "0"
+        }
+      },
+      "V": {
+        "answer": true,
+        "obs": {
+          "a": "1",
+          "b": "1",
+          "c": "1"
+        }
+      },
+      "S": {
+        "answer": false,
+        "obs": {
+          "a": "2",
+          "b": "1",
+          "c": "0"
+        }
+      }
+    },
+    "eligible": [
+      "P",
+      "V",
+      "S"
+    ],
+    "actual": "P",
+    "menu": {
+      "a": "degree of vertex 3",
+      "b": "degree of vertex 0",
+      "c": "indicator that the degree of vertex 2 exceeds 2"
+    },
+    "evidence": "The total edge count is 4.",
+    "domain": "formal"
+  },
+  "formal-17": {
+    "family": "neighbors",
+    "variant": "2",
+    "text": "Is vertex 1 a common neighbor of vertices 0 and 2?\nIn a simple graph, u is in commonNeighbors(v,w) exactly if v-u and w-u are both edges (SimpleGraph.mem_commonNeighbors). The displayed edge list is complete and undirected.\nExactly one listed candidate describes the object in this record. Read each indicator as 1 for yes and 0 for no.\nJ: edges 0-4 1-4.\nK: edges 0-1 1-2.\nG: edges 0-4 1-2.\nP: edges 0-1 1-2 1-4 2-3.\nV: edges 0-1 1-2 2-3 2-4.\nS: edges 0-1 1-4 2-3 3-4.",
+    "states": {
+      "J": {
+        "answer": false,
+        "obs": {
+          "a": "0",
+          "b": "1",
+          "c": "0"
+        }
+      },
+      "K": {
+        "answer": true,
+        "obs": {
+          "a": "0",
+          "b": "1",
+          "c": "0"
+        }
+      },
+      "G": {
+        "answer": false,
+        "obs": {
+          "a": "0",
+          "b": "1",
+          "c": "0"
+        }
+      },
+      "P": {
+        "answer": true,
+        "obs": {
+          "a": "1",
+          "b": "1",
+          "c": "0"
+        }
+      },
+      "V": {
+        "answer": true,
+        "obs": {
+          "a": "1",
+          "b": "1",
+          "c": "1"
+        }
+      },
+      "S": {
+        "answer": false,
+        "obs": {
+          "a": "2",
+          "b": "1",
+          "c": "0"
+        }
+      }
+    },
+    "eligible": [
+      "J",
+      "K",
+      "G"
+    ],
+    "actual": "G",
+    "menu": {
+      "a": "degree of vertex 3",
+      "b": "degree of vertex 0",
+      "c": "indicator that the degree of vertex 2 exceeds 2"
+    },
+    "evidence": "The total edge count is 2.",
+    "domain": "formal"
+  },
+  "formal-18": {
+    "family": "quadratics",
+    "variant": "1",
+    "text": "Is there exactly one rational number x satisfying ax^2+bx+c=0?\nFor a nonzero leading coefficient in the rationals, a quadratic has a unique root exactly if b^2-4*a*c=0 (discrim_eq_zero_iff).\nExactly one listed candidate describes the object in this record. Read each indicator as 1 for yes and 0 for no.\nS: (a,b,c)=(2,4,2).\nK: (a,b,c)=(3,-4,1).\nG: (a,b,c)=(2,0,0).\nP: (a,b,c)=(2,-4,2).\nV: (a,b,c)=(3,-6,3).\nJ: (a,b,c)=(3,-4,7).",
+    "states": {
+      "S": {
+        "answer": true,
+        "obs": {
+          "a": "1",
+          "b": "0",
+          "c": "4"
+        }
+      },
+      "K": {
+        "answer": false,
+        "obs": {
+          "a": "0",
+          "b": "0",
+          "c": "4"
+        }
+      },
+      "G": {
+        "answer": true,
+        "obs": {
+          "a": "0",
+          "b": "0",
+          "c": "0"
+        }
+      },
+      "P": {
+        "answer": true,
+        "obs": {
+          "a": "0",
+          "b": "0",
+          "c": "4"
+        }
+      },
+      "V": {
+        "answer": true,
+        "obs": {
+          "a": "0",
+          "b": "0",
+          "c": "6"
+        }
+      },
+      "J": {
+        "answer": false,
+        "obs": {
+          "a": "0",
+          "b": "1",
+          "c": "4"
+        }
+      }
+    },
+    "eligible": [
+      "K",
+      "V",
+      "J"
+    ],
+    "actual": "K",
+    "menu": {
+      "a": "indicator that b is positive",
+      "b": "indicator that c is at least 5",
+      "c": "absolute value of b"
+    },
+    "evidence": "The leading coefficient a is 3.",
+    "domain": "formal"
+  },
+  "formal-19": {
+    "family": "quadratics",
+    "variant": "2",
+    "text": "Is there exactly one rational number x satisfying ax^2+bx+c=0?\nFor a nonzero leading coefficient in the rationals, a quadratic has a unique root exactly if b^2-4*a*c=0 (discrim_eq_zero_iff).\nExactly one listed candidate describes the object in this record. Read each indicator as 1 for yes and 0 for no.\nS: (a,b,c)=(2,4,2).\nK: (a,b,c)=(3,-4,1).\nG: (a,b,c)=(2,0,0).\nP: (a,b,c)=(2,-4,2).\nV: (a,b,c)=(3,-6,3).\nJ: (a,b,c)=(3,-4,7).",
+    "states": {
+      "S": {
+        "answer": true,
+        "obs": {
+          "a": "1",
+          "b": "0",
+          "c": "4"
+        }
+      },
+      "K": {
+        "answer": false,
+        "obs": {
+          "a": "0",
+          "b": "0",
+          "c": "4"
+        }
+      },
+      "G": {
+        "answer": true,
+        "obs": {
+          "a": "0",
+          "b": "0",
+          "c": "0"
+        }
+      },
+      "P": {
+        "answer": true,
+        "obs": {
+          "a": "0",
+          "b": "0",
+          "c": "4"
+        }
+      },
+      "V": {
+        "answer": true,
+        "obs": {
+          "a": "0",
+          "b": "0",
+          "c": "6"
+        }
+      },
+      "J": {
+        "answer": false,
+        "obs": {
+          "a": "0",
+          "b": "1",
+          "c": "4"
+        }
+      }
+    },
+    "eligible": [
+      "S",
+      "G",
+      "P"
+    ],
+    "actual": "P",
+    "menu": {
+      "a": "indicator that b is positive",
+      "b": "indicator that c is at least 5",
+      "c": "absolute value of b"
+    },
+    "evidence": "The leading coefficient a is 2.",
+    "domain": "formal"
+  },
+  "formal-20": {
+    "family": "swaps",
+    "variant": "1",
+    "text": "Does the displayed product of three permutations have sign -1?\nSigns multiply under composition (Equiv.Perm.sign_mul). A swap has sign -1 if its symbols differ and +1 if they agree (Equiv.Perm.sign_swap'). For any image calculation apply the rightmost swap first.\nExactly one listed candidate describes the object in this record. Read each indicator as 1 for yes and 0 for no.\nS: swaps (0,2) (0,0) (1,2).\nP: swaps (0,0) (0,0) (2,2).\nV: swaps (2,2) (0,2) (0,0).\nG: swaps (2,2) (0,2) (0,1).\nJ: swaps (2,2) (0,2) (1,1).\nK: swaps (0,0) (1,1) (2,2).",
+    "states": {
+      "S": {
+        "answer": false,
+        "obs": {
+          "c": "0",
+          "b": "0",
+          "a": "1"
+        }
+      },
+      "P": {
+        "answer": false,
+        "obs": {
+          "c": "1",
+          "b": "0",
+          "a": "1"
+        }
+      },
+      "V": {
+        "answer": true,
+        "obs": {
+          "c": "0",
+          "b": "0",
+          "a": "0"
+        }
+      },
+      "G": {
+        "answer": false,
+        "obs": {
+          "c": "0",
+          "b": "0",
+          "a": "0"
+        }
+      },
+      "J": {
+        "answer": true,
+        "obs": {
+          "c": "0",
+          "b": "0",
+          "a": "0"
+        }
+      },
+      "K": {
+        "answer": false,
+        "obs": {
+          "c": "1",
+          "b": "1",
+          "a": "1"
+        }
+      }
+    },
+    "eligible": [
+      "S",
+      "P",
+      "K"
+    ],
+    "actual": "K",
+    "menu": {
+      "a": "indicator that the second symbol of the rightmost swap is 2",
+      "b": "first symbol of the middle swap",
+      "c": "indicator that the product fixes symbol 0"
+    },
+    "evidence": "The first symbol of the leftmost swap is 0.",
+    "domain": "formal"
+  },
+  "formal-21": {
+    "family": "swaps",
+    "variant": "2",
+    "text": "Does the displayed product of three permutations have sign -1?\nSigns multiply under composition (Equiv.Perm.sign_mul). A swap has sign -1 if its symbols differ and +1 if they agree (Equiv.Perm.sign_swap'). For any image calculation apply the rightmost swap first.\nExactly one listed candidate describes the object in this record. Read each indicator as 1 for yes and 0 for no.\nS: swaps (0,2) (0,0) (1,2).\nP: swaps (0,0) (0,0) (2,2).\nV: swaps (2,2) (0,2) (0,0).\nG: swaps (2,2) (0,2) (0,1).\nJ: swaps (2,2) (0,2) (1,1).\nK: swaps (0,0) (1,1) (2,2).",
+    "states": {
+      "S": {
+        "answer": false,
+        "obs": {
+          "c": "0",
+          "b": "0",
+          "a": "1"
+        }
+      },
+      "P": {
+        "answer": false,
+        "obs": {
+          "c": "1",
+          "b": "0",
+          "a": "1"
+        }
+      },
+      "V": {
+        "answer": true,
+        "obs": {
+          "c": "0",
+          "b": "0",
+          "a": "0"
+        }
+      },
+      "G": {
+        "answer": false,
+        "obs": {
+          "c": "0",
+          "b": "0",
+          "a": "0"
+        }
+      },
+      "J": {
+        "answer": true,
+        "obs": {
+          "c": "0",
+          "b": "0",
+          "a": "0"
+        }
+      },
+      "K": {
+        "answer": false,
+        "obs": {
+          "c": "1",
+          "b": "1",
+          "a": "1"
+        }
+      }
+    },
+    "eligible": [
+      "V",
+      "G",
+      "J"
+    ],
+    "actual": "G",
+    "menu": {
+      "a": "indicator that the second symbol of the rightmost swap is 2",
+      "b": "first symbol of the middle swap",
+      "c": "indicator that the product fixes symbol 0"
+    },
+    "evidence": "The first symbol of the leftmost swap is 2.",
+    "domain": "formal"
+  },
+  "formal-22": {
+    "family": "unions",
+    "variant": "1",
+    "text": "Is the union of A and B of cardinality at least 3?\nFor finite sets, |A union B| + |A intersect B| = |A|+|B| (Finset.card_union_add_card_inter).\nExactly one listed candidate describes the object in this record. Read each indicator as 1 for yes and 0 for no.\nS: A=(0, 2, 3), B=(0, 2).\nV: A=(0, 2, 3), B=(1, 3).\nP: A=(3,), B=(2,).\nG: A=(2,), B=(0,).\nK: A=(1, 2, 3), B=(0, 2, 3).\nJ: A=(3,), B=(1, 2).",
+    "states": {
+      "S": {
+        "answer": true,
+        "obs": {
+          "a": "1",
+          "b": "2",
+          "c": "0"
+        }
+      },
+      "V": {
+        "answer": true,
+        "obs": {
+          "a": "1",
+          "b": "2",
+          "c": "1"
+        }
+      },
+      "P": {
+        "answer": false,
+        "obs": {
+          "a": "1",
+          "b": "1",
+          "c": "0"
+        }
+      },
+      "G": {
+        "answer": false,
+        "obs": {
+          "a": "0",
+          "b": "1",
+          "c": "0"
+        }
+      },
+      "K": {
+        "answer": true,
+        "obs": {
+          "a": "1",
+          "b": "3",
+          "c": "1"
+        }
+      },
+      "J": {
+        "answer": true,
+        "obs": {
+          "a": "1",
+          "b": "2",
+          "c": "0"
+        }
+      }
+    },
+    "eligible": [
+      "S",
+      "V",
+      "K"
+    ],
+    "actual": "V",
+    "menu": {
+      "a": "indicator that 3 belongs to A",
+      "b": "size of B",
+      "c": "indicator that 3 belongs to B"
+    },
+    "evidence": "The number of elements of A is 3.",
+    "domain": "formal"
+  },
+  "formal-23": {
+    "family": "unions",
+    "variant": "2",
+    "text": "Is the union of A and B of cardinality at least 3?\nFor finite sets, |A union B| + |A intersect B| = |A|+|B| (Finset.card_union_add_card_inter).\nExactly one listed candidate describes the object in this record. Read each indicator as 1 for yes and 0 for no.\nS: A=(0, 2, 3), B=(0, 2).\nV: A=(0, 2, 3), B=(1, 3).\nP: A=(3,), B=(2,).\nG: A=(2,), B=(0,).\nK: A=(1, 2, 3), B=(0, 2, 3).\nJ: A=(3,), B=(1, 2).",
+    "states": {
+      "S": {
+        "answer": true,
+        "obs": {
+          "a": "1",
+          "b": "2",
+          "c": "0"
+        }
+      },
+      "V": {
+        "answer": true,
+        "obs": {
+          "a": "1",
+          "b": "2",
+          "c": "1"
+        }
+      },
+      "P": {
+        "answer": false,
+        "obs": {
+          "a": "1",
+          "b": "1",
+          "c": "0"
+        }
+      },
+      "G": {
+        "answer": false,
+        "obs": {
+          "a": "0",
+          "b": "1",
+          "c": "0"
+        }
+      },
+      "K": {
+        "answer": true,
+        "obs": {
+          "a": "1",
+          "b": "3",
+          "c": "1"
+        }
+      },
+      "J": {
+        "answer": true,
+        "obs": {
+          "a": "1",
+          "b": "2",
+          "c": "0"
+        }
+      }
+    },
+    "eligible": [
+      "P",
+      "G",
+      "J"
+    ],
+    "actual": "P",
+    "menu": {
+      "a": "indicator that 3 belongs to A",
+      "b": "size of B",
+      "c": "indicator that 3 belongs to B"
+    },
+    "evidence": "The number of elements of A is 1.",
+    "domain": "formal"
+  }
+}
