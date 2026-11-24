@@ -1,0 +1,18 @@
+{
+  "source": "src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/ThetaKernels/TPGTail.lean",
+  "original": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "blob": "fc15b2e89434b11489869e87c10fea637afc16cb",
+  "lines": [
+    17,
+    64
+  ],
+  "fragment_sha256": "a4bc8e7c66e1642c34b65d58ae80d1edc2bc0f96ce7cbc72cbb0c72ddbfd315d",
+  "wrapper_sha256": "a16820a1635fa867a0f94fc5c4cffacdeec35993c0887bd26594aa61bcaa026a",
+  "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "lean": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "compile_and_replay_output": [
+    "'_private.HaarTailTransport.0.UpperTheory.TP.abs_tail_pk' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "replaying HaarTailTransport"
+  ],
+  "scope": "Exact original private proof and statement, different import environment. Full TPGTail module and automorphic application not replayed here."
+}

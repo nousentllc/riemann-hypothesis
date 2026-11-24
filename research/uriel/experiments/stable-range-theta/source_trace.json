@@ -1,0 +1,1134 @@
+{
+  "commit": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "scope": "Targeted source reading. Passage hashes and textual reference checks are not a kernel dependency graph.",
+  "files": [
+    {
+      "path": "src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/LintegralInfiniteScaling.lean",
+      "git_blob": "b37ce968819f42c2165fa6fdb6da5ac49c9524b6",
+      "sha256": "fb13e3b645c5d576e537ad9a79f6f4a8287543235633f449b16b3cc4c26ffbc8",
+      "spans": [
+        {
+          "lines": [
+            36,
+            50
+          ],
+          "sha256": "8b0ba20386a28362ef4935d73eef340026d4c604b2b24409596215c4699bdf3d",
+          "body_anchors": []
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ModulusOfNormEqAbs.lean",
+      "git_blob": "0bd4ed91e26647c41bd96f15dcede45a091d2726",
+      "sha256": "0d947b78bc547a94258c797d72703a2260a467ce48bcd5ee171b3b17fdbb3069",
+      "spans": [
+        {
+          "lines": [
+            15,
+            16
+          ],
+          "sha256": "f77b20592810becae8ccbd47b51092631697d0ad36332bc5aa1f4ac13fa2b7c5",
+          "body_anchors": []
+        },
+        {
+          "lines": [
+            26,
+            42
+          ],
+          "sha256": "c638c6e8cddc1c402b2aadbe13a8eed90271adc5b5d216c8b50f636a4c851a16",
+          "body_anchors": []
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/DnEndsTop.lean",
+      "git_blob": "5e5955b5c1071f25eb2bd897d1af05a3c2ee8bed",
+      "sha256": "f531fa90ca3bb035ada5ce1622ea599baea584617c33a3c9166dd0229471a5a8",
+      "spans": [
+        {
+          "lines": [
+            15,
+            16
+          ],
+          "sha256": "93fe5224e0ec651a3b3e77ff7582c9e3308dfe2123639fe5ecebd103b2fdd5d7",
+          "body_anchors": [
+            "linkedUnlE_holds_alt hH",
+            "unitary_three_automorphy_dense_of_prints hH"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/PublishedHypothesesFromPatching.lean",
+      "git_blob": "8a57b35c343ed717c225b04710c835f102deaa3b",
+      "sha256": "45c745d53d11358f0a9bedbd35171231c85260acc57cad4886b754652a24890d",
+      "spans": [
+        {
+          "lines": [
+            98,
+            103
+          ],
+          "sha256": "6c1b2e076e9c2fe4a6a0e56c6e25d27859361dd40b88a9b0e01c46c79b1fbaef",
+          "body_anchors": [
+            "litN := hN"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/TopMainZj.lean",
+      "git_blob": "23b7a05606074da30e6f8eb3b3821e877a968d3e",
+      "sha256": "f824d3f7873a493432bdfcbdc279fa82d70a6a9dbaac44c2a30316cada2eae3e",
+      "spans": [
+        {
+          "lines": [
+            38,
+            58
+          ],
+          "sha256": "c5bd71e08dff2f601e660a91cd754efe59845b6bce50445ffe7c261b006eaa68",
+          "body_anchors": [
+            "automorphic_inputs_from_literature O bc gal",
+            "gal := gal",
+            "v_window_of_literal_automorphy_n"
+          ]
+        },
+        {
+          "lines": [
+            71,
+            74
+          ],
+          "sha256": "9d33652bb95a10954aada8e1ac1ed262165d7de342b428c9fa6535d2d41eae9e",
+          "body_anchors": [
+            "v_window_of_depth_zero_residual_bc_cm O bc gal"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/UnitaryThreeInputsOfLiterature.lean",
+      "git_blob": "39d8867a0c504bbfc21a577b18af87b3ceec286f",
+      "sha256": "ca59af321e881ad472c59cbf343bac1e72390fd16481b585734626d6f22c03d4",
+      "spans": [
+        {
+          "lines": [
+            25,
+            30
+          ],
+          "sha256": "197843c431a5828644264b2477ee6fed6c9109ffcafdc154b62012d86219b832",
+          "body_anchors": [
+            "adjoint_automorphy_w_of_printed_hida_window hH hR",
+            "rowOf' hH.litN.aut.gal",
+            "weight_compatible_descent hH hR"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/VwinOfRow.lean",
+      "git_blob": "4cba179acd45ac08d3cad21f51c9b9d62715a9a4",
+      "sha256": "d2df45a5cf337190ae6f885e8e43056ae4e804ae8da250a2ab0abd64b1ca7080",
+      "spans": [
+        {
+          "lines": [
+            4,
+            5
+          ],
+          "sha256": "6d45282eb0d782d8b4ad8028775528b74606ea95c6f4e0adeba68cbb2e0bbf7f",
+          "body_anchors": [
+            "OpenImageCondition.mk h",
+            "automorphic_window_of_inputs",
+            "baseChangeN h"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/ModularityArgument/ThresholdArguments/DenseThresholdCases/WindowBoundOfLiteratureLevel.lean",
+      "git_blob": "01c499108485b16d33791a9e46fbb1e2af865522",
+      "sha256": "576e18ba083451bcffe9e94075dc8d22ccfa6995fa8d30d68ea108b1cc910cf0",
+      "spans": [
+        {
+          "lines": [
+            25,
+            34
+          ],
+          "sha256": "e4879626bfc3e44b25f1def7c1850e0cb4b0523126b263b648db532dda8404c1",
+          "body_anchors": [
+            "ends0_alt hH",
+            "h4.1 h4.2",
+            "hE.1",
+            "hE.2",
+            "of_four_alt",
+            "published_hypotheses_from_patching_alt hN"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/ExistsPageN.lean",
+      "git_blob": "398eb8ed3528aa2666e9d3b2b09a582ad4390dd7",
+      "sha256": "732c3347fb02e410cf9af8831afdbba1d230fc522c3dbbccdb4b708e5dde73db",
+      "spans": [
+        {
+          "lines": [
+            12,
+            17
+          ],
+          "sha256": "3d494bcb05395d72f63f6ff80303dd28e9aa546527bb6be5fabe80543bef0049",
+          "body_anchors": []
+        },
+        {
+          "lines": [
+            29,
+            49
+          ],
+          "sha256": "d31d6cc89ec91227bc42d4a01e1baf7aff0f61d1dfa1a92e4304a1ce1f600d4d",
+          "body_anchors": []
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean",
+      "git_blob": "ee340012ab19713a8acfecf8adc6a331cbc2f1a4",
+      "sha256": "a5f71e107087e37b2c598709795b0f56c0a6741cf1e8ab99ee1f97e2fce0fe34",
+      "spans": [
+        {
+          "lines": [
+            7,
+            11
+          ],
+          "sha256": "f64d1627ac69490a35b0eee70efb0b9e7b5502b21e47dff41a19b4f6fa432773",
+          "body_anchors": [
+            "galoisLocalGlobalStrong_recParameter",
+            "vwin_of_row h"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/CrystallineDescent/JoinAll.lean",
+      "git_blob": "eae1e32106a426c6e6a15c13a25b84d982abc697",
+      "sha256": "c7c762365def6843c4be6521caf4148204e6d7e7a4f006e1c895f9e7abc25af2",
+      "spans": [
+        {
+          "lines": [
+            26,
+            28
+          ],
+          "sha256": "c9604bb3a82412f9549bdd45e17966215b0eea3e33a552194850a1eb98770bda",
+          "body_anchors": [
+            "allCoreQ_of hS hT"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/CrystallineDescent/LimOddOfLimFinOdd.lean",
+      "git_blob": "e4aaa0fc9f7a97c792916cf6346e3fd624fa3268",
+      "sha256": "687f5491c0dc480665fbcd45900da8333ba43cb2bd4ddbb77aedc8301e1ca191",
+      "spans": [
+        {
+          "lines": [
+            31,
+            62
+          ],
+          "sha256": "79bfff3f713008150d06218f207b9c4a0f8aca8f7d365eb7cac5e18da70a7742",
+          "body_anchors": [
+            "core_of_limOdd hT",
+            "core_of_limU hT",
+            "joinAll_holds hT",
+            "joinAll_of oneUs_holds subtractQ_holds",
+            "rowCsd_of hT"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/CrystallineDescent/ToCoreK.lean",
+      "git_blob": "e4235a62a4bce78539c94be995d8f5a0ff59fac3",
+      "sha256": "86cc3aa5f49853a1ef31b857e05508730a987ffad91a820e8429a1f8e7da12ae",
+      "spans": [
+        {
+          "lines": [
+            7,
+            9
+          ],
+          "sha256": "7b1dcfd94f1f989d59581e8b520fbc5565f751c5bac3b11abdf4b7e2acc9f855",
+          "body_anchors": [
+            "toCore (UpperTheory.Gal.TP.twoUpOK_of_k hT)"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/Development.lean",
+      "git_blob": "4d4d9506494734f28fce7d39bac1a50650ecf148",
+      "sha256": "b78ea71866812c4d1f3df65f1f3f3e702fa65ec2bb1ea61ca1a250b6fdd536bd",
+      "spans": [
+        {
+          "lines": [
+            20,
+            31
+          ],
+          "sha256": "7c695b22d42ded18d3de229d90be5b0ef1a1314075d3ca400d44d634559eadef",
+          "body_anchors": [
+            "Core.toCoreK up",
+            "Row0.row0b recT (galoisLocalGlobal_of_geometry_lift geo up)",
+            "rest (coreAll_of"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/GaloisRepresentationsOfThetaLift.lean",
+      "git_blob": "869a5e68fcff90c1ee29a6dae75594ed8a59ada9",
+      "sha256": "3f72f1644a6214bb5b90a5e9bac5e33b0474d52eb22f2f1841d443ed342531c2",
+      "spans": [
+        {
+          "lines": [
+            6,
+            6
+          ],
+          "sha256": "2cf3d0334840dd355b4b5afcc5eaf5ee38367e35f38cd0e333a7af09c1f2423d",
+          "body_anchors": [
+            "galoisLocalGlobalStrong_of_geometry_lift UpperTheory.Gal.Int.Geo.geoOne_holds up"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/IntegralStructures/RowSrc.lean",
+      "git_blob": "f769999ac5e49241993e5efbf81e4d2cded18acd",
+      "sha256": "0cfbca6cb7d1da543ee9d24c30faeeb3f68838f91c4f6c2c0e682e025c8b9a44",
+      "spans": [
+        {
+          "lines": [
+            6,
+            6
+          ],
+          "sha256": "5c441f24ff711aae5745c11cb94c73193416f466d1ade8eb848626cc84a679e1",
+          "body_anchors": [
+            "galoisRepresentations_of_thetaLift UpperTheory.TP.K.tLiftK"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/BlockDeterminants/AbsNe.lean",
+      "git_blob": "c04ecf97717ee43cc5c397098c2f425df93548fa",
+      "sha256": "ae05d6b3c6d978d5f7265c69c65385aa4eef63e406c0d4d5adec9c35621c80c9",
+      "spans": [
+        {
+          "lines": [
+            5,
+            38
+          ],
+          "sha256": "4630df19d3847fb2b7a949637b63ac79f534dc50f5997b8714fb448cb1bbde19",
+          "body_anchors": []
+        },
+        {
+          "lines": [
+            39,
+            64
+          ],
+          "sha256": "95ec06b89b8f0a1b89e60125b10fcebabb07e72c32eca0cc66eb9a293ff13240",
+          "body_anchors": []
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/BlockDeterminants/ProjEx.lean",
+      "git_blob": "6bae279f492014fff79936706e37e72d6f4c5385",
+      "sha256": "35913e06fde1a5e0cd9488e3f65728bd42693d17e1a6c56a36c5088831ff2c0a",
+      "spans": [
+        {
+          "lines": [
+            98,
+            119
+          ],
+          "sha256": "7baee9f1e2c06037901c2282ba6968c586ff651463a5a26db0ed03f239926e68",
+          "body_anchors": []
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/CoreAtQIffRowQ.lean",
+      "git_blob": "6ceeb02662a6bc41213d983a4a1ef6381c77589f",
+      "sha256": "08041bbfe66ddd02f9dd26b69d96c4040db87fd8e9ff38de0604ccf6351efba9",
+      "spans": [
+        {
+          "lines": [
+            103,
+            161
+          ],
+          "sha256": "35a02345dd34109ff7895e9a1d01eb3f7ee72b60e678f274054c06986cf16a86",
+          "body_anchors": [
+            "frobIdQ hDI",
+            "hO (n + t) hodd U\u2081",
+            "hO (n + t) hodd U\u2082",
+            "hPA E \u03a9",
+            "hT U hU lam hl",
+            "have hid",
+            "tw s (L \u03ba m)"
+          ]
+        },
+        {
+          "lines": [
+            195,
+            220
+          ],
+          "sha256": "88d8f3dcd30592748795d3e921fed036a398d468647ccd3ada014f6a16134567",
+          "body_anchors": [
+            "Nat.even_or_odd n",
+            "atPlaceQ hCE",
+            "coreAtQ_iff_rowQ",
+            "exact hO n ho",
+            "hT E hF"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/HalfIndexLattices/SplitStab.lean",
+      "git_blob": "4f15d099a42672d333d3eac45cebedbdaec7bd98",
+      "sha256": "c724fb9f8fc7ba20c562902b1e5601f008c77e9777886bb8790af80eb949546a",
+      "spans": [
+        {
+          "lines": [
+            16,
+            22
+          ],
+          "sha256": "78860c9982848cdd0a9bea932ef66e1cec64dad0b73d040ceea0027272f7d1a6",
+          "body_anchors": []
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/HalfIndexLattices/TLiftK.lean",
+      "git_blob": "4b36fc43e988270944cef2fc1b5e9ee1493fc275",
+      "sha256": "8a58c624cd91dbfb4d3e8b7735e232e1463dd51d0daa7a6174b99349b31d6fc5",
+      "spans": [
+        {
+          "lines": [
+            12,
+            23
+          ],
+          "sha256": "927e51b4ef3c9692a0247b62b6f1a93d2668aebedd0c5f02fbba355cf708be7c",
+          "body_anchors": []
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/SchurStep.lean",
+      "git_blob": "8941c842b256473c103e2d04ef94e902534ed4b5",
+      "sha256": "901ac70f413697a2cf0aea4a35f8d3bc419699c48e01e62a8e06d49503a2e07c",
+      "spans": [
+        {
+          "lines": [
+            23,
+            26
+          ],
+          "sha256": "0f8bcea672cb5cc4132bdb6e432d44811d1eb7bea92708bb5a3a5f4652f9ff87",
+          "body_anchors": []
+        },
+        {
+          "lines": [
+            103,
+            112
+          ],
+          "sha256": "d34f46edb16b3524fc6a0e6d546d384c52f1256e06782a2fcadbc09405460d79",
+          "body_anchors": []
+        },
+        {
+          "lines": [
+            183,
+            189
+          ],
+          "sha256": "08d4aa4c311ad0ae90069393aaf48a296de878c110f2ce71fd1e03ccf017bc5a",
+          "body_anchors": []
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/SplitLineSubtraction/PEigTransfer.lean",
+      "git_blob": "6802f71a341554ede889fc97e17c20f4d45408da",
+      "sha256": "c8d8a4d653f50f152113ab55206ee24bb48171ac00b80105e790966345b1d4e0",
+      "spans": [
+        {
+          "lines": [
+            13,
+            34
+          ],
+          "sha256": "ebba2d7476e2d54d40217208e43e324f6eecbaf62a1c13e325cc9b6c86539e8a",
+          "body_anchors": []
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/SplitLineSubtraction/PPeelAll.lean",
+      "git_blob": "6bb659474a362f1e0a810570834b056487daba88",
+      "sha256": "31c3091acb5937042b7d8484c1f5b29ef7bebe55750f5bd1713109a08cbc3932",
+      "spans": [
+        {
+          "lines": [
+            17,
+            50
+          ],
+          "sha256": "9597bd994424e00be2b83c7b6ac95284372390760f26c3cdc5e65de2de4725f7",
+          "body_anchors": []
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/SplitLineSubtraction/PPeelOne.lean",
+      "git_blob": "5d0c19918ce7add7db6a20b898c8fa5fbd1d054f",
+      "sha256": "506368765418fab098369c5832f3118ce756e13659b04ec8231177b8969934d2",
+      "spans": [
+        {
+          "lines": [
+            13,
+            42
+          ],
+          "sha256": "039a73a38f3ded36b6086b84a771749e691c83f9de2f4a48737b783a37dc4f05",
+          "body_anchors": [
+            "fun j h => hne",
+            "hTr \u0393",
+            "mul_right_cancel\u2080 hX",
+            "\u27e8s, hs\u27e9 := hSplit"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/SplitLineSubtraction/PSplitLine.lean",
+      "git_blob": "efd54f733d6049397c4fcae6cd90ca9e08604a0a",
+      "sha256": "fe5ce0be3d755ac411ad1adae172a4dba1d44967bed745053deb674b11cc554f",
+      "spans": [
+        {
+          "lines": [
+            100,
+            132
+          ],
+          "sha256": "060c3cd4f86c3d40dda8b50c9d7587afde6fc9637fa333d4f6a825b1f0f05f5f",
+          "body_anchors": []
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/ThetaKernels/GalTPDefs.lean",
+      "git_blob": "42831f56b9baacfaca0cde1207a1337882556e4c",
+      "sha256": "47f54c0dac340626f9b602eb4ad10e27543f496e61f995b71f55ce205642a20c",
+      "spans": [
+        {
+          "lines": [
+            45,
+            56
+          ],
+          "sha256": "57d17369d4e62300456f2fd4e55f70f3bca7aca9a2c7660776f003c63857ae84",
+          "body_anchors": []
+        },
+        {
+          "lines": [
+            45,
+            60
+          ],
+          "sha256": "0b0b0fa83fca35cec050325114896003a6fbfbead92fdb9c6d8e36bcec47de02",
+          "body_anchors": []
+        },
+        {
+          "lines": [
+            61,
+            68
+          ],
+          "sha256": "e9d717b4e7b21833cfddbb38defc1e3e7dc522c3b864c37555555d1aeb84116c",
+          "body_anchors": []
+        },
+        {
+          "lines": [
+            91,
+            105
+          ],
+          "sha256": "191596cbf779385c820864549dbdd6089b00e37df1c7b8d6a749a59e714b7634",
+          "body_anchors": []
+        },
+        {
+          "lines": [
+            106,
+            129
+          ],
+          "sha256": "2dacad5de87e3ec70ebce9613ebe0cf41e182ea21780df679a8acfc018b2a71a",
+          "body_anchors": []
+        },
+        {
+          "lines": [
+            114,
+            122
+          ],
+          "sha256": "61cfcb67b4f304421b249db571e726c1aa0fcf46e202f5b14e80e61c949f7f8d",
+          "body_anchors": []
+        },
+        {
+          "lines": [
+            130,
+            177
+          ],
+          "sha256": "0f6fd8c825fef29e6374c8717cf9855d0fb556c421a17cfa880603822d36a220",
+          "body_anchors": []
+        },
+        {
+          "lines": [
+            141,
+            163
+          ],
+          "sha256": "4a8663ece9c91dfd7e123147ca4e11960a17431722791a847cf2a95ee3b89073",
+          "body_anchors": []
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/ThetaKernels/SiegelMultOfK.lean",
+      "git_blob": "fe50f7cade93b6f9ba04a56c33a1eb168e89ceb6",
+      "sha256": "4494217c89432efaba75a815b7da93c2c105c757de239adf24ebb64147bc3234",
+      "spans": [
+        {
+          "lines": [
+            18,
+            30
+          ],
+          "sha256": "fd6bf8c6f4b95df46c72474e4ab57a6bf217cf7f989664e7255fea8783da36cd",
+          "body_anchors": []
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/ThetaKernels/SiegelWeilAstepCLawB.lean",
+      "git_blob": "5afb47914cc921fb36e3766fbbfc2b0269227c46",
+      "sha256": "7de4ee0badf4f3db6b50e785e322be78b95901b2d7b2d01bfa952a5e3d66e38a",
+      "spans": [
+        {
+          "lines": [
+            16,
+            24
+          ],
+          "sha256": "5fe29e502f171549df2d2b74e25a4c7d86d1811e4cdc731f3924f307ea7280e4",
+          "body_anchors": []
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/ThetaKernels/SiegelWeilFinFinal.lean",
+      "git_blob": "de3e61f9a41df6dccf70e9e53818f402b912e527",
+      "sha256": "9c2506015a526681d8ea3daa8efad7c91131a70123fa6877a3bbcc3c086f4775",
+      "spans": [
+        {
+          "lines": [
+            15,
+            15
+          ],
+          "sha256": "8d79931b2231a6e9fdb3ef014bbab44b83902b6cfd24618810cc5dd438eae80f",
+          "body_anchors": []
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/ThetaKernels/SiegelWeilTautoRat.lean",
+      "git_blob": "ddc7d7b2b7b9953590fd8ff466b838958d3957c3",
+      "sha256": "0b9413abac988de4ce120c8f3c4cf2f3fda1e8703840ba44d3f674161d34b49f",
+      "spans": [
+        {
+          "lines": [
+            39,
+            49
+          ],
+          "sha256": "3e732bb426bd35d464b58a099245e75839f850ade692b384baa010544b69f1af",
+          "body_anchors": []
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/ThetaKernels/TLiftK.lean",
+      "git_blob": "e9101ee7d8551561a1d6ca3b18fdcfe84dbfc713",
+      "sha256": "cb810adcf09297fdd356174b67d6abdc43c079dbe65797b1f47383871c1bf6ca",
+      "spans": [
+        {
+          "lines": [
+            4,
+            5
+          ],
+          "sha256": "b185efeac8ab827fdfb0aa168bcef8cf96c142465a5198537de05a9e7dcd4afc",
+          "body_anchors": []
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/ThetaKernels/TPGHgtFst.lean",
+      "git_blob": "2d36e8d6be0864510b4a5eae2737d6a72b2e4714",
+      "sha256": "17431eb035a367e3c99802f9d5b59369acebeee9988d3959d6e9c52f678bd44a",
+      "spans": [
+        {
+          "lines": [
+            18,
+            27
+          ],
+          "sha256": "72a3ba957a418df0f426add44f096215708918bd1de477688eba6b87e00c7d4a",
+          "body_anchors": []
+        },
+        {
+          "lines": [
+            30,
+            50
+          ],
+          "sha256": "a88f651693088106e8995c42ec7b9c7f2d4e8897453d614e8b71b04e0954d8b8",
+          "body_anchors": []
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/ThetaKernels/TPGHolds.lean",
+      "git_blob": "c621b46b313d554ed00af05fb0ab8eb4c5050c60",
+      "sha256": "571074fd012521a7ed0c9f26c3a74e0e3ed3fa50b110979affa4566f6ba0f5ba",
+      "spans": [
+        {
+          "lines": [
+            39,
+            58
+          ],
+          "sha256": "d4ff4c99a324618284e238a2213a7a811da0b36b0e4b0ca3fce1a799a4d8f181",
+          "body_anchors": []
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/ThetaKernels/TPGNonVan.lean",
+      "git_blob": "b2582efa4d9f75ff74c839246fb385a6e20a2e28",
+      "sha256": "d0c0101ebf225ca5d2bddb47a519f8920d0bb450456e4c4d9a10cfdb5d84f719",
+      "spans": [
+        {
+          "lines": [
+            26,
+            42
+          ],
+          "sha256": "61d9ed32f85835ae338a13946a85d7d89336c8b6a68d57156e42fe48de052f4f",
+          "body_anchors": []
+        },
+        {
+          "lines": [
+            42,
+            56
+          ],
+          "sha256": "e9ae2a1f8d5a490027fd2e53faa22cc950a92023a6e7f117c4f44945c2d7e0a6",
+          "body_anchors": []
+        },
+        {
+          "lines": [
+            56,
+            87
+          ],
+          "sha256": "6cfcb93c00d6920d8c8be357f1c74a5f2eb4cb6a1e8ded2337c92b34b6f72ef0",
+          "body_anchors": []
+        },
+        {
+          "lines": [
+            87,
+            115
+          ],
+          "sha256": "f19c92c54a0217a4f90110a7c23458360f8cbf3b970ec7e38168903a073d38cc",
+          "body_anchors": []
+        },
+        {
+          "lines": [
+            116,
+            152
+          ],
+          "sha256": "f2ab2db4de10326577038dfd466ef89be9f6e256a5e7e230bcdd3e3c4dcb2505",
+          "body_anchors": []
+        },
+        {
+          "lines": [
+            150,
+            154
+          ],
+          "sha256": "0b2248ca7f0720dd77dd8817e62069aa6153b06cd5e8c2f270b7976d1f856d0f",
+          "body_anchors": []
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/ThetaKernels/TPGRallis.lean",
+      "git_blob": "08ba03346c17fddf8078b6f8bea4f2999251d265",
+      "sha256": "431127fe1447ff882337859f68ba5deb09f24434ecea5564eb166a5a4e3b5f58",
+      "spans": [
+        {
+          "lines": [
+            20,
+            35
+          ],
+          "sha256": "14fbffd2484156a3d5484c96322f40f050db1d049bc7ba6aedfc7fee9ac21cc4",
+          "body_anchors": []
+        },
+        {
+          "lines": [
+            36,
+            71
+          ],
+          "sha256": "afb4e4abf0842a9e90e7a891223dba9f6668490c6d2ba1feba692577065c822a",
+          "body_anchors": []
+        },
+        {
+          "lines": [
+            121,
+            131
+          ],
+          "sha256": "bb05db7e5c1ef28cbcab45f8fd8c49591d50aac808f247d2e4c69acf4e80ea52",
+          "body_anchors": []
+        },
+        {
+          "lines": [
+            132,
+            139
+          ],
+          "sha256": "f9457e87f254ab979303ea28daed8bfaeec1bf19ae9a14caf93a472532135181",
+          "body_anchors": []
+        },
+        {
+          "lines": [
+            140,
+            166
+          ],
+          "sha256": "eea9ab406ea113f7aa3d5a510805149a9f6d4d9a80bb00ce89be1aac1c9fe87c",
+          "body_anchors": []
+        },
+        {
+          "lines": [
+            167,
+            185
+          ],
+          "sha256": "226c68e3b8e39ae75c72e897e8e7e010fedc7187d32bafcf674cdcfca689db8b",
+          "body_anchors": []
+        },
+        {
+          "lines": [
+            186,
+            205
+          ],
+          "sha256": "8a7b006db752190126dbf7ba31d031596acce54bd9868a98f20b76a58e88d2d5",
+          "body_anchors": []
+        },
+        {
+          "lines": [
+            206,
+            225
+          ],
+          "sha256": "985884bcf7fbc8bdae9036978d92fdf3258040568367eefef44c8f65595a5959",
+          "body_anchors": []
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/ThetaKernels/TPGSchurStep.lean",
+      "git_blob": "5c0fcbc9dfefe0d05d92a0225cc14d9fd8524c0d",
+      "sha256": "a22d9d54c819f60cfec6ddf67e545d60b87a6c55dc793e89422928447aab6817",
+      "spans": [
+        {
+          "lines": [
+            193,
+            212
+          ],
+          "sha256": "cbf7dab0ced1164c52b83aff0d4450e5f3666dc6534fbd0be1e39975bdb2abf4",
+          "body_anchors": []
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/ThetaKernels/TPGTail.lean",
+      "git_blob": "fc15b2e89434b11489869e87c10fea637afc16cb",
+      "sha256": "78cf4c0a2c690c130087ff136a6ec216edee5d13787ffe78ac1b86b261ef38a3",
+      "spans": [
+        {
+          "lines": [
+            17,
+            64
+          ],
+          "sha256": "a4bc8e7c66e1642c34b65d58ae80d1edc2bc0f96ce7cbc72cbb0c72ddbfd315d",
+          "body_anchors": []
+        },
+        {
+          "lines": [
+            99,
+            141
+          ],
+          "sha256": "11b5ffd57b12fa2c89ee4de050eefa9c405784a2cd2bc4c73d14dfeb36494e69",
+          "body_anchors": []
+        },
+        {
+          "lines": [
+            140,
+            168
+          ],
+          "sha256": "c16b0ad16db65cb64d747bf9173fe06fe999a2ea0bfb7d1d809547fc6111046b",
+          "body_anchors": []
+        },
+        {
+          "lines": [
+            168,
+            194
+          ],
+          "sha256": "8a72473998e4e983d3d7352a31ae691fb137afdc365904b9739609d91655e571",
+          "body_anchors": []
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/ThetaKernels/TPGTop.lean",
+      "git_blob": "c1e81ba09c0e00fba45da9250509c36a72714bc1",
+      "sha256": "8bbd5719adda270dc2c425180e45de3f6ac6c3c4fef21a95306e1633151a1e3f",
+      "spans": [
+        {
+          "lines": [
+            46,
+            49
+          ],
+          "sha256": "c6f6fce952f437494e57c2c0109209a4e239573f1dceadce9081339f4c5a858f",
+          "body_anchors": []
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/ThetaKernels/ThkBaseEisCont.lean",
+      "git_blob": "8da9f2fdc1d4c25a5beb7e43c32e1ef39a1c62e7",
+      "sha256": "7ada9293b75b6e67007ccfe8c00925b6dadca4578d9ce4130fe399c56e3a88a8",
+      "spans": [
+        {
+          "lines": [
+            17,
+            19
+          ],
+          "sha256": "2acb73faf408d6363d2c648623d0387e6b45a630b55488784eda41037ec28aae",
+          "body_anchors": []
+        },
+        {
+          "lines": [
+            41,
+            55
+          ],
+          "sha256": "572ea5d5a2c3d13f0a9ceed31a5315575ea2d9d4c811096be02a2f2a63a2f050",
+          "body_anchors": []
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/ThetaKernels/ThkBaseHgtInt.lean",
+      "git_blob": "a4f88bdb288c019ecc8a9b6f1c8c44269e822f38",
+      "sha256": "13a6d02e99f016aff55ab54098008b0a6b2280295fcc08f4074338a7c1ea5cf4",
+      "spans": [
+        {
+          "lines": [
+            17,
+            30
+          ],
+          "sha256": "759cbae288018e944f31d2c0d80e9ae96f3bccbab81ba8ae78c2b96f94bf84d2",
+          "body_anchors": []
+        },
+        {
+          "lines": [
+            32,
+            47
+          ],
+          "sha256": "a536c167fa719eff635c666afee70ba6520fcdcc5d6aa39eb8215ad31db7fdf1",
+          "body_anchors": []
+        },
+        {
+          "lines": [
+            48,
+            61
+          ],
+          "sha256": "3fdd0dfb84448c12f85f1c1f00466bcdd535f1f51907144d7779f01a4530989e",
+          "body_anchors": []
+        },
+        {
+          "lines": [
+            62,
+            74
+          ],
+          "sha256": "ca40b49e53f0826f913353e9256ea24187095c6adf67eee6e3bc3a509b338ecd",
+          "body_anchors": []
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/ThetaKernels/ThkBaseNormZeta.lean",
+      "git_blob": "44749a444484a30d36c5454486d35fae3bd04d5e",
+      "sha256": "fd80929bad06cf0516f2286902aa44477834a7a46ae1bc8377a41a89856faaf3",
+      "spans": [
+        {
+          "lines": [
+            17,
+            23
+          ],
+          "sha256": "ce2268a0998494cf5cf567756b5de6045b29f37b77da7ecff8fd395ea49eaae4",
+          "body_anchors": []
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/ThetaKernels/ThkBaseSWStd.lean",
+      "git_blob": "fe446a7c245359e46b6c645733378d5c10831de5",
+      "sha256": "9f8b47f14ed10dc3039d58c043f158a1f23e648582f38ef9be44c0ee720736b7",
+      "spans": [
+        {
+          "lines": [
+            62,
+            75
+          ],
+          "sha256": "aa208f2536be062bee604504d7c4bfb3f527733f7ad659ed249d06833b15fb05",
+          "body_anchors": []
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/ThetaKernels/ThkBaseStmtX.lean",
+      "git_blob": "e073183fb0e3b0fb92dd3fcc1f0d3cb88372e384",
+      "sha256": "e32220b98e90aaf371adf096dde8e324740edc61d8eb2ab0a9d9353e29e66344",
+      "spans": [
+        {
+          "lines": [
+            33,
+            42
+          ],
+          "sha256": "9c39a2145336f6b8112f44dec3717af803416707fa4ec6c32d44a4ce835a1686",
+          "body_anchors": []
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/TwoUpOKOfSteps.lean",
+      "git_blob": "2541114bdfb87393944243f95ca756280bd57e5d",
+      "sha256": "5d924a37cc43c33536d0a2ed6486920e2bc8369267bb9c8197200ae0db1f7b91",
+      "spans": [
+        {
+          "lines": [
+            13,
+            33
+          ],
+          "sha256": "f7be6edba2a4c35357e88da68d7ace1b44073d9d55b4276bc5132b6b37ef074a",
+          "body_anchors": [
+            "hC E hE n t",
+            "key 0",
+            "key 1",
+            "set t := 2 * (d\u2080 + n) + 1",
+            "\u27e8U', hL\u27e9 := hd (n + t)",
+            "\u27e8d\u2080, hd\u27e9 := hT"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "src/Development/WeilBound/ThetaLifts/LatticeBasics/CompactBound.lean",
+      "git_blob": "ca36c03679b833257430b94ef54c20214476fb30",
+      "sha256": "a38bd62f8f4dbed27a65d7fcd086723dd1021594ca25b6b7f8670e898b4e3074",
+      "spans": [
+        {
+          "lines": [
+            23,
+            30
+          ],
+          "sha256": "f2e5bfa4a362124a97c4f3078ffff256557afc41d1ad4c1bb392feedb10d853f",
+          "body_anchors": []
+        },
+        {
+          "lines": [
+            135,
+            146
+          ],
+          "sha256": "6e28d6056b4fa060e51a569f53352b216a4cb45c046d9bdb298c23ea155b1430",
+          "body_anchors": []
+        },
+        {
+          "lines": [
+            149,
+            167
+          ],
+          "sha256": "56b5e4e8ca4e59a6c195742139a0359ca5e84ed6aefdcbdee9ae069855daf5ed",
+          "body_anchors": []
+        },
+        {
+          "lines": [
+            176,
+            194
+          ],
+          "sha256": "c07f3734f5f937dcc7ccf452f283e2fafcbefb6dc9811659dd3a769b3c14e9e7",
+          "body_anchors": []
+        }
+      ]
+    },
+    {
+      "path": "src/Development/WeilBound/ThetaLifts/LatticeBasics/FarRight.lean",
+      "git_blob": "39f221e77ec83a896c30bbc55b4b4fb51d089fbd",
+      "sha256": "8aaa3727b23d6307800a2e3e2add374eba68f94bc130f6c209eb529ce675aab0",
+      "spans": [
+        {
+          "lines": [
+            34,
+            47
+          ],
+          "sha256": "2de5f6a580cae69ae1a56b2f73efeb63c9752062bca260aef9859a9b9f1c9ce5",
+          "body_anchors": []
+        }
+      ]
+    },
+    {
+      "path": "src/Development/WeilBound/ThetaLifts/LatticeBasics/HgtCount.lean",
+      "git_blob": "16d590ce52c928942f4278ea5aa315e3b73e6b0d",
+      "sha256": "6ee06fb2f28ecbc19faf17fa58c2b1ff1b656bd59d3ba0fd734a6a1f5e3b19e8",
+      "spans": [
+        {
+          "lines": [
+            36,
+            43
+          ],
+          "sha256": "11fd5021da776998523b49ca2808903685f872c5158773106d2214c9d446d496",
+          "body_anchors": []
+        },
+        {
+          "lines": [
+            44,
+            59
+          ],
+          "sha256": "16ad3667fea8ca85ac4ee9b1326ac78b2afd6394a6e954c09abfc23746c924ed",
+          "body_anchors": []
+        },
+        {
+          "lines": [
+            60,
+            75
+          ],
+          "sha256": "d4f43ae16c3ca37c9681c7a7951d4892842cae4fbb9836b06bc233a3d537e28d",
+          "body_anchors": []
+        },
+        {
+          "lines": [
+            77,
+            82
+          ],
+          "sha256": "2becc246a4964070e7f3acc3addb49db75ae3f74c30ee640dd915ef7c9e731f1",
+          "body_anchors": []
+        }
+      ]
+    },
+    {
+      "path": "src/GroundTheory/GlobalFields/IdeleGroups/IdeleNorms.lean",
+      "git_blob": "db2552ecb34a71cdb631223791acf255569e7f47",
+      "sha256": "c3c4299496b4db89261c42bf2a602a08973563247bb87a76e20724d6977a9b38",
+      "spans": [
+        {
+          "lines": [
+            98,
+            105
+          ],
+          "sha256": "3b8e4c7f8aba2542434ee2424441242d1d517b5c4c3de7c7637a878046cf76fd",
+          "body_anchors": []
+        }
+      ]
+    }
+  ]
+}

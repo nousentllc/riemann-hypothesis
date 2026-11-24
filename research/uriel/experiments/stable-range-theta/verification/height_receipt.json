@@ -1,0 +1,34 @@
+{
+  "lean_version": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "original_pin": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "original_blob": "16d590ce52c928942f4278ea5aa315e3b73e6b0d",
+  "original_file_complete": true,
+  "original_imports": [
+    "Mathlib"
+  ],
+  "source_aligned_spans": [
+    [
+      43,
+      53
+    ],
+    [
+      60,
+      75
+    ]
+  ],
+  "pinned_git_tree_compared": true,
+  "kernel_checks": {
+    "Development.WeilBound.ThetaLifts.LatticeBasics.HgtCount": {
+      "source_sha256": "6ee06fb2f28ecbc19faf17fa58c2b1ff1b656bd59d3ba0fd734a6a1f5e3b19e8",
+      "compile_output": "",
+      "replay": "replaying Development.WeilBound.ThetaLifts.LatticeBasics.HgtCount"
+    },
+    "DyadicThreshold": {
+      "source_sha256": "914698d5dd68f0afcb127187d91cebfd1e79c3aac118af719a9c915f9f08011e",
+      "compile_output": "'GlobalTheory.ThK.Dbl.Hgt.integrable_of_count' depends on axioms: [propext, Classical.choice, Quot.sound]\n'UrielCheck.integrable_power_after' depends on axioms: [propext, Classical.choice, Quot.sound]\n'UrielCheck.integrable_of_count_at' depends on axioms: [propext, Classical.choice, Quot.sound]\n'UrielCheck.ratio_past_power' depends on axioms: [propext, Classical.choice, Quot.sound]\n'UrielCheck.ratio_at_integer' depends on axioms: [propext, Classical.choice, Quot.sound]\n'UrielCheck.quarter_gap' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "replay": "replaying DyadicThreshold"
+    }
+  },
+  "automorphic_count_hypothesis_furnished_by_this_check": false
+}

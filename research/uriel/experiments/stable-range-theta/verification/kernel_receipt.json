@@ -1,0 +1,31 @@
+{
+  "original_commit": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "lean_version": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "mathlib_commit": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "original_proof_full_file_byte_identical": true,
+  "definition_source_lines": [
+    183,
+    189
+  ],
+  "original_project_import_closure_rebuilt": false,
+  "compiled_mathematical_context": "Pinned prebuilt Mathlib plus source-exact AbsNe definition only.",
+  "original_source_compared": true,
+  "pinned_git_tree_compared": true,
+  "modules": {
+    "Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.SchurStep": {
+      "source_sha256": "9b0e7491c4b22c49eb40585ce62fa2b696cb65971e17f6e20cd7863a6c75a85a",
+      "kernel_replay": "replaying Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.SchurStep",
+      "compile_output": ""
+    },
+    "Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.BlockDeterminants.AbsNe": {
+      "source_sha256": "ae05d6b3c6d978d5f7265c69c65385aa4eef63e406c0d4d5adec9c35621c80c9",
+      "kernel_replay": "replaying Development.AutomorphicArithmetic.Foundations.GaloisRepresentations.ThetaParseval.BlockDeterminants.AbsNe",
+      "compile_output": "Development/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/BlockDeterminants/AbsNe.lean:29:24: warning: `Set.setOf_mem_eq` has been deprecated: Use `Set.ofPred_mem_eq` instead\nDevelopment/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/BlockDeterminants/AbsNe.lean:48:38: warning: `ofReal_norm_eq_enorm` has been deprecated: Use `ofReal_norm` instead\nDevelopment/AutomorphicArithmetic/Foundations/GaloisRepresentations/ThetaParseval/BlockDeterminants/AbsNe.lean:58:12: warning: `ofReal_norm_eq_enorm` has been deprecated: Use `ofReal_norm` instead"
+    },
+    "WeakTail": {
+      "source_sha256": "e2deb205ce7fc9eabfbd91077c4ce327e1df3a96dff66eba5c70fa14161aaccb",
+      "kernel_replay": "replaying WeakTail",
+      "compile_output": "'UpperTheory.TP.absNe' depends on axioms: [propext, Classical.choice, Quot.sound]\n'UrielCheck.weak_tail_fails' depends on axioms: [propext, Classical.choice, Quot.sound]"
+    }
+  }
+}

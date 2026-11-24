@@ -1,0 +1,646 @@
+{
+  "scope": "Exact scalar arithmetic, conditional on the counting inputs in the report.",
+  "checked": 64,
+  "cases": [
+    {
+      "real_field_degree": 1,
+      "source_rank": 1,
+      "matrix_coordinates": 2,
+      "log2_growth_base": 9,
+      "integrability_threshold": 10,
+      "sufficient_target_rank": 21,
+      "refined_target_rank": 19,
+      "refined_threshold": "37/4"
+    },
+    {
+      "real_field_degree": 1,
+      "source_rank": 2,
+      "matrix_coordinates": 8,
+      "log2_growth_base": 33,
+      "integrability_threshold": 34,
+      "sufficient_target_rank": 69,
+      "refined_target_rank": 67,
+      "refined_threshold": "133/4"
+    },
+    {
+      "real_field_degree": 1,
+      "source_rank": 3,
+      "matrix_coordinates": 18,
+      "log2_growth_base": 73,
+      "integrability_threshold": 74,
+      "sufficient_target_rank": 149,
+      "refined_target_rank": 147,
+      "refined_threshold": "293/4"
+    },
+    {
+      "real_field_degree": 1,
+      "source_rank": 4,
+      "matrix_coordinates": 32,
+      "log2_growth_base": 129,
+      "integrability_threshold": 130,
+      "sufficient_target_rank": 261,
+      "refined_target_rank": 259,
+      "refined_threshold": "517/4"
+    },
+    {
+      "real_field_degree": 1,
+      "source_rank": 5,
+      "matrix_coordinates": 50,
+      "log2_growth_base": 201,
+      "integrability_threshold": 202,
+      "sufficient_target_rank": 405,
+      "refined_target_rank": 403,
+      "refined_threshold": "805/4"
+    },
+    {
+      "real_field_degree": 1,
+      "source_rank": 6,
+      "matrix_coordinates": 72,
+      "log2_growth_base": 289,
+      "integrability_threshold": 290,
+      "sufficient_target_rank": 581,
+      "refined_target_rank": 579,
+      "refined_threshold": "1157/4"
+    },
+    {
+      "real_field_degree": 1,
+      "source_rank": 7,
+      "matrix_coordinates": 98,
+      "log2_growth_base": 393,
+      "integrability_threshold": 394,
+      "sufficient_target_rank": 789,
+      "refined_target_rank": 787,
+      "refined_threshold": "1573/4"
+    },
+    {
+      "real_field_degree": 1,
+      "source_rank": 8,
+      "matrix_coordinates": 128,
+      "log2_growth_base": 513,
+      "integrability_threshold": 514,
+      "sufficient_target_rank": 1029,
+      "refined_target_rank": 1027,
+      "refined_threshold": "2053/4"
+    },
+    {
+      "real_field_degree": 2,
+      "source_rank": 1,
+      "matrix_coordinates": 2,
+      "log2_growth_base": 17,
+      "integrability_threshold": 18,
+      "sufficient_target_rank": 37,
+      "refined_target_rank": 35,
+      "refined_threshold": "69/4"
+    },
+    {
+      "real_field_degree": 2,
+      "source_rank": 2,
+      "matrix_coordinates": 8,
+      "log2_growth_base": 65,
+      "integrability_threshold": 66,
+      "sufficient_target_rank": 133,
+      "refined_target_rank": 131,
+      "refined_threshold": "261/4"
+    },
+    {
+      "real_field_degree": 2,
+      "source_rank": 3,
+      "matrix_coordinates": 18,
+      "log2_growth_base": 145,
+      "integrability_threshold": 146,
+      "sufficient_target_rank": 293,
+      "refined_target_rank": 291,
+      "refined_threshold": "581/4"
+    },
+    {
+      "real_field_degree": 2,
+      "source_rank": 4,
+      "matrix_coordinates": 32,
+      "log2_growth_base": 257,
+      "integrability_threshold": 258,
+      "sufficient_target_rank": 517,
+      "refined_target_rank": 515,
+      "refined_threshold": "1029/4"
+    },
+    {
+      "real_field_degree": 2,
+      "source_rank": 5,
+      "matrix_coordinates": 50,
+      "log2_growth_base": 401,
+      "integrability_threshold": 402,
+      "sufficient_target_rank": 805,
+      "refined_target_rank": 803,
+      "refined_threshold": "1605/4"
+    },
+    {
+      "real_field_degree": 2,
+      "source_rank": 6,
+      "matrix_coordinates": 72,
+      "log2_growth_base": 577,
+      "integrability_threshold": 578,
+      "sufficient_target_rank": 1157,
+      "refined_target_rank": 1155,
+      "refined_threshold": "2309/4"
+    },
+    {
+      "real_field_degree": 2,
+      "source_rank": 7,
+      "matrix_coordinates": 98,
+      "log2_growth_base": 785,
+      "integrability_threshold": 786,
+      "sufficient_target_rank": 1573,
+      "refined_target_rank": 1571,
+      "refined_threshold": "3141/4"
+    },
+    {
+      "real_field_degree": 2,
+      "source_rank": 8,
+      "matrix_coordinates": 128,
+      "log2_growth_base": 1025,
+      "integrability_threshold": 1026,
+      "sufficient_target_rank": 2053,
+      "refined_target_rank": 2051,
+      "refined_threshold": "4101/4"
+    },
+    {
+      "real_field_degree": 3,
+      "source_rank": 1,
+      "matrix_coordinates": 2,
+      "log2_growth_base": 25,
+      "integrability_threshold": 26,
+      "sufficient_target_rank": 53,
+      "refined_target_rank": 51,
+      "refined_threshold": "101/4"
+    },
+    {
+      "real_field_degree": 3,
+      "source_rank": 2,
+      "matrix_coordinates": 8,
+      "log2_growth_base": 97,
+      "integrability_threshold": 98,
+      "sufficient_target_rank": 197,
+      "refined_target_rank": 195,
+      "refined_threshold": "389/4"
+    },
+    {
+      "real_field_degree": 3,
+      "source_rank": 3,
+      "matrix_coordinates": 18,
+      "log2_growth_base": 217,
+      "integrability_threshold": 218,
+      "sufficient_target_rank": 437,
+      "refined_target_rank": 435,
+      "refined_threshold": "869/4"
+    },
+    {
+      "real_field_degree": 3,
+      "source_rank": 4,
+      "matrix_coordinates": 32,
+      "log2_growth_base": 385,
+      "integrability_threshold": 386,
+      "sufficient_target_rank": 773,
+      "refined_target_rank": 771,
+      "refined_threshold": "1541/4"
+    },
+    {
+      "real_field_degree": 3,
+      "source_rank": 5,
+      "matrix_coordinates": 50,
+      "log2_growth_base": 601,
+      "integrability_threshold": 602,
+      "sufficient_target_rank": 1205,
+      "refined_target_rank": 1203,
+      "refined_threshold": "2405/4"
+    },
+    {
+      "real_field_degree": 3,
+      "source_rank": 6,
+      "matrix_coordinates": 72,
+      "log2_growth_base": 865,
+      "integrability_threshold": 866,
+      "sufficient_target_rank": 1733,
+      "refined_target_rank": 1731,
+      "refined_threshold": "3461/4"
+    },
+    {
+      "real_field_degree": 3,
+      "source_rank": 7,
+      "matrix_coordinates": 98,
+      "log2_growth_base": 1177,
+      "integrability_threshold": 1178,
+      "sufficient_target_rank": 2357,
+      "refined_target_rank": 2355,
+      "refined_threshold": "4709/4"
+    },
+    {
+      "real_field_degree": 3,
+      "source_rank": 8,
+      "matrix_coordinates": 128,
+      "log2_growth_base": 1537,
+      "integrability_threshold": 1538,
+      "sufficient_target_rank": 3077,
+      "refined_target_rank": 3075,
+      "refined_threshold": "6149/4"
+    },
+    {
+      "real_field_degree": 4,
+      "source_rank": 1,
+      "matrix_coordinates": 2,
+      "log2_growth_base": 33,
+      "integrability_threshold": 34,
+      "sufficient_target_rank": 69,
+      "refined_target_rank": 67,
+      "refined_threshold": "133/4"
+    },
+    {
+      "real_field_degree": 4,
+      "source_rank": 2,
+      "matrix_coordinates": 8,
+      "log2_growth_base": 129,
+      "integrability_threshold": 130,
+      "sufficient_target_rank": 261,
+      "refined_target_rank": 259,
+      "refined_threshold": "517/4"
+    },
+    {
+      "real_field_degree": 4,
+      "source_rank": 3,
+      "matrix_coordinates": 18,
+      "log2_growth_base": 289,
+      "integrability_threshold": 290,
+      "sufficient_target_rank": 581,
+      "refined_target_rank": 579,
+      "refined_threshold": "1157/4"
+    },
+    {
+      "real_field_degree": 4,
+      "source_rank": 4,
+      "matrix_coordinates": 32,
+      "log2_growth_base": 513,
+      "integrability_threshold": 514,
+      "sufficient_target_rank": 1029,
+      "refined_target_rank": 1027,
+      "refined_threshold": "2053/4"
+    },
+    {
+      "real_field_degree": 4,
+      "source_rank": 5,
+      "matrix_coordinates": 50,
+      "log2_growth_base": 801,
+      "integrability_threshold": 802,
+      "sufficient_target_rank": 1605,
+      "refined_target_rank": 1603,
+      "refined_threshold": "3205/4"
+    },
+    {
+      "real_field_degree": 4,
+      "source_rank": 6,
+      "matrix_coordinates": 72,
+      "log2_growth_base": 1153,
+      "integrability_threshold": 1154,
+      "sufficient_target_rank": 2309,
+      "refined_target_rank": 2307,
+      "refined_threshold": "4613/4"
+    },
+    {
+      "real_field_degree": 4,
+      "source_rank": 7,
+      "matrix_coordinates": 98,
+      "log2_growth_base": 1569,
+      "integrability_threshold": 1570,
+      "sufficient_target_rank": 3141,
+      "refined_target_rank": 3139,
+      "refined_threshold": "6277/4"
+    },
+    {
+      "real_field_degree": 4,
+      "source_rank": 8,
+      "matrix_coordinates": 128,
+      "log2_growth_base": 2049,
+      "integrability_threshold": 2050,
+      "sufficient_target_rank": 4101,
+      "refined_target_rank": 4099,
+      "refined_threshold": "8197/4"
+    },
+    {
+      "real_field_degree": 5,
+      "source_rank": 1,
+      "matrix_coordinates": 2,
+      "log2_growth_base": 41,
+      "integrability_threshold": 42,
+      "sufficient_target_rank": 85,
+      "refined_target_rank": 83,
+      "refined_threshold": "165/4"
+    },
+    {
+      "real_field_degree": 5,
+      "source_rank": 2,
+      "matrix_coordinates": 8,
+      "log2_growth_base": 161,
+      "integrability_threshold": 162,
+      "sufficient_target_rank": 325,
+      "refined_target_rank": 323,
+      "refined_threshold": "645/4"
+    },
+    {
+      "real_field_degree": 5,
+      "source_rank": 3,
+      "matrix_coordinates": 18,
+      "log2_growth_base": 361,
+      "integrability_threshold": 362,
+      "sufficient_target_rank": 725,
+      "refined_target_rank": 723,
+      "refined_threshold": "1445/4"
+    },
+    {
+      "real_field_degree": 5,
+      "source_rank": 4,
+      "matrix_coordinates": 32,
+      "log2_growth_base": 641,
+      "integrability_threshold": 642,
+      "sufficient_target_rank": 1285,
+      "refined_target_rank": 1283,
+      "refined_threshold": "2565/4"
+    },
+    {
+      "real_field_degree": 5,
+      "source_rank": 5,
+      "matrix_coordinates": 50,
+      "log2_growth_base": 1001,
+      "integrability_threshold": 1002,
+      "sufficient_target_rank": 2005,
+      "refined_target_rank": 2003,
+      "refined_threshold": "4005/4"
+    },
+    {
+      "real_field_degree": 5,
+      "source_rank": 6,
+      "matrix_coordinates": 72,
+      "log2_growth_base": 1441,
+      "integrability_threshold": 1442,
+      "sufficient_target_rank": 2885,
+      "refined_target_rank": 2883,
+      "refined_threshold": "5765/4"
+    },
+    {
+      "real_field_degree": 5,
+      "source_rank": 7,
+      "matrix_coordinates": 98,
+      "log2_growth_base": 1961,
+      "integrability_threshold": 1962,
+      "sufficient_target_rank": 3925,
+      "refined_target_rank": 3923,
+      "refined_threshold": "7845/4"
+    },
+    {
+      "real_field_degree": 5,
+      "source_rank": 8,
+      "matrix_coordinates": 128,
+      "log2_growth_base": 2561,
+      "integrability_threshold": 2562,
+      "sufficient_target_rank": 5125,
+      "refined_target_rank": 5123,
+      "refined_threshold": "10245/4"
+    },
+    {
+      "real_field_degree": 6,
+      "source_rank": 1,
+      "matrix_coordinates": 2,
+      "log2_growth_base": 49,
+      "integrability_threshold": 50,
+      "sufficient_target_rank": 101,
+      "refined_target_rank": 99,
+      "refined_threshold": "197/4"
+    },
+    {
+      "real_field_degree": 6,
+      "source_rank": 2,
+      "matrix_coordinates": 8,
+      "log2_growth_base": 193,
+      "integrability_threshold": 194,
+      "sufficient_target_rank": 389,
+      "refined_target_rank": 387,
+      "refined_threshold": "773/4"
+    },
+    {
+      "real_field_degree": 6,
+      "source_rank": 3,
+      "matrix_coordinates": 18,
+      "log2_growth_base": 433,
+      "integrability_threshold": 434,
+      "sufficient_target_rank": 869,
+      "refined_target_rank": 867,
+      "refined_threshold": "1733/4"
+    },
+    {
+      "real_field_degree": 6,
+      "source_rank": 4,
+      "matrix_coordinates": 32,
+      "log2_growth_base": 769,
+      "integrability_threshold": 770,
+      "sufficient_target_rank": 1541,
+      "refined_target_rank": 1539,
+      "refined_threshold": "3077/4"
+    },
+    {
+      "real_field_degree": 6,
+      "source_rank": 5,
+      "matrix_coordinates": 50,
+      "log2_growth_base": 1201,
+      "integrability_threshold": 1202,
+      "sufficient_target_rank": 2405,
+      "refined_target_rank": 2403,
+      "refined_threshold": "4805/4"
+    },
+    {
+      "real_field_degree": 6,
+      "source_rank": 6,
+      "matrix_coordinates": 72,
+      "log2_growth_base": 1729,
+      "integrability_threshold": 1730,
+      "sufficient_target_rank": 3461,
+      "refined_target_rank": 3459,
+      "refined_threshold": "6917/4"
+    },
+    {
+      "real_field_degree": 6,
+      "source_rank": 7,
+      "matrix_coordinates": 98,
+      "log2_growth_base": 2353,
+      "integrability_threshold": 2354,
+      "sufficient_target_rank": 4709,
+      "refined_target_rank": 4707,
+      "refined_threshold": "9413/4"
+    },
+    {
+      "real_field_degree": 6,
+      "source_rank": 8,
+      "matrix_coordinates": 128,
+      "log2_growth_base": 3073,
+      "integrability_threshold": 3074,
+      "sufficient_target_rank": 6149,
+      "refined_target_rank": 6147,
+      "refined_threshold": "12293/4"
+    },
+    {
+      "real_field_degree": 7,
+      "source_rank": 1,
+      "matrix_coordinates": 2,
+      "log2_growth_base": 57,
+      "integrability_threshold": 58,
+      "sufficient_target_rank": 117,
+      "refined_target_rank": 115,
+      "refined_threshold": "229/4"
+    },
+    {
+      "real_field_degree": 7,
+      "source_rank": 2,
+      "matrix_coordinates": 8,
+      "log2_growth_base": 225,
+      "integrability_threshold": 226,
+      "sufficient_target_rank": 453,
+      "refined_target_rank": 451,
+      "refined_threshold": "901/4"
+    },
+    {
+      "real_field_degree": 7,
+      "source_rank": 3,
+      "matrix_coordinates": 18,
+      "log2_growth_base": 505,
+      "integrability_threshold": 506,
+      "sufficient_target_rank": 1013,
+      "refined_target_rank": 1011,
+      "refined_threshold": "2021/4"
+    },
+    {
+      "real_field_degree": 7,
+      "source_rank": 4,
+      "matrix_coordinates": 32,
+      "log2_growth_base": 897,
+      "integrability_threshold": 898,
+      "sufficient_target_rank": 1797,
+      "refined_target_rank": 1795,
+      "refined_threshold": "3589/4"
+    },
+    {
+      "real_field_degree": 7,
+      "source_rank": 5,
+      "matrix_coordinates": 50,
+      "log2_growth_base": 1401,
+      "integrability_threshold": 1402,
+      "sufficient_target_rank": 2805,
+      "refined_target_rank": 2803,
+      "refined_threshold": "5605/4"
+    },
+    {
+      "real_field_degree": 7,
+      "source_rank": 6,
+      "matrix_coordinates": 72,
+      "log2_growth_base": 2017,
+      "integrability_threshold": 2018,
+      "sufficient_target_rank": 4037,
+      "refined_target_rank": 4035,
+      "refined_threshold": "8069/4"
+    },
+    {
+      "real_field_degree": 7,
+      "source_rank": 7,
+      "matrix_coordinates": 98,
+      "log2_growth_base": 2745,
+      "integrability_threshold": 2746,
+      "sufficient_target_rank": 5493,
+      "refined_target_rank": 5491,
+      "refined_threshold": "10981/4"
+    },
+    {
+      "real_field_degree": 7,
+      "source_rank": 8,
+      "matrix_coordinates": 128,
+      "log2_growth_base": 3585,
+      "integrability_threshold": 3586,
+      "sufficient_target_rank": 7173,
+      "refined_target_rank": 7171,
+      "refined_threshold": "14341/4"
+    },
+    {
+      "real_field_degree": 8,
+      "source_rank": 1,
+      "matrix_coordinates": 2,
+      "log2_growth_base": 65,
+      "integrability_threshold": 66,
+      "sufficient_target_rank": 133,
+      "refined_target_rank": 131,
+      "refined_threshold": "261/4"
+    },
+    {
+      "real_field_degree": 8,
+      "source_rank": 2,
+      "matrix_coordinates": 8,
+      "log2_growth_base": 257,
+      "integrability_threshold": 258,
+      "sufficient_target_rank": 517,
+      "refined_target_rank": 515,
+      "refined_threshold": "1029/4"
+    },
+    {
+      "real_field_degree": 8,
+      "source_rank": 3,
+      "matrix_coordinates": 18,
+      "log2_growth_base": 577,
+      "integrability_threshold": 578,
+      "sufficient_target_rank": 1157,
+      "refined_target_rank": 1155,
+      "refined_threshold": "2309/4"
+    },
+    {
+      "real_field_degree": 8,
+      "source_rank": 4,
+      "matrix_coordinates": 32,
+      "log2_growth_base": 1025,
+      "integrability_threshold": 1026,
+      "sufficient_target_rank": 2053,
+      "refined_target_rank": 2051,
+      "refined_threshold": "4101/4"
+    },
+    {
+      "real_field_degree": 8,
+      "source_rank": 5,
+      "matrix_coordinates": 50,
+      "log2_growth_base": 1601,
+      "integrability_threshold": 1602,
+      "sufficient_target_rank": 3205,
+      "refined_target_rank": 3203,
+      "refined_threshold": "6405/4"
+    },
+    {
+      "real_field_degree": 8,
+      "source_rank": 6,
+      "matrix_coordinates": 72,
+      "log2_growth_base": 2305,
+      "integrability_threshold": 2306,
+      "sufficient_target_rank": 4613,
+      "refined_target_rank": 4611,
+      "refined_threshold": "9221/4"
+    },
+    {
+      "real_field_degree": 8,
+      "source_rank": 7,
+      "matrix_coordinates": 98,
+      "log2_growth_base": 3137,
+      "integrability_threshold": 3138,
+      "sufficient_target_rank": 6277,
+      "refined_target_rank": 6275,
+      "refined_threshold": "12549/4"
+    },
+    {
+      "real_field_degree": 8,
+      "source_rank": 8,
+      "matrix_coordinates": 128,
+      "log2_growth_base": 4097,
+      "integrability_threshold": 4098,
+      "sufficient_target_rank": 8197,
+      "refined_target_rank": 8195,
+      "refined_threshold": "16389/4"
+    }
+  ]
+}
