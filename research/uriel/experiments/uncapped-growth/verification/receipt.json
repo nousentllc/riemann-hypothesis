@@ -1,0 +1,693 @@
+{
+ "compiler": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+ "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+ "modules": {
+  "AllDepth": {
+   "axiom_queries": {
+    "TargetOne.count_one_at_depth": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "e97004fbda6daf6444c899d570b26881de667061a4da6ab72db549a23e79d69a"
+  },
+  "BlockIdentification": {
+   "axiom_queries": {
+    "BlockIdentification.individual_of_product": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ],
+    "BlockIdentification.realize_shells": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "992ec6aa64da2f8c67440ef71a26a308b55d28de47a24f8fd6159620b58b3045"
+  },
+  "Contact": {
+   "axiom_queries": {},
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "4baa736277575942a1735aa479aae54203d74f57495542d942d65f74a1dcc3c3"
+  },
+  "CoordinateFloor": {
+   "axiom_queries": {
+    "CoordinateFloor.lower": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "40b0182b110dffdee49b0c7f86afc58b3400ba2bf1ae5e182248c19ad8749bf4"
+  },
+  "Cylinders": {
+   "axiom_queries": {},
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "69a8f6ac8e0e77995ef337c72f8816885ea6af755a60783799a2050dbc6ae4ff"
+  },
+  "DenominatorControl": {
+   "axiom_queries": {
+    "DenominatorControl.no_solution_mod_two": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ],
+    "DenominatorControl.odd_dilation_no_integral_solution": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ],
+    "DenominatorControl.represented": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "64c49996cad51ab839ea1e8a453847a520d1badf9aca61de5932c4a13bed106a"
+  },
+  "DyadicBase": {
+   "axiom_queries": {},
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "5c230b576aac8a71894d083435add343cb8188324986482507b585cde875c249"
+  },
+  "DyadicLocal": {
+   "axiom_queries": {
+    "TargetOne.locally": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "add295c1dd14171fc9d5789dee9a24c8543a722838139baf9b9b93c3fd2a8580"
+  },
+  "Endpoint": {
+   "axiom_queries": {
+    "TargetOne.target_one_mass": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "533fe280a84b885d47f2319f32d150c21dd8bfd0a810b0566eaad638fd0c94a4"
+  },
+  "EvenDescent": {
+   "axiom_queries": {
+    "DyadicWave.even_scaling": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "b66b44a76fdf63d4b7da993c23a6905fbaa1fee783cd3cc922ca0d636790a81e"
+  },
+  "ExceptionalDilation": {
+   "axiom_queries": {
+    "ExceptionalDilation.lower_of_bounded_order": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "56dac18727ee51655e4fde6c8049d22bb53cb370d7764d723f855de8b8dc5224"
+  },
+  "ExceptionalPrimeCriterion": {
+   "axiom_queries": {
+    "ExceptionalPrimeCriterion.reduce_to_prime_power": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ],
+    "ExceptionalPrimeCriterion.uncapped_iff": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "44c979391f9cb3ccdac33ca4e77c099d6c3c2488183fafc3f547e6c4f7a46de7"
+  },
+  "Existence": {
+   "axiom_queries": {
+    "TargetOne.realized_unconditionally": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "37776167724f42037260db9ed9847f57ff810a87f6121bae87a4e6ca2e9af519"
+  },
+  "FiniteCounts": {
+   "axiom_queries": {},
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "2627b6b1d9366b058ea6f1fabfde983a066d0ed39e14803b036ba8e63210147a"
+  },
+  "FloorTransfer": {
+   "axiom_queries": {
+    "FloorTransfer.punctured_of_coordinate_tubes": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "55cca36638fb1a86ebd401648527cc84244b1c1da0590d7dcce8b950179965a5"
+  },
+  "FourBase": {
+   "axiom_queries": {
+    "TargetFour.base_32": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "ed9817edfdcdb0fdaea396470540a009727f211970036be491e43b2cfa2d0b91"
+  },
+  "FourContact": {
+   "axiom_queries": {
+    "TargetFour.mass_of_coordinate_set": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "e3d085f0673158c2d428a1ed98e504ceca19b78be0bf6ec1aeef7d2c4ab119c4"
+  },
+  "FourCounts": {
+   "axiom_queries": {
+    "TargetFour.even_all": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ],
+    "TargetFour.primitive_all": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ],
+    "TargetFour.total_all": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "4a0ac56e530c6524273274af0368501c1e02ef32aed263bc80c4457d520f8c8d"
+  },
+  "FourEndpoint": {
+   "axiom_queries": {
+    "TargetFour.realized_split": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "bed0a7c2a2a35565a9883c9afa22b93a7bb78f8e903786b82e0f9ef1d414e0a1"
+  },
+  "FourEven": {
+   "axiom_queries": {
+    "TargetFour.even_scaling": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "ada7f2f88c68f9512fd580f1f5a99eeb058951bacb2b5951d7c48ddc822aaf7b"
+  },
+  "FourLift": {
+   "axiom_queries": {
+    "TargetFour.orbit_count": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "cef03b1b26c0147e7f2832b0ca966e11b39b2d71595f0fcdc3966630074ef751"
+  },
+  "FourNeighborhood": {
+   "axiom_queries": {},
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "b0826216a517b2621223dca94f643ab3e3e00aff380bc9be3c9e19614b3b46df"
+  },
+  "FourTubes": {
+   "axiom_queries": {
+    "TargetFour.even_tube": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "0dda1442b87ce7db4cfdf463e309644e3f345f6f6b0d0640ebf70e4270140641"
+  },
+  "GaussianDilates": {
+   "axiom_queries": {
+    "DyadicWave.realized_all": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "0fc99d54fee2470b91e6fe4bfc54299982a4e015475e1c2dca246eabaa3c3761"
+  },
+  "GaussianField": {
+   "axiom_queries": {
+    "TargetOne.isCM": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "861644f02628c62164c7f8607358a50347a321e6f8efdedd47a43efe432d8e06"
+  },
+  "GaussianSharp": {
+   "axiom_queries": {
+    "DyadicWave.sharp_floor": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ],
+    "DyadicWave.zero_tube_ratio": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "454feca389abe7d7af16b436cde131a2df55d6959da75ef0314af45c9b363e1d"
+  },
+  "GaussianTrace": {
+   "axiom_queries": {
+    "TargetOne.trace_coords": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "96fe7b201df0341c7d32735217f7f5283117bf48414c761cf21621e20c06d196"
+  },
+  "GermSupport": {
+   "axiom_queries": {
+    "GermSupport.nonzero_at": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "0374eb9857029ac5a5c7764fb9a86c35f83060af0dc02c2399d0682413a1efef"
+  },
+  "GrowthSandwich": {
+   "axiom_queries": {
+    "GrowthSandwich.sandwich": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ],
+    "GrowthSandwich.scale_product": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "4ca11a7dba82268855a76d42d70c49889bd76782a2e2112a30a7d5244449d55b"
+  },
+  "HaarSlices": {
+   "axiom_queries": {
+    "HaarSlices.affine_slice": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ],
+    "HaarSlices.average": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "debba822d10f4a2a48a6c6a8685556b536b5d88191a3ba5b918c20f3d7a1f3f5"
+  },
+  "LocalChart": {
+   "axiom_queries": {
+    "LocalChart.affine_tube": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ],
+    "LocalChart.graph_card": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "c5e91a43efa53926555aba8f77465d9b1db9d8655fdb2f253fdc296248d49bc8"
+  },
+  "LocalIsotropy": {
+   "axiom_queries": {
+    "LocalIsotropy.matrix_isotropic_at_finite_place": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ],
+    "LocalIsotropy.regular_zero": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "5bb6ddf336353bedcec244303d30c5a9714553f91470680ef9d3cb8b663bdd53"
+  },
+  "LocalPair": {
+   "axiom_queries": {
+    "LocalPair.partner": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "d2c37f795c9806bef6379da4797cc0599698e4a2c6b47bda04fe82423e5aceed"
+  },
+  "LocalRegularSupport": {
+   "axiom_queries": {
+    "LocalRegularSupport.all_local_targets": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "512111f366a04d8b75b227dc37b6737e9c18e5d579f2931cb8c30d24b37d1546"
+  },
+  "LocalTube": {
+   "axiom_queries": {
+    "LocalTube.mass_lower_of_tubes": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "f024d0ad61fc27b4bacef34e4ebd92faca56397d14c2a40e84fda4889cebe04e"
+  },
+  "LocalWitnesses": {
+   "axiom_queries": {
+    "LocalWitnesses.in_pinned_coordinates": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ],
+    "LocalWitnesses.integral_pair": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "23ae4fca229d62e08d8762aca22b45cb5249def3a8f907fa90ffa556fe1db677"
+  },
+  "Nearby": {
+   "axiom_queries": {
+    "TargetOne.local_mass_from_tests": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "a9790ce6e38f650500ea1f19e16bb24ce6a072a81fc11d6a429dd09ac8abd7d5"
+  },
+  "NeighborhoodGrowth": {
+   "axiom_queries": {
+    "NeighborhoodGrowth.from_punctured_germs": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ],
+    "NeighborhoodGrowth.targets_tend_to_zero": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "d2801bf1defd8194c632ea0d8c62da42afb571293f490332ad0efac943c16fc1"
+  },
+  "Neighborhoods": {
+   "axiom_queries": {},
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "5449142ad8c18e7df658ca84b6ce445433608ce855cc322ba5bdf2938b5f85a1"
+  },
+  "OddSquares": {
+   "axiom_queries": {
+    "DyadicWave.oddTail": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "9f3890c0afadae45b2e8108016a4339fecc0cb2b514f58c59fcd6be5fb65c958"
+  },
+  "OptimalSupport": {
+   "axiom_queries": {
+    "OptimalSupport.generator_unique": [
+     "propext"
+    ],
+    "OptimalSupport.local_threshold": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ],
+    "OptimalSupport.positive_iff_multiple": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "f742f827a7e53f9a930bc8989f03bdce947cf47cf5995b3b9732bfa17bc74c3b"
+  },
+  "OriginalFloor": {
+   "axiom_queries": {
+    "OriginalFloor.punctured_floor": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "09a69389e200010d79d5591e66a5e4514164df00dd769e6572b613b0f6ecc5a9"
+  },
+  "PrimeBlocks": {
+   "axiom_queries": {
+    "PrimeBlocks.block_criterion": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ],
+    "PrimeBlocks.tail_iff": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "6b6a2b5f576bbd57dddb2e7b679fe07c2a17ad9ca1d8cf8973fbc664a807dd7f"
+  },
+  "PrimitiveLift": {
+   "axiom_queries": {
+    "DyadicWave.lift_primitive": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "6e33926e35bd9d9355649be11f23f688d4d16181b8dcf7d754a7c26fe3a0968c"
+  },
+  "ProgressionGrowth": {
+   "axiom_queries": {
+    "ProgressionGrowth.progression_growth": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "5a828c8c1593edc488561249f2828b7115d926a28f2854ad60666fbf90684410"
+  },
+  "Shallow": {
+   "axiom_queries": {
+    "TargetOne.count_all": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "c3e3a0b91c4ca69f2ff44b974e940c577ea8c8bd4a269307a951afd34bb7b018"
+  },
+  "ShellThreshold": {
+   "axiom_queries": {
+    "ShellThreshold.classify": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "90f3883b7639e0e86ef06ecad77a594f51ca0f85546c32a9cb3925f52a01e16c"
+  },
+  "SingularGaussian": {
+   "axiom_queries": {
+    "DyadicWave.singular_mass_zero": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "17f67328da4ce208a2174327b4038536ea558c371306f79acb0f1e60f4ed6b5d"
+  },
+  "SingularJump": {
+   "axiom_queries": {
+    "SingularJump.discontinuous": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "2f8fd66e4b9184fb3ab658127c72a20eaabf456979932a44ef9a3ffd12d372a5"
+  },
+  "SingularZero": {
+   "axiom_queries": {
+    "SingularZero.rank_one_origin": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "3cdce28320d21950e78e6c443d6418dcd93ed171c699e4614c1e855fc4d675b0"
+  },
+  "SquareDepth": {
+   "axiom_queries": {
+    "DyadicWave.with_unit": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "d67e90836c790e6685c2f90a1e95442f923596266207cc9a55156642dd663c2f"
+  },
+  "Tubes": {
+   "axiom_queries": {
+    "TargetOne.tube_three_quarters": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "5983e7929bae8dfb9aceecba8cdf70663441f636569828aaf330b3fc56fc4636"
+  },
+  "UncappedAudit": {
+   "axiom_queries": {},
+   "dependency_audit": "All-multiples closure: 1478 project and study constants. Optimal support: 1470. Dyadic sharp-floor closure: 420. Membership checks passed.",
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "02d5333cef3f3754334840b7c7d4ebdd500f09e3b62aff62b9b0410e0e7b552d"
+  },
+  "UncappedGrowth": {
+   "axiom_queries": {
+    "UncappedGrowth.all_multiples": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "b6c3ba5df9d1fcd99a936b1b766857bfaadd600f6081c05e19bb233545075457"
+  }
+ },
+ "original_objects": 1038,
+ "verified_source_blobs": 1038
+}

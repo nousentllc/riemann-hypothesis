@@ -1,0 +1,1 @@
+All-multiples closure: 1478 project and study constants. Optimal support: 1470. Dyadic sharp-floor closure: 420. Membership checks passed.

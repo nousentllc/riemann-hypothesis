@@ -1,0 +1,103 @@
+{
+  "pinned_commit": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "anchors": [
+    {
+      "path": "src/Formalism/SharpRestriction/GlobalSchurBounds/GeneralLinearActions/GenusMassVolumes.lean",
+      "declaration": "def IsFibreFamily",
+      "line": 183,
+      "git_blob": "525618b770cb535fd890f10277af11ffbe76af40",
+      "role": "singular support"
+    },
+    {
+      "path": "src/CompanionTheory/SpectralGeometry/CountingDefinitions/AdelicEulerProducts/IsEulerProd.lean",
+      "declaration": "def IsGramFib",
+      "line": 61,
+      "git_blob": "6341eea11489ecd82bda087171023fad7d68415e",
+      "role": "regular-target family"
+    },
+    {
+      "path": "src/Development/AbelianVarietyTheory/Proofs/AdelicLatticeProofs/ExistsNonzeroIsotropic.lean",
+      "declaration": "theorem exists_nonzero_isotropic",
+      "line": 20,
+      "git_blob": "d069bc0de71d5cc5f1c455bd22dd80ebaf1d8d5c",
+      "role": "finite residue zero count"
+    },
+    {
+      "path": "src/Development/AbelianVarietyTheory/Proofs/AdelicLatticeProofs/IsSquareOfValuedSubOneLt.lean",
+      "declaration": "theorem _root_.GlobalTheory.LocalQuad.isSquare_of_valued_sub_one_lt",
+      "line": 57,
+      "git_blob": "1299ba37ac4bce909a37b87b1022609cdce5e589",
+      "role": "dyadic-compatible square neighborhood"
+    },
+    {
+      "path": "src/Development/AbelianVarietyTheory/Proofs/AdelicLatticeProofs/ExistsZeroFiveOfValuation.lean",
+      "declaration": "lemma exists_basis",
+      "line": 134,
+      "git_blob": "555a76cd909215154e8b913d9b284ce75d3aef82",
+      "role": "extremal basis"
+    },
+    {
+      "path": "src/Development/AbelianVarietyTheory/Proofs/AdelicLatticeProofs/ExistsZeroFiveOfValuation.lean",
+      "declaration": "theorem exists_zero_five_of_valuation",
+      "line": 218,
+      "git_blob": "555a76cd909215154e8b913d9b284ce75d3aef82",
+      "role": "five-variable valuation argument"
+    },
+    {
+      "path": "src/Development/AbelianVarietyTheory/Proofs/AdelicLatticeProofs/ExistsCongrIffTraceFormsIsometricCm.lean",
+      "declaration": "theorem isotropic_adicCompletion_of_five_le",
+      "line": 58,
+      "git_blob": "c4ee1cf682a59ddf52a9d9237933939ca051097e",
+      "role": "isotropy over every finite completion"
+    },
+    {
+      "path": "src/CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/ExistsTraceFormGramMatrixInBasis.lean",
+      "declaration": "theorem exists_trace_coord",
+      "line": 188,
+      "git_blob": "15dc12eae4448defc0e0f7ad64b9864831321777",
+      "role": "symmetric nondegenerate original trace form with base change"
+    },
+    {
+      "path": "src/CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/LocalGramFiberRankOneSetFormula.lean",
+      "declaration": "theorem gram_entry",
+      "line": 163,
+      "git_blob": "c736a815bef19d2975329c8413d7bb9806d0f394",
+      "role": "rank-one recovery from half trace"
+    },
+    {
+      "path": "src/CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/IsotropicVectorSplitsHyperbolicPlane.lean",
+      "declaration": "theorem splitHyp",
+      "line": 182,
+      "git_blob": "89aa813b79d511cb3521b6dc61ca486d6b6a2d94",
+      "role": "global Hermitian hyperbolic split requiring global isotropic vector"
+    },
+    {
+      "path": "src/CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/RankOneLocalDensitiesProductConverges.lean",
+      "declaration": "theorem exists_nat_mul_mem",
+      "line": 44,
+      "git_blob": "1398ce4e513c72177121bd9ef05618724adf788e",
+      "role": "original denominator clearing"
+    },
+    {
+      "path": "src/CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/MeasurableCoordinateMapsTensor.lean",
+      "declaration": "theorem coordW_one_map_coords",
+      "line": 28,
+      "git_blob": "04fb5ba585b8df7e0b8879e7cf2fb168a80fb1ef",
+      "role": "pushforward on original product Haar"
+    },
+    {
+      "path": "src/CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/LocalGramFiberRankOneSetFormula.lean",
+      "declaration": "theorem fibre_mass_ratio",
+      "line": 419,
+      "git_blob": "c736a815bef19d2975329c8413d7bb9806d0f394",
+      "role": "pointwise regular-target small set test"
+    },
+    {
+      "path": "src/CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/LocalLatticeCompactOpenUnitVolume.lean",
+      "declaration": "theorem latV_compact_open_mass",
+      "line": 14,
+      "git_blob": "da3fa43f517e2f0ee2dcdd1f416d1583881bef1c",
+      "role": "native lattice compactness, openness and volume"
+    }
+  ]
+}
