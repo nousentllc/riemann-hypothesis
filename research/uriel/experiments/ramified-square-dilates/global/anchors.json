@@ -1,0 +1,65 @@
+{
+  "commit": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "original_sources": [
+    {
+      "path": "src/CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/RankOneLocalDensitiesProductConverges.lean",
+      "blob": "1398ce4e513c72177121bd9ef05618724adf788e",
+      "sha256": "bf503d1d9b1c413ff351d1eb6a16abe9d5704149c4f67b11876dd376a700ef4e",
+      "declarations": {
+        "val_lt_one_of_mem": 21,
+        "exists_exponents": 69,
+        "exists_den": 105,
+        "dilSet": 129,
+        "dilSet_mono": 142,
+        "dilSet_unit": 166,
+        "exists_pos_mass": 192,
+        "mL": 211,
+        "scal_fin": 233,
+        "dil_eq": 251,
+        "growth_main": 262
+      }
+    },
+    {
+      "path": "src/CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/RankOneLocalDensityAlmostAll.lean",
+      "blob": "fc8eb5529fbead870185670b848b1e2bdddb35d8",
+      "sha256": "ca259bf511ac14941541fc8be97531502af3021ef3e24cebc578edb76406b3f2",
+      "declarations": {
+        "local_mass": 29,
+        "density_standard_lattice": 185
+      }
+    },
+    {
+      "path": "src/CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/InfiniteProductMultipliable.lean",
+      "blob": "f16f223c3fdf381c26f4aec234006c54a5fa908a",
+      "sha256": "5b0f9f43668ddfaddeb7771e8aac919400e6bf309749579050b8d28eeb1b73d1",
+      "declarations": {
+        "tprod_eq_prod_mul_tprod_compl": 26,
+        "abs_tprod": 39
+      }
+    },
+    {
+      "path": "src/CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/SummableOneDivAbsNormSq.lean",
+      "blob": "ed4adde944b3450395e0bfa93b4f0c908973bdbd",
+      "sha256": "a5289e6c6087b3c1073a6b517ce015dcbadfc58c0bd2f02938d8b63aa1bd06bf",
+      "declarations": {
+        "summable_one_div_absNorm_sq": 10
+      }
+    },
+    {
+      "path": "src/CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/IntegralAlmostAllPlacesStatement.lean",
+      "blob": "fc5fb55c3f0ca172bf796dc5e3e800309684cea9",
+      "sha256": "1e41d5f6bc715bec62fa6562f3903e85219d29f2b4d3a470dd458ec3349b99cb",
+      "declarations": {
+        "integral_almost_all_places": 7
+      }
+    },
+    {
+      "path": "src/CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/LocalRankOneDensityUniformizerPowerStatement.lean",
+      "blob": "d5758d11adc8d907c01a0e1655db2cdb877da93f",
+      "sha256": "bea6b8d5472636a7d757e96d84f525ba1f1e25935bbd5a0f86bb1a23c0f35969",
+      "declarations": {
+        "local_rank_one_density_uniformizer_power": 7
+      }
+    }
+  ]
+}

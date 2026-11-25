@@ -1,0 +1,50 @@
+{
+  "toolchain": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "original_commit": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "prior_manifest_sha256": "ead6148a7a9a1cf633413dc2567a5b4fba2427a369518f0e9e786f3013af541c",
+  "predecessor_study": "b4d12e0825d2191f38fdfb5e97b327c8c8ad1b3d",
+  "modules": [
+    {
+      "name": "EvenDescent",
+      "source_sha256": "b66b44a76fdf63d4b7da993c23a6905fbaa1fee783cd3cc922ca0d636790a81e",
+      "replay": "replaying EvenDescent"
+    },
+    {
+      "name": "OddSquares",
+      "source_sha256": "9f3890c0afadae45b2e8108016a4339fecc0cb2b514f58c59fcd6be5fb65c958",
+      "replay": "replaying OddSquares"
+    },
+    {
+      "name": "DyadicBase",
+      "source_sha256": "5c230b576aac8a71894d083435add343cb8188324986482507b585cde875c249",
+      "replay": "replaying DyadicBase"
+    },
+    {
+      "name": "PrimitiveLift",
+      "source_sha256": "6e33926e35bd9d9355649be11f23f688d4d16181b8dcf7d754a7c26fe3a0968c",
+      "replay": "replaying PrimitiveLift"
+    },
+    {
+      "name": "SquareDepth",
+      "source_sha256": "d67e90836c790e6685c2f90a1e95442f923596266207cc9a55156642dd663c2f",
+      "replay": "replaying SquareDepth"
+    },
+    {
+      "name": "SingularGaussian",
+      "source_sha256": "17f67328da4ce208a2174327b4038536ea558c371306f79acb0f1e60f4ed6b5d",
+      "replay": "replaying SingularGaussian"
+    },
+    {
+      "name": "GaussianDilates",
+      "source_sha256": "0fc99d54fee2470b91e6fe4bfc54299982a4e015475e1c2dca246eabaa3c3761",
+      "replay": "replaying GaussianDilates"
+    },
+    {
+      "name": "GaussianSharp",
+      "source_sha256": "454feca389abe7d7af16b436cde131a2df55d6959da75ef0314af45c9b363e1d",
+      "replay": "replaying GaussianSharp"
+    }
+  ],
+  "axioms": "'DyadicWave.oddRoots' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DyadicWave.oddTail' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DyadicWave.even_scaling' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DyadicWave.lift_primitive' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DyadicWave.primitive_mod_eight' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DyadicWave.step_counts' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DyadicWave.all_depths' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DyadicWave.with_unit' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DyadicWave.zero_tube_ratio' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DyadicWave.zero_tube_measure' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DyadicWave.singular_mass_zero' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DyadicWave.late_tube' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DyadicWave.fiber_mass' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DyadicWave.realized_all' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DyadicWave.sharp_floor' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DyadicWave.sharp_witness' depends on axioms: [propext, Classical.choice, Quot.sound]"
+}

@@ -1,0 +1,17 @@
+{
+  "title": "Ramified square dilates and the last unresolved digit",
+  "pages": 37,
+  "source_sha256": "e98167691d356ee1f1baceb615716dfba28365f3a8fb32c0ce5f864f5217e85e",
+  "pdf_sha256": "78a6e29e31f83c723d9a355423046ed4a59997010a560714444f12b85fa13d5f",
+  "build_engine": "LuaTeX-1.24.0",
+  "independent_standalone_build_byte_identical": true,
+  "embedded_original_nous_png_sha256": "bdfff8716596a351b480896d4bc21a7786470d6283c050b4ee801e3a88d061b6",
+  "title_page": 1,
+  "abstract_page": 2,
+  "contents_page": 3,
+  "body_begins_page": 4,
+  "all_pages_rendered": true,
+  "human_ai_disclosure": true,
+  "lean_receipt_sha256": "b67b277a598a35139bfc2666ed99365e4ec25194b523db8de319844da9af5add",
+  "release_parent": "63c06fe44eb700e4550e4a2b70adafe09cb1ff9b"
+}

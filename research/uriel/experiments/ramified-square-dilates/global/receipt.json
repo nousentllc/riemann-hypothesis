@@ -1,0 +1,114 @@
+{
+  "lean": "4.33.1",
+  "method": "lean -o followed by separate leanchecker -v on the emitted module. Earlier imported modules are cached; a full RH rebuild was not performed.",
+  "modules": [
+    {
+      "module": "PrimeBlocks",
+      "source_sha256": "6b6a2b5f576bbd57dddb2e7b679fe07c2a17ad9ca1d8cf8973fbc664a807dd7f",
+      "object_sha256": "37fb294a49892e1a8e1e11bb1125ba66ffe74e78f20ea455fbb311aee16bc275",
+      "checker_output": [
+        "'PrimeBlocks.tail_iff' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'PrimeBlocks.block_criterion' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "replaying PrimeBlocks"
+      ]
+    },
+    {
+      "module": "GrowthSandwich",
+      "source_sha256": "4ca11a7dba82268855a76d42d70c49889bd76782a2e2112a30a7d5244449d55b",
+      "object_sha256": "b1163eff040678a7cee593aa33e3ac332b0edcc2e5f110ee0f525a3cbb019f03",
+      "checker_output": [
+        "'GrowthSandwich.sandwich' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'GrowthSandwich.scale_product' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "replaying GrowthSandwich"
+      ]
+    },
+    {
+      "module": "BlockIdentification",
+      "source_sha256": "992ec6aa64da2f8c67440ef71a26a308b55d28de47a24f8fd6159620b58b3045",
+      "object_sha256": "66da3bdfccb91d06d2ca50491563ac733ca6ccad47811fefcfefca3c28c63102",
+      "checker_output": [
+        "'BlockIdentification.realize_shells' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'BlockIdentification.individual_of_product' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "replaying BlockIdentification"
+      ]
+    },
+    {
+      "module": "ExceptionalPrimeCriterion",
+      "source_sha256": "44c979391f9cb3ccdac33ca4e77c099d6c3c2488183fafc3f547e6c4f7a46de7",
+      "object_sha256": "a7517c02ed00e2a4cbd2967935a7b32c2e266f741018ada19c79a3fac2c21ad7",
+      "checker_output": [
+        "'ExceptionalPrimeCriterion.reduce_to_prime_power' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'ExceptionalPrimeCriterion.uncapped_iff' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "replaying ExceptionalPrimeCriterion"
+      ]
+    },
+    {
+      "module": "NeighborhoodGrowth",
+      "source_sha256": "d2801bf1defd8194c632ea0d8c62da42afb571293f490332ad0efac943c16fc1",
+      "object_sha256": "34ac9de577741fbc66c407b5375063426867539b5acc5e3c0f1027c9c3d53ca3",
+      "checker_output": [
+        "'NeighborhoodGrowth.targets_tend_to_zero' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'NeighborhoodGrowth.from_punctured_germs' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "replaying NeighborhoodGrowth"
+      ]
+    },
+    {
+      "module": "GermSupport",
+      "source_sha256": "0374eb9857029ac5a5c7764fb9a86c35f83060af0dc02c2399d0682413a1efef",
+      "object_sha256": "e7635409f02e4f3b6f31316de2a88172a3a0027c993061ebbd23ee1d0e3fc0e1",
+      "checker_output": [
+        "'GermSupport.nonzero_at' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "replaying GermSupport"
+      ]
+    },
+    {
+      "module": "LocalRegularSupport",
+      "source_sha256": "512111f366a04d8b75b227dc37b6737e9c18e5d579f2931cb8c30d24b37d1546",
+      "object_sha256": "042b9a59f456ff6b61ba3081ab4efbdf99941e30b73b373a2166255982653b12",
+      "checker_output": [
+        "'LocalRegularSupport.all_local_targets' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "replaying LocalRegularSupport"
+      ]
+    },
+    {
+      "module": "DenominatorControl",
+      "source_sha256": "64c49996cad51ab839ea1e8a453847a520d1badf9aca61de5932c4a13bed106a",
+      "object_sha256": "f359315433392ce6bbca09d787ff663d1d89ac0ec8650ed7448cc9f666df5922",
+      "checker_output": [
+        "'DenominatorControl.odd_dilation_no_integral_solution' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'DenominatorControl.no_solution_mod_two' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'DenominatorControl.represented' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "replaying DenominatorControl"
+      ]
+    },
+    {
+      "module": "UncappedGrowth",
+      "source_sha256": "b6c3ba5df9d1fcd99a936b1b766857bfaadd600f6081c05e19bb233545075457",
+      "object_sha256": "88bfa858647a90daff3090fba2c17e5bfec081d5e180f2fa2a751cc146bab13d",
+      "checker_output": [
+        "'UncappedGrowth.all_multiples' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "replaying UncappedGrowth"
+      ]
+    },
+    {
+      "module": "ShellThreshold",
+      "source_sha256": "90f3883b7639e0e86ef06ecad77a594f51ca0f85546c32a9cb3925f52a01e16c",
+      "object_sha256": "92f5587ac4a9b31ad1c4b4507f901e372f251abcbd6ba443e8b5d0860e5baf99",
+      "checker_output": [
+        "'ShellThreshold.classify' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "replaying ShellThreshold"
+      ]
+    },
+    {
+      "module": "OptimalSupport",
+      "source_sha256": "f742f827a7e53f9a930bc8989f03bdce947cf47cf5995b3b9732bfa17bc74c3b",
+      "object_sha256": "5c791890801cb47638bb4bd3ea07435b60d69f44884252606973c0c29f02794a",
+      "checker_output": [
+        "'OptimalSupport.local_threshold' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'OptimalSupport.positive_iff_multiple' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'OptimalSupport.generator_unique' depends on axioms: [propext]",
+        "replaying OptimalSupport"
+      ]
+    }
+  ]
+}

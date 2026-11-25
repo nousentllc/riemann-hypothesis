@@ -1,0 +1,189 @@
+{
+  "anisotropic_control": [
+    {
+      "explanation": "Two squares divisible by 3 require both coordinates divisible by 3.",
+      "p": 3,
+      "r": 3,
+      "target_1": 36,
+      "target_3": 0,
+      "target_9": 36
+    },
+    {
+      "explanation": "Two squares divisible by 3 require both coordinates divisible by 3.",
+      "p": 3,
+      "r": 4,
+      "target_1": 108,
+      "target_3": 0,
+      "target_9": 108
+    },
+    {
+      "explanation": "Two squares divisible by 3 require both coordinates divisible by 3.",
+      "p": 3,
+      "r": 5,
+      "target_1": 324,
+      "target_3": 0,
+      "target_9": 324
+    }
+  ],
+  "chart": [
+    {
+      "modulus": 2,
+      "normalized_patch": "1/2",
+      "p": 2,
+      "polynomial_offsets_tested": 2,
+      "r": 1,
+      "scaled_off_image": 1,
+      "scaled_on_image": 4,
+      "targets": 2,
+      "tested_triples_per_form": 4,
+      "unit_patch_count": 2
+    },
+    {
+      "modulus": 4,
+      "normalized_patch": "1/2",
+      "p": 2,
+      "polynomial_offsets_tested": 2,
+      "r": 2,
+      "scaled_off_image": 2,
+      "scaled_on_image": 16,
+      "targets": 4,
+      "tested_triples_per_form": 32,
+      "unit_patch_count": 8
+    },
+    {
+      "modulus": 8,
+      "normalized_patch": "1/2",
+      "p": 2,
+      "polynomial_offsets_tested": 2,
+      "r": 3,
+      "scaled_off_image": 4,
+      "scaled_on_image": 64,
+      "targets": 8,
+      "tested_triples_per_form": 256,
+      "unit_patch_count": 32
+    },
+    {
+      "modulus": 16,
+      "normalized_patch": "1/2",
+      "p": 2,
+      "polynomial_offsets_tested": 2,
+      "r": 4,
+      "scaled_off_image": 8,
+      "scaled_on_image": 256,
+      "targets": 16,
+      "tested_triples_per_form": 2048,
+      "unit_patch_count": 128
+    },
+    {
+      "modulus": 32,
+      "normalized_patch": "1/2",
+      "p": 2,
+      "polynomial_offsets_tested": 2,
+      "r": 5,
+      "scaled_off_image": 16,
+      "scaled_on_image": 1024,
+      "targets": 32,
+      "tested_triples_per_form": 16384,
+      "unit_patch_count": 512
+    },
+    {
+      "modulus": 64,
+      "normalized_patch": "1/2",
+      "p": 2,
+      "polynomial_offsets_tested": 2,
+      "r": 6,
+      "scaled_off_image": 32,
+      "scaled_on_image": 4096,
+      "targets": 64,
+      "tested_triples_per_form": 131072,
+      "unit_patch_count": 2048
+    },
+    {
+      "modulus": 3,
+      "normalized_patch": "2/3",
+      "p": 3,
+      "polynomial_offsets_tested": 2,
+      "r": 1,
+      "scaled_off_image": 2,
+      "scaled_on_image": 18,
+      "targets": 3,
+      "tested_triples_per_form": 18,
+      "unit_patch_count": 6
+    },
+    {
+      "modulus": 9,
+      "normalized_patch": "2/3",
+      "p": 3,
+      "polynomial_offsets_tested": 2,
+      "r": 2,
+      "scaled_off_image": 6,
+      "scaled_on_image": 162,
+      "targets": 9,
+      "tested_triples_per_form": 486,
+      "unit_patch_count": 54
+    },
+    {
+      "modulus": 27,
+      "normalized_patch": "2/3",
+      "p": 3,
+      "polynomial_offsets_tested": 2,
+      "r": 3,
+      "scaled_off_image": 18,
+      "scaled_on_image": 1458,
+      "targets": 27,
+      "tested_triples_per_form": 13122,
+      "unit_patch_count": 486
+    },
+    {
+      "modulus": 81,
+      "normalized_patch": "2/3",
+      "p": 3,
+      "polynomial_offsets_tested": 2,
+      "r": 4,
+      "scaled_off_image": 54,
+      "scaled_on_image": 13122,
+      "targets": 81,
+      "tested_triples_per_form": 354294,
+      "unit_patch_count": 4374
+    },
+    {
+      "modulus": 5,
+      "normalized_patch": "4/5",
+      "p": 5,
+      "polynomial_offsets_tested": 2,
+      "r": 1,
+      "scaled_off_image": 4,
+      "scaled_on_image": 100,
+      "targets": 5,
+      "tested_triples_per_form": 100,
+      "unit_patch_count": 20
+    },
+    {
+      "modulus": 25,
+      "normalized_patch": "4/5",
+      "p": 5,
+      "polynomial_offsets_tested": 2,
+      "r": 2,
+      "scaled_off_image": 20,
+      "scaled_on_image": 2500,
+      "targets": 25,
+      "tested_triples_per_form": 12500,
+      "unit_patch_count": 500
+    },
+    {
+      "modulus": 125,
+      "normalized_patch": "4/5",
+      "p": 5,
+      "polynomial_offsets_tested": 2,
+      "r": 3,
+      "scaled_off_image": 100,
+      "scaled_on_image": 62500,
+      "targets": 125,
+      "tested_triples_per_form": 1562500,
+      "unit_patch_count": 12500
+    }
+  ],
+  "rings": 13,
+  "target_ring_pairs": 401,
+  "triples_per_form_total": 2092816
+}

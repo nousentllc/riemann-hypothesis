@@ -1,0 +1,171 @@
+{
+  "method": "unrestricted and all-even square histograms convolved six times, arbitrary-precision integers",
+  "counts": {
+    "residues": 2047,
+    "all_residue_formula_checks": 2047,
+    "resolved_nonzero_bins": 2026,
+    "unresolved_nonzero_bins": 10,
+    "zero_bins": 11,
+    "primitive_and_even_checks_at_targets_divisible_by_four": 511,
+    "square_target_tests": 2816,
+    "direct_tuple_depths": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  "rows": [
+    {
+      "depth": 0,
+      "modulus": 1,
+      "target_unit": "1",
+      "target_4": "1",
+      "target_16": "1",
+      "target_64": "1",
+      "zero_tube": "1"
+    },
+    {
+      "depth": 1,
+      "modulus": 2,
+      "target_unit": "1",
+      "target_4": "1",
+      "target_16": "1",
+      "target_64": "1",
+      "zero_tube": "1"
+    },
+    {
+      "depth": 2,
+      "modulus": 4,
+      "target_unit": "3/4",
+      "target_4": "1",
+      "target_16": "1",
+      "target_64": "1",
+      "zero_tube": "1"
+    },
+    {
+      "depth": 3,
+      "modulus": 8,
+      "target_unit": "3/4",
+      "target_4": "1",
+      "target_16": "1",
+      "target_64": "1",
+      "zero_tube": "1"
+    },
+    {
+      "depth": 4,
+      "modulus": 16,
+      "target_unit": "3/4",
+      "target_4": "63/64",
+      "target_16": "1",
+      "target_64": "1",
+      "zero_tube": "1"
+    },
+    {
+      "depth": 5,
+      "modulus": 32,
+      "target_unit": "3/4",
+      "target_4": "63/64",
+      "target_16": "1",
+      "target_64": "1",
+      "zero_tube": "1"
+    },
+    {
+      "depth": 6,
+      "modulus": 64,
+      "target_unit": "3/4",
+      "target_4": "63/64",
+      "target_16": "1023/1024",
+      "target_64": "1",
+      "zero_tube": "1"
+    },
+    {
+      "depth": 7,
+      "modulus": 128,
+      "target_unit": "3/4",
+      "target_4": "63/64",
+      "target_16": "1023/1024",
+      "target_64": "1",
+      "zero_tube": "1"
+    },
+    {
+      "depth": 8,
+      "modulus": 256,
+      "target_unit": "3/4",
+      "target_4": "63/64",
+      "target_16": "1023/1024",
+      "target_64": "16383/16384",
+      "zero_tube": "1"
+    },
+    {
+      "depth": 9,
+      "modulus": 512,
+      "target_unit": "3/4",
+      "target_4": "63/64",
+      "target_16": "1023/1024",
+      "target_64": "16383/16384",
+      "zero_tube": "1"
+    },
+    {
+      "depth": 10,
+      "modulus": 1024,
+      "target_unit": "3/4",
+      "target_4": "63/64",
+      "target_16": "1023/1024",
+      "target_64": "16383/16384",
+      "zero_tube": "1"
+    }
+  ],
+  "rank_two_control": [
+    {
+      "depth": 0,
+      "target_4_four_squares": "1",
+      "target_16_four_squares": "1"
+    },
+    {
+      "depth": 1,
+      "target_4_four_squares": "1",
+      "target_16_four_squares": "1"
+    },
+    {
+      "depth": 2,
+      "target_4_four_squares": "1/2",
+      "target_16_four_squares": "1/2"
+    },
+    {
+      "depth": 3,
+      "target_4_four_squares": "3/4",
+      "target_16_four_squares": "1/4"
+    },
+    {
+      "depth": 4,
+      "target_4_four_squares": "3/4",
+      "target_16_four_squares": "1/8"
+    },
+    {
+      "depth": 5,
+      "target_4_four_squares": "3/4",
+      "target_16_four_squares": "3/16"
+    },
+    {
+      "depth": 6,
+      "target_4_four_squares": "3/4",
+      "target_16_four_squares": "3/16"
+    },
+    {
+      "depth": 7,
+      "target_4_four_squares": "3/4",
+      "target_16_four_squares": "3/16"
+    },
+    {
+      "depth": 8,
+      "target_4_four_squares": "3/4",
+      "target_16_four_squares": "3/16"
+    },
+    {
+      "depth": 9,
+      "target_4_four_squares": "3/4",
+      "target_16_four_squares": "3/16"
+    }
+  ]
+}
