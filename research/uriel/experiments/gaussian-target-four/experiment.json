@@ -1,0 +1,168 @@
+{
+  "rows": [
+    {
+      "depth": 0,
+      "modulus": 1,
+      "total": 1,
+      "primitive": 0,
+      "all_even": 1,
+      "normalized": [
+        "0",
+        "1",
+        "1"
+      ],
+      "target_twelve": 1
+    },
+    {
+      "depth": 1,
+      "modulus": 2,
+      "total": 32,
+      "primitive": 31,
+      "all_even": 1,
+      "normalized": [
+        "31/32",
+        "1/32",
+        "1"
+      ],
+      "target_twelve": 32
+    },
+    {
+      "depth": 2,
+      "modulus": 4,
+      "total": 1024,
+      "primitive": 960,
+      "all_even": 64,
+      "normalized": [
+        "15/16",
+        "1/16",
+        "1"
+      ],
+      "target_twelve": 1024
+    },
+    {
+      "depth": 3,
+      "modulus": 8,
+      "total": 32768,
+      "primitive": 30720,
+      "all_even": 2048,
+      "normalized": [
+        "15/16",
+        "1/16",
+        "1"
+      ],
+      "target_twelve": 32768
+    },
+    {
+      "depth": 4,
+      "modulus": 16,
+      "total": 1032192,
+      "primitive": 983040,
+      "all_even": 49152,
+      "normalized": [
+        "15/16",
+        "3/64",
+        "63/64"
+      ],
+      "target_twelve": 1064960
+    },
+    {
+      "depth": 5,
+      "modulus": 32,
+      "total": 33030144,
+      "primitive": 31457280,
+      "all_even": 1572864,
+      "normalized": [
+        "15/16",
+        "3/64",
+        "63/64"
+      ],
+      "target_twelve": 34078720
+    },
+    {
+      "depth": 6,
+      "modulus": 64,
+      "total": 1056964608,
+      "primitive": 1006632960,
+      "all_even": 50331648,
+      "normalized": [
+        "15/16",
+        "3/64",
+        "63/64"
+      ],
+      "target_twelve": 1090519040
+    },
+    {
+      "depth": 7,
+      "modulus": 128,
+      "total": 33822867456,
+      "primitive": 32212254720,
+      "all_even": 1610612736,
+      "normalized": [
+        "15/16",
+        "3/64",
+        "63/64"
+      ],
+      "target_twelve": 34896609280
+    },
+    {
+      "depth": 8,
+      "modulus": 256,
+      "total": 1082331758592,
+      "primitive": 1030792151040,
+      "all_even": 51539607552,
+      "normalized": [
+        "15/16",
+        "3/64",
+        "63/64"
+      ],
+      "target_twelve": 1116691496960
+    },
+    {
+      "depth": 9,
+      "modulus": 512,
+      "total": 34634616274944,
+      "primitive": 32985348833280,
+      "all_even": 1649267441664,
+      "normalized": [
+        "15/16",
+        "3/64",
+        "63/64"
+      ],
+      "target_twelve": 35734127902720
+    },
+    {
+      "depth": 10,
+      "modulus": 1024,
+      "total": 1108307720798208,
+      "primitive": 1055531162664960,
+      "all_even": 52776558133248,
+      "normalized": [
+        "15/16",
+        "3/64",
+        "63/64"
+      ],
+      "target_twelve": 1143492092887040
+    }
+  ],
+  "level_three_parents_by_level_four_child": {
+    "4": {
+      "even": 768,
+      "primitive": 15360
+    },
+    "12": {
+      "even": 1280,
+      "primitive": 15360
+    }
+  },
+  "odd_square_residues_with_four_roots": {
+    "3": 1,
+    "4": 2,
+    "5": 4,
+    "6": 8,
+    "7": 16,
+    "8": 32,
+    "9": 64,
+    "10": 128
+  },
+  "direct_vectors": 266305
+}

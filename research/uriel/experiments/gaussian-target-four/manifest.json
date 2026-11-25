@@ -1,0 +1,838 @@
+{
+  "original_commit": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "lean": "819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+  "modules": [
+    {
+      "module": "Formalism.UnipotentAdelicQuotients.SWXSDefs",
+      "kind": "pinned",
+      "path": "pinned/Formalism/UnipotentAdelicQuotients/SWXSDefs.lean",
+      "imports": [],
+      "sha256": "ac8bd494d1be925d35d6e3a10263ca6f4b4f699d0853e8e5eb660d43a9bcd9ab",
+      "git_blob": "6c1a75de26546f6911ec40e3ff61e9cf33e5634f"
+    },
+    {
+      "module": "Formalism.UnipotentAdelicQuotients.SiegelWeilUnitaryConvergent",
+      "kind": "pinned",
+      "path": "pinned/Formalism/UnipotentAdelicQuotients/SiegelWeilUnitaryConvergent.lean",
+      "imports": [
+        "Formalism.UnipotentAdelicQuotients.SWXSDefs"
+      ],
+      "sha256": "3026e44b56da87b3204af26cf368689c4a6fa22c9f0cea6fe38c63f51cc5b4cb",
+      "git_blob": "53812df9bed2dc18c411c67e3c189ea22736938a"
+    },
+    {
+      "module": "Formalism.SatakeDualWeyl.Statement",
+      "kind": "pinned",
+      "path": "pinned/Formalism/SatakeDualWeyl/Statement.lean",
+      "imports": [],
+      "sha256": "ff0b4971b2c44e6b9eeac44013ff35e5aeb7a126a87d7640d2fd72277147696c",
+      "git_blob": "e5f0d2a668f9bb75c740202d478d28f505fff540"
+    },
+    {
+      "module": "Formalism.SharpRestriction.GlobalSchurBounds.GeneralLinearActions.GenusMassVolumes",
+      "kind": "pinned",
+      "path": "pinned/Formalism/SharpRestriction/GlobalSchurBounds/GeneralLinearActions/GenusMassVolumes.lean",
+      "imports": [
+        "Formalism.SatakeDualWeyl.Statement"
+      ],
+      "sha256": "a33d33e6070c63f1e118c2a0ce992d57e8de5fb28105a072ca0b9cb6ee48a02b",
+      "git_blob": "525618b770cb535fd890f10277af11ffbe76af40"
+    },
+    {
+      "module": "CompanionTheory.SpectralGeometry.CountingDefinitions.AdelicEulerProducts.IsEulerProd",
+      "kind": "pinned",
+      "path": "pinned/CompanionTheory/SpectralGeometry/CountingDefinitions/AdelicEulerProducts/IsEulerProd.lean",
+      "imports": [
+        "Formalism.UnipotentAdelicQuotients.SiegelWeilUnitaryConvergent",
+        "Formalism.SharpRestriction.GlobalSchurBounds.GeneralLinearActions.GenusMassVolumes"
+      ],
+      "sha256": "ed80c757225192c59eedff933544a99e3edf3669e8522c2211ab7a8106490b61",
+      "git_blob": "6341eea11489ecd82bda087171023fad7d68415e"
+    },
+    {
+      "module": "GaussianField",
+      "kind": "inherited",
+      "path": "verification/GaussianField.lean",
+      "imports": [
+        "CompanionTheory.SpectralGeometry.CountingDefinitions.AdelicEulerProducts.IsEulerProd"
+      ],
+      "sha256": "861644f02628c62164c7f8607358a50347a321e6f8efdedd47a43efe432d8e06",
+      "parent_git_blob": "f7a714773a5f68586f78a85ff39d9c2939bb3992"
+    },
+    {
+      "module": "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.EtaleAwayQuotientEqLocalization",
+      "kind": "pinned",
+      "path": "pinned/CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/EtaleAwayQuotientEqLocalization.lean",
+      "imports": [
+        "CompanionTheory.SpectralGeometry.CountingDefinitions.AdelicEulerProducts.IsEulerProd"
+      ],
+      "sha256": "0bd6d8756cc7ec04de7d7d88592525d5e8cc0a222e618bac2950cdbb505e37ed",
+      "git_blob": "9afeb13dfbcdb6a36a3547af5927fa137abfa511"
+    },
+    {
+      "module": "GaussianTrace",
+      "kind": "inherited",
+      "path": "verification/GaussianTrace.lean",
+      "imports": [
+        "GaussianField",
+        "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.EtaleAwayQuotientEqLocalization"
+      ],
+      "sha256": "96fe7b201df0341c7d32735217f7f5283117bf48414c761cf21621e20c06d196",
+      "parent_git_blob": "d7f71308988448fea52f374059a938940581753d"
+    },
+    {
+      "module": "Contact",
+      "kind": "inherited",
+      "path": "verification/Contact.lean",
+      "imports": [],
+      "sha256": "4baa736277575942a1735aa479aae54203d74f57495542d942d65f74a1dcc3c3",
+      "parent_git_blob": "0f28f47f0cde220ff73bacad327e7db148fc8ef7"
+    },
+    {
+      "module": "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.TensorLocallyCompactRing",
+      "kind": "pinned",
+      "path": "pinned/CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/TensorLocallyCompactRing.lean",
+      "imports": [
+        "CompanionTheory.SpectralGeometry.CountingDefinitions.AdelicEulerProducts.IsEulerProd"
+      ],
+      "sha256": "cf7cb69589f4e68ad6e86362eee0e5b40794b59a509af2d1ef2813bf15b2c398",
+      "git_blob": "6674028d66e29bc990b5902ad37e78679b923f9d"
+    },
+    {
+      "module": "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.TensorLocallyCompactRingStatement",
+      "kind": "pinned",
+      "path": "pinned/CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/TensorLocallyCompactRingStatement.lean",
+      "imports": [
+        "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.TensorLocallyCompactRing",
+        "CompanionTheory.SpectralGeometry.CountingDefinitions.AdelicEulerProducts.IsEulerProd"
+      ],
+      "sha256": "416bec5b0bd876c20168f59ab474f53c4fc6cc33153eec0e1a097fb872e3016d",
+      "git_blob": "6be4ccc1ae2c051d85ff2a01240e656f00552422"
+    },
+    {
+      "module": "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.CoordinateHaarMeasure",
+      "kind": "pinned",
+      "path": "pinned/CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/CoordinateHaarMeasure.lean",
+      "imports": [
+        "CompanionTheory.SpectralGeometry.CountingDefinitions.AdelicEulerProducts.IsEulerProd",
+        "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.TensorLocallyCompactRingStatement"
+      ],
+      "sha256": "aceba0e6c21e34f3da72ef873ecb8dfc111d0e11bbbc475c1e66b2c9e96feabd",
+      "git_blob": "57086ef0e10376cd495b6c46da1a4c6443a5d508"
+    },
+    {
+      "module": "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.CoordinateHaarMeasureStatement",
+      "kind": "pinned",
+      "path": "pinned/CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/CoordinateHaarMeasureStatement.lean",
+      "imports": [
+        "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.CoordinateHaarMeasure",
+        "CompanionTheory.SpectralGeometry.CountingDefinitions.AdelicEulerProducts.IsEulerProd"
+      ],
+      "sha256": "fc46c266f1db47cd2a7c6d4e0acde4137840edfc8ade3261bebffeadb12e8e32",
+      "git_blob": "3d018b3fb941758574c1add6ea521dfc0fa9c06d"
+    },
+    {
+      "module": "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.ContinuousDensitiesEqOfIntegralsOnCompacts",
+      "kind": "pinned",
+      "path": "pinned/CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/ContinuousDensitiesEqOfIntegralsOnCompacts.lean",
+      "imports": [
+        "Formalism.UnipotentAdelicQuotients.SWXSDefs",
+        "Formalism.SharpRestriction.GlobalSchurBounds.GeneralLinearActions.GenusMassVolumes"
+      ],
+      "sha256": "85b7d93307ee38fd10d7b935dc32bba90b005190cd0074695502d51c69996da3",
+      "git_blob": "a1ad795057891fa358fb940cad6469600ce290c1"
+    },
+    {
+      "module": "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.HermitianMatricesLocallyCompactBorel",
+      "kind": "pinned",
+      "path": "pinned/CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/HermitianMatricesLocallyCompactBorel.lean",
+      "imports": [
+        "CompanionTheory.SpectralGeometry.CountingDefinitions.AdelicEulerProducts.IsEulerProd"
+      ],
+      "sha256": "631245c27b67c99c0866f918d4e7426f3211d19b2ce8398dcde3b22607ff95fc",
+      "git_blob": "2378f192cf9531b2e0d044369ac885f5c216bb46"
+    },
+    {
+      "module": "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.DisintegrationDensityContinuous",
+      "kind": "pinned",
+      "path": "pinned/CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/DisintegrationDensityContinuous.lean",
+      "imports": [
+        "Formalism.UnipotentAdelicQuotients.SWXSDefs",
+        "Formalism.SharpRestriction.GlobalSchurBounds.GeneralLinearActions.GenusMassVolumes"
+      ],
+      "sha256": "9f1cbb496183a916ceacf5dc7b0d8d853063945920c94427642a6fc961b881a8",
+      "git_blob": "3b194b32ff2ca0226d3f8553e9ffeb14d315d45b"
+    },
+    {
+      "module": "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.DisintegrationDensityContinuousStatement",
+      "kind": "pinned",
+      "path": "pinned/CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/DisintegrationDensityContinuousStatement.lean",
+      "imports": [
+        "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.DisintegrationDensityContinuous",
+        "Formalism.UnipotentAdelicQuotients.SWXSDefs",
+        "Formalism.SharpRestriction.GlobalSchurBounds.GeneralLinearActions.GenusMassVolumes"
+      ],
+      "sha256": "96a621806dbe70351a83abce5cb7d57b9d4f5a1579ce2ab019a0703829ffb40f",
+      "git_blob": "4a305e3f524547b3933615cb48139da5d858630c"
+    },
+    {
+      "module": "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.DisintegrationDensityUnique",
+      "kind": "pinned",
+      "path": "pinned/CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/DisintegrationDensityUnique.lean",
+      "imports": [
+        "Formalism.UnipotentAdelicQuotients.SWXSDefs",
+        "Formalism.SharpRestriction.GlobalSchurBounds.GeneralLinearActions.GenusMassVolumes",
+        "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.DisintegrationDensityContinuousStatement"
+      ],
+      "sha256": "c5e4d58337e9d6c8a7a8fdd523b80828dacc086e41c57cdeec9c9f68232e296e",
+      "git_blob": "2330046c2579b4d708f69130541386c2cabf05b2"
+    },
+    {
+      "module": "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.TensorInvolutionAlgebraProperties",
+      "kind": "pinned",
+      "path": "pinned/CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/TensorInvolutionAlgebraProperties.lean",
+      "imports": [
+        "CompanionTheory.SpectralGeometry.CountingDefinitions.AdelicEulerProducts.IsEulerProd"
+      ],
+      "sha256": "5ce4345ee1d6d9a64007c843552fb599a9689fa825661829833a98b9a1d2654c",
+      "git_blob": "c02a47ad37132d9184eaa827e2ff3966a50c7a5f"
+    },
+    {
+      "module": "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.TensorInvolutionAlgebraPropertiesStatement",
+      "kind": "pinned",
+      "path": "pinned/CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/TensorInvolutionAlgebraPropertiesStatement.lean",
+      "imports": [
+        "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.TensorInvolutionAlgebraProperties",
+        "CompanionTheory.SpectralGeometry.CountingDefinitions.AdelicEulerProducts.IsEulerProd"
+      ],
+      "sha256": "54a9884123df3ad37833484ab24a46b9ab4c2dcccff785827dd67be2aa7ae253",
+      "git_blob": "6d7a5d9f22728ad6e549534d4c42eede2bd310a3"
+    },
+    {
+      "module": "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.UnitsOpenEmbeddingLocalTensor",
+      "kind": "pinned",
+      "path": "pinned/CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/UnitsOpenEmbeddingLocalTensor.lean",
+      "imports": [
+        "CompanionTheory.SpectralGeometry.CountingDefinitions.AdelicEulerProducts.IsEulerProd",
+        "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.TensorInvolutionAlgebraPropertiesStatement",
+        "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.TensorLocallyCompactRingStatement"
+      ],
+      "sha256": "6b20cd1d00414aabfa3a74f372b3c8d00614cb0fd22a56e7da6160c9f7e2af5c",
+      "git_blob": "8c9a5a33949f60809ea2d2eff019a44fc6540d40"
+    },
+    {
+      "module": "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.UnitsOpenEmbeddingLocalTensorStatement",
+      "kind": "pinned",
+      "path": "pinned/CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/UnitsOpenEmbeddingLocalTensorStatement.lean",
+      "imports": [
+        "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.UnitsOpenEmbeddingLocalTensor",
+        "CompanionTheory.SpectralGeometry.CountingDefinitions.AdelicEulerProducts.IsEulerProd"
+      ],
+      "sha256": "f788bce93a58475983db591c54773c8bad4556ecff6dfec27f1f087a9081ac85",
+      "git_blob": "41a9d40efc053e465d67a8ac54820639172a48e0"
+    },
+    {
+      "module": "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.GramFiberMeasuresTransitivity",
+      "kind": "pinned",
+      "path": "pinned/CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/GramFiberMeasuresTransitivity.lean",
+      "imports": [
+        "CompanionTheory.SpectralGeometry.CountingDefinitions.AdelicEulerProducts.IsEulerProd",
+        "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.DisintegrationDensityUnique",
+        "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.HermitianMatricesLocallyCompactBorel",
+        "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.TensorLocallyCompactRingStatement",
+        "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.UnitsOpenEmbeddingLocalTensorStatement"
+      ],
+      "sha256": "9eecadd826e77406c6460bbf580514e422a6b68d1d8e8f66294cb3d75192edce",
+      "git_blob": "795aaea5a5c775f1f10a3f8edb8622a3db4b8c77"
+    },
+    {
+      "module": "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.GramFiberMeasuresTransitivityStatement",
+      "kind": "pinned",
+      "path": "pinned/CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/GramFiberMeasuresTransitivityStatement.lean",
+      "imports": [
+        "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.GramFiberMeasuresTransitivity",
+        "CompanionTheory.SpectralGeometry.CountingDefinitions.AdelicEulerProducts.IsEulerProd"
+      ],
+      "sha256": "b38c0f4d1186367827e89cbe65b0424e9774fb3e4a28ff05b580f2499978684a",
+      "git_blob": "46249f3330315481e63e50e47508f3e122da99ba"
+    },
+    {
+      "module": "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.ContinuousHermScal",
+      "kind": "pinned",
+      "path": "pinned/CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/ContinuousHermScal.lean",
+      "imports": [
+        "CompanionTheory.SpectralGeometry.CountingDefinitions.AdelicEulerProducts.IsEulerProd"
+      ],
+      "sha256": "0b68cc9fcaf82ba8f71946e4158b3961a15033b42150bd39bacfdc5645c4fa83",
+      "git_blob": "bf22d320680dac6582aa830987b1ca90b986f05f"
+    },
+    {
+      "module": "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.MeasurableCoordinateMapsTensor",
+      "kind": "pinned",
+      "path": "pinned/CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/MeasurableCoordinateMapsTensor.lean",
+      "imports": [
+        "CompanionTheory.SpectralGeometry.CountingDefinitions.AdelicEulerProducts.IsEulerProd",
+        "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.TensorLocallyCompactRingStatement"
+      ],
+      "sha256": "78cd54e8b07784b0050cc27e44b12d6954032d2814f1fb223a161ccd957a1390",
+      "git_blob": "04fb5ba585b8df7e0b8879e7cf2fb168a80fb1ef"
+    },
+    {
+      "module": "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.MeasurableCoordinateMapsTensorStatement",
+      "kind": "pinned",
+      "path": "pinned/CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/MeasurableCoordinateMapsTensorStatement.lean",
+      "imports": [
+        "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.MeasurableCoordinateMapsTensor",
+        "CompanionTheory.SpectralGeometry.CountingDefinitions.AdelicEulerProducts.IsEulerProd"
+      ],
+      "sha256": "a043b8edc210f4e262f0ad89b12f6a52ad0a862894d2b87129a12f41a70aed3c",
+      "git_blob": "13f5d7b87ee96311a46df067e248e49a9df7a14b"
+    },
+    {
+      "module": "Nearby",
+      "kind": "inherited",
+      "path": "verification/Nearby.lean",
+      "imports": [
+        "Contact",
+        "CompanionTheory.SpectralGeometry.CountingDefinitions.AdelicEulerProducts.IsEulerProd",
+        "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.TensorLocallyCompactRingStatement",
+        "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.CoordinateHaarMeasureStatement",
+        "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.ContinuousDensitiesEqOfIntegralsOnCompacts",
+        "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.HermitianMatricesLocallyCompactBorel",
+        "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.GramFiberMeasuresTransitivityStatement",
+        "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.ContinuousHermScal",
+        "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.MeasurableCoordinateMapsTensorStatement"
+      ],
+      "sha256": "a9790ce6e38f650500ea1f19e16bb24ce6a072a81fc11d6a429dd09ac8abd7d5",
+      "parent_git_blob": "0529c18c7a8372cacdc6e3d0f759f5caae0decd7"
+    },
+    {
+      "module": "FiniteCounts",
+      "kind": "inherited",
+      "path": "verification/FiniteCounts.lean",
+      "imports": [],
+      "sha256": "2627b6b1d9366b058ea6f1fabfde983a066d0ed39e14803b036ba8e63210147a",
+      "parent_git_blob": "a877c9b68a742c8e959298679c37318f1497c485"
+    },
+    {
+      "module": "AllDepth",
+      "kind": "inherited",
+      "path": "verification/AllDepth.lean",
+      "imports": [
+        "FiniteCounts"
+      ],
+      "sha256": "e97004fbda6daf6444c899d570b26881de667061a4da6ab72db549a23e79d69a",
+      "parent_git_blob": "fd4945dc7a6c3d884f6100b03b27636c2f6e54e9"
+    },
+    {
+      "module": "Cylinders",
+      "kind": "inherited",
+      "path": "verification/Cylinders.lean",
+      "imports": [
+        "AllDepth"
+      ],
+      "sha256": "69a8f6ac8e0e77995ef337c72f8816885ea6af755a60783799a2050dbc6ae4ff",
+      "parent_git_blob": "b33a9bd132448cc319ed69e89db695b2e5a16a05"
+    },
+    {
+      "module": "Tubes",
+      "kind": "inherited",
+      "path": "verification/Tubes.lean",
+      "imports": [
+        "Cylinders"
+      ],
+      "sha256": "5983e7929bae8dfb9aceecba8cdf70663441f636569828aaf330b3fc56fc4636",
+      "parent_git_blob": "ee7d02ccdea16d1f7264f1d653969438bd1cfd0b"
+    },
+    {
+      "module": "Neighborhoods",
+      "kind": "inherited",
+      "path": "verification/Neighborhoods.lean",
+      "imports": [
+        "Cylinders"
+      ],
+      "sha256": "5449142ad8c18e7df658ca84b6ce445433608ce855cc322ba5bdf2938b5f85a1",
+      "parent_git_blob": "b2e62b5986e37c461cce197c3d74576fb9208b93"
+    },
+    {
+      "module": "Shallow",
+      "kind": "inherited",
+      "path": "verification/Shallow.lean",
+      "imports": [
+        "AllDepth"
+      ],
+      "sha256": "c3e3a0b91c4ca69f2ff44b974e940c577ea8c8bd4a269307a951afd34bb7b018",
+      "parent_git_blob": "9e4a77c9b8e17b01bae804d138df493430f1e638"
+    },
+    {
+      "module": "DyadicLocal",
+      "kind": "inherited",
+      "path": "verification/DyadicLocal.lean",
+      "imports": [
+        "CompanionTheory.SpectralGeometry.CountingDefinitions.AdelicEulerProducts.IsEulerProd",
+        "Cylinders"
+      ],
+      "sha256": "add295c1dd14171fc9d5789dee9a24c8543a722838139baf9b9b93c3fd2a8580",
+      "parent_git_blob": "a8e80754d2644c3aaff5b4109620c77673645da2"
+    },
+    {
+      "module": "Endpoint",
+      "kind": "inherited",
+      "path": "verification/Endpoint.lean",
+      "imports": [
+        "GaussianTrace",
+        "Nearby",
+        "Tubes",
+        "Neighborhoods",
+        "Shallow",
+        "DyadicLocal"
+      ],
+      "sha256": "533fe280a84b885d47f2319f32d150c21dd8bfd0a810b0566eaad638fd0c94a4",
+      "parent_git_blob": "a31b87a73021e37d6dcaf701739b1513272c62f8"
+    },
+    {
+      "module": "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.ContinuousDensitiesEqOfIntegralsOnCompactsStatement",
+      "kind": "pinned",
+      "path": "pinned/CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/ContinuousDensitiesEqOfIntegralsOnCompactsStatement.lean",
+      "imports": [
+        "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.ContinuousDensitiesEqOfIntegralsOnCompacts",
+        "Formalism.UnipotentAdelicQuotients.SWXSDefs",
+        "Formalism.SharpRestriction.GlobalSchurBounds.GeneralLinearActions.GenusMassVolumes"
+      ],
+      "sha256": "dabe15f33c407d9b5c3c2a7b659b3208822d3c10574df10f5851018b3afa5d2a",
+      "git_blob": "947e06cf4345da5e745dbd39543868d0c82ca0e5"
+    },
+    {
+      "module": "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.DisintegrationDensityExists",
+      "kind": "pinned",
+      "path": "pinned/CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/DisintegrationDensityExists.lean",
+      "imports": [
+        "Formalism.UnipotentAdelicQuotients.SWXSDefs",
+        "Formalism.SharpRestriction.GlobalSchurBounds.GeneralLinearActions.GenusMassVolumes",
+        "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.ContinuousDensitiesEqOfIntegralsOnCompactsStatement"
+      ],
+      "sha256": "9465bc1d28030be5342a7bc07e1c336880b3c437a660349bf137c2f1370f7c42",
+      "git_blob": "826b6528933123b74a7a1b62b19a07c41ec8e552"
+    },
+    {
+      "module": "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.DisintegrationDensityExistsStatement",
+      "kind": "pinned",
+      "path": "pinned/CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/DisintegrationDensityExistsStatement.lean",
+      "imports": [
+        "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.DisintegrationDensityExists",
+        "Formalism.UnipotentAdelicQuotients.SWXSDefs",
+        "Formalism.SharpRestriction.GlobalSchurBounds.GeneralLinearActions.GenusMassVolumes"
+      ],
+      "sha256": "327eb741bf14f6cbd939005149cc498100c1e3703c5e3c4877e2f89d6ca154c9",
+      "git_blob": "2012c928aecea8c4a89e7842fc4577f1ccd1f2cf"
+    },
+    {
+      "module": "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.RestrFamily",
+      "kind": "pinned",
+      "path": "pinned/CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/RestrFamily.lean",
+      "imports": [
+        "Formalism.UnipotentAdelicQuotients.SWXSDefs",
+        "Formalism.SharpRestriction.GlobalSchurBounds.GeneralLinearActions.GenusMassVolumes",
+        "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.DisintegrationDensityExistsStatement"
+      ],
+      "sha256": "c42e09e127ec753d799f437ea84ad38a20ae19b93595b660bfbad927eedfd58e",
+      "git_blob": "304d6188a3e0b7d5e009081692c2509981a91907"
+    },
+    {
+      "module": "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.HermitianMatricesLocallyCompactBorelStatement",
+      "kind": "pinned",
+      "path": "pinned/CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/HermitianMatricesLocallyCompactBorelStatement.lean",
+      "imports": [
+        "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.HermitianMatricesLocallyCompactBorel",
+        "CompanionTheory.SpectralGeometry.CountingDefinitions.AdelicEulerProducts.IsEulerProd"
+      ],
+      "sha256": "08bb26a0e47f33c150f079e45b2ddb1fb6818a4a948df6ad7fc40b5eb7b43315",
+      "git_blob": "6ea62bfd0cc832339d5afb36a1140dff708abde2"
+    },
+    {
+      "module": "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.GramRightActionIdentities",
+      "kind": "pinned",
+      "path": "pinned/CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/GramRightActionIdentities.lean",
+      "imports": [
+        "CompanionTheory.SpectralGeometry.CountingDefinitions.AdelicEulerProducts.IsEulerProd"
+      ],
+      "sha256": "9f4f37d0e876699885361912211331df510f619b8e98293af1be9cdaa4f70ac1",
+      "git_blob": "c95efc2fc1bafc217c9ba9d5f437780fd16bf826"
+    },
+    {
+      "module": "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.GramRightActionIdentitiesStatement",
+      "kind": "pinned",
+      "path": "pinned/CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/GramRightActionIdentitiesStatement.lean",
+      "imports": [
+        "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.GramRightActionIdentities",
+        "CompanionTheory.SpectralGeometry.CountingDefinitions.AdelicEulerProducts.IsEulerProd"
+      ],
+      "sha256": "fa488f52f2e84878d7102139a5cd8aeb8d89dd69714b0a6eacacbfe1a5224e51",
+      "git_blob": "5f117046b1c508b71b8edd2dd49690bb25793ae1"
+    },
+    {
+      "module": "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.HermitianOpenChartDiagonalUnipotent",
+      "kind": "pinned",
+      "path": "pinned/CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/HermitianOpenChartDiagonalUnipotent.lean",
+      "imports": [
+        "CompanionTheory.SpectralGeometry.CountingDefinitions.AdelicEulerProducts.IsEulerProd",
+        "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.TensorInvolutionAlgebraPropertiesStatement",
+        "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.TensorLocallyCompactRingStatement"
+      ],
+      "sha256": "0650f31a7bc3d2f305943b113f977de1a36d22b0bb9f67d371e3f499a37ca4b5",
+      "git_blob": "e74039575932bb1f7cdce38902976fcbe01a170f"
+    },
+    {
+      "module": "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.HermitianOpenChartDiagonalUnipotentStatement",
+      "kind": "pinned",
+      "path": "pinned/CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/HermitianOpenChartDiagonalUnipotentStatement.lean",
+      "imports": [
+        "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.HermitianOpenChartDiagonalUnipotent",
+        "CompanionTheory.SpectralGeometry.CountingDefinitions.AdelicEulerProducts.IsEulerProd"
+      ],
+      "sha256": "f04bd3ba9ef8b0bcff9c1fd6b1fdf878fabea033abfb10db716381d535855f8a",
+      "git_blob": "22e5686a2357352b2991b79f3b6202db3487bad1"
+    },
+    {
+      "module": "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.CoordinatePolynomialsFormMemKernelDifferential",
+      "kind": "pinned",
+      "path": "pinned/CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/CoordinatePolynomialsFormMemKernelDifferential.lean",
+      "imports": [
+        "Formalism.UnipotentAdelicQuotients.SWXSDefs",
+        "Formalism.SharpRestriction.GlobalSchurBounds.GeneralLinearActions.GenusMassVolumes"
+      ],
+      "sha256": "4518fd57d6dc9964c57d8f62fed86ac95af9a0d91f78f997dfd0dc227600777d",
+      "git_blob": "c52503839eb263bd6080330756a7df9e26e539e8"
+    },
+    {
+      "module": "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.HermitianUnitFormDiagonalizes",
+      "kind": "pinned",
+      "path": "pinned/CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/HermitianUnitFormDiagonalizes.lean",
+      "imports": [
+        "Formalism.UnipotentAdelicQuotients.SWXSDefs",
+        "Formalism.SharpRestriction.GlobalSchurBounds.GeneralLinearActions.GenusMassVolumes",
+        "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.CoordinatePolynomialsFormMemKernelDifferential"
+      ],
+      "sha256": "28b718998ae97d4f9bfa9556b56a6fb3ef76ef9fc5ff85513632f522a7e49dc3",
+      "git_blob": "ed585b292712f18d2cb87581c2821cdfa103c37c"
+    },
+    {
+      "module": "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.HermitianUnitFormDiagonalizesStatement",
+      "kind": "pinned",
+      "path": "pinned/CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/HermitianUnitFormDiagonalizesStatement.lean",
+      "imports": [
+        "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.HermitianUnitFormDiagonalizes",
+        "Formalism.UnipotentAdelicQuotients.SWXSDefs",
+        "Formalism.SharpRestriction.GlobalSchurBounds.GeneralLinearActions.GenusMassVolumes"
+      ],
+      "sha256": "aa6761942737487c6fee8ac8b3c4f52f5189c6ac27aa08f9afe3ffecbdf50c40",
+      "git_blob": "ae315646fb50e3e9b8d06bbe5758b697463f9585"
+    },
+    {
+      "module": "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.HermitianUnitFormRepresentsUnit",
+      "kind": "pinned",
+      "path": "pinned/CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/HermitianUnitFormRepresentsUnit.lean",
+      "imports": [
+        "Formalism.UnipotentAdelicQuotients.SWXSDefs",
+        "Formalism.SharpRestriction.GlobalSchurBounds.GeneralLinearActions.GenusMassVolumes"
+      ],
+      "sha256": "2ba4832336d47c5042ae1fd31df6ae40554ead9b86db14b4f2338d7c81550ed6",
+      "git_blob": "fd6f9ed6e81005f140497ee4d0dd6aa07a170574"
+    },
+    {
+      "module": "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.HermitianUnitFormRepresentsUnitStatement",
+      "kind": "pinned",
+      "path": "pinned/CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/HermitianUnitFormRepresentsUnitStatement.lean",
+      "imports": [
+        "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.HermitianUnitFormRepresentsUnit",
+        "Formalism.UnipotentAdelicQuotients.SWXSDefs",
+        "Formalism.SharpRestriction.GlobalSchurBounds.GeneralLinearActions.GenusMassVolumes"
+      ],
+      "sha256": "fed435f4ddf459539dfe74a6a4ca3956e4027ffb87ae96379e34629d70317e2d",
+      "git_blob": "838694ee82d185b2733b379271fd17d47e67d9fa"
+    },
+    {
+      "module": "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.LocalHermitianDiagonalizationUnits",
+      "kind": "pinned",
+      "path": "pinned/CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/LocalHermitianDiagonalizationUnits.lean",
+      "imports": [
+        "CompanionTheory.SpectralGeometry.CountingDefinitions.AdelicEulerProducts.IsEulerProd",
+        "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.TensorInvolutionAlgebraPropertiesStatement",
+        "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.HermitianUnitFormDiagonalizesStatement",
+        "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.HermitianUnitFormRepresentsUnitStatement"
+      ],
+      "sha256": "1bea6881f67b898b3e0654f75de13d7cf3def404a7ec474bda253ddb60aeca8b",
+      "git_blob": "530d57a7eb55cf1920fd91eca64142e2c5ea2cac"
+    },
+    {
+      "module": "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.LocalHermitianDiagonalizationUnitsStatement",
+      "kind": "pinned",
+      "path": "pinned/CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/LocalHermitianDiagonalizationUnitsStatement.lean",
+      "imports": [
+        "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.LocalHermitianDiagonalizationUnits",
+        "CompanionTheory.SpectralGeometry.CountingDefinitions.AdelicEulerProducts.IsEulerProd"
+      ],
+      "sha256": "5599c2a7319e03ed4f5c7e0ae1837dd563594ed876ca87f2a17caa5a6a0cb530",
+      "git_blob": "cd3c630116fb60ae2e56a08728f7eafaa7c72da1"
+    },
+    {
+      "module": "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.HermitianOrbitLocalSectionSubgroup",
+      "kind": "pinned",
+      "path": "pinned/CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/HermitianOrbitLocalSectionSubgroup.lean",
+      "imports": [
+        "CompanionTheory.SpectralGeometry.CountingDefinitions.AdelicEulerProducts.IsEulerProd",
+        "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.HermitianOpenChartDiagonalUnipotentStatement",
+        "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.LocalHermitianDiagonalizationUnitsStatement",
+        "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.GramRightActionIdentitiesStatement",
+        "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.TensorLocallyCompactRingStatement"
+      ],
+      "sha256": "afe8eb2d55b0d85b14367308e8091844b8dfd4f909bcbb799627a8212bd83cd2",
+      "git_blob": "63e887166783ab3d30d50230eed40683b05e1908"
+    },
+    {
+      "module": "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.HermitianOrbitLocalSectionSubgroupStatement",
+      "kind": "pinned",
+      "path": "pinned/CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/HermitianOrbitLocalSectionSubgroupStatement.lean",
+      "imports": [
+        "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.HermitianOrbitLocalSectionSubgroup",
+        "CompanionTheory.SpectralGeometry.CountingDefinitions.AdelicEulerProducts.IsEulerProd"
+      ],
+      "sha256": "1c40ec9c51cec2cbc8875652bc4a63b929047f1d8b562876b97a34ff2c89f981",
+      "git_blob": "cc1f77efb2fd9a7db1b4b9296d84bed2063ea450"
+    },
+    {
+      "module": "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.MeasureEqHaarProdOfLeftInvariant",
+      "kind": "pinned",
+      "path": "pinned/CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/MeasureEqHaarProdOfLeftInvariant.lean",
+      "imports": [
+        "Formalism.UnipotentAdelicQuotients.SWXSDefs",
+        "Formalism.SharpRestriction.GlobalSchurBounds.GeneralLinearActions.GenusMassVolumes"
+      ],
+      "sha256": "454b64744076aa8ac22f690f9ff6f310e2b9fdc29c47c2bd031dfdb5ec9fde11",
+      "git_blob": "6838391d0045eaae2c2250f579ee91ca5f93b602"
+    },
+    {
+      "module": "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.DisintegrationDensityFormula",
+      "kind": "pinned",
+      "path": "pinned/CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/DisintegrationDensityFormula.lean",
+      "imports": [
+        "Formalism.UnipotentAdelicQuotients.SWXSDefs",
+        "Formalism.SharpRestriction.GlobalSchurBounds.GeneralLinearActions.GenusMassVolumes",
+        "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.MeasureEqHaarProdOfLeftInvariant"
+      ],
+      "sha256": "7e0aa0544e0302c425a7a1d1b5a9712e26342a795b087a45f232d21683ce3e42",
+      "git_blob": "b8c1560e2a8f4e0d2c89f5271542fc9ba90264a3"
+    },
+    {
+      "module": "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.DisintegrationDensityFormulaStatement",
+      "kind": "pinned",
+      "path": "pinned/CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/DisintegrationDensityFormulaStatement.lean",
+      "imports": [
+        "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.DisintegrationDensityFormula",
+        "Formalism.UnipotentAdelicQuotients.SWXSDefs",
+        "Formalism.SharpRestriction.GlobalSchurBounds.GeneralLinearActions.GenusMassVolumes"
+      ],
+      "sha256": "4feac2abcb96d5ae9e8c7c7dfde0f5b2a15e770f9272c525767f5ad561a5216f",
+      "git_blob": "0810c45bea6982bf97cd3667d2c65ae9e043906f"
+    },
+    {
+      "module": "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.HaarModularCharacterOfContinuousAction",
+      "kind": "pinned",
+      "path": "pinned/CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/HaarModularCharacterOfContinuousAction.lean",
+      "imports": [
+        "Formalism.UnipotentAdelicQuotients.SWXSDefs",
+        "Formalism.SharpRestriction.GlobalSchurBounds.GeneralLinearActions.GenusMassVolumes"
+      ],
+      "sha256": "71551ab7d0bdd0e97c46dc0807cb2784fe02d74e880ba1adabafab7e419f3bcd",
+      "git_blob": "148116c173ad03441bf89903617997064b6db7ad"
+    },
+    {
+      "module": "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.HaarModularCharacterOfContinuousActionStatement",
+      "kind": "pinned",
+      "path": "pinned/CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/HaarModularCharacterOfContinuousActionStatement.lean",
+      "imports": [
+        "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.HaarModularCharacterOfContinuousAction",
+        "Formalism.UnipotentAdelicQuotients.SWXSDefs",
+        "Formalism.SharpRestriction.GlobalSchurBounds.GeneralLinearActions.GenusMassVolumes"
+      ],
+      "sha256": "0db82c1a05c059a1083eecef457c4dbc3a8b39df6927f9648f652e503497de31",
+      "git_blob": "d37a641f3c4817593c7a38165abbf2df0e8c546e"
+    },
+    {
+      "module": "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.GramFiberMeasureDisintegrationFormula",
+      "kind": "pinned",
+      "path": "pinned/CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/GramFiberMeasureDisintegrationFormula.lean",
+      "imports": [
+        "CompanionTheory.SpectralGeometry.CountingDefinitions.AdelicEulerProducts.IsEulerProd",
+        "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.TensorLocallyCompactRingStatement",
+        "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.HermitianMatricesLocallyCompactBorelStatement",
+        "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.GramRightActionIdentitiesStatement",
+        "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.HermitianOrbitLocalSectionSubgroupStatement",
+        "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.DisintegrationDensityFormulaStatement",
+        "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.HaarModularCharacterOfContinuousActionStatement"
+      ],
+      "sha256": "9f010b18f5b5c1bd3827f19beedb82a6e6332f7c0adaccf606c4d3ef6a2fa548",
+      "git_blob": "4b9d7907c3a569d727106d987f441c30c1c9854b"
+    },
+    {
+      "module": "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.GramFiberMeasureDisintegrationFormulaStatement",
+      "kind": "pinned",
+      "path": "pinned/CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/GramFiberMeasureDisintegrationFormulaStatement.lean",
+      "imports": [
+        "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.GramFiberMeasureDisintegrationFormula",
+        "CompanionTheory.SpectralGeometry.CountingDefinitions.AdelicEulerProducts.IsEulerProd"
+      ],
+      "sha256": "3904e62227a899fabc776498f564c85fa309d58f11c46e1238f8306fb324b1b2",
+      "git_blob": "70cc56bab44ff12ecf33bf2122c091accbd09133"
+    },
+    {
+      "module": "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.ExistsGramFiberMeasures",
+      "kind": "pinned",
+      "path": "pinned/CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/ExistsGramFiberMeasures.lean",
+      "imports": [
+        "CompanionTheory.SpectralGeometry.CountingDefinitions.AdelicEulerProducts.IsEulerProd",
+        "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.RestrFamily",
+        "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.HermitianMatricesLocallyCompactBorel",
+        "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.UnitsOpenEmbeddingLocalTensorStatement",
+        "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.GramFiberMeasureDisintegrationFormulaStatement",
+        "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.TensorLocallyCompactRingStatement"
+      ],
+      "sha256": "b691919060c63781cd17aa6aac16d263fc2af4bf33fa666715fcaa16ab865b8c",
+      "git_blob": "ddf2c9c660c18f78bef4d186c5e31536b2fd69a9"
+    },
+    {
+      "module": "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.ExistsGramFiberMeasuresStatement",
+      "kind": "pinned",
+      "path": "pinned/CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/ExistsGramFiberMeasuresStatement.lean",
+      "imports": [
+        "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.ExistsGramFiberMeasures",
+        "CompanionTheory.SpectralGeometry.CountingDefinitions.AdelicEulerProducts.IsEulerProd"
+      ],
+      "sha256": "3aadff4b51338c2b091b0ba71b705810bfd52d584970e7c93d040f51834b737d",
+      "git_blob": "e3811345c2bba42c3c8f313c4cdcf69486a6976c"
+    },
+    {
+      "module": "Existence",
+      "kind": "inherited",
+      "path": "verification/Existence.lean",
+      "imports": [
+        "Endpoint",
+        "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.ExistsGramFiberMeasuresStatement"
+      ],
+      "sha256": "37776167724f42037260db9ed9847f57ff810a87f6121bae87a4e6ca2e9af519",
+      "parent_git_blob": "5dbe27b3138031035db637d5a923f275f6bab2e3"
+    },
+    {
+      "module": "FourContact",
+      "kind": "study",
+      "path": "verification/FourContact.lean",
+      "imports": [
+        "Nearby",
+        "CompanionTheory.SpectralGeometry.CountingDefinitions.AdelicEulerProducts.IsEulerProd",
+        "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.TensorLocallyCompactRingStatement",
+        "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.CoordinateHaarMeasureStatement",
+        "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.ContinuousDensitiesEqOfIntegralsOnCompacts",
+        "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.HermitianMatricesLocallyCompactBorel",
+        "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.GramFiberMeasuresTransitivityStatement",
+        "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.ContinuousHermScal",
+        "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.MeasurableCoordinateMapsTensorStatement"
+      ],
+      "sha256": "e3d085f0673158c2d428a1ed98e504ceca19b78be0bf6ec1aeef7d2c4ab119c4"
+    },
+    {
+      "module": "FourBase",
+      "kind": "study",
+      "path": "verification/FourBase.lean",
+      "imports": [
+        "Shallow"
+      ],
+      "sha256": "ed9817edfdcdb0fdaea396470540a009727f211970036be491e43b2cfa2d0b91"
+    },
+    {
+      "module": "FourLift",
+      "kind": "study",
+      "path": "verification/FourLift.lean",
+      "imports": [
+        "AllDepth"
+      ],
+      "sha256": "cef03b1b26c0147e7f2832b0ca966e11b39b2d71595f0fcdc3966630074ef751"
+    },
+    {
+      "module": "FourEven",
+      "kind": "study",
+      "path": "verification/FourEven.lean",
+      "imports": [
+        "FourLift"
+      ],
+      "sha256": "ada7f2f88c68f9512fd580f1f5a99eeb058951bacb2b5951d7c48ddc822aaf7b"
+    },
+    {
+      "module": "FourCounts",
+      "kind": "study",
+      "path": "verification/FourCounts.lean",
+      "imports": [
+        "FourBase",
+        "FourEven"
+      ],
+      "sha256": "4a0ac56e530c6524273274af0368501c1e02ef32aed263bc80c4457d520f8c8d"
+    },
+    {
+      "module": "FourTubes",
+      "kind": "study",
+      "path": "verification/FourTubes.lean",
+      "imports": [
+        "FourCounts",
+        "Tubes"
+      ],
+      "sha256": "0dda1442b87ce7db4cfdf463e309644e3f345f6f6b0d0640ebf70e4270140641"
+    },
+    {
+      "module": "FourNeighborhood",
+      "kind": "study",
+      "path": "verification/FourNeighborhood.lean",
+      "imports": [
+        "Cylinders"
+      ],
+      "sha256": "b0826216a517b2621223dca94f643ab3e3e00aff380bc9be3c9e19614b3b46df"
+    },
+    {
+      "module": "FourEndpoint",
+      "kind": "study",
+      "path": "verification/FourEndpoint.lean",
+      "imports": [
+        "Existence",
+        "FourContact",
+        "FourTubes",
+        "FourNeighborhood"
+      ],
+      "sha256": "bed0a7c2a2a35565a9883c9afa22b93a7bb78f8e903786b82e0f9ef1d414e0a1"
+    }
+  ],
+  "references": [
+    {
+      "path": "references/CompletionIsLocalRing.lean",
+      "source_path": "src/CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/CompletionIsLocalRing.lean",
+      "git_blob": "d14286fa176b2a66b2720a25ecb6d9c247b517a9"
+    },
+    {
+      "path": "references/LocalLatticeCompactOpenUnitVolume.lean",
+      "source_path": "src/CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/LocalLatticeCompactOpenUnitVolume.lean",
+      "git_blob": "da3fa43f517e2f0ee2dcdd1f416d1583881bef1c"
+    }
+  ],
+  "parent_commit": "49feb57ded97dfd384aae1c86538df32fea856a9",
+  "audited": [
+    "TargetOne.target_one_mass",
+    "TargetFour.even_scaling",
+    "TargetFour.total_all",
+    "TargetFour.even_all",
+    "TargetFour.primitive_all",
+    "TargetFour.even_tube",
+    "TargetFour.total_mass",
+    "TargetFour.even_mass",
+    "TargetFour.primitive_mass",
+    "TargetFour.transfer",
+    "TargetFour.realized_split"
+  ]
+}
