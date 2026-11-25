@@ -1,0 +1,17 @@
+{
+  "title": "A ramified Gram fiber at target four",
+  "pages": 34,
+  "source_sha256": "a67ea308eaa16b77bd7fb222ec144ac34b1101507501793ac411078563e526c6",
+  "pdf_sha256": "f288a216a347e8340f4f8c17dc928e57004090aaf21e867d1c7d490e80c17d1d",
+  "build_engine": "LuaTeX-1.24.0",
+  "independent_standalone_build_byte_identical": true,
+  "embedded_original_nous_png_sha256": "bdfff8716596a351b480896d4bc21a7786470d6283c050b4ee801e3a88d061b6",
+  "title_page": 1,
+  "abstract_page": 2,
+  "contents_page": 3,
+  "body_begins_page": 4,
+  "all_pages_rendered": true,
+  "human_ai_disclosure": true,
+  "lean_receipt_sha256": "fa417a50784b9db88595c9096c0f59b79301fc727a060d71b72f0751faafdb9c",
+  "release_parent": "b040ed9063835e90efdecd1e4350ed35708317c0"
+}

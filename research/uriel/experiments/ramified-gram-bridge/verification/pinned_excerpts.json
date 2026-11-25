@@ -1,0 +1,19 @@
+{
+  "src/CompanionTheory/SpectralGeometry/CountingDefinitions/AdelicEulerProducts/IsEulerProd.lean": "6341eea11489ecd82bda087171023fad7d68415e",
+  "src/CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/ExistsTraceFormGramMatrixInBasis.lean": "15dc12eae4448defc0e0f7ad64b9864831321777",
+  "src/CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/InfiniteProductMultipliable.lean": "f16f223c3fdf381c26f4aec234006c54a5fa908a",
+  "src/CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/IntegralAlmostAllPlacesStatement.lean": "fc5fb55c3f0ca172bf796dc5e3e800309684cea9",
+  "src/CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/IsotropicVectorSplitsHyperbolicPlane.lean": "89aa813b79d511cb3521b6dc61ca486d6b6a2d94",
+  "src/CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/LocalGramFiberRankOneSetFormula.lean": "c736a815bef19d2975329c8413d7bb9806d0f394",
+  "src/CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/LocalLatticeCompactOpenUnitVolume.lean": "da3fa43f517e2f0ee2dcdd1f416d1583881bef1c",
+  "src/CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/LocalRankOneDensityUniformizerPowerStatement.lean": "d5758d11adc8d907c01a0e1655db2cdb877da93f",
+  "src/CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/MeasurableCoordinateMapsTensor.lean": "04fb5ba585b8df7e0b8879e7cf2fb168a80fb1ef",
+  "src/CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/RankOneLocalDensitiesProductConverges.lean": "1398ce4e513c72177121bd9ef05618724adf788e",
+  "src/CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/RankOneLocalDensityAlmostAll.lean": "fc8eb5529fbead870185670b848b1e2bdddb35d8",
+  "src/CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/SummableOneDivAbsNormSq.lean": "ed4adde944b3450395e0bfa93b4f0c908973bdbd",
+  "src/Development/AbelianVarietyTheory/Proofs/AdelicLatticeProofs/ExistsCongrIffTraceFormsIsometricCm.lean": "c4ee1cf682a59ddf52a9d9237933939ca051097e",
+  "src/Development/AbelianVarietyTheory/Proofs/AdelicLatticeProofs/ExistsNonzeroIsotropic.lean": "d069bc0de71d5cc5f1c455bd22dd80ebaf1d8d5c",
+  "src/Development/AbelianVarietyTheory/Proofs/AdelicLatticeProofs/ExistsZeroFiveOfValuation.lean": "555a76cd909215154e8b913d9b284ce75d3aef82",
+  "src/Development/AbelianVarietyTheory/Proofs/AdelicLatticeProofs/IsSquareOfValuedSubOneLt.lean": "1299ba37ac4bce909a37b87b1022609cdce5e589",
+  "src/Formalism/SharpRestriction/GlobalSchurBounds/GeneralLinearActions/GenusMassVolumes.lean": "525618b770cb535fd890f10277af11ffbe76af40"
+}
