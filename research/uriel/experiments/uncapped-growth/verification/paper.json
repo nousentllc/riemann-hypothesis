@@ -1,13 +1,21 @@
 {
-  "pages": 37,
-  "source_sha256": "611d25766dca623a1c9b22997c2c3af07dab4a02efa1703a636beb72985d23b0",
-  "pdf_sha256": "f8225c4432f3dbda706e9df735ed0048a87c92639ea06c459a353cde63c651b7",
+  "edition": 2,
+  "first_edition_git": "3f39c057bb593d610473bd9d477cad518a6ba21c",
+  "first_edition_pages": 37,
+  "pages": 54,
+  "source_sha256": "faabce2caf35f513de492d97becfa035cf743153edda91268e81fa708b98b877",
+  "pdf_sha256": "6ef36b4274b44faab7a420c60e4c63f4f37d779d89003f70b16d1871f37e2c95",
   "second_standalone_build_byte_identical": true,
   "engine": "LuaLaTeX (TeX Live 2026)",
   "compilations_per_build": 3,
   "original_nous_png_recovered_from_embedded_source": true,
+  "embedded_png_sha256": "bdfff8716596a351b480896d4bc21a7786470d6283c050b4ee801e3a88d061b6",
   "abstract_page": 2,
   "toc_page": 3,
   "body_page": 4,
-  "all_pages_rendered_and_reviewed": true
+  "all_pages_rendered_and_reviewed": true,
+  "immutable_source_walkthrough_links": 13,
+  "edition_check": "64 dyadic cells and 32 half-target counts matched",
+  "edition_lean_recompiled": false,
+  "study_verifier": "Four numerical experiments reproduced. 54 module source digests and axiom receipts match. 1038 original dependencies inventoried."
 }

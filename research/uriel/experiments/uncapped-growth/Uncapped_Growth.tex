@@ -1,6 +1,6 @@
 % !TeX program = lualatex
 % One-source manuscript. The original Nous PNG follows the end of the document.
-% Run LuaLaTeX twice in a writable directory. The release uses TeX Live 2026.
+% Run LuaLaTeX three times in a writable directory. The release uses TeX Live 2026.
 % For stable timestamps, set SOURCE_DATE_EPOCH=1795582800 and FORCE_SOURCE_DATE=1.
 \documentclass[12pt,letterpaper]{article}
 \usepackage{iftex}\RequireLuaTeX
@@ -16,6 +16,7 @@
 \renewcommand{\headrulewidth}{.3pt}\setcounter{tocdepth}{1}\setlist{itemsep=2pt,topsep=4pt}
 \newcolumntype{Y}{>{\raggedright\arraybackslash}X}
 
+\newcommand{\srclink}[2]{\par\noindent{\small\sffamily\href{https://github.com/nousentllc/riemann-hypothesis/blob/3f39c057bb593d610473bd9d477cad518a6ba21c/research/uriel/experiments/uncapped-growth/#1}{#2}}\par}
 \newcommand{\passmark}{\begingroup\color{accent}\rule{7pt}{7pt}\endgroup}
 \newcommand{\failmark}{\begingroup\color{mute}\setlength{\fboxsep}{0pt}\fbox{\rule{0pt}{6.2pt}\rule{6.2pt}{0pt}}\endgroup}
 \newcommand{\keyterm}[1]{\textbf{\color{ink}#1}}
@@ -51,13 +52,13 @@
 \begin{minipage}{.84\linewidth}\centering\Large Isotropic lines, exceptional primes, and the sharp six-square test for rank-one growth\end{minipage}
 \par\vspace{.60in}{\large Justin Candler}\par With Uriel, project research assistant\par 25 November 2026
 \par\vspace{.40in}\resizebox{!}{1.16in}{\directlua{nousLogo()}}\end{center}\vfill
-\begin{center}Three investigations of the finite-place input to Siegel--Weil normalization\par\small Original source revision \code{40e56bab}\end{center}
+\begin{center}{\sffamily\bfseries Expanded second edition}\par\smallskip Three investigations of the finite-place input to Siegel--Weil normalization\par\small Original source revision \code{40e56bab}\end{center}
 \clearpage\section*{Abstract}
 A lower bound for a product of local measures can survive every fixed cap on divisibility while its best coefficient tends to zero as the cap grows. This was the outstanding issue in our earlier reading of the rank-one growth argument. We study the obstruction on three scales. At a single finite completion, the trace form has a nonzero regular point of its zero cone in the admitted dimensions. Integrating along a second isotropic direction gives a positive lower bound on nearby regular fibers, even though the defining support axiom forces the assigned zero member itself to vanish. Globally, a rational integer changes all valuations over a given rational prime together. We obtain an exact test in terms of the product of the exceptional-place masses over that prime. In particular the full positive support is the set of multiples of a unique integer, and one coefficient gives the original growth exponent throughout that support.
 \par
 At the Gaussian place above two, the square-dilation sequence has a feature hidden by experiments at isolated targets. Every finite-depth approximation equals one until it resolves the valuation and two additional binary digits. The stabilized density is $1-1/(4\cdot16^k)$ at a target $4^ku^2$ with $u$ odd. For the six-square lattice over all primes, an independent computation and an elementary product derivation identify the greatest uniform lower bound relative to the unit target. Its value lies between $0.86723376$ and $0.86724245$. The limiting loss comes from primes congruent to three modulo four. We construct a sequence approaching the infimum and use a separate integer representation count to test the normalization.
 \par
-The verification section identifies the original declarations, newly checked Lean statements, written proofs and finite experiments. The study extends one arithmetic input on a research branch. We did not rebuild the complete global RH proof.
+We characterize every sequence approaching the Gaussian infimum and resolve the denominator example $\beta=1/2$ through all places. These are written deductions. The formal receipts cover the general support theorem and the Gaussian square-target identities. A direct trace into the pinned Siegel--Weil proof explains why cofinal growth already suffices to fix its normalization. The complete global RH proof was not rebuilt.
 \clearpage{\small\setlength{\parskip}{0pt}\tableofcontents}\clearpage\pagenumbering{arabic}
 \section{A quantifier that the earlier bound left open}
 Take a fixed arithmetic problem and let $P(a)$ be the finite-place product at a dilation $a$. The earlier investigation produced integers $N,Q>0$ and a coefficient $c>0$ working for every $a=N(1+Qj)$. The progression makes the variable part a unit at each exceptional place. A later argument allowed divisibility at those places. If the depth at $v$ was at most $H(v)$, one coefficient $c_H>0$ worked for every permitted multiplier. Both statements allow $c_H$ to approach zero along larger profiles. Lower-bounding each $c_H$ separately cannot settle the question, even with accurate computations at a million distinct caps.
@@ -79,6 +80,44 @@ The fixed $N$ absorbs denominators from the coordinates and $\beta$. A basis cha
 Under dilation the factor $a^{d_*}$ accounts for the change in source volume divided by the change in the quadratic target. For $F=\mathbb Q$ and $M=3$, six source coordinates give degree six and one quadratic output gives degree two, hence the factor $a^4$. After division by $a^{d_*}$ the moving target is $a^2\beta$ and every local lattice is fixed. This exposes which primes supply a gain or loss.
 \subsection{How the experiments constrain one another}
 The finite computations solve a case in which every normalization can be determined. The local argument asks only for a positive coefficient and works in arbitrary basis coordinates. The infinite-product argument states exactly which combination of local claims is needed. If that criterion required independent choices of depths above a single rational prime, it would misdescribe the experiment. If the local proof required continuity of the assigned mass at the origin, the dyadic example would contradict it. If a shallow histogram were mistaken for the value of a point fiber, it would conceal the entire discrepancy.
+
+\section{One problem viewed at four scales}\label{sec:architecture}
+Take $F=\mathbb Q$, use the usual Gaussian integers in three coordinates, and temporarily set $\beta=1$. The same input yields four seemingly different numbers. The target-one dyadic fiber has density $3/4$. The dyadic fiber at target four has density $63/64$. The finite product for multiplier two, divided by its dilation power and by the product at multiplier one, is $21/16$. Finally, the greatest lower bound for this last observable as the multiplier varies is approximately $0.86724$. Their different sizes are informative. The first two use the same local normalization. The third compares two products for the same field and lattice. The fourth asks how small such a comparison can become simultaneously at all finite places. A calculation which merely lists four successful checks gives no explanation of why each answers a different question.
+
+\subsection{What the object being measured is}
+Write $K=F_v$ and use $L$ for the coordinate lattice at $v$. Fix additive Haar measures $\mu$ on the vector space and $\lambda$ on its scalar target. For a measurable target ball $V$ the number
+\[
+             H(V)=\frac{\mu(\{x\in L:Q(x)\in V\})}{\lambda(V)}
+\]
+is an average per unit of target volume. It may exceed one. In the Gaussian case a residue class modulo $p^r$ has volume $p^{-r}$ while a source residue vector has volume $p^{-6r}$. Thus the finite observable corresponding to $H(V)$ is a count divided by $p^{5r}$. Dividing by $p^{6r}$ instead would yield the probability of landing in the chosen residue class. As $r$ increases that probability can tend to zero even when $H(V)$ stays bounded below. The exponent five is already a clue to the later analytic argument. Imposing one regular scalar equation removes one degree of freedom at each additional digit.
+
+The family in the Lean statement assigns to each scalar a \emph{measure on the source}. Evaluation on $L$ gives a number $u_v(s)$. At a regular nonzero scalar $s$, compactly supported tests and continuity identify $u_v(s)$ from arbitrarily small surrounding balls. This extra identification carries the calculation from a residue experiment to the measure used by the original proof. For a singleton on the target side ordinary Haar measure gives zero. One cannot extract the density by direct division by that singleton's measure. At zero the defining support restriction changes the answer more dramatically. Every ratio $H(2^r\mathbb Z_2)$ in the six-square example is one, while the prescribed singular member evaluated on $L$ is zero. Both statements hold with the same Haar normalizations.
+
+Now scale the source. Dilating the lattice in the problem at $\beta$ changes both the ambient volume and the scale at which the equation is imposed. Moving that change onto the target yields a known power of $a$ and the fixed-lattice mass at $a^2\beta$. The Gaussian calculation produces three equalities at multiplier two:
+\[
+ \frac{u_2(4)}{u_2(1)}=\frac{63/64}{3/4}=\frac{21}{16},\qquad
+ \frac{u_p(4)}{u_p(1)}=1\quad(p>2),\qquad
+ \frac{P(2)}{P(1)}=2^4\frac{21}{16}=21 .
+\]
+The middle equality follows from multiplying the six source coordinates by the unit $2$ at odd $p$. A $31.25\%$ gain in the normalized finite product is compatible with the exact local mass $63/64$ lying below one. The numerator and denominator of the comparison matter. As a further cross-check, the ordered signed six-square count for four is $252$. There are $12$ representations with one entry $\pm2$ and $15\cdot16=240$ with four entries $\pm1$. The baseline count at one is $12$, so the ratio is also $21$. In this example the integer count tests the normalization at all places at once. A difference of that kind could arise from an omitted target Jacobian even if every finite table were internally consistent.
+
+\subsection{A dependency map for reading the proofs}
+The first route begins with the original trace matrix over $K$. A nonsingular quadratic form of dimension at least six has a nonzero isotropic direction at a finite completion. The direction gives a family of affine lines with a controlled scalar image. Haar volume along these lines supplies an inequality for target balls. Continuity on the regular locus supplies the pointwise floor. Only the last conclusion feeds the general growth result. In particular the proof needs no explicit formula for a local density and never enumerates all solutions on a regular fiber.
+
+The second route begins with the exact scaling law of the original local measures. A rational unit at $p$ can be absorbed in the source lattice at every place above $p$. Consequently the outstanding exceptional factors depend only on one integer $k=v_p(a)$ per rational prime. An almost-everywhere estimate bounds the remaining product simultaneously over all integral targets. The lower end of the exceptional sequence is decided by a least positive shell. The preceding local route controls its infinite positive tail. These two pieces yield a support generator and a uniform growth coefficient. Knowing the generator alone would permit a positive density sequence tending to zero.
+
+The third route specializes the form and computes much more than a floor. Finite congruences give an exact recurrence with a primitive contribution and a scaled copy of the problem two levels down. A separate bridge transports its answer onto the original Gaussian fiber. At odd primes, smooth lifting and a finite-field calculation give geometric factors. Multiplication over primes identifies the worst possible relative mass. This last step needs an extremal argument over all integers. A table of the first ten thousand values would have an observed minimum, even in a problem whose actual infimum is unattained.
+
+\begin{center}\small
+\begin{tabularx}{\linewidth}{@{}lYY@{}}\toprule
+Transition & Information used & What would be lost if omitted\\\midrule
+Tube to point & Disintegration and continuity at the chosen regular target & Only an average over possible target values.\\
+Shell to support & Positivity propagates along dilated lattices & No test deciding which earlier shells can vanish.\\
+Support to growth & One floor on the tail and a finite positive prefix & No coefficient uniform over multipliers.\\
+Prime factors to infimum & Summable tails and simultaneous approximation by integers & Only separate bounds at individual primes.\\
+\bottomrule\end{tabularx}
+\end{center}
+This distinction also sets the scope of the research. The original proof needed sufficiently large favorable multipliers whenever it asked for one. Exact support describes the distribution of all favorable multipliers for the fixed data. The Gaussian calculation measures the cost of the worst ones for a particular form. Neither a formula for one form nor a count of formal declarations measures coverage of the Riemann hypothesis as a whole. The downstream calculation in Section~\ref{sec:consumer} identifies the exact theorem which this stronger input illuminates.
 
 \section{The complete support and the growth bound}
 Under the original CM, nondegeneracy, rank, basis, measure and nonzero scalar hypotheses, there is a unique positive integer $N_*$ such that for every positive integer $a$,
@@ -181,6 +220,55 @@ The single starting point has zero ambient measure. It locates an open set of di
 Fix a regular $s\in D$. The original rank-one set formula says that on sufficiently small measurable tests around $s$, the tube mass differs from $m_s(L)\lambda(V)$ by at most $\varepsilon\lambda(V)$. Choose a positive-volume open test contained in that neighborhood and $D$ and divide by its volume. Any gap between $m_s(L)$ and the proposed floor would give a contradiction upon choosing a smaller $\varepsilon$. The coefficient works for every regular $s\in D$. The argument never evaluates a limit at $m_0(L)$.
 \par
 In explicit plane coordinates $(a,b,z)$ one has $Q=ab+Q_\perp(z)$. Restrict $a$ to $\pi^hO^\times$, $b$ to $\pi^hO$, and $z$ to $\pi^{h'}O^{n-2}$, with the box inside the lattice and $Q_\perp(z)\in\pi^{2h}O$. For tests in $\pi^{2h}O$ the scalar change contributes $q^h$. The $a$-shell contributes $(1-q^{-1})q^{-h}$. The $z$ box contributes $q^{-(n-2)h'}$. If $J_0$ is the coordinate change of Haar measure, the floor is $J_0(1-q^{-1})q^{-(n-2)h'}$. The factors involving $h$ cancel. Both proofs give a positive coefficient. The six-square calculation below shows how to find the optimal coefficient when the entire lattice can be counted.
+
+\section{An integral chart one can calculate by hand}\label{sec:chart}
+How much of the general proof can be made explicit in an example where the answer is already known? Take $K=\mathbb Q_2$, $L=\mathbb Z_2^6$, and $Q(x)=\sum x_i^2$. Normalize Haar measure to give $L$ and $\mathbb Z_2$ volume one. Real positivity of the same polynomial can make the starting point look implausible. A nonzero vector with sum of squares zero is impossible over the reals. Over $\mathbb Q_2$ the arithmetic is different, and one can construct a pair of null vectors while keeping track of every power of two the eventual estimate costs.
+
+\subsection{Constructing the center without dividing by two in the lattice}
+There is an odd $w\in\mathbb Z_2$ satisfying $w^2=-7$. Here is a digit argument. The residue $1$ works modulo eight. Suppose an odd $w_n$ works modulo $2^n$, $n\ge3$. The squares of $w_n$ and $w_n+2^{n-1}$ differ by $2^n w_n+2^{2n-2}$, congruent to $2^n$ modulo $2^{n+1}$. Exactly one choice fixes the next bit. Although we only preserve the previous root modulo $2^{n-1}$ at this step, these increasingly fine congruences produce a Cauchy sequence of integers. The $2$-adic limit squares to $-7$ by continuity. For instance $1$ gives square $1$ modulo eight and $5$ gives square $9$ modulo sixteen, which is $-7$ modulo sixteen. We need an element of the completion for a statement about that completion. A rational integer with negative square would not supply such an example.
+
+Set
+\[
+ e=(1,1,1,w,2,0),\qquad f=(1,1,1,w,-2,0).
+\]
+Both sums of squares are $3-7+4=0$. Their dot product is $3-7-4=-8$. For $Q$ as defined, the associated polar form $B(x,y)=Q(x+y)-Q(x)-Q(y)$ is twice the dot product. Thus $B(f,e)=-16$. The distinction matters already over $\mathbb Q_2$. Dropping the two would pick a target ball twice as large as the calibrated image. For arbitrary $x$ and $y\in K$ the quadratic identity reads
+\[
+ Q(x+ye)=Q(x)+yB(x,e)+y^2 Q(e)=Q(x)+yB(x,e).
+\]
+A merely regular direction at one point would still leave a quadratic term in $y$. The null direction removes it at every point of the neighborhood. This makes the exact distribution of an affine map of a Haar-random integral scalar available.
+
+Take $W=f+16L$, $D=16\mathbb Z_2$. If $x=f+16h$ with $h\in L$, then
+\[
+   Q(x)=32 f\cdot h+256Q(h)\in D,\qquad
+   B(x,e)=-16+32h\cdot e\in16\mathbb Z_2^\times .
+\]
+For each $x\in W$, $y\mapsto Q(x)+yB(x,e)$ sends $\mathbb Z_2$ bijectively onto $D$. Translation by the offset preserves $D$; multiplication by the unit part of $B(x,e)$ permutes every residue level. Also $x+ye\in L$ for every $y\in\mathbb Z_2$. The common image is essential. Knowing only that every individual slope is nonzero would allow different source points to cover balls of arbitrarily small volume, or balls missing a target we want to compare.
+
+\subsection{Measuring coverage without counting the same line twice}
+Let $V\subseteq D$ be a measurable test ball and let $T=\{z\in L:Q(z)\in V\}$. Since the pushforward of the unit-mass scalar measure under each affine map is normalized Haar measure on $D$,
+\[
+ \int_{W}\int_{\mathbb Z_2}\mathbf1_T(x+ye)\,d\lambda(y)\,d\mu(x)
+        =\mu(W)\frac{\lambda(V)}{\lambda(D)}.
+\]
+Lines through different $x$ can intersect or even coincide. Summing their masses as if they partitioned $L$ would be an error. Instead, for each fixed $y$ substitute $z=x+ye$. The inner integral over $x\in W$ is at most $\mu(T)$ by translation invariance, because $W+ye$ is only a subset of the integration space. Integrate over $y$, whose total measure is one. Tonelli's theorem for this nonnegative integrand yields
+\[
+        \mu(T)\ \ge\ \frac{2^{-24}}{2^{-4}}\lambda(V)
+                      =2^{-20}\lambda(V).
+\]
+The exponent $24$ is six coordinates times four binary digits of restriction. The target recovers four of those digits. The inequality tolerates every overlap. This is the content of the abstract translation average with actual sets, slopes and volumes.
+
+Now take a nonzero $s\in D$ and restrict to sufficiently small balls about $s$ containing only regular targets. The fiber set formula identifies $\mu(T)$ with the integral of the continuous density $u_2$ over such a ball. If $u_2(s)<2^{-20}$, choose a real number strictly between them. Continuity gives a neighborhood where $u_2$ is below that intermediate number. A smaller compact open ball there has finite strictly positive Haar mass. Integrating produces a strict violation of the lower bound. Thus the \emph{specified} family obeys $u_2(s)\ge2^{-20}$ for every nonzero $s\in D$. The strict intermediate number, positive volume and continuity each do work. An almost-everywhere lower bound alone would permit changing a single exceptional value.
+
+\subsection{Where the estimate spends most of its strength}
+For these coordinates the later exact calculation gives
+\[
+       \inf_{s\in16\mathbb Z_2,\ s\ne0}u_2(s)=1-4^{-5}=1023/1024 .
+\]
+The target $16$ realizes it. The elementary single-chart floor is smaller by a factor of $1{,}047{,}552$. The gap can be located: the calculation retained a single source box of volume $2^{-24}$, chose a single null direction, and used only the inequality that a translate of the box occupies at most the full test set. The exact count instead aggregates every primitive congruence class and all of its all-even descendants. A millionfold difference between two valid constants for the same ball illustrates precisely what the abstract proof promises. Its chart has to survive an arbitrary increase in target valuation. It has no optimization step over charts, covers, or directions.
+
+Even the choice of box can be stress-tested. On the larger set $f+8L$ the slope is $-16+16h\cdot e$. Taking $h$ to be the first standard basis vector makes the slope zero. That one point refutes the single-common-image argument on the entire larger box. It does not refute the existence of other charts there. Similarly the finite experiment using $xt+z^2+3z+1$ retains the same number of solutions when the offset is replaced by $z^3+1$, provided $x$ is a unit. Multiplication of both relevant terms by $p$ instead leaves targets off $p\mathbb Z/p^r$ with no solution. The experiment isolates the affine-image claim. The explicit Gaussian vectors connect that claim to the actual trace lattice.
+
+The calculation of this section is a written specialization of the archived chart proof. The exact digit choices of $w$, the two displayed vectors, the particular box and the factor comparing its bound to the sharp one are supplied here for inspection. The generic line identity, measure comparison, transfer to regular targets and the Gaussian square-target density each have their own checked declarations in the release. No Lean declaration in this edition is presented as certifying this specific choice of $w,e,f,W$.
 
 \section{Which exceptional data can a rational integer actually vary?}
 \label{sec:primeblocks}
@@ -308,9 +396,53 @@ There is one $c>0$ for which $P(a)\geq c a^{Dh}$ throughout this entire support.
 
 The generator is unique. If two positive integers generate the same positive-mass set, each belongs to it and is divisible by the other. It is therefore the least positive multiplier with positive mass in both the ordinary numerical ordering and the divisibility ordering. The original constructive question remains important even after proving this structural statement. The formal proof chooses a finite exceptional set from an almost-everywhere theorem, uses the geometric floor as an existence fact, and defines each first positive shell by a least-witness operation on an abstract measure. These steps do not give a numerical algorithm to compute $N_{\min}$ for a supplied CM extension, form and lattice. They identify exactly the local questions that such an algorithm would need to answer.
 
-For the example $\beta=1/2$ the congruence obstruction proves $2\mid N_{\min}$. It does not by itself determine $N_{\min}=2$, since showing equality would also need positive local masses at the proposed first admissible dilation everywhere. The distinction between an obstruction, a representation, and an everywhere-positive normalized product persists even in an example small enough to check modulo two by hand.
+For the example $\beta=1/2$ the congruence obstruction proves $2\mid N_{\min}$. It does not by itself determine $N_{\min}=2$, since showing equality would also need positive local masses at the proposed first admissible dilation everywhere. Section~\ref{sec:denominator} supplies this missing converse and evaluates the normalized product on its support.
 
 A separate support control assigns threshold $1$ at one synthetic place over $2$, threshold $2$ at another place over $2$, and threshold $1$ over $3$. The predicted generator is $\operatorname{lcm}(2,4,3)=12$. Exactly $341$ of the integers through $4096$ give positive mass. All $341$ are divisible by $12$ and each positive value exceeds or equals $1/2$. A product of the three prime powers would instead give $24$ and incorrectly discard half the multiples of $12$. The control exposes the distinction between independent rational-prime choices and shared depths at places of one residue characteristic.
+
+\section{From local support to an integer one can schedule}\label{sec:schedule}
+The symbol $N_*$ can conceal the hardest logical step in the argument. A finite list of exceptional places is available, each with a local effect on the normalized mass. The variable one is allowed to choose is a single \emph{rational integer}. Which local losses can that variable cause together? Answering the question fixes the order in which one can take lower bounds. It also supplies exact counting information once the support theorem is known.
+
+\subsection{Three valuations which should not be interchanged}
+For a rational prime $p$, write $k=v_p(a)$ so that $a=p^k u$ with $p\nmid u$. At a place $v$ above $p$, use an additive valuation $\operatorname{ord}_v$ normalized to give a uniformizer value one. Then
+\[
+       \operatorname{ord}_v(a)=e(v\mid p)k,\qquad
+       q_v=p^{f(v\mid p)},\qquad
+       \operatorname{ord}_v(a^2\beta)=2e(v\mid p)k+\operatorname{ord}_v(\beta).
+\]
+The first measures the dilation in local digits. The second is the number of possible next residue digits. The third measures the depth of the moving target. An expression with $k$ indexing a sequence of rational-prime dilations already incorporates the ramification index when evaluated on the local field. Multiplying the threshold of that sequence by $e(v\mid p)$ a second time would impose spurious rational divisibility. A unit $u$ acts invertibly on the original local lattice. Its square in the target can therefore be absorbed by a measure-preserving change of integral coordinates. This is how an apparently different target for every integer collapses to a shell indexed by $k$.
+
+Let $f_v(k)=u_v(p^{2k}\beta)$ at such a place, and $h=2M-2$. Dilation and nesting give
+\[
+            f_v(k+1)\ \ge\ q_v^{-e(v\mid p)h} f_v(k).
+\]
+To check the direction, start with fixed target $p^{2k}\beta$ on the larger source lattice $p^{-1}L_v$. Its mass is at least its mass on $L_v$. Reexpress the larger-lattice mass as $q_v^{e(v\mid p)h} f_v(k+1)$ and divide. Since the divisor exceeds one, the next normalized value can be smaller. Iterating this inequality alone would allow exponential decay. What survives for free is the implication from positivity at one index to positivity at every later index.
+
+The geometric floor instead gives a strictly positive number $d_v$ and an index $T_v$ for which $f_v(k)\ge d_v$ for every $k\ge T_v$. These data alone do not describe the earlier zeros. Together the two observations imply that the positive shells form $[j_v,\infty)\cap\mathbb N$ and there is a floor $\delta_v$ throughout that set. Take the minimum of $d_v$ and the positive values for $j_v\le k<T_v$. If the interval is empty use $d_v$. This step does not need $d_v$ to be sharp or $T_v$ to be the first index for which the chart works. In particular $T_v$ can be a poor estimate for $j_v$: a congruence class far from the null center may already support a small target.
+
+\subsection{Why the exterior product cannot quietly collapse}
+Consider the normalized product $P(a)/a^{[F:\mathbb Q]h}$. Isolate a finite exceptional set $B$ which also absorbs denominators. For a good place the original uniform estimate for an integral nonzero target controls its distance from the unit factor. The comparison can be weakened to $1-2/q_v^2$ below and $1+2/q_v^2$ above. Each lower factor is positive, even when $q_v=2$. The sum $\sum_v q_v^{-2}$ converges: above each rational $p$ there are at most $[F:\mathbb Q]$ places and $q_v\ge p$. Thus the products of lower and upper envelopes give two constants $0<L\le U<\infty$, independent of $a$. One can see positivity by taking logarithms after deleting finitely many initial factors. On a sufficiently small interval about zero, $|\log(1+x)|$ is bounded by a constant times $|x|$.
+
+This establishes more than convergence at each fixed multiplier. If control were only pointwise in $a$, the good-place product might shrink along a sequence of multipliers by shifting the loss to primes that escape every finite inspection. For example, in an abstract array put the factor $1/j$ at the $j$-th prime in the $j$-th row and one elsewhere. Every row is a convergent finite modification and every fixed prime eventually has factor one. The row products still tend to zero. The common summable envelope of the original theorem rules out this mechanism. Conversely even strict positivity at \emph{every} prime would be too weak for positivity of an infinite product without summability.
+
+We therefore have, with the same $L,U$ for every permitted $a$,
+\[
+ L\prod_{v\in B} f_v(v_{p_v}(a))
+  \ \le\ \frac{P(a)}{a^{[F:\mathbb Q]h}}\
+  \le\ U\prod_{v\in B} f_v(v_{p_v}(a)).
+\]
+The right inequality settles every failed local test by squeezing a nonnegative product to zero. On the surviving integers the left inequality gives $\kappa=L\prod_{v\in B}\delta_v>0$. There is no passage from an arbitrary pointwise positive infinite product to a uniform floor here. The hypotheses for the common envelope and the finite number of outstanding tests account for every factor in that passage.
+
+\subsection{What the projection to rational primes retains}
+For a given $p$ one must take the largest $j_v$ over $v\mid p$ in $B$. A choice with rational valuation $k$ is a single column of this group of local sequences. One cannot specify $k=1$ at one completion and $k=3$ at another over the same $p$. Across different rational primes, by contrast, any finite tuple of nonnegative valuations occurs: take the product of the corresponding prime powers. This proves the least-common-multiple formula and also explains why optimization for a block would in general use $\inf_k\prod_{v\mid p}f_v(k)$. The product of the separate infima is a valid lower estimate, but the minima could be attained at incompatible columns. For example two sequences, both positive, may alternate between $(1,2)$ and $(2,1)$ in consecutive columns. Their product is always two, although the individual lower bounds multiply to one. This shows why equality of the two optimization operations requires another assumption.
+
+The support theorem yields exact consequences which put its quantifier gain in ordinary units. For any real $X\ge0$ the number of supported positive integers through $X$ is $\lfloor X/N_*\rfloor$. Its natural density is $1/N_*$. The first supported integer strictly above $X$ is
+\[
+        a(X)=N_*\bigl(\lfloor X/N_*\rfloor+1\bigr).
+\]
+For integer $X$ the wait ranges from one to $N_*$, inclusive, attaining its largest value when $X$ itself is supported. Consecutive supported integers are $N_*$ apart and there are $N_*-1$ unsupported integers strictly between them. The case $N_*=1$ is covered by the same formulas. The count and waiting-time statements are direct written deductions. Nothing in this derivation supplies digits of $N_*$ for an arbitrary supplied form. The waiting-time bound becomes a numerical scheduling rule only when that generator has been identified.
+
+One can now state precisely what changed from the earlier experiment. Cofinality guarantees a successful query above each requested cutoff and gives no waiting time. A particular progression gives a waiting-time bound for that subset and can skip other permissible integers. Capped divisibility allows additional successful schedules and leaves their coefficients dependent on a cap. Complete support specifies both success and failure of every integer for fixed mathematical data, with one coefficient across all successes. These four conclusions have different computational consequences even when each is enough for the same downstream contradiction.
 
 \section{An exceptional prime that can be solved exactly}
 \label{sec:dyadicwave}
@@ -386,6 +518,48 @@ It can be reproduced by taking the sixth cyclic convolution of the one-coordinat
  D_2(b)=1-\chi_{-4}(w)4^{-v-1}.
 \]
 As a written corollary, the infimum among nonzero integral targets in $2^n\mathbb Z_2$ is $1-4^{-n-1}$ and the target $2^n$ attains it. The ratio formula is local in the digits, so the argument applies to nonzero $2$-adic integral targets as well. At each finite depth the ratio is one until $r=v+2$ and equals the displayed expression thereafter. The independent experiment checks this two-regime claim in all 2,047 residue bins through depth ten, including 2,026 resolved nonzero bins, ten nonzero bins whose next target digit is needed, and eleven zero bins. The released formal endpoint is stated for the square-dilate family. Its general primitive-lifting and descent lemmas also support the written derivation above, while the complete four-case classification at the original fiber is outside that endpoint.
+
+\section{Which digits can a finite observation resolve?}\label{sec:precision}
+A plot of the normalized six-square counts at targets $1,4,16,64,\ldots$ can look almost flat near one. There are two different sources of flatness. A target with high valuation genuinely has density close to one in these square classes. A congruence observed too early cannot even detect the sign or magnitude of its deviation. The exact finite formula lets us quantify these effects separately.
+
+\subsection{A raw count with its denominator attached}
+Modulo four, a primitive solution of $Q(x)=0$ needs exactly four odd coordinates. Zero odd coordinates belongs to the all-even part. There are $\binom{6}{4}=15$ choices of the parity mask. Each of the six coordinates has two choices consistent with its parity, so the primitive count is $15\cdot64=960$. There are $64$ all-even vectors. The full count is $1024=4^5$ and the normalized ratio is one. This shallow count is also the count at any target divisible by four. It cannot distinguish an eventual value of $63/64$ from an eventual value of $1023/1024$.
+
+Modulo eight each odd square is one. For the same parity mask the four odd coordinates have $4^4=256$ choices. Each of the other two has two choices squaring to zero and two squaring to four. Of the $16$ possible even pairs, eight contribute zero in total and eight contribute four. Accordingly each mask contributes $2048$ primitive vectors both to target zero and to target four. The total primitive count in each of those two fibers is $30720$ and $30720/8^5=15/16$. Other parity masks cannot contribute a primitive vector to either target class: reducing the target modulo four forces the number of odd coordinates to be exactly four. At this stage the precision of the primitive contribution already suffices, but some all-even descendants remain unresolved.
+
+For example, at target $4$ modulo $16$ the primitive count is $(15/16)16^5=983040$. For the all-even part, division by two in each coordinate takes us to the target $1$ modulo four. There are $(3/4)4^5=768$ such vectors; each has $64$ free one-bit lifts, for $49152$ all-even vectors in the original residue ring. The total is $1032192$ and dividing by $16^5$ gives $63/64$. This raw arithmetic gives a direct audit of the place where the previously certified $3/4$ enters. Replacing that base value by one would send the whole answer back to one and erase the observed deficit. At target $16$ the same structure recurs once more, with $63/64$ now occupying the descendant slot where $3/4$ used to appear.
+
+\subsection{Reading the full precision diagram}
+Let $H_{r,k}$ be the normalized count at modulus $2^r$ and target $4^k u^2$ for any odd $u$. Write $\varepsilon_k=1/(4\cdot16^k)$ and $H_{\infty,k}=1-\varepsilon_k$. In the table, an open circle records a value of one; a filled circle records the resolved value $1-\varepsilon_k$ in that row. Both symbols encode an exact statement rather than a tolerance criterion.
+\begin{center}\small
+\begin{tabular}{c|ccccccccc|c}\toprule
+ &\multicolumn{9}{c|}{depth $r$} & resolved loss\\
+$k$ &0&1&2&3&4&5&6&7&8& $\varepsilon_k$\\\midrule
+0&$\circ$&$\circ$&$\bullet$&$\bullet$&$\bullet$&$\bullet$&$\bullet$&$\bullet$&$\bullet$&$1/4$\\
+1&$\circ$&$\circ$&$\circ$&$\circ$&$\bullet$&$\bullet$&$\bullet$&$\bullet$&$\bullet$&$1/64$\\
+2&$\circ$&$\circ$&$\circ$&$\circ$&$\circ$&$\circ$&$\bullet$&$\bullet$&$\bullet$&$1/1024$\\
+3&$\circ$&$\circ$&$\circ$&$\circ$&$\circ$&$\circ$&$\circ$&$\circ$&$\bullet$&$1/16384$\\
+4&$\circ$&$\circ$&$\circ$&$\circ$&$\circ$&$\circ$&$\circ$&$\circ$&$\circ$&$1/262144$\\
+\bottomrule\end{tabular}
+\end{center}
+Once $r=2k+1$ the target is already distinct from zero modulo $2^r$. Nevertheless its normalized count is still one. Seeing that the residue is nonzero is one bit easier than distinguishing its fiber density from the zero-tube ratio. At $k=1$, for instance, the targets $4$ and $12$ coincide modulo eight. Modulo sixteen their unit parts after division by four are respectively $1$ and $3$ modulo four. Their stabilized densities are $63/64$ and $65/64$. Their unresolved common ratio one is exactly the average of these two equally sized child classes. Partition of the parent ball forces this identity. Interpreting one as evidence that the density is flat would discard precisely the variation the next digit reveals.
+
+\subsection{Uniform approximation and complete loss of the relative signal}
+There is an exact error budget for the entire square panel at any fixed depth:
+\[
+     \sup_{k\ge0}|H_{r,k}-H_{\infty,k}|
+           =\frac{1}{4\cdot16^{\lfloor r/2\rfloor}} .
+\]
+Indeed a resolved row contributes zero error. An unresolved row contributes $\varepsilon_k$, a decreasing function of $k$. Its largest value occurs at $k=\lfloor r/2\rfloor$, the smallest integer with $r<2k+2$. This proves uniform convergence in absolute terms. For depth ten the worst absolute discrepancy is $1/4194304$. For applications that only need a coarse uniform floor this may be sufficient. For an experiment estimating the \emph{relative deficit} it conceals the entire effect in exactly the rows of greatest target valuation.
+
+To see the distinction algebraically define
+\[
+ E_{r,k}=\frac{1-H_{r,k}}{\varepsilon_k}
+         =\begin{cases}0&r<2k+2,\\1&r\ge2k+2.\end{cases}
+\]
+At each fixed $k$, increasing the depth eventually recovers the whole signal. At fixed $r$, increasing $k$ eventually loses all of it. Consequently $\lim_{k\to\infty}\lim_{r\to\infty}E_{r,k}=1$ and $\lim_{r\to\infty}\lim_{k\to\infty}E_{r,k}=0$. For the raw counts $H_{r,k}$ both orders of limiting give one. The change in the conclusion comes from dividing by the shrinking scale $\varepsilon_k$. A report of noncommuting limits without naming the observable would give the wrong interpretation of the experiment. This exact distinction explains why two consecutive matching histograms give such weak evidence for stabilization in a new family.
+
+One can also read the deficit as a genealogy. The primitive parents at each descent already contribute their full $15/16$. A deviation from one can pass to the next scale only along the all-even branch, with weight $1/16$. After $k$ descents a discrepancy of $1/4$ at target one has weight $16^{-k}$, giving $\varepsilon_k$. The same reasoning predicts a surplus for the other odd unit class. It explains the absolute smallness, the precision threshold and the sign, using a single accounting identity. The uniform error and the normalized-limit statements above are written consequences of the checked square formula. The complementary unit-class example uses the full-residue calculation described in the preceding section.
 
 \section{The Gaussian test at all primes}
 The dyadic result removes one possible obstruction in the identity form on $\mathbb Q(i)^3$. The global question asks about \emph{all} finite places at once. In this example we can compute the product relative to its value at one. This supplies a sharp comparison for an argument designed to prove existence of a coefficient. The following derivation is a mathematical proof for the coordinate six-square density. The supplied experiments independently count congruences and ordinary integer representations. We distinguish this calculation from the Lean results about the abstract Gram family.
@@ -471,6 +645,113 @@ This provides an independent arithmetic route to the same sharp constant. In par
 \par
 The program expands the six ordinary square series by integer convolution through $n=4096$ and compares all 4,096 positive coefficients with the divisor formula. It separately constructs cyclic six-square histograms modulo odd prime powers and checks the predicted stabilized coefficients. The ordinary convolution never uses local densities. The modular convolution never uses Jacobi's formula. Their common polynomial is an intended dependence. Agreement tests conventions about signs, zero, normalization and the shift in the valuation; it cannot independently certify the general Haar argument over number fields.
 
+\section{What an integer close to the sharp bound must look like}\label{sec:extremal}
+There is a stronger interpretation of the product formula than exhibiting one sequence tending to $C$. One can describe \emph{every} sequence tending to it. This also explains which changes in a bounded computer search should be effective. Write $k_p=v_p(t)$, allowing zero for a prime absent from $t$, and divide the normalized product by its infimum. The exact factorization of the excess is
+\begin{equation}\label{eq:excess}
+ \frac{\mathcal R(t)}{C}
+  =A_2(k_2)
+   \prod_{p\equiv1\ (4)} A_p(k_p)
+   \prod_{p\equiv3\ (4)}(1+p^{-4k_p-2}).
+\end{equation}
+There is no restriction to divisors of $t$ in the last product. An omitted inert prime contributes $1+p^{-2}$ to the excess, precisely the improvement the integer has left unused. Every factor in this expression is at least one. In particular gains at split primes cannot cancel the penalty of an omitted inert prime after this normalization. This makes necessity arguments possible as well as sufficient constructions.
+
+\subsection{A criterion for an asymptotically extremal sequence}
+Let $(t_j)$ be a sequence of positive integers. Then $\mathcal R(t_j)\to C$ if and only if all three conditions hold:
+\begin{enumerate}[label=(\roman*)]
+\item The integers $t_j$ are eventually odd.
+\item For each fixed prime $p\equiv1\bmod4$, eventually $p\nmid t_j$.
+\item For each fixed prime $p\equiv3\bmod4$, $v_p(t_j)\to\infty$.
+\end{enumerate}
+For necessity, any even $t_j$ incurs at least the dyadic factor $21/16$. A fixed split divisor incurs at least $1+p^{-2}+p^{-4}$. If a fixed inert valuation stays at most $K$ along a subsequence, its excess factor is at least $1+p^{-4K-2}$ along that subsequence. None of these lower gaps can be undone by another prime. Convergence to one of the left side of \eqref{eq:excess} excludes each of the three possibilities.
+
+For sufficiency choose a cutoff $Y$. On the fixed finite set of primes through $Y$ the product tends to one, using (i)--(iii). For the rest, a split factor is bounded above by $(1-p^{-2})^{-1}$ regardless of its exponent; an inert excess factor is at most $1+p^{-2}$. Their logarithms are at most a fixed multiple of $p^{-2}$, uniformly in $j$. Hence the tail of the logarithm is bounded by a quantity tending to zero as $Y\to\infty$. First make the tail arbitrarily small, then use convergence on the finite prefix. This ordering proves sufficiency even for integers carrying increasing numbers of large split prime factors. Condition (ii) is pointwise in each prime. It allows, for example, an additional split divisor that moves to infinity along the sequence. Forbidding every split divisor would be stronger than necessary.
+
+This is a manuscript deduction from the explicit Gaussian factors. It specifies the structure of nearly extremal sequences in this family; the general lower-bound theorem only asserts some positive coefficient for each fixed input. The construction in the preceding section is one member of this wider class. A sequence made from powers of $3$ alone cannot be a member. Its $3$-factor approaches the local optimum $9/10$, but it permanently pays for missing $7$, $11$, and every larger inert prime. A sequence taking the first $j$ inert primes all to power one also fails. It pays indefinitely for the bounded exponent at $3$. Both the number of participating primes and the depths at fixed inert primes are necessary in the limit.
+
+\subsection{Why spreading the first few factors can beat deepening one}
+Consider starting from $t=3$. Increasing the $3$-adic depth changes its inert excess from $1+3^{-6}$ to $1+3^{-10}$. Inserting $7$ changes its previously unused excess from $1+7^{-2}$ to $1+7^{-6}$. The first fractional improvement is below $3^{-6}\approx0.00137$. The second is close to two percent. For a constrained integer size this is only a candidate comparison since the changes cost different multipliers; the explicit examples below illustrate it exactly.
+\begin{center}\small
+\begin{tabularx}{\linewidth}{@{}rlY@{}}\toprule
+$t$ & $\mathcal R(t)$ & What changed from the comparison point\\\midrule
+$1$ & $1$ & Every inert prime is still absent.\\
+$3$ & $73/81$ & The first inert prime enters once.\\
+$9$ & $5905/6561$ & A second copy of $3$ reduces a small residual penalty.\\
+$21$ & $(73/81)(2353/2401)$ & Instead add the first copy of $7$ to $3$.\\
+$15$ & $(73/81)(651/625)$ & An added split prime raises the ratio.\\
+\bottomrule\end{tabularx}
+\end{center}
+For example, $2353/2401=1-1/49+1/2401$. This table explains why the smallest ratio in the archived search through $10{,}000$ occurs at $4389=3\cdot7\cdot11\cdot19$. It illustrates the profile of the observed minimum. The evidence for minimality \emph{in the finite interval} is the exhaustive search. The evidence for the limiting infimum is the convergent product and approximation argument. There is no theorem here that an optimal integer below a given size must always be square-free or that this particular factor ordering solves the size-constrained problem. A local marginal comparison does not prove such a claim.
+
+There are three distinct error budgets even in this fully explicit example. The raw modular counts have a precision threshold. The finite multiplier search has a size cutoff, whose minimum is an upper bound for the unrestricted infimum. The truncated Euler product has a prime cutoff, whose omitted tail is bounded by a convergent numerical series. Increasing the modulus to count the fiber at $t=4389$ more accurately would change neither of the other two bounds. Increasing the prime cutoff tightens the interval for $C$ without locating a smaller integer. Formula~\eqref{eq:excess} explains how to distinguish progress on each question.
+
+\section{A denominator worked through every place}\label{sec:denominator}
+The obstruction at $\beta=1/2$ mentioned earlier establishes only that a successful multiplier must be even. In the standard Gaussian lattice we can resolve the converse as well. This provides a complete worked example of the general support theorem in which $N_*$ is nontrivial. It also tests whether the normalization used for a square target survives a change of target.
+
+\subsection{From a congruence obstruction to exact support}
+For $F=\mathbb Q$, $E=\mathbb Q(i)$, $J$ the identity of size three, take the basis $1,i$, the associated integral coordinates, and $\beta=1/2$. The moving target is $b=a^2/2$. If $a$ is odd, $b$ has $2$-adic valuation $-1$. Integral squares and their sums lie in $\mathbb Z_2$. The lattice therefore cannot meet this fiber. The source support condition and the product upper bound give $P_{1/2}(a)=0$.
+
+If $a=2u$ then $b=2u^2$ is represented by the integral vector $(u,u,0,0,0,0)$. There is a further step from a displayed point to a positive product. At any finite completion this vector is nonzero and has a nonzero scalar derivative in the ambient field. Some partial derivatives may be divisible by the local uniformizer, so the field statement of regularity does not assert a unit derivative modulo $p$. The exact local calculation avoids that ambiguity. More generally write $a=2^ku$ with $k\ge1$, $u$ odd. At $2$, the valuation of $b$ is $2k-1$ and its odd part is $u^2\equiv1\bmod4$. The full-residue formula gives
+\[
+             \alpha_2(b)=1-4^{-(2k-1)-1}=1-16^{-k}>0 .
+\]
+At odd primes, $v_p(b)=2v_p(u)$. The last unit reached in the odd-place descent can be any nonzero residue. The uniform nonzero finite-field count therefore applies even when the unit left by the factor $1/2$ is a nonsquare. The remaining ratio at each odd prime is precisely $A_p(v_p(u))$. The positive unit background converges; only finitely many relative factors differ from one. This proves positivity for every even $a$ and determines $N_*=2$. Each part of this sufficiency argument refers to the specified form and lattice. For an arbitrary input, knowing a denominator by itself only supplies a candidate obstruction.
+
+\subsection{A relative coefficient depends on its reference target}
+Let $P_1(1)$ denote the positive unit-target finite product for the same lattice. Dilation contributes $a^4$ at both targets, so that on the positive support
+\[
+  \frac{P_{1/2}(a)}{a^4P_1(1)}
+     =\frac{4}{3}(1-16^{-k})
+                       \prod_{\substack{p\mid u\\p>2}}A_p(v_p(u)).
+\]
+The factor $4/3$ in front divides out the \emph{unit-target} dyadic baseline $3/4$. It is not a second dilation. At the first supported integer $a=2$ the expression equals $5/4$, and at $a=4$ it equals $85/64$. The dyadic factor strictly increases with $k$. Thus the sharp infimum with this reference denominator equals $(5/4)C$. For the lower inequality minimize the dyadic factor at $k=1$ and use the inert-prime lower bounds. For sharpness take $k=1$ and let the odd part run down the same nearly extremal sequence as before. It is unattained for the same reason as $C$. Normalizing instead by the value of the normalized mass at the \emph{first supported multiplier} divides every answer by $5/4$, so the relative infimum returns to $C$.
+
+Comparing ordinary counts exposes a normalization trap with a simple integer. At $a=2$, $b=2$ has $\binom{6}{2}2^2=60$ signed ordered representations, whereas $r_6(1)=12$. Dividing $60$ by $12a^4$ gives $5/16$. The preceding finite product gives $5/4$. The difference is precisely the factor $(b/a^2)^2=\beta^2=1/4$. Indeed the natural size denominator in the six-square coefficient is $b^2$, and $60/(12\cdot2^2)=5/4$. At fixed $\beta=1$ the two size denominators happen to coincide. Changing the target while carrying over that coincidence would appear to falsify the local calculation by a factor of four. Keeping the reference target and degree together removes the discrepancy.
+
+For all supported $a$ the same check follows from Jacobi's identity. Put $b=2^\ell u^2$, $\ell=2k-1$. Write a divisor as $2^i d$ with $d\mid u^2$ odd. In the first divisor sum $\chi_{-4}(b/(2^i d))$ vanishes unless $i=\ell$; in the second, $\chi_{-4}(2^i d)$ vanishes unless $i=0$. For odd $u$, $\chi_{-4}(u^2/d)=\chi_{-4}(d)$. This gives
+\[
+ r_6(2^\ell u^2)
+ = (16\cdot 2^{2\ell}-4)\sum_{d\mid u^2}\chi_{-4}(d)d^2 .
+\]
+Divide by $12(2^\ell u^2)^2$. Reversing the odd divisor exponents transforms the normalized odd sum into $\prod A_p(v_p(u))$. The remaining coefficient is $(4/3)(1-4^{-\ell-1})=(4/3)(1-16^{-k})$. Thus the finite product and the ordinary representation count agree throughout the example when each uses the appropriate size variable. The agreement relies on a classical divisor identity for this Gaussian lattice. The general support theorem does not identify ordinary representation counts of an arbitrary form.
+
+The exact support, optimum, and ordinary-count normalization here are worked deductions in this edition. Their ingredients include the checked square-depth theorem, the written dyadic all-residue extension, the odd-place calculation, and Jacobi's formula. In particular the odd valuation $2k-1$ falls outside the square-target theorem at two. Quoting only that Lean theorem for the displayed value of $\alpha_2(b)$ would skip the essential additional input.
+
+\section{What the original Siegel--Weil argument actually needs}\label{sec:consumer}
+The preceding strengthening arose from a concrete use of a finite product. In the pinned file \code{SwOne.lean}, the proof of \code{sw_one} treats a nonsingular one-by-one target $T$ and Hermitian rank $M\ge3$. Its conclusion identifies the theta measure with the specified Euler-product normalization. A proportionality theorem already gives a candidate constant $c$. The remaining issue is why the proof may choose $c=1$. The answer explains both the relevance of our three investigations and the limits of their effect on the original argument.
+\begin{flushleft}\small
+\href{https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/CompanionTheory/AutomorphicTheory/ThetaDilations/SwOne.lean#L23-L47}{Pinned proof, proportionality, zero-factor branch, scalar target and local growth call.}
+\end{flushleft}
+
+\subsection{Keeping the zero branch and the two coefficients straight}
+First, the original proof tests whether the archimedean member is the zero measure or some finite-place member is the zero measure. In either case the Euler-product measure vanishes and the desired measure identity follows with the stated normalization. Equality of two zero measures by itself cannot determine a scalar of proportionality. In the complementary branch every measure required by the growth call is nonzero. A one-by-one Hermitian target with nonzero determinant corresponds to a nonzero scalar $\beta\in F$. This is the point where both the target of our local analysis and the original nonzero-measure premise enter.
+
+There are three constants with different origins. The real value of the proportionality scalar $c$ is what the proof seeks to determine on the nonzero branch. The positive lower coefficient $\kappa$ comes from the finite-place growth input at favorable multipliers. The real constant $C_{\rm err}$ bounds an analytic error from a theta-measure estimate. In this section it carries a subscript to distinguish it from the sharp Gaussian product $C$ calculated above. None of the three need be identified with a local density. The proof also constructs a test function whose integral against the archimedean member has finite positive real value $w$. Its positivity uses that the function is positive and the measure is nonzero. It is then legitimate to multiply by $w$ and later divide by it. Vanishing of $w$ would eliminate the sensitivity of this test to the scalar $c$.
+
+\subsection{The contradiction with all powers visible}
+Let $D=[F:\mathbb Q]$, let $a$ be a positive favorable integer, and abbreviate the finite product by $P(a)$. Two evaluations of the same test quantity $I(a)$ give, in real notation,
+\[
+ I(a)=c\,wP(a), \qquad
+       |I(a)-wP(a)|\le |C_{\rm err}|\,a^{DM}.
+\]
+The first uses Euler-product integration on the appropriate measurable finite-place lattice tests. The second is the independent error estimate. The original proof establishes compactness or finiteness where needed before converting the extended nonnegative quantities to real numbers. A careless conversion of an infinite mass to a real could invalidate this comparison. The comparison now has a transparent shape:
+\[
+     |c-1|w\kappa\,a^{D(2M-2)}
+        \le |c-1|w P(a)
+        \le |C_{\rm err}|a^{DM}.
+\]
+For $M\ge3$ and $D\ge1$ the power difference is $D(M-2)\ge1$. After division by the positive $a^{DM}$ this bounds $|c-1|w\kappa\,a$ from above by the same constant for arbitrarily large $a$. If $c\ne1$ the coefficient of $a$ is strictly positive, a contradiction. In the smallest admitted case $M=3,D=1$ the powers are four and three. Even a very small $\kappa$ eventually defeats an error of cubic size. Its actual magnitude sets a crossover scale and does not enter the conclusion $c=1$.
+
+More precisely, a hypothesized discrepancy $|c-1|=\eta>0$ cannot survive at any favorable $a$ with $a^{D(M-2)}>|C_{\rm err}|/(\eta w\kappa)$. The pinned proof uses the simpler linear-power comparison and an integer above $|C_{\rm err}|/(\eta w\kappa)$. Its \emph{frequent} growth hypothesis already returns a favorable integer beyond any chosen cutoff. Our support result makes every multiple of $N_*$ favorable for this finite product. Once $N_*$ is known one can select the first such multiple beyond the cutoff and bound the waiting time by $N_*$. In general the constants and first shell indices are existential, so the threshold remains a conditional formula. Neither the exact support density nor the optimal Gaussian coefficient was needed to identify $c$.
+
+\begin{flushleft}\small
+\href{https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/CompanionTheory/AutomorphicTheory/ThetaDilations/SwOne.lean#L67-L101}{Pinned proof, Euler integral, real comparison, power gap and final contradiction.}
+\end{flushleft}
+
+\subsection{Which hypothetical failures would affect the conclusion?}
+If cofinality failed, the comparison could bound the discrepancy at finitely many tested multipliers and leave a small positive value of $\eta$ possible. If the exponent of the main term matched the error exponent, unbounded multipliers alone would yield only $\eta w\kappa\le|C_{\rm err}|$. If $\kappa$ were replaced by a sequence $\kappa(a)>0$, the displayed contradiction would still work on a cofinal subsequence for which $\kappa(a)a^{D(M-2)}$ tends to infinity. Positivity at each multiplier would not suffice without a rate. These distinctions locate the consumer's exact demand: the available growth dominates the error on an unbounded sequence. Our fixed floor ensures domination, and the original input already guaranteed enough of it.
+
+At rank $M=2$ the dimension of the scalar trace form is four and the exponent gap in this calculation closes. The four-square control also shows a local mass that decays along highly divisible square targets. These are two separate failures at the boundary of the stated assumptions. The local observation does not prove failure of the Siegel--Weil identity at that rank. It shows why neither the chart argument based on five-variable isotropy nor this particular exponent comparison supplies the same proof unchanged. Likewise a Gaussian computation of $C$ answers a sharper arithmetic question but cannot replace the theta-measure estimate, the initial proportionality argument, or the archimedean positivity test. The manuscript's contribution is to explain and strengthen a finite-place input and to show where it is consumed in the pinned proof.
+
 \section{What can be computed, and what remains existential?}
 A qualitative lower bound and a numerical evaluation use different information. The Gaussian square test fixes every coefficient of the form, one field, one basis, a target and an integral lattice with a convenient symmetry. That determines the primitive counts, the recursion and the answer. The general theorem fixes mathematical inputs but uses existence of isotropic coordinates, open neighborhoods and a cofinite set. The Lean term is a proof that the choices can be made. Evaluating a single term with an arbitrary field or an abstract admissible family would not print an optimal integer or a decimal coefficient.
 \subsection{Witnesses with different roles}
@@ -511,199 +792,175 @@ There are two separate kernel checks in the release. One gathers the original pr
 The final study graph comprises 31 new Lean modules, including the dependency audit, and 23 inherited study modules. There are 1,038 original project modules in their transitive source imports. Of their preservation-build objects, 538 share a bytewise digest with the independent MIT object manifest and 500 have distinct digests. We do not infer a cause for that difference. The bulk replay encountered 29,137 distinct original project declarations and 239 shared name occurrences. It accepted and located 29,109 safe declarations. Lean's replay skips the 28 unsafe or partial entries. The fixed compiled Mathlib and core distribution form the trust base for this check.
 \par
 Within the project-and-study scope of the proof-reference walk, the all-multiples proof reaches 1,478 constants, the exact-support proof reaches 1,470, and the dyadic sharp-floor proof reaches 420. The exact-support endpoint has its own proof from the local shells. Its smaller count need not contain the full closure of the all-multiples endpoint. Both reach the local input checked here.
+\subsection{What would count as an independent replication?}
+A discrepancy sometimes points to a wrong normalization rather than a faulty count. Every congruence experiment in this paper uses ordered coordinates in a fixed lattice. The ordinary six-square coefficient counts signs and order separately; permuting coordinates is a new representation unless the resulting tuple is identical. Local Haar volumes give the full lattice volume one in the chosen coordinates. The singular member is defined by the original support condition. Changing any of these conventions while keeping only a comparison number can manufacture either a disagreement or an artificial success. For that reason a productive replication records the observable, its units, and the expected point at which two methods agree.
+
+For the dyadic panel the direct integer histogram treats a square as a residue class and convolves the one-coordinate distribution six times. Splitting off an even-only histogram then subtracting from the full count isolates the primitive part. The formal lifting proof instead chooses a first odd coordinate, reduces the remaining target to an odd square-root count, and treats the all-even branch by descent. Agreement helps localize an error in parity bookkeeping. Both procedures assume the same six-square coordinates. Their agreement does not independently establish that the Hermitian Gram map equals this polynomial. The transport in \code{GaussianDilates.lean} is the separate check for that step.
+
+For the all-prime calculation the ordinary convolution is a finite integer computation with no completion or Haar measure in its definition. The signed divisor sum gives a second way to arrive at those ordinary coefficients. The product calculation proceeds through residue fields, nonsingular lifts and a singular recursion. A coincidence on finitely many small targets can detect normalization errors but cannot settle the infinite Euler product or its infimum. The factor-by-factor identity at square arguments and the summable-tail argument supply the logical bridge. This is why the bound on the omitted primes is part of the result, even if its width matters little for a plotted decimal.
+
+For the abstract local chart the finite affine experiment changes both a harmless offset and an essential slope condition. Uniformity under a changed offset supports the asserted mechanism; empty target classes after inserting a factor of $p$ show that the experiment can detect failure. This test does not measure the accuracy of the coefficient $2^{-20}$ in the worked chart. The exact six-square calculation provides that comparison on the identical target ball. Taken together these observations tell us which evidence can adjudicate each kind of dispute:
+\begin{center}\small
+\begin{tabularx}{\linewidth}{@{}YY@{}}\toprule
+Question someone might contest & Evidence that addresses it\\\midrule
+Can a positive ball average control the exact regular fiber? & The regular disintegration identity plus continuity and a positive-volume contradiction.\\
+Does a nonzero finite residue already guarantee the resolved density? & The target $4$ at depths three and four, followed by the all-depth lifting proof.\\
+Does a bounded minimum equal the unrestricted infimum? & The excess product, convergence of its tail, and an approximating sequence.\\
+Is an arbitrary first supported multiplier computable? & A certificate for each exceptional local threshold and completeness of the bad-prime set would be required.\\
+Does a checker receipt cover the half-integral worked example? & Its formula uses the written odd-valuation dyadic extension, beyond the checked square-target endpoint.\\
+\bottomrule\end{tabularx}
+\end{center}
+
+\subsection{Claim-level guide to the expanded edition}
+\begin{description}[style=nextline,leftmargin=1.35em,labelwidth=1em]
+\item[Original source.] The definitions of the Gram-fiber measures and their regular tests, the trace matrix conversion, five-variable local isotropy, local dilation, and almost-all-place comparison are inputs from the pinned original source. Section~\ref{sec:consumer} follows the actual use of the frequent-growth input in that source. Our replacement of its witness by a supported multiple is a written consequence and has not been substituted into the original file.
+\item[Checked in the research release.] The abstract punctured floor, all-multiples growth, exact positive support, finite square-depth counts and the identification of the dyadic square density with the original Gaussian fiber are covered by the archived module checks. The source digests identify which statements the checkers accepted. Where a conclusion quantifies over admissible measures, the assumptions giving such a family matter just as much as the displayed numerical conclusion.
+\item[Written consequences.] The specific integral chart in Section~\ref{sec:chart}, the exact wait in Section~\ref{sec:schedule}, the precision bounds in Section~\ref{sec:precision}, the extremal-sequence criterion in Section~\ref{sec:extremal}, and the complete $\beta=1/2$ calculation in Section~\ref{sec:denominator} each include a derivation here. They are additions to the exposition, with no new Lean declaration claimed for them.
+\item[Finite evidence.] The saved controls can be rerun and compared as exact integers or rational numbers. Their sample ranges define their scope. The unrestricted conclusions about all depths, all integers, or an infinite product require the corresponding formal or written arguments.
+\end{description}
+
 \subsection{A reader's audit with pencil and paper}
 Start at modulus eight. Four odd Gaussian coordinates contribute $4\bmod8$. Each even square is zero or four, so the remaining two can change the sum to either zero or four. The normalized primitive term is $15/16$. Substituting the density $3/4$ at target one into the recursion gives $15/16+(3/4)/16=63/64$. Iterating once more gives $1023/1024$. This finite-dimensional test fixes the exponent of the rescaling factor. Next compare the factors $73/81$ for $p=3$ and $651/625$ for $p=5$. Reversing the sign in the odd-prime character prediction would reverse the location of the worst primes. Finally inspect the order of quantifiers in the global theorem: one $N_*$ and one $c$ precede every $a$. None of these pencil checks alone establishes that ordering. Each tests a specific calculation on which the final interpretation depends.
 
-\clearpage\section{Reading the formal certificates}These six excerpts identify the precise changes of coordinates, measures and quantifiers underlying the conclusions. They are transliterations for the printed page. The package contains the full Unicode sources under the indicated names.
-\phantomsection\subsection*{Changing the dimension of the problem}
-This is the algebraic step that makes the original local classification applicable. A Hermitian matrix of rank three is a quadratic problem in six coordinates over the ground field, even when the tensor algebra at the chosen place splits. Diagonalization is over the field. It carries no assertion about a unimodular change of integral basis.
-{\small\sffamily\color{accent}local / LocalIsotropy.lean, lines 17--28}\par
-{\fontsize{9.2}{11.1}\selectfont\begin{verbatim}
- 17    let Q := B.toQuadraticForm'
- 18    obtain <w, <e>> := Q.equivalent_weightedSumSquares
- 19    have hdim : 5  <=  Fintype.card (Fin (Module.finrank (Fv F v) (i  ->  Fv F
-     v))) := by simpa using hi
- 20    obtain <y, hy, hyq> :=
-     GlobalTheory.LocalQuad.isotropic_adicCompletion_of_five_le F v hdim w
- 21    refine <e.symm y, fun h => hy ?_, ?_>
- 22     .  simpa using congrArg e h
- 23     .  have hq := e.symm.map_app y
- 24      simpa [Q, Matrix.toQuadraticForm', Matrix.toLinearMap2'_apply',
- 25        QuadraticMap.weightedSumSquares_apply, smul_eq_mul,  <-  sq, hyq] using hq
- 26  
- 27  /-- The original CM trace form has a nonzero regular zero at every finite
- 28  completion once the Hermitian rank is at least three. The witness includes an
-\end{verbatim}}
-The embedding into the five-variable result is only an existence argument. The new proof transports the nonzero vector back and uses invertibility of the trace matrix to rule out a zero derivative. A degenerate matrix could admit many zero vectors while every one in a chosen radical had zero derivative.
-\clearpage\phantomsection\subsection*{The measurable slice that supplies the coefficient}
-The two unit conditions express that the auxiliary derivative has the same principal ideal as its value at the center. Their purpose is visible in the two directions of the preimage equality. An arbitrary nonzero derivative at each point without the common image ball would leave an uncontrolled coefficient in the integral.
-{\small\sffamily\color{accent}synthesis / CoordinateFloor.lean, lines 65--88}\par
-{\fontsize{9.2}{11.1}\selectfont\begin{verbatim}
- 65    have hp (y : K) : MeasurePreserving (fun x => move (x,y)) mu mu :=
- 66      measurePreserving_add_right mu (y  smul  e)
- 67    have hs (x) (hx : x  in  W) : (lam D)-1 * lam V  <=  nu {y | move (x,y)  in
-     T} := by
- 68      obtain <hxL,hq,hf,hi,hn> := hW hx
- 69      let u := Units.mk0 (slope x) hn
- 70      have hpre : (fun y : K => (u:K)*y+Q x) -1' D = (O : Set K) := by
- 71        ext y
- 72        change (slope x*y+Q x)/delta  in  O  <->  y  in  O
- 73        constructor
- 74         .  intro h
- 75          have hy := O.mul_mem hi (O.sub_mem h hq)
- 76          convert hy using 1 <;> field_simp [delta,hreg,hn] <;> ring
- 77         .  intro h
- 78          convert O.add_mem (O.mul_mem hf h) hq using 1 <;> ring
- 79      have ha := HaarSlices.affine_slice lam u (Q x) O D hOp.measurableSet
-     hDo.measurableSet hvol hpre hV hVD
- 80      have m1 : Measurable (fun y : K => (u:K)*y + Q x) := ((continuous_const.mul
-     continuous_id).add continuous_const).measurable
- 81      rw [ <-  ha, Measure.restrict_apply (hV.preimage m1)]
- 82      change _  <=  lam.restrict (O : Set K) {y | move (x,y)  in  T}
- 83      have m2 : Measurable (fun y : K => move (x,y)) := (continuous_const.add
-     (continuous_id.smul continuous_const)).measurable
- 84      change _  <=  lam.restrict (O : Set K) ((fun y : K => move (x,y)) -1' T)
- 85      rw [Measure.restrict_apply (hT.preimage m2)]
- 86      apply measure_mono
- 87      rintro y <hy,hyO>
- 88      refine <<fun i _ => O.add_mem (hxL i (mem_univ i)) (O.mul_mem hyO (he
-     i)),?_>,hyO>
-\end{verbatim}}
-The right-hand side concerns a translation inside the original lattice. The indicator of the source domain matters as much as the polynomial equation. Omitting it would estimate the full ambient fiber and could count source vectors outside the prescribed integral set.
-\clearpage\phantomsection\subsection*{Identifying the original local measure}
-There are three different coordinate systems in play: the tensor entries, their trace coordinates, and the isotropic pair used to test an affine line. This proof uses the original trace coordinate identity for every input tuple, then obtains the lower bound in the product Haar measure of those coordinates.
-{\small\sffamily\color{accent}local / OriginalFloor.lean, lines 23--43}\par
-{\fontsize{9.2}{11.1}\selectfont\begin{verbatim}
- 23    obtain <i1,i2,i3,i4,-> := GlobalTheory.T.completion_is_local_ring F v
- 24    have : BorelSpace (Fv F v) := <rfl>
- 25    have := hlam.1
- 26    obtain <B,e,f,hB,-,he,hf,hfe,-,hcoord> :=
- 27      LocalWitnesses.in_pinned_coordinates sig hsig M J hJ hM d b v
- 28    obtain <e',f',he',hf',hz,hr,hline> := LocalWitnesses.integral_pair v B hB e f
-     he hf (hfe \u25b8 one_ne_zero)
- 29    let O := (v.adicCompletionIntegers F).toSubring
- 30    have hOo : IsOpen (O : Set (Fv F v)) := Valued.isOpen_valuationSubring _
- 31    have hOc : IsCompact (O : Set (Fv F v)) :=
- 32      isCompact_iff_compactSpace.2
-     (GlobalTheory.AdelicUnitaryTop.compactSpace_adicCompletionIntegers F v)
- 33    have hQ : Continuous (LocalPair.quad B) := by
- 34      exact continuous_const.mul (continuous_id.dotProduct
-     (continuous_const.matrix_mulVec continuous_id))
- 35    have hS : Continuous (fun x => x  dot _v (B *_v e')) := by
- 36      exact continuous_id.dotProduct continuous_const
- 37    obtain <D,hD,hD0,c,hc,ht> := CoordinateFloor.lower O hOo hOc lam hlam.2
- 38      _ _ hQ hS e' f' he' hf' hz hr hline
- 39    exact <c,hc,FloorTransfer.punctured_of_coordinate_tubes sig hsig M J hJ d b v
-     lam hlam m hm
- 40      _ hQ hcoord D hD hD0 c ht>
- 41  
- 42  end OriginalFloor
- 43  #print axioms OriginalFloor.punctured_floor
-\end{verbatim}}
-The final invocation transports a lower bound for arbitrarily small target tests to the measure at one specified regular point. An almost-everywhere identity of disintegrations would be too weak because a countable collection of square targets can itself have zero base measure.
-\clearpage\phantomsection\subsection*{Quantifying over the full positive support}
-The theorem speaks about the product evaluated on actual dilated lattices at the fixed target. The same integer and coefficient precede all choices of the dilation. The first implication controls support in both directions, and the second adds a quantitative lower bound everywhere the product can be positive.
-{\small\sffamily\color{accent}global / OptimalSupport.lean, lines 53--70}\par
-{\fontsize{9.2}{11.1}\selectfont\begin{verbatim}
- 53  theorem positive_iff_multiple (hsig : IsCMExt F E sig) (hJ : IsHermND sig J) (hM
-     : 3  <=  M) (hlam : forall  v, IsStdV v (lam v))
- 54      (hm : forall  v, IsGramFib (Fv F v) sig J 1 (coordW (Fv F v) b (lam v) 1 M)
-     (coordHerm (Fv F v) sig b (lam v) 1) (m v))
- 55  
- 56      (beta : F) (hbeta : beta  !=  0) :
- 57      exists  N : Nat, 0 < N  and  exists  c : Real, 0 < c  and  forall  t : Nat,
-     0<t  ->
- 58        let P := Prod' v, (m v (hermScal (Fv F v) sig (algebraMap F _ beta))
-     (dilSet b v t)).toReal
- 59        (0 < P  <->  N  divides  t)  and  (N  divides  t  ->
-     c*(t:Real)^(Module.finrank Rat F*(2*M-2))  <=  P) := by
- 60    classical
- 61    have hdens := GlobalTheory.T.rank_one_local_density_almost_all F E sig hsig M
-     J hJ hM d b
- 62    have hunit := (GlobalTheory.T.integral_almost_all_places F E sig hsig d b).2
-     beta hbeta
- 63    let B := (Filter.eventually_cofinite.1 (hdens.and hunit)).toFinset
- 64    let u (t : Nat) (v : HeightOneSpectrum (O F)) := (mL sig b m ((t:F)^2*beta)
-     v).toReal
- 65    have hreg (t : Nat) (ht : 0<t) : (t:F)^2*beta  !=  0 := mul_ne_zero
-     (pow_ne_zero _ (by exact_mod_cast ht.ne' : (t:F) != 0)) hbeta
- 66    have hgood (t : Nat) (ht : 0<t) (v : HeightOneSpectrum (O F)) (hv : v  notin
-     B) :
- 67        |u t v - 1|  <=  2 / (Ideal.absNorm v.asIdeal : Real)^2 := by
- 68      simp only [B,Set.Finite.mem_toFinset,Set.mem_ofPred_eq,not_not] at hv
- 69      have hint : algebraMap F (Fv F v) ((t:F)^2*beta)  in
-     v.adicCompletionIntegers F := by
- 70        have hb : algebraMap F (Fv F v) beta  in  v.adicCompletionIntegers F := by
-\end{verbatim}}
-The exceptional places include possible denominators as well as the finite failures of the good-place estimate. This enlargement prevents an integral-target hypothesis from being applied to a nonintegral scalar. The dependency is easy to miss if one looks only at the final exponent.
-\clearpage\phantomsection\subsection*{The moving boundary of stabilization}
-The induction proceeds by two residue depths while adding one factor of four to the target. Counting six independent lift digits supplies the factor in the all-even term. The proof treats the two shallow levels before applying this recursion, which is why the threshold remains exact at every valuation.
-{\small\sffamily\color{accent}dyadic / SquareDepth.lean, lines 55--79}\par
-{\fontsize{9.2}{11.1}\selectfont\begin{verbatim}
- 55  theorem density_step (k : Nat) : density (k+1)=15/16+density k/16 := by
- 56    simp only [density,pow_succ]; field_simp; ring
- 57  
- 58  theorem all_depths (k r : Nat) :
- 59      normCount r (4^k) = if r < 2*k+2 then 1 else density k := by
- 60    induction k generalizing r with
- 61    | zero =>
- 62      have h := count_all r
- 63      simp only
-     [pow_zero,Nat.mul_zero,Nat.zero_add,density,normCount,Nat.cast_one]
- 64      by_cases hr : r<2
- 65       .  rw [if_pos hr] at h \u22a2
- 66        have H : (4:Rat)*count 6 (1:ZMod (2^r)) = 4*(2^r:Rat)^5 := by
-     exact_mod_cast h
- 67        field_simp; linarith
- 68       .  rw [if_neg hr] at h \u22a2
- 69        have H : (4:Rat)*count 6 (1:ZMod (2^r)) = 3*(2^r:Rat)^5 := by
-     exact_mod_cast h
- 70        field_simp; linarith
- 71    | succ k ih =>
- 72      rcases r with _|r
- 73       .  rw [if_pos (by omega)]
- 74        have h : count 6 ((4^(k+1):Nat):ZMod 1)=1 := by
- 75          rw [Subsingleton.elim ((4^(k+1):Nat):ZMod 1) 1,small_1]
- 76        change (count 6 ((4^(k+1):Nat):ZMod 1):Rat)/1=1
- 77        rw [h]; norm_num
- 78      rcases r with _|r
- 79       .  rw [if_pos (by omega)]
-\end{verbatim}}
-The boundary moves with the target. Testing an infinite list of ever larger targets at one fixed depth produces only the unresolved value one beyond a certain point. That design could never reveal the true stabilized deficits, regardless of the size of the sample.
-\clearpage\phantomsection\subsection*{A zero tube of positive normalized volume}
-Here the center of the shrinking residue cylinder is exactly zero. The equality compares base measure and ambient tube volume at each finite level. It gives a particularly sharp test of the distinction between a tube and a measure assigned to the target point by the original support axiom.
-{\small\sffamily\color{accent}dyadic / GaussianSharp.lean, lines 25--48}\par
-{\fontsize{9.2}{11.1}\selectfont\begin{verbatim}
- 25  
- 26  theorem zero_tube_measure (lam : Measure K) [lam.IsAddHaarMeasure] [SigmaFinite
-     lam]
- 27      (hlam : lam (O : Set K)=1) (r : Nat) :
- 28      (Measure.pi fun _ : Idx => lam) (tube r 0) = lam (cylinder r 0) := by
- 29    rw [tube_mass lam hlam,cyl_mass lam hlam]
- 30    apply (ENNReal.toReal_eq_toReal_iff' (by finiteness) (by finiteness)).mp
- 31    simp only [ENNReal.toReal_mul,ENNReal.toReal_div,ENNReal.toReal_pow,ENNReal.to
-     Real_natCast,
- 32      ENNReal.toReal_one,ENNReal.toReal_ofNat]
- 33    have hr := zero_tube_ratio r
- 34    unfold normCount at hr
- 35    have h : (count 6 (0:ZMod (2^r)):Real)/(2^r:Real)^5=1 := by
- 36      simpa only [Rat.cast_div,Rat.cast_natCast,Rat.cast_pow,Rat.cast_ofNat,Rat.ca
-     st_one,Nat.cast_zero]
- 37        using congrArg (fun z : Rat => (z:Real)) hr
- 38    field_simp at h \u22a2
- 39    linear_combination h
- 40  
- 41  theorem sharp_floor (lam : Measure K) (hlam : IsStdV placeTwo lam)
- 42      (m : H  ->  Measure W) (hm : family lam m) (t : Nat) (ht : t != 0) :
- 43      (3/4:Real)  <=  (m (hermScal K conjG ((t^2:Nat):K)) lattice).toReal := by
- 44    obtain <k,u,hu,rfl> := Nat.exists_eq_two_pow_mul_odd ht
- 45    rw [show (2^k*u)^2=4^k*u^2 by rw [mul_pow, <- pow_mul, Nat.mul_comm k
-     2,pow_mul]; norm_num,
- 46        fiber_mass lam hlam m hm k u hu,ENNReal.coe_toReal]
- 47    change (3/4:Real)  <=  ((density k:Rat):Real)
- 48    suffices h : (3/4:Rat)  <=  density k by
-\end{verbatim}}
-For each positive multiplier the subsequent theorem uses a regular target, where the original family is fixed by the disintegration and continuity. Thus the statements about an identically unit tube ratio and zero assigned singular mass are compatible with the positive floor at all square dilates.
+\section{Reading the formal certificates}\label{sec:certificates}
+The following readings connect mathematical claims to lines of Lean in the first-edition commit. Each link is immutable. The description identifies a specific step a reader can check and the extra premise required for the next step. The archive contains the complete sources.
+
+\subsection{The geometry is over a field; the estimate is on a lattice}
+In \code{LocalIsotropy.lean} the diagonalization of the quadratic form is an equivalence of vector spaces over the completion. Its inverse transports the isotropic vector back and preserves its nonzero property. The dimension premise is a cardinality statement: the number of scalar coordinates in the diagonal presentation is at least five. The original theorem works over the adic completion of the base number field. Replacing this invocation by a global isotropy assertion would already fail for the identity Gaussian form because a nonzero sum of real squares cannot vanish. After transport, nonsingularity of the matrix supplies a nonzero polar covector. This second property is what lets the next file choose one nonzero component and divide by it.
+\srclink{local/LocalIsotropy.lean\#L12-L50}{Isotropy over the finite completion}
+
+The algebraic partner proof chooses $z$ supported on one coordinate and scales that coordinate by the inverse of the corresponding component of $Be$. Then $B(z,e)=1$. Starting from the expansion for $Q(z+ye)$ and setting $y=-Q(z)$ gives a vector with target zero and pairing one with $e$. This is an exact solution of a scalar linear equation. The later scaling of $e$ and its partner puts them into the original integral lattice. That step can reduce the absolute size of the pairing. An identification of the field quadratic form with a hyperbolic plane does not imply an integral change of basis splitting off a unimodular hyperbolic plane. The target ideal generated by the rescaled pairing accounts for precisely this difference. The explicit $-16$ in Section~\ref{sec:chart} is an example.
+\srclink{local/LocalPair.lean\#L8-L42}{Quadratic expansion and the partner construction}
+
+The neighborhood step only needs the slope and its reciprocal after normalization by the central slope to be integral. Those two conditions make the normalized slope a unit. In that neighborhood the inverse image of $D$ under the affine map on the entire field is \emph{exactly} the ring of integers. The two implications in this equality use the slope and the reciprocal separately. This identity and Haar normalization determine the pushforward of the restricted measure. The source indicator then limits the later average to translates which stay in the lattice. Omitting that indicator would establish a lower bound for the ambient preimage rather than for its intersection with the original lattice, which is the observable being used.
+\srclink{synthesis/CoordinateFloor.lean\#L60-L99}{Affine preimage equality and translated source tests}
+
+\subsection{Why the measure in the conclusion is the supplied measure}
+It would be easier to construct \emph{some} density from a coordinate chart and declare victory once it was positive. The quantifier in \code{OriginalFloor.punctured_floor} makes a stronger commitment. It accepts a measure family $m$ with \code{IsGramFib} for the stipulated source and target measures. Its conclusion lower-bounds that very $m$, evaluated on the basis lattice. If two admissible families are supplied, the assertion applies to each. The statement gives a positive coefficient after $m$ is fixed; it does not say that the same coefficient has been computed for all possible input families.
+
+Unfold the conclusion as an ordinary sentence. There exist $c>0$ and a neighborhood of zero such that for every $z$ in the neighborhood, if $z\ne0$ then $m(\iota z)(L)\ge c$. In particular the eventual quantifier covers points of every sufficiently deep shell simultaneously. The implication $z\ne0$ is inside this neighborhood statement. Plugging in zero discharges an implication with false antecedent and returns no bound. The original support axiom separately sets the zero member to zero. These two uses of zero are compatible before any special Gaussian computation. The explicit tube ratio at zero supplies an independent demonstration that ordinary averaging need not recover the assigned family value at the singular point.
+\srclink{local/OriginalFloor.lean\#L12-L43}{Original input family and punctured conclusion}
+\srclink{local/FloorTransfer.lean}{Transfer from coordinate tests to regular point masses}
+
+\subsection{The shortest proof of support does not compute its generator}
+The abstract shell lemma accepts a sequence $f$, the one-step proposition $0<f(k)\Rightarrow0<f(k+1)$, and a positive eventual lower bound. It defines the least positive index by \code{Nat.find} after obtaining a witness from the tail. The monotonicity in this proof is monotonicity of the \emph{proposition} $0<f(k)$ in the implication order. It does not require monotonicity of a real sequence. To get a lower bound on the positive support the proof sets $g(k)=f(k)$ on positive indices and $g(k)=1$ elsewhere. This harmless change is confined to an auxiliary all-positive sequence. Recovering the lower bound for $f$ uses the previously proved support equivalence.
+\srclink{global/ShellThreshold.lean\#L5-L22}{Least positive shell and finite-prefix repair}
+
+In \code{OptimalSupport.positive_iff_multiple} the outer input includes the nonzero scalar and the same local families. The first existential returns a positive natural $N$ and the second a positive real coefficient. Both precede the quantifier over positive rational integers $t$. The statement pairs a biconditional for positivity with a separate conditional for polynomial growth. A proof of just the forward lower bound on multiples could never by itself classify the nonsupported integers. The reverse argument first assumes a positive product, supposes one exceptional factor vanishes, and invokes the exterior upper estimate. This proves positivity of each exceptional factor, hence divisibility by each prime power, hence divisibility by their least common multiple. The opposite direction and the polynomial bound use the exterior lower estimate and the finite product of positive floors.
+
+The final declaration \code{generator_unique} is elementary once the biconditionals are known: evaluate each description on the other generator and apply antisymmetry of divisibility. Uniqueness fixes a mathematical value although a researcher may lack an executable way to recognize the measure predicate passed to \code{Nat.find}. These are separate issues even for natural-number witnesses. The special half-integral example supplies the missing evaluation by explicit local densities; the general proof obtains the existence of a finite exceptional set from the original almost-all theorem.
+\srclink{global/OptimalSupport.lean\#L53-L117}{Quantifiers, finite product, and uniqueness}
+
+\subsection{The combinatorial induction which makes the dyadic count exact}
+The primitive count is particularly easy to misread as a computational extrapolation. For $r\ge3$ an odd square modulo $2^r$ belongs to the class $1\bmod8$. Conversely every unit in that class is a square. One may see the latter by the same digit adjustment used for $w$ in Section~\ref{sec:chart}. Multiplication by a chosen square root then identifies the roots of any two members of the class. There are $2^{r-1}$ odd residues and $2^{r-3}$ target residues equal to one modulo eight. Counting the odd inputs by their square, with equal fiber cardinalities, gives exactly four roots over each such target. The proof in \code{OddSquares.lean} groups a finite sum in these two ways. It avoids applying a derivative-is-a-unit lifting argument to an odd square at two, where its derivative is even.
+\srclink{dyadic/OddSquares.lean\#L17-L47}{Counting an odd square-root fiber}
+
+Here is how that scalar fact enters the vector count. At modulus $8\cdot2^h$, split a tuple into a first coordinate and a tail. If the first coordinate is odd, the tail may be arbitrary provided the residual target is one modulo eight. For each such tail, there are exactly four possible first coordinates giving the required full target. If the first coordinate is even, primitivity must occur in the tail. These are disjoint cases. Counting once for \emph{each} odd coordinate would give multiple counts for a vector having four odd coordinates. The first-coordinate recursion gives such a vector to the first odd position encountered exactly once.
+
+The checker establishes the stronger identity, for a vector of dimension $d$ and any residue $b$,
+\[
+ \#\{\text{all solutions at }8\cdot2^h\}
+   = \#\{\text{all-even solutions there}\}
+          +(2^h)^{d-1}\,\mathrm{Prim}_8(d,\bar b)
+ \qquad(d\ge1).
+\]
+Here $\bar b$ is reduction modulo eight and $\mathrm{Prim}_8$ uses a finite first-odd-coordinate recurrence. The factor $(2^h)^{d-1}$ expresses the unconstrained extra digits. This formula covers every target digit extension of a given class. Equality of two adjacent observations would only cover two particular levels. At $d=6$ and $b=4t$, the modulus-eight primitive count is always $30720$, so the normalized primitive contribution is already $15/16$. The all-even count instead uses a bijection halving the coordinates and counts the $64$ lifts of each reduced six-tuple. These two identities justify the recursion independently of any finite search cutoff.
+\srclink{dyadic/PrimitiveLift.lean\#L7-L48}{Disjoint decomposition and primitive lifting}
+\srclink{dyadic/EvenDescent.lean\#L80-L103}{All-even descent and coordinate lifts}
+
+The two-level recurrence requires base counts as well as its inductive step. For $k=0$ the archived target-one theorem supplies $1$ before depth two and $3/4$ thereafter. For higher $k$ the first two depths give one; beyond them the recurrence reduces the target exponent by one and the depth by two. The dividing line $r=2k+2$ moves by exactly two with the induction. Multiplication by an odd unit permutes each finite residue space, extending the result to $(2^ku)^2$. The eventual tube identity is then transferred to any admissible Gaussian fiber family at that nonzero target. A separate existence declaration supplies a normalized family realizing the assertions. This last step prevents a universal conditional over admissible families from standing in for the existence of one.
+\srclink{dyadic/SquareDepth.lean\#L47-L98}{Normalized recurrence and all-depth formula}
+\srclink{dyadic/GaussianDilates.lean\#L36-L95}{Tube equality, specified fiber and existence}
+
+\subsection{What the four-square control removes}
+The archived control keeps the same dyadic scalar field and adjusts only the number of square coordinates. For four squares and a target divisible by eight there are no primitive solutions. Reduction modulo four would demand exactly four odd coordinates, and four odd squares sum to four modulo eight. All solutions are therefore even. Dividing all coordinates by two costs a normalized factor $2^{2-4}=1/4$. At target $4$ the primitive four-odd residue classes are still present. Directly at modulus eight its full count is $384$ with denominator $8^3=512$, giving $3/4$. The four-odd tuples contribute $4^4=256$. Of the $4^4=256$ all-even vectors exactly half have an odd number of coordinates whose square is four, giving the remaining $128$. The even branch has a target-one descendant of stabilized density one. Indeed at modulus eight there are four choices for its lone odd position, four choices of that odd residue, and half of the $4^3$ even triples give the required sum of even squares. The resulting $512$ primitive solutions lift with factor $2^3$ per further digit by the dimension-four case of the primitive lifting identity. Hence the target-four value $3/4$ persists at finer depths. At target $4^k$ for $k\ge2$ the primitive part disappears and descent gives a factor $1/4$ each time. The stable density is $3/4^k$ for $k\ge1$. Positivity persists on every square shell but the normalized floor tends to zero.
+
+At target $16$ the archived four-square normalized counts at depths two through five are $1/2,1/4,1/8,3/16$. The rise in the last step is especially informative: a single observed decrease does not imply monotonicity even in depth for a fixed target. With six variables the two remaining even positions can correct four odd squares to a multiple of eight. They supply the primitive contribution at every deeper square shell. Thus the rank change isolates a local mechanism that an aggregate comparison of final percentages would miss. The first-edition rank-two panel is a finite numerical control; the descent argument explains why extrapolating the admitted-rank theorem down to that control would fail.
+\srclink{dyadic/experiment.py}{Enumeration and four-square control}
+
+\section{Reproducing the worked numbers from this file}\label{sec:reproedition}
+The short program below checks the arithmetic added to this edition using Python's standard library. It uses cyclic convolution for local counts and ordinary polynomial convolution for integer counts. The former wraps a square into a residue class; the latter discards terms of degree above the limit and keeps signs as multiplicities. Reversing those conventions would answer a different counting question. The prime-product expression is evaluated separately from either convolution. Copy the program directly, or extract the lines inside the verbatim environment following the source comment “BEGIN EDITION CHECK”. Run it with an ordinary Python interpreter with assertions enabled.
+
+The first panel evaluates eight depths and eight target exponents. This covers both sides of the moving boundary as well as its diagonal for those depths. Taking a maximum on those eight rows checks the analytic formula for the worst error because its maximizing exponent is known to be $\lfloor r/2\rfloor$. Without that prior analytic argument a finite maximum could stand only as a lower estimate on a supremum over infinitely many $k$. The target-$4$ and target-$12$ integer counts test the change in sign after a common parent residue splits. In the second panel the largest target is $64^2/2=2048$. All $32$ even multipliers in $[1,64]$ are compared against the coefficient obtained from six ordinary square series. Odd multipliers have nonintegral target, so their vanishing is settled by the valuation argument in Section~\ref{sec:denominator}.
+
+The written conclusions over infinite ranges use the proofs above. This short reproduction deliberately keeps the counts small enough to inspect and edit. The package's separate verification program reruns the original four panels against their saved data, checks the hashes of the unchanged Lean sources, and checks their archived receipts.
+
+{\small\sffamily\color{accent}Python 3. Standard library. Integer arithmetic and exact fractions.}\par
+{\fontsize{8.8}{10.7}\selectfont
+% BEGIN EDITION CHECK
+\begin{verbatim}
+from fractions import Fraction as F
+from collections import Counter
+
+def square_histogram(m, dimension):
+    step = Counter(x*x % m for x in range(m))
+    hist = [1] + [0]*(m-1)
+    for _ in range(dimension):
+        hist = [sum(n*hist[(b-s) % m] for s,n in step.items())
+                for b in range(m)]
+    return hist
+
+def odd_part_ratio(u):
+    value = F(1)
+    p = 3
+    while p*p <= u:
+        k = 0
+        while u % p == 0:
+            u //= p
+            k += 1
+        z = F(1 if p % 4 == 1 else -1, p*p)
+        value *= sum(z**j for j in range(2*k+1))
+        p += 2
+    if u > 1:
+        z = F(1 if u % 4 == 1 else -1, u*u)
+        value *= 1+z+z*z
+    return value
+
+def ordinary_counts(limit):
+    squares = Counter(x*x for x in range(-limit, limit+1)
+                      if x*x <= limit)
+    coeff = [1] + [0]*limit
+    for _ in range(6):
+        coeff = [sum(m*coeff[n-s] for s,m in squares.items() if s<=n)
+                 for n in range(limit+1)]
+    return coeff
+
+def check():
+    assert 2**20 * F(1023,1024) == 1047552
+    for r in range(8):
+        m = 2**r
+        h = square_histogram(m,6)
+        assert sum(h) == m**6
+        errors = []
+        for k in range(8):
+            measured = F(h[4**k % m], m**5)
+            loss = F(1,4*16**k)
+            assert (1-measured)/loss == int(r >= 2*k+2)
+            errors.append(abs(measured-(1-loss)))
+        assert max(errors) == F(1,4*16**(r//2))
+    h = square_histogram(16,6)
+    assert h[4] == 1032192 and h[12] == 1064960
+    assert odd_part_ratio(9) == F(5905,6561)
+    assert odd_part_ratio(21) == F(73,81)*F(2353,2401)
+    assert (1+F(1,3**6))/(1+F(1,3**10)) < (
+            (1+F(1,7**2))/(1+F(1,7**6)))
+    coeff = ordinary_counts(2048)
+    for a in range(2,65,2):
+        k = (a & -a).bit_length()-1
+        u = a >> k
+        b = a*a//2
+        ratio = F(4,3)*(1-F(1,16**k))*odd_part_ratio(u)
+        assert F(coeff[b],12*b*b) == ratio
+    assert coeff[2] == 60 and coeff[4] == 252
+    print("64 dyadic cells and 32 half-target counts matched")
+
+if __name__ == "__main__":
+    check()
+\end{verbatim}
+% END EDITION CHECK
+}
+The printed success line reports the numbers of square-panel cells and half-target counts compared. It does not count crude output-line matches or repeated test runs as additional mathematical evidence. In particular the agreement at $\beta=1/2$ corroborates the normalization across these finite examples. The formula for its full support and the sharp coefficient still rely on the local valuation cases, odd-prime digit lifts, positivity of the background product, and the limiting construction for the infimum.
+
 \clearpage\section{Sources, reproducibility and collaboration}
 The mathematical source is the fork's pinned original commit \code{40e56bab}. The immediate research parent is \code{e3bf7939}. The additive research branch contains all newly written modules and an inventory of the original and inherited modules used in this verification. The included replay program can recompute the selected source hashes and recompile the study and inherited proofs with a pinned Lean and Mathlib installation. The compiled binaries of those installations are external dependencies. The simple numerical controls require only Python's standard library.
 \par
@@ -716,11 +973,12 @@ The mathematical source is the fork's pinned original commit \code{40e56bab}. Th
 A.~Alaca, S.~Alaca and K.~S.~Williams, \emph{The simplest proof of Jacobi's six squares theorem}, Far East Journal of Mathematical Sciences 27 (2007), 187--192. We use their divisor identity as an independent mathematical check on the Euler-factor computation.
 \href{https://people.math.carleton.ca/~aalaca/pubs/aa2007-6.pdf}{Authors' paper}.
 \par
+\href{https://github.com/nousentllc/riemann-hypothesis/tree/3f39c057bb593d610473bd9d477cad518a6ba21c/research/uriel/experiments/uncapped-growth}{First edition, mathematical modules and study receipts}.
 \href{https://github.com/homeowmorphism/riemann-hypothesis-original/blob/main/verification/CACHE.md}{Original-source preservation cache}.
 \href{https://math.mit.edu/~drew/grh/}{Independent MIT verification archive}.
 \href{https://github.com/leanprover-community/mathlib4/tree/0df444a360eaa60ab8c11dca51a86af692955474}{Mathlib revision used in the replay}.
 \par
-\textbf{Human and AI collaboration.} Justin Candler directed the research, set the requirement for auditable experiments and asked for three parallel mathematical tracks. Uriel, the coordinating AI research assistant, and three AI research workers developed the new proofs, wrote the checks, reconciled the source and numerical conventions, and prepared this manuscript. All workers shared the same project and model environment. Independent algorithms and the kernel replay test different failure modes. The original formalization, Mathlib, Jacobi's theorem and the external verification archives are prior work. No independent human peer review of these new results is claimed.
+\textbf{Human and AI collaboration.} Justin Candler directed the research, set the requirement for auditable experiments and asked for three parallel mathematical tracks. Uriel, the coordinating AI research assistant, and three AI research workers developed the new proofs, wrote the checks, reconciled the source and numerical conventions, and prepared this manuscript. Uriel prepared the expanded second edition in response to Candler’s request for the missing mathematical steps. Its additional worked examples and corollaries are identified in the claim-level guide. All workers in the original study shared the same project and model environment. Independent algorithms and the kernel replay test different failure modes. The original formalization, Mathlib, Jacobi's theorem and the external verification archives are prior work. No independent human peer review of these new results is claimed.
 \end{document}
 
 BEGIN FIGURE nouslogo
