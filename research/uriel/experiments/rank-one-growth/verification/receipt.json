@@ -1,0 +1,36 @@
+{
+  "lean": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "modules": [
+    {
+      "module": "ReciprocityTheory.Chebotarev.NZIdeal",
+      "sha256": "e083549b1f90a660b6ac404526287c5006655160626838296d1fc966c094fd43",
+      "compiler": "",
+      "kernel": "replaying ReciprocityTheory.Chebotarev.NZIdeal"
+    },
+    {
+      "module": "ReciprocityTheory.Chebotarev.EulerSum",
+      "sha256": "b859be5c3ebfe892b9366a279b9aedaf1cff54a69f1490e3374a6f0bb62d41fe",
+      "compiler": "",
+      "kernel": "replaying ReciprocityTheory.Chebotarev.EulerSum"
+    },
+    {
+      "module": "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.InfiniteProductMultipliable",
+      "sha256": "5b0f9f43668ddfaddeb7771e8aac919400e6bf309749579050b8d28eeb1b73d1",
+      "compiler": "CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/InfiniteProductMultipliable.lean:15:55: warning: Variable name `hm` is not explicitly referenced.\n\nHint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:\n  [apply] _hm\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`",
+      "kernel": "replaying CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.InfiniteProductMultipliable"
+    },
+    {
+      "module": "Inputs",
+      "sha256": "3db64854ca87c78740eb01764ee7f716a0cd134d9f11ce1fa0361b22479913f4",
+      "compiler": "",
+      "kernel": "replaying Inputs"
+    },
+    {
+      "module": "Progression",
+      "sha256": "78d645ae77d6cb78219a7380f82d49dbaaed8541a07dbd0cb5b05a628847976f",
+      "compiler": "'DensityReplay.uniform_product' depends on axioms: [propext, Classical.choice, Quot.sound]\n'DensityReplay.avoids' depends on axioms: [propext, Quot.sound]\n'DensityReplay.geometric_exceeds' depends on axioms: [propext]\n'DensityReplay.progression_step' depends on axioms: [propext]",
+      "kernel": "replaying Progression"
+    }
+  ]
+}

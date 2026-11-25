@@ -1,0 +1,77 @@
+{
+  "commit": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "files": [
+    {
+      "local": "source/SwOne.lean",
+      "path": "src/CompanionTheory/AutomorphicTheory/ThetaDilations/SwOne.lean",
+      "blob": "d32a22a449c7050f1e122e43d49552ed3a13db21",
+      "sha256": "6c66926bb71e6df0cc3e02100101e6a703cb0082e0e49495b0c1afd0e90cefcf"
+    },
+    {
+      "local": "source/Growth.lean",
+      "path": "src/CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/RankOneLocalDensitiesProductConverges.lean",
+      "blob": "1398ce4e513c72177121bd9ef05618724adf788e",
+      "sha256": "bf503d1d9b1c413ff351d1eb6a16abe9d5704149c4f67b11876dd376a700ef4e"
+    },
+    {
+      "local": "source/Statement.lean",
+      "path": "src/CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/RankOneLocalDensitiesProductConvergesStatement.lean",
+      "blob": "387db24e319fbfdadfd4d5f03846b962d9f39cfa",
+      "sha256": "b9a4e782842edb07fad207ebe7fdd5ee32eb03a826232fff1770c645e3c837e7"
+    },
+    {
+      "local": "source/Dilation.lean",
+      "path": "src/CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/LocalRankOneDensityUniformizerPower.lean",
+      "blob": "b4c48d1c70ce6b3f655670d61fba20927e7b1509",
+      "sha256": "e7f1299359e2e5bd2fd3627a9eefde0e03774fff31a357328b5e3c2148626b10"
+    },
+    {
+      "local": "source/Good.lean",
+      "path": "src/CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/RankOneLocalDensityAlmostAll.lean",
+      "blob": "fc8eb5529fbead870185670b848b1e2bdddb35d8",
+      "sha256": "ca259bf511ac14941541fc8be97531502af3021ef3e24cebc578edb76406b3f2"
+    },
+    {
+      "local": "source/Quad.lean",
+      "path": "src/CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/LocalQuadraticDensityBoundNonzero.lean",
+      "blob": "098a8c4bfbca2348eb24a4049df5ed4a3cb1c993",
+      "sha256": "cc84e293d52e3a47abb0dd150a98128026e410b1e3987c0493d30ec804b36f4c"
+    },
+    {
+      "local": "source/Volume.lean",
+      "path": "src/CompanionTheory/SpectralGeometry/LocalGlobalProofs/LocalMassSeries/HermitianRankOneLocalVolume.lean",
+      "blob": "835012a9ea782f97bdd7f26cb890dda4ffc5dbae",
+      "sha256": "0efaad39050c7d6b0cf41381323f980e8c22215207dfe3c04125974e73a9b345"
+    },
+    {
+      "local": "source/Euler.lean",
+      "path": "src/CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/EulerProductLocalDensitiesConverges.lean",
+      "blob": "15cc1efcf29baaea022dd11616a0a5aaa0d86813",
+      "sha256": "d3462d890a7946031653a2ad36fd998ae637e7b1bf496b7c550faebb7c9ed9e2"
+    },
+    {
+      "local": "source/Summable.lean",
+      "path": "src/CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/SummableOneDivAbsNormSq.lean",
+      "blob": "ed4adde944b3450395e0bfa93b4f0c908973bdbd",
+      "sha256": "a5289e6c6087b3c1073a6b517ce015dcbadfc58c0bd2f02938d8b63aa1bd06bf"
+    },
+    {
+      "local": "source/Abs.lean",
+      "path": "src/CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/InfiniteProductMultipliable.lean",
+      "blob": "f16f223c3fdf381c26f4aec234006c54a5fa908a",
+      "sha256": "5b0f9f43668ddfaddeb7771e8aac919400e6bf309749579050b8d28eeb1b73d1"
+    },
+    {
+      "local": "source/NZ.lean",
+      "path": "src/ReciprocityTheory/Chebotarev/NZIdeal.lean",
+      "blob": "687df8cba6613a81a5c1e3137abffea337a2d365",
+      "sha256": "e083549b1f90a660b6ac404526287c5006655160626838296d1fc966c094fd43"
+    },
+    {
+      "local": "source/EulerSum.lean",
+      "path": "src/ReciprocityTheory/Chebotarev/EulerSum.lean",
+      "blob": "ae0202d5945d2fca8cb44c0dbc409d0298a405df",
+      "sha256": "b859be5c3ebfe892b9366a279b9aedaf1cff54a69f1490e3374a6f0bb62d41fe"
+    }
+  ]
+}

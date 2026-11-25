@@ -1,0 +1,108 @@
+{
+  "intervals": [
+    {
+      "limit": 100,
+      "odd_primes": 24,
+      "decimal_scale": 1000000000000000000,
+      "lower_numerator": 665256873998946464,
+      "upper_numerator": 671909442738935950
+    },
+    {
+      "limit": 1000,
+      "odd_primes": 167,
+      "decimal_scale": 1000000000000000000,
+      "lower_numerator": 670649067146705144,
+      "upper_numerator": 671319716213852014
+    },
+    {
+      "limit": 10000,
+      "odd_primes": 1228,
+      "decimal_scale": 1000000000000000000,
+      "lower_numerator": 671213517415754236,
+      "upper_numerator": 671280638767497037
+    },
+    {
+      "limit": 100000,
+      "odd_primes": 9591,
+      "decimal_scale": 1000000000000000000,
+      "lower_numerator": 671270874862778992,
+      "upper_numerator": 671277587571537208
+    },
+    {
+      "limit": 1000000,
+      "odd_primes": 78497,
+      "decimal_scale": 1000000000000000000,
+      "lower_numerator": 671276669092272880,
+      "upper_numerator": 671277340369020467
+    }
+  ],
+  "finite_search": {
+    "limit": 100000,
+    "odd_integers": 50000,
+    "strict_records": [
+      {
+        "a": 1,
+        "relative_to_one": "1"
+      },
+      {
+        "a": 3,
+        "relative_to_one": "73/81"
+      },
+      {
+        "a": 9,
+        "relative_to_one": "5905/6561"
+      },
+      {
+        "a": 21,
+        "relative_to_one": "171769/194481"
+      },
+      {
+        "a": 63,
+        "relative_to_one": "13894465/15752961"
+      },
+      {
+        "a": 189,
+        "relative_to_one": "1125432841/1275989841"
+      },
+      {
+        "a": 231,
+        "relative_to_one": "2494257649/2847396321"
+      },
+      {
+        "a": 693,
+        "relative_to_one": "201761526265/230639102001"
+      },
+      {
+        "a": 2079,
+        "relative_to_one": "16342410284161/18681767262081"
+      },
+      {
+        "a": 4389,
+        "relative_to_one": "324156218321689/371075535949041"
+      },
+      {
+        "a": 13167,
+        "relative_to_one": "26221129714925665/30057118411872321"
+      },
+      {
+        "a": 39501,
+        "relative_to_one": "2123875982939847721/2434626591361658001"
+      }
+    ],
+    "optimizer": 39501,
+    "minimizers": [
+      39501
+    ],
+    "independent_divisor_checks": 500,
+    "factorization": {
+      "3": 3,
+      "7": 1,
+      "11": 1,
+      "19": 1
+    },
+    "ratio_to_infimum_upper_numerator": 1005913442752108318,
+    "scale": 1000000000000000000
+  },
+  "identity_cases": 168,
+  "formula": "(3/4) * prod_{p=1 mod 4}(1-p^-3) * prod_{p=3 mod 4}((1+p^-3)/(1+p^-2))"
+}
