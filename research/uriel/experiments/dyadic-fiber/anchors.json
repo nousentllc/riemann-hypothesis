@@ -1,0 +1,90 @@
+{
+  "graph_sha256": "82c88d25d909a1399c754b87ce298e1939ab0908aeb4766fdac8a57387c71dc5",
+  "graph_url": "https://photos.proofsandreasons.io/alp-graph/rh/alp-declaration-graph-used-by-rh.json.gz",
+  "anchors": [
+    {
+      "name": "GlobalTheory.CompanionTheory.SW.hermScal",
+      "file": "CompanionTheory/SpectralGeometry/CountingDefinitions/AdelicEulerProducts/IsEulerProd.lean",
+      "line": 31,
+      "id": 4695
+    },
+    {
+      "name": "GlobalTheory.CompanionTheory.SW.coordW",
+      "file": "CompanionTheory/SpectralGeometry/CountingDefinitions/AdelicEulerProducts/IsEulerProd.lean",
+      "line": 47,
+      "id": 4699
+    },
+    {
+      "name": "GlobalTheory.CompanionTheory.SW.coordHerm",
+      "file": "CompanionTheory/SpectralGeometry/CountingDefinitions/AdelicEulerProducts/IsEulerProd.lean",
+      "line": 51,
+      "id": 4700
+    },
+    {
+      "name": "GlobalTheory.CompanionTheory.SW.IsGramFib",
+      "file": "CompanionTheory/SpectralGeometry/CountingDefinitions/AdelicEulerProducts/IsEulerProd.lean",
+      "line": 61,
+      "id": 4701
+    },
+    {
+      "name": "GlobalTheory.CompanionTheory.SW.IsStdV",
+      "file": "CompanionTheory/SpectralGeometry/CountingDefinitions/AdelicEulerProducts/IsEulerProd.lean",
+      "line": 73,
+      "id": 4702
+    },
+    {
+      "name": "GlobalTheory.CompanionTheory.SW.eq_of_setLIntegral_compact_eq",
+      "file": "CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/ContinuousDensitiesEqOfIntegralsOnCompacts.lean",
+      "line": 38,
+      "id": 5106
+    },
+    {
+      "name": "GlobalTheory.CompanionTheory.SW.hermScal_main",
+      "file": "CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/ContinuousHermScal.lean",
+      "line": 235,
+      "id": 5123
+    },
+    {
+      "name": "GlobalTheory.CompanionTheory.SW.trace_form_coords",
+      "file": "CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/EtaleAwayQuotientEqLocalization.lean",
+      "line": 119,
+      "id": 5283
+    },
+    {
+      "name": "GlobalTheory.T.gram_fiber_integral_isContDensityOn",
+      "file": "CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/GramFiberMeasuresTransitivityStatement.lean",
+      "line": 7,
+      "id": 5723
+    },
+    {
+      "name": "GlobalTheory.T.measurable_coordinate_maps_tensor",
+      "file": "CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/MeasurableCoordinateMapsTensorStatement.lean",
+      "line": 7,
+      "id": 6470
+    },
+    {
+      "name": "GlobalTheory.CompanionTheory.SW.LocGood.local_mass",
+      "file": "CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/RankOneLocalDensityAlmostAll.lean",
+      "line": 29,
+      "id": 6656
+    },
+    {
+      "name": "HeckeCharacterZeroLocus.SiegelWeilU.hR",
+      "file": "Formalism/UnipotentAdelicQuotients/SWXSDefs.lean",
+      "line": 94,
+      "id": 723356
+    },
+    {
+      "name": "HeckeCharacterZeroLocus.SiegelWeilU.Fv",
+      "file": "Formalism/UnipotentAdelicQuotients/SWXSDefs.lean",
+      "line": 183,
+      "id": 723377
+    },
+    {
+      "name": "HeckeCharacterZeroLocus.SiegelWeilU.latV",
+      "file": "Formalism/UnipotentAdelicQuotients/SWXSDefs.lean",
+      "line": 247,
+      "id": 723396
+    }
+  ]
+}

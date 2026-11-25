@@ -1,0 +1,20 @@
+{
+  "revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "files": [
+    {
+      "path": "Mathlib/NumberTheory/Padics/HeightOneSpectrum.lean",
+      "blob": "20df063ec2fef7a461f931e9bae2297a0e42666f",
+      "sha256": "37fd8c91fafae37c9aa3c84eeb24936efb7ae5e90f8032224b4e4c2c1e4ee2eb"
+    },
+    {
+      "path": "Mathlib/Algebra/QuadraticAlgebra/Basic.lean",
+      "blob": "9eed3c5bf45a0964d2a57371ed9daa4c139bb1c3",
+      "sha256": "0cdb07cb3e3a031d1164bb5eff4f680d2feb836dc5d29edb23f5691a66a6b848"
+    },
+    {
+      "path": "Mathlib/MeasureTheory/Measure/Typeclasses/Finite.lean",
+      "blob": "86e8176e35b8cec411889d2802bb006ab512d607",
+      "sha256": "731d53e69288e971655bc19cdd45b70353b40d335eccf08189b0c377559b2fbd"
+    }
+  ]
+}
