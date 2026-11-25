@@ -1,0 +1,2 @@
+Replaying 43498 project declarations from 1863 modules into Mathlib. Shared declaration names: 390.
+Kernel accepted and located 43467 project declarations. Unsafe or partial records skipped by replay: 31.

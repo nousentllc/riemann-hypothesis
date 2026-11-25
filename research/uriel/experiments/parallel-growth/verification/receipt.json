@@ -1,0 +1,163 @@
+{
+  "lean": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "original": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "original_dependency_count": 1863,
+  "mit_object_matches": 1017,
+  "rebuilt": [
+    {
+      "module": "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.SummableOneDivAbsNormSq",
+      "source_sha256": "a5289e6c6087b3c1073a6b517ce015dcbadfc58c0bd2f02938d8b63aa1bd06bf",
+      "kernel": "replaying CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.SummableOneDivAbsNormSq",
+      "findings": []
+    },
+    {
+      "module": "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.RankOneLocalDensityAlmostAll",
+      "source_sha256": "ca259bf511ac14941541fc8be97531502af3021ef3e24cebc578edb76406b3f2",
+      "kernel": "replaying CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.RankOneLocalDensityAlmostAll",
+      "findings": []
+    },
+    {
+      "module": "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.RankOneLocalDensitiesProductConverges",
+      "source_sha256": "bf503d1d9b1c413ff351d1eb6a16abe9d5704149c4f67b11876dd376a700ef4e",
+      "kernel": "replaying CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.RankOneLocalDensitiesProductConverges",
+      "findings": []
+    },
+    {
+      "module": "FiniteCounts",
+      "source_sha256": "2627b6b1d9366b058ea6f1fabfde983a066d0ed39e14803b036ba8e63210147a",
+      "kernel": "replaying FiniteCounts",
+      "findings": []
+    },
+    {
+      "module": "AllDepth",
+      "source_sha256": "e97004fbda6daf6444c899d570b26881de667061a4da6ab72db549a23e79d69a",
+      "kernel": "replaying AllDepth",
+      "findings": [
+        "'TargetOne.count_one_at_depth' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ]
+    },
+    {
+      "module": "FourLift",
+      "source_sha256": "cef03b1b26c0147e7f2832b0ca966e11b39b2d71595f0fcdc3966630074ef751",
+      "kernel": "replaying FourLift",
+      "findings": [
+        "'TargetFour.orbit_count' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ]
+    },
+    {
+      "module": "FourEven",
+      "source_sha256": "ada7f2f88c68f9512fd580f1f5a99eeb058951bacb2b5951d7c48ddc822aaf7b",
+      "kernel": "replaying FourEven",
+      "findings": [
+        "'TargetFour.even_scaling' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ]
+    },
+    {
+      "module": "ProgressionGeometry",
+      "source_sha256": "5495764f8b84cb650542b4135def4dba146dba5402e0fc67540f3002d8644801",
+      "kernel": "replaying ProgressionGeometry",
+      "findings": [
+        "'ProgressionGeometry.from_progression' depends on axioms: [propext, Quot.sound]",
+        "'ProgressionGeometry.sharp_at_member' depends on axioms: [propext]",
+        "'ProgressionGeometry.cutoff_indices' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ]
+    },
+    {
+      "module": "ProgressionGrowth",
+      "source_sha256": "5a828c8c1593edc488561249f2828b7115d926a28f2854ad60666fbf90684410",
+      "kernel": "replaying ProgressionGrowth",
+      "findings": [
+        "'ProgressionGrowth.progression_growth' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ]
+    },
+    {
+      "module": "GrowthConsumer",
+      "source_sha256": "3634d330b17cfc653f3d6458768921caee7bd23b97f7970583648b4cf4a9cc2c",
+      "kernel": "replaying GrowthConsumer",
+      "findings": [
+        "'GrowthConsumer.forces_iff_relativeGrowth' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'GrowthConsumer.relativeGrowth_of_power_gap' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'GrowthConsumer.rank_one_comparison' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'GrowthConsumer.boundary_countermodel' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'GrowthConsumer.unmatched_countermodel' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ]
+    },
+    {
+      "module": "OriginalGrowthConsumer",
+      "source_sha256": "6f30d779eacf7a78651748d989de1577a8eb7ab55dd4067836bc806a00890e80",
+      "kernel": "replaying OriginalGrowthConsumer",
+      "findings": [
+        "'GrowthConsumer.original_scalar_comparison' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'GrowthConsumer.cofinal_of_progression' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ]
+    },
+    {
+      "module": "RankOneConsumer",
+      "source_sha256": "31f24fba3e11c510f2b19252f2585b5b7523f6e77f980d7f80443b0ab5c912b6",
+      "kernel": "replaying RankOneConsumer",
+      "findings": [
+        "'GrowthConsumer.sw_one_of_growth' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ]
+    },
+    {
+      "module": "OriginalGrowthControl",
+      "source_sha256": "4ca609a9f4afe573efa0951e996214bf78a57b9979e243e34c3678833cd2e383",
+      "kernel": "replaying OriginalGrowthControl",
+      "findings": [
+        "'GrowthConsumer.sw_one_via_pinned_growth' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ]
+    },
+    {
+      "module": "ProgressionEndpoint",
+      "source_sha256": "53fe998ef87e2114e281bdf7e7056bd4a062a5c2822012258bbc8381112e344a",
+      "kernel": "replaying ProgressionEndpoint",
+      "findings": [
+        "'ProgressionEndpoint.provider' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'ProgressionEndpoint.sw_one_via_progression' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ]
+    },
+    {
+      "module": "ExceptionalDilation",
+      "source_sha256": "56dac18727ee51655e4fde6c8049d22bb53cb370d7764d723f855de8b8dc5224",
+      "kernel": "replaying ExceptionalDilation",
+      "findings": [
+        "'ExceptionalDilation.lower_of_bounded_order' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ]
+    },
+    {
+      "module": "CappedGrowth",
+      "source_sha256": "27dd8b4f568c4267a59e20f51dddd7de6a5358166d9d37c77b0bbcadc68ad93d",
+      "kernel": "replaying CappedGrowth",
+      "findings": [
+        "'CappedGrowth.bounded_order_growth' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ]
+    },
+    {
+      "module": "FourSquareControl",
+      "source_sha256": "628013f945daa373e89873f831fecd2c1a4cacea9875acb15e6a80019f84a7fe",
+      "kernel": "replaying FourSquareControl",
+      "findings": [
+        "'FourSquareControl.target_powers' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'FourSquareControl.no_uniform_lower' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ]
+    },
+    {
+      "module": "CompanionTheory.AutomorphicTheory.ThetaDilations.SwOne",
+      "source_sha256": "6c66926bb71e6df0cc3e02100101e6a703cb0082e0e49495b0c1afd0e90cefcf",
+      "kernel": "replaying CompanionTheory.AutomorphicTheory.ThetaDilations.SwOne",
+      "findings": []
+    },
+    {
+      "module": "EndpointAudit",
+      "source_sha256": "0ef009bc5b425926d01095756bec64da516d0714891e4b1fde19332fa415d284",
+      "kernel": "replaying EndpointAudit",
+      "findings": [
+        "AUDIT Elaborated type matches pinned sw_one: GrowthConsumer.sw_one_via_pinned_growth",
+        "AUDIT Elaborated type matches pinned sw_one: ProgressionEndpoint.sw_one_via_progression",
+        "AUDIT Progression proof traversal passed: 5753 project/study constants",
+        "AUDIT Pinned growth control traversal passed: 5747 project/study constants"
+      ]
+    }
+  ]
+}

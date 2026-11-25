@@ -1,0 +1,267 @@
+{
+  "rank_two": [
+    {
+      "depth": 3,
+      "k": 1,
+      "count": 384,
+      "density": "3/4"
+    },
+    {
+      "depth": 4,
+      "k": 1,
+      "count": 3072,
+      "density": "3/4"
+    },
+    {
+      "depth": 5,
+      "k": 1,
+      "count": 24576,
+      "density": "3/4"
+    },
+    {
+      "depth": 5,
+      "k": 2,
+      "count": 6144,
+      "density": "3/16"
+    },
+    {
+      "depth": 6,
+      "k": 1,
+      "count": 196608,
+      "density": "3/4"
+    },
+    {
+      "depth": 6,
+      "k": 2,
+      "count": 49152,
+      "density": "3/16"
+    },
+    {
+      "depth": 7,
+      "k": 1,
+      "count": 1572864,
+      "density": "3/4"
+    },
+    {
+      "depth": 7,
+      "k": 2,
+      "count": 393216,
+      "density": "3/16"
+    },
+    {
+      "depth": 7,
+      "k": 3,
+      "count": 98304,
+      "density": "3/64"
+    },
+    {
+      "depth": 8,
+      "k": 1,
+      "count": 12582912,
+      "density": "3/4"
+    },
+    {
+      "depth": 8,
+      "k": 2,
+      "count": 3145728,
+      "density": "3/16"
+    },
+    {
+      "depth": 8,
+      "k": 3,
+      "count": 786432,
+      "density": "3/64"
+    },
+    {
+      "depth": 9,
+      "k": 1,
+      "count": 100663296,
+      "density": "3/4"
+    },
+    {
+      "depth": 9,
+      "k": 2,
+      "count": 25165824,
+      "density": "3/16"
+    },
+    {
+      "depth": 9,
+      "k": 3,
+      "count": 6291456,
+      "density": "3/64"
+    },
+    {
+      "depth": 9,
+      "k": 4,
+      "count": 1572864,
+      "density": "3/256"
+    },
+    {
+      "depth": 10,
+      "k": 1,
+      "count": 805306368,
+      "density": "3/4"
+    },
+    {
+      "depth": 10,
+      "k": 2,
+      "count": 201326592,
+      "density": "3/16"
+    },
+    {
+      "depth": 10,
+      "k": 3,
+      "count": 50331648,
+      "density": "3/64"
+    },
+    {
+      "depth": 10,
+      "k": 4,
+      "count": 12582912,
+      "density": "3/256"
+    },
+    {
+      "depth": 11,
+      "k": 1,
+      "count": 6442450944,
+      "density": "3/4"
+    },
+    {
+      "depth": 11,
+      "k": 2,
+      "count": 1610612736,
+      "density": "3/16"
+    },
+    {
+      "depth": 11,
+      "k": 3,
+      "count": 402653184,
+      "density": "3/64"
+    },
+    {
+      "depth": 11,
+      "k": 4,
+      "count": 100663296,
+      "density": "3/256"
+    },
+    {
+      "depth": 11,
+      "k": 5,
+      "count": 25165824,
+      "density": "3/1024"
+    }
+  ],
+  "rank_three": [
+    {
+      "depth": 4,
+      "at_three": "5/4",
+      "at_twelve": "65/64",
+      "ratio": "13/16",
+      "raw_scaled_ratio": "13"
+    },
+    {
+      "depth": 5,
+      "at_three": "5/4",
+      "at_twelve": "65/64",
+      "ratio": "13/16",
+      "raw_scaled_ratio": "13"
+    },
+    {
+      "depth": 6,
+      "at_three": "5/4",
+      "at_twelve": "65/64",
+      "ratio": "13/16",
+      "raw_scaled_ratio": "13"
+    },
+    {
+      "depth": 7,
+      "at_three": "5/4",
+      "at_twelve": "65/64",
+      "ratio": "13/16",
+      "raw_scaled_ratio": "13"
+    },
+    {
+      "depth": 8,
+      "at_three": "5/4",
+      "at_twelve": "65/64",
+      "ratio": "13/16",
+      "raw_scaled_ratio": "13"
+    },
+    {
+      "depth": 9,
+      "at_three": "5/4",
+      "at_twelve": "65/64",
+      "ratio": "13/16",
+      "raw_scaled_ratio": "13"
+    },
+    {
+      "depth": 10,
+      "at_three": "5/4",
+      "at_twelve": "65/64",
+      "ratio": "13/16",
+      "raw_scaled_ratio": "13"
+    },
+    {
+      "depth": 11,
+      "at_three": "5/4",
+      "at_twelve": "65/64",
+      "ratio": "13/16",
+      "raw_scaled_ratio": "13"
+    }
+  ],
+  "illustrative_Q_residues": {
+    "period": 36,
+    "one_mod_six": [
+      1,
+      7,
+      13,
+      19,
+      25,
+      31
+    ],
+    "units_at_two_and_three": [
+      1,
+      5,
+      7,
+      11,
+      13,
+      17,
+      19,
+      23,
+      25,
+      29,
+      31,
+      35
+    ],
+    "at_most_one_factor_each": [
+      1,
+      2,
+      3,
+      5,
+      6,
+      7,
+      10,
+      11,
+      13,
+      14,
+      15,
+      17,
+      19,
+      21,
+      22,
+      23,
+      25,
+      26,
+      29,
+      30,
+      31,
+      33,
+      34,
+      35
+    ]
+  },
+  "modulus_eight_zero_fiber_parity": {
+    "even": 128,
+    "primitive": 0
+  }
+}

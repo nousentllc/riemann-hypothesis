@@ -1,0 +1,33 @@
+{
+  "anchors": {
+    "InfiniteProductMultipliable.lean": {
+      "blob": "f16f223c3fdf381c26f4aec234006c54a5fa908a",
+      "path": "src/CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/InfiniteProductMultipliable.lean"
+    },
+    "RankOneLocalDensitiesProductConverges.lean": {
+      "blob": "1398ce4e513c72177121bd9ef05618724adf788e",
+      "path": "src/CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/RankOneLocalDensitiesProductConverges.lean"
+    },
+    "RankOneLocalDensityAlmostAll.lean": {
+      "blob": "fc8eb5529fbead870185670b848b1e2bdddb35d8",
+      "path": "src/CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/RankOneLocalDensityAlmostAll.lean"
+    },
+    "SummableOneDivAbsNormSq.lean": {
+      "blob": "ed4adde944b3450395e0bfa93b4f0c908973bdbd",
+      "path": "src/CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/SummableOneDivAbsNormSq.lean"
+    },
+    "SwOne.lean": {
+      "blob": "d32a22a449c7050f1e122e43d49552ed3a13db21",
+      "path": "src/CompanionTheory/AutomorphicTheory/ThetaDilations/SwOne.lean"
+    }
+  },
+  "cache_manifest_sha256": "292caa386a620d935cfc736b56fcceaab9fe7073086693b62e899c1ee4725f04",
+  "inherited": {
+    "AllDepth": "fd4945dc7a6c3d884f6100b03b27636c2f6e54e9",
+    "FiniteCounts": "a877c9b68a742c8e959298679c37318f1497c485",
+    "FourEven": "ed9025ca6015dfdc2339e1d3023738be49c228de",
+    "FourLift": "6bfed50d7b6f51f3fb7c2e68099cd19cc8663f50"
+  },
+  "original_commit": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "parent_commit": "b4d12e0825d2191f38fdfb5e97b327c8c8ad1b3d"
+}
