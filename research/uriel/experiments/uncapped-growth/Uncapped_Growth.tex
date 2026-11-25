@@ -52,13 +52,13 @@
 \begin{minipage}{.84\linewidth}\centering\Large Isotropic lines, exceptional primes, and the sharp six-square test for rank-one growth\end{minipage}
 \par\vspace{.60in}{\large Justin Candler}\par With Uriel, project research assistant\par 25 November 2026
 \par\vspace{.40in}\resizebox{!}{1.16in}{\directlua{nousLogo()}}\end{center}\vfill
-\begin{center}{\sffamily\bfseries Expanded second edition}\par\smallskip Three investigations of the finite-place input to Siegel--Weil normalization\par\small Original source revision \code{40e56bab}\end{center}
+\begin{center}{\sffamily\bfseries Expanded second edition with research supplement}\par\smallskip Three investigations of the finite-place input to Siegel--Weil normalization\par\small Original source revision \code{40e56bab}\end{center}
 \clearpage\section*{Abstract}
 A lower bound for a product of local measures can survive every fixed cap on divisibility while its best coefficient tends to zero as the cap grows. This was the outstanding issue in our earlier reading of the rank-one growth argument. We study the obstruction on three scales. At a single finite completion, the trace form has a nonzero regular point of its zero cone in the admitted dimensions. Integrating along a second isotropic direction gives a positive lower bound on nearby regular fibers, even though the defining support axiom forces the assigned zero member itself to vanish. Globally, a rational integer changes all valuations over a given rational prime together. We obtain an exact test in terms of the product of the exceptional-place masses over that prime. In particular the full positive support is the set of multiples of a unique integer, and one coefficient gives the original growth exponent throughout that support.
 \par
 At the Gaussian place above two, the square-dilation sequence has a feature hidden by experiments at isolated targets. Every finite-depth approximation equals one until it resolves the valuation and two additional binary digits. The stabilized density is $1-1/(4\cdot16^k)$ at a target $4^ku^2$ with $u$ odd. For the six-square lattice over all primes, an independent computation and an elementary product derivation identify the greatest uniform lower bound relative to the unit target. Its value lies between $0.86723376$ and $0.86724245$. The limiting loss comes from primes congruent to three modulo four. We construct a sequence approaching the infimum and use a separate integer representation count to test the normalization.
 \par
-We characterize every sequence approaching the Gaussian infimum and resolve the denominator example $\beta=1/2$ through all places. These are written deductions. The formal receipts cover the general support theorem and the Gaussian square-target identities. A direct trace into the pinned Siegel--Weil proof explains why cofinal growth already suffices to fix its normalization. The complete global RH proof was not rebuilt.
+We characterize every sequence approaching the Gaussian infimum and resolve the denominator example $\beta=1/2$ through all places. These are written deductions. The formal receipts cover the general support theorem and the Gaussian square-target identities. A direct trace into the pinned Siegel--Weil proof explains why cofinal growth already suffices to fix its normalization. The dated supplement compares the recurrence with Hanke’s local density methods and gives a finite certificate and written all-depth calculation over $\mathbb Q_2(\sqrt2)$.
 \clearpage{\small\setlength{\parskip}{0pt}\tableofcontents}\clearpage\pagenumbering{arabic}
 \section{A quantifier that the earlier bound left open}
 Take a fixed arithmetic problem and let $P(a)$ be the finite-place product at a dilation $a$. The earlier investigation produced integers $N,Q>0$ and a coefficient $c>0$ working for every $a=N(1+Qj)$. The progression makes the variable part a unit at each exceptional place. A later argument allowed divisibility at those places. If the depth at $v$ was at most $H(v)$, one coefficient $c_H>0$ worked for every permitted multiplier. Both statements allow $c_H$ to approach zero along larger profiles. Lower-bounding each $c_H$ separately cannot settle the question, even with accurate computations at a million distinct caps.
@@ -979,6 +979,120 @@ A.~Alaca, S.~Alaca and K.~S.~Williams, \emph{The simplest proof of Jacobi's six 
 \href{https://github.com/leanprover-community/mathlib4/tree/0df444a360eaa60ab8c11dca51a86af692955474}{Mathlib revision used in the replay}.
 \par
 \textbf{Human and AI collaboration.} Justin Candler directed the research, set the requirement for auditable experiments and asked for three parallel mathematical tracks. Uriel, the coordinating AI research assistant, and three AI research workers developed the new proofs, wrote the checks, reconciled the source and numerical conventions, and prepared this manuscript. Uriel prepared the expanded second edition in response to Candler’s request for the missing mathematical steps. Its additional worked examples and corollaries are identified in the claim-level guide. All workers in the original study shared the same project and model environment. Independent algorithms and the kernel replay test different failure modes. The original formalization, Mathlib, Jacobi's theorem and the external verification archives are prior work. No independent human peer review of these new results is claimed.
+\clearpage\section{External sources that change the next experiment}\label{sec:scout}
+\textit{Research supplement, 25 November 2026.} The preceding twenty sections reproduce the expanded study. This supplement revisits its proposed local recurrence in light of earlier work; it also identifies a separate higher-rank question in the original proof. We looked along two paths. One was the November 2026 reading and verification work on Alpöge's archive. The other was the pre-existing literature on counting scalar representations by quadratic lattices over local fields. These paths answer different questions. A reconstruction can tell us which term of the original proof to inspect. A classical paper can show that something we were preparing to investigate as a conjecture already has a mathematical explanation.
+
+\subsection{The earlier calculation we needed to know about}
+Jonathan Hanke's treatment of integral quadratic forms over number fields is the closest predecessor. In his terminology a vector all of whose coordinates are divisible by the prime is of Zero type. Dividing those coordinates by a uniformizer takes two powers of the uniformizer out of the target. His good-type lifting lemma and his decomposition of the remaining types distinguish the stable primitive contribution from this descending contribution. For the unit diagonal form used below, primitive vectors are of Good type. For a general integral lattice primitive vectors can also be of Bad type, so an argument using only good lifts would omit part of the mass. See Lemmas 3.2 and 3.4, Remark 3.4.1, and Definition 3.6.
+\href{https://www.jonhanke.com/Hanke--all_papers__as_of_2015-01-14/explicit-bounds-paper.pdf}{Jonathan Hanke, \emph{Local densities and explicit bounds for representability by a quadratic form}, \S3.}
+
+This changes the interpretation of the question posed at the end of our second edition. Classical evidence for stable primitive counts and the factor $q^{2-n}$ extends well beyond our original Gaussian example. A worthwhile contribution here would identify the exact finite data that compute a density, then prove that the resulting number equals the value of the \emph{original} Lean measure on its specified lattice. A proof for an auxiliary density with the same numerical values at a few integers would fall short of that objective.
+
+Katherine Thompson gives an unusually clean independent control. Section 3.1 of her four-square paper treats real quadratic fields $\mathbb Q(\sqrt d)$ with $d\equiv2\bmod4$. Taking $d=2$ puts her example in precisely the ramified completion used below. Her local formula gives density $2$ for the represented targets $1$ and $2$ and $9/4$ for $4$. Two of these have positive valuation, so the agreement tests normalization on both the primitive and descending contributions. Four squares are outside the Hermitian rank condition of our growth theorem. They make an independent check on the counting method precisely because an external computation is available for that dimension.
+\href{https://arxiv.org/pdf/1610.06935#page=6}{Katherine Thompson, \emph{The Sum of Four Squares Over Real Quadratic Number Fields}, \S3.1.}
+
+Zilong He and Zichen Yang give explicit density formulas for quadratic polynomials, with a dyadic treatment over unramified fields. Samuel Griffiths works over $\mathbb Z_p$ and isolates a lifting mechanism at two for specific forms. These are good comparison sources when testing what happens to a finite precision cutoff. In the field below the rational prime $2$ has valuation two. Transporting a depth stated in powers of two to a count in uniformizer digits without conversion would misidentify the first precision at which target classes split.
+\href{https://arxiv.org/abs/2407.09076}{He and Yang, explicit local densities}.
+\href{https://arxiv.org/abs/2602.21070}{Griffiths, local lifting recursions}.
+
+\subsection{Where others are reading the actual formalization}
+Robin Zhang's preliminary note is useful for tracing classical sources behind the arithmetic argument, including Siegel--Weil and Rallis. Zhang explains that the AI-assisted reconstruction has not been established as a faithful translation of the Lean text. The \emph{riemann-rev} atlas provides a complementary check by recording a declaration and an evidence status for each transition. Its bridge from one-sided prime windows to RH makes precise which analytic work is already available. Its geometric supply section points to the remaining work of understanding the input. Andrew Sutherland's verification dossier serves a third purpose: it records checks of the original artifacts and statements. Several documents discussing one archive do not constitute several independent derivations of the arithmetic.
+\href{https://www.ihes.fr/~rzhang/files/GRH\%20note.pdf}{Zhang, preliminary note}.
+\href{https://nasqret.github.io/riemann-rev/atlas/}{Declaration atlas}.
+\href{https://math.mit.edu/~drew/grh/}{Sutherland, verification dossier}.
+
+One change proposed in the community repository gives a specific direction for the next higher-rank investigation. PR 398 removes the field \code{rallisInnerProductConvergent} from \code{GlobalTheory.FunPr.ThetaLocalInputs} while retaining \code{weilSiegelFormulaUnitary} and \code{doublingMethod} in that record. This is a claim about the uses of these fields. It does not settle whether an identity named after Rallis is used elsewhere or which proof supplies it. The pinned file \code{BigThetaNormEqRallisInnerProduct.lean} provides a first answer. Lines 21--32 obtain local formula data, a Haar fundamental domain, an identification with a Petersson norm, and a specialized Hecke-form identity; the last call receives the bundle. Lines 33--36 prove a coefficient nonzero from quotient volume, a nonzero scalar $\kappa$ and a local factor, and then rewrite the integral. At that call site the specialized identity matters and the bundle is passed as a whole. A further projection audit is required to learn exactly which fields the callee consumes.
+\href{https://github.com/leanprover-community/riemann-hypothesis/pull/398/files}{Community PR 398, field-level diff}.
+\href{https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/LocalTypeDictionary/BigThetaNormEqRallisInnerProduct.lean#L19-L37}{Pinned norm identity and coefficient}.
+
+The file \code{GlobalFormOfSiegelWeil.lean} gives a second concrete comparison. Lines 17--22 pass the Weil and Siegel--Weil assumptions to a theorem about a doubled pair, apply a global identity to a chosen lattice, and transfer to the supplied lattice. Trace a surviving argument into its first actual projection and test what remains provable after the proposed deletion. This could locate the mathematical cause of a nonzero factor even where an import graph shows several candidate explanations. The existing PR already claims the deletion. Repeating it would not supply the projected-use trace.
+\href{https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/LocalTypeDictionary/GlobalFormOfSiegelWeil.lean#L16-L22}{Pinned doubled-pair and lattice transfer}.
+\href{https://ishaan2006.github.io/rh-lean-reproduction/}{Project exposition and hypothesis audit}.
+
+\section{A ramified control with the same six-square polynomial}\label{sec:ramified}
+Keep $Q(x)=x_1^2+\cdots+x_6^2$. Change the scalar completion from $\mathbb Q_2$ to $K=\mathbb Q_2(\sqrt 2)$ and write $\pi=\sqrt2$, $\mathcal O=\mathbb Z_2[\pi]$. The residue field still has two elements, but $2=\pi^2$. This is a genuine arithmetic change at the place of a candidate global example $F=\mathbb Q(\sqrt2)$, $E=F(i)$. In the basis $1,i$ the identity Hermitian form on $E^3$ still gives six scalar squares. We use the lattice of those integral coordinates. No identification of that order with the maximal order of $E$ is required. This comparison changes the field of coefficients without also changing the polynomial, coordinate lattice convention, target or dimension.
+
+\subsection{The observable and the first failed transfer}
+For dimension $n\in\{4,6\}$ put $R_r=\mathcal O/\pi^r\mathcal O$ and let $N_{n,r}(s)$ count ordered solutions to $Q(x)=s$ in $R_r^n$. Write $H_{n,r}(s)=N_{n,r}(s)/2^{(n-1)r}$. Write $P_{n,r}$ for the corresponding normalized count after excluding vectors in $(\pi\mathcal O)^n$. A density of two means that a small target ball receives twice the ambient fraction one would predict from a uniform target. Haar volumes of the coordinate lattice and the scalar integers are both one. The field degree does not enter as an additional factor in this ratio because each successive quotient has two elements.
+
+At a finite depth a residue has the unique coordinate pair
+\[
+ (a\bmod 2^{\lceil r/2\rceil},\ b\bmod 2^{\lfloor r/2\rfloor})
+           \qquad\text{representing }a+b\pi .
+\]
+Indeed $\pi^{2j}=2^j$ and $\pi^{2j+1}=2^j\pi$. Squaring sends this pair to $(a^2+2b^2,\,2ab)$ in the appropriate residue rings. In particular every sum of squares has \emph{even} coefficient of $\pi$. At depth two, $\pi$ and $1+\pi$ are both excluded; the latter is a unit. Thus transferring the unit-target behavior from $\mathbb Z_2$ to all units in this field already fails before one computes a sophisticated density. Conversely every square of a scalar unit is a unit square, and multiplication of every coordinate by that scalar is a bijection. The square-target study only needs this narrower orbit of targets.
+
+\subsection{Why five digits suffice for the primitive count}
+Here is a direct argument specialized to this form. Partition the primitive vectors into boxes $x_0+\pi^3\mathcal O^n$ and choose the first unit coordinate of the representative as a pivot. Its index is constant on the box. Fixing the other coordinates and writing the pivot as $u+\pi^3 y$, its change in square equals
+\[
+ (u+\pi^3y)^2-u^2=\pi^5(uy+\pi y^2).
+\]
+For $u$ a unit the difference of $uy+\pi y^2$ at two values is $(y-y')(u+\pi(y+y'))$. The second factor is a unit. The map is therefore an isometry and gives a permutation at every finite residue level. Holding the other coordinates anywhere in their original boxes changes the offset by a multiple of $\pi^5$. Consequently the targets from this box are uniformly distributed on one coset modulo $\pi^5$. Adding the disjoint boxes proves
+\[
+       P_{n,r}(s)=P_{n,5}(s\bmod\pi^5)\qquad(r\ge5).
+\]
+The proof covers every target simultaneously. It gives no reason for a \emph{single} well-behaved target to wait until depth five. It asserts a uniform precision for the full table. Hanke's good-type threshold gives the same sufficient depth here since $\operatorname{ord}_{\pi}(2)=2$.
+
+At depth five the additive group is $\mathbb Z/8\times\mathbb Z/4$. Put $X^8=Y^4=1$ in its integral group algebra. The histogram for one square and the histogram restricted to multiples of $\pi$ are
+\[
+ B=4(1+X^2+X^4+X^6),\qquad A=B+8X+8X^3Y^2.
+\]
+To verify this, write out $a=0,\ldots,7$ and $b=0,\ldots,3$ in the square formula above. Even $a$ gives $B$. Odd $a$ gives the remaining two classes, each eight times. The primitive histogram for six variables is $A^6-B^6$. This yields a compact certificate for the decisive finite step:
+\begin{center}\small
+\begin{tabular}{lrrr}\toprule
+$s\bmod\pi^5$ & all vectors & all in $\pi\mathcal O$ & primitive ratio\\\midrule
+$0$ & 67,108,864 & 4,194,304 & $15/8$\\
+$1$ & 67,108,864 & 0 & $2$\\
+$2$ & 71,303,168 & 4,194,304 & $2$\\
+$4$ & 67,108,864 & 4,194,304 & $15/8$\\
+$2\pi$ & 66,060,288 & 0 & $63/32$\\
+$4+2\pi$ & 68,157,440 & 0 & $65/32$\\\bottomrule
+\end{tabular}
+\end{center}
+Divide each difference by $32^5$. The last two targets differ by $4=\pi^4$, so they are indistinguishable modulo $\pi^4$. The normalized primitive ratio on their common parent is their mean, two. They split on the fifth digit and the box argument makes this split permanent. Thus five is the \emph{least} depth giving uniform primitive stabilization for all targets of the six-square form. The qualification about all targets matters. Looking only down the zero-centered column would miss this pair entirely.
+
+\subsection{How the tail can be solved from the finite certificate}
+Write $D(s)$ for the limiting normalized count at a nonzero integral target in dimension six. If $s\in\pi^2\mathcal O$, every imprimitive solution can be written $x=\pi y$. At depth $r\ge2$, $y$ is defined modulo $\pi^{r-1}$ but its target only modulo $\pi^{r-2}$. There are $2^6$ free final-digit lifts. Division by $2^{5r}$ gives the multiplier $1/16$. For $s$ outside $\pi^2\mathcal O$ the imprimitive contribution is zero. The decomposition therefore terminates at a unit or at valuation one for each nonzero target. Combined with primitive stabilization this proves existence of the individual limit and gives an explicit finite algorithm. At a unit target the primitive table gives the whole answer.
+
+In particular $D(1)=2$, $D(2)=2+D(1)/16=17/8$, and $D(4)=15/8+D(2)/16=257/128$. For $s$ divisible by $\pi^5$, the primitive part is $15/8$. The affine map $z\mapsto 15/8+z/16$ has fixed point two. Each further descent divides the difference from that fixed point by sixteen. At target $4^k$ with $k\ge2$, the targets $4^k$ and $4^k/2$ have valuation at least five, so there are two such steps before arriving at $4^{k-1}$. It follows that
+\[
+ D(4^k u^2)=
+ \begin{cases}
+ 2,& k=0,\\[2pt]
+ 2+2/256^k,& k\ge1 ,
+ \end{cases}\qquad u\in\mathcal O^\times .
+\]
+This family uses powers of the \emph{rational integer} two in the multiplier. A square of $\pi$ changes the target valuation by two, while a square of $2$ changes it by four. Replacing one by the other would change the exponent in the decay. The element $2$ itself is also a square in $K$, namely $\pi^2$, and its larger density $17/8$ is consistent with this distinction.
+
+In the preceding paper over $\mathbb Q_2$, the masses at $4^k$ approach one from below. Here the normalized counts at the same rational targets approach two from above for $k\ge1$. The residue cardinality and dimension agree, and the normalized imprimitive multiplier is $1/16$ in both fields. The primitive table and the number of uniformizer steps per rational dilation account for the difference. This example gives a concrete reason to test a ramified field before suggesting a field-independent sign, base mass, or rate per rational multiplier.
+
+\section{What is checked and what remains available}\label{sec:scoutchecks}
+The finite program uses two representations of the ring. The main computation convolves one-coordinate square histograms in the pair coordinates $(a,b)$. It checks total mass, projection between successive depths, and the halving formula for every target at every applicable depth. Direct tuple enumeration checks both ranks at depths one and two. Above depth five it compares every primitive bin to its ancestor at depth five, including empty bins. There are $\sum_{r=6}^{10}2^r=1{,}984$ such comparisons per rank. This number counts finite identities, not independent samples from an unknown distribution.
+
+A separate computation represents residues by five uniformizer digits. When two equal digits add, the carry moves two positions because $2=\pi^2$. Multiplication uses digit shifts and this carry rule. Splitting each tuple into two halves and combining their sum histograms reconstructs both the full and all-divisible counts without using the pair-coordinate square formula. Both methods agree in all 32 classes at depth five, for both restrictions and both ranks. The published four-square control also yields $2,2,9/4$ at $1,2,4$, respectively. In particular a change of field that silently treated the uniformizer as the rational prime would fail an external check.
+
+\begin{center}\small
+\begin{tabular}{c|rrrrr}\toprule
+Six-square depth & $0$ tube & $1$ & $2$ & $4$ & $16$\\\midrule
+$2$ & $2$ & $2$ & $2$ & $2$ & $2$\\
+$4$ & $2$ & $2$ & $17/8$ & $2$ & $2$\\
+$5$ & $2$ & $2$ & $17/8$ & $2$ & $2$\\
+$6$ & $2$ & $2$ & $17/8$ & $257/128$ & $2$\\
+$9$ & $2$ & $2$ & $17/8$ & $257/128$ & $2$\\
+$10$ & $2$ & $2$ & $17/8$ & $257/128$ & $65537/32768$\\\bottomrule
+\end{tabular}
+\end{center}
+The zero column refers only to a shrinking target ball. It carries no identification with the assigned singular measure. Likewise the written square-target formula concerns congruence densities in an explicit local ring. Identifying it in Lean with every admissible original Gram-fiber measure requires a proof that transports the coordinates, the Haar normalization, and the regular-target disintegration to this completion. The archived Lean receipts in this package cover the preceding study. This supplement adds a finite computation and a written all-depth argument.
+
+\subsection{The specific formal obstacle}
+The declaration \code{primitiveTuplesWithGramMatrix_hensel_count} concerns primitive tuples of a prescribed Gram matrix. Its hypotheses include a finite involutive ring and an element $\omega$ such that $\omega-c(\omega)$ is a unit. In the Gaussian coordinate order over $\mathcal O$, conjugation fixes $\mathcal O$ and sends $i$ to $-i$. For $\omega=a+bi$ its difference is $2bi\in\pi^2\mathcal O[i]$. In every nonzero quotient by $\pi^r$ this lies in a proper ideal, so it cannot supply the unit. The hypothesis fails at the intended application. Invoking this theorem by its name alone would amount to assuming the very dyadic difficulty our box calculation handles.
+\href{https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Proofs/FlagMeasures/PrimitiveTuplesWithGramMatrixHenselCountStatement.lean#L6-L9}{Pinned Hensel-count signature}.
+\href{https://github.com/nousentllc/riemann-hypothesis/blob/12695d4031eea7e561515ac92758a487d6d48ac5/research/uriel/experiments/uncapped-growth/dyadic/GaussianDilates.lean#L36-L87}{Earlier square-target bridge at the rational dyadic completion}.
+
+A bounded formal target is now available. First certify the primitive table on this finite ring and the five-digit box identity. Then certify all-divisible descent and the equality of the unit-target and target-four limits with the densities of the original regular measure. The pair $2\pi,4+2\pi$ supplies a negative control for a proposed depth-four bound. The unit $1+\pi$ supplies a control for a proposed universal unit lower bound. A pass must quantify over the specified admissible measure family on the Gaussian coordinate lattice and exhibit a realizing family or cite its construction. This would settle a precisely stated question in our research program. Hanke and Thompson precede the counting method and the four-square control. This sweep establishes no mathematical priority for the rank-six formula or for a future Lean implementation.
+
+\paragraph{Provenance and collaboration.} Justin Candler requested the external comparison and set the standard for the research series. Uriel inspected the linked sources, compared the pinned declarations with the community diff, derived the ramified example, and executed its exact checks. The primary articles are credited where used. The source comparison, computation, and additional written deductions have not undergone independent human peer review. Run \code{python3 -B literature/ramified_probe.py} in the extracted package to reproduce the saved tables.
+
 \end{document}
 
 BEGIN FIGURE nouslogo

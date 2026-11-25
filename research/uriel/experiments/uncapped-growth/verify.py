@@ -13,6 +13,8 @@ def run():
                          ('dyadic/experiment','dyadic/results'),('synthesis/gaussian_product','synthesis/gaussian_product')]:
         out=subprocess.check_output([sys.executable,'-B',ROOT/(script+'.py')],cwd=ROOT,text=True)
         assert json.loads(out)==read(saved+'.json'),script
+    ramified = subprocess.check_output([sys.executable,'-B',ROOT/'literature/ramified_probe.py'],cwd=ROOT,text=True)
+    assert json.loads(ramified)==read('literature/ramified_results.json')
     inv=read('study_imports.json')
     original=read('original_imports.json')
     receipt=read('verification/receipt.json')
@@ -34,5 +36,5 @@ def run():
         b=(ROOT/'pinned'/name).read_bytes()
         assert hashlib.sha1(b'blob '+str(len(b)).encode()+b'\0'+b).hexdigest()==h,name
     assert receipt['original_objects']==receipt['verified_source_blobs']==len(original)
-    print(f'Four numerical experiments reproduced. {len(inv["modules"])} module source digests and axiom receipts match. {len(original)} original dependencies inventoried.')
+    print(f'Four original experiments and the ramified comparison reproduced. {len(inv["modules"])} module source digests and axiom receipts match. {len(original)} original dependencies inventoried.')
 if __name__=='__main__':run()
