@@ -1,0 +1,140 @@
+{
+  "levels": [
+    {
+      "depth": 0,
+      "modulus": 1,
+      "at_one": 1,
+      "scalar_mass": "1",
+      "tube_mass": "1",
+      "density": "1",
+      "at_three": 1,
+      "square_classes": 0,
+      "targets_checked": 0
+    },
+    {
+      "depth": 1,
+      "modulus": 2,
+      "at_one": 32,
+      "scalar_mass": "1/2",
+      "tube_mass": "1/2",
+      "density": "1",
+      "at_three": 32,
+      "square_classes": 1,
+      "targets_checked": 0
+    },
+    {
+      "depth": 2,
+      "modulus": 4,
+      "at_one": 768,
+      "scalar_mass": "1/4",
+      "tube_mass": "3/16",
+      "density": "3/4",
+      "at_three": 1280,
+      "square_classes": 1,
+      "targets_checked": 0
+    },
+    {
+      "depth": 3,
+      "modulus": 8,
+      "at_one": 24576,
+      "scalar_mass": "1/8",
+      "tube_mass": "3/32",
+      "density": "3/4",
+      "at_three": 40960,
+      "square_classes": 1,
+      "targets_checked": 1
+    },
+    {
+      "depth": 4,
+      "modulus": 16,
+      "at_one": 786432,
+      "scalar_mass": "1/16",
+      "tube_mass": "3/64",
+      "density": "3/4",
+      "at_three": 1310720,
+      "square_classes": 2,
+      "targets_checked": 2
+    },
+    {
+      "depth": 5,
+      "modulus": 32,
+      "at_one": 25165824,
+      "scalar_mass": "1/32",
+      "tube_mass": "3/128",
+      "density": "3/4",
+      "at_three": 41943040,
+      "square_classes": 4,
+      "targets_checked": 4
+    },
+    {
+      "depth": 6,
+      "modulus": 64,
+      "at_one": 805306368,
+      "scalar_mass": "1/64",
+      "tube_mass": "3/256",
+      "density": "3/4",
+      "at_three": 1342177280,
+      "square_classes": 8,
+      "targets_checked": 8
+    },
+    {
+      "depth": 7,
+      "modulus": 128,
+      "at_one": 25769803776,
+      "scalar_mass": "1/128",
+      "tube_mass": "3/512",
+      "density": "3/4",
+      "at_three": 42949672960,
+      "square_classes": 16,
+      "targets_checked": 16
+    },
+    {
+      "depth": 8,
+      "modulus": 256,
+      "at_one": 824633720832,
+      "scalar_mass": "1/256",
+      "tube_mass": "3/1024",
+      "density": "3/4",
+      "at_three": 1374389534720,
+      "square_classes": 32,
+      "targets_checked": 32
+    },
+    {
+      "depth": 9,
+      "modulus": 512,
+      "at_one": 26388279066624,
+      "scalar_mass": "1/512",
+      "tube_mass": "3/2048",
+      "density": "3/4",
+      "at_three": 43980465111040,
+      "square_classes": 64,
+      "targets_checked": 64
+    },
+    {
+      "depth": 10,
+      "modulus": 1024,
+      "at_one": 844424930131968,
+      "scalar_mass": "1/1024",
+      "tube_mass": "3/4096",
+      "density": "3/4",
+      "at_three": 1407374883553280,
+      "square_classes": 128,
+      "targets_checked": 128
+    }
+  ],
+  "level_three_parents_by_next_digit": {
+    "1": 12288,
+    "9": 12288
+  },
+  "first_coordinate_examples": {
+    "1": {
+      "1": 64
+    },
+    "3": {
+      "9": 64
+    }
+  },
+  "exhaustive_vectors_through_8": 266305,
+  "unit_square_targets_checked": 255,
+  "method": "exact cyclic convolution checked against exhaustive tuples through modulus 8"
+}
