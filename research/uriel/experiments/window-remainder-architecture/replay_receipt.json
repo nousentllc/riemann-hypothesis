@@ -1,0 +1,140 @@
+{
+  "pins": {
+    "original": "40e56bab026552e089d7afcfeff08d2defb9c005",
+    "readable": "e063a923620ee7787b4a1270421478645bf66bdb",
+    "head": "a7c4d6a94945f49da752e237a6b1e944ab62677e"
+  },
+  "environments": {
+    "old": {
+      "lean": "4.33.1",
+      "lean_commit": "819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+      "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474"
+    },
+    "new": {
+      "lean": "4.35.0",
+      "lean_commit": "eb6cafb7290e8bd5f2937522d8d804f58f02bafc",
+      "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679"
+    },
+    "bridge": {
+      "lean": "4.35.0",
+      "lean_commit": "eb6cafb7290e8bd5f2937522d8d804f58f02bafc",
+      "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679"
+    }
+  },
+  "method": "Fresh elaboration and leanchecker -v of each named module, imported dependencies prepared separately. The readable cache is materialized for the 800 project modules imported transitively by New.Reduction.OneSidedBound including itself. Current head is source-only.",
+  "modules": {
+    "old": {
+      "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.ZeroFreeOfRpowWindow": {
+        "source_sha256": "3252473ba2654b05e9d2ea0781ea91b4c7eadcca0def18b0f21d20212c2f0316",
+        "object_sha256": "22b156e5269a3f0cf63cc99a9e7e26eeb5d8dbd3820415820fd767455e5642fc",
+        "compiler_messages": "",
+        "kernel": "replaying Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.ZeroFreeOfRpowWindow"
+      },
+      "Development.AutomorphicArithmetic.PrimitiveCosets.LevelFamily": {
+        "source_sha256": "99ab2af08664a9d1cf3afbe5113894d2b56bb64eb052a378f62d027d0f74354e",
+        "object_sha256": "f6e9205f75b777b1f10a53f1579fc81f9f96e41ba80d2e66d73462da293b1c2f",
+        "compiler_messages": "",
+        "kernel": "replaying Development.AutomorphicArithmetic.PrimitiveCosets.LevelFamily"
+      },
+      "Development.AutomorphicArithmetic.PrimitiveCosets.CoreGm": {
+        "source_sha256": "73abeaad38ed40bde0c2f974f53cae9d851e72d23ae389dea129b2bbddc58bc8",
+        "object_sha256": "254fd890ac92c815cab96076d13d0f0188d6bf09d13b9c5c5ba5db2bbb4764ec",
+        "compiler_messages": "",
+        "kernel": "replaying Development.AutomorphicArithmetic.PrimitiveCosets.CoreGm"
+      },
+      "Development.AutomorphicArithmetic.PrimitiveCosets.Imports": {
+        "source_sha256": "9d38c47879d3c02199f747433f009ba4cf6eb44d7480f031e5763a2ee271950e",
+        "object_sha256": "db39a997652dd7fa6b25b0ac22e795dd255ae7a58f89e846f04264183412be9f",
+        "compiler_messages": "",
+        "kernel": "replaying Development.AutomorphicArithmetic.PrimitiveCosets.Imports"
+      },
+      "Development.AutomorphicArithmetic.PrimitiveCosets.WindowInequalityOfArtinInputs": {
+        "source_sha256": "02d09bb042cbcb56956053a9a4ca75302f5a2cc93583f299005078f4656826aa",
+        "object_sha256": "bf9a25b37215e8fdebf9a6a1df02d2287db35c25759b878ee4cd824e8e2d5e66",
+        "compiler_messages": "",
+        "kernel": "replaying Development.AutomorphicArithmetic.PrimitiveCosets.WindowInequalityOfArtinInputs"
+      },
+      "Development.AutomorphicArithmetic.PrimitiveCosets.LevelGmLeOnFamilyScales": {
+        "source_sha256": "978ad99fd0d9e2dc25af57715030516195b629ccd9d5a114451fc5402f1d1426",
+        "object_sha256": "ecd7ade2d5ab966f672b8e4396580633f9007179fc9143be5080294e0efe3693",
+        "compiler_messages": "",
+        "kernel": "replaying Development.AutomorphicArithmetic.PrimitiveCosets.LevelGmLeOnFamilyScales"
+      },
+      "Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.TopWin": {
+        "source_sha256": "afbbf8ec0a8aca08b7935c6118c76eef06b2eee896805e7de277b9d4e09fc52b",
+        "object_sha256": "301226ee2c56733797deb95469f8e1685ab78931a37da25e208a201ea64f3b79",
+        "compiler_messages": "",
+        "kernel": "replaying Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.TopWin"
+      },
+      "Development.AutomorphicArithmetic.CharacterBoxes.ZeroFreeAllOfTopG": {
+        "source_sha256": "349d9eafe63952c2fa4ccb2055bef7de0144d442c552196183fe48f01958f033",
+        "object_sha256": "2a9d062efcf4e545d6088962157299c9d61bad62e3473de7ca4733f7fb80d5a8",
+        "compiler_messages": "",
+        "kernel": "replaying Development.AutomorphicArithmetic.CharacterBoxes.ZeroFreeAllOfTopG"
+      }
+    },
+    "new": {
+      "Lib.Analytic.Landau": {
+        "source_sha256": "00c6cab4e5593f34d1d048dcbbbfe58e3b8e33cb8ab536badc750babbe54ce6d",
+        "object_sha256": "6a5aca17878562226cf9408cb781136124df2c21698cba6a7ed6e9f28a7999d7",
+        "compiler_messages": "",
+        "kernel": "replaying Lib.Analytic.Landau"
+      },
+      "New.Reduction.Zeros.PrimeError": {
+        "source_sha256": "1df8125fc79995bea815003e470ceb5ef6b715387705700f702b13ba99bdb81d",
+        "object_sha256": "7f22ecabe01e0f1bedafa37201d8642d213becc18ef93a9c885cd298d697cc5a",
+        "compiler_messages": "",
+        "kernel": "replaying New.Reduction.Zeros.PrimeError"
+      },
+      "New.Reduction.Zeros.Criterion": {
+        "source_sha256": "f64a8c2b2412f15c881f6719c4e305c72a04f4a6e0e05904da1d10ea7b59b89f",
+        "object_sha256": "8af0ea9235db604c59658c84ed32097aa8a6ded3812dfe35d7dc4462c27440c2",
+        "compiler_messages": "",
+        "kernel": "replaying New.Reduction.Zeros.Criterion"
+      },
+      "New.Reduction.PrimeSums": {
+        "source_sha256": "b4c7635a7c0e9ab604312e85615d2a580b9dd6ed0cd98c1d7f18edf2522b5cfe",
+        "object_sha256": "b9df65a1e6fbf814674859db17d9f429e5f9947266225439e0675f1a908e89bd",
+        "compiler_messages": "",
+        "kernel": "replaying New.Reduction.PrimeSums"
+      },
+      "New.Reduction.MainInequality": {
+        "source_sha256": "521a8a669cc7f6d35b74ffe1e1bbec432c9012285a927b01e7047c4c161ea452",
+        "object_sha256": "0f9f44aa8898675be29a1e9856022e6142b3b61bea90d8b98e0619a0bd304ad3",
+        "compiler_messages": "",
+        "kernel": "replaying New.Reduction.MainInequality"
+      },
+      "New.Reduction.OneSidedBound": {
+        "source_sha256": "6afc6dd47b3869e3358eb05b4e91f218f17fecb29db109ea3505f1ee368db436",
+        "object_sha256": "3821a0203a9e80c6ab45cbf39c2aeb5f697e389807fa68b25605148648f11f92",
+        "compiler_messages": "",
+        "kernel": "replaying New.Reduction.OneSidedBound"
+      }
+    },
+    "bridge": {
+      "Development.AutomorphicArithmetic.DedekindLFunctions.CharFamily": {
+        "source_sha256": "ca0ca8acb80ff4ffc36896204650f9ca16167193a22c36a140402b27cfc8c336",
+        "object_sha256": "bf81a973eb8ae53a022a4fc2330416ba3bdf6217f5dd772654f3604febd46e79",
+        "compiler_messages": "",
+        "kernel": "replaying Development.AutomorphicArithmetic.DedekindLFunctions.CharFamily"
+      },
+      "Euler": {
+        "source_sha256": "c9673259981509fc4068faaeb602529c9aeee8ee17f520a6678f7dcfd2f4d55b",
+        "object_sha256": "020081b457c9c75c7449391df56618e8a5f97fff60977742d5aeae9b3ab36c78",
+        "compiler_messages": "'Architecture.principal_center_euler' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "kernel": "replaying Euler"
+      },
+      "ObservableBridge": {
+        "source_sha256": "046d7663725ab227e1ed6508391312a71d759ca67fce24a821da9278a9b50a84",
+        "object_sha256": "7f9bc39904f299e365b4a074182dc67794f200bbb234c4ef1522929458f20c91",
+        "compiler_messages": "'Architecture.centered_dictionary_euler' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Architecture.principalDefect_one' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Architecture.ramp_raw' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Architecture.centered_dictionary' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "kernel": "replaying ObservableBridge"
+      }
+    }
+  },
+  "old_prepared_cache": {
+    "pinned_source_files_compared": 1376,
+    "republished_binaries": false,
+    "origin": "Local native build. The compiled files are not represented as matching publisher binary hashes."
+  }
+}

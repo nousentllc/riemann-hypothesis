@@ -1,0 +1,92 @@
+{
+  "cases": [
+    {
+      "q": 1,
+      "d": 7,
+      "y": "4",
+      "phi": 1,
+      "prime_powers": 3,
+      "coefficients": {
+        "3": "1/6"
+      },
+      "sign_swap_rejected": true
+    },
+    {
+      "q": 4,
+      "d": 7,
+      "y": "43/2",
+      "phi": 2,
+      "prime_powers": 12,
+      "coefficients": {
+        "5": "66/215",
+        "13": "34/559",
+        "17": "18/731"
+      },
+      "sign_swap_rejected": true
+    },
+    {
+      "q": 18480,
+      "d": 9239,
+      "y": "800003/2",
+      "phi": 3840,
+      "prime_powers": 34034,
+      "coefficients": {
+        "258721": "565122/206977576163"
+      },
+      "sign_swap_rejected": true
+    }
+  ],
+  "delta_main_approx": 2.2089206884582477,
+  "normalized_delta_approx": 0.0005752397626193354,
+  "real_coefficient": 491552,
+  "gaps_in_log_coordinates": [
+    [
+      4,
+      6,
+      8,
+      16
+    ],
+    [
+      16,
+      24,
+      32,
+      64
+    ],
+    [
+      64,
+      96,
+      128,
+      256
+    ],
+    [
+      256,
+      384,
+      512,
+      1024
+    ],
+    [
+      1024,
+      1536,
+      2048,
+      4096
+    ],
+    [
+      4096,
+      6144,
+      8192,
+      16384
+    ]
+  ],
+  "zero_order_examples": [
+    [
+      1,
+      1,
+      0
+    ],
+    [
+      1,
+      0,
+      1
+    ]
+  ]
+}
