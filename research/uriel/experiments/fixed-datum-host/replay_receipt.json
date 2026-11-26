@@ -1,0 +1,67 @@
+{
+  "runs": [
+    {
+      "mode": "original",
+      "source_pins": {
+        "original": "40e56bab026552e089d7afcfeff08d2defb9c005"
+      },
+      "compiler": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+      "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+      "modules": [
+        {
+          "module": "OriginalWitness",
+          "source_sha256": "7724f17a82beb2210e769917e4c4deb96b621af824f98578630beff45179ebd0",
+          "object_sha256": "f01122415d1080b47d635080636e1c345ba5a593ef637f78911384d51ae3073f",
+          "elaboration": "'FixedDatumOriginal.late_consumer' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FixedDatumOriginal.same_set' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FixedDatumOriginal.no_three_in_cyclic_subgroup' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FixedDatumOriginal.missed_coset' depends on axioms: [propext, Classical.choice, Quot.sound]",
+          "kernel": "replaying OriginalWitness"
+        }
+      ]
+    },
+    {
+      "mode": "joint",
+      "source_pins": {
+        "original": "40e56bab026552e089d7afcfeff08d2defb9c005",
+        "readable": "e063a923620ee7787b4a1270421478645bf66bdb"
+      },
+      "compiler": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+      "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+      "modules": [
+        {
+          "module": "WitnessInterface",
+          "source_sha256": "a8d92059141e4056424eee515afd1e2329bfbd0f2db84840e889cb04d79e9209",
+          "object_sha256": "5c990f9ab5eb657eef79e305a944b9af8beb9639982ed96b4d414db13a0257df",
+          "elaboration": "",
+          "kernel": "replaying WitnessInterface"
+        },
+        {
+          "module": "ReadableDatum",
+          "source_sha256": "9a9d91c6e90383d47051b5a72ace5fe4d8ba1ab2744925deaa80eb83cc0744cb",
+          "object_sha256": "b666ee7921db7907b586ed196c6ecb6ddfed8018011c71028590344fd58f65c6",
+          "elaboration": "'FixedDatum.same_integer' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FixedDatum.fixed_bound' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FixedDatum.translated' depends on axioms: [propext, Classical.choice, Quot.sound]",
+          "kernel": "replaying ReadableDatum"
+        },
+        {
+          "module": "ScaleControl",
+          "source_sha256": "951a45d5af1a2f4bfa9070924be59747e7225957c01039c600c0c937b302de82",
+          "object_sha256": "f5749021734d2abcf7877010d3e19a4c8f1a6f65455dcd3545e71f80ce05f2ca",
+          "elaboration": "'FixedDatum.scale_floor' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FixedDatum.no_datum_at_400001' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FixedDatum.level_prime_residue' depends on axioms: [propext, Classical.choice, Quot.sound]",
+          "kernel": "replaying ScaleControl"
+        },
+        {
+          "module": "HostComparison",
+          "source_sha256": "d790f99f3106b4fd4356b60dfe2c9b4d7f54ed06a4aaeccce9cbf44f2a940d1f",
+          "object_sha256": "91107a3a128cf84c5ece821d76c9e46ed75ad21b13c03f0fed5fbf7328190cd8",
+          "elaboration": "'FixedDatum.fixed_obstruction' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FixedDatum.obstruction_at_multiples_of_32' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FixedDatum.control_prime_test' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FixedDatum.no_place_equiv' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FixedDatum.no_identity_fiber_equiv' depends on axioms: [propext, Classical.choice, Quot.sound]",
+          "kernel": "replaying HostComparison"
+        }
+      ]
+    }
+  ],
+  "failed_port_attempt": {
+    "description": "Untouched old host dependency chain in the readable toolchain; failed during elaboration before the two editions could be compared.",
+    "module": "Formalism.TameInertiaTowers.StatementGroup",
+    "diagnostic": "Formalism/TameInertiaTowers/StatementGroup.lean:74:6: error: Type mismatch\n  powMonoidHom 2\nhas type\n  @MonoidHom ?m.59 ?m.59 (@MulOneClass.toMulOne ?m.59 (@Monoid.toMulOneClass ?m.59 CommMonoid.toMonoid))\n    CommMonoid.toMonoid.toMulOneClass.toMulOne\nbut is expected to have type\n  @MonoidHom (GalL n \u29f8 zpowers (JJ n)) (GalL n \u29f8 zpowers (JJ n))\n    (@MulOneClass.toMulOne (GalL n \u29f8 zpowers (JJ n))\n      (@Monoid.toMulOneClass (GalL n \u29f8 zpowers (JJ n)) (QuotientGroup.Quotient.group (zpowers (JJ n))).toMonoid))\n    (QuotientGroup.Quotient.group (zpowers (JJ n))).toMulOneClass.toMulOne\n",
+    "alternate": "Joint run instead regenerated complete relevant host records from the digest-verified old sources. Original same-set consumer replayed natively."
+  },
+  "scope": "Five experiment modules kernel-replayed against prepared imports. No full RH rebuild, no numeric evaluation of the common least integer and no actual old family constructed at it."
+}
