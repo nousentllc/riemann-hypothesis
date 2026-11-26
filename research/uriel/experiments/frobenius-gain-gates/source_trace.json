@@ -1,0 +1,341 @@
+{
+  "original": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "files": [
+    {
+      "path": "Formalism/LocalToGlobal/GlobalTheory/IsResidueClassZero.lean",
+      "git_blob": "3d9ca6054c07565ada526d97402492b71739937d",
+      "sha256": "7b055c5bb583ff2ffc19c0891b468e05db7926f6039999f09a3d7615c90a171e",
+      "anchors": {
+        "def rhoB": {
+          "line": 49,
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/LocalToGlobal/GlobalTheory/IsResidueClassZero.lean#L49"
+        },
+        "def InBand (": {
+          "line": 56,
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/LocalToGlobal/GlobalTheory/IsResidueClassZero.lean#L56"
+        },
+        "def partner (": {
+          "line": 77,
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/LocalToGlobal/GlobalTheory/IsResidueClassZero.lean#L77"
+        },
+        "def IsV (": {
+          "line": 101,
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/LocalToGlobal/GlobalTheory/IsResidueClassZero.lean#L101"
+        },
+        "def Good (": {
+          "line": 103,
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/LocalToGlobal/GlobalTheory/IsResidueClassZero.lean#L103"
+        },
+        "def capU": {
+          "line": 144,
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/LocalToGlobal/GlobalTheory/IsResidueClassZero.lean#L144"
+        },
+        "def Excl": {
+          "line": 150,
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/LocalToGlobal/GlobalTheory/IsResidueClassZero.lean#L150"
+        },
+        "def g0 ": {
+          "line": 158,
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/LocalToGlobal/GlobalTheory/IsResidueClassZero.lean#L158"
+        },
+        "def gU ": {
+          "line": 165,
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/LocalToGlobal/GlobalTheory/IsResidueClassZero.lean#L165"
+        },
+        "def Pr (": {
+          "line": 173,
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/LocalToGlobal/GlobalTheory/IsResidueClassZero.lean#L173"
+        },
+        "def Cand :": {
+          "line": 189,
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/LocalToGlobal/GlobalTheory/IsResidueClassZero.lean#L189"
+        },
+        "def Sig :": {
+          "line": 197,
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/LocalToGlobal/GlobalTheory/IsResidueClassZero.lean#L197"
+        },
+        "def VV :": {
+          "line": 201,
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/LocalToGlobal/GlobalTheory/IsResidueClassZero.lean#L201"
+        },
+        "def gainP": {
+          "line": 224,
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/LocalToGlobal/GlobalTheory/IsResidueClassZero.lean#L224"
+        },
+        "def TTP": {
+          "line": 232,
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/LocalToGlobal/GlobalTheory/IsResidueClassZero.lean#L232"
+        },
+        "def bsH": {
+          "line": 267,
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/LocalToGlobal/GlobalTheory/IsResidueClassZero.lean#L267"
+        },
+        "def gainAt": {
+          "line": 333,
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/LocalToGlobal/GlobalTheory/IsResidueClassZero.lean#L333"
+        },
+        "def gainD": {
+          "line": 392,
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/LocalToGlobal/GlobalTheory/IsResidueClassZero.lean#L392"
+        }
+      }
+    },
+    {
+      "path": "Formalism/SharpRestriction/GrowthBounds/IsResidueClassZero.lean",
+      "git_blob": "9fbb7879d0519f9a136e190551422881ef5d2f0b",
+      "sha256": "769f9733e1d208e4ee5a9cc89e25123f2ce9182ce295490ff97e569faf87f5a0",
+      "anchors": {
+        "def Consts.Nonneg": {
+          "line": 31,
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/SharpRestriction/GrowthBounds/IsResidueClassZero.lean#L31"
+        },
+        "def La (": {
+          "line": 58,
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/SharpRestriction/GrowthBounds/IsResidueClassZero.lean#L58"
+        },
+        "def gam (": {
+          "line": 89,
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/SharpRestriction/GrowthBounds/IsResidueClassZero.lean#L89"
+        },
+        "  off_top :": {
+          "line": 146,
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/SharpRestriction/GrowthBounds/IsResidueClassZero.lean#L146"
+        }
+      }
+    },
+    {
+      "path": "Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/Analytic.lean",
+      "git_blob": "599699b5b35f6fb7bf2ab94f5f0c577b14f35ea1",
+      "sha256": "52ef51f6acc3ac5bdc351912a0c2934b36b4bbffcc60aea8cc6cfcf886ac3a89",
+      "anchors": {
+        "def gChi {": {
+          "line": 23,
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/Analytic.lean#L23"
+        },
+        "theorem isPrimOf_prim": {
+          "line": 110,
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/Analytic.lean#L110"
+        },
+        "def ChebyshevCharacterBound": {
+          "line": 145,
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/Analytic.lean#L145"
+        }
+      }
+    },
+    {
+      "path": "Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/FrameFacts.lean",
+      "git_blob": "22402e8349688ace18526a8fc486eb659a5e7450",
+      "sha256": "4b29bf3a7df92739ba0351614ac7d98ffdc73ea46c0e6c58505c91b2c3ce9e70",
+      "anchors": {
+        "theorem index_A0_eq_o": {
+          "line": 214,
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/FrameFacts.lean#L214"
+        },
+        "theorem cyclic_order_dvd_two_pow": {
+          "line": 249,
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/FrameFacts.lean#L249"
+        },
+        "theorem card_GG [": {
+          "line": 40,
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/FrameFacts.lean#L40"
+        }
+      }
+    },
+    {
+      "path": "Formalism/LocalRingCardinality/DataParams₂.lean",
+      "git_blob": "50914500995df91e2646d91a6c5c99a7e603a51b",
+      "sha256": "39d84d7e7db5196715f955ac44f45e61a23fcf4ebd5065ca41444f836efd3099",
+      "anchors": {
+        "def p0 (": {
+          "line": 43,
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/LocalRingCardinality/DataParams₂.lean#L43"
+        },
+        "def X' :": {
+          "line": 33,
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/LocalRingCardinality/DataParams₂.lean#L33"
+        },
+        "def X'' (": {
+          "line": 39,
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/LocalRingCardinality/DataParams₂.lean#L39"
+        },
+        "def b' :": {
+          "line": 35,
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/LocalRingCardinality/DataParams₂.lean#L35"
+        }
+      }
+    },
+    {
+      "path": "Formalism/LocalRingCardinality/Params.lean",
+      "git_blob": "09d1aeec3049821ed6d190c7970cdca9ec5b34cf",
+      "sha256": "1de4e5a1230e9d93b5ace3e4f7e112f65e3d5264d75db227476986d179881e17",
+      "anchors": {
+        "def N (j :": {
+          "line": 36,
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/LocalRingCardinality/Params.lean#L36"
+        }
+      }
+    },
+    {
+      "path": "Development/AbelianVarietyTheory/Definitions/GlobalTwisting/ThinScalesIffHostBound.lean",
+      "git_blob": "1de433cc5ce2fa941ca72691bc75a3bccb667634",
+      "sha256": "413712d1bffa0ffc17a269690dbd21597d8eb1dd08452f943dfdcf535f607146",
+      "anchors": {
+        "def hPH (": {
+          "line": 19,
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Definitions/GlobalTwisting/ThinScalesIffHostBound.lean#L19"
+        },
+        "def BadOK (": {
+          "line": 36,
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Definitions/GlobalTwisting/ThinScalesIffHostBound.lean#L36"
+        },
+        "def ThinOK (": {
+          "line": 61,
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Definitions/GlobalTwisting/ThinScalesIffHostBound.lean#L61"
+        },
+        "def HostGood (": {
+          "line": 101,
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Definitions/GlobalTwisting/ThinScalesIffHostBound.lean#L101"
+        },
+        "def WinOK (": {
+          "line": 143,
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Definitions/GlobalTwisting/ThinScalesIffHostBound.lean#L143"
+        },
+        "def WOK (": {
+          "line": 149,
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Definitions/GlobalTwisting/ThinScalesIffHostBound.lean#L149"
+        },
+        "def Pt.From": {
+          "line": 160,
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Definitions/GlobalTwisting/ThinScalesIffHostBound.lean#L160"
+        }
+      }
+    },
+    {
+      "path": "Development/AbelianVarietyTheory/Definitions/GlobalTwisting/PairRowIffQdRows.lean",
+      "git_blob": "688162690ac7cbfe620037fcee8e451e7116f45b",
+      "sha256": "ce62bded2b02505b79892b0593c99e266bfadfba21574e84470ce1f1957b087f",
+      "anchors": {
+        "def RankVal ": {
+          "line": 28,
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Definitions/GlobalTwisting/PairRowIffQdRows.lean#L28"
+        },
+        "def h0v ": {
+          "line": 22,
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Definitions/GlobalTwisting/PairRowIffQdRows.lean#L22"
+        },
+        "def Delv ": {
+          "line": 24,
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Definitions/GlobalTwisting/PairRowIffQdRows.lean#L24"
+        }
+      }
+    },
+    {
+      "path": "Development/AbelianVarietyTheory/Definitions/GlobalTwisting/AuxiliaryPrimeMemAvoidedPrimes.lean",
+      "git_blob": "9ca81e4194b4501231f8624b0c1a393af0dbc8fa",
+      "sha256": "e49e4752397430f1aef4a5aebb27998d470831476b8597e82d5ffa77d119a7c2",
+      "anchors": {
+        "def HostWW": {
+          "line": 122,
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Definitions/GlobalTwisting/AuxiliaryPrimeMemAvoidedPrimes.lean#L122"
+        }
+      }
+    },
+    {
+      "path": "Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/ExistsRefill.lean",
+      "git_blob": "dd09c1fa918d614dbb3fef0efb9ad090dfaac96a",
+      "sha256": "b7432a260d77d32cee24b8b05cb7c55cefaebfc63dedaa879701a780cb07c3ac",
+      "anchors": {
+        "theorem bsH_orb": {
+          "line": 18,
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/ExistsRefill.lean#L18"
+        },
+        "theorem bsH_step": {
+          "line": 25,
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/ExistsRefill.lean#L25"
+        },
+        "theorem offC_top": {
+          "line": 125,
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/ExistsRefill.lean#L125"
+        },
+        "theorem offC_thick": {
+          "line": 140,
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/ExistsRefill.lean#L140"
+        },
+        "theorem offC_thin": {
+          "line": 153,
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/ExistsRefill.lean#L153"
+        }
+      }
+    },
+    {
+      "path": "Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/WeightWindowRequirementHostOfPoint.lean",
+      "git_blob": "b899a758a89ef1626f8187521fcf87440ed4c2f3",
+      "sha256": "5a863a8aa28e0fa527b166932205e11fa31fb576465c3f1504deeebd7cb212ac",
+      "anchors": {
+        "theorem weightWindowRequirement_host_of_point": {
+          "line": 17,
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/WeightWindowRequirementHostOfPoint.lean#L17"
+        }
+      }
+    },
+    {
+      "path": "Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/WeightRequirementOfValid.lean",
+      "git_blob": "a3936e26986700117f1b5b2c0e6d0d1032cebdbb",
+      "sha256": "d1df78e90118f2cd6fbe982eb2e512a1fdde99e27a99d021f7abf2ad7fd65d66",
+      "anchors": {
+        "theorem sig_eq_loc": {
+          "line": 20,
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/WeightRequirementOfValid.lean#L20"
+        }
+      }
+    },
+    {
+      "path": "Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/ExplicitRanksBasicBoundsLargeScale.lean",
+      "git_blob": "12f00bc43910359ad90686646fb70f239deed09e",
+      "sha256": "b79eb09880c0735d8a6dd7d298cd28f54880d07471c6cafa6f4407699aca603d",
+      "anchors": {
+        "theorem rank_basic_bounds": {
+          "line": 22,
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/ExplicitRanksBasicBoundsLargeScale.lean#L22"
+        }
+      }
+    },
+    {
+      "path": "Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/GoodTopCountLeConstMulLog.lean",
+      "git_blob": "d52188dc16121d35df22f9d3a672078e91cf9b3c",
+      "sha256": "c3833304a3a7437cdf57d408c61c0ec1ac0c6cbf4a91d76b5bacdb5c547208f1",
+      "anchors": {
+        "theorem topCount_and_lambda_bounds": {
+          "line": 65,
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/GoodTopCountLeConstMulLog.lean#L65"
+        }
+      }
+    },
+    {
+      "path": "Development/AutomorphicArithmetic/CharacterBoxes/HostWW.lean",
+      "git_blob": "bf6d1090c41ae3270dc031d85cd38382834ebfe4",
+      "sha256": "96044aa33e76d55b66280bc900db18009e8a045a7b177dc41135f04756bf5ad0",
+      "anchors": {
+        "theorem UpperTheory.Top.hostWW": {
+          "line": 27,
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/CharacterBoxes/HostWW.lean#L27"
+        }
+      }
+    },
+    {
+      "path": "Development/AutomorphicArithmetic/CharacterBoxes/ObjCTrue.lean",
+      "git_blob": "abb0785a6a55e0c1aa450cbc6c815b53f0ebd313",
+      "sha256": "8f511238c11d3744732aac52f3df7a62f7e95ada143de7fdc08a042caa993dbd",
+      "anchors": {
+        "theorem recS": {
+          "line": 30,
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/CharacterBoxes/ObjCTrue.lean#L30"
+        },
+        "have hW : DC.HostWW": {
+          "line": 35,
+          "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/CharacterBoxes/ObjCTrue.lean#L35"
+        }
+      }
+    }
+  ]
+}

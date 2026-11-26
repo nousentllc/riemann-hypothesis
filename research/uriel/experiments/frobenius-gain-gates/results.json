@@ -1,0 +1,112 @@
+{
+  "oriented_census": [
+    {
+      "order": 4,
+      "leaf_capacity": 1,
+      "depth": 2,
+      "orientations": 8,
+      "masks_per_orientation": 16,
+      "direct_checks": 128,
+      "largest_null_mask": 3,
+      "canonical_null_masks": 13,
+      "full_mask_adjacent_incidences": 4
+    },
+    {
+      "order": 8,
+      "leaf_capacity": 1,
+      "depth": 3,
+      "orientations": 128,
+      "masks_per_orientation": 256,
+      "direct_checks": 32768,
+      "largest_null_mask": 4,
+      "canonical_null_masks": 73,
+      "full_mask_adjacent_incidences": 24
+    },
+    {
+      "order": 8,
+      "leaf_capacity": 2,
+      "depth": 2,
+      "orientations": 8,
+      "masks_per_orientation": 256,
+      "direct_checks": 2048,
+      "largest_null_mask": 4,
+      "canonical_null_masks": 73,
+      "full_mask_adjacent_incidences": 24
+    },
+    {
+      "order": 16,
+      "leaf_capacity": 1,
+      "depth": 4,
+      "orientations": 1,
+      "masks_per_orientation": 65536,
+      "direct_checks": 256,
+      "largest_null_mask": 5,
+      "canonical_null_masks": 721,
+      "full_mask_adjacent_incidences": 112
+    },
+    {
+      "order": 16,
+      "leaf_capacity": 4,
+      "depth": 2,
+      "orientations": 1,
+      "masks_per_orientation": 65536,
+      "direct_checks": 256,
+      "largest_null_mask": 6,
+      "canonical_null_masks": 901,
+      "full_mask_adjacent_incidences": 96
+    }
+  ],
+  "interior_and_price": {
+    "y": "1024",
+    "p": 503,
+    "capacity": "1100",
+    "rows": [
+      {
+        "offset": 1,
+        "supply": "1024000/503",
+        "residual": "470700/503",
+        "minimum": "1100"
+      },
+      {
+        "offset": 3,
+        "supply": "1024000/127263527",
+        "residual": "0",
+        "minimum": "1024000/127263527"
+      },
+      {
+        "offset": 5,
+        "supply": "1024000/32198817702743",
+        "residual": "0",
+        "minimum": "1024000/32198817702743"
+      }
+    ],
+    "price_controls": [
+      {
+        "fallback_raw": "100",
+        "price": "100",
+        "clipped_premium": "420400/503"
+      },
+      {
+        "fallback_raw": "100",
+        "price": "495850/503",
+        "clipped_premium": "0"
+      },
+      {
+        "fallback_raw": "-90",
+        "price": "100",
+        "clipped_premium": "375130/503"
+      },
+      {
+        "fallback_raw": "-90",
+        "price": "495850/503",
+        "clipped_premium": "0"
+      }
+    ]
+  },
+  "normalized_ramp": {
+    "y": 32768,
+    "integer_inputs": 32768,
+    "positive_kernel_inputs": 16383,
+    "flat_kernel_inputs": 10922
+  }
+}

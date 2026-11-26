@@ -1,0 +1,44 @@
+{
+  "original": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "lean": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "verified_original_source_files": 16,
+  "modules": [
+    {
+      "name": "OrientedDyadic",
+      "source_sha256": "19aecd27b0eb64be9089f2e1840c6eaa7bab4a63aa41e62611acbd86f6677148",
+      "object_sha256": "35c6b9d0f8844720e09840ff1770eb279301f73bbca62ac4f246e8a90777be02",
+      "elaboration": "'FrobeniusGain.MaskTree.harvest_le_charges' depends on axioms: [propext, Quot.sound]\n'FrobeniusGain.MaskTree.size_le_harvest_add' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FrobeniusGain.MaskTree.no_collision_capacity' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FrobeniusGain.MaskTree.adjacent_incidence_bound' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "kernel": "replaying OrientedDyadic"
+    },
+    {
+      "name": "InteriorRamp",
+      "source_sha256": "8946dd2d5308e1795f1260290bb8e5d49e498c6c8f1814cb23e27be3bcc104ee",
+      "object_sha256": "35dbfa7bd343688e25946a218186602e901b3d595578b85a22cc7c6a1d4e1bfa",
+      "elaboration": "'FrobeniusGain.interior_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FrobeniusGain.principal_interior' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "kernel": "replaying InteriorRamp"
+    },
+    {
+      "name": "NativeVisits",
+      "source_sha256": "20583aa89971d6c5a5061eda658760c6776b26a9ca7e6db458d736d00fa92ab8",
+      "object_sha256": "632b18c0dfc1f9afbc1e6ffc63ee941c80ed24268a6602580a7a390ba7ffaaf0",
+      "elaboration": "'FrobeniusGain.reduced_excl_iff' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FrobeniusGain.isV_iff_even' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FrobeniusGain.origin_same_span' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FrobeniusGain.deep_visit_accounting' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "kernel": "replaying NativeVisits"
+    },
+    {
+      "name": "NativeGates",
+      "source_sha256": "1e506b430942f89574877e84668b2dc0f8c141a7c6d667aaaf37e5021cb9cf0d",
+      "object_sha256": "9a38ed0c98e8fbce0b913620f94bb928da3bc9357ceafa0be4366a084d8b52b9",
+      "elaboration": "'FrobeniusGain.candidate_of_interior' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FrobeniusGain.wok_rejection_weight' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FrobeniusGain.mem_vv_of_good' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "kernel": "replaying NativeGates"
+    },
+    {
+      "name": "PremiumBudget",
+      "source_sha256": "4e094f46bf1542cb00697b9c71a475c616a33496afea6731202d76d433fe57e1",
+      "object_sha256": "08a1f6d29df86d99c5fd6d74b4e19150ac3f6e23c3ba0bb5842265d3ebf83f19",
+      "elaboration": "'FrobeniusGain.first_visit_residual' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FrobeniusGain.premium_lower' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FrobeniusGain.positive_row' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FrobeniusGain.outer_guard_false' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FrobeniusGain.strict_gain_over_fallback' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "kernel": "replaying PremiumBudget"
+    }
+  ],
+  "scope": "Prepared original objects. The source host supply, analytic class weights and full asymptotic selection are written/source-traced, not rebuilt here."
+}
