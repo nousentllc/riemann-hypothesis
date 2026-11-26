@@ -1,0 +1,442 @@
+{
+  "pins": {
+    "original": "40e56bab026552e089d7afcfeff08d2defb9c005",
+    "readable": "e063a923620ee7787b4a1270421478645bf66bdb",
+    "head": "a7c4d6a94945f49da752e237a6b1e944ab62677e"
+  },
+  "declarations": {
+    "original": [
+      {
+        "declaration": "LFunction_ne_zero_of_half_lt_re",
+        "path": "src/Main.lean",
+        "line": 8,
+        "git_blob": "dbd5db70bc11b35f18fa5751216ab335321e7bfc",
+        "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Main.lean#L8"
+      },
+      {
+        "declaration": "allChi",
+        "path": "src/Supplements/Kernels/MainTheorems.lean",
+        "line": 7,
+        "git_blob": "6a542d7ce969a791fd12ce575f587e6bc29044bf",
+        "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Supplements/Kernels/MainTheorems.lean#L7"
+      },
+      {
+        "declaration": "everyCharacter",
+        "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean",
+        "line": 10,
+        "git_blob": "ee340012ab19713a8acfecf8adc6a331cbc2f1a4",
+        "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean#L10"
+      },
+      {
+        "declaration": "everyCharacter_of_row",
+        "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean",
+        "line": 7,
+        "git_blob": "ee340012ab19713a8acfecf8adc6a331cbc2f1a4",
+        "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean#L7"
+      },
+      {
+        "declaration": "every_character_of_literature_of_vWin",
+        "path": "src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean",
+        "line": 810,
+        "git_blob": "a13ba1f8c38d4dbf2ddd809fbf9610a007936c24",
+        "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean#L810"
+      },
+      {
+        "declaration": "every_character_of_theta_integrals_local_matching",
+        "path": "src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean",
+        "line": 69,
+        "git_blob": "42abe20ee235820aaa924dbabce5e1d2c2540380",
+        "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean#L69"
+      },
+      {
+        "declaration": "level_of_tiedWin",
+        "path": "src/Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/TopWin.lean",
+        "line": 68,
+        "git_blob": "a6ac464a67f99a546566ee3a3e0fd1db1f4c2550",
+        "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/TopWin.lean#L68"
+      },
+      {
+        "declaration": "zero_free_all_of_green_v_win",
+        "path": "src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopPlug.lean",
+        "line": 12,
+        "git_blob": "c51cb6b5bd4bf2944ace89e00a2990da16bd519a",
+        "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopPlug.lean#L12"
+      },
+      {
+        "declaration": "every_character_of_green_v_win",
+        "path": "src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopPlug.lean",
+        "line": 16,
+        "git_blob": "c51cb6b5bd4bf2944ace89e00a2990da16bd519a",
+        "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopPlug.lean#L16"
+      },
+      {
+        "declaration": "eFamC_of_cls",
+        "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/ZeroFreeAllOfTopG.lean",
+        "line": 19,
+        "git_blob": "54d1b4b84e8c4b97c98379f0bf1bd6bf2f3b2da1",
+        "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/CharacterBoxes/ZeroFreeAllOfTopG.lean#L19"
+      },
+      {
+        "declaration": "zeroFreeAll_of_topG",
+        "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/ZeroFreeAllOfTopG.lean",
+        "line": 26,
+        "git_blob": "54d1b4b84e8c4b97c98379f0bf1bd6bf2f3b2da1",
+        "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/CharacterBoxes/ZeroFreeAllOfTopG.lean#L26"
+      },
+      {
+        "declaration": "tiedCore_of_chainTied",
+        "path": "src/Development/AutomorphicArithmetic/PrimitiveCosets/LevelGmLeOnFamilyScales.lean",
+        "line": 13,
+        "git_blob": "de994949e6fd2d7238cfcb1c19d361ccdfe904fc",
+        "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/PrimitiveCosets/LevelGmLeOnFamilyScales.lean#L13"
+      },
+      {
+        "declaration": "level_gm_le_on_family_scales",
+        "path": "src/Development/AutomorphicArithmetic/PrimitiveCosets/LevelGmLeOnFamilyScales.lean",
+        "line": 28,
+        "git_blob": "de994949e6fd2d7238cfcb1c19d361ccdfe904fc",
+        "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/PrimitiveCosets/LevelGmLeOnFamilyScales.lean#L28"
+      },
+      {
+        "declaration": "windowInequality_of_artinInputs",
+        "path": "src/Development/AutomorphicArithmetic/PrimitiveCosets/WindowInequalityOfArtinInputs.lean",
+        "line": 17,
+        "git_blob": "c349e34925ac26b8bc76bd36e9b91562f86d6b8d",
+        "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/PrimitiveCosets/WindowInequalityOfArtinInputs.lean#L17"
+      },
+      {
+        "declaration": "core_gm",
+        "path": "src/Development/AutomorphicArithmetic/PrimitiveCosets/CoreGm.lean",
+        "line": 12,
+        "git_blob": "3ba7a590e84c5993882ea6c5dcf9fdbed5f07d4d",
+        "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/PrimitiveCosets/CoreGm.lean#L12"
+      },
+      {
+        "declaration": "level_family",
+        "path": "src/Development/AutomorphicArithmetic/PrimitiveCosets/LevelFamily.lean",
+        "line": 41,
+        "git_blob": "d08c25d0cb674297482bec9a235401c14bfb22fa",
+        "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/PrimitiveCosets/LevelFamily.lean#L41"
+      },
+      {
+        "declaration": "formB",
+        "path": "src/Development/AutomorphicArithmetic/PrimitiveCosets/Imports.lean",
+        "line": 8,
+        "git_blob": "2dc9b4e690951c66ffe443e279fcada259bcce13",
+        "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/PrimitiveCosets/Imports.lean#L8"
+      },
+      {
+        "declaration": "ramp",
+        "path": "src/Development/AutomorphicArithmetic/DedekindLFunctions/CharFamily.lean",
+        "line": 10,
+        "git_blob": "81c8dfd66d910d083d5bc88c664c7917fdbdfe96",
+        "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/DedekindLFunctions/CharFamily.lean#L10"
+      },
+      {
+        "declaration": "Gchi",
+        "path": "src/Development/AutomorphicArithmetic/DedekindLFunctions/CharFamily.lean",
+        "line": 15,
+        "git_blob": "81c8dfd66d910d083d5bc88c664c7917fdbdfe96",
+        "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/DedekindLFunctions/CharFamily.lean#L15"
+      },
+      {
+        "declaration": "CharFamily",
+        "path": "src/Development/AutomorphicArithmetic/DedekindLFunctions/CharFamily.lean",
+        "line": 24,
+        "git_blob": "81c8dfd66d910d083d5bc88c664c7917fdbdfe96",
+        "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/DedekindLFunctions/CharFamily.lean#L24"
+      },
+      {
+        "declaration": "Gm",
+        "path": "src/Development/AutomorphicArithmetic/DedekindLFunctions/CharFamily.lean",
+        "line": 36,
+        "git_blob": "81c8dfd66d910d083d5bc88c664c7917fdbdfe96",
+        "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/DedekindLFunctions/CharFamily.lean#L36"
+      },
+      {
+        "declaration": "WindowHyp",
+        "path": "src/Development/AutomorphicArithmetic/DedekindLFunctions/CharFamily.lean",
+        "line": 41,
+        "git_blob": "81c8dfd66d910d083d5bc88c664c7917fdbdfe96",
+        "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/DedekindLFunctions/CharFamily.lean#L41"
+      },
+      {
+        "declaration": "zeroFree_of_rpow_window",
+        "path": "src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ZeroFreeOfRpowWindow.lean",
+        "line": 11,
+        "git_blob": "2ed00ad3aa862f3e522686557fb8f559b17fc002",
+        "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ZeroFreeOfRpowWindow.lean#L11"
+      },
+      {
+        "declaration": "windowHyp_of_rpow",
+        "path": "src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/WindowHypOfRpow.lean",
+        "line": 27,
+        "git_blob": "dde1c159371538875c28374574ca7e452b0450d9",
+        "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/WindowHypOfRpow.lean#L27"
+      },
+      {
+        "declaration": "lemmaL",
+        "path": "src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/lemmaL.lean",
+        "line": 13,
+        "git_blob": "6c37aebd05121b6d68e3532d8529f0ce8357386f",
+        "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/lemmaL.lean#L13"
+      },
+      {
+        "declaration": "poleData",
+        "path": "src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/poleData.lean",
+        "line": 248,
+        "git_blob": "1f7fdc4409d2f1185700764c51d5c17a907d76e1",
+        "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/poleData.lean#L248"
+      },
+      {
+        "declaration": "landau_window",
+        "path": "src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/landauWindow.lean",
+        "line": 83,
+        "git_blob": "7915058f10b33a52652290cd887cbccdc00e676a",
+        "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/landauWindow.lean#L83"
+      }
+    ],
+    "readable": [
+      {
+        "declaration": "# Reading guide",
+        "path": "GUIDE.md",
+        "line": 1,
+        "git_blob": "c2acf9584b58efcb39ac1d668d25c107c3e76a0b",
+        "url": "https://github.com/leanprover-community/riemann-hypothesis/blob/e063a923620ee7787b4a1270421478645bf66bdb/GUIDE.md#L1"
+      },
+      {
+        "declaration": "totalRemainder_eq",
+        "path": "src/New/Reduction/PrimeSums.lean",
+        "line": 177,
+        "git_blob": "3151f03f8b7e471d0b8ca347d4364a95cec6c89e",
+        "url": "https://github.com/leanprover-community/riemann-hypothesis/blob/e063a923620ee7787b4a1270421478645bf66bdb/src/New/Reduction/PrimeSums.lean#L177"
+      },
+      {
+        "declaration": "star_inequality",
+        "path": "src/New/Reduction/MainInequality.lean",
+        "line": 87,
+        "git_blob": "97f83ab52b2feb420e952a2722b4cef454b9e579",
+        "url": "https://github.com/leanprover-community/riemann-hypothesis/blob/e063a923620ee7787b4a1270421478645bf66bdb/src/New/Reduction/MainInequality.lean#L87"
+      },
+      {
+        "declaration": "Data.primeRemainder_le",
+        "path": "src/New/Reduction/OneSidedBound.lean",
+        "line": 33,
+        "git_blob": "4e4862474e15d136c65859e30c6f29c47d68db64",
+        "url": "https://github.com/leanprover-community/riemann-hypothesis/blob/e063a923620ee7787b4a1270421478645bf66bdb/src/New/Reduction/OneSidedBound.lean#L33"
+      },
+      {
+        "declaration": "eventually_exists_data_scales",
+        "path": "src/New/Reduction/OneSidedBound.lean",
+        "line": 74,
+        "git_blob": "4e4862474e15d136c65859e30c6f29c47d68db64",
+        "url": "https://github.com/leanprover-community/riemann-hypothesis/blob/e063a923620ee7787b4a1270421478645bf66bdb/src/New/Reduction/OneSidedBound.lean#L74"
+      },
+      {
+        "declaration": "eventually_abs_primeRemainder_exp_le",
+        "path": "src/New/Reduction/OneSidedBound.lean",
+        "line": 95,
+        "git_blob": "4e4862474e15d136c65859e30c6f29c47d68db64",
+        "url": "https://github.com/leanprover-community/riemann-hypothesis/blob/e063a923620ee7787b4a1270421478645bf66bdb/src/New/Reduction/OneSidedBound.lean#L95"
+      },
+      {
+        "declaration": "eventually_primeRemainder_natCast_le",
+        "path": "src/New/Reduction/OneSidedBound.lean",
+        "line": 125,
+        "git_blob": "4e4862474e15d136c65859e30c6f29c47d68db64",
+        "url": "https://github.com/leanprover-community/riemann-hypothesis/blob/e063a923620ee7787b4a1270421478645bf66bdb/src/New/Reduction/OneSidedBound.lean#L125"
+      },
+      {
+        "declaration": "eventually_primeRemainder_le_mul_rpow",
+        "path": "src/New/Reduction/OneSidedBound.lean",
+        "line": 200,
+        "git_blob": "4e4862474e15d136c65859e30c6f29c47d68db64",
+        "url": "https://github.com/leanprover-community/riemann-hypothesis/blob/e063a923620ee7787b4a1270421478645bf66bdb/src/New/Reduction/OneSidedBound.lean#L200"
+      },
+      {
+        "declaration": "grh",
+        "path": "src/New/Reduction/OneSidedBound.lean",
+        "line": 235,
+        "git_blob": "4e4862474e15d136c65859e30c6f29c47d68db64",
+        "url": "https://github.com/leanprover-community/riemann-hypothesis/blob/e063a923620ee7787b4a1270421478645bf66bdb/src/New/Reduction/OneSidedBound.lean#L235"
+      },
+      {
+        "declaration": "New.LFunction_ne_zero_of_primeRemainder_le",
+        "path": "src/New/Reduction/Zeros/Criterion.lean",
+        "line": 37,
+        "git_blob": "f85881dd96b457cc4dd9d657b27d0e49e5029f46",
+        "url": "https://github.com/leanprover-community/riemann-hypothesis/blob/e063a923620ee7787b4a1270421478645bf66bdb/src/New/Reduction/Zeros/Criterion.lean#L37"
+      },
+      {
+        "declaration": "primeRemainder",
+        "path": "src/New/Reduction/Zeros/PrimeError.lean",
+        "line": 65,
+        "git_blob": "102fc7f4ab8632fbb91e6af0e2eb230c30b60032",
+        "url": "https://github.com/leanprover-community/riemann-hypothesis/blob/e063a923620ee7787b4a1270421478645bf66bdb/src/New/Reduction/Zeros/PrimeError.lean#L65"
+      },
+      {
+        "declaration": "logDerivMean",
+        "path": "src/New/Reduction/Zeros/PrimeError.lean",
+        "line": 56,
+        "git_blob": "102fc7f4ab8632fbb91e6af0e2eb230c30b60032",
+        "url": "https://github.com/leanprover-community/riemann-hypothesis/blob/e063a923620ee7787b4a1270421478645bf66bdb/src/New/Reduction/Zeros/PrimeError.lean#L56"
+      },
+      {
+        "declaration": "primeRemainder_eq_sum_posPart",
+        "path": "src/New/Reduction/Zeros/PrimeError.lean",
+        "line": 193,
+        "git_blob": "102fc7f4ab8632fbb91e6af0e2eb230c30b60032",
+        "url": "https://github.com/leanprover-community/riemann-hypothesis/blob/e063a923620ee7787b4a1270421478645bf66bdb/src/New/Reduction/Zeros/PrimeError.lean#L193"
+      },
+      {
+        "declaration": "isPolar_primeRemainder",
+        "path": "src/New/Reduction/Zeros/PrimeError.lean",
+        "line": 409,
+        "git_blob": "102fc7f4ab8632fbb91e6af0e2eb230c30b60032",
+        "url": "https://github.com/leanprover-community/riemann-hypothesis/blob/e063a923620ee7787b4a1270421478645bf66bdb/src/New/Reduction/Zeros/PrimeError.lean#L409"
+      },
+      {
+        "declaration": "IsPolar.landau",
+        "path": "src/Lib/Analytic/Landau.lean",
+        "line": 219,
+        "git_blob": "1f942da892e6497f6b278a4bcbf89a096d819b5f",
+        "url": "https://github.com/leanprover-community/riemann-hypothesis/blob/e063a923620ee7787b4a1270421478645bf66bdb/src/Lib/Analytic/Landau.lean#L219"
+      },
+      {
+        "declaration": "quadTwist_apply",
+        "path": "src/Lib/Analytic/EntireLFunction.lean",
+        "line": 44,
+        "git_blob": "1f4354050330c61245ab1c075c32f3ead9baa9ce",
+        "url": "https://github.com/leanprover-community/riemann-hypothesis/blob/e063a923620ee7787b4a1270421478645bf66bdb/src/Lib/Analytic/EntireLFunction.lean#L44"
+      },
+      {
+        "declaration": "quadTwist_ne_one",
+        "path": "src/Lib/Analytic/EntireLFunction.lean",
+        "line": 56,
+        "git_blob": "1f4354050330c61245ab1c075c32f3ead9baa9ce",
+        "url": "https://github.com/leanprover-community/riemann-hypothesis/blob/e063a923620ee7787b4a1270421478645bf66bdb/src/Lib/Analytic/EntireLFunction.lean#L56"
+      }
+    ],
+    "head": [
+      {
+        "declaration": "# Reading guide",
+        "path": "GUIDE.md",
+        "line": 1,
+        "git_blob": "c2acf9584b58efcb39ac1d668d25c107c3e76a0b",
+        "url": "https://github.com/leanprover-community/riemann-hypothesis/blob/a7c4d6a94945f49da752e237a6b1e944ab62677e/GUIDE.md#L1"
+      },
+      {
+        "declaration": "totalRemainder_eq",
+        "path": "src/New/Reduction/PrimeSums.lean",
+        "line": 181,
+        "git_blob": "44d98adc2d0347853f23a92bf05be70c0e09fae4",
+        "url": "https://github.com/leanprover-community/riemann-hypothesis/blob/a7c4d6a94945f49da752e237a6b1e944ab62677e/src/New/Reduction/PrimeSums.lean#L181"
+      },
+      {
+        "declaration": "star_inequality",
+        "path": "src/New/Reduction/MainInequality.lean",
+        "line": 91,
+        "git_blob": "4d5784865c5dc19cea11a24f0686f0024d04b0bc",
+        "url": "https://github.com/leanprover-community/riemann-hypothesis/blob/a7c4d6a94945f49da752e237a6b1e944ab62677e/src/New/Reduction/MainInequality.lean#L91"
+      },
+      {
+        "declaration": "Data.primeRemainder_le",
+        "path": "src/New/Reduction/OneSidedBound.lean",
+        "line": 37,
+        "git_blob": "42a318b7e3ca88ef3d636771c3cd46e15248feb2",
+        "url": "https://github.com/leanprover-community/riemann-hypothesis/blob/a7c4d6a94945f49da752e237a6b1e944ab62677e/src/New/Reduction/OneSidedBound.lean#L37"
+      },
+      {
+        "declaration": "eventually_exists_data_scales",
+        "path": "src/New/Reduction/OneSidedBound.lean",
+        "line": 78,
+        "git_blob": "42a318b7e3ca88ef3d636771c3cd46e15248feb2",
+        "url": "https://github.com/leanprover-community/riemann-hypothesis/blob/a7c4d6a94945f49da752e237a6b1e944ab62677e/src/New/Reduction/OneSidedBound.lean#L78"
+      },
+      {
+        "declaration": "eventually_abs_primeRemainder_exp_le",
+        "path": "src/New/Reduction/OneSidedBound.lean",
+        "line": 99,
+        "git_blob": "42a318b7e3ca88ef3d636771c3cd46e15248feb2",
+        "url": "https://github.com/leanprover-community/riemann-hypothesis/blob/a7c4d6a94945f49da752e237a6b1e944ab62677e/src/New/Reduction/OneSidedBound.lean#L99"
+      },
+      {
+        "declaration": "eventually_primeRemainder_natCast_le",
+        "path": "src/New/Reduction/OneSidedBound.lean",
+        "line": 129,
+        "git_blob": "42a318b7e3ca88ef3d636771c3cd46e15248feb2",
+        "url": "https://github.com/leanprover-community/riemann-hypothesis/blob/a7c4d6a94945f49da752e237a6b1e944ab62677e/src/New/Reduction/OneSidedBound.lean#L129"
+      },
+      {
+        "declaration": "eventually_primeRemainder_le_mul_rpow",
+        "path": "src/New/Reduction/OneSidedBound.lean",
+        "line": 204,
+        "git_blob": "42a318b7e3ca88ef3d636771c3cd46e15248feb2",
+        "url": "https://github.com/leanprover-community/riemann-hypothesis/blob/a7c4d6a94945f49da752e237a6b1e944ab62677e/src/New/Reduction/OneSidedBound.lean#L204"
+      },
+      {
+        "declaration": "grh",
+        "path": "src/New/Reduction/OneSidedBound.lean",
+        "line": 239,
+        "git_blob": "42a318b7e3ca88ef3d636771c3cd46e15248feb2",
+        "url": "https://github.com/leanprover-community/riemann-hypothesis/blob/a7c4d6a94945f49da752e237a6b1e944ab62677e/src/New/Reduction/OneSidedBound.lean#L239"
+      },
+      {
+        "declaration": "New.LFunction_ne_zero_of_primeRemainder_le",
+        "path": "src/New/Reduction/Zeros/Criterion.lean",
+        "line": 41,
+        "git_blob": "d7f807ca6dcd58a0f20f981fc5eac8f26e301886",
+        "url": "https://github.com/leanprover-community/riemann-hypothesis/blob/a7c4d6a94945f49da752e237a6b1e944ab62677e/src/New/Reduction/Zeros/Criterion.lean#L41"
+      },
+      {
+        "declaration": "primeRemainder",
+        "path": "src/New/Reduction/Zeros/PrimeError.lean",
+        "line": 69,
+        "git_blob": "991b4b0d02877c8830efdb5259dc8090da2c0565",
+        "url": "https://github.com/leanprover-community/riemann-hypothesis/blob/a7c4d6a94945f49da752e237a6b1e944ab62677e/src/New/Reduction/Zeros/PrimeError.lean#L69"
+      },
+      {
+        "declaration": "logDerivMean",
+        "path": "src/New/Reduction/Zeros/PrimeError.lean",
+        "line": 60,
+        "git_blob": "991b4b0d02877c8830efdb5259dc8090da2c0565",
+        "url": "https://github.com/leanprover-community/riemann-hypothesis/blob/a7c4d6a94945f49da752e237a6b1e944ab62677e/src/New/Reduction/Zeros/PrimeError.lean#L60"
+      },
+      {
+        "declaration": "primeRemainder_eq_sum_posPart",
+        "path": "src/New/Reduction/Zeros/PrimeError.lean",
+        "line": 197,
+        "git_blob": "991b4b0d02877c8830efdb5259dc8090da2c0565",
+        "url": "https://github.com/leanprover-community/riemann-hypothesis/blob/a7c4d6a94945f49da752e237a6b1e944ab62677e/src/New/Reduction/Zeros/PrimeError.lean#L197"
+      },
+      {
+        "declaration": "isPolar_primeRemainder",
+        "path": "src/New/Reduction/Zeros/PrimeError.lean",
+        "line": 413,
+        "git_blob": "991b4b0d02877c8830efdb5259dc8090da2c0565",
+        "url": "https://github.com/leanprover-community/riemann-hypothesis/blob/a7c4d6a94945f49da752e237a6b1e944ab62677e/src/New/Reduction/Zeros/PrimeError.lean#L413"
+      },
+      {
+        "declaration": "IsPolar.landau",
+        "path": "src/Lib/Analytic/Landau.lean",
+        "line": 223,
+        "git_blob": "21f43a60c1adfae5f76596879d9d27d705cf2534",
+        "url": "https://github.com/leanprover-community/riemann-hypothesis/blob/a7c4d6a94945f49da752e237a6b1e944ab62677e/src/Lib/Analytic/Landau.lean#L223"
+      },
+      {
+        "declaration": "quadTwist_apply",
+        "path": "src/Lib/Analytic/EntireLFunction.lean",
+        "line": 49,
+        "git_blob": "51d55f1c3281e165a30a4b22b1750f2ce728e26e",
+        "url": "https://github.com/leanprover-community/riemann-hypothesis/blob/a7c4d6a94945f49da752e237a6b1e944ab62677e/src/Lib/Analytic/EntireLFunction.lean#L49"
+      },
+      {
+        "declaration": "quadTwist_ne_one",
+        "path": "src/Lib/Analytic/EntireLFunction.lean",
+        "line": 61,
+        "git_blob": "51d55f1c3281e165a30a4b22b1750f2ce728e26e",
+        "url": "https://github.com/leanprover-community/riemann-hypothesis/blob/a7c4d6a94945f49da752e237a6b1e944ab62677e/src/Lib/Analytic/EntireLFunction.lean#L61"
+      }
+    ]
+  }
+}

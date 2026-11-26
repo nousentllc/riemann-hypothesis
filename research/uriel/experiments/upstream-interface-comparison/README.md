@@ -1,5 +1,7 @@
 # Where the two Riemann-hypothesis source editions meet
 
+**Subsequent result.** The [joint critical edition](../proof-interfaces-critical-edition/) resolves the two tests proposed below. It gives the principal Euler correction at nontrivial modulus and derives the split-Haar factor of two at the ramified target four. The integral trace obstruction persists.
+
 **Research note · 25 November 2026.** This comparison fixes the original edition at `40e56bab026552e089d7afcfeff08d2defb9c005`, the readable edition at `e063a923620ee7787b4a1270421478645bf66bdb`, and the Nous ramified square-dilate release at standalone revision `d9b1a208b1d0b65b1cf9be8be42d8f3909d5aff5`. The two editions give different organizations of the argument. A claim about one pin needs its own justification at the other. The source links below identify the files used in the comparison.
 
 ## I. What is actually shared by the two prime sums?

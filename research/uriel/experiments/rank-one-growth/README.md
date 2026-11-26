@@ -1,5 +1,7 @@
 # The integers behind the mass bound
 
+**Follow-through.** The [progression study](../parallel-growth/) checks the bounded-gap route inside the original measure consumer. The [Gaussian target-one](../gaussian-target-one/) and [target-four](../gaussian-target-four/) studies subsequently identify those particular dyadic scalar masses with the original regular-fiber measure.
+
 A witness-level audit of the finite-place lower estimate used to normalize a rank-one Siegel–Weil measure, with an independent six-square calculation. The study uses the original Lean revision `40e56bab026552e089d7afcfeff08d2defb9c005` and is additive to the research branch history. [Pinned growth proof](https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/RankOneLocalDensitiesProductConverges.lean#L262-L382)
 
 ## Read the paper

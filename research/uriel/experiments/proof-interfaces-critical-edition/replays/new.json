@@ -1,0 +1,40 @@
+{
+  "new": {
+    "Lib.Analytic.Landau": {
+      "source_sha256": "00c6cab4e5593f34d1d048dcbbbfe58e3b8e33cb8ab536badc750babbe54ce6d",
+      "object_sha256": "6a5aca17878562226cf9408cb781136124df2c21698cba6a7ed6e9f28a7999d7",
+      "compiler_messages": "",
+      "kernel": "replaying Lib.Analytic.Landau"
+    },
+    "New.Reduction.Zeros.PrimeError": {
+      "source_sha256": "1df8125fc79995bea815003e470ceb5ef6b715387705700f702b13ba99bdb81d",
+      "object_sha256": "7f22ecabe01e0f1bedafa37201d8642d213becc18ef93a9c885cd298d697cc5a",
+      "compiler_messages": "",
+      "kernel": "replaying New.Reduction.Zeros.PrimeError"
+    },
+    "New.Reduction.Zeros.Criterion": {
+      "source_sha256": "f64a8c2b2412f15c881f6719c4e305c72a04f4a6e0e05904da1d10ea7b59b89f",
+      "object_sha256": "8af0ea9235db604c59658c84ed32097aa8a6ded3812dfe35d7dc4462c27440c2",
+      "compiler_messages": "",
+      "kernel": "replaying New.Reduction.Zeros.Criterion"
+    },
+    "New.Reduction.PrimeSums": {
+      "source_sha256": "b4c7635a7c0e9ab604312e85615d2a580b9dd6ed0cd98c1d7f18edf2522b5cfe",
+      "object_sha256": "b9df65a1e6fbf814674859db17d9f429e5f9947266225439e0675f1a908e89bd",
+      "compiler_messages": "",
+      "kernel": "replaying New.Reduction.PrimeSums"
+    },
+    "New.Reduction.MainInequality": {
+      "source_sha256": "521a8a669cc7f6d35b74ffe1e1bbec432c9012285a927b01e7047c4c161ea452",
+      "object_sha256": "0f9f44aa8898675be29a1e9856022e6142b3b61bea90d8b98e0619a0bd304ad3",
+      "compiler_messages": "",
+      "kernel": "replaying New.Reduction.MainInequality"
+    },
+    "New.Reduction.OneSidedBound": {
+      "source_sha256": "6afc6dd47b3869e3358eb05b4e91f218f17fecb29db109ea3505f1ee368db436",
+      "object_sha256": "3821a0203a9e80c6ab45cbf39c2aeb5f697e389807fa68b25605148648f11f92",
+      "compiler_messages": "",
+      "kernel": "replaying New.Reduction.OneSidedBound"
+    }
+  }
+}

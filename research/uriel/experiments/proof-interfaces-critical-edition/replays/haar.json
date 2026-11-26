@@ -1,0 +1,33 @@
+{
+  "compiler": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "source_sha256": "0c505033b3f86f2cfef4d4595cacf680afcf7dc91c64195c5a02376d63ec656d",
+  "direct_study_objects": {
+    "DilateStableOddAll": "1f5b2e4321b0fe1fa7cc0bcba77e86d7d579a39052a19aea95a3f4e0b75dd432",
+    "DilateEndpoint": "82673912cad0691f7f9626683e8df4fa1a0e6035b909fba6adf83e2bdd9e6175"
+  },
+  "counts_sha256": "94052b27bc1bf99ed98946f16b7e5cf82d08cb87e214a02d91db0f775fa16089",
+  "commands": [
+    {
+      "command": [
+        "lean",
+        "-j1",
+        "-o",
+        "TargetFourHaar.olean",
+        "TargetFourHaar.lean"
+      ],
+      "exit": 0,
+      "output": "'TargetFourHaar.putI_skew' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TargetFourHaar.split_coordinates' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TargetFourHaar.half_preimage' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TargetFourHaar.half_push' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TargetFourHaar.split_push' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TargetFourHaar.split_matched' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TargetFourHaar.ball_mass' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TargetFourHaar.tail_tube' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TargetFourHaar.ball_four' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TargetFourHaar.scaling_law' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TargetFourHaar.integral_compensation' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TargetFourHaar.named_regular_value' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TargetFourHaar.skewCoord' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TargetFourHaar.literal_skew_ball' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TargetFourHaar.identify_regular' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TargetFourHaar.split_scaled' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TargetFourHaar.forced_target' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TargetFourHaar.candidate_at_four' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TargetFourHaar.skew_candidate_at_four' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TargetFourHaar.rescale_regular_family' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TargetFourHaar.zeta_order_no_trace_one' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TargetFourHaar.realized_rescaled' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TargetFourHaar.pure_relabel_fails_split' depends on axioms: [propext, Classical.choice, Quot.sound]"
+    },
+    {
+      "command": [
+        "leanchecker",
+        "-v",
+        "TargetFourHaar"
+      ],
+      "exit": 0,
+      "output": "replaying TargetFourHaar"
+    }
+  ],
+  "queries": 23
+}

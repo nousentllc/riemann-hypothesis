@@ -1,0 +1,96 @@
+[
+  {
+    "revision": "40e56bab026552e089d7afcfeff08d2defb9c005",
+    "path": "src/Formalism/SharpRestriction/GlobalSchurBounds/GeneralLinearActions/GenusMassVolumes.lean",
+    "git_blob": "525618b770cb535fd890f10277af11ffbe76af40",
+    "sha256": "a33d33e6070c63f1e118c2a0ce992d57e8de5fb28105a072ca0b9cb6ee48a02b",
+    "anchors": {
+      "def IsFibreFamily": 183
+    },
+    "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/SharpRestriction/GlobalSchurBounds/GeneralLinearActions/GenusMassVolumes.lean"
+  },
+  {
+    "revision": "17263859a4d27c62cfc67571737355f61a080806",
+    "path": "research/uriel/experiments/ramified-square-dilates/bridge/RamPlaceEndpoint.lean",
+    "git_blob": "53988e45ad0e2f7a29ced5feddbaea946db47a97",
+    "sha256": "cfdf986873187f0458e63d3598e613ae26fff1e4a35cc0f7679a6949e400b692",
+    "anchors": {
+      "theorem original": 19,
+      "theorem realized": 26
+    },
+    "url": "https://github.com/nousentllc/riemann-hypothesis/blob/17263859a4d27c62cfc67571737355f61a080806/research/uriel/experiments/ramified-square-dilates/bridge/RamPlaceEndpoint.lean"
+  },
+  {
+    "revision": "17263859a4d27c62cfc67571737355f61a080806",
+    "path": "research/uriel/experiments/ramified-square-dilates/dilates/DilateEndpoint.lean",
+    "git_blob": "c097af52a2fa6865e10e2388d46b684c01a719f1",
+    "sha256": "a53f4acb7d0c9b274017ba56b675d5da0a4dbe037a76ca7d175a75f6f3eb2798",
+    "anchors": {
+      "theorem counts": 32,
+      "theorem original": 40
+    },
+    "url": "https://github.com/nousentllc/riemann-hypothesis/blob/17263859a4d27c62cfc67571737355f61a080806/research/uriel/experiments/ramified-square-dilates/dilates/DilateEndpoint.lean"
+  },
+  {
+    "revision": "17263859a4d27c62cfc67571737355f61a080806",
+    "path": "research/uriel/experiments/ramified-square-dilates/dilates/DilateStableOddAll.lean",
+    "git_blob": "9922fc5624515c9ca70d3b504b97cd20face512f",
+    "sha256": "c29aa1b6de5ffe3a1fe1cf011dd32aa28fbf1c5ffc9251f6ef24ae8458fdfaa6",
+    "anchors": {
+      "theorem all_late": 45,
+      "theorem sharp_stabilization": 107
+    },
+    "url": "https://github.com/nousentllc/riemann-hypothesis/blob/17263859a4d27c62cfc67571737355f61a080806/research/uriel/experiments/ramified-square-dilates/dilates/DilateStableOddAll.lean"
+  },
+  {
+    "revision": "17263859a4d27c62cfc67571737355f61a080806",
+    "path": "research/uriel/experiments/ramified-square-dilates/local/SingularZero.lean",
+    "git_blob": "0abaf3ce539deedea1bcc4c2b6ed2f5a6017fd81",
+    "sha256": "3cdce28320d21950e78e6c443d6418dcd93ed171c699e4614c1e855fc4d675b0",
+    "anchors": {
+      "theorem rank_one_origin": 22
+    },
+    "url": "https://github.com/nousentllc/riemann-hypothesis/blob/17263859a4d27c62cfc67571737355f61a080806/research/uriel/experiments/ramified-square-dilates/local/SingularZero.lean"
+  },
+  {
+    "revision": "e063a923620ee7787b4a1270421478645bf66bdb",
+    "path": "src/Lib/General/Measure/QuadricDisintegration.lean",
+    "git_blob": "e8b7c6a13572d6de315a3e1070c7248ef66195d0",
+    "sha256": "d8da4b8f83ff3b107fee29550fa62b2aab7f99d4dd8773151382e6de3d9389bc",
+    "anchors": {
+      "  measurePreserving_split :": 72,
+      "structure IsDisintegration": 257
+    },
+    "url": "https://github.com/nousentllc/riemann-hypothesis/blob/e063a923620ee7787b4a1270421478645bf66bdb/src/Lib/General/Measure/QuadricDisintegration.lean"
+  },
+  {
+    "revision": "e063a923620ee7787b4a1270421478645bf66bdb",
+    "path": "src/Lib/General/LinearAlgebra/IntegralLattices.lean",
+    "git_blob": "9584e67bb6de6b817c6024b80ad8745cff89186e",
+    "sha256": "c8e166bd9b8608057c3715814f065a5017b695ba496ae8fb57e726d4c709eaa8",
+    "anchors": {
+      "  exists_skew_unit :": 518
+    },
+    "url": "https://github.com/nousentllc/riemann-hypothesis/blob/e063a923620ee7787b4a1270421478645bf66bdb/src/Lib/General/LinearAlgebra/IntegralLattices.lean"
+  },
+  {
+    "revision": "e063a923620ee7787b4a1270421478645bf66bdb",
+    "path": "src/Lib/SiegelWeil/OneVector/FinitePlaceDensity.lean",
+    "git_blob": "043d73c31cac68442f457baacde76084d9955b6a",
+    "sha256": "5b44bc58729b100632aed1e7b97ae84e87fa4e64a59d95ef3fc3d1822c03844f",
+    "anchors": {
+      "class IntegralPlace": 68
+    },
+    "url": "https://github.com/nousentllc/riemann-hypothesis/blob/e063a923620ee7787b4a1270421478645bf66bdb/src/Lib/SiegelWeil/OneVector/FinitePlaceDensity.lean"
+  },
+  {
+    "revision": "e063a923620ee7787b4a1270421478645bf66bdb",
+    "path": "src/New/Spanning/MainTerm/FillingLevel.lean",
+    "git_blob": "41132170f0fbb81295ef4df0b54cc76b981c665f",
+    "sha256": "903218b219f1db5f158540570d630a3dbc813f9ac1d5784e5df4a4a5d6b4f72d",
+    "anchors": {
+      "theorem exists_integralPlace": 400
+    },
+    "url": "https://github.com/nousentllc/riemann-hypothesis/blob/e063a923620ee7787b4a1270421478645bf66bdb/src/New/Spanning/MainTerm/FillingLevel.lean"
+  }
+]

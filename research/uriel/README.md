@@ -6,6 +6,8 @@ Start with [PROOF_CONTEXT.md](PROOF_CONTEXT.md), which reconstructs selected ana
 
 ## Arithmetic witness architecture papers
 
+The [joint critical edition of the two interface papers](experiments/proof-interfaces-critical-edition/) compares the corrected prime observable and the source-matched regular fiber, proves the arbitrary-positive-coefficient corollary at positive exponent slack and includes a [16-edition portfolio audit](experiments/proof-interfaces-critical-edition/PORTFOLIO_AUDIT.md).
+
 The [expanded fixed-integer witness paper](experiments/fixed-datum-host-expanded/) classifies when a readable parameter pair meets the original prime conditions and traces the two original estimates to one retained set. The [preceding architecture paper](experiments/window-remainder-architecture/) gives the centered prime-sum identity. The [first witness edition](experiments/fixed-datum-host/) preserves the initial experiment and its replay.
 
 ## Baselines

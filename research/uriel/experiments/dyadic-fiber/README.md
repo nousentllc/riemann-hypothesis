@@ -1,5 +1,7 @@
 # One more dyadic digit
 
+**Follow-through.** The [target-one proof](../gaussian-target-one/) identifies the normalized three-quarter value on the original Gaussian lattice, including the count at every depth. The [target-four proof](../gaussian-target-four/) uses it on the all-even stratum to obtain 63/64.
+
 This study follows the finite-place density in the rank-one Siegel–Weil normalization proof to the prime two. The field is the rational numbers, the CM field is the Gaussian rationals, the basis is 1 and i, and the Hermitian matrix is the identity in dimension three. The preceding study obtained 3/4 from independent six-square counts. Here the question is whether this value survives the source's choice of input, target and fiber measures. [Previous study](https://github.com/nousentllc/riemann-hypothesis/tree/609877747df336e925a39085acf02c8f994f66a3/research/uriel/experiments/rank-one-growth)
 
 [Read the 33-page paper](Dyadic_Fiber.pdf) or [open its single LuaLaTeX source](Dyadic_Fiber.tex). The release ZIP includes both files, the embedded Nous logo, all numerical data and programs, original proof sources and the Lean replay record.

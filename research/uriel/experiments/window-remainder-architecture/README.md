@@ -1,5 +1,7 @@
 # From arithmetic windows to a prime remainder
 
+**Subsequent result.** The [joint critical edition](../proof-interfaces-critical-edition/) derives the eventual bound for any positive coefficient at positive exponent slack, explains what the coefficient says about the threshold, and incorporates the [fixed-integer witness classification](../fixed-datum-host-expanded/).
+
 The original arithmetic construction bounds a positive family of character ramps on arbitrarily late intervals. The readable construction bounds a signed quadratic-twist remainder at every sufficiently large real scale. They share a smoothing kernel, the pole factor at a putative zero, and the Dirichlet nonvanishing endpoint. Changing the scale and correcting the principal character identifies their observables. Passing between the hypotheses of their analytic criteria requires additional information.
 
 [Read the paper](From_Arithmetic_Windows_to_a_Prime_Remainder.pdf) · [Editable LuaLaTeX](From_Arithmetic_Windows_to_a_Prime_Remainder.tex) · [Reproduction package](Nous_Window_Remainder_Architecture.zip)

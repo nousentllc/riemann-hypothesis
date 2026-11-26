@@ -1,0 +1,22 @@
+{
+  "bridge": {
+    "Development.AutomorphicArithmetic.DedekindLFunctions.CharFamily": {
+      "source_sha256": "ca0ca8acb80ff4ffc36896204650f9ca16167193a22c36a140402b27cfc8c336",
+      "object_sha256": "bf81a973eb8ae53a022a4fc2330416ba3bdf6217f5dd772654f3604febd46e79",
+      "compiler_messages": "",
+      "kernel": "replaying Development.AutomorphicArithmetic.DedekindLFunctions.CharFamily"
+    },
+    "Euler": {
+      "source_sha256": "c9673259981509fc4068faaeb602529c9aeee8ee17f520a6678f7dcfd2f4d55b",
+      "object_sha256": "020081b457c9c75c7449391df56618e8a5f97fff60977742d5aeae9b3ab36c78",
+      "compiler_messages": "'Architecture.principal_center_euler' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "kernel": "replaying Euler"
+    },
+    "ObservableBridge": {
+      "source_sha256": "046d7663725ab227e1ed6508391312a71d759ca67fce24a821da9278a9b50a84",
+      "object_sha256": "7f9bc39904f299e365b4a074182dc67794f200bbb234c4ef1522929458f20c91",
+      "compiler_messages": "'Architecture.centered_dictionary_euler' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Architecture.principalDefect_one' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Architecture.ramp_raw' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Architecture.centered_dictionary' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "kernel": "replaying ObservableBridge"
+    }
+  }
+}

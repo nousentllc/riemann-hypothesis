@@ -1,0 +1,26 @@
+{
+  "compiler": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "source_sha256": "8a1063d5f27b46400b59ad2157f5f6c3a3539f651bbcad8833f9c715675bccf3",
+  "commands": [
+    {
+      "command": [
+        "lean",
+        "-j1",
+        "-o",
+        "ValuationLedger.olean",
+        "ValuationLedger.lean"
+      ],
+      "exit": 0,
+      "output": "'ValuationLedger.square_types' does not depend on any axioms\n'ValuationLedger.target_rows' depends on axioms: [propext]\n'ValuationLedger.ledger' depends on axioms: [propext]\n'ValuationLedger.row_totals' does not depend on any axioms"
+    },
+    {
+      "command": [
+        "leanchecker",
+        "-v",
+        "ValuationLedger"
+      ],
+      "exit": 0,
+      "output": "replaying ValuationLedger"
+    }
+  ]
+}

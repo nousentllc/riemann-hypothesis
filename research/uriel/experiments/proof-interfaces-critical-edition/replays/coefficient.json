@@ -1,0 +1,9 @@
+{
+  "project": "e063a923620ee7787b4a1270421478645bf66bdb",
+  "compiler": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+  "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "source_sha256": "57880bd4a7654cb448df72ba7157e47032ad0195dda57d6edba6bea1894a3b28",
+  "object_sha256": "1ca7407c98b76c3fc5d44c8c6a9e8425a54100cc43a066d1b494e4fd4126896c",
+  "elaboration": "'NousInterfaces.chosen_coefficient' depends on axioms: [propext, Classical.choice, Quot.sound]",
+  "kernel": "replaying Coefficient"
+}

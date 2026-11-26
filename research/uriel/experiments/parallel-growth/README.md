@@ -1,5 +1,7 @@
 # How often is the local product large?
 
+**Follow-through.** The [uncapped-growth study](../uncapped-growth/) subsequently characterizes the positive support and proves a uniform lower estimate on that support for the rank-at-least-three problem. The rank-two scaling control below still applies to its own example.
+
 Three concurrent studies of the rank-one finite-place growth bound and its Siegel–Weil consumer. [Paper](Parallel_Growth.pdf) · [Single-file LuaLaTeX source](Parallel_Growth.tex) · [Integrated theorem](verification/ProgressionEndpoint.lean) · [Elaborated dependency and endpoint audit](verification/EndpointAudit.lean).
 
 ## The mathematical results
