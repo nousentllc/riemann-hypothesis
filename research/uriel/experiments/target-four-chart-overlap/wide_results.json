@@ -1,0 +1,52 @@
+[
+  {
+    "depth": 1,
+    "target_classes": 4,
+    "attained": 2,
+    "per_attained_target": 2048,
+    "missing": 2,
+    "total_vectors": 4096,
+    "scalar_density": "1/35184372088832",
+    "split_density": "1/70368744177664"
+  },
+  {
+    "depth": 2,
+    "target_classes": 16,
+    "attained": 8,
+    "per_attained_target": 2097152,
+    "missing": 8,
+    "total_vectors": 16777216,
+    "scalar_density": "1/35184372088832",
+    "split_density": "1/70368744177664"
+  },
+  {
+    "depth": 3,
+    "target_classes": 64,
+    "attained": 32,
+    "per_attained_target": 2147483648,
+    "missing": 32,
+    "total_vectors": 68719476736,
+    "scalar_density": "1/35184372088832",
+    "split_density": "1/70368744177664"
+  },
+  {
+    "depth": 4,
+    "target_classes": 256,
+    "attained": 128,
+    "per_attained_target": 2199023255552,
+    "missing": 128,
+    "total_vectors": 281474976710656,
+    "scalar_density": "1/35184372088832",
+    "split_density": "1/70368744177664"
+  },
+  {
+    "depth": 5,
+    "target_classes": 1024,
+    "attained": 512,
+    "per_attained_target": 2251799813685248,
+    "missing": 512,
+    "total_vectors": 1152921504606846976,
+    "scalar_density": "1/35184372088832",
+    "split_density": "1/70368744177664"
+  }
+]

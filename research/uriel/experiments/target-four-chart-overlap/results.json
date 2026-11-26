@@ -1,0 +1,184 @@
+{
+  "center": [
+    "-6/5",
+    "8/5"
+  ],
+  "tests": [
+    {
+      "depth": 1,
+      "pivot_residues_each": 4,
+      "physical_pairs": 16,
+      "all_pair_fibers_checked": 4,
+      "full_targets": [
+        {
+          "t": [
+            0,
+            0
+          ],
+          "total": 1024,
+          "both_even": 256,
+          "shifted_pivot": 0,
+          "coupled": 256,
+          "transverse_key_digest": "65be9de282ef696f632a87ecf50743a9f3c7a4d13bb0e111bbfdc5713e53f3ae"
+        },
+        {
+          "t": [
+            1,
+            0
+          ],
+          "total": 1024,
+          "both_even": 0,
+          "shifted_pivot": 256,
+          "coupled": 256,
+          "transverse_key_digest": "1d4608028d10a4a9819debdcd54ef36bae4e74734fd018d96bfa340a57d86062"
+        },
+        {
+          "t": [
+            0,
+            1
+          ],
+          "total": 1024,
+          "both_even": 0,
+          "shifted_pivot": 0,
+          "coupled": 256,
+          "transverse_key_digest": "5253600f4cf34f6098f2e1381c0d149a6485d09afdb9f5f6b92afc47eb066727"
+        },
+        {
+          "t": [
+            1,
+            1
+          ],
+          "total": 1024,
+          "both_even": 0,
+          "shifted_pivot": 0,
+          "coupled": 256,
+          "transverse_key_digest": "edc856d979add59bcafc1dde613ba84f88ab45fa79fbd06256a1ea44d5b60ab1"
+        }
+      ]
+    },
+    {
+      "depth": 2,
+      "pivot_residues_each": 16,
+      "physical_pairs": 256,
+      "all_pair_fibers_checked": 16,
+      "full_targets": [
+        {
+          "t": [
+            0,
+            0
+          ],
+          "total": 1048576,
+          "both_even": 262144,
+          "shifted_pivot": 0,
+          "coupled": 131072,
+          "transverse_key_digest": "f48ed1575a148922135b8783c96e3f9d8c8bb021a6fe9dbd51d297bf7a32f7b6"
+        },
+        {
+          "t": [
+            1,
+            0
+          ],
+          "total": 1048576,
+          "both_even": 0,
+          "shifted_pivot": 262144,
+          "coupled": 131072,
+          "transverse_key_digest": "d8888e94d6845da8bcc90864b1f79d92fcf04834e6582752aaff89b9ba789f14"
+        },
+        {
+          "t": [
+            0,
+            1
+          ],
+          "total": 1048576,
+          "both_even": 0,
+          "shifted_pivot": 0,
+          "coupled": 131072,
+          "transverse_key_digest": "4c244c7c78d91901ae4f220ed21045d01c571a67d11e43e986ec6ae8b52a3bd9"
+        },
+        {
+          "t": [
+            1,
+            1
+          ],
+          "total": 1048576,
+          "both_even": 0,
+          "shifted_pivot": 0,
+          "coupled": 131072,
+          "transverse_key_digest": "48937ea8105a446b74e465a1813806b9e35e655f5137d0084d558d2259e07ed0"
+        }
+      ]
+    },
+    {
+      "depth": 3,
+      "pivot_residues_each": 64,
+      "physical_pairs": 4096,
+      "all_pair_fibers_checked": 64,
+      "full_targets": []
+    },
+    {
+      "depth": 4,
+      "pivot_residues_each": 256,
+      "physical_pairs": 65536,
+      "all_pair_fibers_checked": 256,
+      "full_targets": []
+    },
+    {
+      "depth": 6,
+      "pivot_residues_each": 4096
+    },
+    {
+      "depth": 8,
+      "pivot_residues_each": 65536
+    }
+  ],
+  "scalar": "1/70368744177664",
+  "split": "1/140737488355328",
+  "wrong_y": "1/1125899906842624",
+  "boundary": [
+    {
+      "depth": 1,
+      "domain": 4,
+      "image": 2,
+      "zero_preimages": 2,
+      "multiplicities": {
+        "2": 2
+      }
+    },
+    {
+      "depth": 2,
+      "domain": 16,
+      "image": 8,
+      "zero_preimages": 2,
+      "multiplicities": {
+        "2": 8
+      }
+    },
+    {
+      "depth": 3,
+      "domain": 64,
+      "image": 32,
+      "zero_preimages": 2,
+      "multiplicities": {
+        "2": 32
+      }
+    },
+    {
+      "depth": 4,
+      "domain": 256,
+      "image": 128,
+      "zero_preimages": 2,
+      "multiplicities": {
+        "2": 128
+      }
+    },
+    {
+      "depth": 5,
+      "domain": 1024,
+      "image": 512,
+      "zero_preimages": 2,
+      "multiplicities": {
+        "2": 512
+      }
+    }
+  ]
+}

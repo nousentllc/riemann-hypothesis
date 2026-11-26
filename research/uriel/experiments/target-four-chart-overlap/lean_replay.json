@@ -1,0 +1,270 @@
+{
+  "compiler": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "prior_commit": "d69e65e6ac84b552fd7b0f112570904abe2ebdb1",
+  "mode": "published objects",
+  "inputs": {
+    "TargetFourHaar": "6b97bd939ae97e02ddb4e9dc2d421284c6c1c5308894ece58bbab13dfb2becb3",
+    "FourChart": "b3f6c2e2d653f1e0f95edf29210001f8d7b58bcc611133ed348367bb07d44179",
+    "FourBoxMeasures": "3dda8233e7b5296fe58c1df75d293a28ddc7594bb36e3df79d0cf9c4f560f963"
+  },
+  "modules": [
+    {
+      "name": "PivotOverlap",
+      "source_sha256": "56a547790eb72e8a4639b1709bc08364f2d8a04e052007d4bcbe304d72236a04",
+      "object_sha256": "7cdc836881de03a23dea947c304b11d70cc5a444be276e58583e2bfb2f1d3348",
+      "elaboration_exit": 0,
+      "checker_exit": 0,
+      "elaboration": "'PivotOverlap.poly_onto' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PivotOverlap.inverseX' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PivotOverlap.inverseY' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PivotOverlap.gram_point' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PivotOverlap.center' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "replay": "replaying PivotOverlap",
+      "axioms": {
+        "PivotOverlap.poly_onto": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PivotOverlap.inverseX": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PivotOverlap.inverseY": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PivotOverlap.gram_point": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PivotOverlap.center": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "name": "OverlapMeasure",
+      "source_sha256": "84047a4ec11ba6138d957c8c2051abc008ebd6bff6b800f24ad463369991daa8",
+      "object_sha256": "b87fd1f3eddd36475ee6d6859fce5226a9704cb1e0c48537bae678c70b551642",
+      "elaboration_exit": 0,
+      "checker_exit": 0,
+      "elaboration": "'PivotOverlap.overlapHomeo' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PivotOverlap.graph_gram' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PivotOverlap.normalized_glue' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PivotOverlap.graph_measure_eq' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PivotOverlap.physical_glue' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PivotOverlap.total_masses' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "replay": "replaying OverlapMeasure",
+      "axioms": {
+        "PivotOverlap.overlapHomeo": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PivotOverlap.graph_gram": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PivotOverlap.normalized_glue": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PivotOverlap.graph_measure_eq": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PivotOverlap.physical_glue": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PivotOverlap.total_masses": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "name": "OverlapVolume",
+      "source_sha256": "ef98fa1dd64fd84015afcc5db8b950e41fe815d4dcbe74943311d20c63f5615c",
+      "object_sha256": "1714b47996622918dbc7ff5a25c433dae8987b9947d8fda7d99797f9e23cf994",
+      "elaboration_exit": 0,
+      "checker_exit": 0,
+      "elaboration": "'PivotOverlap.affine_cell' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PivotOverlap.patch_inside' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PivotOverlap.fold_iff' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PivotOverlap.fold_points' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PivotOverlap.next_digit' depends on axioms: [propext]",
+      "replay": "replaying OverlapVolume",
+      "axioms": {
+        "PivotOverlap.affine_cell": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PivotOverlap.patch_inside": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PivotOverlap.fold_iff": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PivotOverlap.fold_points": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PivotOverlap.next_digit": [
+          "propext"
+        ]
+      }
+    },
+    {
+      "name": "OverlapEndpoint",
+      "source_sha256": "5218487df30fb11730d8bc2ff6137e6b7f5d07a803ad829c89a7875a5e28bb2e",
+      "object_sha256": "aac46fb2b2c1ef7700e5c8657c71ddc26ddd18a7eac6f88ba9d94c1dca6be43d",
+      "elaboration_exit": 0,
+      "checker_exit": 0,
+      "elaboration": "'PivotOverlap.decode_transverse' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PivotOverlap.physical_slabs' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PivotOverlap.old_root_in_overlap' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PivotOverlap.previous_chart' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PivotOverlap.previous_test' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "replay": "replaying OverlapEndpoint",
+      "axioms": {
+        "PivotOverlap.decode_transverse": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PivotOverlap.physical_slabs": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PivotOverlap.old_root_in_overlap": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PivotOverlap.previous_chart": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PivotOverlap.previous_test": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "name": "TwoSlabs",
+      "source_sha256": "a17809ac898c5bff7b2196fc347fe071c7f32abc02325b6ca98744a2b002b969",
+      "object_sha256": "826a0e2ec24b16d39d642a13572583dfeeb1c80528524e0f28f666974c513aca",
+      "elaboration_exit": 0,
+      "checker_exit": 0,
+      "elaboration": "'PivotOverlap.yDelta' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PivotOverlap.yRoot' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PivotOverlap.ySlabs' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PivotOverlap.same_source_volume' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PivotOverlap.disintegrated_slab' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "replay": "replaying TwoSlabs",
+      "axioms": {
+        "PivotOverlap.yDelta": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PivotOverlap.yRoot": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PivotOverlap.ySlabs": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PivotOverlap.same_source_volume": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PivotOverlap.disintegrated_slab": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "name": "FoldImage",
+      "source_sha256": "71e55a762173727024f62151175a10e9e5e83804f3a8c3068093b72b1669b53c",
+      "object_sha256": "0ea5839a17eff0ecbed7b240e48a02f9aece251f7ef1a4675b407e90604993ba",
+      "elaboration_exit": 0,
+      "checker_exit": 0,
+      "elaboration": "'PivotOverlap.child_image' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PivotOverlap.image_digit' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PivotOverlap.pi_condition' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PivotOverlap.exactly_two' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "replay": "replaying FoldImage",
+      "axioms": {
+        "PivotOverlap.child_image": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PivotOverlap.image_digit": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PivotOverlap.pi_condition": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PivotOverlap.exactly_two": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    },
+    {
+      "name": "WideSheets",
+      "source_sha256": "bbf35356a0e2388a9a19c286fd2681c2d1c53b74532772a926af18c0504f0f86",
+      "object_sha256": "51ccdc4112db3eb94d5ee754ace63fd427ad2fafd109e1b0e056c2434358e366",
+      "elaboration_exit": 0,
+      "checker_exit": 0,
+      "elaboration": "'PivotOverlap.wideGram' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PivotOverlap.fold_cut_mass' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PivotOverlap.wide_root' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PivotOverlap.wide_section' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PivotOverlap.wide_tube' depends on axioms: [propext, Classical.choice, Quot.sound]\n'PivotOverlap.wide_units' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "replay": "replaying WideSheets",
+      "axioms": {
+        "PivotOverlap.wideGram": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PivotOverlap.fold_cut_mass": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PivotOverlap.wide_root": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PivotOverlap.wide_section": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PivotOverlap.wide_tube": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "PivotOverlap.wide_units": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      }
+    }
+  ],
+  "finite_sha256": "9bfd719363ef7316354508c473a3bf668af43059da4ce66c6b6b1b21a0f0181b",
+  "wide_sha256": "27782e006b44e58bd5f26bedfe7480281d44fad5bd7b67fbccbd6478fe29b87e"
+}

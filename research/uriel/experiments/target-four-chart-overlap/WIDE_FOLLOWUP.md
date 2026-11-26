@@ -1,0 +1,3 @@
+# Follow-up after the pivot collision
+
+The original width control found opposite roots. Before running the six-coordinate wide-box histogram, keep x and the four passive widths fixed and set 5y=8+16v. Predict from the polynomial that exactly half the normalized target cells occur and each attained target has twice the uniform source share, even after averaging over the other coordinates. Test **every** target, including both nilpotent coefficient classes, at depths 1 through 5. Calculate each summand from the physical square and use exact histogram convolution. Check total source mass, projected image mass and physical density separately. The two-sheet density is a follow-up prediction. The original overlap protocol covered detection of the collision.

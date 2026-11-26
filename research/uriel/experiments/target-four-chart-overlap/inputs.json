@@ -1,0 +1,17 @@
+{
+  "previous_commit": "d69e65e6ac84b552fd7b0f112570904abe2ebdb1",
+  "original_source": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "inherited_study": "17263859a4d27c62cfc67571737355f61a080806",
+  "TargetFourHaar": {
+    "source_sha256": "0c505033b3f86f2cfef4d4595cacf680afcf7dc91c64195c5a02376d63ec656d",
+    "object_sha256": "6b97bd939ae97e02ddb4e9dc2d421284c6c1c5308894ece58bbab13dfb2becb3"
+  },
+  "FourChart": {
+    "source_sha256": "1ec9a1226b3d66588b184b4ca5122e5dd5d84cae337235d9c58a0c611fa9d072",
+    "object_sha256": "b3f6c2e2d653f1e0f95edf29210001f8d7b58bcc611133ed348367bb07d44179"
+  },
+  "FourBoxMeasures": {
+    "source_sha256": "84e33187001658cae44e758b1f1950b6f13eb2499717f62cf723d36d6e157ef0",
+    "object_sha256": "3dda8233e7b5296fe58c1df75d293a28ddc7594bb36e3df79d0cf9c4f560f963"
+  }
+}
