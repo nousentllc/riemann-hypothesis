@@ -1,0 +1,7 @@
+# Frozen comparison
+
+Use the original square-dilate study and the 25 November readable source pin recorded in the preceding comparison. Set the scalar Haar measure of the integers to one. Use the Gaussian coordinate order with basis (1,i), the skew unit i and trace-one element 1/2 in the ambient algebra. First match the two source volumes by giving this coordinate order mass one. Also test pure target reindexing and record the dependence on changing the source volume. The integral-place structure on this order was obstructed in the preceding study.
+
+The scalar test ball is the congruence class of four modulo eight, uniformizer depth six. Freeze three predictions: transport of the scalar Haar measure by s ↦ is preserves the mass of the corresponding ball by definition; the readable split asks for twice that pushed measure when the source volumes match; the resulting regular-fiber lattice mass is then 257/256. The first ball tests the factor, but the pointwise claim also requires cofinal tubes or regular continuity and a disintegration identity.
+
+Controls: test the parent ball at depth five, the adjacent child at depth six, and deeper balls. Deliberately reverse the target factor and replace the two-coefficient dyadic quotient by a one-coefficient quotient. Retain integer counts before dividing. Distinguish the measured pushforward, the conditional value of any compatible regular family, and existence of a readable-edition family at this place.
