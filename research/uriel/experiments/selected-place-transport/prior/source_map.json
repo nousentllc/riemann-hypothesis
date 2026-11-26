@@ -1,0 +1,184 @@
+{
+  "original": {
+    "commit": "40e56bab026552e089d7afcfeff08d2defb9c005",
+    "files": [
+      {
+        "path": "src/Formalism/FrobeniusOrbits/Statement.lean",
+        "git_blob": "45d3b672d4649dd27309c092b3f9a24d279dd399",
+        "sha256": "be6f07f572e21568d41366bad89e578cb716b1bd4622b9eea7b195063465abad",
+        "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/FrobeniusOrbits/Statement.lean",
+        "lines": {
+          "def HostHyp (": 13
+        }
+      },
+      {
+        "path": "src/Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/ZsmulGeneratorEqZeroOfProjection.lean",
+        "git_blob": "d13afca4924f8b277ae89b5d1d1e38d349ad99de",
+        "sha256": "a786d25a19cde4477ce53daef71a01b55d5d44e73f55da2e64034d934bafa87d",
+        "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/ZsmulGeneratorEqZeroOfProjection.lean",
+        "lines": {
+          "structure Frame where": 15,
+          "def A0 :": 63,
+          "def o :": 70,
+          "def tau1 (": 120,
+          "def tau2 (": 122
+        }
+      },
+      {
+        "path": "src/Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/ConjEMemHostFIff.lean",
+        "git_blob": "0ab34ba6d386bb84908efe66de6ce50108eacddc",
+        "sha256": "db32b7af86f38a66881c2345572c33156fdf027b2f0b2d6c64a6775f8e970647",
+        "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/ConjEMemHostFIff.lean",
+        "lines": {
+          "structure HostRaw": 12,
+          "structure HostDer": 87,
+          "structure HostAx": 174
+        }
+      },
+      {
+        "path": "src/Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/FrameFacts.lean",
+        "git_blob": "22402e8349688ace18526a8fc486eb659a5e7450",
+        "sha256": "4b29bf3a7df92739ba0351614ac7d98ffdc73ea46c0e6c58505c91b2c3ce9e70",
+        "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/FrameFacts.lean",
+        "lines": {
+          "theorem natCard_Psi": 54,
+          "theorem natCard_cyclic_subgroup": 212,
+          "theorem cyclic_order_dvd_two_pow": 249
+        }
+      },
+      {
+        "path": "src/Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/ExplicitFormulaErrorOfHostConditions.lean",
+        "git_blob": "ed60b4b997cd4703713660b185b9e43fd95559a1",
+        "sha256": "d6b12bcbdc15c1b717c33a712474f9fca18c577a65c41fff2b2937534e5447ba",
+        "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/ExplicitFormulaErrorOfHostConditions.lean",
+        "lines": {
+          "def lam (": 135,
+          "def Shares (": 139,
+          "structure EAtH": 144
+        }
+      },
+      {
+        "path": "src/Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/TopDefs.lean",
+        "git_blob": "9c0be4e7d8d1508e725334e768a74d5837bbd851",
+        "sha256": "9741bfa9f85eee26252fdc38e0bcc46a4e065ce57f2695def4ca8463f945c850",
+        "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/TopDefs.lean",
+        "lines": {
+          "def EFamC": 15
+        }
+      },
+      {
+        "path": "src/Development/AutomorphicArithmetic/PrimitiveCosets/CoreAtH.lean",
+        "git_blob": "0ba3621036f19146e7e67fa9c0e8a1c38661a097",
+        "sha256": "cb17dfd05546ac3116b0638406cb082913e3370841a8abfab1e6498b6d4ac698",
+        "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/PrimitiveCosets/CoreAtH.lean",
+        "lines": {
+          "def CoreAtH": 29
+        }
+      },
+      {
+        "path": "src/Development/AutomorphicArithmetic/PrimitiveCosets/CoreGm.lean",
+        "git_blob": "3ba7a590e84c5993882ea6c5dcf9fdbed5f07d4d",
+        "sha256": "73abeaad38ed40bde0c2f974f53cae9d851e72d23ae389dea129b2bbddc58bc8",
+        "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/PrimitiveCosets/CoreGm.lean",
+        "lines": {
+          "theorem UpperTheory.Comparison₂.core_gm": 12
+        }
+      },
+      {
+        "path": "src/Development/AutomorphicArithmetic/PrimitiveCosets/LevelGmLeOnFamilyScales.lean",
+        "git_blob": "de994949e6fd2d7238cfcb1c19d361ccdfe904fc",
+        "sha256": "978ad99fd0d9e2dc25af57715030516195b629ccd9d5a114451fc5402f1d1426",
+        "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/PrimitiveCosets/LevelGmLeOnFamilyScales.lean",
+        "lines": {
+          "theorem tiedCore_of_chainTied": 13
+        }
+      },
+      {
+        "path": "src/Development/AutomorphicArithmetic/PrimitiveCosets/WindowInequalityOfArtinInputs.lean",
+        "git_blob": "c349e34925ac26b8bc76bd36e9b91562f86d6b8d",
+        "sha256": "02d09bb042cbcb56956053a9a4ca75302f5a2cc93583f299005078f4656826aa",
+        "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/PrimitiveCosets/WindowInequalityOfArtinInputs.lean",
+        "lines": {
+          "theorem windowInequality_of_artinInputs": 17
+        }
+      },
+      {
+        "path": "src/Formalism/SharpRestriction/GlobalSchurBounds/TieGlobal.lean",
+        "git_blob": "00acf811793877fe42d18c0d69f2d5833f75bf94",
+        "sha256": "065799d1ade7de2b196ce5fc384596059f85f5ea952b5582f5040b2807c65b6d",
+        "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/SharpRestriction/GlobalSchurBounds/TieGlobal.lean",
+        "lines": {
+          "def ChainTied": 97
+        }
+      },
+      {
+        "path": "src/Formalism/TameInertiaTowers/StatementGroup.lean",
+        "git_blob": "a9c329cd4a0a439dd75bfd7dc0271715ee27f0c0",
+        "sha256": "bbb8ec2bfe8e048ab04370e7a5cb870e10a636b0f0c84f47092b309c35e25b87",
+        "url": "https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/TameInertiaTowers/StatementGroup.lean",
+        "lines": {
+          "powMonoidHom 2": 72
+        }
+      }
+    ]
+  },
+  "readable": {
+    "commit": "e063a923620ee7787b4a1270421478645bf66bdb",
+    "files": [
+      {
+        "path": "src/New/Reduction/OneSidedBound.lean",
+        "git_blob": "4e4862474e15d136c65859e30c6f29c47d68db64",
+        "sha256": "6afc6dd47b3869e3358eb05b4e91f218f17fecb29db109ea3505f1ee368db436",
+        "url": "https://github.com/leanprover-community/riemann-hypothesis/blob/e063a923620ee7787b4a1270421478645bf66bdb/src/New/Reduction/OneSidedBound.lean",
+        "lines": {
+          "lemma Data.primeRemainder_le": 33,
+          "lemma eventually_exists_data_scales": 74
+        }
+      },
+      {
+        "path": "src/New/Reduction/Data/AdmissibleData.lean",
+        "git_blob": "48f73664d37f8b5036fcff2bf642d7be5e259907",
+        "sha256": "f64804a3908b3d29df7bda7d0a329430f8fd08861d2f015b818ad4446f6a6812",
+        "url": "https://github.com/leanprover-community/riemann-hypothesis/blob/e063a923620ee7787b4a1270421478645bf66bdb/src/New/Reduction/Data/AdmissibleData.lean",
+        "lines": {
+          "def New.Parameters.IsSparse": 58,
+          "structure New.Data": 77,
+          "bPlaces : Finset": 126,
+          "def aPlaces :": 238
+        }
+      },
+      {
+        "path": "src/New/Reduction/Data/FieldsAndPlaces.lean",
+        "git_blob": "8b0a085a2f5aaa75d02863607df1dc7f304018fc",
+        "sha256": "df940fe06c57a68e551593ce181988f07e97b7952dcbdafb8615359304c34dd3",
+        "url": "https://github.com/leanprover-community/riemann-hypothesis/blob/e063a923620ee7787b4a1270421478645bf66bdb/src/New/Reduction/Data/FieldsAndPlaces.lean",
+        "lines": {
+          "structure New.Parameters": 64,
+          "def _root_.New.towerDeg": 103,
+          "lemma _root_.New.towerDeg_eq": 106,
+          "def placeMulEquiv": 282,
+          "lemma card_placeClass_eq_one_eq_towerDeg": 362
+        }
+      },
+      {
+        "path": "src/New/Reduction/PrimeSums.lean",
+        "git_blob": "3151f03f8b7e471d0b8ca347d4364a95cec6c89e",
+        "sha256": "b4c7635a7c0e9ab604312e85615d2a580b9dd6ed0cd98c1d7f18edf2522b5cfe",
+        "url": "https://github.com/leanprover-community/riemann-hypothesis/blob/e063a923620ee7787b4a1270421478645bf66bdb/src/New/Reduction/PrimeSums.lean",
+        "lines": {
+          "lemma card_aPlaces :": 79,
+          "lemma mem_aPlaces_iff_of_mul_mem_bPlaces": 89
+        }
+      },
+      {
+        "path": "src/Lib/General/NumberTheory/EmbeddingsAndDifferent.lean",
+        "git_blob": "1284200241f38d91ca84cee8a9d0ead5d01bab1d",
+        "sha256": "377014726c272ea9aaa39f8a24b89ca7a9b2396cf633666b686d9df394cdfa4e",
+        "url": "https://github.com/leanprover-community/riemann-hypothesis/blob/e063a923620ee7787b4a1270421478645bf66bdb/src/Lib/General/NumberTheory/EmbeddingsAndDifferent.lean",
+        "lines": {
+          "lemma finrank_eq_two_mul_card_infinitePlace": 79
+        }
+      }
+    ]
+  }
+}

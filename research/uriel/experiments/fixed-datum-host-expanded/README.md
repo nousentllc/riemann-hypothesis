@@ -2,6 +2,8 @@
 
 ## Expanded second edition
 
+**Follow-through.** The [selected-place study](../selected-place-transport/) checks the stronger original Host record on the compatible branch. The prime 11 passes the five prime conditions and fails the full host rank condition. Every full host retaining d=9239 has at most 44 signed indices, which rules out an injection on the actual selected readable set.
+
 [Paper](Recovering_the_Arithmetic_Witness_Expanded.pdf) · [Single editable LuaLaTeX source](Recovering_the_Arithmetic_Witness_Expanded.tex) · [Complete ZIP](Nous_Fixed_Datum_Host_Expanded.zip) · [First edition](../fixed-datum-host/) · [Earlier architecture paper](../window-remainder-architecture/)
 
 The readable parameters support the original five prime conditions for some auxiliary prime **exactly when 32 does not divide the readable modulus**. In every passing case, 11 works. This classification replaces the first edition’s one-sided obstruction and single compatible example. Choosing 11 also prevents the readable modulus from dividing the old conductor component QS. The theorem stops before the construction of the old host.
