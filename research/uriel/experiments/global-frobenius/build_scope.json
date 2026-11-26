@@ -1,0 +1,12 @@
+{
+  "original_pin": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "full_original_build_run": false,
+  "method": "Recursively scan explicit import declarations in the pinned original source, stopping where a required original module already has an object in the prepared import tree. Counts exclude Mathlib and are cache-relative estimates, not a build plan or timing benchmark.",
+  "examples": [
+    {"source_theorem": "UpperTheory.Lit.linnik", "module_suffix": "ThetaCorrespondence.Linnik", "missing_original_modules": 160},
+    {"source_theorem": "UpperTheory.Top.supplyChi", "module_suffix": "CharacterBoxes.SupplyChi", "missing_original_modules": 235},
+    {"source_theorem": "UpperTheory.One.vwin_of_row", "module_suffix": "DenseThresholdCases.VwinOfRow", "missing_original_modules": 156228}
+  ],
+  "independent_upstream_verification": "https://math.mit.edu/~drew/grh/",
+  "replayed": "Six research modules and the native PrimesInProgressionNonempty interface. Prepared original objects and compiled Mathlib were used as imports."
+}

@@ -1,0 +1,57 @@
+{
+  "original": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "lean": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "interface_rebuilt": {
+    "module": "Development.AbelianVarietyTheory.PublishedTheorems.PublishedFoundations.PrimesInProgressionNonempty",
+    "source_sha256": "3149d341e4a85b97c92f842629e012afdb3c3fceb959a044ccd7c2b205864be4",
+    "object_sha256": "ef7e828697f3364575ad51099ba1f7b61428a7bf0c3d8826b5d19c998efd01e1",
+    "elaboration": "Development/AbelianVarietyTheory/PublishedTheorems/PublishedFoundations/PrimesInProgressionNonempty.lean:15:2: warning: Try this: \n  haveI\u0335\n\nThe goal is a proposition, so `have` is preferred over `haveI`.\nThe difference between `have` and `haveI` is that `haveI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`",
+    "kernel": "replaying Development.AbelianVarietyTheory.PublishedTheorems.PublishedFoundations.PrimesInProgressionNonempty"
+  },
+  "modules": [
+    {
+      "module": "DyadicWitness",
+      "source_sha256": "9cec63b3fec44a315a02ea5092b58b53e0b8b95960df417c9b86073ebebdc129",
+      "object_sha256": "c0f116d71a37e0c7749bf5f581badb99b6790324d9f6e80012fb34833a670648",
+      "elaboration": "'GlobalFrobenius.dyadic_coset_two_odd' depends on axioms: [propext, Classical.choice, Quot.sound]\n'GlobalFrobenius.exists_coset_above' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "kernel": "replaying DyadicWitness"
+    },
+    {
+      "module": "HostArtin",
+      "source_sha256": "5389ed19eeb5223b82400d0c845cc3724454da241f1462c0a64b4af137515ddd",
+      "object_sha256": "0cba5935461be3276a9b2c0c7fadc04e76a123e0c9cdae98e77763c848fdd46c",
+      "elaboration": "'GlobalFrobenius.inert_step_of_artin_class' depends on axioms: [propext, Classical.choice, Quot.sound]\n'GlobalFrobenius.exists_inert_prime_step' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "kernel": "replaying HostArtin"
+    },
+    {
+      "module": "SameSetHost",
+      "source_sha256": "5f7391e47bc3c6bf1d1f34e1a14a955e992cb84cde639cdb0559e7c05618a8bb",
+      "object_sha256": "035904eb3108a086bba8f6bfa8b30a95b1b3bfabaaed33abf76ff077618e96fe",
+      "elaboration": "'GlobalFrobenius.original_partner_inert' depends on axioms: [propext, Classical.choice, Quot.sound]\n'GlobalFrobenius.host_step_two_odd' depends on axioms: [propext, Classical.choice, Quot.sound]\n'GlobalFrobenius.actual_mask_two_odd' depends on axioms: [propext, Classical.choice, Quot.sound]\n'GlobalFrobenius.retained_at_least_half_square' depends on axioms: [propext, Classical.choice, Quot.sound]\n'GlobalFrobenius.enough_for_long_order' depends on axioms: [propext, Classical.choice, Quot.sound]\n'GlobalFrobenius.cofinal_original_hosts_two_odd' depends on axioms: [propext, Classical.choice, Quot.sound]\n'GlobalFrobenius.hostGood_of_new_retention' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "kernel": "replaying SameSetHost"
+    },
+    {
+      "module": "SelectorIntersection",
+      "source_sha256": "dcee1a9e6b789cf54766c3c27023e6c604acad1d0898ca60edce142cff7c0450",
+      "object_sha256": "eb258d348c5c91618ef353a9e727c3c5e4208683b1625717928d25bedf3227f8",
+      "elaboration": "'GlobalFrobenius.choose_with_event' depends on axioms: [propext, Classical.choice, Quot.sound]\n'GlobalFrobenius.some_collision_not_bad' depends on axioms: [propext, Classical.choice, Quot.sound]\n'GlobalFrobenius.keep_original_budget' depends on axioms: [propext, Classical.choice, Quot.sound]\n'GlobalFrobenius.half_mean_failure' depends on axioms: [propext, Classical.choice, Quot.sound]\n'GlobalFrobenius.weighted_good_collision' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "kernel": "replaying SelectorIntersection"
+    },
+    {
+      "module": "PrimeCutoff",
+      "source_sha256": "2edfba550806553a8cd7fb4defa1011c14a61bb503080e7b6269b3adb9f17318",
+      "object_sha256": "c8da36f9061c5521f4b57ae99fc3eebd3fa92f0778248dd4153985f424225c69",
+      "elaboration": "'GlobalFrobenius.polynomial_room' depends on axioms: [propext, Classical.choice, Quot.sound]\n'GlobalFrobenius.bounded_inert_step' depends on axioms: [propext, Classical.choice, Quot.sound]\n'GlobalFrobenius.cofinal_below_cutoff' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "kernel": "replaying PrimeCutoff"
+    },
+    {
+      "module": "RampBudget",
+      "source_sha256": "69b515c1b8c6c06f1f5caf65f2ea824c107782aa9a2bb8e718cd818db8c848eb",
+      "object_sha256": "e9cad471adf625fd39a8f4bb7ffa366572ada7330665847794c482a905e81891",
+      "elaboration": "'GlobalFrobenius.ramp_difference_bounds' depends on axioms: [propext, Classical.choice, Quot.sound]\n'GlobalFrobenius.nonprincipal_cancellation' depends on axioms: [propext, Classical.choice, Quot.sound]\n'GlobalFrobenius.principal_cancellation' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "kernel": "replaying RampBudget"
+    }
+  ],
+  "scope": "Prepared original project objects. The host supply and Linnik are exact original proposition inputs of the combined Lean theorem; their upstream proofs are source-traced."
+}
