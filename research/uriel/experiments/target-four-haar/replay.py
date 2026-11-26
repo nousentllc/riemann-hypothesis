@@ -1,4 +1,4 @@
-"""Repeat the exact finite checks, and optionally elaborate and kernel-check this module."""
+"""Repeat the exact finite checks, and optionally replay the original or valuation certificate."""
 
 import argparse
 from hashlib import sha256
@@ -16,10 +16,34 @@ def digest(path):
     return sha256(path.read_bytes()).hexdigest()
 
 
+def replay_valuation(root, sdk):
+    source = root / "ValuationLedger.lean"
+    version = subprocess.check_output([sdk / "bin/lean", "--version"], text=True).strip()
+    if "819816b2e0a3" not in version:
+        raise ValueError("Unexpected Lean revision")
+    result = dict(compiler=version, source_sha256=digest(source), commands=[])
+    with tempfile.TemporaryDirectory() as temp:
+        shutil.copyfile(source, Path(temp) / source.name)
+        env = dict(os.environ, LEAN_SYSROOT=str(sdk), LEAN_PATH=temp)
+        for cmd in (["lean","-j1","-o","ValuationLedger.olean",source.name],
+                    ["leanchecker","-v","ValuationLedger"]):
+            run = subprocess.run([sdk / "bin" / cmd[0], *cmd[1:]], cwd=temp, env=env,
+                                 text=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+            if run.returncode or "sorryAx" in run.stdout:
+                raise ValueError(run.stdout)
+            result["commands"].append(dict(command=cmd, exit=run.returncode, output=run.stdout.strip()))
+    expected = json.loads((root / "valuation_replay.json").read_text())
+    if result != expected:
+        raise ValueError("Valuation module, axiom queries or checker output differ from the release")
+    return result
+
+
 def main():
     root = Path(__file__).resolve().parent
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--lean", action="store_true")
+    mode = parser.add_mutually_exclusive_group()
+    mode.add_argument("--lean", action="store_true")
+    mode.add_argument("--valuation-lean", action="store_true")
     parser.add_argument("--sdk", type=Path, default=Path("/private/tmp/lean-4.33.1-darwin_aarch64"))
     parser.add_argument("--mathlib", type=Path, default=Path("/private/tmp/uriel-rh-mathlib4331"))
     parser.add_argument("--study", type=Path, default=Path("/private/tmp/nous-ramdilates/fresh"))
@@ -35,6 +59,16 @@ def main():
     center = next(row for row in fresh["balls"] if row["depth"] == 6)
     if certificate["children"] != [center["count"], center["companion_count"]]:
         raise ValueError("The independent depth-six computations disagree")
+    census = json.loads(subprocess.check_output([sys.executable, "-B", root / "valuation_census.py"]))
+    if census != json.loads((root / "valuation_counts.json").read_text()):
+        raise ValueError("Valuation census differs from the published counts")
+    print("All 18 entries agree at uniformizer depths 8, 9 and 10.")
+    if args.valuation_lean:
+        ledger = replay_valuation(root, args.sdk.resolve())
+        if args.receipt:
+            args.receipt.write_text(json.dumps(ledger, indent=2) + "\n")
+        print("Kernel replayed the primitive finite census and exact table scaling.")
+        return
     if not args.lean:
         print("Seven exact six-square censuses and nine split-map controls agree. The independent character certificate matches both children.")
         return

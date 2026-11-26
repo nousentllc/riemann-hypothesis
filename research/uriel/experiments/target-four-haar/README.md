@@ -6,6 +6,14 @@ Take the regular fiber at four for the rank-three Gaussian identity form at the 
 
 The split sends (is,it) to s/2 + it. In the test rectangle above the scalar inverse image of O under s ↦ s/2 is 2O. Its index in O is four. Each copy of the skew Haar therefore needs a factor two for the split to preserve the matched Gaussian volume. The half change in fiber mass compensates exactly. The conditional probabilities that a vector above the depth-five parent lands in its two children are 257/512 and 255/512 in both conventions.
 
+## Where the target-four mass lies
+
+Section 2 of the revised manuscript measures the whole lattice by the first coordinate attaining the minimum valuation. The three rows contribute **15/8, 1/8 and 1/128**. The last row consists precisely of target-four vectors divisible coordinatewise by 2 and accounts for the entire excess over 2. The section also gives the two-pivot overlap as a local lemma, with the metric slope and the Haar volume factor distinguished.
+
+[Finite primitive certificate](ValuationLedger.lean) · [Kernel receipt](valuation_replay.json) · [Physical residue census](valuation_census.py) · [All 18 raw counts at depths 8, 9 and 10](valuation_counts.json) · [Archived chart derivation](https://github.com/nousentllc/riemann-hypothesis/tree/a4cdffe5be81baa134fc9c82219481e0070fc09c/research/uriel/experiments/target-four-chart-overlap)
+
+The finite certificate checks all 32 residues at primitive uniformizer depth five, the restricted convolutions and the exact scaling arithmetic. The passage to the limiting measure uses a written proof that pairs the two next target digits in each fixed first-unit stratum and applies continuity to compact-open tests. The earlier seven chart modules have their own replay receipt at the linked commit. A full RH build was outside the scope of the revision.
+
 ## Evidence and limitations
 
 * [New Lean module](TargetFourHaar.lean) and [kernel receipt](lean_receipt.json). Fresh Lean 4.33.1 elaboration and standalone replay cover the split, the literal skew-ball measures, cofinal point identification and a rescaled regular family on the original named completion. Each of 23 axiom queries returned only propext, Classical.choice and Quot.sound.
@@ -21,7 +29,7 @@ Run the finite calculations from the extracted directory with Python 3 and its s
 python3 -B replay.py
 ```
 
-The runner checks both calculations against the public JSON files and compares their depth-six counts. To rerun the Lean stage, obtain the Lean 4.33.1 SDK at 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, built Mathlib at 0df444a360eaa60ab8c11dca51a86af692955474, and the original and study dependencies. The [square-dilate release](https://github.com/nousentllc/riemann-hypothesis/tree/17263859a4d27c62cfc67571737355f61a080806/research/uriel/experiments/ramified-square-dilates) contains the sources, import inventories and restoration commands. When rebuilding that release use its verification/replay.py with --work to retain the study objects. The present archive supplies the new module and the receipts. Compiled dependencies for both stages are external.
+The runner checks the archived numerical calculations and compares the two original depth-six counts. To repeat the section 2 kernel check, run `python3 -B replay.py --valuation-lean --sdk "$LEAN_SDK"` with the pinned Lean SDK. This small certificate imports only Init. To rerun the Lean stage, obtain the Lean 4.33.1 SDK at 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, built Mathlib at 0df444a360eaa60ab8c11dca51a86af692955474, and the original and study dependencies. The [square-dilate release](https://github.com/nousentllc/riemann-hypothesis/tree/17263859a4d27c62cfc67571737355f61a080806/research/uriel/experiments/ramified-square-dilates) contains the sources, import inventories and restoration commands. When rebuilding that release use its verification/replay.py with --work to retain the study objects. The present archive supplies the new module and the receipts. Compiled dependencies for both stages are external.
 
 ```sh
 python3 -B replay.py --lean --sdk "$LEAN_SDK" --mathlib "$MATHLIB_CHECKOUT" \
