@@ -1,0 +1,5 @@
+# Frozen test at the regular target four
+
+Use the two source pins and the matched vector Haar from the 4be0229 release. Work near the vector (2,0,0,0,0,0) with all six entries in their indicated residue classes modulo eight. In scaled coordinates write x₀=2+8u and xⱼ=8wⱼ. Predict a reversible, continuous pivot in u at every target in 4+32O without an integral trace-one element. Compare with the readable hyperbolic chart formula and identify the precise level of any connection.
+
+For a centered vector box of width 2ᵐO with m=3,4 predict original and skew densities 16·4⁻⁵ᵐ and 8·4⁻⁵ᵐ at four. Test transverse restrictions, a translated pivot child missing four, and the immediately coarser target precision where the missing child can still contribute to one averaged slab. Guard against imposing an equal share on every child. Seek exact all-depth proofs and a finite experiment using original coordinates independent of the formal inverse. Record any remaining readable-source instance and normalization obligations.

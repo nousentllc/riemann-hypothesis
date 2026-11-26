@@ -1,0 +1,404 @@
+{
+  "compiler": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "original": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "study": "17263859a4d27c62cfc67571737355f61a080806",
+  "imported": {
+    "DilateStableOddAll": "1f5b2e4321b0fe1fa7cc0bcba77e86d7d579a39052a19aea95a3f4e0b75dd432",
+    "DilateEndpoint": "82673912cad0691f7f9626683e8df4fa1a0e6035b909fba6adf83e2bdd9e6175",
+    "RamFieldIntegers": "58675b7096c9edaa2731f3803d5c3492d1fdec548039e9207283a080c602e2e5",
+    "RamBasePivot": "c962e3d415ab449d9335e0f2c4453eacac53168696cddedd3f7bea9b2a2f15b0"
+  },
+  "counts_sha256": "cf94d7eaf89ea1d346cdd87ce587c43f34e2e0f7bd4e182fc73ca3ec2cffefc8",
+  "modules": [
+    {
+      "module": "TargetFourHaar",
+      "source_sha256": "0c505033b3f86f2cfef4d4595cacf680afcf7dc91c64195c5a02376d63ec656d",
+      "object_sha256": "6b97bd939ae97e02ddb4e9dc2d421284c6c1c5308894ece58bbab13dfb2becb3",
+      "queries": {
+        "TargetFourHaar.putI_skew": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "TargetFourHaar.split_coordinates": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "TargetFourHaar.half_preimage": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "TargetFourHaar.half_push": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "TargetFourHaar.split_push": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "TargetFourHaar.split_matched": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "TargetFourHaar.ball_mass": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "TargetFourHaar.tail_tube": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "TargetFourHaar.ball_four": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "TargetFourHaar.scaling_law": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "TargetFourHaar.integral_compensation": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "TargetFourHaar.named_regular_value": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "TargetFourHaar.skewCoord": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "TargetFourHaar.literal_skew_ball": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "TargetFourHaar.identify_regular": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "TargetFourHaar.split_scaled": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "TargetFourHaar.forced_target": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "TargetFourHaar.candidate_at_four": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "TargetFourHaar.skew_candidate_at_four": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "TargetFourHaar.rescale_regular_family": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "TargetFourHaar.zeta_order_no_trace_one": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "TargetFourHaar.realized_rescaled": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "TargetFourHaar.pure_relabel_fails_split": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "commands": [
+        {
+          "command": [
+            "lean",
+            "-j1",
+            "-o",
+            "TargetFourHaar.olean",
+            "TargetFourHaar.lean"
+          ],
+          "exit": 0,
+          "output": "'TargetFourHaar.putI_skew' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TargetFourHaar.split_coordinates' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TargetFourHaar.half_preimage' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TargetFourHaar.half_push' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TargetFourHaar.split_push' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TargetFourHaar.split_matched' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TargetFourHaar.ball_mass' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TargetFourHaar.tail_tube' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TargetFourHaar.ball_four' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TargetFourHaar.scaling_law' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TargetFourHaar.integral_compensation' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TargetFourHaar.named_regular_value' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TargetFourHaar.skewCoord' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TargetFourHaar.literal_skew_ball' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TargetFourHaar.identify_regular' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TargetFourHaar.split_scaled' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TargetFourHaar.forced_target' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TargetFourHaar.candidate_at_four' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TargetFourHaar.skew_candidate_at_four' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TargetFourHaar.rescale_regular_family' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TargetFourHaar.zeta_order_no_trace_one' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TargetFourHaar.realized_rescaled' depends on axioms: [propext, Classical.choice, Quot.sound]\n'TargetFourHaar.pure_relabel_fails_split' depends on axioms: [propext, Classical.choice, Quot.sound]"
+        },
+        {
+          "command": [
+            "leanchecker",
+            "-v",
+            "TargetFourHaar"
+          ],
+          "exit": 0,
+          "output": "replaying TargetFourHaar"
+        }
+      ]
+    },
+    {
+      "module": "FourChart",
+      "source_sha256": "1ec9a1226b3d66588b184b4ca5122e5dd5d84cae337235d9c58a0c611fa9d072",
+      "object_sha256": "b3f6c2e2d653f1e0f95edf29210001f8d7b58bcc611133ed348367bb07d44179",
+      "queries": {
+        "FourChart.pivot_surjective": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "FourChart.chart_equation": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "FourChart.graph_skew": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "FourChart.delta_norm": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "FourChart.slab_mass": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "commands": [
+        {
+          "command": [
+            "lean",
+            "-j1",
+            "-o",
+            "FourChart.olean",
+            "FourChart.lean"
+          ],
+          "exit": 0,
+          "output": "'FourChart.pivot_surjective' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FourChart.chart_equation' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FourChart.graph_skew' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FourChart.delta_norm' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FourChart.slab_mass' depends on axioms: [propext, Classical.choice, Quot.sound]"
+        },
+        {
+          "command": [
+            "leanchecker",
+            "-v",
+            "FourChart"
+          ],
+          "exit": 0,
+          "output": "replaying FourChart"
+        }
+      ]
+    },
+    {
+      "module": "GaussianFrame",
+      "source_sha256": "f1b6dc3f3de8d74724bb53d2fe4c1619b834726445520289e0e6514491da37b5",
+      "object_sha256": "4346dfb0a9b68a6246104b1fad928ce4af5ced393eb217d750a021b92506aff5",
+      "queries": {
+        "GaussianFrame.gram_frame": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "GaussianFrame.det_frame": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "GaussianFrame.central_vector": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "GaussianFrame.pullback": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "commands": [
+        {
+          "command": [
+            "lean",
+            "-j1",
+            "-o",
+            "GaussianFrame.olean",
+            "GaussianFrame.lean"
+          ],
+          "exit": 0,
+          "output": "GaussianFrame.lean:35:22: warning: This simp argument is unused:\n  QuadraticAlgebra.re_ofNat\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [hc, QuadraticAlgebra.im_ofNat]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\nGaussianFrame.lean:35:48: warning: This simp argument is unused:\n  QuadraticAlgebra.im_ofNat\n\nHint: Omit it from the simp argument list.\n  [apply] simp only [hc, QuadraticAlgebra.re_ofNat]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\nGaussianFrame.lean:35:75: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\n\nNote: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`\nGaussianFrame.lean:39:14: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\n\nNote: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`\nGaussianFrame.lean:39:37: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\n\nNote: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`\nGaussianFrame.lean:47:0: warning: automatically included section variable(s) unused in theorem `GaussianFrame.pullback`:\n  [CharZero K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [CharZero K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`\n'GaussianFrame.gram_frame' depends on axioms: [propext, Classical.choice, Quot.sound]\n'GaussianFrame.det_frame' depends on axioms: [propext, Classical.choice, Quot.sound]\n'GaussianFrame.central_vector' depends on axioms: [propext, Classical.choice, Quot.sound]\n'GaussianFrame.pullback' depends on axioms: [propext, Classical.choice, Quot.sound]"
+        },
+        {
+          "command": [
+            "leanchecker",
+            "-v",
+            "GaussianFrame"
+          ],
+          "exit": 0,
+          "output": "replaying GaussianFrame"
+        }
+      ]
+    },
+    {
+      "module": "FourBoxMeasures",
+      "source_sha256": "84e33187001658cae44e758b1f1950b6f13eb2499717f62cf723d36d6e157ef0",
+      "object_sha256": "3dda8233e7b5296fe58c1df75d293a28ddc7594bb36e3df79d0cf9c4f560f963",
+      "queries": {
+        "FourChart.iso_preserves": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "FourChart.normalized_preserves": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "FourChart.graph_support": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "FourChart.factor_two": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "FourChart.measured_box": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "commands": [
+        {
+          "command": [
+            "lean",
+            "-j1",
+            "-o",
+            "FourBoxMeasures.olean",
+            "FourBoxMeasures.lean"
+          ],
+          "exit": 0,
+          "output": "'FourChart.iso_preserves' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FourChart.normalized_preserves' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FourChart.graph_support' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FourChart.factor_two' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FourChart.measured_box' depends on axioms: [propext, Classical.choice, Quot.sound]"
+        },
+        {
+          "command": [
+            "leanchecker",
+            "-v",
+            "FourBoxMeasures"
+          ],
+          "exit": 0,
+          "output": "replaying FourBoxMeasures"
+        }
+      ]
+    },
+    {
+      "module": "FourBoxEndpoints",
+      "source_sha256": "f8062577d2fe2963403f83e61e9ca1df3f08b2a86ccbe15c6fca63b7e020b36e",
+      "object_sha256": "613059e85af461d848151aac26ad4997522f06eacadad0abbb287e30d1cbb00f",
+      "queries": {
+        "FourChart.exact_boxes": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "FourChart.target_slab_law": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "FourChart.nearby_slabs": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "FourChart.missing_mass": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "FourChart.sqrt_minus_seven": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "commands": [
+        {
+          "command": [
+            "lean",
+            "-j1",
+            "-o",
+            "FourBoxEndpoints.olean",
+            "FourBoxEndpoints.lean"
+          ],
+          "exit": 0,
+          "output": "'FourChart.exact_boxes' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FourChart.target_slab_law' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FourChart.nearby_slabs' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FourChart.missing_mass' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FourChart.sqrt_minus_seven' depends on axioms: [propext, Classical.choice, Quot.sound]"
+        },
+        {
+          "command": [
+            "leanchecker",
+            "-v",
+            "FourBoxEndpoints"
+          ],
+          "exit": 0,
+          "output": "replaying FourBoxEndpoints"
+        }
+      ]
+    },
+    {
+      "module": "FourFramePivot",
+      "source_sha256": "bdce73c78ac1e262eb79577f2ea2ed648abe6d38d6719848659008901f707e5b",
+      "object_sha256": "ae21e0ae9a7a4fbe9d2adda7119e1501b0c065caba0e8548ad31fb834ae2c128",
+      "queries": {
+        "FourChart.original_patch_unit": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "commands": [
+        {
+          "command": [
+            "lean",
+            "-j1",
+            "-o",
+            "FourFramePivot.olean",
+            "FourFramePivot.lean"
+          ],
+          "exit": 0,
+          "output": "FourFramePivot.lean:33:20: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\n\nNote: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`\nFourFramePivot.lean:39:49: warning: This simp argument is unused:\n  QuadraticAlgebra.re_star\n\nHint: Omit it from the simp argument list.\n  [apply] simp [framePivot, includeGaussian, u, v, QuadraticAlgebra.im_star, QuadraticAlgebra.re_ofNat,\n    QuadraticAlgebra.im_ofNat, QuadraticAlgebra.re_mul, QuadraticAlgebra.im_mul, show ((2 : D) : K) = 2 by rfl]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\nFourFramePivot.lean:39:74: warning: This simp argument is unused:\n  QuadraticAlgebra.im_star\n\nHint: Omit it from the simp argument list.\n  [apply] simp [framePivot, includeGaussian, u, v, QuadraticAlgebra.re_star, QuadraticAlgebra.re_ofNat,\n    QuadraticAlgebra.im_ofNat, QuadraticAlgebra.re_mul, QuadraticAlgebra.im_mul, show ((2 : D) : K) = 2 by rfl]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\n'FourChart.original_patch_unit' depends on axioms: [propext, Classical.choice, Quot.sound]"
+        },
+        {
+          "command": [
+            "leanchecker",
+            "-v",
+            "FourFramePivot"
+          ],
+          "exit": 0,
+          "output": "replaying FourFramePivot"
+        }
+      ]
+    }
+  ]
+}

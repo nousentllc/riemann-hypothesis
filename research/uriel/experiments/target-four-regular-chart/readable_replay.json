@@ -1,0 +1,169 @@
+{
+  "compiler": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+  "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "readable": "e063a923620ee7787b4a1270421478645bf66bdb",
+  "reused_imports": 27,
+  "imported_manifest_sha256": "2e7a29078ae6d573364f1a8b44a05349b596f2cebd48058a9ec4f79bc4ef0da7",
+  "upstream": {
+    "module": "Lib.General.Measure.QuadricDisintegration",
+    "source_sha256": "d8da4b8f83ff3b107fee29550fa62b2aab7f99d4dd8773151382e6de3d9389bc",
+    "object_sha256": "18ad5b9a4b3d1ffa163e475318e62e018daae82e8885fc6fe2aa9624150d5b34",
+    "commands": [
+      {
+        "command": [
+          "lean",
+          "-j1",
+          "--tstack=400000",
+          "-o",
+          "Lib/General/Measure/QuadricDisintegration.olean",
+          "Lib/General/Measure/QuadricDisintegration.lean"
+        ],
+        "exit": 0,
+        "output": ""
+      },
+      {
+        "command": [
+          "leanchecker",
+          "-v",
+          "Lib.General.Measure.QuadricDisintegration"
+        ],
+        "exit": 0,
+        "output": "replaying Lib.General.Measure.QuadricDisintegration"
+      }
+    ]
+  },
+  "modules": [
+    {
+      "module": "GaussianFrame",
+      "source_sha256": "f1b6dc3f3de8d74724bb53d2fe4c1619b834726445520289e0e6514491da37b5",
+      "object_sha256": "869e779c1550cdcc6498a7cb5e35ec55b3f691fac3600469a28476c7d28d898e",
+      "queries": {
+        "GaussianFrame.gram_frame": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "GaussianFrame.det_frame": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "GaussianFrame.central_vector": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "GaussianFrame.pullback": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "commands": [
+        {
+          "command": [
+            "lean",
+            "-j1",
+            "-o",
+            "GaussianFrame.olean",
+            "GaussianFrame.lean"
+          ],
+          "exit": 0,
+          "output": "GaussianFrame.lean:35:75: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`\nGaussianFrame.lean:39:14: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\n\nNote: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`\nGaussianFrame.lean:39:37: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\n\nNote: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`\nGaussianFrame.lean:39:14: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`\nGaussianFrame.lean:39:37: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`\nGaussianFrame.lean:47:0: warning: automatically included section variable(s) unused in theorem `GaussianFrame.pullback`:\n  [CharZero K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [CharZero K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`\n'GaussianFrame.gram_frame' depends on axioms: [propext, Classical.choice, Quot.sound]\n'GaussianFrame.det_frame' depends on axioms: [propext, Classical.choice, Quot.sound]\n'GaussianFrame.central_vector' depends on axioms: [propext, Classical.choice, Quot.sound]\n'GaussianFrame.pullback' depends on axioms: [propext, Classical.choice, Quot.sound]"
+        },
+        {
+          "command": [
+            "leanchecker",
+            "-v",
+            "GaussianFrame"
+          ],
+          "exit": 0,
+          "output": "replaying GaussianFrame"
+        }
+      ]
+    },
+    {
+      "module": "ReadableFourChart",
+      "source_sha256": "1fa21f7723e4527f2bb1fa7fb798c4aeee7a056f7029158adcc4bbfc897bc99a",
+      "object_sha256": "aca9af4aeb15746dbe0c250614b94ed222458eebce000449ae6d283075b1c34d",
+      "queries": {
+        "ReadableFourChart.literal": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ReadableFourChart.form": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ReadableFourChart.four_chart": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "commands": [
+        {
+          "command": [
+            "lean",
+            "-j1",
+            "-o",
+            "ReadableFourChart.olean",
+            "ReadableFourChart.lean"
+          ],
+          "exit": 0,
+          "output": "ReadableFourChart.lean:48:75: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\n\nNote: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`\nReadableFourChart.lean:48:75: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.\n\nNote: This linter can be disabled with `set_option linter.unusedTactic false`\nReadableFourChart.lean:50:0: warning: automatically included section variable(s) unused in theorem `ReadableFourChart.target_decode`:\n  [CharZero K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [CharZero K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`\nReadableFourChart.lean:52:36: warning: This simp argument is unused:\n  QuadraticAlgebra.re_mul\n\nHint: Omit it from the simp argument list.\n  [apply] simp [imaginary, hermitian, QuadraticAlgebra.im_mul]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\nReadableFourChart.lean:52:60: warning: This simp argument is unused:\n  QuadraticAlgebra.im_mul\n\nHint: Omit it from the simp argument list.\n  [apply] simp [imaginary, hermitian, QuadraticAlgebra.re_mul]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\n'ReadableFourChart.literal' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ReadableFourChart.form' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ReadableFourChart.four_chart' depends on axioms: [propext, Classical.choice, Quot.sound]"
+        },
+        {
+          "command": [
+            "leanchecker",
+            "-v",
+            "ReadableFourChart"
+          ],
+          "exit": 0,
+          "output": "replaying ReadableFourChart"
+        }
+      ]
+    },
+    {
+      "module": "ReadableIdentityChart",
+      "source_sha256": "aba1ecdb01c670c05c83cce3b529fa152db48e2ad7ce9c19416efd6c191ea28c",
+      "object_sha256": "cf7146756d741bba5b0996df86cf6bb6bbd7537d69bd93b77e62980303cb5478",
+      "queries": {
+        "ReadableIdentityChart.frame_pullback": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ReadableIdentityChart.realized": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "commands": [
+        {
+          "command": [
+            "lean",
+            "-j1",
+            "-o",
+            "ReadableIdentityChart.olean",
+            "ReadableIdentityChart.lean"
+          ],
+          "exit": 0,
+          "output": "'ReadableIdentityChart.frame_pullback' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ReadableIdentityChart.realized' depends on axioms: [propext, Classical.choice, Quot.sound]"
+        },
+        {
+          "command": [
+            "leanchecker",
+            "-v",
+            "ReadableIdentityChart"
+          ],
+          "exit": 0,
+          "output": "replaying ReadableIdentityChart"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "compiler": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+  "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "modules": [
+    {
+      "module": "ReadableBoxParameters",
+      "source_sha256": "ded17f47874f7830ced6847c372bbba72f995511b35876b5bc30d17277b56d1a",
+      "object_sha256": "b92308a629cfceb7f2bfa5c79e6a7a6a5bf1395fd9ec73a20f34f6b5f50fb042",
+      "queries": {
+        "ReadableBoxParameters.offset_box": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ReadableBoxParameters.real_offset": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "ReadableBoxParameters.bottom_inverse": [
+          "propext",
+          "Quot.sound"
+        ],
+        "ReadableBoxParameters.width_ratio": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ]
+      },
+      "commands": [
+        {
+          "command": [
+            "lean",
+            "-j1",
+            "-o",
+            "ReadableBoxParameters.olean",
+            "ReadableBoxParameters.lean"
+          ],
+          "exit": 0,
+          "output": "ReadableBoxParameters.lean:12:0: warning: automatically included section variable(s) unused in theorem `ReadableBoxParameters.axis`:\n  [CharZero K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [CharZero K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`\nReadableBoxParameters.lean:19:0: warning: automatically included section variable(s) unused in theorem `ReadableBoxParameters.rotate`:\n  [CharZero K]\nconsider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:\n  omit [CharZero K] in theorem ...\n\nNote: This linter can be disabled with `set_option linter.unusedSectionVars false`\n'ReadableBoxParameters.offset_box' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ReadableBoxParameters.real_offset' depends on axioms: [propext, Classical.choice, Quot.sound]\n'ReadableBoxParameters.bottom_inverse' depends on axioms: [propext, Quot.sound]\n'ReadableBoxParameters.width_ratio' depends on axioms: [propext, Classical.choice, Quot.sound]"
+        },
+        {
+          "command": [
+            "leanchecker",
+            "-v",
+            "ReadableBoxParameters"
+          ],
+          "exit": 0,
+          "output": "replaying ReadableBoxParameters"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,678 @@
+{
+  "precision": "coefficient depth d, target congruence modulo 2^d O",
+  "source_cells_per_full_space": "4^(6d)",
+  "direct_counts": {
+    "parent_at_4_0": [
+      {
+        "depth": 4,
+        "count": 4096,
+        "scalar": "1/268435456",
+        "split": "1/536870912"
+      },
+      {
+        "depth": 5,
+        "count": 16777216,
+        "scalar": "1/67108864",
+        "split": "1/134217728"
+      },
+      {
+        "depth": 6,
+        "count": 17179869184,
+        "scalar": "1/67108864",
+        "split": "1/134217728"
+      },
+      {
+        "depth": 7,
+        "count": 17592186044416,
+        "scalar": "1/67108864",
+        "split": "1/134217728"
+      },
+      {
+        "depth": 8,
+        "count": 18014398509481984,
+        "scalar": "1/67108864",
+        "split": "1/134217728"
+      }
+    ],
+    "parent_at_36_0": [
+      {
+        "depth": 4,
+        "count": 4096,
+        "scalar": "1/268435456",
+        "split": "1/536870912"
+      },
+      {
+        "depth": 5,
+        "count": 16777216,
+        "scalar": "1/67108864",
+        "split": "1/134217728"
+      },
+      {
+        "depth": 6,
+        "count": 17179869184,
+        "scalar": "1/67108864",
+        "split": "1/134217728"
+      },
+      {
+        "depth": 7,
+        "count": 17592186044416,
+        "scalar": "1/67108864",
+        "split": "1/134217728"
+      },
+      {
+        "depth": 8,
+        "count": 18014398509481984,
+        "scalar": "1/67108864",
+        "split": "1/134217728"
+      }
+    ],
+    "parent_at_4_32": [
+      {
+        "depth": 4,
+        "count": 4096,
+        "scalar": "1/268435456",
+        "split": "1/536870912"
+      },
+      {
+        "depth": 5,
+        "count": 16777216,
+        "scalar": "1/67108864",
+        "split": "1/134217728"
+      },
+      {
+        "depth": 6,
+        "count": 17179869184,
+        "scalar": "1/67108864",
+        "split": "1/134217728"
+      },
+      {
+        "depth": 7,
+        "count": 17592186044416,
+        "scalar": "1/67108864",
+        "split": "1/134217728"
+      },
+      {
+        "depth": 8,
+        "count": 18014398509481984,
+        "scalar": "1/67108864",
+        "split": "1/134217728"
+      }
+    ],
+    "parent_at_36_32": [
+      {
+        "depth": 4,
+        "count": 4096,
+        "scalar": "1/268435456",
+        "split": "1/536870912"
+      },
+      {
+        "depth": 5,
+        "count": 16777216,
+        "scalar": "1/67108864",
+        "split": "1/134217728"
+      },
+      {
+        "depth": 6,
+        "count": 17179869184,
+        "scalar": "1/67108864",
+        "split": "1/134217728"
+      },
+      {
+        "depth": 7,
+        "count": 17592186044416,
+        "scalar": "1/67108864",
+        "split": "1/134217728"
+      },
+      {
+        "depth": 8,
+        "count": 18014398509481984,
+        "scalar": "1/67108864",
+        "split": "1/134217728"
+      }
+    ],
+    "center_child_at_4_0": [
+      {
+        "depth": 4,
+        "count": 1,
+        "scalar": "1/1099511627776",
+        "split": "1/2199023255552"
+      },
+      {
+        "depth": 5,
+        "count": 4096,
+        "scalar": "1/274877906944",
+        "split": "1/549755813888"
+      },
+      {
+        "depth": 6,
+        "count": 16777216,
+        "scalar": "1/68719476736",
+        "split": "1/137438953472"
+      },
+      {
+        "depth": 7,
+        "count": 17179869184,
+        "scalar": "1/68719476736",
+        "split": "1/137438953472"
+      },
+      {
+        "depth": 8,
+        "count": 17592186044416,
+        "scalar": "1/68719476736",
+        "split": "1/137438953472"
+      }
+    ],
+    "center_child_at_36_0": [
+      {
+        "depth": 4,
+        "count": 1,
+        "scalar": "1/1099511627776",
+        "split": "1/2199023255552"
+      },
+      {
+        "depth": 5,
+        "count": 4096,
+        "scalar": "1/274877906944",
+        "split": "1/549755813888"
+      },
+      {
+        "depth": 6,
+        "count": 0,
+        "scalar": "0",
+        "split": "0"
+      },
+      {
+        "depth": 7,
+        "count": 0,
+        "scalar": "0",
+        "split": "0"
+      },
+      {
+        "depth": 8,
+        "count": 0,
+        "scalar": "0",
+        "split": "0"
+      }
+    ],
+    "center_child_at_4_32": [
+      {
+        "depth": 4,
+        "count": 1,
+        "scalar": "1/1099511627776",
+        "split": "1/2199023255552"
+      },
+      {
+        "depth": 5,
+        "count": 4096,
+        "scalar": "1/274877906944",
+        "split": "1/549755813888"
+      },
+      {
+        "depth": 6,
+        "count": 0,
+        "scalar": "0",
+        "split": "0"
+      },
+      {
+        "depth": 7,
+        "count": 0,
+        "scalar": "0",
+        "split": "0"
+      },
+      {
+        "depth": 8,
+        "count": 0,
+        "scalar": "0",
+        "split": "0"
+      }
+    ],
+    "center_child_at_36_32": [
+      {
+        "depth": 4,
+        "count": 1,
+        "scalar": "1/1099511627776",
+        "split": "1/2199023255552"
+      },
+      {
+        "depth": 5,
+        "count": 4096,
+        "scalar": "1/274877906944",
+        "split": "1/549755813888"
+      },
+      {
+        "depth": 6,
+        "count": 0,
+        "scalar": "0",
+        "split": "0"
+      },
+      {
+        "depth": 7,
+        "count": 0,
+        "scalar": "0",
+        "split": "0"
+      },
+      {
+        "depth": 8,
+        "count": 0,
+        "scalar": "0",
+        "split": "0"
+      }
+    ],
+    "translated_transverse_child_at_4_0": [
+      {
+        "depth": 4,
+        "count": 1,
+        "scalar": "1/1099511627776",
+        "split": "1/2199023255552"
+      },
+      {
+        "depth": 5,
+        "count": 4096,
+        "scalar": "1/274877906944",
+        "split": "1/549755813888"
+      },
+      {
+        "depth": 6,
+        "count": 16777216,
+        "scalar": "1/68719476736",
+        "split": "1/137438953472"
+      },
+      {
+        "depth": 7,
+        "count": 17179869184,
+        "scalar": "1/68719476736",
+        "split": "1/137438953472"
+      },
+      {
+        "depth": 8,
+        "count": 17592186044416,
+        "scalar": "1/68719476736",
+        "split": "1/137438953472"
+      }
+    ],
+    "translated_transverse_child_at_36_0": [
+      {
+        "depth": 4,
+        "count": 1,
+        "scalar": "1/1099511627776",
+        "split": "1/2199023255552"
+      },
+      {
+        "depth": 5,
+        "count": 4096,
+        "scalar": "1/274877906944",
+        "split": "1/549755813888"
+      },
+      {
+        "depth": 6,
+        "count": 0,
+        "scalar": "0",
+        "split": "0"
+      },
+      {
+        "depth": 7,
+        "count": 0,
+        "scalar": "0",
+        "split": "0"
+      },
+      {
+        "depth": 8,
+        "count": 0,
+        "scalar": "0",
+        "split": "0"
+      }
+    ],
+    "translated_transverse_child_at_4_32": [
+      {
+        "depth": 4,
+        "count": 1,
+        "scalar": "1/1099511627776",
+        "split": "1/2199023255552"
+      },
+      {
+        "depth": 5,
+        "count": 4096,
+        "scalar": "1/274877906944",
+        "split": "1/549755813888"
+      },
+      {
+        "depth": 6,
+        "count": 0,
+        "scalar": "0",
+        "split": "0"
+      },
+      {
+        "depth": 7,
+        "count": 0,
+        "scalar": "0",
+        "split": "0"
+      },
+      {
+        "depth": 8,
+        "count": 0,
+        "scalar": "0",
+        "split": "0"
+      }
+    ],
+    "translated_transverse_child_at_36_32": [
+      {
+        "depth": 4,
+        "count": 1,
+        "scalar": "1/1099511627776",
+        "split": "1/2199023255552"
+      },
+      {
+        "depth": 5,
+        "count": 4096,
+        "scalar": "1/274877906944",
+        "split": "1/549755813888"
+      },
+      {
+        "depth": 6,
+        "count": 0,
+        "scalar": "0",
+        "split": "0"
+      },
+      {
+        "depth": 7,
+        "count": 0,
+        "scalar": "0",
+        "split": "0"
+      },
+      {
+        "depth": 8,
+        "count": 0,
+        "scalar": "0",
+        "split": "0"
+      }
+    ],
+    "miss_at_four_at_4_0": [
+      {
+        "depth": 4,
+        "count": 1,
+        "scalar": "1/1099511627776",
+        "split": "1/2199023255552"
+      },
+      {
+        "depth": 5,
+        "count": 4096,
+        "scalar": "1/274877906944",
+        "split": "1/549755813888"
+      },
+      {
+        "depth": 6,
+        "count": 0,
+        "scalar": "0",
+        "split": "0"
+      },
+      {
+        "depth": 7,
+        "count": 0,
+        "scalar": "0",
+        "split": "0"
+      },
+      {
+        "depth": 8,
+        "count": 0,
+        "scalar": "0",
+        "split": "0"
+      }
+    ],
+    "miss_at_four_at_36_0": [
+      {
+        "depth": 4,
+        "count": 1,
+        "scalar": "1/1099511627776",
+        "split": "1/2199023255552"
+      },
+      {
+        "depth": 5,
+        "count": 4096,
+        "scalar": "1/274877906944",
+        "split": "1/549755813888"
+      },
+      {
+        "depth": 6,
+        "count": 16777216,
+        "scalar": "1/68719476736",
+        "split": "1/137438953472"
+      },
+      {
+        "depth": 7,
+        "count": 17179869184,
+        "scalar": "1/68719476736",
+        "split": "1/137438953472"
+      },
+      {
+        "depth": 8,
+        "count": 17592186044416,
+        "scalar": "1/68719476736",
+        "split": "1/137438953472"
+      }
+    ],
+    "miss_at_four_at_4_32": [
+      {
+        "depth": 4,
+        "count": 1,
+        "scalar": "1/1099511627776",
+        "split": "1/2199023255552"
+      },
+      {
+        "depth": 5,
+        "count": 4096,
+        "scalar": "1/274877906944",
+        "split": "1/549755813888"
+      },
+      {
+        "depth": 6,
+        "count": 0,
+        "scalar": "0",
+        "split": "0"
+      },
+      {
+        "depth": 7,
+        "count": 0,
+        "scalar": "0",
+        "split": "0"
+      },
+      {
+        "depth": 8,
+        "count": 0,
+        "scalar": "0",
+        "split": "0"
+      }
+    ],
+    "miss_at_four_at_36_32": [
+      {
+        "depth": 4,
+        "count": 1,
+        "scalar": "1/1099511627776",
+        "split": "1/2199023255552"
+      },
+      {
+        "depth": 5,
+        "count": 4096,
+        "scalar": "1/274877906944",
+        "split": "1/549755813888"
+      },
+      {
+        "depth": 6,
+        "count": 0,
+        "scalar": "0",
+        "split": "0"
+      },
+      {
+        "depth": 7,
+        "count": 0,
+        "scalar": "0",
+        "split": "0"
+      },
+      {
+        "depth": 8,
+        "count": 0,
+        "scalar": "0",
+        "split": "0"
+      }
+    ],
+    "one_transverse_restriction_at_4_0": [
+      {
+        "depth": 4,
+        "count": 1024,
+        "scalar": "1/1073741824",
+        "split": "1/2147483648"
+      },
+      {
+        "depth": 5,
+        "count": 4194304,
+        "scalar": "1/268435456",
+        "split": "1/536870912"
+      },
+      {
+        "depth": 6,
+        "count": 4294967296,
+        "scalar": "1/268435456",
+        "split": "1/536870912"
+      },
+      {
+        "depth": 7,
+        "count": 4398046511104,
+        "scalar": "1/268435456",
+        "split": "1/536870912"
+      },
+      {
+        "depth": 8,
+        "count": 4503599627370496,
+        "scalar": "1/268435456",
+        "split": "1/536870912"
+      }
+    ],
+    "one_transverse_restriction_at_36_0": [
+      {
+        "depth": 4,
+        "count": 1024,
+        "scalar": "1/1073741824",
+        "split": "1/2147483648"
+      },
+      {
+        "depth": 5,
+        "count": 4194304,
+        "scalar": "1/268435456",
+        "split": "1/536870912"
+      },
+      {
+        "depth": 6,
+        "count": 4294967296,
+        "scalar": "1/268435456",
+        "split": "1/536870912"
+      },
+      {
+        "depth": 7,
+        "count": 4398046511104,
+        "scalar": "1/268435456",
+        "split": "1/536870912"
+      },
+      {
+        "depth": 8,
+        "count": 4503599627370496,
+        "scalar": "1/268435456",
+        "split": "1/536870912"
+      }
+    ],
+    "one_transverse_restriction_at_4_32": [
+      {
+        "depth": 4,
+        "count": 1024,
+        "scalar": "1/1073741824",
+        "split": "1/2147483648"
+      },
+      {
+        "depth": 5,
+        "count": 4194304,
+        "scalar": "1/268435456",
+        "split": "1/536870912"
+      },
+      {
+        "depth": 6,
+        "count": 4294967296,
+        "scalar": "1/268435456",
+        "split": "1/536870912"
+      },
+      {
+        "depth": 7,
+        "count": 4398046511104,
+        "scalar": "1/268435456",
+        "split": "1/536870912"
+      },
+      {
+        "depth": 8,
+        "count": 4503599627370496,
+        "scalar": "1/268435456",
+        "split": "1/536870912"
+      }
+    ],
+    "one_transverse_restriction_at_36_32": [
+      {
+        "depth": 4,
+        "count": 1024,
+        "scalar": "1/1073741824",
+        "split": "1/2147483648"
+      },
+      {
+        "depth": 5,
+        "count": 4194304,
+        "scalar": "1/268435456",
+        "split": "1/536870912"
+      },
+      {
+        "depth": 6,
+        "count": 4294967296,
+        "scalar": "1/268435456",
+        "split": "1/536870912"
+      },
+      {
+        "depth": 7,
+        "count": 4398046511104,
+        "scalar": "1/268435456",
+        "split": "1/536870912"
+      },
+      {
+        "depth": 8,
+        "count": 4503599627370496,
+        "scalar": "1/268435456",
+        "split": "1/536870912"
+      }
+    ]
+  },
+  "child_census": {
+    "children": 4096,
+    "by_residue": [
+      [
+        4,
+        0,
+        1024
+      ],
+      [
+        4,
+        32,
+        1024
+      ],
+      [
+        36,
+        0,
+        1024
+      ],
+      [
+        36,
+        32,
+        1024
+      ]
+    ],
+    "pivot_classes_at_four": [
+      [
+        0,
+        0,
+        1024
+      ]
+    ]
+  }
+}

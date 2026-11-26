@@ -1,0 +1,92 @@
+{
+  "rows": [
+    {
+      "pivot_center": 2,
+      "width": 8,
+      "target": [
+        4,
+        0
+      ],
+      "parameter_cells": 1024,
+      "accepted": 1024,
+      "distinct": 1024,
+      "direct_matches": 1024
+    },
+    {
+      "pivot_center": 2,
+      "width": 8,
+      "target": [
+        36,
+        0
+      ],
+      "parameter_cells": 1024,
+      "accepted": 1024,
+      "distinct": 1024,
+      "direct_matches": 1024
+    },
+    {
+      "pivot_center": 2,
+      "width": 8,
+      "target": [
+        4,
+        32
+      ],
+      "parameter_cells": 1024,
+      "accepted": 1024,
+      "distinct": 1024,
+      "direct_matches": 1024
+    },
+    {
+      "pivot_center": 2,
+      "width": 8,
+      "target": [
+        36,
+        32
+      ],
+      "parameter_cells": 1024,
+      "accepted": 1024,
+      "distinct": 1024,
+      "direct_matches": 1024
+    },
+    {
+      "pivot_center": 2,
+      "width": 16,
+      "target": [
+        4,
+        0
+      ],
+      "parameter_cells": 1024,
+      "accepted": 1024,
+      "distinct": 1024,
+      "direct_matches": 1024
+    },
+    {
+      "pivot_center": 10,
+      "width": 16,
+      "target": [
+        36,
+        0
+      ],
+      "parameter_cells": 1024,
+      "accepted": 1024,
+      "distinct": 1024,
+      "direct_matches": 1024
+    },
+    {
+      "pivot_center": 10,
+      "width": 16,
+      "target": [
+        4,
+        0
+      ],
+      "parameter_cells": 1024,
+      "accepted": 0,
+      "distinct": 0,
+      "direct_matches": 0
+    }
+  ],
+  "wrong_skew_width": {
+    "accepted": 1024,
+    "distinct": 256
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "Lib.Adelic.Adeles.AdditiveCharacter": {
+    "source": "c81e8f65f703829dd0a98785294544832b768d5bee81d9c581b0a98e679ee447",
+    "cached_olean": "052982dac7b9f8cdd697a2ccfd3be2d104d2bd2d6d0b8238bd45809c1402d3ed"
+  },
+  "Lib.Adelic.Adeles.Basic": {
+    "source": "adaefff20f93ee923ec277f979b0299cdebc9850377bb19486c2e6fb9488b4e6",
+    "cached_olean": "11bb20b84e541dac950c3dfade525d8006f7cbf671bf19f47b82c5ccb651bafd"
+  },
+  "Lib.Adelic.Adeles.IdeleModulus": {
+    "source": "98633c27711087a4f4b37f980db8b3418faadba098de69cbd0119dc99c661504",
+    "cached_olean": "19adfb61d1565f3904fd0afbedad6311c9264b35405b6c09f9c24fecc04ac5cd"
+  },
+  "Lib.Adelic.Adeles.StrongApproximation": {
+    "source": "396e2cdf3292999a6f1613871b38bb3d1099778974af5888d55bcc73fae7ba47",
+    "cached_olean": "a766f6808d0802bb9145d5a715419b7e63fdd466c8178b74a4c98170aff82070"
+  },
+  "Lib.Adelic.Hecke.Basic": {
+    "source": "06df332feda08c4bf88280113f0666ddab4331504dfce1b616a1640e68876b5a",
+    "cached_olean": "d74255bd45273cb5947bb8c4381e0b31325f752f90fdc9017062482d9cbd4c65"
+  },
+  "Lib.Adelic.QuotientMeasure.Basic": {
+    "source": "c71bb894267daee0a4f92d17cd529a3ed3b95ba8d52d2118ab9fc4c3b1c43beb",
+    "cached_olean": "b642de9af311289446af7928429d924469527539dce155fba0f217fd2c5792bf"
+  },
+  "Lib.Adelic.Unitary.Defs": {
+    "source": "bb5560f9506c5fd9fcebe1b8a87127b917e5086202b87cea18652b4afaf8e215",
+    "cached_olean": "13e47882fb45c85095006120386b22c0e6918722e9b0e9f09268e4bc96e111ec"
+  },
+  "Lib.Adelic.Witt.WittTheorem": {
+    "source": "fb10ca57e83f7022b14bc5f21d2cb3218af702da3e26775054187199cd060e9e",
+    "cached_olean": "ba6e861a642a1411945c677a458ab66043ea7c57d02722e942655143d1ff1e4a"
+  },
+  "Lib.Base": {
+    "source": "67dc54c173a623b0da15dd44a780f01dc8e16660eb6f9e6c8b749ba67501c1af",
+    "cached_olean": "0424dc60d630365366ce17e188598ef343ea7b21e6a0e705e153461b07649117"
+  },
+  "Lib.ClassField.GaloisCohomology.ContinuousCocycles": {
+    "source": "3b971becf93024152492c6e09e9295533554e7be2bca9cab4a7b98ecc9c2302d",
+    "cached_olean": "2d52e9985bf4b79ad79b95fcc6b82ccafa4a231efdaf79dcc972f57b7f555ef6"
+  },
+  "Lib.ClassField.Places.GaloisDefs": {
+    "source": "dfb24c1ca396759d855dfd375ab5457c3ce872c688667eaac6e795ba386f76b1",
+    "cached_olean": "107de70bb87e4dc20bf451b1986b2558c0cb5fcba40f8a12a75aa8a963ed8fa6"
+  },
+  "Lib.ClassField.Places.Ideles": {
+    "source": "0e0edb659f9434a2bd3513d4ff6d86922a51386ab7abd2328622863e057b23c1",
+    "cached_olean": "3470bd2d3fabce3267a35984aa68638b1ac5482e2ce8350809e4d3eaca2c6fe3"
+  },
+  "Lib.GaloisRep.BaseChange.Defs": {
+    "source": "2ac6b0ec385eabb11f5081382bcffc65f851373f9ca6709487c5cd13e029e293",
+    "cached_olean": "db5b591e1681799813d48c0a8216a48b354be20cf072716c8d940fa61af2d851"
+  },
+  "Lib.GaloisRep.Hilbert90.TameActions": {
+    "source": "37d9bca1c1a53bcf0cdcfd1e204d25e09bc72048f5e0699aba2342b05e9fbfe9",
+    "cached_olean": "f8e5ac7b37d8bd4800505c3058301592875addcb46bcc52545d15a45e758791a"
+  },
+  "Lib.GaloisRep.Hilbert90.UnitaryGroups": {
+    "source": "67390d8be68c3d89348a01831b727dbe41cea3622f37fa044f6c5d528e9196f1",
+    "cached_olean": "d29e6a0df1353d7025561591b4767d9dff8a2957895076290403914d6ba81a82"
+  },
+  "Lib.General.Analysis.FourierTransforms": {
+    "source": "b85b1c76a4d31e061c972e4aaad950ce05a434c9f4031bbf929f9780e4dad50a",
+    "cached_olean": "5980f7c5e1724e3b502d6ad5726065f4fd1a4f83c2157f06fc3122906dad5edc"
+  },
+  "Lib.General.Groups.BesselGroups": {
+    "source": "1590dd2dd3b28985b89b37aebfb1854b2ea30bda1c76a7942150862c7309d23a",
+    "cached_olean": "275f19cb201b1fce3fbd981199beebff1e864cbf516a357f8689f528144f3c35"
+  },
+  "Lib.General.Groups.CongruenceSubgroups": {
+    "source": "010006b9ea78ca6b0e1ca257c5528807f53840fee562e37f5a0764fa9ba50c61",
+    "cached_olean": "e3962292b4efdba612573b9cd179dd3960e52945cf989bf351271908e2eaac0f"
+  },
+  "Lib.General.Groups.ProfiniteCharacters": {
+    "source": "d6d290f8f687a6bf9c26786c337833396b135190f23fa91bfa90ee42852b34e0",
+    "cached_olean": "d8609368c4d1097a662e9977754f63e8740999770c843735f0d4c1cc0b79a9d1"
+  },
+  "Lib.General.LinearAlgebra.IntegralLattices": {
+    "source": "c8e166bd9b8608057c3715814f065a5017b695ba496ae8fb57e726d4c709eaa8",
+    "cached_olean": "27a7292e59bbe64a8d6cf9d23939b7671d4246fc4bce80845467ceb3dbb809ce"
+  },
+  "Lib.General.LinearAlgebra.MatrixPolynomials": {
+    "source": "90e8df12e392f7079a1ae27e0921c050bea9660eef7bc47b14332cc05d93350e",
+    "cached_olean": "697d22ff9a498b79fabc96b6107e6f864357cb807535a7156986f7549105c9c9"
+  },
+  "Lib.General.Measure.HaarModulus": {
+    "source": "002f47411e40c83fb6fc9721fe774024c8ed541c55ebeea52f65baacd0818039",
+    "cached_olean": "c4cbcd5f70ab788043c5b95a787e58bbc30d36cc5eedf43f73baba20c73169bd"
+  },
+  "Lib.General.Measure.IdempotentKernel": {
+    "source": "d1a16774405d6487f449dc16c2c64c5f9742437f7be89902a495048f0cd5c8ae",
+    "cached_olean": "5aeb00818c1fe417accea4ad0455cf4d46e47790647de088cae4e012f9f448cd"
+  },
+  "Lib.General.Measure.QuadricDisintegration": {
+    "source": "d8da4b8f83ff3b107fee29550fa62b2aab7f99d4dd8773151382e6de3d9389bc",
+    "cached_olean": "8f6884329596107944ac3d2a8ca98c7dae809e01ecd5f8a383233c84affb781e"
+  },
+  "Lib.General.NumberTheory.EmbeddingsAndDifferent": {
+    "source": "377014726c272ea9aaa39f8a24b89ca7a9b2396cf633666b686d9df394cdfa4e",
+    "cached_olean": "bd238fbd99eac6aa922b638333b9ed505abc97909a65370f948e6258c646fdd0"
+  },
+  "Lib.General.Topology": {
+    "source": "d0c15dec9b7efc028fcbdbdc36cb0708e7857083bf5014c59e5c07ca84f8a9d2",
+    "cached_olean": "bd10d6914109f6102f796b91f39b7af491a691455aa5ac5bd3681547b1cad35f"
+  },
+  "Lib.Speed": {
+    "source": "868e46d19e31bcdeb2c88c93225cbd3c85596c3885238d4a0740ced9ed4b1534",
+    "cached_olean": "e47f9fa7e7ee94332d461dc6b6c80659107854d9eb2b3c16134a0acb0e109c11"
+  },
+  "Lib.Weil.DualPair.Kronecker": {
+    "source": "2c959728f19635c040e9a681b818b76e52c4eeffbd443b476e285824c36bb396",
+    "cached_olean": "124f0f9aa612103180bdd30ccbad430206dcf7b2aa10a4e93ba69283984110a1"
+  }
+}
