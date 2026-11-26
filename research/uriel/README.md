@@ -6,6 +6,8 @@ Start with [PROOF_CONTEXT.md](PROOF_CONTEXT.md), which reconstructs selected ana
 
 ## Arithmetic witness architecture papers
 
+The [expanded selected-place paper](experiments/selected-place-transport-expanded/) develops the full source and proof sequence and proves that a full original host at d=9239 has one coset and at most 32 signed slots. The earlier study gives the first cardinal obstruction.
+
 The [selected-place transport experiment](experiments/selected-place-transport/) rules out lossless transport of the fixed readable set at q₀=18480 and d=9239. The native original host has at most 44 signed slots, while the readable set has at least 2¹⁰⁷¹ places.
 
 The [joint critical edition of the two interface papers](experiments/proof-interfaces-critical-edition/) compares the corrected prime observable and the source-matched regular fiber, proves the arbitrary-positive-coefficient corollary at positive exponent slack and includes a [16-edition portfolio audit](experiments/proof-interfaces-critical-edition/PORTFOLIO_AUDIT.md).

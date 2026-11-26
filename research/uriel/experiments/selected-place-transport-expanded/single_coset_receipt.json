@@ -1,0 +1,10 @@
+{
+  "module": "SingleCoset",
+  "source_sha256": "744472a3fc30613f76374682032c517e03057a95193369c6e69a36e27e3b4471",
+  "object_sha256": "2a4e7cf5219faa4db7fa6c6b572bbfba5c3f2f3b1c85b0c5d89cb88733c174c5",
+  "elaboration": "'SelectedPlace.single_coset' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SelectedPlace.exact_index_order' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SelectedPlace.sharper_signed_capacity' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SelectedPlace.shares_automatic' depends on axioms: [propext, Classical.choice, Quot.sound]",
+  "kernel": "replaying SingleCoset",
+  "compiler": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "original_capacity_object_sha256": "82b9769f3755f0bb8771d4278ef8a6b6e7f3c60a13664239bfcf041af4c2f487"
+}

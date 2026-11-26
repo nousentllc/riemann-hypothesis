@@ -1,0 +1,132 @@
+{
+  "q0": 18480,
+  "d": 9239,
+  "q_11_satisfies_weak_conditions": true,
+  "rank": {
+    "scalar_rank_quadruples": 2554,
+    "largest_k_witness": [
+      44,
+      2,
+      45,
+      51
+    ],
+    "max_r": 45,
+    "weakest_aux_prime_threshold": 365,
+    "first_larger_prime_passing_weak_tests": 443
+  },
+  "lower_bound_decimal_digits": 323,
+  "minimum_max_signed_fiber_decimal_digits": 321,
+  "projected_counts": {
+    "balanced": {
+      "total": 700,
+      "distinct_signed": 7,
+      "distinct_unsigned": 7,
+      "raw_counts": [
+        400,
+        300
+      ],
+      "source_parity_coefficient": "1/7",
+      "image_parity_coefficient": "1/7",
+      "image_counts": [
+        4,
+        3
+      ],
+      "source_shares": [
+        "4/7",
+        "3/7"
+      ],
+      "image_shares": [
+        "4/7",
+        "3/7"
+      ]
+    },
+    "uneven": {
+      "total": 701,
+      "distinct_signed": 7,
+      "distinct_unsigned": 7,
+      "raw_counts": [
+        401,
+        300
+      ],
+      "source_parity_coefficient": "101/701",
+      "image_parity_coefficient": "1/7",
+      "image_counts": [
+        4,
+        3
+      ],
+      "source_shares": [
+        "401/701",
+        "300/701"
+      ],
+      "image_shares": [
+        "4/7",
+        "3/7"
+      ]
+    },
+    "two_signs": {
+      "total": 3,
+      "distinct_signed": 3,
+      "distinct_unsigned": 2,
+      "raw_counts": [
+        2,
+        1
+      ],
+      "source_parity_coefficient": "1/3",
+      "image_parity_coefficient": "0",
+      "image_counts": [
+        1,
+        1
+      ],
+      "source_shares": [
+        "2/3",
+        "1/3"
+      ],
+      "image_shares": [
+        "1/2",
+        "1/2"
+      ]
+    }
+  },
+  "abstract_quotas": {
+    "size_trials": 485,
+    "nontrivial_exact_profiles": [
+      {
+        "cosets": 2,
+        "subgroup_size": 4,
+        "exact_totals": [
+          7
+        ]
+      },
+      {
+        "cosets": 3,
+        "subgroup_size": 4,
+        "exact_totals": [
+          10
+        ]
+      },
+      {
+        "cosets": 4,
+        "subgroup_size": 4,
+        "exact_totals": [
+          13
+        ]
+      },
+      {
+        "cosets": 5,
+        "subgroup_size": 4,
+        "exact_totals": [
+          16
+        ]
+      },
+      {
+        "cosets": 2,
+        "subgroup_size": 8,
+        "exact_totals": [
+          7,
+          14
+        ]
+      }
+    ],
+    "smallest_positive_grid_gap": "1/1474"
+  }
+}

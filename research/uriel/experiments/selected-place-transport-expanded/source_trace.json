@@ -1,0 +1,186 @@
+{
+  "original": {
+    "commit": "40e56bab026552e089d7afcfeff08d2defb9c005",
+    "files": [
+      {
+        "path": "src/Formalism/LocalRingCardinality/DataHost.lean",
+        "git_blob": "7e9af8ab364965c62be250ae93974098141598c0",
+        "sha256": "39252a17ac91969e59b2f1c89efe12b6ac0e7ea97bd462c1e250f8ea8b4c954f",
+        "anchor_lines": {
+          "structure Host (R": 39,
+          "qd_big :": 54,
+          "  TT : Finset": 100,
+          "noncomputable def topPlaces": 129
+        }
+      },
+      {
+        "path": "src/Formalism/LocalRingCardinality/Params.lean",
+        "git_blob": "09d1aeec3049821ed6d190c7970cdca9ec5b34cf",
+        "sha256": "1de4e5a1230e9d93b5ace3e4f7e112f65e3d5264d75db227476986d179881e17",
+        "anchor_lines": {
+          "structure Ranks": 6,
+          "rank_add_five_le": 16,
+          "f_le_k": 20,
+          "def r :": 32
+        }
+      },
+      {
+        "path": "src/Formalism/LocalRingCardinality/RhoDetPrimeEqMuTildeMulChiPow.lean",
+        "git_blob": "6ab57a7f313a9f8c351005051933a60a22a0da08",
+        "sha256": "b31bcce565741e65c97db0341916d5fafcf416c19a1b02515143c9537ed11691",
+        "anchor_lines": {
+          "structure D7": 76,
+          "host : Host R": 80
+        }
+      },
+      {
+        "path": "src/Formalism/SharpRestriction/FamCore.lean",
+        "git_blob": "44cd54c38881086724fdf7f10f32b7d8e80e35b3",
+        "sha256": "b261e12923d7dc47037a7b5b458e61ef59d69545f3b40a904a36e6bf8047ec78",
+        "anchor_lines": {
+          "structure FamCore": 71,
+          "TT_eq :": 92
+        }
+      },
+      {
+        "path": "src/Formalism/SharpRestriction/ParConsts.lean",
+        "git_blob": "c3a5cddc3af0b027ad62b50a79cdb008712613a6",
+        "sha256": "5527c6bf036e019f4649ca1862b323bdeab0f1b25c2b1475c375e58a0b2edb48",
+        "anchor_lines": {
+          "structure FamP": 31
+        }
+      },
+      {
+        "path": "src/Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/ExplicitFormulaErrorOfHostConditions.lean",
+        "git_blob": "ed60b4b997cd4703713660b185b9e43fd95559a1",
+        "sha256": "d6b12bcbdc15c1b717c33a712474f9fca18c577a65c41fff2b2937534e5447ba",
+        "anchor_lines": {
+          "def lam (": 135,
+          "def Shares (": 139,
+          "structure EAtH": 144,
+          "shares : φ.Shares": 148
+        }
+      },
+      {
+        "path": "src/Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/ConjEMemHostFIff.lean",
+        "git_blob": "0ab34ba6d386bb84908efe66de6ce50108eacddc",
+        "sha256": "db32b7af86f38a66881c2345572c33156fdf027b2f0b2d6c64a6775f8e970647",
+        "anchor_lines": {
+          "structure HostRaw": 12,
+          "finrank_E :": 91,
+          "structure HostAx": 174
+        }
+      },
+      {
+        "path": "src/Development/AutomorphicArithmetic/PrimitiveCosets/TopsSum.lean",
+        "git_blob": "da934dfb2e0eabfccea5df2c4177fcf0c01c3f43",
+        "sha256": "a3ca8a26d2c5eab820d9c162a6e490c6ec7fee51a81572907630727de170a33a",
+        "anchor_lines": {
+          "private theorem tops_sum_coset": 7,
+          "private theorem tops_sum_gen": 26,
+          "theorem UpperTheory.Comparison₂.tops_sum": 75
+        }
+      },
+      {
+        "path": "src/Development/AutomorphicArithmetic/PrimitiveCosets/charsA.lean",
+        "git_blob": "7d6a3faa3f6dcc1923a65473d848d8da0601e7a2",
+        "sha256": "36119af651432954be67b5827f5d6eb66a2fcbe2cdbacae3659638a49942352f",
+        "anchor_lines": {
+          "have hb := tops_sum φ TT": 107
+        }
+      },
+      {
+        "path": "src/Development/AutomorphicArithmetic/PrimitiveCosets/LevelGmLeOnFamilyScales.lean",
+        "git_blob": "de994949e6fd2d7238cfcb1c19d361ccdfe904fc",
+        "sha256": "978ad99fd0d9e2dc25af57715030516195b629ccd9d5a114451fc5402f1d1426",
+        "anchor_lines": {
+          "theorem tiedCore_of_chainTied": 13,
+          "have hTT : TT =": 17
+        }
+      },
+      {
+        "path": "src/Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/FrameFacts.lean",
+        "git_blob": "22402e8349688ace18526a8fc486eb659a5e7450",
+        "sha256": "4b29bf3a7df92739ba0351614ac7d98ffdc73ea46c0e6c58505c91b2c3ce9e70",
+        "anchor_lines": {
+          "theorem two_pow_dvd_ord": 188,
+          "theorem two_pow_le_ord": 192,
+          "theorem index_A0_eq_o": 214,
+          "theorem cyclic_order_le_two_pow": 254
+        }
+      }
+    ]
+  },
+  "readable": {
+    "commit": "e063a923620ee7787b4a1270421478645bf66bdb",
+    "files": [
+      {
+        "path": "src/New/Reduction/Data/AdmissibleData.lean",
+        "git_blob": "48f73664d37f8b5036fcff2bf642d7be5e259907",
+        "sha256": "f64804a3908b3d29df7bda7d0a329430f8fd08861d2f015b818ad4446f6a6812",
+        "anchor_lines": {
+          "def New.Parameters.IsSparse": 58,
+          "bPlaces : Finset": 126,
+          "placeClass_of_mem_bPlaces :": 128,
+          "towerDeg_le_card_bPlaces_mul :": 132,
+          "weight_eq (τ": 138
+        }
+      },
+      {
+        "path": "src/New/Reduction/Data/Sizes.lean",
+        "git_blob": "6007f8713e359ad70d320b6e7ce134cad278e424",
+        "sha256": "6c5fcddeda04dd9c57218097a8f5cff80b4e6ecd96bbb6d26d20498a0b7a1375",
+        "anchor_lines": {
+          "lemma logB_pow_le_x": 63,
+          "lemma m_sq_mem_Icc": 69,
+          "lemma m_pow_eq_two_pow_towerExp": 108
+        }
+      },
+      {
+        "path": "src/New/Reduction/Data/FieldsAndPlaces.lean",
+        "git_blob": "8b0a085a2f5aaa75d02863607df1dc7f304018fc",
+        "sha256": "df940fe06c57a68e551593ce181988f07e97b7952dcbdafb8615359304c34dd3",
+        "anchor_lines": {
+          "def _root_.New.towerDeg": 103,
+          "def placeMulEquiv": 282,
+          "def placeClass": 292
+        }
+      },
+      {
+        "path": "src/New/Reduction/Data/Existence.lean",
+        "git_blob": "9037bd5748be10bd61aef5e88fe963f707582734",
+        "sha256": "f006e2e15c02007e48d22de83a61d5dc983cf4287aabe30b2e233767ef58dde1",
+        "anchor_lines": {
+          "lemma Parameters.exists_large_isSparse": 167,
+          "lemma Parameters.exists_isSparse_of_ranks": 488,
+          "bPlaces := T,": 759,
+          "obtain ⟨T, h_class_T": 830
+        }
+      },
+      {
+        "path": "src/New/Reduction/OneSidedBound.lean",
+        "git_blob": "4e4862474e15d136c65859e30c6f29c47d68db64",
+        "sha256": "6afc6dd47b3869e3358eb05b4e91f218f17fecb29db109ea3505f1ee368db436",
+        "anchor_lines": {
+          "lemma eventually_exists_data_scales": 74
+        }
+      }
+    ]
+  },
+  "prior": {
+    "commit": "90e46dd4be3b077bfed33fa64280eb9f306c9d87",
+    "folder": "research/uriel/experiments/fixed-datum-host-expanded/",
+    "files": {
+      "HostComparison.lean": "d790f99f3106b4fd4356b60dfe2c9b4d7f54ed06a4aaeccce9cbf44f2a940d1f",
+      "RecoveryCriteria.lean": "2eabf23c001923e30460e50f90a3582ecb6b0509f98c877a00b347a7eeaf197c",
+      "WitnessInterface.lean": "a8d92059141e4056424eee515afd1e2329bfbd0f2db84840e889cb04d79e9209",
+      "ReadableDatum.lean": "9a9d91c6e90383d47051b5a72ace5fe4d8ba1ab2744925deaa80eb83cc0744cb",
+      "ScaleControl.lean": "951a45d5af1a2f4bfa9070924be59747e7225957c01039c600c0c937b302de82",
+      "OriginalWitness.lean": "7724f17a82beb2210e769917e4c4deb96b621af824f98578630beff45179ebd0",
+      "replay.py": "6f8a3b82a0fba6fba776840e2dce8c6d926ff6259324cb42f06968aba7521d1e",
+      "interface.py": "456a97eba17ed576b689a984a7399b2217b37cbebb13a18986dea91aa5cd6934",
+      "source_map.json": "cd53fa9a307e86636315a85755041ab38e4a32fb91407c2ed99f3b4c6f8ec887",
+      "replay_receipt.json": "840eb9bd1aa05fcca694a0e50c984a9a0647d6d6b4e92304c69afe21f7eea630"
+    }
+  }
+}

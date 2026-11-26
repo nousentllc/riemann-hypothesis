@@ -1,0 +1,52 @@
+{
+  "scope": "Three new modules were elaborated and kernel-replayed against prepared pinned project and Mathlib imports. This does not build the historical projects from scratch.",
+  "runs": [
+    {
+      "compiler": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+      "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+      "source_pin": "40e56bab026552e089d7afcfeff08d2defb9c005",
+      "inherited_compiled_modules": [],
+      "used_previous_objects": false,
+      "experiment_modules": [
+        {
+          "module": "OriginalCapacity",
+          "source_sha256": "e6c1ddb189316cc18a296236c986e1d019708f16bd90f23304fa066e48bbf584",
+          "object_sha256": "82b9769f3755f0bb8771d4278ef8a6b6e7f3c60a13664239bfcf041af4c2f487",
+          "elaboration": "'SelectedPlace.signed_capacity' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SelectedPlace.no_signed_injection' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SelectedPlace.retained_ceiling' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SelectedPlace.eleven_cannot_supply_host' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SelectedPlace.consumer_ceiling' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SelectedPlace.prime_budget' depends on axioms: [propext, Classical.choice, Quot.sound]",
+          "kernel": "replaying OriginalCapacity"
+        }
+      ]
+    },
+    {
+      "compiler": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+      "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+      "source_pin": "e063a923620ee7787b4a1270421478645bf66bdb",
+      "used_previous_objects": true,
+      "prior_object_sha256": {
+        "WitnessInterface": "5c990f9ab5eb657eef79e305a944b9af8beb9639982ed96b4d414db13a0257df",
+        "ReadableDatum": "b666ee7921db7907b586ed196c6ecb6ddfed8018011c71028590344fd58f65c6",
+        "ScaleControl": "f5749021734d2abcf7877010d3e19a4c8f1a6f65455dcd3545e71f80ce05f2ca",
+        "HostComparison": "91107a3a128cf84c5ece821d76c9e46ed75ad21b13c03f0fed5fbf7328190cd8",
+        "RecoveryCriteria": "6524973c10eaf4028855539b3dc6fcb3d05365225937ccd43ef68e36f08dea94"
+      },
+      "experiment_modules": [
+        {
+          "module": "ReadableCapacity",
+          "source_sha256": "8fd6eede7441ec84eb85ebbc32b026de6731e2db211a9caac9f8b4b2ad5c06e9",
+          "object_sha256": "812b86f00ebf9b9d269f4ef09676f5ec0ab23063e9d23b4da477a80ed155a874",
+          "elaboration": "'SelectedPlace.actual_selected' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SelectedPlace.selected_large' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SelectedPlace.actual_label_modulus' depends on axioms: [propext, Classical.choice, Quot.sound]",
+          "kernel": "replaying ReadableCapacity"
+        },
+        {
+          "module": "SameSet",
+          "source_sha256": "0148c9075ae61de85410df9b771b0d216a2e1057805649ebbef829d4638fa302",
+          "object_sha256": "4d832a9b77f7bb5e42dfa8f3e4518fa7fcc46e0432b0833dcfb60095b05de6ce",
+          "elaboration": "'SelectedPlace.no_actual_injection' depends on axioms: [propext, choice, Quot.sound]\n'SelectedPlace.some_coset_loses_places' depends on axioms: [propext, choice, Quot.sound]\n'SelectedPlace.no_actual_field_iso' depends on axioms: [propext, choice, Quot.sound]",
+          "kernel": "replaying SameSet"
+        }
+      ]
+    }
+  ],
+  "verified_old_source_files": 10,
+  "verified_readable_source_files": 5
+}

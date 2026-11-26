@@ -1,0 +1,183 @@
+{
+  "readable_scale": {
+    "bootstrap": [
+      {
+        "seed_exponent": 100,
+        "dyadic_exponent": 45,
+        "checked_integer_ceiling": 50000000000000,
+        "result_exponent": 4500
+      },
+      {
+        "seed_exponent": 4500,
+        "dyadic_exponent": 50,
+        "checked_integer_ceiling": 2250000000000000,
+        "result_exponent": 5000
+      },
+      {
+        "seed_exponent": 5000,
+        "dyadic_exponent": 51,
+        "checked_integer_ceiling": 2500000000000000,
+        "result_exponent": 5100
+      },
+      {
+        "seed_exponent": 5100,
+        "dyadic_exponent": 51,
+        "checked_integer_ceiling": 2550000000000000,
+        "result_exponent": 5100
+      }
+    ],
+    "bounds": [
+      {
+        "seed_exponent": 100,
+        "lower_m_power": 51,
+        "minimal_tower_exponent": 1122,
+        "lower_three_power": 11,
+        "exact_power_left_bits": 56921,
+        "strict_lower_cardinality_power": 1138
+      },
+      {
+        "seed_exponent": 5100,
+        "lower_m_power": 2551,
+        "minimal_tower_exponent": 56122,
+        "lower_three_power": 14,
+        "exact_power_left_bits": 2804659,
+        "strict_lower_cardinality_power": 56093
+      }
+    ]
+  },
+  "old_host": {
+    "envelope_without_coset_penalty": 28,
+    "signed_ceiling_without_coset_penalty": 40,
+    "full_scalar_profiles": [
+      {
+        "size": 4,
+        "e": 2,
+        "n0": 4,
+        "o": 1
+      },
+      {
+        "size": 8,
+        "e": 3,
+        "n0": 8,
+        "o": 1
+      },
+      {
+        "size": 16,
+        "e": 4,
+        "n0": 16,
+        "o": 1
+      }
+    ],
+    "signed_ceiling_with_all_tested_fields": 32,
+    "nontrivial_coset_minimum_e": 64,
+    "nontrivial_coset_necessary_prime_budget": "5444517870735015416447011387036026273817"
+  },
+  "one_coset": {
+    "one_coset_counts": [
+      2,
+      2
+    ],
+    "normalized_shares": [
+      1,
+      1
+    ],
+    "ambient_character_sums": [
+      [
+        1,
+        1
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "guaranteed_fiber_size_at_least_power_of_two": 1066
+  },
+  "cyclic_order": [
+    {
+      "tower_exponent": 0,
+      "modulus": 4490640,
+      "order": 1
+    },
+    {
+      "tower_exponent": 1,
+      "modulus": 8981280,
+      "order": 2
+    },
+    {
+      "tower_exponent": 2,
+      "modulus": 17962560,
+      "order": 4
+    },
+    {
+      "tower_exponent": 3,
+      "modulus": 107775360,
+      "order": 8
+    },
+    {
+      "tower_exponent": 4,
+      "modulus": 215550720,
+      "order": 16
+    },
+    {
+      "tower_exponent": 5,
+      "modulus": 431101440,
+      "order": 32
+    },
+    {
+      "tower_exponent": 6,
+      "modulus": 862202880,
+      "order": 64
+    },
+    {
+      "tower_exponent": 7,
+      "modulus": 1724405760,
+      "order": 128
+    },
+    {
+      "tower_exponent": 8,
+      "modulus": 3448811520,
+      "order": 256
+    },
+    {
+      "tower_exponent": 9,
+      "modulus": 20692869120,
+      "order": 512
+    },
+    {
+      "tower_exponent": 10,
+      "modulus": 41385738240,
+      "order": 1024
+    },
+    {
+      "tower_exponent": 11,
+      "modulus": 82771476480,
+      "order": 2048
+    },
+    {
+      "tower_exponent": 12,
+      "modulus": 165542952960,
+      "order": 4096
+    },
+    {
+      "tower_exponent": 13,
+      "modulus": 331085905920,
+      "order": 8192
+    },
+    {
+      "tower_exponent": 14,
+      "modulus": 662171811840,
+      "order": 16384
+    },
+    {
+      "tower_exponent": 15,
+      "modulus": 1324343623680,
+      "order": 32768
+    },
+    {
+      "tower_exponent": 16,
+      "modulus": 2648687247360,
+      "order": 65536
+    }
+  ]
+}

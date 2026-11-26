@@ -1,5 +1,7 @@
 # Selected places and signed indices
 
+**Expanded second edition.** The [36-page revision](../selected-place-transport-expanded/) explains the research progression, tightens the original capacity to 32 and proves in Lean that the original one-coset share condition is automatic at this prime.
+
 [Paper](Selected_Places_and_Signed_Indices.pdf) · [Single LuaLaTeX source](Selected_Places_and_Signed_Indices.tex) · [Complete ZIP](Nous_Selected_Places_and_Signed_Indices.zip)
 
 For the previously fixed readable datum at q₀=18480 and d=9239, its selected set contains **at least 2¹⁰⁷¹ places**. The readable cyclotomic labelling is injective on that same set and reduces to −1 modulo q₀. Any full original host retaining d=9239 has **at most 44 signed indices and 22 unsigned retained indices**. Consequently no injective map into the original signed carrier exists at this datum. Any assignment to old cosets loses raw counts in at least one coset. Normalized shares can agree after compression, as the exact controls demonstrate.
