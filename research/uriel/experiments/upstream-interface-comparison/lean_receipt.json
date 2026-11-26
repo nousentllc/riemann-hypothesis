@@ -1,0 +1,49 @@
+{
+  "compiler": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "source_sha256": "ca0ca8acb80ff4ffc36896204650f9ca16167193a22c36a140402b27cfc8c336",
+  "comparison_sha256": "67bfea7fec79295de32ec10c38c82627cc6a8391ab8885e779fc082b002d98ce",
+  "ramfield_object_sha256": "7a1dc565492c52c424bc561bb5ea5fdda0568f64e055433c438ce968c3a4bd07",
+  "commands": [
+    {
+      "command": [
+        "lean",
+        "-j1",
+        "-o",
+        "Development/AutomorphicArithmetic/DedekindLFunctions/CharFamily.olean",
+        "Development/AutomorphicArithmetic/DedekindLFunctions/CharFamily.lean"
+      ],
+      "exit": 0,
+      "output": ""
+    },
+    {
+      "command": [
+        "leanchecker",
+        "-v",
+        "Development.AutomorphicArithmetic.DedekindLFunctions.CharFamily"
+      ],
+      "exit": 0,
+      "output": "replaying Development.AutomorphicArithmetic.DedekindLFunctions.CharFamily"
+    },
+    {
+      "command": [
+        "lean",
+        "-j1",
+        "-o",
+        "InterfaceChecks.olean",
+        "InterfaceChecks.lean"
+      ],
+      "exit": 0,
+      "output": "'NousInterface.ramp_kernel' depends on axioms: [propext, Classical.choice, Quot.sound]\n'NousInterface.ramp_re' depends on axioms: [propext, Classical.choice, Quot.sound]\n'NousInterface.centered_contrast' depends on axioms: [propext, Classical.choice, Quot.sound]\n'NousInterface.trace_real' depends on axioms: [propext, Classical.choice, Quot.sound]\n'NousInterface.no_integral_trace_one' depends on axioms: [propext, Classical.choice, Quot.sound]\n'NousInterface.four_exceeds_ceiling' depends on axioms: [propext, Classical.choice, Quot.sound]\n'NousInterface.lower_value_passes_ceiling' depends on axioms: [propext, Classical.choice, Quot.sound]"
+    },
+    {
+      "command": [
+        "leanchecker",
+        "-v",
+        "InterfaceChecks"
+      ],
+      "exit": 0,
+      "output": "replaying InterfaceChecks"
+    }
+  ]
+}
