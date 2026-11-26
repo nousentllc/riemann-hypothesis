@@ -1,0 +1,55 @@
+{
+  "mode": "compact",
+  "source_pin": "72fead102f663d5c7a407964a13dc0cf9d977207",
+  "lean": "Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+  "mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "native_compact_order_imports": [
+    {
+      "module": "Lib.General.LinearAlgebra.Base",
+      "source_sha256": "088ce908d2db1b76eb757d39cd377002e1c9659897281f7bd7fe7ee1690bfac0",
+      "object_sha256": "a9de24e2cba942800b6360bd751c14fe464e034d9c4e0fa1d43f16f3830c9105"
+    },
+    {
+      "module": "Lib.General.Analysis.ZpowSum",
+      "source_sha256": "274eb047f6235bee9ea6a93f6ad954e386f6567bb89426db16ada49a4b45f9c0",
+      "object_sha256": "41eacf92128e94b28cce5f4419e181b99a119f881ca62ccaa40d1b0e91d31b71"
+    },
+    {
+      "module": "Lib.Adelic.Adeles.CoprimeValuation",
+      "source_sha256": "a76a861eb0cfe6607c6c7fc7e4ca2643c237f93a0a8ee4ed41213075d966f82c",
+      "object_sha256": "1eb737521ec06b64f7fe8a37f5ca9d9ab195ba24289b69925af7e338978c4b95"
+    },
+    {
+      "module": "Lib.General.NumberTheory.Embeddings",
+      "source_sha256": "0945e883ed33775d845c489f2d2837df6d52aeb1b5efc411d27636a544694831",
+      "object_sha256": "b652956c62b2617614b67022b110bf82266ba438a5384ef786e33efc0996c7ad"
+    },
+    {
+      "module": "Lib.General.NumberTheory.QuadField",
+      "source_sha256": "887033d385afdfdcc1a7bfd5d554289f97cae230d1398ddbd991b544cf29f34a",
+      "object_sha256": "608e659d8bbf8a4cac572ae27194235ffc032796d16063ac682b271bc5319620"
+    },
+    {
+      "module": "Lib.General.NumberTheory.QuadFieldSplitting",
+      "source_sha256": "5064ce6c01c23ff8fa34edbfff0b2d7a575d207572cd24bd1f974dd0551806f8",
+      "object_sha256": "9e68c287190e02c7bcaedbb3336c18c5d5b31426b8316c3bdccd75df48b7546c",
+      "kernel": "replaying Lib.General.NumberTheory.QuadFieldSplitting"
+    }
+  ],
+  "audit_modules": [
+    {
+      "module": "SpacingLogic",
+      "source_sha256": "003813175ebe094e151fde5a26f6a57e493b3eae245a359905a1ab01a1dbe32a",
+      "object_sha256": "efb87a695b1e700230dee802e64753fb7b9b6a88c1125851f7956c99b4228b26",
+      "elaboration": "'FrobeniusSpacing.two_targets_conflict' depends on axioms: [propext]\n'FrobeniusSpacing.mixed_power' does not depend on any axioms\n'FrobeniusSpacing.two_odd_targets' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FrobeniusSpacing.odd_power_order_guard' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FrobeniusSpacing.dyadic_collision_certificate' depends on axioms: [propext, Quot.sound]",
+      "kernel": "replaying SpacingLogic"
+    },
+    {
+      "module": "CompactOrder",
+      "source_sha256": "ef836bd0400ddb26d04e3ad739e425a91678b62d4972b405311975bea801ad21",
+      "object_sha256": "ad3ac0e9b97fde7e2b431cca56b5c328948299829139e350d4bba03d5143386d",
+      "elaboration": "'FrobeniusSpacing.compact_order_guard' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FrobeniusSpacing.compact_no_two_short_targets' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "kernel": "replaying CompactOrder"
+    }
+  ]
+}

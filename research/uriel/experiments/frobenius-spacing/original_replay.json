@@ -1,0 +1,23 @@
+{
+  "mode": "original",
+  "source_pin": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "lean": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "native_compact_order_imports": [],
+  "audit_modules": [
+    {
+      "module": "OriginalSpacing",
+      "source_sha256": "b87b990b7229f62abbbc011ba3d5ca2cd7610e69ddc3245fe8a9231617c1e751",
+      "object_sha256": "41cbef7288c161e2e8b223a209ccf11ac87f3b2f929d584e606c76d781002d23",
+      "elaboration": "'FrobeniusSpacing.rank_identity_prime_floor' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FrobeniusSpacing.no_fixed_rank_val' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FrobeniusSpacing.inert_step_and_partner' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FrobeniusSpacing.old_good_orbit_offset_cap' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FrobeniusSpacing.actual_host_offset_cap' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FrobeniusSpacing.at_most_one_from_two_slot_cap' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "kernel": "replaying OriginalSpacing"
+    },
+    {
+      "module": "OrbitControls",
+      "source_sha256": "95d6cda966ffc5ebeb63801e96a2d4512c3072373c102b6619b8cc9fe2594aa1",
+      "object_sha256": "8244903d6d44a37f3255309b22cbe65c7e46ee8e6d3e549f3924b53aed91b55e",
+      "elaboration": "'FrobeniusSpacing.marked_forbids_internal_odd_pair' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FrobeniusSpacing.literal_good_with_two_partners' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FrobeniusSpacing.same_caps_without_odd_partners' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "kernel": "replaying OrbitControls"
+    }
+  ]
+}

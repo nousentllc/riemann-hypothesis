@@ -1,0 +1,322 @@
+{
+  "fixed_cases": {
+    "collision": {
+      "retained": [
+        2,
+        6,
+        10,
+        15
+      ],
+      "clauses": {
+        "short": true,
+        "tiles": true,
+        "long": true
+      },
+      "length_8_occupancy": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3
+      ],
+      "offsets_horizon_8": {
+        "2": [],
+        "6": [],
+        "10": [
+          5
+        ],
+        "15": [
+          3,
+          7
+        ]
+      },
+      "offsets_horizon_16": {
+        "2": [
+          13
+        ],
+        "6": [
+          9
+        ],
+        "10": [
+          5
+        ],
+        "15": [
+          3,
+          7,
+          11
+        ]
+      }
+    },
+    "no_odd_target": {
+      "retained": [
+        2,
+        6,
+        10,
+        14
+      ],
+      "clauses": {
+        "short": true,
+        "tiles": true,
+        "long": true
+      },
+      "length_8_occupancy": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "offsets_horizon_8": {
+        "2": [],
+        "6": [],
+        "10": [],
+        "14": []
+      },
+      "offsets_horizon_16": {
+        "2": [],
+        "6": [],
+        "10": [],
+        "14": []
+      }
+    }
+  },
+  "n32_enumeration": [
+    {
+      "short_cap": 2,
+      "passes": 335,
+      "classification": {
+        "rejected": 481,
+        "at_most_one": 335
+      },
+      "histogram_of_maximum": {
+        "0": 57,
+        "1": 278
+      }
+    },
+    {
+      "short_cap": 3,
+      "passes": 802,
+      "classification": {
+        "rejected": 14,
+        "at_most_one": 554,
+        "multiple": 248
+      },
+      "histogram_of_maximum": {
+        "0": 92,
+        "1": 462,
+        "2": 248
+      }
+    },
+    {
+      "short_cap": 4,
+      "passes": 816,
+      "classification": {
+        "at_most_one": 556,
+        "multiple": 260
+      },
+      "histogram_of_maximum": {
+        "0": 92,
+        "1": 464,
+        "2": 259,
+        "3": 1
+      }
+    }
+  ],
+  "sharp_family": [
+    {
+      "r": 1,
+      "degree": 1,
+      "n": 32,
+      "cap": 2,
+      "tiles": 2
+    },
+    {
+      "r": 1,
+      "degree": 2,
+      "n": 32,
+      "cap": 3,
+      "tiles": 2
+    },
+    {
+      "r": 1,
+      "degree": 3,
+      "n": 32,
+      "cap": 4,
+      "tiles": 2
+    },
+    {
+      "r": 1,
+      "degree": 4,
+      "n": 64,
+      "cap": 5,
+      "tiles": 4
+    },
+    {
+      "r": 1,
+      "degree": 8,
+      "n": 64,
+      "cap": 9,
+      "tiles": 4
+    },
+    {
+      "r": 1,
+      "degree": 16,
+      "n": 128,
+      "cap": 17,
+      "tiles": 9
+    },
+    {
+      "r": 1,
+      "degree": 32,
+      "n": 256,
+      "cap": 33,
+      "tiles": 18
+    },
+    {
+      "r": 2,
+      "degree": 1,
+      "n": 32,
+      "cap": 2,
+      "tiles": 1
+    },
+    {
+      "r": 2,
+      "degree": 2,
+      "n": 64,
+      "cap": 3,
+      "tiles": 2
+    },
+    {
+      "r": 2,
+      "degree": 3,
+      "n": 64,
+      "cap": 4,
+      "tiles": 2
+    },
+    {
+      "r": 2,
+      "degree": 4,
+      "n": 64,
+      "cap": 5,
+      "tiles": 2
+    },
+    {
+      "r": 2,
+      "degree": 8,
+      "n": 128,
+      "cap": 9,
+      "tiles": 4
+    },
+    {
+      "r": 2,
+      "degree": 16,
+      "n": 128,
+      "cap": 17,
+      "tiles": 4
+    },
+    {
+      "r": 2,
+      "degree": 32,
+      "n": 256,
+      "cap": 33,
+      "tiles": 9
+    },
+    {
+      "r": 7,
+      "degree": 1,
+      "n": 128,
+      "cap": 2,
+      "tiles": 1
+    },
+    {
+      "r": 7,
+      "degree": 2,
+      "n": 128,
+      "cap": 3,
+      "tiles": 1
+    },
+    {
+      "r": 7,
+      "degree": 3,
+      "n": 128,
+      "cap": 4,
+      "tiles": 1
+    },
+    {
+      "r": 7,
+      "degree": 4,
+      "n": 128,
+      "cap": 5,
+      "tiles": 1
+    },
+    {
+      "r": 7,
+      "degree": 8,
+      "n": 256,
+      "cap": 9,
+      "tiles": 2
+    },
+    {
+      "r": 7,
+      "degree": 16,
+      "n": 256,
+      "cap": 17,
+      "tiles": 2
+    },
+    {
+      "r": 7,
+      "degree": 32,
+      "n": 512,
+      "cap": 33,
+      "tiles": 5
+    }
+  ],
+  "incoming_control": {
+    "retained": [
+      2,
+      4,
+      5
+    ],
+    "outgoing": {
+      "2": [
+        3
+      ],
+      "4": [
+        1
+      ],
+      "5": []
+    },
+    "incoming_to_5": [
+      2,
+      4
+    ]
+  },
+  "rank_floor": {
+    "r_min": 6,
+    "nWv_per_r": 660,
+    "t_min": 3954,
+    "strict_d_floor": 94897
+  }
+}
