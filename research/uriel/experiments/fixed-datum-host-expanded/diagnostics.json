@@ -1,0 +1,500 @@
+{
+  "primes": {
+    "odd_multipliers_per_modulus": 50,
+    "prime_residues": {
+      "7": 182,
+      "15": 199
+    },
+    "by_modulus": [
+      {
+        "multiplier": 1,
+        "prime_records": 15,
+        "first": 9239
+      },
+      {
+        "multiplier": 2,
+        "prime_records": 20,
+        "first": 55439
+      },
+      {
+        "multiplier": 3,
+        "prime_records": 15,
+        "first": 138599
+      },
+      {
+        "multiplier": 4,
+        "prime_records": 14,
+        "first": 110879
+      },
+      {
+        "multiplier": 5,
+        "prime_records": 8,
+        "first": 46199
+      },
+      {
+        "multiplier": 6,
+        "prime_records": 20,
+        "first": 55439
+      },
+      {
+        "multiplier": 7,
+        "prime_records": 18,
+        "first": 64679
+      },
+      {
+        "multiplier": 8,
+        "prime_records": 14,
+        "first": 665279
+      },
+      {
+        "multiplier": 9,
+        "prime_records": 17,
+        "first": 415799
+      },
+      {
+        "multiplier": 10,
+        "prime_records": 20,
+        "first": 92399
+      },
+      {
+        "multiplier": 11,
+        "prime_records": 15,
+        "first": 711479
+      },
+      {
+        "multiplier": 12,
+        "prime_records": 19,
+        "first": 110879
+      },
+      {
+        "multiplier": 13,
+        "prime_records": 16,
+        "first": 840839
+      },
+      {
+        "multiplier": 14,
+        "prime_records": 14,
+        "first": 1681679
+      },
+      {
+        "multiplier": 15,
+        "prime_records": 12,
+        "first": 138599
+      },
+      {
+        "multiplier": 16,
+        "prime_records": 17,
+        "first": 739199
+      },
+      {
+        "multiplier": 17,
+        "prime_records": 14,
+        "first": 1099559
+      },
+      {
+        "multiplier": 18,
+        "prime_records": 15,
+        "first": 166319
+      },
+      {
+        "multiplier": 19,
+        "prime_records": 15,
+        "first": 526679
+      },
+      {
+        "multiplier": 20,
+        "prime_records": 12,
+        "first": 2032799
+      },
+      {
+        "multiplier": 21,
+        "prime_records": 16,
+        "first": 582119
+      },
+      {
+        "multiplier": 22,
+        "prime_records": 19,
+        "first": 203279
+      },
+      {
+        "multiplier": 23,
+        "prime_records": 21,
+        "first": 1062599
+      },
+      {
+        "multiplier": 24,
+        "prime_records": 15,
+        "first": 665279
+      }
+    ]
+  },
+  "coset_panels": [
+    {
+      "o": 2,
+      "capacity": 8,
+      "subsets": 65535,
+      "rows": [
+        {
+          "m": 1,
+          "best": "3/7",
+          "attaining": 8,
+          "radii_checked": 5
+        },
+        {
+          "m": 2,
+          "best": "1/14",
+          "attaining": 64,
+          "radii_checked": 7
+        },
+        {
+          "m": 3,
+          "best": "2/21",
+          "attaining": 224,
+          "radii_checked": 9
+        },
+        {
+          "m": 4,
+          "best": "1/14",
+          "attaining": 784,
+          "radii_checked": 11
+        },
+        {
+          "m": 5,
+          "best": "1/35",
+          "attaining": 1568,
+          "radii_checked": 13
+        },
+        {
+          "m": 6,
+          "best": "1/14",
+          "attaining": 3136,
+          "radii_checked": 15
+        },
+        {
+          "m": 7,
+          "best": "0",
+          "attaining": 3920,
+          "radii_checked": 9
+        },
+        {
+          "m": 8,
+          "best": "3/56",
+          "attaining": 3136,
+          "radii_checked": 19
+        },
+        {
+          "m": 9,
+          "best": "1/63",
+          "attaining": 3920,
+          "radii_checked": 17
+        },
+        {
+          "m": 10,
+          "best": "1/35",
+          "attaining": 1960,
+          "radii_checked": 15
+        },
+        {
+          "m": 11,
+          "best": "2/77",
+          "attaining": 1568,
+          "radii_checked": 13
+        },
+        {
+          "m": 12,
+          "best": "1/84",
+          "attaining": 448,
+          "radii_checked": 11
+        },
+        {
+          "m": 13,
+          "best": "3/91",
+          "attaining": 224,
+          "radii_checked": 9
+        },
+        {
+          "m": 14,
+          "best": "0",
+          "attaining": 28,
+          "radii_checked": 5
+        },
+        {
+          "m": 15,
+          "best": "4/105",
+          "attaining": 8,
+          "radii_checked": 5
+        },
+        {
+          "m": 16,
+          "best": "1/14",
+          "attaining": 1,
+          "radii_checked": 3
+        }
+      ]
+    },
+    {
+      "o": 3,
+      "capacity": 4,
+      "subsets": 4095,
+      "rows": [
+        {
+          "m": 1,
+          "best": "3/5",
+          "attaining": 4,
+          "radii_checked": 5
+        },
+        {
+          "m": 2,
+          "best": "3/10",
+          "attaining": 32,
+          "radii_checked": 9
+        },
+        {
+          "m": 3,
+          "best": "1/15",
+          "attaining": 64,
+          "radii_checked": 13
+        },
+        {
+          "m": 4,
+          "best": "1/10",
+          "attaining": 96,
+          "radii_checked": 17
+        },
+        {
+          "m": 5,
+          "best": "1/10",
+          "attaining": 288,
+          "radii_checked": 11
+        },
+        {
+          "m": 6,
+          "best": "1/15",
+          "attaining": 216,
+          "radii_checked": 17
+        },
+        {
+          "m": 7,
+          "best": "1/35",
+          "attaining": 144,
+          "radii_checked": 17
+        },
+        {
+          "m": 8,
+          "best": "3/40",
+          "attaining": 192,
+          "radii_checked": 17
+        },
+        {
+          "m": 9,
+          "best": "1/15",
+          "attaining": 64,
+          "radii_checked": 13
+        },
+        {
+          "m": 10,
+          "best": "0",
+          "attaining": 16,
+          "radii_checked": 5
+        },
+        {
+          "m": 11,
+          "best": "7/110",
+          "attaining": 8,
+          "radii_checked": 5
+        },
+        {
+          "m": 12,
+          "best": "1/15",
+          "attaining": 1,
+          "radii_checked": 3
+        }
+      ]
+    },
+    {
+      "o": 4,
+      "capacity": 4,
+      "subsets": 65535,
+      "rows": [
+        {
+          "m": 1,
+          "best": "9/13",
+          "attaining": 4,
+          "radii_checked": 5
+        },
+        {
+          "m": 2,
+          "best": "7/26",
+          "attaining": 48,
+          "radii_checked": 9
+        },
+        {
+          "m": 3,
+          "best": "3/13",
+          "attaining": 192,
+          "radii_checked": 13
+        },
+        {
+          "m": 4,
+          "best": "3/52",
+          "attaining": 256,
+          "radii_checked": 17
+        },
+        {
+          "m": 5,
+          "best": "6/65",
+          "attaining": 384,
+          "radii_checked": 17
+        },
+        {
+          "m": 6,
+          "best": "4/39",
+          "attaining": 1728,
+          "radii_checked": 17
+        },
+        {
+          "m": 7,
+          "best": "8/91",
+          "attaining": 2592,
+          "radii_checked": 17
+        },
+        {
+          "m": 8,
+          "best": "3/52",
+          "attaining": 1296,
+          "radii_checked": 17
+        },
+        {
+          "m": 9,
+          "best": "1/39",
+          "attaining": 864,
+          "radii_checked": 17
+        },
+        {
+          "m": 10,
+          "best": "9/130",
+          "attaining": 1728,
+          "radii_checked": 17
+        },
+        {
+          "m": 11,
+          "best": "7/143",
+          "attaining": 1152,
+          "radii_checked": 17
+        },
+        {
+          "m": 12,
+          "best": "3/52",
+          "attaining": 256,
+          "radii_checked": 17
+        },
+        {
+          "m": 13,
+          "best": "0",
+          "attaining": 64,
+          "radii_checked": 7
+        },
+        {
+          "m": 14,
+          "best": "5/91",
+          "attaining": 48,
+          "radii_checked": 9
+        },
+        {
+          "m": 15,
+          "best": "8/195",
+          "attaining": 12,
+          "radii_checked": 5
+        },
+        {
+          "m": 16,
+          "best": "3/52",
+          "attaining": 1,
+          "radii_checked": 3
+        }
+      ]
+    },
+    {
+      "o": 5,
+      "capacity": 2,
+      "subsets": 1023,
+      "rows": [
+        {
+          "m": 1,
+          "best": "3/4",
+          "attaining": 2,
+          "radii_checked": 5
+        },
+        {
+          "m": 2,
+          "best": "5/16",
+          "attaining": 40,
+          "radii_checked": 7
+        },
+        {
+          "m": 3,
+          "best": "3/16",
+          "attaining": 48,
+          "radii_checked": 9
+        },
+        {
+          "m": 4,
+          "best": "3/16",
+          "attaining": 64,
+          "radii_checked": 7
+        },
+        {
+          "m": 5,
+          "best": "1/20",
+          "attaining": 32,
+          "radii_checked": 9
+        },
+        {
+          "m": 6,
+          "best": "1/12",
+          "attaining": 16,
+          "radii_checked": 9
+        },
+        {
+          "m": 7,
+          "best": "11/112",
+          "attaining": 32,
+          "radii_checked": 9
+        },
+        {
+          "m": 8,
+          "best": "1/16",
+          "attaining": 24,
+          "radii_checked": 9
+        },
+        {
+          "m": 9,
+          "best": "11/144",
+          "attaining": 8,
+          "radii_checked": 5
+        },
+        {
+          "m": 10,
+          "best": "1/20",
+          "attaining": 1,
+          "radii_checked": 3
+        }
+      ]
+    }
+  ],
+  "enumerated_subsets": 136188,
+  "interval_checks": 574,
+  "two_sheet_collisions": {
+    "cases": 44,
+    "example": {
+      "weighted": "0",
+      "unweighted": "6/35"
+    },
+    "maximum": {
+      "k": 5,
+      "r": 2,
+      "m": 7,
+      "discrepancy": "6/35"
+    }
+  }
+}

@@ -4,6 +4,10 @@ This directory contains our reading notes and prospective experiments on Levent 
 
 Start with [PROOF_CONTEXT.md](PROOF_CONTEXT.md), which reconstructs selected analytic, arithmetic, cohomological, and covolume arguments at the original source pin. Its companion traces and [SOURCE_TRACE.json](SOURCE_TRACE.json) record the inspected declarations. The earlier [RESEARCH_NOTES.md](RESEARCH_NOTES.md) is retained as an initial, more limited reading. Import provenance is recorded in [PROVENANCE.json](PROVENANCE.json).
 
+## Arithmetic witness architecture papers
+
+The [expanded fixed-integer witness paper](experiments/fixed-datum-host-expanded/) classifies when a readable parameter pair meets the original prime conditions and traces the two original estimates to one retained set. The [preceding architecture paper](experiments/window-remainder-architecture/) gives the centered prime-sum identity. The [first witness edition](experiments/fixed-datum-host/) preserves the initial experiment and its replay.
+
 ## Baselines
 
 - **Published proof:** `40e56bab026552e089d7afcfeff08d2defb9c005` in the upstream Git history. This is the original source release, written for Lean 4.33.1.
