@@ -4,7 +4,7 @@
 
 ![Six research tracks from the original arithmetic-window formalization to same-set gain, local densities and model reading tests](research-map.png)
 
-[Open the branch index below](#studies-by-research-question) · [Download the searchable HTML map](research-map.html) · [Machine-readable index](study-index.json)
+[Open the branch index below](#studies-by-research-question) · [Download the searchable HTML map](research-map.html) · [Machine-readable index](study-index.json) · [Older research ZIPs](legacy-packages/README.md)
 
 ## Where to start
 
