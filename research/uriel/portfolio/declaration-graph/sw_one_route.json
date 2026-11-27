@@ -1,0 +1,238 @@
+{
+  "url": "https://photos.proofsandreasons.io/alp-graph/rh/alp-declaration-graph-used-by-rh.json.gz",
+  "sha256": "82c88d25d909a1399c754b87ce298e1939ab0908aeb4766fdac8a57387c71dc5",
+  "publisher_metadata": {
+    "description": "Declaration-level dependency graph of the proof of riemannHypothesis in the Lean development posted at alpo.ge (lean.tar.gz.part01..14), read from the compiled .olean files. It holds every declaration that riemannHypothesis uses, directly or through a chain of other declarations, and nothing else; the 256,458 declarations of the development that the theorem does not use are left out.",
+    "source_sha256": "9631b4f020199e580ba86178cb56c6e9b09f690c2369a80dc4334aa93f49c7fc",
+    "lean": "4.33.1",
+    "mathlib": "tag v4.33.1",
+    "declarations": 806982,
+    "links": 8197610,
+    "built": "2026-11-21",
+    "node": "a source declaration; compiler-generated helpers (foo._proof_1, Foo.rec, foo.eq_1, ...), structure fields and constructors are folded into the declaration that owns them",
+    "link": "A uses B when B's constant occurs in the elaborated statement (uses_in_signature) or in the value/proof (uses_in_body) of A or of a helper folded into A; uses of Mathlib and core Lean are not included",
+    "fields": {
+      "id": "index into nodes",
+      "id_in_full_graph": "the same declaration's id in alp-declaration-graph.json.gz, the graph of the whole development",
+      "name": "declaration name (private prefix removed)",
+      "kind": "source keyword",
+      "file": "path under src/",
+      "line": "first line of the declaration",
+      "tokens": "tokens of the declaration's source text under the scoring model's tokenizer (Kimina-Prover-Distill-0.6B)",
+      "surprise_bits": "sum over those tokens of -log2 p(token | the file so far); null for the 21 declarations with no source text",
+      "surprise_bits_signature": "the part of surprise_bits before the body starts (first := or where outside brackets)",
+      "surprise_bits_body": "the rest",
+      "surprise_bits_alone": "the same sum when the declaration is scored on its own, with no file context",
+      "tokens_signature": "tokens in the signature part",
+      "tokens_alone": "tokens when scored alone (tokenisation can differ slightly at the edges)",
+      "note_on_units": "all surprise values are totals in bits; divide by the matching token count for bits per token",
+      "steps_below_riemannHypothesis": "length of the shortest chain of uses from riemannHypothesis",
+      "uses_in_signature": "ids",
+      "uses_in_body": "ids"
+    }
+  },
+  "unique_directed_edges": 8197610,
+  "nodes": 806982,
+  "shortest_distance": 17,
+  "one_shortest_path": [
+    {
+      "id": 773206,
+      "name": "riemannHypothesis",
+      "file": "Main.lean",
+      "line": 4,
+      "steps_below_riemannHypothesis": 0,
+      "outgoing_reference": [
+        "uses_in_body"
+      ]
+    },
+    {
+      "id": 806981,
+      "name": "rhOfAll",
+      "file": "Supplements/Kernels/MainTheorems.lean",
+      "line": 9,
+      "steps_below_riemannHypothesis": 1,
+      "outgoing_reference": [
+        "uses_in_body"
+      ]
+    },
+    {
+      "id": 806980,
+      "name": "allChi",
+      "file": "Supplements/Kernels/MainTheorems.lean",
+      "line": 7,
+      "steps_below_riemannHypothesis": 2,
+      "outgoing_reference": [
+        "uses_in_body"
+      ]
+    },
+    {
+      "id": 389043,
+      "name": "UpperTheory.FinalTheorems.everyCharacter",
+      "file": "Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean",
+      "line": 10,
+      "steps_below_riemannHypothesis": 3,
+      "outgoing_reference": [
+        "uses_in_body"
+      ]
+    },
+    {
+      "id": 389042,
+      "name": "UpperTheory.FinalTheorems.everyCharacter_of_row",
+      "file": "Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean",
+      "line": 7,
+      "steps_below_riemannHypothesis": 4,
+      "outgoing_reference": [
+        "uses_in_body"
+      ]
+    },
+    {
+      "id": 425028,
+      "name": "UpperTheory.LiteratureTheorems.every_character_of_literature_of_vWin",
+      "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean",
+      "line": 810,
+      "steps_below_riemannHypothesis": 5,
+      "outgoing_reference": [
+        "uses_in_body"
+      ]
+    },
+    {
+      "id": 425025,
+      "name": "UpperTheory.LiteratureTheorems.published_results_eigen",
+      "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean",
+      "line": 666,
+      "steps_below_riemannHypothesis": 6,
+      "outgoing_reference": [
+        "uses_in_body"
+      ]
+    },
+    {
+      "id": 425015,
+      "name": "UpperTheory.LiteratureTheorems.siegelWeilU_unitary_convergent_of_literature",
+      "file": "Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean",
+      "line": 581,
+      "steps_below_riemannHypothesis": 7,
+      "outgoing_reference": [
+        "uses_in_body"
+      ]
+    },
+    {
+      "id": 6088,
+      "name": "GlobalTheory.CompanionTheory.SW.siegelWeilUnitaryConvergent",
+      "file": "CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/Imports.lean",
+      "line": 10,
+      "steps_below_riemannHypothesis": 8,
+      "outgoing_reference": [
+        "uses_in_body"
+      ]
+    },
+    {
+      "id": 6819,
+      "name": "GlobalTheory.T.siegel_densities_of_hermitian_form",
+      "file": "CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/SiegelDensitiesOfHermitianFormStatement.lean",
+      "line": 7,
+      "steps_below_riemannHypothesis": 9,
+      "outgoing_reference": [
+        "uses_in_body"
+      ]
+    },
+    {
+      "id": 6818,
+      "name": "GlobalTheory.CompanionTheory.SW.TopDens.siegelDensities",
+      "file": "CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/SiegelDensitiesOfHermitianForm.lean",
+      "line": 47,
+      "steps_below_riemannHypothesis": 10,
+      "outgoing_reference": [
+        "uses_in_body"
+      ]
+    },
+    {
+      "id": 6894,
+      "name": "GlobalTheory.T.siegel_weil_measure_of_rank_small_or_zero",
+      "file": "CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/SiegelWeilMeasureOfRankSmallOrZeroStatement.lean",
+      "line": 7,
+      "steps_below_riemannHypothesis": 11,
+      "outgoing_reference": [
+        "uses_in_body"
+      ]
+    },
+    {
+      "id": 6893,
+      "name": "GlobalTheory.CompanionTheory.SW.AllFrames.swMeas_all",
+      "file": "CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/SiegelWeilMeasureOfRankSmallOrZero.lean",
+      "line": 16,
+      "steps_below_riemannHypothesis": 12,
+      "outgoing_reference": [
+        "uses_in_body"
+      ]
+    },
+    {
+      "id": 6846,
+      "name": "GlobalTheory.T.siegel_weil_measure_block_one_of_not_represented",
+      "file": "CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/SiegelWeilMeasureAddBlockAnisotropicStatement.lean",
+      "line": 7,
+      "steps_below_riemannHypothesis": 13,
+      "outgoing_reference": [
+        "uses_in_body"
+      ]
+    },
+    {
+      "id": 6845,
+      "name": "GlobalTheory.CompanionTheory.SW.swMeas_of_not_represented",
+      "file": "CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/SiegelWeilMeasureAddBlockAnisotropic.lean",
+      "line": 74,
+      "steps_below_riemannHypothesis": 14,
+      "outgoing_reference": [
+        "uses_in_body"
+      ]
+    },
+    {
+      "id": 6896,
+      "name": "GlobalTheory.T.siegel_weil_measure_rank_one",
+      "file": "CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/SiegelWeilMeasureRankOneStatement.lean",
+      "line": 7,
+      "steps_below_riemannHypothesis": 15,
+      "outgoing_reference": [
+        "uses_in_body"
+      ]
+    },
+    {
+      "id": 6895,
+      "name": "GlobalTheory.CompanionTheory.SW.OneVector.siegel_one_vector",
+      "file": "CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/SiegelWeilMeasureRankOne.lean",
+      "line": 9,
+      "steps_below_riemannHypothesis": 16,
+      "outgoing_reference": [
+        "uses_in_body"
+      ]
+    },
+    {
+      "id": 2180,
+      "name": "CompanionTheory.PlacePermOperatorBicommutantSpan.sw_one",
+      "file": "CompanionTheory/AutomorphicTheory/ThetaDilations/SwOne.lean",
+      "line": 23,
+      "steps_below_riemannHypothesis": 17
+    }
+  ],
+  "inputs": [
+    {
+      "id": 5797,
+      "name": "GlobalTheory.T.thetaMeas_rank_one_sub_density_product_le",
+      "file": "CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/HaarFundamentalDomainRankOneDensityStatement.lean",
+      "line": 7,
+      "steps_below_riemannHypothesis": 18,
+      "reference_from_sw_one": [
+        "uses_in_body"
+      ]
+    },
+    {
+      "id": 6654,
+      "name": "GlobalTheory.T.exists_frequently_mul_pow_le_tprod_rank_one_local_density",
+      "file": "CompanionTheory/SpectralGeometry/LocalGlobalProofs/AdelicAnalysis/RankOneLocalDensitiesProductConvergesStatement.lean",
+      "line": 7,
+      "steps_below_riemannHypothesis": 18,
+      "reference_from_sw_one": [
+        "uses_in_body"
+      ]
+    }
+  ]
+}

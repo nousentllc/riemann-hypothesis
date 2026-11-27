@@ -1,6 +1,6 @@
 # Riemann proof studies
 
-42 experiment branches and 9 additional editions or substudies. Links are pinned to the Git state audited on 2026-11-26.
+42 experiment branches and 11 additional editions or substudies. Links are pinned to the Git state audited on 2026-11-26.
 
 ![Six research tracks from the original arithmetic-window formalization to same-set gain, local densities and model reading tests](research-map.png)
 
@@ -9,8 +9,10 @@
 ## Where to start
 
 - To understand the common analytic observable, read the [windows and remainder study](https://github.com/nousentllc/riemann-hypothesis/tree/43141b319692e076cd6f6132534a3bec9f86fa39/research/uriel/experiments/window-remainder-architecture) and the [joint critical edition](https://github.com/nousentllc/riemann-hypothesis/tree/43141b319692e076cd6f6132534a3bec9f86fa39/research/uriel/experiments/proof-interfaces-critical-edition).
+- For the third source edition, see the [compact proof audit](compact-proof-audit/README.md). It follows the signed auxiliary cutoff and the cost of the missing independent forms.
 - To follow one arithmetic choice, start at [PairRow and the core](https://github.com/nousentllc/riemann-hypothesis/tree/bafda6a5728eb08b601943f0c9cb1d38d27c03a9/research/uriel/experiments/joint-witness), then read the [fixed-datum study](https://github.com/nousentllc/riemann-hypothesis/tree/43141b319692e076cd6f6132534a3bec9f86fa39/research/uriel/experiments/fixed-datum-host-expanded) and [selected-place transport](https://github.com/nousentllc/riemann-hypothesis/tree/43141b319692e076cd6f6132534a3bec9f86fa39/research/uriel/experiments/selected-place-transport-expanded).
 - To reproduce a standalone local theorem, read [the ramified Gram-fiber bridge](https://github.com/nousentllc/riemann-hypothesis/tree/63c06fe44eb700e4550e4a2b70adafe09cb1ff9b/research/uriel/experiments/ramified-gram-bridge) and [the square-dilate extension](https://github.com/nousentllc/riemann-hypothesis/tree/17263859a4d27c62cfc67571737355f61a080806/research/uriel/experiments/ramified-square-dilates).
+- To see how those local questions reach the original proof, follow the [declaration route to the rank-one normalization](declaration-graph/README.md).
 
 ## Latest result
 
@@ -61,6 +63,8 @@ Distinguishing existence from identification explains why a bound can hold even 
 | [Fixed slot at seven](https://github.com/nousentllc/riemann-hypothesis/tree/4f0a1148df04b3f12ea05431b20165880342b11b/research/uriel/experiments/cyclotomic-slot-seven) | Shows vanishing at fixed slots 3 and 7 and isolates the moving field tests at 2. | [`4f0a114`](https://github.com/nousentllc/riemann-hypothesis/commit/4f0a1148df04b3f12ea05431b20165880342b11b) |
 | [Recovering the arithmetic witness](https://github.com/nousentllc/riemann-hypothesis/tree/43141b319692e076cd6f6132534a3bec9f86fa39/research/uriel/experiments/fixed-datum-host-expanded) | Traces a fixed readable datum, its prime partition, and the constraints of transporting the same original witness. | [`43141b3`](https://github.com/nousentllc/riemann-hypothesis/commit/43141b319692e076cd6f6132534a3bec9f86fa39) |
 | [Selected places and signed indices](https://github.com/nousentllc/riemann-hypothesis/tree/43141b319692e076cd6f6132534a3bec9f86fa39/research/uriel/experiments/selected-place-transport-expanded) | Checks capacity and conditional coset transport at q₀ = 18480 and d = 9239. | [`43141b3`](https://github.com/nousentllc/riemann-hypothesis/commit/43141b319692e076cd6f6132534a3bec9f86fa39) |
+| [Recovering the arithmetic witness, first edition](https://github.com/nousentllc/riemann-hypothesis/tree/43141b319692e076cd6f6132534a3bec9f86fa39/research/uriel/experiments/fixed-datum-host) | The first fixed-integer study identifies the readable data and the extra hypotheses linking it to the original witness. | [`43141b3`](https://github.com/nousentllc/riemann-hypothesis/commit/43141b319692e076cd6f6132534a3bec9f86fa39) |
+| [Selected places and signed indices, first edition](https://github.com/nousentllc/riemann-hypothesis/tree/43141b319692e076cd6f6132534a3bec9f86fa39/research/uriel/experiments/selected-place-transport) | The original capacity comparison tests whether the readable selected places can fit into the old signed carrier. | [`43141b3`](https://github.com/nousentllc/riemann-hypothesis/commit/43141b319692e076cd6f6132534a3bec9f86fa39) |
 
 ### Orbit losses & recovery
 

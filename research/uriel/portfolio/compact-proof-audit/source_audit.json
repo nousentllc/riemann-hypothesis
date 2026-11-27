@@ -1,0 +1,127 @@
+{
+  "release_commit": "72fead102f663d5c7a407964a13dc0cf9d977207",
+  "previous_readable_commit": "e063a923620ee7787b4a1270421478645bf66bdb",
+  "readable": {
+    "files": 803,
+    "physical_lines_including_comments_and_blanks": 477124,
+    "nonblank_lines_including_comments": 432527
+  },
+  "compact": {
+    "files": 794,
+    "physical_lines_including_comments_and_blanks": 112827,
+    "nonblank_lines_including_comments": 95030
+  },
+  "release_readable_versus_previous_readable": {
+    "equal_files": 763,
+    "changed_files": [
+      "Lib/Adelic/AutomorphicForms/HeckeEigenforms.lean",
+      "Lib/Analytic/Landau.lean",
+      "Lib/ClassField/HeckeCharacter/SplittingCharacters.lean",
+      "Lib/Cohomology/ProjectiveLine/ChernClass.lean",
+      "Lib/Cyclotomic/Stickelberger.lean",
+      "Lib/General/Groups/CharacterTheory.lean",
+      "Lib/SiegelWeil/RallisInner/SharpData.lean",
+      "Lib/Weil/DualPair/Defs.lean",
+      "New/Congruences/FirstOrder/OnePrime.lean",
+      "New/Congruences/FitTwistsExist.lean",
+      "New/Congruences/GaloisRepresentations/BaseLevelOfLabel.lean",
+      "New/Congruences/Lifting/SidePoints.lean",
+      "New/Congruences/Selmer/GeneralTheorem.lean",
+      "New/Congruences/Selmer/LValueSystems.lean",
+      "New/Congruences/Selmer/MainSummands.lean",
+      "New/Congruences/Selmer/SelmerData.lean",
+      "New/Congruences/Selmer/StickelbergerSystems.lean",
+      "New/Determinant/AuxiliaryForms/PathData.lean",
+      "New/Determinant/Exchange/MatchingPartners.lean",
+      "New/Determinant/Norms/AdjointThetaLift.lean",
+      "New/Determinant/Twist/FitTwists.lean",
+      "New/Determinant/Twist/LongForms.lean",
+      "New/OneLift/ComparisonOperator/GluingMaps.lean",
+      "New/OneLift/FalseLifts/PeriodsOfFalseLifts.lean",
+      "New/Reduction/Data/Existence.lean",
+      "New/Reduction/OneSidedBound.lean",
+      "New/Reduction/Zeros/Criterion.lean",
+      "New/Reduction/Zeros/PrimeError.lean",
+      "New/Spanning/Frames/Correlations.lean",
+      "New/Spanning/Frames/Lengths.lean",
+      "New/Spanning/Frames/TopFloor.lean",
+      "New/Spanning/RemainingTerms/LinkVectors.lean",
+      "New/Spanning/RemainingTerms/SiegelLemma.lean",
+      "New/Spanning/RemainingTerms/Sum.lean",
+      "New/Spanning/Unfolding/BesselLevelStructure.lean",
+      "New/Spanning/Unfolding/ReducedGroups.lean",
+      "New/UpperBound/Divisibility/MarkedPrimes.lean",
+      "New/UpperBound/ElementaryDivisors/ElementaryDivisorTheorem.lean",
+      "New/UpperBound/Seesaw/UnfoldingStages.lean"
+    ],
+    "first_only": [
+      "New/Spanning/RemainingTerms/Denominators.lean"
+    ],
+    "second_only": []
+  },
+  "shared_statements": {
+    "byte_identical": true,
+    "bytes": 783,
+    "sha256": "79ef7ca776e42abe1f46caee13ea09bd19f1e2d0b1620d8d5d200258f33b47bf"
+  },
+  "compact_anchors": {
+    "lemma star_inequality": {
+      "file": "New/Main.lean",
+      "line": 121
+    },
+    "lemma eventually_primeError_le_rpow": {
+      "file": "New/Main.lean",
+      "line": 149
+    },
+    "let D' := {D with logX₁ := u": {
+      "file": "New/Main.lean",
+      "line": 159
+    },
+    "lemma New.grh": {
+      "file": "New/Main.lean",
+      "line": 174
+    },
+    "lemma exists_data P": {
+      "file": "New/Data/DataExist.lean",
+      "line": 49
+    },
+    "def nominalWeight": {
+      "file": "New/Data/AdmissibleData.lean",
+      "line": 134
+    },
+    "lemma Parameters.card_placeClass_eq": {
+      "file": "New/Data/Different.lean",
+      "line": 174
+    },
+    "lemma Data.remainder_eq": {
+      "file": "New/Endgame/ShortAndEnough.lean",
+      "line": 86
+    },
+    "lemma IsPolar.exists_window_sub_mul_le": {
+      "file": "New/Endgame/OneSidedCriterion.lean",
+      "line": 73
+    },
+    "def tiltTheory": {
+      "file": "Lib/PadicComparison/Primitive/TiltedTheory.lean",
+      "line": 51
+    }
+  },
+  "readable_anchors": {
+    "theorem star_inequality": {
+      "file": "New/Reduction/MainInequality.lean",
+      "line": 87
+    },
+    "lemma eventually_abs_primeRemainder_exp_le": {
+      "file": "New/Reduction/OneSidedBound.lean",
+      "line": 95
+    },
+    "theorem eventually_primeRemainder_le_rpow": {
+      "file": "New/Reduction/OneSidedBound.lean",
+      "line": 200
+    },
+    "def tiltTheory": {
+      "file": "Lib/PadicComparison/Primitive/PeriodCoefficients.lean",
+      "line": 650
+    }
+  }
+}

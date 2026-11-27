@@ -56,6 +56,8 @@ def write_markdown():
         "- To understand the common analytic observable, read the "
         f"[windows and remainder study]({study_url(TRACKS[0]['studies'][-1])}) and the "
         f"[joint critical edition]({study_url(TRACKS[0]['related'][-1])}).",
+        "- For the third source edition, see the [compact proof audit](compact-proof-audit/README.md). "
+        "It follows the signed auxiliary cutoff and the cost of the missing independent forms.",
         "- To follow one arithmetic choice, start at "
         f"[PairRow and the core]({study_url(TRACKS[1]['studies'][0])}), then read the "
         f"[fixed-datum study]({study_url(TRACKS[1]['related'][0])}) and "
@@ -63,6 +65,8 @@ def write_markdown():
         "- To reproduce a standalone local theorem, read "
         f"[the ramified Gram-fiber bridge]({study_url(TRACKS[4]['studies'][7])}) and "
         f"[the square-dilate extension]({study_url(TRACKS[4]['studies'][8])}).",
+        "- To see how those local questions reach the original proof, follow the "
+        "[declaration route to the rank-one normalization](declaration-graph/README.md).",
         "",
         "## Latest result",
         "",
@@ -210,6 +214,8 @@ footer { border-top:1px solid var(--line); padding-top:1rem; }
 <h1>Riemann proof studies</h1>
 <p class="lead">Six ways into the arithmetic windows, the same-set gain, the local measure calculations, and the experiments on how agents read evidence.</p>
 <p><a href="@GITINDEX@">GitHub study index</a> · <a href="@SOURCE@">Original proof source</a></p>
+<p><a href="@GITINDEX@/compact-proof-audit">Compact proof audit</a> ·
+<a href="@GITINDEX@/declaration-graph">Declaration route to rank-one normalization</a></p>
 </header>
 <aside class="latest">
 <h2>Latest study · Frobenius premium in the arithmetic window</h2>

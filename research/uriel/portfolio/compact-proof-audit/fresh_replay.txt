@@ -1,0 +1,13 @@
+$ lean --version
+Lean (version 4.35.0, arm64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)
+$ lean -j1 -o Statements.olean Statements.lean
+$ leanchecker -v Statements
+replaying Statements
+$ lean -j1 -o AuditAlgebra.olean AuditAlgebra.lean
+'CompactAudit.auxiliary_transfer' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CompactAudit.rank_deficit' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CompactAudit.rank_deficit_equality' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CompactAudit.selected_card_lower' depends on axioms: [propext, Classical.choice, Quot.sound]
+'CompactAudit.no_transport_to_capacity_32' depends on axioms: [propext]
+$ leanchecker -v AuditAlgebra
+replaying AuditAlgebra

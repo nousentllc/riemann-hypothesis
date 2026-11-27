@@ -188,6 +188,22 @@
           "branch": "experiments/uriel-window-remainder-architecture",
           "commit": "43141b319692e076cd6f6132534a3bec9f86fa39",
           "path": "research/uriel/experiments/selected-place-transport-expanded"
+        },
+        {
+          "id": "fixed-datum-host",
+          "title": "Recovering the arithmetic witness, first edition",
+          "detail": "The first fixed-integer study identifies the readable data and the extra hypotheses linking it to the original witness.",
+          "branch": "experiments/uriel-window-remainder-architecture",
+          "commit": "43141b319692e076cd6f6132534a3bec9f86fa39",
+          "path": "research/uriel/experiments/fixed-datum-host"
+        },
+        {
+          "id": "selected-place-transport",
+          "title": "Selected places and signed indices, first edition",
+          "detail": "The original capacity comparison tests whether the readable selected places can fit into the old signed carrier.",
+          "branch": "experiments/uriel-window-remainder-architecture",
+          "commit": "43141b319692e076cd6f6132534a3bec9f86fa39",
+          "path": "research/uriel/experiments/selected-place-transport"
         }
       ]
     },
@@ -301,7 +317,7 @@
       ],
       "related": [
         {
-          "id": "global-frobenius",
+          "id": "two-odd-frobenius-partners",
           "title": "Two odd Frobenius partners",
           "detail": "Lets d vary and studies two distinct odd partners in the unchanged retained set.",
           "branch": "experiments/uriel-global-frobenius",
