@@ -12,7 +12,7 @@ Start with [PROOF_CONTEXT.md](PROOF_CONTEXT.md), which reconstructs selected ana
 
 The arithmetic-window study follows the same-set Frobenius premium through the original arithmetic window. [Paper, Lean replay and exact controls](https://github.com/nousentllc/riemann-hypothesis/tree/80555206be28204b1d0a9063f54c8f1e2b5fd70d/research/uriel/experiments/frobenius-window-survival).
 
-The ramified companion study proves the sharp cutoff at `4k+2` and the original Gram-fiber mass `2 − 2/256^k`. [Lean proof, revised paper and reproduction ZIP](experiments/ramified-companion-lean/README.md).
+The ramified study now classifies the original lattice mass of every unit target at valuation `4k`. Two values occur, determined by the parity of the `√2` coefficient in the residual unit. [Lean proof, fourth-edition paper and reproduction ZIP](experiments/ramified-unit-classification/README.md).
 
 ## Baselines
 

@@ -1,0 +1,413 @@
+{
+  "target16_shell_counts": [
+    2251834173423616,
+    140771848093696,
+    8830452760576,
+    584115552256,
+    34359738368,
+    0
+  ],
+  "target16_exact_shell_densities": [
+    "15/8",
+    "15/128",
+    "15/2048",
+    "1/2048",
+    "1/32768"
+  ],
+  "method": "finite Fourier transform and exact CRT reconstruction",
+  "dimension": 6,
+  "unit_coefficients": [
+    [
+      1,
+      0
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      3,
+      1
+    ],
+    [
+      1,
+      3
+    ]
+  ],
+  "rows": [
+    {
+      "uniformizer_depth": 5,
+      "denominator": 33554432,
+      "targets": {
+        "1": {
+          "count": 67108864,
+          "primitive": "15/8",
+          "companion": "2",
+          "all_divisible": "1/8",
+          "total": "2"
+        },
+        "2": {
+          "count": 67108864,
+          "primitive": "15/8",
+          "companion": "2",
+          "all_divisible": "1/8",
+          "total": "2"
+        },
+        "3": {
+          "count": 67108864,
+          "primitive": "15/8",
+          "companion": "2",
+          "all_divisible": "1/8",
+          "total": "2"
+        },
+        "4": {
+          "count": 67108864,
+          "primitive": "15/8",
+          "companion": "2",
+          "all_divisible": "1/8",
+          "total": "2"
+        }
+      }
+    },
+    {
+      "uniformizer_depth": 6,
+      "denominator": 1073741824,
+      "targets": {
+        "1": {
+          "count": 2155872256,
+          "primitive": "15/8",
+          "companion": "255/128",
+          "all_divisible": "17/128",
+          "total": "257/128"
+        },
+        "2": {
+          "count": 2147483648,
+          "primitive": "15/8",
+          "companion": "2",
+          "all_divisible": "1/8",
+          "total": "2"
+        },
+        "3": {
+          "count": 2147483648,
+          "primitive": "15/8",
+          "companion": "2",
+          "all_divisible": "1/8",
+          "total": "2"
+        },
+        "4": {
+          "count": 2147483648,
+          "primitive": "15/8",
+          "companion": "2",
+          "all_divisible": "1/8",
+          "total": "2"
+        }
+      }
+    },
+    {
+      "uniformizer_depth": 8,
+      "denominator": 1099511627776,
+      "targets": {
+        "1": {
+          "count": 2207613190144,
+          "primitive": "15/8",
+          "companion": "255/128",
+          "all_divisible": "17/128",
+          "total": "257/128"
+        },
+        "2": {
+          "count": 2199023255552,
+          "primitive": "15/8",
+          "companion": "2",
+          "all_divisible": "1/8",
+          "total": "2"
+        },
+        "3": {
+          "count": 2199023255552,
+          "primitive": "15/8",
+          "companion": "2",
+          "all_divisible": "1/8",
+          "total": "2"
+        },
+        "4": {
+          "count": 2199023255552,
+          "primitive": "15/8",
+          "companion": "2",
+          "all_divisible": "1/8",
+          "total": "2"
+        }
+      }
+    },
+    {
+      "uniformizer_depth": 9,
+      "denominator": 35184372088832,
+      "targets": {
+        "1": {
+          "count": 70643622084608,
+          "primitive": "15/8",
+          "companion": "255/128",
+          "all_divisible": "17/128",
+          "total": "257/128"
+        },
+        "2": {
+          "count": 70368744177664,
+          "primitive": "15/8",
+          "companion": "2",
+          "all_divisible": "1/8",
+          "total": "2"
+        },
+        "3": {
+          "count": 70368744177664,
+          "primitive": "15/8",
+          "companion": "2",
+          "all_divisible": "1/8",
+          "total": "2"
+        },
+        "4": {
+          "count": 70368744177664,
+          "primitive": "15/8",
+          "companion": "2",
+          "all_divisible": "1/8",
+          "total": "2"
+        }
+      }
+    },
+    {
+      "uniformizer_depth": 10,
+      "denominator": 1125899906842624,
+      "targets": {
+        "1": {
+          "count": 2260595906707456,
+          "primitive": "15/8",
+          "companion": "255/128",
+          "all_divisible": "17/128",
+          "total": "257/128"
+        },
+        "2": {
+          "count": 2251834173423616,
+          "primitive": "15/8",
+          "companion": "65535/32768",
+          "all_divisible": "4097/32768",
+          "total": "65537/32768"
+        },
+        "3": {
+          "count": 2251799813685248,
+          "primitive": "15/8",
+          "companion": "2",
+          "all_divisible": "1/8",
+          "total": "2"
+        },
+        "4": {
+          "count": 2251799813685248,
+          "primitive": "15/8",
+          "companion": "2",
+          "all_divisible": "1/8",
+          "total": "2"
+        }
+      }
+    },
+    {
+      "uniformizer_depth": 12,
+      "denominator": 1152921504606846976,
+      "targets": {
+        "1": {
+          "count": 2314850208468434944,
+          "primitive": "15/8",
+          "companion": "255/128",
+          "all_divisible": "17/128",
+          "total": "257/128"
+        },
+        "2": {
+          "count": 2305878193585782784,
+          "primitive": "15/8",
+          "companion": "65535/32768",
+          "all_divisible": "4097/32768",
+          "total": "65537/32768"
+        },
+        "3": {
+          "count": 2305843009213693952,
+          "primitive": "15/8",
+          "companion": "2",
+          "all_divisible": "1/8",
+          "total": "2"
+        },
+        "4": {
+          "count": 2305843009213693952,
+          "primitive": "15/8",
+          "companion": "2",
+          "all_divisible": "1/8",
+          "total": "2"
+        }
+      }
+    },
+    {
+      "uniformizer_depth": 13,
+      "denominator": 36893488147419103232,
+      "targets": {
+        "1": {
+          "count": 74075206670989918208,
+          "primitive": "15/8",
+          "companion": "255/128",
+          "all_divisible": "17/128",
+          "total": "257/128"
+        },
+        "2": {
+          "count": 73788102194745049088,
+          "primitive": "15/8",
+          "companion": "65535/32768",
+          "all_divisible": "4097/32768",
+          "total": "65537/32768"
+        },
+        "3": {
+          "count": 73786976294838206464,
+          "primitive": "15/8",
+          "companion": "2",
+          "all_divisible": "1/8",
+          "total": "2"
+        },
+        "4": {
+          "count": 73786976294838206464,
+          "primitive": "15/8",
+          "companion": "2",
+          "all_divisible": "1/8",
+          "total": "2"
+        }
+      }
+    },
+    {
+      "uniformizer_depth": 14,
+      "denominator": 1180591620717411303424,
+      "targets": {
+        "1": {
+          "count": 2370406613471677382656,
+          "primitive": "15/8",
+          "companion": "255/128",
+          "all_divisible": "17/128",
+          "total": "257/128"
+        },
+        "2": {
+          "count": 2361219270231841570816,
+          "primitive": "15/8",
+          "companion": "65535/32768",
+          "all_divisible": "4097/32768",
+          "total": "65537/32768"
+        },
+        "3": {
+          "count": 2361183382172310962176,
+          "primitive": "15/8",
+          "companion": "16777215/8388608",
+          "all_divisible": "1048577/8388608",
+          "total": "16777217/8388608"
+        },
+        "4": {
+          "count": 2361183241434822606848,
+          "primitive": "15/8",
+          "companion": "2",
+          "all_divisible": "1/8",
+          "total": "2"
+        }
+      }
+    },
+    {
+      "uniformizer_depth": 16,
+      "denominator": 1208925819614629174706176,
+      "targets": {
+        "1": {
+          "count": 2427296372194997639839744,
+          "primitive": "15/8",
+          "companion": "255/128",
+          "all_divisible": "17/128",
+          "total": "257/128"
+        },
+        "2": {
+          "count": 2417888532717405768515584,
+          "primitive": "15/8",
+          "companion": "65535/32768",
+          "all_divisible": "4097/32768",
+          "total": "65537/32768"
+        },
+        "3": {
+          "count": 2417851783344446425268224,
+          "primitive": "15/8",
+          "companion": "16777215/8388608",
+          "all_divisible": "1048577/8388608",
+          "total": "16777217/8388608"
+        },
+        "4": {
+          "count": 2417851639229258349412352,
+          "primitive": "15/8",
+          "companion": "2",
+          "all_divisible": "1/8",
+          "total": "2"
+        }
+      }
+    },
+    {
+      "uniformizer_depth": 17,
+      "denominator": 38685626227668133590597632,
+      "targets": {
+        "1": {
+          "count": 77673483910239924474871808,
+          "primitive": "15/8",
+          "companion": "255/128",
+          "all_divisible": "17/128",
+          "total": "257/128"
+        },
+        "2": {
+          "count": 77372433046956984592498688,
+          "primitive": "15/8",
+          "companion": "65535/32768",
+          "all_divisible": "4097/32768",
+          "total": "65537/32768"
+        },
+        "3": {
+          "count": 77371257067022285608583168,
+          "primitive": "15/8",
+          "companion": "16777215/8388608",
+          "all_divisible": "1048577/8388608",
+          "total": "16777217/8388608"
+        },
+        "4": {
+          "count": 77371252455336267181195264,
+          "primitive": "15/8",
+          "companion": "2",
+          "all_divisible": "1/8",
+          "total": "2"
+        }
+      }
+    },
+    {
+      "uniformizer_depth": 18,
+      "denominator": 1237940039285380274899124224,
+      "targets": {
+        "1": {
+          "count": 2485551485127677583195897856,
+          "primitive": "15/8",
+          "companion": "255/128",
+          "all_divisible": "17/128",
+          "total": "257/128"
+        },
+        "2": {
+          "count": 2475917857502623506959958016,
+          "primitive": "15/8",
+          "companion": "65535/32768",
+          "all_divisible": "4097/32768",
+          "total": "65537/32768"
+        },
+        "3": {
+          "count": 2475880226144713139474661376,
+          "primitive": "15/8",
+          "companion": "16777215/8388608",
+          "all_divisible": "1048577/8388608",
+          "total": "16777217/8388608"
+        },
+        "4": {
+          "count": 2475880079147221302101671936,
+          "primitive": "15/8",
+          "companion": "4294967295/2147483648",
+          "all_divisible": "268435457/2147483648",
+          "total": "4294967297/2147483648"
+        }
+      }
+    }
+  ]
+}

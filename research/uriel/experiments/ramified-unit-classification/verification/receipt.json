@@ -1,0 +1,1656 @@
+{
+ "companion_wrong_sign": {
+  "companion_count": 2139095040,
+  "lean_exit": 1,
+  "rejected_square_count": 2155872256,
+  "source_sha256": "13672df85fb37159e13ec29687555ffd5493511819e6c814508dd2475a4a3090"
+ },
+ "compiler": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+ "dilate_negative_control": {
+  "changed_numerator_by": 1,
+  "coefficient_depth": 5,
+  "expected_count": 2251834173423616,
+  "lean_exit": 1,
+  "reason": "Lean reduced the one-extra-solution equality to false",
+  "source_sha256": "15d0751e9eb02acc22439e1a317fa7f374fe3fbab980429f9f2811a36ef1cba3",
+  "target": 16
+ },
+ "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+ "modules": {
+  "AllDepth": {
+   "axiom_queries": {
+    "TargetOne.count_one_at_depth": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "e97004fbda6daf6444c899d570b26881de667061a4da6ab72db549a23e79d69a"
+  },
+  "BlockIdentification": {
+   "axiom_queries": {
+    "BlockIdentification.individual_of_product": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ],
+    "BlockIdentification.realize_shells": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "992ec6aa64da2f8c67440ef71a26a308b55d28de47a24f8fd6159620b58b3045"
+  },
+  "CompanionCells": {
+   "axiom_queries": {
+    "RamDilate.Companion.all_late": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ],
+    "RamDilate.Companion.predecessor": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ],
+    "RamDilate.Companion.predecessor_diff": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ],
+    "RamDilate.Companion.sharp_stabilization": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "d926c707bf7de3da93684eeeadba6ff9df9917dca57b3a0fd15988cfba807e48"
+  },
+  "CompanionCounts": {
+   "axiom_queries": {
+    "RamDilate.Companion.band": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "cf6dccbe7325e924ead8b99b34a23f858a80b18a026d0d5786c2ca40700d3bf1"
+  },
+  "CompanionEndpoint": {
+   "axiom_queries": {
+    "CompanionTransport.mass_one": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ],
+    "CompanionTransport.mass_two": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ],
+    "CompanionTransport.original": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ],
+    "CompanionTransport.realized": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "f8649860f675f904168835eeeb41d5282260ab068217dcba9ac2bd0794b92a9f"
+  },
+  "CompanionLow": {
+   "axiom_queries": {
+    "RamDilate.Companion.low2_twice": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ],
+    "RamDilate.Companion.low3_twice": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "a19a1531ec0ecc97d6f3855f09d0220639548d48fa956f6d3e719bf14155473f"
+  },
+  "CompanionObstruction": {
+   "axiom_queries": {
+    "RamDilate.Companion.no_companion_unit": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "c1ee1cda1ddfafd124e792131a5d441687a653a0428fb6507eaccfbc92dfd349"
+  },
+  "CompanionPrimitive": {
+   "axiom_queries": {
+    "RamDilate.CompanionPrimitive.primitive_later": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "cc0b475391f945ca2fb136f067d958ca61b7462faeefe3cb052739168b836ba4"
+  },
+  "Contact": {
+   "axiom_queries": {},
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "4baa736277575942a1735aa479aae54203d74f57495542d942d65f74a1dcc3c3"
+  },
+  "CoordinateFloor": {
+   "axiom_queries": {
+    "CoordinateFloor.lower": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "40b0182b110dffdee49b0c7f86afc58b3400ba2bf1ae5e182248c19ad8749bf4"
+  },
+  "Cylinders": {
+   "axiom_queries": {},
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "69a8f6ac8e0e77995ef337c72f8816885ea6af755a60783799a2050dbc6ae4ff"
+  },
+  "DenominatorControl": {
+   "axiom_queries": {
+    "DenominatorControl.no_solution_mod_two": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ],
+    "DenominatorControl.odd_dilation_no_integral_solution": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ],
+    "DenominatorControl.represented": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "64c49996cad51ab839ea1e8a453847a520d1badf9aca61de5932c4a13bed106a"
+  },
+  "DilateAudit": {
+   "axiom_queries": {},
+   "dependency_audit": "Square-dilate audit: 938 project and study declarations for the universal endpoint, 997 for existence, 83 for the target-16 contact count, 314 for the sharp cutoff witness. Finite-chain, transport, existence and exclusion checks passed.",
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "4fc9f55b8c678dd57a2a9352ef3beb4ef6375c6d4cd9d5bca21b8bdd7949360d"
+  },
+  "DilateBoundary": {
+   "axiom_queries": {
+    "RamDilate.last_shortfall": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "6a04fba049ec418e1ea95b957903176591e3063f382ad3c2b0212b3a38c98368"
+  },
+  "DilateBoundaryCore": {
+   "axiom_queries": {},
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "3da3f4088f21af3d694271ade5125e9acd26e10fb0486d564ca4f07ab20fe511"
+  },
+  "DilateCompanion": {
+   "axiom_queries": {
+    "RamDilate.companion_count": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "1185b6f5045bac028ff4e84569a5ca0e448fb7b480d37af171e78fa675bd3a31"
+  },
+  "DilateCompanionCore": {
+   "axiom_queries": {},
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "fa0e47849ea83a58ec80bfb172cbfde4842e78dc99eabf1252de2fd9cb860caa"
+  },
+  "DilateDefs": {
+   "axiom_queries": {},
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "bfdda27d39fd75cabdf37ec978ac0a4a97deccb16be9855e941d267d74670858"
+  },
+  "DilateDescent": {
+   "axiom_queries": {
+    "RamDilate.imprim_double_nat": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "82aa834245e7de44c756bc7f73f85550d6a36184cb13a5d10b44ad18dfdc254e"
+  },
+  "DilateEndpoint": {
+   "axiom_queries": {
+    "RamDilate.counts": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ],
+    "RamDilate.original": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ],
+    "RamDilate.powers": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ],
+    "RamDilate.realized": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ],
+    "RamDilate.sixteen": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "a53f4acb7d0c9b274017ba56b675d5da0a4dbe037a76ca7d175a75f6f3eb2798"
+  },
+  "DilateFineOrbit": {
+   "axiom_queries": {
+    "RamDilate.deep_companion_count": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "d016d4bbd18e548b6ab1f6054c86784f03344e1f74fa4111dae4ae7bbf382191"
+  },
+  "DilateLow": {
+   "axiom_queries": {
+    "RamDilate.low3_four": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ],
+    "RamDilate.low4_eight": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "992f0cda3fa805254d86611376ab72d53b16ab84c5c7bf2e11979a3ff0fbfdd6"
+  },
+  "DilateLowCompanion": {
+   "axiom_queries": {
+    "RamDilate.low3_four_companion": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ],
+    "RamDilate.low4_eight_companion": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "66b54777561a808891d149a17efb7ab9d1b30200aabe60bcedd66c919ad8ca25"
+  },
+  "DilateNear": {
+   "axiom_queries": {
+    "RamDilate.near_count": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "b0f98ad92c3389a5e7690775091ab05426bffaf040cd6f445d96b18682285540"
+  },
+  "DilateOddCell": {
+   "axiom_queries": {
+    "RamDilate.OddCell.last_odd": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ],
+    "RamDilate.OddCell.order_test": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "05511c6497c89f89d5d55c224f3e59a97d4c4dc35f3ba795ba1f7eca7e6f4f7c"
+  },
+  "DilateOddCellCore": {
+   "axiom_queries": {
+    "RamDilate.OddCell.mixed_scaled": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ],
+    "RamDilate.OddCell.mixed_sum": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "d2e0c22041868843890f53ce85919844a0f934240a19a30365711e09c67e02fd"
+  },
+  "DilateOddCellHaar": {
+   "axiom_queries": {
+    "RamDilate.OddCell.last_odd_haar": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "17617d41ef155155f628cb4bbe1496f5f2024d6dfc9244e01f746ed8a4070410"
+  },
+  "DilateOddCellOrder": {
+   "axiom_queries": {
+    "RamDilate.OddCell.cylinder_children": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "e46a8020027a42fd2d7e41342e278dcff53ad53b3e93b48e96f42888fa981e18"
+  },
+  "DilatePrimitive": {
+   "axiom_queries": {},
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "7d298ebd31668bc34c0a9a66f2337ae748be46be5641520e8c88c0cfd51aea57"
+  },
+  "DilatePrimitiveContact": {
+   "axiom_queries": {},
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "2580d873d4dbe8bb325df7befc6d752eaa29e1b730bc5dbbe9a30a47ff28f177"
+  },
+  "DilatePrimitivePivot": {
+   "axiom_queries": {},
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "f42506e1b52b59b88346ec9c01ec6da9ca65e53964bdc48839a33f948804f5c8"
+  },
+  "DilatePrimitiveRing": {
+   "axiom_queries": {},
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "49fc6ddd3186aabe6fded3c870ab945aac7bc8650bd819984f4fbc0a483dc063"
+  },
+  "DilateRecurrence": {
+   "axiom_queries": {},
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "b73b76e140ac348b989912ee6f685474c574b0b1714f7fce8d368c6006873056"
+  },
+  "DilateSixteen": {
+   "axiom_queries": {
+    "RamDilate.contact_sixteen": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "fae9f17f287d5a601fb57461701d856977c9a7328e7cddb747adf43e9e76d44c"
+  },
+  "DilateStableOdd": {
+   "axiom_queries": {
+    "RamDilate.StableOdd.stable_mixed": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ],
+    "RamDilate.StableOdd.stable_odd_haar": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "8d283c27faa3dd5d49aa4badbbcbad1af6a97e6ae8c14d645dd9a1c8b9c0fa31"
+  },
+  "DilateStableOddAll": {
+   "axiom_queries": {
+    "RamDilate.StableOdd.all_late": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ],
+    "RamDilate.StableOdd.predecessor": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ],
+    "RamDilate.StableOdd.sharp_stabilization": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "c29aa1b6de5ffe3a1fe1cf011dd32aa28fbf1c5ffc9251f6ef24ae8458fdfaa6"
+  },
+  "DilateStableOddCore": {
+   "axiom_queries": {
+    "RamDilate.StableOdd.haar_pair": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "c6b5f3125d9366ec13403093ce33f06c4dcbdc0606f4a5c551277f16fb8cc626"
+  },
+  "DilateTransport": {
+   "axiom_queries": {
+    "DilateTransport.original": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ],
+    "DilateTransport.realized": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "e018f3ebfeee2e53fbbe6443b876e83a6d7b44dd296a84403fe698e15e25202b"
+  },
+  "DilateTransportCells": {
+   "axiom_queries": {
+    "DilateTransport.tube": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "d2b2226f14b0b95a41500d2d05e41bcc8ec074e5eab5a51a2c599a9cbda3f767"
+  },
+  "DyadicBase": {
+   "axiom_queries": {},
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "5c230b576aac8a71894d083435add343cb8188324986482507b585cde875c249"
+  },
+  "DyadicLocal": {
+   "axiom_queries": {
+    "TargetOne.locally": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "add295c1dd14171fc9d5789dee9a24c8543a722838139baf9b9b93c3fd2a8580"
+  },
+  "Endpoint": {
+   "axiom_queries": {
+    "TargetOne.target_one_mass": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "533fe280a84b885d47f2319f32d150c21dd8bfd0a810b0566eaad638fd0c94a4"
+  },
+  "EvenDescent": {
+   "axiom_queries": {
+    "DyadicWave.even_scaling": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "b66b44a76fdf63d4b7da993c23a6905fbaa1fee783cd3cc922ca0d636790a81e"
+  },
+  "ExceptionalDilation": {
+   "axiom_queries": {
+    "ExceptionalDilation.lower_of_bounded_order": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "56dac18727ee51655e4fde6c8049d22bb53cb370d7764d723f855de8b8dc5224"
+  },
+  "ExceptionalPrimeCriterion": {
+   "axiom_queries": {
+    "ExceptionalPrimeCriterion.reduce_to_prime_power": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ],
+    "ExceptionalPrimeCriterion.uncapped_iff": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "44c979391f9cb3ccdac33ca4e77c099d6c3c2488183fafc3f547e6c4f7a46de7"
+  },
+  "Existence": {
+   "axiom_queries": {
+    "TargetOne.realized_unconditionally": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "37776167724f42037260db9ed9847f57ff810a87f6121bae87a4e6ca2e9af519"
+  },
+  "FiniteCounts": {
+   "axiom_queries": {},
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "2627b6b1d9366b058ea6f1fabfde983a066d0ed39e14803b036ba8e63210147a"
+  },
+  "FloorTransfer": {
+   "axiom_queries": {
+    "FloorTransfer.punctured_of_coordinate_tubes": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "55cca36638fb1a86ebd401648527cc84244b1c1da0590d7dcce8b950179965a5"
+  },
+  "FourBase": {
+   "axiom_queries": {
+    "TargetFour.base_32": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "ed9817edfdcdb0fdaea396470540a009727f211970036be491e43b2cfa2d0b91"
+  },
+  "FourContact": {
+   "axiom_queries": {
+    "TargetFour.mass_of_coordinate_set": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "e3d085f0673158c2d428a1ed98e504ceca19b78be0bf6ec1aeef7d2c4ab119c4"
+  },
+  "FourCounts": {
+   "axiom_queries": {
+    "TargetFour.even_all": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ],
+    "TargetFour.primitive_all": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ],
+    "TargetFour.total_all": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "4a0ac56e530c6524273274af0368501c1e02ef32aed263bc80c4457d520f8c8d"
+  },
+  "FourEndpoint": {
+   "axiom_queries": {
+    "TargetFour.realized_split": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "bed0a7c2a2a35565a9883c9afa22b93a7bb78f8e903786b82e0f9ef1d414e0a1"
+  },
+  "FourEven": {
+   "axiom_queries": {
+    "TargetFour.even_scaling": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "ada7f2f88c68f9512fd580f1f5a99eeb058951bacb2b5951d7c48ddc822aaf7b"
+  },
+  "FourLift": {
+   "axiom_queries": {
+    "TargetFour.orbit_count": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "cef03b1b26c0147e7f2832b0ca966e11b39b2d71595f0fcdc3966630074ef751"
+  },
+  "FourNeighborhood": {
+   "axiom_queries": {},
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "b0826216a517b2621223dca94f643ab3e3e00aff380bc9be3c9e19614b3b46df"
+  },
+  "FourTubes": {
+   "axiom_queries": {
+    "TargetFour.even_tube": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "0dda1442b87ce7db4cfdf463e309644e3f345f6f6b0d0640ebf70e4270140641"
+  },
+  "GaussianDilates": {
+   "axiom_queries": {
+    "DyadicWave.realized_all": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "0fc99d54fee2470b91e6fe4bfc54299982a4e015475e1c2dca246eabaa3c3761"
+  },
+  "GaussianField": {
+   "axiom_queries": {
+    "TargetOne.isCM": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "861644f02628c62164c7f8607358a50347a321e6f8efdedd47a43efe432d8e06"
+  },
+  "GaussianSharp": {
+   "axiom_queries": {
+    "DyadicWave.sharp_floor": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ],
+    "DyadicWave.zero_tube_ratio": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "454feca389abe7d7af16b436cde131a2df55d6959da75ef0314af45c9b363e1d"
+  },
+  "GaussianTrace": {
+   "axiom_queries": {
+    "TargetOne.trace_coords": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "96fe7b201df0341c7d32735217f7f5283117bf48414c761cf21621e20c06d196"
+  },
+  "GermSupport": {
+   "axiom_queries": {
+    "GermSupport.nonzero_at": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "0374eb9857029ac5a5c7764fb9a86c35f83060af0dc02c2399d0682413a1efef"
+  },
+  "GrowthSandwich": {
+   "axiom_queries": {
+    "GrowthSandwich.sandwich": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ],
+    "GrowthSandwich.scale_product": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "4ca11a7dba82268855a76d42d70c49889bd76782a2e2112a30a7d5244449d55b"
+  },
+  "HaarSlices": {
+   "axiom_queries": {
+    "HaarSlices.affine_slice": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ],
+    "HaarSlices.average": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "debba822d10f4a2a48a6c6a8685556b536b5d88191a3ba5b918c20f3d7a1f3f5"
+  },
+  "LocalChart": {
+   "axiom_queries": {
+    "LocalChart.affine_tube": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ],
+    "LocalChart.graph_card": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "c5e91a43efa53926555aba8f77465d9b1db9d8655fdb2f253fdc296248d49bc8"
+  },
+  "LocalIsotropy": {
+   "axiom_queries": {
+    "LocalIsotropy.matrix_isotropic_at_finite_place": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ],
+    "LocalIsotropy.regular_zero": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "5bb6ddf336353bedcec244303d30c5a9714553f91470680ef9d3cb8b663bdd53"
+  },
+  "LocalPair": {
+   "axiom_queries": {
+    "LocalPair.partner": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "d2c37f795c9806bef6379da4797cc0599698e4a2c6b47bda04fe82423e5aceed"
+  },
+  "LocalRegularSupport": {
+   "axiom_queries": {
+    "LocalRegularSupport.all_local_targets": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "512111f366a04d8b75b227dc37b6737e9c18e5d579f2931cb8c30d24b37d1546"
+  },
+  "LocalTube": {
+   "axiom_queries": {
+    "LocalTube.mass_lower_of_tubes": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "f024d0ad61fc27b4bacef34e4ebd92faca56397d14c2a40e84fda4889cebe04e"
+  },
+  "LocalWitnesses": {
+   "axiom_queries": {
+    "LocalWitnesses.in_pinned_coordinates": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ],
+    "LocalWitnesses.integral_pair": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "23ae4fca229d62e08d8762aca22b45cb5249def3a8f907fa90ffa556fe1db677"
+  },
+  "Nearby": {
+   "axiom_queries": {
+    "TargetOne.local_mass_from_tests": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "a9790ce6e38f650500ea1f19e16bb24ce6a072a81fc11d6a429dd09ac8abd7d5"
+  },
+  "NeighborhoodGrowth": {
+   "axiom_queries": {
+    "NeighborhoodGrowth.from_punctured_germs": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ],
+    "NeighborhoodGrowth.targets_tend_to_zero": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "d2801bf1defd8194c632ea0d8c62da42afb571293f490332ad0efac943c16fc1"
+  },
+  "Neighborhoods": {
+   "axiom_queries": {},
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "5449142ad8c18e7df658ca84b6ce445433608ce855cc322ba5bdf2938b5f85a1"
+  },
+  "OddSquares": {
+   "axiom_queries": {
+    "DyadicWave.oddTail": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "9f3890c0afadae45b2e8108016a4339fecc0cb2b514f58c59fcd6be5fb65c958"
+  },
+  "OptimalSupport": {
+   "axiom_queries": {
+    "OptimalSupport.generator_unique": [
+     "propext"
+    ],
+    "OptimalSupport.local_threshold": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ],
+    "OptimalSupport.positive_iff_multiple": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "f742f827a7e53f9a930bc8989f03bdce947cf47cf5995b3b9732bfa17bc74c3b"
+  },
+  "OriginalFloor": {
+   "axiom_queries": {
+    "OriginalFloor.punctured_floor": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "09a69389e200010d79d5591e66a5e4514164df00dd769e6572b613b0f6ecc5a9"
+  },
+  "PrimeBlocks": {
+   "axiom_queries": {
+    "PrimeBlocks.block_criterion": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ],
+    "PrimeBlocks.tail_iff": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "6b6a2b5f576bbd57dddb2e7b679fe07c2a17ad9ca1d8cf8973fbc664a807dd7f"
+  },
+  "PrimitiveLift": {
+   "axiom_queries": {
+    "DyadicWave.lift_primitive": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "6e33926e35bd9d9355649be11f23f688d4d16181b8dcf7d754a7c26fe3a0968c"
+  },
+  "ProgressionGrowth": {
+   "axiom_queries": {
+    "ProgressionGrowth.progression_growth": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "5a828c8c1593edc488561249f2828b7115d926a28f2854ad60666fbf90684410"
+  },
+  "RamBase": {
+   "axiom_queries": {
+    "RamBase.count_four": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "fa0ad49559627c6b132bc40999881cd6e36b9291ad07565ebc4327139f3e67fe"
+  },
+  "RamBaseData": {
+   "axiom_queries": {},
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "41a2732b93bb665c97eb2945a9b81ba52546ff4196aa196476421361cae02e5b"
+  },
+  "RamBaseFive": {
+   "axiom_queries": {
+    "RamBase.Five.five_digit_difference": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "b692c22dc7929d7390f8a6b98142da645f06002cd4e313df6018fb2ad9a3704d"
+  },
+  "RamBaseModel": {
+   "axiom_queries": {},
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "0167316904197539962a744e5196db85d83401ed1b2c383cfb94802f7582f610"
+  },
+  "RamBasePivot": {
+   "axiom_queries": {
+    "RamBase.five_digit_pivot": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "d9f5062a7d5316daa677ba2858354353349d5bbb396cda1d18042823e92db907"
+  },
+  "RamBasePrimitive": {
+   "axiom_queries": {
+    "RamBase.Five.primitive_card": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "715a18fef756f96e303044c5357a90c47999fb2619c7d3566f57adf5718187fb"
+  },
+  "RamBaseReduction": {
+   "axiom_queries": {
+    "RamBase.Five.reduce_sqSum": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ],
+    "RamBase.Five.reduce_zero_iff": [
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "2144a28d00c239729636ad30223afada312fe19e805d69e8c7d2ab48dfaeec2f"
+  },
+  "RamBaseSplit": {
+   "axiom_queries": {
+    "RamBase.Split.imprimitive": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ],
+    "RamBase.Split.primitive_agrees_with_five": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "21d5c9c4354c3a1fd4e820913b670170e1bc0aac5d1db4e039484a7fd1851c37"
+  },
+  "RamBaseTables": {
+   "axiom_queries": {},
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "d7baa5b8ed5bf4897532f8311c9b08f211a35cfd30f2639e8cf9b4620d10060b"
+  },
+  "RamBridge": {
+   "axiom_queries": {
+    "RamBridge.mass_four": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ],
+    "RamBridge.normalized": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ],
+    "RamBridge.realized": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "66a8ee08996e62384e64b21d1aaf0665ece1becda4db07690e37744efc278fdf"
+  },
+  "RamDependencyAudit": {
+   "axiom_queries": {},
+   "dependency_audit": "Named-place audit: 721 project and study declarations for the universal endpoint, 768 for existence. Explicit dependency and control checks passed.",
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "6c96d4e455bf661ddb92e9859b1d8c022b24d424e1f1e2f28c6d8a984e2003e1"
+  },
+  "RamField": {
+   "axiom_queries": {},
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "3d4abdf3c1c27ca3ef7826ca2971acdc67cb2b8ec37ddc739cac7e557f914f33"
+  },
+  "RamFieldCompletion": {
+   "axiom_queries": {
+    "RamFieldCompletion.completionRingEquiv_coe": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "06f0d126cbf838dcf1b3e25bf44fd7556f1d490c6b5891c6448085239c445b71"
+  },
+  "RamFieldIntegers": {
+   "axiom_queries": {
+    "RamField.integers_eq_unit_ball": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "b0fd9545c476c6e4842c416ea0e39c3efdf2a5666b30f673b160e580511f3dcd"
+  },
+  "RamFieldMeasure": {
+   "axiom_queries": {
+    "RamField.cyl_mass": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ],
+    "RamField.small_four": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ],
+    "RamField.standard_exists": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "64e643cf4f7740e0586d87ab0b1c582b101563ae8e712b6fcb931d3713560a1f"
+  },
+  "RamFieldPlace": {
+   "axiom_queries": {
+    "RamFieldPlace.valuation_equiv": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "4aa8df8246f83c2d0ea8a30fabe3d369a2e42e3e26b8c1ac0d75369cda5d3d20"
+  },
+  "RamFieldRamification": {
+   "axiom_queries": {
+    "RamFieldPlace.factorization": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ],
+    "RamFieldPlace.residue_card": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ],
+    "RamFieldPlace.unique_above_two": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "85ce92c6e216c3c1449f5548eb376146b6115ad6caafcddecba7de916c39a6cb"
+  },
+  "RamGlobal": {
+   "axiom_queries": {
+    "RamGlobal.gram_matrix": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ],
+    "RamGlobal.isCM": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "03269c599d6050117c7ecc6a0033fc4d145061f355a58ce34c1931f3da412f1b"
+  },
+  "RamLift": {
+   "axiom_queries": {
+    "RamLift.normalized_from_base": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "e6f550a0146eb1508760ee5c3e60101fe431dbc764f3d0d482ca303d784551b6"
+  },
+  "RamPlaceCompletion": {
+   "axiom_queries": {
+    "RamPlaceCompletion.integer_preimage": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ],
+    "RamPlaceCompletion.on_field": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "7899a3da6b70743166e39d8d5cf7e727a328fcbf61f36781fc1e4bdf789456b0"
+  },
+  "RamPlaceEndpoint": {
+   "axiom_queries": {
+    "RamPlaceEndpoint.original": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ],
+    "RamPlaceEndpoint.realized": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "cfdf986873187f0458e63d3598e613ae26fff1e4a35cc0f7679a6949e400b692"
+  },
+  "RamPrecision": {
+   "axiom_queries": {
+    "RamPrecision.coarse_children": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "4794a4474c83acf0797ded674d917cc96657203a89c1c565ee4ccda75c7db100"
+  },
+  "RamTransport": {
+   "axiom_queries": {
+    "RamTransport.family_exists": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ],
+    "RamTransport.original_mass": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "43d44dd70633a5f9e9b45601a68ca6441a2d55092e47357b1e9fef5881931f0d"
+  },
+  "RamTransportBoxes": {
+   "axiom_queries": {
+    "RamTransport.fiber_count_to_tube": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "4c61b1ed233c3ebf562468029a8dd806cf33ce7df36da4fb6a39140b750cbdc0"
+  },
+  "RamTransportForm": {
+   "axiom_queries": {
+    "RamTransportForm.mass_at_four": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ],
+    "RamTransportForm.realized": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "5bd137dc3b87896151158478a259205261fef99f3ba01be2199ab2c42d118a40"
+  },
+  "RamTransportFour": {
+   "axiom_queries": {
+    "RamTransportFour.original_mass": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ],
+    "RamTransportFour.realized": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "21152e40d2d4832f5bb816ab220472d04482b1fefc24f2f5bf4a51b2d39d26b5"
+  },
+  "RamTransportPlace": {
+   "axiom_queries": {
+    "RamTransportPlace.mass_on_latV": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "bbe8247feec187e4b3cdbc609c6fa14bd21000214332e932731971fac5828f76"
+  },
+  "Shallow": {
+   "axiom_queries": {
+    "TargetOne.count_all": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "c3e3a0b91c4ca69f2ff44b974e940c577ea8c8bd4a269307a951afd34bb7b018"
+  },
+  "ShellThreshold": {
+   "axiom_queries": {
+    "ShellThreshold.classify": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "90f3883b7639e0e86ef06ecad77a594f51ca0f85546c32a9cb3925f52a01e16c"
+  },
+  "SingularGaussian": {
+   "axiom_queries": {
+    "DyadicWave.singular_mass_zero": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "17f67328da4ce208a2174327b4038536ea558c371306f79acb0f1e60f4ed6b5d"
+  },
+  "SingularJump": {
+   "axiom_queries": {
+    "SingularJump.discontinuous": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "2f8fd66e4b9184fb3ab658127c72a20eaabf456979932a44ef9a3ffd12d372a5"
+  },
+  "SingularZero": {
+   "axiom_queries": {
+    "SingularZero.rank_one_origin": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "3cdce28320d21950e78e6c443d6418dcd93ed171c699e4614c1e855fc4d675b0"
+  },
+  "SquareDepth": {
+   "axiom_queries": {
+    "DyadicWave.with_unit": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "d67e90836c790e6685c2f90a1e95442f923596266207cc9a55156642dd663c2f"
+  },
+  "Tubes": {
+   "axiom_queries": {
+    "TargetOne.tube_three_quarters": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "5983e7929bae8dfb9aceecba8cdf70663441f636569828aaf330b3fc56fc4636"
+  },
+  "UncappedAudit": {
+   "axiom_queries": {},
+   "dependency_audit": "All-multiples closure: 1478 project and study constants. Optimal support: 1470. Dyadic sharp-floor closure: 420. Membership checks passed.",
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "02d5333cef3f3754334840b7c7d4ebdd500f09e3b62aff62b9b0410e0e7b552d"
+  },
+  "UncappedGrowth": {
+   "axiom_queries": {
+    "UncappedGrowth.all_multiples": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "b6c3ba5df9d1fcd99a936b1b766857bfaadd600f6081c05e19bb233545075457"
+  },
+  "UnitCells": {
+   "axiom_queries": {
+    "RamDilate.UnitClass.all_late": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ],
+    "RamDilate.UnitClass.band_count": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "517c9f15154605d09b93f10b328ac15a1a9ceab2a82a3684194dd9f35fec1d29"
+  },
+  "UnitCounts": {
+   "axiom_queries": {
+    "RamDilate.UnitClass.count_positive": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ],
+    "RamDilate.UnitClass.same_as_square": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "a9d151e80c112f0afb87c37b5822142fff6355f620d48ddf7fcc18f0596f7210"
+  },
+  "UnitDepth": {
+   "axiom_queries": {
+    "RamDilate.UnitClass.predecessor": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ],
+    "RamDilate.UnitClass.sharp_stabilization": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "c37c66e619d5e51a21a0fcc3631f6b7eb8594f28411ae6fc25367026b517fe97"
+  },
+  "UnitEndpoint": {
+   "axiom_queries": {
+    "UnitTransport.exact_range": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ],
+    "UnitTransport.exact_range_at_exponent": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ],
+    "UnitTransport.original": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ],
+    "UnitTransport.realized": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ],
+    "UnitTransport.valuation_exponent": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ],
+    "UnitTransport.valuation_shell": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ],
+    "UnitTransport.values_distinct": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "4a7085eabfbf83fb5859046ffa17922ee8e39765be5d4be9e59c4bf77bfe2a92"
+  },
+  "UnitLow": {
+   "axiom_queries": {
+    "RamDilate.UnitClass.low2_one": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ],
+    "RamDilate.UnitClass.low3_one": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ],
+    "RamDilate.UnitClass.low3_two": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "c6f01229367364ed9159278491dd1e178b2b1cfe1a976dce772dedf4e04cf7b0"
+  },
+  "UnitResidue": {
+   "axiom_queries": {
+    "RamDilate.UnitClass.decomposition": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ],
+    "RamDilate.UnitClass.digit_class": [
+     "Classical.choice",
+     "Quot.sound",
+     "propext"
+    ]
+   },
+   "lean_exit": 0,
+   "leanchecker_exit": 0,
+   "source": "2833ad14169accf300dc0b7de7e7112657fb7e09db7c5c05049fedb656aedad1"
+  }
+ },
+ "negative_control": {
+  "changed_numerator_by": 1,
+  "lean_exit": 1,
+  "reason": "Lean reduced the proposed successor equality to false"
+ },
+ "original_objects": 1038,
+ "positive_nonsquare_control": {
+  "coefficient_modulus": 4,
+  "lean_exit": 1,
+  "source_sha256": "c8f08ccc8e78dc93eeb4204e9043e7fbca889195ff80625d671dbd8e0b8dc793",
+  "unit_coefficients": [
+   1,
+   2
+  ]
+ },
+ "verified_source_blobs": 1038
+}

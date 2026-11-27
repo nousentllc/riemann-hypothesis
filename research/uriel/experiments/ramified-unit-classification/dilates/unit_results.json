@@ -1,0 +1,222 @@
+{
+  "shells": [
+    {
+      "k": 1,
+      "uniformizer_depth": 5,
+      "bins": [
+        {
+          "coefficient_class": "unresolved",
+          "ratio": "2",
+          "target_bins": 1
+        }
+      ]
+    },
+    {
+      "k": 1,
+      "uniformizer_depth": 6,
+      "bins": [
+        {
+          "coefficient_class": "even",
+          "ratio": "257/128",
+          "target_bins": 1
+        },
+        {
+          "coefficient_class": "odd",
+          "ratio": "255/128",
+          "target_bins": 1
+        }
+      ]
+    },
+    {
+      "k": 1,
+      "uniformizer_depth": 7,
+      "bins": [
+        {
+          "coefficient_class": "even",
+          "ratio": "257/128",
+          "target_bins": 2
+        },
+        {
+          "coefficient_class": "odd",
+          "ratio": "255/128",
+          "target_bins": 2
+        }
+      ]
+    },
+    {
+      "k": 1,
+      "uniformizer_depth": 8,
+      "bins": [
+        {
+          "coefficient_class": "even",
+          "ratio": "257/128",
+          "target_bins": 4
+        },
+        {
+          "coefficient_class": "odd",
+          "ratio": "255/128",
+          "target_bins": 4
+        }
+      ]
+    },
+    {
+      "k": 1,
+      "uniformizer_depth": 9,
+      "bins": [
+        {
+          "coefficient_class": "even",
+          "ratio": "257/128",
+          "target_bins": 8
+        },
+        {
+          "coefficient_class": "odd",
+          "ratio": "255/128",
+          "target_bins": 8
+        }
+      ]
+    },
+    {
+      "k": 1,
+      "uniformizer_depth": 10,
+      "bins": [
+        {
+          "coefficient_class": "even",
+          "ratio": "257/128",
+          "target_bins": 16
+        },
+        {
+          "coefficient_class": "odd",
+          "ratio": "255/128",
+          "target_bins": 16
+        }
+      ]
+    },
+    {
+      "k": 2,
+      "uniformizer_depth": 9,
+      "bins": [
+        {
+          "coefficient_class": "unresolved",
+          "ratio": "2",
+          "target_bins": 1
+        }
+      ]
+    },
+    {
+      "k": 2,
+      "uniformizer_depth": 10,
+      "bins": [
+        {
+          "coefficient_class": "even",
+          "ratio": "65537/32768",
+          "target_bins": 1
+        },
+        {
+          "coefficient_class": "odd",
+          "ratio": "65535/32768",
+          "target_bins": 1
+        }
+      ]
+    },
+    {
+      "k": 2,
+      "uniformizer_depth": 11,
+      "bins": [
+        {
+          "coefficient_class": "even",
+          "ratio": "65537/32768",
+          "target_bins": 2
+        },
+        {
+          "coefficient_class": "odd",
+          "ratio": "65535/32768",
+          "target_bins": 2
+        }
+      ]
+    },
+    {
+      "k": 2,
+      "uniformizer_depth": 12,
+      "bins": [
+        {
+          "coefficient_class": "even",
+          "ratio": "65537/32768",
+          "target_bins": 4
+        },
+        {
+          "coefficient_class": "odd",
+          "ratio": "65535/32768",
+          "target_bins": 4
+        }
+      ]
+    },
+    {
+      "k": 3,
+      "uniformizer_depth": 13,
+      "bins": [
+        {
+          "coefficient_class": "unresolved",
+          "ratio": "2",
+          "target_bins": 1
+        }
+      ]
+    },
+    {
+      "k": 3,
+      "uniformizer_depth": 14,
+      "bins": [
+        {
+          "coefficient_class": "even",
+          "ratio": "16777217/8388608",
+          "target_bins": 1
+        },
+        {
+          "coefficient_class": "odd",
+          "ratio": "16777215/8388608",
+          "target_bins": 1
+        }
+      ]
+    }
+  ],
+  "anchor_counts": [
+    {
+      "coefficient_modulus": 4,
+      "base": 1,
+      "step": 2,
+      "target_bins": 4,
+      "raw_count_per_bin": 2097152
+    },
+    {
+      "coefficient_modulus": 8,
+      "base": 1,
+      "step": 2,
+      "target_bins": 16,
+      "raw_count_per_bin": 2147483648
+    },
+    {
+      "coefficient_modulus": 8,
+      "base": 2,
+      "step": 4,
+      "target_bins": 4,
+      "raw_count_per_bin": 2281701376
+    }
+  ],
+  "unit_squares_mod_four": [
+    [
+      1,
+      0
+    ],
+    [
+      3,
+      2
+    ]
+  ],
+  "positive_nonsquare_control": {
+    "unit": [
+      1,
+      2
+    ],
+    "uniformizer_depth": 10,
+    "ratio": "257/128"
+  }
+}

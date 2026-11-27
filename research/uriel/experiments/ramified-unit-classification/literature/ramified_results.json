@@ -1,0 +1,456 @@
+[
+  {
+    "dimension": 4,
+    "primitive_lift_comparisons": 1984,
+    "depth_four_disagreements": {
+      "(0, 0)": [
+        "2",
+        "9/4"
+      ],
+      "(4, 0)": [
+        "2",
+        "7/4"
+      ]
+    },
+    "rows": [
+      {
+        "depth": 1,
+        "total": {
+          "zero": "1",
+          "one": "1",
+          "uniformizer": "1",
+          "one_plus_uniformizer": "1",
+          "two": "1",
+          "four": "1",
+          "sixteen": "1"
+        },
+        "primitive": {
+          "zero": "7/8",
+          "one": "1",
+          "uniformizer": "7/8",
+          "one_plus_uniformizer": "1",
+          "two": "7/8",
+          "four": "7/8",
+          "sixteen": "7/8"
+        }
+      },
+      {
+        "depth": 2,
+        "total": {
+          "zero": "2",
+          "one": "2",
+          "uniformizer": "0",
+          "one_plus_uniformizer": "0",
+          "two": "2",
+          "four": "2",
+          "sixteen": "2"
+        },
+        "primitive": {
+          "zero": "7/4",
+          "one": "2",
+          "uniformizer": "0",
+          "one_plus_uniformizer": "0",
+          "two": "7/4",
+          "four": "7/4",
+          "sixteen": "7/4"
+        }
+      },
+      {
+        "depth": 3,
+        "total": {
+          "zero": "2",
+          "one": "2",
+          "uniformizer": "0",
+          "one_plus_uniformizer": "0",
+          "two": "2",
+          "four": "2",
+          "sixteen": "2"
+        },
+        "primitive": {
+          "zero": "7/4",
+          "one": "2",
+          "uniformizer": "0",
+          "one_plus_uniformizer": "0",
+          "two": "7/4",
+          "four": "7/4",
+          "sixteen": "7/4"
+        }
+      },
+      {
+        "depth": 4,
+        "total": {
+          "zero": "5/2",
+          "one": "2",
+          "uniformizer": "0",
+          "one_plus_uniformizer": "0",
+          "two": "2",
+          "four": "5/2",
+          "sixteen": "5/2"
+        },
+        "primitive": {
+          "zero": "2",
+          "one": "2",
+          "uniformizer": "0",
+          "one_plus_uniformizer": "0",
+          "two": "3/2",
+          "four": "2",
+          "sixteen": "2"
+        }
+      },
+      {
+        "depth": 5,
+        "total": {
+          "zero": "11/4",
+          "one": "2",
+          "uniformizer": "0",
+          "one_plus_uniformizer": "0",
+          "two": "2",
+          "four": "9/4",
+          "sixteen": "11/4"
+        },
+        "primitive": {
+          "zero": "9/4",
+          "one": "2",
+          "uniformizer": "0",
+          "one_plus_uniformizer": "0",
+          "two": "3/2",
+          "four": "7/4",
+          "sixteen": "9/4"
+        }
+      },
+      {
+        "depth": 6,
+        "total": {
+          "zero": "23/8",
+          "one": "2",
+          "uniformizer": "0",
+          "one_plus_uniformizer": "0",
+          "two": "2",
+          "four": "9/4",
+          "sixteen": "23/8"
+        },
+        "primitive": {
+          "zero": "9/4",
+          "one": "2",
+          "uniformizer": "0",
+          "one_plus_uniformizer": "0",
+          "two": "3/2",
+          "four": "7/4",
+          "sixteen": "9/4"
+        }
+      },
+      {
+        "depth": 7,
+        "total": {
+          "zero": "47/16",
+          "one": "2",
+          "uniformizer": "0",
+          "one_plus_uniformizer": "0",
+          "two": "2",
+          "four": "9/4",
+          "sixteen": "47/16"
+        },
+        "primitive": {
+          "zero": "9/4",
+          "one": "2",
+          "uniformizer": "0",
+          "one_plus_uniformizer": "0",
+          "two": "3/2",
+          "four": "7/4",
+          "sixteen": "9/4"
+        }
+      },
+      {
+        "depth": 8,
+        "total": {
+          "zero": "95/32",
+          "one": "2",
+          "uniformizer": "0",
+          "one_plus_uniformizer": "0",
+          "two": "2",
+          "four": "9/4",
+          "sixteen": "95/32"
+        },
+        "primitive": {
+          "zero": "9/4",
+          "one": "2",
+          "uniformizer": "0",
+          "one_plus_uniformizer": "0",
+          "two": "3/2",
+          "four": "7/4",
+          "sixteen": "9/4"
+        }
+      },
+      {
+        "depth": 9,
+        "total": {
+          "zero": "191/64",
+          "one": "2",
+          "uniformizer": "0",
+          "one_plus_uniformizer": "0",
+          "two": "2",
+          "four": "9/4",
+          "sixteen": "189/64"
+        },
+        "primitive": {
+          "zero": "9/4",
+          "one": "2",
+          "uniformizer": "0",
+          "one_plus_uniformizer": "0",
+          "two": "3/2",
+          "four": "7/4",
+          "sixteen": "9/4"
+        }
+      },
+      {
+        "depth": 10,
+        "total": {
+          "zero": "383/128",
+          "one": "2",
+          "uniformizer": "0",
+          "one_plus_uniformizer": "0",
+          "two": "2",
+          "four": "9/4",
+          "sixteen": "189/64"
+        },
+        "primitive": {
+          "zero": "9/4",
+          "one": "2",
+          "uniformizer": "0",
+          "one_plus_uniformizer": "0",
+          "two": "3/2",
+          "four": "7/4",
+          "sixteen": "9/4"
+        }
+      }
+    ],
+    "independent_depth_five_bin_counts": 64
+  },
+  {
+    "dimension": 6,
+    "primitive_lift_comparisons": 1984,
+    "depth_four_disagreements": {
+      "(0, 2)": [
+        "2",
+        "63/32"
+      ],
+      "(4, 2)": [
+        "2",
+        "65/32"
+      ]
+    },
+    "rows": [
+      {
+        "depth": 1,
+        "total": {
+          "zero": "1",
+          "one": "1",
+          "uniformizer": "1",
+          "one_plus_uniformizer": "1",
+          "two": "1",
+          "four": "1",
+          "sixteen": "1"
+        },
+        "primitive": {
+          "zero": "31/32",
+          "one": "1",
+          "uniformizer": "31/32",
+          "one_plus_uniformizer": "1",
+          "two": "31/32",
+          "four": "31/32",
+          "sixteen": "31/32"
+        }
+      },
+      {
+        "depth": 2,
+        "total": {
+          "zero": "2",
+          "one": "2",
+          "uniformizer": "0",
+          "one_plus_uniformizer": "0",
+          "two": "2",
+          "four": "2",
+          "sixteen": "2"
+        },
+        "primitive": {
+          "zero": "31/16",
+          "one": "2",
+          "uniformizer": "0",
+          "one_plus_uniformizer": "0",
+          "two": "31/16",
+          "four": "31/16",
+          "sixteen": "31/16"
+        }
+      },
+      {
+        "depth": 3,
+        "total": {
+          "zero": "2",
+          "one": "2",
+          "uniformizer": "0",
+          "one_plus_uniformizer": "0",
+          "two": "2",
+          "four": "2",
+          "sixteen": "2"
+        },
+        "primitive": {
+          "zero": "31/16",
+          "one": "2",
+          "uniformizer": "0",
+          "one_plus_uniformizer": "0",
+          "two": "31/16",
+          "four": "31/16",
+          "sixteen": "31/16"
+        }
+      },
+      {
+        "depth": 4,
+        "total": {
+          "zero": "2",
+          "one": "2",
+          "uniformizer": "0",
+          "one_plus_uniformizer": "0",
+          "two": "17/8",
+          "four": "2",
+          "sixteen": "2"
+        },
+        "primitive": {
+          "zero": "15/8",
+          "one": "2",
+          "uniformizer": "0",
+          "one_plus_uniformizer": "0",
+          "two": "2",
+          "four": "15/8",
+          "sixteen": "15/8"
+        }
+      },
+      {
+        "depth": 5,
+        "total": {
+          "zero": "2",
+          "one": "2",
+          "uniformizer": "0",
+          "one_plus_uniformizer": "0",
+          "two": "17/8",
+          "four": "2",
+          "sixteen": "2"
+        },
+        "primitive": {
+          "zero": "15/8",
+          "one": "2",
+          "uniformizer": "0",
+          "one_plus_uniformizer": "0",
+          "two": "2",
+          "four": "15/8",
+          "sixteen": "15/8"
+        }
+      },
+      {
+        "depth": 6,
+        "total": {
+          "zero": "2",
+          "one": "2",
+          "uniformizer": "0",
+          "one_plus_uniformizer": "0",
+          "two": "17/8",
+          "four": "257/128",
+          "sixteen": "2"
+        },
+        "primitive": {
+          "zero": "15/8",
+          "one": "2",
+          "uniformizer": "0",
+          "one_plus_uniformizer": "0",
+          "two": "2",
+          "four": "15/8",
+          "sixteen": "15/8"
+        }
+      },
+      {
+        "depth": 7,
+        "total": {
+          "zero": "2",
+          "one": "2",
+          "uniformizer": "0",
+          "one_plus_uniformizer": "0",
+          "two": "17/8",
+          "four": "257/128",
+          "sixteen": "2"
+        },
+        "primitive": {
+          "zero": "15/8",
+          "one": "2",
+          "uniformizer": "0",
+          "one_plus_uniformizer": "0",
+          "two": "2",
+          "four": "15/8",
+          "sixteen": "15/8"
+        }
+      },
+      {
+        "depth": 8,
+        "total": {
+          "zero": "2",
+          "one": "2",
+          "uniformizer": "0",
+          "one_plus_uniformizer": "0",
+          "two": "17/8",
+          "four": "257/128",
+          "sixteen": "2"
+        },
+        "primitive": {
+          "zero": "15/8",
+          "one": "2",
+          "uniformizer": "0",
+          "one_plus_uniformizer": "0",
+          "two": "2",
+          "four": "15/8",
+          "sixteen": "15/8"
+        }
+      },
+      {
+        "depth": 9,
+        "total": {
+          "zero": "2",
+          "one": "2",
+          "uniformizer": "0",
+          "one_plus_uniformizer": "0",
+          "two": "17/8",
+          "four": "257/128",
+          "sixteen": "2"
+        },
+        "primitive": {
+          "zero": "15/8",
+          "one": "2",
+          "uniformizer": "0",
+          "one_plus_uniformizer": "0",
+          "two": "2",
+          "four": "15/8",
+          "sixteen": "15/8"
+        }
+      },
+      {
+        "depth": 10,
+        "total": {
+          "zero": "2",
+          "one": "2",
+          "uniformizer": "0",
+          "one_plus_uniformizer": "0",
+          "two": "17/8",
+          "four": "257/128",
+          "sixteen": "65537/32768"
+        },
+        "primitive": {
+          "zero": "15/8",
+          "one": "2",
+          "uniformizer": "0",
+          "one_plus_uniformizer": "0",
+          "two": "2",
+          "four": "15/8",
+          "sixteen": "15/8"
+        }
+      }
+    ],
+    "independent_depth_five_bin_counts": 64
+  }
+]

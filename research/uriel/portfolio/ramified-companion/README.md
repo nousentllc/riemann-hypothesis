@@ -1,6 +1,6 @@
 # The ramified companion fiber
 
-**Current result.** The [third edition and checked Lean proof](../../experiments/ramified-companion-lean/README.md) establish both the sharp stabilization depth and the original named-place lattice mass. This page preserves the earlier written checkpoint.
+**Current result.** The [fourth edition and full shell theorem](../../experiments/ramified-unit-classification/README.md) prove that exactly two original masses occur at valuation `4k`, with the sign determined by the residue of the unit modulo two. The [third-edition companion proof](../../experiments/ramified-companion-lean/README.md) records the sharp cutoff and the original measure on the companion branch. This page preserves the earlier written checkpoint.
 
 [Second-edition paper, editable LuaLaTeX and ZIP](paper/README.md)
 

@@ -1,0 +1,74 @@
+{
+  "scope": "synthetic product tests with exact rational arithmetic",
+  "integer_panel": [
+    1,
+    4096
+  ],
+  "isolated_shells": [
+    0,
+    24
+  ],
+  "models": {
+    "same_prime": {
+      "minimum_integer": 1,
+      "minimum": "1",
+      "diagonal_at_depth_24": "1",
+      "isolated_at_depth_24": {
+        "2": "1"
+      },
+      "block_identity_checks": 4096,
+      "isolating_vectors_checked": 25
+    },
+    "distinct_primes": {
+      "minimum_integer": 4096,
+      "minimum": "1/4096",
+      "diagonal_at_depth_24": "1",
+      "isolated_at_depth_24": {
+        "2": "1/16777216",
+        "3": "16777216"
+      },
+      "block_identity_checks": 8192,
+      "isolating_vectors_checked": 50
+    },
+    "late_decay": {
+      "minimum_integer": 1,
+      "minimum": "1",
+      "diagonal_at_depth_24": "1/13",
+      "isolated_at_depth_24": {
+        "2": "1/13"
+      },
+      "block_identity_checks": 4096,
+      "isolating_vectors_checked": 25
+    },
+    "six_square_formula_control": {
+      "minimum_integer": 1,
+      "minimum": "3/4",
+      "diagonal_at_depth_24": "316912650057057350374175801343/316912650057057350374175801344",
+      "isolated_at_depth_24": {
+        "2": "316912650057057350374175801343/316912650057057350374175801344"
+      },
+      "block_identity_checks": 4096,
+      "isolating_vectors_checked": 25
+    }
+  },
+  "threshold_control": {
+    "shell_thresholds": [
+      [
+        2,
+        1
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        3,
+        1
+      ]
+    ],
+    "least_generator": 12,
+    "positive_dilations": 341,
+    "tested_dilations": 4096,
+    "uniform_lower_bound": "1/2"
+  }
+}
