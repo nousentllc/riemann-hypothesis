@@ -1,0 +1,165 @@
+{
+  "mask_census": [
+    {
+      "period": 4,
+      "masks": 16,
+      "max_charge": 2,
+      "oriented_collision_masks": 3,
+      "collisions_with_no_distance_one_tau": 0,
+      "collisions_with_distance_one_tau": 3,
+      "matched_slots": 12,
+      "wraparound_slots": 2
+    },
+    {
+      "period": 8,
+      "masks": 256,
+      "max_charge": 4,
+      "oriented_collision_masks": 143,
+      "collisions_with_no_distance_one_tau": 18,
+      "collisions_with_distance_one_tau": 125,
+      "matched_slots": 480,
+      "wraparound_slots": 88
+    },
+    {
+      "period": 16,
+      "masks": 65536,
+      "max_charge": 8,
+      "oriented_collision_masks": 57951,
+      "collisions_with_no_distance_one_tau": 3842,
+      "collisions_with_distance_one_tau": 54109,
+      "matched_slots": 261120,
+      "wraparound_slots": 31616
+    }
+  ],
+  "tent_census": {
+    "cutoff": 30720,
+    "inputs": 30720,
+    "tent_nonzero": 5119,
+    "two_endpoint_nonzero": 15359,
+    "peak": "1/61440"
+  },
+  "same_formula_controls": [
+    {
+      "p": 421,
+      "bprime": "1000",
+      "ep": "7",
+      "sigma": "1/50",
+      "io_multiplier": "2",
+      "prime_premium": "39577158283/3730902",
+      "tau": "2053",
+      "io": "7737/25",
+      "net": "740208434377/93272550",
+      "orbit_premiums": [
+        "48105501029/6218170",
+        "26784644164/9327255"
+      ],
+      "orbit_rows": [
+        [
+          {
+            "tau_head": "1000",
+            "tau_row": "1011",
+            "g0": "2019789/421",
+            "gU": "108112067439/12436340",
+            "premium": "48099282859/12436340",
+            "oriented_first_credit": "594157/421",
+            "matched_minima": "1021",
+            "even_minima": "13344704819/12436340"
+          },
+          {
+            "tau_head": "1000",
+            "tau_row": "1011",
+            "g0": "2018947/421",
+            "gU": "108099631099/12436340",
+            "premium": "48111719199/12436340",
+            "oriented_first_credit": "593736/421",
+            "matched_minima": "1022",
+            "even_minima": "13382013839/12436340"
+          }
+        ],
+        [
+          {
+            "tau_head": "181495808000/13225450646101",
+            "tau_row": "12",
+            "g0": "3032841/421",
+            "gU": "161682827899/18654510",
+            "premium": "26775316909/18654510",
+            "oriented_first_credit": "594157/421",
+            "matched_minima": "181495453516/13225450646101",
+            "even_minima": "970546519/18654510"
+          },
+          {
+            "tau_head": "181495808000/13225450646101",
+            "tau_row": "12",
+            "g0": "3031578/421",
+            "gU": "161645518879/18654510",
+            "premium": "26793971419/18654510",
+            "oriented_first_credit": "593736/421",
+            "matched_minima": "181495453516/13225450646101",
+            "even_minima": "1007855539/18654510"
+          }
+        ]
+      ]
+    },
+    {
+      "p": 421,
+      "bprime": "1000",
+      "ep": "14000",
+      "sigma": "1/50",
+      "io_multiplier": "2",
+      "prime_premium": "39577158283/3730902",
+      "tau": "16046",
+      "io": "7737/25",
+      "net": "-564954357773/93272550",
+      "orbit_premiums": [
+        "48105501029/6218170",
+        "26784644164/9327255"
+      ],
+      "orbit_rows": [
+        [
+          {
+            "tau_head": "1000",
+            "tau_row": "1011",
+            "g0": "2019789/421",
+            "gU": "108112067439/12436340",
+            "premium": "48099282859/12436340",
+            "oriented_first_credit": "594157/421",
+            "matched_minima": "1021",
+            "even_minima": "13344704819/12436340"
+          },
+          {
+            "tau_head": "1000",
+            "tau_row": "1011",
+            "g0": "2018947/421",
+            "gU": "108099631099/12436340",
+            "premium": "48111719199/12436340",
+            "oriented_first_credit": "593736/421",
+            "matched_minima": "1022",
+            "even_minima": "13382013839/12436340"
+          }
+        ],
+        [
+          {
+            "tau_head": "181495808000/13225450646101",
+            "tau_row": "12",
+            "g0": "3032841/421",
+            "gU": "161682827899/18654510",
+            "premium": "26775316909/18654510",
+            "oriented_first_credit": "594157/421",
+            "matched_minima": "181495453516/13225450646101",
+            "even_minima": "970546519/18654510"
+          },
+          {
+            "tau_head": "181495808000/13225450646101",
+            "tau_row": "12",
+            "g0": "3031578/421",
+            "gU": "161645518879/18654510",
+            "premium": "26793971419/18654510",
+            "oriented_first_credit": "593736/421",
+            "matched_minima": "181495453516/13225450646101",
+            "even_minima": "1007855539/18654510"
+          }
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "original": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "lean": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "verified_original_source_files": 19,
+  "modules": [
+    {
+      "name": "Predecessor",
+      "source_sha256": "1e3bf86eea8b8c2f982884b70a03e5045aa337530c4dacc2d61fed6335fab1ee",
+      "object_sha256": "4fba266db8defdfd234877c33c14d0d029ecf8047a31d1349e1763432876b5c0",
+      "elaboration": "'FrobeniusWindow.source_odd_distance' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FrobeniusWindow.charge_matching' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FrobeniusWindow.charged_min_le' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "kernel": "replaying Predecessor"
+    },
+    {
+      "name": "NativeAccounting",
+      "source_sha256": "62f44d8c9dfd921f6786e40d073566df76593e28204d40b7dfca45af93c86de2",
+      "object_sha256": "c5bb01a68eda7746f7d807f249804469aa625f2abef80b24da55b4ffbbab7fc9",
+      "elaboration": "'FrobeniusWindow.gain_lift_split' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FrobeniusWindow.io_le_premium' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FrobeniusWindow.tau_large_eq' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "kernel": "replaying NativeAccounting"
+    },
+    {
+      "name": "TentWindow",
+      "source_sha256": "404044b05e831a2cdcc60cb8de7f03718e232c838f95683a905add384c7f0d4a",
+      "object_sha256": "171039cf4c9cd1a6244b87428491e6b9675b37e434d794af89fe3f56d2262ba1",
+      "elaboration": "Try this:\n  [apply] ring_nf\n  \n  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.\n    \n  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.\nTentWindow.lean:60:15: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\n\nNote: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`\nTentWindow.lean:64:15: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice\n\nNote: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`\n'FrobeniusWindow.tent_support' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FrobeniusWindow.principal_tent' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FrobeniusWindow.nonprincipal_tent' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "kernel": "replaying TentWindow"
+    },
+    {
+      "name": "MatchedTau",
+      "source_sha256": "0055102902ef67145e7e6d67d7ee9108bd0d25663b9a1a3b4f3de8e886a1b167",
+      "object_sha256": "db6dc658986dade325f0787c09b5dac4713cbd6b5c6752bca808ab19fde74a74",
+      "elaboration": "'FrobeniusWindow.tau_head_paid' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FrobeniusWindow.pay_joint_budget' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FrobeniusWindow.premium_after_costs' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "kernel": "replaying MatchedTau"
+    },
+    {
+      "name": "InteractionBudget",
+      "source_sha256": "b981abf9e7e39998a703ce6074be7fc49ac8361ed0ceb9e1310c981aaefb7323",
+      "object_sha256": "c5cbb7b66168a84d5f2b529e52f9155f0bdb69a1b9995eef68c4ea2840c080ee",
+      "elaboration": "'FrobeniusWindow.wok_sigma_mass' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FrobeniusWindow.io_weighted' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "kernel": "replaying InteractionBudget"
+    },
+    {
+      "name": "WindowTransport",
+      "source_sha256": "d585d4e6f21355d7b07cdfca3a9477acbb678bef049916f71e6ea103edeb782a",
+      "object_sha256": "66f933f21e685136995a18c98e943fc1b67a5ef710309d61955506bc81747b5b",
+      "elaboration": "'FrobeniusWindow.noGain_false' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FrobeniusWindow.gainD_eq_native' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FrobeniusWindow.support_contains_fiber' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FrobeniusWindow.native_prime_buckets' depends on axioms: [propext, Classical.choice, Quot.sound]\n'FrobeniusWindow.window_margin' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "kernel": "replaying WindowTransport"
+    }
+  ],
+  "scope": "Prepared original objects. The source host supply, analytic strip weighting and full asymptotic selection are written/source-traced, not rebuilt here."
+}
