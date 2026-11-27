@@ -1,0 +1,562 @@
+{
+  "title": "Riemann proof studies",
+  "date": "2026-11-26",
+  "repository": "https://github.com/nousentllc/riemann-hypothesis",
+  "baseline": [
+    {
+      "branch": "baseline/published-2026-11-20",
+      "sha": "40e56bab026552e089d7afcfeff08d2defb9c005",
+      "status": "identical",
+      "error": false
+    },
+    {
+      "branch": "baseline/community-2026-11-22",
+      "sha": "c259b55f5b1e0c29f82abf235e21a48ad2f9e34e",
+      "status": "identical",
+      "error": false
+    }
+  ],
+  "tracks": [
+    {
+      "id": "analysis",
+      "title": "Proof architecture & prime windows",
+      "question": "What signal would an off-line zero force, and where does the arithmetic bound it?",
+      "route": "Original localized Landau → prime ramps → readable remainder",
+      "finding": "The two source editions share a smoothed observable and a nonvanishing endpoint. Coefficient, quantifier, and scale changes govern what each interface transports.",
+      "color": "#006c65",
+      "studies": [
+        {
+          "id": "initial-2026-11-22",
+          "title": "Initial five probes",
+          "detail": "Localized Landau, error scaling, exceptional intervals, covolumes and proof dependencies.",
+          "branch": "experiments/uriel-initial-2026-11-22",
+          "commit": "829e7bd067dc35da7a6c5085e45abc00d4e5d0b3",
+          "path": "research/uriel/experiments/initial"
+        },
+        {
+          "id": "second-2026-11-22",
+          "title": "Localized window replay",
+          "detail": "Rebuilds 30 modules for the analytic implication from one-sided windows to a zero-free region.",
+          "branch": "experiments/uriel-second-2026-11-22",
+          "commit": "b616d08a805e05e358ad0d2b3cd7b180e058a19e",
+          "path": "research/uriel/experiments/second"
+        },
+        {
+          "id": "stable-range-theta",
+          "title": "Stable-range theta lifts",
+          "detail": "Traces why the arithmetic argument uses two nonzero theta lifts.",
+          "branch": "experiments/uriel-stable-range-theta",
+          "commit": "003f8090b9894fb955d0925ea1b7f7da64a823c3",
+          "path": "research/uriel/experiments/stable-range-theta"
+        },
+        {
+          "id": "siegel-weil-constant-term",
+          "title": "Siegel–Weil constant term",
+          "detail": "Follows the normalization and rank split behind the factors one and two.",
+          "branch": "experiments/uriel-siegel-weil-constant-term",
+          "commit": "2c03d15e908bcbe4aae3c94a87c7ada402cd7911",
+          "path": "research/uriel/experiments/siegel-weil-constant-term"
+        },
+        {
+          "id": "zero-and-arithmetic-windows",
+          "title": "A zero and the prime windows",
+          "detail": "Traces the smoothed prime observable and tests manufactured signals and actual prime powers.",
+          "branch": "experiments/uriel-zero-and-arithmetic-windows",
+          "commit": "b7b5bc6e5e6814f654753fcbd5f45fecf370344c",
+          "path": "research/uriel/experiments/zero-and-arithmetic-windows"
+        },
+        {
+          "id": "cofinal-endpoint-certificates",
+          "title": "Cofinal endpoints",
+          "detail": "Separates endpoint certificates from control on the interval between them.",
+          "branch": "experiments/uriel-cofinal-endpoint-certificates",
+          "commit": "d79bd956c6fb2b8a3de51b606765be81d24fb1fc",
+          "path": "research/uriel/experiments/cofinal-endpoint-certificates"
+        },
+        {
+          "id": "exceptional-band-mass",
+          "title": "Exceptional bands",
+          "detail": "Measures positive prime mass inside bands and traces what survives a failed exceptional-integer test.",
+          "branch": "experiments/uriel-exceptional-band-mass",
+          "commit": "5396aa19afa70189268f80237c7897cdce426e24",
+          "path": "research/uriel/experiments/exceptional-band-mass"
+        },
+        {
+          "id": "window-remainder-architecture",
+          "title": "Windows and prime remainder",
+          "detail": "Compares the original cofinal windows with the readable eventual remainder bound.",
+          "branch": "experiments/uriel-window-remainder-architecture",
+          "commit": "43141b319692e076cd6f6132534a3bec9f86fa39",
+          "path": "research/uriel/experiments/window-remainder-architecture"
+        }
+      ],
+      "related": [
+        {
+          "id": "upstream-interface-comparison",
+          "title": "Common interfaces",
+          "detail": "Source-edition comparison before the joint critical edition.",
+          "branch": "experiments/uriel-window-remainder-architecture",
+          "commit": "43141b319692e076cd6f6132534a3bec9f86fa39",
+          "path": "research/uriel/experiments/upstream-interface-comparison"
+        },
+        {
+          "id": "proof-interfaces-critical-edition",
+          "title": "Joint critical edition",
+          "detail": "Derives the positive-coefficient consequence at fixed exponent slack and reconciles the original target-four mass with the matched readable convention.",
+          "branch": "experiments/uriel-window-remainder-architecture",
+          "commit": "43141b319692e076cd6f6132534a3bec9f86fa39",
+          "path": "research/uriel/experiments/proof-interfaces-critical-edition"
+        }
+      ]
+    },
+    {
+      "id": "witnesses",
+      "title": "Arithmetic witnesses & exceptions",
+      "question": "Which conclusions keep the same field, host, retained set, and exceptional data?",
+      "route": "Joint PairRow → slot centers → two selections across a gap",
+      "finding": "Distinguishing existence from identification explains why a bound can hold even when the record cannot decide whether a particular integer belongs to its chosen exception list.",
+      "color": "#325e9a",
+      "studies": [
+        {
+          "id": "joint-witness-2026-11-22",
+          "title": "One PairRow and one host",
+          "detail": "Follows the exceptional interval and prime row into the same arithmetic core.",
+          "branch": "experiments/uriel-joint-witness-2026-11-22",
+          "commit": "bafda6a5728eb08b601943f0c9cb1d38d27c03a9",
+          "path": "research/uriel/experiments/joint-witness"
+        },
+        {
+          "id": "conductor-one-slot-three",
+          "title": "Slot three, specified centers",
+          "detail": "At cutoff 64, two valid single-center witnesses disagree on whether weight 1 is exceptional.",
+          "branch": "experiments/uriel-conductor-one-slot-three",
+          "commit": "4b1c9fbbfb9bc50a3f791c2c1f3d7f2adb336c87",
+          "path": "research/uriel/experiments/slot-three"
+        },
+        {
+          "id": "class-ascent",
+          "title": "Class ascent over Q(ζ₃)",
+          "detail": "Discharges the class-number assumption and formalizes non-unique exceptional sets.",
+          "branch": "experiments/uriel-class-ascent",
+          "commit": "e674cb750ef96b2f5e7cd46586ea4edb9998715a",
+          "path": "research/uriel/experiments/ascent-witness"
+        },
+        {
+          "id": "retained-host",
+          "title": "Selection on one retained host",
+          "detail": "Tests coset shares and character bounds on the same set.",
+          "branch": "experiments/uriel-retained-host",
+          "commit": "9ac7e1b546b132edde02709e1c0af1bfccd40755",
+          "path": "research/uriel/experiments/retained-host"
+        },
+        {
+          "id": "prescribed-gap-witnesses",
+          "title": "Two selections across a gap",
+          "detail": "Spells out the coherence and crossover conditions needed for a prescribed gap.",
+          "branch": "experiments/uriel-prescribed-gap-witnesses",
+          "commit": "0b9ed6f42cccf214e7e196f2e129ea1e3b1b5987",
+          "path": "research/uriel/experiments/prescribed-gap-witnesses"
+        },
+        {
+          "id": "cyclotomic-slot-seven",
+          "title": "Fixed slot at seven",
+          "detail": "Shows vanishing at fixed slots 3 and 7 and isolates the moving field tests at 2.",
+          "branch": "experiments/uriel-cyclotomic-slot-seven",
+          "commit": "4f0a1148df04b3f12ea05431b20165880342b11b",
+          "path": "research/uriel/experiments/cyclotomic-slot-seven"
+        }
+      ],
+      "related": [
+        {
+          "id": "fixed-datum-host-expanded",
+          "title": "Recovering the arithmetic witness",
+          "detail": "Traces a fixed readable datum, its prime partition, and the constraints of transporting the same original witness.",
+          "branch": "experiments/uriel-window-remainder-architecture",
+          "commit": "43141b319692e076cd6f6132534a3bec9f86fa39",
+          "path": "research/uriel/experiments/fixed-datum-host-expanded"
+        },
+        {
+          "id": "selected-place-transport-expanded",
+          "title": "Selected places and signed indices",
+          "detail": "Checks capacity and conditional coset transport at q₀ = 18480 and d = 9239.",
+          "branch": "experiments/uriel-window-remainder-architecture",
+          "commit": "43141b319692e076cd6f6132534a3bec9f86fa39",
+          "path": "research/uriel/experiments/selected-place-transport-expanded"
+        }
+      ]
+    },
+    {
+      "id": "orbit",
+      "title": "Orbit losses & recovery",
+      "question": "How much of the original odd-position allowance can the fallback gain recover?",
+      "route": "Weighted orbit test → actual gain → sharp stationary 64-cycle",
+      "finding": "The 10.1190% stationary 64-cycle optimum and the supremum over growing compatible families quantify different constructions.",
+      "color": "#975812",
+      "studies": [
+        {
+          "id": "weighted-orbit",
+          "title": "Weighted orbit test",
+          "detail": "Two retained sets with equal coset shares can have opposite weighted orbit outcomes.",
+          "branch": "experiments/uriel-weighted-orbit",
+          "commit": "4140d06dcda9a3e948395fb72b7333eb6ca9c1dd",
+          "path": "research/uriel/experiments/weighted-orbit"
+        },
+        {
+          "id": "orbit-loss-trace",
+          "title": "Bad-orbit costs",
+          "detail": "Follows one weighted orbit change into the original omission and prime estimates.",
+          "branch": "experiments/uriel-orbit-loss-trace",
+          "commit": "1f15c9441034d5d74949d25a498937653f6779a7",
+          "path": "research/uriel/experiments/orbit-loss-trace"
+        },
+        {
+          "id": "served-prime-study",
+          "title": "Which primes are served?",
+          "detail": "Follows the effective weights for the high inert primes and the same host’s analytic bounds.",
+          "branch": "experiments/uriel-served-prime-study",
+          "commit": "1d893ba17074fc74c4546e4a49e38af18f774829",
+          "path": "research/uriel/experiments/served-prime-study"
+        },
+        {
+          "id": "odd-position-study",
+          "title": "Odd-position charge",
+          "detail": "Sharpens the principal conductor-one local allowance and tests compatible selections.",
+          "branch": "experiments/uriel-odd-position-study",
+          "commit": "ab18d856b6989f7bcb05e486ca720aa9016f3268",
+          "path": "research/uriel/experiments/odd-position-study"
+        },
+        {
+          "id": "actual-gain-study",
+          "title": "Actual gain against the fallback",
+          "detail": "Holds prime, orbit, and lift fixed and compares the clipped competing gains.",
+          "branch": "experiments/uriel-actual-gain-study",
+          "commit": "3dedd2d81a54d046e3c12ef78df9d9fd0c2ad6dc",
+          "path": "research/uriel/experiments/actual-gain-study"
+        },
+        {
+          "id": "incumbent-recovery",
+          "title": "Recovery under the original score",
+          "detail": "Includes a compatible long-orbit construction recovering 2/45 of its odd-position allowance.",
+          "branch": "experiments/uriel-incumbent-recovery",
+          "commit": "a71afc29237a4b0ae379ff8be7d58310afb80d99",
+          "path": "research/uriel/experiments/incumbent-recovery-study"
+        },
+        {
+          "id": "recovery-frontier",
+          "title": "Recovery frontier",
+          "detail": "Separates an asymptotic supremum over compatible choices from finite uniform templates.",
+          "branch": "experiments/uriel-recovery-frontier",
+          "commit": "f667dea291ef2a5b204810ad63611ef6b718b18a",
+          "path": "research/uriel/experiments/recovery-frontier"
+        },
+        {
+          "id": "ten-percent-certificate",
+          "title": "A hand certificate for ten percent",
+          "detail": "A 64-cycle construction guarantees 12087/120814 for every labeling in its stated setting.",
+          "branch": "experiments/uriel-ten-percent-certificate",
+          "commit": "d67de1f6716496b98c8f0eb9f16b2a38c4f789c4",
+          "path": "research/uriel/experiments/ten-percent-study"
+        },
+        {
+          "id": "cycle64-optimization",
+          "title": "64-cycle optimization",
+          "detail": "Matches the bounds for stationary profiles in the specified host construction at 10.11902517624%.",
+          "branch": "experiments/uriel-cycle64-optimization",
+          "commit": "4f6f7767efdff49863210284eeca23353cd7ffa9",
+          "path": "research/uriel/experiments/cycle64-optimization"
+        }
+      ],
+      "related": []
+    },
+    {
+      "id": "frobenius",
+      "title": "Same-set Frobenius & gain",
+      "question": "Can the original selector admit two odd partners on the same set, and can their gain survive the original window charges?",
+      "route": "Spacing → two odd partners → b′/4 row premium → τ and io",
+      "finding": "The newest study keeps the weighted host and retained set fixed through an existential prime-and-orbit selection. Six Lean components check local and transport steps. The final late selection is written.",
+      "color": "#923e42",
+      "studies": [
+        {
+          "id": "frobenius-spacing",
+          "title": "Original versus compact spacing",
+          "detail": "Finds a rank obstruction at fixed d and contrasts the original local clauses with compact uniqueness.",
+          "branch": "experiments/uriel-frobenius-spacing",
+          "commit": "d5cdf95bdb5634d812782c464e799f8f5d0546ee",
+          "path": "research/uriel/experiments/frobenius-spacing"
+        },
+        {
+          "id": "global-frobenius",
+          "title": "Frobenius premium in the arithmetic window",
+          "detail": "Traces the lift-summed premium through original tauAt and ioAt on one weighted host.",
+          "branch": "experiments/uriel-global-frobenius",
+          "commit": "80555206be28204b1d0a9063f54c8f1e2b5fd70d",
+          "path": "research/uriel/experiments/frobenius-window-survival"
+        }
+      ],
+      "related": [
+        {
+          "id": "global-frobenius",
+          "title": "Two odd Frobenius partners",
+          "detail": "Lets d vary and studies two distinct odd partners in the unchanged retained set.",
+          "branch": "experiments/uriel-global-frobenius",
+          "commit": "80555206be28204b1d0a9063f54c8f1e2b5fd70d",
+          "path": "research/uriel/experiments/global-frobenius"
+        },
+        {
+          "id": "frobenius-gain-gates",
+          "title": "Same-set positive gain",
+          "detail": "Follows that collision through selection, pricing, and the b′/4 row margin.",
+          "branch": "experiments/uriel-global-frobenius",
+          "commit": "80555206be28204b1d0a9063f54c8f1e2b5fd70d",
+          "path": "research/uriel/experiments/frobenius-gain-gates"
+        }
+      ]
+    },
+    {
+      "id": "density",
+      "title": "Local density & normalization",
+      "question": "How do finite counts become fiber measures, and how does local mass enter Siegel–Weil?",
+      "route": "Gaussian 3/4 and 63/64 → ramified 257/128 → growth & charts",
+      "finding": "Track the modulus, vector lattice, and Haar convention alongside each number. Ramified target four is 257/128 in scalar normalization and 257/256 in the matched split-skew normalization.",
+      "color": "#68508d",
+      "studies": [
+        {
+          "id": "rank-one-growth",
+          "title": "Rank-one growth",
+          "detail": "Audits a finite-place growth witness and checks independent six-square counts.",
+          "branch": "experiments/uriel-rank-one-growth",
+          "commit": "609877747df336e925a39085acf02c8f994f66a3",
+          "path": "research/uriel/experiments/rank-one-growth"
+        },
+        {
+          "id": "dyadic-fiber",
+          "title": "Dyadic fiber",
+          "detail": "Follows one Gaussian density through the source’s input, target, and fiber conventions.",
+          "branch": "experiments/uriel-dyadic-fiber",
+          "commit": "0cce5c50f1468cc7519e6eb2e18386556c4cfdd8",
+          "path": "research/uriel/experiments/dyadic-fiber"
+        },
+        {
+          "id": "gaussian-target-one",
+          "title": "Gaussian target one",
+          "detail": "Checks 3/4 in the original Gram-fiber setting and constructs normalized data.",
+          "branch": "experiments/uriel-gaussian-target-one",
+          "commit": "49feb57ded97dfd384aae1c86538df32fea856a9",
+          "path": "research/uriel/experiments/gaussian-target-one"
+        },
+        {
+          "id": "gaussian-target-four",
+          "title": "Gaussian target four",
+          "detail": "Checks 63/64, separating primitive 15/16 from all-even 3/64.",
+          "branch": "experiments/uriel-gaussian-target-four",
+          "commit": "b4d12e0825d2191f38fdfb5e97b327c8c8ad1b3d",
+          "path": "research/uriel/experiments/gaussian-target-four"
+        },
+        {
+          "id": "parallel-growth",
+          "title": "Growth on a progression",
+          "detail": "Establishes a bounded-gap progression and traces its use in the rank-one normalization.",
+          "branch": "experiments/uriel-parallel-growth",
+          "commit": "e3bf793943ea2f2eab748816b974a8a0c11bdbbe",
+          "path": "research/uriel/experiments/parallel-growth"
+        },
+        {
+          "id": "uncapped-growth",
+          "title": "Exact support and uncapped growth",
+          "detail": "Identifies divisibility support for the finite-place product and growth throughout that support.",
+          "branch": "experiments/uriel-uncapped-growth",
+          "commit": "12695d4031eea7e561515ac92758a487d6d48ac5",
+          "path": "research/uriel/experiments/uncapped-growth"
+        },
+        {
+          "id": "ramified-reading",
+          "title": "Ramified reading and literature",
+          "detail": "Compares ramified finite counts and lifting with prior density methods in a supplement.",
+          "branch": "experiments/uriel-ramified-reading",
+          "commit": "b040ed9063835e90efdecd1e4350ed35708317c0",
+          "path": "research/uriel/experiments/uncapped-growth"
+        },
+        {
+          "id": "ramified-lean-bridge",
+          "title": "Ramified Gram fiber",
+          "detail": "Checks 257/128 in the original measure at the named ramified dyadic place.",
+          "branch": "experiments/uriel-ramified-lean-bridge",
+          "commit": "63c06fe44eb700e4550e4a2b70adafe09cb1ff9b",
+          "path": "research/uriel/experiments/ramified-gram-bridge"
+        },
+        {
+          "id": "ramified-square-dilates",
+          "title": "Ramified square dilates",
+          "detail": "Checks 2 + 2/256ᵏ at 4ᵏu² for k ≥ 1 and units u, including target sixteen.",
+          "branch": "experiments/uriel-ramified-square-dilates",
+          "commit": "17263859a4d27c62cfc67571737355f61a080806",
+          "path": "research/uriel/experiments/ramified-square-dilates"
+        },
+        {
+          "id": "target-four-haar",
+          "title": "Target-four Haar and valuation strata",
+          "detail": "Compares two conventions and accounts for the entire 1/128 excess by vectors divisible by two.",
+          "branch": "experiments/uriel-target-four-haar",
+          "commit": "25a06cea18926d375c63cf45d51693a98d821cae",
+          "path": "research/uriel/experiments/target-four-haar"
+        }
+      ],
+      "related": [
+        {
+          "id": "target-four-regular-chart",
+          "title": "Regular chart at 4i",
+          "detail": "Tests narrower physical boxes while the integral trace-one obstruction persists.",
+          "branch": "experiments/uriel-target-four-haar",
+          "commit": "25a06cea18926d375c63cf45d51693a98d821cae",
+          "path": "research/uriel/experiments/target-four-regular-chart"
+        },
+        {
+          "id": "target-four-chart-overlap",
+          "title": "Two pivots on one fiber",
+          "detail": "Shows chart agreement on the overlap and a second branch when the box widens.",
+          "branch": "experiments/uriel-target-four-haar",
+          "commit": "25a06cea18926d375c63cf45d51693a98d821cae",
+          "path": "research/uriel/experiments/target-four-chart-overlap"
+        }
+      ]
+    },
+    {
+      "id": "reader",
+      "title": "Proof-reading experiments",
+      "question": "When does an agent certify a verdict, guess, or abstain from an incomplete record?",
+      "route": "One lookup → presentation → row labels → quantifiers",
+      "finding": "These are model experiments with recorded controls. Their scores measure reader behavior on the tested panels.",
+      "color": "#43666a",
+      "studies": [
+        {
+          "id": "binary-proof-audit-transfer",
+          "title": "One lookup",
+          "detail": "Moves from a binary measure proof trace to a separately scored follow-up observation experiment.",
+          "branch": "experiments/uriel-binary-proof-audit-transfer",
+          "commit": "42b3ce4890b5c6a584af26d34bbc54f177517871",
+          "path": "research/uriel/experiments/binary-proof-audit-transfer"
+        },
+        {
+          "id": "circuit-threshold-diagnostic",
+          "title": "Threshold diagnostic",
+          "detail": "Tests whether explicit threshold comparisons affect the choice of observation.",
+          "branch": "experiments/uriel-circuit-threshold-diagnostic",
+          "commit": "90729bccc20c8f941bb79494861702259bcaddbb",
+          "path": "research/uriel/experiments/circuit-threshold-diagnostic"
+        },
+        {
+          "id": "forced-reading-audit",
+          "title": "Decisive reading",
+          "detail": "Tests identical circuits with eight candidates versus the two compatible candidates.",
+          "branch": "experiments/uriel-forced-reading-audit",
+          "commit": "03854270b77458b2b8f30e74049c142d9bb3c3a1",
+          "path": "research/uriel/experiments/forced-reading-audit"
+        },
+        {
+          "id": "marked-reading-audit",
+          "title": "Mark versus filter",
+          "detail": "Compares unmarked, marked, and filtered views of the same records.",
+          "branch": "experiments/uriel-marked-reading-audit",
+          "commit": "2462c0f0b4b7c34052121dacab60833d58b34c4a",
+          "path": "research/uriel/experiments/marked-reading-audit"
+        },
+        {
+          "id": "label-first-verdict",
+          "title": "Label before deciding",
+          "detail": "Measures whether a verdict follows two accurately transcribed labels.",
+          "branch": "experiments/uriel-label-first-verdict",
+          "commit": "e7a01b2d19e61e77b97ece9f1b48d48bb761e186",
+          "path": "research/uriel/experiments/label-first-verdict"
+        },
+        {
+          "id": "quantifier-scope",
+          "title": "At least one versus both",
+          "detail": "Separately asks two questions on mixed and unanimous pairs.",
+          "branch": "experiments/uriel-quantifier-scope",
+          "commit": "4288df5b22461eee3ad77a15802f80b53a6be527",
+          "path": "research/uriel/experiments/quantifier-scope"
+        },
+        {
+          "id": "checkpoint-intervention",
+          "title": "Checkpoint intervention",
+          "detail": "Replays five historical cases after an explicit one-character repair to a report.",
+          "branch": "experiments/uriel-checkpoint-intervention",
+          "commit": "4d4869956c394f4e2279765baf84a4d431f3e63e",
+          "path": "research/uriel/experiments/checkpoint-intervention"
+        }
+      ],
+      "related": [
+        {
+          "id": "diagnostics",
+          "title": "Shortcut diagnostic",
+          "detail": "Probes regularities in the choice of measurement separately from verdict certification.",
+          "branch": "experiments/uriel-binary-proof-audit-transfer",
+          "commit": "42b3ce4890b5c6a584af26d34bbc54f177517871",
+          "path": "research/uriel/experiments/binary-proof-audit-transfer/diagnostics"
+        }
+      ]
+    }
+  ],
+  "packages": [
+    {
+      "study": "frobenius-window-survival",
+      "filename": "Nous_Frobenius_Arithmetic_Window.zip",
+      "commit": "80555206be28204b1d0a9063f54c8f1e2b5fd70d",
+      "blob": "034929500dd68848652e6a529cb506bfc928c125"
+    },
+    {
+      "study": "frobenius-gain-gates",
+      "filename": "Nous_Same_Set_Frobenius_and_Gain.zip",
+      "commit": "80555206be28204b1d0a9063f54c8f1e2b5fd70d",
+      "blob": "2b012489f34182abf38700958655ec7d4e36480c"
+    },
+    {
+      "study": "global-frobenius",
+      "filename": "Nous_Two_Odd_Frobenius_Partners.zip",
+      "commit": "80555206be28204b1d0a9063f54c8f1e2b5fd70d",
+      "blob": "def3a181308c78f4e56f61693aabccf42b3bc81d"
+    },
+    {
+      "study": "frobenius-spacing",
+      "filename": "Nous_Frobenius_Partners_and_Spacing.zip",
+      "commit": "d5cdf95bdb5634d812782c464e799f8f5d0546ee",
+      "blob": "adf93c19fdb4768ee494dc3cc6ff5ed142ab3a40"
+    },
+    {
+      "study": "window-remainder-architecture",
+      "filename": "Nous_Window_Remainder_Architecture.zip",
+      "commit": "43141b319692e076cd6f6132534a3bec9f86fa39",
+      "blob": "62f322182684b2b63e34cacc5a39bfe71a207268"
+    },
+    {
+      "study": "fixed-datum-host-expanded",
+      "filename": "Nous_Fixed_Datum_Host_Expanded.zip",
+      "commit": "43141b319692e076cd6f6132534a3bec9f86fa39",
+      "blob": "2130551605da041a13f26bdad2a87fac3b827cf5"
+    },
+    {
+      "study": "selected-place-transport-expanded",
+      "filename": "Nous_Selected_Places_and_Signed_Indices_Expanded.zip",
+      "commit": "43141b319692e076cd6f6132534a3bec9f86fa39",
+      "blob": "4dd2f1575401f0caf2fdc26a107ceecd92b3bd45"
+    },
+    {
+      "study": "target-four-haar",
+      "filename": "Nous_Target_Four_Haar.zip",
+      "commit": "25a06cea18926d375c63cf45d51693a98d821cae",
+      "blob": "5b8c95342733f81ed5b2516e7c296bec444ac2f3"
+    },
+    {
+      "study": "target-four-chart-overlap",
+      "filename": "Nous_Target_Four_Chart_Overlap.zip",
+      "commit": "25a06cea18926d375c63cf45d51693a98d821cae",
+      "blob": "9677f4707887b8257dfcb6948dcb826784629b3b"
+    },
+    {
+      "study": "ramified-square-dilates",
+      "filename": "Nous_Ramified_Square_Dilates_Package.zip",
+      "commit": "17263859a4d27c62cfc67571737355f61a080806",
+      "blob": "8d6faf3bf275f1c9da4af88d8a9326d9949c91a8"
+    }
+  ]
+}
