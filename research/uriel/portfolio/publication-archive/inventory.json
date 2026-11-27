@@ -1,0 +1,498 @@
+{
+  "date": "2026-11-26",
+  "papers_zip_inventory_matches": 45,
+  "files": [
+    {
+      "path": "circuit-threshold-archive/Nous_Circuit_Threshold_Diagnostic_Package.zip",
+      "title": "Circuit threshold diagnostic, complete replay archive",
+      "sha256": "8b70a41e56c8fb01f52fb870495f7ed9dce340bf8f7d01ea791d47b1208a7db9",
+      "size": 988702
+    },
+    {
+      "path": "forced-reading-archive/Nous_Forced_Reading_Research_Package.zip",
+      "title": "Forced reading, complete replay archive",
+      "sha256": "02b4e87572a369fc6a9d2c75f6ebc7078ab82a4bcef3b480db9812f20b70b7f3",
+      "size": 971240
+    },
+    {
+      "path": "reader-frozen-panel/Nous_Frozen_Reader_Challenge.zip",
+      "title": "Frozen reader challenge",
+      "sha256": "36239d4d27033febaabe4c2d606f2327c0a60ee4cba3fc7f49075ca0f6b936af",
+      "size": 577804
+    },
+    {
+      "path": "reader-hosted-comparison/Nous_Hosted_Reader_Comparison.zip",
+      "title": "Hosted reader comparison",
+      "sha256": "2afa5c8afe834b64a2952653a334b807dc5632234c98eb0bb3019be2ea07ed66",
+      "size": 332553
+    },
+    {
+      "path": "one-lookup-archive/Nous_One_Lookup_Research_Package.zip",
+      "title": "One Lookup, complete replay archive",
+      "sha256": "01dfc26fc6deee7b91847dedcfbf96ee79ac5c5d37a2b525980139a9a374737c",
+      "size": 1289407
+    },
+    {
+      "path": "finite-reader-synthesis/Nous_Reader_Flagship.zip",
+      "title": "When a Saved Record Justifies an Answer",
+      "sha256": "4e7d95af05b8c9ad03123b751a4272023ce7c09f552924f25e51cbf70cb46da4",
+      "size": 3950184
+    },
+    {
+      "path": "siegel-weil-constant-term/Nous_Siegel_Weil_Constant_Term.zip",
+      "title": "Siegel–Weil constant term",
+      "sha256": "32a35b82da0afeaf005b3b6415c2a47e143fe20183c13514028a8eba49dac8a3",
+      "size": 363376
+    },
+    {
+      "path": "reader-square-transfer/Nous_Square_Rule_Transfer.zip",
+      "title": "Square-rule transfer",
+      "sha256": "ba3c9f78b2705ddd3ac6d3b4797e9777e467e622e5b4a81b050f984e506d325e",
+      "size": 477703
+    },
+    {
+      "path": "reader-square-transfer-interim/Nous_Square_Rule_Transfer_Interim.zip",
+      "title": "Square-rule transfer, interim snapshot",
+      "sha256": "1aed6a4dbdebf47ef4f508233a077babdb5c17e66c41c96d4816d7c1277fc4db",
+      "size": 210418
+    },
+    {
+      "path": "theta-stable-range/Nous_Stable_Range_Theta_Trace.zip",
+      "title": "Stable-range theta trace",
+      "sha256": "eae55146f84ba78e1628acb24c8560f126824d1119ee045c0510a93940fa7488",
+      "size": 153175
+    },
+    {
+      "path": "finite-reader-synthesis/When_a_Saved_Record_Justifies_an_Answer.pdf",
+      "title": "When a Saved Record Justifies an Answer",
+      "sha256": "5f155ff1b3b604bc57bbca2922e3bc4834a7c435db861321f3084cbe501166b6",
+      "size": 379404
+    },
+    {
+      "path": "finite-reader-synthesis/When_a_Saved_Record_Justifies_an_Answer.tex",
+      "title": "When a Saved Record Justifies an Answer",
+      "sha256": "0caa6ff16ff1e7cf606919ea7bbdcba6a85270d40d765493acba12e410d70ae5",
+      "size": 361711
+    },
+    {
+      "path": "finite-reader-synthesis/figures/linear_coverage.pdf",
+      "title": "When a Saved Record Justifies an Answer",
+      "sha256": "04a3f761315ca1bb313295dbc3c75baf18e61c6b6347e72dfd1fe201830f2c00",
+      "size": 26035
+    },
+    {
+      "path": "finite-reader-synthesis/figures/panel_enrichment.pdf",
+      "title": "When a Saved Record Justifies an Answer",
+      "sha256": "1862ce547de7ef93aa805196f2b5398988d25c4ad0caba217eb05deba72556a3",
+      "size": 24981
+    },
+    {
+      "path": "finite-reader-synthesis/figures/rule_conflicts.pdf",
+      "title": "When a Saved Record Justifies an Answer",
+      "sha256": "a92a0b503700610b95b98107186c0caf29e9af339b4e3143c68d3b4088a52d87",
+      "size": 22374
+    },
+    {
+      "path": "reader-frozen-panel/Nous_Frozen_Reader_Challenge.pdf",
+      "title": "Frozen reader challenge",
+      "sha256": "a6ab634ab6950dc19182b7f3c8dc6378c2691760305bb571abafa6ff2e3704f2",
+      "size": 95742
+    },
+    {
+      "path": "reader-frozen-panel/Nous_Frozen_Reader_Challenge.tex",
+      "title": "Frozen reader challenge",
+      "sha256": "860db6eac6be77cf83e48267babffe1d48db001f0f0a47c9f746818bb291ac7e",
+      "size": 132842
+    },
+    {
+      "path": "reader-hosted-comparison/Nous_Hosted_Reader_Comparison.pdf",
+      "title": "Hosted reader comparison",
+      "sha256": "d2d2ee65b0b1ac6b29e44657671da14a644aad899298360eb493ed6dde0d3d09",
+      "size": 95266
+    },
+    {
+      "path": "reader-hosted-comparison/Nous_Hosted_Reader_Comparison.tex",
+      "title": "Hosted reader comparison",
+      "sha256": "d9319baa2341a87701d978d57651f15b848034fa27266beba43a36e9e7acc3cd",
+      "size": 136666
+    },
+    {
+      "path": "siegel-weil-constant-term/Nous_Siegel_Weil_Constant_Term.pdf",
+      "title": "Siegel–Weil constant term",
+      "sha256": "adf05f893d03d9641d1b3c85f2a4c866e8f73a5d4128f9a0f7d297946130e514",
+      "size": 247643
+    },
+    {
+      "path": "siegel-weil-constant-term/Nous_Siegel_Weil_Constant_Term.tex",
+      "title": "Siegel–Weil constant term",
+      "sha256": "b89e7bddf84a2c846478c7c03abcbebd965d3334129482858c963880269e1c76",
+      "size": 168693
+    },
+    {
+      "path": "reader-square-transfer/Nous_Square_Rule_Transfer.pdf",
+      "title": "Square-rule transfer",
+      "sha256": "2c521ba7b0419f2dc75fd6ce8c22cff3aff971169f744ee996ca6ec6b6dcbd64",
+      "size": 95977
+    },
+    {
+      "path": "reader-square-transfer/Nous_Square_Rule_Transfer.tex",
+      "title": "Square-rule transfer",
+      "sha256": "7e5d570bf57c4107c2828c040961c6b38c166d5ac8d4273b356ac1eabd0c93ac",
+      "size": 129233
+    },
+    {
+      "path": "reader-square-transfer-interim/Nous_Square_Rule_Transfer_Interim.pdf",
+      "title": "Square-rule transfer, interim snapshot",
+      "sha256": "d34adb0e6e5780e9b29e5f0c3f048ddbdc14894ae434b29d9bc47754d3eadcb7",
+      "size": 95705
+    },
+    {
+      "path": "reader-square-transfer-interim/Nous_Square_Rule_Transfer_Interim.tex",
+      "title": "Square-rule transfer, interim snapshot",
+      "sha256": "e1fc13c3e676887899c89c6dcf9cd0524b7849df8dbed277b1fa69c53765353b",
+      "size": 129178
+    },
+    {
+      "path": "theta-stable-range/Nous_Stable_Range_Theta_Trace.pdf",
+      "title": "Stable-range theta trace",
+      "sha256": "e82816800bda13562151a01aeb0a5942be9c37b67288b544bbed3f6e7007a904",
+      "size": 219005
+    },
+    {
+      "path": "theta-stable-range/Nous_Stable_Range_Theta_Trace.tex",
+      "title": "Stable-range theta trace",
+      "sha256": "eb95931a3a89a040ae3ddbec1029a9325e43b51908a83018a19988c4de4a9bfb",
+      "size": 163754
+    },
+    {
+      "path": "reader-frozen-panel/Nous_Frozen_Reader_Challenge_With_TeX_and_PDF.zip",
+      "title": "Frozen reader challenge",
+      "sha256": "01e762257802b580e5c682479bc9ff958131031ee0fbf15e3dda96980d9e8c17",
+      "size": 756534
+    },
+    {
+      "path": "reader-hosted-comparison/Nous_Hosted_Reader_Comparison_With_TeX_and_PDF.zip",
+      "title": "Hosted reader comparison",
+      "sha256": "84ff157cbb675235a3937c073f963c61981d560f5249c01c6053cd7fc39126d4",
+      "size": 509910
+    },
+    {
+      "path": "siegel-weil-constant-term/Nous_Siegel_Weil_Constant_Term_With_TeX_and_PDF.zip",
+      "title": "Siegel–Weil constant term",
+      "sha256": "dbb04f6ca4b213af56ac03abb1c0eab3980b4df53e6b3eb1f5ce234273ecfc21",
+      "size": 692653
+    },
+    {
+      "path": "reader-square-transfer-interim/Nous_Square_Rule_Transfer_Interim_With_TeX_and_PDF.zip",
+      "title": "Square-rule transfer, interim snapshot",
+      "sha256": "bc684fab923980614e4a6555617da606a60bbdfc8992faf3b0b1e922004e595a",
+      "size": 377738
+    },
+    {
+      "path": "reader-square-transfer/Nous_Square_Rule_Transfer_With_TeX_and_PDF.zip",
+      "title": "Square-rule transfer",
+      "sha256": "a20be0a28b38ad30819900b8600da563b3c0610fe14f0a0ba07dec8c86ab06c7",
+      "size": 648737
+    },
+    {
+      "path": "theta-stable-range/Nous_Stable_Range_Theta_Trace_With_TeX_and_PDF.zip",
+      "title": "Stable-range theta trace",
+      "sha256": "f768121cfd34c002738d7992c9521a36f8857964316da5f7c287b26312c1ac29",
+      "size": 449067
+    },
+    {
+      "path": "weighted-orbit-edition/Weighted_Orbit_Research_Package.zip",
+      "title": "One Exchange and the Weighted Orbit Test",
+      "sha256": "74926f0d128a4906fe5efa5e1b6c6fbd1c49095a4b6a112d8d2ca0ccca6e6753",
+      "size": 235619
+    },
+    {
+      "path": "weil-block-binary-drift/Weil_Block_and_Binary_Drift_Research_Package.zip",
+      "title": "Nonvanishing and Belief Drift",
+      "sha256": "eb2ec06a74f67697fe901214fb0146e6f158efd1b01c2584fcde70fce6906e56",
+      "size": 458545
+    },
+    {
+      "path": "witness-distinctions/Witness_Distinctions_Research_Package.zip",
+      "title": "Which Distinctions Must a Witness Preserve?",
+      "sha256": "85134a61af6daca45d26b639e37698f617b78a7e27e98867700d88e2da92fc31",
+      "size": 280476
+    },
+    {
+      "path": "retained-host-reader-report/Retained_Host_and_Reader.pdf",
+      "title": "Retained Host and Reader",
+      "sha256": "7c2d7fea54232c38eb08909c80ac191376c09b39b5537a4cacf950ad3ef96de5",
+      "size": 147610
+    },
+    {
+      "path": "retained-host-reader-report/Retained_Host_and_Reader.tex",
+      "title": "Retained Host and Reader",
+      "sha256": "858dd7ddab04d0495ab3e13fe172b9a91a285e39d804322de4e35e17168721e9",
+      "size": 16033
+    },
+    {
+      "path": "witness-distinctions/Witness_Distinctions_Research_Edition.pdf",
+      "title": "Which Distinctions Must a Witness Preserve?",
+      "sha256": "0a10ed3d149085f515dfc6bb8089571b1480e6cacbd6756c551d7d134cc3ff68",
+      "size": 220606
+    },
+    {
+      "path": "witness-distinctions/Witness_Distinctions_Research_Edition.tex",
+      "title": "Which Distinctions Must a Witness Preserve?",
+      "sha256": "0398e0e6e6fb9cec7fef590b61b6c120a1bfc8997d447445a5dd26f8cc02047c",
+      "size": 57283
+    },
+    {
+      "path": "slot-three-paper/Slot_Three_Witness_Experiment.pdf",
+      "title": "Slot 3 Witness Experiment",
+      "sha256": "7f0f1e9f8ca3a1141937d07f11dc22239bafd809735e70c49506a53af8e72385",
+      "size": 214043
+    },
+    {
+      "path": "slot-three-paper/Slot_Three_Witness_Experiment.tex",
+      "title": "Slot 3 Witness Experiment",
+      "sha256": "1d2abf941509dd5289569297693d819bf93a658d385d6254850763a248464316",
+      "size": 30732
+    },
+    {
+      "path": "weighted-orbit-edition/One_Exchange_and_the_Weighted_Orbit_Test.pdf",
+      "title": "One Exchange and the Weighted Orbit Test",
+      "sha256": "8932d67e9b131316d1edb9663493821f9c0dc245a1b72179aa57026055f98e3e",
+      "size": 175442
+    },
+    {
+      "path": "weil-block-binary-drift/Nonvanishing_and_Belief_Drift.pdf",
+      "title": "Nonvanishing and Belief Drift",
+      "sha256": "5c9d0756d0fe46a279a2cb29bcaa09f6e5691b0f19ee2f8f26e05a1facae7d13",
+      "size": 352652
+    },
+    {
+      "path": "weil-block-binary-drift/Nonvanishing_and_Belief_Drift.tex",
+      "title": "Nonvanishing and Belief Drift",
+      "sha256": "58ff05a338ccd77b2d7e93a7a18003bdb1d141ce4d77cfec8c3fe82589ea6567",
+      "size": 130408
+    },
+    {
+      "path": "weighted-orbit-edition/One_Exchange_and_the_Weighted_Orbit_Test.tex",
+      "title": "One Exchange and the Weighted Orbit Test",
+      "sha256": "0e82135b60cd8435a53a6c4b350d24f2b7746b261cd9dad832bf10298cc3b403",
+      "size": 26617
+    },
+    {
+      "path": "changing-cutoff-reader/GUARD_AUDIT.md",
+      "title": "Changing-cutoff trained-reader experiment",
+      "sha256": "59a616753c9ababfad14890d6a955cb27fd7379ab50fdb05e4345924cf822439",
+      "size": 5166
+    },
+    {
+      "path": "changing-cutoff-reader/PROTOCOL.md",
+      "title": "Changing-cutoff trained-reader experiment",
+      "sha256": "6d24324f51102c1b885bdec884e4eae924ea99dad58f6d106273f08f09f472d1",
+      "size": 4704
+    },
+    {
+      "path": "changing-cutoff-reader/README.md",
+      "title": "Changing-cutoff trained-reader experiment",
+      "sha256": "4675f62bb8cc24a213eff046411199989a2e60ab2a23f0bbaf348cec09efb6e3",
+      "size": 8996
+    },
+    {
+      "path": "changing-cutoff-reader/audit_guard.json",
+      "title": "Changing-cutoff trained-reader experiment",
+      "sha256": "a1bf2bf089e0c45f03e3851daad2107bac5c2b1e1ec354c876b947c26e7a7d2a",
+      "size": 7147
+    },
+    {
+      "path": "changing-cutoff-reader/audit_guard.py",
+      "title": "Changing-cutoff trained-reader experiment",
+      "sha256": "d468c001ad93630552f9415ea802bd3e95866b7978ae023714068888e2c0ca96",
+      "size": 6881
+    },
+    {
+      "path": "changing-cutoff-reader/results.json",
+      "title": "Changing-cutoff trained-reader experiment",
+      "sha256": "2de65ff566b1a3748708e97b89a02b14c2af2ab98342d2392b7bdba68d3682ee",
+      "size": 114726
+    },
+    {
+      "path": "changing-cutoff-reader/run.py",
+      "title": "Changing-cutoff trained-reader experiment",
+      "sha256": "48b8f6d8b7cbacea836c6696e0305e2b78dcc5c932077edd61d32361b21c6aac",
+      "size": 9251
+    },
+    {
+      "path": "changing-cutoff-reader/test_reader.py",
+      "title": "Changing-cutoff trained-reader experiment",
+      "sha256": "eb50d70a6f091d65cd823c7f2746f89b973cbdc80aa759e2d12ae738327ba0e8",
+      "size": 3260
+    },
+    {
+      "path": "slot3-witness-memory/PROTOCOL.md",
+      "title": "Exact memory requirements for a named slot-three witness",
+      "sha256": "6af1f9e2d004e40eadebb4669e57a10012d77456de3190423e4ed7b2413404ea",
+      "size": 4446
+    },
+    {
+      "path": "slot3-witness-memory/PROTOCOL.sha256",
+      "title": "Exact memory requirements for a named slot-three witness",
+      "sha256": "6f0a1997ee9acf942f01f7660a023fee848298edc08ecf8df85316fd5a502715",
+      "size": 78
+    },
+    {
+      "path": "slot3-witness-memory/README.md",
+      "title": "Exact memory requirements for a named slot-three witness",
+      "sha256": "cc55069f181764306a4229080fd2bad2ed3ced1674cc17fe29daa89c99fdea40",
+      "size": 8803
+    },
+    {
+      "path": "slot3-witness-memory/allocation/PROTOCOL.md",
+      "title": "Exact memory requirements for a named slot-three witness",
+      "sha256": "e3db652995f2cdf86f18695c5c80a3eff77cf8725097a75ad50c1d8d0c41b8a7",
+      "size": 1286
+    },
+    {
+      "path": "slot3-witness-memory/allocation/README.md",
+      "title": "Exact memory requirements for a named slot-three witness",
+      "sha256": "6e3db8c6c9633903e1acf19498923ab20f3d419531db1bbe388455ddae642467",
+      "size": 4422
+    },
+    {
+      "path": "slot3-witness-memory/allocation/allocation.py",
+      "title": "Exact memory requirements for a named slot-three witness",
+      "sha256": "c6b62515f7f594fdfc90fc694c601084f27c2b1de3b288518bf2dd36b7400f81",
+      "size": 4826
+    },
+    {
+      "path": "slot3-witness-memory/allocation/results.json",
+      "title": "Exact memory requirements for a named slot-three witness",
+      "sha256": "25edf821c8516412dc7f703ccb0e13671ec0c75b55daa16a04a0322d12559780",
+      "size": 1555
+    },
+    {
+      "path": "slot3-witness-memory/benchmark.py",
+      "title": "Exact memory requirements for a named slot-three witness",
+      "sha256": "1df5c15ce8b8793ebdbed0f7119388a10d222adcd7b80b4020fcb29f6785c072",
+      "size": 10601
+    },
+    {
+      "path": "slot3-witness-memory/results.json",
+      "title": "Exact memory requirements for a named slot-three witness",
+      "sha256": "e75608020dbcca576a357554c06d0b62f20273e3fba9b6cfd05233237023debf",
+      "size": 8831
+    },
+    {
+      "path": "slot3-witness-memory/test_benchmark.py",
+      "title": "Exact memory requirements for a named slot-three witness",
+      "sha256": "f420a59a86c19fb52e2abfbe23a7fb867237958a84e63d1680e3433387ce1091",
+      "size": 3506
+    },
+    {
+      "path": "companion-independent-counts/PREDICTION.md",
+      "title": "Independent companion-fiber counts",
+      "sha256": "644c78563266dc60c24afe1f954648925b8c5b0175da02985e0ab5b0021fde13",
+      "size": 1925
+    },
+    {
+      "path": "companion-independent-counts/independent_counts.json",
+      "title": "Independent companion-fiber counts",
+      "sha256": "459b2ac67174065c80b1ceed70b1ca606d90db98ea42f4014315a10e42ad0200",
+      "size": 3251
+    },
+    {
+      "path": "companion-independent-counts/independent_counts.py",
+      "title": "Independent companion-fiber counts",
+      "sha256": "6a439ba56dc16f58512affd2608d943fb0ed67f9c505c98a47b7e3ad3d74cfc4",
+      "size": 6708
+    },
+    {
+      "path": "research-assessment/DensityGate.lean",
+      "title": "Early arithmetic-gate and density checks",
+      "sha256": "b1c354f0ca71f232348487670edf10dcb042560cd2792b64181ac0ded840bc43",
+      "size": 2554
+    },
+    {
+      "path": "research-assessment/README.md",
+      "title": "Early arithmetic-gate and density checks",
+      "sha256": "f89026491040ef16136a4ff200cf0148237eece8977698becbb0b24d4fa9ddf1",
+      "size": 12639
+    },
+    {
+      "path": "research-assessment/SevenBase.lean",
+      "title": "Early arithmetic-gate and density checks",
+      "sha256": "be589a8693076ef59fb3cf75a528a29e1a6326ddd71118c2c44e0e9ea5c5871a",
+      "size": 2915
+    },
+    {
+      "path": "research-assessment/Uniformity.lean",
+      "title": "Early arithmetic-gate and density checks",
+      "sha256": "e3cf6ba9057c9d74de0ebab546280cf7a9b84b1e0511d9b06fcc8426b3806a79",
+      "size": 1408
+    },
+    {
+      "path": "research-assessment/check_cutoffs.py",
+      "title": "Early arithmetic-gate and density checks",
+      "sha256": "38c1523cc62195ef8309255ec572be6380ddb8bf4c4268b26df5fee7a686c8e5",
+      "size": 1829
+    },
+    {
+      "path": "research-assessment/check_density.py",
+      "title": "Early arithmetic-gate and density checks",
+      "sha256": "40f566aa3eb6f7af3f783cd6bbb1e08154b149d499efd3ffa97198b666081c7b",
+      "size": 2422
+    },
+    {
+      "path": "research-assessment/replay.py",
+      "title": "Early arithmetic-gate and density checks",
+      "sha256": "38c2232da6e65a7d7a6aed44ecb2ea178d0202f927c1a441999b308ef1ffc4aa",
+      "size": 2420
+    },
+    {
+      "path": "research-assessment/verification.json",
+      "title": "Early arithmetic-gate and density checks",
+      "sha256": "a557b912ae68eea3139bdd1c8a44a987dba556ea958bba75aa05bbd254e0af9c",
+      "size": 1229
+    },
+    {
+      "path": "earlier-proof-map/Lean_Source_Coverage.md",
+      "title": "Earlier proof map and source-coverage record",
+      "sha256": "956ae8481afb5482030a2d19dd38348e8f5c4d43dd740c925bf4ec93fa0d55cc",
+      "size": 32259
+    },
+    {
+      "path": "earlier-proof-map/Next_Phase_Research_Plan.md",
+      "title": "Earlier proof map and source-coverage record",
+      "sha256": "35e37ad05658e417622631ad71e48899af191e8eec22f673b51379815715d85b",
+      "size": 8824
+    },
+    {
+      "path": "earlier-proof-map/Riemann_Experiment_Map.html",
+      "title": "Earlier proof map and source-coverage record",
+      "sha256": "5b1f75589b6ebe8c35d32db23ae86131ff614d94ccafe66173908d9e498e57ab",
+      "size": 63676
+    },
+    {
+      "path": "earlier-proof-map/Riemann_Experiment_Map.png",
+      "title": "Earlier proof map and source-coverage record",
+      "sha256": "8b760e872cfed3d64da872f51e4c9ee1d518869c268a88ac069ded08bdc035a7",
+      "size": 1414353
+    },
+    {
+      "path": "orbit-host-note/HOST.md",
+      "title": "Concrete orbit host, earlier source note",
+      "sha256": "3891d649ec6bf63f6f638724a1e2d34fa2b65d460840bf28d35a027c18e2163c",
+      "size": 16075
+    },
+    {
+      "path": "README.md",
+      "title": "Publication archive navigation and replay",
+      "sha256": "ad93c72415e1cfdea9aa05e40e508cff5a7bcf2283249a963c4d650e036ed318",
+      "size": 7093
+    },
+    {
+      "path": "verify_archived_controls.py",
+      "title": "Publication archive navigation and replay",
+      "sha256": "2e0057f8c6e1ab7b80385f514ace033f06f1e6321830e173f1ba7237e98adc80",
+      "size": 2309
+    }
+  ]
+}

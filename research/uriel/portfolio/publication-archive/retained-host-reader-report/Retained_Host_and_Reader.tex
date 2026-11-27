@@ -1,0 +1,146 @@
+% !TeX program = lualatex
+% Standalone source. Run lualatex twice on this file (or latexmk -lualatex).
+% All tables and vector artwork are typeset here; no external assets or bibliography.
+\documentclass[11pt,letterpaper]{article}
+\usepackage{iftex}
+\RequireLuaTeX
+\usepackage[letterpaper,left=1in,right=1in,top=.89in,bottom=.85in,headheight=22pt,headsep=14pt,footskip=25pt]{geometry}
+\usepackage{fontspec}
+\setmainfont{Latin Modern Roman}
+\setsansfont{Latin Modern Sans}
+\setmonofont{Latin Modern Mono}[Scale=.91]
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{booktabs,tabularx,array,xcolor,fancyhdr,enumitem,microtype}
+\usepackage{hyperref,bookmark}
+\definecolor{ink}{HTML}{183248}
+\definecolor{soft}{HTML}{4B6070}
+\definecolor{accent}{HTML}{1F6263}
+\definecolor{hair}{HTML}{BBC9CB}
+\definecolor{paperblue}{HTML}{F0F5F5}
+\hypersetup{pdftitle={What stays true when a witness changes?},pdfauthor={Nous / Uriel Research},pdfsubject={Retained host sets and witness memory},colorlinks=true,linkcolor=accent,urlcolor=accent,bookmarksnumbered=true,pdfdisplaydoctitle=true}
+\usepackage{titlesec}
+\titleformat{\section}{\Large\bfseries\color{ink}}{\thesection}{.55em}{}
+\titlespacing*{\section}{0pt}{0pt}{8pt}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt plus .4pt minus .3pt}
+\setlength{\emergencystretch}{1.3em}
+\setlength{\abovedisplayskip}{6pt}
+\setlength{\belowdisplayskip}{6pt}
+\setlist[enumerate]{topsep=2pt,itemsep=2pt,parsep=0pt,leftmargin=1.65em}
+\setlist[itemize]{topsep=2pt,itemsep=2pt,parsep=0pt,leftmargin=1.3em}
+\pagestyle{fancy}\fancyhf{}
+\fancyhead[L]{\small\sffamily\color{soft}Nous / Uriel Research}
+\fancyhead[R]{\small\sffamily\color{soft}Retained sets and witness memory}
+\fancyfoot[C]{\small\sffamily\color{soft}\thepage}
+\renewcommand{\headrulewidth}{.35pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{hair}\leaders\hrule height\headrulewidth\hfill}}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcommand{\sub}[1]{\par\medskip{\large\bfseries\color{ink}#1}\par\nobreak}
+\newcommand{\seplink}{\enspace\textperiodcentered\enspace}
+\newcommand{\src}[1]{{\small\color{soft}#1}}
+\newcommand{\tagline}[1]{{\small\sffamily\color{soft}#1}}
+\newcommand{\id}[1]{{\small\texttt{\detokenize{#1}}}}
+\newcommand{\reportsection}[2]{\clearpage\section{#1}\label{#2}}
+\newcommand{\formbox}[1]{\par\smallskip\noindent{\setlength{\fboxsep}{8pt}\colorbox{paperblue}{\parbox{\dimexpr\linewidth-2\fboxsep\relax}{#1}}}\par\smallskip}
+\linespread{1.055}\raggedbottom
+
+\newcommand{\hostsrc}[2]{\href{https://github.com/nousentllc/riemann-hypothesis/blob/b51d65e27a08ca07e4eb8e231b9777d1b965a7b5/research/uriel/experiments/retained-host/#1}{#2}}
+\newcommand{\sourcefile}[2]{\href{https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/#1}{#2}}
+\newcommand{\localdata}[2]{\href{run:../../changing-cutoff-reader/#1}{#2}}
+\newcommand{\ruleline}{\par\smallskip{\color{hair}\hrule}\smallskip}
+\newcommand{\metric}[2]{{\sffamily\bfseries\color{accent}#1} & #2 \\[3pt]}
+\begin{document}
+\thispagestyle{plain}
+\pdfbookmark[0]{What stays true when a witness changes?}{title}
+{\small\sffamily\bfseries\color{accent}NOUS / URIEL RESEARCH}\hfill
+{\small\sffamily\color{soft}Local research edition \enspace|\enspace 22 November 2026}\par
+\vspace{12pt}
+{\fontsize{27}{32}\selectfont\bfseries\color{ink}\raggedright What stays true when\par a witness changes?\par}
+\vspace{5pt}
+{\large A retained-set experiment in the Lean proof and a controlled test of what a memory reader can justify\par}
+\vspace{12pt}
+\textbf{The arithmetic question.} The proof keeps some objects and discards others. Two later steps both need the objects it kept. We traced the choices far enough to show that both steps use the very same collection. Counting how many objects remain can miss a change that matters. In a small exact example, exchanging just one object keeps the size at seven and reverses the sign of a sum the proof uses.
+\par\medskip
+\textbf{The memory question.} Suppose a program saves the answer to an earlier question. Can it tell whether that record is enough for a slightly different question? We trained a reader and changed the cutoff after the record had been written. The reader answered truthfully about 99.65\% of the time. Yet it guessed on every case in which its record was ambiguous. This happened even when it had been trained to say “I can't tell.”
+\formbox{\textbf{An example you can check.} Think of two hidden numbers, 0 and 65. Both produce the same empty list at cutoff 64. Ask about the weight 11. At cutoff 64 both numbers give no. At cutoff 26, zero gives no and 65 gives yes. The difference $65-11=54$ is a multiple of 27, the divisor at cutoff 26, but not of 81, the divisor at cutoff 64. The same empty list can support an answer to the first question and cannot settle the second.}
+\sub{What we could settle}
+\begin{tabularx}{\linewidth}{@{}p{.22\linewidth}Y@{}}
+\metric{One set}{At each eligible scale the arithmetic estimates apply to the same chosen host and its retained set. The proof gives existence but no numerical list of elements.}
+\metric{One swap}{The finite example needs an allowance of $1/7$ after a change of coset. For a genuine host, a stronger intermediate estimate gives a conditional allowance for replacing elements.}
+\metric{765 guesses}{The trained reader guessed on all 765 ambiguous held-out state--queries. A hand-written check caught all 765 and still left 105 errors on decidable queries.}
+\end{tabularx}
+\ruleline
+\tagline{Pages \enspace\hyperref[sec:proof]{2 / How the proof joins its inputs} \quad
+\hyperref[sec:share]{3 / The swap threshold} \quad
+\hyperref[sec:reader]{4 / Reader and audit}}\par
+
+\reportsection{How the proof joins its inputs}{sec:proof}
+At scale $x$ a family supplies indexed hosts. Each host carries a finite retained set $T$. Write \id{CoreAtH} for the arithmetic core estimates on that host and set, and \id{EAtH} for the explicit-formula inputs. The explicit-formula package includes the distribution of $T$ among cosets and a host-character bound $|L'/L(1,\chi)|\le4\log x$ for designated bounded primitive representatives.
+\sub{Why the two requirements meet}
+The cyclotomic supply constructs a prime-pair row, then selects a single finite $T$ meeting size, bad-set and coset conditions together. It installs $T$ in the host. A good-pair estimate for twists gives the derivative bound there. In the tied chain, the source identifies its internally named set with the selected host's $T$ by equality of membership, and substitutes that equality into the arithmetic core.\par
+At a sufficiently late $x$ on the window, take the index $i$ and local row scale $Y$ supplied by the core construction. The character family supplies its explicit-formula package for \emph{every} host index at this $x$. Specialize it to $i$. The prime-pair row, the cohomology bound and both arithmetic packages now refer to one host and one $T$. On a two-element index set, “choose false” and “choose true” both have solutions while sharing none. This witnesses why two independent existence statements would not suffice.
+\[
+       G_{\psi}(x)\;\le\;x^{1/2+(e_D+e_L+7)\varepsilon}.
+\]
+Here $G_{\psi}$ abbreviates the source level's one-sided weighted prime statistic. The derivation also uses the remaining explicit-formula and core fields. An improved error term at one intermediate step leaves open whether any exponent in this final estimate can be lowered.
+\sub{Quantifier order and existence}
+Fix the character and window exponent $\lambda$. Under the design-existence and nine link or closure premises, fix $e_D,e_L$ and a positive $\varepsilon_1$. For every $0<\varepsilon<\varepsilon_1$, there are a family, its comparison constants and a threshold $X$. For any requested lower bound $y$ we can take $W\ge\max(y,1,X)$ so that every real $x\in[W,W^\lambda]$ has a suitable $i,Y$. The published supply uses $\lambda=3/2$. The index and local row scale may depend on $x$.
+\sub{The exact point of choice}
+At a fixed finite frame the selection proof averages over subsets. Elements in $A_0$ receive inclusion weight $d=x^{-\varepsilon/8}$, and the others receive $3d/4$. A single score includes squared coset-count deviations and a weighted count of bad orbits. A subset with score at most its mean supplies both estimates. The argument picks one witness to the joint constraints; solving the two minimization problems separately would not identify such a witness.
+\formbox{The proof certifies the identity of the chosen set and the compatibility of its estimates. This experiment extracted no concrete $W$, $i$, $Y$, host character derivative or actual exceptional integer.}
+\src{Pinned proof \sourcefile{Development/AutomorphicArithmetic/ThickFrames/topsChoiceH.lean}{retained-set selection} \seplink
+\sourcefile{Development/AutomorphicArithmetic/PrimitiveCosets/LevelGmLeOnFamilyScales.lean}{set equality} \seplink
+\sourcefile{Development/AutomorphicArithmetic/PrimitiveCosets/CoreGm.lean}{comparison}.
+Experiment \hostsrc{HostHandoff.lean}{host handoff and selector controls}.}
+\reportsection{When a different retained set can work}{sec:share}
+Let $A_0$ be the distinguished subgroup of a finite abelian group $A$. Its index $o$ is the number of cosets. In a set $T$ of $m$ retained elements, let $n_\gamma$ count elements of $T$ in $\gamma+A_0$. The share condition is
+\[
+  |n_\gamma-\lambda_\gamma m|\le\delta m\quad\text{for every }\gamma,\qquad
+  \lambda_\gamma=
+  \begin{cases}4/(3o+1)&\gamma\in A_0,\\3/(3o+1)&\gamma\notin A_0.\end{cases}
+\]
+\textbf{Index one.} There is just one coset, $n_\gamma=m$ and $\lambda_\gamma=1$. Every finite $T$ satisfies the condition at any $\delta\ge0$. This applies to the cyclic level generated by the principal conductor-one character. The presence of a principal character alone does not fix the frame index.
+\par\smallskip
+\textbf{Index two.} Use the source frame \id{cyclicFramePow 3 1}. Its coordinates are $\mathbb Z/8\mathbb Z$, with $A_0$ the even residues. For $m=7$ the target counts are $(4,3)$. The quotient character is $+1$ on even residues and $-1$ on odd ones.
+\begin{center}
+\begin{tabular}{@{}lrrrc@{}}
+\toprule Omitted residue & Even & Odd & Minimum $\delta$ & Character sum\\\midrule
+7 (reference) & 4 & 3 & 0 & $+1$\\
+5 (same coset) & 4 & 3 & 0 & $+1$\\
+6 (different coset) & 3 & 4 & $1/7$ & $-1$\\\bottomrule
+\end{tabular}
+\end{center}
+For omission 6, the character-sum error about its target $+1$ is 2. At $\delta=1/8$ the allowed error $14\delta$ is $7/4$. At $\delta=1/7$ it reaches 2. Of all eight seven-element sets, 4/8 pass at $0$, 4/8 at $1/8$, and 8/8 at $1/7$. This checks an intermediate estimate. These eight residues alone do not supply a number-field host at an admissible asymptotic scale.
+\sub{The spare room in a genuine host}
+The stronger estimate was discovered during the trace. The pinned selection proof establishes $1/x$ for $T$ before relaxing it to $x^{-1+\varepsilon}$ at the end of \id{topsGroup}. Preserving that stronger witness through the supply gives the extra room below. For an equally large replacement $U$ on the same raw host, each coset count changes by at most $|U\setminus T|$. Thus the explicit-formula tolerance is preserved whenever
+\[
+              |U\setminus T|\le\bigl(x^{-1+\varepsilon}-1/x\bigr)|T|.
+\]
+A second finite audit checked all 12,870 ordered equal-size pairs on eight residues. In 516 pairs at positive replacement distance the discrepancy grew by exactly the number replaced. This makes the unit coefficient sharp in that example. A within-coset exchange can cost zero actual discrepancy. A budget below one licenses no positive number of arbitrary replacements. On $T$, a nontrivial character trivial on $A_0$ has intermediate Fourier error at most $o|T|/x$, measured about $|T|/(3o+1)$. On a fixed raw host, only the share field of \id{EAtH} depends on $T$. Its other five fields carry over. \id{CoreAtH} still has to be established for $U$ before the prime comparison can be reused.\par
+\src{\hostsrc{ShareControl.lean}{Exact threshold} \seplink \hostsrc{share_counts.py}{exact-rational census} \seplink
+\hostsrc{ShareMargin.lean}{replacement margin} \seplink \hostsrc{StrongWindow.lean}{strong family interface}.}
+
+\reportsection{What a saved record lets a reader answer}{sec:reader}
+We tested all 81 possible center residues $s\in\{0,\ldots,80\}$. For each $1\le e\le Z\le64$ the hidden answer is yes if $s\equiv e\pmod{3^{1+\lfloor\log_3 Z\rfloor}}$. A terminal-list tag stores the unique matching weight at cutoff 64, or zero for an empty list. A residue tag stores $s$. Both use seven fixed payload bits. A definite answer is licensed only when all centers sharing the tag agree. The calculation assumes the tag is attached to the intended center.
+\par\smallskip
+Each channel got three trained decision trees. The plain tree received tag, cutoff and weight. Informed trees also received the cutoff power band and number of matching low ternary digits. One was trained on licensed actions, including abstention, and the other on hidden binary truth. Complete cutoff blocks 24--29 and 59--64 were held out (42,768 state--queries). Training used 125,712. Every center recurred, and 41,067 held-out cases reused a center--weight pair at another cutoff. The 168,480 training and held-out labels were checked by two arithmetic implementations.
+\begin{center}\small
+\begin{tabular}{@{}llrrr@{}}
+\toprule Record & Reader & Licensed yes & Guesses on ambiguity & True / answered\\\midrule
+Terminal list & Exact oracle & 633/633 & 0/765 & 42,003/42,003\\
+ & Plain support & 0/633 & 765/765 & 42,090/42,768\\
+ & Either informed tree & 528/633 & 765/765 & 42,618/42,768\\
+Residue & Exact oracle & 678/678 & none & 42,768/42,768\\
+ & Plain support & 0/678 & none & 42,090/42,768\\
+ & Either informed tree & 528/678 & none & 42,618/42,768\\\bottomrule
+\end{tabular}\end{center}
+\textbf{Three preregistered predictions.} H1 held. There were 45 distinct ambiguous observations, each covering 17 centers. In each, sixteen say no, so 720 of 765 guesses were accidentally true. H2 failed. Adding support supervision yielded zero additional abstentions. H3 held. Informed inputs raised full-residue positive recall from 0/678 to 528/678. All 150 informed-reader errors occurred at cutoffs 24, 25 and 26 (48, 50 and 52). On the residue tree's three-digit branch, the learned split $Z\le23$ and the natural boundary $Z\le26$ agreed on all 3,104 training cases.
+\par\smallskip
+\textbf{Post-hoc control.} An exact visible-record guard counted matching compatible centers before releasing the frozen reader's answer. It caught 765/765 ambiguous cases and left 105 wrong answers on identifiable cases. A control that abstained equally often at each cutoff but rotated the queried weights caught only 255/765 and withheld 510 decidable answers. Swapping the valid tags of centers 1 and 2 reversed 48 previously licensed answers among 1,056 queries for both informed readers and the exact oracle.
+\sub{Verification and follow-up}
+Lean 4.33.1 replayed 15 modules. The audit covered 98 theorem declarations and 19 direct proof references. Of 1,205 original modules in the source closure, 3 were rebuilt and 1,202 reused with authenticated hashes. The \hostsrc{Construction.lean}{strong family theorem} assumes \id{TopG}, \id{VWinAt} for $\psi$ at 401, \id{ShortNorm}, and \id{SmallOne}. Its axioms were \id{Classical.choice}, \id{Quot.sound}, and \id{propext}. No full RH build was run. The private reader audit independently reproduced all six trees’ scores.
+\par\smallskip
+\src{Public \href{https://github.com/nousentllc/riemann-hypothesis/pull/6}{experiment, documentation and verification record}. Private artifacts \localdata{PROTOCOL.md}{preregistration} \seplink
+\localdata{results.json}{fitted trees and counts} \seplink \localdata{GUARD_AUDIT.md}{guard and matched control}.
+A follow-up can separate raw-cutoff extrapolation from a power-band rule on a newly reserved horizon.}
+\end{document}

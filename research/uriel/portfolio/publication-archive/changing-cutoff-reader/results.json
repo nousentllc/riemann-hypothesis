@@ -1,0 +1,3753 @@
+{
+  "assessment_census_sha256": "38c1523cc62195ef8309255ec572be6380ddb8bf4c4268b26df5fee7a686c8e5",
+  "channels": {
+    "residue": {
+      "by_cutoff": {
+        "24": {
+          "always_abstain": {
+            "observable_query_tuples": 1944,
+            "state_queries": 1944,
+            "support_confusion_no_to_abstain": 1872,
+            "support_confusion_yes_to_abstain": 72,
+            "support_no": 1872,
+            "support_yes": 72,
+            "truth_no": 1872,
+            "truth_yes": 72,
+            "withheld": 1944
+          },
+          "always_no": {
+            "answered": 1944,
+            "correct_action": 1872,
+            "licensed_no": 1872,
+            "observable_query_tuples": 1944,
+            "state_queries": 1944,
+            "support_confusion_no_to_no": 1872,
+            "support_confusion_yes_to_no": 72,
+            "support_no": 1872,
+            "support_yes": 72,
+            "truth_correct": 1872,
+            "truth_no": 1872,
+            "truth_wrong": 72,
+            "truth_yes": 72,
+            "wrong_on_determinate": 72
+          },
+          "exact_oracle": {
+            "answered": 1944,
+            "correct_action": 1944,
+            "licensed_no": 1872,
+            "licensed_yes": 72,
+            "observable_query_tuples": 1944,
+            "state_queries": 1944,
+            "support_confusion_no_to_no": 1872,
+            "support_confusion_yes_to_yes": 72,
+            "support_no": 1872,
+            "support_yes": 72,
+            "truth_correct": 1944,
+            "truth_no": 1872,
+            "truth_wrong": 0,
+            "truth_yes": 72
+          },
+          "informed_support": {
+            "answered": 1944,
+            "correct_action": 1896,
+            "licensed_no": 1872,
+            "licensed_yes": 24,
+            "observable_query_tuples": 1944,
+            "state_queries": 1944,
+            "support_confusion_no_to_no": 1872,
+            "support_confusion_yes_to_no": 48,
+            "support_confusion_yes_to_yes": 24,
+            "support_no": 1872,
+            "support_yes": 72,
+            "truth_correct": 1896,
+            "truth_no": 1872,
+            "truth_wrong": 48,
+            "truth_yes": 72,
+            "wrong_on_determinate": 48
+          },
+          "informed_truth": {
+            "answered": 1944,
+            "correct_action": 1896,
+            "licensed_no": 1872,
+            "licensed_yes": 24,
+            "observable_query_tuples": 1944,
+            "state_queries": 1944,
+            "support_confusion_no_to_no": 1872,
+            "support_confusion_yes_to_no": 48,
+            "support_confusion_yes_to_yes": 24,
+            "support_no": 1872,
+            "support_yes": 72,
+            "truth_correct": 1896,
+            "truth_no": 1872,
+            "truth_wrong": 48,
+            "truth_yes": 72,
+            "wrong_on_determinate": 48
+          },
+          "plain_support": {
+            "answered": 1944,
+            "correct_action": 1872,
+            "licensed_no": 1872,
+            "observable_query_tuples": 1944,
+            "state_queries": 1944,
+            "support_confusion_no_to_no": 1872,
+            "support_confusion_yes_to_no": 72,
+            "support_no": 1872,
+            "support_yes": 72,
+            "truth_correct": 1872,
+            "truth_no": 1872,
+            "truth_wrong": 72,
+            "truth_yes": 72,
+            "wrong_on_determinate": 72
+          }
+        },
+        "25": {
+          "always_abstain": {
+            "observable_query_tuples": 2025,
+            "state_queries": 2025,
+            "support_confusion_no_to_abstain": 1950,
+            "support_confusion_yes_to_abstain": 75,
+            "support_no": 1950,
+            "support_yes": 75,
+            "truth_no": 1950,
+            "truth_yes": 75,
+            "withheld": 2025
+          },
+          "always_no": {
+            "answered": 2025,
+            "correct_action": 1950,
+            "licensed_no": 1950,
+            "observable_query_tuples": 2025,
+            "state_queries": 2025,
+            "support_confusion_no_to_no": 1950,
+            "support_confusion_yes_to_no": 75,
+            "support_no": 1950,
+            "support_yes": 75,
+            "truth_correct": 1950,
+            "truth_no": 1950,
+            "truth_wrong": 75,
+            "truth_yes": 75,
+            "wrong_on_determinate": 75
+          },
+          "exact_oracle": {
+            "answered": 2025,
+            "correct_action": 2025,
+            "licensed_no": 1950,
+            "licensed_yes": 75,
+            "observable_query_tuples": 2025,
+            "state_queries": 2025,
+            "support_confusion_no_to_no": 1950,
+            "support_confusion_yes_to_yes": 75,
+            "support_no": 1950,
+            "support_yes": 75,
+            "truth_correct": 2025,
+            "truth_no": 1950,
+            "truth_wrong": 0,
+            "truth_yes": 75
+          },
+          "informed_support": {
+            "answered": 2025,
+            "correct_action": 1975,
+            "licensed_no": 1950,
+            "licensed_yes": 25,
+            "observable_query_tuples": 2025,
+            "state_queries": 2025,
+            "support_confusion_no_to_no": 1950,
+            "support_confusion_yes_to_no": 50,
+            "support_confusion_yes_to_yes": 25,
+            "support_no": 1950,
+            "support_yes": 75,
+            "truth_correct": 1975,
+            "truth_no": 1950,
+            "truth_wrong": 50,
+            "truth_yes": 75,
+            "wrong_on_determinate": 50
+          },
+          "informed_truth": {
+            "answered": 2025,
+            "correct_action": 1975,
+            "licensed_no": 1950,
+            "licensed_yes": 25,
+            "observable_query_tuples": 2025,
+            "state_queries": 2025,
+            "support_confusion_no_to_no": 1950,
+            "support_confusion_yes_to_no": 50,
+            "support_confusion_yes_to_yes": 25,
+            "support_no": 1950,
+            "support_yes": 75,
+            "truth_correct": 1975,
+            "truth_no": 1950,
+            "truth_wrong": 50,
+            "truth_yes": 75,
+            "wrong_on_determinate": 50
+          },
+          "plain_support": {
+            "answered": 2025,
+            "correct_action": 1950,
+            "licensed_no": 1950,
+            "observable_query_tuples": 2025,
+            "state_queries": 2025,
+            "support_confusion_no_to_no": 1950,
+            "support_confusion_yes_to_no": 75,
+            "support_no": 1950,
+            "support_yes": 75,
+            "truth_correct": 1950,
+            "truth_no": 1950,
+            "truth_wrong": 75,
+            "truth_yes": 75,
+            "wrong_on_determinate": 75
+          }
+        },
+        "26": {
+          "always_abstain": {
+            "observable_query_tuples": 2106,
+            "state_queries": 2106,
+            "support_confusion_no_to_abstain": 2028,
+            "support_confusion_yes_to_abstain": 78,
+            "support_no": 2028,
+            "support_yes": 78,
+            "truth_no": 2028,
+            "truth_yes": 78,
+            "withheld": 2106
+          },
+          "always_no": {
+            "answered": 2106,
+            "correct_action": 2028,
+            "licensed_no": 2028,
+            "observable_query_tuples": 2106,
+            "state_queries": 2106,
+            "support_confusion_no_to_no": 2028,
+            "support_confusion_yes_to_no": 78,
+            "support_no": 2028,
+            "support_yes": 78,
+            "truth_correct": 2028,
+            "truth_no": 2028,
+            "truth_wrong": 78,
+            "truth_yes": 78,
+            "wrong_on_determinate": 78
+          },
+          "exact_oracle": {
+            "answered": 2106,
+            "correct_action": 2106,
+            "licensed_no": 2028,
+            "licensed_yes": 78,
+            "observable_query_tuples": 2106,
+            "state_queries": 2106,
+            "support_confusion_no_to_no": 2028,
+            "support_confusion_yes_to_yes": 78,
+            "support_no": 2028,
+            "support_yes": 78,
+            "truth_correct": 2106,
+            "truth_no": 2028,
+            "truth_wrong": 0,
+            "truth_yes": 78
+          },
+          "informed_support": {
+            "answered": 2106,
+            "correct_action": 2054,
+            "licensed_no": 2028,
+            "licensed_yes": 26,
+            "observable_query_tuples": 2106,
+            "state_queries": 2106,
+            "support_confusion_no_to_no": 2028,
+            "support_confusion_yes_to_no": 52,
+            "support_confusion_yes_to_yes": 26,
+            "support_no": 2028,
+            "support_yes": 78,
+            "truth_correct": 2054,
+            "truth_no": 2028,
+            "truth_wrong": 52,
+            "truth_yes": 78,
+            "wrong_on_determinate": 52
+          },
+          "informed_truth": {
+            "answered": 2106,
+            "correct_action": 2054,
+            "licensed_no": 2028,
+            "licensed_yes": 26,
+            "observable_query_tuples": 2106,
+            "state_queries": 2106,
+            "support_confusion_no_to_no": 2028,
+            "support_confusion_yes_to_no": 52,
+            "support_confusion_yes_to_yes": 26,
+            "support_no": 2028,
+            "support_yes": 78,
+            "truth_correct": 2054,
+            "truth_no": 2028,
+            "truth_wrong": 52,
+            "truth_yes": 78,
+            "wrong_on_determinate": 52
+          },
+          "plain_support": {
+            "answered": 2106,
+            "correct_action": 2028,
+            "licensed_no": 2028,
+            "observable_query_tuples": 2106,
+            "state_queries": 2106,
+            "support_confusion_no_to_no": 2028,
+            "support_confusion_yes_to_no": 78,
+            "support_no": 2028,
+            "support_yes": 78,
+            "truth_correct": 2028,
+            "truth_no": 2028,
+            "truth_wrong": 78,
+            "truth_yes": 78,
+            "wrong_on_determinate": 78
+          }
+        },
+        "27": {
+          "always_abstain": {
+            "observable_query_tuples": 2187,
+            "state_queries": 2187,
+            "support_confusion_no_to_abstain": 2160,
+            "support_confusion_yes_to_abstain": 27,
+            "support_no": 2160,
+            "support_yes": 27,
+            "truth_no": 2160,
+            "truth_yes": 27,
+            "withheld": 2187
+          },
+          "always_no": {
+            "answered": 2187,
+            "correct_action": 2160,
+            "licensed_no": 2160,
+            "observable_query_tuples": 2187,
+            "state_queries": 2187,
+            "support_confusion_no_to_no": 2160,
+            "support_confusion_yes_to_no": 27,
+            "support_no": 2160,
+            "support_yes": 27,
+            "truth_correct": 2160,
+            "truth_no": 2160,
+            "truth_wrong": 27,
+            "truth_yes": 27,
+            "wrong_on_determinate": 27
+          },
+          "exact_oracle": {
+            "answered": 2187,
+            "correct_action": 2187,
+            "licensed_no": 2160,
+            "licensed_yes": 27,
+            "observable_query_tuples": 2187,
+            "state_queries": 2187,
+            "support_confusion_no_to_no": 2160,
+            "support_confusion_yes_to_yes": 27,
+            "support_no": 2160,
+            "support_yes": 27,
+            "truth_correct": 2187,
+            "truth_no": 2160,
+            "truth_wrong": 0,
+            "truth_yes": 27
+          },
+          "informed_support": {
+            "answered": 2187,
+            "correct_action": 2187,
+            "licensed_no": 2160,
+            "licensed_yes": 27,
+            "observable_query_tuples": 2187,
+            "state_queries": 2187,
+            "support_confusion_no_to_no": 2160,
+            "support_confusion_yes_to_yes": 27,
+            "support_no": 2160,
+            "support_yes": 27,
+            "truth_correct": 2187,
+            "truth_no": 2160,
+            "truth_wrong": 0,
+            "truth_yes": 27
+          },
+          "informed_truth": {
+            "answered": 2187,
+            "correct_action": 2187,
+            "licensed_no": 2160,
+            "licensed_yes": 27,
+            "observable_query_tuples": 2187,
+            "state_queries": 2187,
+            "support_confusion_no_to_no": 2160,
+            "support_confusion_yes_to_yes": 27,
+            "support_no": 2160,
+            "support_yes": 27,
+            "truth_correct": 2187,
+            "truth_no": 2160,
+            "truth_wrong": 0,
+            "truth_yes": 27
+          },
+          "plain_support": {
+            "answered": 2187,
+            "correct_action": 2160,
+            "licensed_no": 2160,
+            "observable_query_tuples": 2187,
+            "state_queries": 2187,
+            "support_confusion_no_to_no": 2160,
+            "support_confusion_yes_to_no": 27,
+            "support_no": 2160,
+            "support_yes": 27,
+            "truth_correct": 2160,
+            "truth_no": 2160,
+            "truth_wrong": 27,
+            "truth_yes": 27,
+            "wrong_on_determinate": 27
+          }
+        },
+        "28": {
+          "always_abstain": {
+            "observable_query_tuples": 2268,
+            "state_queries": 2268,
+            "support_confusion_no_to_abstain": 2240,
+            "support_confusion_yes_to_abstain": 28,
+            "support_no": 2240,
+            "support_yes": 28,
+            "truth_no": 2240,
+            "truth_yes": 28,
+            "withheld": 2268
+          },
+          "always_no": {
+            "answered": 2268,
+            "correct_action": 2240,
+            "licensed_no": 2240,
+            "observable_query_tuples": 2268,
+            "state_queries": 2268,
+            "support_confusion_no_to_no": 2240,
+            "support_confusion_yes_to_no": 28,
+            "support_no": 2240,
+            "support_yes": 28,
+            "truth_correct": 2240,
+            "truth_no": 2240,
+            "truth_wrong": 28,
+            "truth_yes": 28,
+            "wrong_on_determinate": 28
+          },
+          "exact_oracle": {
+            "answered": 2268,
+            "correct_action": 2268,
+            "licensed_no": 2240,
+            "licensed_yes": 28,
+            "observable_query_tuples": 2268,
+            "state_queries": 2268,
+            "support_confusion_no_to_no": 2240,
+            "support_confusion_yes_to_yes": 28,
+            "support_no": 2240,
+            "support_yes": 28,
+            "truth_correct": 2268,
+            "truth_no": 2240,
+            "truth_wrong": 0,
+            "truth_yes": 28
+          },
+          "informed_support": {
+            "answered": 2268,
+            "correct_action": 2268,
+            "licensed_no": 2240,
+            "licensed_yes": 28,
+            "observable_query_tuples": 2268,
+            "state_queries": 2268,
+            "support_confusion_no_to_no": 2240,
+            "support_confusion_yes_to_yes": 28,
+            "support_no": 2240,
+            "support_yes": 28,
+            "truth_correct": 2268,
+            "truth_no": 2240,
+            "truth_wrong": 0,
+            "truth_yes": 28
+          },
+          "informed_truth": {
+            "answered": 2268,
+            "correct_action": 2268,
+            "licensed_no": 2240,
+            "licensed_yes": 28,
+            "observable_query_tuples": 2268,
+            "state_queries": 2268,
+            "support_confusion_no_to_no": 2240,
+            "support_confusion_yes_to_yes": 28,
+            "support_no": 2240,
+            "support_yes": 28,
+            "truth_correct": 2268,
+            "truth_no": 2240,
+            "truth_wrong": 0,
+            "truth_yes": 28
+          },
+          "plain_support": {
+            "answered": 2268,
+            "correct_action": 2240,
+            "licensed_no": 2240,
+            "observable_query_tuples": 2268,
+            "state_queries": 2268,
+            "support_confusion_no_to_no": 2240,
+            "support_confusion_yes_to_no": 28,
+            "support_no": 2240,
+            "support_yes": 28,
+            "truth_correct": 2240,
+            "truth_no": 2240,
+            "truth_wrong": 28,
+            "truth_yes": 28,
+            "wrong_on_determinate": 28
+          }
+        },
+        "29": {
+          "always_abstain": {
+            "observable_query_tuples": 2349,
+            "state_queries": 2349,
+            "support_confusion_no_to_abstain": 2320,
+            "support_confusion_yes_to_abstain": 29,
+            "support_no": 2320,
+            "support_yes": 29,
+            "truth_no": 2320,
+            "truth_yes": 29,
+            "withheld": 2349
+          },
+          "always_no": {
+            "answered": 2349,
+            "correct_action": 2320,
+            "licensed_no": 2320,
+            "observable_query_tuples": 2349,
+            "state_queries": 2349,
+            "support_confusion_no_to_no": 2320,
+            "support_confusion_yes_to_no": 29,
+            "support_no": 2320,
+            "support_yes": 29,
+            "truth_correct": 2320,
+            "truth_no": 2320,
+            "truth_wrong": 29,
+            "truth_yes": 29,
+            "wrong_on_determinate": 29
+          },
+          "exact_oracle": {
+            "answered": 2349,
+            "correct_action": 2349,
+            "licensed_no": 2320,
+            "licensed_yes": 29,
+            "observable_query_tuples": 2349,
+            "state_queries": 2349,
+            "support_confusion_no_to_no": 2320,
+            "support_confusion_yes_to_yes": 29,
+            "support_no": 2320,
+            "support_yes": 29,
+            "truth_correct": 2349,
+            "truth_no": 2320,
+            "truth_wrong": 0,
+            "truth_yes": 29
+          },
+          "informed_support": {
+            "answered": 2349,
+            "correct_action": 2349,
+            "licensed_no": 2320,
+            "licensed_yes": 29,
+            "observable_query_tuples": 2349,
+            "state_queries": 2349,
+            "support_confusion_no_to_no": 2320,
+            "support_confusion_yes_to_yes": 29,
+            "support_no": 2320,
+            "support_yes": 29,
+            "truth_correct": 2349,
+            "truth_no": 2320,
+            "truth_wrong": 0,
+            "truth_yes": 29
+          },
+          "informed_truth": {
+            "answered": 2349,
+            "correct_action": 2349,
+            "licensed_no": 2320,
+            "licensed_yes": 29,
+            "observable_query_tuples": 2349,
+            "state_queries": 2349,
+            "support_confusion_no_to_no": 2320,
+            "support_confusion_yes_to_yes": 29,
+            "support_no": 2320,
+            "support_yes": 29,
+            "truth_correct": 2349,
+            "truth_no": 2320,
+            "truth_wrong": 0,
+            "truth_yes": 29
+          },
+          "plain_support": {
+            "answered": 2349,
+            "correct_action": 2320,
+            "licensed_no": 2320,
+            "observable_query_tuples": 2349,
+            "state_queries": 2349,
+            "support_confusion_no_to_no": 2320,
+            "support_confusion_yes_to_no": 29,
+            "support_no": 2320,
+            "support_yes": 29,
+            "truth_correct": 2320,
+            "truth_no": 2320,
+            "truth_wrong": 29,
+            "truth_yes": 29,
+            "wrong_on_determinate": 29
+          }
+        },
+        "59": {
+          "always_abstain": {
+            "observable_query_tuples": 4779,
+            "state_queries": 4779,
+            "support_confusion_no_to_abstain": 4720,
+            "support_confusion_yes_to_abstain": 59,
+            "support_no": 4720,
+            "support_yes": 59,
+            "truth_no": 4720,
+            "truth_yes": 59,
+            "withheld": 4779
+          },
+          "always_no": {
+            "answered": 4779,
+            "correct_action": 4720,
+            "licensed_no": 4720,
+            "observable_query_tuples": 4779,
+            "state_queries": 4779,
+            "support_confusion_no_to_no": 4720,
+            "support_confusion_yes_to_no": 59,
+            "support_no": 4720,
+            "support_yes": 59,
+            "truth_correct": 4720,
+            "truth_no": 4720,
+            "truth_wrong": 59,
+            "truth_yes": 59,
+            "wrong_on_determinate": 59
+          },
+          "exact_oracle": {
+            "answered": 4779,
+            "correct_action": 4779,
+            "licensed_no": 4720,
+            "licensed_yes": 59,
+            "observable_query_tuples": 4779,
+            "state_queries": 4779,
+            "support_confusion_no_to_no": 4720,
+            "support_confusion_yes_to_yes": 59,
+            "support_no": 4720,
+            "support_yes": 59,
+            "truth_correct": 4779,
+            "truth_no": 4720,
+            "truth_wrong": 0,
+            "truth_yes": 59
+          },
+          "informed_support": {
+            "answered": 4779,
+            "correct_action": 4779,
+            "licensed_no": 4720,
+            "licensed_yes": 59,
+            "observable_query_tuples": 4779,
+            "state_queries": 4779,
+            "support_confusion_no_to_no": 4720,
+            "support_confusion_yes_to_yes": 59,
+            "support_no": 4720,
+            "support_yes": 59,
+            "truth_correct": 4779,
+            "truth_no": 4720,
+            "truth_wrong": 0,
+            "truth_yes": 59
+          },
+          "informed_truth": {
+            "answered": 4779,
+            "correct_action": 4779,
+            "licensed_no": 4720,
+            "licensed_yes": 59,
+            "observable_query_tuples": 4779,
+            "state_queries": 4779,
+            "support_confusion_no_to_no": 4720,
+            "support_confusion_yes_to_yes": 59,
+            "support_no": 4720,
+            "support_yes": 59,
+            "truth_correct": 4779,
+            "truth_no": 4720,
+            "truth_wrong": 0,
+            "truth_yes": 59
+          },
+          "plain_support": {
+            "answered": 4779,
+            "correct_action": 4720,
+            "licensed_no": 4720,
+            "observable_query_tuples": 4779,
+            "state_queries": 4779,
+            "support_confusion_no_to_no": 4720,
+            "support_confusion_yes_to_no": 59,
+            "support_no": 4720,
+            "support_yes": 59,
+            "truth_correct": 4720,
+            "truth_no": 4720,
+            "truth_wrong": 59,
+            "truth_yes": 59,
+            "wrong_on_determinate": 59
+          }
+        },
+        "60": {
+          "always_abstain": {
+            "observable_query_tuples": 4860,
+            "state_queries": 4860,
+            "support_confusion_no_to_abstain": 4800,
+            "support_confusion_yes_to_abstain": 60,
+            "support_no": 4800,
+            "support_yes": 60,
+            "truth_no": 4800,
+            "truth_yes": 60,
+            "withheld": 4860
+          },
+          "always_no": {
+            "answered": 4860,
+            "correct_action": 4800,
+            "licensed_no": 4800,
+            "observable_query_tuples": 4860,
+            "state_queries": 4860,
+            "support_confusion_no_to_no": 4800,
+            "support_confusion_yes_to_no": 60,
+            "support_no": 4800,
+            "support_yes": 60,
+            "truth_correct": 4800,
+            "truth_no": 4800,
+            "truth_wrong": 60,
+            "truth_yes": 60,
+            "wrong_on_determinate": 60
+          },
+          "exact_oracle": {
+            "answered": 4860,
+            "correct_action": 4860,
+            "licensed_no": 4800,
+            "licensed_yes": 60,
+            "observable_query_tuples": 4860,
+            "state_queries": 4860,
+            "support_confusion_no_to_no": 4800,
+            "support_confusion_yes_to_yes": 60,
+            "support_no": 4800,
+            "support_yes": 60,
+            "truth_correct": 4860,
+            "truth_no": 4800,
+            "truth_wrong": 0,
+            "truth_yes": 60
+          },
+          "informed_support": {
+            "answered": 4860,
+            "correct_action": 4860,
+            "licensed_no": 4800,
+            "licensed_yes": 60,
+            "observable_query_tuples": 4860,
+            "state_queries": 4860,
+            "support_confusion_no_to_no": 4800,
+            "support_confusion_yes_to_yes": 60,
+            "support_no": 4800,
+            "support_yes": 60,
+            "truth_correct": 4860,
+            "truth_no": 4800,
+            "truth_wrong": 0,
+            "truth_yes": 60
+          },
+          "informed_truth": {
+            "answered": 4860,
+            "correct_action": 4860,
+            "licensed_no": 4800,
+            "licensed_yes": 60,
+            "observable_query_tuples": 4860,
+            "state_queries": 4860,
+            "support_confusion_no_to_no": 4800,
+            "support_confusion_yes_to_yes": 60,
+            "support_no": 4800,
+            "support_yes": 60,
+            "truth_correct": 4860,
+            "truth_no": 4800,
+            "truth_wrong": 0,
+            "truth_yes": 60
+          },
+          "plain_support": {
+            "answered": 4860,
+            "correct_action": 4800,
+            "licensed_no": 4800,
+            "observable_query_tuples": 4860,
+            "state_queries": 4860,
+            "support_confusion_no_to_no": 4800,
+            "support_confusion_yes_to_no": 60,
+            "support_no": 4800,
+            "support_yes": 60,
+            "truth_correct": 4800,
+            "truth_no": 4800,
+            "truth_wrong": 60,
+            "truth_yes": 60,
+            "wrong_on_determinate": 60
+          }
+        },
+        "61": {
+          "always_abstain": {
+            "observable_query_tuples": 4941,
+            "state_queries": 4941,
+            "support_confusion_no_to_abstain": 4880,
+            "support_confusion_yes_to_abstain": 61,
+            "support_no": 4880,
+            "support_yes": 61,
+            "truth_no": 4880,
+            "truth_yes": 61,
+            "withheld": 4941
+          },
+          "always_no": {
+            "answered": 4941,
+            "correct_action": 4880,
+            "licensed_no": 4880,
+            "observable_query_tuples": 4941,
+            "state_queries": 4941,
+            "support_confusion_no_to_no": 4880,
+            "support_confusion_yes_to_no": 61,
+            "support_no": 4880,
+            "support_yes": 61,
+            "truth_correct": 4880,
+            "truth_no": 4880,
+            "truth_wrong": 61,
+            "truth_yes": 61,
+            "wrong_on_determinate": 61
+          },
+          "exact_oracle": {
+            "answered": 4941,
+            "correct_action": 4941,
+            "licensed_no": 4880,
+            "licensed_yes": 61,
+            "observable_query_tuples": 4941,
+            "state_queries": 4941,
+            "support_confusion_no_to_no": 4880,
+            "support_confusion_yes_to_yes": 61,
+            "support_no": 4880,
+            "support_yes": 61,
+            "truth_correct": 4941,
+            "truth_no": 4880,
+            "truth_wrong": 0,
+            "truth_yes": 61
+          },
+          "informed_support": {
+            "answered": 4941,
+            "correct_action": 4941,
+            "licensed_no": 4880,
+            "licensed_yes": 61,
+            "observable_query_tuples": 4941,
+            "state_queries": 4941,
+            "support_confusion_no_to_no": 4880,
+            "support_confusion_yes_to_yes": 61,
+            "support_no": 4880,
+            "support_yes": 61,
+            "truth_correct": 4941,
+            "truth_no": 4880,
+            "truth_wrong": 0,
+            "truth_yes": 61
+          },
+          "informed_truth": {
+            "answered": 4941,
+            "correct_action": 4941,
+            "licensed_no": 4880,
+            "licensed_yes": 61,
+            "observable_query_tuples": 4941,
+            "state_queries": 4941,
+            "support_confusion_no_to_no": 4880,
+            "support_confusion_yes_to_yes": 61,
+            "support_no": 4880,
+            "support_yes": 61,
+            "truth_correct": 4941,
+            "truth_no": 4880,
+            "truth_wrong": 0,
+            "truth_yes": 61
+          },
+          "plain_support": {
+            "answered": 4941,
+            "correct_action": 4880,
+            "licensed_no": 4880,
+            "observable_query_tuples": 4941,
+            "state_queries": 4941,
+            "support_confusion_no_to_no": 4880,
+            "support_confusion_yes_to_no": 61,
+            "support_no": 4880,
+            "support_yes": 61,
+            "truth_correct": 4880,
+            "truth_no": 4880,
+            "truth_wrong": 61,
+            "truth_yes": 61,
+            "wrong_on_determinate": 61
+          }
+        },
+        "62": {
+          "always_abstain": {
+            "observable_query_tuples": 5022,
+            "state_queries": 5022,
+            "support_confusion_no_to_abstain": 4960,
+            "support_confusion_yes_to_abstain": 62,
+            "support_no": 4960,
+            "support_yes": 62,
+            "truth_no": 4960,
+            "truth_yes": 62,
+            "withheld": 5022
+          },
+          "always_no": {
+            "answered": 5022,
+            "correct_action": 4960,
+            "licensed_no": 4960,
+            "observable_query_tuples": 5022,
+            "state_queries": 5022,
+            "support_confusion_no_to_no": 4960,
+            "support_confusion_yes_to_no": 62,
+            "support_no": 4960,
+            "support_yes": 62,
+            "truth_correct": 4960,
+            "truth_no": 4960,
+            "truth_wrong": 62,
+            "truth_yes": 62,
+            "wrong_on_determinate": 62
+          },
+          "exact_oracle": {
+            "answered": 5022,
+            "correct_action": 5022,
+            "licensed_no": 4960,
+            "licensed_yes": 62,
+            "observable_query_tuples": 5022,
+            "state_queries": 5022,
+            "support_confusion_no_to_no": 4960,
+            "support_confusion_yes_to_yes": 62,
+            "support_no": 4960,
+            "support_yes": 62,
+            "truth_correct": 5022,
+            "truth_no": 4960,
+            "truth_wrong": 0,
+            "truth_yes": 62
+          },
+          "informed_support": {
+            "answered": 5022,
+            "correct_action": 5022,
+            "licensed_no": 4960,
+            "licensed_yes": 62,
+            "observable_query_tuples": 5022,
+            "state_queries": 5022,
+            "support_confusion_no_to_no": 4960,
+            "support_confusion_yes_to_yes": 62,
+            "support_no": 4960,
+            "support_yes": 62,
+            "truth_correct": 5022,
+            "truth_no": 4960,
+            "truth_wrong": 0,
+            "truth_yes": 62
+          },
+          "informed_truth": {
+            "answered": 5022,
+            "correct_action": 5022,
+            "licensed_no": 4960,
+            "licensed_yes": 62,
+            "observable_query_tuples": 5022,
+            "state_queries": 5022,
+            "support_confusion_no_to_no": 4960,
+            "support_confusion_yes_to_yes": 62,
+            "support_no": 4960,
+            "support_yes": 62,
+            "truth_correct": 5022,
+            "truth_no": 4960,
+            "truth_wrong": 0,
+            "truth_yes": 62
+          },
+          "plain_support": {
+            "answered": 5022,
+            "correct_action": 4960,
+            "licensed_no": 4960,
+            "observable_query_tuples": 5022,
+            "state_queries": 5022,
+            "support_confusion_no_to_no": 4960,
+            "support_confusion_yes_to_no": 62,
+            "support_no": 4960,
+            "support_yes": 62,
+            "truth_correct": 4960,
+            "truth_no": 4960,
+            "truth_wrong": 62,
+            "truth_yes": 62,
+            "wrong_on_determinate": 62
+          }
+        },
+        "63": {
+          "always_abstain": {
+            "observable_query_tuples": 5103,
+            "state_queries": 5103,
+            "support_confusion_no_to_abstain": 5040,
+            "support_confusion_yes_to_abstain": 63,
+            "support_no": 5040,
+            "support_yes": 63,
+            "truth_no": 5040,
+            "truth_yes": 63,
+            "withheld": 5103
+          },
+          "always_no": {
+            "answered": 5103,
+            "correct_action": 5040,
+            "licensed_no": 5040,
+            "observable_query_tuples": 5103,
+            "state_queries": 5103,
+            "support_confusion_no_to_no": 5040,
+            "support_confusion_yes_to_no": 63,
+            "support_no": 5040,
+            "support_yes": 63,
+            "truth_correct": 5040,
+            "truth_no": 5040,
+            "truth_wrong": 63,
+            "truth_yes": 63,
+            "wrong_on_determinate": 63
+          },
+          "exact_oracle": {
+            "answered": 5103,
+            "correct_action": 5103,
+            "licensed_no": 5040,
+            "licensed_yes": 63,
+            "observable_query_tuples": 5103,
+            "state_queries": 5103,
+            "support_confusion_no_to_no": 5040,
+            "support_confusion_yes_to_yes": 63,
+            "support_no": 5040,
+            "support_yes": 63,
+            "truth_correct": 5103,
+            "truth_no": 5040,
+            "truth_wrong": 0,
+            "truth_yes": 63
+          },
+          "informed_support": {
+            "answered": 5103,
+            "correct_action": 5103,
+            "licensed_no": 5040,
+            "licensed_yes": 63,
+            "observable_query_tuples": 5103,
+            "state_queries": 5103,
+            "support_confusion_no_to_no": 5040,
+            "support_confusion_yes_to_yes": 63,
+            "support_no": 5040,
+            "support_yes": 63,
+            "truth_correct": 5103,
+            "truth_no": 5040,
+            "truth_wrong": 0,
+            "truth_yes": 63
+          },
+          "informed_truth": {
+            "answered": 5103,
+            "correct_action": 5103,
+            "licensed_no": 5040,
+            "licensed_yes": 63,
+            "observable_query_tuples": 5103,
+            "state_queries": 5103,
+            "support_confusion_no_to_no": 5040,
+            "support_confusion_yes_to_yes": 63,
+            "support_no": 5040,
+            "support_yes": 63,
+            "truth_correct": 5103,
+            "truth_no": 5040,
+            "truth_wrong": 0,
+            "truth_yes": 63
+          },
+          "plain_support": {
+            "answered": 5103,
+            "correct_action": 5040,
+            "licensed_no": 5040,
+            "observable_query_tuples": 5103,
+            "state_queries": 5103,
+            "support_confusion_no_to_no": 5040,
+            "support_confusion_yes_to_no": 63,
+            "support_no": 5040,
+            "support_yes": 63,
+            "truth_correct": 5040,
+            "truth_no": 5040,
+            "truth_wrong": 63,
+            "truth_yes": 63,
+            "wrong_on_determinate": 63
+          }
+        },
+        "64": {
+          "always_abstain": {
+            "observable_query_tuples": 5184,
+            "state_queries": 5184,
+            "support_confusion_no_to_abstain": 5120,
+            "support_confusion_yes_to_abstain": 64,
+            "support_no": 5120,
+            "support_yes": 64,
+            "truth_no": 5120,
+            "truth_yes": 64,
+            "withheld": 5184
+          },
+          "always_no": {
+            "answered": 5184,
+            "correct_action": 5120,
+            "licensed_no": 5120,
+            "observable_query_tuples": 5184,
+            "state_queries": 5184,
+            "support_confusion_no_to_no": 5120,
+            "support_confusion_yes_to_no": 64,
+            "support_no": 5120,
+            "support_yes": 64,
+            "truth_correct": 5120,
+            "truth_no": 5120,
+            "truth_wrong": 64,
+            "truth_yes": 64,
+            "wrong_on_determinate": 64
+          },
+          "exact_oracle": {
+            "answered": 5184,
+            "correct_action": 5184,
+            "licensed_no": 5120,
+            "licensed_yes": 64,
+            "observable_query_tuples": 5184,
+            "state_queries": 5184,
+            "support_confusion_no_to_no": 5120,
+            "support_confusion_yes_to_yes": 64,
+            "support_no": 5120,
+            "support_yes": 64,
+            "truth_correct": 5184,
+            "truth_no": 5120,
+            "truth_wrong": 0,
+            "truth_yes": 64
+          },
+          "informed_support": {
+            "answered": 5184,
+            "correct_action": 5184,
+            "licensed_no": 5120,
+            "licensed_yes": 64,
+            "observable_query_tuples": 5184,
+            "state_queries": 5184,
+            "support_confusion_no_to_no": 5120,
+            "support_confusion_yes_to_yes": 64,
+            "support_no": 5120,
+            "support_yes": 64,
+            "truth_correct": 5184,
+            "truth_no": 5120,
+            "truth_wrong": 0,
+            "truth_yes": 64
+          },
+          "informed_truth": {
+            "answered": 5184,
+            "correct_action": 5184,
+            "licensed_no": 5120,
+            "licensed_yes": 64,
+            "observable_query_tuples": 5184,
+            "state_queries": 5184,
+            "support_confusion_no_to_no": 5120,
+            "support_confusion_yes_to_yes": 64,
+            "support_no": 5120,
+            "support_yes": 64,
+            "truth_correct": 5184,
+            "truth_no": 5120,
+            "truth_wrong": 0,
+            "truth_yes": 64
+          },
+          "plain_support": {
+            "answered": 5184,
+            "correct_action": 5120,
+            "licensed_no": 5120,
+            "observable_query_tuples": 5184,
+            "state_queries": 5184,
+            "support_confusion_no_to_no": 5120,
+            "support_confusion_yes_to_no": 64,
+            "support_no": 5120,
+            "support_yes": 64,
+            "truth_correct": 5120,
+            "truth_no": 5120,
+            "truth_wrong": 64,
+            "truth_yes": 64,
+            "wrong_on_determinate": 64
+          }
+        }
+      },
+      "case_trace": [
+        {
+          "center": 0,
+          "cutoff": 26,
+          "predictions": {
+            "informed_support": "no",
+            "informed_truth": "no",
+            "plain_support": "no"
+          },
+          "support": "no",
+          "tag": 0,
+          "truth": "no",
+          "weight": 11
+        },
+        {
+          "center": 65,
+          "cutoff": 26,
+          "predictions": {
+            "informed_support": "no",
+            "informed_truth": "no",
+            "plain_support": "no"
+          },
+          "support": "yes",
+          "tag": 65,
+          "truth": "yes",
+          "weight": 11
+        },
+        {
+          "center": 0,
+          "cutoff": 64,
+          "predictions": {
+            "informed_support": "no",
+            "informed_truth": "no",
+            "plain_support": "no"
+          },
+          "support": "no",
+          "tag": 0,
+          "truth": "no",
+          "weight": 11
+        },
+        {
+          "center": 65,
+          "cutoff": 64,
+          "predictions": {
+            "informed_support": "no",
+            "informed_truth": "no",
+            "plain_support": "no"
+          },
+          "support": "no",
+          "tag": 65,
+          "truth": "no",
+          "weight": 11
+        }
+      ],
+      "inverse_codebook_unchanged_cells": {
+        "informed_support": 42768,
+        "informed_truth": 42768,
+        "plain_support": 42768
+      },
+      "totals": {
+        "always_abstain": {
+          "observable_query_tuples": 42768,
+          "state_queries": 42768,
+          "support_confusion_no_to_abstain": 42090,
+          "support_confusion_yes_to_abstain": 678,
+          "support_no": 42090,
+          "support_yes": 678,
+          "truth_no": 42090,
+          "truth_yes": 678,
+          "withheld": 42768
+        },
+        "always_no": {
+          "answered": 42768,
+          "correct_action": 42090,
+          "licensed_no": 42090,
+          "observable_query_tuples": 42768,
+          "state_queries": 42768,
+          "support_confusion_no_to_no": 42090,
+          "support_confusion_yes_to_no": 678,
+          "support_no": 42090,
+          "support_yes": 678,
+          "truth_correct": 42090,
+          "truth_no": 42090,
+          "truth_wrong": 678,
+          "truth_yes": 678,
+          "wrong_on_determinate": 678
+        },
+        "exact_oracle": {
+          "answered": 42768,
+          "correct_action": 42768,
+          "licensed_no": 42090,
+          "licensed_yes": 678,
+          "observable_query_tuples": 42768,
+          "state_queries": 42768,
+          "support_confusion_no_to_no": 42090,
+          "support_confusion_yes_to_yes": 678,
+          "support_no": 42090,
+          "support_yes": 678,
+          "truth_correct": 42768,
+          "truth_no": 42090,
+          "truth_wrong": 0,
+          "truth_yes": 678
+        },
+        "informed_support": {
+          "answered": 42768,
+          "correct_action": 42618,
+          "licensed_no": 42090,
+          "licensed_yes": 528,
+          "observable_query_tuples": 42768,
+          "state_queries": 42768,
+          "support_confusion_no_to_no": 42090,
+          "support_confusion_yes_to_no": 150,
+          "support_confusion_yes_to_yes": 528,
+          "support_no": 42090,
+          "support_yes": 678,
+          "truth_correct": 42618,
+          "truth_no": 42090,
+          "truth_wrong": 150,
+          "truth_yes": 678,
+          "wrong_on_determinate": 150
+        },
+        "informed_truth": {
+          "answered": 42768,
+          "correct_action": 42618,
+          "licensed_no": 42090,
+          "licensed_yes": 528,
+          "observable_query_tuples": 42768,
+          "state_queries": 42768,
+          "support_confusion_no_to_no": 42090,
+          "support_confusion_yes_to_no": 150,
+          "support_confusion_yes_to_yes": 528,
+          "support_no": 42090,
+          "support_yes": 678,
+          "truth_correct": 42618,
+          "truth_no": 42090,
+          "truth_wrong": 150,
+          "truth_yes": 678,
+          "wrong_on_determinate": 150
+        },
+        "plain_support": {
+          "answered": 42768,
+          "correct_action": 42090,
+          "licensed_no": 42090,
+          "observable_query_tuples": 42768,
+          "state_queries": 42768,
+          "support_confusion_no_to_no": 42090,
+          "support_confusion_yes_to_no": 678,
+          "support_no": 42090,
+          "support_yes": 678,
+          "truth_correct": 42090,
+          "truth_no": 42090,
+          "truth_wrong": 678,
+          "truth_yes": 678,
+          "wrong_on_determinate": 678
+        }
+      },
+      "trees": {
+        "informed_support": [
+          "matching_digits",
+          3,
+          [
+            "matching_digits",
+            2,
+            [
+              "cutoff",
+              8,
+              [
+                "matching_digits",
+                1,
+                [
+                  "cutoff",
+                  2,
+                  [
+                    "matching_digits",
+                    0,
+                    "no",
+                    "yes"
+                  ],
+                  "no"
+                ],
+                "yes"
+              ],
+              "no"
+            ],
+            [
+              "cutoff",
+              23,
+              "yes",
+              "no"
+            ]
+          ],
+          "yes"
+        ],
+        "informed_truth": [
+          "matching_digits",
+          3,
+          [
+            "matching_digits",
+            2,
+            [
+              "cutoff",
+              8,
+              [
+                "matching_digits",
+                1,
+                [
+                  "cutoff",
+                  2,
+                  [
+                    "matching_digits",
+                    0,
+                    "no",
+                    "yes"
+                  ],
+                  "no"
+                ],
+                "yes"
+              ],
+              "no"
+            ],
+            [
+              "cutoff",
+              23,
+              "yes",
+              "no"
+            ]
+          ],
+          "yes"
+        ],
+        "plain_support": [
+          "cutoff",
+          8,
+          [
+            "cutoff",
+            2,
+            [
+              "tag",
+              0,
+              "no",
+              [
+                "tag",
+                1,
+                [
+                  "weight",
+                  1,
+                  "yes",
+                  "no"
+                ],
+                [
+                  "tag",
+                  3,
+                  [
+                    "weight",
+                    1,
+                    "no",
+                    [
+                      "tag",
+                      2,
+                      "yes",
+                      "no"
+                    ]
+                  ],
+                  [
+                    "tag",
+                    4,
+                    [
+                      "weight",
+                      1,
+                      "yes",
+                      "no"
+                    ],
+                    [
+                      "tag",
+                      6,
+                      [
+                        "weight",
+                        1,
+                        "no",
+                        "no"
+                      ],
+                      [
+                        "tag",
+                        7,
+                        "yes",
+                        "no"
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ],
+            [
+              "tag",
+              0,
+              "no",
+              [
+                "tag",
+                4,
+                [
+                  "weight",
+                  4,
+                  [
+                    "tag",
+                    3,
+                    [
+                      "weight",
+                      3,
+                      "no",
+                      "no"
+                    ],
+                    [
+                      "weight",
+                      3,
+                      "no",
+                      "yes"
+                    ]
+                  ],
+                  "no"
+                ],
+                [
+                  "tag",
+                  9,
+                  [
+                    "weight",
+                    4,
+                    "no",
+                    [
+                      "tag",
+                      6,
+                      [
+                        "weight",
+                        6,
+                        "no",
+                        "no"
+                      ],
+                      [
+                        "weight",
+                        6,
+                        "no",
+                        "no"
+                      ]
+                    ]
+                  ],
+                  [
+                    "tag",
+                    13,
+                    [
+                      "weight",
+                      4,
+                      [
+                        "tag",
+                        12,
+                        "no",
+                        "no"
+                      ],
+                      "no"
+                    ],
+                    [
+                      "tag",
+                      18,
+                      [
+                        "weight",
+                        4,
+                        "no",
+                        "no"
+                      ],
+                      [
+                        "tag",
+                        22,
+                        "no",
+                        "no"
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ],
+          [
+            "cutoff",
+            23,
+            [
+              "tag",
+              72,
+              [
+                "tag",
+                12,
+                [
+                  "weight",
+                  12,
+                  [
+                    "tag",
+                    0,
+                    "no",
+                    [
+                      "tag",
+                      10,
+                      [
+                        "weight",
+                        10,
+                        "no",
+                        "no"
+                      ],
+                      [
+                        "weight",
+                        10,
+                        "no",
+                        "no"
+                      ]
+                    ]
+                  ],
+                  "no"
+                ],
+                [
+                  "tag",
+                  27,
+                  [
+                    "weight",
+                    12,
+                    "no",
+                    [
+                      "tag",
+                      19,
+                      [
+                        "weight",
+                        19,
+                        "no",
+                        "no"
+                      ],
+                      [
+                        "weight",
+                        19,
+                        "no",
+                        "no"
+                      ]
+                    ]
+                  ],
+                  [
+                    "tag",
+                    39,
+                    [
+                      "weight",
+                      12,
+                      [
+                        "tag",
+                        37,
+                        "no",
+                        "no"
+                      ],
+                      "no"
+                    ],
+                    [
+                      "tag",
+                      54,
+                      [
+                        "weight",
+                        12,
+                        "no",
+                        "no"
+                      ],
+                      [
+                        "weight",
+                        18,
+                        "no",
+                        "no"
+                      ]
+                    ]
+                  ]
+                ]
+              ],
+              [
+                "weight",
+                18,
+                "no",
+                [
+                  "tag",
+                  75,
+                  [
+                    "weight",
+                    21,
+                    [
+                      "tag",
+                      73,
+                      [
+                        "weight",
+                        19,
+                        "yes",
+                        "no"
+                      ],
+                      [
+                        "weight",
+                        19,
+                        "no",
+                        "no"
+                      ]
+                    ],
+                    "no"
+                  ],
+                  [
+                    "weight",
+                    21,
+                    "no",
+                    [
+                      "tag",
+                      77,
+                      [
+                        "tag",
+                        76,
+                        "yes",
+                        "no"
+                      ],
+                      "no"
+                    ]
+                  ]
+                ]
+              ]
+            ],
+            [
+              "tag",
+              44,
+              [
+                "weight",
+                44,
+                [
+                  "tag",
+                  0,
+                  "no",
+                  [
+                    "tag",
+                    35,
+                    [
+                      "weight",
+                      35,
+                      [
+                        "tag",
+                        31,
+                        "no",
+                        "no"
+                      ],
+                      "no"
+                    ],
+                    [
+                      "weight",
+                      35,
+                      "no",
+                      [
+                        "tag",
+                        39,
+                        "no",
+                        "no"
+                      ]
+                    ]
+                  ]
+                ],
+                "no"
+              ],
+              [
+                "weight",
+                44,
+                "no",
+                [
+                  "tag",
+                  53,
+                  [
+                    "weight",
+                    53,
+                    [
+                      "tag",
+                      48,
+                      [
+                        "weight",
+                        48,
+                        "no",
+                        "no"
+                      ],
+                      [
+                        "weight",
+                        48,
+                        "no",
+                        "no"
+                      ]
+                    ],
+                    "no"
+                  ],
+                  [
+                    "weight",
+                    53,
+                    "no",
+                    [
+                      "tag",
+                      57,
+                      [
+                        "tag",
+                        55,
+                        "no",
+                        "no"
+                      ],
+                      [
+                        "tag",
+                        58,
+                        "no",
+                        "no"
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      },
+      "valid_tag_substitution_centers_1_and_2": {
+        "exact_oracle": {
+          "answered": 1056,
+          "correct_action": 1008,
+          "licensed_no": 1008,
+          "observable_query_tuples": 1056,
+          "previously_licensed_now_wrong": 48,
+          "state_queries": 1056,
+          "support_confusion_no_to_no": 1008,
+          "support_confusion_no_to_yes": 24,
+          "support_confusion_yes_to_no": 24,
+          "support_no": 1032,
+          "support_yes": 24,
+          "swapped_prediction_differs": 48,
+          "truth_correct": 1008,
+          "truth_no": 1032,
+          "truth_wrong": 48,
+          "truth_yes": 24,
+          "wrong_on_determinate": 48
+        },
+        "informed_support": {
+          "answered": 1056,
+          "correct_action": 1008,
+          "licensed_no": 1008,
+          "observable_query_tuples": 1056,
+          "previously_licensed_now_wrong": 48,
+          "state_queries": 1056,
+          "support_confusion_no_to_no": 1008,
+          "support_confusion_no_to_yes": 24,
+          "support_confusion_yes_to_no": 24,
+          "support_no": 1032,
+          "support_yes": 24,
+          "swapped_prediction_differs": 48,
+          "truth_correct": 1008,
+          "truth_no": 1032,
+          "truth_wrong": 48,
+          "truth_yes": 24,
+          "wrong_on_determinate": 48
+        },
+        "informed_truth": {
+          "answered": 1056,
+          "correct_action": 1008,
+          "licensed_no": 1008,
+          "observable_query_tuples": 1056,
+          "previously_licensed_now_wrong": 48,
+          "state_queries": 1056,
+          "support_confusion_no_to_no": 1008,
+          "support_confusion_no_to_yes": 24,
+          "support_confusion_yes_to_no": 24,
+          "support_no": 1032,
+          "support_yes": 24,
+          "swapped_prediction_differs": 48,
+          "truth_correct": 1008,
+          "truth_no": 1032,
+          "truth_wrong": 48,
+          "truth_yes": 24,
+          "wrong_on_determinate": 48
+        }
+      }
+    },
+    "terminal_list": {
+      "by_cutoff": {
+        "24": {
+          "always_abstain": {
+            "correct_action": 238,
+            "observable_query_tuples": 1560,
+            "state_queries": 1944,
+            "support_abstain": 238,
+            "support_confusion_abstain_to_abstain": 238,
+            "support_confusion_no_to_abstain": 1648,
+            "support_confusion_yes_to_abstain": 58,
+            "support_no": 1648,
+            "support_yes": 58,
+            "truth_no": 1872,
+            "truth_yes": 72,
+            "withheld": 1944
+          },
+          "always_no": {
+            "accidentally_true_on_ambiguous": 224,
+            "answered": 1944,
+            "correct_action": 1648,
+            "definite_on_ambiguous": 238,
+            "licensed_no": 1648,
+            "observable_query_tuples": 1560,
+            "state_queries": 1944,
+            "support_abstain": 238,
+            "support_confusion_abstain_to_no": 238,
+            "support_confusion_no_to_no": 1648,
+            "support_confusion_yes_to_no": 58,
+            "support_no": 1648,
+            "support_yes": 58,
+            "truth_correct": 1872,
+            "truth_no": 1872,
+            "truth_wrong": 72,
+            "truth_yes": 72,
+            "wrong_on_determinate": 58
+          },
+          "exact_oracle": {
+            "answered": 1706,
+            "correct_action": 1944,
+            "licensed_no": 1648,
+            "licensed_yes": 58,
+            "observable_query_tuples": 1560,
+            "state_queries": 1944,
+            "support_abstain": 238,
+            "support_confusion_abstain_to_abstain": 238,
+            "support_confusion_no_to_no": 1648,
+            "support_confusion_yes_to_yes": 58,
+            "support_no": 1648,
+            "support_yes": 58,
+            "truth_correct": 1706,
+            "truth_no": 1872,
+            "truth_wrong": 0,
+            "truth_yes": 72,
+            "withheld": 238
+          },
+          "informed_support": {
+            "accidentally_true_on_ambiguous": 224,
+            "answered": 1944,
+            "correct_action": 1672,
+            "definite_on_ambiguous": 238,
+            "licensed_no": 1648,
+            "licensed_yes": 24,
+            "observable_query_tuples": 1560,
+            "state_queries": 1944,
+            "support_abstain": 238,
+            "support_confusion_abstain_to_no": 238,
+            "support_confusion_no_to_no": 1648,
+            "support_confusion_yes_to_no": 34,
+            "support_confusion_yes_to_yes": 24,
+            "support_no": 1648,
+            "support_yes": 58,
+            "truth_correct": 1896,
+            "truth_no": 1872,
+            "truth_wrong": 48,
+            "truth_yes": 72,
+            "wrong_on_determinate": 34
+          },
+          "informed_truth": {
+            "accidentally_true_on_ambiguous": 224,
+            "answered": 1944,
+            "correct_action": 1672,
+            "definite_on_ambiguous": 238,
+            "licensed_no": 1648,
+            "licensed_yes": 24,
+            "observable_query_tuples": 1560,
+            "state_queries": 1944,
+            "support_abstain": 238,
+            "support_confusion_abstain_to_no": 238,
+            "support_confusion_no_to_no": 1648,
+            "support_confusion_yes_to_no": 34,
+            "support_confusion_yes_to_yes": 24,
+            "support_no": 1648,
+            "support_yes": 58,
+            "truth_correct": 1896,
+            "truth_no": 1872,
+            "truth_wrong": 48,
+            "truth_yes": 72,
+            "wrong_on_determinate": 34
+          },
+          "plain_support": {
+            "accidentally_true_on_ambiguous": 224,
+            "answered": 1944,
+            "correct_action": 1648,
+            "definite_on_ambiguous": 238,
+            "licensed_no": 1648,
+            "observable_query_tuples": 1560,
+            "state_queries": 1944,
+            "support_abstain": 238,
+            "support_confusion_abstain_to_no": 238,
+            "support_confusion_no_to_no": 1648,
+            "support_confusion_yes_to_no": 58,
+            "support_no": 1648,
+            "support_yes": 58,
+            "truth_correct": 1872,
+            "truth_no": 1872,
+            "truth_wrong": 72,
+            "truth_yes": 72,
+            "wrong_on_determinate": 58
+          }
+        },
+        "25": {
+          "always_abstain": {
+            "correct_action": 255,
+            "observable_query_tuples": 1625,
+            "state_queries": 2025,
+            "support_abstain": 255,
+            "support_confusion_abstain_to_abstain": 255,
+            "support_confusion_no_to_abstain": 1710,
+            "support_confusion_yes_to_abstain": 60,
+            "support_no": 1710,
+            "support_yes": 60,
+            "truth_no": 1950,
+            "truth_yes": 75,
+            "withheld": 2025
+          },
+          "always_no": {
+            "accidentally_true_on_ambiguous": 240,
+            "answered": 2025,
+            "correct_action": 1710,
+            "definite_on_ambiguous": 255,
+            "licensed_no": 1710,
+            "observable_query_tuples": 1625,
+            "state_queries": 2025,
+            "support_abstain": 255,
+            "support_confusion_abstain_to_no": 255,
+            "support_confusion_no_to_no": 1710,
+            "support_confusion_yes_to_no": 60,
+            "support_no": 1710,
+            "support_yes": 60,
+            "truth_correct": 1950,
+            "truth_no": 1950,
+            "truth_wrong": 75,
+            "truth_yes": 75,
+            "wrong_on_determinate": 60
+          },
+          "exact_oracle": {
+            "answered": 1770,
+            "correct_action": 2025,
+            "licensed_no": 1710,
+            "licensed_yes": 60,
+            "observable_query_tuples": 1625,
+            "state_queries": 2025,
+            "support_abstain": 255,
+            "support_confusion_abstain_to_abstain": 255,
+            "support_confusion_no_to_no": 1710,
+            "support_confusion_yes_to_yes": 60,
+            "support_no": 1710,
+            "support_yes": 60,
+            "truth_correct": 1770,
+            "truth_no": 1950,
+            "truth_wrong": 0,
+            "truth_yes": 75,
+            "withheld": 255
+          },
+          "informed_support": {
+            "accidentally_true_on_ambiguous": 240,
+            "answered": 2025,
+            "correct_action": 1735,
+            "definite_on_ambiguous": 255,
+            "licensed_no": 1710,
+            "licensed_yes": 25,
+            "observable_query_tuples": 1625,
+            "state_queries": 2025,
+            "support_abstain": 255,
+            "support_confusion_abstain_to_no": 255,
+            "support_confusion_no_to_no": 1710,
+            "support_confusion_yes_to_no": 35,
+            "support_confusion_yes_to_yes": 25,
+            "support_no": 1710,
+            "support_yes": 60,
+            "truth_correct": 1975,
+            "truth_no": 1950,
+            "truth_wrong": 50,
+            "truth_yes": 75,
+            "wrong_on_determinate": 35
+          },
+          "informed_truth": {
+            "accidentally_true_on_ambiguous": 240,
+            "answered": 2025,
+            "correct_action": 1735,
+            "definite_on_ambiguous": 255,
+            "licensed_no": 1710,
+            "licensed_yes": 25,
+            "observable_query_tuples": 1625,
+            "state_queries": 2025,
+            "support_abstain": 255,
+            "support_confusion_abstain_to_no": 255,
+            "support_confusion_no_to_no": 1710,
+            "support_confusion_yes_to_no": 35,
+            "support_confusion_yes_to_yes": 25,
+            "support_no": 1710,
+            "support_yes": 60,
+            "truth_correct": 1975,
+            "truth_no": 1950,
+            "truth_wrong": 50,
+            "truth_yes": 75,
+            "wrong_on_determinate": 35
+          },
+          "plain_support": {
+            "accidentally_true_on_ambiguous": 240,
+            "answered": 2025,
+            "correct_action": 1710,
+            "definite_on_ambiguous": 255,
+            "licensed_no": 1710,
+            "observable_query_tuples": 1625,
+            "state_queries": 2025,
+            "support_abstain": 255,
+            "support_confusion_abstain_to_no": 255,
+            "support_confusion_no_to_no": 1710,
+            "support_confusion_yes_to_no": 60,
+            "support_no": 1710,
+            "support_yes": 60,
+            "truth_correct": 1950,
+            "truth_no": 1950,
+            "truth_wrong": 75,
+            "truth_yes": 75,
+            "wrong_on_determinate": 60
+          }
+        },
+        "26": {
+          "always_abstain": {
+            "correct_action": 272,
+            "observable_query_tuples": 1690,
+            "state_queries": 2106,
+            "support_abstain": 272,
+            "support_confusion_abstain_to_abstain": 272,
+            "support_confusion_no_to_abstain": 1772,
+            "support_confusion_yes_to_abstain": 62,
+            "support_no": 1772,
+            "support_yes": 62,
+            "truth_no": 2028,
+            "truth_yes": 78,
+            "withheld": 2106
+          },
+          "always_no": {
+            "accidentally_true_on_ambiguous": 256,
+            "answered": 2106,
+            "correct_action": 1772,
+            "definite_on_ambiguous": 272,
+            "licensed_no": 1772,
+            "observable_query_tuples": 1690,
+            "state_queries": 2106,
+            "support_abstain": 272,
+            "support_confusion_abstain_to_no": 272,
+            "support_confusion_no_to_no": 1772,
+            "support_confusion_yes_to_no": 62,
+            "support_no": 1772,
+            "support_yes": 62,
+            "truth_correct": 2028,
+            "truth_no": 2028,
+            "truth_wrong": 78,
+            "truth_yes": 78,
+            "wrong_on_determinate": 62
+          },
+          "exact_oracle": {
+            "answered": 1834,
+            "correct_action": 2106,
+            "licensed_no": 1772,
+            "licensed_yes": 62,
+            "observable_query_tuples": 1690,
+            "state_queries": 2106,
+            "support_abstain": 272,
+            "support_confusion_abstain_to_abstain": 272,
+            "support_confusion_no_to_no": 1772,
+            "support_confusion_yes_to_yes": 62,
+            "support_no": 1772,
+            "support_yes": 62,
+            "truth_correct": 1834,
+            "truth_no": 2028,
+            "truth_wrong": 0,
+            "truth_yes": 78,
+            "withheld": 272
+          },
+          "informed_support": {
+            "accidentally_true_on_ambiguous": 256,
+            "answered": 2106,
+            "correct_action": 1798,
+            "definite_on_ambiguous": 272,
+            "licensed_no": 1772,
+            "licensed_yes": 26,
+            "observable_query_tuples": 1690,
+            "state_queries": 2106,
+            "support_abstain": 272,
+            "support_confusion_abstain_to_no": 272,
+            "support_confusion_no_to_no": 1772,
+            "support_confusion_yes_to_no": 36,
+            "support_confusion_yes_to_yes": 26,
+            "support_no": 1772,
+            "support_yes": 62,
+            "truth_correct": 2054,
+            "truth_no": 2028,
+            "truth_wrong": 52,
+            "truth_yes": 78,
+            "wrong_on_determinate": 36
+          },
+          "informed_truth": {
+            "accidentally_true_on_ambiguous": 256,
+            "answered": 2106,
+            "correct_action": 1798,
+            "definite_on_ambiguous": 272,
+            "licensed_no": 1772,
+            "licensed_yes": 26,
+            "observable_query_tuples": 1690,
+            "state_queries": 2106,
+            "support_abstain": 272,
+            "support_confusion_abstain_to_no": 272,
+            "support_confusion_no_to_no": 1772,
+            "support_confusion_yes_to_no": 36,
+            "support_confusion_yes_to_yes": 26,
+            "support_no": 1772,
+            "support_yes": 62,
+            "truth_correct": 2054,
+            "truth_no": 2028,
+            "truth_wrong": 52,
+            "truth_yes": 78,
+            "wrong_on_determinate": 36
+          },
+          "plain_support": {
+            "accidentally_true_on_ambiguous": 256,
+            "answered": 2106,
+            "correct_action": 1772,
+            "definite_on_ambiguous": 272,
+            "licensed_no": 1772,
+            "observable_query_tuples": 1690,
+            "state_queries": 2106,
+            "support_abstain": 272,
+            "support_confusion_abstain_to_no": 272,
+            "support_confusion_no_to_no": 1772,
+            "support_confusion_yes_to_no": 62,
+            "support_no": 1772,
+            "support_yes": 62,
+            "truth_correct": 2028,
+            "truth_no": 2028,
+            "truth_wrong": 78,
+            "truth_yes": 78,
+            "wrong_on_determinate": 62
+          }
+        },
+        "27": {
+          "always_abstain": {
+            "observable_query_tuples": 1755,
+            "state_queries": 2187,
+            "support_confusion_no_to_abstain": 2160,
+            "support_confusion_yes_to_abstain": 27,
+            "support_no": 2160,
+            "support_yes": 27,
+            "truth_no": 2160,
+            "truth_yes": 27,
+            "withheld": 2187
+          },
+          "always_no": {
+            "answered": 2187,
+            "correct_action": 2160,
+            "licensed_no": 2160,
+            "observable_query_tuples": 1755,
+            "state_queries": 2187,
+            "support_confusion_no_to_no": 2160,
+            "support_confusion_yes_to_no": 27,
+            "support_no": 2160,
+            "support_yes": 27,
+            "truth_correct": 2160,
+            "truth_no": 2160,
+            "truth_wrong": 27,
+            "truth_yes": 27,
+            "wrong_on_determinate": 27
+          },
+          "exact_oracle": {
+            "answered": 2187,
+            "correct_action": 2187,
+            "licensed_no": 2160,
+            "licensed_yes": 27,
+            "observable_query_tuples": 1755,
+            "state_queries": 2187,
+            "support_confusion_no_to_no": 2160,
+            "support_confusion_yes_to_yes": 27,
+            "support_no": 2160,
+            "support_yes": 27,
+            "truth_correct": 2187,
+            "truth_no": 2160,
+            "truth_wrong": 0,
+            "truth_yes": 27
+          },
+          "informed_support": {
+            "answered": 2187,
+            "correct_action": 2187,
+            "licensed_no": 2160,
+            "licensed_yes": 27,
+            "observable_query_tuples": 1755,
+            "state_queries": 2187,
+            "support_confusion_no_to_no": 2160,
+            "support_confusion_yes_to_yes": 27,
+            "support_no": 2160,
+            "support_yes": 27,
+            "truth_correct": 2187,
+            "truth_no": 2160,
+            "truth_wrong": 0,
+            "truth_yes": 27
+          },
+          "informed_truth": {
+            "answered": 2187,
+            "correct_action": 2187,
+            "licensed_no": 2160,
+            "licensed_yes": 27,
+            "observable_query_tuples": 1755,
+            "state_queries": 2187,
+            "support_confusion_no_to_no": 2160,
+            "support_confusion_yes_to_yes": 27,
+            "support_no": 2160,
+            "support_yes": 27,
+            "truth_correct": 2187,
+            "truth_no": 2160,
+            "truth_wrong": 0,
+            "truth_yes": 27
+          },
+          "plain_support": {
+            "answered": 2187,
+            "correct_action": 2160,
+            "licensed_no": 2160,
+            "observable_query_tuples": 1755,
+            "state_queries": 2187,
+            "support_confusion_no_to_no": 2160,
+            "support_confusion_yes_to_no": 27,
+            "support_no": 2160,
+            "support_yes": 27,
+            "truth_correct": 2160,
+            "truth_no": 2160,
+            "truth_wrong": 27,
+            "truth_yes": 27,
+            "wrong_on_determinate": 27
+          }
+        },
+        "28": {
+          "always_abstain": {
+            "observable_query_tuples": 1820,
+            "state_queries": 2268,
+            "support_confusion_no_to_abstain": 2240,
+            "support_confusion_yes_to_abstain": 28,
+            "support_no": 2240,
+            "support_yes": 28,
+            "truth_no": 2240,
+            "truth_yes": 28,
+            "withheld": 2268
+          },
+          "always_no": {
+            "answered": 2268,
+            "correct_action": 2240,
+            "licensed_no": 2240,
+            "observable_query_tuples": 1820,
+            "state_queries": 2268,
+            "support_confusion_no_to_no": 2240,
+            "support_confusion_yes_to_no": 28,
+            "support_no": 2240,
+            "support_yes": 28,
+            "truth_correct": 2240,
+            "truth_no": 2240,
+            "truth_wrong": 28,
+            "truth_yes": 28,
+            "wrong_on_determinate": 28
+          },
+          "exact_oracle": {
+            "answered": 2268,
+            "correct_action": 2268,
+            "licensed_no": 2240,
+            "licensed_yes": 28,
+            "observable_query_tuples": 1820,
+            "state_queries": 2268,
+            "support_confusion_no_to_no": 2240,
+            "support_confusion_yes_to_yes": 28,
+            "support_no": 2240,
+            "support_yes": 28,
+            "truth_correct": 2268,
+            "truth_no": 2240,
+            "truth_wrong": 0,
+            "truth_yes": 28
+          },
+          "informed_support": {
+            "answered": 2268,
+            "correct_action": 2268,
+            "licensed_no": 2240,
+            "licensed_yes": 28,
+            "observable_query_tuples": 1820,
+            "state_queries": 2268,
+            "support_confusion_no_to_no": 2240,
+            "support_confusion_yes_to_yes": 28,
+            "support_no": 2240,
+            "support_yes": 28,
+            "truth_correct": 2268,
+            "truth_no": 2240,
+            "truth_wrong": 0,
+            "truth_yes": 28
+          },
+          "informed_truth": {
+            "answered": 2268,
+            "correct_action": 2268,
+            "licensed_no": 2240,
+            "licensed_yes": 28,
+            "observable_query_tuples": 1820,
+            "state_queries": 2268,
+            "support_confusion_no_to_no": 2240,
+            "support_confusion_yes_to_yes": 28,
+            "support_no": 2240,
+            "support_yes": 28,
+            "truth_correct": 2268,
+            "truth_no": 2240,
+            "truth_wrong": 0,
+            "truth_yes": 28
+          },
+          "plain_support": {
+            "answered": 2268,
+            "correct_action": 2240,
+            "licensed_no": 2240,
+            "observable_query_tuples": 1820,
+            "state_queries": 2268,
+            "support_confusion_no_to_no": 2240,
+            "support_confusion_yes_to_no": 28,
+            "support_no": 2240,
+            "support_yes": 28,
+            "truth_correct": 2240,
+            "truth_no": 2240,
+            "truth_wrong": 28,
+            "truth_yes": 28,
+            "wrong_on_determinate": 28
+          }
+        },
+        "29": {
+          "always_abstain": {
+            "observable_query_tuples": 1885,
+            "state_queries": 2349,
+            "support_confusion_no_to_abstain": 2320,
+            "support_confusion_yes_to_abstain": 29,
+            "support_no": 2320,
+            "support_yes": 29,
+            "truth_no": 2320,
+            "truth_yes": 29,
+            "withheld": 2349
+          },
+          "always_no": {
+            "answered": 2349,
+            "correct_action": 2320,
+            "licensed_no": 2320,
+            "observable_query_tuples": 1885,
+            "state_queries": 2349,
+            "support_confusion_no_to_no": 2320,
+            "support_confusion_yes_to_no": 29,
+            "support_no": 2320,
+            "support_yes": 29,
+            "truth_correct": 2320,
+            "truth_no": 2320,
+            "truth_wrong": 29,
+            "truth_yes": 29,
+            "wrong_on_determinate": 29
+          },
+          "exact_oracle": {
+            "answered": 2349,
+            "correct_action": 2349,
+            "licensed_no": 2320,
+            "licensed_yes": 29,
+            "observable_query_tuples": 1885,
+            "state_queries": 2349,
+            "support_confusion_no_to_no": 2320,
+            "support_confusion_yes_to_yes": 29,
+            "support_no": 2320,
+            "support_yes": 29,
+            "truth_correct": 2349,
+            "truth_no": 2320,
+            "truth_wrong": 0,
+            "truth_yes": 29
+          },
+          "informed_support": {
+            "answered": 2349,
+            "correct_action": 2349,
+            "licensed_no": 2320,
+            "licensed_yes": 29,
+            "observable_query_tuples": 1885,
+            "state_queries": 2349,
+            "support_confusion_no_to_no": 2320,
+            "support_confusion_yes_to_yes": 29,
+            "support_no": 2320,
+            "support_yes": 29,
+            "truth_correct": 2349,
+            "truth_no": 2320,
+            "truth_wrong": 0,
+            "truth_yes": 29
+          },
+          "informed_truth": {
+            "answered": 2349,
+            "correct_action": 2349,
+            "licensed_no": 2320,
+            "licensed_yes": 29,
+            "observable_query_tuples": 1885,
+            "state_queries": 2349,
+            "support_confusion_no_to_no": 2320,
+            "support_confusion_yes_to_yes": 29,
+            "support_no": 2320,
+            "support_yes": 29,
+            "truth_correct": 2349,
+            "truth_no": 2320,
+            "truth_wrong": 0,
+            "truth_yes": 29
+          },
+          "plain_support": {
+            "answered": 2349,
+            "correct_action": 2320,
+            "licensed_no": 2320,
+            "observable_query_tuples": 1885,
+            "state_queries": 2349,
+            "support_confusion_no_to_no": 2320,
+            "support_confusion_yes_to_no": 29,
+            "support_no": 2320,
+            "support_yes": 29,
+            "truth_correct": 2320,
+            "truth_no": 2320,
+            "truth_wrong": 29,
+            "truth_yes": 29,
+            "wrong_on_determinate": 29
+          }
+        },
+        "59": {
+          "always_abstain": {
+            "observable_query_tuples": 3835,
+            "state_queries": 4779,
+            "support_confusion_no_to_abstain": 4720,
+            "support_confusion_yes_to_abstain": 59,
+            "support_no": 4720,
+            "support_yes": 59,
+            "truth_no": 4720,
+            "truth_yes": 59,
+            "withheld": 4779
+          },
+          "always_no": {
+            "answered": 4779,
+            "correct_action": 4720,
+            "licensed_no": 4720,
+            "observable_query_tuples": 3835,
+            "state_queries": 4779,
+            "support_confusion_no_to_no": 4720,
+            "support_confusion_yes_to_no": 59,
+            "support_no": 4720,
+            "support_yes": 59,
+            "truth_correct": 4720,
+            "truth_no": 4720,
+            "truth_wrong": 59,
+            "truth_yes": 59,
+            "wrong_on_determinate": 59
+          },
+          "exact_oracle": {
+            "answered": 4779,
+            "correct_action": 4779,
+            "licensed_no": 4720,
+            "licensed_yes": 59,
+            "observable_query_tuples": 3835,
+            "state_queries": 4779,
+            "support_confusion_no_to_no": 4720,
+            "support_confusion_yes_to_yes": 59,
+            "support_no": 4720,
+            "support_yes": 59,
+            "truth_correct": 4779,
+            "truth_no": 4720,
+            "truth_wrong": 0,
+            "truth_yes": 59
+          },
+          "informed_support": {
+            "answered": 4779,
+            "correct_action": 4779,
+            "licensed_no": 4720,
+            "licensed_yes": 59,
+            "observable_query_tuples": 3835,
+            "state_queries": 4779,
+            "support_confusion_no_to_no": 4720,
+            "support_confusion_yes_to_yes": 59,
+            "support_no": 4720,
+            "support_yes": 59,
+            "truth_correct": 4779,
+            "truth_no": 4720,
+            "truth_wrong": 0,
+            "truth_yes": 59
+          },
+          "informed_truth": {
+            "answered": 4779,
+            "correct_action": 4779,
+            "licensed_no": 4720,
+            "licensed_yes": 59,
+            "observable_query_tuples": 3835,
+            "state_queries": 4779,
+            "support_confusion_no_to_no": 4720,
+            "support_confusion_yes_to_yes": 59,
+            "support_no": 4720,
+            "support_yes": 59,
+            "truth_correct": 4779,
+            "truth_no": 4720,
+            "truth_wrong": 0,
+            "truth_yes": 59
+          },
+          "plain_support": {
+            "answered": 4779,
+            "correct_action": 4720,
+            "licensed_no": 4720,
+            "observable_query_tuples": 3835,
+            "state_queries": 4779,
+            "support_confusion_no_to_no": 4720,
+            "support_confusion_yes_to_no": 59,
+            "support_no": 4720,
+            "support_yes": 59,
+            "truth_correct": 4720,
+            "truth_no": 4720,
+            "truth_wrong": 59,
+            "truth_yes": 59,
+            "wrong_on_determinate": 59
+          }
+        },
+        "60": {
+          "always_abstain": {
+            "observable_query_tuples": 3900,
+            "state_queries": 4860,
+            "support_confusion_no_to_abstain": 4800,
+            "support_confusion_yes_to_abstain": 60,
+            "support_no": 4800,
+            "support_yes": 60,
+            "truth_no": 4800,
+            "truth_yes": 60,
+            "withheld": 4860
+          },
+          "always_no": {
+            "answered": 4860,
+            "correct_action": 4800,
+            "licensed_no": 4800,
+            "observable_query_tuples": 3900,
+            "state_queries": 4860,
+            "support_confusion_no_to_no": 4800,
+            "support_confusion_yes_to_no": 60,
+            "support_no": 4800,
+            "support_yes": 60,
+            "truth_correct": 4800,
+            "truth_no": 4800,
+            "truth_wrong": 60,
+            "truth_yes": 60,
+            "wrong_on_determinate": 60
+          },
+          "exact_oracle": {
+            "answered": 4860,
+            "correct_action": 4860,
+            "licensed_no": 4800,
+            "licensed_yes": 60,
+            "observable_query_tuples": 3900,
+            "state_queries": 4860,
+            "support_confusion_no_to_no": 4800,
+            "support_confusion_yes_to_yes": 60,
+            "support_no": 4800,
+            "support_yes": 60,
+            "truth_correct": 4860,
+            "truth_no": 4800,
+            "truth_wrong": 0,
+            "truth_yes": 60
+          },
+          "informed_support": {
+            "answered": 4860,
+            "correct_action": 4860,
+            "licensed_no": 4800,
+            "licensed_yes": 60,
+            "observable_query_tuples": 3900,
+            "state_queries": 4860,
+            "support_confusion_no_to_no": 4800,
+            "support_confusion_yes_to_yes": 60,
+            "support_no": 4800,
+            "support_yes": 60,
+            "truth_correct": 4860,
+            "truth_no": 4800,
+            "truth_wrong": 0,
+            "truth_yes": 60
+          },
+          "informed_truth": {
+            "answered": 4860,
+            "correct_action": 4860,
+            "licensed_no": 4800,
+            "licensed_yes": 60,
+            "observable_query_tuples": 3900,
+            "state_queries": 4860,
+            "support_confusion_no_to_no": 4800,
+            "support_confusion_yes_to_yes": 60,
+            "support_no": 4800,
+            "support_yes": 60,
+            "truth_correct": 4860,
+            "truth_no": 4800,
+            "truth_wrong": 0,
+            "truth_yes": 60
+          },
+          "plain_support": {
+            "answered": 4860,
+            "correct_action": 4800,
+            "licensed_no": 4800,
+            "observable_query_tuples": 3900,
+            "state_queries": 4860,
+            "support_confusion_no_to_no": 4800,
+            "support_confusion_yes_to_no": 60,
+            "support_no": 4800,
+            "support_yes": 60,
+            "truth_correct": 4800,
+            "truth_no": 4800,
+            "truth_wrong": 60,
+            "truth_yes": 60,
+            "wrong_on_determinate": 60
+          }
+        },
+        "61": {
+          "always_abstain": {
+            "observable_query_tuples": 3965,
+            "state_queries": 4941,
+            "support_confusion_no_to_abstain": 4880,
+            "support_confusion_yes_to_abstain": 61,
+            "support_no": 4880,
+            "support_yes": 61,
+            "truth_no": 4880,
+            "truth_yes": 61,
+            "withheld": 4941
+          },
+          "always_no": {
+            "answered": 4941,
+            "correct_action": 4880,
+            "licensed_no": 4880,
+            "observable_query_tuples": 3965,
+            "state_queries": 4941,
+            "support_confusion_no_to_no": 4880,
+            "support_confusion_yes_to_no": 61,
+            "support_no": 4880,
+            "support_yes": 61,
+            "truth_correct": 4880,
+            "truth_no": 4880,
+            "truth_wrong": 61,
+            "truth_yes": 61,
+            "wrong_on_determinate": 61
+          },
+          "exact_oracle": {
+            "answered": 4941,
+            "correct_action": 4941,
+            "licensed_no": 4880,
+            "licensed_yes": 61,
+            "observable_query_tuples": 3965,
+            "state_queries": 4941,
+            "support_confusion_no_to_no": 4880,
+            "support_confusion_yes_to_yes": 61,
+            "support_no": 4880,
+            "support_yes": 61,
+            "truth_correct": 4941,
+            "truth_no": 4880,
+            "truth_wrong": 0,
+            "truth_yes": 61
+          },
+          "informed_support": {
+            "answered": 4941,
+            "correct_action": 4941,
+            "licensed_no": 4880,
+            "licensed_yes": 61,
+            "observable_query_tuples": 3965,
+            "state_queries": 4941,
+            "support_confusion_no_to_no": 4880,
+            "support_confusion_yes_to_yes": 61,
+            "support_no": 4880,
+            "support_yes": 61,
+            "truth_correct": 4941,
+            "truth_no": 4880,
+            "truth_wrong": 0,
+            "truth_yes": 61
+          },
+          "informed_truth": {
+            "answered": 4941,
+            "correct_action": 4941,
+            "licensed_no": 4880,
+            "licensed_yes": 61,
+            "observable_query_tuples": 3965,
+            "state_queries": 4941,
+            "support_confusion_no_to_no": 4880,
+            "support_confusion_yes_to_yes": 61,
+            "support_no": 4880,
+            "support_yes": 61,
+            "truth_correct": 4941,
+            "truth_no": 4880,
+            "truth_wrong": 0,
+            "truth_yes": 61
+          },
+          "plain_support": {
+            "answered": 4941,
+            "correct_action": 4880,
+            "licensed_no": 4880,
+            "observable_query_tuples": 3965,
+            "state_queries": 4941,
+            "support_confusion_no_to_no": 4880,
+            "support_confusion_yes_to_no": 61,
+            "support_no": 4880,
+            "support_yes": 61,
+            "truth_correct": 4880,
+            "truth_no": 4880,
+            "truth_wrong": 61,
+            "truth_yes": 61,
+            "wrong_on_determinate": 61
+          }
+        },
+        "62": {
+          "always_abstain": {
+            "observable_query_tuples": 4030,
+            "state_queries": 5022,
+            "support_confusion_no_to_abstain": 4960,
+            "support_confusion_yes_to_abstain": 62,
+            "support_no": 4960,
+            "support_yes": 62,
+            "truth_no": 4960,
+            "truth_yes": 62,
+            "withheld": 5022
+          },
+          "always_no": {
+            "answered": 5022,
+            "correct_action": 4960,
+            "licensed_no": 4960,
+            "observable_query_tuples": 4030,
+            "state_queries": 5022,
+            "support_confusion_no_to_no": 4960,
+            "support_confusion_yes_to_no": 62,
+            "support_no": 4960,
+            "support_yes": 62,
+            "truth_correct": 4960,
+            "truth_no": 4960,
+            "truth_wrong": 62,
+            "truth_yes": 62,
+            "wrong_on_determinate": 62
+          },
+          "exact_oracle": {
+            "answered": 5022,
+            "correct_action": 5022,
+            "licensed_no": 4960,
+            "licensed_yes": 62,
+            "observable_query_tuples": 4030,
+            "state_queries": 5022,
+            "support_confusion_no_to_no": 4960,
+            "support_confusion_yes_to_yes": 62,
+            "support_no": 4960,
+            "support_yes": 62,
+            "truth_correct": 5022,
+            "truth_no": 4960,
+            "truth_wrong": 0,
+            "truth_yes": 62
+          },
+          "informed_support": {
+            "answered": 5022,
+            "correct_action": 5022,
+            "licensed_no": 4960,
+            "licensed_yes": 62,
+            "observable_query_tuples": 4030,
+            "state_queries": 5022,
+            "support_confusion_no_to_no": 4960,
+            "support_confusion_yes_to_yes": 62,
+            "support_no": 4960,
+            "support_yes": 62,
+            "truth_correct": 5022,
+            "truth_no": 4960,
+            "truth_wrong": 0,
+            "truth_yes": 62
+          },
+          "informed_truth": {
+            "answered": 5022,
+            "correct_action": 5022,
+            "licensed_no": 4960,
+            "licensed_yes": 62,
+            "observable_query_tuples": 4030,
+            "state_queries": 5022,
+            "support_confusion_no_to_no": 4960,
+            "support_confusion_yes_to_yes": 62,
+            "support_no": 4960,
+            "support_yes": 62,
+            "truth_correct": 5022,
+            "truth_no": 4960,
+            "truth_wrong": 0,
+            "truth_yes": 62
+          },
+          "plain_support": {
+            "answered": 5022,
+            "correct_action": 4960,
+            "licensed_no": 4960,
+            "observable_query_tuples": 4030,
+            "state_queries": 5022,
+            "support_confusion_no_to_no": 4960,
+            "support_confusion_yes_to_no": 62,
+            "support_no": 4960,
+            "support_yes": 62,
+            "truth_correct": 4960,
+            "truth_no": 4960,
+            "truth_wrong": 62,
+            "truth_yes": 62,
+            "wrong_on_determinate": 62
+          }
+        },
+        "63": {
+          "always_abstain": {
+            "observable_query_tuples": 4095,
+            "state_queries": 5103,
+            "support_confusion_no_to_abstain": 5040,
+            "support_confusion_yes_to_abstain": 63,
+            "support_no": 5040,
+            "support_yes": 63,
+            "truth_no": 5040,
+            "truth_yes": 63,
+            "withheld": 5103
+          },
+          "always_no": {
+            "answered": 5103,
+            "correct_action": 5040,
+            "licensed_no": 5040,
+            "observable_query_tuples": 4095,
+            "state_queries": 5103,
+            "support_confusion_no_to_no": 5040,
+            "support_confusion_yes_to_no": 63,
+            "support_no": 5040,
+            "support_yes": 63,
+            "truth_correct": 5040,
+            "truth_no": 5040,
+            "truth_wrong": 63,
+            "truth_yes": 63,
+            "wrong_on_determinate": 63
+          },
+          "exact_oracle": {
+            "answered": 5103,
+            "correct_action": 5103,
+            "licensed_no": 5040,
+            "licensed_yes": 63,
+            "observable_query_tuples": 4095,
+            "state_queries": 5103,
+            "support_confusion_no_to_no": 5040,
+            "support_confusion_yes_to_yes": 63,
+            "support_no": 5040,
+            "support_yes": 63,
+            "truth_correct": 5103,
+            "truth_no": 5040,
+            "truth_wrong": 0,
+            "truth_yes": 63
+          },
+          "informed_support": {
+            "answered": 5103,
+            "correct_action": 5103,
+            "licensed_no": 5040,
+            "licensed_yes": 63,
+            "observable_query_tuples": 4095,
+            "state_queries": 5103,
+            "support_confusion_no_to_no": 5040,
+            "support_confusion_yes_to_yes": 63,
+            "support_no": 5040,
+            "support_yes": 63,
+            "truth_correct": 5103,
+            "truth_no": 5040,
+            "truth_wrong": 0,
+            "truth_yes": 63
+          },
+          "informed_truth": {
+            "answered": 5103,
+            "correct_action": 5103,
+            "licensed_no": 5040,
+            "licensed_yes": 63,
+            "observable_query_tuples": 4095,
+            "state_queries": 5103,
+            "support_confusion_no_to_no": 5040,
+            "support_confusion_yes_to_yes": 63,
+            "support_no": 5040,
+            "support_yes": 63,
+            "truth_correct": 5103,
+            "truth_no": 5040,
+            "truth_wrong": 0,
+            "truth_yes": 63
+          },
+          "plain_support": {
+            "answered": 5103,
+            "correct_action": 5040,
+            "licensed_no": 5040,
+            "observable_query_tuples": 4095,
+            "state_queries": 5103,
+            "support_confusion_no_to_no": 5040,
+            "support_confusion_yes_to_no": 63,
+            "support_no": 5040,
+            "support_yes": 63,
+            "truth_correct": 5040,
+            "truth_no": 5040,
+            "truth_wrong": 63,
+            "truth_yes": 63,
+            "wrong_on_determinate": 63
+          }
+        },
+        "64": {
+          "always_abstain": {
+            "observable_query_tuples": 4160,
+            "state_queries": 5184,
+            "support_confusion_no_to_abstain": 5120,
+            "support_confusion_yes_to_abstain": 64,
+            "support_no": 5120,
+            "support_yes": 64,
+            "truth_no": 5120,
+            "truth_yes": 64,
+            "withheld": 5184
+          },
+          "always_no": {
+            "answered": 5184,
+            "correct_action": 5120,
+            "licensed_no": 5120,
+            "observable_query_tuples": 4160,
+            "state_queries": 5184,
+            "support_confusion_no_to_no": 5120,
+            "support_confusion_yes_to_no": 64,
+            "support_no": 5120,
+            "support_yes": 64,
+            "truth_correct": 5120,
+            "truth_no": 5120,
+            "truth_wrong": 64,
+            "truth_yes": 64,
+            "wrong_on_determinate": 64
+          },
+          "exact_oracle": {
+            "answered": 5184,
+            "correct_action": 5184,
+            "licensed_no": 5120,
+            "licensed_yes": 64,
+            "observable_query_tuples": 4160,
+            "state_queries": 5184,
+            "support_confusion_no_to_no": 5120,
+            "support_confusion_yes_to_yes": 64,
+            "support_no": 5120,
+            "support_yes": 64,
+            "truth_correct": 5184,
+            "truth_no": 5120,
+            "truth_wrong": 0,
+            "truth_yes": 64
+          },
+          "informed_support": {
+            "answered": 5184,
+            "correct_action": 5184,
+            "licensed_no": 5120,
+            "licensed_yes": 64,
+            "observable_query_tuples": 4160,
+            "state_queries": 5184,
+            "support_confusion_no_to_no": 5120,
+            "support_confusion_yes_to_yes": 64,
+            "support_no": 5120,
+            "support_yes": 64,
+            "truth_correct": 5184,
+            "truth_no": 5120,
+            "truth_wrong": 0,
+            "truth_yes": 64
+          },
+          "informed_truth": {
+            "answered": 5184,
+            "correct_action": 5184,
+            "licensed_no": 5120,
+            "licensed_yes": 64,
+            "observable_query_tuples": 4160,
+            "state_queries": 5184,
+            "support_confusion_no_to_no": 5120,
+            "support_confusion_yes_to_yes": 64,
+            "support_no": 5120,
+            "support_yes": 64,
+            "truth_correct": 5184,
+            "truth_no": 5120,
+            "truth_wrong": 0,
+            "truth_yes": 64
+          },
+          "plain_support": {
+            "answered": 5184,
+            "correct_action": 5120,
+            "licensed_no": 5120,
+            "observable_query_tuples": 4160,
+            "state_queries": 5184,
+            "support_confusion_no_to_no": 5120,
+            "support_confusion_yes_to_no": 64,
+            "support_no": 5120,
+            "support_yes": 64,
+            "truth_correct": 5120,
+            "truth_no": 5120,
+            "truth_wrong": 64,
+            "truth_yes": 64,
+            "wrong_on_determinate": 64
+          }
+        }
+      },
+      "case_trace": [
+        {
+          "center": 0,
+          "cutoff": 26,
+          "predictions": {
+            "informed_support": "no",
+            "informed_truth": "no",
+            "plain_support": "no"
+          },
+          "support": "abstain",
+          "tag": 0,
+          "truth": "no",
+          "weight": 11
+        },
+        {
+          "center": 65,
+          "cutoff": 26,
+          "predictions": {
+            "informed_support": "no",
+            "informed_truth": "no",
+            "plain_support": "no"
+          },
+          "support": "abstain",
+          "tag": 0,
+          "truth": "yes",
+          "weight": 11
+        },
+        {
+          "center": 0,
+          "cutoff": 64,
+          "predictions": {
+            "informed_support": "no",
+            "informed_truth": "no",
+            "plain_support": "no"
+          },
+          "support": "no",
+          "tag": 0,
+          "truth": "no",
+          "weight": 11
+        },
+        {
+          "center": 65,
+          "cutoff": 64,
+          "predictions": {
+            "informed_support": "no",
+            "informed_truth": "no",
+            "plain_support": "no"
+          },
+          "support": "no",
+          "tag": 0,
+          "truth": "no",
+          "weight": 11
+        }
+      ],
+      "inverse_codebook_unchanged_cells": {
+        "informed_support": 42768,
+        "informed_truth": 42768,
+        "plain_support": 42768
+      },
+      "totals": {
+        "always_abstain": {
+          "correct_action": 765,
+          "observable_query_tuples": 34320,
+          "state_queries": 42768,
+          "support_abstain": 765,
+          "support_confusion_abstain_to_abstain": 765,
+          "support_confusion_no_to_abstain": 41370,
+          "support_confusion_yes_to_abstain": 633,
+          "support_no": 41370,
+          "support_yes": 633,
+          "truth_no": 42090,
+          "truth_yes": 678,
+          "withheld": 42768
+        },
+        "always_no": {
+          "accidentally_true_on_ambiguous": 720,
+          "answered": 42768,
+          "correct_action": 41370,
+          "definite_on_ambiguous": 765,
+          "licensed_no": 41370,
+          "observable_query_tuples": 34320,
+          "state_queries": 42768,
+          "support_abstain": 765,
+          "support_confusion_abstain_to_no": 765,
+          "support_confusion_no_to_no": 41370,
+          "support_confusion_yes_to_no": 633,
+          "support_no": 41370,
+          "support_yes": 633,
+          "truth_correct": 42090,
+          "truth_no": 42090,
+          "truth_wrong": 678,
+          "truth_yes": 678,
+          "wrong_on_determinate": 633
+        },
+        "exact_oracle": {
+          "answered": 42003,
+          "correct_action": 42768,
+          "licensed_no": 41370,
+          "licensed_yes": 633,
+          "observable_query_tuples": 34320,
+          "state_queries": 42768,
+          "support_abstain": 765,
+          "support_confusion_abstain_to_abstain": 765,
+          "support_confusion_no_to_no": 41370,
+          "support_confusion_yes_to_yes": 633,
+          "support_no": 41370,
+          "support_yes": 633,
+          "truth_correct": 42003,
+          "truth_no": 42090,
+          "truth_wrong": 0,
+          "truth_yes": 678,
+          "withheld": 765
+        },
+        "informed_support": {
+          "accidentally_true_on_ambiguous": 720,
+          "answered": 42768,
+          "correct_action": 41898,
+          "definite_on_ambiguous": 765,
+          "licensed_no": 41370,
+          "licensed_yes": 528,
+          "observable_query_tuples": 34320,
+          "state_queries": 42768,
+          "support_abstain": 765,
+          "support_confusion_abstain_to_no": 765,
+          "support_confusion_no_to_no": 41370,
+          "support_confusion_yes_to_no": 105,
+          "support_confusion_yes_to_yes": 528,
+          "support_no": 41370,
+          "support_yes": 633,
+          "truth_correct": 42618,
+          "truth_no": 42090,
+          "truth_wrong": 150,
+          "truth_yes": 678,
+          "wrong_on_determinate": 105
+        },
+        "informed_truth": {
+          "accidentally_true_on_ambiguous": 720,
+          "answered": 42768,
+          "correct_action": 41898,
+          "definite_on_ambiguous": 765,
+          "licensed_no": 41370,
+          "licensed_yes": 528,
+          "observable_query_tuples": 34320,
+          "state_queries": 42768,
+          "support_abstain": 765,
+          "support_confusion_abstain_to_no": 765,
+          "support_confusion_no_to_no": 41370,
+          "support_confusion_yes_to_no": 105,
+          "support_confusion_yes_to_yes": 528,
+          "support_no": 41370,
+          "support_yes": 633,
+          "truth_correct": 42618,
+          "truth_no": 42090,
+          "truth_wrong": 150,
+          "truth_yes": 678,
+          "wrong_on_determinate": 105
+        },
+        "plain_support": {
+          "accidentally_true_on_ambiguous": 720,
+          "answered": 42768,
+          "correct_action": 41370,
+          "definite_on_ambiguous": 765,
+          "licensed_no": 41370,
+          "observable_query_tuples": 34320,
+          "state_queries": 42768,
+          "support_abstain": 765,
+          "support_confusion_abstain_to_no": 765,
+          "support_confusion_no_to_no": 41370,
+          "support_confusion_yes_to_no": 633,
+          "support_no": 41370,
+          "support_yes": 633,
+          "truth_correct": 42090,
+          "truth_no": 42090,
+          "truth_wrong": 678,
+          "truth_yes": 678,
+          "wrong_on_determinate": 633
+        }
+      },
+      "trees": {
+        "informed_support": [
+          "matching_digits",
+          3,
+          [
+            "cutoff",
+            23,
+            [
+              "tag",
+              0,
+              [
+                "weight",
+                10,
+                [
+                  "cutoff",
+                  8,
+                  "abstain",
+                  "no"
+                ],
+                "abstain"
+              ],
+              [
+                "matching_digits",
+                2,
+                [
+                  "matching_digits",
+                  1,
+                  [
+                    "cutoff",
+                    2,
+                    [
+                      "matching_digits",
+                      0,
+                      "no",
+                      "yes"
+                    ],
+                    "no"
+                  ],
+                  [
+                    "cutoff",
+                    8,
+                    "yes",
+                    "no"
+                  ]
+                ],
+                "yes"
+              ]
+            ],
+            "no"
+          ],
+          "yes"
+        ],
+        "informed_truth": [
+          "matching_digits",
+          3,
+          [
+            "matching_digits",
+            2,
+            [
+              "cutoff",
+              8,
+              [
+                "matching_digits",
+                1,
+                [
+                  "cutoff",
+                  2,
+                  [
+                    "matching_digits",
+                    0,
+                    [
+                      "tag",
+                      0,
+                      [
+                        "weight",
+                        1,
+                        "no",
+                        "no"
+                      ],
+                      "no"
+                    ],
+                    "yes"
+                  ],
+                  [
+                    "tag",
+                    0,
+                    [
+                      "weight",
+                      1,
+                      "no",
+                      "no"
+                    ],
+                    "no"
+                  ]
+                ],
+                "yes"
+              ],
+              [
+                "cutoff",
+                23,
+                [
+                  "tag",
+                  0,
+                  [
+                    "weight",
+                    10,
+                    "no",
+                    "no"
+                  ],
+                  "no"
+                ],
+                "no"
+              ]
+            ],
+            [
+              "cutoff",
+              23,
+              "yes",
+              "no"
+            ]
+          ],
+          "yes"
+        ],
+        "plain_support": [
+          "cutoff",
+          23,
+          [
+            "tag",
+            0,
+            [
+              "weight",
+              10,
+              [
+                "cutoff",
+                8,
+                "abstain",
+                "no"
+              ],
+              "abstain"
+            ],
+            [
+              "cutoff",
+              8,
+              [
+                "cutoff",
+                2,
+                [
+                  "tag",
+                  1,
+                  [
+                    "weight",
+                    1,
+                    "yes",
+                    "no"
+                  ],
+                  [
+                    "tag",
+                    63,
+                    [
+                      "tag",
+                      62,
+                      [
+                        "tag",
+                        3,
+                        "no",
+                        "no"
+                      ],
+                      "no"
+                    ],
+                    [
+                      "weight",
+                      1,
+                      "yes",
+                      "no"
+                    ]
+                  ]
+                ],
+                [
+                  "tag",
+                  4,
+                  [
+                    "weight",
+                    4,
+                    [
+                      "tag",
+                      3,
+                      [
+                        "weight",
+                        3,
+                        "no",
+                        "no"
+                      ],
+                      [
+                        "weight",
+                        3,
+                        "no",
+                        "yes"
+                      ]
+                    ],
+                    "no"
+                  ],
+                  [
+                    "tag",
+                    9,
+                    [
+                      "weight",
+                      4,
+                      "no",
+                      [
+                        "tag",
+                        6,
+                        "no",
+                        "no"
+                      ]
+                    ],
+                    [
+                      "tag",
+                      13,
+                      [
+                        "weight",
+                        4,
+                        "no",
+                        "no"
+                      ],
+                      [
+                        "tag",
+                        18,
+                        "no",
+                        "no"
+                      ]
+                    ]
+                  ]
+                ]
+              ],
+              [
+                "tag",
+                12,
+                [
+                  "weight",
+                  12,
+                  [
+                    "tag",
+                    10,
+                    [
+                      "weight",
+                      10,
+                      [
+                        "tag",
+                        9,
+                        "no",
+                        "no"
+                      ],
+                      "no"
+                    ],
+                    [
+                      "weight",
+                      10,
+                      "no",
+                      [
+                        "tag",
+                        11,
+                        "yes",
+                        "no"
+                      ]
+                    ]
+                  ],
+                  "no"
+                ],
+                [
+                  "tag",
+                  54,
+                  [
+                    "tag",
+                    45,
+                    [
+                      "tag",
+                      27,
+                      [
+                        "weight",
+                        12,
+                        "no",
+                        "no"
+                      ],
+                      [
+                        "weight",
+                        18,
+                        "no",
+                        "no"
+                      ]
+                    ],
+                    [
+                      "weight",
+                      18,
+                      "no",
+                      [
+                        "tag",
+                        48,
+                        "no",
+                        "no"
+                      ]
+                    ]
+                  ],
+                  [
+                    "weight",
+                    10,
+                    [
+                      "tag",
+                      63,
+                      [
+                        "weight",
+                        9,
+                        "no",
+                        "no"
+                      ],
+                      [
+                        "weight",
+                        9,
+                        "no",
+                        "yes"
+                      ]
+                    ],
+                    "no"
+                  ]
+                ]
+              ]
+            ]
+          ],
+          [
+            "tag",
+            0,
+            "no",
+            [
+              "tag",
+              42,
+              [
+                "weight",
+                42,
+                [
+                  "tag",
+                  34,
+                  [
+                    "weight",
+                    34,
+                    [
+                      "tag",
+                      31,
+                      [
+                        "weight",
+                        31,
+                        "no",
+                        "no"
+                      ],
+                      [
+                        "weight",
+                        31,
+                        "no",
+                        "no"
+                      ]
+                    ],
+                    "no"
+                  ],
+                  [
+                    "weight",
+                    34,
+                    "no",
+                    [
+                      "tag",
+                      38,
+                      [
+                        "weight",
+                        38,
+                        "no",
+                        "no"
+                      ],
+                      [
+                        "weight",
+                        38,
+                        "no",
+                        "no"
+                      ]
+                    ]
+                  ]
+                ],
+                "no"
+              ],
+              [
+                "weight",
+                42,
+                "no",
+                [
+                  "tag",
+                  52,
+                  [
+                    "weight",
+                    52,
+                    [
+                      "tag",
+                      47,
+                      [
+                        "weight",
+                        47,
+                        "no",
+                        "no"
+                      ],
+                      [
+                        "weight",
+                        47,
+                        "no",
+                        "no"
+                      ]
+                    ],
+                    "no"
+                  ],
+                  [
+                    "weight",
+                    52,
+                    "no",
+                    [
+                      "tag",
+                      56,
+                      [
+                        "weight",
+                        56,
+                        "no",
+                        "no"
+                      ],
+                      [
+                        "weight",
+                        56,
+                        "no",
+                        "no"
+                      ]
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      },
+      "valid_tag_substitution_centers_1_and_2": {
+        "exact_oracle": {
+          "answered": 1056,
+          "correct_action": 1008,
+          "licensed_no": 1008,
+          "observable_query_tuples": 1056,
+          "previously_licensed_now_wrong": 48,
+          "state_queries": 1056,
+          "support_confusion_no_to_no": 1008,
+          "support_confusion_no_to_yes": 24,
+          "support_confusion_yes_to_no": 24,
+          "support_no": 1032,
+          "support_yes": 24,
+          "swapped_prediction_differs": 48,
+          "truth_correct": 1008,
+          "truth_no": 1032,
+          "truth_wrong": 48,
+          "truth_yes": 24,
+          "wrong_on_determinate": 48
+        },
+        "informed_support": {
+          "answered": 1056,
+          "correct_action": 1008,
+          "licensed_no": 1008,
+          "observable_query_tuples": 1056,
+          "previously_licensed_now_wrong": 48,
+          "state_queries": 1056,
+          "support_confusion_no_to_no": 1008,
+          "support_confusion_no_to_yes": 24,
+          "support_confusion_yes_to_no": 24,
+          "support_no": 1032,
+          "support_yes": 24,
+          "swapped_prediction_differs": 48,
+          "truth_correct": 1008,
+          "truth_no": 1032,
+          "truth_wrong": 48,
+          "truth_yes": 24,
+          "wrong_on_determinate": 48
+        },
+        "informed_truth": {
+          "answered": 1056,
+          "correct_action": 1008,
+          "licensed_no": 1008,
+          "observable_query_tuples": 1056,
+          "previously_licensed_now_wrong": 48,
+          "state_queries": 1056,
+          "support_confusion_no_to_no": 1008,
+          "support_confusion_no_to_yes": 24,
+          "support_confusion_yes_to_no": 24,
+          "support_no": 1032,
+          "support_yes": 24,
+          "swapped_prediction_differs": 48,
+          "truth_correct": 1008,
+          "truth_no": 1032,
+          "truth_wrong": 48,
+          "truth_yes": 24,
+          "wrong_on_determinate": 48
+        }
+      }
+    }
+  },
+  "registration_sha256": "6d24324f51102c1b885bdec884e4eae924ea99dad58f6d106273f08f09f472d1",
+  "test_cutoffs": [
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64
+  ],
+  "test_state_queries": 42768,
+  "train_cutoffs": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58
+  ],
+  "train_state_queries": 125712
+}

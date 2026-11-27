@@ -1,0 +1,22 @@
+# Query-relative provenance for a cyclotomic witness
+
+Local design record, 22 November 2026. This is a separate follow-up to the GEMA audit and the published slot-3 experiment. Its unit is a pair consisting of an explicitly designated alternative witness and a membership question.
+
+## Prior knowledge and prospective checks
+
+A read-only exploratory calculation before this record established 65 distinct answer vectors and observed the five partial-residue ambiguity counts 5,184, 1,728, 576, 192, 0. The distinction between 1 bit for one binary question and 7 bits for every membership query was already derived. These are reproduction targets. The executable oracle, corruption controls, renaming check, conflict-clique check, metrics and test suite described below will be implemented after this record. This file is a local registration with a separately recorded digest. It has no independent timestamp.
+
+## Design
+
+Fix cutoff 64 and use all 81 possible residues for a single integral center. Bind the reference answer vectors to commit `4b1c9fbbfb9bc50a3f791c2c1f3d7f2adb336c87`, file `research/uriel/experiments/slot-three/results/weights.json`, Git blob `17a8fcd38b942d11f64438921237b2cbe3859f7d`. Verify the file against literal 3-adic integer distances using repeated integer division. The oracle uses reference answer vectors only to specify which histories are compatible with each allowed observation. A real memory controller has no access to a hidden center through the query.
+
+For each residue and each weight 1 through 64, test observing the first 0, 1, 2, 3, or 4 base-3 digits. Return yes or no only when every compatible witness agrees. Otherwise return undetermined. Reproduce the oracle independently by counting congruent centers in each observation class. A query-independent table will give every residue/weight pair unit weight. This enumeration supplies no distribution over the proof author's choices.
+
+1. A sound oracle must make zero false admissions. Additional observed digits must preserve every previous decision. An always-no comparison is expected to score highly on raw accuracy and miss every positive.
+2. Exchange centers 1 and 2, which have equal set cardinality. If the new answer is reported for the previous witness at weight 1, the test must expose the error. Test every transposition of distinct positive centers for this class of error. When an observation retains only set size, an empty set licenses negative membership; a singleton-size record leaves all 64 possible singleton values unresolved for each query. Renaming all hidden record identifiers by a fixed nontrivial bijection must preserve all decisions after matching rows to the same underlying facts.
+3. For a query fixed to weight 1 before encoding, certify the minimal number of tag values by a pair of distinct answers and a matching encoder. For all 64 possible later queries, certify all pairwise conflicts among 65 answer vectors, verify that an explicit seven-bit tag answers every query, and exhibit a collision for a particular six-bit truncation. A lower bound for all six-bit codes comes from the 65 mutually conflicting states. Test equality at the strict cutoff using weight 28 and center 1.
+4. Report true positives, true negatives, false positives, false negatives and abstentions by true label. Define coverage as admitted answers / 5,184, positive recall as true positives / 64, negative coverage (specificity counting abstentions as missed negatives) as true negatives / 5,120, and accuracy on answered queries as correct admissions / admissions. Give numerators and denominators. The selective accuracy of an always-abstaining rule is undefined.
+
+The interpretation is restricted to deterministic answer recovery with a fixed-length protected tag, no free side channel, and the named single-center family. Unknown selection by the published existence proof, performance of a learned memory system, and empirical distribution of centers are separate questions.
+
+Before implementing the runner, we also selected cutoffs 26, 27, 28, 80, 81 and 82 as held-out *inputs* to the observation oracle. Crossing an exact power of 3 must change the strict comparison modulus. Check zero false admissions, the full-modulus endpoint, and the count of distinct answer sets against independent valuation labels at these cutoffs. These tests probe implementation generality. The predictions follow mathematically from the cutoff rule.

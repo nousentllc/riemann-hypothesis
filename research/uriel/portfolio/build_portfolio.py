@@ -49,7 +49,8 @@ def write_markdown():
         "[Open the branch index below](#studies-by-research-question) · "
         "[Download the searchable HTML map](research-map.html) · "
         "[Machine-readable index](study-index.json) · "
-        "[Older research ZIPs](legacy-packages/README.md)",
+        "[Older research ZIPs](legacy-packages/README.md) · "
+        "[Publication archive](publication-archive/README.md)",
         "",
         "## Where to start",
         "",

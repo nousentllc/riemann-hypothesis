@@ -1,0 +1,45 @@
+{
+  "lean_commit": "819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+  "mathlib_commit": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "modules": {
+    "SevenBase": {
+      "source_sha256": "be589a8693076ef59fb3cf75a528a29e1a6326ddd71118c2c44e0e9ea5c5871a",
+      "endpoints": [
+        "SlotSevenProbe.base_class_number",
+        "SlotSevenProbe.seven_pid"
+      ],
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "replay": "replaying SevenBase"
+    },
+    "Uniformity": {
+      "source_sha256": "e3cf6ba9057c9d74de0ebab546280cf7a9b84b1e0511d9b06fcc8426b3806a79",
+      "endpoints": [
+        "WindowUniformity.moving_constants",
+        "WindowUniformity.no_late_windows"
+      ],
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "replay": "replaying Uniformity"
+    },
+    "DensityGate": {
+      "source_sha256": "b1c354f0ca71f232348487670edf10dcb042560cd2792b64181ac0ded840bc43",
+      "endpoints": [
+        "DensityGate.full_envelope",
+        "DensityGate.necessary"
+      ],
+      "axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "replay": "replaying DensityGate"
+    }
+  }
+}

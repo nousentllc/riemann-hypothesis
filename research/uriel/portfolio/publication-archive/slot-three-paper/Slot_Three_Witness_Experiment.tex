@@ -1,0 +1,285 @@
+% !TeX program = lualatex
+% Standalone source. Run lualatex twice on this file (or latexmk -lualatex).
+% All tables and vector artwork are typeset here; no external assets or bibliography.
+\documentclass[11pt,letterpaper]{article}
+\usepackage{iftex}
+\RequireLuaTeX
+\usepackage[letterpaper,left=1in,right=1in,top=.89in,bottom=.85in,headheight=22pt,headsep=14pt,footskip=25pt]{geometry}
+\usepackage{fontspec}
+\setmainfont{Latin Modern Roman}
+\setsansfont{Latin Modern Sans}
+\setmonofont{Latin Modern Mono}[Scale=.91]
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{booktabs,tabularx,array,xcolor,fancyhdr,enumitem,microtype}
+\usepackage{hyperref,bookmark}
+\definecolor{ink}{HTML}{183248}
+\definecolor{soft}{HTML}{4B6070}
+\definecolor{accent}{HTML}{1F6263}
+\definecolor{hair}{HTML}{BBC9CB}
+\definecolor{paperblue}{HTML}{F0F5F5}
+\hypersetup{pdftitle={Exceptional weights and the information needed to recover them},
+pdfauthor={Nous / Uriel Research},pdfsubject={Class-number ascent, conductor-one witnesses and exact finite memory bounds},
+pdfkeywords={cyclotomic fields, Lean, class number, p-adic distance, evidence, memory, selective decoding},
+colorlinks=true,linkcolor=accent,urlcolor=accent,bookmarksnumbered=true,pdfdisplaydoctitle=true}
+\usepackage{titlesec}
+\titleformat{\section}{\Large\bfseries\color{ink}}{\thesection}{.55em}{}
+\titlespacing*{\section}{0pt}{0pt}{8pt}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt plus .4pt minus .3pt}
+\setlength{\emergencystretch}{1.3em}
+\setlength{\abovedisplayskip}{6pt}
+\setlength{\belowdisplayskip}{6pt}
+\setlist[enumerate]{topsep=2pt,itemsep=2pt,parsep=0pt,leftmargin=1.65em}
+\setlist[itemize]{topsep=2pt,itemsep=2pt,parsep=0pt,leftmargin=1.3em}
+\pagestyle{fancy}\fancyhf{}
+\fancyhead[L]{\small\sffamily\color{soft}Nous / Uriel Research}
+\fancyhead[R]{\small\sffamily\color{soft}Cyclotomic witnesses and memory}
+\fancyfoot[C]{\small\sffamily\color{soft}\thepage}
+\renewcommand{\headrulewidth}{.35pt}
+\renewcommand{\headrule}{\hbox to\headwidth{\color{hair}\leaders\hrule height\headrulewidth\hfill}}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcommand{\sub}[1]{\par\medskip{\large\bfseries\color{ink}#1}\par\nobreak}
+\newcommand{\seplink}{\enspace\textperiodcentered\enspace}
+\newcommand{\src}[1]{{\small\color{soft}#1}}
+\newcommand{\lead}[1]{{\sffamily\bfseries\color{accent}#1}}
+\newcommand{\tagline}[1]{{\small\sffamily\color{soft}#1}}
+\newcommand{\Cl}{\operatorname{Cl}}
+\newcommand{\Gal}{\operatorname{Gal}}
+\newcommand{\Z}{\mathbb Z}\newcommand{\Q}{\mathbb Q}\newcommand{\F}{\mathbb F}
+\newcommand{\sha}{\operatorname{shaInv}}
+\newcommand{\id}[1]{{\small\texttt{\detokenize{#1}}}}
+\newcommand{\pub}[2]{\href{https://github.com/nousentllc/riemann-hypothesis/blob/e674cb750ef96b2f5e7cd46586ea4edb9998715a/research/uriel/experiments/#1}{#2}}
+\newcommand{\asc}[2]{\pub{ascent-witness/#1}{#2}}
+\newcommand{\orig}[2]{\href{https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/AutomorphicVarieties/#1}{#2}}
+\newcommand{\reportsection}[2]{\clearpage\section{#1}\label{#2}}
+\newcommand{\guide}[2]{\hyperref[#1]{#2}\dotfill\pageref{#1}}
+\newcommand{\formbox}[1]{\par\smallskip\noindent{\setlength{\fboxsep}{8pt}\colorbox{paperblue}{\parbox{\dimexpr\linewidth-2\fboxsep\relax}{#1}}}\par\smallskip}
+\linespread{1.055}\raggedbottom
+\begin{document}
+\thispagestyle{plain}
+\pdfbookmark[0]{Exceptional weights and the information needed to recover them}{title}
+{\small\sffamily\bfseries\color{accent}NOUS / URIEL RESEARCH}\hfill
+{\small\sffamily\color{soft}Experiment report \enspace|\enspace 22 November 2026}\par
+\vspace{10pt}
+{\fontsize{26}{30}\selectfont\bfseries\color{ink}\raggedright Exceptional weights and the\\information needed to recover them\par}
+\vspace{5pt}
+{\large A conductor-one experiment over $\Q(\zeta_3)$ and an exact test of witness memory\par}
+\vspace{5pt}
+{\small\sffamily\color{soft}AI Research project \enspace/\enspace Uriel experiment series \enspace/\enspace Local research edition}\par
+\vspace{8pt}
+\textbf{Abstract.} Can the integer 1 be exceptional in a proof whose arithmetic estimate holds at every positive integer? We trace that question to one auxiliary prime in the 2026 Lean formalization of the Riemann hypothesis (RH). For the conductor-one field at 3, we prove that every layer of the relevant cyclotomic tower has class number prime to 3. The tower invariant in the estimate consequently vanishes. With one generator and one matrix presentation fixed, both an empty exception list and the list $\{1\}$ satisfy the required bounds. The published proof chooses a witness by existence and supplies no residue that identifies its list.
+
+We then designate a witness explicitly and ask what a stored record must preserve about it. At cutoff 64 there are 65 possible lists. Seven fixed-length bits suffice for all future membership questions. Under a budget of 27 record values, three low ternary digits recover zero of the 64 positive answers. A different allocation recovers eleven while answering one more question overall. Eleven is the optimum at the original coverage for the stated zero-error decoder and uniform benchmark.
+
+\sub{Reading guide}
+\begin{tabularx}{\linewidth}{@{}Y@{\hspace{1.3em}}Y@{}}
+\guide{sec:choice}{The published witness}&\guide{sec:digits}{What low digits preserve}\\
+\guide{sec:ascent}{All-layer arithmetic}&\guide{sec:opt}{The 27-value optimum}\\
+\guide{sec:fields}{Arithmetic counterexamples}&\guide{sec:interpret}{Controls and interpretation}\\
+\guide{sec:shared}{One lift, many lists}&\guide{sec:audit}{Verification and reproduction}\\
+\end{tabularx}
+
+\sub{Evidence in this report}
+The tower and witness statements have a targeted Lean kernel replay. The seven field calculations have PARI/GP certificates. The storage experiment exhausts its finite population in Python. Each supports a different conclusion. The full RH entry point and a learned memory system were outside these runs. \href{https://github.com/nousentllc/riemann-hypothesis/pull/5}{Public experiment and review record.}
+
+\reportsection{Where the published proof chooses a center}{sec:choice}
+For the primitive character of conductor one, the auxiliary field at the odd prime 3 can be realized as $L=\Q(\zeta_3)$, where $\zeta_3$ is a primitive cube root of unity. An \emph{exceptional weight} here is a positive integer placed in a finite set when applying a cohomological estimate. The set lets the proof impose a sufficient condition on the window where it uses the estimate. The distance used below is 3-adic. For a nonzero integer $m$, $|m|_3=3^{-v_3(m)}$, where $v_3(m)$ counts the factors of 3 in $m$. Integers are close when their difference is divisible by a high power of 3.
+
+\sub{From a matrix to a 3-adic point}
+The source obtains a bound $R$ on the number of generators for its tower module $X_P$. Set $j=\lfloor\log_3R\rfloor+3$. A Galois generator $\gamma$ acts by an endomorphism $A$ on the module. The construction chooses a surjection $\pi:\Z_3^R\to X_P$ and a matrix $S$ whose columns lift the action, so $\pi S=A^{3^j}\pi$. The roots $z_i$ of the characteristic polynomial of $S$ provide the indices for the centers.
+
+For a root $z_i$, put $b=u^{3^j}$, where $u$ is the cyclotomic character evaluated at $\gamma$. The argument treats a family of closed 3-adic balls indexed by the natural numbers. A finite subfamily has a common point, and compactness gives a point $s_i\in\Z_3$ in the intersection of the entire family. At level $c$ this supplies
+\[
+                 3^{-(j+c)}|s_i-e|_3 \ \le\ |b^e z_i-1|_3
+                 \qquad\text{for every natural } e .
+\]
+The next operation selects such a point for each root. The distance inequality travels through the proof. Its statement contains no value of $s_i$ modulo a specified power of 3. \orig{AdditiveValuationNorms/Helly.lean\#L20-L21}{Compactness step}\seplink
+\orig{AdditiveValuationNorms/DetBound.lean\#L19-L24}{selection per root}.
+
+\sub{From a selected set to the common host}
+The odd-prime construction also selects a cap, a field model, and evidence of its bound. At the relevant cutoff it obtains an exceptional set. The conductor-one application must coordinate slot 3 with an odd slot at 7 and the two-primary component. It chooses an interval for the union. For the same ordered primes $q,d$, the field constructor matches a host to the window. The proof transfers the estimate and the prime-row property to the same selected family index. The conclusion \id{CoreAtH} records properties at that host. Its retained frame-group set has a different type from the exceptional integer weights. \pub{joint-witness/README.md}{PairRow-to-host trace}\seplink
+\orig{LayeredIsomorphisms/ThmBabOf.lean\#L39-L89}{cap, model and exceptional-set selections}.
+
+\formbox{\textbf{The computational question.} Given a center residue, can we decide membership? And if we retain only the arithmetic estimate, do we still know which residue was used? The first question has an exact answer on page~\pageref{sec:shared}. Opposite admissible choices show what the estimate alone leaves open.}
+
+\reportsection{Why the arithmetic bound holds in every layer}{sec:ascent}
+Let $F_n=\Q(\zeta_{3^n})$ for $n\ge1$, with the inclusions used by the original tower. Write $\Cl(F)$ for the finite group of ideal classes of a number field $F$ and $h(F)=|\Cl(F)|$ for its class number. The earlier witness calculation required that 3 divide none of these class numbers. Even arbitrarily many finite checks could not establish that premise for every $n$. The experiment proves this classical special case by induction in Lean and connects it to the source fields. \asc{ASCENT.md}{Arithmetic antecedents and proof routes}.
+\[
+                    \boxed{\quad 3\nmid h(F_n)\qquad(n\ge1).\quad}
+\]
+
+\textbf{1. Fix a cubic step.} The bottom field $F_1=\Q(\zeta_3)$ has class number one. For $F=F_n$ and $E=F_{n+1}$, the extension $E/F$ is cyclic of degree three. There is exactly one ramified prime of $F$, the prime above 3. Its ramification index is three. Both fields have only complex infinite places. The Lean proof checks this for the inclusions used by the original class norm. \asc{NextLayer.lean}{Layer declarations}.
+
+\textbf{2. Suppose that three divides the upstairs class number.} The Hilbert class field $H/E$ is an everywhere-unramified abelian extension with Galois group $A\simeq\Cl(E)$. The subgroup of cubes $A^3$ is preserved by all automorphisms of $A$. Under the supposition, $A/A^3$ is a nontrivial group of exponent three. The field $U$ fixed by $A^3$ satisfies $E\subsetneq U\subseteq H$ and is unramified over $E$. To use $U$ over $F$, one must also prove normality downstairs. Transport under conjugation preserves the unramified abelian property of $H/E$. Its defining maximality preserves $H$, and invariance of $A^3$ then preserves $U$. \asc{HilbertNormal.lean}{Normality proof}\seplink \asc{UpstairsExtension.lean}{elementary cover}.
+
+\textbf{3. Descend the obstruction.} The group $G=\Gal(U/F)$ has order a power of three greater than three. Above the single ramified prime its inertia subgroup has order three. All other nontrivial inertia subgroups are conjugate to it. In a finite 3-group a proper subgroup lies in a normal subgroup of index three. Choose such a subgroup containing the inertia. Normality includes all its conjugates. The fixed field of this subgroup is a cyclic cubic extension of $F$ unramified everywhere. Its degree must divide $h(F)$ by class field theory, contradicting $3\nmid h(F)$. This closes the induction. \asc{InertiaDescent.lean}{Inertia descent}\seplink \asc{TowerResult.lean}{assembled proof}.
+
+\sub{An independent check on what the norm retains}
+For a generator $\sigma$ of $\Gal(E/F)$, form $D_\sigma(c)=\sigma(c)c^{-1}$. The source class norm induces a bijection $\Cl(E)/\operatorname{im}D_\sigma\to\Cl(F)$, and $|\Cl(E)^{\Gal(E/F)}|=h(F)$. Extending a norm multiplies the conjugates. Taking the norm of an extended downstairs class cubes it. Cubing is bijective in groups of order prime to three. These conclusions follow \emph{after} the induction. They leave later exact class numbers open. \asc{Transfer.lean}{Transfer identities and fixed-class count}.
+
+\reportsection{Two fields that break the bound}{sec:fields}
+The cyclotomic proof uses a single ramified prime to put all inertia in one proper normal subgroup. We kept the base $F=\Q(\zeta_3)$ and the relative degree three, then changed the ramification. Let $D_1,D_2$ be the two cyclic cubic fields of conductor 91 and let $K_i=FD_i$. PARI/GP 2.19.1 constructed the fields and certified all seven class-group calculations using the full \id{bnfcertify} check.
+
+{\renewcommand{\arraystretch}{1.15}\begin{tabularx}{\linewidth}{@{}Y r l r@{}}
+\toprule Field or defining polynomial & $[\cdot:\Q]$ & Class group & $h$\\ \midrule
+$\Q(\zeta_3)$ & 2 & trivial & 1\\
+$\Q(\zeta_9)$ & 6 & trivial & 1\\
+$\Q(\zeta_{27})$ & 18 & trivial & 1\\
+$D_1:\ x^3-x^2-30x-27$ & 3 & $C_3$ & 3\\
+$D_2:\ x^3-x^2-30x+64$ & 3 & $C_3$ & 3\\
+$K_1=\Q(\zeta_3)D_1$ & 6 & $C_6\times C_6$ & 36\\
+$K_2=\Q(\zeta_3)D_2$ & 6 & $C_3\times C_3$ & 9\\
+\bottomrule
+\end{tabularx}}
+\src{$C_m$ denotes a cyclic group of order $m$. Data and defining polynomials are preserved in the \asc{results/certified_fields.json}{certification record}.}
+
+\sub{What the matched examples isolate}
+Both 7 and 13 split in $F$. Four prime ideals of $F$ ramify in each $K_i/F$, two over each rational prime. The two extensions have the same ramification indices as each other and the same discriminant over $\Q$. Each order-three symmetry fixes nine ideal classes, as checked using both generators. In $K_1$ the remaining 27 classes form nine orbits of length three. In $K_2$ every class is fixed. In each case $9\nmid h(F)=1$. This directly falsifies the proposed fixed-class divisibility after removing the one-ramified-prime condition.
+
+\sub{A control on the mechanism}
+Inside the cyclotomic field of conductor 273, the two independent cubic character directions give a common field $T$ with $\Gal(T/F)\simeq C_3\times C_3$. For either diagonal choice $K_i$, $T/K_i$ is unramified everywhere. Taking just the coordinate at 7 leaves ramification at 13 in the top extension. The finite-group calculation checked all $144^2=20{,}736$ products and the inertia intersections. The field interpretation also uses the cyclotomic ramification formulas. This test explains the appearance of a factor of three. Determining the exact class numbers requires the separate class-group computation. \asc{FIELDS.md}{Fields, control and arithmetic interpretation}.
+
+{\small\begin{tabularx}{\linewidth}{@{}Ycc@{}}
+\toprule Middle field $K$ & $e$ in $K/F$ at $(3,7,13)$ & $e$ in $T/K$ at $(3,7,13)$\\
+\midrule
+Either diagonal field $K_i$ & $(1,3,3)$ & $(1,1,1)$\\
+Coordinate field at 7 & $(1,3,1)$ & $(1,1,3)$\\
+\bottomrule
+\end{tabularx}}
+\src{An index $e=1$ means the prime is unramified in that extension. The last column isolates the difference between the diagonal and the coordinate control.}
+
+\reportsection{One fixed lift admits every single-weight list}{sec:shared}
+The class-number theorem supplies the missing premise for a previous result about $X_P$, the module encoding the tower data. Its class-group rank bounds give a presentation with zero generators, so the module has one element. The source expresses the relevant layer invariant as a cokernel length on this module. For every positive weight its value is
+\[
+             \sha(L_1,3,e)=0 \qquad(e\ge1)
+\]
+for each field $L_1$ realizing a specified layer over $L$. Here \id{shaInv} denotes the invariant in the bound. The statement quantifies over those layer realizations. \pub{slot-three/RankZero.lean}{Rank-to-vanishing argument}\seplink \asc{TowerResult.lean}{unconditional specialization}.
+
+\sub{A single presentation for all the choices}
+A module with one element also admits a surjection from $\Z_3$ with a zero $1\times1$ lift matrix. Its only characteristic root is $z=0$. For the cap-one construction $R=1$, $j=3$ and $c=1$, the root constraint on page~\pageref{sec:choice} becomes $|s-e|_3/81\le1$ for every $e$. Every $s\in\Z_3$ satisfies it. The joined theorem chooses $\gamma$ and the surjection $\pi$ \emph{once}. With them fixed, any cutoff $Z$ and any label $a\in\{0,\ldots,Z\}$ give a valid integer center $s=a$, the required arithmetic bounds, and a precise answer to every in-range query. The same center may be kept across cutoffs, which ties their answers together. \asc{SharedLift.lean}{Shared-lift theorem and quantifier order}.
+
+\sub{The strict test that decides membership}
+For a positive cutoff $Z$, put $k=\lfloor\log_3 Z\rfloor$. The single-center filter is
+\[
+     E_Z(s)=\{e\in\{1,\ldots,Z\}: |s-e|_3<3^{-k}\}.
+\]
+For integral centers this strict inequality says $s\equiv e\pmod{3^{k+1}}$. Since $3^{k+1}>Z$, at most one in-range integer can pass the test. Taking $s=0$ gives the empty list and $s=a$ gives $\{a\}$ for every $1\le a\le Z$. For $Z=0$ the interval is empty and there is one profile. Lean proves the membership equivalence and the matching bound on possible profiles. \asc{WitnessRecord.lean}{Filter and record bounds}.
+
+\formbox{\textbf{Worked example.} At $Z=64$, the threshold is $1/27$ and the modulus is 81. For center 1, weight 1 is included and weight 28 is excluded since $|1-28|_3=1/27$ exactly. For center 0, no weight passes. Both lists serve the estimate on the same arithmetic data. Weight 1 has vanishing invariant in either case.}
+
+For any of the 81 supplied residues one can therefore compute all 64 answers. The published argument provides no equality between its selected witness and these designated cap-one witnesses. In particular, this table cannot determine the full union of exceptions or the final host.
+
+\reportsection{What a record of the center can recover}{sec:digits}
+An encoder sees the residue of a designated integral center $s\bmod81$. It writes a tag before the query arrives. A reader later receives the tag and a weight $e\in\{1,\ldots,64\}$. It can answer \emph{yes} or \emph{no} only when every residue compatible with that tag agrees. Otherwise it must abstain. The Nous provenance study calls this the observation-fiber criterion. For each query, exact recovery requires the same answer throughout a group of histories with the same observation.
+
+\sub{One bit for a known query, seven for any later query}
+If the question \emph{Is weight 1 exceptional?} is announced in advance, its answer bit is sufficient. At least one bit is needed because centers 1 and 2 give opposite answers. To handle any query after encoding, the record must distinguish 65 profiles: the empty set and 64 singletons. Every pair of distinct profiles disagrees on an allowed question. A six-bit code offers only 64 values. Seven bits suffice by recording 0 for empty and $e$ for the singleton $\{e\}$. This is a fixed-length payload bound with a shared decoding rule and a trusted link between tag and witness. For general $Z$, the required alphabet has size $Z+1$.
+
+\sub{A complete census at cutoff 64}
+We give each of 81 residues and 64 queries equal weight. The 5,184 decisions include 64 positives and 5,120 negatives. Seventeen different residues yield the empty profile. Uniform weighting defines the benchmark. The distribution of the source’s choice is unknown. With $d$ low ternary digits, the visible observation is $s\bmod 3^d$.
+
+{\renewcommand{\arraystretch}{1.14}\begin{tabular*}{\linewidth}{@{\extracolsep{\fill}}l r r r r r@{}}
+\toprule Digits & Yes & No & Withheld & Coverage & Positive recall\\\midrule
+0 & 0 & 0 & 5,184 & 0.00\% & 0\%\\
+1 & 0 & 3,456 & 1,728 & 66.67\% & 0\%\\
+2 & 0 & 4,608 & 576 & 88.89\% & 0\%\\
+3 & 0 & 4,992 & 192 & 96.30\% & 0\%\\
+4 & 64 & 5,120 & 0 & 100.00\% & 100\%\\
+\bottomrule
+\end{tabular*}}
+\src{Coverage is the fraction of all cells answered. Positive recall is the fraction of the 64 true positives answered yes. Every definite answer in this table agrees with its named witness.}
+
+With three digits, each observation has three compatible residues. On a query with the same residue modulo 27 as the tag, one of those three is the actual positive state and the others disagree. Every such query is withheld. An always-no reader would score 98.77\% ordinary accuracy while missing every positive. The two-reader cross-check and the controls on page~\pageref{sec:interpret} use all cells, including abstentions.
+
+\reportsection{How to allocate 27 record values}{sec:opt}
+We fixed the input distribution, zero-error rule and number of tag values at the three-digit baseline. The design question was whether a different record could recover more positive answers while still answering at least 4,992 queries overall. A positive answer for weight $e$ is possible only if its positive state has a tag to itself. Reserving too many tags this way crowds the remaining states together.
+
+\sub{An encoding that achieves eleven positives}
+Group all 17 empty residues under a single tag. Reserve 11 tags for the individual weights 1 through 11. Use seven tags for triples of weights 12 through 32 and eight tags for quadruples from 33 through 64. This uses $1+11+7+8=27$ tags. A positive-only group of $t\ge2$ states withholds $t$ questions on each state, so its cost is $t^2$. The construction withholds $7\cdot3^2+8\cdot4^2=191$ decisions.
+
+{\renewcommand{\arraystretch}{1.12}\begin{tabularx}{\linewidth}{@{}Yrrrr@{}}
+\toprule Encoding & Yes & No & Withheld & Answered\\\midrule
+Three low ternary digits & 0 & 4,992 & 192 & 4,992\\
+Eleven reserved singleton tags & 11 & 4,982 & 191 & 4,993\\
+\bottomrule
+\end{tabularx}}
+
+\sub{Why twelve cannot meet the same coverage}
+A record partitions the 81 states by their visible tag. To minimize ambiguity, all empty states can be moved to one existing empty-bearing tag having the fewest positive states. Each moved empty state faces at most as many ambiguous queries. Removing empties from other groups can only resolve additional answers. Thus an optimum exists with one empty-bearing tag.
+
+If that tag also contains $r$ positive states, its ambiguity cost is $r(17+r)$. A positive singleton costs zero. Once the number of remaining positive-only groups and their total population are fixed, their sum of squared sizes is smallest when the sizes differ by at most one. Transferring a state from a group of size $u$ to one of size $v$ decreases the cost by $2(u-v-1)$ whenever $u\ge v+2$.
+
+The optimizer enumerates the number of pure singletons, the number $r$, and the number of remaining groups under the 27-tag budget. Balancing the final groups yields an exact finite minimization. The minimum withheld is \textbf{191} for at least eleven positives and \textbf{196} for at least twelve. The baseline allows 192. Independent enumeration of 2,753 complete partitions across 22 smaller populations and budgets reproduced the same optimum curves as the reduced algorithm on those cases.
+
+\smallskip
+{\small\sffamily\bfseries\color{ink}Minimum withheld decisions as the positive-recall target increases}\par\nobreak
+{\centering\setlength{\unitlength}{.98pt}
+\begin{picture}(423,76)(0,-6)
+\color{hair}
+\put(23,4){\line(1,0){277}}
+\color{soft}\put(23,36){\line(1,0){280}}
+\put(307,36){\makebox(0,0)[l]{\scriptsize baseline limit 192}}
+\color{accent}
+\qbezier(35,12)(56,15.75)(77,19.5)
+\qbezier(77,19.5)(98,23.25)(119,27)
+\qbezier(119,27)(140,30.75)(161,34.5)
+\qbezier(161,34.5)(182,38.25)(203,42)
+\qbezier(203,42)(224,45.75)(245,49.5)
+\qbezier(245,49.5)(266,56.25)(287,63)
+\put(35,12){\circle*{4}}\put(77,19.5){\circle*{4}}\put(119,27){\circle*{4}}
+\put(161,34.5){\circle*{5}}\put(203,42){\circle*{5}}\put(245,49.5){\circle*{4}}\put(287,63){\circle*{4}}
+\color{ink}\put(21,14){\makebox(0,0){\scriptsize 176}}\put(296,63){\makebox(0,0)[l]{\scriptsize 210}}\put(162,24){\makebox(0,0){\scriptsize 191}}\put(203,51){\makebox(0,0){\scriptsize 196}}
+\put(35,-3){\makebox(0,0){\scriptsize 8}}\put(77,-3){\makebox(0,0){\scriptsize 9}}
+\put(119,-3){\makebox(0,0){\scriptsize 10}}\put(161,-3){\makebox(0,0){\scriptsize 11}}
+\put(203,-3){\makebox(0,0){\scriptsize 12}}\put(245,-3){\makebox(0,0){\scriptsize 13}}\put(287,-3){\makebox(0,0){\scriptsize 14}}
+\put(307,-3){\makebox(0,0)[l]{\scriptsize positive target}}
+\end{picture}\par}
+
+\src{The comparison is aggregate. The proposed record loses 138 previously licensed negatives and gains 128 negatives and 11 positives. Reversing the weight labels preserves the totals and changes which weights are protected. The codebook and witness authentication are outside the 27-value budget.}
+
+\reportsection{What the controls tell us about memory}{sec:interpret}
+To test a proposed answer under the Nous criterion, hold fixed what the reader sees and vary the hidden witness. If the answer changes, that record cannot license a definite response. The 65 profiles give a setting in which every compatible witness can be enumerated. The GEMA architecture audit separately calls for tests of substituted provenance and for coverage and unsupported-answer measurements. This experiment gives those proposals a finite reference answer for each query.
+
+\sub{Four ways to try to break the result}
+\textbf{Swap the witness but retain the set size.} Centers 1 and 2 both specify one-element lists. A tag for center 2 attached to center 1 reverses the answer to the query about 1. All 2,016 pairs of distinct positive centers have two distinguishing queries despite equal set size. Keeping only the set size does resolve all 64 queries on the 17 empty residues, licensing 1,088 negatives. It identifies no member of a nonempty list.
+
+\textbf{Relabel the data and corrupt a binding.} Renaming all histories and observations and reversing input order preserved all 25,920 answers across five digit levels. Swapping the labels assigned to centers 1 and 2 failed the independent congruence check. The first control tests invariance to arbitrary names. The second demonstrates the need for the tag to refer to the actual witness.
+
+\textbf{Move the inequality boundary.} At center 1, changing $|s-e|_3<1/27$ to $|s-e|_3\le1/27$ would admit 28 and 55. A direct valuation check detects the change. The same independent implementations were compared at cutoffs 26, 27, 28, 80, 81 and 82. Across those cutoffs, 295,137 residue-query-level decisions agreed. These inputs straddle powers of three where the comparison modulus changes.
+
+\textbf{Count both gains and losses.} The eleven-tag design protects a particular set of rare positives. Equal population weights make their identities interchangeable for the optimization objective. A real task with unequal query frequencies or different costs for missed positives could favor a different allocation. Reporting the 138 lost negatives alongside the eleven gains makes that choice visible.
+
+\sub{What remains to test}
+The exact reader assumes a known codebook and a trusted association between record and witness. A learned reader could fail even when the answer is recoverable. A direct next experiment is to give a reader the same tag and query, conceal the witness, permute label names, and compare its definite answers and abstentions against the oracle. Report unsupported answers, coverage, and recall by true label separately. On the arithmetic side, applying the test to the auxiliary prime 7 would first require identifying its own tower module and admissible cap. Both are prospective questions.
+
+\reportsection{Verification, provenance and reproduction}{sec:audit}
+\sub{What the recorded Lean run covered}
+The combined experiment at \id{e674cb7} extends the conditional witness study at \id{4b1c9fb} using original source revision \id{40e56ba}. The verification driver using Lean 4.33.1 authenticated a closure of 1,103 original source modules. The build reused 1,100 authenticated original objects and eight earlier experiment modules. It compiled and kernel-replayed three more original modules and all ten new experiment modules.
+
+The assumption audit traversed 170 local theorem or axiom declarations, including generated declarations, checked 58 explicit axiom reports, and found all 14 required endpoints. The reported axiom sets contained only \id{propext}, \id{Classical.choice}, and \id{Quot.sound}. Three paired controls accepted the intended use and rejected changing the base of an unramifiedness claim, reading membership directly from a bound, or supplying only a bottom-field proof for the full tower. The run targets these dependencies and declarations. A fresh build of the full RH entry point was outside its scope. \asc{results/verification.json}{Replay record}\seplink \asc{REPRODUCE.md}{complete build instructions}.
+
+\sub{Where the evidence lives}
+{\renewcommand{\arraystretch}{1.15}\begin{tabularx}{\linewidth}{@{}p{.24\linewidth}Y@{}}
+\toprule Evidence & Persistent source or local project path\\ \midrule
+Arithmetic protocol & \asc{PROTOCOL.md}{Registered tests}\seplink \asc{CONTROLS.md}{follow-up control}\seplink \asc{ClassAscent.lean}{class group and Artin argument}.\\
+Formal endpoints & \asc{TowerResult.lean}{Tower induction and invariant}\seplink
+\asc{SharedLift.lean}{common presentation}\seplink \asc{WitnessRecord.lean}{exact record bound}.\\
+Finite controls & \asc{results/certified_fields.json}{Seven certified fields}\seplink
+\asc{results/ramification_control.json}{finite inertia computation}.\\
+Memory results & Under \id{output/slot3-witness-memory/}, see \id{results.json}, \id{allocation/results.json} and both protocol files.\\
+Research lineage & \id{nous_provenance_study/papers/part_I.tex}, Theorem 3.1, and \id{Uriel_GEMA_Formal_Architecture_Audit.md}, lines 405--412.\\
+\bottomrule
+\end{tabularx}}
+
+\sub{Reproducing the finite memory census}
+Run from \id{output/slot3-witness-memory/} in the local AI Research project, with the adjacent fork checkout available. These commands compare both generated outputs with the archived JSON files.
+{\small\begin{verbatim}
+python3 -B -m unittest -v test_benchmark
+python3 -B benchmark.py > /tmp/slot3-memory.json
+cmp /tmp/slot3-memory.json results.json
+(cd allocation && python3 -B allocation.py --repo ../../../riemann-experiments \
+  > /tmp/slot3-allocation.json && cmp /tmp/slot3-allocation.json results.json)
+\end{verbatim}}
+\src{The memory runner checks the pinned weight-table Git blob \id{17a8fcd38b942d11f64438921237b2cbe3859f7d}. The 65 profiles and initial ambiguity counts were visible before local registration. Renaming, corruption and cutoff tests were specified prospectively. The allocation protocol recorded the predicted 11/191 construction before checking it on the disclosed population. The local protocol files have no independent timestamp.}
+
+\end{document}

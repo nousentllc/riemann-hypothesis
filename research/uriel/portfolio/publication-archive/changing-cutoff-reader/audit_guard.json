@@ -1,0 +1,286 @@
+{
+  "channels": {
+    "residue": {
+      "ambiguous_yes_per_compatible_centers": {},
+      "distinct_observations": {
+        "held": {
+          "no": 42090,
+          "yes": 678
+        },
+        "train": {
+          "no": 123338,
+          "yes": 2374
+        }
+      },
+      "fitted_replay_and_guards": {
+        "coverage_matched_rotation": {
+          "definite_on_ambiguous": 0,
+          "licensed_action": 42618,
+          "licensed_definite": 42618,
+          "pairs": 42768,
+          "truth_matched": 42618,
+          "withheld": 0,
+          "withheld_on_determinate": 0,
+          "wrong_on_ambiguous": 0,
+          "wrong_on_determinate": 150
+        },
+        "informed_support": {
+          "definite_on_ambiguous": 0,
+          "licensed_action": 42618,
+          "licensed_definite": 42618,
+          "pairs": 42768,
+          "truth_matched": 42618,
+          "withheld": 0,
+          "withheld_on_determinate": 0,
+          "wrong_on_ambiguous": 0,
+          "wrong_on_determinate": 150
+        },
+        "informed_truth": {
+          "definite_on_ambiguous": 0,
+          "licensed_action": 42618,
+          "licensed_definite": 42618,
+          "pairs": 42768,
+          "truth_matched": 42618,
+          "withheld": 0,
+          "withheld_on_determinate": 0,
+          "wrong_on_ambiguous": 0,
+          "wrong_on_determinate": 150
+        },
+        "informed_with_guard": {
+          "definite_on_ambiguous": 0,
+          "licensed_action": 42618,
+          "licensed_definite": 42618,
+          "pairs": 42768,
+          "truth_matched": 42618,
+          "withheld": 0,
+          "withheld_on_determinate": 0,
+          "wrong_on_ambiguous": 0,
+          "wrong_on_determinate": 150
+        },
+        "plain_support": {
+          "definite_on_ambiguous": 0,
+          "licensed_action": 42090,
+          "licensed_definite": 42090,
+          "pairs": 42768,
+          "truth_matched": 42090,
+          "withheld": 0,
+          "withheld_on_determinate": 0,
+          "wrong_on_ambiguous": 0,
+          "wrong_on_determinate": 678
+        }
+      },
+      "held_center_weight_overlap": {
+        "seen_center_weight_pairs": 41067,
+        "unseen_center_weight_pairs": 1701
+      },
+      "per_cutoff_guard_coverage": {
+        "24": {
+          "guard": 0,
+          "rotated": 0
+        },
+        "25": {
+          "guard": 0,
+          "rotated": 0
+        },
+        "26": {
+          "guard": 0,
+          "rotated": 0
+        },
+        "27": {
+          "guard": 0,
+          "rotated": 0
+        },
+        "28": {
+          "guard": 0,
+          "rotated": 0
+        },
+        "29": {
+          "guard": 0,
+          "rotated": 0
+        },
+        "59": {
+          "guard": 0,
+          "rotated": 0
+        },
+        "60": {
+          "guard": 0,
+          "rotated": 0
+        },
+        "61": {
+          "guard": 0,
+          "rotated": 0
+        },
+        "62": {
+          "guard": 0,
+          "rotated": 0
+        },
+        "63": {
+          "guard": 0,
+          "rotated": 0
+        },
+        "64": {
+          "guard": 0,
+          "rotated": 0
+        }
+      },
+      "residue_tree_cutoff_tie": {
+        "held_raw_and_band_splits_disagree": 150,
+        "held_three_digit_branch": 1056,
+        "train_raw_and_band_splits_disagree": 0,
+        "train_three_digit_branch": 3104
+      },
+      "support_state_queries": {
+        "held": {
+          "no": 42090,
+          "yes": 678
+        },
+        "train": {
+          "no": 123338,
+          "yes": 2374
+        }
+      }
+    },
+    "terminal_list": {
+      "ambiguous_yes_per_compatible_centers": {
+        "1/17": 45
+      },
+      "distinct_observations": {
+        "held": {
+          "abstain": 45,
+          "no": 33642,
+          "yes": 633
+        },
+        "train": {
+          "abstain": 127,
+          "no": 98546,
+          "yes": 2207
+        }
+      },
+      "fitted_replay_and_guards": {
+        "coverage_matched_rotation": {
+          "definite_on_ambiguous": 510,
+          "licensed_action": 41643,
+          "licensed_definite": 41388,
+          "pairs": 42768,
+          "truth_matched": 41868,
+          "withheld": 765,
+          "withheld_on_determinate": 510,
+          "wrong_on_ambiguous": 30,
+          "wrong_on_determinate": 105
+        },
+        "informed_support": {
+          "definite_on_ambiguous": 765,
+          "licensed_action": 41898,
+          "licensed_definite": 41898,
+          "pairs": 42768,
+          "truth_matched": 42618,
+          "withheld": 0,
+          "withheld_on_determinate": 0,
+          "wrong_on_ambiguous": 45,
+          "wrong_on_determinate": 105
+        },
+        "informed_truth": {
+          "definite_on_ambiguous": 765,
+          "licensed_action": 41898,
+          "licensed_definite": 41898,
+          "pairs": 42768,
+          "truth_matched": 42618,
+          "withheld": 0,
+          "withheld_on_determinate": 0,
+          "wrong_on_ambiguous": 45,
+          "wrong_on_determinate": 105
+        },
+        "informed_with_guard": {
+          "definite_on_ambiguous": 0,
+          "licensed_action": 42663,
+          "licensed_definite": 41898,
+          "pairs": 42768,
+          "truth_matched": 41898,
+          "withheld": 765,
+          "withheld_on_determinate": 0,
+          "wrong_on_ambiguous": 0,
+          "wrong_on_determinate": 105
+        },
+        "plain_support": {
+          "definite_on_ambiguous": 765,
+          "licensed_action": 41370,
+          "licensed_definite": 41370,
+          "pairs": 42768,
+          "truth_matched": 42090,
+          "withheld": 0,
+          "withheld_on_determinate": 0,
+          "wrong_on_ambiguous": 45,
+          "wrong_on_determinate": 633
+        }
+      },
+      "held_center_weight_overlap": {
+        "seen_center_weight_pairs": 41067,
+        "unseen_center_weight_pairs": 1701
+      },
+      "per_cutoff_guard_coverage": {
+        "24": {
+          "guard": 238,
+          "rotated": 238
+        },
+        "25": {
+          "guard": 255,
+          "rotated": 255
+        },
+        "26": {
+          "guard": 272,
+          "rotated": 272
+        },
+        "27": {
+          "guard": 0,
+          "rotated": 0
+        },
+        "28": {
+          "guard": 0,
+          "rotated": 0
+        },
+        "29": {
+          "guard": 0,
+          "rotated": 0
+        },
+        "59": {
+          "guard": 0,
+          "rotated": 0
+        },
+        "60": {
+          "guard": 0,
+          "rotated": 0
+        },
+        "61": {
+          "guard": 0,
+          "rotated": 0
+        },
+        "62": {
+          "guard": 0,
+          "rotated": 0
+        },
+        "63": {
+          "guard": 0,
+          "rotated": 0
+        },
+        "64": {
+          "guard": 0,
+          "rotated": 0
+        }
+      },
+      "residue_tree_cutoff_tie": {},
+      "support_state_queries": {
+        "held": {
+          "abstain": 765,
+          "no": 41370,
+          "yes": 633
+        },
+        "train": {
+          "abstain": 2159,
+          "no": 121346,
+          "yes": 2207
+        }
+      }
+    }
+  },
+  "source_results_sha256": "2de65ff566b1a3748708e97b89a02b14c2af2ab98342d2392b7bdba68d3682ee"
+}

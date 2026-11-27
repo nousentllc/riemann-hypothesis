@@ -1,0 +1,931 @@
+% !TeX program = lualatex
+\documentclass[12pt,letterpaper]{article}
+\usepackage{iftex}\RequireLuaTeX
+\usepackage[margin=.97in,headheight=15pt,headsep=13pt,footskip=25pt]{geometry}
+\usepackage{fontspec}\setmainfont{Latin Modern Roman}\setsansfont{Latin Modern Sans}
+\usepackage{amsmath,amssymb,amsthm,booktabs,array,tabularx,longtable,graphicx,microtype,xcolor,fancyhdr,enumitem,hyperref,bookmark}
+\definecolor{ink}{HTML}{18342F}\definecolor{accent}{HTML}{126B63}\definecolor{muted}{HTML}{415953}\definecolor{berry}{HTML}{733F5B}
+\hypersetup{colorlinks=true,urlcolor=accent,linkcolor=accent,citecolor=accent,pdftitle={Nonvanishing and belief drift},pdfauthor={Uriel Research}}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcommand{\para}[1]{\par\medskip\noindent\textbf{#1}\quad}
+\newcommand{\src}[3]{\href{https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/#1.lean\#L#2}{#3}}
+\newcommand{\bfpart}[2]{\par\bigskip\noindent{\sffamily\small\bfseries\color{accent}#1}\par\smallskip{\LARGE\bfseries\color{ink}#2}\par\medskip}
+\newcommand{\kl}{\mathcal D}
+\pagestyle{fancy}\fancyhf{}\fancyhead[L]{\small\sffamily\color{muted}Uriel Research}\fancyhead[R]{\small\sffamily\color{muted}Nonvanishing and belief drift}\fancyfoot[C]{\small\sffamily\thepage}
+\renewcommand{\headrulewidth}{.3pt}\setlength{\parindent}{0pt}\setlength{\parskip}{4pt plus .7pt}\setlength{\emergencystretch}{3em}\raggedbottom
+\setcounter{tocdepth}{1}\setlist{itemsep=2pt,topsep=5pt}
+\directlua{
+  local source = assert(io.open(status.filename, "rb"))
+  local figures, retained = {}, {}
+  local name
+  for line in source:lines() do
+    local start = line:match("^BEGIN FIGURE ([a-z]+)")
+    if start then name = start; figures[name] = {}
+    elseif line:match("^END FIGURE") then name = nil
+    elseif name then table.insert(figures[name], line:match("^[0-9a-f]+"))
+    end
+  end
+  source:close()
+  function cycleFigure(key)
+    local hex = table.concat((assert(figures[key], "Missing figure " .. key)))
+    local data = hex:gsub("..", function(pair) return string.char(tonumber(pair,16)) end)
+    local document, fileid = pdfe.new(data, string.len(data), key)
+    retained[key] = document
+    local figure = img.scan{filename = fileid or document, pagebox = "crop",
+                            attr = "/Group<</S/Transparency/K false/I false>>"}
+    node.write(img.node(figure))
+  end
+}
+% Use the same graphicx size calculation as an ordinary vector PDF.
+\makeatletter
+\newsavebox{\cycleplotbox}
+\newcommand{\cyclefigure}[2]{\begingroup
+  \sbox{\cycleplotbox}{\directlua{cycleFigure("#2")}}%
+  \Gin@bboxtrue\def\Gin@llx{0}\def\Gin@lly{0}%
+  \Gin@defaultbp\Gin@urx{\wd\cycleplotbox}%
+  \Gin@defaultbp\Gin@ury{\ht\cycleplotbox}%
+  \def\Ginclude@cycle##1{\GPT@setup@scale\Ginclude@@pdftex{\usebox\cycleplotbox}}%
+  \def\Ginclude@graphics##1{\Gin@setfile{cycle}{}{##1}}%
+  \includegraphics[width=#1]{#2}\endgroup}
+\makeatother
+
+\begin{document}
+\thispagestyle{plain}
+{\sffamily\small\bfseries\color{accent}URIEL RESEARCH\hfill 23 NOVEMBER 2026}\par\vspace{12pt}
+{\Huge\bfseries\color{ink}Nonvanishing and belief drift\par}\vspace{4pt}
+{\Large\color{muted}A source trace for a Weil block and a sharp bound for sequential binary revisions\par}\vspace{13pt}
+\textbf{Abstract.} Two witness problems led us away from optimizing a retained set on a finite cycle. In the pinned Lean development, a declaration whose name suggests nonvanishing concludes with the existence of linked arithmetic data. We trace the literal nonzero assertion inside this construction. For a nonzero source spectral component, finite-character compatibility supplies a nonzero projector coefficient. A level vector and an equality of dimensions force a nonzero intersection inside the specified row component. We distinguish this conditional statement from the argument supplying some occupied spectral component and from the later choice of a linked family. Expanding the definitions gives the converse: a row cannot acquire an absent spectral label. Under these hypotheses the occupied labels agree in every row. Finite controls and scoped kernel replays test distinct parts of the deduction.
+
+In GEMA we ask how far a binary belief can travel when each revision obeys a forward relative-entropy budget. At a fixed prior and finite horizon, two monotone one-step inversions give the \emph{exact attainable interval}. One of its endpoints maximizes final-to-initial KL divergence. With the budgets of \(1/2\to11/20\to3/5\), this path attains the sharp value \(0.02013551355\) nats; its step costs sum to \(0.01010197878\). A reversal back to \(1/2\) also fits. With a fixed total of \(0.04\) nat split evenly, \(30\) is the first horizon at which the same prior can reach certainty. We prove why the time partition matters, verify endpoint enclosures independently with rational arithmetic, and identify what survives when only an event in a larger belief space is observed.
+
+\medskip\textbf{Reading the two results.} The first investigation explains an implication inside an existing proof. The second proves a sharp result for an explicitly defined update model. Their shared methodological question is which data identify a witness that actually meets the advertised conclusion.
+\clearpage
+\tableofcontents
+\clearpage
+\section{From a retained set to two witness questions}
+Our preceding experiment found a matching lower construction and upper certificate for a stationary family of profiles on a 64-cycle. Continuing along that route would change the class of selectors and the scope of its optimization. Two questions elsewhere in the research program called for a different kind of evidence. The first asks what gives the arithmetic construction a nonzero object to work with. The second asks whether an extreme trajectory of revisions can actually occur under local information budgets. Both can be phrased with quantifiers that admit fairly small, decisive tests.
+
+For the arithmetic question, consider the difference between the following statements. An admissible family exists. Some spectral component is occupied. At a specified index with an occupied source component, every required row has a nonzero component. An algorithm produces an index and a vector with numerical coordinates. These have different mathematical types. A theorem proving the first can use the third internally; retrieving its declaration name supplies neither the last statement nor a proof of the second for every index. Our unit of inspection is the type of an output at its consuming call, including the parameters that pin one chosen family to another.
+
+For the update question, let a monitor record the divergence spent on each revision. It can determine whether each recorded update passed its cap. The user of the monitor may instead want the largest possible distance to the \emph{starting} belief. These are different queries about a history. We give both a guarantee covering every history and an extremal history realizing it. Equality here refers to a defined scalar or an exact recursion. Rounded decimal values in the tables are reports of those quantities.
+
+\subsection{Evidence and scope}
+The source is pinned to the commit beginning \texttt{40e56bab}. We distinguish a source statement, an extracted declaration checked in a fresh Lean module, an independently calculated finite control and a mathematical argument written here. A positive instance in a model of a finite group gives an example of a mechanism. It does not by itself supply an automorphic family. The finite group can also make an assumption fail by design, something that would be obscured by merely restating the final existence theorem.
+
+The GEMA manuscript's total drift theorem grants an additive-path premise for its KL conclusion. The revision examined here is the general question left when the individual KL caps are given but additivity is unknown. We retain the direction of the divergence, the units and the order of the updates. Results describe all paths that obey those caps. An update procedure can impose other restrictions, and a dataset would be needed to say how frequently any allowed path is taken.
+
+\begin{center}
+\small\begin{tabularx}{\linewidth}{@{}p{.21\linewidth}YY@{}}
+\toprule
+Question & Decisive observation & What would defeat an overstrong reading?\\
+\midrule
+Weil construction & A nonzero level dimension transfers to a subspace of the target row. & A compatible group type can be missing, or the source spectral component can be zero.\\
+Binary trajectory & Monotonicity lets two feasible one-step extrema bound every later endpoint. & A proof using the reverse KL order, a variable prior or a different time horizon changes the feasible set.\\
+Cross-program inference & A declared witness can be tested at the place its data are consumed. & A numerical memory history cannot validate an arithmetic theorem, and the existence theorem makes no prediction about observed memory drift.\\
+\bottomrule\end{tabularx}
+\end{center}
+
+\subsection{What a successful explanation must reproduce}
+For the arithmetic branch we require the line that rules out a zero row, the reason its source dimension is positive, and the compatibility witness connecting it to the eventual bundle. A useful negative control leaves the two projectors nonzero while making their product zero. For the memory branch we require a sharp upper bound for arbitrary finite budgets, an attaining sequence, the two support-boundary cases and a computation with a check independent of the root finder. A history that exceeds the sum of its step costs establishes why simple addition fails. It leaves the sharp optimization problem unsolved until we rule out all larger endpoint values. 
+\clearpage
+\bfpart{I\enspace/\enspace SOURCE RECONSTRUCTION}{What makes the row component nonzero?}
+\section{The objects behind the name}
+The motivating picture is elementary. Two projections on a vector space can both be nonzero and have disjoint images. Knowing their separate ranks does not certify a surviving vector after both projections act. A character sum in the development supplies just such a certificate of compatibility. At a later interface even that finite calculation would be insufficient on its own: the dimension that survives must be the one assigned to the corresponding row.
+
+\begin{figure}[htbp]\centering\cyclefigure{.92\linewidth}{chain}\caption{Four logical roles in the trace. The first three explain a conditional nonzero row component. The fourth records how the construction is passed to a consumer.}\end{figure}
+The distinction is visible without any numerics. In Lean, the bottom subspace \(\bot\) is the subspace consisting of the zero vector. Showing \(W\ne\bot\) asserts a nonzero vector in \(W\). For a finite-dimensional subspace one can rule out \(W=\bot\) by finding a subspace \(J\subseteq W\) with positive dimension. If \(\dim J=\dim V\), the entire burden then falls on the identity of \(V\) and a proof that \(V\) contains a nonzero vector. This is why a character coefficient several layers away matters to a row-existence question. The following reconstruction keeps the quantifiers on each space visible.
+
+
+\section{Reading the type of the named Weil-block result}
+\label{sec:weil-origin}
+
+A theorem name suggested a simple interpretation of the previous experiment. We thought the construction first selected a Weil block and then proved that it was nonzero. Reading the type changes both the object and the question. The source actually constructs a way to supply linked bundles on suitable members of an eventual family. Inside that construction it needs a genuine nonvanishing theorem about spectral subspaces. Separating these two levels reveals a positive result, a place where the proof really uses that result, and a limitation on which index we can identify.
+
+\paragraph{Which object does the outer theorem construct?}
+At lines 34--40 of the pinned member-bundle assembly, the target is a conjunction with three components. The first concerns a mass ratio. The second states the family membership conditions. The third has the form
+\[
+  \mathsf{ExBL}\bigl(K_P,\ \mathsf{Built}_E(s),\
+        \mathsf{Good}_E(s),\ \mathsf{Link}(s)\bigr).
+\]
+Here \(s\) abbreviates the slots of the parameter built from the specified norm extension, geometry and extra place property. The code applies the declaration named
+\texttt{compatibleSystem\_weilBlock\_ne\_alt} to prove the third component. The name is a poor guide to the logical form. Its result type has no distinguished vector \(w\) and no terminal proposition \(w\ne0\). The shared parameter on the three slot-dependent predicates is significant. Knowing that one family is built, a second family is good and a third has a compatible realization would leave the linkage obligation outstanding. \href{https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/MemberBundlesLargeUnramifiedExponents.lean#L34-L63}{\textsf{[W01]}} \href{https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/ExistsWeilBlockNeAtMember.lean#L24-L42}{\textsf{[W02]}}
+
+Expanding \(\mathsf{ExBL}\) exposes an existential over an auxiliary slot predicate \(A_0\), followed by a large-base implication and an eventual link-provision statement. Suppressing the full scale context but keeping the order of the inner quantifiers, link provision asks that
+\[
+ \forall\beta\ \bigl(\mathsf{Good}_E(\beta)\land A_0(\beta)\bigr)
+   \Longrightarrow
+ \bigl(\forall c\in\mathbb R\ \exists b\ 
+              \mathsf{Link}(\beta,c,b)\bigr)
+\]
+on the eventual contexts. In this formula \(\beta\) must be a point of the prescribed type, \(b\) must have the boundary data of that point and scalar \(c\), and the witnesses sit inside these quantifiers. The actual proof chooses \(A_0\) identically true. The substantive work constructs a compatible record and bundle at the supplied point, eliminating equalities of dependent pairs to keep the base data aligned. The finished bundle contains that same record by construction. \href{https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Definitions/GlobalTwisting/EventuallyAllScaleContextsAndOfBoth.lean#L40-L86}{\textsf{[W03]}} \href{https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Definitions/GlobalTwisting/ValidForConstructedPointClassesEventuallyWorking.lean#L254-L260}{\textsf{[W04]}} \href{https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/ExistsLinkedOfEq.lean#L18-L51}{\textsf{[W07]}} \href{https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/BwitExists.lean#L53-L78}{\textsf{[W08]}} \href{https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TwistedBundle.lean#L57-L76}{\textsf{[W31]}}
+
+\paragraph{Which nonvanishing claim does the construction use?}
+Follow the call that produces the selected realization at lines 63--64 of the bundle-witness proof. Its implementing selection-pair theorem passes a hypothesis about the row spaces into the ambient construction at line 76. In the notation below \(p\) is a spectral index, \(q\) is a qualifying weighted point, and \(i\) is a row in a finite range. They are three different variables. We suppress the parameter records that \(q\) supplies. A central part of the hypothesis is
+\begin{equation}
+  \forall p,\qquad E_p\ne\{0\}
+       \quad\Longrightarrow\quad
+       \forall i,\ W_{i,p}\ne\{0\}.
+ \label{eq:weil-row-transfer}
+\end{equation}
+The sourced conclusion also supplies a local condition \(\mathsf{PartAt}(i,p,v)\) at every infinite place \(v\) different from the distinguished place \(v_0\). A finite-field or prime label should not be substituted for this place. The proof constructs the nonzero row space before extracting the vector needed off the distinguished place. \href{https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/ExBLIsLinkedPrmRStatement.lean#L16-L19}{\textsf{[W05]}} \href{https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/ExBLIsLinkedPrmR.lean#L21-L28}{\textsf{[W06]}} \href{https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/ExistsSelectionPairLocalLanglands.lean#L40-L83}{\textsf{[W09]}} \href{https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/RowPartFormsAndNonzeroVectorsEveryPlace.lean#L16-L32}{\textsf{[W11]}} \href{https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/ExistsSelectionPairLocalLanglandsStatement.lean#L17-L22}{\textsf{[W33]}} \href{https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/RowPartFormsAndNonzeroVectorsEveryPlaceStatement.lean#L10-L12}{\textsf{[W34]}} \href{https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/BwitExistsStatement.lean#L18-L20}{\textsf{[W35]}} \href{https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/ExistsLinkedOfEqStatement.lean#L17-L18}{\textsf{[W39]}}
+
+The two sides of \eqref{eq:weil-row-transfer} have a common index but live in different ambient spaces. For a system \(c\) of local eigenvalue data, the source defines a subspace \(E_c\) on one side and a row subspace \(W'_{i,c}\) on the other. An index \(p\) \emph{carries} \(c\) when \(E_c\ne\{0\}\) and its image under a specified adjoint lies in the span of the appropriate inert-type eigenspaces. The spaces appearing in \eqref{eq:weil-row-transfer} are sums of subspaces, written as lattice suprema in Lean:
+\[
+ E_p=\bigvee_{c\ {\rm carried\ by}\ p}E_c,\qquad
+ W_{i,p}=\bigvee_{c\ {\rm carried\ by}\ p}W'_{i,c}.
+\]
+An empty supremum of subspaces is the zero space. The source even defines a separate eigenvalue convention for a zero \(W_{i,p}\). That convention does not prove that a particular admissible host has an empty index. It does explain why dropping \(E_p\ne\{0\}\) changes the mathematical question. \href{https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/LocalToGlobal/IndefiniteReal/ZeroPartEigenvalueConvention.lean#L103-L213}{\textsf{[W10]}}
+
+\section{A nonzero coefficient and the dimension it preserves}
+\label{sec:weil-coefficient}
+
+\paragraph{The finite-group obstruction.}
+Knowing \(E_p\ne\{0\}\) leaves a difficulty. A nonzero representation may have no vector of the particular level character needed by the proof. Write \(G\) for the finite group, \(P\subset G\) for the base-level subgroup and \(\psi\) for its one-dimensional character. Let \(X\) be the prescribed set of irreducible characters of \(G\). For a representation \(\rho\), the level average is
+\[
+    L_\psi w=\frac1{|P|}\sum_{h\in P}\psi(h)^{-1}\rho(h)w .
+\]
+It takes values in the \(\psi\)-eigenspace for \(P\). The calculation follows by changing the index of summation after applying \(\rho(k)\) for \(k\in P\). This formula also illustrates the obstacle. If \(\rho\) is the trivial representation and \(\psi\) is a nontrivial sign, the terms cancel and \(L_\psi\) vanishes everywhere. The source therefore proves compatibility between the eligible representation types and this particular level character.
+
+With coefficients embedded into \(\mathbb C\), define the two group-algebra elements
+\[
+ e_\chi=\frac{\chi(1)}{|G|}\sum_{g\in G}\chi(g^{-1})[g],
+ \qquad
+ e_{\psi,P}=\frac1{|P|}\sum_{h\in P}\psi(h)^{-1}[h].
+\]
+The coefficient at the identity in their convolution is
+\begin{equation}
+ [1](e_\chi e_{\psi,P})
+    =\frac{\chi(1)}{|G|\,|P|}
+       \sum_{h\in P}\chi(h)\psi(h)^{-1}.
+ \label{eq:weil-idcoeff}
+\end{equation}
+The factor \(\chi(h)\) in this expression comes from the \(g=h^{-1}\) term of the convolution. Replacing it by another inverse without also changing the convention for \(\psi\) can interchange the character tested by the formula. In characteristic zero the two group orders are invertible. The pin proves that a nonzero sum and a nonzero \(\chi(1)\) suffice by applying the identity-coefficient map to a hypothesized zero product. \href{https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/ChiIdemMulLvlIdemBaseNeZero.lean#L147-L163}{\textsf{[W16]}} \href{https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/ExistsLevelVectorGoodTypeStableSubspace.lean#L99-L202}{\textsf{[W17]}}
+
+\paragraph{Why the coefficient survives.}
+The source has much more information than an arbitrary nonzero representation. The prescribed series types and weak characterization identify the eligible characters as products of specified cuspidal-induced types after transport through the finite-group identification. A finite Whittaker multiplicity-one result gives, for each \(\chi\in X\),
+\begin{equation}
+     \sum_{h\in P}\chi(h)\psi(h)^{-1}=|P| .
+ \label{eq:weil-whit}
+\end{equation}
+The route from the product-type hypothesis to this formula passes through the one-Whittaker-vector statement and the source's conversion between the multiplicity and the character sum. Thus the normalized sum equals one. Substitution in \eqref{eq:weil-idcoeff} leaves \(\chi(1)/|G|\), which is nonzero because an irreducible character has positive degree. This is a concrete noncancellation statement. The declaration proves compatibility for \(\psi^{-1}\) as well, using conjugation by an alternating-sign diagonal element. The selected-realization step takes the \(\psi\) component of the pair. \href{https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/ExistsSelectionPairLocalLanglands.lean#L40-L83}{\textsf{[W09]}} \href{https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/GoodGenericCharacterOfSeriesTypes.lean#L23-L81}{\textsf{[W13]}} \href{https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/IsCuspIndProdCharOfIsProdCuspChar.lean#L23-L29}{\textsf{[W14]}} \href{https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/OneWhittakerVectorDimHolds.lean#L8-L13}{\textsf{[W15]}}
+
+It matters that the coefficient belongs to the group algebra. A nonzero element of a group algebra can act by zero in a particular representation. The proof of the level-vector statement closes that gap. Set \(U=E_p\). This subspace is stable under \(G\), and the sum of the eligible central projectors acts as the identity on it. Choose \(u_0\ne0\) in \(U\). At least one component \(e_\chi u_0=w_0\) is nonzero. Stability puts \(w_0\) and its translates in \(U\). If \(L_\psi\) vanished on all of \(U\), the quantity
+\[
+       \sum_{g\in G}\rho(g)\,
+             L_\psi\bigl(\rho(t^{-1}g^{-1})w_0\bigr)
+\]
+would vanish for every \(t\). Take a \(t\) at which the coefficient of \(e_\chi e_{\psi,P}\) is nonzero. Evaluating the same sum by the irreducible-character class-sum identity gives a nonzero scalar multiple of \(w_0\). This contradiction supplies a nonzero level vector in \(U\). It also explains why simply writing \(L_\psi u_0\ne0\) would be too strong: the original \(u_0\) was arbitrary. The transported level-model equivalence then places a nonzero vector in \(E_p\cap E_{\rm lev}\) at the distinguished complex realization. \href{https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsBaseLevelRowOfNonzeroGoodRowsPart.lean#L19-L29}{\textsf{[W12]}} \href{https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Proofs/SatakeParameters/ExistsLevelVectorGoodTypeStableSubspace.lean#L99-L202}{\textsf{[W17]}}
+
+\paragraph{The transfer to an arbitrary row.}
+Write \(\widehat E_p,\widehat W_{i,p}\) for the complex realizations used in the dimension calculation, \(E_{\rm lev}\) for the base-level row subspace, and \(w_{0,i}\) for the row's coordinate map at that level. The primitive data carry the equality
+\begin{equation}
+  \dim_{\mathbb C}\!\left(\widehat W_{i,p}\cap
+               \operatorname{im}w_{0,i}\right)
+   =\dim_{\mathbb C}\!\left(\widehat E_p\cap E_{\rm lev}\right)
+   \qquad\text{for each }i,p.
+ \label{eq:weil-dimparts}
+\end{equation}
+The right side is at least one by the preceding argument. Consequently the left intersection contains a nonzero vector. If \(W_{i,p}\) were zero, its transported realization would contain only zero, and the left intersection would be zero-dimensional. Finite rank, the identification of the transported subspaces and \eqref{eq:weil-dimparts} exclude that possibility. This is the decisive short contradiction at the point where the proof actually needs a nonzero row. \href{https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/LocalToGlobal/IndefiniteReal/ZeroPartEigenvalueConvention.lean#L103-L213}{\textsf{[W10]}} \href{https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/RowPartFormsAndNonzeroVectorsEveryPlace.lean#L16-L32}{\textsf{[W11]}} \href{https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/LocalToGlobal/IndefiniteReal/CutTuples2.lean#L103-L142}{\textsf{[W18]}} \href{https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/LocalToGlobal/IndefiniteReal/BaseLiftsPackageOfPrimitiveLinks.lean#L199-L222}{\textsf{[W19]}}
+
+The equality of dimensions is itself a substantive arithmetic input. The source that constructs primitive row data assigns the dimension field using the partwise good-forms dimension theorem. Its proof compares the joint eigenspaces of the spherical operators after passing to the base level. It matches equal eigenvalue descriptions, groups the components carried by \(p\), and invokes equality of the individual Hecke-part multiplicities. The trace therefore reaches a more informative boundary than treating the equality as a numerical coincidence. A verification of all the automorphic multiplicity results feeding that comparison would be a larger undertaking. \href{https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/PrimRows3OfParts.lean#L24-L50}{\textsf{[W20]}} \href{https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/BaseLevelGoodFormsDimsAgreePartwise.lean#L21-L23}{\textsf{[W21]}} \href{https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/TwSubISupInfLevel.lean#L92-L173}{\textsf{[W22]}}
+
+\paragraph{The vector at another place.}
+For \(v\ne v_0\) the construction needs a vector over the coefficient number field whose image lies in the specified complex row, and for which a Hermitian quadratic expression is nonzero at \(v\). Having a nonzero complex vector does not in general guarantee such a descent for a prescribed model. The source uses rational spanning, the bijective lift matrix and pairwise orthogonality. If the rational \(p\)-part vanished, all rational images would lie in the sum of the other parts. The complex range is spanned by images of rational basis vectors, so the nonzero \(p\)-part in that range would be orthogonal to itself. The positive inner product excludes that scenario. The lift matrix then supplies a nonzero rational coordinate vector \(x\). At \(v\), the quotient metric is positive definite, and the field embedding sends a nonzero vector to a nonzero vector. Hence the Hermitian value at \((x,x)\) cannot vanish. Each of these arguments applies to its own object. None computes the entries of the original arithmetic vector. \href{https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/RowPartFormsAndNonzeroVectorsEveryPlace.lean#L16-L32}{\textsf{[W11]}} \href{https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsNonzeroRationalLiftMemBasePart.lean#L11-L77}{\textsf{[W23]}} \href{https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/BaseLevelFramesHermitianNeZeroOffPlace.lean#L15-L45}{\textsf{[W24]}}
+
+\section{How an occupied spectral index arises}
+\label{sec:weil-seed}
+
+\paragraph{A different order of quantifiers.}
+A conditional statement about every occupied \(p\) and a statement that some \(p\) is occupied solve different problems. One could satisfy \eqref{eq:weil-row-transfer} vacuously if all \(E_p\) were zero. The same pinned development contains a separate positive-row argument in its construction of the primitive hypotheses. Its role is to supply an occupied index under the hypotheses stated there. The selected-realization call above consumes the conditional transfer directly. One should not silently insert a numerical value of \(p\) into either theorem.
+
+The eventual definite-side estimate is particularly illuminating. For a fixed positive exponent tolerance, past a threshold and for admissible size and parameter data, a last definite index exists. At either level, write \(d_0\) for the comparison dimension and \(d_{\rm good}\) for the good dimension at that index. The exact pair of inequalities packaged by \(\mathsf{GoodShare}\) is
+\[
+       0<(1-\delta)d_0\ \leq\ d_{\rm good}.
+\]
+A zero good space would have dimension zero. The proof of the estimate includes \(d_0\ge1\) and a strict upper bound \(\exp(-x^{\varepsilon_z/7})<1\) on the relevant error factor in the parameter range. Thus the strict positivity has content even when the lower bound in real units is less than one: the integer dimension must still be at least one. Substituting a weak inequality \(0\le(1-\delta)d_0\) would admit \(d_{\rm good}=0\). The threshold and the parameter data precede this deduction. The argument does not certify a specific small numerical host. \href{https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/LocalTypeDictionary/HoldsLOfTies.lean#L23-L49}{\textsf{[W26]}} \href{https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/GoodFormsDefiniteExist.lean#L17-L40}{\textsf{[W27]}} \href{https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/BlockTheory/TwistedDiscreteSeries/DefiniteIndexDimensionCounts.lean#L47-L85}{\textsf{[W28]}} \href{https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/IsNilpotentSubOneOfFullBlockUnipotent.lean#L398-L436}{\textsf{[W29]}}
+
+The trace from the definite-side statement to an occupied \(E_p\) has two further steps. A row-transfer result uses the nonzero definite part and matching ranks of the corresponding types to give a nonzero row space. The realization map identifies the resulting vector with a nonzero vector in the complex base-level model. Separately, each nonzero eigenspace \(E_c\) receives a carrier index, and the joint eigenspaces span the full row space. Suppose all \(E_p\) vanished. Because \(E_c\subseteq E_p\) for any carrier \(p\) of \(c\), each \(E_c\) would vanish. Their spanning property would make the full row space zero, contradicting the nonzero row. This proves \(\exists p,\ E_p\ne\{0\}\) in that construction. The proof derives the existence by contradiction and provides no numerical eigenvalue label. The upstream theorem explicitly applies this existential in its base-place positivity argument. \href{https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Proofs/IwasawaDecomposition/ExistsRowPartNeBotPositiveDimension.lean#L90-L115}{\textsf{[W25]}} \href{https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/LocalTypeDictionary/HoldsLOfTies.lean#L23-L49}{\textsf{[W26]}} \href{https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/ExistsUnitaryRep.lean#L116-L123}{\textsf{[W30]}} \href{https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Proofs/TwistedOperators/ExistsPart.lean#L95-L116}{\textsf{[W38]}}
+
+This distinction is a practical reading tool. Three possible questions about the formalization now have different answers. \emph{Is there an occupied source label under the positive-row assumptions?} The covering and dimension argument supplies one. \emph{Does each occupied source label survive in every matched row?} The level-projector and dimension argument proves that. \emph{Is a preassigned label occupied and what is its vector?} Deciding that would require arithmetic input identifying an actual carried eigenpacket on a specified host. The source trace by itself supplies neither the label nor its coordinates. The published Weil-representation condition appearing among the larger inputs supplies an action on a function space satisfying a Weil datum. Its appearance is insufficient on its own to settle any of these spectral occupancy questions. \href{https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/PublishedTheorems/AutomorphicForms%E2%82%82/WeilRepresentationUnitaryPair.lean#L12-L15}{\textsf{[W32]}}
+
+\subsection{An exact support identity for the matched rows}
+\label{sec:support-equality}
+There is a converse hiding in the definitions. It has an elementary proof and a different source of validity from the forward implication. Fix \(p\) and suppose \(E_p=\{0\}\). If \(c\) were carried by \(p\), we would have \(E_c\subseteq E_p\) from the definition of the supremum and \(E_c\ne\{0\}\) from the definition of carrying. Hence there are no such \(c\). For any row \(i\), \(W_{i,p}\) is now a supremum over this empty collection, so \(W_{i,p}=\{0\}\). Equivalently, an occupied row label must already occur on the source side. \href{https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/LocalToGlobal/IndefiniteReal/ZeroPartEigenvalueConvention.lean#L103-L213}{\textsf{[W10]}}
+
+Combining this observation with \eqref{eq:weil-row-transfer} gives the precise conclusion
+\[
+   \{p:E_p\ne\{0\}\}=\{p:W_{i,p}\ne\{0\}\}
+       \qquad \text{for every }i .
+\]
+It identifies the \emph{set of occupied labels}. It does not assert equality of the full ambient dimensions or identify individual vectors across different rows. Equation~\eqref{eq:weil-dimparts} concerns the more specific base-level intersections. If the positive-row existence hypotheses are available on these same data, one may choose the \(p\) they supply \emph{before} varying \(i\). Thus a single occupied label works on every row. Different choices of \(p\) for different rows would be a weaker conclusion.
+
+The two implications expose an asymmetry. Preventing a row label from appearing without a matching source label follows from the indexing convention. Preventing a valid source label from disappearing on a row requires the finite-group and arithmetic comparison. A simple binary enumeration tests the distinction without any representation-theoretic terminology. Give each of three candidate eigenpackets a carrier bit, a source-presence bit and a row-presence bit. The source and row at the fixed label are occupied when a carried packet is present on the respective side. There are \(2^9=512\) assignments, of which \(216\) obey the rule that every carried packet is present at source. None of those \(216\) violates the reverse implication. Removing the typing rule admits \(91\) failures. Keeping the rule while omitting the forward arithmetic comparison still admits \(61\) failures in the forward direction. These counts concern a logical control, with no arithmetic sampling model attached.
+
+We supplied a separate Lean module giving the reverse implication for suprema in two arbitrary complete lattices, possibly of different types. It combines that result with an assumed forward implication and proves the one-label quantifier rule. The module compiled with Lean 4.33.1 and its object passed \texttt{leanchecker}. All three new declarations have empty reported axiom inventories. Specializing the two lattices to the pinned subspaces is a written identification using their definitions. The abstract proof does not take the place of the arithmetic proof of the forward implication.
+
+
+\section{An exact finite control for the projector mechanism}
+\label{sec:weil-s3}
+
+One small finite group tests the point at which the character matters. Take \(G=S_3\), take \(P=\{1,(12)\}\), and write \(\chi_{\rm std}\) for the degree-two standard character. Its values on \(P\) are \(2,0\). Both characters of \(P\) therefore give normalized sum one, and \eqref{eq:weil-idcoeff} gives the coefficient \(2/6=1/3\). In contrast, the trivial character of \(G\) against the sign character of \(P\) gives \((1-1)/2=0\), and the product of the two projectors vanishes. These choices have the same group and the same level subgroup. Changing the type can change the conclusion.
+
+\begin{center}
+\begin{tabular}{llll}
+\hline
+Character of \(G\)&Subgroup and level character&Multiplicity&Coefficient at \(1\)\\
+\hline
+standard&\(C_2\), trivial&\(1\)&\(1/3\)\\
+standard&\(C_2\), sign&\(1\)&\(1/3\)\\
+trivial&\(C_2\), sign&\(0\)&\(0\)\\
+standard&\(C_3\), trivial&\(0\)&\(0\)\\
+standard&\(\{1\}\), trivial&\(2\)&\(2/3\)\\
+\hline
+\end{tabular}
+\end{center}
+
+The last row separates sufficiency from necessity. Multiplicity one is a powerful exact input from the source, but in this isolated finite calculation a multiplicity of two also gives a nonzero product. For the \(C_3\) row the standard character takes values \(2,-1,-1\); the vanishing is a cancellation across the subgroup, even though the ambient representation has positive dimension. In its standard plane realization with the transposition acting by swapping the first two coordinates, \((1,-1,0)\) is killed by the trivial-character level average. Yet the same plane includes the nonzero invariant vector \((1,1,-2)\). This directly tests the distinction between existence of a level vector and survival of an arbitrary chosen vector.
+
+The accompanying program builds \(S_3\) as permutations and convolves exact rational functions on all six elements. It tests three irreducible characters against six subgroup--level-character choices. The resulting eighteen cases have eleven nonzero products and seven zero products. In each case the program checks the coefficient in \eqref{eq:weil-idcoeff}, the idempotence of both factors, their commutation, the idempotence of the product and agreement of zero status with the multiplicity. The case list is explicit; it does not enumerate complex nontrivial characters of \(C_3\). This is an independent finite check of the character mechanism. It does not instantiate the automorphic family or evaluate a global theta lift.
+
+\paragraph{Falsification and provenance.}
+The finite calculation could have failed if the central idempotent normalization or inverse in the convolution were inconsistent. The zero controls could have failed if a computation treated all positive-degree representations as compatible. The \(p\)-indexed transfer could fail under the weakened premises if the row intersection had zero dimension while the source intersection had dimension one. None of these tests recomputes the deep arithmetic equality of those dimensions.
+
+The source manifest records the original commit, Git blob ID and SHA-256 hash for every listed file, together with hashes of the cited line intervals. Verifying them authenticates the bytes used in this reading. A source-level call chain, a verified file hash, a finite group-algebra computation and a Lean kernel replay answer four separate questions. Any replay reported elsewhere in this study retains the scope of the declarations actually replayed.
+
+
+\section{How the local conclusion reaches a selected family}
+\label{sec:weil-handoff}
+\newcommand{\Wthird}{Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries}
+\newcommand{\Wtw}{Development/AbelianVarietyTheory/Definitions/GlobalTwisting}
+\newcommand{\WBref}[3]{\href{https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/#1.lean\#L#2}{#3}}
+\newcommand{\wcode}[1]{\nolinkurl{#1}}
+A nonzero vector at every eligible member leaves three questions. Which members exist? Which parameters do they use? How do those parameters agree with data elsewhere? Each question is answered at a different point of the proof. The local result concerns a fixed weighted point, spectral index and lift. The exported result gives a supply of linked bundles for a range of points. The subsequent selection theorem chooses a family and a selector carrying a conjunction of row properties. Understanding the handoff requires tracking the change of quantifiers between these statements.
+
+\subsection{Two routes meet at one set of parameters}
+Fix the local Langlands existence input $h_L$, the real dependence parameter $c$, and a predicate $A$ on the base data. Write $N_0$ for the source's norm extension built from $h_L,c$, and $N_A$ for its strengthening by $A$. Suppressing the list of indices that stays identical on the two sides, its definition is the product
+\[
+             N_A(\xi)=N_0(\xi)\times \operatorname{PLift}(A(K,B,f,T)).
+\]
+Here $\xi$ includes $K,B,f,T$ and the remaining norm and weight data. The second factor carries evidence of $A$ in the universe expected by the extension. Forgetting this factor recovers the original norm datum. Adding it requires a proof of $A$ for the same base. Let $p_0,p_A$ be the parameter records formed with the same geometric and auxiliary choices, and let $p.s$ designate a record's slots. The product explains what strengthening a record does to its inputs. \WBref{\Wthird/ExtensionWithAtProperty}{16}{Norm extension, lines 16--17.}
+
+The strengthened built predicate is equivalent to the conjunction of the old built predicate and $A$ evaluated at the same base. For one direction the proof takes the existing built record and appends the lifted proof of $A$ to one field. It uses the same $w$, $Z$, lifted core and kernel-entry witness. For the other it drops that field and projects out the evidence of $A$. The good predicate satisfies the analogous equivalence because its additional local condition survives the change. These are explicit record transformations once their inputs are supplied. Their family-level use also needs the eventual assertion that $A$ holds. \WBref{\Wthird/IsBuiltEPrmAIff}{18}{Built and good equivalences, lines 18--34.}
+
+The theorem carrying the base-lattice name returns a conjunction at $p_0$. Its first component is $\operatorname{MemberE}(p_0.s)$. Its second is a linked-bundle assertion at $p_0$. Membership collects four obligations called \wcode{BaseCond}, \wcode{FirstG}, \wcode{ExportF} and \wcode{SecondG}. The last involves both the built and the good slots. They govern how membership can be obtained, exported and retwisted. At the next theorem the source explicitly takes the first projection of the conjunction. Its transport uses the eventual hypothesis to combine existence of a built object with the property $A$ at its base. The export clause forgets $A$ when it invokes the previous export rule. The final clause restores the strengthened built and good predicates at the target. \WBref{Development/AbelianVarietyTheory/Definitions/AutomorphicMembership/ThetaChr}{85}{Slots and membership, lines 85--103.} \WBref{\Wthird/ExistsBaseLatticeOfPrime}{57}{Base-lattice conclusion, lines 57--72.} \WBref{\Wthird/IsBuiltEPrmAIff}{35}{Transport, lines 35--53.}
+
+The other route assembles its linked-bundle conclusion directly at $p_A$. Its direct inputs include the compatible-system hypotheses, multiplicity-cover hypotheses, member hypotheses, $h_L$, the underlying extension and geometric parameters, and two more maps. One map produces an inhabitant of the required extension-with-law from the underlying extension record. The other is a movement property for the slots. The proof drops the added $A$ certificate when passing through the first map. It extends the movement property to $N_A$ and invokes the geometric uniformity theorem with the same strengthened parameter record. The equality supplying that record to the theorem is reflexivity. This identifies the source of parameter agreement. \WBref{\Wthird/ExistsWeilBlockNeAtMember}{24}{Weil-labelled adapter, lines 24--42.}
+
+If $M(p)$ denotes membership and $E(p)$ the linked-bundle assertion, the relevant part of the assembly therefore reads
+\[
+\begin{aligned}
+  &M(p_0)\wedge E(p_0)\longrightarrow M(p_0),\\
+  &\bigl(M(p_0),\ \text{eventual }A\bigr)\longrightarrow M(p_A),\\
+  &\text{geometric and representation inputs for }p_A\longrightarrow E(p_A).
+\end{aligned}
+\]
+The final theorem also supplies a Siegel mass-ratio assertion. Its output contains $M(p_A)$ and $E(p_A)$ with the same parameter term repeated in the built slot, good slot and linkage. The agreement is at the parameter level. Identifying a numerical lattice or vector chosen independently in two constructions would require an identity or transport theorem for those choices. The assembly gives no such arbitrary identification. \WBref{\Wthird/MemberBundlesLargeUnramifiedExponents}{34}{Assembly, lines 34--63.}
+
+\subsection{What the output type promises}
+Let $Q$ and $Q'$ abbreviate the strengthened built and good slots, respectively. Write $L$ for the linkage relation. The conclusion called \wcode{ExBL} has the form
+\[
+  \exists R,\quad
+    \operatorname{LargeBaseCondition}(K_P,Q,R)
+    \;\land\;\operatorname{ExB}(Q'\wedge R,L).
+\]
+The witness $R$ is an auxiliary predicate on core data. The first clause says that, in the source's eventual range and under its base condition, eligible built data imply $R$. This prevents a proof from freely imposing an arbitrarily restrictive $R$ on the relevant built objects. The second clause makes the supply precise. In the eventual contexts quantified by \wcode{EvP}, for every point $\beta$ satisfying the indicated slot, and for every real $c'$, there is a bundle $b$ of the required type at $(\beta.D,\beta.O,c')$ satisfying $L(K,\beta,c',b)$. The real $c'$ quantified at this inner step is distinct from the dependence parameter $c$ used to build $N_0$. \WBref{\Wtw/EventuallyAllScaleContextsAndOfBoth}{40}{Large-base and slot definitions, lines 40--71.} \WBref{\Wtw/ValidForConstructedPointClassesEventuallyWorking}{254}{Pointwise bundle supply, lines 254--262.}
+
+Given $\beta$, a proof of its eligibility, and $c'$, the conclusion supplies existence at those inputs. Quantifying universally over eligible points alone cannot furnish an eligible $\beta$. Conversely, choosing some convenient $b$ without certifying linkage at the supplied $\beta$ leaves the pointwise obligation unfulfilled. The source defines \wcode{BundleLinkage} through nonemptiness of a \wcode{BundleWitness} at a weighted point associated by \wcode{linkOf}. That witness carries a twisted input, a compatible record, specified spectral matching and equality data, including weights, a selected side and column characters. Several fields are heterogeneous equalities because their terms have dependent types. Equal dimensions could hold in two independently chosen records even if these identifications failed. \WBref{\Wthird/TwistedBundle}{44}{Record identifications, lines 44--76.}
+
+A small independent control makes the logical distinction measurable. Take two possible points and two possible bundles. Choose any subset of the points to be eligible and any incidence relation between points and bundles. These choices give $4\cdot16=64$ finite cases. Replace the eventual supply by its one-context assertion that every eligible point has an incident bundle. This holds in 49 cases. In 16 of them the eligible set is empty. All 33 surviving cases with a nonempty eligible set have an actual incident pair. If just the first point is eligible, it has three possible nonempty rows of incidences and the second row has four arbitrary choices, giving 12 cases. The symmetric singleton gives another 12. If both points are eligible there are $3^2=9$ cases. This accounts for 33 without a machine. The control isolates universal implication on a fixed domain. The existence of appropriate contexts and points must come from additional inputs in the full proof.
+
+\subsection{Where a common witness enters}
+The consumer of the assembly destructures the mass assertion, membership and linked-bundle assertion into three names. Other arguments supply a predicate specifying all the eventual row constraints. It applies \wcode{nonempty_hyps_of_allRows_alt} to the membership premise, the linked supply, and the full row premise at once. Agreement of the named parameters is necessary for this call. The additional row data matter because linked supply alone says nothing about the long conjunction of restrictions the final selector must meet. \WBref{\Wthird/HypothesesNonemptyOfUnramifiedExponents}{41}{Consumer of the triple, lines 41--61.}
+
+A row statement \wcode{RowL} and the existence statement \wcode{ExBL} may begin with different large-base predicates $R_1,R_2$. Each predicate holds eventually under the built-slot hypothesis. The conjunction lemma aligns their eventual data using a common range. Its pointwise predicate is $R_1\wedge R_2$. The proof of \wcode{RowL.elim} restricts supply to this conjunction and restricts the row statement to the same domain. At the remaining pointwise step \wcode{QOf}\ensuremath{_{2}} obtains a bundle $b$ from the existence premise for the given $\beta,c'$. It immediately applies the universal row predicate to that $b$ and its proof of linkage. An independent row calculation can thus contribute a fact about the particular bundle selected by the supply assertion. \WBref{\Wtw/EventuallyAllScaleContextsAndOfBoth}{76}{Joining slots, lines 76--86.} \WBref{\Wtw/ValidForConstructedPointClassesEventuallyWorking}{360}{Applying the row to the supplied bundle, lines 360--366.}
+
+For a counterfactual, take two indices $i=0,1$. Let the first row property hold only for $0$ and the second only for $1$. Each property is realizable, yet no index realizes both. This model rejects an explanation of the proof based on unrelated existential statements. The source applies the row property universally on the linked domain. Once it obtains a common predicate $E$, \wcode{classSel} takes the family $\operatorname{cls}(E)$ and selector $\operatorname{pick}(E)$ built from that predicate. Internally \wcode{pick} uses classical choice for family evaluations. The output record assigns this shared family and selector to its fields. Its field \wcode{hEx} comes from the selected family's existence data. This field and the earlier local linked-bundle hypothesis have different types despite the suggestive names. \WBref{Development/AutomorphicArithmetic/CharacterBoxes/ClassSel}{14}{Common selection, lines 14--28.} \WBref{\Wtw/ValidForConstructedPointClassesEventuallyWorking}{277}{Classical selection, lines 277--279.} \WBref{\Wthird/NonemptyHypsOfAllRows}{47}{Construction of the record, lines 47--60.}
+
+\subsection{A scoped kernel replay}
+The source audit authenticates 18 complete files against their Git blob identifiers at the pinned commit and records 23 selected line ranges with SHA-256 digests. The import scan counts 23,047 original project modules under the file containing the local $W_{i,p}$ implication, 55,728 under the member-bundle assembly, and 79,669 under the subsequent nonempty-hypotheses module, each count including the target. These counts measure reachable textual imports inside this project. Compiled proof terms can use fewer constants. The experiment did not rebuild these closures or the complete RH proof.
+
+A smaller boundary permits a stronger check. From four authenticated original files we extracted the unchanged finite-group definitions and proof bodies needed for the character and level idempotents, their product-coefficient calculation, the sufficient nonzero-overlap lemma, Schur's scalar argument, and the invariant-level vector theorem. An isolated module imports the pinned Mathlib and reinstates the relevant namespaces. Its last theorem takes a nonzero finite-dimensional stable subspace $U$, the identity action of the sum of the character projectors on $U$, irreducibility of the relevant characters, and nonvanishing of their level products. It returns $u\in U$, $u\ne0$, transforming by the prescribed character on the subgroup. Its hypotheses include both a nonzero input subspace and overlap of the projectors. Checking this conditional theorem leaves the task of establishing those hypotheses at the arithmetic member to the upstream route. \WBref{Development/AbelianVarietyTheory/Proofs/DivisorProofs/ChiIdemMulLvlIdemBaseNeZero}{147}{Nonzero product, lines 147--163.} \WBref{Development/AbelianVarietyTheory/Proofs/SatakeParameters/ExistsLevelVectorGoodTypeStableSubspace}{117}{Level-vector theorem, lines 117--202.}
+
+The accompanying receipt records the source slices, toolchain, dependency revision, checker result and axiom inventory. The source-level path locates where additional arithmetic hypotheses enter and where the resulting bundle is consumed. The finite replay checks the representation-theoretic implication conditional on those hypotheses. The original existential vector and selector have no coordinates in these outputs.
+
+\clearpage\bfpart{II\enspace/\enspace THEORY AND EXPERIMENT}{How far can individually small revisions travel?}
+\section{Sharp reachability for KL-budgeted binary revisions}
+\label{sec:bd-sharp}
+
+A sequence of updates can reinforce a small displacement. A system that monitors the size of each revision therefore faces a decision at a longer time scale. Given the initial belief and the budget allocated to each revision, what is the most extreme belief that can appear at the final time? A bound on the largest possible endpoint is useful for choosing a budget before seeing the evidence. A sequence attaining that bound tells us precisely which behavior such a budget permits.
+
+Let $p_t$ be the probability assigned to one nominated outcome at time $t$ and let $1-p_t$ be the probability of its complement. The input comprises $p_0\in[0,1]$, a finite horizon $T\geq 0$, and a fixed ordered list of finite real budgets $\varepsilon_1,\ldots,\varepsilon_T\geq 0$. Use the KL order appearing in the GEMA manuscript's definition of a budgeted update:
+\begin{equation}
+ d(q\|p)=q\log\frac{q}{p}+(1-q)\log\frac{1-q}{1-p},
+ \qquad d(p_t\|p_{t-1})\leq\varepsilon_t .
+ \label{eq:bd-d}
+\end{equation}
+The logarithm is natural. Thus a budget has units of nats. A term with zero numerator contributes zero, including $0\log(0/0)$. A positive numerator over zero contributes $+\infty$. In particular a belief of zero or one is absorbing under any finite budget. Probability paths may use arbitrary evidence or update mechanisms subject to \eqref{eq:bd-d}. A specified learning rule, discrete observation alphabet, or bound on log likelihood ratios can impose additional restrictions.
+
+The problem has at least two operationally distinct outputs. The maximum absolute probability change is a total-variation distance for Bernoulli laws. The maximum endpoint KL measures average log likelihood ratio under the final law relative to the initial law. We compute both from the same reachable interval, so that one can choose the output measure before studying any numerical examples.
+
+\subsection{One revision and the shape of its feasible set}
+
+For $p\in(0,1)$ the derivatives in the two argument slots are
+\begin{equation}
+ \partial_q d(q\|p)=\log\frac{q}{1-q}-\log\frac{p}{1-p},
+ \quad
+ \partial_q^2 d(q\|p)=\frac{1}{q(1-q)},
+ \quad
+ \partial_p d(q\|p)=\frac{p-q}{p(1-p)}
+ \label{eq:bd-derivatives}
+\end{equation}
+for interior $q$. The feasible values of $q$ form a closed interval around $p$. Write its lower and upper endpoints as $L_e(p)$ and $U_e(p)$. For an interior prior and $e>0$, the exact prescription is
+\begin{align}
+ L_e(p)&=
+ \begin{cases}
+ 0,&e\geq -\log(1-p),\\
+ \text{the unique }q\in(0,p)\text{ with }d(q\|p)=e,&e<-\log(1-p),
+ \end{cases}\label{eq:bd-one-lo}\\
+ U_e(p)&=
+ \begin{cases}
+ 1,&e\geq -\log p,\\
+ \text{the unique }q\in(p,1)\text{ with }d(q\|p)=e,&e<-\log p .
+ \end{cases}\label{eq:bd-one-hi}
+\end{align}
+A zero budget gives $L_0(p)=U_0(p)=p$. For $p=0$ or $1$ both maps equal $p$ at every finite $e$. The caps follow by substituting the endpoints into \eqref{eq:bd-d}. Strict convexity, continuity at either endpoint for an interior prior, and the derivative signs prove existence and uniqueness in the root cases. An update reaching a cap may leave part of its budget unspent. The order of the arguments in \eqref{eq:bd-d} matters especially at these caps: moving to zero from an interior prior has finite cost, whereas reinstating positive mass from a zero prior has infinite cost.
+
+\paragraph{Ordering lemma.}
+For each $e\geq 0$, both $L_e$ and $U_e$ are nondecreasing on $[0,1]$. To see this for the upper endpoint, take $p_1\leq p_2$ in the interior and write $u=U_e(p_1)$. If $u\leq p_2$, then $u\leq p_2\leq U_e(p_2)$. Otherwise the last derivative in \eqref{eq:bd-derivatives} shows that replacing $p_1$ by $p_2$ lowers the cost of reaching $u$. This includes the capped target $u=1$ by continuity in the first argument. Thus $u$ remains feasible. Complement symmetry gives $L_e(p)=1-U_e(1-p)$, and the boundary definitions extend both monotonicity statements to $[0,1]$.
+
+This lemma supplies the property that makes a greedy construction exact. If the target is a large probability at the last step, then arriving at the previous step with a larger probability can only enlarge the achievable upper endpoint. There is no advantage to a preliminary excursion in the opposite direction. The symmetrical statement holds for a small final probability.
+
+\subsection{Exact interval, extremal paths and endpoint loss}
+
+\paragraph{Sharp binary endpoint theorem.}
+Initialize $\ell_0=u_0=p_0$ and for $t=1,\ldots,T$ put
+\begin{equation}
+ \ell_t=L_{\varepsilon_t}(\ell_{t-1}),
+ \qquad
+ u_t=U_{\varepsilon_t}(u_{t-1}).
+ \label{eq:bd-rec}
+\end{equation}
+The set of all feasible terminal probabilities equals the entire interval $[\ell_T,u_T]$. In particular the two sequences $(\ell_t)_{t=0}^T$ and $(u_t)_{t=0}^T$ are feasible paths attaining its endpoints. The sharp endpoint total-variation and KL bounds are respectively
+\begin{align}
+ V_*&=\max\{p_0-\ell_T,\ u_T-p_0\},\label{eq:bd-tv}\\
+ K_*&=\max\{d(\ell_T\|p_0),\ d(u_T\|p_0)\}.\label{eq:bd-kl}
+\end{align}
+At $T=0$, or with boundary prior, the reachable interval is a singleton and both costs vanish.
+
+\paragraph{Proof.}
+Suppose the reachable set at time $t-1$ is the interval $[\ell,u]$. Any next state reached from $p\in[\ell,u]$ belongs to $[L_{\varepsilon_t}(p),U_{\varepsilon_t}(p)]$, which lies between $L_{\varepsilon_t}(\ell)$ and $U_{\varepsilon_t}(u)$ by the ordering lemma. For the converse split this bounding interval into three overlapping pieces. Values from $L_{\varepsilon_t}(\ell)$ through $\ell$ are reachable by first attaining $\ell$ and taking one permissible downward step. Values from $\ell$ through $u$ are reachable by attaining the desired value at the preceding time and leaving it unchanged. Values from $u$ through $U_{\varepsilon_t}(u)$ are reachable by starting the last step at $u$. The initial reachable set is $\{p_0\}$, so induction proves the claim. For the extremal paths, inclusion of the endpoints in the one-step balls gives feasibility at each time. A convex function on an interval is bounded above by its largest endpoint value. Apply this observation to $q\mapsto|q-p_0|$ and $q\mapsto d(q\|p_0)$ for $p_0$ in the interior. Boundary priors have already been handled. \hfill$\square$
+
+The supplied Lean module formally checks the ordered-interval argument of this proof. A revision band supplies two monotone endpoint maps and the inequalities that make a stationary step feasible. Reachability is defined by existentially quantifying the previous state. From the axioms of a linear order, the new theorem proves for every finite horizon an equivalence between this existential predicate and the two endpoint inequalities. The endpoint maps can vary at each revision. Re-elaboration and a separate kernel replay succeeded with Lean 4.33.1 using only its core library. The theorem's axiom report was empty. The antecedent facts identifying actual Bernoulli KL balls with intervals and establishing their endpoint monotonicity are proved above in ordinary mathematics. The Lean theorem checks the part of the argument that composes those one-step results.
+
+For one step the two sides of an interior, uncapped ball consume exactly the same KL budget even when the displacements in probability differ. At longer horizons \eqref{eq:bd-tv} and \eqref{eq:bd-kl} give the comparisons needed for their respective loss functions, without any assumption of symmetry of the initial belief. The recursions also preserve the order in which budgets are spent. A zero budget inserts an identity map anywhere in the list; splitting a positive budget into two entries genuinely changes the problem. Adding an extra allowable revision enlarges the reachable region because the system may always leave its belief unchanged.
+
+The construction is compatible with a simple Bayesian interpretation when the extremal path stays in the interior and the allowed likelihood ratios are unconstrained. A single observation with likelihood ratio
+\[
+ \frac{q/(1-q)}{p/(1-p)}
+\]
+moves a Bernoulli prior $p$ to any nominated interior posterior $q$. Any finite positive ratio occurs for some pair of observation probabilities in $(0,1]$. Their absolute size can be chosen to keep both at most one. Thus a witness path can also be realized by a sequence of suitably chosen observations. This describes a possible observation sequence and supplies no assertion about its probability under a specified generative model.
+
+\subsection{A certificate that can be checked by hand}
+
+Start at $p_0=1/2$ and choose the extremal witness first:
+\[
+ (p_0,p_1,p_2,p_3)=\left(\tfrac12,\tfrac35,\tfrac7{10},\tfrac45\right),
+ \qquad \varepsilon_t=d(p_t\|p_{t-1}).
+\]
+The three \emph{inputs} are these exact logarithmic expressions. Their decimal renderings below are for scale. Rounding a budget downward before running the calculation could exclude the witness on its very boundary. For example
+\[
+ \varepsilon_2=\frac7{10}\log\frac76+\frac3{10}\log\frac34,\qquad
+ \varepsilon_3=\frac45\log\frac87+\frac15\log\frac23.
+\]
+Each target $p_t$ exceeds $p_{t-1}$, so strict increase of $d(\,\cdot\,\|p_{t-1})$ on this side identifies $p_t$ with $U_{\varepsilon_t}(p_{t-1})$. Because the start is symmetric and the Bernoulli divergence is invariant under complement, the reflected path $1-p_t$ attains every lower endpoint. There is no root approximation in this certificate.
+\begin{center}
+\begin{tabular}{c c c c}
+\hline
+Step & Budget (nats) & Lowest reachable belief & Highest reachable belief\\
+\hline
+0 & --- & $1/2$ & $1/2$\\
+1 & $0.02013551$ & $2/5$ & $3/5$\\
+2 & $0.02160085$ & $3/10$ & $7/10$\\
+3 & $0.02573209$ & $1/5$ & $4/5$\\
+\hline
+\end{tabular}
+\end{center}
+Consequently $V_*=3/10$ and
+\[
+ K_*=\tfrac45\log(8/5)+\tfrac15\log(2/5)
+      \simeq 0.1927447570\ \text{nats}.
+\]
+The sum of the step budgets is approximately $0.0674684602$ nats. The attained endpoint is $2.857$ times as far from the initial belief in KL as that sum. This establishes a sharp endpoint for a particular, exactly specified, nonconstant schedule. A general solver takes the schedule as input and recovers its extremal transitions by \eqref{eq:bd-one-lo}--\eqref{eq:bd-rec}.
+
+Our independent grid control never evaluates a logarithm. At rational grid points and with these rationally specified input pairs, a comparison between the cost of an edge and its budget has the form $\sum_j c_j\log r_j\leq 0$ with rational $c_j$ and positive rational $r_j$. Multiplying by a common positive denominator and exponentiating reduces the decision to an integer comparison between the numerator and denominator of a rational product. Zero numerator masses and infinite support violations are handled before this transformation. Exhaustive reachability on grids with denominators $10,20,50,100$ checked $8{,}460$ candidate transitions in total. At every layer, every grid point between the displayed endpoints was reached, and every reachable grid point lay within those endpoints. The continuous proof covers the values between grid points. The purpose of this enumeration is to check the boundary conventions and the equality cases through an implementation independent of root finding.
+
+
+\section{How local revision budgets accumulate}
+\label{sec:bd-accumulation}
+
+For orientation, the manuscript also records a path-length bound for metrics. With the convention $\|P-Q\|_{\rm TV}=\frac12\|P-Q\|_1$, Pinsker's inequality and the triangle inequality give $\|P_T-P_0\|_{\rm TV}\leq\sum_t\sqrt{\varepsilon_t/2}$. For any metric dominated by $c$ times this total variation the right side acquires the factor $c$. In particular its coefficient becomes $\sqrt{2}$ in front of $\sum_t\sqrt{\varepsilon_t}$ at $c=2$. Specifying the normalization matters when interpreting the manuscript's more general metric statement. This coarse estimate and the exact fixed-prior answer in \eqref{eq:bd-tv} answer the same binary displacement question at different levels of precision. No metric triangle inequality applies directly to endpoint KL.
+
+\subsection{An identity for reinforcement and reversal}
+
+For $p\in(0,1)$ write $\lambda(p)=\log(p/(1-p))$ for its log odds and write $\phi(p)=p\log p+(1-p)\log(1-p)$ for negative binary entropy. Then $\phi'=\lambda$ and $d(q\|p)=\phi(q)-\phi(p)-\lambda(p)(q-p)$. For interior $p,q$ and any $r\in[0,1]$, subtraction gives the exact identity
+\begin{equation}
+ d(r\|p)-d(q\|p)-d(r\|q)
+       =(r-q)\bigl(\lambda(q)-\lambda(p)\bigr).
+ \label{eq:bd-three}
+\end{equation}
+The sign can be read directly from a probability path. If the first and second updates both move upward, the second increase in probability is paired with a positive previous change in log odds. The endpoint KL exceeds the sum of step KLs. Two strictly downward updates produce the same positive discrepancy. A reversal gives the opposite sign. Returning all the way to the starting point gives zero endpoint cost while both changes can have positive cost.
+
+Telescoping \eqref{eq:bd-three} gives, for interior priors through time $T-1$,
+\begin{equation}
+ d(p_T\|p_0)=\sum_{t=1}^{T}d(p_t\|p_{t-1})
+ +\sum_{t=1}^{T}(p_t-p_{t-1})
+     \bigl(\lambda(p_{t-1})-\lambda(p_0)\bigr).
+ \label{eq:bd-multi}
+\end{equation}
+The second sum supplies exactly the history information missing from a sum of local divergences. The GEMA manuscript's additive-path premise makes that term vanish in the relevant sum. A binary exponential family, by itself, imposes no such cancellation. The identity supplies a diagnostic for recorded revision histories: a ledger containing the probabilities has enough information to measure reinforcement directly. A ledger containing only unsigned step costs can discard it.
+
+For example $1/2\to 11/20\to 3/5$ gives endpoint $0.02013551$ nats and sum of local costs $0.01010198$ nats. In this case the discrepancy equals $\tfrac1{20}\log(11/9)$. The path $1/2\to 11/20\to1/2$ instead spends positive local cost to return to its starting point. In deployments, a realized positive reinforcement term would describe that particular recorded history. The extremal path in \eqref{eq:bd-rec} describes what the budgets permit across all histories.
+
+\subsection{Small budgets and coherent accumulation}
+
+There is a local regime in which the order-one statistic for the final divergence has a simple form. Fix an interior initial belief $p$, a finite horizon $T$, and nonnegative numbers $a_1,\ldots,a_T$. Scale the step budgets as $\varepsilon_t=h^2a_t$ and take $h\downarrow 0$. Set $v=p(1-p)$, $S=\sum_t\sqrt{a_t}$ and $A=\sum_t a_t$. Designate the upper endpoint by a sign $s=+1$ and lower endpoint by $s=-1$, writing $p_T^{s}$ for the corresponding terminal probability. Then
+\begin{align}
+ p_T^{s}
+ &=p+s h\sqrt{2v}\,S
+   + h^2(1-2p)\left(\frac{S^2}{2}-\frac A6\right)+O(h^3),
+ \label{eq:bd-exp-p}\\
+ d(p_T^{s}\|p)
+ &=h^2S^2
+   + s h^3(1-2p)\sqrt{\frac2v}\,
+      \frac{S(S^2-A)}{6}+O(h^4).
+ \label{eq:bd-exp-d}
+\end{align}
+The constants in the remainders may depend on the initial belief, horizon, and fixed list $(a_t)$. Retaining these dependencies is essential near the boundary or when the horizon grows. If all budgets vanish both statements hold identically.
+
+\paragraph{Derivation.}
+For $x$ in a compact subinterval of $(0,1)$, put $v_x=x(1-x)$. Taylor expansion about $x$ in the first slot gives, uniformly there for small $z$,
+\[
+ d(x+z\|x)
+ =\frac{z^2}{2v_x}+\frac{2x-1}{6v_x^2}z^3+O(z^4).
+\]
+For a fixed $a>0$ substitute $z=h w$ and divide by $h^2$. The resulting smooth function equals $w^2/(2v_x)$ at $h=0$ and has nonzero derivative in $w$ at the two solutions $w=s\sqrt{2v_xa}$. Local implicit inversion gives
+\[
+ z=s h\sqrt{2v_xa}+\frac{1-2x}{3}\,a h^2+O(h^3).
+\]
+The formula for $a=0$ follows from the identity transition. A finite number of such increments remains within a common compact subinterval for all sufficiently small $h$. When composing two successive steps, the linear perturbation of $\sqrt{2v_xa_t}$ from the earlier accumulated displacement contributes $(1-2p)\sqrt{a_i a_t}\,h^2$ for each $i<t$. Summing the direct quadratic corrections gives $(1-2p)Ah^2/3$. Summing the cross terms adds $(1-2p)(S^2-A)h^2/2$. Their sum yields \eqref{eq:bd-exp-p}. Substituting into the Taylor expansion at the fixed initial $p$ and collecting terms yields \eqref{eq:bd-exp-d}.
+
+Thus the leading endpoint divergence is $\bigl(\sum_t\sqrt{\varepsilon_t}\bigr)^2$. For $T$ equal positive budgets it is about $T$ times the sum of the budgets, in this fixed-$T$, small-budget regime. The cross terms are of the same order as the local divergences. The cubic term predicts a direction when $p\ne1/2$ and at least two $a_t$ are positive. For $p<1/2$, raising the rare outcome produces the larger endpoint KL for sufficiently small $h$. For $p>1/2$, complement symmetry reverses the direction. At the symmetric prior the two endpoints have equal divergence for every schedule, including schedules outside this local approximation.
+
+The quantifier on $T$ also has an operational meaning. Fix distinct $p,r$ strictly between zero and one, and divide the straight segment from $p$ to $r$ into $T$ equal probability increments. Along the segment, $\partial_q^2d(q\|x)=1/[q(1-q)]$ is bounded by some finite $C$. Each step then costs at most $C(r-p)^2/(2T^2)$. The sum of step costs tends to zero even though the endpoint stays at exactly $r$. A finite-length history of very many small, consistent revisions can have a prescribed nonzero displacement. The sharp interval retains the entire horizon and schedule where this distinction matters.
+
+\subsection{Why a specified prior matters even with only two revisions}
+
+One might try to replace the exact recursion with a bound on endpoint KL depending only on the budgets. Over arbitrary binary priors even two positive budgets defeat every finite candidate. This statement involves a different order of quantifiers from the sharp fixed-prior theorem.
+
+\paragraph{Two-step obstruction.}
+Fix $a,b>0$. For arbitrarily large $M$ choose
+\[
+ p=e^{-M},\qquad q=\frac{a}{M},\qquad r=\frac{b}{\log(M/a)}.
+\]
+For all sufficiently large $M$ these numbers satisfy $0<p\leq q\leq r<1$. When $0<x\leq y<1$,
+\[
+ d(y\|x)
+ =y\log(1/x)+y\log y +(1-y)\log\frac{1-y}{1-x}
+ \leq y\log(1/x).
+\]
+Consequently $d(q\|p)\leq a$ and $d(r\|q)\leq b$. On the other hand, binary entropy is at most $\log 2$, so
+\[
+ d(r\|p)\geq r\log(1/p)-\log 2
+   =\frac{bM}{\log(M/a)}-\log 2\ \longrightarrow\ +\infty .
+\]
+The construction holds two finite positive step budgets fixed over a family of varying priors. With a specified interior $p_0$ there is a finite ceiling $\max\{-\log p_0,-\log(1-p_0)\}$, and \eqref{eq:bd-kl} gives the sharper answer for its schedule. With an exact zero prior the positive mass needed for the example cannot be introduced at all. Approaching zero and starting at zero are mathematically distinct cases.
+
+For a finite illustration take $a=b=0.1$ and $M=10{,}000$. The intermediate probabilities are $q=10^{-5}$ and $r\simeq0.00868589$. The two step KLs are approximately $0.09987487$ and $0.05013814$ nats. The endpoint KL is approximately $86.8090$ nats. Keeping the initial value as a log probability avoids floating-point underflow; replacing $e^{-10000}$ by zero would change the feasible set. In this example the absolute change in probability is below one percentage point. The large KL comes from lifting a previously extraordinary event to observable probability. Total variation and endpoint KL therefore answer quite different stability questions.
+
+The obstruction also identifies the sharp distinction in the number of positive budgets when no prior is specified. With only one positive allowance $a$, the endpoint KL cannot exceed $a$, and choosing $p_0=e^{-a}$ and ending at $1$ attains $a$. Any schedule with two positive allowances admits the preceding unbounded construction, since every other step may leave the belief fixed. This conclusion concerns unrestricted belief updates with finite KL budgets. A lower bound on prior probabilities, evidence constraints, or a cap on the likelihood ratio changes the feasible family.
+
+\subsection{A sharp event-probability bound beyond binary model spaces}
+
+The binary recursion applies exactly to the probability of any nominated event under an otherwise unrestricted belief update. Let $P_0$ be a probability law on a measurable space and let $A$ be a measurable event with $P_0(A)=p_0$. For a sequence $P_0,\ldots,P_T$ whose stepwise full-distribution KLs obey the same budgets, set $p_t=P_t(A)$. Coarse-graining to the indicator of $A$ gives
+\[
+ d(p_t\|p_{t-1})\leq D(P_t\|P_{t-1}).
+\]
+For finite spaces this is the log-sum inequality on $A$ and its complement. More generally finite KL gives absolute continuity, and applying Jensen's inequality to $u\log u$ on each conditional piece of $P_{t-1}$ proves the same claim. Thus $\ell_T\leq P_T(A)\leq u_T$.
+
+This envelope is attained starting from the \emph{specified} law $P_0$. For $0<p_0<1$ write $P_A=P_0(\,\cdot\,\cap A)/p_0$ and $P_C=P_0(\,\cdot\,\cap A^c)/(1-p_0)$. Given any feasible binary path choose $P_t=p_tP_A+(1-p_t)P_C$. The laws $P_A$ and $P_C$ have disjoint supports in the measurable partition $\{A,A^c\}$. Relative density ratios within each piece are constant, so each stepwise full KL equals its binary KL, including feasible endpoint cases interpreted by continuity. If $p_0$ is zero or one, absolute continuity preserves the probability of the null piece throughout any finite-budget history. This proves sharpness for the nominated event without requiring a relationship among the conditional distributions on other events.
+
+For a finite alphabet this observation also settles the sharp full total-variation problem. For each event $A$ use $u_T(P_0(A))$ for the upper endpoint from initial mass $P_0(A)$. Then
+\begin{equation}
+ \max_{\text{feasible }(P_t)}\|P_T-P_0\|_{\mathrm{TV}}
+    =\max_{A}\bigl[u_T(P_0(A))-P_0(A)\bigr].
+ \label{eq:bd-categorical-tv}
+\end{equation}
+By the event representation of total variation on a finite space the right side is an upper bound. Take an event attaining the finite maximum and use the conditional-mixture construction to achieve its maximum upward deviation. This attains the full total-variation bound as well. Considering complements automatically includes downward deviations. Different events can have different extremizing paths; interpreting all their individual extrema as simultaneous would require an additional argument. Equation \eqref{eq:bd-categorical-tv} is an exact finite-alphabet certification result for distributions with a known start. The analogous full-distribution endpoint KL optimization on more than two outcomes remains a separate problem.
+
+
+As a numerical transfer control, keep the three budgets from the hand certificate and start with four equiprobable outcomes. Up to symmetry the possible initial event probabilities are $0,1/4,1/2,3/4,1$. The computed upper gains are $0,0.3034528620,0.3000000000,0.2140453323,0$, respectively. Thus the maximizing event in this control is a singleton. Its mass moves through $0.25$, $0.3399097733$, $0.4402966564$, $0.5534528620$. Splitting the remaining mass uniformly among the other three outcomes supplies the four-outcome witness. Comparing its full KL increments with the three binary budgets at 76-digit working precision gave a largest numerical residual below $8\times10^{-56}$. The event attaining the largest change in this four-outcome model has a different initial probability from the exact symmetric binary witness.
+
+\section{Computing a sharp endpoint with an independent check}
+\label{sec:lab}
+The recurrence in Section~\ref{sec:bd-sharp} reduces an optimization over histories to one-dimensional inversion. Its simplicity creates a risk in testing it. A comparison between two runs of the same root finder would detect little beyond nondeterminism. We use three independent representations: proposed decimal grid points, exact rational enclosures of their KL costs, and explicit reachability on small finite grids. A fourth, purely integer comparison handles exact equalities in a deliberately rational reference history.
+
+\subsection{Inside paths and outside bounds}
+For each side of the interval the producer carries two numbers. On the upper side an inner value \(u^-\) is a feasible state along a saved feasible path. An outer value \(u^+\) bounds the true maximum from above. When the previous bounds differ, the next inner step starts from the old inner value, and the next outer step starts from the old outer value. Starting both from the same rounded center would lose a proof obligation. The exact monotonicity of \(U_e\) is what lets columns built from different previous values enclose the same unknown continuum extremum.
+
+Consider an interior upper step. The producer proposes \(v^-\ge u^-\) and \(v^+\ge u^+\). The independent checker verifies
+\[
+        d(v^-\|u^-)\le e,\qquad d(v^+\|u^+)>e .
+\]
+The strict exterior inequality, monotonicity in the first argument above the center, and monotonicity of \(U_e\) turn the second test into a valid upper bound. If \(v^+=1\), the support boundary already bounds every probability. To claim that 1 is \emph{reached}, the inner column must also hit it with a verified charge. A zero budget copies both columns exactly. An absorbing prior forces the only feasible next state. The lower side is the reflected construction. The final lower estimate for maximum KL uses the feasible endpoints; its upper estimate uses the exterior ones. Each is printed with outward decimal rounding.
+
+The grid denominator is \(10^{30}\) for the 18 primary schedules. It is not claimed that the continuum optimizer has this denominator. The outer and inner chains occupy neighboring points at a single inversion, and the propagated pair may widen after several steps. Across these schedules the largest final separation on a side was \(7\times10^{-30}\). That number describes probability-coordinate enclosures on the tested schedules. A separate certificate bounds the reported KL numbers, whose sensitivity can increase near 0 or 1.
+
+\subsection{Certifying the logarithm by integer arithmetic}
+The producer uses high-precision decimal logarithms to propose grid neighbors. The checker takes a rational \(x>0\), extracts an integer \(k\) so \(x=2^k m\) with \(1\le m<2\), and writes \(z=(m-1)/(m+1)\). For the separate \(\log2\) evaluation use \(m=2\). Then \(0\le z\le1/3\), and
+\[
+ \log m=2\sum_{j=0}^{J-1}\frac{z^{2j+1}}{2j+1}+R_J,\qquad
+ 0\le R_J\le\frac{2z^{2J+1}}{(2J+1)(1-z^2)} .
+\]
+At \(J=68\) the program bounds each product, odd division and accumulated sum from both sides using integer units of \(10^{-70}\). It adds a rational upper bound for the remainder. The term \(k\log 2\) uses reversed endpoints if \(k<0\). Weighting two such enclosures by nonnegative rational probabilities then gives a rational interval for \(d(q\|p)\). Contributions with zero numerator are handled at the boundary before a logarithm is taken.
+
+There were 160 nontrivial rational sign checks across 50 revisions and 18 schedules, in addition to support, order, zero-budget and final-value checks. The intentionally corrupted receipts included an infeasible inner path, a false outer bound and a particularly instructive mutation: use the feasible inner coordinate as its own exterior. The last passes weak ordering and fails the required strict KL sign. Reversing the KL arguments changes the first cost of the rational witness by more than the numerical uncertainty. These failures show which obligations in the test perform actual work.
+
+\subsection{Finite graphs and equality-sensitive controls}
+On a grid \(G_n=\{0,1/n,\ldots,1\}\) start with \(R_0=\{p_0\}\) and enumerate every candidate successor of every currently reached point. This search uses no monotone inverse and does not presume interval reachability. On grids of denominators \(50,100,200,400,800\), the computed terminal sets were contiguous for the four selected schedules and nested under refinement. The comparison uses ordinary floating-point edge costs with a threshold-margin check; the rational enclosures above carry the continuum certification. For exact equalities the independent integer-only control evaluates products of rational powers after clearing denominators in linear combinations of logarithms. This is appropriate for the hand-built rational schedules, where an edge may lie exactly on its cap.
+
+For example, take prior \(1/2\) and two step caps of \(0.005\). On grids of size 50 and 100 the reachable endpoints are \(0.42\) and \(0.58\). At size 200 they are \(0.41\) and \(0.59\); at size 400 they are \(0.405\) and \(0.595\); at size 800 they are \(0.4025\) and \(0.5975\). The continuum interval is approximately \([0.400500401,0.599499599]\). Each discrete path must select an available first step, so rounding can reduce the second-step opportunity too. Estimating the continuous answer from the last grid alone would systematically understate the worst possible drift in this example.
+
+\section{What the revision experiments show}
+\subsection{Holding the per-revision budget fixed}
+Begin with a balanced event and spend at most \(0.005\) nat on each update. Before a support boundary is reached, an extremal history uses every cap. The upper witness for four steps, rounded for readability, is
+\[
+   0.500000\ \longrightarrow\ 0.549958\ \longrightarrow\
+   0.599500\ \longrightarrow\ 0.648126\ \longrightarrow\ 0.695344 .
+\]
+The reflected path attains the lower endpoint. The table gives the exact recurrence evaluated with rationally checked enclosures. Ratios compare quantities in nats. A ratio greater than one is expected on coherently reinforcing histories.
+
+\begin{center}\small
+\begin{tabular}{rrrrrr}\toprule
+Steps & Cap sum & Lower belief & Upper belief & Max.\ endpoint KL & KL / cap sum\\\midrule
+1&.005&.450042&.549958&.005000&1.000\\
+2&.010&.400500&.599500&.019933&1.993\\
+4&.020&.304656&.695344&.078390&3.919\\
+8&.040&.139195&.860805&.289648&7.241\\\bottomrule
+\end{tabular}\end{center}
+\begin{figure}[htbp]\centering\cyclefigure{.96\linewidth}{reach}
+\caption{Continuum reachable intervals for equal caps of 0.005 nat. Lines connect extremal histories at the integer decision times. The shading denotes attainable probabilities on those slices.}\end{figure}
+
+The linearized prediction at small caps and fixed horizon is \(T^2e\) for the balanced prior. At eight steps it gives \(0.32\) nat against the measured maximum \(0.289648\). Its departure is scientifically useful. The local expansion describes a neighborhood of the original belief. Near a support boundary the same cap buys a different probability displacement. A Taylor approximation cannot replace an exact recursion for decisions near certainty.
+
+\subsection{Changing the initial belief or the order of caps}
+With four \(0.005\)-nat caps from a prior of \(0.1\), the final probability can fall to \(0.0128535\) or rise to \(0.2458055\). The maximum absolute change is \(0.1458055\), and the maximum endpoint KL is \(0.0877704\) nats. Starting from \(0.3\) yields \([0.1356678,0.4935162]\) and a maximum endpoint KL of \(0.0817671\) nats. Mirroring the prior gives the reflected reachable interval with identical KL maximum. The tests check reflection on every inner and outer coordinate, not just the displayed terminal decimals.
+
+For prior \(0.3\), allocate \(0.001\) nat then \(0.03\) nat. The resulting interval is \([0.1747899,0.4379239]\) and the maximum KL is \(0.0423065\). Reverse the order: the interval becomes \([0.1749984,0.4377323]\) with maximum KL \(0.0421921\). Both the sum of caps and the sum of square roots of caps are invariant under that swap. The difference therefore exposes information suppressed by both aggregate summaries. These two measured orders do not imply a general optimal ordering for every prior and budget list.
+
+A prior of \(0.9\) with a first cap of \(0.11\) can already reach probability 1 since \(-\log(0.9)<0.11\). Its upper extremum subsequently stays at 1 even with another positive cap. The lower extremum after the two caps \(0.11,0.001\) is approximately \(0.714592\). This illustrates a subtle point about greedy paths. The upper endpoint may use less than the full cap after touching the boundary; the extremal path for the opposite objective takes a different first step. One feasible history need not maximize incompatible objectives simultaneously.
+
+\subsection{A matched counterfactual for the motivating path}
+Fix the exact two caps from \(1/2\to11/20\to3/5\). Monotonicity makes \(3/5\) the upper endpoint; symmetry about the initial state makes \(2/5\) the lower endpoint. Every intermediate result is attainable. Keeping the first revision unchanged, reverse direction at the second revision and return to \(1/2\). It costs \(d(1/2\|11/20)=0.00502516793\) nats, below the original second cap \(0.00509361193\). The terminal drift is exactly zero. Both histories satisfy the same declared per-step limits. Equality in the upper bound has a constructive certificate, and a maximum cannot be read as a prediction of typical drift.
+
+One can go further and ask whether such a path is compatible with an actual Bayesian update. For strictly interior probabilities \(p,q\), set
+\[
+ A=\frac{q/(1-q)}{p/(1-p)},\qquad
+ \Pr(+\mid1)=\frac{A}{1+A},\qquad
+ \Pr(+\mid0)=\frac{1}{1+A}.
+\]
+These are admissible likelihoods and both are positive. Observing \(+\) multiplies the prior odds by \(A\) and produces precisely \(q\). The two observed positive likelihood ratios for the example are \(11/9\) and \(27/22\). A process allowed to choose an observation experiment at each stage can therefore realize the full path with positive probability. Unobserved branches of this particular channel have their own costs. The construction certifies the realized history under pathwise caps; a design that promises to satisfy the cap for \emph{every} observation needs to check those branches too.
+
+A further operational restriction can be modeled exactly. If each realized log likelihood ratio must satisfy \(|\log A|\le L_t<\infty\), intersect the allowable interval with
+\[
+ [\,\sigma(\operatorname{logit}p-L_t),\
+       \sigma(\operatorname{logit}p+L_t)\,],\qquad
+ \sigma(x)=(1+e^{-x})^{-1}.
+\]
+Both new lower and upper endpoint maps remain nondecreasing as maxima or minima of nondecreasing maps. Each intersected interval contains \(p\). Thus the same interval propagation argument applies. From an interior prior these extra restrictions exclude an exact transition to 0 or 1 at finite horizon. This explains precisely why hard certainty in our KL-only experiment need not be attainable in a model restricted to strictly positive, bounded likelihood ratios.
+
+
+\subsection{Maximum chance of a prescribed Bayesian revision history}
+\label{sec:bd-bayesian}
+
+In a Bayesian interpretation the true binary state is drawn once from the initial prior. At each stage the observer may design a signal depending on the observed history. Bayes' rule determines the next posterior. Impose the KL cap at \emph{every} positive-probability signal outcome, including branches that the desired trajectory leaves behind. How often could a prescribed revision sequence occur under the most favorable signal design?
+
+\paragraph{Single-step maximum.}
+Suppose $0<p<1$, the next posterior must lie in $[L,U]=[L_e(p),U_e(p)]$, and $q$ is the desired feasible value. For $q>p$, the largest probability which can be assigned to seeing exactly $q$ is
+\[
+ W(p,q;e)=\frac{p-L}{q-L}.
+\]
+For $q<p$ it is $(U-p)/(U-q)$. For $q=p$ set $W=1$, attained by an uninformative signal. These formulas apply to a prescribed $q$ anywhere inside the one-step band, including a feasible support boundary. At a boundary prior, or at $e=0$, only the stationary transition can be reached under the finite budget.
+
+Indeed, write $w=\Pr(Q=q)$ for the next random posterior $Q$. The posterior mean before seeing the signal is the current belief, $\mathbb E[Q]=p$. If $q>p$, all other posteriors are at least $L$, whence $p\geq wq+(1-w)L$ and the upper bound follows. For attainment take a two-valued posterior, equal to $q$ on signal $+$ and to $s=L$ on its complement. The proposed $w$ makes $wq+(1-w)s=p$. A concrete channel is
+\[
+ \Pr(+\mid H=1)=\frac{wq}{p},
+ \qquad
+ \Pr(+\mid H=0)=\frac{w(1-q)}{1-p}.
+\]
+These are in $[0,1]$ because $p-wq=(1-w)s\geq0$ and $1-p-w(1-q)=(1-w)(1-s)\geq0$. Bayes' rule then recovers exactly $q$ and $s$. Both obey their common cap. For a downward move the same construction uses $s=U$. If the model additionally requires every likelihood to be strictly positive under both hidden states, a signal revealing certainty can be unavailable; the stated optimization permits zero likelihoods under one state, provided the signal itself has positive probability. For the interior examples below the constructed channels have strictly positive likelihoods on both branches.
+
+\paragraph{A specified history.}
+For a feasible sequence $(p_0,\ldots,p_T)$, the largest probability of seeing exactly this sequence of posterior beliefs equals
+\[
+ \prod_{t=1}^T W(p_{t-1},p_t;\varepsilon_t).
+\]
+Condition on the previous belief history. Any complete signal history producing that prefix obeys the single-step maximum, so averaging over such signal histories leaves the same bound. Multiplying the conditional bounds proves the upper estimate. Construct the maximizing binary channel at each node on the desired history and leave the belief fixed after the first departure. Every node satisfies its cap. Stationary steps can be made certain, including all steps after a prescribed path reaches a support boundary. This produces the indicated product. The event in this theorem prescribes \emph{all} intermediate posterior values. Hitting a target by any route, or predicting the frequency of a particular path under an existing reader, requires a different probability calculation.
+
+For the motivating path $1/2\to 11/20\to3/5$, take the exact caps $d(11/20\|1/2)$ and $d(3/5\|11/20)$. At the first step the opposite posterior is $9/20$, giving $w_1=1/2$. At the second step the lower root is $s=0.499660075394546$ to the displayed precision. Thus
+\[
+ w_2=\frac{11/20-s}{3/5-s}\simeq0.501693865162799,
+ \qquad
+ w_1 w_2\simeq 0.250846932581399 .
+\]
+Both branches of the second channel are realizable. Its likelihoods of $+$ are approximately $0.5473023984$ under $H=1$ and $0.4459501024$ under $H=0$. Even a source of observations designed expressly to produce this extreme history can reach it on at most about one in four trials. The complementary signal must carry the weight needed to preserve the prior mean.
+
+The numerical check encloses each logarithm using decimal bounds on its rational argument and the two neighbors of a correctly rounded logarithm. All subsequent cost comparisons, rational bisections, probability arithmetic, and tests of Bayes' rule use fractions. The resulting product lies in
+\[
+ [0.25084693258139943412799,\;0.25084693258139943412800].
+\]
+The reflected downward path yields the same enclosure. A mutation increases the proposed success probability above its certified maximum; the compensating posterior then leaves the admissible ball or the probability simplex. For the three-step hand certificate ending at $4/5$, the analogous maximizing probability lies between $0.13101317386978081784005$ and $0.13101317386978081784006$.
+
+
+\section{Why the number of revisions changes the guarantee}
+The previous equal-cap experiment increases total allowance as time advances. A distinct question is what happens when an auditor fixes the \emph{sum} of all step caps in advance and merely divides it over more revisions. The two experiments share one point: eight equal caps of \(0.005\) sum to \(0.04\). Away from that point they probe different constraints.
+
+\paragraph{A finite-horizon theorem for reaching certainty.}
+Fix \(p_0\in(0,1)\), \(B>0\), and a horizon \(T\). Give each of the \(T\) revisions cap \(B/T\). If
+\[
+                  T\geq \frac{4(1-p_0)}{p_0 B},
+\]
+there is an admissible path ending at 1. By exchanging outcomes there is a path ending at 0 whenever \(T\geq4p_0/((1-p_0)B)\). If both inequalities hold the reachable set is the whole interval. These are sufficient horizons; a particular instance can arrive substantially sooner.
+
+To prove the assertion about 1, put \(w=1-p_0\) and
+\[
+                  r_j=1-w(1-j/T)^2,\qquad 0\leq j\leq T.
+\]
+Just before step \(j+1\), write \(u=1-j/T>0\). Then \(1-r_j=wu^2\), \(r_j\ge p_0\), and \(0<r_{j+1}-r_j=w(2u/T-1/T^2)\le 2wu/T\). For a Bernoulli update from \(r\in(0,1)\) to \(s\in[0,1]\), \(\log x\le x-1\) gives
+\[
+       d(s\|r)\le \frac{(s-r)^2}{r(1-r)}.
+\]
+This includes \(s=1\) by continuity in the first argument. Applying the bound to the parabolic path cancels \(u^2\) in numerator and denominator:
+\[
+       d(r_{j+1}\|r_j)
+       \le \frac{4w^2u^2}{T^2p_0wu^2}
+       =\frac{4(1-p_0)}{p_0T^2}\le\frac{B}{T}.
+\]
+The path starts at \(p_0\), ends at 1, and is interior before the last step. The cancellation explains the choice of a parabola. A path taking constant probability increments has no such direct cancellation of the shrinking Bernoulli variance near the boundary. For the opposite endpoint apply the proof to \(1-p_0\). Intermediate endpoints follow from the reachability theorem.
+
+\subsection{A threshold at thirty revisions}
+Take \(p_0=1/2\) and \(B=1/25\) nat. The explicit bound guarantees both endpoints by \(T=100\). We then asked exactly when a history can first hit certainty. The horizon experiment was specified after the primary sweep; it tests a consequence of the new construction. For each integer \(T\) in increasing order, keep the cap exactly \(1/(25T)\). Follow the extremal upper recursion with rational inner and outer checks. Stop at the first \(T\) whose inner chain reaches 1. For every preceding \(T\) require a certified upper coordinate strictly below 1. Searching all previous horizons avoids assuming that redistributing the caps from \(T\) to \(T+1\) preserves a feasible history.
+
+\begin{center}\small\begin{tabular}{rrr@{\qquad}rrr}\toprule
+\(T\)&Total cap&Max.\ belief&\(T\)&Total cap&Max.\ belief\\\midrule
+1&.04&.640470197&16&.04&.954671128\\
+2&.04&.695986670&24&.04&.992963325\\
+4&.04&.769704090&28&.04&.999443757\\
+8&.04&.860805177&29&.04&.999972415\\
+&&&30&.04&\(1\) exactly\\\bottomrule\end{tabular}\end{center}
+\begin{figure}[htbp]\centering\cyclefigure{.95\linewidth}{horizon}
+\caption{Fixed sum of per-revision KL caps, \(B=0.04\) nat, spread evenly over different finite horizons. The value at 30 is certified by a feasible path landing on 1. Complement symmetry supplies a path landing on 0.}\end{figure}
+
+At \(T=29\) the final upper bound is \(0.999972415245<1\). At \(T=30\) a certified feasible path reaches \(0.999443534677\) before its last revision. The cost of jumping from there to 1 is about \(0.0005566202073\) nats, below the final cap \(1/750\). The distinction between these two cases cannot be read from a plot rounded to three decimal places. The independent checker verified 929 transition inequalities for the thirty horizons. The tables in the package retain the entire list of inner and outer rational coordinates, so the first-horizon claim can be audited even without reproducing a root finder. The upper endpoint history is exhibited constructively, and the bound on all earlier horizons uses the monotone outside path.
+
+\subsection{What a per-revision budget buys an auditor}
+Suppose the owner of a memory system wants a nominated fact to remain within five percentage points of its initial confidence until an independent review. A cap on the sum of an unspecified number of KL changes does not enforce such a policy. The parabolic construction evades any positive sum by sufficiently fine subdivision. A finite horizon, a policy expressed in cumulative path length, bounded likelihood ratios, or an endpoint check against a trusted historical reference can define genuinely different promises. The operational choice depends on whether a revision is an externally meaningful event or an internal bookkeeping step that can be subdivided.
+
+One can make this distinction without running a model. Given a proposed ordered schedule, compute its exact interval and compare it with the policy's allowed interval. The result is an audit of what the specified constraints alone permit. A violation by an extremal path tells the designer that more information is needed to certify safety of that particular numeric policy. It does not estimate the chance that an observed update process follows the maximizing path. If an implementation has access to full belief histories, the signed cross term in equation~\eqref{eq:bd-multi} permits a separate accounting of what actually reinforced or reversed prior changes.
+
+\section{A larger belief space and a hidden change}
+A reader of a belief store often asks one yes-or-no question, even when the stored distribution ranges over many alternatives. The event-level result in Section~\ref{sec:bd-accumulation} is exact precisely because it specifies the observable. For a distribution \(P\) let an event \(A\) have mass \(p\). Writing the full KL change to \(Q\) as the binary divergence plus the two within-event conditional divergences shows where information disappears:
+\[
+ \begin{split}
+ D(Q\|P)={}&d(q\|p)
+       +q\,D(Q(\cdot\mid A)\|P(\cdot\mid A))\\
+       &+(1-q)D(Q(\cdot\mid A^c)\|P(\cdot\mid A^c)).
+ \end{split}
+\]
+When an event has zero updated mass its weighted conditional term vanishes. A positive updated mass over a zero prior mass would have infinite cost. If we preserve the two conditional distributions and move only event mass, both extra terms are zero. If we change the conditional laws keeping total mass constant, the displayed binary divergence is zero even though the full state changes.
+
+Our four-outcome control starts from \((0.20,0.30,0.10,0.40)\), with \(A\) the first two outcomes. Changing it to \((0.24,0.36,0.08,0.32)\) raises the event probability from \(0.5\) to \(0.6\). The within-event conditionals are unchanged, \(2:3\) in \(A\) and \(1:4\) outside it. Both the event and full KL changes equal \(0.02013551355\) nats. Instead change the original vector to \((0.35,0.15,0.10,0.40)\). The event probability is still \(0.5\), the event divergence is exactly zero, and the full divergence is \(0.09189344869\) nats. A record of a single event can certify its own endpoint and overlook a large redistribution within that event.
+
+There is a corresponding sampling distinction. If an actual reader reports one draw from the distribution, even its nominated event probability is estimated with uncertainty. Our input is the probability itself. This separates three future claims that require different evidence: reachability under budgets, identifiability from the stored record, and estimation from a finite number of observations. Preserving that separation would be essential in an empirical memory experiment.
+
+\section{Revisiting the two research questions}
+\subsection{When is a witness strong enough?}
+In the arithmetic proof a single nonzero identity coefficient rules out annihilation by a product of particular projectors. To reach the selected arithmetic family one also needs the level vector, equality of the appropriate finite dimensions, parameters identifying the row and compatibility of the later linked bundle. The finite algebra provides a certificate of survival at one stage. The subsequent identity of the underlying data determines where that certificate is usable. An independent assertion that some lattice exists cannot substitute for that identification.
+
+In the drift experiment the decimal root at one step is equally easy to misplace. A local maximum computed from a convenient prior says nothing about the next step if that prior is unreachable. The constructive recurrence resolves the issue in a particularly transparent way: the previous optimum is itself attained, so the next optimizer is allowed to start there. The outside path, on the other hand, need never be feasible; its role is to bound all reachable priors by monotonicity. Rejecting a feasible number when it is proposed as a strict exterior was an intentional test of that distinction.
+
+The shared lesson concerns explanation rather than a common underlying mathematical theory. When reporting a nonzero object, identify its space, index and producing condition. When reporting a bound on a trajectory, identify the order of decisions, the direction of the divergence and a path on which the bound is met. Removing the identity of the witness from either description can turn a true local statement into an unsupported global inference.
+
+\subsection{Results with different forms of authority}
+The source trace makes a claim about the content of a pinned formal development. Its evidence consists of declaration types, proof bodies, dependent parameters and selected kernel checks. The nonzero and zero products in the finite control are exact calculations in the stated finite group. The binary endpoint result is a mathematical theorem for a specified update class with a written analytic proof, a checked abstract reachability lemma, and independent rational numerical certificates for selected instances. The horizon threshold is an exact finite statement conditional on that proved endpoint recursion. None of these results identifies a numerical automorphic family chosen by classical existence, a distribution of actual GEMA update paths, or an improvement to the headline RH conclusion.
+
+\subsection{Two next experiments with identifiable outcomes}
+For the Weil trace a natural next target is the arithmetic identity supplying the equality of finite dimensions at the chosen levels. An informative split would trace the multiplicity-one input for the finite character sum separately from the input equating dimensions in the arithmetic row. If either is available only after a further nonconstructive selection, record the enclosing parameters and which subsequent conclusions use that choice. A finite ablation should change one local type while keeping the row arithmetic and the level fixed whenever such a joint instance is available. The present finite group controls test the first dependence and leave that full joint construction open.
+
+For GEMA the natural next step is to specify the operator's actual update policy before comparing its reachable set with the KL-only envelope. The bounded likelihood ratio example predicts a strictly interior endpoint under finite evidence strength even where the KL-only envelope reaches certainty. Run matched histories of equal caps and horizon, varying only likelihood constraints. A terminal probability outside the narrower band would refute that operational model or its implementation. Consistent membership in the band would establish compliance for those histories; estimating frequencies or performance would require data from the intended system.
+
+
+\appendix
+\section{Source and verification guide}
+\subsection{Source pins and reading locations}
+The public fork is \href{https://github.com/nousentllc/riemann-hypothesis}{\textsf{nousentllc/riemann-hypothesis}}. All original Lean source anchors in Part I use commit \texttt{40e56bab026552e089d7afcfeff08d2defb9c005}. The earlier \href{https://github.com/nousentllc/riemann-hypothesis/blob/08188ff0c6dd02dfec0bd65d30765862e9db56b7/research/uriel/PROOF_CONTEXT.md}{proof context} and its analytic, arithmetic and covolume traces motivate this follow-up. The \href{https://github.com/nousentllc/riemann-hypothesis/pull/15}{64-cycle study} supplies the previous research endpoint; it is independent of the binary drift computation. The companion package includes a numbered source manifest with file and line-span digests so the reader can recover the identity behind each short W-reference. The link at each occurrence opens the corresponding original lines.
+
+The internal manuscript is \emph{Uriel GEMA Formal Architecture}. The definition of a budgeted belief update and the theorem entitled \emph{Total drift bound} appear around lines 2693--2718 of its LuaLaTeX source. The source SHA-256 is
+\begin{center}\small\texttt{ea396f91525c6746cc6bb45ff979feef}\\
+\texttt{7ec0d29dfec3e77692ed7081099894fc}.\end{center}
+Concatenate the two printed lines. The exact input identity is also in the package's provenance record. The study uses the manuscript's KL direction and its additive-path qualification. All sharp-envelope results are argued here from the binary definition. We have not performed a literature priority search for those results. For the definition of relative information see Kullback and Leibler, \href{https://doi.org/10.1214/aoms/1177729694}{\emph{On Information and Sufficiency}} (1951). For the relation of relative entropy to Bregman divergence see Banerjee, Merugu, Dhillon and Ghosh, \href{https://www.jmlr.org/papers/v6/banerjee05b.html}{\emph{Clustering with Bregman Divergences}} (2005). The three-point calculation used here is derived explicitly in the text. The mean-preserving posterior split used in our Bayesian control also appears in Kamenica and Gentzkow, \href{https://doi.org/10.1257/aer.101.6.2590}{\emph{Bayesian Persuasion}} (2011). Our constraint is the history-dependent KL band on every branch.
+
+\subsection{How to reproduce the computations}
+The top-level manuscript is a single LuaLaTeX source. Its three vector figures and bibliographic information are embedded. Compile it twice with LuaLaTeX or use \texttt{latexmk -lualatex}. The printed graph values are derived from the saved binary receipts; rebuilding the PDF requires no numerical software or network access.
+
+From the root of the extracted package run \texttt{python3 -B reproduce.py}. The driver reruns the finite-group convolution, the continuous endpoint proposals, the independent rational log checks, the fixed-total horizon sweep, the small-grid integer checks and the additional controls. It compares the fresh outputs with the archived receipts. It uses the Python standard library and does not rewrite the reference files. The packaged \texttt{README.md} gives the separate source-authentication and Lean replay commands, prerequisites and pinned versions. No absolute path to the author's machine is needed to run the finite experiments. The original arithmetic checkout and the appropriate Lean dependencies are needed for the source and proof replays.
+
+\begin{center}\small
+\begin{tabularx}{\linewidth}{@{}p{.28\linewidth}Y@{}}
+\toprule
+Evidence location & What to inspect\\\midrule
+\texttt{evidence/PROTOCOL.md} & Predictions fixed before the primary numerical sweep; the fixed-total-budget horizon has a separate supplementary protocol.\\
+\texttt{evidence/weil/} & Source hashes, trace and bundle controls, finite projector computations, isolated proof modules and scoped kernel receipts.\\
+\texttt{evidence/binary/} & The 18 primary schedules, upper/lower paths, all 30 threshold cases, abstract Lean recurrence, finite-grid and analytical controls.\\
+\texttt{SHA256SUMS} & Digests for the package files, including the standalone source and compiled manuscript.\\
+\bottomrule\end{tabularx}
+\end{center}
+
+\subsection{A short manual audit}
+Start the Weil trace at the third component of the outer assembly, then follow its inner row implication to the finite coefficient at the identity. The source manifests give the exact line ranges for each step. For the binary proof, evaluate the two successive divergences on the rational path in Section~\ref{sec:lab} and compare the return cost against the second cap. For the horizon threshold, the final inner coordinate for \(T=30\) equals 1 while the final outer coordinate for \(T=29\) is strictly smaller. The same rounded display could conceal this distinction; every underlying coordinate is rational and recoverable.
+\end{document}
+
+BEGIN FIGURE chain
+255044462d312e340a25938c8b9e205265706f72744c61622047656e6572617465642050444620646f63756d656e7420286f70656e736f
+75726365290a312030206f626a0a3c3c0a2f4631203220302052202f46322033203020520a3e3e0a656e646f626a0a322030206f626a0a
+3c3c0a2f42617365466f6e74202f48656c766574696361202f456e636f64696e67202f57696e416e7369456e636f64696e67202f4e616d
+65202f4631202f53756274797065202f5479706531202f54797065202f466f6e740a3e3e0a656e646f626a0a332030206f626a0a3c3c0a
+2f42617365466f6e74202f48656c7665746963612d426f6c64202f456e636f64696e67202f57696e416e7369456e636f64696e67202f4e
+616d65202f4632202f53756274797065202f5479706531202f54797065202f466f6e740a3e3e0a656e646f626a0a342030206f626a0a3c
+3c0a2f436f6e74656e7473203820302052202f4d65646961426f78205b203020302034353020323337205d202f506172656e7420372030
+2052202f5265736f7572636573203c3c0a2f466f6e74203120302052202f50726f63536574205b202f504446202f54657874202f496d61
+676542202f496d61676543202f496d61676549205d0a3e3e202f526f746174652030202f5472616e73203c3c0a0a3e3e200a20202f5479
+7065202f506167650a3e3e0a656e646f626a0a352030206f626a0a3c3c0a2f506167654d6f6465202f5573654e6f6e65202f5061676573
+203720302052202f54797065202f436174616c6f670a3e3e0a656e646f626a0a362030206f626a0a3c3c0a2f417574686f722028616e6f
+6e796d6f757329202f4372656174696f6e446174652028443a32303030303130313030303030302b30302730302729202f43726561746f
+722028616e6f6e796d6f757329202f4b6579776f726473202829202f4d6f64446174652028443a32303030303130313030303030302b30
+302730302729202f50726f647563657220285265706f72744c616220504446204c696272617279202d205c286f70656e736f757263655c
+2929200a20202f5375626a6563742028756e73706563696669656429202f5469746c652028756e7469746c656429202f54726170706564
+202f46616c73650a3e3e0a656e646f626a0a372030206f626a0a3c3c0a2f436f756e742031202f4b696473205b203420302052205d202f
+54797065202f50616765730a3e3e0a656e646f626a0a382030206f626a0a3c3c0a2f46696c746572205b202f415343494938354465636f
+6465202f466c6174654465636f6465205d202f4c656e677468203839340a3e3e0a73747265616d0a4761746e24635a354c2f26423d3024
+603f2a632d4c4d484a6d46412d3b383f40233467214a346c5157405e7475503d5f435c2e71296f486f465440246254504966685f2b6729
+21214762316b27615d405c37736d752f4854732b657074266a642f384a3b3969355936332c30696c592c2456486633425e29473c5a4864
+26524765542d6963734e5d3670382466595726365a4150576d4c2f4f626e4e296966526c514327503f5a364c462e472e3f2256444b253a
+4a356f643c232a2847665635355e2d5026565e3850735d6940513c426e33646051533f5d56534e465740284348446d4368396f615e3541
+2d47215a373c523e5533375f526e2c45325f316e6c462e41505e4e632c4839632a3d74362a6c31732529352e23224f307066272f4c3860
+444e6c7247285060573d2e422946292d7438644c2e2f3f413936322f506a3c6b5759344e3e424f6368436470236b2a386e263823397551
+425b2b3a4e476d273e5d3d5d74632b2a475f34725947243b5a41287575244a6d3241425d28244c6e6d622629734a652e6a614e3c2d5575
+663526747533586f4c6c2d692b5a5c715e722b71706767756b60315e474570462f59337273393b623536563f43352161636d5430527548
+5a5022687438355e6a73666550272738354e3f624f40562c212c6931675240422938612b2e3e2f2e267352215f4b4f353f293c25502a2c
+4b626d6b2553623755437266575929242c554867703c554a2f2d39423021714f6e463e3953693d4c45244f3c433e50693647607560256c
+30753351742b5d3c2869664a6a45684651524335252565714670614a616d3341413d672e336b284a4272672c473644364d526239572f5c
+306621416d26323e60465f6a35674c505c534c533b754f266d30524254603e606f5271415e5543482d364c746f3469602435606c65756d
+3a4239372b5c394d456a403337513d5f6425484d67576b386b332d363c353944443d32495a72615353595d524d625a444f5d3675295175
+315d6a7451394270433d414e216358615f5c712e4f28567365623036665c654a2d2c38575f3f4a41565e376f71535a695a3e5e4d6c355e
+46382e4a362e586e68543b54716e5a39302c63562d2e2f33713f5a23253146542d4b725c6044712a3a4625662e402b5f4171225e295f3b
+682353435f3865276b4959263f692935696c2937665958292d29226e49425d662b3b4f4124465e4b4f243d3f59212f5868483a267e3e65
+6e6473747265616d0a656e646f626a0a787265660a3020390a303030303030303030302036353533352066200a30303030303030303631
+203030303030206e200a30303030303030313032203030303030206e200a30303030303030323039203030303030206e200a3030303030
+3030333231203030303030206e200a30303030303030353134203030303030206e200a30303030303030353832203030303030206e200a
+30303030303030383433203030303030206e200a30303030303030393032203030303030206e200a747261696c65720a3c3c0a2f494420
+0a5b3c31633137383139386662646661353162323539393564383964343130323034333e3c316331373831393866626466613531623235
+39393564383964343130323034333e5d0a25205265706f72744c61622067656e6572617465642050444620646f63756d656e74202d2d20
+64696765737420286f70656e736f75726365290a0a2f496e666f2036203020520a2f526f6f742035203020520a2f53697a6520390a3e3e
+0a7374617274787265660a313838360a2525454f460a
+END FIGURE
+
+BEGIN FIGURE reach
+255044462d312e340a25938c8b9e205265706f72744c61622047656e6572617465642050444620646f63756d656e7420286f70656e736f
+75726365290a312030206f626a0a3c3c0a2f4631203220302052202f46322033203020520a3e3e0a656e646f626a0a322030206f626a0a
+3c3c0a2f42617365466f6e74202f48656c766574696361202f456e636f64696e67202f57696e416e7369456e636f64696e67202f4e616d
+65202f4631202f53756274797065202f5479706531202f54797065202f466f6e740a3e3e0a656e646f626a0a332030206f626a0a3c3c0a
+2f42617365466f6e74202f48656c7665746963612d426f6c64202f456e636f64696e67202f57696e416e7369456e636f64696e67202f4e
+616d65202f4632202f53756274797065202f5479706531202f54797065202f466f6e740a3e3e0a656e646f626a0a342030206f626a0a3c
+3c0a2f436f6e74656e7473203820302052202f4d65646961426f78205b203020302034353020323130205d202f506172656e7420372030
+2052202f5265736f7572636573203c3c0a2f466f6e74203120302052202f50726f63536574205b202f504446202f54657874202f496d61
+676542202f496d61676543202f496d61676549205d0a3e3e202f526f746174652030202f5472616e73203c3c0a0a3e3e200a20202f5479
+7065202f506167650a3e3e0a656e646f626a0a352030206f626a0a3c3c0a2f506167654d6f6465202f5573654e6f6e65202f5061676573
+203720302052202f54797065202f436174616c6f670a3e3e0a656e646f626a0a362030206f626a0a3c3c0a2f417574686f722028616e6f
+6e796d6f757329202f4372656174696f6e446174652028443a32303030303130313030303030302b30302730302729202f43726561746f
+722028616e6f6e796d6f757329202f4b6579776f726473202829202f4d6f64446174652028443a32303030303130313030303030302b30
+302730302729202f50726f647563657220285265706f72744c616220504446204c696272617279202d205c286f70656e736f757263655c
+2929200a20202f5375626a6563742028756e73706563696669656429202f5469746c652028756e7469746c656429202f54726170706564
+202f46616c73650a3e3e0a656e646f626a0a372030206f626a0a3c3c0a2f436f756e742031202f4b696473205b203420302052205d202f
+54797065202f50616765730a3e3e0a656e646f626a0a382030206f626a0a3c3c0a2f46696c746572205b202f415343494938354465636f
+6465202f466c6174654465636f6465205d202f4c656e67746820323136300a3e3e0a73747265616d0a4761746d3d6241512c6f26446336
+4969334c555a6a6e6c3b376375723e25373c3c72245c544a4d694f555d725c4b295532454f3b73455d69434a5d414b254d222c6e42422b
+3d3830272d5f2e2f5f57576b404737626b486a734a3d2255636b6b37396d406c2c3c43416e5d555f52396561743f2b667538283d537365
+24603542566f53212547535144252467572c43424b61733d3e316b3d2c3c41494d43746b69722572485331744f4c493368582a6f483624
+432b71385e57672b2f3a286a5468637328392a652b504a376c49525025524c2675693a664b6f344a2b4e524e5352314d503875232a3a31
+38456c274a286a506d42233a3825452b5c654067466b404745655966594a3630423242224d466b5a6664242c37696f613f5c373b387558
+313349483630643d5c3b334070603e733c6123392239672a72523345656c295b4d2e6e343e2a252e5c455d724f5a244d45245b536d2270
+3b426726756e3174505a64593e41244569325144313c42584c4c2a2f294e6f294075504348714b2c713d345b64482d735366472a4e494e
+2c694c63496657224f69384c393447332b3e4f3b672a256c6b364b2a5855684e313246665f4f3a6c5b6d706f3760715166262e21422246
+5746293b3f282d3c2147656e6a5b4170245051727350224f692729634c5f286b2a3027676f4f743e72573e2d21596c3b605168394e5b21
+242e42596d3e292e4e3a3f2b5a362f5324345b6443592e6f6367565b6d5d403b46542325382d6268522e6b4c6e3053757273753354254f
+75654422564b504a462a57595f593e66694166653269283e40493f2c6724334d5c54226e2c335322302e3725492f6b552c386e38326a68
+48686b4a2c3e334f4b5c5a475b6e5b5a4e4721514a4721362b5763656422226c3f4e3c2e703c2c617541704b5e3049432c6338324d2261
+5d49642472633c604c505c3a626c613c5d375f3b6c5e424747333a2448702d6375506071433d6b3b674e266c4c504a423b6f5b24266639
+3b364f4f315739425e6e30407153703a45296139323a733349656d45242b56562f355874612567716e616334353e5a47692b3e366d5d25
+576b516a685f5b624f595f5025373769403a5e67364e4e6f225050256372752756326f59273d6f525365245a5c4c49424e4f513e2a4428
+6c4721465c5862406a3c5e29384765452224325e60513c563d512a236a4b2f72594161363759544660212d6a5a3b305c213d3c54475f3b
+403a434b5c3c4a6a4458535c5327694e6e36413962652f4345645c716426645862396c64297523714166566d694730373d7331224b4b54
+303c6a597256265a226f3b4a3f452d6c44304821246d2937386651405759744a4b525971374c54406e2f5f295872212e36472e212c404d
+3b596a554a53445233305f70274a342b3e3b2365246a2d4d71405572705d2f632a44364e51363b492d226d4045646572395e3044224f39
+6c4b6533433d5a694e2c6f5123542275216662364d636432613963714553513e253b32496f6c2b24423d663e6e49226135216f5b565661
+753f69233b382f6e6b504b684d4a4b5c22624b5f5128306c43515d6d4b6826416a372c49664a3a6734313e6c6d3e414d4e3e6250462e71
+6c222b6b527422264d5656224b4e236d576a5c2829666635696c643a3164282967706d695f5655332f403362365c2147324f6c386d5b53
+2b3a756f3d26542e594b685173525c513a413e603b4744634d234e70303d28633c63503c68333748703e24525b6066335b214a21497069
+3a723f3a2c2b2e45544b3d72234b452e3e692b344a42323f673369552263265367633a6861644654356c2175456b3331635a594f266259
+666f33395f7366704f3a433e6d5652626363756a4f485b735d514855222a6c6666333f3e6a382362304f222a24315a59555a514e607375
+60463f44586b6d256f5e6c673e5537725e635b325f494c5b5d3b323f404b723961693f2f252e29316e68403f32582a6d5031603d575347
+3f52253268342d6f444b683c3d5f54323e37255d523f537149752f2c236b236670613a6822413e342f5d3b2855242e233a34395f2e3a68
+3c21334e64743a613525374744372754404b223429633e5a46454f6172292b54317369366946236331452a304d4e56496659355b5c4924
+36325d5e335b253e75573d5d593d7538514c4e31282b4e332f696165444b305a3d223e35237272296c5a6b75565a3c6259596d713f6b59
+2c6f4f2b743c22264e6522252d6e73706c46253d3f6674522b486b75522e46613053336d70674a22325f6b4c53736333372c40334c4441
+4f21232c66212869252c306656373e45265245654c24236e4d6b537451435137404f39566a275a2160452a305350572b4753623f722b35
+6a44415e5927253f493f4d51263c4a504041745941275f36453066733f2e3d5c3f4058234c3568624b292a43476a312270275d4a71636a
+2a70332651245a5a33506a326c3d702f2b272a303f424125605766686e665d525a3b23662331293c61267226266c4b6f23742272267045
+7066605b744d4955585d4b42342c274e5d4261534841662a3d62323b39715a3f6e753d2d545b59713c3c5d7146664427645d3b7248626c
+4c3e48702b2d63655d274733754724736e3746417557425e6554234571363d21343a4554246d6a73436d2a4731302771406d4270625452
+255c586f4b22503d28663e5638673f556c436d4b343f526c53532564696b2171214a722c314f67216368544738395c6b676a4950236e5f
+6c34564b366e6c4935376f516641573f67392c6b343a5c2446305d5d2a2347426f5445585f52256c23705e462b60335e395d3a71265f4a
+59704159394a6c3f27304e44235c6d6d4a2c6573386d3f63532a4a2654253f61346c5a2132682d6160486824616d37626c66515b732e3b
+3430513f58566b33684a3b73366c5a47327328262154423624724b3d4c71282a63415e4b3532502f52345c6523556b732c2436552d5c7e
+3e656e6473747265616d0a656e646f626a0a787265660a3020390a303030303030303030302036353533352066200a3030303030303030
+3631203030303030206e200a30303030303030313032203030303030206e200a30303030303030323039203030303030206e200a303030
+30303030333231203030303030206e200a30303030303030353134203030303030206e200a30303030303030353832203030303030206e
+200a30303030303030383433203030303030206e200a30303030303030393032203030303030206e200a747261696c65720a3c3c0a2f49
+44200a5b3c31633137383139386662646661353162323539393564383964343130323034333e3c31633137383139386662646661353162
+323539393564383964343130323034333e5d0a25205265706f72744c61622067656e6572617465642050444620646f63756d656e74202d
+2d2064696765737420286f70656e736f75726365290a0a2f496e666f2036203020520a2f526f6f742035203020520a2f53697a6520390a
+3e3e0a7374617274787265660a333135330a2525454f460a
+END FIGURE
+
+BEGIN FIGURE horizon
+255044462d312e340a25938c8b9e205265706f72744c61622047656e6572617465642050444620646f63756d656e7420286f70656e736f
+75726365290a312030206f626a0a3c3c0a2f4631203220302052202f46322033203020520a3e3e0a656e646f626a0a322030206f626a0a
+3c3c0a2f42617365466f6e74202f48656c766574696361202f456e636f64696e67202f57696e416e7369456e636f64696e67202f4e616d
+65202f4631202f53756274797065202f5479706531202f54797065202f466f6e740a3e3e0a656e646f626a0a332030206f626a0a3c3c0a
+2f42617365466f6e74202f48656c7665746963612d426f6c64202f456e636f64696e67202f57696e416e7369456e636f64696e67202f4e
+616d65202f4632202f53756274797065202f5479706531202f54797065202f466f6e740a3e3e0a656e646f626a0a342030206f626a0a3c
+3c0a2f436f6e74656e7473203820302052202f4d65646961426f78205b203020302034353020313832205d202f506172656e7420372030
+2052202f5265736f7572636573203c3c0a2f466f6e74203120302052202f50726f63536574205b202f504446202f54657874202f496d61
+676542202f496d61676543202f496d61676549205d0a3e3e202f526f746174652030202f5472616e73203c3c0a0a3e3e200a20202f5479
+7065202f506167650a3e3e0a656e646f626a0a352030206f626a0a3c3c0a2f506167654d6f6465202f5573654e6f6e65202f5061676573
+203720302052202f54797065202f436174616c6f670a3e3e0a656e646f626a0a362030206f626a0a3c3c0a2f417574686f722028616e6f
+6e796d6f757329202f4372656174696f6e446174652028443a32303030303130313030303030302b30302730302729202f43726561746f
+722028616e6f6e796d6f757329202f4b6579776f726473202829202f4d6f64446174652028443a32303030303130313030303030302b30
+302730302729202f50726f647563657220285265706f72744c616220504446204c696272617279202d205c286f70656e736f757263655c
+2929200a20202f5375626a6563742028756e73706563696669656429202f5469746c652028756e7469746c656429202f54726170706564
+202f46616c73650a3e3e0a656e646f626a0a372030206f626a0a3c3c0a2f436f756e742031202f4b696473205b203420302052205d202f
+54797065202f50616765730a3e3e0a656e646f626a0a382030206f626a0a3c3c0a2f46696c746572205b202f415343494938354465636f
+6465202f466c6174654465636f6465205d202f4c656e67746820313734320a3e3e0a73747265616d0a4761746d3c62414a3a592641363d
+6a6e3c6224755f7264483f21286565342561225e63433b214d2766546428606a6b2c2754433b2c46644d5e626044355b72265d276c2e50
+5447296f30427232394a614522562a2d5362565e6b26753c4d373f424346516c6f703c21474468444a5f296967383b5e705d42333f5073
+307252584a616e61482373583a67392b3740364a2a332f5e213a575026635728724e6c675e5b6a5c5b7233345b622c307546663a615822
+5957643564512d61433a3e6e212a4a254d7171604c704c2e2a582d604f2f3034464041632f714b7121242360652c2355553c454832256b
+614063492d46655c6a44482b5c60362253322c4e75345b662a4028366d5a2a61483b45553a6064422c2b496258374a6b326e3d4f3a272d
+212e275d234c5f4a5e2a5f324e414f42625a3066603b4a54542930232e2f71364f4839345c2941526d2c2e6e585639312d6b553d623736
+2b265d27432856303a21572739262432355d34464b55314633525f244952573b48556525375f426833415f3a42555f2f445f4538602660
+484d406670744425532a345d553e5a3730715e33415842234f3c6a23226032213c6d72433e315f4b533b6944506947692227543f6c2657
+4b513d40645f2c2f3e2c6141623946314e4a6e5d4e36732a72602c585f30484e596b533c3d43566269656b4223245223423e342c332a34
+5c4456454146227226212c516d6467406f4736376a355b6a48233a71553b387058665a50244c436375294e332e6957752a526145334b4e
+4f3a5c392a5e554d5f63595e5d476248555e3a585a426c2c50734c70346d466b753373552845336332266d4c223544725c4a482c366a75
+3059722a2d5638223e2351295b6e2e396b3941693a3a22276524227226212c33246a51563543353d2b3a75714a2d5260476b64513d4064
+5f2158343b242b74635a305a4f492a5164292b605c4e6d38343c216746435a3644455e475d22726e4060636e484e6649632f5642714867
+3f40216c3460623c646c4932385963414b2b256a68413e694243333134605862433a424d2837597433604721733f273b53636e2c713f22
+3b626e3651212d69643b44502d322a56643a24306a585339236c4c29645442514d56314f476e6a24456230473b4a2c334538304c44682a
+4c2f34432e3b506f642624334a215a5a3245695c2e66234d2b632971605474334740323d635337497151595b33522a305045275d543833
+322d3d3f34534426704167495e3d36334e676b3c3665695e2b3e40485d602a22693d3e73366367533f705f67534d66245c53326d53522f
+2c3565624d6a4e215c2e572c3d3b7371252363534e553d3f606c326e544a716f612b673b6b7454215f3a63282b5f626e4a6e23552f2d33
+4c6c3d683342275a2f35226f457536442c222c6f21505f5b556624436b234a52693a33364b3b706a25224a3d3e44633b3b443e2174622c
+2c3d24642f362e666d2c50493e2f5b3024736331712d6c5031626a722625703b555d735b712c6e715e4c70325d6c6c67745250363d4535
+723a255d7253282e44213f5d686f2e494d6c2755296b522330346839265233335767564c226a5c38253a3934545e666b643a53226a242d
+466571426426306c334b4046734743253d2152435e5664563a6d6c51485b723b5355234e284d41664b6e7535294a26305b6c2c3c5d2e5b
+26484a615c4a242728214b292b6e22443f70715055702b426562256733646b387456645d53445058224b573b3a33436e4b5a752c37583e
+32553851316d54705339552f75723843434924603442724668646e2e456b6e5c4c5646726c374357525f6a5c41504137334a6552743231
+352159753f39366137393e7155422e6b215475424a43492f5768292966665b5d3930672f294568414063735d7534387536372c4f692f3d
+68606a5e24473d5f51336a554654683a554d6b3a4c68702c65444b69405a6f66444839416c64256f3e244155222e5a2e435e435d362d26
+7367493541264f346e4f48304436452732455458505d3e74352e622a623067513425474057723d3b45322b32566b37642e48645b752267
+41636468304338292b6453654e28412a576326583957632757545d273e5f6d6021584b3354752a366753436f693e5e2f61384f6931524b
+665633332d705e2f3f4b214e40454754604f624a544270257459445c6039616d2f4d3821704f74384d586f235658495135264860556529
+21706943712f35295343606a35582f3b72565563485e4837755e663c38593528262b555a6125745e6b465057532e683c55746f6a296f4a
+3e5145725031722b3737695d6a432c6563663431712a3c313c3f543738393c356850384b624e5c395d41615a735448603c66672673502e
+244e614d4c386c68546b5e2f5848443a3d516c5f287e3e656e6473747265616d0a656e646f626a0a787265660a3020390a303030303030
+303030302036353533352066200a30303030303030303631203030303030206e200a30303030303030313032203030303030206e200a30
+303030303030323039203030303030206e200a30303030303030333231203030303030206e200a30303030303030353134203030303030
+206e200a30303030303030353832203030303030206e200a30303030303030383433203030303030206e200a3030303030303039303220
+3030303030206e200a747261696c65720a3c3c0a2f4944200a5b3c31633137383139386662646661353162323539393564383964343130
+323034333e3c31633137383139386662646661353162323539393564383964343130323034333e5d0a25205265706f72744c6162206765
+6e6572617465642050444620646f63756d656e74202d2d2064696765737420286f70656e736f75726365290a0a2f496e666f2036203020
+520a2f526f6f742035203020520a2f53697a6520390a3e3e0a7374617274787265660a323733350a2525454f460a
+END FIGURE

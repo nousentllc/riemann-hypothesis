@@ -1,0 +1,192 @@
+[
+  {
+    "k": 1,
+    "d": 5,
+    "m": 8,
+    "n": 4,
+    "denom": 33554432,
+    "square_coord": [
+      4,
+      0
+    ],
+    "square_count": 67108864,
+    "square_ratio": "2",
+    "companion_coord": [
+      4,
+      0
+    ],
+    "companion_count": 67108864,
+    "companion_ratio": "2"
+  },
+  {
+    "k": 1,
+    "d": 6,
+    "m": 8,
+    "n": 8,
+    "denom": 1073741824,
+    "square_coord": [
+      4,
+      0
+    ],
+    "square_count": 2155872256,
+    "square_ratio": "257/128",
+    "companion_coord": [
+      4,
+      4
+    ],
+    "companion_count": 2139095040,
+    "companion_ratio": "255/128"
+  },
+  {
+    "k": 1,
+    "d": 7,
+    "m": 16,
+    "n": 8,
+    "denom": 34359738368,
+    "square_coord": [
+      4,
+      0
+    ],
+    "square_count": 68987912192,
+    "square_ratio": "257/128",
+    "companion_coord": [
+      4,
+      4
+    ],
+    "companion_count": 68451041280,
+    "companion_ratio": "255/128"
+  },
+  {
+    "k": 1,
+    "d": 8,
+    "m": 16,
+    "n": 16,
+    "denom": 1099511627776,
+    "square_coord": [
+      4,
+      0
+    ],
+    "square_count": 2207613190144,
+    "square_ratio": "257/128",
+    "companion_coord": [
+      4,
+      4
+    ],
+    "companion_count": 2190433320960,
+    "companion_ratio": "255/128"
+  },
+  {
+    "k": 1,
+    "d": 9,
+    "m": 32,
+    "n": 16,
+    "denom": 35184372088832,
+    "square_coord": [
+      4,
+      0
+    ],
+    "square_count": 70643622084608,
+    "square_ratio": "257/128",
+    "companion_coord": [
+      4,
+      4
+    ],
+    "companion_count": 70093866270720,
+    "companion_ratio": "255/128"
+  },
+  {
+    "k": 2,
+    "d": 9,
+    "m": 32,
+    "n": 16,
+    "denom": 35184372088832,
+    "square_coord": [
+      16,
+      0
+    ],
+    "square_count": 70368744177664,
+    "square_ratio": "2",
+    "companion_coord": [
+      16,
+      0
+    ],
+    "companion_count": 70368744177664,
+    "companion_ratio": "2"
+  },
+  {
+    "k": 2,
+    "d": 10,
+    "m": 32,
+    "n": 32,
+    "denom": 1125899906842624,
+    "square_coord": [
+      16,
+      0
+    ],
+    "square_count": 2251834173423616,
+    "square_ratio": "65537/32768",
+    "companion_coord": [
+      16,
+      16
+    ],
+    "companion_count": 2251765453946880,
+    "companion_ratio": "65535/32768"
+  },
+  {
+    "k": 2,
+    "d": 11,
+    "m": 64,
+    "n": 32,
+    "denom": 36028797018963968,
+    "square_coord": [
+      16,
+      0
+    ],
+    "square_count": 72058693549555712,
+    "square_ratio": "65537/32768",
+    "companion_coord": [
+      16,
+      16
+    ],
+    "companion_count": 72056494526300160,
+    "companion_ratio": "65535/32768"
+  },
+  {
+    "k": 2,
+    "d": 12,
+    "m": 64,
+    "n": 64,
+    "denom": 1152921504606846976,
+    "square_coord": [
+      16,
+      0
+    ],
+    "square_count": 2305878193585782784,
+    "square_ratio": "65537/32768",
+    "companion_coord": [
+      16,
+      16
+    ],
+    "companion_count": 2305807824841605120,
+    "companion_ratio": "65535/32768"
+  },
+  {
+    "k": 2,
+    "d": 13,
+    "m": 128,
+    "n": 64,
+    "denom": 36893488147419103232,
+    "square_coord": [
+      16,
+      0
+    ],
+    "square_count": 73788102194745049088,
+    "square_ratio": "65537/32768",
+    "companion_coord": [
+      16,
+      16
+    ],
+    "companion_count": 73785850394931363840,
+    "companion_ratio": "65535/32768"
+  }
+]

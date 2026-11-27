@@ -1,0 +1,173 @@
+% !TeX program = lualatex
+\documentclass[11pt,letterpaper]{article}
+\usepackage{iftex}\RequireLuaTeX
+\usepackage[margin=1in,headheight=15pt,headsep=12pt,footskip=26pt]{geometry}
+\usepackage{fontspec}\setmainfont{Latin Modern Roman}\setsansfont{Latin Modern Sans}
+\usepackage{amsmath,amssymb,booktabs,tabularx,array,microtype,xcolor,fancyhdr,hyperref,bookmark}
+\definecolor{ink}{HTML}{172C40}\definecolor{teal}{HTML}{175D61}\definecolor{muted}{HTML}{475B69}
+\hypersetup{colorlinks=true,urlcolor=teal,linkcolor=teal,pdftitle={One exchange and the weighted orbit test},pdfauthor={Uriel Research}}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcommand{\orig}[3]{\href{https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/#1.lean\#L#2}{#3}}
+\newcommand{\loc}[2]{\href{run:evidence/#1}{#2}}
+\newcommand{\pp}[1]{\par\medskip\noindent\textbf{#1}\enspace}
+\newcommand{\nextsection}[1]{\clearpage\section{#1}}
+\pagestyle{fancy}\fancyhf{}\fancyhead[L]{\small\sffamily\color{muted}Uriel Research}
+\fancyhead[R]{\small\sffamily\color{muted}Arithmetic witness studies}
+\fancyfoot[C]{\small\sffamily\thepage}
+\renewcommand{\headrulewidth}{.3pt}
+\setlength{\parskip}{4pt}\setlength{\parindent}{0pt}\raggedbottom
+\setlength{\emergencystretch}{1.5em}
+\begin{document}
+\thispagestyle{plain}
+{\sffamily\small\color{teal}URIEL RESEARCH\hfill 22 NOVEMBER 2026}\par\vspace{12pt}
+{\Huge\bfseries\color{ink}One exchange and the\\weighted orbit test\par}\vspace{6pt}
+{\large\color{muted}What exact group counts can hide in a retained arithmetic witness}\par
+\bigskip
+\textbf{Abstract.}
+The retained-set construction controls how many points lie in each group coset and how those points occur along prime-indexed orbits. Can one condition determine the other? We construct two retained sets on the same arithmetic host with exactly the prescribed proportions \(4/7\) and \(3/7\) in its two cosets. They have the same size, meet the density interval, and differ by the replacement of one even point by another. At the test constant \(C_b=1\), one satisfies the published weighted orbit inequality and the other fails. The prime support consists of 3, whose Frobenius step generates the group. Moving the point destroys the only marked block. The source therefore charges every retained point on that orbit. A second example admits an exact classification of more than a billion single exchanges, and a third isolates the short-window obstruction with the block test vacuous. The conclusions concern the published predicate on arithmetic hosts. The large-rank and small-prime splitting requirements of the selected family delimit their application.
+
+\pp{A way to read the result.} Imagine keeping an attendance list for two groups. The totals can be precisely as promised even after a single person exchanges places with someone from the same group. A later check might ask whether one block of seats still follows a required pattern. If the check assigns one result to everyone in the room, one broken pattern changes everyone's outcome. The arithmetic question is which part of that analogy survives the actual definitions. Sections 2 and 3 identify the block, the distinguished origin, the eligible prime, and exactly who receives the charge.
+
+\smallskip
+\begin{tabularx}{\linewidth}{@{}p{.10\linewidth}Y@{}}
+\toprule
+Section & Question answered\\\midrule
+1--2 & How does the local orbit decision produce a weighted arithmetic charge?\\
+3--4 & Can we isolate a cause, and does the result persist with a genuine two-coset constraint?\\
+5 & How often does one exchange matter around a fixed passing set?\\
+6 & Which premises are verified, and what evidence would extend the result?\\\bottomrule
+\end{tabularx}
+\pp{Evidence.} Exact finite calculations, a mathematical construction using pinned source theorems, and supplemental Lean replays have different scopes. Section 6 identifies the boundary of each. All decimal values in the report are for display.
+
+\nextsection{The quantity that a retained point contributes}
+Fix a source scale \(s=(x,\varepsilon,J)\), a host \(H\), and its retained subset \(T\) in the finite abelian group \(A\) of size \(n\). Holding the field, frame, and other host data fixed, the source permits updating the field \texttt{TT} to a different subset. Put \(\delta=x^{-\varepsilon/8}\) and \(X'=\exp(x^{\varepsilon/3})\). The eligible primes are
+\[
+ P=\{p<X':p\text{ prime},\ H.\mathrm{cls}(p)=\mathrm{inertClass},\
+                      \operatorname{ord}(h_p)\ge x^{\varepsilon/4}\}.
+\]
+The element \(h_p\) is the group component of an arithmetic Frobenius. For these inert-class primes the step is \(h_p\). Along each orbit \(O\) of translation by \(h_p\), the source chooses a base by the least raw label that can reach the point. Two points on the same orbit have the same set of candidate bases and hence the same least base. Starting there and repeatedly adding \(h_p\) gives a set of position indices for \(T\cap O\). Let \(g_{p,O}(T)\) mean that these positions pass the local test. Then the left side of \texttt{BadOK} can be written
+\[
+ S(T)=\sum_{p\in P}w_p\sum_O |T\cap O|\,\mathbf 1_{\neg g_{p,O}(T)},
+ \qquad w_p=\frac{\log p}{p}.
+\]
+This follows by grouping the original sum over retained points by their common representative. The right side is \(4 C_b x^{-2}\delta n\sum_{p\in P}w_p\). A test with empty \(P\) always passes. Our \(P=\{3\}\) is nonempty, so the positive weight cancels for the Boolean comparison. The reported mass retains it. \orig{Development/AbelianVarietyTheory/Definitions/GlobalTwisting/ThinScalesIffHostBound}{35}{Published inequality}.
+
+\pp{How far can one replacement propagate?} Let \(U=T-\{a\}+\{b\}\), where \(a\in T\), \(b\notin T\). At \(p\) let \(D_p\) be the union of the orbits through \(a\) and \(b\). Every other orbit retains all its positions. Also \(|U\cap D_p|=|T\cap D_p|\). The two charges restricted to \(D_p\) both lie between zero and that common size. Subtraction followed by the triangle inequality gives
+\[
+ |S(U)-S(T)|\ \le\ \sum_{p\in P}w_p\,|T\cap D_p|.
+\]
+Thus the unit of sensitivity is the occupancy of the affected orbits. Equal subgroup counts do not bound this occupancy by one. In each of our passing-to-failing pairs a single prime has a single orbit and the bound is attained. This is a mathematical deduction from the grouping identity; the later finite calculations certify particular cases of equality.
+
+\pp{Why the source's simultaneous selection matters.} A quotient character is constant on each coset. Its sum over \(T\) is the sum of the coset counts multiplied by those character values. In contrast, \(g_{p,O}\) reads the order and position of the retained indices. The original selection theorem bounds a combined score and selects one set with both properties. The examples below explain why a later argument could not generally keep only the character data and reconstruct the orbit guarantee. \orig{Development/AutomorphicArithmetic/ThickFrames/topsChoiceH}{29}{Joint selection theorem}.
+
+\nextsection{How to evaluate the literal local predicate}
+The prime-eligible order is the length of an orbit. In our four regimes that length is the entire group. The indices run from \(0\) to \(n-1\). The local definition requires three conditions simultaneously.
+\begin{enumerate}
+\item Every circular window of \(L_2\) consecutive indices contains at most \(K\) retained indices. A window is a set, so repeated positions count once if its length exceeds the orbit.
+\item Partition the first \(\ell\lfloor n/\ell\rfloor\) indices into consecutive full tiles of length \(\ell=(6r+1)u\). From every full-tile index a marked tile must be reachable in at most \(M_0\) forward tile steps, reducing the tile index modulo the number of full tiles.
+\item Every circular window of length \(G'\) contains at most \(N_1\) retained indices.
+\end{enumerate}
+All four regimes use \(\varepsilon=1/64,\ J=1,\ x=2^b,\ b\in\{27,32\}\). The source gives \(h=2+8\varepsilon,\ K=\lceil8(h+2)/\varepsilon\rceil=2112,\ r=K+1=2113,\ u=\lceil 1/\delta\rceil=2,\ \ell=25{,}358\). A tile has \(6r+1\) cells numbered from one. Odd cells must be empty. Each even cell must contain exactly one even index. Since each cell has length two and the tile begins at an even index, the required offsets are precisely
+\[
+  2,6,10,\ldots,25{,}354 \qquad (6{,}339\text{ required positions}).
+\]
+These positions must all be occupied and all others in the tile empty. For a tile starting at \(d\), the criterion is \((d+j\in T)\iff(j\bmod4=2)\) for \(0\le j<\ell\). It uses the tile's own origin. \orig{Formalism/SubspaceCounting/GoodOrbitIntervalTileCondition}{10}{Cells, marking, and complete tiles}.
+
+\pp{Large constants simplify rather than obstruct this computation.} The source sets
+\[
+ M_0=\left\lceil(h+3)\log(x)\,10^{6r+1}\right\rceil,\quad
+ G'=(M_0+5)\ell,\quad
+ N_1=\left\lceil\max\{6\mathrm e\,G'\delta,(h+3)\log_2x\}\right\rceil+1 .
+\]
+Here \(M_0>2^{64}\), \(\delta>1/2\), and \(N_1>G'>n\) in every case. Consequently the wide-window requirement holds for every placement. When there are full tiles, the look-ahead covers them all and one marked tile suffices; when there are none the quantified tile condition holds vacuously. These are inequalities in the original parameters. They avoid constructing the enormous windows. \orig{Formalism/SharpRestriction/GrowthBounds/UnramifiedQuadraticSetting}{237}{Scale-dependent orbit parameters}.
+
+\pp{Where the prime and origin come from.} For a cyclic frame of order \(2^e\) the projection sends raw label \(j\) to the class of \(5^j\) modulo \(2^{e+2}\) up to sign. The prime pair is chosen so that 2 ramifies, 3 belongs to the inert class, and \(3<X'<4\). At 3, Frobenius acts through the class of 3. Its raw coordinate \(v\) is the odd solution of \(5^v\equiv-3\bmod 2^{e+2}\). It generates the full group; the least orbit base is raw label zero. Position \(i\) has raw label \(vi\bmod 2^e\). Also 3 is the least inert prime among \emph{all} primes, so it attains the supremum in \(L_2=2\sup_{p\ {\rm inert}}\lceil\log_p((kx^{26})^4)\rceil\). The source and arithmetic receipts are recorded in Section 6.
+
+\nextsection{Two ways one exchange breaks the inequality}
+\pp{A tile can fail with ample headroom in every short window.}
+Set \(n=32{,}768,\ x=2^{32},\ k=65{,}536\). There is exactly one complete tile. Let \(T\) consist of its 6,339 required positions. Form \(U\) by removing index 2 and inserting 25,358, the first position outside that tile. Both indices are 2 modulo 4. In fact adding 4 to every point of \(T\) produces exactly \(U\): all but one of the positions overlap. The short-window maximum is 1,071 in both, far below 2,112. The first tile loses its mark. Every retained point shares its orbit's outcome, giving
+\[
+ S(T)=0,\qquad S(U)=6339\,\log(3)/3 \simeq 2321.37 .
+\]
+Among all \(\binom{8192}{6339}\) subsets of size 6,339 from positions congruent to 2 modulo 4, exactly one passes. A mark requires the full list of 6,339 positions, exhausting the available membership. This is an exact counting result for a specified family. It supplies no probability for the set drawn by the proof.
+
+The translation above keeps the prime, its step, and the source's least base fixed. Treating it as a change of coordinates would obscure the failure. As a coordinate control, negate both raw labels and the representation of the generator, retaining origin zero. The relative position set stays exactly the same, and the computed decision stays the same. The 32,768-point example misses the theorem's lower density requirement. The next section imposes it explicitly.
+
+\pp{A short window can fail when there is no tile to break.}
+For \(n=8192,\ x=2^{32},\ k=16{,}384\), the orbit is shorter than a full tile and \(L_2=4272\). If every length-\(L_2\) window contains at most \(K\) points, summing over starts counts every point \(L_2\) times. Thus \(|T|\le\lfloor nK/L_2\rfloor=4049\). This upper bound is attained. Let \(m=4049\) and retain \(i\) when \(\lfloor(i+1)m/n\rfloor-\lfloor im/n\rfloor=1\). Telescoping these increments shows that every circular window of length \(L_2\) contains either 2111 or 2112 points. The window starting at 2 is saturated. Exchanging retained point 4275 for unretained point 3 moves one point inside it, preserving the residue histogram modulo 4. The maximum becomes 2113. The full 4049-point charge now appears even though the tile condition holds throughout and both sets meet the density bound.
+
+\begin{center}\small
+\begin{tabular}{@{}rrrrl@{}}\toprule
+Orbit size & \(L_2\) & Short maximum before/after & Bad points before/after & Cause\\\midrule
+8,192 & 4,272 & 2,112 / 2,113 & 0 / 4,049 & short window\\
+32,768 & 4,282 & 1,071 / 1,071 & 0 / 6,339 & sole tile\\
+131,072 & 3,636 & 2,079 / 2,079 & 0 / 66,747 & sole mark in five tiles\\\bottomrule
+\end{tabular}
+\end{center}
+The last row is the subject of Section 5. All three use the host's index-one distinguished subgroup; the strictly stronger mod-4 match is an extra experimental control. Section 4 turns the proof's own two-coset requirement on.
+
+\nextsection{Exact arithmetic shares with a genuine quotient}
+Fix \(A=\mathbb Z/2^{64}\mathbb Z\) and use the published frame with distinguished generator 2. The subgroup \(A_0\) consists of the even labels; its index \(o=2\) satisfies the host requirement \(o^{64}\le 2^e\) at equality. The character that distinguishes the cosets is parity. The required shares are \(4/(3o+1)=4/7\) and \(3/(3o+1)=3/7\). An example with a smaller value of \(e\) and the same index would fail this structural host requirement. We use \(x=2^{27},\ k=2^{65}\). The step of 3 is odd, so raw labels and orbit positions have the same parity.
+
+\pp{A finite set described in three pieces.} Put \(\ell=25{,}358\) and \(b_0=34{,}868\). On \([0,\ell)\) retain exactly the 6,339 required tile positions. On \([\ell,b_0)\) retain all 4,755 odd positions and the one even position 25,360. From \(b_0\) onward divide the available positions into complete blocks of length 14, retaining the first seven of each. Leave the final eight positions empty. There are \(B=1{,}317{,}624{,}576{,}693{,}536{,}910\) complete blocks. Each contributes four even and three odd positions, so the counts are
+\[
+ E=6340+4B,\qquad O=4755+3B,\qquad 3E=4O.
+\]
+With \(m=E+O=2^{63}-6343\), both cosets therefore hit their target with \emph{zero} discrepancy. The parity-character sum \(E-O=m/7\) is exactly its target as well. The retained size lies in \([\delta n/2,2\delta n]\); the certificate checks the inequalities by raising positive quantities to power 512.
+
+\pp{The exchange.} Replace index 2 by index 25,358. Both are even and congruent to 2 modulo 4. The short-window maximum remains 1,940 at length \(L_2=3872\), below \(K=2112\). Initially tile zero is marked. Each later complete tile contains a retained odd point, which a marked tile cannot contain. Tile one includes more than an entire 14-period of the tail; subsequent complete tiles lie in its periodic part. The edit removes a required point in tile zero and leaves all those odd witnesses in place. The number of marked tiles goes from one to zero. The normalized bad-point count jumps from zero to \(m\). At \(C_b=1\) the allowance is \(4\delta n/x^2\simeq3948.98\).
+
+\pp{Why this computation is exact at order \(2^{64}\).} Let \(F(y)\) count retained indices strictly below \(y\). In each piece \(F\) is given by integer division, with one correction for the isolated even point. A circular window has count \(F(i+L_2)-F(i)\) using periodic extension. Enumerate starts whose window crosses a piece boundary and one full period of the possible starts inside each remaining piece. All other starts repeat one of those counts. Two independent implementations checked 11,714 and 11,675 representative starts after including slightly different redundant boundary points. Both found extrema \(964,1940\) before and \(963,1940\) after. Neither calculation iterates through \(2^{64}\) points. \loc{index_two.py}{Primary certificate} and \loc{index_two_certificate.py}{independent certificate}.
+
+\nextsection{Which exchanges matter around one passing set?}
+At \(n=131{,}072,\ x=2^{27}\), begin with the marked tile zero. In the tail \(i\ge25{,}358\) retain exactly those \(i\) with \(i\bmod7\in\{0,1,2,3\}\). The set has 66,747 members and meets the density interval. There are five full tiles. Their distances from the respective required patterns, measured as the number of positions whose status would have to change, are
+\[
+       (0,\ 13{,}584,\ 13{,}584,\ 13{,}585,\ 13{,}585).
+\]
+Every same-residue exchange deletes and inserts one point. A short-window count increases by at most one, and the observed maximum starts at 2,079, leaving 33 places of headroom. The four unmarked tiles are each more than two membership changes away from a mark. Consequently an exchange flips the decision \emph{exactly when it touches tile zero}. A change completely in the tail keeps the mark. The literal condition is sensitive to where the edit occurs, even with edit size and every mod-4 count held fixed.
+
+\begin{center}\small
+\begin{tabular}{@{}lrrrr@{}}\toprule
+Residue & Retained, all & Empty, all & Retained, tail & Empty, tail\\\midrule
+0 & 15,102 & 17,666 & 15,102 & 11,326\\
+1 & 15,102 & 17,666 & 15,102 & 11,326\\
+2 & 21,441 & 11,327 & 15,102 & 11,327\\
+3 & 15,102 & 17,666 & 15,102 & 11,327\\\bottomrule
+\end{tabular}
+\end{center}
+Each retained and empty pair of the same residue gives one distinct replacement. The dot product of the first two numeric columns counts all \(1{,}043{,}238{,}003\) such edits. The dot product for the last two counts \(684{,}211{,}212\) that stay passing. The remaining \(359{,}026{,}791\), or \(34.4147\%\), fail. These integers classify the whole neighborhood algebraically. They describe a uniform choice of a residue-preserving exchange around \emph{this} explicit set, rather than the selection law of the formalization.
+
+\pp{What this says about storing a witness.} A record that contains exact coset counts answers every quotient-character sum on a fixed frame. If it also promises to answer \texttt{BadOK}, the index-two pair proves that such a record merges two states with different required outputs. Supplying the number of marked tiles repairs this particular pair. The 8,192-point example immediately falsifies the broader claim that this addition suffices: both sets there have zero full tiles and different short-window maxima. On the one-prime full-cycle instances the retained size together with the three local truth values suffices to read the scalar charge. A different future prime can partition the same points into different orbits. A writer expected to handle such a query needs a new sufficiency argument. This implication concerns the information available at read time; the cost of maintaining that information under updates is a separate empirical question.
+
+\nextsection{Where the host construction stops}
+\pp{A failed extension has a mathematical explanation.}
+Could we keep \(n=2^{64},\ \varepsilon=1/64\), the least inert prime 3 and its full cycle, and simply tune \(x\) and \(k\) to the published rank bands? Suppose \(x^{17/8}\le n\le2x^{17/8}\) and \(k\ge x^{9/2+10/64}\). Then \(2^{29}<x<2^{31}\) and \(k>2^{135}\). Since 3 attains the defining supremum, those bounds force
+\[
+ L_2\ge 2\lceil\log_3 2^{4(135+26\cdot29)}\rceil=4488,\qquad
+ \delta=x^{-1/512}>19/20 .
+\]
+Averaged over all circular starts, the short-window count is exactly \(m\min(L_2,n)/n\). Under the published lower density \(m\ge\delta n/2\), that average is greater than \(4488\cdot19/40=2131.8\). Some window must exceed the allowed 2112. Thus \emph{no placement at all} meets the local good-orbit condition under these combined premises. This does not force failure of the weighted inequality at every conceivable \(C_b\); a large budget can pay for a bad orbit. It rules out rescuing the zero-to-positive example in this regime by tuning the placement. The general double-count identity and the resulting capacity inequality passed a separate Lean kernel replay. The integer inequalities in this application are included in the independent certificate. \loc{incidence/WindowIncidence.lean}{Incidence proof}. \orig{Development/AbelianVarietyTheory/Definitions/GlobalTwisting/PairRowIffQdRows}{28}{Rank bands}.
+
+\pp{The small-prime requirement matters independently.} A bare host may have split bound zero. The downstream field-row construction used on the published path also demands splitting at small odd primes when its bound covers them. In particular, in a construction imposing \(4M\le b\) for \(M\ge1\), prime 3 must split. At the scales here \(X'<4\), removing 3 leaves an empty sum. Our experiment establishes insufficiency of coset counts for the predicate on its arithmetic host domain. The selected \texttt{HostGood}/\texttt{CoreAtH} witness has additional obligations and we do not identify one numerically. \orig{Development/AutomorphicArithmetic/CoprimeRanks/FieldAny}{23}{Small-prime splitting inputs}.
+
+\pp{Existence versus a readable value.} The source supplies a number field with the specified prime pair, a compatible Artin map, and auxiliary objects needed by the host type. Some of those objects are chosen by existence. At unramified 3 the projected Frobenius is uniquely determined by the Artin map, regardless of which lift was chosen. This makes its coordinate, orbit, and retained-set charge computable without listing field elements or selecting an ideal numerically. In the index-two case the exact certificates verify that both supplied prime integers exceed \(4t(k+1)+1\) and have the required quadratic signs. The primality proof uses \(p-1=c\,3^{82}\), \(3^{164}>p\), and a modular order certificate forcing every prime divisor of \(p\) to exceed \(\sqrt p\). \loc{HOST.md}{Host construction and source trace}.
+
+\pp{Next experiment.} Start from a row whose enforced splitting is explicit and find a scale with nonempty eligible support \emph{after} that cutoff. For each candidate prime, compute its order, the resulting orbit partition and the necessary average-window bound before searching any placements. Aim for at least two eligible primes with different orbit partitions. Hold all coset counts fixed and test whether their separate charges reinforce or offset. A certified empty filter or an impossible average would explain an uninformative test before paying for a set search.
+
+\clearpage\section*{Evidence and reproduction}
+\addcontentsline{toc}{section}{Evidence and reproduction}
+\pp{Original mathematics.} All source interpretations refer to the published commit \href{https://github.com/nousentllc/riemann-hypothesis/tree/40e56bab026552e089d7afcfeff08d2defb9c005}{\texttt{40e56bab}}. The three ingredients most likely to change the interpretation are the representative's least-label rule, the absolute parity requirement inside a marked tile, and the membership-weighted charge at each prime. Read the definitions together. \orig{Formalism/LocalToGlobal/GlobalTheory/IsResidueClassZero}{86}{Orbit positions and local goodness}, \orig{Formalism/LocalToGlobal/GlobalTheory/IsResidueClassZero}{267}{least representative}, \orig{Formalism/SubspaceCounting/StatementB}{9}{circular windows}, \orig{Formalism/SubspaceCounting/GoodOrbitIntervalTileCondition}{10}{tiles}, and \orig{Development/AbelianVarietyTheory/Definitions/GlobalTwisting/ThinScalesIffHostBound}{36}{weighted charge}.
+
+\pp{Finite computations.} The primary program computes both quadratic signs, the prime filter, modular generator, integer ceiling for the short window and all local decisions for the three small examples. It traverses every short-window start. A separately written program uses prefix sums and checks the two tile examples. The two index-two certificates evaluate the compressed example independently. The billion-exchange count follows from the four residue classes and the rigidity of the unique marked tile. No timing estimate, random seed or floating-point equality decides a predicate. \loc{README.md}{Reproduction guide}, \loc{DESIGN.md}{study design}, \loc{results.json}{finite results}, \loc{index_two.json}{index-two results}, and \loc{index_two_independent.json}{independent rank obstruction}.
+
+\pp{Lean verification.} The local \texttt{OrbitBudget} supplement replays source-level statements about the prime filter, counting bad points by representative, the one-prime threshold, and reductions for small orbits and marked tiles. The verification record names the actual checked endpoints. These general results have formal premises. The numerical witness, exact prime tests, substitutions into the source, and large finite censuses also use the mathematical arguments and executable certificates in this report. A second module proves existence of hosts with the four specified rank and prime signatures. It also proves that at an unramified prime the Frobenius choice has the stated Artin projection. Those results certify the number-field interface; the particular retained subsets and their numerical charges were checked by the separate finite certificates. \loc{host/host_verified.json}{Host replay}. No full build of the RH entry point was run for this study. \loc{lean/OrbitBudget.lean}{Orbit module} and \loc{lean/verification.json}{kernel replay}.
+
+\pp{A reproducible numerical checkpoint.} For the index-two parameters the short window has \(3^{1935}<2^{3068}<3^{1936}\). Before and after the exchange its maximum is 1940. At the given budget the comparison after cancellation is between the integer \(9{,}223{,}372{,}036{,}854{,}769{,}465\) and \(4\delta\,2^{64}/2^{54}\), strictly less than 4096. Both coset totals remain exact. Altering \(C_b\) changes the comparison: for any failing full orbit of occupancy \(m\), equality first occurs at
+\[
+            C_b^*=\frac{m x^2}{4\delta n}.
+\]
+Below this value the edited set fails, and at or above it the edited set passes. Here \(C_b^*\simeq 2.336\cdot10^{15}\). The construction's existential \(C_b\) has no numerical value in this experiment.
+
+\pp{What has been resolved.} A single coset-preserving exchange can change the original weighted inequality even at exact two-coset balance and admissible retained density. Which orbit receives the edit, whether the local predicate is near a threshold, and how many retained points inherit the orbit's verdict determine the size of the change. The additional small-prime and rank hypotheses give specific reasons to re-evaluate that conclusion before transferring it to a selected proof witness.
+\end{document}
+

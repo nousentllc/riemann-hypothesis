@@ -1,0 +1,362 @@
+% !TeX program = lualatex
+% Standalone source. Compile twice with LuaLaTeX. The diagram and tables are native TeX.
+\documentclass[11pt,letterpaper]{article}
+\usepackage{iftex}\RequireLuaTeX
+\usepackage[letterpaper,left=1.03in,right=1.03in,top=.9in,bottom=.9in,headheight=16pt,headsep=15pt,footskip=28pt]{geometry}
+\usepackage{fontspec}\setmainfont{Latin Modern Roman}\setsansfont{Latin Modern Sans}
+\setmonofont{Latin Modern Mono}[Scale=.89]
+\usepackage{amsmath,amssymb,amsthm,mathtools,booktabs,tabularx,array}
+\usepackage{xcolor}
+\usepackage{fancyhdr,enumitem,microtype,titlesec}
+\usepackage{hyperref,bookmark}
+\definecolor{ink}{HTML}{152B3D}\definecolor{teal}{HTML}{155B60}\definecolor{quiet}{HTML}{445767}
+\definecolor{pale}{HTML}{DFECEB}\definecolor{unselected}{HTML}{F0F3F4}
+\hypersetup{pdftitle={Which distinctions must a witness preserve?},pdfauthor={Uriel Research},pdfsubject={Retained sets, proof witnesses, and query-relative memory},colorlinks=true,linkcolor=teal,urlcolor=teal,bookmarksnumbered=true,pdfdisplaydoctitle=true}
+\urlstyle{same}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcommand{\E}{\mathbb E}\newcommand{\Z}{\mathbb Z}\newcommand{\R}{\mathbb R}
+\newcommand{\evcode}[2]{\expandafter\def\csname evname#1\endcsname{#2}}
+\evcode{memory}{M1}\evcode{source}{P1}\evcode{host}{P2}\evcode{shares}{P3}
+\evcode{construction}{P4}\evcode{verify}{P5}\evcode{reader}{R1}\evcode{guard}{R2}\evcode{new}{A1}\evcode{absorb}{A2}
+\newcommand{\evref}[1]{\hyperlink{ev-#1}{\textsf{\small[\csname evname#1\endcsname]}}}
+\newcommand{\evitem}[2]{\par\medskip\noindent\hypertarget{ev-#1}{\textsf{\bfseries\color{teal}\csname evname#1\endcsname}}\quad #2\par}
+\newcommand{\prooflink}[2]{\href{https://github.com/nousentllc/riemann-hypothesis/blob/9ac7e1b546b132edde02709e1c0af1bfccd40755/research/uriel/experiments/retained-host/#1}{#2}}
+\newcommand{\origlink}[2]{\href{https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/#1}{#2}}
+\newtheorem{proposition}{Proposition}[section]
+\titleformat{\section}{\Large\bfseries\color{ink}}{\thesection}{.6em}{}
+\titleformat{\subsection}{\large\bfseries\color{ink}}{\thesubsection}{.55em}{}
+\titlespacing*{\section}{0pt}{15pt plus 3pt minus 2pt}{6pt}
+\titlespacing*{\subsection}{0pt}{10pt plus 2pt minus 1pt}{4pt}
+\pagestyle{fancy}\fancyhf{}\fancyhead[L]{\sffamily\small\color{quiet}Uriel Research}
+\fancyhead[R]{\sffamily\small\color{quiet}Retained sets and revisable memory}
+\fancyfoot[C]{\sffamily\small\thepage}\renewcommand{\headrulewidth}{.3pt}
+\setlength{\parskip}{3.6pt plus .5pt minus .5pt}\setlength{\parindent}{0pt}
+\setlength{\emergencystretch}{1.5em}\setcounter{tocdepth}{1}
+\setlist{topsep=3pt,itemsep=2pt,parsep=0pt,leftmargin=1.55em}
+\setlength{\abovedisplayskip}{7pt plus 1pt minus 1pt}\setlength{\belowdisplayskip}{7pt plus 1pt minus 1pt}
+\setlength{\textfloatsep}{11pt plus 2pt minus 1pt}
+\raggedbottom
+\begin{document}
+\thispagestyle{plain}
+{\sffamily\small\color{teal}URIEL RESEARCH\hfill 22 NOVEMBER 2026}\par
+\vspace{12pt}
+{\Huge\bfseries\color{ink}\raggedright Which distinctions must\\a witness preserve?\par}
+\vspace{5pt}
+{\Large\color{quiet}A retained set in a Lean proof and a seven-bit record under changing queries}\par
+\vspace{8pt}
+\textbf{Abstract.}
+A proof can establish several properties of one object without naming it. A memory can name a class of possible objects without establishing that they agree on the question being asked. In a pinned Lean formalization, a finite selection argument produces a single retained set with both a coset-count estimate and a bound on bad orbits. Recovering a stronger internal tolerance improves a Fourier bound by a factor of \(x^\varepsilon\). A separate kernel-checked calculation identifies a loss in the final comparison that can already be reduced using the original tolerance. We derive how many replacements the explicit-formula estimate can absorb and exhibit 3,920 sets whose quotient Fourier data agree although an orbit placement statistic takes six values. In a separate reader experiment, two cutoffs distinguish all 81 possible centers. Both the sufficient and the insufficient records fit in seven fixed bits. The same binary accuracy concealed different amounts of recoverable error. With the other 64 labels fixed, among 65,535 ways of splitting its ambiguous label, only two performance pairs survive comparison on support and forced-answer error.
+
+\smallskip\textbf{A concrete reading.}
+Suppose a list has four even entries and three odd ones. That is everything needed to compute its parity sum. It is too little to say which entries lie next to one another. Now suppose a note says “no match at cutoff 64.” For one possible center, weight 11 matches at cutoff 26. For another it does not. In both cases the question is the same: exactly which future decisions can we make from the information we kept?
+
+\smallskip\textbf{Evidence boundary.}
+The proof results concern a conditional arithmetic implication in a specific source revision. The memory results concern a finite uniform population and deterministic readers. Section~\ref{sec:synthesis} gives the shared mathematical criterion and its limits.
+\smallskip
+{\small\tableofcontents}
+\clearpage
+
+\section{The object, the observation and the decision}
+\label{sec:objects}
+
+The test we take from \emph{Arithmetic Coding, Representation Geometry, and Revisable Memory} is operational. Give a writer an object \(s\), commit it to a record \(C(s)\), then give a reader a later question \(q\). What must survive the write for the reader to answer exactly? Define \(s\sim s'\) when all permitted questions give the same answer on \(s\) and \(s'\). An exact deterministic reader exists precisely when every pair with \(C(s)=C(s')\) is equivalent. Necessity follows by giving the same record and question to the reader twice. For sufficiency, define the answer on a record using any one of its compatible objects. Agreement makes that definition independent of the choice. The reference manuscript extends this condition to future sequences of queries and updates. Here the center stays fixed and the query changes. \evref{memory}
+
+On the proof side we use two versions of this test. First, the argument must supply the \emph{same} object to every premise of a theorem. Changing a witness between premises is an invalid inference even when the objects have the same size. Second, if the intended object really changes, a proved invariance or continuity bound can transfer a particular conclusion. On the memory side the object already has a designated identity. A many-to-one record can still answer a question when its entire preimage agrees. A learned reader can also fail to use a distinction that its input preserves.
+
+\begin{center}\small
+\begin{tabularx}{\linewidth}{@{}p{.19\linewidth}YY@{}}
+\toprule
+Question & Arithmetic experiment & Memory experiment\\ \midrule
+What is given? & A finite set inside a host at a scale \(x\). Several such hosts may exist. & One designated residue \(s\) and a writer fixed before the cutoff is supplied.\\
+What is observable? & Membership, coset counts, or size, depending on the premise. & A seven-bit tag, the cutoff \(Z\), and a queried weight \(e\).\\
+What could fail? & Two existence statements choose different indices, or a replacement changes the needed statistic. & Two centers share a tag and disagree, or a reader mishandles an identifiable answer.\\
+How can we tell? & Trace quantifiers, construct matched sets, and prove a transport bound. & Enumerate compatible centers, score an exact reader, and compare a fitted reader on the same cases.\\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+The original proof protocol proposed that independent index choices could fail, that equal cardinality need not preserve shares, and that the explicit-formula inputs could accompany the selected core. The memory protocol predicted genuine ambiguity, reduced guessing after supervision with abstention labels, and improved positive recall with arithmetic features. The inverse-scale strengthening, replacement budget, guard, and comparisons introduced in this revised edition arose \emph{after} inspecting the outcomes. We give proofs or exhaustive calculations for these later claims. Independent systems and new cutoffs remain prospective tests. \evref{host} \evref{reader} \evref{new}
+
+\section{What the selected arithmetic host contributes}
+\label{sec:retained-proof}
+
+The endpoint of the comparison is a scalar, \(G_\Lambda(x)\). It depends on a character level \(\Lambda\) and a scale \(x\). In the source it is a base prime statistic plus a weighted sum of the real parts of character prime statistics over the nonprincipal retained characters of that level. During its estimation the proof introduces a number field, a finite abelian group and a particular subset of the group. Why should this additional structure matter when the quantity being estimated has no subset argument? The character calculation uses the distribution of that subset. The arithmetic calculation uses data attached to its individual points. A bound on the scalar follows when both calculations apply to the same choice. We investigate how the proof arranges that agreement, and which information can be discarded once each calculation has finished. \evref{source}\,\evref{host}
+
+\subsection{One subset must meet two constraints}
+
+Write \(A\) for the finite abelian group, \(A_0\) for its distinguished subgroup, \(N=|A|\), and \(o=[A:A_0]\). At a sufficiently large scale \(x\) with small positive tolerance parameter \(\varepsilon\), put \(d=x^{-\varepsilon/8}\). For the selection argument, give each element of \(A_0\) inclusion probability \(d\), and give each remaining element probability \(3d/4\). Independent inclusion defines a product distribution on all subsets \(T\subseteq A\). The expected count in the distinguished coset is \(d|A_0|\), and the expected count in every other coset is \(3d|A_0|/4\). Normalizing these expected counts across the \(o\) cosets gives the weights
+\[
+ \lambda_D=\frac{3+\mathbf{1}_{D=A_0}}{3o+1},
+ \qquad D\in A/A_0.
+\]
+The denominator counts four shares for the distinguished coset and three for each of the other \(o-1\). This intentional bias is what makes a nonzero main term appear in the Fourier calculation below.
+
+Let \(n_D(T)=|T\cap D|\) and \(m=|T|\). The actual requirement is
+\[
+  \bigl|n_D(T)-\lambda_D m\bigr|\leq \delta m
+  \qquad\text{for every coset }D.
+\]
+Its denominator is the realized size \(m\), which fluctuates in the selection argument. Another constraint concerns a nonnegative cost \(B(T)\), a weighted count of points with specified bad orbit behavior. Its value can depend on the positions of retained points within a coset. Choosing a set with small count error and separately choosing a set with small orbit cost would leave the joint requirement unresolved.
+
+The construction uses a single score. Put \(Y_D(T)=n_D(T)-\mathbb E n_D(T)\), \(s^2=2dN\), and let \(M\) be the source's nonnegative upper bound on \(\mathbb E B(T)\). The sum of the variances of the coset counts is at most \(dN\), since the inclusion indicators are independent and each has variance at most its inclusion probability. For \(M>0\) this yields
+\[
+ \mathbb E\!\left[\frac{\sum_D Y_D(T)^2}{s^2}
+                   +\frac{B(T)}{4M}\right]
+ \leq \frac12+\frac14 \leq 1 .
+\]
+Some positive-weight subset has score at most its mean. Both terms are nonnegative, so this same subset satisfies \(|Y_D(T)|\leq s\) for every \(D\), and \(B(T)\leq4M\). When \(M=0\), nonnegativity forces \(B(T)=0\) for every positive-weight subset. The source gives this case its own argument. This finite averaging step is the first precise answer to where existence enters. It proves simultaneous feasibility without naming a numerical \(T\). \evref{source}
+
+The count-to-share lemma also controls the change from expected size to realized size. Its hypotheses include \(4os\leq \delta d|A_0|\). The scale and rank estimates in the construction make this comparison available at \(\delta=1/x\). The proof obtains \(dN/2\leq m\leq2dN\), the bound on \(B(T)\), and the desired proportions for that \(T\). In the last step of \texttt{topsGroup}, \(1/x\leq x^{-1+\varepsilon}\) weakens the advertised tolerance. The tighter value therefore has a specific origin and a specific cost in the assumptions on scale and group size. \evref{source}
+
+\subsection{The quotient character measures exactly what size omits}
+
+Let \(\theta\) be the restriction to \(A\) of an eligible character in the comparison. It is trivial on \(A_0\) and nontrivial on \(A\), so it descends to a nontrivial character of \(A/A_0\). Set \(u_D=n_D(T)-\lambda_Dm\). Orthogonality gives \(\sum_D\theta(D)=0\). Indeed, translating this sum by a quotient element on which \(\theta\ne1\) multiplies it by a factor unequal to one and leaves the sum unchanged. The three common shares in every coset cancel, and the one extra share at the identity coset contributes \(m/(3o+1)\). Thus
+\[
+ \sum_{t\in T}\theta(t)-\frac{m}{3o+1}
+      =\sum_{D\in A/A_0}\theta(D)u_D,\qquad
+ \left|\sum_{D\in A/A_0}\theta(D)u_D\right|\leq o\delta m .
+\]
+This derivation explains both the center of the estimate and the coefficient \(o\). The prescribed part of the distribution cancels exactly apart from its distinguished share. The error estimate then allows all signed deviations to add in the worst direction. A control that preserved \(m\) while changing which cosets contain the points tests precisely this second step. \evref{shares}
+
+Take the source's eight-element cyclic frame. In residue coordinates \(A=\mathbb Z/8\mathbb Z\) and \(A_0=\{0,2,4,6\}\). Its two cosets have target proportions \(4/7\) and \(3/7\). For seven retained elements, omitting 7 gives counts \((4,3)\), as does omitting 5. Omitting 6 gives \((3,4)\). The parity character is \(+1\) on the even coset and \(-1\) on the odd coset. Its sums are consequently \(+1,+1,-1\), with target \(7/(3\cdot2+1)=1\). At tolerance \(1/8\), the cross-coset exchange produces error \(2\), greater than the allowance \(2(1/8)7=7/4\). At tolerance \(1/7\) the allowance is exactly \(2\). This equality has an elementary explanation. The two deviations sum to zero, so the parity character reads \(u_{\mathrm{even}}-u_{\mathrm{odd}}=2u_{\mathrm{even}}\). In this frame, the only nontrivial quotient mode reads the entire count imbalance. The Lean result covers all real tolerances, and exact enumeration checks all eight seven-element sets. \evref{shares}
+
+At the cyclic level generated by the principal conductor-one character, the host's index condition forces \(o=1\). Then \(A_0=A\), \(\lambda_{A_0}=1\), and \(n_{A_0}(T)=m\) for every subset. The share test has zero discrepancy for every candidate. A long run of passing tests at that level could teach us about other conditions on the host, but it could never reveal sensitivity to a cross-coset exchange. Conversely, the index-two calculation isolates that sensitivity in a finite frame. Its order eight precludes using it as a large-scale arithmetic host under the construction's size assumptions. \evref{shares}
+
+\subsection{Why the same character bound applies at the chosen index}
+
+On the arithmetic side a good ordered prime pair supplies a row at a local scale \(Y\). The host builder takes the set returned for that row, installs it as the host's retained set, and keeps its proof of the share bound. For the analytic side, a bounded host character and any primitive representative \(\chi\) of it can be expressed through one of the good pair's twists, using two binary twist indices with at least one nonzero. The good-pair estimates apply to this representative throughout the required interval. In particular the upstream analytic estimate for a good character gives \(\lvert L'/L(1,\chi)\rvert\leq4\log Y\) under its size and zero-free conditions. Evaluation at \(x\ge Y\) supplies the needed \(4\log x\) bound. The constant four in this construction belongs to the good-pair analytic estimate. Its hypotheses still refer to the host and the character even though the numerical right-hand side mentions neither. \evref{source}
+
+The explicit-formula input, \texttt{EAtH}, packages these estimates with the level-index identity, retained- and exceptional-character conditions, and a pointwise bound. The family supplies this package for every index \(i\in I_F(x)\) once \(x\) is sufficiently late. The arithmetic core, \texttt{CoreAtH}, is available at an index chosen by the tied-chain argument. The latter also identifies its internally named set with the chosen host's retained set by elementwise membership. After selecting \(i\), one specializes the universal character package at \(i\). This order is essential. If two indices are labeled zero and one, a core that holds only at zero and a character estimate that holds only at one are both individually attainable. They admit no common witness. More generally every nonempty subset of indices intersects the acceptable-character indices exactly when every index is acceptable, as testing each singleton shows. A known arithmetic selector needs just the one intersection. Universality is how the source guarantees it before the core selects. \evref{host}
+
+The strengthened construction asks for the \(1/x\) share condition when building the family. For each sufficiently small positive \(\varepsilon\), it obtains a family and thresholds. Above any requested lower bound there is a window \([W,W^{3/2}]\) on which every real \(x\) has a common index carrying a row, a cohomology bound, the explicit-formula estimate, the core, and centered Fourier error at most \(om/x\). The index and local \(Y\) may vary with \(x\). The exponents \(e_D,e_L\) are fixed before \(\varepsilon\). The conclusion applies to the family built with this stronger request. The four upstream inputs to the extracted theorem are the family design \texttt{TopG}, the cohomological window \(\texttt{VWinAt}\ \psi\ 401\), and the two prime-supply hypotheses \texttt{ShortNorm} and \texttt{SmallOne}. The targeted replay certifies the implication and the alignment of its witnesses. It yields no numerical start \(W\), individual host, or list of its retained elements. \evref{construction}\,\evref{verify}
+
+\subsection{An exponent gain has more than one possible cause}
+\label{sec:retained-absorption}
+
+Substituting \(1/x\) for \(x^{-1+\varepsilon}\) improves the centered Fourier bound by a factor \(x^\varepsilon\) whenever \(m>0\) and \(x>1\). To determine whether that gain reaches the prime statistic, we must look at the calculation that uses the character. Retained nontrivial characters enter the weighted character estimate through their centered sums. Their logarithmic derivatives are charged to a fixed level sum. For an unretained character in the comparison class, boundedness gives access to \(4\log x\) at its primitive representative. A separate remainder estimate uses pointwise control. The selected mathematical objects coincide across these steps, but the error contributions come from different inequalities. \evref{source}
+
+We tested attribution by opening the last lines of the original prime comparison, keeping its ordinary share hypothesis. Write \(a=e_D+e_L\), \(b=\tfrac12+(a+6)\varepsilon\), \(r=\tfrac12+\varepsilon\), and let \(o\) be the level index. At an admitted core the source obtains \(a\geq0\). The arithmetic bracket is estimated with exponent loss \((a+3)\varepsilon\). The core comparison then adds \(3\varepsilon\) in bounding its main term, while the remainder is bounded by \(4o\,x^r\). Before the last constant is absorbed the two terms give
+\begin{equation}
+ G_\Lambda(x)\leq x^b+4o\,x^r
+              \leq (1+4o)x^b
+ \qquad (x\text{ sufficiently large}).
+ \label{eq:retained-components}
+\end{equation}
+The original proof uses eventual largeness to dominate \(1+4o\) by \(x^\varepsilon\). This gives its reported exponent \(\tfrac12+(a+7)\varepsilon\). The last unit in the coefficient seven has an identifiable job. It absorbs a fixed multiplicative constant after the comparison and remainder have already been estimated. \evref{host}
+
+\textbf{Post-hoc deduction and local kernel check.}
+For each fixed \(\alpha>0\), with \(\varepsilon>0\) fixed, \(x^{\alpha\varepsilon}\) eventually exceeds the same constant. Consequently the ordinary explicit-formula and core hypotheses already imply
+\[
+ G_\Lambda(x)\leq x^{\,1/2+(a+6+\alpha)\varepsilon}
+ \qquad (x\geq X_\alpha).
+\]
+If \(X_*\) is a threshold for \eqref{eq:retained-components}, then
+\(\max\{1,X_*,(1+4o)^{1/(\alpha\varepsilon)}\}\) suffices. This explicit term quantifies the trade between the printed exponent and one sufficient threshold. The existence of \(X_*\) still limits numerical use. The local Lean supplement replays the two-component estimate and the adjustable exponent with the original \texttt{EAtH} and \texttt{CoreAtH} premises. This is a separate two-theorem check from the registered experiment. \evref{absorb} The late-window result recorded on the fork still carries its original exponent.
+
+The first inequality of \eqref{eq:retained-components} retains more information. Dividing by \(x^b\) gives \(G_\Lambda(x)/x^b\leq1+4o\,x^{-(a+5)\varepsilon}\). For fixed level and admissible \(a,\varepsilon\), the excess in this upper envelope tends to zero. An envelope of this form can approach one strictly from above at every finite scale. For example \(x^b+x^r\) does so, and satisfies the two-term upper bound when \(o\geq1\). Setting \(\alpha=0\) in the coefficient-one bound therefore requires another argument. Likewise, seeing a smaller exponent after re-running the comparison would be weak evidence that better coset balance caused it. Changing only the final absorption reproduces a smaller coefficient with the original shares. The sharper Fourier estimate has its own tested conclusion; attributing any further gain to it would require holding this absorption convention fixed and isolating its contribution inside the core comparison.
+
+\section{What survives if the retained set really changes?}
+\label{sec:margin}
+
+The preceding argument uses the set selected by the construction. Suppose instead that we retain a different equal-size set \(U\) on the same raw host. There are three natural distances between sets here. Counting replacements measures how much their membership lists differ. Counting changes in each coset measures the information available to the quotient characters. Counting changes in a local orbit pattern measures a finer feature. Their relationship is one-way, and we can quantify where it stops.
+
+\subsection{An edit radius from unused tolerance}
+Write \(m=|T|=|U|\), \(k=|U\setminus T|=|T\setminus U|\), and \(n_T(c)=|T\cap c|\) for a coset \(c\). Each of the \(k\) insertions can add at most one member to a given coset, while each of the \(k\) removals can remove at most one. Additions and removals have opposite signs. The net change thus satisfies \(|n_U(c)-n_T(c)|\le k\). If \(T\) already satisfies \(|n_T(c)-\lambda_c m|\le a m\), the triangle inequality gives
+\[
+ |n_U(c)-\lambda_c m|\ \le\ k+a m .
+\]
+The target stays fixed because the two sets have the same size. With \(a=1/x\) and \(b=x^{-1+\varepsilon}\), a worst-case sufficient radius for satisfying the published tolerance is
+\[
+ k\le\left\lfloor (b-a)m\right\rfloor.
+\]
+The radius is sufficient even when an adversary chooses which points to move. It can be conservative for particular directions. For example, any number of exchanges within the same cosets leaves \(n_T\) unchanged. With actual counts in hand the exact test is \(\max_c|n_U(c)-\lambda_c m|\le b m\), including the sign of the change relative to the existing discrepancy. If only the old tolerance and the number of edits are available, the coefficient one in the general estimate is sharp. Across the 12,870 ordered equal-size pairs of subsets of the eight-element frame, 516 pairs at positive distance increased the largest absolute count discrepancy by exactly \(k\). \evref{shares}
+
+The size estimates explain why this margin matters on the construction's own scales. For \(x\ge1\) and \(\varepsilon>0\), the source supplies an ambient size \(N\ge x^{2+8\varepsilon}/2\) and a retained size \(m\ge x^{-\varepsilon/8}N/2\). Substitution gives
+\[
+ (b-a)m=x^{-1}(x^\varepsilon-1)m
+ \ \ge\ \tfrac14 x^{1+63\varepsilon/8}(x^\varepsilon-1).
+\]
+For fixed positive \(\varepsilon\) the relative tolerance tends to zero when \(\varepsilon<1\), yet the \emph{number} of tolerable edits grows because the set grows faster. At the illustrative values \(x=2^{1024}\), \(\varepsilon=1/64\), the size premises alone would give \(65535\cdot 2^{1148}\) edits. The theorem supplies no evaluated threshold certifying an admissible arithmetic host at that particular \(x\). This arithmetic substitution illustrates the unit of the guarantee. \evref{construction}
+
+On a fixed raw host only the shares field of \texttt{EAtH} reads the retained set. Once \(U\) passes the share test, the other five fields carry over, including the same character-derivative bound. The core additionally identifies a top space with \(T\) and attaches weights and comparisons to its points. A bijection obtained from equal cardinality need not respect those maps. The replacement theorem therefore discharges one explicit-formula obligation; a proof transporting the core would require information about the witness that the share bound never inspected. \evref{construction} \evref{host}
+
+\subsection{Exactly which observations are blind to placement?}
+Let \(B=A/A_0\) and write \(n_T\) for the full vector of coset counts. For any complex group character \(\chi\) of the finite abelian quotient, lifted to \(A\),
+\[
+ F_T(\chi)=\sum_{t\in T}\chi(t+A_0)=\sum_{c\in B} n_T(c)\chi(c).
+\]
+This proves that equal histograms give equal quotient sums. Conversely, averaging \(F_T(\chi)\overline{\chi(c)}\) over the \(|B|\) characters gives \(n_T(c)\), by finite-character orthogonality. The full collection of quotient sums is therefore an alternative coordinate system for the same histogram. The converse uses \emph{all} quotient characters. The source estimate may request a restricted character family. This observation identifies the exact information discarded by the full transform: the placement of points \emph{within} cosets.
+
+We tested whether that discarded information can matter even when the shares are exact. In \(\Z/16\Z\), retain four evens and three odds. These are the exact weights for index two. Use step \(+2\), which keeps each parity class on its own eight-point directed cycle. Define the placement statistic
+\[
+ J_2(T)=\#\{t\in T:t+2\bmod 16\in T\}.
+\]
+This is a deliberately simple orbit query. Its complete domain and its extreme values can be verified without producing a number field.
+\newcommand{\onpt}{\colorbox{teal}{\makebox[.9em]{\textcolor{white}{\(\bullet\)}}}}
+\newcommand{\offpt}{\colorbox{unselected}{\makebox[.9em]{\textcolor{quiet}{\(\cdot\)}}}}
+\begin{figure}[htbp]\centering\small
+\setlength{\tabcolsep}{7pt}\renewcommand{\arraystretch}{1.16}
+\begin{tabular}{@{}llcccccccc@{}}
+\toprule
+Set & Class & \multicolumn{8}{c}{Successive positions under step \(+2\), wrapping to the first}\\
+ & & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7\\ \midrule
+\(T\) & even &\onpt&\onpt&\onpt&\onpt&\offpt&\offpt&\offpt&\offpt\\
+ & odd &\onpt&\onpt&\onpt&\offpt&\offpt&\offpt&\offpt&\offpt\\
+\(U\) & even &\onpt&\offpt&\onpt&\offpt&\onpt&\offpt&\onpt&\offpt\\
+ & odd &\onpt&\offpt&\onpt&\offpt&\onpt&\offpt&\offpt&\offpt\\
+\bottomrule
+\end{tabular}
+\caption{Identical coset counts, different orbit neighborhoods. Column \(j\) denotes residue \(2j\) on an even row or \(2j+1\) on an odd row. Filled cells are retained. The two rows of \(T\) have three and two adjacent pairs respectively. Both rows of \(U\) have zero.}
+\label{fig:orbits}
+\end{figure}
+
+For \(T=\{0,1,2,3,4,5,6\}\), \(J_2(T)=5\); for \(U=\{0,1,4,5,8,9,12\}\), \(J_2(U)=0\). These are the extrema. On a directed cycle a nonempty proper selection of \(r\) points forms at least one run and therefore has at most \(r-1\) internal edges. The two classes together have at most \(3+2=5\). Both sets have parity sum \(+1\). Translation by two preserves \(J_2\) for every set and provides a symmetry control. \evref{new}
+
+There are \(\binom84\binom83=3{,}920\) such sets. In order of \(J_2=0,1,2,3,4,5\), the exact counts are \(32,448,1360,1472,544,64\). The mean \(18/7\) has an independent check. In a uniformly sampled size-\(r\) subset of an eight-cycle, a specified adjacent pair is occupied with probability \(r(r-1)/(8\cdot7)\). Summing over eight pairs and taking \(r=4,3\) gives \(12/7+6/7\). Thus the full quotient data are constant across a population in which the local statistic spans its entire feasible range. The original \texttt{BadOK} sums failures of a different good-orbit predicate with prime-dependent weights. Our census establishes blindness to placement for this particular query. It supplies a calibrated positive control for a later experiment on the literal predicate. \evref{source} \evref{new}
+
+\section{What a seven-bit record licenses when the cutoff changes}
+\label{sec:reader-fibers}
+
+A reader can make the same prediction for two quite different reasons. Its record may identify a unique answer, or it may identify several possibilities among which one answer is common. The distinction becomes observable if the writer commits before learning which question will be asked. Here the writer stores information about a designated integer. Changing a single parameter in the question changes which distinctions among integers matter. The source, both storage rules, the permitted questions and the complete finite truth table can all be specified. This lets us put exact numbers on information discarded at writing and information overlooked at reading.
+
+\subsection{Two cutoffs determine the space that a writer must preserve}
+
+Let the center be \(s\in\{0,\ldots,80\}\). A query \(q=(Z,e)\) gives a cutoff \(1\le Z\le64\) and a weight \(1\le e\le Z\). Its answer is
+\[
+  Y(s,q)=\mathbf{1}\{s\equiv e\pmod{m(Z)}\},
+  \qquad m(Z)=3^{1+\lfloor\log_3 Z\rfloor}.
+\]
+Indeed, agreement modulo \(m(Z)\) is precisely the statement that the exponent of 3 in \(s-e\) exceeds \(\lfloor\log_3 Z\rfloor\), with zero difference divisible by every power of 3. This is one proximity test for a designated local center. In the formal construction the center itself is chosen by existence. The experiment varies possible centers and supplies their values to the evaluator. It therefore says what can be recovered \emph{if} one of them was designated. \evref{reader}
+
+The terminal-list writer records the weight that answers yes at \(Z=64\), or a special empty tag when every weight answers no. Since \(m(64)=81\), the nonempty tags identify centers 1 through 64 individually. The empty tag represents exactly the 17 centers in \(F=\{0,65,\ldots,80\}\). The second writer records the residue \(s\) itself. Both use seven fixed payload bits. Their effective alphabets contain 65 and 81 values respectively.
+
+Consider what a writer would have to preserve to answer \emph{both} the terminal questions and the questions at \(Z=26\). At the second cutoff \(m(26)=27\). For \(s=65,\ldots,80\), the single matching weight is \(s-54\), which runs through \(11,\ldots,26\). Center zero matches no permitted weight. Thus \(Z=26\) distinguishes every pair of centers that \(Z=64\) collapsed. Taken together these two cutoffs give 81 distinct answer profiles. An exact deterministic reader with a common codebook and no identifying side channel must receive a distinct tag for each profile. Six bits provide only 64 tags, while storing \(s\) in seven attains the bound. In fact, the terminal writer already pays for seven bits. Its 16 unused codewords are exactly the number needed to split its 17-way ambiguous tag into singletons. The loss comes from the choice of which distinctions to encode at this payload width. This is a finite instance of the reference manuscript's criterion that permissible future operations determine which histories may share a memory state. \evref{memory}
+
+Weight 11 gives a witness one can check by hand. Centers 0 and 65 both write the empty terminal tag. At \(Z=64\) they both answer no. At \(Z=26\), \(65-11=54\) is divisible by 27 and \(0-11\) is not. A statement about either \emph{particular} center has a truth value. A reader given the empty tag alone must leave the new question open if its answer is required to hold for every compatible center.
+
+\subsection{An exact accounting of the 150 errors}
+
+The held-out cutoffs were \(24\) through \(29\) and \(59\) through \(64\). They contain 528 distinct queries and \(528\cdot81=42{,}768\) center--query pairs. The other 52 cutoffs supplied 125,712 training pairs. The census weights each pair equally. As a consequence a cutoff with more allowed weights receives more aggregate weight. All centers were present in training and 41,067 held-out pairs reuse a center and weight seen together at another cutoff. The intended variation is the new cutoff. Confidence intervals for sampling new centers or new applications would need a different design. \evref{reader}\ \evref{guard}
+
+For a writer \(M=C(s)\), let \(p=\Pr(Y=1\mid M,q)\). With unit cost per erroneous binary answer, the best possible conditional error is \(\min(p,1-p)\). The conditional error of a forced-binary reader \(g\) equals this minimum plus
+\(\lvert 2p-1\rvert\) whenever \(g\) chooses the less probable answer. This follows by subtracting the two available risks, \(p\) for saying no and \(1-p\) for saying yes. Averaging gives an error floor for the writer and an excess for the particular reader. The reference manuscript develops such a separation for posterior KL loss. Here the reader emits hard labels, and the evaluated loss counts binary mistakes. \evref{memory}
+
+\begin{table}[htbp]\centering\small
+\caption{Same held-out pairs and same total error for the informed readers. The attainable floor changes when the writer changes. The last column scores a different obligation: saying something definite when compatible centers disagree.}
+\label{tab:reader-risk}
+\begin{tabular}{lrrrr}\toprule
+Stored record & Truth errors & Writer floor & Reader excess & Unsupported answers\\\midrule
+Terminal list & 150 & 45 & 105 & 765\\
+Full residue & 150 & 0 & 150 & 0\\\bottomrule
+\end{tabular}
+\end{table}
+
+The 45 irreducible errors can be derived without fitting any model. At \(Z=24,25,26\) we have \(m=27\). For each permissible \(e\), the three matching centers are \(e,e+27,e+54\). The last is in the empty-tag class exactly when \(e\ge11\), and the other two have distinct nonempty tags. This produces \(14+15+16=45\) ambiguous observations. At the other nine held-out cutoffs \(m=81\), so terminal-list answers are determined. Each ambiguous cell contains one yes and sixteen no answers. Any deterministic answer is the same for all 17 states in that cell. Always picking the majority on such cells costs 45 truth errors and yields 720 true guesses. Under the stronger requirement that a definite answer hold for \emph{all} compatible centers, all \(45\cdot17=765\) such utterances lack support. Accuracy of the informed tree is \(42{,}618/42{,}768=99.65\%\). Its exact support score is \(41{,}898/42{,}768\), since in addition to the 765 guesses it misses 105 determinate positives.
+
+Both numbers depend on the decision being scored. Give abstention a loss \(c\ge0\), with zero loss for a true answer and unit loss for a false one. In each mixed cell a no costs \(1/17\) in expectation, a yes costs \(16/17\), and withholding costs \(c\). A risk-minimizing decision withholds when \(c<1/17\), guesses no when \(c>1/17\), and is indifferent at equality. For a nonuniform prior the crossover becomes \(\min(p,1-p)\). Requiring a support certificate for every definite answer instead makes abstention obligatory at a mixed cell, however imbalanced its probabilities. The chosen application must supply that requirement or the costs. An accuracy metric alone cannot settle which action the reader ought to take.
+
+\subsection{Why sufficient storage produced the same predictions}
+
+At fitting time the plain depth-eight decision tree received the tag, cutoff and weight. An informed tree received two additional features computed from its visible inputs: the cutoff's ternary power band and the number of matching low ternary digits of tag and weight, capped at four. One informed tree trained on the support action (yes, no, abstain); the other trained on individual binary truth. The writer, codebook and mathematical features were supplied. On the held-out data the plain support tree recovered zero licensed positives. The informed support tree recovered \(528/633\) for the terminal list and \(528/678\) for the full residue. The preregistered prediction that support supervision would reduce unsupported guesses failed. The two informed objectives gave the same count, 765, despite 127 ambiguous training observations representing 2,159 training pairs. \evref{reader}\ \evref{guard}
+
+Decoding the saved trees gives a more specific description of their behavior. On every held-out pair both informed objectives with either writer answer yes precisely when \(s=e\). For the terminal writer this rule can be implemented through its visible tag, since \(1\le e\le64\) and every positive tag identifies the corresponding center. Away from \(Z=24,25,26\), equality happens to implement the full modular relation. At those three cutoffs it misses the two additional congruent centers for \emph{every} permitted weight. Thus the observed \(48+50+52=150\) failures follow directly from twice the number of weights in each cutoff. Exactly 45 missed positives belong to the terminal writer's mixed cells. For the residue writer every one of the 150 missed positives could have been read from its record.
+
+One split explains why a fitted tree can behave this way even with the relevant arithmetic feature available. On the residue branch with exactly three matching low ternary digits, the mathematical threshold is \(Z\le26\). The fitted tree used \(Z\le23\). The raw threshold and the threshold expressed through the power band give identical decisions on all 3,104 training pairs on this branch. The registered tie rule preferred the raw feature. They disagree on 150 of the 1,056 held-out branch pairs. This mechanism explains the frozen artifact. Its isolation suggests a controlled follow-up: vary the placement of held-out gaps relative to powers of three and the tie order before fitting, then score fresh boundaries. A gain confined to this one gap would offer weaker evidence for learning the arithmetic rule. \evref{guard}
+
+This diagnosis yields an exact finite query-shift calculation. Let \(\pi\) be any distribution on the 528 held-out queries, retaining the uniform conditional distribution over centers. Put \(B=\{q: Z\in\{24,25,26\}\}\) and \(A=\{q\in B:e\ge11\}\). The per-query counts above give
+\[
+ R_\pi(\text{informed reader})=\frac{2\pi(B)}{81},
+ \qquad R^*_\pi(\text{terminal list})=\frac{\pi(A)}{81},
+ \qquad R^*_\pi(\text{residue})=0 .
+\]
+The registered law has \(\pi(B)=75/528\) and \(\pi(A)=45/528\). Concentrating queries on \(B\) raises the fitted reader's error from \(0.35\%\) to \(2/81\), or \(2.47\%\). Concentrating them outside \(B\) yields perfect accuracy from exactly the same fitted reader. A terminal-only test therefore fails to measure the distinction the storage rule discarded or the arithmetic boundary the tree failed to recover. This calculation holds on the stated support; new moduli or a new state distribution require a new count. \evref{memory}
+
+\subsection{A guard tests ambiguity; a binding control tests a separate premise}
+
+A post-hoc guard kept the trained reader frozen. For a nonempty terminal tag its compatible set is a singleton. For the empty tag let \(h\) be the number of matching centers among \(0,65,\ldots,80\). Counting the arithmetic progression \(e+jm\) with \(m=m(Z)\) gives
+\[
+ h=\mathbf{1}\{m\mid e\}
+     +\left\lfloor\frac{80-e}{m}\right\rfloor
+     -\left\lfloor\frac{64-e}{m}\right\rfloor .
+\]
+The guard withheld exactly when \(0<h<17\). It used the record and query, without access to the designated center. It caught all 765 required abstentions. The same 105 determinate errors survived, and the number of licensed definite answers stayed at 41,898. A control rotated the query weights when computing the abstention mask, preserving the number withheld at \emph{each} cutoff. It still made 510 unsupported guesses and withheld 510 determinate answers. The effect depends on locating the ambiguous observations. The remaining mistakes require a better reader on observations that do identify the truth. \evref{guard}
+
+Both exact recovery and the guard assume the tag came from the designated center. Supplying the inverse codebook preserved predictions under a relabeling of tags. Substituting the valid tag for center 2 when the designated center was 1, and vice versa, reversed 48 previously licensed answers across 1,056 test pairs, even for the exact oracle. A certificate that all states \emph{represented by this tag} agree cannot establish which object supplied the tag. This is the operational link to the host trace: a result may depend on the identity of the object carrying the premises, the partition induced by the stored summary, and the reader's ability to use the distinctions that survive. Each dependence has its own experimental control. \evref{reader}
+
+\section{What should one extra memory label buy?}
+\label{sec:frontier}
+The reader audit permits a design question that accuracy alone cannot settle. Suppose the 64 nonempty terminal tags have already been assigned and must keep their meaning. We may refine the empty tag using two labels instead of one. Only 66 of 128 available seven-bit patterns would then be used. Which centers should share the new label? This constrained comparison isolates the meaning of one extra label while holding the payload width, the other 64 cells, and the held-out query law fixed. We optimize the writer retrospectively on that law. The learned trees remain frozen in the reader experiment; here we give each candidate writer its own mathematically optimal reader. \evref{reader} \evref{new}
+
+\subsection{Different decisions assign different values to the same distinction}
+Inside the 17-center empty fiber, each of the 45 relevant questions singles out one center. Let \(w_s\) be how many such questions target center \(s\). The weights for centers \(65,\ldots,78\) are three each, since their associated weights \(11,\ldots,24\) appear at each of the three cutoffs. Centers 79 and 80 have weights two and one. Center zero has weight zero. Thus \(\sum_s w_s=45\). This last center still matters: assigning it to a group can change how many state–queries remain undecidable.
+
+For a cell \(D\) in a refinement let \(g=|D|\) and \(w(D)=\sum_{s\in D}w_s\). For any question targeting a member, exactly one of the \(g\) centers answers yes. If \(g=1\), both scoring rules can answer exactly. If \(g\ge2\), the optimal forced binary decision makes one error over the \(g\) equally likely centers, including the tie at \(g=2\). A reader that must certify its answer must withhold for all \(g\) centers. Thus the cell contributes
+\[
+ \bigl(E(D),A(D)\bigr)=
+ \begin{cases}
+ (0,0),&g=1,\\
+ \bigl(w(D),g\,w(D)\bigr),&g\ge2 ,
+ \end{cases}
+\]
+where \(E\) counts unavoidable forced-binary errors and \(A\) counts state–queries requiring abstention. These are two different reader contracts applied to the same writer. Summing over the cells gives their exact attainable costs. All other state–queries are already determinate. This formula accounts for a design effect that a single accuracy score conceals: a split can release many certified negatives while leaving every forced binary decision as accurate as before.
+
+\subsection{An exact frontier for a two-way repair}
+Let \(k\) be the size of the smaller class, \(1\le k\le8\), and \(W\) its total target weight. With \(k=1\) the two totals are \(E=45-W\), \(A=16(45-W)\). Isolating a weight-three center gives \(E=42,A=672\). For \(2\le k\le8\) both cells have at least two members, hence \(E=45\) for every grouping. The ambiguity count becomes
+\[
+ A=kW+(17-k)(45-W).
+\]
+It falls when more target weight is placed in the smaller cell. Its maximum available weight is \(3k\). The minimum over \(k=2,\ldots,8\) is reached at \(k=8\) and \(W=24\), giving \(A=381\). In words, the singleton repair makes three previously uncertain positives perfectly readable. The roughly balanced repair limits the number of people, or here possible centers, whose answers have to be withheld whenever a question singles out one of them.
+
+\begin{table}[htbp]\centering\small
+\begin{tabularx}{\linewidth}{@{}Yrrr@{}}
+\toprule
+Writer on the empty fiber & Logical labels in all & Forced errors & Required abstentions\\\midrule
+Original terminal record & 65 & 45 & 765\\
+Isolate one weight-three center & 66 & \textbf{42} & 672\\
+Place eight weight-three centers in one class & 66 & 45 & \textbf{381}\\
+Identify every center & 81 & 0 & 0\\
+\bottomrule
+\end{tabularx}
+\caption{The two 66-label rows are the full set of nondominated performance pairs. All rows fit in seven fixed payload bits. Counts use the same 42,768 held-out state–queries. The rows give exact reader optima for their writers.}
+\label{tab:refine}
+\end{table}
+
+There are \(2^{16}-1=65{,}535\) unlabeled bipartitions of 17 centers. Directly evaluating all of them from the modular truth table reproduces the derivation. Fourteen partitions attain the singleton endpoint and \(\binom{14}{8}=3{,}003\) attain the balanced endpoint. Relative to the singleton choice, the balanced choice releases 291 additional supported decisions at the price of three additional forced-answer errors. Which is preferable depends on what the downstream user may do with an unsupported answer. In a system that values both metrics and assigns an explicit design score \(E+\lambda A\), the two endpoints tie at \(\lambda=1/97\). This price compares entire writers under two reported contracts. The \(1/17\) crossover in Section~\ref{sec:reader-fibers} concerned the cost of one abstention by one reader at a known observation. \evref{new}
+
+The supplement also evaluates refinements using \(j=1,\ldots,17\) labels within the empty fiber. It suffices to enumerate integer partitions of 17 into \(j\) cell sizes. For fixed sizes assign the most frequently queried centers to singletons first, then to smaller nonsingleton cells. Exchanging a lower-weight member of a smaller cell for a higher-weight member of a larger one weakly decreases both costs in the displayed cell formula. Thus each other assignment is dominated or tied for its shape. This is an optimum for a deterministic refinement of a fixed writer under a specified query law. Allowing the writer to merge the other 64 tags changes the design problem. Reweighting the questions or charging for lookup and codebook storage can also change the preferred repair. The reference manuscript's fixed-budget and packed-reader experiments make precisely these resource distinctions operational. \evref{memory} \evref{new}
+
+\section{What transfers to our research}
+\label{sec:synthesis}
+
+\textbf{Store enough to distinguish the future answers you intend to license.}
+On a fixed arithmetic frame the coset histogram determines every quotient-character sum. The adjacency census proves that some local orbit observations vary freely enough to traverse their entire feasible range inside one such histogram. At a fixed terminal cutoff the reader's empty tag likewise represents an invariant answer. Adding one earlier cutoff separates every one of its 17 compatible centers. The common formal test is whether the requested output is constant across compatible objects. It produces a positive characterization on the Fourier side and a sharp storage lower bound on the reader side. Its application to the full bad-orbit condition remains an open local question. \evref{memory} \evref{new}
+
+\textbf{Model improvement, representation improvement, and proof improvement have different controls.}
+The learned reader's accuracy alone cannot distinguish a wrong answer that every binary reader must sometimes give from one that a better reader can avoid. The identical 150-error totals and their different decompositions make the distinction measurable. On the proof side the sharper Fourier bound is real, but reducing the last exponent loss by changing only the constant-absorption threshold reproduces an apparent improvement under ordinary shares. To attribute a gain to balance itself, one must compare two bounds with the same outer convention. These are examples of a method we can reuse: change one source of loss, disclose the other admissible explanations, and compare an intervention that targets a different one. \evref{guard} \evref{absorb}
+
+\textbf{A certificate has an object of reference.}
+The host proof can keep its chosen set unnamed because the type and index of that choice are carried through the argument. In the reader experiment, a mathematically exact guard can certify that all centers represented by a supplied tag agree. Swapping a valid tag between two objects defeats that assurance even when the computation is exact. A practical memory experiment can therefore score three things independently: whether the writer retained the necessary distinction, whether the record is attached to the designated source, and whether the reader performed the permitted inference. The present results justify those separate measurements. They do not measure whether a deployed memory architecture can establish source identity or perform revisions economically.
+
+\subsection{Tests that could change the conclusions}
+\textbf{Orbit placement.} Use the original local good-orbit predicate and the precise scale, order and weight restrictions in \texttt{BadOK}. First construct a finite admissible parameter instance with a nonempty prime sum and both good and bad local outcomes. Hold the complete coset histogram fixed; compare placements that are unrelated by an orbit-preserving symmetry. Apply the corresponding symmetry to the whole instance as a negative control. One pair changing the weighted sum would refute sufficiency of the histogram for that statistic. A pair straddling the specified threshold would refute sufficiency for the Boolean pass/fail decision. Equal results on a bounded census would justify a bounded conclusion and a search for the responsible invariance. The step-two statistic in Figure~\ref{fig:orbits} supplies a positive test for the perturbation method before that harder calculation. \evref{source}
+
+\textbf{Reader generalization.} Freeze the original encoders and feature definitions. Select a fresh horizon crossing another power of three, and withhold blocks both crossing and missing the transition. Predeclare the depth limit, split ordering and unit of averaging. Cross raw cutoff, explicit power band, and a reader implementing the modular rule. Score writer-optimal binary risk, avoidable reader error, unsupported claims, and valid-tag substitution on the same hidden states. A power-band reader that eliminates the old 150 errors but fails at the next boundary would support a narrow training-gap explanation. Reliable performance under new moduli and query weights would support learning a more general rule. A separate trial with source updates and a measured codebook, storage and access budget would be needed to extend either result to revisable systems. \evref{reader} \evref{memory}
+
+\textbf{Exponent attribution.} Expose the coefficient multiplying the Fourier discrepancy before the bound on the main arithmetic bracket. Keep its other terms, its assumptions and its multiplicative constants fixed, then vary only the available share estimate. The desired observation is a term in the resulting envelope whose order actually changes. If another term of the same or larger order survives, that term gives a specific reason why tighter balance alone cannot lower the overall order there. \evref{absorb}
+
+\section{Evidence and reproduction}
+\label{sec:evidence}
+The source labels distinguish published mathematics, earlier local measurements, and deductions made for this edition. The fixed-width state budget charges seven payload bits per center. Reader programs, authenticated routing, shared codebooks and their latency were outside that budget. All reader frequencies are exact finite censuses under the named evaluation law. A sample size of 42,768 describes the number of state–query pairs evaluated; it does not supply 42,768 independent replications on other systems. No full build of the original RH entry point was run for this report.
+
+\evitem{memory}{Justin Candler, \emph{Arithmetic Coding, Representation Geometry, and Revisable Memory} (20 November 2026). The future-operation equivalence and finite-state storage theorem motivate Section~\ref{sec:objects}. The conditional posterior-KL decomposition and query-law transfer propositions motivate the hard-label risk decomposition. P7 studies update closure, P9 fixes the writer while changing the query law, and P10 separately charges implementation costs. The comparison here uses the supplied manuscript as a conceptual source.}
+\evitem{source}{Original Lean source at \texttt{40e56bab}. \origlink{Development/AutomorphicArithmetic/ThickFrames/select.lean}{Finite selection}, \origlink{Development/AutomorphicArithmetic/ThickFrames/topsGroup.lean}{count-to-share conversion}, \origlink{Development/AutomorphicArithmetic/ShortNorms/supplyOfAdmOf.lean}{host and character assembly}, and \origlink{Development/AbelianVarietyTheory/Definitions/GlobalTwisting/ThinScalesIffHostBound.lean}{bad-orbit condition}. The \prooflink{SOURCE.md}{pinned trace} gives exact lines and the underlying logarithmic-derivative supplier.}
+\evitem{host}{\prooflink{PROTOCOL.md}{Preregistered host tests}, \prooflink{HOST.md}{proof and controls}, and \prooflink{HostHandoff.lean}{joint-index Lean extraction}. This theorem records an existential index for each scale and aligns the conditions on that index.}
+\evitem{shares}{\prooflink{SHARES_PROTOCOL.md}{Finite protocol}, \prooflink{ShareControl.lean}{kernel-checked character control}, \prooflink{share_counts.json}{eight-set census}, and \prooflink{results/margin_counts.json}{12,870-pair replacement audit}. The eight-point example realizes the literal frame and share predicate; number-field host conditions require additional data.}
+\evitem{construction}{\prooflink{StrongWindow.lean}{Strengthened window}, \prooflink{Construction.lean}{four upstream premises}, and \prooflink{ShareMargin.lean}{replacement and size lemmas}. These retain a stronger input and establish a conditional intermediate consequence. The formal proof does not enumerate any of the arithmetic hosts.}
+\evitem{verify}{\prooflink{results/verification.json}{Machine-readable replay} and \prooflink{REPRODUCE.md}{reproduction instructions}, fork commit \texttt{9ac7e1b5}. The earlier targeted build authenticated 1,205 original modules, reused 1,202 compiled objects, and rebuilt three. It replayed 15 experiment, generated, or parent modules, audited 98 declarations including helpers, and verified 19 direct original proof edges. The axiom union was \texttt{propext}, \texttt{Classical.choice}, \texttt{Quot.sound}.}
+\evitem{reader}{\href{run:evidence/changing-cutoff-reader/PROTOCOL.md}{Preregistered reader protocol}, \href{run:evidence/changing-cutoff-reader/results.json}{original fitted trees and counts}, and \href{run:evidence/changing-cutoff-reader/README.md}{original readout}. The complete training population had 125,712 state–queries and the held-out population had 42,768. The supplement independently interprets the frozen trees and verifies the query-specific errors.}
+\evitem{guard}{\href{run:evidence/changing-cutoff-reader/GUARD_AUDIT.md}{Exploratory guard audit} and \href{run:evidence/changing-cutoff-reader/audit_guard.json}{machine-readable counts}. The valid-tag substitution, coverage-matched abstention and cutoff-gap checks have different intervention targets.}
+\evitem{new}{\href{run:evidence/witness_distinctions.py}{New exact enumerations} and \href{run:evidence/witness_distinctions.json}{their output}. The cyclic step-two census and the one-label design comparison were performed for this revision. They are independent finite mathematics. The partition code separately evaluates all 65,535 two-way assignments using per-query truth and compares their frontier with the shape argument.}
+\evitem{absorb}{\origlink{Development/AutomorphicArithmetic/PrimitiveCosets/CoreGm.lean}{Original prime comparison} and \href{run:evidence/CoreBudgetFinal.lean}{new private Lean supplement}. The added check extracts the two-term bound and proves \(\alpha\)-adjustable absorption in a separate module with two named endpoints. The \href{run:evidence/core_budget_verification.json}{recorded replay} and \href{run:evidence/README.md}{reproduction guide} distinguish it from the prior fork inventory.}
+
+\end{document}
