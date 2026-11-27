@@ -1,0 +1,815 @@
+{
+ "inherited_commit": "e3bf793943ea2f2eab748816b974a8a0c11bdbbe",
+ "inherited_paths": {
+  "AllDepth": "research/uriel/experiments/gaussian-target-four/verification/AllDepth.lean",
+  "Contact": "research/uriel/experiments/gaussian-target-four/verification/Contact.lean",
+  "Cylinders": "research/uriel/experiments/gaussian-target-four/verification/Cylinders.lean",
+  "DyadicLocal": "research/uriel/experiments/gaussian-target-four/verification/DyadicLocal.lean",
+  "Endpoint": "research/uriel/experiments/gaussian-target-four/verification/Endpoint.lean",
+  "ExceptionalDilation": "research/uriel/experiments/parallel-growth/verification/ExceptionalDilation.lean",
+  "Existence": "research/uriel/experiments/gaussian-target-four/verification/Existence.lean",
+  "FiniteCounts": "research/uriel/experiments/gaussian-target-four/verification/FiniteCounts.lean",
+  "FourBase": "research/uriel/experiments/gaussian-target-four/verification/FourBase.lean",
+  "FourContact": "research/uriel/experiments/gaussian-target-four/verification/FourContact.lean",
+  "FourCounts": "research/uriel/experiments/gaussian-target-four/verification/FourCounts.lean",
+  "FourEndpoint": "research/uriel/experiments/gaussian-target-four/verification/FourEndpoint.lean",
+  "FourEven": "research/uriel/experiments/gaussian-target-four/verification/FourEven.lean",
+  "FourLift": "research/uriel/experiments/gaussian-target-four/verification/FourLift.lean",
+  "FourNeighborhood": "research/uriel/experiments/gaussian-target-four/verification/FourNeighborhood.lean",
+  "FourTubes": "research/uriel/experiments/gaussian-target-four/verification/FourTubes.lean",
+  "GaussianField": "research/uriel/experiments/gaussian-target-four/verification/GaussianField.lean",
+  "GaussianTrace": "research/uriel/experiments/gaussian-target-four/verification/GaussianTrace.lean",
+  "Nearby": "research/uriel/experiments/gaussian-target-four/verification/Nearby.lean",
+  "Neighborhoods": "research/uriel/experiments/gaussian-target-four/verification/Neighborhoods.lean",
+  "ProgressionGrowth": "research/uriel/experiments/parallel-growth/verification/ProgressionGrowth.lean",
+  "Shallow": "research/uriel/experiments/gaussian-target-four/verification/Shallow.lean",
+  "Tubes": "research/uriel/experiments/gaussian-target-four/verification/Tubes.lean"
+ },
+ "modules": {
+  "AllDepth": {
+   "file": "inherited/AllDepth.lean",
+   "imports": [
+    "FiniteCounts"
+   ]
+  },
+  "BlockIdentification": {
+   "file": "global/BlockIdentification.lean",
+   "imports": []
+  },
+  "CompanionCells": {
+   "file": "dilates/CompanionCells.lean",
+   "imports": [
+    "CompanionCounts",
+    "DilateStableOddAll"
+   ]
+  },
+  "CompanionCounts": {
+   "file": "dilates/CompanionCounts.lean",
+   "imports": [
+    "CompanionPrimitive",
+    "CompanionObstruction",
+    "CompanionLow",
+    "DilateLowCompanion"
+   ]
+  },
+  "CompanionEndpoint": {
+   "file": "dilates/CompanionEndpoint.lean",
+   "imports": [
+    "DilateTransport",
+    "CompanionCells"
+   ]
+  },
+  "CompanionLow": {
+   "file": "dilates/CompanionLow.lean",
+   "imports": [
+    "DilateLow",
+    "DilateDefs"
+   ]
+  },
+  "CompanionObstruction": {
+   "file": "dilates/CompanionObstruction.lean",
+   "imports": [
+    "DilateCompanion"
+   ]
+  },
+  "CompanionPrimitive": {
+   "file": "dilates/CompanionPrimitive.lean",
+   "imports": [
+    "DilatePrimitive"
+   ]
+  },
+  "Contact": {
+   "file": "inherited/Contact.lean",
+   "imports": []
+  },
+  "CoordinateFloor": {
+   "file": "synthesis/CoordinateFloor.lean",
+   "imports": [
+    "HaarSlices"
+   ]
+  },
+  "Cylinders": {
+   "file": "inherited/Cylinders.lean",
+   "imports": [
+    "AllDepth",
+    "Mathlib.NumberTheory.Padics.HeightOneSpectrum"
+   ]
+  },
+  "DenominatorControl": {
+   "file": "global/DenominatorControl.lean",
+   "imports": []
+  },
+  "DilateAudit": {
+   "file": "dilates/DilateAudit.lean",
+   "imports": [
+    "DilateEndpoint",
+    "DilateSixteen",
+    "DilateBoundary",
+    "FourEndpoint",
+    "RamBasePrimitive",
+    "Lean.Util.FoldConsts"
+   ]
+  },
+  "DilateBoundary": {
+   "file": "dilates/DilateBoundary.lean",
+   "imports": [
+    "DilateBoundaryCore",
+    "DilatePrimitive",
+    "DilateLow"
+   ]
+  },
+  "DilateBoundaryCore": {
+   "file": "dilates/DilateBoundaryCore.lean",
+   "imports": [
+    "DilateDescent"
+   ]
+  },
+  "DilateCompanion": {
+   "file": "dilates/DilateCompanion.lean",
+   "imports": [
+    "DilateCompanionCore",
+    "DilateLowCompanion",
+    "DilateEndpoint"
+   ]
+  },
+  "DilateCompanionCore": {
+   "file": "dilates/DilateCompanionCore.lean",
+   "imports": [
+    "DilatePrimitive",
+    "DilateDescent"
+   ]
+  },
+  "DilateDefs": {
+   "file": "dilates/DilateDefs.lean",
+   "imports": [
+    "RamField",
+    "FourEven"
+   ]
+  },
+  "DilateDescent": {
+   "file": "dilates/DilateDescent.lean",
+   "imports": [
+    "RamLift",
+    "DilateDefs"
+   ]
+  },
+  "DilateEndpoint": {
+   "file": "dilates/DilateEndpoint.lean",
+   "imports": [
+    "DilateRecurrence",
+    "DilatePrimitive",
+    "DilateDescent",
+    "DilateLow",
+    "DilateTransport"
+   ]
+  },
+  "DilateFineOrbit": {
+   "file": "dilates/DilateFineOrbit.lean",
+   "imports": [
+    "DilateDefs",
+    "RamLift"
+   ]
+  },
+  "DilateLow": {
+   "file": "dilates/DilateLow.lean",
+   "imports": [
+    "RamBase",
+    "RamLift",
+    "RamField"
+   ]
+  },
+  "DilateLowCompanion": {
+   "file": "dilates/DilateLowCompanion.lean",
+   "imports": [
+    "DilateLow"
+   ]
+  },
+  "DilateNear": {
+   "file": "dilates/DilateNear.lean",
+   "imports": [
+    "DilateEndpoint"
+   ]
+  },
+  "DilateOddCell": {
+   "file": "dilates/DilateOddCell.lean",
+   "imports": [
+    "DilateOddCellOrder",
+    "DilateCompanion"
+   ]
+  },
+  "DilateOddCellCore": {
+   "file": "dilates/DilateOddCellCore.lean",
+   "imports": [
+    "DilateDefs"
+   ]
+  },
+  "DilateOddCellHaar": {
+   "file": "dilates/DilateOddCellHaar.lean",
+   "imports": [
+    "DilateOddCell",
+    "DilateTransportCells"
+   ]
+  },
+  "DilateOddCellOrder": {
+   "file": "dilates/DilateOddCellOrder.lean",
+   "imports": [
+    "DilateOddCellCore",
+    "RamFieldMeasure"
+   ]
+  },
+  "DilatePrimitive": {
+   "file": "dilates/DilatePrimitive.lean",
+   "imports": [
+    "DilatePrimitiveRing",
+    "DilatePrimitiveContact"
+   ]
+  },
+  "DilatePrimitiveContact": {
+   "file": "dilates/DilatePrimitiveContact.lean",
+   "imports": [
+    "RamBaseSplit",
+    "DilateDefs"
+   ]
+  },
+  "DilatePrimitivePivot": {
+   "file": "dilates/DilatePrimitivePivot.lean",
+   "imports": [
+    "RamBasePivot",
+    "FiniteCounts"
+   ]
+  },
+  "DilatePrimitiveRing": {
+   "file": "dilates/DilatePrimitiveRing.lean",
+   "imports": [
+    "DilatePrimitivePivot",
+    "RamLift"
+   ]
+  },
+  "DilateRecurrence": {
+   "file": "dilates/DilateRecurrence.lean",
+   "imports": [
+    "DilateDefs",
+    "RamBridge"
+   ]
+  },
+  "DilateSixteen": {
+   "file": "dilates/DilateSixteen.lean",
+   "imports": [
+    "RamBase"
+   ]
+  },
+  "DilateStableOdd": {
+   "file": "dilates/DilateStableOdd.lean",
+   "imports": [
+    "DilateStableOddCore",
+    "DilateNear",
+    "DilateFineOrbit",
+    "DilateEndpoint"
+   ]
+  },
+  "DilateStableOddAll": {
+   "file": "dilates/DilateStableOddAll.lean",
+   "imports": [
+    "DilateStableOdd"
+   ]
+  },
+  "DilateStableOddCore": {
+   "file": "dilates/DilateStableOddCore.lean",
+   "imports": [
+    "DilateOddCellHaar"
+   ]
+  },
+  "DilateTransport": {
+   "file": "dilates/DilateTransport.lean",
+   "imports": [
+    "DilateTransportCells"
+   ]
+  },
+  "DilateTransportCells": {
+   "file": "dilates/DilateTransportCells.lean",
+   "imports": [
+    "RamPlaceEndpoint"
+   ]
+  },
+  "DyadicBase": {
+   "file": "dyadic/DyadicBase.lean",
+   "imports": [
+    "FourBase"
+   ]
+  },
+  "DyadicLocal": {
+   "file": "inherited/DyadicLocal.lean",
+   "imports": [
+    "CompanionTheory.SpectralGeometry.CountingDefinitions.AdelicEulerProducts.IsEulerProd",
+    "Cylinders"
+   ]
+  },
+  "Endpoint": {
+   "file": "inherited/Endpoint.lean",
+   "imports": [
+    "GaussianTrace",
+    "Nearby",
+    "Tubes",
+    "Neighborhoods",
+    "Shallow",
+    "DyadicLocal"
+   ]
+  },
+  "EvenDescent": {
+   "file": "dyadic/EvenDescent.lean",
+   "imports": [
+    "FourEven"
+   ]
+  },
+  "ExceptionalDilation": {
+   "file": "inherited/ExceptionalDilation.lean",
+   "imports": [
+    "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.RankOneLocalDensitiesProductConverges"
+   ]
+  },
+  "ExceptionalPrimeCriterion": {
+   "file": "global/ExceptionalPrimeCriterion.lean",
+   "imports": [
+    "PrimeBlocks",
+    "GrowthSandwich",
+    "ExceptionalDilation"
+   ]
+  },
+  "Existence": {
+   "file": "inherited/Existence.lean",
+   "imports": [
+    "Endpoint",
+    "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.ExistsGramFiberMeasuresStatement"
+   ]
+  },
+  "FiniteCounts": {
+   "file": "inherited/FiniteCounts.lean",
+   "imports": []
+  },
+  "FloorTransfer": {
+   "file": "local/FloorTransfer.lean",
+   "imports": [
+    "LocalTube",
+    "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.MeasurableCoordinateMapsTensorStatement",
+    "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.LocalLatticeCompactOpenUnitVolumeStatement",
+    "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.ExistsTraceFormGramMatrixInBasisStatement"
+   ]
+  },
+  "FourBase": {
+   "file": "inherited/FourBase.lean",
+   "imports": [
+    "Shallow"
+   ]
+  },
+  "FourContact": {
+   "file": "inherited/FourContact.lean",
+   "imports": [
+    "Nearby",
+    "CompanionTheory.SpectralGeometry.CountingDefinitions.AdelicEulerProducts.IsEulerProd",
+    "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.TensorLocallyCompactRingStatement",
+    "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.CoordinateHaarMeasureStatement",
+    "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.ContinuousDensitiesEqOfIntegralsOnCompacts",
+    "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.HermitianMatricesLocallyCompactBorel",
+    "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.GramFiberMeasuresTransitivityStatement",
+    "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.ContinuousHermScal",
+    "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.MeasurableCoordinateMapsTensorStatement"
+   ]
+  },
+  "FourCounts": {
+   "file": "inherited/FourCounts.lean",
+   "imports": [
+    "FourBase",
+    "FourEven"
+   ]
+  },
+  "FourEndpoint": {
+   "file": "inherited/FourEndpoint.lean",
+   "imports": [
+    "Existence",
+    "FourContact",
+    "FourTubes",
+    "FourNeighborhood"
+   ]
+  },
+  "FourEven": {
+   "file": "inherited/FourEven.lean",
+   "imports": [
+    "FourLift"
+   ]
+  },
+  "FourLift": {
+   "file": "inherited/FourLift.lean",
+   "imports": [
+    "AllDepth"
+   ]
+  },
+  "FourNeighborhood": {
+   "file": "inherited/FourNeighborhood.lean",
+   "imports": [
+    "Cylinders"
+   ]
+  },
+  "FourTubes": {
+   "file": "inherited/FourTubes.lean",
+   "imports": [
+    "FourCounts",
+    "Tubes"
+   ]
+  },
+  "GaussianDilates": {
+   "file": "dyadic/GaussianDilates.lean",
+   "imports": [
+    "SquareDepth",
+    "FourEndpoint"
+   ]
+  },
+  "GaussianField": {
+   "file": "inherited/GaussianField.lean",
+   "imports": [
+    "CompanionTheory.SpectralGeometry.CountingDefinitions.AdelicEulerProducts.IsEulerProd"
+   ]
+  },
+  "GaussianSharp": {
+   "file": "dyadic/GaussianSharp.lean",
+   "imports": [
+    "GaussianDilates",
+    "SingularGaussian"
+   ]
+  },
+  "GaussianTrace": {
+   "file": "inherited/GaussianTrace.lean",
+   "imports": [
+    "GaussianField",
+    "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.EtaleAwayQuotientEqLocalization"
+   ]
+  },
+  "GermSupport": {
+   "file": "global/GermSupport.lean",
+   "imports": [
+    "NeighborhoodGrowth"
+   ]
+  },
+  "GrowthSandwich": {
+   "file": "global/GrowthSandwich.lean",
+   "imports": [
+    "ProgressionGrowth"
+   ]
+  },
+  "HaarSlices": {
+   "file": "synthesis/HaarSlices.lean",
+   "imports": [
+    "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.MapMulVecEqSmul"
+   ]
+  },
+  "LocalChart": {
+   "file": "local/LocalChart.lean",
+   "imports": []
+  },
+  "LocalIsotropy": {
+   "file": "local/LocalIsotropy.lean",
+   "imports": [
+    "Development.AbelianVarietyTheory.Proofs.AdelicLatticeProofs.ExistsCongrIffTraceFormsIsometricCm",
+    "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.ExistsTraceFormGramMatrixInBasisStatement",
+    "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.LocalGramFiberRankOneSetFormulaStatement"
+   ]
+  },
+  "LocalPair": {
+   "file": "local/LocalPair.lean",
+   "imports": []
+  },
+  "LocalRegularSupport": {
+   "file": "global/LocalRegularSupport.lean",
+   "imports": [
+    "NeighborhoodGrowth"
+   ]
+  },
+  "LocalTube": {
+   "file": "local/LocalTube.lean",
+   "imports": [
+    "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.LocalGramFiberRankOneSetFormulaStatement"
+   ]
+  },
+  "LocalWitnesses": {
+   "file": "local/LocalWitnesses.lean",
+   "imports": [
+    "LocalPair",
+    "LocalIsotropy",
+    "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.RankOneLocalDensitiesProductConverges"
+   ]
+  },
+  "Nearby": {
+   "file": "inherited/Nearby.lean",
+   "imports": [
+    "Contact",
+    "CompanionTheory.SpectralGeometry.CountingDefinitions.AdelicEulerProducts.IsEulerProd",
+    "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.TensorLocallyCompactRingStatement",
+    "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.CoordinateHaarMeasureStatement",
+    "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.ContinuousDensitiesEqOfIntegralsOnCompacts",
+    "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.HermitianMatricesLocallyCompactBorel",
+    "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.GramFiberMeasuresTransitivityStatement",
+    "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.ContinuousHermScal",
+    "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.MeasurableCoordinateMapsTensorStatement"
+   ]
+  },
+  "NeighborhoodGrowth": {
+   "file": "global/NeighborhoodGrowth.lean",
+   "imports": [
+    "ExceptionalPrimeCriterion"
+   ]
+  },
+  "Neighborhoods": {
+   "file": "inherited/Neighborhoods.lean",
+   "imports": [
+    "Cylinders"
+   ]
+  },
+  "OddSquares": {
+   "file": "dyadic/OddSquares.lean",
+   "imports": [
+    "FourEven"
+   ]
+  },
+  "OptimalSupport": {
+   "file": "global/OptimalSupport.lean",
+   "imports": [
+    "ShellThreshold",
+    "GermSupport",
+    "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.IntegralAlmostAllPlacesStatement",
+    "OriginalFloor"
+   ]
+  },
+  "OriginalFloor": {
+   "file": "local/OriginalFloor.lean",
+   "imports": [
+    "LocalWitnesses",
+    "CoordinateFloor",
+    "FloorTransfer"
+   ]
+  },
+  "PrimeBlocks": {
+   "file": "global/PrimeBlocks.lean",
+   "imports": []
+  },
+  "PrimitiveLift": {
+   "file": "dyadic/PrimitiveLift.lean",
+   "imports": [
+    "OddSquares",
+    "EvenDescent"
+   ]
+  },
+  "ProgressionGrowth": {
+   "file": "inherited/ProgressionGrowth.lean",
+   "imports": [
+    "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.RankOneLocalDensitiesProductConverges",
+    "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.SummableOneDivAbsNormSq"
+   ]
+  },
+  "RamBase": {
+   "file": "bridge/RamBase.lean",
+   "imports": [
+    "RamBaseTables"
+   ]
+  },
+  "RamBaseData": {
+   "file": "bridge/RamBaseData.lean",
+   "imports": [
+    "RamBaseModel"
+   ]
+  },
+  "RamBaseFive": {
+   "file": "bridge/RamBaseFive.lean",
+   "imports": [
+    "RamBaseModel",
+    "RamBasePivot"
+   ]
+  },
+  "RamBaseModel": {
+   "file": "bridge/RamBaseModel.lean",
+   "imports": [
+    "FiniteCounts",
+    "Mathlib.Algebra.QuadraticAlgebra.Basic"
+   ]
+  },
+  "RamBasePivot": {
+   "file": "bridge/RamBasePivot.lean",
+   "imports": [
+    "Mathlib"
+   ]
+  },
+  "RamBasePrimitive": {
+   "file": "bridge/RamBasePrimitive.lean",
+   "imports": [
+    "RamBaseFive"
+   ]
+  },
+  "RamBaseReduction": {
+   "file": "bridge/RamBaseReduction.lean",
+   "imports": [
+    "RamBaseFive"
+   ]
+  },
+  "RamBaseSplit": {
+   "file": "bridge/RamBaseSplit.lean",
+   "imports": [
+    "RamBase",
+    "RamBaseReduction",
+    "RamBasePrimitive"
+   ]
+  },
+  "RamBaseTables": {
+   "file": "bridge/RamBaseTables.lean",
+   "imports": [
+    "RamBaseData"
+   ]
+  },
+  "RamBridge": {
+   "file": "bridge/RamBridge.lean",
+   "imports": [
+    "RamBase",
+    "RamLift",
+    "RamGlobal",
+    "RamFieldIntegers",
+    "RamTransportForm"
+   ]
+  },
+  "RamDependencyAudit": {
+   "file": "bridge/RamDependencyAudit.lean",
+   "imports": [
+    "RamPlaceEndpoint",
+    "RamFieldRamification",
+    "RamBasePrimitive",
+    "Lean.Util.FoldConsts"
+   ]
+  },
+  "RamField": {
+   "file": "bridge/RamField.lean",
+   "imports": [
+    "DyadicLocal",
+    "Mathlib.Analysis.Normed.Unbundled.SpectralNorm"
+   ]
+  },
+  "RamFieldCompletion": {
+   "file": "bridge/RamFieldCompletion.lean",
+   "imports": [
+    "RamFieldIntegers"
+   ]
+  },
+  "RamFieldIntegers": {
+   "file": "bridge/RamFieldIntegers.lean",
+   "imports": [
+    "RamField"
+   ]
+  },
+  "RamFieldMeasure": {
+   "file": "bridge/RamFieldMeasure.lean",
+   "imports": [
+    "RamField"
+   ]
+  },
+  "RamFieldPlace": {
+   "file": "bridge/RamFieldPlace.lean",
+   "imports": [
+    "RamFieldCompletion",
+    "RamGlobal",
+    "Mathlib.NumberTheory.NumberField.Completion.FinitePlace"
+   ]
+  },
+  "RamFieldRamification": {
+   "file": "bridge/RamFieldRamification.lean",
+   "imports": [
+    "RamFieldPlace",
+    "Mathlib.RingTheory.Ideal.Norm.AbsNorm"
+   ]
+  },
+  "RamGlobal": {
+   "file": "bridge/RamGlobal.lean",
+   "imports": [
+    "RamField",
+    "GaussianTrace"
+   ]
+  },
+  "RamLift": {
+   "file": "bridge/RamLift.lean",
+   "imports": [
+    "FourLift",
+    "RamBasePivot"
+   ]
+  },
+  "RamPlaceCompletion": {
+   "file": "bridge/RamPlaceCompletion.lean",
+   "imports": [
+    "RamFieldPlace",
+    "RamFieldMeasure"
+   ]
+  },
+  "RamPlaceEndpoint": {
+   "file": "bridge/RamPlaceEndpoint.lean",
+   "imports": [
+    "RamBridge",
+    "RamPlaceCompletion",
+    "RamTransportPlace"
+   ]
+  },
+  "RamPrecision": {
+   "file": "bridge/RamPrecision.lean",
+   "imports": [
+    "RamBase"
+   ]
+  },
+  "RamTransport": {
+   "file": "bridge/RamTransport.lean",
+   "imports": [
+    "Existence",
+    "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.LocalGramFiberRankOneSetFormula"
+   ]
+  },
+  "RamTransportBoxes": {
+   "file": "bridge/RamTransportBoxes.lean",
+   "imports": [
+    "RamTransport"
+   ]
+  },
+  "RamTransportForm": {
+   "file": "bridge/RamTransportForm.lean",
+   "imports": [
+    "RamTransportFour",
+    "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.EtaleAwayQuotientEqLocalization"
+   ]
+  },
+  "RamTransportFour": {
+   "file": "bridge/RamTransportFour.lean",
+   "imports": [
+    "RamTransportBoxes",
+    "RamFieldMeasure"
+   ]
+  },
+  "RamTransportPlace": {
+   "file": "bridge/RamTransportPlace.lean",
+   "imports": [
+    "RamTransportForm"
+   ]
+  },
+  "Shallow": {
+   "file": "inherited/Shallow.lean",
+   "imports": [
+    "AllDepth"
+   ]
+  },
+  "ShellThreshold": {
+   "file": "global/ShellThreshold.lean",
+   "imports": [
+    "PrimeBlocks"
+   ]
+  },
+  "SingularGaussian": {
+   "file": "dyadic/SingularGaussian.lean",
+   "imports": [
+    "FourEndpoint"
+   ]
+  },
+  "SingularJump": {
+   "file": "local/SingularJump.lean",
+   "imports": [
+    "OriginalFloor",
+    "SingularZero"
+   ]
+  },
+  "SingularZero": {
+   "file": "local/SingularZero.lean",
+   "imports": [
+    "CompanionTheory.SpectralGeometry.LocalGlobalProofs.AdelicAnalysis.LocalGramFiberRankOneSetFormulaStatement"
+   ]
+  },
+  "SquareDepth": {
+   "file": "dyadic/SquareDepth.lean",
+   "imports": [
+    "PrimitiveLift",
+    "DyadicBase",
+    "FourCounts"
+   ]
+  },
+  "Tubes": {
+   "file": "inherited/Tubes.lean",
+   "imports": [
+    "Cylinders"
+   ]
+  },
+  "UncappedAudit": {
+   "file": "synthesis/UncappedAudit.lean",
+   "imports": [
+    "UncappedGrowth",
+    "OptimalSupport",
+    "GaussianSharp",
+    "Lean.Util.FoldConsts"
+   ]
+  },
+  "UncappedGrowth": {
+   "file": "global/UncappedGrowth.lean",
+   "imports": [
+    "GermSupport",
+    "OriginalFloor"
+   ]
+  }
+ },
+ "original_commit": "40e56bab026552e089d7afcfeff08d2defb9c005"
+}

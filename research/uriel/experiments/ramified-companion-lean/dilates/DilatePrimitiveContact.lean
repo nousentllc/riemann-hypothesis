@@ -1,0 +1,108 @@
+import RamBaseSplit
+import DilateDefs
+open RamBase
+open RamBase.Split (π high recover divides scaled Vec)
+open Finset
+namespace RamDilate.Contact
+noncomputable local instance : Fintype R := Fintype.ofEquiv Pair equiv.symm
+private def parityTest (t : ℕ) : Bool :=
+  let z := decode t
+  decide (
+    (π*z).re.val%2=0 ∧ recover (π*z) (high z)=z ∧
+    (z.re.val%2=0 → ∀ b : Bool, π*recover z b = z ∧ high (recover z b)=b))
+private theorem allParities : checks parityTest 1024=true := by decide +kernel
+private theorem parities (z : R) :
+    divides (π*z) ∧ recover (π*z) (high z)=z ∧
+      (divides z → ∀ b : Bool, π*recover z b=z ∧ high (recover z b)=b) := by
+  simpa only [decode_encode,divides] using
+    of_decide_eq_true (select allParities (encode z) (encode_lt z))
+
+private abbrev Packed := {x : Vec // TargetOne.sqSum x = 0 ∧ ∀ i, divides (x i)}
+private abbrev Scaled := {y : Vec // 2*TargetOne.sqSum y = 0}
+private abbrev Fiber := {x : Vec // TargetOne.sqSum x = 0}
+private def allEven (x : Fiber) : Prop := ∀ i, divides (x.1 i)
+/-- Inverse branches of multiplication by π in each coordinate are indexed by
+the high bit of its π coefficient and preserve the quadratic equation. -/
+private def branches : Scaled ≃ Packed × (Fin 6 → Bool) where
+  toFun y := (⟨fun i => π*y.1 i, (scaled y.1).trans y.2, fun i => (parities _).1⟩,
+    fun i => high (y.1 i))
+  invFun x := ⟨fun i => recover (x.1.1 i) (x.2 i),by
+    rw [← scaled]
+    have h (i : Fin 6) : π*recover (x.1.1 i) (x.2 i) = x.1.1 i :=
+      ((parities _).2.2 (x.1.2.2 i) _).1
+    simpa only [h] using x.1.2.1⟩
+  left_inv y := Subtype.ext (funext fun i => (parities (y.1 i)).2.1)
+  right_inv x := Prod.ext
+    (Subtype.ext (funext fun i => ((parities (x.1.1 i)).2.2 (x.1.2.2 i) _).1))
+    (funext fun i => ((parities (x.1.1 i)).2.2 (x.1.2.2 i) _).2)
+
+private abbrev T := {t : R // 2*t=0}
+
+private def target (j : Fin 4) : R :=
+  ⟨((0+16*(j.val/2) : ℕ) : ZMod 32), ((16*(j.val%2) : ℕ) : ZMod 32)⟩
+private def targetIdx (t : R) : Fin 4 :=
+  ⟨t.re.val/16*2+t.im.val/16, by have := ZMod.val_lt t.re; have := ZMod.val_lt t.im; omega⟩
+private theorem tleft : ∀ j : Fin 4, 2*target j=0 ∧ targetIdx (target j)=j := by decide +kernel
+private theorem tright : checks (fun k => decide
+    (2*decode k=0 → target (targetIdx (decode k))=decode k)) 1024=true := by decide +kernel
+private def targets : Fin 4 ≃ T where
+  toFun j := ⟨target j,(tleft j).1⟩
+  invFun t := targetIdx t.1
+  left_inv j := (tleft j).2
+  right_inv t := by
+    apply Subtype.ext
+    have h := of_decide_eq_true (select tright (encode t.1) (encode_lt _))
+    rw [decode_encode] at h
+    exact h t.2
+
+private def separate : Scaled ≃ Σ t : T, {y : Vec // TargetOne.sqSum y=t.1} where
+  toFun y := ⟨⟨_,y.2⟩,y.1,rfl⟩
+  invFun x := ⟨x.2.1,by rw [x.2.2]; exact x.1.2⟩
+  left_inv _ := rfl
+  right_inv x := by
+    rcases x with ⟨⟨t,ht⟩,⟨y,hy⟩⟩
+    change TargetOne.sqSum y = t at hy
+    subst t
+    rfl
+
+private theorem count_scaled : Nat.card Scaled = 4*2^51 := by
+  classical
+  letI : Fintype T := Fintype.ofEquiv _ targets
+  rw [Nat.card_congr separate,Nat.card_sigma,←targets.sum_comp]
+  change (∑ j : Fin 4, TargetOne.count 6 (target j)) = _
+  simp only [census_six]
+  decide +kernel
+
+private theorem imprimitive : Nat.card Packed = 2^47 := by
+  have h := Nat.card_congr branches
+  rw [Nat.card_prod, count_scaled] at h
+  have hc : Nat.card (Fin 6 → Bool)=64 := by rw [Nat.card_eq_fintype_card]; decide +kernel
+  rw [hc] at h
+  omega
+
+private def packEquiv : Packed ≃ {x : Fiber // allEven x} where
+  toFun x := ⟨⟨x.1,x.2.1⟩,x.2.2⟩
+  invFun x := ⟨x.1.1,x.1.2,x.2⟩
+  left_inv _ := rfl
+  right_inv _ := rfl
+
+private theorem primitive : Nat.card {x : Fiber // ¬ allEven x} = 15*2^47 := by
+  classical
+  have h := Nat.card_congr (Equiv.sumCompl allEven)
+  rw [Nat.card_sum,←Nat.card_congr packEquiv,imprimitive] at h
+  change _ + _ = TargetOne.count 6 (0:R) at h
+  rw [census_six] at h
+  have hz : row6 (repNo (encode 0)) = 2^51 := by decide +kernel
+  rw [hz] at h
+  omega
+
+
+theorem primitive_zero : RamDilate.prim 5 0 = 15 * 2^47 := by
+  let e : {x : Fiber // ¬ allEven x} ≃
+      {x : Fin 6 → S 5 // TargetOne.sqSum x=0 ∧ ¬ RamDilate.allEven x} :=
+    { toFun := fun x => ⟨x.1.1,x.1.2,x.2⟩
+      invFun := fun x => ⟨⟨x.1,x.2.1⟩,x.2.2⟩
+      left_inv := fun _ => rfl
+      right_inv := fun _ => rfl }
+  exact (Nat.card_congr e).symm.trans primitive
+end RamDilate.Contact

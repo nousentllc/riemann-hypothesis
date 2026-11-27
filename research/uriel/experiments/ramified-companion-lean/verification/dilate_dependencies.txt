@@ -1,0 +1,1 @@
+Square-dilate audit: 938 project and study declarations for the universal endpoint, 997 for existence, 83 for the target-16 contact count, 314 for the sharp cutoff witness. Finite-chain, transport, existence and exclusion checks passed.

@@ -1,0 +1,68 @@
+{
+  "axiom_names_on_printed_endpoints": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "checked_modules": {
+    "FloorTransfer": {
+      "checker_returncode": 0,
+      "object_sha256": "ce7cdb61011c6ee1507ba569751625686762553bf6359d38c85a862020d801b0",
+      "replay": "replaying FloorTransfer",
+      "source_sha256": "55cca36638fb1a86ebd401648527cc84244b1c1da0590d7dcce8b950179965a5"
+    },
+    "LocalChart": {
+      "checker_returncode": 0,
+      "object_sha256": "19cb7ac4f7ac31810ec576e7e75d73adc82a44b4e09cad400f13f5918421e7ac",
+      "replay": "replaying LocalChart",
+      "source_sha256": "c5e91a43efa53926555aba8f77465d9b1db9d8655fdb2f253fdc296248d49bc8"
+    },
+    "LocalIsotropy": {
+      "checker_returncode": 0,
+      "object_sha256": "1f73d2d17d756174bd716740d1a51083ab7a4b59935442b959c22f511aa1bbee",
+      "replay": "replaying LocalIsotropy",
+      "source_sha256": "5bb6ddf336353bedcec244303d30c5a9714553f91470680ef9d3cb8b663bdd53"
+    },
+    "LocalPair": {
+      "checker_returncode": 0,
+      "object_sha256": "a038ea13ed70ec6f4ef202ae8e27ec29aa4baf36cb22df7332f91fe59ff124ad",
+      "replay": "replaying LocalPair",
+      "source_sha256": "d2c37f795c9806bef6379da4797cc0599698e4a2c6b47bda04fe82423e5aceed"
+    },
+    "LocalTube": {
+      "checker_returncode": 0,
+      "object_sha256": "7cb591cb99e6cb265016cf0cab3f18b6e56c9ae5b427fc81017ee1b70cfe8739",
+      "replay": "replaying LocalTube",
+      "source_sha256": "f024d0ad61fc27b4bacef34e4ebd92faca56397d14c2a40e84fda4889cebe04e"
+    },
+    "LocalWitnesses": {
+      "checker_returncode": 0,
+      "object_sha256": "bb9b9294cdd56f167d47c476be0cf779cf597bf694193bb5b7a5b6b2aa3256d4",
+      "replay": "replaying LocalWitnesses",
+      "source_sha256": "23ae4fca229d62e08d8762aca22b45cb5249def3a8f907fa90ffa556fe1db677"
+    },
+    "OriginalFloor": {
+      "checker_returncode": 0,
+      "object_sha256": "4b960b27af836c7868b9c934594456cfc64cbe56285418601df8304168d720a3",
+      "replay": "replaying OriginalFloor",
+      "source_sha256": "09a69389e200010d79d5591e66a5e4514164df00dd769e6572b613b0f6ecc5a9"
+    },
+    "SingularJump": {
+      "checker_returncode": 0,
+      "object_sha256": "e4e86c382e49b49b30b7620e15f7cdcc29725c5fdddbe47a8378f325457ea69c",
+      "replay": "replaying SingularJump",
+      "source_sha256": "2f8fd66e4b9184fb3ab658127c72a20eaabf456979932a44ef9a3ffd12d372a5"
+    },
+    "SingularZero": {
+      "checker_returncode": 0,
+      "object_sha256": "34de679bb896f27c46c458fb24105983d484a3f8d3cce3ad473bdc43074c9174",
+      "replay": "replaying SingularZero",
+      "source_sha256": "3cdce28320d21950e78e6c443d6418dcd93ed171c699e4614c1e855fc4d675b0"
+    }
+  },
+  "finite_panel_reproduced_byte_for_byte": true,
+  "lean_version": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "original_commit": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "replay_scope": "Stock leanchecker replayed the new declarations of each named module against its imports. This is distinct from a clean build of the full original repository.",
+  "verified_source_anchors": 14
+}

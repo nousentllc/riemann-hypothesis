@@ -10,7 +10,9 @@ Start with [PROOF_CONTEXT.md](PROOF_CONTEXT.md), which reconstructs selected ana
 
 ![Riemann proof study map](portfolio/research-map.png)
 
-The latest study follows the same-set Frobenius premium through the original arithmetic window. [Paper, Lean replay and exact controls](https://github.com/nousentllc/riemann-hypothesis/tree/80555206be28204b1d0a9063f54c8f1e2b5fd70d/research/uriel/experiments/frobenius-window-survival).
+The arithmetic-window study follows the same-set Frobenius premium through the original arithmetic window. [Paper, Lean replay and exact controls](https://github.com/nousentllc/riemann-hypothesis/tree/80555206be28204b1d0a9063f54c8f1e2b5fd70d/research/uriel/experiments/frobenius-window-survival).
+
+The ramified companion study proves the sharp cutoff at `4k+2` and the original Gram-fiber mass `2 − 2/256^k`. [Lean proof, revised paper and reproduction ZIP](experiments/ramified-companion-lean/README.md).
 
 ## Baselines
 

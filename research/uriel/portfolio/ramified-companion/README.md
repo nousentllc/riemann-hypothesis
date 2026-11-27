@@ -1,5 +1,7 @@
 # The ramified companion fiber
 
+**Current result.** The [third edition and checked Lean proof](../../experiments/ramified-companion-lean/README.md) establish both the sharp stabilization depth and the original named-place lattice mass. This page preserves the earlier written checkpoint.
+
 [Second-edition paper, editable LuaLaTeX and ZIP](paper/README.md)
 
 Let `O = Z₂[π]` with `π² = 2`, and normalize additive Haar measure by `μ(O) = 1`. In the six scalar coordinates of the original rank-three Gaussian lattice write `Q(x) = Σ xᵢ²`. For $d\geq 1$, let $N_d(t)$ count the solutions of $Q(x)\equiv t\pmod{\pi^d}$ in $(O/\pi^d)^6$, and let $\rho_d(t)=N_d(t)/2^{5d}$.
