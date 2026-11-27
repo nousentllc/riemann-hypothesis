@@ -75,6 +75,13 @@ def write_markdown():
         f"[Paper, replay and controls]({study_url(LATEST)}) · "
         f"[Commit {LATEST['commit'][:7]}]({REPO}/commit/{LATEST['commit']})",
         "",
+        "## Local-density checkpoint",
+        "",
+        "The [ramified companion fiber](ramified-companion/README.md) has written mass "
+        "$2-2/256^k$ at $4^k(1+\\sqrt{2})u^2$. The normalized counts stabilize at depth $4k+2$. "
+        "The checkpoint includes exact finite controls and a kernel replay of the modulo-two obstruction. "
+        "The full Lean proof of stabilization and transport remains open.",
+        "",
         "## How the tracks connect",
         "",
         "The cohomology and host studies identify which data the original "
@@ -215,7 +222,8 @@ footer { border-top:1px solid var(--line); padding-top:1rem; }
 <p class="lead">Six ways into the arithmetic windows, the same-set gain, the local measure calculations, and the experiments on how agents read evidence.</p>
 <p><a href="@GITINDEX@">GitHub study index</a> · <a href="@SOURCE@">Original proof source</a></p>
 <p><a href="@GITINDEX@/compact-proof-audit">Compact proof audit</a> ·
-<a href="@GITINDEX@/declaration-graph">Declaration route to rank-one normalization</a></p>
+<a href="@GITINDEX@/declaration-graph">Declaration route to rank-one normalization</a> ·
+<a href="@GITINDEX@/ramified-companion">Ramified companion checkpoint</a></p>
 </header>
 <aside class="latest">
 <h2>Latest study · Frobenius premium in the arithmetic window</h2>

@@ -20,6 +20,10 @@ The written theorem jointly chooses a prime and good orbit on the original weigh
 
 [Paper, replay and controls](https://github.com/nousentllc/riemann-hypothesis/tree/80555206be28204b1d0a9063f54c8f1e2b5fd70d/research/uriel/experiments/frobenius-window-survival) · [Commit 8055520](https://github.com/nousentllc/riemann-hypothesis/commit/80555206be28204b1d0a9063f54c8f1e2b5fd70d)
 
+## Local-density checkpoint
+
+The [ramified companion fiber](ramified-companion/README.md) has written mass $2-2/256^k$ at $4^k(1+\sqrt{2})u^2$. The normalized counts stabilize at depth $4k+2$. The checkpoint includes exact finite controls and a kernel replay of the modulo-two obstruction. The full Lean proof of stabilization and transport remains open.
+
 ## How the tracks connect
 
 The cohomology and host studies identify which data the original arithmetic estimates share. The orbit studies quantify one cost of that selection. The Frobenius studies carry a different gain comparison through later arithmetic terms on one host. The local-density studies follow automorphic normalization inputs at a finite place. The model studies test how readers handle incomplete records.

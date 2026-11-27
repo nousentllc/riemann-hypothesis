@@ -1,0 +1,13 @@
+Checkpoint: modulo-two obstruction only
+Study import pin: 17263859a4d27c62cfc67571737355f61a080806
+Mathlib: 0df444a360eaa60ab8c11dca51a86af692955474
+Source SHA-256: c1ee1cda1ddfafd124e792131a5d441687a653a0428fb6507eaccfbc92dfd349
+$ lean --version
+Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)
+Exit: 0
+$ lean -j2 -o CompanionObstruction.olean CompanionObstruction.lean
+'RamDilate.Companion.no_companion_unit' depends on axioms: [propext, Classical.choice, Quot.sound]
+Exit: 0
+$ leanchecker -v CompanionObstruction
+replaying CompanionObstruction
+Exit: 0

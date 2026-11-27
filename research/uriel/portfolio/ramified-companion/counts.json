@@ -1,0 +1,72 @@
+{
+  "rows": [
+    {
+      "k": 1,
+      "depth": 5,
+      "square_count": 67108864,
+      "companion_count": 67108864,
+      "density_denominator": 33554432,
+      "square_density": "2",
+      "companion_density": "2"
+    },
+    {
+      "k": 1,
+      "depth": 6,
+      "square_count": 2155872256,
+      "companion_count": 2139095040,
+      "density_denominator": 1073741824,
+      "square_density": "257/128",
+      "companion_density": "255/128"
+    },
+    {
+      "k": 1,
+      "depth": 7,
+      "square_count": 68987912192,
+      "companion_count": 68451041280,
+      "density_denominator": 34359738368,
+      "square_density": "257/128",
+      "companion_density": "255/128"
+    },
+    {
+      "k": 1,
+      "depth": 8,
+      "square_count": 2207613190144,
+      "companion_count": 2190433320960,
+      "density_denominator": 1099511627776,
+      "square_density": "257/128",
+      "companion_density": "255/128"
+    },
+    {
+      "k": 1,
+      "depth": 9,
+      "square_count": 70643622084608,
+      "companion_count": 70093866270720,
+      "density_denominator": 35184372088832,
+      "square_density": "257/128",
+      "companion_density": "255/128"
+    },
+    {
+      "k": 2,
+      "depth": 9,
+      "square_count": 70368744177664,
+      "companion_count": 70368744177664,
+      "density_denominator": 35184372088832,
+      "square_density": "2",
+      "companion_density": "2"
+    },
+    {
+      "k": 2,
+      "depth": 10,
+      "square_count": 2251834173423616,
+      "companion_count": 2251765453946880,
+      "density_denominator": 1125899906842624,
+      "square_density": "65537/32768",
+      "companion_density": "65535/32768"
+    }
+  ],
+  "depth_nine_strata": [
+    "15/8",
+    "15/128",
+    "0"
+  ]
+}
