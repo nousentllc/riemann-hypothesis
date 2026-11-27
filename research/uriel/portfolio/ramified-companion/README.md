@@ -1,5 +1,7 @@
 # The ramified companion fiber
 
+[Second-edition paper, editable LuaLaTeX and ZIP](paper/README.md)
+
 Let `O = Z₂[π]` with `π² = 2`, and normalize additive Haar measure by `μ(O) = 1`. In the six scalar coordinates of the original rank-three Gaussian lattice write `Q(x) = Σ xᵢ²`. For $d\geq 1$, let $N_d(t)$ count the solutions of $Q(x)\equiv t\pmod{\pi^d}$ in $(O/\pi^d)^6$, and let $\rho_d(t)=N_d(t)/2^{5d}$.
 
 **Written conclusion.** For $k\geq 1$ and an integral unit $u$, at $t=4^k(1+\pi)u^2$ the normalized count is $2-2/256^k$ at every depth $d\geq 4k+2$. It is $2$ at $d=4k+1$. Applying the original regular-fiber comparison yields the same value $2-2/256^k$ for the original lattice mass at the named place. The all-depth and transport arguments below are written deductions. The new Lean module checks the modulo-two obstruction.
