@@ -2,7 +2,13 @@
 
 [![checks](https://github.com/leanprover-community/riemann-hypothesis/actions/workflows/checks.yml/badge.svg)](https://github.com/leanprover-community/riemann-hypothesis/actions/workflows/checks.yml)
 
-**Research in this fork.** [Riemann proof study map and index](https://github.com/nousentllc/riemann-hypothesis/tree/research/uriel/research/uriel/portfolio) links the study branches, papers, and replay records.
+## Nous research in this fork
+
+**[Browse all published studies](STUDIES.md)** · [Research map and catalog](https://github.com/nousentllc/riemann-hypothesis/tree/research/uriel/research/uriel/portfolio) · [Latest ramified-fiber paper and ZIP](https://github.com/nousentllc/riemann-hypothesis/tree/1da9522e3ada6c5af62c014ea76e77cc40ff3676/research/uriel/portfolio/ramified-companion/paper)
+
+The GitHub file view above opens on `main`, the formalization branch. The study index opens the papers and evidence on their recorded experiment branches without requiring you to switch branches.
+
+## Lean formalization
 
 Build cache for a Lean formalization the proof of the Riemann Hypothesis, and of GRH for Dirichlet L-functions. The first commit is as posted by Levent Alpöge, retrieved on 2026-11-20 at <https://alpo.ge/remark.pdf>.
 
