@@ -4,6 +4,16 @@ The fork opens on `main`, which holds the formalization and its build instructio
 
 **42 experiment branches and 11 related editions.** [Current research catalog, map, and verification notes](https://github.com/nousentllc/riemann-hypothesis/tree/research/uriel/research/uriel/portfolio) · [Research branch](https://github.com/nousentllc/riemann-hypothesis/tree/research/uriel) · [Older package downloads](https://github.com/nousentllc/riemann-hypothesis/tree/research/uriel/research/uriel/portfolio/legacy-packages)
 
+## Earlier papers and completed experiments
+
+The [publication archive](https://github.com/nousentllc/riemann-hypothesis/tree/32babcca9df1b672cf013625156870bc6947020a/research/uriel/portfolio/publication-archive) contains the restored manuscripts, editable sources, earlier and corrected ZIPs, and findings that were previously filed in the workspace or Drive-era collection. The archive index links every section and records each file's checksum.
+
+- [Hosted-reader synthesis and its source experiments](https://github.com/nousentllc/riemann-hypothesis/tree/32babcca9df1b672cf013625156870bc6947020a/research/uriel/portfolio/publication-archive/finite-reader-synthesis)
+- [Nonvanishing and Belief Drift](https://github.com/nousentllc/riemann-hypothesis/tree/32babcca9df1b672cf013625156870bc6947020a/research/uriel/portfolio/publication-archive/weil-block-binary-drift)
+- [Slot 3 Witness Experiment](https://github.com/nousentllc/riemann-hypothesis/tree/32babcca9df1b672cf013625156870bc6947020a/research/uriel/portfolio/publication-archive/slot-three-paper) and [Which Distinctions Must a Witness Preserve?](https://github.com/nousentllc/riemann-hypothesis/tree/32babcca9df1b672cf013625156870bc6947020a/research/uriel/portfolio/publication-archive/witness-distinctions)
+- [Stable-range theta](https://github.com/nousentllc/riemann-hypothesis/tree/32babcca9df1b672cf013625156870bc6947020a/research/uriel/portfolio/publication-archive/theta-stable-range) and [Siegel–Weil constant-term editions](https://github.com/nousentllc/riemann-hypothesis/tree/32babcca9df1b672cf013625156870bc6947020a/research/uriel/portfolio/publication-archive/siegel-weil-constant-term)
+- [Changing-cutoff reader](https://github.com/nousentllc/riemann-hypothesis/tree/32babcca9df1b672cf013625156870bc6947020a/research/uriel/portfolio/publication-archive/changing-cutoff-reader) and [independent companion-fiber counts](https://github.com/nousentllc/riemann-hypothesis/tree/32babcca9df1b672cf013625156870bc6947020a/research/uriel/portfolio/publication-archive/companion-independent-counts)
+
 ## Papers and reading aids on the research branch
 
 - [Ramified companion fibers, second edition](https://github.com/nousentllc/riemann-hypothesis/tree/1da9522e3ada6c5af62c014ea76e77cc40ff3676/research/uriel/portfolio/ramified-companion/paper) contains the revised PDF, editable LuaLaTeX, and ZIP.
