@@ -103,15 +103,25 @@ def write_markdown():
         "and verification sections at each release for its hypotheses, pins, and limits.",
         "- The initial source reading is in [PROOF_CONTEXT.md](../PROOF_CONTEXT.md) "
         "with declaration anchors in [SOURCE_TRACE.json](../SOURCE_TRACE.json).",
-        "- The branch list verifies where the studies were published. Selected ZIP "
-        "blob hashes are also recorded in the [machine-readable index](study-index.json). "
-        "The index did not rerun the formal studies or the complete original RH build.",
+        "- The branch list verifies where the studies were published. Ten GitHub ZIPs "
+        "matched the local release copies byte for byte. Each archive contained one "
+        "TeX source and its PDF. Their Git blob hashes are in the "
+        "[machine-readable index](study-index.json).",
+        "- The study replays are documented in the linked releases. This portfolio "
+        "audit verified publication and package identity.",
     ]
     for base in INDEX["baseline"]:
         lines.append(
             f"- Baseline `{base['branch']}` · "
             f"[`{base['sha'][:7]}`]({REPO}/tree/{base['sha']})."
         )
+    lines += [
+        "", "## Rebuild the index", "",
+        "Run `python3 build_portfolio.py` from this folder with Pillow installed. "
+        "The [generator](build_portfolio.py) reads `study-index.json` and writes this "
+        "README, the HTML, and the PNG. An optional `--font-dir` points to the "
+        "Georgia and Arial fonts or to DejaVu Serif and Sans.",
+    ]
     (HERE / "README.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 

@@ -135,6 +135,12 @@ These are model experiments with recorded controls. Their scores measure reader 
 
 - The studies distinguish exact finite controls, written deductions from the archived source, and local Lean kernel replays. Read the evidence and verification sections at each release for its hypotheses, pins, and limits.
 - The initial source reading is in [PROOF_CONTEXT.md](../PROOF_CONTEXT.md) with declaration anchors in [SOURCE_TRACE.json](../SOURCE_TRACE.json).
-- The branch list verifies where the studies were published. Selected ZIP blob hashes are also recorded in the [machine-readable index](study-index.json). The index did not rerun the formal studies or the complete original RH build.
+- The branch list verifies where the studies were published. Ten GitHub ZIPs matched the local release copies byte for byte. Each archive contained one TeX source and its PDF. Their Git blob hashes are in the [machine-readable index](study-index.json).
+- The study replays are documented in the linked releases. This portfolio audit verified publication and package identity.
 - Baseline `baseline/published-2026-11-20` · [`40e56ba`](https://github.com/nousentllc/riemann-hypothesis/tree/40e56bab026552e089d7afcfeff08d2defb9c005).
 - Baseline `baseline/community-2026-11-22` · [`c259b55`](https://github.com/nousentllc/riemann-hypothesis/tree/c259b55f5b1e0c29f82abf235e21a48ad2f9e34e).
+- Baseline `baseline/community-2026-11-25` · [`e063a92`](https://github.com/nousentllc/riemann-hypothesis/tree/e063a923620ee7787b4a1270421478645bf66bdb).
+
+## Rebuild the index
+
+Run `python3 build_portfolio.py` from this folder with Pillow installed. The [generator](build_portfolio.py) reads `study-index.json` and writes this README, the HTML, and the PNG. An optional `--font-dir` points to the Georgia and Arial fonts or to DejaVu Serif and Sans.
