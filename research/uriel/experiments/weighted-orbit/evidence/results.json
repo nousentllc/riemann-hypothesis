@@ -1,0 +1,377 @@
+{
+  "density": {
+    "after": {
+      "BadOK_Cb1": false,
+      "bad_point_count": 66747,
+      "cond_A": true,
+      "cond_intervals": true,
+      "cond_tiles": false,
+      "critical_Cb_if_all_bad_approx": 2378790680000000.0,
+      "first_max_start": 25361,
+      "good": false,
+      "inside_density_envelope": true,
+      "local_window_max": 2079,
+      "local_window_min": 908,
+      "mass_approx": 24443.02481058,
+      "mod4": [
+        15102,
+        15102,
+        21441,
+        15102
+      ],
+      "ordinary_budget_in_points_approx": 2.80592154e-11,
+      "size": 66747,
+      "tile_distances": [
+        1,
+        13585,
+        13584,
+        13585,
+        13585
+      ],
+      "tile_flags": [
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    "before": {
+      "BadOK_Cb1": true,
+      "bad_point_count": 0,
+      "cond_A": true,
+      "cond_intervals": true,
+      "cond_tiles": true,
+      "critical_Cb_if_all_bad_approx": 2378790680000000.0,
+      "first_max_start": 25361,
+      "good": true,
+      "inside_density_envelope": true,
+      "local_window_max": 2079,
+      "local_window_min": 908,
+      "mass_approx": 0.0,
+      "mod4": [
+        15102,
+        15102,
+        21441,
+        15102
+      ],
+      "ordinary_budget_in_points_approx": 2.80592154e-11,
+      "size": 66747,
+      "tile_distances": [
+        0,
+        13584,
+        13584,
+        13585,
+        13585
+      ],
+      "tile_flags": [
+        true,
+        false,
+        false,
+        false,
+        false
+      ]
+    },
+    "coordinate_control": true,
+    "matched_single_exchanges": {
+      "all_empty_mod4": [
+        17666,
+        17666,
+        11327,
+        17666
+      ],
+      "all_retained_mod4": [
+        15102,
+        15102,
+        21441,
+        15102
+      ],
+      "flipping": 359026791,
+      "still_passing": 684211212,
+      "tail_empty_mod4": [
+        11326,
+        11326,
+        11327,
+        11327
+      ],
+      "tail_retained_mod4": [
+        15102,
+        15102,
+        15102,
+        15102
+      ],
+      "total": 1043238003
+    },
+    "parameters": {
+      "K": 2112,
+      "L2": 3636,
+      "QS": 524288,
+      "d": 274886296183,
+      "eligible_primes": [
+        3
+      ],
+      "full_tiles": 5,
+      "half_power": 262145,
+      "k": 262144,
+      "log3_argument_exp2": 2880,
+      "n": 131072,
+      "q": 274886295787,
+      "qd_lower_bound": 274886295581,
+      "r": 2113,
+      "rank_m": 2,
+      "rank_t": 262151,
+      "raw_step": 42659,
+      "tile_length": 25358,
+      "u": 2,
+      "x": 134217728
+    },
+    "raw_mod4": [
+      15102,
+      15102,
+      21441,
+      15102
+    ],
+    "raw_swap": [
+      85318,
+      9706
+    ],
+    "swap": [
+      2,
+      25358
+    ],
+    "tail_only_control": {
+      "outcome": {
+        "BadOK_Cb1": true,
+        "bad_point_count": 0,
+        "cond_A": true,
+        "cond_intervals": true,
+        "cond_tiles": true,
+        "critical_Cb_if_all_bad_approx": 2378790680000000.0,
+        "first_max_start": 25368,
+        "good": true,
+        "inside_density_envelope": true,
+        "local_window_max": 2079,
+        "local_window_min": 909,
+        "mass_approx": 0.0,
+        "mod4": [
+          15102,
+          15102,
+          21441,
+          15102
+        ],
+        "ordinary_budget_in_points_approx": 2.80592154e-11,
+        "size": 66747,
+        "tile_distances": [
+          0,
+          13584,
+          13584,
+          13585,
+          13585
+        ],
+        "tile_flags": [
+          true,
+          false,
+          false,
+          false,
+          false
+        ]
+      },
+      "swap": [
+        25362,
+        25358
+      ]
+    }
+  },
+  "no_tile": {
+    "after": {
+      "BadOK_Cb1": false,
+      "bad_point_count": 4049,
+      "cond_A": false,
+      "cond_intervals": true,
+      "cond_tiles": true,
+      "critical_Cb_if_all_bad_approx": 2.38030133e+18,
+      "first_max_start": 2,
+      "good": false,
+      "inside_density_envelope": true,
+      "local_window_max": 2113,
+      "local_window_min": 2110,
+      "mass_approx": 1482.76038561,
+      "mod4": [
+        1012,
+        1012,
+        1012,
+        1013
+      ],
+      "ordinary_budget_in_points_approx": 1.70104514e-15,
+      "size": 4049,
+      "tile_distances": [],
+      "tile_flags": []
+    },
+    "before": {
+      "BadOK_Cb1": true,
+      "bad_point_count": 0,
+      "cond_A": true,
+      "cond_intervals": true,
+      "cond_tiles": true,
+      "critical_Cb_if_all_bad_approx": 2.38030133e+18,
+      "first_max_start": 2,
+      "good": true,
+      "inside_density_envelope": true,
+      "local_window_max": 2112,
+      "local_window_min": 2111,
+      "mass_approx": 0.0,
+      "mod4": [
+        1012,
+        1012,
+        1012,
+        1013
+      ],
+      "ordinary_budget_in_points_approx": 1.70104514e-15,
+      "size": 4049,
+      "tile_distances": [],
+      "tile_flags": []
+    },
+    "coordinate_control": true,
+    "parameters": {
+      "K": 2112,
+      "L2": 4272,
+      "QS": 32768,
+      "d": 1074266551,
+      "eligible_primes": [
+        3
+      ],
+      "full_tiles": 0,
+      "half_power": 16385,
+      "k": 16384,
+      "log3_argument_exp2": 3384,
+      "n": 8192,
+      "q": 1074266443,
+      "qd_lower_bound": 1074266141,
+      "r": 2113,
+      "rank_m": 2,
+      "rank_t": 16391,
+      "raw_step": 1699,
+      "tile_length": 25358,
+      "u": 2,
+      "x": 4294967296
+    },
+    "raw_mod4": [
+      1012,
+      1013,
+      1012,
+      1012
+    ],
+    "raw_swap": [
+      5113,
+      5097
+    ],
+    "swap": [
+      4275,
+      3
+    ]
+  },
+  "single_tile": {
+    "after": {
+      "BadOK_Cb1": false,
+      "bad_point_count": 6339,
+      "cond_A": true,
+      "cond_intervals": true,
+      "cond_tiles": false,
+      "critical_Cb_if_all_bad_approx": 9.31633127e+17,
+      "first_max_start": 5,
+      "good": false,
+      "inside_density_envelope": false,
+      "local_window_max": 1071,
+      "local_window_min": 0,
+      "mass_approx": 2321.36776596,
+      "mod4": [
+        0,
+        0,
+        6339,
+        0
+      ],
+      "ordinary_budget_in_points_approx": 6.80418055e-15,
+      "size": 6339,
+      "tile_distances": [
+        1
+      ],
+      "tile_flags": [
+        false
+      ]
+    },
+    "before": {
+      "BadOK_Cb1": true,
+      "bad_point_count": 0,
+      "cond_A": true,
+      "cond_intervals": true,
+      "cond_tiles": true,
+      "critical_Cb_if_all_bad_approx": 9.31633127e+17,
+      "first_max_start": 1,
+      "good": true,
+      "inside_density_envelope": false,
+      "local_window_max": 1071,
+      "local_window_min": 0,
+      "mass_approx": 0.0,
+      "mod4": [
+        0,
+        0,
+        6339,
+        0
+      ],
+      "ordinary_budget_in_points_approx": 6.80418055e-15,
+      "size": 6339,
+      "tile_distances": [
+        0
+      ],
+      "tile_flags": [
+        true
+      ]
+    },
+    "coordinate_control": true,
+    "fixed_mod4_family": {
+      "capacity": 8192,
+      "formula": "C(8192,6339)",
+      "passing": 1,
+      "same_mod4_single_exchanges": 11746167,
+      "size": 6339,
+      "total_decimal_digits": 1901
+    },
+    "parameters": {
+      "K": 2112,
+      "L2": 4282,
+      "QS": 131072,
+      "d": 17181966583,
+      "eligible_primes": [
+        3
+      ],
+      "full_tiles": 1,
+      "half_power": 65537,
+      "k": 65536,
+      "log3_argument_exp2": 3392,
+      "n": 32768,
+      "q": 17181966619,
+      "qd_lower_bound": 17181966365,
+      "r": 2113,
+      "rank_m": 2,
+      "rank_t": 65543,
+      "raw_step": 9891,
+      "tile_length": 25358,
+      "u": 2,
+      "x": 4294967296
+    },
+    "raw_mod4": [
+      0,
+      0,
+      6339,
+      0
+    ],
+    "raw_swap": [
+      19782,
+      9706
+    ],
+    "swap": [
+      2,
+      25358
+    ]
+  }
+}

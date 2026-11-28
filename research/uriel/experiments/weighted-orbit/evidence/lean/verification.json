@@ -1,0 +1,11 @@
+{
+  "source_sha256": "671cac77a830289b1c41104e653779f42db1335a75094e87ddfb55ce6c8ee74a",
+  "public_pin": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "public_objects_authenticated": 1205,
+  "supplement_original_import_closure": 369,
+  "toolchain": "819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+  "output": [
+    "'OrbitAudit.every_arrangement_good' depends on axioms: [propext, Classical.choice, Quot.sound]\n'OrbitAudit.one_tile_iff' depends on axioms: [propext, Classical.choice, Quot.sound]\n'OrbitAudit.good_one_tile_iff' depends on axioms: [propext, Classical.choice, Quot.sound]\n'OrbitAudit.width_two_marked_iff' depends on axioms: [propext, Classical.choice, Quot.sound]\n'OrbitAudit.tiles_iff_exists' depends on axioms: [propext, Classical.choice, Quot.sound]\n'OrbitAudit.eligible_update' depends on axioms: [propext, Classical.choice, Quot.sound]\n'OrbitAudit.badPoints_by_representative' depends on axioms: [propext, Classical.choice, Quot.sound]\n'OrbitAudit.mass_zero_iff' depends on axioms: [propext, Classical.choice, Quot.sound]\n'OrbitAudit.badOK_singleton_iff' depends on axioms: [propext, Classical.choice, Quot.sound]\n'OrbitAudit.badOK_zero_iff' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "replaying OrbitBudget"
+  ]
+}

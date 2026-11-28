@@ -1,0 +1,122 @@
+{
+  "original_commit": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "paths_relative_to_src": {
+    "Development/AbelianVarietyTheory/Definitions/GlobalTwisting/PairRowIffQdRows.lean": {
+      "git_blob": "688162690ac7cbfe620037fcee8e451e7116f45b",
+      "sha256": "ce62bded2b02505b79892b0593c99e266bfadfba21574e84470ce1f1957b087f",
+      "lines": [
+        28
+      ]
+    },
+    "Development/AbelianVarietyTheory/Definitions/GlobalTwisting/ThinScalesIffHostBound.lean": {
+      "git_blob": "1de433cc5ce2fa941ca72691bc75a3bccb667634",
+      "sha256": "413712d1bffa0ffc17a269690dbd21597d8eb1dd08452f943dfdcf535f607146",
+      "lines": [
+        19,
+        35,
+        36
+      ]
+    },
+    "Development/AutomorphicArithmetic/CoprimeRanks/FieldAny.lean": {
+      "git_blob": "9ccbdb88b2b80c9b34c1e4817f40e20dacf057c1",
+      "sha256": "1faafb8b112daf3afe0227cb4d1b17b9b715d1eef64ea5f0486da437ad30064a",
+      "lines": [
+        23
+      ]
+    },
+    "Development/AutomorphicArithmetic/CoprimeRanks/SecondSetNoRelation.lean": {
+      "git_blob": "1165a1e90afc0fa0c39cc1d0abd931361e48f65e",
+      "sha256": "b9208ea16531e95947ffe7d7389e567ee02386f8ffe14b3dd415c0433a330ced",
+      "lines": [
+        13,
+        87,
+        116
+      ]
+    },
+    "Development/AutomorphicArithmetic/ThickFrames/topsChoiceH.lean": {
+      "git_blob": "30fc631d84ac2188105d8ee9a92d2ed37ba43b7d",
+      "sha256": "95cf108baaabc12785f6d2885344dfd867ef9898df29258d69cb383110e3db78",
+      "lines": [
+        29
+      ]
+    },
+    "Formalism/FrobeniusOrbits/Statement.lean": {
+      "git_blob": "45d3b672d4649dd27309c092b3f9a24d279dd399",
+      "sha256": "be6f07f572e21568d41366bad89e578cb716b1bd4622b9eea7b195063465abad",
+      "lines": [
+        13,
+        49
+      ]
+    },
+    "Formalism/LocalRingCardinality/DataHost.lean": {
+      "git_blob": "7e9af8ab364965c62be250ae93974098141598c0",
+      "sha256": "39252a17ac91969e59b2f1c89efe12b6ac0e7ea97bd462c1e250f8ea8b4c954f",
+      "lines": [
+        33,
+        96
+      ]
+    },
+    "Formalism/LocalRingCardinality/Params.lean": {
+      "git_blob": "09d1aeec3049821ed6d190c7970cdca9ec5b34cf",
+      "sha256": "1de4e5a1230e9d93b5ace3e4f7e112f65e3d5264d75db227476986d179881e17",
+      "lines": [
+        6
+      ]
+    },
+    "Formalism/LocalToGlobal/GlobalTheory/IsResidueClassZero.lean": {
+      "git_blob": "3d9ca6054c07565ada526d97402492b71739937d",
+      "sha256": "7b055c5bb583ff2ffc19c0891b468e05db7926f6039999f09a3d7615c90a171e",
+      "lines": [
+        40,
+        86,
+        265,
+        267
+      ]
+    },
+    "Formalism/SharpRestriction/GrowthBounds/UnramifiedQuadraticSetting.lean": {
+      "git_blob": "c36e22ceab2885a6ab812f6187bfd1a86472a6ec",
+      "sha256": "8131a4bd16451b1acce0980972b44735ff04eade07f6ea91788cde72f5df5b6a",
+      "lines": [
+        237
+      ]
+    },
+    "Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/ConjEMemHostFIff.lean": {
+      "git_blob": "0ab34ba6d386bb84908efe66de6ce50108eacddc",
+      "sha256": "db32b7af86f38a66881c2345572c33156fdf027b2f0b2d6c64a6775f8e970647",
+      "lines": [
+        68,
+        103
+      ]
+    },
+    "Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/FrameCyclicGenerator.lean": {
+      "git_blob": "fa8ab3bbd126ccaa1c879cc7894f3e57000319f3",
+      "sha256": "0a8a86d426ed6b8df1177f3c4a2a57a7ce17f2843b0388cd488973556371deaa",
+      "lines": [
+        94,
+        150,
+        152
+      ]
+    },
+    "Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/NonemptyFieldAxiomsCyclicPow.lean": {
+      "git_blob": "1bc842270587dd928430338c1266c9f70decf6c9",
+      "sha256": "bf171e8d0eff1464a6c9a44ad08115ce5728ff73700c00f6799b92521800296a",
+      "lines": [
+        651
+      ]
+    },
+    "Formalism/SubspaceCounting/GoodOrbitIntervalTileCondition.lean": {
+      "git_blob": "acb9507aac12f0af981cc734a07b0302ea501026",
+      "sha256": "44168da25c567d057bc885ba30918687f9573495759a62900c7175ac5a8c40bb",
+      "lines": [
+        10
+      ]
+    },
+    "Formalism/SubspaceCounting/StatementB.lean": {
+      "git_blob": "5d64c1a8e0a7fdca57f1263c345be4d1bbca2d26",
+      "sha256": "5118b67dcbfb14424d56c1eb44dbc290b9d94a386bf5027c46557e1fc51e4017",
+      "lines": [
+        9
+      ]
+    }
+  }
+}

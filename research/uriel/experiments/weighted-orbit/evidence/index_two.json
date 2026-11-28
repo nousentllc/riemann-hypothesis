@@ -1,0 +1,80 @@
+{
+  "K": 2112,
+  "L2": 3872,
+  "bad_counts": [
+    "0",
+    "9223372036854769465"
+  ],
+  "budget_in_points_approx": 3948.9835014,
+  "critical_Cb_approx": 2335631950000000.0,
+  "density_pass": true,
+  "eligible_primes": [
+    3
+  ],
+  "eps": "1/64",
+  "exact_coset_counts": [
+    "5270498306774153980",
+    "3952873730080615485"
+  ],
+  "frame": "cyclicFramePow 64 1",
+  "full_tiles": "727452641127437",
+  "index": 2,
+  "k": "36893488147419103232",
+  "marked_count": [
+    1,
+    0
+  ],
+  "marked_tiles_after": [],
+  "marked_tiles_before": [
+    0
+  ],
+  "n": "18446744073709551616",
+  "partial_tile": 4170,
+  "pass_Cb1": [
+    true,
+    false
+  ],
+  "prime_certificates": [
+    {
+      "base": 2,
+      "multiplier": 178,
+      "power_of_three": 82,
+      "prime": "236789744721782169152365302750626042756803"
+    },
+    {
+      "base": 3,
+      "multiplier": 102,
+      "power_of_three": 82,
+      "prime": "135688505402369557604164386969459867197719"
+    }
+  ],
+  "qd_lower_bound": "5444517870735015416594585339625702686749",
+  "rank_m": 2,
+  "rank_t": "36893488147419103239",
+  "raw_step": "11487458370492081827",
+  "shares_discrepancy": 0,
+  "size": "9223372036854769465",
+  "swap": [
+    2,
+    25358
+  ],
+  "tail_blocks": "1317624576693536910",
+  "tile_length": 25358,
+  "unused_tail_slots": 8,
+  "weighted_mass_after_approx": 3.377636621e+18,
+  "windows_after": {
+    "max": 1940,
+    "min": 963,
+    "one_max_start": "31003",
+    "one_min_start": "18446744073709551601",
+    "representative_starts": 11714
+  },
+  "windows_before": {
+    "max": 1940,
+    "min": 964,
+    "one_max_start": "31003",
+    "one_min_start": "18446744073709551601",
+    "representative_starts": 11714
+  },
+  "x": 134217728
+}

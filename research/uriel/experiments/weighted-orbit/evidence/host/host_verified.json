@@ -1,0 +1,18 @@
+{
+  "pin": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "toolchain": "819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+  "module": "ConcreteOrbitHost",
+  "source_sha256": "4f01227f91f2425fb51b7b55ea5901d4ee0206ab6d68b6ee7fd4d6ae1cc860a1",
+  "imported_original_modules_authenticated": 1205,
+  "public_source_object_inventory_sha256": "f73a9ec6cb84b11274e6e773f21e44377b779970841cb3b290cc6bf314bf2843",
+  "direct_imports": [
+    "Development.AbelianVarietyTheory.Definitions.GlobalTwisting.ThinScalesIffHostBound",
+    "Mathlib.NumberTheory.LucasPrimality",
+    "Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.NonemptyFieldAxiomsCyclicPow",
+    "Development.AutomorphicArithmetic.CoprimeRanks.SecondSetNoRelation"
+  ],
+  "kernel_receipts": [
+    "'Uriel.OrbitHost.host13_exists' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Uriel.OrbitHost.host15_exists' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Uriel.OrbitHost.host17_exists' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Uriel.OrbitHost.chosen_step_eq_artin' depends on axioms: [propext, Classical.choice, Quot.sound]\n'Uriel.OrbitHost.host64_exists' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "replaying ConcreteOrbitHost"
+  ]
+}
