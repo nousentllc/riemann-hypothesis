@@ -1,0 +1,518 @@
+{
+  "pin": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "sources": [
+    {
+      "source": "src/Development/AutomorphicArithmetic/ShortNorms/hostOfFieldOf.lean",
+      "git_blob": "261b566b0ea0d155ef1a434889d720c3b439735f",
+      "sha256": "fb75c6141fe635f8afd236416d423a493548ce9e834da1b839686331d5d40489",
+      "lines": 255,
+      "cited_at": [
+        [
+          "When_the_Odd_Position_Loss_Survives.tex",
+          217,
+          217
+        ]
+      ]
+    },
+    {
+      "source": "src/Development/AutomorphicArithmetic/ThickFrames/NotGoodLe.lean",
+      "git_blob": "e830326694c79556247a5f7414b838ea42cede53",
+      "sha256": "eceda7d7c1d2f913174f652208731c368a3e4fcabff1fc82ceee21f79ae064b0",
+      "lines": 138,
+      "cited_at": [
+        [
+          "When_the_Odd_Position_Loss_Survives.tex",
+          84,
+          84
+        ]
+      ]
+    },
+    {
+      "source": "src/Development/AutomorphicArithmetic/ThickFrames/select.lean",
+      "git_blob": "32751767563d67d48acb0d4ff4e2e256d03b42e3",
+      "sha256": "498d03b21842694689c0460dc3fc8942ad88b9087a60ee46a870a62b7d490462",
+      "lines": 174,
+      "cited_at": [
+        [
+          "When_the_Odd_Position_Loss_Survives.tex",
+          135,
+          135
+        ]
+      ]
+    },
+    {
+      "source": "src/Formalism/LocalRingCardinality/DataParams.lean",
+      "git_blob": "6dc2612028528e242333116820c35775ba802c37",
+      "sha256": "4fba067ef2b17f6f49e0eb9d74c35d72bce643de01adc2d800962d2f4d6c87a9",
+      "lines": 332,
+      "cited_at": [
+        [
+          "evidence/experiments/RESULTS.md",
+          193,
+          202
+        ]
+      ]
+    },
+    {
+      "source": "src/Formalism/LocalRingCardinality/DataParams₂.lean",
+      "git_blob": "50914500995df91e2646d91a6c5c99a7e603a51b",
+      "sha256": "39d84d7e7db5196715f955ac44f45e61a23fcf4ebd5065ca41444f836efd3099",
+      "lines": 274,
+      "cited_at": [
+        [
+          "evidence/experiments/RESULTS.md",
+          144,
+          148
+        ],
+        [
+          "evidence/local/SOURCE.md",
+          27,
+          39
+        ]
+      ]
+    },
+    {
+      "source": "src/Formalism/LocalRingCardinality/Params.lean",
+      "git_blob": "09d1aeec3049821ed6d190c7970cdca9ec5b34cf",
+      "sha256": "1de4e5a1230e9d93b5ace3e4f7e112f65e3d5264d75db227476986d179881e17",
+      "lines": 125,
+      "cited_at": [
+        [
+          "evidence/experiments/RESULTS.md",
+          6,
+          36
+        ]
+      ]
+    },
+    {
+      "source": "src/Formalism/LocalToGlobal/GlobalTheory/IsResidueClassZero.lean",
+      "git_blob": "3d9ca6054c07565ada526d97402492b71739937d",
+      "sha256": "7b055c5bb583ff2ffc19c0891b468e05db7926f6039999f09a3d7615c90a171e",
+      "lines": 524,
+      "cited_at": [
+        [
+          "evidence/experiments/RESULTS.md",
+          62,
+          104
+        ],
+        [
+          "evidence/experiments/RESULTS.md",
+          106,
+          113
+        ],
+        [
+          "evidence/experiments/RESULTS.md",
+          129,
+          137
+        ],
+        [
+          "evidence/experiments/RESULTS.md",
+          142,
+          178
+        ],
+        [
+          "evidence/experiments/RESULTS.md",
+          189,
+          228
+        ],
+        [
+          "evidence/experiments/RESULTS.md",
+          311,
+          316
+        ],
+        [
+          "evidence/experiments/RESULTS.md",
+          333,
+          354
+        ]
+      ]
+    },
+    {
+      "source": "src/Formalism/LocalToGlobal/GlobalTheory/LossRequirementsOfSmallShares.lean",
+      "git_blob": "287dcaae544bf078e47910aa5c9986ec501bdbd2",
+      "sha256": "26e56551dde5c2397897ba3d426b8d1db48c00c2847418fa427aa23b807a60a6",
+      "lines": 352,
+      "cited_at": [
+        [
+          "evidence/transport/TRANSPORT.md",
+          42,
+          76
+        ]
+      ]
+    },
+    {
+      "source": "src/Formalism/LocalToGlobal/GlobalTheory/PowFourLtCeilThresholdPrime.lean",
+      "git_blob": "8166795ec6e846795d7272781119ee7d17d426c0",
+      "sha256": "940eebfa0d8e19a862e36af510c31e007e864ddf9f2a3e839918e733012ab31c",
+      "lines": 2216,
+      "cited_at": [
+        [
+          "When_the_Odd_Position_Loss_Survives.tex",
+          386,
+          386
+        ],
+        [
+          "evidence/transport/TRANSPORT.md",
+          186,
+          275
+        ],
+        [
+          "evidence/transport/TRANSPORT.md",
+          298,
+          310
+        ],
+        [
+          "evidence/transport/TRANSPORT.md",
+          362,
+          398
+        ]
+      ]
+    },
+    {
+      "source": "src/Formalism/LocalToGlobal/GlobalTheory/SuppSat.lean",
+      "git_blob": "80c1d0526b661eae74d87ec3b569d6a459e900ce",
+      "sha256": "47301a06ec1857f3b8e4e50ac7b7b3b0fba9efcbe468b888e18a41824f073f1b",
+      "lines": 145,
+      "cited_at": [
+        [
+          "evidence/transport/TRANSPORT.md",
+          66,
+          103
+        ]
+      ]
+    },
+    {
+      "source": "src/Formalism/SharpRestriction/FamCore.lean",
+      "git_blob": "44cd54c38881086724fdf7f10f32b7d8e80e35b3",
+      "sha256": "b261e12923d7dc47037a7b5b458e61ef59d69545f3b40a904a36e6bf8047ec78",
+      "lines": 218,
+      "cited_at": [
+        [
+          "evidence/transport/TRANSPORT.md",
+          122,
+          130
+        ]
+      ]
+    },
+    {
+      "source": "src/Formalism/SharpRestriction/GrowthBounds/IsResidueClassZero.lean",
+      "git_blob": "9fbb7879d0519f9a136e190551422881ef5d2f0b",
+      "sha256": "769f9733e1d208e4ee5a9cc89e25123f2ce9182ce295490ff97e569faf87f5a0",
+      "lines": 485,
+      "cited_at": [
+        [
+          "When_the_Odd_Position_Loss_Survives.tex",
+          234,
+          234
+        ],
+        [
+          "When_the_Odd_Position_Loss_Survives.tex",
+          241,
+          241
+        ],
+        [
+          "When_the_Odd_Position_Loss_Survives.tex",
+          336,
+          336
+        ],
+        [
+          "evidence/experiments/RESULTS.md",
+          207,
+          225
+        ],
+        [
+          "evidence/local/SOURCE.md",
+          230,
+          268
+        ],
+        [
+          "evidence/local/SOURCE.md",
+          241,
+          268
+        ],
+        [
+          "evidence/local/SOURCE.md",
+          241,
+          269
+        ],
+        [
+          "evidence/local/SOURCE.md",
+          335,
+          361
+        ],
+        [
+          "evidence/local/SOURCE.md",
+          335,
+          362
+        ],
+        [
+          "evidence/transport/TRANSPORT.md",
+          31,
+          50
+        ],
+        [
+          "evidence/transport/TRANSPORT.md",
+          131,
+          151
+        ],
+        [
+          "evidence/transport/TRANSPORT.md",
+          206,
+          225
+        ],
+        [
+          "evidence/transport/TRANSPORT.md",
+          228,
+          267
+        ],
+        [
+          "evidence/transport/TRANSPORT.md",
+          234,
+          252
+        ],
+        [
+          "evidence/transport/TRANSPORT.md",
+          336,
+          366
+        ]
+      ]
+    },
+    {
+      "source": "src/Formalism/SharpRestriction/GrowthBounds/LogarithmicSums/Conclusion1OfGainBoundAll.lean",
+      "git_blob": "a37d19e7affc2c873c5a325fb25af7bf7834d9a0",
+      "sha256": "1a0b0309969a995dde24cd1a903dae13173bcd41eead7ea2a0139300965af3a1",
+      "lines": 163,
+      "cited_at": [
+        [
+          "evidence/experiments/RESULTS.md",
+          52,
+          79
+        ],
+        [
+          "evidence/experiments/RESULTS.md",
+          99,
+          131
+        ],
+        [
+          "evidence/transport/TRANSPORT.md",
+          52,
+          88
+        ],
+        [
+          "evidence/transport/TRANSPORT.md",
+          99,
+          103
+        ]
+      ]
+    },
+    {
+      "source": "src/Formalism/SharpRestriction/GrowthBounds/LogarithmicSums/NotSingularOfCentral.lean",
+      "git_blob": "c57da93c44237c19538bd07949a705adb0e8171f",
+      "sha256": "c32c6071f19c8349702af5ee94716d23844d478514034d99c62d4c556e3b0ba5",
+      "lines": 741,
+      "cited_at": [
+        [
+          "When_the_Odd_Position_Loss_Survives.tex",
+          691,
+          691
+        ],
+        [
+          "evidence/transport/TRANSPORT.md",
+          128,
+          205
+        ],
+        [
+          "evidence/transport/TRANSPORT.md",
+          185,
+          215
+        ],
+        [
+          "evidence/transport/TRANSPORT.md",
+          633,
+          685
+        ],
+        [
+          "evidence/transport/TRANSPORT.md",
+          679,
+          728
+        ],
+        [
+          "evidence/transport/TRANSPORT.md",
+          691,
+          728
+        ]
+      ]
+    },
+    {
+      "source": "src/Formalism/SharpRestriction/GrowthBounds/LogarithmicSums/PartnerCountOfCentral.lean",
+      "git_blob": "f677b9041604e334f1115ae16b96cd61b1c7ee55",
+      "sha256": "12e0fc504d1dd71ac46b7cd72908ae34001b2995b51accb36a031e821b64f998",
+      "lines": 851,
+      "cited_at": [
+        [
+          "When_the_Odd_Position_Loss_Survives.tex",
+          399,
+          399
+        ],
+        [
+          "When_the_Odd_Position_Loss_Survives.tex",
+          769,
+          769
+        ],
+        [
+          "When_the_Odd_Position_Loss_Survives.tex",
+          837,
+          837
+        ],
+        [
+          "evidence/experiments/RESULTS.md",
+          136,
+          169
+        ],
+        [
+          "evidence/experiments/RESULTS.md",
+          369,
+          437
+        ],
+        [
+          "evidence/local/SOURCE.md",
+          195,
+          246
+        ],
+        [
+          "evidence/local/SOURCE.md",
+          203,
+          225
+        ],
+        [
+          "evidence/local/SOURCE.md",
+          345,
+          366
+        ],
+        [
+          "evidence/transport/TRANSPORT.md",
+          246,
+          269
+        ],
+        [
+          "evidence/transport/TRANSPORT.md",
+          690,
+          738
+        ],
+        [
+          "evidence/transport/TRANSPORT.md",
+          769,
+          780
+        ],
+        [
+          "evidence/transport/TRANSPORT.md",
+          769,
+          785
+        ],
+        [
+          "evidence/transport/TRANSPORT.md",
+          784,
+          828
+        ],
+        [
+          "evidence/transport/TRANSPORT.md",
+          825,
+          849
+        ]
+      ]
+    },
+    {
+      "source": "src/Formalism/SharpRestriction/GrowthBounds/LogarithmicSums/TsumTruncatedShiftLe.lean",
+      "git_blob": "50b57259d62479c45f43be44634b355db323c9ed",
+      "sha256": "83a116e0903673a0389c94d89b0425a9c520640a357f75d916acff055492d381",
+      "lines": 168,
+      "cited_at": [
+        [
+          "evidence/local/SOURCE.md",
+          9,
+          86
+        ]
+      ]
+    },
+    {
+      "source": "src/Formalism/SharpRestriction/GrowthBounds/PlaneCountTheoremWithConstants.lean",
+      "git_blob": "8b788f1a1865ddd80a69beb427e319352260150d",
+      "sha256": "bc71270195974136ea0e12372c38192b93116903082f46f055f2daa19bde2081",
+      "lines": 1881,
+      "cited_at": [
+        [
+          "When_the_Odd_Position_Loss_Survives.tex",
+          223,
+          223
+        ],
+        [
+          "evidence/transport/TRANSPORT.md",
+          223,
+          245
+        ]
+      ]
+    },
+    {
+      "source": "src/Formalism/SizeWindowBrackets/ChainSlopeWindows/AdmissibleSchurLemma.lean",
+      "git_blob": "91c8966257416ce67a92357ff67f1ded82bba9c9",
+      "sha256": "d4e83fad0408cf330d72d8afe41c37bb3c39143cc31fb8a1a36070d15bc08045",
+      "lines": 1055,
+      "cited_at": [
+        [
+          "evidence/transport/TRANSPORT.md",
+          155,
+          162
+        ]
+      ]
+    },
+    {
+      "source": "src/Formalism/SizeWindowBrackets/ChainSlopeWindows/DiscriminantSettingSatisfied.lean",
+      "git_blob": "edc32424311c076565c2e13b7657f6a5f58cfd84",
+      "sha256": "8dce8d3198be07282b1dc16061a027dab53d785947d59378f001afa0fb580f23",
+      "lines": 243,
+      "cited_at": [
+        [
+          "evidence/transport/TRANSPORT.md",
+          96,
+          110
+        ],
+        [
+          "evidence/transport/TRANSPORT.md",
+          162,
+          220
+        ]
+      ]
+    },
+    {
+      "source": "src/Formalism/SizeWindowBrackets/SecondKindBucket.lean",
+      "git_blob": "502d2a6bf146f38b4c51ed87db9cf1ffbc9d7db8",
+      "sha256": "029ad56bb74397c851fb0067d41be779dc0c69b3c8b9db4bae3932908e00f56e",
+      "lines": 297,
+      "cited_at": [
+        [
+          "evidence/transport/TRANSPORT.md",
+          13,
+          26
+        ]
+      ]
+    },
+    {
+      "source": "src/Formalism/SizeWindowBrackets/WindowSettingSatisfiable.lean",
+      "git_blob": "641dc12c8c7005d532889ed7a3044636ba72b3c5",
+      "sha256": "77569696749f9fa24ad13bae6181c0e1bac62a243f9313737f1541b481a53c9b",
+      "lines": 416,
+      "cited_at": [
+        [
+          "When_the_Odd_Position_Loss_Survives.tex",
+          95,
+          95
+        ],
+        [
+          "evidence/transport/TRANSPORT.md",
+          65,
+          117
+        ]
+      ]
+    }
+  ]
+}

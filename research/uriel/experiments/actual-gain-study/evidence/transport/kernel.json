@@ -1,0 +1,16 @@
+{
+  "scope": "six standalone ordered-real gain and cost rules",
+  "version": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "axioms": [
+    "'GainGapTransport.branch_gap' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'GainGapTransport.matched_offset' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'GainGapTransport.recovery' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'GainGapTransport.selected_lower' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'GainGapTransport.two_branch_lower' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'GainGapTransport.winning_lower' depends on axioms: [propext, Classical.choice, Quot.sound]"
+  ],
+  "source_sha256": "5a1ea7f4b622d1bd4b5735de1abe1cb445b55ba619e6c535a66e2c14883ba4fd",
+  "object_sha256": "34b139ad2c24168694b4be3121e5e14d5dc611674be59bd6352cd8ce7cb1409c",
+  "kernel": "replaying GainGapTransport"
+}

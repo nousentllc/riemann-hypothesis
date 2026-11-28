@@ -1,0 +1,172 @@
+% !TeX program = lualatex
+\documentclass[12pt,letterpaper]{article}
+\usepackage{iftex}\RequireLuaTeX
+\usepackage[margin=.93in,headheight=15pt,headsep=13pt,footskip=25pt]{geometry}
+\usepackage{fontspec}\setmainfont{Latin Modern Roman}\setsansfont{Latin Modern Sans}
+\usepackage{amsmath,amssymb,booktabs,array,tabularx,microtype,xcolor,fancyhdr,hyperref,bookmark}
+\definecolor{ink}{HTML}{182F41}\definecolor{accent}{HTML}{176060}\definecolor{muted}{HTML}{41596A}
+\hypersetup{colorlinks=true,urlcolor=accent,linkcolor=accent,pdftitle={When the odd-position loss survives},pdfauthor={Uriel Research}}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcommand{\orig}[3]{\href{https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/#1.lean\#L#2}{#3}}
+\newcommand{\para}[1]{\par\medskip\noindent\textbf{#1}\quad}
+\newcommand{\pagepart}[1]{\clearpage\section{#1}}
+\newcommand{\eff}{\mathrm{eff}}
+\newcommand{\gap}{\mathrm{ASK}-\mathrm{Ga}}
+\pagestyle{fancy}\fancyhf{}\fancyhead[L]{\small\sffamily\color{muted}Uriel Research}
+\fancyhead[R]{\small\sffamily\color{muted}Arithmetic witness studies}\fancyfoot[C]{\sffamily\small\thepage}
+\renewcommand{\headrulewidth}{.3pt}\setlength{\parindent}{0pt}\setlength{\parskip}{4pt}
+\setlength{\emergencystretch}{1.5em}\raggedbottom\linespread{1.025}
+\begin{document}
+\thispagestyle{plain}
+{\sffamily\small\color{accent}URIEL RESEARCH\hfill 22 NOVEMBER 2026}\par\vspace{12pt}
+{\Huge\bfseries\color{ink}When the odd-position loss survives\par}\vspace{5pt}
+{\Large\color{muted}Comparing the two gains on the same arithmetic witness}\par\bigskip
+
+An odd position can use its entire allowance while the proof earns some of it back elsewhere on the same orbit. It can also keep the entire leading loss. The distinction depends on which neighboring positions were retained and which of two gains the proof credits. We trace that choice through the actual demand, the orbit's integer charge, and the final prime sum.
+
+\begin{center}\begin{tabularx}{\linewidth}{@{}p{.29\linewidth}Y@{}}\toprule
+Question & Finding\\\midrule
+One odd position & At prime 5 the same position costs 58 in both tests. Moving one other retained point takes recovery from \(47.00833\) to zero.\\
+One fixed witness & The previous local allowance minus its actual fallback recovery gives the final normalized gap up to a vanishing error. The recovery is an explicit sum on that witness.\\
+Choices the proof permits & At principal conductor one we can select admissible witnesses with final normalized gaps tending to \(0.232051\), \(0.25\), or \(0.267949\), among other values.\\\bottomrule
+\end{tabularx}\end{center}
+The last assertion is a family-limit deduction. The two finite controls evaluate the actual branch formulas with synthetic parameters. The numerical values in the first row are in the control's native units. Those in the last row express fractions of \(U=mNb\), the proof's normalization. A loss here means demand minus credited gain in this arithmetic estimate.
+
+\para{What changes from the preceding study.} Previously we could show that the global gap was \emph{at most} the local odd-position charge up to lower-order errors. A fallback could conceivably have erased all of it. Two new steps settle the question for deliberately selected witnesses. First, we bound the gap from below through both possible gain branches. Second, we show that one admissible retained set can make the specialized branch win on essentially all the prime weight. The unseen retained set supplied by the original existence proof has its own recovery, whose value remains undetermined.
+\href{https://github.com/nousentllc/riemann-hypothesis/pull/10}{Previous study and upper bound}.
+
+\pagepart{What the proof compares at one orbit}
+Fix an active central prime \(p\), its source representative \(v\), a lift \(j\), the entire retained set \(T\), and all local heights. Write \(A=g_U-\mathrm{Pr}\), \(F=(g_0)_+\), \(G=\max(A,F)\), where \(t_+=\max(t,0)\). All three candidates use the same inputs. At a retained source \(s\) and odd exponent \(e\), write
+\[
+ u_{se}=(a_s-2c_G)/p^e,\quad c_{se}=\mathrm{capU}(s,e),\quad
+ d_{se}=(u_{se}-c_{se})_+,\quad q_{se}=\min(u_{se},c_{se}).
+\]
+The adjusted capacity \(c_{se}\) is the partner fill plus \(c_G-\kappa_j\), with \(\kappa_j\) the lift correction. Both arguments are nonnegative on the stated windows, so \(q_{se}+d_{se}=u_{se}\). An excluded column is the \emph{first} visit to a distinct retained target at an odd exponent. The definition permits later visits to that same target to contribute. Let \(B=\sum_{\rm kept}d_{se}\). The fallback before the zero floor is \(g_0=B-dl\). The specialized branch starts with the full geometric supply and deducts minima only on odd sources. Thus
+\[
+ C=\sum_{\rm excluded}d_{se}+
+       \sum_{\substack{s\ {\rm retained\ even}\\e\ {\rm odd}}}q_{se},
+ \qquad A-g_0=C-\mathrm{Pr},\qquad
+ G=\big[B-dl+(C-\mathrm{Pr})_+\big]_+ .
+\]
+The common subtraction \(dl\) cancels in the raw comparison. It still affects the zero floor. For the first exponent, a retained even source with a retained odd successor contributes \(q+d=u\) to \(C\). A retained odd source with a retained even successor contributes \(d\). An even source followed by a hole contributes only a minimum. These three cases distinguish direction on the cycle. \orig{Formalism/SharpRestriction/GrowthBounds/IsResidueClassZero}{234}{First-hit, gain and price definitions}.
+
+\para{Why the row cannot pick a winner.} The earlier clipping calculation looks \emph{backward} from an odd position, to its nearest retained even predecessor. The gain compares \emph{forward} visits from every retained source on its orbit. The previous full row allowance is \(o_y-\kappa_j\) when the predecessor's attenuated height is at most the target height, including the no-predecessor convention. This fixes only one component of the price. \orig{Formalism/SharpRestriction/GrowthBounds/LogarithmicSums/PartnerCountOfCentral}{399}{Backward clipping comparison}.
+
+\para{A finite error certificate.} Restrict \(B,C\) to exponent one, keeping the full price and subtraction, and call the resulting gain \(G_1\). The jointly omitted terms give
+\[
+ 0\le G-G_1\le\sum_{s\ {\rm retained}}\frac{a_s-2c_G}{p(p^2-1)} .
+\]
+A single geometric tail pays for both branches. The new Lean supplement proves this inequality for the source expression used by \texttt{gainP}.
+
+\pagepart{A controlled reversal at the same prime and lift}
+Keep the eight-cycle, prime \(p=5\), step \(+1\), base zero, lift \(j=1\), and target position 3. Hold all heights and coefficients fixed. Each mask is evaluated against both branches before changing one retained even point. For both masks the target has height 150, offset 64 and lift correction 6. Its incoming height is below 150, so clipping leaves \(64-6=58\).
+
+\begin{center}\begin{tabular}{@{}lrr@{}}\toprule
+Quantity & \(T=\{0,3\}\) & \(T=\{3,4\}\)\\\midrule
+Backward distance at position 3 & 3 & 7\\
+Incoming height at that distance & 12.504 & 0.0200064\\
+Price \(\mathrm{Pr}\), variable + fixed & \(58+6\) & \(58+6\)\\
+Direct candidate \(g_0\) & 622.66575 & 323.33775\\
+Specialized candidate \(g_U-\mathrm{Pr}\) & 575.65742 & 369.65742\\
+Recovery \((F-A)_+\) & 47.00833 & 0\\
+Actual demand \(Q\) & 613.704 & 412.208\\
+Signed gap \(Q-G\) & \(-8.96175\) & 42.55058\\
+Allocated integer charge \(T_v\) & 46 & 34\\
+\textbf{Signed gap \(Q+T_v-G\)} & \textbf{37.03825} & \textbf{76.55058}\\\bottomrule
+\end{tabular}\end{center}
+In the second mask \(3\to4\) first reaches a distinct retained target. This removes \(101.8\) units of adjusted demand from the direct candidate. In the first mask there is no corresponding excluded positive demand. Moving the even point also changes the demand and tax, so the difference between the last two entries cannot be interpreted as the marginal price of position 3.
+
+For the integer-charge comparison we use one lift, zero prime-wide cost, and zero threshold coefficients. Then \(T_v=\lceil M+32\rceil+1\), where \(M\) is the incoming height in the second line. This is a single-lift control. The published rank requires even \(m\ge2\). The conclusion about the ordering of the two taxed gaps is stable with a shared nonnegative residual in place of 32. The two ceilings differ by either 12 or 13. The second taxed gap exceeds the first by \(39.51233\) or \(38.51233\), respectively.
+
+Across all 255 nonempty masks the specialized gain won 212 times and \(g_0\) won 43 times. Before tax, 221 signed gaps were negative and 34 positive. Separate controls forced a tie, a strict zero winner and a positive return on a later lap. These counts describe this parameter panel. They supply no empirical frequency for the proof's hidden witness.
+
+\pagepart{Does recovery persist with two lifts and positive gain costs?}
+The first test deliberately simplifies the tax and ranks. We repeated the comparison on a 32-cycle with both lifts of an even rank. Here \(k=64,m=2,t=71,Nm=208\), the two lift shifts are 68 and 140, \(\Delta_{\rm size}=Nm\,m^{10}\), \(\mathrm{Sc}=4k\Delta_{\rm size}\), and \(c_G=4\mathrm{Sc}\). The three gain coefficients multiplying the common subtraction and fixed orbit price all equal one. The high-range threshold coefficients, \(D_I\) and the prime-wide charge are set to zero. We retained the nonzero term \(2L c_G\), the matched-height tax, its rounding and both lifts. These controls enforce the displayed rank inequalities. The field, service and full family-scale hypotheses are outside these controls.
+
+Let \(S=(Q_1+Q_2+\tau_p-G_1-G_2)/(2\lambda)\) for this one synthetic prime. There is one odd exposure in each lift. For each mask the odd at 3 uses its full signed allowance before the unused columns. The following values include the integer tax charged once for the prime.
+\begin{center}\begin{tabular}{@{}lllr@{}}\toprule
+Prime & Retained & Winner on both lifts & \(S\)\\\midrule
+1,009 & \(\{0,3\}\) & \(g_0\) & 0.000031431685\\
+1,009 & \(\{3,4\}\) & \(g_U-\mathrm{Pr}\) & 1.968718568\\
+10,007 & \(\{0,3\}\) & \(g_0\) & 0.000000319552\\
+10,007 & \(\{3,4\}\) & \(g_U-\mathrm{Pr}\) & 1.968749680\\\bottomrule
+\end{tabular}\end{center}
+The first configuration leaves less than one millionth of a nominal allowance per exposure in the last prime test. The second retains the odd loss and also incurs the positive fixed price. Its ratio can therefore exceed one. These numbers measure the net signed deficit, including other costs. The family-limit constants below require a different scale and an actual admissible selection.
+
+\para{Controls that can expose a bookkeeping error.} On the primary eight-cycle, summing the branch candidates on two separate orbits and then taking a single maximum loses \(46.31967\) units of gain. In a secondary two-lift control at prime 101, the source incidence ceiling gives \(42{,}375{,}329\). Rounding each lift first gives \(42{,}375{,}330\). Neither interchange is harmless. The code also compares sums by exponent against sums over residue classes modulo the cycle length, using rational arithmetic for the infinite geometric tails.
+
+\para{What can actually be computed?} The infinite series need only finitely many partner inspections once witness data are supplied. Beyond \(p^e\ge2a\), the adjusted height divided by \(p^e\) is at most one, while each capacity is at least one. Positive demands then vanish and the minima have an explicit geometric tail. An arbitrary existentially selected \(T\), its lifts and their integer heights still have to be supplied to evaluate that finite expression at a particular host.
+
+\pagepart{Following the winning branch into the signed gap}
+The source's final demand uses \texttt{askP}, the positive parts formed with the actual fills. The larger comparison \texttt{askG} appears in a proof step. Substituting it into the final sum changes even the sign of some controls. At an active \(v\), put \(Q=\sum_{s\in T_v^{\rm tops}}\mathrm{askP}(p,j,s)\) and \(T_v=\lceil t_v\rceil_++D_p+1\). The latter is one lift's share of the orbit charge. The prime-wide \({\rm ep}_p\) is charged separately once. Then
+\[
+ Q+T_v-G=Q+T_v-A-(F-A)_+
+         =\min(Q+T_v-A,Q+T_v-F).
+\]
+The same tax is due whichever branch wins. The final rational-prime contribution uses \(2\log p\). The separate incidence estimate uses the \emph{opposite} difference \((A-F)_+\), summed over lifts before rounding. Its global total divided by \(U\) is at most \(x^{-8}\) on the selected windows. \orig{Formalism/SharpRestriction/GrowthBounds/IsResidueClassZero}{336}{Branch, rounding and tax}, \orig{Formalism/SharpRestriction/GrowthBounds/PlaneCountTheoremWithConstants}{223}{demand equality}, and \orig{Formalism/LocalToGlobal/GlobalTheory/PowFourLtCeilThresholdPrime}{386}{global ledger}.
+
+Let \(H=\exp(x^{\varepsilon/3})\), \(0<\varepsilon<1/52\), \(a=xb\), \(b'=a/H\), \(\lambda=b'/x=b/H\). In the high served band \(k^2x^{26}\le p<H\), \(N_v\) denotes the retained count, \(O\) the odd retained count and \(J\) the number of retained even points followed \emph{immediately} by retained odd points. Write \(V=O-J\). The offset satisfies \(o_y\in[\lambda,\lambda+\eta]\), thin fill is at most \(w''+\eta\), \(w''=\lambda/n\), and \(n\) is the group size. For every lift,
+\[
+ \begin{split}
+ Q+T_v-A &\ge\lambda V-E,\qquad
+ Q+T_v-F \ge Jb',\\[-2pt]
+ E&=N_v(\kappa_j+w''+\eta+4a/p^3).
+ \end{split}
+\]
+Indeed \(F\le Q\) since direct gain omits columns, reduces supply and raises capacity. Each matched edge contributes \(\min(a_s/p,b_y)\ge b'\) to the tax. For the other branch, its possible gain in excess of \(Q\) is bounded by the even-source minima with actual heights and fills. At a matched edge the difference from the tax minimum is at most \(o_y\), paid by the price. The unmatched odd offsets remain. Even-source first steps into holes use thin fill, and the higher odd powers cost at most \(4a/p^3\) per source.
+\orig{Formalism/SharpRestriction/GrowthBounds/LogarithmicSums/PartnerCountOfCentral}{769}{Price and tax on this band}.
+
+Thus either winner leaves at least \(\lambda\min(V,xJ)-E\). Even if many odd rows pay their full offsets, relatively few matched pairs can make those losses survive. A matched pair pays at least \(b'=x\lambda\), while one unmatched odd costs about \(\lambda\). In particular \((x+1)J\ge O\) suffices for the whole leading allowance \(\lambda V\).
+
+\pagepart{Which losses survive the other primes?}
+Let \(\Delta=\mathrm{ASK}-\mathrm{Ga}\), \(N=|T|\), \(U=mNb\). On the selected family denote the preceding study's normalized local allowance by \(\mathcal K_x\). It is the positive part of the signed orbit difference in \texttt{kinkHH}, summed with weight \(2\log p/U\) over all lifts and served high orbits. Fix the interior \(I_x\) of that band by \(H/x\le p\le H/(1+2/x+\beta)\), where \(b_y\le b'(1+\beta)\) and \(\beta\le1/(4x^2)\) eventually. Define the recovery in the same units,
+\[
+ \mathcal R_x=\frac2U\sum_{p\in I_x}\log p
+       \sum_{\substack{v\ {\rm active}\\j\ {\rm lift}}}
+                 \big((g_0)_+-(g_U-\mathrm{Pr})\big)_+ .
+\]
+For the same selected record the two-sided comparison gives
+\[
+                 \boxed{\displaystyle\frac{\Delta}{U}
+                           =\mathcal K_x-\mathcal R_x+o(1).}
+\]
+\textbf{Upper side.} Add back precisely this recovery to \(\Delta\). On the interior the resulting sum now uses \(A\) on active orbits. The high-band proof obtains its local bound with \(A\) before inserting the maximum. Keeping the positive local allowance with coefficient one in that step gives the same upper bound \(\mathcal K_x+o(1)\) for this comparison. All complementary orbits, taxes, dropped primes and actual demands keep their original values. The nine ordinary residuals and the bad-point cost are \(o(U)\) by the prior window estimates.
+\orig{Formalism/SharpRestriction/GrowthBounds/LogarithmicSums/PartnerCountOfCentral}{837}{High-band inequality before maximization} and
+\orig{Formalism/SharpRestriction/GrowthBounds/LogarithmicSums/NotSingularOfCentral}{691}{insertion of the maximum}.
+
+\textbf{Lower side.} In the interior use \(Q+T_v-A\ge\lambda V-E\). There the previous clipping estimate gives positive local charge \(\lambda V+o(N_v\lambda)\), uniformly. For the remaining high primes \(p\ge\sqrt H\), either branch has gap at least \(-E\). Here \(E/(N_v\lambda)\le(\kappa_j+\eta)/\lambda+1/n+4x/\sqrt H=o(1)\). The total prime weight up to \(H\) is \(O(H)\). The local allowance excluded from the interior is \(o(U)\), since even counting all integers gives relative strip weight \(O((1/x+\beta+1/H)\log H)\).
+
+For \(p<\sqrt H\), all central partners are tops or thin, with fill \(O(b')\). Per even source the possible excess of \(g_U\) over \(Q\) is \(O(b'\log(2a)+1)\), by splitting at exponent \(\lceil\log_2(2a)\rceil\) and summing the remaining geometric tail. Its normalized total is \(O(x\log(2a)/\sqrt H)+o(1)=o(1)\). Inactive, zero-gain and dropped contributions have nonnegative deficit, as does additional ramified demand. These estimates give the lower side, including \(\liminf\Delta/U\ge0\) for the actual witness. They do not require its finite-scale gap to be nonnegative. \orig{Formalism/SizeWindowBrackets/WindowSettingSatisfiable}{95}{Family scale bounds}.
+
+\pagepart{Can one admissible choice keep the loss?}
+At principal conductor one the arithmetic host group is cyclic of dyadic order \(n\asymp x^{2+8\varepsilon}\). The proof chooses one retained set for that host, before later arithmetic choices. Use inclusion probabilities \(3\delta/4\le\pi_t\le\delta=x^{-\varepsilon/8}\), independently for each host point. In any even-order step orbit of length \(L\), its \(L/2\) directed even-to-odd edges have disjoint endpoints. Thus \(J\) counts independent paired successes on \emph{that orbit}, with
+\[
+ \mu=\mathbb E J\ge9L\delta^2/32,\qquad
+ \Pr(J<\mu/2)\le 2^{\mu/2}\mathbb E[2^{-J}]
+ \le e^{-(1-\log 2)\mu/2}\le e^{-\mu/8}.
+\]
+There are at most \(n^2\) step-orbit pairs. The probability that any orbit with \(L\ge\sqrt x\) has \(J<9L\delta^2/64\) is at most \(n^2\exp(-9\sqrt x\,\delta^2/256)=o(1)\). Distinct orbits of different steps may share many points. A union bound permits this dependence.
+
+\para{Intersection with the actual selection.} The original normalized score for retained count and weighted bad-orbit mass has expectation at most \(1/2+1/4\). Let \(w(t)\in[0,1]\) be the fraction of step directions for which \(t\) has odd position, fixed before selection. Add the squared deviation of \(\sum_{t\in T}w(t)\) from its mean divided by \(8\delta n\), and twice the indicator of any matching failure. Their expectations are at most \(1/8\) each eventually. A positive-probability mask has combined score at most one. It satisfies the original count and bad-mass bounds, has exposure error at most \(\sqrt{8\delta n}\), and meets the matching requirement on every long orbit. If the source bad-mass budget is zero, its nonnegative random variable vanishes on all positive-weight masks. The conductor-one share condition is automatic. Install this single \(T\) at the host selection and carry it through the subsequent construction.
+\orig{Development/AutomorphicArithmetic/ThickFrames/select}{135}{Finite selection score},
+\orig{Development/AutomorphicArithmetic/ThickFrames/NotGoodLe}{84}{pointwise rate bounds}, and
+\orig{Development/AutomorphicArithmetic/ShortNorms/hostOfFieldOf}{217}{host selection}.
+
+\para{Strict winner.} The \(J\) distinct first columns give \(C\ge J(a-2c_G)/H\). The price is at most \(L(\lambda+\eta)+K_{\rm Pr}L(w''+\eta+c_G+Nm)\), hence \(\mathrm{Pr}/(L\lambda)\le1+o(1)\). The common loss satisfies \(dl/(L\lambda)=o(1)\) by the rank and height windows. On every long served orbit \(xJ/L\ge9x\delta^2/64\to\infty\). Thus \(C>\mathrm{Pr}+dl\) eventually. Since \(g_0\ge-dl\), this shows \(A>\max(g_0,0)\), at every lift. The scarce adjacent pairs can decide an entire orbit's branch even though almost every charged odd position has no adjacent retained predecessor.
+\orig{Formalism/SharpRestriction/GrowthBounds/IsResidueClassZero}{241}{Common subtraction and price}.
+
+\pagepart{Sharp values, checks and the open witness}
+In a cyclic dyadic group at most \(2\sqrt x\) steps have order below \(\sqrt x\). Their prime log-weight is \(o(H)\) by the prior pointwise distribution of Artin steps, uniform on these moving hosts. For each \(h\) that estimate reads \(P_h/H=1/(4n)+O_D(x^{-D})\), for any fixed \(D\). Since \(n\) grows polynomially, summing the pointwise error is admissible. Dropped primes and omitted retained mass were already handled in the earlier bound. Short orbits contribute \(o(U)\) to the local allowance, and their signed gap is bounded below up to \(o(U)\) by the two-branch estimate. Long served orbits take the specialized branch. Squeezing the actual gap from both sides gives \(\Delta/U=\mathcal K_x+o(1)\) for these choices. \href{https://github.com/nousentllc/riemann-hypothesis/pull/10}{Prime-step estimate, dyadic rank distribution and admissible profiles}.
+
+In the canonical labeling, the scores \(w\) are a permutation of the grid \(0,1/n,\dots,1-1/n\). The least numeric label in each coset orients its halves. Thus for \(\pi_t=\delta f(w(t))\), the limiting gap for a bounded Riemann-integrable profile \(3/4\le f\le1\) is
+\[
+ \lim\frac{\Delta}{U}=\frac12\,\frac{\int_0^1u f(u)\,du}{\int_0^1 f(u)\,du}.
+\]
+The factor \(1/2\) includes the rational-prime weight and the quarter-share of the two negative signs. Giving every rank equal weight gives \(1/4\). To maximize the ratio use high rate above its own mean \(z\) and low rate below. Solving \((1-z)^2=(3/4)z^2\) gives \(z=4-2\sqrt3\). The reflected profile supplies the minimum. These yield actual limiting gaps \(2-\sqrt3=0.267949192\ldots\) and \(\sqrt3-3/2=0.232050808\ldots\). They are sharp among these concentrated profiles. The worst compatible witness may lie outside that interval.
+
+\para{An independent combinatorial check.} With all 256 subsets on eight points we recovered the exact distribution of \(J\) from disjoint edge probabilities in 72 orbit/profile/label panels (18,432 weighted mask evaluations). The correlated control preserved every point's inclusion probability \(1/2\) and made \(J=0\) certain. Under independent inclusion the same zero-match event had probability \(81/256\) on the eight-cycle. Independence is a property available when choosing the witness. After existential selection, an arbitrary mask has no such probabilistic guarantee.
+
+\para{Verification boundary.} Exact rational cycle tests, authenticated original source, and independent Lean kernel replays supply different evidence. Lean replayed 25 local results on the original definitions and six scalar comparison rules. Four original dependencies rebuilt from pinned source also passed replay with binary hashes differing from the published inventory. The end-to-end prime-limit and matching-selection deductions above are mathematical arguments. No full endpoint build was run in this experiment. The finite controls certify neither an actual selected arithmetic mask nor RH.
+
+\para{Next question.} How much recovery can the \emph{original} size, interval and bad-orbit rules permit on long steps? An extremal bound on log-weighted orbits with few retained first-step pairs would quantify \(\mathcal R_x\) without choosing a fresh witness. That would strengthen the conclusion for the proof's unspecified choice.
+\end{document}
