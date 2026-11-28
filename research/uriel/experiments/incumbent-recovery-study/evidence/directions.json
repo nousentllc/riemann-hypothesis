@@ -1,0 +1,251 @@
+{
+  "all_masks_direct_checks": 6144,
+  "panels": [
+    {
+      "n": 4096,
+      "seed": 17,
+      "residues": [
+        11,
+        13
+      ],
+      "profiles": {
+        "structured": {
+          "even": 32,
+          "odd": 32,
+          "directions": 1024,
+          "zero": 769,
+          "mean": "1",
+          "variance": "1899/512",
+          "variance_zero_bound": "1899/2411",
+          "both_directions_zero": 514,
+          "forced_bidirectional_zeros": 512
+        },
+        "same_child_counts": {
+          "even": 32,
+          "odd": 32,
+          "directions": 1024,
+          "zero": 364,
+          "mean": "1",
+          "variance": "497/512",
+          "variance_zero_bound": "497/1009",
+          "both_directions_zero": 120
+        },
+        "uniform": {
+          "even": 65,
+          "odd": 74,
+          "directions": 1024,
+          "zero": 9,
+          "mean": "2405/512",
+          "variance": "1093671/262144",
+          "variance_zero_bound": "1093671/6877696",
+          "both_directions_zero": 0
+        }
+      }
+    },
+    {
+      "n": 4096,
+      "seed": 71,
+      "residues": [
+        4,
+        14
+      ],
+      "profiles": {
+        "structured": {
+          "even": 32,
+          "odd": 32,
+          "directions": 1024,
+          "zero": 769,
+          "mean": "1",
+          "variance": "1883/512",
+          "variance_zero_bound": "1883/2395",
+          "both_directions_zero": 514,
+          "forced_bidirectional_zeros": 512
+        },
+        "same_child_counts": {
+          "even": 32,
+          "odd": 32,
+          "directions": 1024,
+          "zero": 351,
+          "mean": "1",
+          "variance": "113/128",
+          "variance_zero_bound": "113/241",
+          "both_directions_zero": 114
+        },
+        "uniform": {
+          "even": 54,
+          "odd": 62,
+          "directions": 1024,
+          "zero": 25,
+          "mean": "837/256",
+          "variance": "177767/65536",
+          "variance_zero_bound": "177767/878336",
+          "both_directions_zero": 0
+        }
+      }
+    },
+    {
+      "n": 4096,
+      "seed": 271,
+      "residues": [
+        7,
+        5
+      ],
+      "profiles": {
+        "structured": {
+          "even": 32,
+          "odd": 32,
+          "directions": 1024,
+          "zero": 773,
+          "mean": "1",
+          "variance": "1971/512",
+          "variance_zero_bound": "1971/2483",
+          "both_directions_zero": 522,
+          "forced_bidirectional_zeros": 512
+        },
+        "same_child_counts": {
+          "even": 32,
+          "odd": 32,
+          "directions": 1024,
+          "zero": 363,
+          "mean": "1",
+          "variance": "477/512",
+          "variance_zero_bound": "477/989",
+          "both_directions_zero": 148
+        },
+        "uniform": {
+          "even": 62,
+          "odd": 60,
+          "directions": 1024,
+          "zero": 18,
+          "mean": "465/128",
+          "variance": "51615/16384",
+          "variance_zero_bound": "37/192",
+          "both_directions_zero": 2
+        }
+      }
+    },
+    {
+      "n": 65536,
+      "seed": 17,
+      "residues": [
+        6,
+        8
+      ],
+      "profiles": {
+        "structured": {
+          "even": 512,
+          "odd": 512,
+          "directions": 16384,
+          "zero": 12288,
+          "mean": "16",
+          "variance": "6393371/8192",
+          "variance_zero_bound": "6393371/8490523",
+          "both_directions_zero": 8192,
+          "forced_bidirectional_zeros": 8192
+        },
+        "same_child_counts": {
+          "even": 512,
+          "odd": 512,
+          "directions": 16384,
+          "zero": 0,
+          "mean": "16",
+          "variance": "123029/8192",
+          "variance_zero_bound": "123029/2220181",
+          "both_directions_zero": 0
+        },
+        "uniform": {
+          "even": 998,
+          "odd": 1019,
+          "directions": 16384,
+          "zero": 0,
+          "mean": "508481/8192",
+          "variance": "3685100415/67108864",
+          "variance_zero_bound": "3685100415/262238027776",
+          "both_directions_zero": 0
+        }
+      }
+    },
+    {
+      "n": 65536,
+      "seed": 71,
+      "residues": [
+        7,
+        13
+      ],
+      "profiles": {
+        "structured": {
+          "even": 512,
+          "odd": 512,
+          "directions": 16384,
+          "zero": 12288,
+          "mean": "16",
+          "variance": "3194141/4096",
+          "variance_zero_bound": "3194141/4242717",
+          "both_directions_zero": 8192,
+          "forced_bidirectional_zeros": 8192
+        },
+        "same_child_counts": {
+          "even": 512,
+          "odd": 512,
+          "directions": 16384,
+          "zero": 0,
+          "mean": "16",
+          "variance": "122939/8192",
+          "variance_zero_bound": "122939/2220091",
+          "both_directions_zero": 0
+        },
+        "uniform": {
+          "even": 989,
+          "odd": 1061,
+          "directions": 16384,
+          "zero": 0,
+          "mean": "1049329/16384",
+          "variance": "15373834527/268435456",
+          "variance_zero_bound": "15373834527/1116465184768",
+          "both_directions_zero": 0
+        }
+      }
+    },
+    {
+      "n": 65536,
+      "seed": 271,
+      "residues": [
+        2,
+        12
+      ],
+      "profiles": {
+        "structured": {
+          "even": 512,
+          "odd": 512,
+          "directions": 16384,
+          "zero": 12288,
+          "mean": "16",
+          "variance": "6392235/8192",
+          "variance_zero_bound": "6392235/8489387",
+          "both_directions_zero": 8192,
+          "forced_bidirectional_zeros": 8192
+        },
+        "same_child_counts": {
+          "even": 512,
+          "odd": 512,
+          "directions": 16384,
+          "zero": 0,
+          "mean": "16",
+          "variance": "62065/4096",
+          "variance_zero_bound": "62065/1110641",
+          "both_directions_zero": 0
+        },
+        "uniform": {
+          "even": 1029,
+          "odd": 1009,
+          "directions": 16384,
+          "zero": 0,
+          "mean": "1038261/16384",
+          "variance": "15123692039/268435456",
+          "variance_zero_bound": "15123692039/1093109596160",
+          "both_directions_zero": 0
+        }
+      }
+    }
+  ]
+}

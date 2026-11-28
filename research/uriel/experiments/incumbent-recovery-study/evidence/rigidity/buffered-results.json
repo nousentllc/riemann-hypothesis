@@ -1,0 +1,21 @@
+{
+  "geometry": {
+    "label_instances": 54,
+    "orbits_by_type": {
+      "whole": 2016,
+      "reservoir": 5472,
+      "split_root": 1008,
+      "split_child": 1008,
+      "split_grandchild": 504,
+      "full_leaf": 612
+    },
+    "hole_share": "1/128",
+    "finite_normalized_exposure": "45/256 - 1/(4n)"
+  },
+  "likelihood": {
+    "population": 11,
+    "panels": 140,
+    "patterns": 5080,
+    "largest_observed_likelihood_ratio": "1000000/531441"
+  }
+}
