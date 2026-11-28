@@ -1,8 +1,10 @@
 # Can a fresh research agent use what we learned from Lean?
 
+> **Archive navigation.** References to files outside this Git branch are shown as local source paths or labeled as unavailable here. The [original snapshot](https://github.com/nousentllc/riemann-hypothesis/tree/248c8f4838155354c024a6224690245067edb102/research/uriel/portfolio/publication-archive) retains the original link markup.
+
 **Decision proposal · 24 November 2026.** The proposed pilot has no model results. Its purpose is to decide whether to retain a specific working method in the Uriel research system. The intervention is an external research aid that a fresh session can receive or retrieve.
 
-The existing reader study established that some model configurations can distinguish settled and unsettled records on two finite panels. Sol High answered both 304-item panels as licensed. The experiment below asks whether providing a method changes what the *same* agent can establish on unfamiliar problems, especially when it must decide which evidence to get next. [Previous reader study](../flagship-reader-paper/README.md)
+The existing reader study established that some model configurations can distinguish settled and unsettled records on two finite panels. Sol High answered both 304-item panels as licensed. The experiment below asks whether providing a method changes what the *same* agent can establish on unfamiliar problems, especially when it must decide which evidence to get next. **Previous reader study** (local archive path: `../flagship-reader-paper/README.md`)
 
 ## 1. Develop the method on real mathematics
 
