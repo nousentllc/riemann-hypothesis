@@ -1,0 +1,23 @@
+{
+  "elapsed_seconds": 3.657769916811958,
+  "full_lean_build": false,
+  "input_sha256": {
+    "PREREGISTRATION.md": "c82f65a51680126cb87b5f295edfdc6a9db0d46642831e220e4886b7466855ff",
+    "environment-failure.txt": "972df22d7202a6accfe429957f9df0fae28f80d1fc461559b0195ed5a9001371",
+    "mechanisms.py": "6c052960e141acaf1977038d87ddd919c7fdff06595cded4fff93480ed2da76b",
+    "requirements.txt": "79a0d9e124b5aa5f29999dea50caf1666427672b5968d8ae619be88980db9f78",
+    "run.py": "0b527b76b5f4c532f16b4fa2026f4b984aa571e23ea3e5bdc7514e9b5bd61f5b",
+    "source_audit.py": "7b9465c42321a91d0a70aeb774023688edf6a85688b5719fa7362a0f995142b4",
+    "test_suite.py": "c3a7735cc74222500e359c3f912697207da69ac676ed4b746a8a02b96152071b"
+  },
+  "kernel_replay": false,
+  "numpy": "2.2.4",
+  "platform": "macOS-27.0.1-arm64-arm-64bit",
+  "preregistration_commit": "9525c5b",
+  "python": "3.12.9 | packaged by Anaconda, Inc. | (main, Feb  6 2025, 12:55:12) [Clang 14.0.6 ]",
+  "research_parent": "08188ff0c6dd02dfec0bd65d30765862e9db56b7",
+  "scipy": "1.18.0",
+  "source_pin": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "started_utc": "2026-11-22T18:53:30.154155+00:00",
+  "test_exit_code": 1
+}
