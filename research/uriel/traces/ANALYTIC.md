@@ -107,11 +107,10 @@ This centers the kernel in the favorable logarithmic window. Explicit Chernoff-s
 
 The key inequality is obtained from `|g|+g=2 max(g,0)<=2R` **on the window**. It does not assume g itself is nonnegative. After incorporating tails and the weighted mass estimate, `landau_window_key` gives a fixed sigma>2 and C such that, for every eta>0, arbitrarily large U admit a k>=U with, simultaneously for every real t,
 
-$$
-|A_k(\sigma+it)|+\operatorname{Re}A_k(\sigma)
+```math
+|A_k(\sigma+it)|+\mathrm{Re}A_k(\sigma)
 \le \frac{C e^{\eta U}}{(\sigma-\theta)^k}.
-$$
-
+```
 This norm-plus-real-part combination is how a one-sided upper bound on g constrains complex singularities despite potentially large negative values.
 
 Sources: `LandauTheorems/WindowHypUOfWindowHyp.lean` lines 29–56; `IteratedDerivLaplace.lean` lines 48–105; `LandauCoeff.lean` lines 10–28; `landauWindowIneq.lean` lines 27–111; `landauTails.lean` lines 80–131; `landauWindow.lean` lines 40–73.
