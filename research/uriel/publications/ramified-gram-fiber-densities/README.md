@@ -6,6 +6,8 @@ At valuation 4k, the six-square form over the integers of Q₂(√2) has two nor
 
 ## Paper and evidence
 
+**Version 1.1.** The paper now includes a full bibliography, earlier attribution of the upstream formalization, and a fuller AI disclosure. The corrected ZIP records the original source dependencies by path and hash. Obtain those sources and compiled artifacts separately. [Component licenses](LICENSE.md) · [Original source notice](NOTICE.md).
+
 - [Paper PDF](Ramified_Gram_Fiber_Densities.pdf) with 41 numbered research pages, including the mathematical appendices.
 - [Single editable LuaLaTeX source](Ramified_Gram_Fiber_Densities.tex) with the embedded Nous logo.
 - [Full reproducibility ZIP](Nous_Ramified_Gram_Fiber_Densities.zip) · [SHA-256](Nous_Ramified_Gram_Fiber_Densities.zip.sha256).

@@ -50,8 +50,8 @@
 {\fontsize{30}{35}\selectfont\bfseries\color{ink}Exact dyadic densities\par for a ramified Gram fiber}\par\vspace{.23in}
 \begin{minipage}{.87\linewidth}\centering\Large Two density classes for six squares over $\mathbb Q_2(\sqrt2)$\end{minipage}
 \par\vspace{.35in}\resizebox{!}{1.12in}{\directlua{nousLogo()}}
-\par\vspace{.45in}{\large Justin Candler}\par With Uriel, AI research assistant\par Publication manuscript $\cdot$ 28 November 2026\end{center}\vfill
-\begin{center}\sffamily Studies in the Lean Siegel--Weil formalization\par\small Original revision \code{40e56bab}\end{center}
+\par\vspace{.45in}{\large Justin Candler}\par With Uriel, AI research assistant\par Version 1.1 $\cdot$ 28 November 2026\end{center}\vfill
+\begin{center}\sffamily Local calculations in the Lean formalization of RH\\by Levent Alp\"oge with Claude\par\small \href{https://github.com/leanprover-community/riemann-hypothesis/tree/40e56bab026552e089d7afcfeff08d2defb9c005}{Original Lean tree, revision \code{40e56bab}}\end{center}
 \clearpage\section*{Abstract}
 
 For the six-square form over the integers of $K=\mathbb Q_2(\sqrt2)$, we determine the exact density of every target of valuation $4k$, for $k\ge1$. Writing the target as $4^k(a+b\pi)$ with $\pi^2=2$ and $a$ odd, the density is $2+2/256^k$ if $b$ is even and $2-2/256^k$ if $b$ is odd. Both values are realized. The class is first resolved at uniformizer depth $4k+2$, and the tube density is constant from that depth onward. At the preceding depth the two classes share one ball of density two.
@@ -68,6 +68,7 @@ The Lean validation covers the finite counts, cutoff and original-measure endpoi
 \clearpage\pagenumbering{arabic}
 \section{Main theorem and scope}
 \label{sec:unit-classification}
+This study uses the original Lean formalization of the Riemann hypothesis and Dirichlet GRH by Levent Alp\"oge with Claude~\cite{alpoge2026}. We use the original source tree at revision \code{40e56bab}, as preserved in the \href{https://github.com/leanprover-community/riemann-hypothesis/tree/40e56bab026552e089d7afcfeff08d2defb9c005}{Lean community repository}. The local calculation here concerns its rank-one regular Gram-fiber interface.
 For each positive integer $k$, there are exactly two original regular Gram-fiber masses on the shell of valuation $4k$. Both occur for every admissible fiber family. The rule uses one coefficient of the residual unit. Write $s=4^k u$, where $u=a+b\pi\in\mathcal O^\times$ and $\pi^2=2$. With $L$ the original Gaussian coordinate lattice, the theorem is
 \[
 m_{[s]}(L)=
@@ -495,21 +496,12 @@ For the companion family the signed deviation is $-2^{1-2v(s)}$, where $v(s)=4k$
 
 
 \subsection{Representation and density}
-O'Meara's dyadic classification of forms identifies isometry data, which helps compare lattices. His 1958 integral representation result treats the unramified dyadic base case. Beli proves a representation criterion for pairs of quadratic lattices over general dyadic local fields, including ramified fields. A representation criterion can settle whether a scalar is represented. Density measures how often the equation holds as its precision grows. Here both residual unit classes at valuation $4k$ are represented, and they have different densities and the same least stable depth.
-\begin{itemize}
-\item \href{https://doi.org/10.1073/pnas.39.9.969}{O'Meara, The Classification of Quadratic Forms over Local Fields (1953)}.
-\item \href{https://doi.org/10.2307/2372837}{O'Meara, Integral Representations of Quadratic Forms over Local Fields (1958)}.
-\item \href{https://arxiv.org/abs/1905.04552v2}{Beli, Representations of quadratic lattices over dyadic local fields}.
-\end{itemize}
+O'Meara's dyadic classification of forms~\cite{omeara1953} identifies isometry data, which helps compare lattices. His integral representation result~\cite{omeara1958} treats the unramified dyadic base case. Beli~\cite{beli2022} proves a representation criterion for pairs of quadratic lattices over general dyadic local fields, including ramified fields. A representation criterion can settle whether a scalar is represented. Density measures how often the equation holds as its precision grows. Here both residual unit classes at valuation $4k$ are represented, and they have different densities and the same least stable depth.
+
 
 \subsection{Four squares on the same ramified field}
-Thompson's four-square calculation is the closest comparison found in this review. Section~3.1 covers fields $\mathbb Q(\sqrt d)$ for $d\equiv2\pmod4$, including the $d=2$ case in Section~3.1.1. Its local factors use a finite primitive calculation and a sum of contributions from divided vectors. The residue field again has two elements. In four variables the tube denominator is $2^{3d}$ at uniformizer depth $d$ and the divisible part contracts by $(1/2)^4/(1/4)=1/4$ under one division by $\pi$. In six variables the denominator is $2^{5d}$ and the contraction is $1/16$. The field and Haar convention agree in this comparison. Changing the source rank changes the contraction. Our finite check at unit target one reproduces Thompson's depth-five count $2^{16}$, giving $2^{16}/2^{15}=2$ in four variables. The six-square calculation accounts separately for its own strata.
-\begin{itemize}
-\item \href{https://arxiv.org/pdf/1610.06935v2}{Thompson, The sum of four squares over real quadratic fields, §§3.1--3.1.1}.
-\item \href{https://www.jonhanke.com/Hanke--all_papers__as_of_2015-01-14/explicit-bounds-paper.pdf}{Hanke, Local densities and explicit bounds for representability by a quadratic form, §3}.
-\item \href{https://arxiv.org/abs/2407.09076v2}{He and Yang, Local densities of quadratic polynomials over non-dyadic fields and unramified dyadic fields}. The dyadic case assumes an unramified base over $\mathbb Q_2$. Our base has ramification index two.
-\item \href{https://arxiv.org/abs/1210.7894}{Cho, Group schemes and local densities of ramified Hermitian lattices in residue characteristic $2$}. The relative Hermitian extension is ramified over an unramified dyadic base, and the group-scheme density serves a different purpose from this scalar representation density.
-\end{itemize}
+Thompson's four-square calculation~\cite{thompson2024} is the closest comparison found in this review. Section~3.1 covers fields $\mathbb Q(\sqrt d)$ for $d\equiv2\pmod4$, including the $d=2$ case in Section~3.1.1. Its local factors use a finite primitive calculation and a sum of contributions from divided vectors. The residue field again has two elements. In four variables the tube denominator is $2^{3d}$ at uniformizer depth $d$ and the divisible part contracts by $(1/2)^4/(1/4)=1/4$ under one division by $\pi$. In six variables the denominator is $2^{5d}$ and the contraction is $1/16$. The field and Haar convention agree in this comparison. Changing the source rank changes the contraction. Our finite check at unit target one reproduces Thompson's depth-five count $2^{16}$, giving $2^{16}/2^{15}=2$ in four variables. The six-square calculation accounts separately for its own strata.
+Hanke~\cite[Section~3]{hanke2004} provides the framework for separating local solutions by reduction type and deriving density recurrences. He and Yang~\cite{heyang2024} treat quadratic polynomials over non-dyadic fields and over dyadic fields unramified over $\mathbb Q_2$. The base in our example has ramification index two. Cho~\cite{cho2016} studies a ramified relative Hermitian extension over an unramified dyadic base. The group-scheme local density there enters a mass formula for a Hermitian lattice, whereas our density counts scalar representations.
 The finite counting and descent belong to the established local-density tradition. This paper gives the precise six-variable shell law with least stable precision and a Lean-checked identification with the named lattice and normalized measure in the pinned formalization. The literature review establishes overlap in method and separates the inputs to each formula. Priority for the numerical density law remains open.
 \section{Verification and reproducibility}
 The endpoints for the main theorem are \code{UnitTransport.exact_range_at_exponent} and \code{UnitTransport.original}. The earlier square specialization is \code{RamDilate.original}. Its conclusion uses the original \code{hermScal} target and \code{latV} lattice at the named place. Its hypotheses supply an integer index with proof of positivity, an integral unit, normalized scalar Haar, and an admissible family. There is no extra counting, continuity, or field-isomorphism assumption in the theorem exposed to the reader. The following guide distinguishes similar-looking statements with different evidential roles.
@@ -542,6 +534,7 @@ The queried endpoint axiom reports contain \code{propext}, \code{Classical.choic
 The replay covers the arbitrary-unit extension under the pinned environment, including the full residue partition, sharp cutoff, shell identification and original-measure range. The selected original imports sit over prebuilt Lean and Mathlib dependencies. The experiment does not rebuild the entire RH archive from source. A person validating what was proved should check the literal statement, the normalization and the correspondence with the paper as well as the kernel status. A type-correct theorem about another lattice or normalization could pass the same checker.
 
 \subsection{Reproducing the release}
+The release records the original dependencies by path and hash. The upstream source and compiled dependencies are obtained separately. The manuscript and original documentation are released under CC BY 4.0 and the original study software under the MIT License. The accompanying component notice identifies the scope of each license.
 The ZIP provides one editable LuaLaTeX source, its PDF, all 120 study modules, the independent all-address control and its exact output, and the replay and build receipts. The source embeds the original Nous PNG. Build it three times with LuaLaTeX to settle cross-references and the table of contents.
 
 Run \code{python3 verify.py} from the extracted ZIP to regenerate the finite controls and match the source and manuscript hashes against their receipts. The formal replay command in the accompanying README uses the pinned Lean SDK, built Mathlib, original dependency objects and original source tree. From an empty working directory the script elaborates each study module, invokes the standalone kernel checker on its object, and records the axioms at the requested declarations. Reproducing the separate selected-original-import declaration audit is an additional step described in the square-dilate release.
@@ -788,8 +781,54 @@ The total contribution from order eight is therefore
 \]
 This also gives a concrete meaning to zero \emph{net} contribution. Sixteen nonzero order-eight terms sum to zero among themselves. Eliminating the whole character order or dropping all terms with $v$ even would generally be a different operation. The independent script checks the analogous cancellations at orders sixteen and thirty-two by exact arithmetic in the cyclotomic basis.
 
+\clearpage
+\begingroup\small
+\begin{thebibliography}{9}
+\bibitem{alpoge2026}
+Levent Alp\"oge, with Claude. \emph{A remark by Levent Alp\"oge}. 20 November 2026.
+\href{https://alpo.ge/remark.pdf}{Author's announcement and links to the original Lean archive}.
+\href{https://github.com/leanprover-community/riemann-hypothesis/tree/40e56bab026552e089d7afcfeff08d2defb9c005}{Community mirror of the original Lean tree, revision 40e56bab}.
+
+\bibitem{beli2022}
+Constantin-Nicolae Beli. Representations of quadratic lattices over dyadic local fields.
+\emph{arXiv preprint} \href{https://arxiv.org/abs/1905.04552v2}{arXiv:1905.04552v2}, 2022.
+\href{https://doi.org/10.48550/arXiv.1905.04552}{doi:10.48550/arXiv.1905.04552}.
+
+\bibitem{cho2016}
+Sungmun Cho. Group schemes and local densities of ramified hermitian lattices in residue characteristic 2. Part I.
+\emph{Algebra \& Number Theory} \textbf{10}(3) (2016), 451--532.
+\href{https://doi.org/10.2140/ant.2016.10.451}{doi:10.2140/ant.2016.10.451}.
+
+\bibitem{hanke2004}
+Jonathan Hanke. Local densities and explicit bounds for representability by a quadratic form.
+\emph{Duke Mathematical Journal} \textbf{124}(2) (2004), 351--388.
+\href{https://doi.org/10.1215/S0012-7094-04-12424-8}{doi:10.1215/S0012-7094-04-12424-8}.
+
+\bibitem{heyang2024}
+Zilong He and Zichen Yang. Local densities of quadratic polynomials over non-dyadic fields and unramified dyadic fields.
+\emph{arXiv preprint} \href{https://arxiv.org/abs/2407.09076v2}{arXiv:2407.09076v2}, 2024.
+\href{https://doi.org/10.48550/arXiv.2407.09076}{doi:10.48550/arXiv.2407.09076}.
+
+\bibitem{omeara1953}
+O.\ T.\ O'Meara. Characterization of quadratic forms over local fields.
+\emph{Proceedings of the National Academy of Sciences} \textbf{39}(9) (1953), 969--972.
+\href{https://doi.org/10.1073/pnas.39.9.969}{doi:10.1073/pnas.39.9.969}.
+
+\bibitem{omeara1958}
+O.\ T.\ O'Meara. The integral representations of quadratic forms over local fields.
+\emph{American Journal of Mathematics} \textbf{80}(4) (1958), 843--878.
+\href{https://doi.org/10.2307/2372837}{doi:10.2307/2372837}.
+
+\bibitem{thompson2024}
+Katherine Thompson. The sum of four squares over real quadratic number fields.
+\emph{International Journal of Number Theory} \textbf{20}(1) (2024), 47--72.
+\href{https://doi.org/10.1142/S1793042124500039}{doi:10.1142/S1793042124500039}.
+See also \href{https://arxiv.org/pdf/1610.06935v2}{the author's preprint}, Sections 3.1--3.1.1.
+\end{thebibliography}
+\endgroup
+
 \clearpage\section*{Human and AI collaboration}
-Justin Candler directed the research, selected the proof questions and controls, and commissioned and guided this consolidation. Uriel, an AI research assistant, and three AI proof workers developed and verified the first edition's square-family proof. Uriel developed the companion proof, including the coefficient-cylinder lift, sharpness theorem and named-place measure transport, executed the replay and independent finite controls, and prepared the third edition. Uriel developed and checked the arbitrary-unit classification in the previous study. For this manuscript Uriel integrated the proofs, compared the literature and verified the accompanying artifacts. A separate ChatGPT editorial rewrite supplied the short coefficient derivation and the general valuation-stratum explanation. Uriel checked the derivation and integrated it into the full manuscript. Independent human mathematical review remains open. The inherited local bridge is credited separately. The underlying Lean proof is Levent Alpöge's, with Claude.
+Justin Candler directed the research, selected the proof questions and controls, and commissioned and guided this consolidation. Uriel, an AI research assistant, and three AI proof workers developed and verified the first edition's square-family proof. Uriel developed the companion proof, including the coefficient-cylinder lift, sharpness theorem and named-place measure transport, executed the replay and independent finite controls, and prepared the third edition. Uriel developed and checked the arbitrary-unit classification in the previous study. For this manuscript Uriel integrated the proofs, compared the literature and verified the accompanying artifacts. A separate ChatGPT editorial rewrite supplied the short coefficient derivation and the general valuation-stratum explanation. Uriel checked the derivation and integrated it into the full manuscript. Uriel and the proof workers operated in OpenAI Codex. The editorial pass used ChatGPT. Exact model identifiers, versions and settings for these contributions were not recorded in the reproducibility materials. Independent human mathematical review remains open. The inherited local bridge is credited separately. The underlying Lean proof is Levent Alpöge's, with Claude.
 
 \section*{Source and study archive}
 \begingroup\small

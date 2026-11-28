@@ -46,6 +46,7 @@
   "original_objects": 1038,
   "original_source_blobs": 1038,
   "pre_edit_source_sha256": "95a6d4ae698d0fda691afd65690ee09a92c3d76d91fc36669e0ec813c2e0138c",
+  "pre_v1_1_source_sha256": "2e19c33a9460fdd702ab4fdd3e8940ccf2ef46127d5a5937174548b7a62672b2",
   "proof_receipt_sha256": "310d63917243d24833b3c97f6943f412a0901ee96b00f71cccb2a8cc8f923e6e",
   "rebuilt_and_kernel_checked": [
     "AllDepth",
@@ -173,5 +174,6 @@
     "UnitResidue"
   ],
   "scope": "The replay checked the study and four negative controls with original dependencies supplied as pinned artifacts.",
-  "source_sha256": "2e19c33a9460fdd702ab4fdd3e8940ccf2ef46127d5a5937174548b7a62672b2"
+  "source_sha256": "490cecff78ec626af2b1dc44e14a7ef573f8cba0d43feb5f60d592345b6f09ad",
+  "version_1_1_note": "Bibliography, disclosures and redistribution scope revised. Lean statements, proof sources and recorded proof results are unchanged. No additional Lean replay was run for these editorial and packaging changes."
 }
