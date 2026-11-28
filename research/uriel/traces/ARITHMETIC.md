@@ -51,12 +51,11 @@ $$
 
 `ChCore.lean:283–340`, the lemma `CharacterBalanceMoves.core`, uses finite-character orthogonality and thick/thin weight controls to obtain
 
-$$
+```math
 n_T m b\frac{\delta_2}{2}\,Y
-\le \operatorname{Err}+\frac{2n_Tmb}{x},\qquad
+\le \mathrm{Err}+\frac{2n_Tmb}{x},\qquad
 \delta_2=\frac{n_2}{n}.
-$$
-
+```
 The `Y` supplied later is the retained prime-sum combination minus explicit remainder and movement errors. The normalizer is positive only after the cardinality, rank and positive-weight conditions are supplied.
 
 Set `δ1=n_T/n` for this displayed identity only; this is the actual density, not the source’s `Scale.delta1`. A direct algebraic rearrangement of the actual bracket gives
@@ -106,10 +105,9 @@ It absorbs division by `δ2` using `δ2≥x^{-ε}`, obtaining a bound with facto
 
 `ChainSlopeWindows/LevelOfCongruence.lean:175–200` proves `each_unit_bound_statement` by combining a lower bound on the weighted slope, a bound on its variation, a count bound for `T`, upper/lower quotient slopes, and the loss estimates. `PChain.lean:613–672` then proves `errX5at_le`, bounding all terms by `x^{(eDiv+eLoss+3)ε} ErrText`, where
 
-$$
-\operatorname{ErrText}=n_Ta(1+m^2/k)+m(B_0+N_c).
-$$
-
+```math
+\mathrm{ErrText}=n_Ta(1+m^2/k)+m(B_0+N_c).
+```
 The `BNBounds` conditions substitute explicit estimates for `B0,Nc`, producing `B` above. This is the visible point where arithmetic/cohomological defects are converted into the final analytic budget.
 
 ## A genuine source-level counterexample to a weaker explanation
