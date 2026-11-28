@@ -1,0 +1,175 @@
+% !TeX program = lualatex
+\documentclass[12pt,letterpaper]{article}
+\usepackage{iftex}\RequireLuaTeX
+\usepackage[margin=.93in,headheight=15pt,headsep=13pt,footskip=25pt]{geometry}
+\usepackage{fontspec}\setmainfont{Latin Modern Roman}\setsansfont{Latin Modern Sans}
+\usepackage{amsmath,amssymb,booktabs,array,tabularx,microtype,xcolor,fancyhdr,hyperref,bookmark}
+\definecolor{ink}{HTML}{182F41}\definecolor{accent}{HTML}{176060}\definecolor{muted}{HTML}{41596A}
+\hypersetup{colorlinks=true,urlcolor=accent,linkcolor=accent,pdftitle={Which primes carry the allowance?},pdfauthor={Uriel Research}}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcommand{\orig}[3]{\href{https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/#1.lean\#L#2}{#3}}
+\newcommand{\para}[1]{\par\medskip\noindent\textbf{#1}\quad}
+\newcommand{\pagepart}[1]{\clearpage\section{#1}}
+\newcommand{\eff}{\mathrm{eff}}
+\newcommand{\gap}{\mathrm{ASK}-\mathrm{Ga}}
+\pagestyle{fancy}\fancyhf{}\fancyhead[L]{\small\sffamily\color{muted}Uriel Research}
+\fancyhead[R]{\small\sffamily\color{muted}Arithmetic witness studies}\fancyfoot[C]{\sffamily\small\thepage}
+\renewcommand{\headrulewidth}{.3pt}\setlength{\parindent}{0pt}\setlength{\parskip}{4pt}
+\setlength{\emergencystretch}{1.5em}\raggedbottom\linespread{1.025}
+\begin{document}
+\thispagestyle{plain}
+{\sffamily\small\color{accent}URIEL RESEARCH\hfill 22 NOVEMBER 2026}\par\vspace{14pt}
+{\Huge\bfseries\color{ink}Which primes carry the allowance?\par}\vspace{5pt}
+{\Large\color{muted}Counting what survives on the chosen arithmetic family}\par\bigskip
+
+\textbf{Abstract.} An upper bound in the arithmetic argument pays for every prime below a cutoff. Following its largest surviving summand backward reveals two quadratic sign tests, a set of discarded primes, and a varying set of retained points at each remaining prime. We derive the limiting weight of the points and primes that actually enter this summand. Under the original family hypotheses it is one quarter of the cutoff, uniformly across admissible indices at late scales. The family can change its number field at every scale. The decisive input is that the analytic estimates and the arithmetic exclusions concern the same field at that scale.
+
+\para{What changes quantitatively.} Write \(U\) for the scale of the global error budget and \(C_G\) for the family's fixed gain constant. Three stages in the argument give the following contributions from the same local offset.
+\begin{center}\begin{tabularx}{.96\linewidth}{@{}Yl@{}}
+\toprule
+Information retained when summing the offset & Charge divided by \(U\)\\\midrule
+All primes below the cutoff, all retained labels & \(2\log(4)\,C_G\)\\
+Actual prime class and service at each retained label & \(C_G/2+o(1)\)\\
+Same service, with the upstream unit coefficient & \(1/2+o(1)\)\\\bottomrule
+\end{tabularx}\end{center}
+The third line requires access to the local gain proof before it enlarges its constants. Each line concerns an \emph{allowance}. An upper bound can contain a positive summand even when the quantity it bounds is zero.
+
+\para{Evidence.} We give two analytic derivations, a kernel-replayed comparison on the same arithmetic data, and finite controls designed to disagree on every prime of a short interval. The full quarter-limit and its propagation are deductions in this paper. The package records the precise Lean statements checked and the measurements that can be reproduced. The original source is pinned at \texttt{40e56bab}. \href{https://github.com/nousentllc/riemann-hypothesis/pull/8}{Preceding bad-orbit study}.
+
+\pagepart{Counting on the same witness}
+Fix \(0<\varepsilon<1/52\). Beyond the thresholds of the chosen family take a scale \(x\) and an eligible index \(i\). Write \(D=D(x,i)\) for its host, \(T\) for its retained labels and \(N=|T|>0\). The number of lifts is \(m\), \(U=mNb\), and \(a=xb\). The two prime thresholds are
+\[
+ p_0=k^2x^{26},\qquad H=X'=\exp(x^{\varepsilon/3}),\qquad b'=a/H .
+\]
+The family rank window bounds \(k\) by a power of \(x\), so eventually \(p_0<H\). The host conductor is \(M=Q_Sqd\). Its auxiliary primes \(q,d\), its value of \(Q_S\), and its set \(T\) can depend on \(x,i\).
+\orig{Formalism/LocalRingCardinality/DataParams₂}{29}{Scale definitions} and
+\orig{Development/AbelianVarietyTheory/Definitions/GlobalTwisting/PairRowIffQdRows}{28}{rank and conductor windows}.
+
+Let \(I\) contain every prime \(p_0\le p<H\) of the designated inert class. The family's finite prime set covers that interval. Let \(S\subset I\) consist of members outside the family's drop set, and let \(T_p\subseteq T\) be the labels served at \(p\in S\). We need three log-weights,
+\[
+ \Theta_I=\sum_{p\in I}\log p,\qquad
+ \Theta_S=\sum_{p\in S}\log p,\qquad
+ \Theta_{\eff}=\sum_{p\in S}\frac{|T_p|}{N}\log p .
+\]
+A prime enters the first sum by an arithmetic sign condition. It enters the second by a decision made for this family. It contributes a fraction of its weight to the third. Keeping the three expressions distinct lets us check each loss independently. \orig{Formalism/LocalToGlobal/GlobalTheory/SuppSat}{26}{Prime coverage, service and the local cost}.
+
+\para{Where existence enters.} The family retains both a row certifying arithmetic restrictions and boxes certifying zero-free regions. Each may have its own auxiliary scale \(Y\in[x^{1/J},x]\). Their common argument is \(D(x,i)\), so their bounds on its characters and conductors can be used together. Eventual statements can be intersected by taking a maximum of thresholds. Choosing a convenient small discriminant and then borrowing the boxes for the family's discriminant would break the argument. \orig{Formalism/SharpRestriction/GlobalSchurBounds/MainIn}{12}{Family contracts} and \orig{Formalism/SharpRestriction/GlobalSchurBounds/MainSup}{48}{simultaneous use at one index}.
+
+\para{Three possible outcomes.} The surviving weight could vanish, approach the joint sign-class proportion, or remain indeterminate because the field changes too quickly. Removing the first possibility requires a lower bound. Removing the third requires a rate uniform in the moving conductor. A count on a list of concrete fields alone can supply neither.
+
+\pagepart{Why the moving prime class has weight one quarter}
+Away from \(M\), the inert class requires both quadratic signs to be negative. For \(r=q,d\), let \(\chi_r\) be the primitive quadratic character of discriminant \(-r\). At an odd prime away from \(M\), its value is the symbol \((-r/p)\). The two auxiliary primes are distinct and \(3\bmod 4\). Their nontrivial Legendre characters have prime conductors. The product has conductor \(qd\), since the Chinese remainder theorem permits a nonresidue at either factor and 1 at the other. The class indicator is therefore
+\[
+ \frac14(1-\chi_q(p)-\chi_d(p)+\chi_q(p)\chi_d(p)).
+\]
+The single principal component supplies the quarter. This coefficient follows from the indicator identity once the three other components have negligible means. \orig{Formalism/LocalRingCardinality/HostCls}{111}{Host classification} and \orig{Formalism/SharpRestriction/GlobalSchurBounds/Joints}{982}{the three character functions}.
+
+The boxes for the same host exclude real zeros in \(1-1/400<\beta<1\) for these primitive representatives. For conductor one the exceptional-zero premise is vacuous. The original unsmoothed estimate supplies uniform \(A,c>0\) for this width. Set \(t=\log H\). From \(\log M\le 2x^{\varepsilon/5}(\log x)^2=O_\varepsilon(t^{3/5}(\log t)^2)\), one may take \(\lambda=t^{2/3}\ge\max(1,\log(qd))\) eventually. For each of the four characters the resulting bound is
+\[
+ \left|H^{-1}\sum_{n\le H}\Lambda(n)\chi(n)-\mathbf1_{\chi=1}\right|
+ \le A(t+\lambda)^2e^{-ct/(\lambda+\sqrt t)}
+ \le E(t):=4At^2e^{-(c/2)t^{1/3}} .
+\]
+Thus each character error is small at the actual cutoff, with constants chosen before the host. \orig{Development/AutomorphicArithmetic/MeanSquareBounds/PsiThin}{385}{Unsmoothed prime sum} and \orig{Formalism/PeriodIntegrals/ExplicitFormula}{5}{its centering convention}.
+
+Each prime \(p\le\sqrt H\) contributes at most \(\log H\) over its higher powers. Primes dividing \(M\) cost at most \(\log M\), a possible prime at the upper endpoint costs \(\log H\), and the discarded prefix costs at most \(p_0\log p_0\). The projector is bounded by one even at its ramified arguments. We obtain
+\[
+ \left|\frac{\Theta_I}{H}-\frac14\right|
+ \le E(t)+\frac{\log H}{\sqrt H}
+       +\frac{\log M+\log H+p_0\log p_0}{H}.
+\]
+Every error on the right tends to zero uniformly over eligible \(i\). Even deliberate splitting at small primes is compatible with this result. Its weight below the polynomial lower cutoff disappears after division by \(H\).
+
+\pagepart{Paying for discarded primes and omitted points}
+Put \(g=100Kx^{-1+4\varepsilon}\) and \(\theta=x^{-\varepsilon}\), with the nonnegative family constant \(K\) large enough for the original windows. For a dropped prime below \(H\), the high class is impossible because its defining inequality puts it above \(X''\ge H\). The remaining dropped primes belong to two disjoint classes. The original first-class estimates pay for short orders and a band around a prime power. Using one lift and one label in their universal bound and the two allocated budgets gives
+\[
+ \sum_{p\ {\rm first},\ p\in I}\frac{\log p}{p}\le \frac{g}{2x}.
+\]
+The second-class estimate shares the same arithmetic constant and uses the selected signal \(\sigma>\theta\). Its allowance gives a reciprocal-weight sum at most \(x^{-9}/(2+4\theta)\). Since \(p<H\), each \(\log(p)/H\) is at most \(\log(p)/p\). \orig{Formalism/LocalToGlobal/GlobalTheory/LossRequirementsOfSmallShares}{86}{Loss requirements}.
+
+At a served prime, every omitted label is bad there. Write \(B\) for the count of bad labels over eligible primes, weighted by \(\log p/p\). This is a one-sided containment, sufficient to give
+\[
+ 0\le\frac{\Theta_S-\Theta_{\eff}}H
+   =\frac1N\sum_{p\in S}\frac{\log p}{H}|T\setminus T_p|
+   \le \frac{B}{N}\le x^{-2+\varepsilon}.
+\]
+In particular, no all-good assumption has been imposed. Combining the two disjoint ways of losing weight gives the finite comparison replayed in Lean,
+\[
+ 0\ \le\ \frac{\Theta_I-\Theta_{\eff}}H
+ \ \le\ \frac{g}{2x}+\frac{x^{-9}}{2+4\theta}+x^{-2+\varepsilon}.
+\]
+\orig{Formalism/SizeWindowBrackets/PrimeClassLossHypothesesSatisfiable}{86}{Coverage and bad-mass contract}.
+All three terms tend to zero. The lower and upper bounds on the full class now squeeze the effective sum to the same quarter. The comparison controls even an adversarial concentration of omissions among the heaviest eligible primes.
+
+\para{A second check on the first class.} Its small-order primes occupy two residue classes in a power-of-two modulus. Its near-power primes split into a narrow interval for exponent one and primes at most \(\sqrt{(1+\rho)H}\) for higher exponents. These facts give an independent counting argument within the same source framework. The attached drop trace works out the endpoint and residue counts. The leading-limit conclusion above uses the original budget and does not require those refinements.
+\pagepart{Recovering a sharp count from three smooth values}
+The same family's smoothed character estimates give a second route to the quarter. Define nonnegative weights \(a_n=\Lambda(n)(1-\chi_q(n))(1-\chi_d(n))/4\), and for fixed host put
+\[
+ F(y)=\sum_{n\le y}a_n(y/n-1).
+\]
+Each summand is a hinge \(a_n(y-n)_+/n\). Thus \(F\) is convex. For \(y\ge H/3\) the source's bound on each of the four smoothed components yields
+\[
+ F(y)=\tfrac14 y\log y+\beta_{x,i}y+e(y),\qquad
+ |e(y)|\le y\eta_x,\qquad \eta_x=e^{-c_6x^{\varepsilon/8}}.
+\]
+The principal component contributes \(y\log y\) and a linear term. Each nonprincipal term differs from its controlled function by \(y\) times a logarithmic derivative at one. All four signs have absolute coefficients \(1/4\). The real linear coefficient may depend on the host. All three measurements must therefore use the same host. \orig{Development/AbelianVarietyTheory/Definitions/GlobalTwisting/ThinScalesIffHostBound}{61}{Smoothed estimate} and \orig{Formalism/SharpRestriction/GlobalSchurBounds/GeneralLinearActions/FiltrationCocycleLiftCriterion}{15}{normalizations}.
+
+Choose \(h=rH,\ 0<r\le 1/2\). For \(P_{<}=\sum_{n<H}a_n\) and \(P_{\le}=\sum_{n\le H}a_n\), one-sided derivatives give \(P_{<}=HF'_-(H)-F(H)\) and \(P_{\le}=HF'_+(H)-F(H)\). Convexity gives
+\[
+ \frac{F(H)-F(H-h)}h-\frac{F(H)}H
+ \le \frac{P_{<}}H\le\frac{P_{\le}}H
+ \le \frac{F(H+h)-F(H)}h-\frac{F(H)}H .
+\]
+Both endpoints annihilate \(\beta_{x,i}y\). Their main terms are \(\ell(r)/4,u(r)/4\), where
+\[
+ \ell(r)=-\frac{1-r}{r}\log(1-r),\qquad
+ u(r)=\frac{1+r}{r}\log(1+r).
+\]
+Integrating \(1/s\) gives \(1-r\le\ell(r)\le1\le u(r)\le1+r\). Errors are bounded by \(2(1-r)\eta_x/r\) and \(2(1+r)\eta_x/r\). Taking \(r=\sqrt{\eta_x}\) eventually gives \(P_{<}/H=1/4+O(\sqrt{\eta_x})\). The prime-power and support corrections in section 2 still apply.
+
+\para{What resolution costs.} With exact values the width of the normalized bracket is \(\sum_n(a_n/n)(h-|n-H|)_+/h\). Thus all uncertainty is localized to one short interval. At an integer cutoff with \(h\le1\), only a possible atom at the boundary separates the strict and inclusive masses. With approximate values, shortening the interval increases the error through \(1/r\). The smoothed and unsmoothed derivations share their arithmetic inputs.
+
+\pagepart{Controls that can give opposite answers}
+We fixed \(q=163\), the first eligible prime giving the negative sign at all eight primes \(7,11,13,17,19,23,29,31\). For \(d\) we required the original congruence \(7\bmod16\), positive \((-d/p)\) at \(3,5\) and \(q\), and one uniform sign on the eight test primes. The initial search through \(500{,}000\) found the all-negative case only. Extending the same search through \(5{,}000{,}000\) found the first all-positive case at \(711{,}959\). These are explicit character pairs with local row conditions. For the numerical support we excluded \(2,q,d\). These controls have no selected-family \(Q_S\), boxes, service map or \(p_0\).
+
+\begin{center}\begin{tabular}{@{}r rr rr@{}}
+\toprule
+& \multicolumn{2}{c}{\(d=711{,}959\)} & \multicolumn{2}{c}{\(d=25{,}799\)}\\
+Strict cutoff & count & \(\Theta/H\) & count & \(\Theta/H\)\\\midrule
+\(1{,}000\)&46&0.271252&46&0.247030\\
+\(10{,}000\)&317&0.256249&318&0.254292\\
+\(100{,}000\)&2,396&0.248774&2,390&0.248102\\
+\(1{,}000{,}000\)&19,649&0.249951&19,503&0.248031\\\bottomrule
+\end{tabular}\end{center}
+In the short interval the double-negative counts are zero of eight and eight of eight. Even the equal counts at \(1{,}000\) produce distinguishable log-weights. At one million, including all projected von Mangoldt atoms gives \(0.24997836\) and \(0.24808475\). The \(r=1/64\) secants enclose these values in \([0.248030,0.251979]\) and \([0.246218,0.250130]\), rounded to six decimal places. This checks whether the smoothing and endpoint conventions reconstruct the intended object. The table gives no empirical threshold for a field selected by the proof.
+
+\para{Exact failures as controls.} We enumerated 729 configurations of nonnegative integer weights and added linear slopes, using rational arithmetic with support below, at and above the cutoff. Every bracket held. With mass \(-1\) at \(n=4\), \(H=5\), \(h=2\), the lower secant is \(-3/8\) while the strict mass is \(-1\). With the negative atom at 6 the upper secant is \(-5/12\) while the inclusive mass is zero. Positivity supplies the direction of both inequalities. The prime runs separately compare residue tables with modular exponentiation at every tested prime. Their log-weights are floating-point measurements. The tests publish counts, support fingerprints and executable checks.
+
+\pagepart{Where the global coefficient was enlarged}
+The family compares requested prime weight with credited gain. Write their difference as \(\Delta=\gap\). On the high inert band \(p_0\le p<H\), the local expression \(\mathrm{loG}\) includes \(C_G b'/x\). It is summed at each served point and lift, weighted by \(2\log p\). Retaining that support gives an exact identity for this part of the upper bound,
+\[
+ \frac{1}{U}\sum_{p\in S}2m|T_p|\log p\, C_G\frac{b'}x
+ =2 C_G\frac{\Theta_{\eff}}H\ \longrightarrow\ \frac{C_G}{2}.
+\]
+The published estimate enlarges \(|T_p|\) to \(N\), allows every prime through the cutoff, and uses \(\sum_{p\le H}\log p\le H\log4\). For fixed \(C_G>0\), the new leading allowance is \(1/(4\log4)\simeq18.03\%\) of the earlier one. Both estimates can dominate the same gap.
+\orig{Formalism/SizeWindowBrackets/ChainSlopeWindows/AdmissibleSchurLemma}{530}{Prime-sum majorant} and \orig{Formalism/SizeWindowBrackets/ChainSlopeWindows/AdmissibleSchurLemma}{837}{enlargement of the served-point count}.
+
+\para{Checking the rest of the inequality.} Write \(Q_2=C_G b'/x+R\) in the source's high-band majorant. Its four remaining contributions are nonnegative and \(HR\le gb\). Since \(R\) is independent of \(p\), it uses the same support as the leading term. The nine other ordinary components cost at most \(9gU\). The omission term costs \(4maB\le4x^{-1+\varepsilon}U\). Before applying the all-prime majorant, these give, on the concrete family data,
+\[
+ \Delta/U\ \le\ 2(C_G+g)\Theta_{\eff}/H + 9g+4maB/U .
+\]
+Using \(\Theta_{\eff}/H\le\log4\) on just the residual gives \(2C_G\Theta_{\eff}/H+12g+4maB/U\). These are bounds on the demand-minus-gain gap. The source budgets a separate weighted sum of \(io\) terms independently. \orig{Formalism/SizeWindowBrackets/ChainSlopeWindows/OneLeThresholdMulPowers}{444}{Four residual terms} and \orig{Formalism/SizeWindowBrackets/ChainSlopeWindows/DiscriminantSettingSatisfied}{162}{family budget}.
+
+\para{Why the coefficient can be one.} The earlier expression \(\mathrm{lo}\) assigns \(b'/x\) coefficient one. In enlarging \(\mathrm{lo}\) to \(\mathrm{loG}\), the proof uses \(1\le C_G=4|C_\ell|+1\) on precisely this summand. Its other summands are dominated separately. On the high inert branch the stronger comparison is \(\mathrm{lo}+(C_G-1)b'/x\le\mathrm{loG}\). The local gain proof retains the per-lift inequality until it substitutes the enlarged cost at the same places and tops. Keeping that premise and using the stronger comparison replaces \(C_G+g\) by \(1+g\) in the display. This gives \(\limsup\Delta/U\le1/2\) along eligible data. The deduction requires the concrete gain construction before its conclusion is abstracted. \orig{Formalism/SharpRestriction/GrowthBounds/LogarithmicSums/PartnerCountOfCentral}{581}{Primitive coefficient},
+\orig{Formalism/SharpRestriction/GrowthBounds/PlaneCountTheoremWithConstants}{139}{termwise comparison} and \orig{Formalism/SharpRestriction/GrowthBounds/PlaneCountTheoremWithConstants}{761}{use in the gain sum}.
+
+\pagepart{What we can compute, and what remains open}
+\para{Given numerical inputs.} With \(q,d,p\) one can compute both signs. With the conductor one can check the exclusion \(p\mid M\). With retained labels, drop decisions and served subsets one can sum the effective weight exactly as a formal sum of prime logarithms. The existence proof grants a host and compatible data at every sufficiently late scale. It gives no numerical choice of \(x\) passing all thresholds here. This study produces neither such a host nor a decision about an individual cohomological exceptional integer. An aggregate can be determined while a pointwise witness remains unavailable.
+
+\para{Verification boundary.} Lean kernel replay covered 26 distinct reported statements. Six check the three primitive characters at their exact conductors and the uniform estimate obtained from their boxes. Fifteen check sums on the same family, the two dropped-prime bounds, and the identity for the leading charge. Five check finite secants and their triangular width. A fresh build reproduced the same 36 original service dependencies and support module byte for byte. The package supplies precise axiom reports and replay instructions. The assembled quarter-limit and sharpened global inequalities are mathematical deductions here. We did not rebuild Mathlib or the full RH endpoint in this study.
+
+\para{An implication for our memory research.} Here is a case where compression loses the answer to a later query. Two records can both preserve the final assertion that a gain constant \(C_G\) exists, while only one retains the earlier evidence for the unit coefficient. A reader of the final assertion cannot recover that one by reversing the inequality. The per-lift gain comparison supplies the missing premise. This suggests a retrieval test for our revisable-memory work. Ask for the sharpest justified coefficient after hiding that comparison, and score whether the answer identifies the missing premise. The scoring condition is mathematical. We have yet to run the memory-system comparison.
+
+\para{The next question in this proof.} The upstream \texttt{kinkHH} argument pays a local offset on retained positions with odd index, then bounds their number by the count of all retained positions on the orbit. An even orbit length permits both parities in the ambient orbit. A retained subset can favor one parity. The next test is whether the selected-set hypotheses control that bias \emph{in the weighted sum across served primes}, or whether the all-position allowance can be approached. Start with parity-skewed subsets satisfying the original orbit conditions. Then inspect the minimum in the per-position inequality, since a counted odd position need not use its whole allowance. A test based on parity alone would miss this second source of slack. \orig{Formalism/SharpRestriction/GrowthBounds/LogarithmicSums/PartnerCountOfCentral}{399}{Per-position inequality and count} and \orig{Formalism/SharpRestriction/GrowthBounds/LogarithmicSums/PartnerCountOfCentral}{696}{use on the high band}.
+
+\end{document}

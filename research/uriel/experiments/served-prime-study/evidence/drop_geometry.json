@@ -1,0 +1,25 @@
+{
+  "family_exponents": {
+    "dyadic_rank_excess": "399/50",
+    "first_rho_epsilon": "-19/200",
+    "order_decay_excess": "773/100",
+    "second_rho_epsilon": "-449/50"
+  },
+  "power_band": {
+    "cutoff_width_pairs": 40,
+    "higher_degree_hits": 133,
+    "negative_controls": [
+      "p=5 squared at cutoff 25",
+      "signed order of 15 mod 16"
+    ],
+    "power_hits": 1213
+  },
+  "signed_order": {
+    "interval_counts_checked": 300,
+    "orders_compared": 18352,
+    "rank_exponent_range": [
+      1,
+      9
+    ]
+  }
+}
