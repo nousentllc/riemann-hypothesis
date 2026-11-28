@@ -1,0 +1,38 @@
+{
+  "study": "A zero and the prime windows",
+  "date": "2026-11-23",
+  "repository": "https://github.com/nousentllc/riemann-hypothesis",
+  "research_comparison_base": "08188ff0c6dd02dfec0bd65d30765862e9db56b7",
+  "original_source_commit": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "mathlib_commit": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "lean": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "original_finite_runs_python": "CPython 3.13.2",
+  "source_trace": {
+    "arithmetic_files": 22,
+    "anchored_spans": 36,
+    "manifest": "evidence/arith/arithmetic_sources.json"
+  },
+  "manuscript": {
+    "pages": 31,
+    "tex_sha256": "423cf68c881c57b84291aeedc008d79d318c977c5ef175928926098a811b2920",
+    "pdf_sha256": "5b0138792c8686dc9771d973bbf98a0f7d4da81f5f20b40ba4fa01a2b8c272ba",
+    "embedded_evidence_zip_sha256": "f5c820a2d9a8b953704445015b87df39ee60c8f976a40942684c7b47cb99a9eb",
+    "expanded_evidence_files": 30
+  },
+  "kernel_replays": [
+    {
+      "module": "WindowMass",
+      "supplemental_declarations": 4,
+      "authenticated_original_modules": 28,
+      "receipt": "evidence/analytic/window_mass_replay.json"
+    },
+    {
+      "module": "ArithmeticWindow",
+      "supplemental_declarations": 4,
+      "authenticated_original_modules": 30,
+      "receipt": "evidence/arith/kernel_receipt.json"
+    }
+  ],
+  "verification_scope": "The module sets overlap. The eight supplemental declarations were kernel-replayed against cached pinned dependencies. The arithmetic supply is traced to the original source and is a hypothesis of the supplemental bridge. The full original project was not rebuilt.",
+  "protocol_history": "The evidence is the original protocol and receipt set embedded in the delivered manuscript. Git packaging took place after the experiments. The individual protocols distinguish primary tests and follow-ups."
+}

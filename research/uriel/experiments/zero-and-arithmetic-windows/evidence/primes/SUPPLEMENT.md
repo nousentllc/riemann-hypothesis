@@ -1,0 +1,5 @@
+# Supplement after the primary 12 rows
+
+The affine form for conductor four suggests a stronger test on all six character/exponent/window combinations. Independently enumerate prime powers using trial division, restrict to sign-positive pieces of exact bracketing affine functions, and integrate the power primitive. Check that the refined enclosures lie in the primary ones. Prove that a positive maximum of the normalized affine function on a gap is attained at an end; locate all candidate winning knots without using the mesh ranking. This supplemental pass reuses the certified constants and elementary real-number enclosures and is not an independent normalization.
+
+After inspecting these six primitive-integral enclosures, separately compute the positive-support fraction in logarithmic time. The convex pointwise sandwich of the affine functions orders their positivity sets. Splitting these exactly at their rational roots and integrating dy/y will distinguish a small occupied part of a window from a low average normalized height while occupied. The conditional mean divided by peak equals R divided by support fraction; neither constituent is assumed in advance.

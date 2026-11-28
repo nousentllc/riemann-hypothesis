@@ -1,0 +1,62 @@
+{
+  "T": 9.010913347279288,
+  "residue": 0.0011613350732448454,
+  "rows": [
+    {
+      "U_over_T": 0.25,
+      "mass": 0.0,
+      "cap": 1.252664438624128,
+      "cap_exceeded": false
+    },
+    {
+      "U_over_T": 0.5,
+      "mass": 0.0,
+      "cap": 1.5691681957935015,
+      "cap_exceeded": false
+    },
+    {
+      "U_over_T": 0.6666666666666666,
+      "mass": 0.0,
+      "cap": 1.8234449771164334,
+      "cap_exceeded": false
+    },
+    {
+      "U_over_T": 1.0,
+      "mass": 0.08476215116232065,
+      "cap": 2.4622888266898326,
+      "cap_exceeded": false
+    },
+    {
+      "U_over_T": 1.5,
+      "mass": 0.6020910526844481,
+      "cap": 3.863745315699382,
+      "cap_exceeded": false
+    },
+    {
+      "U_over_T": 2.0,
+      "mass": 3.5795517824390486,
+      "cap": 6.062866266041592,
+      "cap_exceeded": false
+    },
+    {
+      "U_over_T": 3.0,
+      "mass": 113.37651753019783,
+      "cap": 14.928527864588917,
+      "cap_exceeded": true
+    },
+    {
+      "U_over_T": 4.0,
+      "mass": 3406.2570891991236,
+      "cap": 36.75834735990512,
+      "cap_exceeded": true
+    },
+    {
+      "U_over_T": 6.0,
+      "mass": 2962376.489040958,
+      "cap": 222.86094420380775,
+      "cap_exceeded": true
+    }
+  ],
+  "eta": 0.1,
+  "first_observed_crossover": 3.0
+}
