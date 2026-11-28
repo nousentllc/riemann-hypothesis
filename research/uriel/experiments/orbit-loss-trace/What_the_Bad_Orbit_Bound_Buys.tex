@@ -1,0 +1,186 @@
+% !TeX program = lualatex
+\documentclass[12pt,letterpaper]{article}
+\usepackage{iftex}\RequireLuaTeX
+\usepackage[margin=.93in,headheight=15pt,headsep=13pt,footskip=25pt]{geometry}
+\usepackage{fontspec}\setmainfont{Latin Modern Roman}\setsansfont{Latin Modern Sans}
+\usepackage{amsmath,amssymb,booktabs,array,tabularx,microtype,xcolor,fancyhdr,hyperref,bookmark}
+\definecolor{ink}{HTML}{182F41}\definecolor{accent}{HTML}{176060}\definecolor{muted}{HTML}{41596A}
+\hypersetup{colorlinks=true,urlcolor=accent,linkcolor=accent,pdftitle={What the bad-orbit bound buys},pdfauthor={Uriel Research}}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcommand{\orig}[3]{\href{https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/#1.lean\#L#2}{#3}}
+\newcommand{\para}[1]{\par\medskip\noindent\textbf{#1}\quad}
+\newcommand{\pagepart}[1]{\clearpage\section{#1}}
+\newcommand{\ASK}{\mathrm{ASK}}\newcommand{\Ga}{\mathrm{Ga}}
+\newcommand{\sg}{s_g}\newcommand{\floorc}{2\log(4)\,C}
+\newcommand{\lc}{Formalism/SizeWindowBrackets/ChainSlopeWindows}
+\pagestyle{fancy}\fancyhf{}\fancyhead[L]{\small\sffamily\color{muted}Uriel Research}
+\fancyhead[R]{\small\sffamily\color{muted}Arithmetic witness studies}\fancyfoot[C]{\sffamily\small\thepage}
+\renewcommand{\headrulewidth}{.3pt}\setlength{\parindent}{0pt}\setlength{\parskip}{4pt}
+\setlength{\emergencystretch}{1.5em}\raggedbottom\linespread{1.035}
+\begin{document}
+\thispagestyle{plain}
+{\sffamily\small\color{accent}URIEL RESEARCH\hfill 22 NOVEMBER 2026}\par\vspace{14pt}
+{\Huge\bfseries\color{ink}What the bad-orbit bound buys\par}\vspace{5pt}
+{\Large\color{muted}Following one local failure into two global estimates}\par\bigskip
+\textbf{Abstract.} A retained arithmetic set can pass its density checks while one misplaced point changes the orbit verdict for thousands of points. How much of that sensitivity reaches the global proof? We trace the same retained-set information through two sums in the pinned Lean source. In the family loss estimate, the weighted count \(B\) of bad retained points pays for an omission at cost at most \(4maB\). In a prime-deficit estimate its coefficient is \(3ma\). The first comparison retains a term of size \(2\log(4)\,C U\) when \(B=0\). The second has room for the entire ordinary orbit allowance before it reaches the published ceiling. We give conditional Lean refinements, exact finite controls and a direct source trace into the headline construction. The experiment does not construct an all-good selected family or rebuild the headline theorem.
+
+\para{What we learned.} The proof can be very sensitive when deciding whether an individual orbit passes, yet relatively insensitive to the cost it assigns those failures in a later inequality. The resolution lies in two choices the proof makes. It charges only a weighted count, and it eventually discards the exact total once that total fits under a fixed ceiling. The distinction identifies where a sharper local description could change the mathematics that follows.
+
+\medskip
+\begin{tabularx}{\linewidth}{@{} >{\raggedright\arraybackslash}p{.25\linewidth}YY@{}}
+\toprule
+Quantity compared & Orbit charge or allowance & What survives at zero weighted mass\\ \midrule
+Gap between requested prime sum and credited gain
+& Actual-mass upper bound \(4maB\). The usual allowance is \(4x^{-1+\varepsilon}U\).
+& A high-prime allowance at least \(2\log(4)\,C U\).\\[3pt]
+Sum of positive prime deficits
+& \(3ma\) times the restricted bad mass. The proof assigns \(U/40\) to this term.
+& The remaining printed allocations sum to \(281U/60\), below the stated \(5U\).\\ \bottomrule
+\end{tabularx}
+\para{Scope.} Here \(U=m|T|b\), with rank count \(m\), retained set \(T\) and \(a=xb\). Each row is a separate upper bound on its own quantity. The conclusions about coefficients use the original size and window hypotheses. Fractions are exact. The finite controls exercise implications and arithmetic only.
+
+\pagepart{Which information travels with the retained set?}
+At scale \(x>1\), put \(N=|T|\), let \(n\) be the ambient group size, and write \(\delta=x^{-\varepsilon/8}\) and \(X'=\exp(x^{\varepsilon/3})\). Eligible primes \(P\) lie below \(X'\), have the designated inert class and have Frobenius step of order at least \(x^{\varepsilon/4}\). A retained point is bad when the local orbit test at its canonical base fails. Write \(n_p\) for the number of such points and set
+\[
+ w_p=\log(p)/p,\qquad B=\sum_{p\in P}w_p n_p,\qquad W=\sum_{p\in P}w_p.
+\]
+These weights are strictly positive on primes. Thus \(B=0\) says exactly that there are no bad retained points at any eligible prime, and includes the empty-support case. Orbits disjoint from \(T\) contribute nothing either way.
+
+The original host condition gives
+\[
+ B\le 4 C_b x^{-2}\,\delta n\,W .
+\]
+The transfer to the chosen family retains the image of \(T\) in numeric labels, the prime class data and the Frobenius labels. Injectivity recovers equality of the retained sets and the steps after identifying ranks. The chosen instance also agrees on the canonical orbit representative. This is how the proof can use an orbit statistic for the same witness at a later stage. Switching to a second set merely because its cardinality and density match would lose that justification.
+\orig{Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/BadCharacterBound}{24}{Host and chosen-instance transfer}.
+
+\para{Two ways of absorbing the constant.} The lower density bound gives \(\delta n\le 2N\). One source argument majorizes \(W\) by a harmonic sum over all natural numbers below the cutoff, obtaining \(W\le2x^{2\varepsilon/3}\). The family argument retains primality in the sum and obtains \(W\le2x^{\varepsilon/3}\). With \(C_b\ge0\) these yield
+\[
+ B\le 16 C_b N x^{-2+2\varepsilon/3}
+ \quad\text{and}\quad
+ B\le 16 C_b N x^{-2+\varepsilon/3},
+\]
+respectively. Both ultimately supply \(B\le Nx^{-2+\varepsilon}\). For \(C_b=1\) and \(\varepsilon=1/64\), the sufficient absorption scales are \(2^{768}\) and \(2^{384}\). Other eventual thresholds still apply. Choosing between these estimates changes the local sufficient scale without changing either subsequent exponent in this experiment.
+\orig{Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/ObjOnNarrowOfObjectsExist}{98}{Harmonic route}\quad
+\orig{Formalism/SharpRestriction/GlobalSchurBounds/LossesSmallShares}{357}{Prime-specific route}.
+
+\para{The intervention.} We compare upper bounds on fixed data, specializing one bound to the additional hypothesis \(B=0\). The selected-family argument supplies a witness satisfying several simultaneous conditions. Our earlier finite constructions do not establish that this selected witness has \(B=0\); changing \(T\) would require rechecking its other obligations. No success frequency for all-good families follows from this comparison.
+
+\pagepart{What a bad point can actually cost}
+For a prime in the source's served class, \(T_p\) is the set for which service is accounted. The critical premise is directional. If \(t\in T\setminus T_p\), then \(p\) lies in the eligible support and \(t\) is bad for \(p\). A served-class prime outside that support therefore omits no retained point. For served-class primes inside the support the omitted set is contained in the bad set. Nonnegative weights give
+\[
+ 0\le O:=\sum_{p\ {\rm served}}4ma\,w_p\,|T\setminus T_p|
+       \le 4ma B .
+\]
+In the Lean source the final step accepts \emph{any} \(R\) with \(B\le R\). Choosing \(R=B\) preserves the mass; choosing \(R=0\) under \(B=0\) gives \(O=0\).
+\orig{Formalism/SizeWindowBrackets/PrimeClassLossHypothesesSatisfiable}{39}{Weighted count and omission contract}\quad
+\orig{Formalism/SizeWindowBrackets/ChainSlopeWindows/DiscriminantSettingSatisfied}{32}{Finite-subset proof}.
+
+\para{An adversarial control.} With four retained labels at one positive-weight prime, give each label one of three states: good and served, bad and served, or bad and omitted. This enumerates all \(3^4=81\) pairs \(O_p\subseteq D_p\subseteq T\). In 65 cases the inclusion gives a strict cardinality bound; in 15 cases there are bad labels and no omissions. With exactly two bad labels the number omitted can be zero, one or two. This control isolates the logical content of the subset premise. A concrete arithmetic definition may impose additional relations.
+
+\para{Propagating the count into the actual gap.} The quantity \(\ASK\) sums log-weighted prime demand over lift indices and retained points and adds a discriminant contribution. \(\Ga\) is the credited gain. The original eleven-term bound for the difference uses
+\[
+ U=mNb,\quad \sg=100K\,x^{4\varepsilon-1},\quad
+ t_{\rm out}=4amN x^{-2+\varepsilon}=4x^{-1+\varepsilon}U .
+\]
+Keeping the other ten estimates and retaining the mass explicitly gives
+\begin{align*}
+ \ASK-\Ga &\le (\floorc+12\sg)U +4maB,\\
+ B\le Nx^{-2+\varepsilon}\quad&\Longrightarrow\quad
+ \ASK-\Ga \le (\floorc+12\sg+4x^{-1+\varepsilon})U,\\
+ B=0\quad&\Longrightarrow\quad\ASK-\Ga\le(\floorc+12\sg)U .
+\end{align*}
+The original quantity named \texttt{tOutD} is a fixed allowance depending on the scale and sizes. It remains defined even on all-good data. The proof above replaces that allowance in the inequality by the mass-dependent bound. The companion prime sum for \(\mathrm{io}\) stays bounded by \(\sg U\) under its own premises.
+\orig{Formalism/SizeWindowBrackets/ChainSlopeWindows/DiscriminantSettingSatisfied}{162}{Eleven size estimates and their joint consumer}.
+
+\pagepart{Why the leading coefficient survives}
+The source first bounds the gap by \((\floorc+13\sg)U\), then weakens this to \((3C+13)U\). Removing one of the thirteen shares can give the impression that the orbit condition paid for an entire \(\sg U\). The precise allowance occupies the fraction
+\[
+ \frac{4x^{-1+\varepsilon}}{\sg}
+ =\frac{x^{-3\varepsilon}}{25K}\le\frac1{25}
+ \qquad(x\ge1,\ K\ge1,\ \varepsilon>0).
+\]
+At \(\varepsilon=1/64,\ K=1\), this fraction is \(1/200,\ 1/1600,\ 1/12800\) at \(x=2^{64},2^{128},2^{192}\) respectively. These examples evaluate the formula; they do not instantiate the other large-scale or family conditions. Even the smaller term is an upper allowance. The actual omission may already be zero.
+
+\para{Where the persistent term originates.} For a served prime below \(X'\) the piecewise prime estimate uses \(Q_1\) below \(p_0\) and \(Q_2\) at or above that boundary. For its summed upper bound the source pays \(Q_2\) over the entire served set below \(X'\), bounding the prime log-sum by \(\log(4)X'\). The resulting component is
+\[
+ t_{\mathrm{PrHigh}}=2\log(4)\,mN X' Q_2.
+\]
+The definition of \(Q_2\) contains \(C b'/x\). The product \(X'b'=a=xb\) turns its contribution into \(Cb\). Indeed the pinned source expands \(X'Q_2\) into \(Cb\) plus four nonnegative summands under its window assumptions. Combining the lower and upper estimates gives
+\[
+ (\floorc)U\ \le\ t_{\mathrm{PrHigh}}\ \le\ (\floorc+3\sg)U .
+\]
+For fixed \(C>0\), \(K\) and \(0<\varepsilon<1/4\), along admissible scales with \(U>0\), the normalized component converges to \(2\log(4)C\). This floor belongs to the constructed upper bound. The actual demand-minus-gain difference could be smaller, zero or negative. At \(C=0\) the upper bound for this component is \(3\sg U\); the experiment supplies no family construction choosing that value.
+\orig{Formalism/SizeWindowBrackets/ChainSlopeWindows/AdmissibleSchurLemma}{530}{Prime summation}\quad
+\orig{Formalism/SizeWindowBrackets/WindowSettingSatisfiable}{85}{Definition of the prime costs}\quad
+\orig{Formalism/SizeWindowBrackets/ChainSlopeWindows/OneLeThresholdMulPowers}{444}{Expansion and upper bound}.
+
+\para{What reaches the headline construction.} The family conversion uses the coarser result, replaces \(C\) by a uniform bound and takes a loss constant \(3|K|+13\) multiplying \(Ux^{0\varepsilon}\). The dependency trace in the evidence includes explicit references from the headline construction to the small-share family result. Thus a stronger conditional local lemma exists at a place used by the proof, but the existing interface discards this improvement. It takes a distinct mathematical argument to change the persistent prime coefficient.
+\orig{Formalism/LocalToGlobal/GlobalTheory/LossRequirementsOfSmallShares}{86}{Family loss constant}\quad
+\orig{Formalism/SharpRestriction/GlobalSchurBounds/LinkMin}{720}{Call from the global family construction}.
+
+\pagepart{An independent comparison in the prime deficits}
+The second quantity sums \(\log p\) times the positive part of a prime deficit over an allowed finite prime set. Split the set at \(X''\). In the low part, the proof bounds the summand by eight terms. The seventh term, before any numerical relaxation, sums to \(3maB_S\), where \(B_S\) is the weighted bad count restricted to the low primes under consideration and the specified prime support. The eighth term uses a different candidate-prime sum. The upper range has its own estimate. Coefficients and even the definition of the gap differ from the family loss on the previous pages.
+\orig{Formalism/SharpRestriction/GrowthBounds/LogarithmicSums/SecondConstantNonneg}{85}{The eight terms}\quad
+\orig{Formalism/SharpRestriction/GrowthBounds/LogarithmicSums/LatticeChainSuccOfPartial}{189}{Actual prime-set and bad-function instantiation}.
+
+\begin{center}\small
+\begin{tabular}{@{}lrrrrrrrrr@{}}
+\toprule
+Allocation & 1 & 2 & 3 & 4 & 5 & 6 & orbit (7) & 8 & high\\\midrule
+In units of \(U\) & \(1/20\) & \(1/40\) & \(3/2\) & \(1/40\) & \(1/40\) & \(3\) & \(1/40\) & \(1/30\) & \(1/40\)\\\bottomrule
+\end{tabular}
+\end{center}
+With the seven low siblings unchanged and the separate high-prime estimate included, the resulting bound is at most \(281U/60+3maB_S\). This restricted form follows by retaining the seventh summand during addition. The Lean supplement proves the version with the full mass \(B\), using \(B_S\le B\). Its ordinary relative cost is at most \(3x^{-1+\varepsilon}\) once \(B\le Nx^{-2+\varepsilon}\) is used. The source also spends the fixed allowance \(U/40\). Exact addition of the printed allocations gives
+\[
+\begin{array}{lccc}
+ & \text{ordinary} & \text{all good} & \text{published ceiling}\\
+ \text{low primes} & 281/60 & 559/120 & 47/10\\
+ \text{low and high} &113/24 & 281/60 &5 .
+\end{array}
+\]
+Deleting the allocated \(1/40\) reduces the ordinary combined total by \(3/565\), about \(0.53\%\). No observed prime deficit enters that percentage. The large allocations \(3/2\) and \(3\) come from a log-prime sum below \(X'\) and a weighted in-band prime sum respectively. They remain present under the stated comparison.
+\orig{Formalism/SharpRestriction/GrowthBounds/LogarithmicSums/LatticeChainSuccOfPartial}{29}{Low estimates, individual budgets and high estimate}.
+
+\para{How much room is there?} If the eight other printed caps are held fixed, the intermediate low target can accommodate an orbit cost of \(U/24\). The combined target alone can accommodate \(19U/60\). Those limits are respectively \(5/3\) and \(38/3\) times the assigned \(U/40\). Exhaustively evaluating the 512 corners of the allocation box, including the 256 corners with zero orbit cost, reproduces the two ordinary and all-good totals. At either target, increasing its calculated boundary by \(U/1200\) breaks the target if every sibling is at its cap. This establishes sharpness for independent allowances in that arithmetic comparison. Simultaneous attainment by a prime family would require further information about their joint origin.
+
+\pagepart{Can counting only the served points lower the leading cost?}
+One step earlier in the source, the high-prime allowance has more structure than its final expression suggests. For the family instance the prime component of \(\mathrm{loG}\) applies only in the inert class. Before taking a uniform upper bound, its coefficient is multiplied by the number \(|T_p|\) served at \(p\). In the generic sum the proof enlarges this to \(N\), and it subsequently bounds the log-weight of served primes by a uniform prime sum. These are mathematically different relaxations.
+\orig{Formalism/LocalToGlobal/GlobalTheory/SuppSat}{54}{Actual family instance}\quad
+\orig{Formalism/SharpRestriction/GlobalTheoremInputs}{109}{Inert-class branch}\quad
+\orig{Formalism/SizeWindowBrackets/ChainSlopeWindows/AdmissibleSchurLemma}{858}{Enlargement of the served count}.
+
+Let \(S\) contain the primes in the family loss sum that are served, inert, and satisfy \(p_0\le p<X'\). For \(N>0\), define
+\[
+ \Theta_S=\sum_{p\in S}\log p,\qquad
+ \Theta_{\rm eff}=\sum_{p\in S}\frac{|T_p|}{N}\log p .
+\]
+For nonnegative local \(C\), the contribution of \(Cb'/x\) to that earlier allowance is \(2CU\,\Theta_{\rm eff}/X'\). This equality uses \(b'/x=b/X'\). It describes one addend in the upper estimate. There is no corresponding identity for the actual gap.
+
+\para{A bound on what the count enlargement costs.} Since \(T_p\subseteq T\) on served primes, \(N-|T_p|=|T\setminus T_p|\). Every such omitted point lies in the eligible bad set, and \(p/X'\le1\) throughout \(S\). Positivity then gives
+\[
+ 0\le\frac{\Theta_S-\Theta_{\rm eff}}{X'}
+  =\frac1N\sum_{p\in S}\frac{\log p}{p}\frac p{X'}|T\setminus T_p|
+  \le\frac BN\le x^{-2+\varepsilon}.
+\]
+At \(B=0\), the two weights coincide exactly. At the standard budget, replacing \(|T_p|\) by \(N\) can change this normalized leading allowance by at most \(2C x^{-2+\varepsilon}\) when \(U>0\). Thus even the ordinary weighted bound already answers one candidate explanation for the full-scale term. The source marks a prime served precisely when it lies outside the chosen drop set. The log-weight of those inert primes, and the individual local cost itself, remain the substantive questions. This deduction uses the original definitions and inequalities. It has a separate finite control below and was not included in the Lean supplements.
+
+\para{Control and failure mode.} We tested two primes below 11, two labels per prime, all four prime subsets and all 81 assignments of good/served, bad/served and bad/omitted. With positive rational stand-ins for \(\log p/p\), all 324 comparisons satisfied the bound. It was strict in 320. If a prime above the cutoff is allowed, a single bad omitted point at \(p=13\), cutoff 11, and weight one gives the ratio \(13/11>1\). This locates exactly where the cutoff enters the argument.
+
+\pagepart{What the experiment settles, and what to read next}
+\para{The local-to-global lesson.} A single exchange in the preceding study changed the status of every retained point on one orbit. This study identifies the conversion rate the proof allows for those failures and the terms against which to compare it. One can lose a large number of local verdicts and still spend only a small part of a global allowance under the selected-family premises. Conversely, an all-good orbit computation by itself cannot improve the part arising from \(Cb'/x\). These statements involve separate conditionals. The finite witnesses from the previous study do not verify the full simultaneous rank and selection assumptions.
+
+\para{Proof, computation and existence.} The accompanying Lean supplements use the actual source definitions to keep the bad mass in the inequalities, specialize it to zero and isolate the high-prime lower bound. Their replay receipts identify the original modules, compiler, dependencies and kernel checks. Across both supplements Lean checks twelve declarations. Seven rebuilt dependencies in the prime-deficit replay matched their pinned source files but differed from the published binary hashes. The cause is unresolved. The source trace follows named applications in the original proof. The independent exact calculations enumerate possibilities allowed by a subset implication, add rational budget shares and evaluate three scale examples. Those calculations neither determine the original witness nor check the RH endpoint. This study did not run the full Lean build.
+\par\smallskip
+\begin{tabularx}{\linewidth}{@{} >{\raggedright\arraybackslash}p{.28\linewidth}Y@{}}
+\toprule
+Question & What the evidence decides\\\midrule
+Can the same \(B>0\) describe different omissions? & Yes under the traced subset premise. Two bad labels permit zero, one or two omissions in the four-label control.\\[3pt]
+Can \(B=0\) improve the displayed global constant? & Yes before rounding. The bound for the actual gap loses \(4maB\), and the positive-deficit comparison loses the assigned \(1/40\) share.\\[3pt]
+Can orbit improvements remove the \(O(U)\) component? & The displayed high-prime allowance has a positive normalized floor for fixed \(C>0\). The size of the actual deficit remains open here.\\[3pt]
+Is there an all-good selected family? & The source supplies a bound on \(B\). This experiment supplies implications conditional on \(B=0\). Neither identifies such a family.\\\bottomrule
+\end{tabularx}
+
+\para{Next experiment.} Follow the family selection into the actual served inert prime set \(S\). A uniform estimate \(\Theta_S/X'\to0\) at admissible scales would remove the full-scale contribution of this one addend for fixed \(C\). A positive lower bound on that ratio along an admissible family would identify a genuine limitation of the existing local allowance when \(C>0\). Either conclusion needs control of the same primes and witnesses used by the family. A third possible outcome is that the current hypotheses provide only the uniform prime bound; that would identify the additional arithmetic input a sharper result requires.
+
+\smallskip{\small\color{muted}Reproduction files in the study directory include the source-anchor manifest, exact arithmetic output, Lean scripts and kernel receipts. All original-source links refer to commit \texttt{40e56bab}.}
+\end{document}

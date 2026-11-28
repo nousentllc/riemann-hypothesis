@@ -1,0 +1,579 @@
+{
+  "schema_version": 1,
+  "repository": "https://github.com/nousentllc/riemann-hypothesis",
+  "commit": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "files": [
+    {
+      "path": "src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/BadCharacterBound.lean",
+      "git_blob": "4007aeaff3e05c077b9d4a11eb07f459d5d75c66",
+      "sha256": "7e9fcc1df1c06de186283d3ffb232a612538ab38f2aab6335bd41220ef4d9bde",
+      "ranges": [
+        {
+          "start": 17,
+          "end": 34,
+          "declarations": "BadOfBase, badOK_iff_badOfBase and chBad_iff_badOfBase"
+        },
+        {
+          "start": 36,
+          "end": 57,
+          "declarations": "badOfBase_of_host and chBad_of_from"
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/ObjOnNarrowOfObjectsExist.lean",
+      "git_blob": "47b410a9775ac9d9506a9c1dc426877b2deea462",
+      "sha256": "8820062e62ed899ceec3c84da5623b14507e1caed44802b383d50bbff4bff19f",
+      "ranges": [
+        {
+          "start": 98,
+          "end": 129,
+          "declarations": "sum_log_div_le"
+        },
+        {
+          "start": 130,
+          "end": 187,
+          "declarations": "fewBad_of_badOK and harmonic normalization"
+        }
+      ]
+    },
+    {
+      "path": "src/Formalism/SharpRestriction/GlobalSchurBounds/LossesSmallShares.lean",
+      "git_blob": "70624b10f53b29e43deb89bd9dae257403ecb61e",
+      "sha256": "ba647275567e1662bbc0ae3ebc3e48e0831d354658aeb9071c3cc474a1e6e13e",
+      "ranges": [
+        {
+          "start": 357,
+          "end": 393,
+          "declarations": "chosenBadp_of_old and prime cutoff"
+        },
+        {
+          "start": 394,
+          "end": 433,
+          "declarations": "prime weight, density bound and absorption"
+        }
+      ]
+    },
+    {
+      "path": "src/Formalism/LocalToGlobal/GlobalTheory/SuppSat.lean",
+      "git_blob": "80c1d0526b661eae74d87ec3b569d6a459e900ce",
+      "sha256": "47301a06ec1857f3b8e4e50ac7b7b3b0fba9efcbe468b888e18a41824f073f1b",
+      "ranges": [
+        {
+          "start": 26,
+          "end": 70,
+          "declarations": "bndP, PsAt, clAt, ldAt, TTp and lo"
+        }
+      ]
+    },
+    {
+      "path": "src/Formalism/SharpRestriction/GlobalTheoremInputs.lean",
+      "git_blob": "ba31f5120ed089d48968754ae577427912d467c5",
+      "sha256": "4d51ccc0586441a159ad6d09ebc0a46b3c462e3c5b296d5a5bd7613266e17bfb",
+      "ranges": [
+        {
+          "start": 97,
+          "end": 98,
+          "declarations": "InertK"
+        },
+        {
+          "start": 109,
+          "end": 124,
+          "declarations": "loG and its prime-class gate"
+        }
+      ]
+    },
+    {
+      "path": "src/Formalism/SharpRestriction/GlobalSchurBounds/Chosen.lean",
+      "git_blob": "9a85f26989d2381da29a40abfe7bd339d20815d8",
+      "sha256": "6ef10b1eee9e750f3cf2f70e389c7a8b59589997412e50b1b2a4c12ffb07e8f9",
+      "ranges": [
+        {
+          "start": 23,
+          "end": 36,
+          "declarations": "largeOrderResiduePrimes, badTops and ChBad_at"
+        }
+      ]
+    },
+    {
+      "path": "src/Formalism/SharpRestriction/GlobalSchurBounds/WeightVectorSmallSharesSeven.lean",
+      "git_blob": "370098c956d2156e2c95069994e4c8cfae490b03",
+      "sha256": "b197e9f1a289e164aaf35530704e14b2d5b937b7434b72c13575d79e2a53c806",
+      "ranges": [
+        {
+          "start": 17,
+          "end": 18,
+          "declarations": "ChBadp_at"
+        }
+      ]
+    },
+    {
+      "path": "src/Formalism/LocalToGlobal/GlobalTheory/LossRequirementsOfSmallShares.lean",
+      "git_blob": "287dcaae544bf078e47910aa5c9986ec501bdbd2",
+      "sha256": "26e56551dde5c2397897ba3d426b8d1db48c00c2847418fa427aa23b807a60a6",
+      "ranges": [
+        {
+          "start": 16,
+          "end": 34,
+          "declarations": "cands_eq, card_lifts, card_TTv and bad_card_at"
+        },
+        {
+          "start": 41,
+          "end": 80,
+          "declarations": "loss_setting_family, normalized bad mass and unserved_bad"
+        },
+        {
+          "start": 86,
+          "end": 101,
+          "declarations": "losses_of_small_share_weight, extraction of constants and thresholds"
+        },
+        {
+          "start": 126,
+          "end": 161,
+          "declarations": "application of the eventual bounds, normalization and endpoint reads"
+        },
+        {
+          "start": 165,
+          "end": 167,
+          "declarations": "stLoss7 and stLoss7W"
+        }
+      ]
+    },
+    {
+      "path": "src/Formalism/SizeWindowBrackets/PrimeClassLossHypothesesSatisfiable.lean",
+      "git_blob": "3f609406f5456e034f5dfb94e9688fca6c9f95a9",
+      "sha256": "f80e123e454617b3ebef24fd68edaf59371e5fc82e0b735552880a52d5d3ef00",
+      "ranges": [
+        {
+          "start": 10,
+          "end": 33,
+          "declarations": "clr and WindowsD"
+        },
+        {
+          "start": 36,
+          "end": 58,
+          "declarations": "badPrimeLogWeightedCount, OutD, SecondD and IoD"
+        },
+        {
+          "start": 60,
+          "end": 84,
+          "declarations": "tOutD, tSecondD, tIoD and tDetD"
+        },
+        {
+          "start": 86,
+          "end": 104,
+          "declarations": "PrimeClassLossHypotheses and the two output bounds"
+        }
+      ]
+    },
+    {
+      "path": "src/Formalism/SizeWindowBrackets/ChainSlopeWindows/DiscriminantSettingSatisfied.lean",
+      "git_blob": "edc32424311c076565c2e13b7657f6a5f58cfd84",
+      "sha256": "8dce8d3198be07282b1dc16061a027dab53d785947d59378f001afa0fb580f23",
+      "ranges": [
+        {
+          "start": 29,
+          "end": 74,
+          "declarations": "out_discriminant_bound"
+        },
+        {
+          "start": 114,
+          "end": 130,
+          "declarations": "sizeOut_core"
+        },
+        {
+          "start": 145,
+          "end": 176,
+          "declarations": "sizeSecond_core, sizeIo_core and size_core"
+        },
+        {
+          "start": 178,
+          "end": 213,
+          "declarations": "joint_core, physical loss and its 11 ledger terms"
+        },
+        {
+          "start": 214,
+          "end": 241,
+          "declarations": "independent IO bound, rounding and eventual consumption"
+        }
+      ]
+    },
+    {
+      "path": "src/Formalism/SizeWindowBrackets/ErrorFormsWeakWindowsFalse.lean",
+      "git_blob": "1d1d179d111b5aa668893327264648558f30fdb6",
+      "sha256": "8b8613a5e3934127fb8b52ba402e658414662f63bff8f0e9fb52bedddd1173f2",
+      "ranges": [
+        {
+          "start": 87,
+          "end": 93,
+          "declarations": "bTx, aTx and auxiliary scales"
+        }
+      ]
+    },
+    {
+      "path": "src/Formalism/SizeWindowBrackets/WindowSettingSatisfiable.lean",
+      "git_blob": "641dc12c8c7005d532889ed7a3044636ba72b3c5",
+      "sha256": "77569696749f9fa24ad13bae6181c0e1bac62a243f9313737f1541b481a53c9b",
+      "ranges": [
+        {
+          "start": 65,
+          "end": 87,
+          "declarations": "scale parameters, Q₁ and Q₂"
+        },
+        {
+          "start": 95,
+          "end": 115,
+          "declarations": "Windows and LargeX"
+        },
+        {
+          "start": 130,
+          "end": 161,
+          "declarations": "unitU, tPrLow, tPrHigh, tBad and sg"
+        },
+        {
+          "start": 163,
+          "end": 187,
+          "declarations": "SgSmall, SizePrHigh and SizePrHighLower"
+        }
+      ]
+    },
+    {
+      "path": "src/Formalism/SizeWindowBrackets/ChainSlopeWindows/OneLeThresholdMulPowers.lean",
+      "git_blob": "e056ba0d7b0d84078666ab3531c6ca1c6f744235",
+      "sha256": "8e7e5235c4e17ae957475d8aa0346d4087e3848c50be797039b5d621235f899a",
+      "ranges": [
+        {
+          "start": 19,
+          "end": 77,
+          "declarations": "Facts, positivity and auxiliary variables"
+        },
+        {
+          "start": 444,
+          "end": 462,
+          "declarations": "xprime_q_two_expand and introduction to size_prime_high_bound"
+        },
+        {
+          "start": 515,
+          "end": 524,
+          "declarations": "upper budget and its rescaling"
+        }
+      ]
+    },
+    {
+      "path": "src/Formalism/SizeWindowBrackets/SecondKindBucket.lean",
+      "git_blob": "502d2a6bf146f38b4c51ed87db9cf1ffbc9d7db8",
+      "sha256": "029ad56bb74397c851fb0067d41be779dc0c69b3c8b9db4bae3932908e00f56e",
+      "ranges": [
+        {
+          "start": 151,
+          "end": 153,
+          "declarations": "prF"
+        }
+      ]
+    },
+    {
+      "path": "src/Formalism/SizeWindowBrackets/ChainSlopeWindows/AdmissibleSchurLemma.lean",
+      "git_blob": "91c8966257416ce67a92357ff67f1ded82bba9c9",
+      "sha256": "d4e83fad0408cf330d72d8afe41c37bb3c39143cc31fb8a1a36070d15bc08045",
+      "ranges": [
+        {
+          "start": 530,
+          "end": 551,
+          "declarations": "pr_bucket_bound"
+        },
+        {
+          "start": 762,
+          "end": 770,
+          "declarations": "loss_bound"
+        },
+        {
+          "start": 891,
+          "end": 907,
+          "declarations": "served-prime filter and application of pr_bucket_bound"
+        },
+        {
+          "start": 846,
+          "end": 878,
+          "declarations": "pointwise cost, upper envelope and enlargement of served top multiplicity"
+        }
+      ]
+    },
+    {
+      "path": "src/Formalism/LocalToGlobal/GlobalTheory/PowFourLtCeilThresholdPrime.lean",
+      "git_blob": "8166795ec6e846795d7272781119ee7d17d426c0",
+      "sha256": "940eebfa0d8e19a862e36af510c31e007e864ddf9f2a3e839918e733012ab31c",
+      "ranges": [
+        {
+          "start": 1497,
+          "end": 1506,
+          "declarations": "explicit parameter C and β"
+        },
+        {
+          "start": 2039,
+          "end": 2048,
+          "declarations": "loss_points_of_choices"
+        },
+        {
+          "start": 2102,
+          "end": 2110,
+          "declarations": "call to tops_clause"
+        },
+        {
+          "start": 2156,
+          "end": 2158,
+          "declarations": "stCore and stLoss"
+        },
+        {
+          "start": 2205,
+          "end": 2210,
+          "declarations": "slope_loss and slope_loss_lemma_family"
+        },
+        {
+          "start": 722,
+          "end": 764,
+          "declarations": "unserved_bad and concrete exceptions"
+        },
+        {
+          "start": 1114,
+          "end": 1122,
+          "declarations": "pd_lo"
+        },
+        {
+          "start": 1178,
+          "end": 1192,
+          "declarations": "pd_lo unfolds class and prime-size conditions"
+        }
+      ]
+    },
+    {
+      "path": "src/Formalism/SharpRestriction/GlobalSchurBounds/TopDensityNGeSixteen.lean",
+      "git_blob": "cbccb968fd96afe14797b8890f4e5dc63bd11d26",
+      "sha256": "f952a3ad11b8a3e5ae77f196fa3c434780eea7db9905f9a6941148d8e2d299b7",
+      "ranges": [
+        {
+          "start": 1772,
+          "end": 1790,
+          "declarations": "tops_clause"
+        },
+        {
+          "start": 1919,
+          "end": 1925,
+          "declarations": "estimates_of_points_family"
+        }
+      ]
+    },
+    {
+      "path": "src/Formalism/LocalToGlobal/GlobalTheory/GlobalReductionOfCompatibleFamily.lean",
+      "git_blob": "96ed21a0e0c09d90b192fa61f8afe06cfd3f8a67",
+      "sha256": "5b58f48b35cb9b8a9b10eb7ff965845192ab87b0877a2a3466f6fd84e2bb6333",
+      "ranges": [
+        {
+          "start": 144,
+          "end": 165,
+          "declarations": "global_reduction_of_packets accepts the slope loss"
+        }
+      ]
+    },
+    {
+      "path": "src/Formalism/SharpRestriction/GlobalSchurBounds/LinkMin.lean",
+      "git_blob": "b570e24f60fbc7a2a3a4e08b84ed234f74ceeb4f",
+      "sha256": "941b138648541f9ee32e8380de9fba54e5a86e6f1d1d639393d148fac7754ad8",
+      "ranges": [
+        {
+          "start": 693,
+          "end": 704,
+          "declarations": "linkGLOBAL7_items"
+        },
+        {
+          "start": 720,
+          "end": 735,
+          "declarations": "calls to stLoss7 and linkGLOBAL7_items"
+        },
+        {
+          "start": 763,
+          "end": 771,
+          "declarations": "separate call of slope_loss_lemma_family"
+        }
+      ]
+    },
+    {
+      "path": "src/Main.lean",
+      "git_blob": "dbd5db70bc11b35f18fa5751216ab335321e7bfc",
+      "sha256": "017645ca448f2fd1f6fd5c4c2cb2c6e96e472725be13f6e180ca6e1574360939",
+      "ranges": [
+        {
+          "start": 1,
+          "end": 12,
+          "declarations": "five exported endpoints"
+        }
+      ]
+    },
+    {
+      "path": "src/Supplements/Kernels/MainTheorems.lean",
+      "git_blob": "6a542d7ce969a791fd12ce575f587e6bc29044bf",
+      "sha256": "1e734200b9b6a6d2a968743bd0c433d614bd6606cf538ac6d4f0ff70044dde53",
+      "ranges": [
+        {
+          "start": 7,
+          "end": 16,
+          "declarations": "allChi, rhOfAll, critAll and claimAll"
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/CharacterBoxes/MainConclusion.lean",
+      "git_blob": "ee340012ab19713a8acfecf8adc6a331cbc2f1a4",
+      "sha256": "a5f71e107087e37b2c598709795b0f56c0a6741cf1e8ab99ee1f97e2fce0fe34",
+      "ranges": [
+        {
+          "start": 7,
+          "end": 14,
+          "declarations": "everyCharacter_of_row and everyCharacter"
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/EveryCharacterOfLiteratureOfVWin.lean",
+      "git_blob": "a13ba1f8c38d4dbf2ddd809fbf9610a007936c24",
+      "sha256": "246b74eeb03dae250c45b46c155b3590cb53c2bac86f5e35f4b74338db487068",
+      "ranges": [
+        {
+          "start": 810,
+          "end": 813,
+          "declarations": "every_character_of_literature_of_vWin"
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/SiegelEisensteinSecondTermHypotheses.lean",
+      "git_blob": "42abe20ee235820aaa924dbabce5e1d2c2540380",
+      "sha256": "e761e876e3236895eec1b67b5a2118846ddfcc6883eed367ac6cc78523da15f2",
+      "ranges": [
+        {
+          "start": 69,
+          "end": 73,
+          "declarations": "every_character_of_theta_integrals_local_matching"
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopPlug.lean",
+      "git_blob": "c51cb6b5bd4bf2944ace89e00a2990da16bd519a",
+      "sha256": "7d1d7972a4abe1284c5e4da9dd65a6eb605b06efb5e993b298fe5aaed88e9adf",
+      "ranges": [
+        {
+          "start": 12,
+          "end": 18,
+          "declarations": "every_character_of_green_v_win and zero_free_all_of_green_v_win"
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AutomorphicArithmetic/ThetaCorrespondence/ThetaPairLifts/ThirdPlaceSeries/TopShape.lean",
+      "git_blob": "3f791ca182db235c4a8ff582d3f038019320d5cd",
+      "sha256": "9647d4cbe444f79de90c7a5371801e83c58a040499bf03fd61faf37be9e6eaa3",
+      "ranges": [
+        {
+          "start": 33,
+          "end": 35,
+          "declarations": "shape_closed_link_n_of_green calls link_gl"
+        },
+        {
+          "start": 51,
+          "end": 55,
+          "declarations": "the result uses both components, including hgl.2"
+        }
+      ]
+    },
+    {
+      "path": "src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/LinkGl.lean",
+      "git_blob": "31359d438c3bb3c5050f9cab94bda28c5b64c72a",
+      "sha256": "f968ce06056ca8326be9b449b4717cab0f7d9e81354503b3427e928480816443",
+      "ranges": [
+        {
+          "start": 14,
+          "end": 31,
+          "declarations": "link_gl uses FamGLmin.link8"
+        }
+      ]
+    },
+    {
+      "path": "src/Formalism/SharpRestriction/GlobalSchurBounds/LogXLowerFamilyOfTheorems.lean",
+      "git_blob": "ec572214001b89d3decea7b42ceaf42a73fc4049",
+      "sha256": "bf2ecd34e87411e67f767c23b8c3ec6a62fcd34738138a63c326d58f12e5f431",
+      "ranges": [
+        {
+          "start": 60,
+          "end": 75,
+          "declarations": "FamGLmin.link8 via link7 to linkGLOBAL7_min"
+        }
+      ]
+    },
+    {
+      "path": "src/Formalism/SharpRestriction/GrowthBounds/SmallOrderPrimes.lean",
+      "git_blob": "a35ad58d20f072b48cbb03f619f1bf0f1501e66f",
+      "sha256": "5a737262225108d60f9dbd8ddbe68f39c535da0ca1a0ca0d3894e41f752481b0",
+      "ranges": [
+        {
+          "start": 37,
+          "end": 45,
+          "declarations": "PointsLemma and its two outputs"
+        },
+        {
+          "start": 90,
+          "end": 96,
+          "declarations": "BTT and adm2"
+        },
+        {
+          "start": 100,
+          "end": 117,
+          "declarations": "adm3 and ArchimedeanSignatureMatching"
+        }
+      ]
+    },
+    {
+      "path": "src/Formalism/SharpRestriction/GrowthBounds/LogarithmicSums/SecondConstantNonneg.lean",
+      "git_blob": "9a81c995f590ec0a1a7aa4c92729b804f38514dc",
+      "sha256": "a6c7fc124a665064081903d37e39400bb0fb7ddedfeb454bbb34be7ec7f2d486",
+      "ranges": [
+        {
+          "start": 85,
+          "end": 103,
+          "declarations": "E1 and low_le"
+        }
+      ]
+    },
+    {
+      "path": "src/Formalism/SharpRestriction/GrowthBounds/LogarithmicSums/LatticeChainSuccOfPartial.lean",
+      "git_blob": "c48148c0af73a80a8647630b9bfc484594b3d641",
+      "sha256": "1dfef8ee0062ec381b8459cca97c173920151da44d305821588885074d530417",
+      "ranges": [
+        {
+          "start": 29,
+          "end": 51,
+          "declarations": "sum_low"
+        },
+        {
+          "start": 59,
+          "end": 85,
+          "declarations": "prime cutoff, order, A4, orbit and incidence sums"
+        },
+        {
+          "start": 86,
+          "end": 121,
+          "declarations": "q1 to q8 and sum_high statement"
+        },
+        {
+          "start": 189,
+          "end": 226,
+          "declarations": "latticeChain_succ_of_partial instantiates the BTT count"
+        },
+        {
+          "start": 227,
+          "end": 251,
+          "declarations": "combining low and high bounds, separate IO"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "omission_control": {
+    "assignments": 81,
+    "strict_bounds": 65,
+    "bad_nonempty_and_omissions_empty": 15,
+    "omitted_counts_when_two_bad": [
+      0,
+      1,
+      2
+    ]
+  },
+  "exact_scales": {
+    "epsilon": "1/64",
+    "K": 1,
+    "cases": [
+      {
+        "log2_x": 64,
+        "tOutD_over_U": "1/2305843009213693952",
+        "sg": "25/288230376151711744",
+        "tOutD_over_sgU": "1/200"
+      },
+      {
+        "log2_x": 128,
+        "tOutD_over_U": "1/21267647932558653966460912964485513216",
+        "sg": "25/332306998946228968225951765070086144",
+        "tOutD_over_sgU": "1/1600"
+      },
+      {
+        "log2_x": 192,
+        "tOutD_over_U": "1/196159429230833773869868419475239575503198607639501078528",
+        "sg": "25/383123885216472214589586756787577295904684780545900544",
+        "tOutD_over_sgU": "1/12800"
+      }
+    ],
+    "Cb_one_log2_absorption_thresholds": [
+      768,
+      384
+    ]
+  },
+  "ledger_control": {
+    "shares": [
+      "1/20",
+      "1/40",
+      "3/2",
+      "1/40",
+      "1/40",
+      "3",
+      "1/40",
+      "1/30",
+      "1/40"
+    ],
+    "corners": 512,
+    "zero_seventh_share_corners": 256,
+    "low": "281/60",
+    "low_all_good": "559/120",
+    "combined": "113/24",
+    "combined_all_good": "281/60",
+    "relative_allocated_saving": "3/565",
+    "frontiers": [
+      {
+        "target": "low",
+        "permitted_orbit_cost_over_U": "1/24",
+        "multiple_of_reserved_share": "5/3",
+        "x_times_restricted_bad_mass_over_N": "1/72",
+        "boundary_violation": "1/1200"
+      },
+      {
+        "target": "combined",
+        "permitted_orbit_cost_over_U": "19/60",
+        "multiple_of_reserved_share": "38/3",
+        "x_times_restricted_bad_mass_over_N": "19/180",
+        "boundary_violation": "1/1200"
+      }
+    ]
+  },
+  "prime_weight_control": {
+    "cases": 324,
+    "bad_mass_zero": 4,
+    "strict_bounds": 320,
+    "primes": [
+      3,
+      7
+    ],
+    "cutoff": 11,
+    "labels": 2,
+    "positive_surrogate_weights": [
+      "2/3",
+      "3/5"
+    ],
+    "outside_cutoff_counterexample_ratio": "13/11"
+  }
+}
