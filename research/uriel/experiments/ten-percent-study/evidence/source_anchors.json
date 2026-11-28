@@ -1,0 +1,92 @@
+{
+  "pin": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "sources": [
+    {
+      "source": "src/Development/AutomorphicArithmetic/ThickFrames/select.lean",
+      "git_blob": "32751767563d67d48acb0d4ff4e2e256d03b42e3",
+      "sha256": "498d03b21842694689c0460dc3fc8942ad88b9087a60ee46a870a62b7d490462",
+      "lines": 174,
+      "cited_at": [
+        [
+          "A_Hand_Certificate_for_Ten_Percent.tex",
+          136,
+          136
+        ],
+        [
+          "README.md",
+          70,
+          173
+        ],
+        [
+          "evidence/alternative/AUDIT.md",
+          70,
+          173
+        ],
+        [
+          "evidence/hand/AUDIT.md",
+          70,
+          173
+        ]
+      ]
+    },
+    {
+      "source": "src/Development/AutomorphicArithmetic/ThickFrames/topsGroup.lean",
+      "git_blob": "84d05b484bb41e3c6549da74fb667d83414e2ebd",
+      "sha256": "3bbdc1217940a0c6e5ae0d7ef56208c6c392efbaebde2d95af5e2ba4e925993b",
+      "lines": 143,
+      "cited_at": [
+        [
+          "A_Hand_Certificate_for_Ten_Percent.tex",
+          101,
+          101
+        ]
+      ]
+    },
+    {
+      "source": "src/Formalism/SharpRestriction/GrowthBounds/UnramifiedQuadraticSetting.lean",
+      "git_blob": "c36e22ceab2885a6ab812f6187bfd1a86472a6ec",
+      "sha256": "8131a4bd16451b1acce0980972b44735ff04eade07f6ea91788cde72f5df5b6a",
+      "lines": 254,
+      "cited_at": [
+        [
+          "A_Hand_Certificate_for_Ten_Percent.tex",
+          237,
+          237
+        ]
+      ]
+    },
+    {
+      "source": "src/Formalism/SubspaceCounting/GoodOrbitIntervalTileCondition.lean",
+      "git_blob": "acb9507aac12f0af981cc734a07b0302ea501026",
+      "sha256": "44168da25c567d057bc885ba30918687f9573495759a62900c7175ac5a8c40bb",
+      "lines": 93,
+      "cited_at": [
+        [
+          "A_Hand_Certificate_for_Ten_Percent.tex",
+          12,
+          12
+        ],
+        [
+          "README.md",
+          9,
+          26
+        ],
+        [
+          "evidence/alternative/AUDIT.md",
+          9,
+          26
+        ],
+        [
+          "evidence/hand/AUDIT.md",
+          9,
+          26
+        ],
+        [
+          "evidence/quotient/AUDIT.md",
+          9,
+          26
+        ]
+      ]
+    }
+  ]
+}

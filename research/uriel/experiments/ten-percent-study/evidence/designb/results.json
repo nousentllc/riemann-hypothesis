@@ -1,0 +1,286 @@
+{
+  "root_panel": {
+    "affine_quotient_cases": 16777216,
+    "all_labeled_cases": 2147483648,
+    "orbit_multiplicity": 128,
+    "unique_cycles_supports": 43474,
+    "covered_representatives": 16444252,
+    "uncovered_representatives": 332964,
+    "covered_total": 2104864256,
+    "rows_sha256": "153e42dad02db066b4bd0c0f17c737eb8315052f424a92578e37cc366385bd20",
+    "first_uncovered_by_coarse_word": [
+      [
+        96,
+        1
+      ],
+      [
+        100,
+        1
+      ],
+      [
+        512,
+        1
+      ],
+      [
+        513,
+        1
+      ],
+      [
+        515,
+        1
+      ],
+      [
+        516,
+        1
+      ],
+      [
+        521,
+        8
+      ],
+      [
+        523,
+        8
+      ],
+      [
+        528,
+        17
+      ],
+      [
+        532,
+        5
+      ],
+      [
+        544,
+        1
+      ],
+      [
+        545,
+        1
+      ],
+      [
+        547,
+        1
+      ],
+      [
+        548,
+        1
+      ],
+      [
+        560,
+        10
+      ],
+      [
+        564,
+        1
+      ],
+      [
+        576,
+        1
+      ],
+      [
+        580,
+        1
+      ],
+      [
+        592,
+        17
+      ],
+      [
+        596,
+        5
+      ],
+      [
+        608,
+        1
+      ],
+      [
+        612,
+        1
+      ],
+      [
+        624,
+        17
+      ],
+      [
+        628,
+        5
+      ]
+    ]
+  },
+  "capped_profiles": [
+    {
+      "orientation": 0,
+      "threshold": "1/10",
+      "supports": 3024572,
+      "above": 49,
+      "tied": 0,
+      "maximum_integer_excess": 3528,
+      "best_even_mask": 3855,
+      "best_odd_mask": 1799,
+      "best_root_holes": 4
+    },
+    {
+      "orientation": 64,
+      "threshold": "1/10",
+      "supports": 3024572,
+      "above": 42,
+      "tied": 0,
+      "maximum_integer_excess": 2816,
+      "best_even_mask": 127,
+      "best_odd_mask": 127,
+      "best_root_holes": 2
+    },
+    {
+      "orientation": 1431633984,
+      "threshold": "1/10",
+      "supports": 3024572,
+      "above": 42,
+      "tied": 0,
+      "maximum_integer_excess": 2816,
+      "best_even_mask": 127,
+      "best_odd_mask": 32512,
+      "best_root_holes": 2
+    },
+    {
+      "orientation": 305397824,
+      "threshold": "1/10",
+      "supports": 3024572,
+      "above": 20,
+      "tied": 0,
+      "maximum_integer_excess": 1160,
+      "best_even_mask": 519,
+      "best_odd_mask": 51087,
+      "best_root_holes": 2
+    },
+    {
+      "orientation": 715784256,
+      "threshold": "1/10",
+      "supports": 3024572,
+      "above": 15,
+      "tied": 0,
+      "maximum_integer_excess": 1160,
+      "best_even_mask": 1539,
+      "best_odd_mask": 34767,
+      "best_root_holes": 2
+    },
+    {
+      "orientation": 33315,
+      "threshold": "1/10",
+      "supports": 3024572,
+      "above": 2,
+      "tied": 0,
+      "maximum_integer_excess": 96,
+      "best_even_mask": 284,
+      "best_odd_mask": 21887,
+      "best_root_holes": 0
+    },
+    {
+      "orientation": 8421923,
+      "threshold": "1/10",
+      "supports": 3024572,
+      "above": 0,
+      "tied": 0,
+      "maximum_integer_excess": -48,
+      "best_even_mask": 268,
+      "best_odd_mask": 21887,
+      "best_root_holes": 0
+    },
+    {
+      "orientation": 8421923,
+      "threshold": "6/61",
+      "supports": 3024572,
+      "above": 0,
+      "tied": 2,
+      "maximum_integer_excess": 0,
+      "best_even_mask": 268,
+      "best_odd_mask": 21887,
+      "best_root_holes": 0
+    }
+  ],
+  "vertex_rows_t_num_den_fifths": [
+    [
+      1,
+      0,
+      1,
+      12
+    ],
+    [
+      3,
+      0,
+      17,
+      12
+    ],
+    [
+      4,
+      12,
+      57,
+      12
+    ],
+    [
+      5,
+      0,
+      9,
+      12
+    ],
+    [
+      6,
+      0,
+      33,
+      4
+    ],
+    [
+      7,
+      4,
+      25,
+      12
+    ],
+    [
+      9,
+      0,
+      5,
+      12
+    ],
+    [
+      11,
+      0,
+      21,
+      12
+    ],
+    [
+      13,
+      0,
+      13,
+      12
+    ],
+    [
+      16,
+      8,
+      49,
+      12
+    ],
+    [
+      17,
+      0,
+      3,
+      12
+    ],
+    [
+      21,
+      0,
+      11,
+      12
+    ],
+    [
+      25,
+      0,
+      7,
+      12
+    ],
+    [
+      29,
+      0,
+      15,
+      12
+    ]
+  ]
+}

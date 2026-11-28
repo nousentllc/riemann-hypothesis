@@ -12,27 +12,24 @@ The latter is a wrapper around `ThirdPlaceSeries/CovolXOfSteps.lean:16–40`. Th
 
 `Formalism/QuotientMetricDivisors/Statement.lean:34–36` defines
 
-$$
-\operatorname{lcv}(X,L)=\frac{2}{[K:\mathbf Q]}\log\operatorname{ht}(X,L).
-$$
-
+```math
+\mathrm{lcv}(X,L)=\frac{2}{[K:\mathbf Q]}\log\mathrm{ht}(X,L).
+```
 This height is a normalized real covolume. `Formalism/HarderNarasimhan/StatementPl.lean:29–31` multiplies the covolume of the realized lattice by powers of 2 and the number-field discriminant. Thus the target genuinely controls a lattice's normalized logarithmic covolume; it is not a theorem that is only suggestively named “covolume.”
 
 For a family point p and lift index i, define source abbreviations
 
-$$
-T_i=\operatorname{mainT}(p,i)=p.Z.l3m(i),\qquad E=\operatorname{unitE}(p)=p.Z.l3u.
-$$
-
+```math
+T_i=\mathrm{mainT}(p,i)=p.Z.l3m(i),\qquad E=\mathrm{unitE}(p)=p.Z.l3u.
+```
 The precise pointwise target is
 
-$$
-\frac{\operatorname{lcv}((p.S\;\mathrm{false}).XW_i,
+```math
+\frac{\mathrm{lcv}((p.S\;\mathrm{false}).XW_i,
  (p.S\;\mathrm{false}).M_i)}{(p.S\;\mathrm{false}).D}
 \le T_i+(C_1+C_2+1)E.
 \tag{C}
-$$
-
+```
 `Formalism/LocalToGlobal/IndefiniteForms/IndefSide.lean:315–316` defines the obligation `L3` to be exactly the corresponding collection of bounds for all indices. `ThirdPlaceSeries/LiftLambdaBound.lean:60–61` defines `CovolumeBoundOfX` as an eventual uniform bound of this shape, valid for every qualifying point and for every C above some fixed C0. `EventualL3OfCovolume.lean:14–20` transfers it to the selected summands used downstream.
 
 I have not independently reduced T_i and E to all the final prime-sum parameters. That is a separate dependency trace; (C) alone is not the square-root estimate for prime sums.
@@ -41,10 +38,9 @@ I have not independently reduced T_i and E to all the final prime-sum parameters
 
 The source constructs a type lattice L and an idempotent e. Its good and bad lattices are explicitly
 
-$$
-L_g=L\cap\operatorname{im}(e),\qquad L_b=L\cap\ker(e)
-$$
-
+```math
+L_g=L\cap\mathrm{im}(e),\qquad L_b=L\cap\ker(e)
+```
 (`Definitions/Divisors/NormNegCmConstantEqAtAllEmbeddings.lean:41–48`). At every complex embedding, the idempotent obeys a Pythagorean norm identity, hence is orthogonal for the relevant Hermitian metric. It is not assumed to preserve the lattice integrally: an integer g controls the denominators, with g e(L) contained in L.
 
 `Proofs/DivisorProofs/MajAtAddRight.lean:111–142` proves `slope_good_ge`. Write d_g,d_b for the good/bad ranks, mu for the normalized type-lattice slope, mu_g for the good-lattice slope, m for an upper slope bound, and ell=2 log g for the denominator cost. Under the source's Gram, finite-generation, nonzero-lattice, orthogonality, and integral-denominator hypotheses, it uses the rank-weighted inequality
@@ -93,13 +89,12 @@ $$
 
 Combining (P) and the preceding inequalities gives
 
-$$
-\frac{\operatorname{lcv}}D
+```math
+\frac{\mathrm{lcv}}D
 \le-\mu_g
 \le-\mu_{\mathrm{type}}+12\delta Q
 \le T_i+(C_1+C_2)E+12\delta Q.
-$$
-
+```
 For fixed A,B,C1,C2 and positive epsilon_z, the final loss is at most E once x is sufficiently large:
 
 $$

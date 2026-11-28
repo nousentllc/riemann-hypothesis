@@ -1,0 +1,5 @@
+# Construction tests
+
+The target is a uniform asymptotic fraction strictly above 1/10 on the same conductor-one hosts and under the internal selector of the previous study. A small cycle prescribes the retention classes on a large arithmetic host. The CPU will evaluate classes, marked-cell margins and bounds on the denominator. Each host gets one fixed set shared by all primes.
+
+The first pass tried a sparse half with a dense reservoir and the cardinality-only lower bound on missing directions. The uniform homogeneous bound was below threshold. The second pass will distinguish complete cosets, optimize the retained mass within the active classes and investigate the geometry of opposite directions simultaneously. Controls include reversing a canonical child, adding forbidden neighbors, and using only the exported size condition if relevant. A finite adverse example can reject a proposed universal rule. Finite tests for favorable labels alone will not be counted as a certificate for every labeling. If a positive formula is found it will be checked independently of the search.
