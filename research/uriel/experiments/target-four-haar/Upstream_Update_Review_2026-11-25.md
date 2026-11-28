@@ -40,9 +40,9 @@ Source: [main inequality and its input/error tables](https://github.com/nousentl
 
 Commit `f2201365` changes the condensed analytic route from an eventual bound with unit coefficient to a bound with an explicit coefficient `A`. The resulting prime-remainder theorem retains
 
-\[
+```math
 R_{q_0}(y) \le (128\varphi(q_0)+32)y^{-1/2+\varepsilon}
-\]
+```
 
 for sufficiently large real `y`, under its stated arithmetic assumptions. The previous version absorbed the coefficient into an extra small power of `y`. The revision carries it directly through the criterion instead.
 
@@ -59,9 +59,9 @@ Sources: [actual refactor](https://github.com/leanprover-community/riemann-hypot
 
 Commit `b507dc56` introduces `integral_forms_long_with_completion_cost`. Instead of immediately assuming the independent family occupies almost the whole target, it shows the penalty for completing that family explicitly:
 
-\[
+```math
 (d-n)(2x_1^2b^2+b).
-\]
+```
 
 Here `d` is the target dimension and `n` is the number of independent forms already available. The original high-rank version of Theorem C is then obtained by bounding this completion cost.
 

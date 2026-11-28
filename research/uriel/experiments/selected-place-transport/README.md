@@ -6,7 +6,7 @@
 
 For the previously fixed readable datum at q₀=18480 and d=9239, its selected set contains **at least 2¹⁰⁷¹ places**. The readable cyclotomic labelling is injective on that same set and reduces to −1 modulo q₀. Any full original host retaining d=9239 has **at most 44 signed indices and 22 unsigned retained indices**. Consequently no injective map into the original signed carrier exists at this datum. Any assignment to old cosets loses raw counts in at least one coset. Normalized shares can agree after compression, as the exact controls demonstrate.
 
-The earlier q=11 calculation checks the five prime conditions. The full original host also imposes \(4tr+1<q\), which rules out 11. The signed capacity proof uses \(4tr+1<d\), so another auxiliary prime cannot repair the deficit with d fixed.
+The earlier q=11 calculation checks the five prime conditions. The full original host also imposes $`4tr+1<q`$, which rules out 11. The signed capacity proof uses $`4tr+1<d`$, so another auxiliary prime cannot repair the deficit with d fixed.
 
 ## Mathematical evidence
 
