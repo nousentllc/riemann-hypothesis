@@ -7,12 +7,12 @@ The first supplement imports the original `MainIn` and `PsiThin`. Its five check
 | `noExc_of_goodFor` | A zero-free rectangle of nonnegative height rules out a real exceptional zero within the specified width. |
 | `noExc_of_boxes` | This holds for each primitive representative of the three signed host functions because all three have their own box for the same host. |
 | `family_psi_estimate` | There are constants preceding the choice of family, scale and host. For each covered primitive representative, the original unsmoothed centered von Mangoldt estimate then holds at every admissible argument. |
-| `conductor_envelope` | If \(t\ge1\) and \(1\le\lambda\le t^{2/3}\), its normalized error is at most \(4At^2\exp[-(c/2)t^{1/3}]\). |
-| `envelope_tends_to_zero` | That upper bound tends to zero with \(t\), for fixed positive \(c\). |
+| `conductor_envelope` | If $`t\ge1`$ and $`1\le\lambda\le t^{2/3}`$, its normalized error is at most $`4At^2\exp[-(c/2)t^{1/3}]`$. |
+| `envelope_tends_to_zero` | That upper bound tends to zero with $`t`$, for fixed positive $`c`$. |
 
-A second, independently checked module proves `three_representatives` for every original host. It constructs primitive nonprincipal characters of levels exactly \(q,d,qd\), verifies all three induction hypotheses for the signed functions, and identifies their values on every natural number. For the first two characters the formula is the Jacobi symbol with denominator the corresponding prime. For the product the formula is the pointwise product. The evaluation therefore covers prime powers and the zeros at primes dividing the individual conductors.
+A second, independently checked module proves `three_representatives` for every original host. It constructs primitive nonprincipal characters of levels exactly $`q,d,qd`$, verifies all three induction hypotheses for the signed functions, and identifies their values on every natural number. For the first two characters the formula is the Jacobi symbol with denominator the corresponding prime. For the product the formula is the pointwise product. The evaluation therefore covers prime powers and the zeros at primes dividing the individual conductors.
 
-The original admissibility condition is \(\log N\le\lambda\) for the primitive conductor \(N\). The family theorem assumes that the primitive character induces the indicated signed function on units. The [arithmetic trace](../CLASS_TRACE.md) gives the mathematical arguments for fitting the conductors beneath the envelope, converting von Mangoldt sums to prime sums, and obtaining the limiting class weight. Those steps and the final served-prime asymptotic have a wider scope than the six declarations checked in this directory.
+The original admissibility condition is $`\log N\le\lambda`$ for the primitive conductor $`N`$. The family theorem assumes that the primitive character induces the indicated signed function on units. The [arithmetic trace](../CLASS_TRACE.md) gives the mathematical arguments for fitting the conductors beneath the envelope, converting von Mangoldt sums to prime sums, and obtaining the limiting class weight. Those steps and the final served-prime asymptotic have a wider scope than the six declarations checked in this directory.
 
 ## Reproduction
 
