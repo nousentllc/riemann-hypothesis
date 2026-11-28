@@ -1,0 +1,165 @@
+{
+  "certificate": {
+    "F_exponent": 1279,
+    "certificate_accepted": true,
+    "d": "71044545160779188133221690474587247886587780099842527001108260903855028615330357394231546429264844885734369936851922159183984223211055971462963002490353391527720108031090818080247749544789969315528421004658530651331021040209165916745886034450175564751365013491133983815603231609402872757451650702487411741408087684758637196528243520646091171505121575236819211784278683570253229829744747863",
+    "d_bits": 1292,
+    "k": 3413,
+    "pocklington_base": 2,
+    "q": 3,
+    "q_bits": 2
+  },
+  "cohomological_prerequisites": {
+    "d_gt_2XpowCt_plus_1": false,
+    "eventual_X0": "unknown",
+    "large_prime_cutoff_log2_lower": 811361277837313,
+    "log_qd_bound_rhs_power_of_two": "3/16",
+    "log_qd_lower_integer": 896,
+    "log_size_pass": false,
+    "q_gt_2XpowCt_plus_1": false
+  },
+  "coordinates": {
+    "B": 51328,
+    "Ct": 401,
+    "J": 42153017344,
+    "R": 2,
+    "eps": "1/64",
+    "eta": "1/128",
+    "log2_X": 2023344832512,
+    "log2_pair_scale": 48,
+    "log2_window_start": 96,
+    "log2_x": 144
+  },
+  "fixture_inputs": [
+    "Ck",
+    "R0",
+    "odd budget",
+    "exception labels",
+    "QS = 4n",
+    "conductor 1"
+  ],
+  "mutant_prime_pair_conductor_one": true,
+  "mutant_q11": {
+    "bounds": {
+      "log_X2_integer": [
+        1227,
+        1229
+      ],
+      "log_conductor_upper_integer": 1112,
+      "log_d_integer": [
+        894,
+        896
+      ],
+      "log_q_milli": [
+        2397,
+        2398
+      ],
+      "split_range_milli": [
+        1109,
+        1110
+      ]
+    },
+    "clauses": {
+      "d_lower": true,
+      "d_mod_16": true,
+      "d_prime": true,
+      "d_upper": true,
+      "log_product_upper": true,
+      "pair_symbol_one": false,
+      "q_lower": true,
+      "q_mod_8": true,
+      "q_prime": true,
+      "q_upper": false,
+      "split_small": true
+    },
+    "primes_at_or_below_split_range": [],
+    "q_divides_d_plus_one": false,
+    "row_all": false
+  },
+  "original_q": {
+    "bounds": {
+      "log_X2_integer": [
+        1227,
+        1229
+      ],
+      "log_conductor_upper_integer": 1111,
+      "log_d_integer": [
+        894,
+        896
+      ],
+      "log_q_milli": [
+        1098,
+        1099
+      ],
+      "split_range_milli": [
+        1109,
+        1110
+      ]
+    },
+    "clauses": {
+      "d_lower": true,
+      "d_mod_16": true,
+      "d_prime": true,
+      "d_upper": true,
+      "log_product_upper": true,
+      "pair_symbol_one": true,
+      "q_lower": true,
+      "q_mod_8": true,
+      "q_prime": true,
+      "q_upper": true,
+      "split_small": true
+    },
+    "primes_at_or_below_split_range": [],
+    "q_divides_d_plus_one": true,
+    "row_all": true
+  },
+  "pin": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "post_hoc_winPairs_transport": {
+    "bad_k_log2_33": {
+      "cubic_window_inclusion": false
+    },
+    "bad_k_log2_half": {
+      "available_t_log2": 38496,
+      "cubic_window_inclusion": true,
+      "floor_transport": false,
+      "requested_t_log2": 38600
+    },
+    "e_x": 307,
+    "e_x_prime": 306,
+    "evaluation_in_cohomology_window": true,
+    "final_scale_in_range": true,
+    "floor_transport_by_monotonicity": true,
+    "log2_c": "17/80",
+    "log2_k": "1/10",
+    "log2_x": "11523/80",
+    "log2_x_prime": "2303/16",
+    "pre_pair_thresholds": true,
+    "scaled_page_at_e_x": false,
+    "scaled_page_at_e_x_prime": true
+  },
+  "prime_pair_conductor_one": true,
+  "selected_scale": {
+    "PageN": true,
+    "PairWin": true,
+    "QS_log2": 308,
+    "e": 306,
+    "inside_common_window": true,
+    "n_log2": 306,
+    "t_log2": 57744
+  },
+  "selector": {
+    "erased_normalized_log2": [
+      1011672416256,
+      9854976
+    ],
+    "in_range": true,
+    "odd_exception_log2": 3951845376,
+    "omitted_odd_window_log2": 9854976,
+    "two_primary_exception_log2": 405680638918656,
+    "violation_normalized_exception_and_point": [
+      9854976,
+      9854976
+    ],
+    "whole_union_good": true
+  }
+}

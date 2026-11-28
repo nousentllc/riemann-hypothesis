@@ -1,0 +1,21 @@
+{
+  "Bchi": [
+    3,
+    7
+  ],
+  "character_order": 1,
+  "conductor": 1,
+  "discriminant": -7,
+  "hStar": 1,
+  "pK": 7,
+  "pOne": 3,
+  "product": 21,
+  "reduced_forms": [
+    [
+      1,
+      1,
+      2
+    ]
+  ],
+  "status": "post-registration finite specialization"
+}
