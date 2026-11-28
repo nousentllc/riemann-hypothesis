@@ -1,0 +1,276 @@
+{
+  "pin": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "sources": [
+    {
+      "source": "src/Development/AbelianVarietyTheory/Definitions/GlobalTwisting/ThinScalesIffHostBound.lean",
+      "git_blob": "1de433cc5ce2fa941ca72691bc75a3bccb667634",
+      "sha256": "413712d1bffa0ffc17a269690dbd21597d8eb1dd08452f943dfdcf535f607146",
+      "lines": 252,
+      "cited_at": [
+        [
+          "Optimizing_Recovery_on_the_64_Cycle.tex",
+          19,
+          41
+        ]
+      ]
+    },
+    {
+      "source": "src/Development/AutomorphicArithmetic/ShortNorms/hostOfFieldOf.lean",
+      "git_blob": "261b566b0ea0d155ef1a434889d720c3b439735f",
+      "sha256": "fb75c6141fe635f8afd236416d423a493548ce9e834da1b839686331d5d40489",
+      "lines": 255,
+      "cited_at": [
+        [
+          "Optimizing_Recovery_on_the_64_Cycle.tex",
+          217,
+          229
+        ]
+      ]
+    },
+    {
+      "source": "src/Development/AutomorphicArithmetic/ThickFrames/MarkedLow.lean",
+      "git_blob": "5be96f404d32887eec97c3a7f56134c05c77be7e",
+      "sha256": "410e5950323b24a916148df5b6aa874242eb7dfae2ec058067e5691d4db56f2a",
+      "lines": 33,
+      "cited_at": [
+        [
+          "Optimizing_Recovery_on_the_64_Cycle.tex",
+          20,
+          31
+        ],
+        [
+          "Optimizing_Recovery_on_the_64_Cycle.tex",
+          23,
+          29
+        ],
+        [
+          "evidence/rates/DESIGN.md",
+          23,
+          29
+        ]
+      ]
+    },
+    {
+      "source": "src/Development/AutomorphicArithmetic/ThickFrames/TilesLe.lean",
+      "git_blob": "83d94cf2d4488f8864b5a2468874254460aebe04",
+      "sha256": "50a1948391ea373890730b4b74e90ebfa7f152ab764a01257193bc7b6754eb3b",
+      "lines": 105,
+      "cited_at": [
+        [
+          "Optimizing_Recovery_on_the_64_Cycle.tex",
+          43,
+          67
+        ]
+      ]
+    },
+    {
+      "source": "src/Development/AutomorphicArithmetic/ThickFrames/orbitTerms.lean",
+      "git_blob": "065bd0ae97e6d4da20d104d7cfacf4cab3b8aac7",
+      "sha256": "027e5d3c89ae761d71d1568efeeb27201cd88a0580512adaf5c9b4fd4e2ff0ff",
+      "lines": 261,
+      "cited_at": [
+        [
+          "Optimizing_Recovery_on_the_64_Cycle.tex",
+          107,
+          136
+        ]
+      ]
+    },
+    {
+      "source": "src/Development/AutomorphicArithmetic/ThickFrames/select.lean",
+      "git_blob": "32751767563d67d48acb0d4ff4e2e256d03b42e3",
+      "sha256": "498d03b21842694689c0460dc3fc8942ad88b9087a60ee46a870a62b7d490462",
+      "lines": 174,
+      "cited_at": [
+        [
+          "Optimizing_Recovery_on_the_64_Cycle.tex",
+          136,
+          173
+        ],
+        [
+          "evidence/SOURCE_NOTES.md",
+          70,
+          173
+        ]
+      ]
+    },
+    {
+      "source": "src/Development/AutomorphicArithmetic/ThickFrames/topsGroup.lean",
+      "git_blob": "84d05b484bb41e3c6549da74fb667d83414e2ebd",
+      "sha256": "3bbdc1217940a0c6e5ae0d7ef56208c6c392efbaebde2d95af5e2ba4e925993b",
+      "lines": 143,
+      "cited_at": [
+        [
+          "Optimizing_Recovery_on_the_64_Cycle.tex",
+          88,
+          123
+        ],
+        [
+          "evidence/SOURCE_NOTES.md",
+          88,
+          103
+        ]
+      ]
+    },
+    {
+      "source": "src/Formalism/LocalToGlobal/GlobalTheory/IsResidueClassZero.lean",
+      "git_blob": "3d9ca6054c07565ada526d97402492b71739937d",
+      "sha256": "7b055c5bb583ff2ffc19c0891b468e05db7926f6039999f09a3d7615c90a171e",
+      "lines": 524,
+      "cited_at": [
+        [
+          "Optimizing_Recovery_on_the_64_Cycle.tex",
+          264,
+          275
+        ]
+      ]
+    },
+    {
+      "source": "src/Formalism/SharpRestriction/GlobalSchurBounds/Chosen.lean",
+      "git_blob": "9a85f26989d2381da29a40abfe7bd339d20815d8",
+      "sha256": "6ef10b1eee9e750f3cf2f70e389c7a8b59589997412e50b1b2a4c12ffb07e8f9",
+      "lines": 92,
+      "cited_at": [
+        [
+          "Optimizing_Recovery_on_the_64_Cycle.tex",
+          46,
+          51
+        ]
+      ]
+    },
+    {
+      "source": "src/Formalism/SharpRestriction/GlobalSchurBounds/Joints.lean",
+      "git_blob": "fe720afd45992b45245906237880b8ab6bf8e04b",
+      "sha256": "529e5ccbc4021dc89fc14a16f863cc0efb6ca26836f5f7805b3799f35c31bfdb",
+      "lines": 1943,
+      "cited_at": [
+        [
+          "Optimizing_Recovery_on_the_64_Cycle.tex",
+          855,
+          883
+        ]
+      ]
+    },
+    {
+      "source": "src/Formalism/SharpRestriction/GrowthBounds/IsResidueClassZero.lean",
+      "git_blob": "9fbb7879d0519f9a136e190551422881ef5d2f0b",
+      "sha256": "769f9733e1d208e4ee5a9cc89e25123f2ce9182ce295490ff97e569faf87f5a0",
+      "lines": 485,
+      "cited_at": [
+        [
+          "Optimizing_Recovery_on_the_64_Cycle.tex",
+          228,
+          268
+        ],
+        [
+          "Optimizing_Recovery_on_the_64_Cycle.tex",
+          336,
+          365
+        ]
+      ]
+    },
+    {
+      "source": "src/Formalism/SharpRestriction/GrowthBounds/LogarithmicSums/NotSingularOfCentral.lean",
+      "git_blob": "c57da93c44237c19538bd07949a705adb0e8171f",
+      "sha256": "c32c6071f19c8349702af5ee94716d23844d478514034d99c62d4c556e3b0ba5",
+      "lines": 741,
+      "cited_at": [
+        [
+          "Optimizing_Recovery_on_the_64_Cycle.tex",
+          679,
+          728
+        ]
+      ]
+    },
+    {
+      "source": "src/Formalism/SharpRestriction/GrowthBounds/LogarithmicSums/PartnerCountOfCentral.lean",
+      "git_blob": "f677b9041604e334f1115ae16b96cd61b1c7ee55",
+      "sha256": "12e0fc504d1dd71ac46b7cd72908ae34001b2995b51accb36a031e821b64f998",
+      "lines": 851,
+      "cited_at": [
+        [
+          "Optimizing_Recovery_on_the_64_Cycle.tex",
+          769,
+          828
+        ]
+      ]
+    },
+    {
+      "source": "src/Formalism/SharpRestriction/GrowthBounds/UnramifiedQuadraticSetting.lean",
+      "git_blob": "c36e22ceab2885a6ab812f6187bfd1a86472a6ec",
+      "sha256": "8131a4bd16451b1acce0980972b44735ff04eade07f6ea91788cde72f5df5b6a",
+      "lines": 254,
+      "cited_at": [
+        [
+          "Optimizing_Recovery_on_the_64_Cycle.tex",
+          237,
+          251
+        ],
+        [
+          "Optimizing_Recovery_on_the_64_Cycle.tex",
+          239,
+          251
+        ],
+        [
+          "evidence/SOURCE_NOTES.md",
+          237,
+          249
+        ]
+      ]
+    },
+    {
+      "source": "src/Formalism/SizeWindowBrackets/ChainSlopeWindows/DiscriminantSettingSatisfied.lean",
+      "git_blob": "edc32424311c076565c2e13b7657f6a5f58cfd84",
+      "sha256": "8dce8d3198be07282b1dc16061a027dab53d785947d59378f001afa0fb580f23",
+      "lines": 243,
+      "cited_at": [
+        [
+          "Optimizing_Recovery_on_the_64_Cycle.tex",
+          162,
+          220
+        ]
+      ]
+    },
+    {
+      "source": "src/Formalism/SizeWindowBrackets/WindowSettingSatisfiable.lean",
+      "git_blob": "641dc12c8c7005d532889ed7a3044636ba72b3c5",
+      "sha256": "77569696749f9fa24ad13bae6181c0e1bac62a243f9313737f1541b481a53c9b",
+      "lines": 416,
+      "cited_at": [
+        [
+          "Optimizing_Recovery_on_the_64_Cycle.tex",
+          65,
+          117
+        ]
+      ]
+    },
+    {
+      "source": "src/Formalism/SubspaceCounting/GoodOrbitIntervalTileCondition.lean",
+      "git_blob": "acb9507aac12f0af981cc734a07b0302ea501026",
+      "sha256": "44168da25c567d057bc885ba30918687f9573495759a62900c7175ac5a8c40bb",
+      "lines": 93,
+      "cited_at": [
+        [
+          "Optimizing_Recovery_on_the_64_Cycle.tex",
+          9,
+          26
+        ],
+        [
+          "Optimizing_Recovery_on_the_64_Cycle.tex",
+          12,
+          26
+        ],
+        [
+          "evidence/SOURCE_NOTES.md",
+          9,
+          26
+        ],
+        [
+          "evidence/rates/DESIGN.md",
+          12,
+          17
+        ]
+      ]
+    }
+  ]
+}
