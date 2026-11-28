@@ -29,10 +29,10 @@ A bottom node with one supported child forces that child to be even. With two su
 The bit numbered $s-1+c$ in a word tells which child is even at node $c\bmod s$: child zero is $c\bmod 2s$, child one is $c+s\bmod2s$. Take the word **8,421,923**. One can realize any such tree of minima by listing all leaves of the preferred child before the other child, recursively. Exhaust all supports consistent with having an occupied even child at every occupied node. Each half-tree has 1,807 possible supports including the empty set: at a node the admissible count obeys $b'=1+(b-1)b$ starting with $b=2$ on a leaf. After imposing the root condition and at least fourteen leaves, exactly 3,024,572 supports remain.
 
 For each support and retained leaf $t$ its coefficients are
-\[
+```math
  R_t=\sum_{\text{odd ancestors of }t}2D,\qquad
  K_t=1+\sum_{\text{odd ancestors of }t}w .
-\]
+```
 A rate vector $a_t$ has fraction $\sum a_tR_t/\sum a_tK_t$. To bound it above at $A/C$, maximize $\sum a_t(CR_t-AK_t)$ on a closed box $0\le a_t\le12/5$, $\sum a_t=32$. Closing the box relaxes support positivity. Drop the quantitative mark inequalities too. At a maximizing vertex thirteen coefficients receive $12/5$, the next receives $4/5$, and the rest receive zero. Folding over all supports gives the following integer maxima (objective multiplied by five).
 
 | Threshold $A/C$ | Maximum | Strictly above | Tied |
