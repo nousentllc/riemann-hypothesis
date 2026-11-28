@@ -1,0 +1,9 @@
+# Class-number ascent and the information retained about one center
+
+Parent experiment commit `4b1c9fbbfb9bc50a3f791c2c1f3d7f2adb336c87`. Original proof commit `40e56bab026552e089d7afcfeff08d2defb9c005`. This protocol follows inspection of the earlier slot-three results, Yokoi's theorem and Mathlib's orbit congruence. The 65 possible finite sets at cutoff 64 were already apparent from the previous table. They are a starting observation.
+
+1. Test the cyclic cubic layer hypothesis on the actual fields in the original proof. Establish degree, action and ramification in Lean as far as the pinned sources permit. Distinguish a proof of all-layer class-group ascent from a theorem that assumes its arithmetic step.
+2. Remove the one-ramified-prime condition. Use the two local cubic characters at 7 and 13, and test whether their diagonal subfield admits an unramified cyclic cubic extension. Compute inertia intersections explicitly. Replacing the diagonal by a coordinate line should destroy this conclusion. Preserve the original quadratic bottom field in a second version of this control.
+3. Test whether a specified witness's membership function can be retained exactly. For any cutoff try to prove that the empty set and all singletons can occur in the named one-center construction and that answering every in-range query requires at least as many distinct recording values as there are possible sets. Check the cap-1 arithmetic qualification explicitly. Two nonempty witnesses with the same cardinality should still disagree on a named weight.
+
+Evidence classes are experimental finite computations, deductions using named external mathematics, and locally kernel-replayed implications. A class-field interpretation of a finite group calculation must specify the number-field theorems it relies upon.

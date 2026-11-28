@@ -1,0 +1,3 @@
+# Follow-up on the two conductor-91 controls
+
+The initial PARI/GP run, using full certification, returned class group structures [6,6] and [3,3] for the two cubic extensions of the quadratic bottom field. This follow-up was specified after inspecting those groups and before calculating the Galois action on them. Predict that the order-three symmetries have a fixed subgroup divisible by three in both cases. Evaluate both generators of each cyclic cubic action independently and require equal fixed counts. Since the base field has class number one, any such result violates the fixed-class divisibility used in ascent. A further check compares the count with the total class number modulo three. These tests address what the ramification hypothesis contributes to the argument.

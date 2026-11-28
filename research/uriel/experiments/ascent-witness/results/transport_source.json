@@ -1,0 +1,18 @@
+{
+  "blob": "b225cd4b0d939a69281c97584fcd03cff65dd42f",
+  "commit": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "file": "src/Development/AutomorphicSpectrum/Proofs/GlobalProofs/CohomologicalDimensionTopologicalIso.lean",
+  "spans": [
+    {
+      "end": 156,
+      "sha256": "609c73746da06026187e1809c41556cde5307cf73ce3d2977db9b5b9bb41ae62",
+      "start": 11
+    },
+    {
+      "end": 225,
+      "sha256": "c7ab98b510888bc0c4629c3efa5aa76c71112abbf85c26f36c2b184d295b03de",
+      "start": 187
+    }
+  ],
+  "wrapped_sha256": "dee11aa0f39a0fdb1c2172adc896ec0d4330d663bdfd2d3865d0c0d087fffd1c"
+}
