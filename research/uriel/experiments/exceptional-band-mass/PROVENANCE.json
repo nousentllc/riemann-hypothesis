@@ -1,0 +1,49 @@
+{
+  "study": "Exceptional bands and positive prime mass",
+  "date": "2026-11-23",
+  "repository": "https://github.com/nousentllc/riemann-hypothesis",
+  "base": "08188ff0c6dd02dfec0bd65d30765862e9db56b7",
+  "original_lean_source": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "previous_experiment_and_two_vendored_modules": "b7b5bc6e5e6814f654753fcbd5f45fecf370344c",
+  "protocol_archive_commit": "83d898d2e42be3f879380bd8f78ac2a5cf1af1b4",
+  "protocol_publication": "Primary protocols were recorded locally before the respective new calculations; the Git archive commit was made during the experiment.",
+  "paper": {
+    "pages": 33,
+    "tex_sha256": "05e0ec9774b3f8399a54d0d86e847729cb2165ca7e613a378bdd2dcbbb2abe71",
+    "pdf_sha256": "d048eeba8914a55bdcdf965d9f11db2f2067b30974e5662e6eaddb5721065b3a",
+    "embedded_evidence_sha256": "35ccf6711c3f55c422fabbbda4297e894b1669450bd863a3e307f4be9c989e99",
+    "embedded_evidence_files": 40,
+    "standalone_build": "Passed from one TeX file with LuaLaTeX",
+    "pdf_validation": "Rendered every page, checked for overfull boxes, missing glyphs and unresolved references, and checked original-source anchors."
+  },
+  "software": {
+    "python": "CPython 3.13.2",
+    "lean": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+    "mathlib_commit": "0df444a360eaa60ab8c11dca51a86af692955474",
+    "figures": "ReportLab 4.4.9"
+  },
+  "original_source_audits": {
+    "arithmetic_files_and_ranges": [
+      25,
+      45
+    ],
+    "selector_files_and_ranges": [
+      4,
+      4
+    ],
+    "distinct_files_across_manifests": 26
+  },
+  "verification": {
+    "finite_programs": 7,
+    "kernel_module_declarations": {
+      "BandBudget": 5,
+      "WindowGeometry": 5
+    },
+    "full_original_RH_development_rebuilt": false,
+    "field_level_cutoff_reassembly_kernel_checked": false,
+    "interpolation_theorem_kernel_checked": false,
+    "scopes": "CLAIMS.json",
+    "reproduction_command": "python3 -B evidence/reproduce.py",
+    "verified_anchors_and_kernel": "Both source auditors and both pinned Lean replays passed in addition to the finite run."
+  }
+}

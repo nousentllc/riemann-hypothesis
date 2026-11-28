@@ -1,0 +1,3 @@
+# Pair-level follow-up to the exponent audit
+
+The original scalar protocol specified the discriminant powers 1/4 and 0 in units of epsilon. Reading the available bound before it was rounded to x^(epsilon/4) suggested a third test. For a WinPair supplied at V<=x, log(qd) <= V^(epsilon/5)(1+log(V)^2). Layerdisc accepts w=max(1,log(qd)). For any a<3/5 take sigma>0 smaller than 3/5-a; polynomial absorption gives r=1/5+sigma in the written transfer. The exact rational control a=59/100, r=41/200, a+r=159/200 is in control.json. This is an exploratory written deduction. The local Lean scalar envelope accepts arbitrary real exponents, while the original arithmetic field construction under the widened condition has not been recompiled.

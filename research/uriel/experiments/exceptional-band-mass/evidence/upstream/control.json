@@ -1,0 +1,139 @@
+{
+  "slack": [
+    {
+      "channel": "moving-coarse",
+      "a": "21/40",
+      "r": "1/4",
+      "raw_exponent_in_epsilon_units": "31/40",
+      "strict_asymptotic_margin": true,
+      "ratio_log_envelopes_at_log2x_12800": [
+        "1/64",
+        "1/32",
+        "1/16"
+      ]
+    },
+    {
+      "channel": "moving-coarse",
+      "a": "11/20",
+      "r": "1/4",
+      "raw_exponent_in_epsilon_units": "4/5",
+      "strict_asymptotic_margin": false,
+      "ratio_log_envelopes_at_log2x_12800": [
+        "1/2",
+        "1",
+        "2"
+      ]
+    },
+    {
+      "channel": "moving-coarse",
+      "a": "23/40",
+      "r": "1/4",
+      "raw_exponent_in_epsilon_units": "33/40",
+      "strict_asymptotic_margin": false,
+      "ratio_log_envelopes_at_log2x_12800": [
+        "16",
+        "32",
+        "64"
+      ]
+    },
+    {
+      "channel": "odd-fixed",
+      "a": "31/40",
+      "r": "0",
+      "raw_exponent_in_epsilon_units": "31/40",
+      "strict_asymptotic_margin": true,
+      "ratio_log_envelopes_at_log2x_12800": [
+        "1/64",
+        "1/32",
+        "1/16"
+      ]
+    },
+    {
+      "channel": "odd-fixed",
+      "a": "4/5",
+      "r": "0",
+      "raw_exponent_in_epsilon_units": "4/5",
+      "strict_asymptotic_margin": false,
+      "ratio_log_envelopes_at_log2x_12800": [
+        "1/2",
+        "1",
+        "2"
+      ]
+    },
+    {
+      "channel": "odd-fixed",
+      "a": "33/40",
+      "r": "0",
+      "raw_exponent_in_epsilon_units": "33/40",
+      "strict_asymptotic_margin": false,
+      "ratio_log_envelopes_at_log2x_12800": [
+        "16",
+        "32",
+        "64"
+      ]
+    }
+  ],
+  "active_cutoff": {
+    "x": 256,
+    "Ct": 2,
+    "eta": 1,
+    "exception": 65536,
+    "t": 65536,
+    "original_good": false,
+    "active_bad_indices": 0,
+    "finite_enumeration_size": 65535
+  },
+  "actual_pair_refinement_exponents": {
+    "a": "59/100",
+    "r_after_log_absorption": "41/200",
+    "sum": "159/200",
+    "target": "4/5"
+  },
+  "countermodel": [
+    {
+      "log2_start": 64,
+      "log2_exception": 64,
+      "forbidden_log2_interval": [
+        "64/401",
+        "8192"
+      ],
+      "entire_closed_window_bad": true,
+      "plateau_log2_width": "8",
+      "log2_minimum_normalized_height": "40"
+    },
+    {
+      "log2_start": 128,
+      "log2_exception": 128,
+      "forbidden_log2_interval": [
+        "128/401",
+        "16384"
+      ],
+      "entire_closed_window_bad": true,
+      "plateau_log2_width": "16",
+      "log2_minimum_normalized_height": "80"
+    },
+    {
+      "log2_start": 256,
+      "log2_exception": 256,
+      "forbidden_log2_interval": [
+        "256/401",
+        "32768"
+      ],
+      "entire_closed_window_bad": true,
+      "plateau_log2_width": "32",
+      "log2_minimum_normalized_height": "160"
+    },
+    {
+      "log2_start": 512,
+      "log2_exception": 512,
+      "forbidden_log2_interval": [
+        "512/401",
+        "65536"
+      ],
+      "entire_closed_window_bad": true,
+      "plateau_log2_width": "64",
+      "log2_minimum_normalized_height": "320"
+    }
+  ],
+  "scope": "Finite exact controls of inequalities. Multiplicative constants are independently chosen adversarial inputs; countermodel signals are neither Dirichlet characters nor outputs of upstream cohomology."
+}

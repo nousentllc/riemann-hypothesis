@@ -1,0 +1,28 @@
+{
+  "1/2": {
+    "boxes_visited": 692,
+    "maximum": [
+      "0.037730799468",
+      "0.037731732888"
+    ],
+    "maximum_bisection_depth": 12,
+    "minimum": [
+      "0.003791346359",
+      "0.003792301575"
+    ],
+    "terminal_partition_cells": 360
+  },
+  "3/4": {
+    "boxes_visited": 328,
+    "maximum": [
+      "0.007943817552",
+      "0.007944763998"
+    ],
+    "maximum_bisection_depth": 10,
+    "minimum": [
+      "0.000710316080",
+      "0.000711304127"
+    ],
+    "terminal_partition_cells": 178
+  }
+}
