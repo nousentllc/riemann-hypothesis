@@ -16,21 +16,21 @@ The first research baseline should retain the original pin, toolchain, dependenc
 
 For real `y >= 1`, let
 
-\[
+```math
 G(y)=\sum_{1\le n\le y}\Lambda(n)\left(\frac yn-1\right)
 -y\log y+(1+\gamma)y,
-\]
+```
 
 where the von Mangoldt function satisfies `Lambda(p^k) = log(p)` for prime powers and is zero otherwise; `gamma` denotes Euler's constant. The original [CharFamily.lean](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/DedekindLFunctions/CharFamily.lean) defines this through a positive-part ramp, together with twisted sums and families having strictly positive coefficients.
 
 The reading project's [WindowBridge.lean](https://github.com/nasqret/riemann-rev/blob/main/references/archive-bridges/WindowBridge.lean) extracts this sufficient condition:
 
-\[
+```math
 \forall\theta\in(1/2,1)\;\exists C_\theta\;
 \forall Y_0\;\exists Y\ge Y_0\;
 \forall y\in[Y,Y^{3/2}]:\quad G(y)\le C_\theta y^\theta.
 \tag{W}
-\]
+```
 
 Its deduction of Mathlib's `RiemannHypothesis` uses the archive's [zeroFree_of_rpow_window](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ZeroFreeOfRpowWindow.lean) and reflection. A hypothetical zero with real part `beta > 1/2` permits choosing `1/2 < theta < min(beta, 1)`. Condition (W) gives zero-freeness to the right of `theta`, contradicting the hypothetical zero. Reflection handles the opposite side.
 
@@ -44,9 +44,9 @@ The original [RankVal definition](https://github.com/leanprover-community/rieman
 
 An elementary analogy explains the role of divisibility: if a nonzero integer `A` is divisible by a product of prime powers, then
 
-\[
+```math
 \sum_p e_p\log p\le\log|A|.
-\]
+```
 
 Prescribed divisibility plus a size bound therefore constrains a weighted prime sum. Establishing the appropriate sophisticated analogue is the substantive arithmetic obligation.
 
