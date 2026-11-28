@@ -1,0 +1,202 @@
+{
+  "original_commit": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "original_sources": 1201,
+  "prior_sources": 27,
+  "new_sources": 17,
+  "version": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "inputs": {
+    "cached": 1228,
+    "rebuilt": 0,
+    "new": 17
+  },
+  "modules": {
+    "LeastSupply": {
+      "sha256": "94bf730b0e832d07fc435928f9e3d6f2047f4c531543d75d28e2387e8a477686",
+      "kernel": "replaying LeastSupply",
+      "axioms": [
+        "'Seven.Ranks.coherentLeast' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ]
+    },
+    "MovingBudget": {
+      "sha256": "fdbb3605e71f1277d067780b01be33440b7c967b25511b6a200bd0d84c968884",
+      "kernel": "replaying MovingBudget",
+      "axioms": [
+        "'Seven.Moving.fromComparison' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Seven.Moving.baAtMatched' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Seven.Moving.baAtFromTwoBase' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ]
+    },
+    "SevenAscent": {
+      "sha256": "a099b9947eed9704f842ad5f9176fbf0753d2b54fee9d74bcc8020d0e4f45932",
+      "kernel": "replaying SevenAscent",
+      "axioms": [
+        "'Seven.Ascent.onePlaceAscent' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Seven.Ascent.singlePlaceAscent' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Seven.Ascent.onePlaceSeven' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Seven.Ascent.ascend' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Seven.Ascent.regularLayer' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Seven.Ascent.allCyclotomicLayers' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Seven.Ascent.allStandardLayers' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ]
+    },
+    "SevenBase": {
+      "sha256": "f9753ea4ea43bd42ff84a352b626ef3c077b1df2222a37071acc43889e170b0c",
+      "kernel": "replaying SevenBase",
+      "axioms": [
+        "'SlotSevenProbe.seven_pid' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'SlotSevenProbe.base_class_number' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'SlotSevenProbe.seven_not_dvd_class' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ]
+    },
+    "SevenBudget": {
+      "sha256": "110c1c9272b65a8a8e87cbfcefbaf2d3ff72c387baefa4de41d47fc6b28da430",
+      "kernel": "replaying SevenBudget",
+      "axioms": [
+        "'Seven.Ranks.availableThree' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Seven.Ranks.availableSeven' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Seven.Ranks.principalBudget' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Seven.Ranks.leastMovingDesign' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ]
+    },
+    "SevenCalibration": {
+      "sha256": "ddce33d14c6427efff974171a206c440e2d530b7b5f500bda925c239a59c25d5",
+      "kernel": "replaying SevenCalibration",
+      "axioms": [
+        "'Seven.Calibration.rootLevel' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Seven.Calibration.baseOffset' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Seven.Calibration.zeroRankIndex' does not depend on any axioms",
+        "'Seven.Calibration.zeroRankField' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Seven.Calibration.calibratedLayer' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ]
+    },
+    "SevenCaps": {
+      "sha256": "75116b9d9cd1b850eda52cc6ba535a798cfa5b65b94c4308cbc3e69145056b26",
+      "kernel": "replaying SevenCaps",
+      "axioms": [
+        "'Seven.Caps.zeroFromLayers' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Seven.Caps.threeZero' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Seven.Caps.sevenZero' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ]
+    },
+    "SevenCarries": {
+      "sha256": "fece46f6a697aec64031f87081926a0e8116acce6e909f06db64976185156770",
+      "kernel": "replaying SevenCarries",
+      "axioms": [
+        "'SlotSevenCarry.unitStep' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'SlotSevenCarry.denominatorUnit' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'SlotSevenCarry.residueCertificate' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ]
+    },
+    "SevenClassStep": {
+      "sha256": "760b7d082c21f2cf6ff562ff8e2edd7cf70ae4f4a6b45447c97beac264d62932",
+      "kernel": "replaying SevenClassStep",
+      "axioms": [
+        "'Seven.ClassStep.inertia_eq_top_of_normalClosure' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Seven.ClassStep.prime_quotient_of_proper' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Seven.ClassStep.cover_group' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Seven.ClassStep.unramified_degree_dvd' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ]
+    },
+    "SevenConclusions": {
+      "sha256": "b0e2866e1034ebfa17e138af8a2d52c8923b1d8160109ebf11c788485a2ff060",
+      "kernel": "replaying SevenConclusions",
+      "axioms": [
+        "'Seven.Complete.actualTowerFree' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Seven.Complete.actualRankZero' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Seven.Complete.allSigned' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Seven.Complete.localKernel' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Seven.Complete.localSumZero' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Seven.Complete.rankZeroBound' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Seven.Complete.allOdd' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Seven.Complete.onlyMoving' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ]
+    },
+    "SevenCover": {
+      "sha256": "fb49f3fd5a7279b27502b59a73c6c80ca9a01a6f4948e9eb860de28f66a4f1e2",
+      "kernel": "replaying SevenCover",
+      "axioms": [
+        "'Seven.Cover.powers_characteristic' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Seven.Cover.powers_ne_top' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Seven.Cover.quotient_pgroup' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Seven.Cover.elementary_degree_pos' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Seven.Cover.elementary_pgroup' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Seven.Cover.elementary_abelian' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Seven.Cover.elementary_unramified' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Seven.Cover.elementary_galois_downstairs' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ]
+    },
+    "SevenDescent": {
+      "sha256": "af374465df8a2721d458c4347cc8c95e6c20dab30d775dafcf58aa5d5b3287fb",
+      "kernel": "replaying SevenDescent",
+      "axioms": [
+        "'Seven.Descent.quotientBound' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Seven.Descent.moduleZero' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Seven.Descent.layerZero' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Seven.Descent.muSeven' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Seven.Descent.fieldModel' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Seven.Descent.invariantOnModel' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Seven.Descent.kernelOnModel' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Seven.Descent.zeroOnModel' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Seven.Descent.bothParts' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ]
+    },
+    "SevenInertia": {
+      "sha256": "c82ff6bcabfa8a4b1080ddefd714ecf7fdeef5fe7b39960c93588445ba90cd49",
+      "kernel": "replaying SevenInertia",
+      "axioms": [
+        "'Seven.Inertia.relative_inertia_card' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Seven.Inertia.inertia_conjugates_le_normal' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Seven.Inertia.fixed_unramified' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Seven.Inertia.descend' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ]
+    },
+    "SevenRamification": {
+      "sha256": "21872c40274cbe4b3766bc402cca2137d22cc74fea61975680e45c80534603ee",
+      "kernel": "replaying SevenRamification",
+      "axioms": [
+        "'Seven.NextLayer.absolute_degree' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Seven.NextLayer.step_degree' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Seven.NextLayer.step_galois' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Seven.NextLayer.step_group' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Seven.NextLayer.unique_over_seven' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Seven.NextLayer.ramification_seven' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Seven.NextLayer.unramified_away' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Seven.NextLayer.totally_complex' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Seven.NextLayer.prime_over_seven_generator' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Seven.NextLayer.ramified_class_trivial' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Seven.NextLayer.unramified_iff' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Seven.NextLayer.unique_ramified_prime' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ]
+    },
+    "SevenRoster": {
+      "sha256": "377cd32caa8645612726db1c9eff5bb679794d065f94931ab970105a5b1ec9f5",
+      "kernel": "replaying SevenRoster",
+      "axioms": [
+        "'SevenRoster.quadratic_class_one' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'SevenRoster.hStar_one' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'SevenRoster.principalRoster' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ]
+    },
+    "SevenTransport": {
+      "sha256": "e1e25795fa6f1d09ba0eca2ab2ca5f2fc87880d812da2f76e311f262e67df61d",
+      "kernel": "replaying SevenTransport",
+      "axioms": [
+        "'Seven.CyclotomicTransport.rational_cyclotomic' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Seven.CyclotomicTransport.fieldEquiv' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Seven.CyclotomicTransport.class_card' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Seven.CyclotomicTransport.all_layers_iff' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ]
+    },
+    "SevenWindow": {
+      "sha256": "892f7cfd06db586ea86dbf8188940e413b2d20ebb71a38ab875225e0ee8bca0b",
+      "kernel": "replaying SevenWindow",
+      "axioms": [
+        "'Seven.Window.directOdd' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Seven.Window.zeroOddRate' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'Seven.Window.movingOnly' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ]
+    }
+  },
+  "declarations": 84
+}

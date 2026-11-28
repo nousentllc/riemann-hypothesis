@@ -1,0 +1,346 @@
+{
+  "prime": 7,
+  "power_quotients": [
+    {
+      "factors": [],
+      "order": 1,
+      "image": 1,
+      "quotient": 1
+    },
+    {
+      "factors": [
+        2
+      ],
+      "order": 2,
+      "image": 2,
+      "quotient": 1
+    },
+    {
+      "factors": [
+        3
+      ],
+      "order": 3,
+      "image": 3,
+      "quotient": 1
+    },
+    {
+      "factors": [
+        2,
+        3
+      ],
+      "order": 6,
+      "image": 6,
+      "quotient": 1
+    },
+    {
+      "factors": [
+        5,
+        6
+      ],
+      "order": 30,
+      "image": 30,
+      "quotient": 1
+    },
+    {
+      "factors": [
+        8,
+        9
+      ],
+      "order": 72,
+      "image": 72,
+      "quotient": 1
+    },
+    {
+      "factors": [
+        7
+      ],
+      "order": 7,
+      "image": 1,
+      "quotient": 7
+    },
+    {
+      "factors": [
+        14
+      ],
+      "order": 14,
+      "image": 2,
+      "quotient": 7
+    },
+    {
+      "factors": [
+        49
+      ],
+      "order": 49,
+      "image": 7,
+      "quotient": 7
+    },
+    {
+      "factors": [
+        7,
+        7
+      ],
+      "order": 49,
+      "image": 1,
+      "quotient": 49
+    },
+    {
+      "factors": [
+        49,
+        7
+      ],
+      "order": 343,
+      "image": 7,
+      "quotient": 49
+    }
+  ],
+  "cokernel_cells": 72,
+  "degree_list": [
+    0,
+    1,
+    2
+  ],
+  "cokernels": [
+    {
+      "modulus": 1,
+      "u": 2,
+      "j": -7,
+      "lengths": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "modulus": 1,
+      "u": 2,
+      "j": -6,
+      "lengths": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "modulus": 1,
+      "u": 2,
+      "j": -1,
+      "lengths": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "modulus": 1,
+      "u": 2,
+      "j": 1,
+      "lengths": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "modulus": 1,
+      "u": 2,
+      "j": 6,
+      "lengths": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "modulus": 1,
+      "u": 2,
+      "j": 7,
+      "lengths": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "modulus": 1,
+      "u": 8,
+      "j": -7,
+      "lengths": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "modulus": 1,
+      "u": 8,
+      "j": -6,
+      "lengths": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "modulus": 1,
+      "u": 8,
+      "j": -1,
+      "lengths": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "modulus": 1,
+      "u": 8,
+      "j": 1,
+      "lengths": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "modulus": 1,
+      "u": 8,
+      "j": 6,
+      "lengths": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "modulus": 1,
+      "u": 8,
+      "j": 7,
+      "lengths": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "modulus": 49,
+      "u": 2,
+      "j": -7,
+      "lengths": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "modulus": 49,
+      "u": 2,
+      "j": -6,
+      "lengths": [
+        1,
+        2,
+        2
+      ]
+    },
+    {
+      "modulus": 49,
+      "u": 2,
+      "j": -1,
+      "lengths": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "modulus": 49,
+      "u": 2,
+      "j": 1,
+      "lengths": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "modulus": 49,
+      "u": 2,
+      "j": 6,
+      "lengths": [
+        1,
+        2,
+        2
+      ]
+    },
+    {
+      "modulus": 49,
+      "u": 2,
+      "j": 7,
+      "lengths": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "modulus": 49,
+      "u": 8,
+      "j": -7,
+      "lengths": [
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "modulus": 49,
+      "u": 8,
+      "j": -6,
+      "lengths": [
+        1,
+        2,
+        2
+      ]
+    },
+    {
+      "modulus": 49,
+      "u": 8,
+      "j": -1,
+      "lengths": [
+        1,
+        2,
+        2
+      ]
+    },
+    {
+      "modulus": 49,
+      "u": 8,
+      "j": 1,
+      "lengths": [
+        1,
+        2,
+        2
+      ]
+    },
+    {
+      "modulus": 49,
+      "u": 8,
+      "j": 6,
+      "lengths": [
+        1,
+        2,
+        2
+      ]
+    },
+    {
+      "modulus": 49,
+      "u": 8,
+      "j": 7,
+      "lengths": [
+        2,
+        2,
+        2
+      ]
+    }
+  ],
+  "empty_center_budget_cells": 28,
+  "interpretation": "Finite algebraic controls. No computed cell samples an arithmetic Sha group."
+}

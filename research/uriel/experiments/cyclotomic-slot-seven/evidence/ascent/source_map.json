@@ -1,0 +1,152 @@
+[
+  {
+    "commit": "e674cb750ef96b2f5e7cd46586ea4edb9998715a",
+    "path": "research/uriel/experiments/ascent-witness/SemilinearTransport.lean",
+    "blob": "8e6d7061dd92690f4d81b850cb9568e965b7f697",
+    "anchors": {
+      "theorem unram_tr": 172,
+      "def galEquiv": 145
+    },
+    "role": "direct import through HilbertNormal; prime-independent"
+  },
+  {
+    "commit": "e674cb750ef96b2f5e7cd46586ea4edb9998715a",
+    "path": "research/uriel/experiments/ascent-witness/HilbertNormal.lean",
+    "blob": "61be5aa1c6986d7dafbc3d9adffc92a6eb99c816",
+    "anchors": {
+      "theorem stable": 11,
+      "theorem hilbert_galois": 42
+    },
+    "role": "direct research import; prime-independent"
+  },
+  {
+    "commit": "e674cb750ef96b2f5e7cd46586ea4edb9998715a",
+    "path": "research/uriel/experiments/ascent-witness/NextLayer.lean",
+    "blob": "30008d26e0b9c950311f0f224e0242df50039895",
+    "anchors": {
+      "theorem absolute_degree": 33,
+      "theorem ramification_three": 54,
+      "theorem unramified_iff": 107
+    },
+    "role": "source for 7-specific tower geometry"
+  },
+  {
+    "commit": "e674cb750ef96b2f5e7cd46586ea4edb9998715a",
+    "path": "research/uriel/experiments/ascent-witness/ClassAscent.lean",
+    "blob": "e3ec28372fdd8d13e677a5f9a2a5e665621a2506",
+    "anchors": {
+      "theorem cubic_quotient_of_proper": 103,
+      "theorem cover_group": 129,
+      "theorem unramified_degree_dvd": 152
+    },
+    "role": "source for variable-prime p-group arithmetic and reused reciprocity argument"
+  },
+  {
+    "commit": "e674cb750ef96b2f5e7cd46586ea4edb9998715a",
+    "path": "research/uriel/experiments/ascent-witness/UpstairsExtension.lean",
+    "blob": "d97d20cca4f4c4fc769a99149c671536b16432ac",
+    "anchors": {
+      "abbrev cubes": 12,
+      "theorem elementary_galois_downstairs": 100
+    },
+    "role": "source for variable-prime Hilbert cover"
+  },
+  {
+    "commit": "e674cb750ef96b2f5e7cd46586ea4edb9998715a",
+    "path": "research/uriel/experiments/ascent-witness/InertiaDescent.lean",
+    "blob": "339eb51e1118a56ca28b5c00a522d916dd77be53",
+    "anchors": {
+      "theorem relative_inertia_card": 18,
+      "theorem fixed_unramified": 53,
+      "theorem descend": 88
+    },
+    "role": "source for variable-prime one-place descent"
+  },
+  {
+    "commit": "e674cb750ef96b2f5e7cd46586ea4edb9998715a",
+    "path": "research/uriel/experiments/ascent-witness/TowerResult.lean",
+    "blob": "bfc8db3fdd74e138b1557183913af3cbe323d9b5",
+    "anchors": {
+      "private theorem use_elementary_cover": 21,
+      "theorem ascend": 50,
+      "theorem regular_layer": 59
+    },
+    "role": "earlier induction at three, retained for comparison"
+  },
+  {
+    "commit": "4b1c9fbbfb9bc50a3f791c2c1f3d7f2adb336c87",
+    "path": "research/uriel/experiments/slot-three/CyclotomicTransport.lean",
+    "blob": "0b7008b67793ec8e67a8523cc2630820cd8b58f1",
+    "anchors": {
+      "theorem rational_cyclotomic": 16,
+      "theorem class_card": 36
+    },
+    "role": "source for identification of 7-tower"
+  },
+  {
+    "commit": "40e56bab026552e089d7afcfeff08d2defb9c005",
+    "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisLibrary/KummerTheory/Mk0IdMapCongr.lean",
+    "blob": "51d26d55b7fe74a67195fc010e868035094e7cce",
+    "anchors": {
+      "def Fn (n": 172
+    },
+    "role": "canonical source tower"
+  },
+  {
+    "commit": "40e56bab026552e089d7afcfeff08d2defb9c005",
+    "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisLibrary/KummerTheory/FnCycMap.lean",
+    "blob": "b1c66a73f248a28a55eb9d802ef2ffea6063d3e0",
+    "anchors": {
+      "fnCyc": 40
+    },
+    "role": "cyclotomic over the base"
+  },
+  {
+    "commit": "40e56bab026552e089d7afcfeff08d2defb9c005",
+    "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/NumberFieldTowers/IdealNormClassCongr.lean",
+    "blob": "78c045be2be2c6c28a0a51bfbb35b1e7033c0acb",
+    "anchors": {
+      "theorem Fn_le_succ": 55
+    },
+    "role": "successive original inclusion"
+  },
+  {
+    "commit": "40e56bab026552e089d7afcfeff08d2defb9c005",
+    "path": "src/GroundTheory/GlobalFields/ClassFieldConsequences/HilbertClassField.lean",
+    "blob": "a048d8c70777372e0bc6bb356cc756c4a96dbed6",
+    "anchors": {
+      "hilbertClassFieldArtinEquiv": 69,
+      "isUnramifiedEverywhere_hilbertClassField": 31
+    },
+    "role": "Hilbert class field, Artin isomorphism and absence of ramification"
+  },
+  {
+    "commit": "40e56bab026552e089d7afcfeff08d2defb9c005",
+    "path": "src/GroundTheory/GlobalFields/Artin/InflationTower.lean",
+    "blob": "ef2ba83795b2481c3656a298baa146897c2e62aa",
+    "anchors": {
+      "theorem map_inertia_restrictNormalHom": 172
+    },
+    "role": "restriction of inertia to a normal fixed field"
+  },
+  {
+    "commit": "0df444a360eaa60ab8c11dca51a86af692955474",
+    "path": "Mathlib/NumberTheory/NumberField/Cyclotomic/Ideal.lean",
+    "blob": "ed1f884df164bea0eadc723ece2ef8b5553e95cf",
+    "anchors": {
+      "theorem ncard_primesOver_of_prime_pow": 136,
+      "theorem ramificationIdxIn_eq_of_prime_pow": 175,
+      "theorem eq_span_zeta_sub_one_of_liesOver": 149
+    },
+    "role": "prime decomposition and uniformizer"
+  },
+  {
+    "commit": "0df444a360eaa60ab8c11dca51a86af692955474",
+    "path": "Mathlib/NumberTheory/NumberField/InfinitePlace/TotallyRealComplex.lean",
+    "blob": "1818da009d90a89fc7e9cb4e2078c5307ecdf1e6",
+    "anchors": {
+      "theorem isTotallyComplex_of_algebra": 228
+    },
+    "role": "inherit total complexity"
+  }
+]

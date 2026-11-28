@@ -1,0 +1,90 @@
+{
+  "mathlib_commit": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "mathlib": [
+    {
+      "path": "Mathlib/NumberTheory/NumberField/ClassNumber.lean",
+      "git_blob": "a289ec697a34505fc73e43f9497605373f656d03",
+      "sha256": "623fa7f3b56fc3609c5a2b2fc7b4015bd5dffba7a8453ef66bbb44e23e0425af",
+      "anchors": [
+        [
+          74,
+          "theorem classNumber_eq_one_iff"
+        ],
+        [
+          77,
+          "theorem exists_ideal_in_class_of_norm_le"
+        ],
+        [
+          144,
+          "theorem isPrincipalIdealRing_of_isPrincipal_of_pow_le_of_mem_primesOver_of_mem_Icc"
+        ]
+      ]
+    },
+    {
+      "path": "Mathlib/NumberTheory/NumberField/Cyclotomic/PID.lean",
+      "git_blob": "69f3a4c6633b1f48efc1f02c2d2e81f55cb1b599",
+      "sha256": "a77b7caedd3358e9a7fb75ff63804e0af98d7b0f99036f0bfe4234de4d046459",
+      "anchors": [
+        [
+          34,
+          "theorem three_pid"
+        ],
+        [
+          48,
+          "theorem five_pid"
+        ]
+      ]
+    },
+    {
+      "path": "Mathlib/NumberTheory/NumberField/Cyclotomic/Basic.lean",
+      "git_blob": "782aa0ba644efb520bc7ae619489ae574ece2aa8",
+      "sha256": "18abf3d6096a8a2497eeaeb55ea605371076496805dc528f34c0bc66c149ef2b",
+      "anchors": [
+        [
+          651,
+          "theorem discr_prime ["
+        ]
+      ]
+    },
+    {
+      "path": "Mathlib/NumberTheory/NumberField/Cyclotomic/Ideal.lean",
+      "git_blob": "ed1f884df164bea0eadc723ece2ef8b5553e95cf",
+      "sha256": "46ac69c6ea3635f12ff5b8fc8e1ff393e2b270cd0726acf8b02d53ff2ff568c6",
+      "anchors": [
+        [
+          136,
+          "theorem ncard_primesOver_of_prime_pow"
+        ],
+        [
+          291,
+          "theorem inertiaDeg_eq_of_not_dvd"
+        ]
+      ]
+    },
+    {
+      "path": "Mathlib/NumberTheory/NumberField/Cyclotomic/Embeddings.lean",
+      "git_blob": "ef93768b70ba99e2a21a9f5b68368ec4f341ee10",
+      "sha256": "e54db6a153d8fa80d5b9eee635b1032a06fd64763bfea102b23ee1426055453f",
+      "anchors": [
+        [
+          49,
+          "theorem nrComplexPlaces_eq_totient_div_two"
+        ]
+      ]
+    }
+  ],
+  "prior_local_relative_location": "output/research-assessment/SevenBase.lean",
+  "prior_base_source_sha256": "be589a8693076ef59fb3cf75a528a29e1a6326ddd71118c2c44e0e9ea5c5871a",
+  "primary_literature": [
+    {
+      "name": "M. Hirabayashi, A determinant formula for the relative class number of an imaginary abelian number field",
+      "locator": "Section 4 and Corollary 1",
+      "url": "https://cm.osu.cz/sites/default/files/contents/22-2/cm022-2014-2_133-140.pdf"
+    },
+    {
+      "name": "J. C. Miller, Class numbers of real cyclotomic fields of composite conductor",
+      "locator": "Theorem 1.1, Section 4 reflection theorem credited to Masley, and pushing-down theorem credited to Washington",
+      "url": "https://doi.org/10.1112/S1461157014000382"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "pari": [
+    2,
+    19,
+    1
+  ],
+  "method": "polresultant using the inverse PARI primitive root",
+  "rows": [
+    {
+      "conductor": 3,
+      "pari_generator": 2,
+      "digits": 1,
+      "class_number_matches": true
+    },
+    {
+      "conductor": 9,
+      "pari_generator": 5,
+      "digits": 1,
+      "class_number_matches": true
+    },
+    {
+      "conductor": 27,
+      "pari_generator": 14,
+      "digits": 1,
+      "class_number_matches": true
+    },
+    {
+      "conductor": 7,
+      "pari_generator": 5,
+      "digits": 1,
+      "class_number_matches": true
+    },
+    {
+      "conductor": 49,
+      "pari_generator": 33,
+      "digits": 2,
+      "class_number_matches": true
+    },
+    {
+      "conductor": 343,
+      "pari_generator": 229,
+      "digits": 62,
+      "class_number_matches": true
+    },
+    {
+      "conductor": 23,
+      "pari_generator": 14,
+      "digits": 1,
+      "class_number_matches": true
+    },
+    {
+      "conductor": 37,
+      "pari_generator": 19,
+      "digits": 2,
+      "class_number_matches": true
+    },
+    {
+      "conductor": 2401,
+      "pari_generator": 1601,
+      "digits": 850,
+      "class_number_matches": true
+    }
+  ]
+}

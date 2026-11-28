@@ -1,0 +1,70 @@
+[
+  {
+    "commit": "40e56bab026552e089d7afcfeff08d2defb9c005",
+    "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/SecondBound.lean",
+    "blob": "a2e12927214cad3ce637b33adb435f42992c1c65",
+    "anchors": [
+      {
+        "start": 36,
+        "end": 40,
+        "role": "TwoBase"
+      },
+      {
+        "start": 42,
+        "end": 44,
+        "role": "TwoIn"
+      }
+    ]
+  },
+  {
+    "commit": "40e56bab026552e089d7afcfeff08d2defb9c005",
+    "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/PrimeSetBoundDataOfPrimitiveChar.lean",
+    "blob": "52224122dd8f9deefef473151d716984f3e1f1ff",
+    "anchors": [
+      {
+        "start": 32,
+        "end": 33,
+        "role": "BaAt"
+      },
+      {
+        "start": 35,
+        "end": 38,
+        "role": "BbAt"
+      },
+      {
+        "start": 40,
+        "end": 41,
+        "role": "IsBWindow"
+      }
+    ]
+  },
+  {
+    "commit": "40e56bab026552e089d7afcfeff08d2defb9c005",
+    "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/Vvat.lean",
+    "blob": "a951bf639d41e5638a196041e22f73e186b2767c",
+    "anchors": [
+      {
+        "start": 7,
+        "end": 19,
+        "role": "VVat summation"
+      }
+    ]
+  },
+  {
+    "commit": "40e56bab026552e089d7afcfeff08d2defb9c005",
+    "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/PartA.lean",
+    "blob": "c41983a3d9483591b7d7eedfb3b672d72cde101a",
+    "anchors": [
+      {
+        "start": 57,
+        "end": 60,
+        "role": "comparison witness extraction"
+      },
+      {
+        "start": 68,
+        "end": 78,
+        "role": "same witness comparison"
+      }
+    ]
+  }
+]

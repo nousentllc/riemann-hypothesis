@@ -1,0 +1,72 @@
+{
+  "Ct": 401,
+  "epsilon": "1/64",
+  "assumed_CK": 1,
+  "cost_per_rank": "102656",
+  "rows": [
+    {
+      "assumed_moving": 0,
+      "assumed_old_odd_total": 0,
+      "inherited_J": "4",
+      "redesigned_J": "4",
+      "ratio": "1"
+    },
+    {
+      "assumed_moving": 0,
+      "assumed_old_odd_total": 1,
+      "inherited_J": "410624",
+      "redesigned_J": "4",
+      "ratio": "102656"
+    },
+    {
+      "assumed_moving": 0,
+      "assumed_old_odd_total": 2,
+      "inherited_J": "42153017344",
+      "redesigned_J": "4",
+      "ratio": "10538254336"
+    },
+    {
+      "assumed_moving": 1,
+      "assumed_old_odd_total": 0,
+      "inherited_J": "410624",
+      "redesigned_J": "410624",
+      "ratio": "1"
+    },
+    {
+      "assumed_moving": 1,
+      "assumed_old_odd_total": 1,
+      "inherited_J": "42153017344",
+      "redesigned_J": "410624",
+      "ratio": "102656"
+    },
+    {
+      "assumed_moving": 1,
+      "assumed_old_odd_total": 2,
+      "inherited_J": "4327260148465664",
+      "redesigned_J": "410624",
+      "ratio": "10538254336"
+    },
+    {
+      "assumed_moving": 2,
+      "assumed_old_odd_total": 0,
+      "inherited_J": "42153017344",
+      "redesigned_J": "42153017344",
+      "ratio": "1"
+    },
+    {
+      "assumed_moving": 2,
+      "assumed_old_odd_total": 1,
+      "inherited_J": "4327260148465664",
+      "redesigned_J": "42153017344",
+      "ratio": "102656"
+    },
+    {
+      "assumed_moving": 2,
+      "assumed_old_odd_total": 2,
+      "inherited_J": "444219217800891203584",
+      "redesigned_J": "42153017344",
+      "ratio": "10538254336"
+    }
+  ],
+  "interpretation": "Illustrative parameters and matched even ranks. No rank of an existing witness was identified."
+}

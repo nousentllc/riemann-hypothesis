@@ -1,0 +1,58 @@
+{
+  "abelian": {
+    "power_map_controls": [
+      {
+        "order": 1,
+        "seventh_power_quotient": 1
+      },
+      {
+        "order": 2,
+        "seventh_power_quotient": 1
+      },
+      {
+        "order": 5,
+        "seventh_power_quotient": 1
+      },
+      {
+        "order": 7,
+        "seventh_power_quotient": 7
+      },
+      {
+        "order": 14,
+        "seventh_power_quotient": 7
+      },
+      {
+        "order": 49,
+        "seventh_power_quotient": 7
+      },
+      {
+        "order": 50,
+        "seventh_power_quotient": 1
+      },
+      {
+        "order": 343,
+        "seventh_power_quotient": 7
+      }
+    ],
+    "two_independent_places_common_index_seven": 0
+  },
+  "heisenberg": {
+    "containment_multiplicities": {
+      "1": 56,
+      "8": 1
+    },
+    "cyclic_inertia_candidates": 57,
+    "index_p_normal_kernels": 8,
+    "one_generator_conjugates": 7,
+    "one_normal_closure": 49,
+    "order": 343,
+    "prime": 7,
+    "two_independent_inertia_generated": 343
+  },
+  "non_p_group": {
+    "conjugates": 3,
+    "group": "S3",
+    "inertia": 2,
+    "normal_closure": 6
+  }
+}

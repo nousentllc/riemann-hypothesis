@@ -1,0 +1,3 @@
+# The uneliminated even-field interface
+
+Before compiling or evaluating controls, check the quantifiers of TwoBase, PartA and BaAt. Obtain an original-type conditional even-field bound from the *same* layer carrying both the TwoBase comparison and a finite upper bound on active weights. Distinguish an arbitrary separately chosen layer from the matching witness; give a second theorem using a uniform cap on all legal layers. Attempt to preserve the exact number t−1 of active terms and the source's additive one, including t=0 and t=1. Test by short finite examples whether companion value zero forces the target zero or merely allows 1. No prediction of true moving-field vanishing or availability of those bounds.

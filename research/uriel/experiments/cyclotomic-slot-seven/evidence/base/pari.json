@@ -1,0 +1,96 @@
+[
+  {
+    "conductor": 7,
+    "degree": 6,
+    "polynomial_descending": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "discriminant": -16807,
+    "class_number": 1,
+    "cyclic_factors": [],
+    "bnfcertify": 1,
+    "pari_version": [
+      2,
+      19,
+      1
+    ]
+  },
+  {
+    "conductor": 7,
+    "degree": 3,
+    "polynomial_descending": [
+      1,
+      1,
+      -2,
+      -1
+    ],
+    "discriminant": 49,
+    "class_number": 1,
+    "cyclic_factors": [],
+    "bnfcertify": 1,
+    "pari_version": [
+      2,
+      19,
+      1
+    ]
+  },
+  {
+    "conductor": 49,
+    "degree": 7,
+    "polynomial_descending": [
+      1,
+      0,
+      -21,
+      -21,
+      91,
+      112,
+      -84,
+      -97
+    ],
+    "discriminant": 13841287201,
+    "class_number": 1,
+    "cyclic_factors": [],
+    "bnfcertify": 1,
+    "pari_version": [
+      2,
+      19,
+      1
+    ]
+  },
+  {
+    "conductor": 49,
+    "degree": 14,
+    "polynomial_descending": [
+      1,
+      0,
+      0,
+      -28,
+      7,
+      14,
+      189,
+      -90,
+      -98,
+      -196,
+      427,
+      -217,
+      -140,
+      119,
+      79
+    ],
+    "discriminant": -1341068619663964900807,
+    "class_number": 1,
+    "cyclic_factors": [],
+    "bnfcertify": 1,
+    "pari_version": [
+      2,
+      19,
+      1
+    ]
+  }
+]

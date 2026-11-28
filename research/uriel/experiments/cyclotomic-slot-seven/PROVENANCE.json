@@ -1,0 +1,97 @@
+{
+  "study": "The fixed cyclotomic slot at seven",
+  "repository": "https://github.com/nousentllc/riemann-hypothesis",
+  "original": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "research_base": "08188ff0c6dd02dfec0bd65d30765862e9db56b7",
+  "protocol_commit": "23228a3b471662c68676349564a3640bd0dae5af",
+  "branch": "experiments/uriel-cyclotomic-slot-seven",
+  "base_branch": "research/uriel",
+  "prior_gap": "0b9ed6f42cccf214e7e196f2e129ea1e3b1b5987",
+  "prior_endpoint": "d79bd956c6fb2b8a3de51b606765be81d24fb1fc",
+  "prior_slot_three": "4b1c9fbbfb9bc50a3f791c2c1f3d7f2adb336c87",
+  "prior_ascent": "e674cb750ef96b2f5e7cd46586ea4edb9998715a",
+  "lean_release": "4.33.1",
+  "lean_commit": "819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+  "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "primary_protocols": [
+    "evidence/base/PROTOCOL.md",
+    "evidence/ascent/PROTOCOL.md",
+    "evidence/descent/PROTOCOL.md",
+    "evidence/roster/PROTOCOL.md",
+    "evidence/numerics/PROTOCOL.md"
+  ],
+  "supplementary_designs": [
+    "evidence/base/CARRY_PROTOCOL.md",
+    "evidence/base/RELATIVE_PROTOCOL.md",
+    "evidence/descent/CONTROLS.md",
+    "evidence/ranks/FOLLOWUP.md",
+    "evidence/moving/FOLLOWUP.md"
+  ],
+  "full_lean_build": false,
+  "original_sources_changed": false,
+  "limits": "Original and prior research dependencies are authenticated against pinned source manifests. The combined checker receipt records the exact scope, reused objects, rebuilt sources, new modules and declaration axioms. The relative class-number congruence in its entirety is an ordinary mathematical derivation. Moving-field bounds and late selections are conditional. No computation here proves RH.",
+  "scoped_replay": {
+    "original_sources": 1201,
+    "prior_sources": 27,
+    "new_sources": 17,
+    "declarations": 84,
+    "inputs": {
+      "cached": 1228,
+      "rebuilt": 0,
+      "new": 17
+    },
+    "version": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+    "modules": [
+      "LeastSupply",
+      "MovingBudget",
+      "SevenAscent",
+      "SevenBase",
+      "SevenBudget",
+      "SevenCalibration",
+      "SevenCaps",
+      "SevenCarries",
+      "SevenClassStep",
+      "SevenConclusions",
+      "SevenCover",
+      "SevenDescent",
+      "SevenInertia",
+      "SevenRamification",
+      "SevenRoster",
+      "SevenTransport",
+      "SevenWindow"
+    ]
+  },
+  "paper": {
+    "standalone_lualatex": true,
+    "pages": 33,
+    "rendered_pages": 33,
+    "annotations": 59,
+    "distinct_external_links": 37,
+    "vector_figures": [
+      "witness",
+      "classnumbers"
+    ],
+    "logo": {
+      "file": "evidence/figures/nous_logo_black.png",
+      "sha256": "bdfff8716596a351b480896d4bc21a7786470d6283c050b4ee801e3a88d061b6",
+      "reference": "Arithmetic Coding, Representation Geometry, and Revisable Memory, Paper 01 editable source, assets/nous_logo_black.png; also identical to the black July 2019 branding master."
+    },
+    "human_ai_disclosure": true,
+    "front_matter": {
+      "cover": 1,
+      "abstract": 2,
+      "contents": 3,
+      "first_section": 4
+    },
+    "tex_sha256": "982e3eae3617c66a73be76dcfd9478af66397fca4fc4228278165f1bba3c22a3",
+    "pdf_sha256": "423d123e62dec14848df01eb632bb15e9e06f9ce6b33c2e8473fcd4d91a54e26"
+  },
+  "verification_receipts": [
+    "evidence/verification/reproduce-finite.json",
+    "evidence/verification/reproduce-pari.json",
+    "evidence/verification/reproduce-audit.json",
+    "evidence/verification/independent-kernel.json",
+    "evidence/verification/reproduce-full-offline.json",
+    "evidence/verification/render.json"
+  ]
+}

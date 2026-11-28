@@ -1,0 +1,3 @@
+# Additional all-height congruence
+
+After deriving a possible route independent of the class-field ascent and before evaluating its coefficients, hold g=3 fixed and test its integral carry polynomials at q=7^n for 1<=n<=6. Check the full unit orbit, exact projection B_q mod (X^3+1), cancellation of the common additive constant in each residue class, the normalized denominator (3^m+1)/q mod 7, and all three downstairs odd character values mod 7 independently. The prediction is that the normalized relative class number is 1 mod 7 at every height. A deformation that discards wraparound, or forgets to remove the denominator's power of seven, should lose the certificate. This panel tests a derived symbolic recurrence; finite tests alone do not establish it.

@@ -1,0 +1,222 @@
+{
+  "declared_original": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "preceding_experiment": "0b9ed6f42cccf214e7e196f2e129ea1e3b1b5987",
+  "anchors": [
+    {
+      "commit": "40e56bab026552e089d7afcfeff08d2defb9c005",
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/QuadraticExtensions/LevelRk.lean",
+      "line": 10,
+      "declaration_prefix": "theorem UpperTheory.V.Two.levelRk",
+      "git_blob": "298db2c7e28524d6453d03c2cd319c652c479ee2",
+      "sha256": "fdce534723c8c5e395fea38374d7cb39517a90551b940522cd2567ceb3423997",
+      "role": "Finite power-quotient bound to level rank."
+    },
+    {
+      "commit": "40e56bab026552e089d7afcfeff08d2defb9c005",
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/QuadraticExtensions/LevUAnti.lean",
+      "line": 9,
+      "declaration_prefix": "theorem UpperTheory.V.Two.infRk",
+      "git_blob": "abf44859871cf230a562bf094b6e4617595da502",
+      "sha256": "26e59db0d8427e70179b90ff8b86a7b50867bb4ee41fdce742732f5a747cae88",
+      "role": "Uniform levels to rank at the tower subgroup."
+    },
+    {
+      "commit": "40e56bab026552e089d7afcfeff08d2defb9c005",
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/QuadraticExtensions/GenOfRk.lean",
+      "line": 10,
+      "declaration_prefix": "theorem UpperTheory.V.Two.genOfRk",
+      "git_blob": "f09e4336010f133e38038960c37287a5c17778cd",
+      "sha256": "6131491a5f3a5d617775a18bb8b98d92031b3530d2359d26d72400f55f17f942",
+      "role": "Surjection on the limiting module from the bounded number of generators."
+    },
+    {
+      "commit": "40e56bab026552e089d7afcfeff08d2defb9c005",
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/NumberFieldTowers/XTwApplyApply.lean",
+      "line": 116,
+      "declaration_prefix": "abbrev XP",
+      "git_blob": "948958d1b327d9da5f24e7b50e69d2e8dded4add",
+      "sha256": "c2e7a92efa7592787e53fe71e7c0de2c233bcd442adb1e05ad12f86383714056",
+      "role": "The target uses coefficient index p on the canonical algebraic closure."
+    },
+    {
+      "commit": "40e56bab026552e089d7afcfeff08d2defb9c005",
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/NumberFieldTowers/ExistsDescends.lean",
+      "line": 26,
+      "declaration_prefix": "theorem step0",
+      "git_blob": "a59ab5ad148624635677ffa237c398a7d6088c12",
+      "sha256": "ad5198ddc985ff0ef9c7f4f15962c2a9584836b35f8c923027e9ea3bdd8c411d",
+      "role": "Original signed nonzero twist and every relative layer."
+    },
+    {
+      "commit": "40e56bab026552e089d7afcfeff08d2defb9c005",
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/AdditiveValuationNorms/Descends.lean",
+      "line": 8,
+      "declaration_prefix": "theorem UpperTheory.V.PropA.descends",
+      "git_blob": "6771b1273de94a05686413e0c8ccc8b2f06882b6",
+      "sha256": "10eeba6946e97802ec1aad528ca089a4ba962c988acedf3cb1fed27d9b15f037",
+      "role": "Wrapper consumes positive natural weights."
+    },
+    {
+      "commit": "40e56bab026552e089d7afcfeff08d2defb9c005",
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/AdditiveValuationNorms/GenLevel.lean",
+      "line": 11,
+      "declaration_prefix": "theorem UpperTheory.V.PropA.genLevel",
+      "git_blob": "82f8780e86491ee9376dfb50a6be7592fe4c45f1",
+      "sha256": "cad2e80c77f57eec4b3827aca1b3a534e8e91ef4a8403c944be27404d6f01606",
+      "role": "Existence of a cyclotomic generator with root data."
+    },
+    {
+      "commit": "40e56bab026552e089d7afcfeff08d2defb9c005",
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/EquivOfRange.lean",
+      "line": 47,
+      "declaration_prefix": "theorem UpperTheory.V.Win.abiso",
+      "git_blob": "6447f7b5d77085e947483df5dd30129c309fd65a",
+      "sha256": "06068a70191fa245079d1faadb3df3a113887eafa47abb8a6e61e2d07f8314c4",
+      "role": "Isomorphic realizations of the same abelian descriptor."
+    },
+    {
+      "commit": "40e56bab026552e089d7afcfeff08d2defb9c005",
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/Layerex.lean",
+      "line": 66,
+      "declaration_prefix": "theorem UpperTheory.V.Win.layerex",
+      "git_blob": "a4b445f22e78ae3e056d13bbe3166dbd9939ebb3",
+      "sha256": "b679097141506f11ec43905c9a2bbade0429f93b237e3a96dec3289decabb9cb",
+      "role": "Existence of a comparison layer at the given index."
+    },
+    {
+      "commit": "40e56bab026552e089d7afcfeff08d2defb9c005",
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/Layeriso.lean",
+      "line": 38,
+      "declaration_prefix": "theorem UpperTheory.V.Win.layeriso",
+      "git_blob": "8635ffe63c04799d4da6da2fa44d914a672085b4",
+      "sha256": "3d3d880a0a4b8a2b00e9f4fc324a719da66d4b410242d1213e77ae87ebbb6b2a",
+      "role": "Comparison of layers over isomorphic bases."
+    },
+    {
+      "commit": "40e56bab026552e089d7afcfeff08d2defb9c005",
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisLibrary/GaloisCohomologyLength/ShaLenEqShaInv.lean",
+      "line": 62,
+      "declaration_prefix": "theorem shaInv_congr",
+      "git_blob": "19302758658356ff85c5540681e53e79579ab975",
+      "sha256": "7318de124d0f827b4bc8b25c5805fcf14f869b6f2e9989b2c8bd26ee4c6ed9c5",
+      "role": "Transport under field equivalence."
+    },
+    {
+      "commit": "40e56bab026552e089d7afcfeff08d2defb9c005",
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/GaloisLibrary/GaloisCohomologyLength/ShaLenEqShaInv.lean",
+      "line": 58,
+      "declaration_prefix": "theorem shaLen_eq_shaInv",
+      "git_blob": "19302758658356ff85c5540681e53e79579ab975",
+      "sha256": "7318de124d0f827b4bc8b25c5805fcf14f869b6f2e9989b2c8bd26ee4c6ed9c5",
+      "role": "Length of any admissible local data equals the field invariant."
+    },
+    {
+      "commit": "40e56bab026552e089d7afcfeff08d2defb9c005",
+      "path": "src/Formalism/GaloisCohomology/Statement.lean",
+      "line": 75,
+      "declaration_prefix": "def Sha (",
+      "git_blob": "0799e9bcd8aa191ffaa90ab005453a53381bacea",
+      "sha256": "67dc5835eb4b337dfbbbf7f0accd1198b59793ae70f5af34421a7c35410d632c",
+      "role": "Submodule of the first cohomology of the twist."
+    },
+    {
+      "commit": "40e56bab026552e089d7afcfeff08d2defb9c005",
+      "path": "src/ReciprocityTheory/GaloisValuations/ContinuousConstSMulQuotient.lean",
+      "line": 168,
+      "declaration_prefix": "def Sha1",
+      "git_blob": "cc7e6464c45dac01a68e484ce0eb884df25d9f4f",
+      "sha256": "610c38bcf79837ed06292f22f6ce7ccdb40dc8df503e0ed41a06e71e9224b55f",
+      "role": "Intersection of kernels of local restriction."
+    },
+    {
+      "commit": "40e56bab026552e089d7afcfeff08d2defb9c005",
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/LengthEqAddEigen.lean",
+      "line": 88,
+      "declaration_prefix": "theorem shaLen_eq_add",
+      "git_blob": "0ab757164d73378933cd4c261b4bf0f670f2461e",
+      "sha256": "b10fd612b8aec69ff4f2839049eb06613d0078d2aeddac738f0f8461eb3151f2",
+      "role": "Nonnegative plus and minus terms add to total."
+    },
+    {
+      "commit": "40e56bab026552e089d7afcfeff08d2defb9c005",
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/LengthEqAddEigen.lean",
+      "line": 107,
+      "declaration_prefix": "def VVat",
+      "git_blob": "0ab757164d73378933cd4c261b4bf0f670f2461e",
+      "sha256": "b10fd612b8aec69ff4f2839049eb06613d0078d2aeddac738f0f8461eb3151f2",
+      "role": "Two requirements: finiteness and truncated sum."
+    },
+    {
+      "commit": "40e56bab026552e089d7afcfeff08d2defb9c005",
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/Vvat.lean",
+      "line": 7,
+      "declaration_prefix": "theorem UpperTheory.V.Win.vvat",
+      "git_blob": "a951bf639d41e5638a196041e22f73e186b2767c",
+      "sha256": "4707f2abfa05547502a807c190a25ae33857adf1d39cfb14d6bc699086b6e949",
+      "role": "A per-weight zero estimate supplies the real sum."
+    },
+    {
+      "commit": "40e56bab026552e089d7afcfeff08d2defb9c005",
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/SecondBound.lean",
+      "line": 19,
+      "declaration_prefix": "def ABound",
+      "git_blob": "a2e12927214cad3ce637b33adb435f42992c1c65",
+      "sha256": "d0e3d59ca3196bc37ccf563afbe6829d6497e607c533b7984f27d5b8c91a29d6",
+      "role": "Zero cap and empty center family are legal."
+    },
+    {
+      "commit": "40e56bab026552e089d7afcfeff08d2defb9c005",
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/PrimeSetBoundDataOfPrimitiveChar.lean",
+      "line": 35,
+      "declaration_prefix": "def BbAt",
+      "git_blob": "52224122dd8f9deefef473151d716984f3e1f1ff",
+      "sha256": "8d78f096654f4cdd977c71b1b163bb0883c53a295d0928816d96b0d6a8362cf1",
+      "role": "The cutoff and the layer are chosen by the original K."
+    },
+    {
+      "commit": "40e56bab026552e089d7afcfeff08d2defb9c005",
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/NumberFieldTowers/XTwApplyApply.lean",
+      "line": 104,
+      "declaration_prefix": "def cZero",
+      "git_blob": "948958d1b327d9da5f24e7b50e69d2e8dded4add",
+      "sha256": "c2e7a92efa7592787e53fe71e7c0de2c233bcd442adb1e05ad12f86383714056",
+      "role": "Highest base root level."
+    },
+    {
+      "commit": "40e56bab026552e089d7afcfeff08d2defb9c005",
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/NumberFieldTowers/XTwApplyApply.lean",
+      "line": 110,
+      "declaration_prefix": "abbrev layF",
+      "git_blob": "948958d1b327d9da5f24e7b50e69d2e8dded4add",
+      "sha256": "c2e7a92efa7592787e53fe71e7c0de2c233bcd442adb1e05ad12f86383714056",
+      "role": "Actual absolute root index cZero + m."
+    },
+    {
+      "commit": "40e56bab026552e089d7afcfeff08d2defb9c005",
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/NumberFieldTowers/LayerUniq.lean",
+      "line": 25,
+      "declaration_prefix": "theorem UpperTheory.V.Tower.layerUniq",
+      "git_blob": "52585a3817ddc7b790aef590e81ec868eb0c5e9e",
+      "sha256": "ac241f9755ba3bb82412d47b6f40c30f814fb3c373b0e08e3871d5d93529be6d",
+      "role": "Canonical relative layer satisfies the original predicate."
+    },
+    {
+      "commit": "0b9ed6f42cccf214e7e196f2e129ea1e3b1b5987",
+      "path": "research/uriel/experiments/prescribed-gap-witnesses/evidence/fields/PhysicalGap.lean",
+      "line": 11,
+      "declaration_prefix": "theorem gapWinDatum",
+      "git_blob": "a932bf5939ae7d135ab46d4f17628c02e3c9cd02",
+      "sha256": "38f47641382ab03be396eb838b46fba9d62d455a4402555663995ae6620740cb",
+      "role": "Assembles a physical local witness using direct estimates or screens."
+    },
+    {
+      "commit": "0b9ed6f42cccf214e7e196f2e129ea1e3b1b5987",
+      "path": "research/uriel/experiments/prescribed-gap-witnesses/evidence/join/PrincipalBridge.lean",
+      "line": 58,
+      "declaration_prefix": "theorem twoSelections",
+      "git_blob": "618efdae06477157e856a647bc97b64db8bdae11",
+      "sha256": "7fe0d298cb65c27b839cafd0f2e97a9c465047bfcd56e49aeec3e42952e3a8ad",
+      "role": "Previous endpoint output required both moving and residual odd screens."
+    }
+  ]
+}
