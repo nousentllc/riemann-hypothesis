@@ -1,0 +1,9 @@
+# One retained set in the arithmetic-to-analytic comparison
+
+Original proof pin `40e56bab026552e089d7afcfeff08d2defb9c005`. Parent experiment `e674cb750ef96b2f5e7cd46586ea4edb9998715a`. Local protocol preceding the integrated tests. Previous source reading identified the quantifiers in EFamC and the calls to core_gm and PreRows.eAtH. Earlier builds reached the comparison wrapper. Those observations are starting inputs.
+
+1. Recover an index at each sufficiently late scale on the family window that simultaneously carries the retained-set share inequality, the bounded-character logarithmic derivative, and the core conditions. Keep the index and its actual retained set in the conclusion. Trace both supplying arguments to their construction in the pinned source. Replacing the universally available input by an independently selected existential witness may fail. Check both the intended application and this weakened statement.
+2. Test whether the share inequality distinguishes sets of equal size. Use the published share weights, hold the frame and tolerance fixed, and compare a compatible distribution with a changed one. Calculate the discrepancy exactly. Record which other structural inputs a finite example supplies.
+3. Follow both inputs into the prime statistic. Identify which parameters precede the tolerance and the family, which thresholds can vary, and whether a change of distribution can invalidate an intermediate estimate. Distinguish failure of an input from numerical failure of the final arithmetic inequality.
+
+Record source hashes, targeted Lean replay, positive controls and negative controls. A finite frame by itself supplies no number-field host. Public source and outputs belong to the fork's experiment branch. Any private memory-reader work is local to the AI Research project.
