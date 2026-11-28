@@ -1,0 +1,156 @@
+{
+  "pin": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "sources": [
+    {
+      "source": "src/Development/AutomorphicArithmetic/ShortNorms/hostOfFieldOf.lean",
+      "git_blob": "261b566b0ea0d155ef1a434889d720c3b439735f",
+      "sha256": "fb75c6141fe635f8afd236416d423a493548ce9e834da1b839686331d5d40489",
+      "lines": 255,
+      "cited_at": [
+        [
+          "How_Much_of_the_Odd_Allowance_Can_Return.tex",
+          218,
+          218
+        ]
+      ]
+    },
+    {
+      "source": "src/Development/AutomorphicArithmetic/ThickFrames/select.lean",
+      "git_blob": "32751767563d67d48acb0d4ff4e2e256d03b42e3",
+      "sha256": "498d03b21842694689c0460dc3fc8942ad88b9087a60ee46a870a62b7d490462",
+      "lines": 174,
+      "cited_at": [
+        [
+          "How_Much_of_the_Odd_Allowance_Can_Return.tex",
+          136,
+          136
+        ],
+        [
+          "README.md",
+          70,
+          173
+        ],
+        [
+          "evidence/profiles/AUDIT.md",
+          70,
+          173
+        ],
+        [
+          "evidence/profiles/TORUS_SCORE.md",
+          70,
+          173
+        ],
+        [
+          "evidence/upper/AUDIT.md",
+          70,
+          173
+        ]
+      ]
+    },
+    {
+      "source": "src/Development/AutomorphicArithmetic/ThickFrames/topsChoiceH.lean",
+      "git_blob": "30fc631d84ac2188105d8ee9a92d2ed37ba43b7d",
+      "sha256": "95cf108baaabc12785f6d2885344dfd867ef9898df29258d69cb383110e3db78",
+      "lines": 67,
+      "cited_at": [
+        [
+          "How_Much_of_the_Odd_Allowance_Can_Return.tex",
+          33,
+          33
+        ]
+      ]
+    },
+    {
+      "source": "src/Development/AutomorphicArithmetic/ThickFrames/topsGroup.lean",
+      "git_blob": "84d05b484bb41e3c6549da74fb667d83414e2ebd",
+      "sha256": "3bbdc1217940a0c6e5ae0d7ef56208c6c392efbaebde2d95af5e2ba4e925993b",
+      "lines": 143,
+      "cited_at": [
+        [
+          "How_Much_of_the_Odd_Allowance_Can_Return.tex",
+          101,
+          101
+        ],
+        [
+          "evidence/upper/AUDIT.md",
+          90,
+          125
+        ]
+      ]
+    },
+    {
+      "source": "src/Formalism/SharpRestriction/GrowthBounds/IsResidueClassZero.lean",
+      "git_blob": "9fbb7879d0519f9a136e190551422881ef5d2f0b",
+      "sha256": "769f9733e1d208e4ee5a9cc89e25123f2ce9182ce295490ff97e569faf87f5a0",
+      "lines": 485,
+      "cited_at": [
+        [
+          "How_Much_of_the_Odd_Allowance_Can_Return.tex",
+          241,
+          241
+        ]
+      ]
+    },
+    {
+      "source": "src/Formalism/SharpRestriction/GrowthBounds/UnramifiedQuadraticSetting.lean",
+      "git_blob": "c36e22ceab2885a6ab812f6187bfd1a86472a6ec",
+      "sha256": "8131a4bd16451b1acce0980972b44735ff04eade07f6ea91788cde72f5df5b6a",
+      "lines": 254,
+      "cited_at": [
+        [
+          "How_Much_of_the_Odd_Allowance_Can_Return.tex",
+          237,
+          237
+        ],
+        [
+          "evidence/profiles/AUDIT.md",
+          237,
+          252
+        ],
+        [
+          "evidence/profiles/TORUS_SCORE.md",
+          237,
+          252
+        ],
+        [
+          "evidence/upper/AUDIT.md",
+          235,
+          252
+        ]
+      ]
+    },
+    {
+      "source": "src/Formalism/SubspaceCounting/GoodOrbitIntervalTileCondition.lean",
+      "git_blob": "acb9507aac12f0af981cc734a07b0302ea501026",
+      "sha256": "44168da25c567d057bc885ba30918687f9573495759a62900c7175ac5a8c40bb",
+      "lines": 93,
+      "cited_at": [
+        [
+          "How_Much_of_the_Odd_Allowance_Can_Return.tex",
+          12,
+          12
+        ],
+        [
+          "README.md",
+          9,
+          26
+        ],
+        [
+          "evidence/profiles/AUDIT.md",
+          9,
+          26
+        ],
+        [
+          "evidence/profiles/TORUS_SCORE.md",
+          9,
+          26
+        ],
+        [
+          "evidence/upper/AUDIT.md",
+          9,
+          26
+        ]
+      ]
+    }
+  ]
+}

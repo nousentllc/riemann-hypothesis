@@ -1,0 +1,154 @@
+% !TeX program = lualatex
+\documentclass[12pt,letterpaper]{article}
+\usepackage{iftex}\RequireLuaTeX
+\usepackage[margin=.93in,headheight=15pt,headsep=13pt,footskip=25pt]{geometry}
+\usepackage{fontspec}\setmainfont{Latin Modern Roman}\setsansfont{Latin Modern Sans}
+\usepackage{amsmath,amssymb,booktabs,array,tabularx,microtype,xcolor,fancyhdr,hyperref,bookmark}
+\definecolor{ink}{HTML}{182F41}\definecolor{accent}{HTML}{176060}\definecolor{muted}{HTML}{41596A}
+\hypersetup{colorlinks=true,urlcolor=accent,linkcolor=accent,pdftitle={How much of the odd allowance can return},pdfauthor={Uriel Research}}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcommand{\orig}[3]{\href{https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/#1.lean\#L#2}{#3}}
+\newcommand{\para}[1]{\par\medskip\noindent\textbf{#1}\quad}
+\newcommand{\pagepart}[1]{\clearpage\section{#1}}
+\newcommand{\eff}{\mathrm{eff}}
+\newcommand{\gap}{\mathrm{ASK}-\mathrm{Ga}}
+\pagestyle{fancy}\fancyhf{}\fancyhead[L]{\small\sffamily\color{muted}Uriel Research}
+\fancyhead[R]{\small\sffamily\color{muted}Arithmetic witness studies}\fancyfoot[C]{\sffamily\small\thepage}
+\renewcommand{\headrulewidth}{.3pt}\setlength{\parindent}{0pt}\setlength{\parskip}{4pt}
+\setlength{\emergencystretch}{1.5em}\raggedbottom\linespread{1.025}
+\begin{document}
+\thispagestyle{plain}
+{\sffamily\small\color{accent}URIEL RESEARCH\hfill 22 NOVEMBER 2026}\par\vspace{12pt}
+{\Huge\bfseries\color{ink}How much of the odd allowance\\can return?\par}\vspace{6pt}
+{\Large\color{muted}A sharp limit for direct gain under the original selector}\par\bigskip
+
+The previous example recovered \(2/45\), about \(4.44\%\). A search over a cycle with 32 residue classes lifts the guarantee to \(8.3442\%\) for every possible ordering of the host labels. Pushing past small repeating patterns changes the answer much more. \textbf{For every fixed percentage below 100, a sufficiently late family can exceed it while passing the original internal score.} Each mask has the integer size nearest the original target and serves all its primes, orbits and lifts together.
+
+\begin{center}\begin{tabularx}{\linewidth}{@{}p{.30\linewidth}p{.23\linewidth}Y@{}}\toprule
+Scope & Recovered share & Evidence\\\midrule
+Previous example & \(2/45\) & Explicit class construction and family limit.\\
+16 residues, capped rates & \(6.56744\)--\(6.60920\%\) & Lower and upper brackets for the best guarantee across labelings in this design.\\
+32 residues, one pair deleted with necessary siblings & \(8.34420\%\) & Exact worst labeling after optimizing the deletion in this template.\\
+All score-compatible choices on the stated hosts & \(100\%\) as a supremum & Written upper bound and matching asymptotic existence argument.\\
+The mask already selected in Lean & Unknown & Selection provides existence without a list of retained points.\\\bottomrule
+\end{tabularx}\end{center}
+
+\para{What the fraction measures.} One odd retained position can incur a local price. At a fixed prime, orbit and lift, the proof can also take a direct gain \(g_0\). Recovery measures how much this improves the priced gain, summed with the original weights. The denominator is the odd allowance of that \emph{same} mask. On the sharp family the allowance tends to one quarter of the global normalization \(U\). The fraction stays meaningful even in absolute units.
+
+The insight is that counting points in short consecutive windows and testing whether a step occurs as a difference of two points ask different questions. A mask can look well populated in the windows while most steps never connect two of its points. The next pages quantify the rarity of the window failures using the actual weights in the selector. \href{https://github.com/nousentllc/riemann-hypothesis/pull/12}{Previous \(2/45\) construction}.
+
+\pagepart{The comparison the original proof actually makes}
+Fix principal conductor one, \(0<\varepsilon<1/52\), and a raw host from the pinned construction at scale \(x\). Write its cyclic group \(A=\mathbb Z/n\), \(n\) a power of two with \(n\asymp x^{h_*}\), \(h_*=2+8\varepsilon\). Set \(\delta=x^{-\varepsilon/8}\). If \(T\) is the retained set, \(N=|T|\), and \(B(T)\) is its retained mass on bad orbits summed with \(\omega_p=\log(p)/p\) over source-eligible primes, the internal selection test is
+\[
+ S(T)=\frac{(N-\delta n)^2}{2\delta n}+\frac{B(T)}{4M}
+ \ \le\ \mathbb E_{\delta}S,\qquad
+ M=C_b x^{-2}\delta n\sum_p\omega_p .
+\]
+Here the expectation is under the original independent, uniform rate \(\delta\). Its first term averages to \((1-\delta)/2\). Every finite mask has positive weight under that law. If the sum of weights vanishes the bad-score term vanishes. A sequence with \(S(T)\to0\) therefore passes this comparison eventually. At this conductor the additional distinguished-coset share is automatic. \orig{Development/AutomorphicArithmetic/ThickFrames/select}{136}{Score comparison}, \orig{Development/AutomorphicArithmetic/ThickFrames/topsGroup}{101}{original law}, \orig{Development/AutomorphicArithmetic/ThickFrames/topsChoiceH}{33}{exported constraints}, \orig{Development/AutomorphicArithmetic/ShortNorms/hostOfFieldOf}{218}{installation of the choice}.
+
+\para{The gain being compared.} At a served prime and fixed orbit and lift, put \(A_1=g_U-\mathrm{Pr}\), \(F=(g_0)_+\), and \(r=(F-A_1)_+\). Let \(\mathcal R_x\) denote the aggregated \(r\) divided by \(U=mNb\), with \(m\) lifts and scale \(b\). Write \(\mathcal K_x\) for the normalized local odd allowance. Earlier source traces give, on these same windows,
+\[
+ (\gap)/U=\mathcal K_x-\mathcal R_x+o(1),\quad
+ \liminf(\gap)/U\ge0,\qquad \liminf\mathcal K_x\ge (48e)^{-1}.
+\]
+Thus every compatible family has \(\limsup\mathcal R_x/\mathcal K_x\le1\). This upper bound concerns limits. The error terms do not yield a hard finite-scale cap. \orig{Formalism/SharpRestriction/GrowthBounds/IsResidueClassZero}{241}{Original gain and price}, \href{https://github.com/nousentllc/riemann-hypothesis/pull/11}{transport and signed gap}, \href{https://github.com/nousentllc/riemann-hypothesis/pull/10}{odd-exposure lower bound}.
+
+\para{What makes it sharp?} A step \(h\notin T-T\) has no immediate retained successor anywhere, in either orientation. On each occupied interior orbit for that step the direct gain takes back the odd offsets to leading order. This converts the upper-bound question into a construction problem: keep the score low while making \(T-T\) small in the measure applied to the final prime sum. The selector and the prime sum use different weights.
+
+\pagepart{What the small cycles can certify}
+The finite panels fix a residue pattern and a positive sampling rate for each occupied class. A class is sampled to a fixed count, and rounding across classes keeps the total nearest \(\delta n\). The least numeric label in each dyadic orbit determines its even child. A result uniform over these child choices applies without knowing the host's labeling. The geometry and rational inequalities are evaluated by the programs. Their interpretation as gain ratios uses the arithmetic scale limit.
+
+\para{Sixteen residues.} For each support and orientation, count generator steps for which both directed edges are impossible. Each blocked step carries the mass of the canonical odd child. Divide the resulting sum by all odd exposure, including the tail from finer dyadic levels. With rates at most \(2.3\delta\) this is a linear-fractional objective in the rates on a fixed support. To bound it above, drop the quantitative tile inequalities, keep the rate cap and size, and maximize on the closed box. A vertex uses six rates \(2.3\) and one \(2.2\). Exact rational certificates give
+\[
+ \frac{46{,}000{,}000}{700{,}425{,}363}\le
+ \min_{\rm labeling}\ \sup_{\rm profile}\ \text{recovered fraction}
+ \le\frac{23}{348}.
+\]
+The gap is \(0.04176\) percentage points. The run covered all 32,768 orientations and 8,256 potentially productive supports. A favorable ordering alone reached \(24/115\), or \(20.87\%\). That ordering cannot be assumed in a guarantee about the raw host.
+
+\para{Thirty-two residues.} Put the global least label at the origin. In its parity half use only its leaf, with rate \(2.38\delta\). In the opposite half remove a reflected pair and, where required to preserve a nonempty canonical even child, its siblings. At least one pair costs at most three of the 16 leaves. Indeed eight leaves have deletion cost one and only four have cost at least four. Two opposite generator directions now have no edge; the surviving odd leaves share the remaining rate. An exact rational test checks the original mark using its \(3r+1\) empty cells and \(3r\) even singletons. Checking each factor separately discards some valid choices.
+
+Over 32,768 orientations of the odd subtree, the smallest best ratio is \(10367/124242\); the largest is \(19253/221426\). Even the label-free estimate gives \(2962/37825\). The gain from missing steps persists despite the exact count and the original short and long caps. A fixed repetition scale still makes adjacent pairs common inside its occupied classes. This observation motivates a construction with many scales of variation. Detailed enumeration, exact tests and the small-design upper relaxation are in the accompanying evidence.
+
+\pagepart{A sparse set of differences with flat low frequencies}
+Fix an integer \(s>32/\varepsilon\). The dimension \(d>s\) may be chosen as large as necessary for a desired accuracy. It then stays fixed as \(x\to\infty\). Work on the probability torus \(\mathbb T^d=(\mathbb R/\mathbb Z)^d\). We seek a density of mean one whose support differences have small volume. We also need control over the density measured along short arithmetic progressions.
+
+Put \(w=1/8\). Convolve \(d+2\) normalized intervals of width \(w/(d+2)\) on the circle. The resulting density \(\phi\) has support of width \(w\). The interval integral gives \(|\widehat\phi(j)|\le\min(1,16d/|j|)^{d+2}\) for \(j\ne0\) and \(d\ge2\). Its Fourier \(\ell^1\) norm is at most \(64d\). Form the product in \(d\) coordinates and truncate to \(\|k\|_\infty\le K=(64d)^4\). By a union bound on which coordinate is outside the cube, the sum of excluded absolute coefficients is at most
+\[
+ d(64d)^{d-1}\frac{2(16d)^{d+2}}{d+1}K^{-d-1}
+ < 2d(64d)^{-2d-3}<1/256 .
+\]
+
+Average \(J\) independent uniform translates of the product density. Each nonzero low coefficient is a bounded coefficient times the mean of \(J\) random unit phases of mean zero. Applying a bounded-sum estimate to the two real components, the chance any of these coefficients exceeds \(\tau=2^{-8}(2K+1)^{-s}\) is at most
+\[
+              4(2K+1)^d\exp(-J\tau^2/4).
+\]
+Choose \(J\) large enough that this is below one, then fix a successful collection of translates. The resulting continuous nonnegative density \(f\) has mass one and the same tail bound. Its positive support lies in \(J\) boxes of side \(w\). The differences of the support lie in a finite union \(D\) of boxes of side \(2w\), with boundary of measure zero and volume at most
+\[
+                           V=J^2\,4^{-d}.
+\]
+
+For fixed \(s\), the required \(J\) grows only polynomially in \(d\); the exponent of that polynomial can be enormous. The factor \(4^{-d}\) eventually wins. The size of \(\max f\) can likewise be enormous. Keeping \(d\) fixed before the arithmetic limit ensures \(\delta\max f\to0\). The companion symbolic calculation tracks explicit powers of two. No list of centers is needed for this existence step.
+
+\pagepart{Why the prime-weighted failure budget survives}
+Choose \(\alpha\) uniformly from \((\mathbb Z/n)^d\), and map \(t\in A\) to \(\psi(t)=t\alpha/n\in\mathbb T^d\). The map may have a kernel. An eligible step \(h\) has order \(L\ge x^{\varepsilon/4}\). With \(u=\lceil1/\delta\rceil\), the vector \(\psi(2h)\) is uniform on the product grid of order \(q=L/2\gg u^2\), where \(\gg\) denotes a fixed-constant lower bound. We double the step because an even-singleton mark tests \emph{every other site}. Averaging only along the full step would miss alternating bias.
+
+Call a low frequency \(k\ne0\) slow if its circle distance \(\|k\cdot\psi(2h)\|_{\mathbb T}\le u^{-1/2}\). Suppose \(s\) independent low frequencies are slow. Their integer row matrix has an invertible square minor of determinant \(a\ne0\). Given the other coordinates, each grid output has at most \(|a|^s\) preimages on those \(s\) coordinates: multiplication by the adjugate confines each coordinate of a kernel element to the kernel of multiplication by \(a\). The admissible outputs lie in a cube with at most \((2q/\sqrt u+1)^s\) grid points. Union over the fixed finite set of possible matrices yields
+\[
+ \Pr_\alpha(\text{slow rank}\ge s\mid h)
+ \le C_{d,s,K}(u^{-1/2}+q^{-1})^s
+ =O_d(x^{-\varepsilon s/16})=o(x^{-2}).
+\]
+This works for composite grids and nonunit determinants. Averaging over the original eligible prime weights \(\omega_p\) gives the same bound on the \emph{expected weighted fraction}. Markov's inequality gives a fraction \(o(x^{-2})\) with probability tending to one, by spending part of the strict exponent margin. The host, step for each prime and weights were fixed first.
+
+On a remaining step the slow rank is less than \(s\). At most \((2K+1)^s\) low modes belong to its rational span, by projection onto independent coordinates. Their nonconstant total contribution is at most \(1/256\). Each fast character has average \(O(u^{-1/2})\) along either parity of a length-\(u\) cell by the geometric series. Their combined cost tends to zero since the Fourier norm is fixed; the tail costs \(1/256\). Thus \emph{every} starting point and either parity have \(f\)-average within \(0.02\) of one eventually.
+
+A separate averaging fact controls the final direction count. In each fixed-index dyadic coset, the empirical phases converge in probability to Haar measure. A fixed nonconstant character averages to zero unless it annihilates the subgroup, an event of probability \(O_{k,j}(1/n)\) at depth \(j\). Trigonometric approximation extends this to continuous functions and to sets with null boundary. Applied to \(D\) on the whole group, it puts at most \(V+o(1)\) of all directions in the difference cover, simultaneously with the selection-weight estimate.
+
+\pagepart{Enforcing the original cardinality and tile rules}
+A direct draw at rates proportional to \(\delta f(\psi(t))\) typically fluctuates in total size. We can do better. Choose mesh \(0<\beta<1/128\) so that no positive multiple of \(\beta\) is an atom of the distribution of \(f\) or its maximum value. Only countably many choices are excluded. Set \(g=\beta\lfloor f/\beta\rfloor\). Every used positive bin has positive Haar mass and null boundary, by continuity and the intermediate value property. The zero bin may contain a large set where \(f=0\); its boundary is at the positive threshold \(\beta\).
+
+There are finitely many bins for fixed \(d\). Each positive bin has host population \(n_i\gg_d n\) eventually on the equidistribution event. With \(g_i\) its level and \(\bar g\) the empirical mean, choose a uniform subset of size near \(\delta n_i g_i/\bar g\) in each positive bin. Adjust one count by a bounded number so \(N\) is nearest \(\delta n\). The empirical mean differs from one by at most \(\beta+o(1)\). Conditional on one tagged retained point, each other marginal differs from \(\delta g_i/\bar g\) by \(O_d(1/n)\). Every good-step cell has total mean in \([0.9,1.1]\), and its even-site mean exceeds \(0.45\) eventually (remove the tagged site when necessary). The quantization removed support, so every step outside \(D\) still lacks all pairs.
+
+For a local pattern on \(\ell\) sites sampled without replacement from a remaining bin of size \(m'\), its probability is at most \((m')^\ell/(m')_\ell\) times its independent probability at matched marginals. This follows by bounding the successful and unsuccessful falling factorials separately. Each tested block inspects \(O_d(u\log x)\) sites. Multiplying the factors over bins costs \(1+o(1)\), since \((u\log x)^2/\min_i n_i=o(1)\). The \emph{relative} bound controls exceptionally rare events. Apply it to each tested block before a union bound.
+
+\begin{itemize}\setlength\itemsep{1pt}
+\item A bounded short window fails with anchored total probability \(O_d(\delta^{K_0}+L\delta^{K_0+1})=o(x^{-2})\), using \(K_0=\lceil8(h_*+2)/\varepsilon\rceil\). Only boundedly many starts touch the tag.
+\item In a long window of length \(G'\), a multiple of \(u\), the independent factorial-moment bound is \((1.2eG'\delta/k)^k\le0.2^k\), where \(k=N_1-1\ge\max(6eG'\delta,(h_*+3)\log_2x)\). Union over \(L\) starts still costs \(o(x^{-2})\).
+\item An empty cell and a singleton-even cell each have probability above \(0.12\) under the comparison law: use \(\prod(1-p_t)\ge e^{-1.1-o(1)}\) and multiply by the even rate sum for a singleton. Skip the tag's tile. The \(M_0\) remaining disjoint trials of \(6r+1\) cells make failure at all starts \(o(x^{-2})\), since \(M_0\ge(h_*+3)\log(x)10^{6r+1}\).
+\end{itemize}
+\orig{Formalism/SharpRestriction/GrowthBounds/UnramifiedQuadraticSetting}{237}{Original thresholds} and \orig{Formalism/SubspaceCounting/GoodOrbitIntervalTileCondition}{12}{tile predicate}. Paying all \(N\) points on the rare prime steps gives \(\mathbb EB=o(M)\). The same exact-count mask can therefore meet \(S(T)=o(1)\).
+
+\pagepart{Converting missing differences to actual gain}
+On the relevant prime interior, let \(H=\exp(x^{\varepsilon/3})\), \(\lambda=b/H\), \(a=xb\), \(b'=a/H\). For an occupied orbit with \(N_v\) retained tops and \(O_v\) odd ones, the earlier local comparison gives
+\[
+ r=\bigl(\mathrm{Pr}-C+(-g_0)_+\bigr)_+ .
+\]
+Here \(C\) sums excluded positive demands and the even-source minima. If the step is outside \(D\), every first successor is absent. Its thin cap is at most \(\lambda/n+\eta+c_G\), with the two source errors \(o(\lambda)\). Deeper exclusions carry no positive demand when \(p^3\ge2H\); remaining tails are \(O(N_v a/p^3)\). Thus the odd portion of the price returns to leading order: \(r\ge O_v\lambda-o(N_v\lambda)\), with fixed orbit costs absorbed in the aggregate error. On each nonempty blocked interior orbit, retained first supply after the thin cap is at least \(N_v b'/2\) eventually, while the common subtraction \(dl=o(b')\). Hence \(g_0>0\) there. The zero floor alone could not explain this recovery. \href{https://github.com/nousentllc/riemann-hypothesis/blob/a71afc29237a4b0ae379ff8be7d58310afb80d99/research/uriel/experiments/incumbent-recovery-study/evidence/rigidity/AUDIT.md}{Blocked-orbit estimates and error accounting}.
+
+The previously traced prime-step measure is \(P_h/H=1/(4n)+O_c(x^{-c})\) uniformly in the direction for any fixed error exponent \(c\). The ledger has a factor two. Bad, dropped or omitted top mass and the excluded prime strips cost \(o(1)\) after normalization on the stated windows. On the fraction \(v\le V+o(1)\) of directions in the difference cover, losing every top costs at most \(2v/4\), since \(O_v\le N_v\). All other directions recover their odd mass to leading order. Consequently
+\[
+           -o(1)\le \mathcal K_x-\mathcal R_x\le V/2+o(1).
+\]
+
+The denominator can also be identified. Each fixed dyadic coset receives its uniform share of every quantization bin. Sampling a fixed count has variance \(O(N)\) for its bounded occupancy score. Thus at any fixed depth the mass assigned to canonical odd children tends to one half, uniformly in the choice of children at that depth. The tail of the dyadic direction weights beyond depth \(j\) is at most \(2^{-j}\). The prime weight contributes the other factor \(1/2\). Taking the finite levels first gives \(\mathcal K_x\to1/4\). The necessary finitely many high-probability conditions can be imposed simultaneously at each stage.
+
+For fixed \(d\) this gives \(\liminf\mathcal R_x/\mathcal K_x\ge1-2V\). Choose \(d\) for the desired tolerance first, then take late enough hosts. A diagonal sequence with tolerances tending to zero gives \(\mathcal R_x/\mathcal K_x\to1\) and \((\gap)/U\to0\). This conclusion bounds only the stated leading-order gap. It determines neither its lower-order sign at a specific scale nor the recovery of the proof's pre-existing choice.
+
+\pagepart{What was executed, and what remains open}
+The small-cycle runs verify exact ratios from finite combinatorics. A separate binary-vector experiment probes the mechanism: can directions be mostly absent even when every linear hyperplane is populated? For one prespecified seed and 512 points, all differences and all Walsh coefficients were computed using integers. The arithmetic host is cyclic; these vector groups provide controls on the idea.
+
+\begin{center}\begin{tabular}{@{}rrrr@{}}\toprule
+Dimension & Total directions & Missing directions & Least count in a hyperplane\\\midrule
+16 & 65,536 & 8,792 & 205\\
+19 & 524,288 & 408,477 & 203\\
+22 & 4,194,304 & 4,065,503 & 201\\\bottomrule
+\end{tabular}\end{center}
+At dimension 22, every codimension-two flat contains at least 46 points by Fourier inversion. A subgroup of the same size leaves a hyperplane empty. Conversely, treating dependent frequencies as independent gives false small-probability bounds in the grid controls. The two grid panels check nonunit determinants as well. An independent parity-panel run tested 504 geometric sums. These finite observations locate two failures which would compromise an attempted sharpness argument.
+
+With \(\varepsilon=1/64\), \(s=4096\), the explicit sufficient estimates first certify \(99\%\) on our tested power-of-two grid at \(d=2^{20}\). There the choice \(J=2^{868399}\) gives \(V\le2^{-360354}\). The smaller \(d=2^{16}\) fails this sufficient test. This calculation evaluates inequalities in integers. It provides neither a list of centers nor an arithmetic prime cutoff; it gives no practical path to evaluating such a mask at that dimension.
+
+\para{Verification boundary.} Lean 4.33.1 and Mathlib replayed three new finite lemmas: missing support differences exclude an edge, exceptional directions bound a weighted loss, and a positive allowance gives a two-sided ratio interval. The receipts record the statements, hashes and reported axioms. The torus, rare-event estimates and arithmetic transport are written arguments, with explicit dependence on the earlier source-derived window estimates. This run did not rebuild the full RH development or obtain a kernel certificate for the sharp supremum.
+
+\para{Where to push next.} A useful next question is the least \emph{finite} cyclic modulus that guarantees a double-digit percentage for every numeric labeling, with a small certificate a reader can inspect. Another is to formalize the weighted resonance bound on a dyadic grid. It isolates the most delicate new bridge and can be checked independently of the RH development. A related direction from the research corpus is to test local occupancy and actual differences separately in finite projection problems; the present use of character sums is inspired by that comparison. \href{https://arxiv.org/abs/2503.15072v1}{Fraser and Rakhmonov, finite-field projections}. The paper concerns a different group and supplies no arithmetic gain estimate here.
+\end{document}

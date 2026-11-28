@@ -1,0 +1,39 @@
+{
+  "finite_template": {
+    "compatible_binary": 168,
+    "rejected_no_even": 852,
+    "weighted_panels": 384,
+    "two_orientation_pairs": 65260
+  },
+  "independent_grids": {
+    "independent": 60,
+    "lower_slack": 0,
+    "rank_one_counterexamples": 12
+  },
+  "doubled_phase_cells": {
+    "checked": 504,
+    "exact_stationary": 8,
+    "tolerance": "2e-14",
+    "within_tolerance": true
+  },
+  "dimension_certificates": [
+    {
+      "d": 65536,
+      "r": 2049,
+      "log2_M": 336076,
+      "log2_volume_bound": 541080
+    },
+    {
+      "d": 1048576,
+      "r": 2049,
+      "log2_M": 401648,
+      "log2_volume_bound": -1293856
+    },
+    {
+      "d": 16777216,
+      "r": 2049,
+      "log2_M": 467220,
+      "log2_volume_bound": -32619992
+    }
+  ]
+}

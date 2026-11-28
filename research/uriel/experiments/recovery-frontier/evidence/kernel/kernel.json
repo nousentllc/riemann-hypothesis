@@ -1,0 +1,13 @@
+{
+  "scope": "three finite transport lemmas on support, weights and normalization",
+  "version": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "axioms": [
+    "'RecoveryFrontier.fraction_interval' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'RecoveryFrontier.no_edge_of_missing_difference' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'RecoveryFrontier.weighted_loss' depends on axioms: [propext, Classical.choice, Quot.sound]"
+  ],
+  "source_sha256": "c5dfad79cd5a38ee87bc299d68223c54adefc035b6485952f0bbf0c921e3ab4f",
+  "object_sha256": "ab429a2d72e9abf75458cb0ca03cbe8df4dde00c79ff27f6e5208df55b125c3f",
+  "kernel": "replaying RecoveryFrontier"
+}

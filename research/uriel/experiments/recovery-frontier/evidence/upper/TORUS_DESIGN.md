@@ -1,0 +1,7 @@
+# Registered checks of the high-dimensional extension
+
+The extremal argument trades a fixed finite quotient for a compactly supported smooth density on a high-dimensional torus and samples it through one cyclic homomorphism per host. The finite checks below test three steps separately. They do not instantiate the late family.
+
+1. For grids of order 4, 8, 16 and 32, enumerate every input vector in two dimensions. Compare the observed probability of two simultaneous resonances with the determinant-index grid bound for five fixed independent integer matrices and thresholds 1/16, 1/8 and 1/4. Include dependent rows as a deliberately invalid replacement for rank two.
+2. In one dimension test the geometric-progression discrepancy bound for both parity subsequences of cyclic cells. On grid order 64, use lengths 5, 10, 23 and 57, every nonzero grid phase and both starting parities, accounting separately for a zero doubled phase.
+3. At fixed epsilon=1/64, r=2049, compare source exponent and rank margins symbolically. For d=2^16, 2^20 and 2^24 evaluate the base-two logarithms in a conservative translate-count and difference-volume certificate for boxes of side 1/8, without enumerating the exponentially many boxes. Check exact integer bounds where available. Existence for arbitrarily narrow sup gaps is a large-x mathematical argument, not a recovery ratio measured at any of those dimensions.
