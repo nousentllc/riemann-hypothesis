@@ -1,0 +1,106 @@
+{
+  "closure_count": 649,
+  "compiler_output": "PrescribedPartB.lean:42:2: warning: Try this: \n  haveI\u0335\n\nThe goal is a proposition, so `have` is preferred over `haveI`.\nThe difference between `have` and `haveI` is that `haveI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`\n'SlotThree.partB_prescribed' depends on axioms: [propext, Classical.choice, Quot.sound]",
+  "diff": "--- pinned/PartB.lean\n+++ PrescribedPartB.lean\n@@ -47,19 +47,19 @@\n   rw [\u2190 hy] at hz\n   exact (IsPrimitiveRoot.map_iff_of_injective j.toRingHom.injective).mp hz\n \n-theorem UpperTheory.V.Win.partB :\n+theorem SlotThree.partB_prescribed :\n     \u2200 CK : \u211d, 0 < CK \u2192 LemmaK CK \u2192 \u2200 (l R : \u2115) [Fact l.Prime], l \u2260 2 \u2192 \u2200 A : AbF, A.HasMu l \u2192\n       \u2200 (L\u2080 : Type) [Field L\u2080] [NumberField L\u2080], IsAbField A L\u2080 \u2192 ABound l R L\u2080 \u2192\n+        \u2200 (c : \u2115) (E : \u2115 \u2192 Finset \u2115), (\u2200 Z, FirstBound l R c L\u2080 Z (E Z)) \u2192\n         \u2200 J Ct eps A1 : \u211d, 0 < J \u2192 0 \u2264 Ct \u2192 0 < eps \u2192 \u2203 x0 : \u211d, \u2200 e t : \u211d \u2192 \u2115, admitted A1 Ct e t \u2192 \u2200 X : \u211d,\n-          \u2203 Exc : Finset \u2115, Exc.card \u2264 R \u2227 \u2200 x \u2265 x0, X ^ (1 / J) \u2264 x \u2192 x \u2264 X \u2192 Good (eps / (2 * CK)) Ct Exc x \u2192\n+          \u2203 Exc : Finset \u2115, Exc = E \u230aX ^ Ct\u230b\u208a \u2227 Exc.card \u2264 R \u2227 \u2200 x \u2265 x0, X ^ (1 / J) \u2264 x \u2192 x \u2264 X \u2192 Good (eps / (2 * CK)) Ct Exc x \u2192\n             \u2200 (L\u2080' : Type) [Field L\u2080'] [NumberField L\u2080'], IsAbField A L\u2080' \u2192\n               \u2200 (L\u2081 : Type) [Field L\u2081] [NumberField L\u2081] [Algebra L\u2080' L\u2081], IsLayer l (jZero l R) L\u2080' L\u2081 \u2192\n                 VVat l L\u2081 (t x) (Real.exp (x ^ (4 * eps / 5))) := by\n-  intro CK hCK hK l R _ hl2 A hA L\u2080 _ _ hL\u2080 hAB J Ct eps A1 hJ hCt heps\n+  intro CK hCK hK l R _ hl2 A hA L\u2080 _ _ hL\u2080 hAB c E hc J Ct eps A1 hJ hCt heps\n   have hmu0 : HasMuQ l L\u2080 := by\n     obtain \u27e8\u03b6, h\u03b6\u27e9 := exists_isPrimitiveRoot_of_hasMu_of_isAbField A l hA L\u2080 hL\u2080\n     exact \u27e8\u03b6, by rw [if_neg hl2]; exact h\u03b6\u27e9\n-  obtain \u27e8c, -, hc\u27e9 := exc l R L\u2080 hAB\n   obtain \u27e8L\u2082, i1, i2, i3, hL\u2082\u27e9 := layerex l (jZero l R) Fact.out L\u2080 hmu0\n   have hc0 : 0 \u2264 Real.log (2 * ((NumberField.discr L\u2082).natAbs : \u211d)) := by\n     apply Real.log_nonneg\n@@ -71,8 +71,9 @@\n     (Nat.cast_nonneg _)\n   obtain \u27e8x1, hx1two, hx1\u27e9 := final Ct eps C heps\n   refine \u27e8x1, fun e t hAdm X => ?_\u27e9\n-  obtain \u27e8Exc, hExc\u27e9 := hc \u230aX ^ Ct\u230b\u208a\n-  refine \u27e8Exc, hExc.1, fun x hx hXx hxX hgood L\u2080' _ _ hL\u2080' L\u2081 _ _ _ hL\u2081 => ?_\u27e9\n+  let Exc := E \u230aX ^ Ct\u230b\u208a\n+  have hExc : FirstBound l R c L\u2080 \u230aX ^ Ct\u230b\u208a Exc := hc _\n+  refine \u27e8Exc, rfl, hExc.1, fun x hx hXx hxX hgood L\u2080' _ _ hL\u2080' L\u2081 _ _ _ hL\u2081 => ?_\u27e9\n   obtain \u27e8f0\u27e9 := abiso A L\u2080 L\u2080' hL\u2080 hL\u2080'\n   obtain \u27e8f1\u27e9 := layeriso l (jZero l R) Fact.out L\u2080 L\u2080' L\u2082 L\u2081 \u27e8f0\u27e9 hL\u2082 hL\u2081\n   have hx1' : (1 : \u211d) \u2264 x := by linarith\n@@ -93,3 +94,5 @@\n   rw [\u2190 shaInv_congr f1]\n   have h := hQ e' he1 (le_trans (by exact_mod_cast he2.le) hadm.2.2.2)\n   exact \u27e8h.1, by linarith [h.2]\u27e9\n+\n+#print axioms SlotThree.partB_prescribed\n",
+  "exc_direct_call": {
+    "SlotThree.partB_prescribed": false,
+    "UpperTheory.V.Win.partB": true
+  },
+  "flags": [
+    "-j1",
+    "--tstack=400000",
+    "-DautoImplicit=false",
+    "-DrelaxedAutoImplicit=false",
+    "-DmaxSynthPendingDepth=3",
+    "-Dpp.unicode.fun=true",
+    "-DmaxHeartbeats=4000000"
+  ],
+  "olean_sha256": "f582c9e049a034726b605e56c01ca7c82b3f2e4b672120337333444145fa8b2e",
+  "original_edit_intervals": [
+    [
+      "replace",
+      49,
+      50,
+      49,
+      50
+    ],
+    [
+      "insert",
+      52,
+      52,
+      52,
+      53
+    ],
+    [
+      "replace",
+      53,
+      54,
+      54,
+      55
+    ],
+    [
+      "replace",
+      57,
+      58,
+      58,
+      59
+    ],
+    [
+      "delete",
+      61,
+      62,
+      62,
+      62
+    ],
+    [
+      "replace",
+      73,
+      75,
+      73,
+      76
+    ],
+    [
+      "insert",
+      95,
+      95,
+      96,
+      98
+    ]
+  ],
+  "original_lines": 95,
+  "original_module": "Development.AutomorphicArithmetic.AutomorphicVarieties.LayeredIsomorphisms.PartB",
+  "original_source_blob": "cd8a7cae15738f4054f543cddf4af595a6d1f7dc",
+  "pin": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "recovery_at_exact_published_type": "'SlotThree.recover_partB_type' depends on axioms: [propext, Classical.choice, Quot.sound]",
+  "replays": {
+    "Development.AutomorphicArithmetic.AutomorphicVarieties.LayeredIsomorphisms.PartB": "replaying Development.AutomorphicArithmetic.AutomorphicVarieties.LayeredIsomorphisms.PartB",
+    "PrescribedPartB": "replaying PrescribedPartB"
+  },
+  "retained_original_lines": 89,
+  "shared_direct_calls": [
+    "UpperTheory.V.LDataCardLeFinrank.shaInv_congr",
+    "UpperTheory.V.Win.abiso",
+    "UpperTheory.V.Win.final",
+    "UpperTheory.V.Win.layerex",
+    "UpperTheory.V.Win.layeriso",
+    "UpperTheory.V.Win.point2",
+    "UpperTheory.V.Win.vvat"
+  ],
+  "source_object_manifest_sha256": "8b6dd6b65937c4f438e013899fe7385bcf3c7862694918dee3971bbb773f7ed0",
+  "source_sha256": "04b66b44eb6a9aee1fe99c6686aa29f683ee57932f4ca42402999745bbade87a",
+  "toolchain": {
+    "lean": "819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+    "packages": {
+      "Cli": "6130a47896ce867c6a4a55373441e59e565bad0f",
+      "LeanSearchClient": "5f4d51b81cbd3f6b32b156bfad9056621a040404",
+      "Qq": "92c15be17b7caf78c2ad767ec40f89052d908d81",
+      "aesop": "3448c0bcc5ce01b2d1546e483ec3620e32df3d0e",
+      "batteries": "4488d40d070b9700d4d5a6aa342f0d40c31b2a2d",
+      "importGraph": "16f02aa7642864af59f1ff0e384a015994db9118",
+      "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+      "plausible": "b7eb3304aeae834b12dda98993a37f6a41f6f0bb",
+      "proofwidgets": "4be2e3d5087eeb272cf5a8853b8f9dd025ef5957"
+    },
+    "version": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+  }
+}
