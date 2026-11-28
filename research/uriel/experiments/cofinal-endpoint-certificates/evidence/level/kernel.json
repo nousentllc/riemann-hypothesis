@@ -1,0 +1,21 @@
+{
+  "source_commit": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "authenticated_original_sources": 754,
+  "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "lean": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "supplement_sha256": "b347782415f3b1b29f616704fe5a35db73f5622db2fa9934acb2f556d5739c7c",
+  "supplement_olean_sha256": "f2c5a9ba7e911e4c3a0d0f319c429b60f49de307fb4b9ad904a84fedc0d1f1cf",
+  "freshly_compiled_originals": [],
+  "reused_originals": 754,
+  "declarations": [
+    "FixedLevelWindows.ofTied",
+    "FixedLevelWindows.ofCharacter",
+    "FixedLevelWindows.twoEndpoints"
+  ],
+  "axioms": [
+    "'FixedLevelWindows.ofTied' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'FixedLevelWindows.ofCharacter' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'FixedLevelWindows.twoEndpoints' depends on axioms: [propext, Classical.choice, Quot.sound]"
+  ],
+  "kernel": "replaying LevelWindows"
+}

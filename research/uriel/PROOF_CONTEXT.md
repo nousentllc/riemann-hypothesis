@@ -226,10 +226,9 @@ Small discarded rank is therefore useful only together with slope and denominato
 
 In the application ε_z>0 is fixed, δ_b=exp(−x^(ε_z/7)), and Q=(x^A+x^B+C_1+C_2+1)E, with A,B,C_1,C_2 fixed before x grows. The source proves that 12δ_bQ≤E eventually. This produces the desired normalized covolume estimate
 
-$$
-\operatorname{lcv}_i/D\le T_i+(C_1+C_2+1)E.
-$$
-
+```math
+\mathrm{lcv}_i/D\le T_i+(C_1+C_2+1)E.
+```
 The underlying geometric estimates that supply the rank cutoff, the maximum-slope envelope, and the initial lower bound remain deeper dependencies. What we have reconstructed is the projection-to-slope-to-covolume step and the explicit way its losses are absorbed.
 
 Sources: [numeric and slope_good_ge](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/MajAtAddRight.lean), [lcv_le and covolX_of_steps](https://github.com/leanprover-community/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/CovolumeFromGramAndBounds.lean).
@@ -240,14 +239,13 @@ The source's Sha is a local-global kernel in first Galois cohomology for a cyclo
 
 For the selected fields, VVle bounds, for every finite prime set S,
 
-$$
+```math
 \sum_{\ell\in S}\log\ell
-\sum_{1\le r<t}\operatorname{length}_{\mathbb Z_\ell}
+\sum_{1\le r<t}\mathrm{length}_{\mathbb Z_\ell}
 \Sha^1_\ell(E,r)
 \le \exp(x^\varepsilon/2),
 \qquad t=\lfloor x^{401}\rfloor.
-$$
-
+```
 The definition also requires the relevant lengths to be finite. VWin supplies this bound throughout a selected interval [Y,Y²] inside [X^(1/J),X], for all sufficiently large X, with J fixed earlier. Its field construction and auxiliary primes obey additional conductor, congruence, and splitting constraints.
 
 This is a quantified bound on surviving obstructions. It does not assert that all such cohomology groups vanish. The bridge vvRecord turns uniformly bounded finite prime sums into a summable defect term; divinN_of_hypV then incorporates that defect into the divisibility budget.

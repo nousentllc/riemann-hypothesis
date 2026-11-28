@@ -1,0 +1,11 @@
+{
+  "lean": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "source_sha256": "33884714b778a82622b928a8d60a46c94bdf4f16621277019eb4d61871bde93f",
+  "axioms": [
+    "'EndpointRegularity.absorb' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'EndpointRegularity.extend' depends on axioms: [propext, Classical.choice, Quot.sound]"
+  ],
+  "replay": "replaying ScalarCollar",
+  "scope": "Power absorption and eventual propagation conditional on a Lipschitz bound and an anchor value. The arithmetic Lipschitz theorem is a written derivation."
+}

@@ -1,0 +1,117 @@
+{
+  "claims": [
+    {
+      "id": "C1",
+      "evidence_type": "Kernel replay against original-type inputs",
+      "statement": "For every sufficiently large X there is one W,q,d giving WinDatum across [kW,min(X,kW²)] with fixed J,k,page function. Every fixed power width below 2 follows cofinally.",
+      "evidence": [
+        "evidence/transport/MarkedWindows.lean",
+        "evidence/transport/kernel.json",
+        "evidence/transport/controls.json"
+      ]
+    },
+    {
+      "id": "C2",
+      "evidence_type": "Written source reconstruction plus separately replayed final implication",
+      "statement": "The scale set in the original local host is the full comprehension. Keeping the inclusion through the concrete host and design witnesses gives a comparison for the same fixed analytic level on late points of that set. Neither deleting the mark nor rechoosing a family with an uncontrolled threshold justifies the implication.",
+      "evidence": [
+        "evidence/transport/source_map.json",
+        "evidence/transport/source_check.json",
+        "evidence/transport/MarkedWindows.lean",
+        "evidence/transport/controls.json"
+      ]
+    },
+    {
+      "id": "C3",
+      "evidence_type": "Kernel replay conditional on original arithmetic premises",
+      "statement": "One chosen original good pair at each sufficiently late X admits a common choice of exception sets; active-weight tests on those sets give the original VAt conclusion at all qualifying ordinates. Two successful tests fill the interval under the strict floor crossover and the remaining admissibility conditions.",
+      "evidence": [
+        "evidence/collar/FieldEndpoints.lean",
+        "evidence/collar/kernel.json",
+        "evidence/collar/source_trace.json",
+        "evidence/collar/geometry.json"
+      ]
+    },
+    {
+      "id": "C4",
+      "evidence_type": "Kernel-checked closed-hit and saturation implications; written optimality proof plus exact rational controls",
+      "statement": "In v=log(x/k) coordinates, all late ordinates are marked for 2<=J<=4. For J>4 every sufficiently late closed [L,JL/4] meets the support. A deterministic cofinal schedule attains the open-gap ratio J/4. Its extremizers need not be arithmetic families.",
+      "evidence": [
+        "evidence/outer/FOLLOWUP.md",
+        "evidence/outer/gaps.py",
+        "evidence/outer/results.json",
+        "evidence/outer/GapGeometry.lean",
+        "evidence/outer/kernel.json"
+      ]
+    },
+    {
+      "id": "C5",
+      "evidence_type": "Written argument for actual character sums; directed and exact finite verification",
+      "statement": "A fixed admissible finite family has bounded slope. K=2 works for the corrected primitive real character modulo four by an analytic tail and a directed finite prefix.",
+      "evidence": [
+        "evidence/regularity/probe.py",
+        "evidence/regularity/results.json",
+        "evidence/numeric/prime_mass.py"
+      ]
+    },
+    {
+      "id": "C6",
+      "evidence_type": "Conditional kernel replay and written interpolation corollary",
+      "statement": "A genuine scalar endpoint with power slack propagates to a neighborhood of radius t^theta/(4K). A two-ended mesh of order a^((1+theta)/2)/sqrt(log(2a)) suffices by an independent chord argument. This mesh is not furnished across arbitrary excluded regions.",
+      "evidence": [
+        "evidence/regularity/ScalarCollar.lean",
+        "evidence/regularity/kernel.json",
+        "evidence/regularity/results.json"
+      ]
+    },
+    {
+      "id": "C7",
+      "evidence_type": "Directed finite computation on the genuine ramp and sharp upper-envelope theorem",
+      "statement": "On [256,512] exterior observations pass C=0.12 while true weighted excess is positive; true excess at C=0.14 is zero. Optimal measured-value meshes and controls use two finite menus.",
+      "evidence": [
+        "evidence/numeric/mesh.py",
+        "evidence/numeric/results.json"
+      ]
+    },
+    {
+      "id": "C8",
+      "evidence_type": "Mathematical necessity and sufficiency in a specified curvature information class, plus finite certification",
+      "statement": "At C=0.14 and C=1 two boundaries and the 23 downward jumps give a sharp feasible 25-observation design; the 33-point regular menu leaves positive worst-case excess even at C=1.",
+      "evidence": [
+        "evidence/numeric/CEILING_ONLY.md",
+        "evidence/numeric/ceilings.py",
+        "evidence/numeric/ceilings.json"
+      ]
+    },
+    {
+      "id": "C9",
+      "evidence_type": "Written source-level corollary",
+      "statement": "For any fixed 1<nu<4/3, restricting the local system to cofinal outer portions gives scalar windows in the regions beyond the corresponding original 3/2 subwindows. No failed original cohomological band is identified.",
+      "evidence": [
+        "evidence/transport/source_map.json",
+        "evidence/transport/generated_width.json"
+      ]
+    },
+    {
+      "id": "C10",
+      "evidence_type": "Kernel-checked consequence at a fixed analytic level",
+      "statement": "Given TopG and the width-specific HostExW for one character, every positive tolerance admits arbitrarily late scalar windows of that width for the same level, including both endpoints.",
+      "evidence": [
+        "evidence/level/LevelWindows.lean",
+        "evidence/level/kernel.json"
+      ]
+    },
+    {
+      "id": "C11",
+      "evidence_type": "Kernel-replayed supplementary implications using original arithmetic and global inputs",
+      "statement": "Given TopG, ShortNorm, SmallOne and VWinAt at the chosen character, the actual cyclic prime sum admits cofinal complete windows at each strictly sub-square width above one and every positive exponent tolerance. For PChar.one the group-order cap gives c=1 and the level equals Deduction.G, giving exact-square zeta windows at every positive tolerance. These scalar existence results do not preserve an arbitrarily prescribed endpoint.",
+      "evidence": [
+        "evidence/transport/extension/UnitCases.lean",
+        "evidence/transport/extension/ScalarFromInputs.lean",
+        "evidence/transport/extension/HostInputs.lean",
+        "evidence/transport/extension/kernel.json",
+        "evidence/level/LevelWindows.lean"
+      ]
+    }
+  ]
+}

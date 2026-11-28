@@ -1,0 +1,58 @@
+{
+  "version": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "mathlib_commit": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "input_mode": "authenticated cache",
+  "source_modules_rebuilt": 0,
+  "pinned_sources": 1181,
+  "module_sha256": {
+    "MarkedWindows.lean": "0c9acfa9f31183361ad5010cb2148f52f7d71e1fd5f97b54529b672cdb1ba8ca",
+    "LevelWindows.lean": "b347782415f3b1b29f616704fe5a35db73f5622db2fa9934acb2f556d5739c7c",
+    "CapField.lean": "64b0ed9e0142930c5778c734aaec3991e96c1e528a21cb2bc2c370a7b6642277",
+    "MarkedSupply.lean": "8e91e8ed2ae256ba8371101e93f7ee8410ef808f5139042ed3fdb7df0c003289",
+    "UnitCases.lean": "1c341c1a31d8eb4745da3cbdd977c4d02cd5251337cda05b66f972c312284b54",
+    "HostInputs.lean": "d8fc212b5fa3e0240ca3b26b403551e7b346da6d22ea79378b7a6464e868fe6f",
+    "ScalarFromInputs.lean": "30982f03f64bb9ebb49b728d3386e0203c4f847da40379cb127c12d05615767a"
+  },
+  "axioms": {
+    "localDatum": "'MarkedWindows.localDatum' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "rawSupply": "'MarkedWindows.rawSupply' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "widthRoom": "'MarkedWindows.widthRoom' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "winPairsBelowTwo": "'MarkedWindows.winPairsBelowTwo' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "markedComparison": "'MarkedWindows.markedComparison' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "fieldChiWithCap": "'MarkedWindows.fieldChiWithCap' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "principalCap": "'MarkedWindows.principalCap' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "principalLevel": "'MarkedWindows.principalLevel' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "winPairsUnit": "'MarkedWindows.winPairsUnit' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "winsFor": "'MarkedWindows.winsFor' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "MarkedHost.forget": "'MarkedWindows.MarkedHost.forget' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "supplyWithSupport": "'MarkedWindows.supplyWithSupport' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "hostFromInputs": "'MarkedWindows.hostFromInputs' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "ofTied": "'FixedLevelWindows.ofTied' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "ofCharacter": "'FixedLevelWindows.ofCharacter' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "twoEndpoints": "'FixedLevelWindows.twoEndpoints' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "scalarBelowTwo": "'MarkedWindows.scalarBelowTwo' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "principalScalar": "'MarkedWindows.principalScalar' depends on axioms: [propext, Classical.choice, Quot.sound]"
+  },
+  "source_warnings": {
+    "MarkedWindows": [],
+    "CapField": [],
+    "UnitCases": [],
+    "MarkedSupply": [
+      "MarkedSupply.lean:27:2: warning: Try this: ",
+      "MarkedSupply.lean:82:4: warning: `push_neg` has been deprecated. Prefer using `push Not` instead."
+    ],
+    "HostInputs": [],
+    "LevelWindows": [],
+    "ScalarFromInputs": []
+  },
+  "kernel": [
+    "replaying MarkedWindows",
+    "replaying CapField",
+    "replaying UnitCases",
+    "replaying MarkedSupply",
+    "replaying HostInputs",
+    "replaying LevelWindows",
+    "replaying ScalarFromInputs"
+  ],
+  "scope": "Original types and source-derived host construction, conditional on ShortNorm, SmallOne and VWinAt for the chosen character. Does not identify the marked support of the final global design."
+}

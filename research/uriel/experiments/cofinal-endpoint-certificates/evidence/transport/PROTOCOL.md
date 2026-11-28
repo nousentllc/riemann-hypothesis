@@ -1,0 +1,7 @@
+# Two endpoints in one fixed observable
+
+Original source 40e56bab026552e089d7afcfeff08d2defb9c005; the previous window and exceptional-weight studies are known. Before new experiments, test these alternatives.
+
+1. At a fixed tolerance follow the definition of the scale set into its downstream family. Check whether membership is a local predicate, whether a complete interval is required to build the family, and whether its rank, comparisons and global estimates quantify over every qualifying family or only one chosen family. Record witness changes and thresholds.
+2. Fix an original character level and seek a sufficient pointwise condition on two arbitrary endpoints independent of the interior. Compare existence of separate host families, existence of a common family, and universality of the scalar left side when local witnesses change. Test all small finite input truth tables for false mergers of witnesses or hidden requirements. Distinguish the scalar conclusion for a common observable from any need for the same family of arithmetic witnesses.
+3. Try a Lean supplement with explicit common or changing local indices, the complete qualifying set, and cofinal endpoints. Kernel replay if feasible. Identify exactly which downstream conditions remain for the modified active weights and what is known about cofinal supply across a genuine failed band beyond the original selected window.

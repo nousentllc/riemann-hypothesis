@@ -1,0 +1,58 @@
+{
+  "title": "Cofinal endpoints and the prime sum",
+  "date": "2026-11-23",
+  "repository": "https://github.com/nousentllc/riemann-hypothesis",
+  "working_branch": "experiments/uriel-cofinal-endpoint-certificates",
+  "base_branch": "research/uriel",
+  "base_commit": "08188ff0c6dd02dfec0bd65d30765862e9db56b7",
+  "original_lean_source": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "lean": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "previous_experiment": "5396aa19afa70189268f80237c7897cdce426e24",
+  "protocol_commit": "11e000c5a0ba388b326d26050fa46a522f782037",
+  "protocol_timing": "Four primary local protocols preceded their own runs. The branch recorded them during the study. Ceiling-only optimality and outer-gap geometry are labeled follow-ups.",
+  "paper": {
+    "pages": 35,
+    "pdf_sha256": "51401bd27a3977ed19a9a06cdf6f9a4bab01b2a71f245974aab14d62eb53f1ad",
+    "tex_sha256": "dbcd80926a3d18a70b95e93a81958dc5bcb03749d2e93056ee653a1c184826b1",
+    "single_source_lualatex_compile": true,
+    "embedded_evidence_sha256": "6093e9443944328d702d6d208f121fc34f16e632a9d72b94b64671d2550159b5",
+    "embedded_files": 62,
+    "external_pdf_links": 37
+  },
+  "checks": {
+    "source_anchors": {
+      "pin": "40e56bab026552e089d7afcfeff08d2defb9c005",
+      "files": 40,
+      "spans": 59
+    },
+    "field_imports": 701,
+    "field_new_original_modules": 27,
+    "field_supplement_declarations": 15,
+    "transport_supplement_declarations": 5,
+    "scalar_supplement_declarations": 2,
+    "outer_supplement_declarations": 2,
+    "level_supplement_declarations": 3,
+    "separate_original_field_replays": 6,
+    "final_extension_sources": 1181,
+    "final_extension_modules_replayed": [
+      "replaying MarkedWindows",
+      "replaying CapField",
+      "replaying UnitCases",
+      "replaying MarkedSupply",
+      "replaying HostInputs",
+      "replaying LevelWindows",
+      "replaying ScalarFromInputs"
+    ],
+    "pinned_src_lean_files": 174793,
+    "full_original_rebuild": false,
+    "full_host_design_replay": false,
+    "regularity_analytic_tail_formalized": false
+  },
+  "software": {
+    "python": "CPython 3.13.2",
+    "figures": "ReportLab 4.4.9",
+    "tex": "LuaLaTeX / LuaHBTeX"
+  },
+  "claim_ledger": "CLAIMS.json"
+}

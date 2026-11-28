@@ -1,0 +1,74 @@
+{
+  "truth_table": {
+    "scenarios": 20480,
+    "admissible": 4651,
+    "bare_failures": 1275,
+    "equal_support": 781,
+    "equal_support_failures": 0,
+    "proper_marked_support": 7845,
+    "proper_marked_failures": 0,
+    "example": {
+      "raw": 3,
+      "family": 1,
+      "bad": 2,
+      "violating_bits": 2
+    },
+    "bit_legend": "The four bits are four ordered scales. Cut c discards the c smallest scales."
+  },
+  "dyadic": {
+    "boundary_probes": 525,
+    "larger_widths_admitted": 228,
+    "width_two_fails_on_rescaled_block": 96,
+    "right_edge_exactly_W_squared": 21,
+    "hand_certificate": {
+      "log2_k": 1,
+      "log2_W": 400,
+      "log2_X": 800,
+      "log2_old_upper": "1203/2",
+      "log2_certified_upper": 800,
+      "log2_double_width_upper": 802
+    }
+  },
+  "moving_cut_examples": [
+    [
+      4,
+      5,
+      6
+    ],
+    [
+      6,
+      7,
+      8
+    ],
+    [
+      8,
+      9,
+      10
+    ],
+    [
+      10,
+      11,
+      12
+    ],
+    [
+      12,
+      13,
+      14
+    ],
+    [
+      14,
+      15,
+      16
+    ],
+    [
+      16,
+      17,
+      18
+    ],
+    [
+      18,
+      19,
+      20
+    ]
+  ]
+}
