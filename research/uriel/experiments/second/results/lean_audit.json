@@ -1,0 +1,59 @@
+{
+  "audit_source_sha256": "422deb87fdbe781c59e87c537ae88d001f72c83812205a9ebf366a0dbacd270a",
+  "operations": [
+    {
+      "accepted_as_expected": true,
+      "exit": 0,
+      "name": "UrielSharpness",
+      "seconds": 16.133,
+      "stage": "supplement_compile"
+    },
+    {
+      "accepted_as_expected": true,
+      "exit": 0,
+      "name": "UrielSharpness",
+      "output": "replaying UrielSharpness",
+      "seconds": 30.953,
+      "stage": "supplement_replay"
+    },
+    {
+      "accepted_as_expected": true,
+      "exit": 0,
+      "name": "UrielControls",
+      "seconds": 17.355,
+      "stage": "control_compile"
+    },
+    {
+      "accepted_as_expected": true,
+      "exit": 1,
+      "name": "True.intro : False",
+      "output": "<work>/src/UrielRejected.lean:2:19: error: Type mismatch\n  True.intro\nhas type\n  True\nbut is expected to have type\n  False",
+      "seconds": 13.453,
+      "stage": "reject_false"
+    },
+    {
+      "accepted_as_expected": true,
+      "exit": 0,
+      "name": "UrielAudit",
+      "seconds": 14.734,
+      "stage": "audit_terms"
+    }
+  ],
+  "pin": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "sharpness_source_sha256": "64b9d61a45dc0dc77a0653f5b21bc339831896eee0259fc16b15df5c8dc976e0",
+  "toolchain": {
+    "lean": "819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+    "packages": {
+      "Cli": "6130a47896ce867c6a4a55373441e59e565bad0f",
+      "LeanSearchClient": "5f4d51b81cbd3f6b32b156bfad9056621a040404",
+      "Qq": "92c15be17b7caf78c2ad767ec40f89052d908d81",
+      "aesop": "3448c0bcc5ce01b2d1546e483ec3620e32df3d0e",
+      "batteries": "4488d40d070b9700d4d5a6aa342f0d40c31b2a2d",
+      "importGraph": "16f02aa7642864af59f1ff0e384a015994db9118",
+      "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+      "plausible": "b7eb3304aeae834b12dda98993a37f6a41f6f0bb",
+      "proofwidgets": "4be2e3d5087eeb272cf5a8853b8f9dd025ef5957"
+    },
+    "version": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+  }
+}

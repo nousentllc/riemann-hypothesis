@@ -1,0 +1,500 @@
+{
+  "analytic_value_graph": {
+    "Deduction.CharFamily": [],
+    "Deduction.CharFamily.N": [
+      "Deduction.CharFamily"
+    ],
+    "Deduction.CharFamily.a": [
+      "Deduction.CharFamily"
+    ],
+    "Deduction.CharFamily.a_pos": [
+      "Deduction.CharFamily"
+    ],
+    "Deduction.CharFamily.adm": [
+      "Deduction.CharFamily"
+    ],
+    "Deduction.CharFamily.fin": [
+      "Deduction.CharFamily"
+    ],
+    "Deduction.CharFamily.nz": [
+      "Deduction.CharFamily"
+    ],
+    "Deduction.CharFamily.\u03b9": [
+      "Deduction.CharFamily"
+    ],
+    "Deduction.CharFamily.\u03c7": [
+      "Deduction.CharFamily"
+    ],
+    "Deduction.Gchi": [
+      "Deduction.ramp"
+    ],
+    "Deduction.Gchi_conj": [
+      "Deduction.Gchi",
+      "Deduction.Gchi_conj_LFunction",
+      "Deduction.Gchi_conj_ramp",
+      "Deduction.ramp",
+      "_private.Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.GchiConj.0.Deduction.deriv_conj_comp_conj"
+    ],
+    "Deduction.Gchi_conj_LFunction": [
+      "Deduction.LFunction_conj"
+    ],
+    "Deduction.Gchi_conj_ramp": [
+      "Deduction.ramp"
+    ],
+    "Deduction.Gchi_growth": [
+      "Deduction.Gchi",
+      "Deduction.Gchi_growth_ramp",
+      "Deduction.ramp"
+    ],
+    "Deduction.Gchi_growth_ramp": [
+      "Deduction.ramp"
+    ],
+    "Deduction.Gm": [
+      "Deduction.CharFamily",
+      "Deduction.CharFamily.N",
+      "Deduction.CharFamily.a",
+      "Deduction.CharFamily.fin",
+      "Deduction.CharFamily.nz",
+      "Deduction.CharFamily.\u03b9",
+      "Deduction.CharFamily.\u03c7",
+      "Deduction.Gchi"
+    ],
+    "Deduction.Gm.eq_1": [
+      "Deduction.CharFamily",
+      "Deduction.Gm"
+    ],
+    "Deduction.LFunctionConjugation.Gamma\u211d_conj": [
+      "Deduction.LFunctionConjugation.ofReal_cpow_conj"
+    ],
+    "Deduction.LFunctionConjugation.differentiable_reg": [
+      "Deduction.LFunctionConjugation.reg",
+      "Deduction.LFunctionConjugation.reg.eq_1"
+    ],
+    "Deduction.LFunctionConjugation.hurwitz_conj": [
+      "Deduction.LFunctionConjugation.hurwitz_conj_real"
+    ],
+    "Deduction.LFunctionConjugation.hurwitz_conj_of_re": [
+      "Deduction.LFunctionConjugation.ofReal_cpow_conj"
+    ],
+    "Deduction.LFunctionConjugation.hurwitz_conj_real": [
+      "Deduction.LFunctionConjugation.differentiable_reg",
+      "Deduction.LFunctionConjugation.hurwitz_conj_of_re",
+      "Deduction.LFunctionConjugation.pole_conj",
+      "Deduction.LFunctionConjugation.reg",
+      "Deduction.LFunctionConjugation.reg.eq_1"
+    ],
+    "Deduction.LFunctionConjugation.ofReal_cpow_conj": [],
+    "Deduction.LFunctionConjugation.pole_conj": [
+      "Deduction.LFunctionConjugation.Gamma\u211d_conj"
+    ],
+    "Deduction.LFunctionConjugation.reg": [],
+    "Deduction.LFunctionConjugation.reg.eq_1": [
+      "Deduction.LFunctionConjugation.reg"
+    ],
+    "Deduction.LFunction_conj": [
+      "Deduction.LFunctionConjugation.hurwitz_conj",
+      "Deduction.LFunctionConjugation.ofReal_cpow_conj"
+    ],
+    "Deduction.PoleData": [],
+    "Deduction.PoleData.diff": [
+      "Deduction.PoleData"
+    ],
+    "Deduction.PoleData.growth": [
+      "Deduction.PoleData"
+    ],
+    "Deduction.PoleData.iso": [
+      "Deduction.PoleData"
+    ],
+    "Deduction.PoleData.laplace": [
+      "Deduction.PoleData"
+    ],
+    "Deduction.PoleData.meas": [
+      "Deduction.PoleData"
+    ],
+    "Deduction.PoleData.mk": [],
+    "Deduction.PoleData.pole": [
+      "Deduction.PoleData"
+    ],
+    "Deduction.WindowHyp": [
+      "Deduction.CharFamily",
+      "Deduction.Gm"
+    ],
+    "Deduction.WindowHypU": [],
+    "Deduction.charFamily_LFunction_ne_zero_of_one_le_re": [
+      "Deduction.CharFamily",
+      "Deduction.CharFamily.N",
+      "Deduction.CharFamily.adm",
+      "Deduction.CharFamily.nz",
+      "Deduction.CharFamily.\u03b9",
+      "Deduction.CharFamily.\u03c7"
+    ],
+    "Deduction.eq_ofReal_sub_of_dist_le_of_le_sub_re": [],
+    "Deduction.gm": [
+      "Deduction.CharFamily",
+      "Deduction.Gm"
+    ],
+    "Deduction.gm.eq_1": [
+      "Deduction.CharFamily",
+      "Deduction.gm"
+    ],
+    "Deduction.iteratedDeriv_laplace": [
+      "Deduction.iteratedDeriv_laplace_hasDerivAt"
+    ],
+    "Deduction.iteratedDeriv_laplace_bound": [],
+    "Deduction.iteratedDeriv_laplace_hasDerivAt": [
+      "Deduction.iteratedDeriv_laplace_bound",
+      "Deduction.iteratedDeriv_laplace_int",
+      "Deduction.iteratedDeriv_laplace_meas"
+    ],
+    "Deduction.iteratedDeriv_laplace_int": [],
+    "Deduction.iteratedDeriv_laplace_meas": [],
+    "Deduction.kernel_integral": [],
+    "Deduction.landau_cauchy": [],
+    "Deduction.landau_coeff": [
+      "Deduction.PoleData",
+      "Deduction.PoleData.growth",
+      "Deduction.PoleData.laplace",
+      "Deduction.PoleData.meas",
+      "Deduction.iteratedDeriv_laplace"
+    ],
+    "Deduction.landau_dichotomy": [
+      "Deduction.eq_ofReal_sub_of_dist_le_of_le_sub_re",
+      "Deduction.landau_finite"
+    ],
+    "Deduction.landau_finite": [],
+    "Deduction.landau_growth_contra": [],
+    "Deduction.landau_kernel_max": [],
+    "Deduction.landau_nearest": [
+      "Deduction.landau_finite",
+      "Deduction.landau_nearest_equi"
+    ],
+    "Deduction.landau_nearest_equi": [],
+    "Deduction.landau_pole_asym": [
+      "Deduction.landau_cauchy",
+      "Deduction.landau_pole_asym_deriv"
+    ],
+    "Deduction.landau_pole_asym_deriv": [],
+    "Deduction.landau_pole_re_le": [
+      "Deduction.PoleData",
+      "Deduction.PoleData.pole",
+      "Deduction.landau_pole_re_le_bound"
+    ],
+    "Deduction.landau_pole_re_le_bound": [
+      "Deduction.PoleData",
+      "Deduction.PoleData.growth",
+      "Deduction.PoleData.laplace"
+    ],
+    "Deduction.landau_tails": [
+      "Deduction.landau_tails_chernoff",
+      "Deduction.landau_tails_pow"
+    ],
+    "Deduction.landau_tails_chernoff": [
+      "Deduction.kernel_integral",
+      "Deduction.landau_tails_integrable"
+    ],
+    "Deduction.landau_tails_integrable": [
+      "Deduction.kernel_integral"
+    ],
+    "Deduction.landau_tails_pow": [],
+    "Deduction.landau_window": [
+      "Deduction.PoleData",
+      "Deduction.PoleData.diff",
+      "Deduction.PoleData.iso",
+      "Deduction.PoleData.pole",
+      "Deduction.WindowHypU",
+      "Deduction.landau_cauchy",
+      "Deduction.landau_dichotomy",
+      "Deduction.landau_nearest",
+      "Deduction.landau_pole_asym",
+      "Deduction.landau_pole_re_le",
+      "Deduction.landau_window_contra",
+      "Deduction.landau_window_key",
+      "Deduction.landau_window_re_pos"
+    ],
+    "Deduction.landau_window_contra": [
+      "Deduction.landau_growth_contra"
+    ],
+    "Deduction.landau_window_ineq": [
+      "Deduction.landau_kernel_max",
+      "Deduction.landau_window_ineq_int"
+    ],
+    "Deduction.landau_window_ineq_int": [
+      "Deduction.landau_kernel_max"
+    ],
+    "Deduction.landau_window_key": [
+      "Deduction.PoleData",
+      "Deduction.PoleData.growth",
+      "Deduction.PoleData.meas",
+      "Deduction.WindowHypU",
+      "Deduction.landau_coeff",
+      "Deduction.landau_tails",
+      "Deduction.landau_window_ineq"
+    ],
+    "Deduction.landau_window_re_pos": [],
+    "Deduction.lemmaL": [
+      "Deduction.CharFamily",
+      "Deduction.CharFamily.N",
+      "Deduction.CharFamily.nz",
+      "Deduction.CharFamily.\u03b9",
+      "Deduction.CharFamily.\u03c7",
+      "Deduction.PoleData",
+      "Deduction.WindowHyp",
+      "Deduction.charFamily_LFunction_ne_zero_of_one_le_re",
+      "Deduction.gm",
+      "Deduction.landau_window",
+      "Deduction.poleData",
+      "Deduction.windowHypU_of_windowHyp",
+      "Deduction.zeroSet"
+    ],
+    "Deduction.logDeriv_local": [
+      "Deduction.logDeriv_local._proof_1_1"
+    ],
+    "Deduction.logDeriv_local._proof_1_1": [],
+    "Deduction.measurable_Gchi": [
+      "Deduction.Gchi",
+      "Deduction.measurable_Gchi_ramp",
+      "Deduction.ramp"
+    ],
+    "Deduction.measurable_Gchi_floor": [],
+    "Deduction.measurable_Gchi_ramp": [
+      "Deduction.measurable_Gchi_floor",
+      "Deduction.ramp"
+    ],
+    "Deduction.mellin_Gchi_modOne": [
+      "Deduction.Gchi",
+      "Deduction.mellin_Gchi_modOne._proof_1_1",
+      "Deduction.mellin_Gchi_modOne._simp_1_11",
+      "Deduction.mellin_Gchi_modOne._simp_1_12",
+      "Deduction.mellin_Gchi_modOne_int",
+      "Deduction.mellin_Gchi_modOne_log",
+      "Deduction.mellin_Gchi_modOne_log_int",
+      "Deduction.mellin_Gchi_modOne_sum",
+      "Deduction.mellin_Gchi_modOne_term",
+      "Deduction.ramp"
+    ],
+    "Deduction.mellin_Gchi_modOne._proof_1_1": [],
+    "Deduction.mellin_Gchi_modOne._simp_1_11": [],
+    "Deduction.mellin_Gchi_modOne._simp_1_12": [],
+    "Deduction.mellin_Gchi_modOne_int": [],
+    "Deduction.mellin_Gchi_modOne_log": [
+      "Deduction.mellin_Gchi_modOne_log_int"
+    ],
+    "Deduction.mellin_Gchi_modOne_log_int": [],
+    "Deduction.mellin_Gchi_modOne_sum": [],
+    "Deduction.mellin_Gchi_modOne_term": [
+      "Deduction.mellin_ramp"
+    ],
+    "Deduction.mellin_Gchi_of_ne_one": [
+      "Deduction.Gchi",
+      "Deduction.mellin_Gchi_of_ne_one_ne",
+      "Deduction.mellin_Gchi_of_ne_one_ramp",
+      "Deduction.ramp"
+    ],
+    "Deduction.mellin_Gchi_of_ne_one_hasSum": [
+      "Deduction.mellin_Gchi_of_ne_one_hasSum._proof_1_1",
+      "Deduction.ramp"
+    ],
+    "Deduction.mellin_Gchi_of_ne_one_hasSum._proof_1_1": [],
+    "Deduction.mellin_Gchi_of_ne_one_int": [
+      "Deduction.mellin_Gchi_of_ne_one_int._proof_1_1",
+      "Deduction.mellin_Gchi_of_ne_one_ne",
+      "Deduction.mellin_ramp"
+    ],
+    "Deduction.mellin_Gchi_of_ne_one_int._proof_1_1": [],
+    "Deduction.mellin_Gchi_of_ne_one_ne": [],
+    "Deduction.mellin_Gchi_of_ne_one_norm": [
+      "Deduction.mellin_ramp"
+    ],
+    "Deduction.mellin_Gchi_of_ne_one_ramp": [
+      "Deduction.mellin_Gchi_of_ne_one_hasSum",
+      "Deduction.mellin_Gchi_of_ne_one_int",
+      "Deduction.mellin_Gchi_of_ne_one_norm",
+      "Deduction.mellin_Gchi_of_ne_one_ramp._proof_1_3",
+      "Deduction.mellin_Gchi_of_ne_one_ramp._proof_1_5",
+      "Deduction.mellin_Gchi_of_ne_one_ramp.match_1_1",
+      "Deduction.mellin_ramp",
+      "Deduction.ramp"
+    ],
+    "Deduction.mellin_Gchi_of_ne_one_ramp._proof_1_3": [],
+    "Deduction.mellin_Gchi_of_ne_one_ramp._proof_1_5": [],
+    "Deduction.mellin_Gchi_of_ne_one_ramp.match_1_1": [],
+    "Deduction.mellin_ramp": [],
+    "Deduction.poleData": [
+      "Deduction.CharFamily",
+      "Deduction.CharFamily.N",
+      "Deduction.CharFamily.a",
+      "Deduction.CharFamily.a_pos",
+      "Deduction.CharFamily.adm",
+      "Deduction.CharFamily.fin",
+      "Deduction.CharFamily.nz",
+      "Deduction.CharFamily.\u03b9",
+      "Deduction.CharFamily.\u03c7",
+      "Deduction.Gchi",
+      "Deduction.Gchi_conj",
+      "Deduction.Gchi_growth",
+      "Deduction.Gm",
+      "Deduction.Gm.eq_1",
+      "Deduction.PoleData",
+      "Deduction.PoleData.mk",
+      "Deduction.charFamily_LFunction_ne_zero_of_one_le_re",
+      "Deduction.gm",
+      "Deduction.gm.eq_1",
+      "Deduction.measurable_Gchi",
+      "Deduction.poleData_char",
+      "Deduction.poleData_integrable",
+      "Deduction.poleData_inv_zero",
+      "Deduction.zeroSet",
+      "Deduction.zeroSet.eq_1"
+    ],
+    "Deduction.poleData_abstract": [
+      "Deduction.logDeriv_local",
+      "Deduction.poleData_dslope"
+    ],
+    "Deduction.poleData_change": [],
+    "Deduction.poleData_char": [
+      "Deduction.Gchi",
+      "Deduction.mellin_Gchi_modOne",
+      "Deduction.mellin_Gchi_of_ne_one",
+      "Deduction.poleData_abstract",
+      "Deduction.poleData_change",
+      "Deduction.poleData_char._simp_1_2"
+    ],
+    "Deduction.poleData_char._simp_1_2": [],
+    "Deduction.poleData_dslope": [],
+    "Deduction.poleData_integrable": [
+      "Deduction.Gchi",
+      "Deduction.Gchi_growth",
+      "Deduction.measurable_Gchi"
+    ],
+    "Deduction.poleData_inv_zero": [
+      "Deduction.LFunction_conj"
+    ],
+    "Deduction.ramp": [],
+    "Deduction.windowHypU_of_windowHyp": [
+      "Deduction.CharFamily",
+      "Deduction.Gm",
+      "Deduction.WindowHyp",
+      "Deduction.gm",
+      "Deduction.windowHypU_of_windowHyp_fun",
+      "Deduction.windowHypU_of_windowHyp_image"
+    ],
+    "Deduction.windowHypU_of_windowHyp_fun": [],
+    "Deduction.windowHypU_of_windowHyp_image": [],
+    "Deduction.windowHyp_of_rpow": [
+      "Deduction.CharFamily",
+      "Deduction.Gm",
+      "Deduction.windowHyp_of_rpow_eventually"
+    ],
+    "Deduction.windowHyp_of_rpow_eventually": [],
+    "Deduction.zeroFree_of_rpow_window": [
+      "Deduction.CharFamily",
+      "Deduction.Gm",
+      "Deduction.lemmaL",
+      "Deduction.windowHyp_of_rpow"
+    ],
+    "Deduction.zeroSet": [
+      "Deduction.CharFamily",
+      "Deduction.CharFamily.N",
+      "Deduction.CharFamily.nz",
+      "Deduction.CharFamily.\u03b9",
+      "Deduction.CharFamily.\u03c7"
+    ],
+    "Deduction.zeroSet.eq_1": [
+      "Deduction.CharFamily",
+      "Deduction.zeroSet"
+    ],
+    "_private.Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.GchiConj.0.Deduction.deriv_conj_comp_conj": []
+  },
+  "prior_comparison": [
+    {
+      "direct_type": false,
+      "direct_value": true,
+      "proof_path": [
+        "Deduction.zeroFree_of_rpow_window",
+        "Deduction.lemmaL"
+      ],
+      "source": "Deduction.zeroFree_of_rpow_window",
+      "target": "Deduction.lemmaL"
+    },
+    {
+      "direct_type": false,
+      "direct_value": true,
+      "proof_path": [
+        "Deduction.zeroFree_of_rpow_window",
+        "Deduction.windowHyp_of_rpow"
+      ],
+      "source": "Deduction.zeroFree_of_rpow_window",
+      "target": "Deduction.windowHyp_of_rpow"
+    },
+    {
+      "direct_type": false,
+      "direct_value": true,
+      "proof_path": [
+        "Deduction.lemmaL",
+        "Deduction.poleData"
+      ],
+      "source": "Deduction.lemmaL",
+      "target": "Deduction.poleData"
+    },
+    {
+      "direct_type": false,
+      "direct_value": true,
+      "proof_path": [
+        "Deduction.lemmaL",
+        "Deduction.landau_window"
+      ],
+      "source": "Deduction.lemmaL",
+      "target": "Deduction.landau_window"
+    },
+    {
+      "direct_type": false,
+      "direct_value": true,
+      "proof_path": [
+        "Deduction.lemmaL",
+        "Deduction.windowHypU_of_windowHyp"
+      ],
+      "source": "Deduction.lemmaL",
+      "target": "Deduction.windowHypU_of_windowHyp"
+    },
+    {
+      "direct_type": false,
+      "direct_value": true,
+      "proof_path": [
+        "Deduction.landau_window",
+        "Deduction.landau_window_key"
+      ],
+      "source": "Deduction.landau_window",
+      "target": "Deduction.landau_window_key"
+    },
+    {
+      "direct_type": false,
+      "direct_value": true,
+      "proof_path": [
+        "Deduction.landau_window",
+        "Deduction.landau_window_contra"
+      ],
+      "source": "Deduction.landau_window",
+      "target": "Deduction.landau_window_contra"
+    },
+    {
+      "direct_type": false,
+      "direct_value": true,
+      "proof_path": [
+        "Deduction.landau_window_key",
+        "Deduction.landau_tails"
+      ],
+      "source": "Deduction.landau_window_key",
+      "target": "Deduction.landau_tails"
+    },
+    {
+      "direct_type": false,
+      "direct_value": true,
+      "proof_path": [
+        "Deduction.landau_window_key",
+        "Deduction.landau_window_ineq"
+      ],
+      "source": "Deduction.landau_window_key",
+      "target": "Deduction.landau_window_ineq"
+    }
+  ]
+}

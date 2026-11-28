@@ -1,0 +1,31 @@
+test_falsified_ceiling_rejected (__main__.ActualPrimeTests.test_falsified_ceiling_rejected) ... ok
+test_outward_fixed_point_arithmetic (__main__.ActualPrimeTests.test_outward_fixed_point_arithmetic) ... ok
+test_prime_powers (__main__.ActualPrimeTests.test_prime_powers) ... ok
+test_prime_window_enclosure (__main__.ActualPrimeTests.test_prime_window_enclosure) ... ok
+test_whole_interval_and_missing_terms (__main__.ActualPrimeTests.test_whole_interval_and_missing_terms) ... ok
+test_exact_size_gate_and_budget (__main__.ArithmeticTests.test_exact_size_gate_and_budget) ... ok
+test_fractional_floors (__main__.ArithmeticTests.test_fractional_floors) ... ok
+test_grid_constructs_ranks_and_cardinalities (__main__.ArithmeticTests.test_grid_constructs_ranks_and_cardinalities) ... ok
+test_inadmissible_both_possible_outcomes (__main__.ArithmeticTests.test_inadmissible_both_possible_outcomes) ... ok
+test_integer_rounding_by_definition (__main__.ArithmeticTests.test_integer_rounding_by_definition) ... ok
+test_invalid_scales_and_archive_recount (__main__.ArithmeticTests.test_invalid_scales_and_archive_recount) ... ok
+test_post_registration_cost_ablations (__main__.ArithmeticTests.test_post_registration_cost_ablations) ... ok
+test_t_identity_ablation (__main__.ArithmeticTests.test_t_identity_ablation) ... ok
+test_closed_window_edges (__main__.ExceptionAndSlopeTests.test_closed_window_edges) ... ok
+test_coefficient_sharpness (__main__.ExceptionAndSlopeTests.test_coefficient_sharpness) ... ok
+test_congruence_enumerator_against_brute_force (__main__.ExceptionAndSlopeTests.test_congruence_enumerator_against_brute_force) ... ok
+test_gram_and_denominator (__main__.ExceptionAndSlopeTests.test_gram_and_denominator) ... ok
+test_joint_selector (__main__.ExceptionAndSlopeTests.test_joint_selector) ... ok
+test_strict_exceptions_and_weak_collisions (__main__.ExceptionAndSlopeTests.test_strict_exceptions_and_weak_collisions) ... ok
+test_cancelled_and_recentered (__main__.PoleTests.test_cancelled_and_recentered) ... ok
+test_certificates_and_first_crossing (__main__.PoleTests.test_certificates_and_first_crossing) ... ok
+test_combined_window (__main__.PoleTests.test_combined_window) ... ok
+test_exact_tie_and_reversal (__main__.PoleTests.test_exact_tie_and_reversal) ... ok
+test_negative_control (__main__.PoleTests.test_negative_control) ... ok
+test_quadratic_resolution_prediction (__main__.PoleTests.test_quadratic_resolution_prediction) ... ok
+test_two_independent_integrals (__main__.PoleTests.test_two_independent_integrals) ... ok
+
+----------------------------------------------------------------------
+Ran 26 tests in 0.246s
+
+OK

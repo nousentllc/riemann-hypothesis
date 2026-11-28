@@ -1,0 +1,811 @@
+{
+  "excerpts": [
+    {
+      "block_sha256": "24da700cc578bf3b91d8d848537411d565eae911f12791e1de33a813c97d27e7",
+      "declaration": "UpperTheory.V.Win.window1",
+      "end": 58,
+      "path": "src/Development/AutomorphicArithmetic/AutomorphicVarieties/LayeredIsomorphisms/Window1.lean",
+      "source_sha256": "9b80fe0dd466a58b0fae61b8d875bce2c40be17d56341c072a95462c41778d88",
+      "start": 6,
+      "wrapper_namespace": ""
+    },
+    {
+      "block_sha256": "5755956a729a906e74b6f21789df86d458c8bb240495d81cd4449f8439a600b8",
+      "declaration": "numeric",
+      "end": 109,
+      "path": "src/Development/AbelianVarietyTheory/Proofs/DivisorProofs/MajAtAddRight.lean",
+      "source_sha256": "6a1ee253147d270c21ed5f2b763eca2d8b23082f8dc3307ed1abf217fd4efae7",
+      "start": 93,
+      "wrapper_namespace": "GlobalTheory.CutNum"
+    },
+    {
+      "block_sha256": "1b7e0584d49c2c20e6a2405ab9f4dc1997f704bcfb97ff479b509b9275822c0b",
+      "declaration": "exists_even_between",
+      "end": 15,
+      "path": "src/Development/AbelianVarietyTheory/Proofs/GlobalInterpolation/ExistsRanksRankValFrame.lean",
+      "source_sha256": "e8652daf78fdca9fc202b7c1c2b54e1c6873f449e61547639750de93598ef7fc",
+      "start": 10,
+      "wrapper_namespace": "GlobalTheory.EX"
+    }
+  ],
+  "flags": [
+    "-j1",
+    "--tstack=400000",
+    "-DautoImplicit=false",
+    "-DrelaxedAutoImplicit=false",
+    "-DmaxSynthPendingDepth=3",
+    "-Dpp.unicode.fun=true",
+    "-DmaxHeartbeats=4000000"
+  ],
+  "fragments_sha256": "a92faa2c5367bc77c6ab444a2e0458010a7797dac09d479253d356f528ff8ba2",
+  "full_main_built": false,
+  "imported_mathlib_replayed": false,
+  "modules": [
+    {
+      "imports": [
+        "Mathlib"
+      ],
+      "module": "Development.AutomorphicArithmetic.DedekindLFunctions.CharFamily",
+      "path": "src/Development/AutomorphicArithmetic/DedekindLFunctions/CharFamily.lean",
+      "sha256": "ca0ca8acb80ff4ffc36896204650f9ca16167193a22c36a140402b27cfc8c336"
+    },
+    {
+      "imports": [
+        "Development.AutomorphicArithmetic.DedekindLFunctions.CharFamily"
+      ],
+      "module": "Development.AutomorphicArithmetic.DedekindLFunctions.LandauZeroFreeCriterion",
+      "path": "src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauZeroFreeCriterion.lean",
+      "sha256": "d4c5a8ba961bb0e91121212b697217904bf0ba56c2e89c00435fb7ee416a22d7"
+    },
+    {
+      "imports": [
+        "Development.AutomorphicArithmetic.DedekindLFunctions.LandauZeroFreeCriterion"
+      ],
+      "module": "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LogDerivLocal",
+      "path": "src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/LogDerivLocal.lean",
+      "sha256": "5b7228c12addef3e12bc5665819fccaf5bdc9845bf29578614e7cfa409a515b0"
+    },
+    {
+      "imports": [
+        "Development.AutomorphicArithmetic.DedekindLFunctions.LandauZeroFreeCriterion"
+      ],
+      "module": "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LFunctionConj",
+      "path": "src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/LFunctionConj.lean",
+      "sha256": "913ec01ca1654d6ba1281693c8f52ee63a1437f0fcac4c139d9db6f7eb0e1862"
+    },
+    {
+      "imports": [
+        "Development.AutomorphicArithmetic.DedekindLFunctions.LandauZeroFreeCriterion"
+      ],
+      "module": "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.CharFamilyLFunctionNeZeroOfOneLeRe",
+      "path": "src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/CharFamilyLFunctionNeZeroOfOneLeRe.lean",
+      "sha256": "bd25dd6f7b19d2683b3cb937b3cca4edfe798a492e3dcedeade371f0e3ff48b3"
+    },
+    {
+      "imports": [
+        "Development.AutomorphicArithmetic.DedekindLFunctions.LandauZeroFreeCriterion",
+        "Mathlib.Analysis.SpecialFunctions.ImproperIntegrals"
+      ],
+      "module": "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.MellinRamp",
+      "path": "src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/MellinRamp.lean",
+      "sha256": "b3a4ff30ab74518685987e24c0617626b0ef698f1bae8ffa73dab3bc6944e948"
+    },
+    {
+      "imports": [
+        "Development.AutomorphicArithmetic.DedekindLFunctions.LandauZeroFreeCriterion",
+        "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.MellinRamp"
+      ],
+      "module": "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.mellinGchiOfNeOne",
+      "path": "src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/mellinGchiOfNeOne.lean",
+      "sha256": "22192caa33f0e9b840298329573ca3ea15e3e5d9e60624efcda3562f8ddff26a"
+    },
+    {
+      "imports": [
+        "Development.AutomorphicArithmetic.DedekindLFunctions.LandauZeroFreeCriterion",
+        "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.MellinRamp"
+      ],
+      "module": "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.mellinGchiModOne",
+      "path": "src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/mellinGchiModOne.lean",
+      "sha256": "57054bee6a57d89958d6a4d862f74083e68afea8ce0af701b49881e2043767c5"
+    },
+    {
+      "imports": [
+        "Development.AutomorphicArithmetic.DedekindLFunctions.LandauZeroFreeCriterion"
+      ],
+      "module": "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.measurableGchi",
+      "path": "src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/measurableGchi.lean",
+      "sha256": "4838a8a6154d8fa0fb87a4008feeb663bca977cdc66fcdb16b6294e3177d5e4b"
+    },
+    {
+      "imports": [
+        "Development.AutomorphicArithmetic.DedekindLFunctions.LandauZeroFreeCriterion"
+      ],
+      "module": "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.GchiGrowth",
+      "path": "src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/GchiGrowth.lean",
+      "sha256": "3943c2eba98d5ed2a2e521f4a1986281a8e031f9319e2acc3160de6d521db02e"
+    },
+    {
+      "imports": [
+        "Development.AutomorphicArithmetic.DedekindLFunctions.LandauZeroFreeCriterion",
+        "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LFunctionConj"
+      ],
+      "module": "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.GchiConj",
+      "path": "src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/GchiConj.lean",
+      "sha256": "88a3897329c8a53bd97aaa46b1235bbf3e1d1a8a4b5281f44cc7399c20a4c37e"
+    },
+    {
+      "imports": [
+        "Development.AutomorphicArithmetic.DedekindLFunctions.LandauZeroFreeCriterion",
+        "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LogDerivLocal",
+        "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LFunctionConj",
+        "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.CharFamilyLFunctionNeZeroOfOneLeRe",
+        "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.mellinGchiOfNeOne",
+        "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.mellinGchiModOne",
+        "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.measurableGchi",
+        "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.GchiGrowth",
+        "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.GchiConj"
+      ],
+      "module": "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.poleData",
+      "path": "src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/poleData.lean",
+      "sha256": "78fb8ae795a01ad687440b035c377a9fde71088c726d1ac862ba0fd8bb1fc3c0"
+    },
+    {
+      "imports": [
+        "Development.AutomorphicArithmetic.DedekindLFunctions.LandauZeroFreeCriterion"
+      ],
+      "module": "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LandauCauchy",
+      "path": "src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/LandauCauchy.lean",
+      "sha256": "fdd3d3cdebfe075a825bd3249713b362daef806e79e4a10341cdc1104a023b39"
+    },
+    {
+      "imports": [
+        "Development.AutomorphicArithmetic.DedekindLFunctions.LandauZeroFreeCriterion",
+        "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LandauCauchy"
+      ],
+      "module": "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LandauPoleAsym",
+      "path": "src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/LandauPoleAsym.lean",
+      "sha256": "c70dba4115698a4ee22654f0aaf213b886afe28a2d1d44a8e4370aec72fc3944"
+    },
+    {
+      "imports": [
+        "Development.AutomorphicArithmetic.DedekindLFunctions.LandauZeroFreeCriterion"
+      ],
+      "module": "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.kernelIntegral",
+      "path": "src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/kernelIntegral.lean",
+      "sha256": "b487d899307a350276d6c5fa1be392104f912a6ccd3e32f426828d7421030502"
+    },
+    {
+      "imports": [
+        "Development.AutomorphicArithmetic.DedekindLFunctions.LandauZeroFreeCriterion",
+        "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.kernelIntegral"
+      ],
+      "module": "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.landauTails",
+      "path": "src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/landauTails.lean",
+      "sha256": "5700277144d95eea3d90d3d4e2efa3743c3d892753ed41ed27f6f38a2e92708c"
+    },
+    {
+      "imports": [
+        "Development.AutomorphicArithmetic.DedekindLFunctions.LandauZeroFreeCriterion"
+      ],
+      "module": "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LandauKernelMax",
+      "path": "src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/LandauKernelMax.lean",
+      "sha256": "9fe6836f5bbab547e0b1d154ad4133a0b0d6aaf9ba8cde93b6310a49d5dd5259"
+    },
+    {
+      "imports": [
+        "Development.AutomorphicArithmetic.DedekindLFunctions.LandauZeroFreeCriterion",
+        "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LandauKernelMax"
+      ],
+      "module": "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.landauWindowIneq",
+      "path": "src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/landauWindowIneq.lean",
+      "sha256": "e3d5d760bcefe1242d4f5b0ced44fc055f1fa8dfe048a2222cf2c39ae812e59c"
+    },
+    {
+      "imports": [
+        "Development.AutomorphicArithmetic.DedekindLFunctions.LandauZeroFreeCriterion"
+      ],
+      "module": "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LandauPoleReLe",
+      "path": "src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/LandauPoleReLe.lean",
+      "sha256": "da3615e42c27329c6b8ba7e948cba526d86b45c423225c8c111946cf409ef2ef"
+    },
+    {
+      "imports": [
+        "Development.AutomorphicArithmetic.DedekindLFunctions.LandauZeroFreeCriterion"
+      ],
+      "module": "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.IteratedDerivLaplace",
+      "path": "src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/IteratedDerivLaplace.lean",
+      "sha256": "3beee9b6dbdb25ae9e3c6fecb83e21cfee34c01e2065b5c5c383ce725f85189b"
+    },
+    {
+      "imports": [
+        "Development.AutomorphicArithmetic.DedekindLFunctions.LandauZeroFreeCriterion",
+        "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.IteratedDerivLaplace"
+      ],
+      "module": "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LandauCoeff",
+      "path": "src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/LandauCoeff.lean",
+      "sha256": "e8bd6a4a51c2299ccdd213fd7b99a67c7a2968b14cd8752cf15ab3aa14874543"
+    },
+    {
+      "imports": [
+        "Development.AutomorphicArithmetic.DedekindLFunctions.LandauZeroFreeCriterion"
+      ],
+      "module": "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LandauFinite",
+      "path": "src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/LandauFinite.lean",
+      "sha256": "1c24afcda94b779f176b3e46a2cad08e32414bd41aeee9d890e187391479129a"
+    },
+    {
+      "imports": [
+        "Development.AutomorphicArithmetic.DedekindLFunctions.LandauZeroFreeCriterion",
+        "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LandauFinite"
+      ],
+      "module": "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LandauNearest",
+      "path": "src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/LandauNearest.lean",
+      "sha256": "ae084dbb3f161d2dd369ff224f2117b818243b501ca596d3da2c92d83b65a67c"
+    },
+    {
+      "imports": [
+        "Development.AutomorphicArithmetic.DedekindLFunctions.LandauZeroFreeCriterion",
+        "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LandauFinite"
+      ],
+      "module": "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LandauDichotomy",
+      "path": "src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/LandauDichotomy.lean",
+      "sha256": "f358ff8aecbe34019afe20224ae9a5890c99d55f6b6f7d838c1277e3b1d255ad"
+    },
+    {
+      "imports": [
+        "Development.AutomorphicArithmetic.DedekindLFunctions.LandauZeroFreeCriterion"
+      ],
+      "module": "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LandauGrowthContra",
+      "path": "src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/LandauGrowthContra.lean",
+      "sha256": "2f3e6d7a5d2e7b1cf2b0b92c82f50b2ebb661ab8fb519092795fcade18f88df5"
+    },
+    {
+      "imports": [
+        "Development.AutomorphicArithmetic.DedekindLFunctions.LandauZeroFreeCriterion",
+        "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LandauCauchy",
+        "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LandauPoleAsym",
+        "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.landauTails",
+        "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LandauKernelMax",
+        "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.landauWindowIneq",
+        "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LandauPoleReLe",
+        "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LandauCoeff",
+        "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LandauFinite",
+        "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LandauNearest",
+        "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LandauDichotomy",
+        "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LandauGrowthContra"
+      ],
+      "module": "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.landauWindow",
+      "path": "src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/landauWindow.lean",
+      "sha256": "57f49606e6ffd8cab45672d8d4b9c7ded6c0b6b0d140821cc51b5baeb4f67ab5"
+    },
+    {
+      "imports": [
+        "Development.AutomorphicArithmetic.DedekindLFunctions.LandauZeroFreeCriterion"
+      ],
+      "module": "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.WindowHypUOfWindowHyp",
+      "path": "src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/WindowHypUOfWindowHyp.lean",
+      "sha256": "2e4ac8197f1fda900ba710cef10627ebd0576d2bc4207d919f0a8a769ba13c98"
+    },
+    {
+      "imports": [
+        "Development.AutomorphicArithmetic.DedekindLFunctions.LandauZeroFreeCriterion",
+        "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.poleData",
+        "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.landauWindow",
+        "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.WindowHypUOfWindowHyp",
+        "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.CharFamilyLFunctionNeZeroOfOneLeRe"
+      ],
+      "module": "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.lemmaL",
+      "path": "src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/lemmaL.lean",
+      "sha256": "4ce94b876b46e0a3b038c4bfe9ade933c7225170bf07421109ee862fd5941e3d"
+    },
+    {
+      "imports": [
+        "Development.AutomorphicArithmetic.DedekindLFunctions.LandauZeroFreeCriterion"
+      ],
+      "module": "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.WindowHypOfRpow",
+      "path": "src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/WindowHypOfRpow.lean",
+      "sha256": "f9238ed2d6c67f1cbe383a33cc3759c00bed31b97a10253fbee59279290c6a5c"
+    },
+    {
+      "imports": [
+        "Development.AutomorphicArithmetic.DedekindLFunctions.LandauZeroFreeCriterion",
+        "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.lemmaL",
+        "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.WindowHypOfRpow"
+      ],
+      "module": "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.ZeroFreeOfRpowWindow",
+      "path": "src/Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/ZeroFreeOfRpowWindow.lean",
+      "sha256": "3252473ba2654b05e9d2ea0781ea91b4c7eadcca0def18b0f21d20212c2f0316"
+    }
+  ],
+  "operations": [
+    {
+      "accepted_as_expected": true,
+      "exit": 0,
+      "name": "Development.AutomorphicArithmetic.DedekindLFunctions.CharFamily",
+      "seconds": 43.656,
+      "stage": "module_compile"
+    },
+    {
+      "accepted_as_expected": true,
+      "exit": 0,
+      "name": "Development.AutomorphicArithmetic.DedekindLFunctions.LandauZeroFreeCriterion",
+      "seconds": 6.045,
+      "stage": "module_compile"
+    },
+    {
+      "accepted_as_expected": true,
+      "exit": 0,
+      "name": "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LogDerivLocal",
+      "seconds": 51.338,
+      "stage": "module_compile"
+    },
+    {
+      "accepted_as_expected": true,
+      "exit": 0,
+      "name": "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LFunctionConj",
+      "seconds": 40.028,
+      "stage": "module_compile"
+    },
+    {
+      "accepted_as_expected": true,
+      "exit": 0,
+      "name": "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.CharFamilyLFunctionNeZeroOfOneLeRe",
+      "output": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/CharFamilyLFunctionNeZeroOfOneLeRe.lean:11:2: warning: Try this: \n  haveI\u0335\n\nThe goal is a proposition, so `have` is preferred over `haveI`.\nThe difference between `have` and `haveI` is that `haveI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`",
+      "seconds": 8.558,
+      "stage": "module_compile"
+    },
+    {
+      "accepted_as_expected": true,
+      "exit": 0,
+      "name": "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.MellinRamp",
+      "seconds": 19.657,
+      "stage": "module_compile"
+    },
+    {
+      "accepted_as_expected": true,
+      "exit": 0,
+      "name": "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.mellinGchiOfNeOne",
+      "seconds": 82.411,
+      "stage": "module_compile"
+    },
+    {
+      "accepted_as_expected": true,
+      "exit": 0,
+      "name": "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.mellinGchiModOne",
+      "seconds": 93.538,
+      "stage": "module_compile"
+    },
+    {
+      "accepted_as_expected": true,
+      "exit": 0,
+      "name": "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.measurableGchi",
+      "seconds": 87.033,
+      "stage": "module_compile"
+    },
+    {
+      "accepted_as_expected": true,
+      "exit": 0,
+      "name": "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.GchiGrowth",
+      "seconds": 82.429,
+      "stage": "module_compile"
+    },
+    {
+      "accepted_as_expected": true,
+      "exit": 0,
+      "name": "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.GchiConj",
+      "seconds": 64.857,
+      "stage": "module_compile"
+    },
+    {
+      "accepted_as_expected": true,
+      "exit": 0,
+      "name": "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.poleData",
+      "output": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/poleData.lean:152:15: warning: This simp argument is unused:\n  Function.update_apply\n\nHint: Omit it from the simp argument list.\n  [apply] simp [g, hw]\n\nNote: This linter can be disabled with `set_option linter.unusedSimpArgs false`\nDevelopment/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/poleData.lean:373:8: warning: `push_neg` has been deprecated. Prefer using `push Not` instead.\nIf you'd rather continue using `push_neg` in your project, you can implement it as follows:\n```\nopen Lean.Parser.Tactic in\nmacro \"push_neg\" cfg:optConfig loc:(location)? : tactic =>\n  `(tactic| push $cfg:optConfig Not $[$loc]?)\n```",
+      "seconds": 61.488,
+      "stage": "module_compile"
+    },
+    {
+      "accepted_as_expected": true,
+      "exit": 0,
+      "name": "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LandauCauchy",
+      "seconds": 52.553,
+      "stage": "module_compile"
+    },
+    {
+      "accepted_as_expected": true,
+      "exit": 0,
+      "name": "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LandauPoleAsym",
+      "output": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/LandauPoleAsym.lean:19:61: warning: Variable name `h\u03c1` is not explicitly referenced.\n\nHint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:\n  [apply] _h\u03c1\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`",
+      "seconds": 57.949,
+      "stage": "module_compile"
+    },
+    {
+      "accepted_as_expected": true,
+      "exit": 0,
+      "name": "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.kernelIntegral",
+      "seconds": 67.901,
+      "stage": "module_compile"
+    },
+    {
+      "accepted_as_expected": true,
+      "exit": 0,
+      "name": "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.landauTails",
+      "seconds": 125.621,
+      "stage": "module_compile"
+    },
+    {
+      "accepted_as_expected": true,
+      "exit": 0,
+      "name": "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LandauKernelMax",
+      "seconds": 62.995,
+      "stage": "module_compile"
+    },
+    {
+      "accepted_as_expected": true,
+      "exit": 0,
+      "name": "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.landauWindowIneq",
+      "output": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/landauWindowIneq.lean:77:17: warning: `MeasureTheory.integral_inter_add_diff` has been deprecated: Use `MeasureTheory.integral_inter_add_sdiff` instead\nDevelopment/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/landauWindowIneq.lean:104:45: warning: `Set.diff_subset` has been deprecated: Use `Set.sdiff_subset` instead\nDevelopment/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/landauWindowIneq.lean:104:73: warning: `Set.diff_subset` has been deprecated: Use `Set.sdiff_subset` instead",
+      "seconds": 15.277,
+      "stage": "module_compile"
+    },
+    {
+      "accepted_as_expected": true,
+      "exit": 0,
+      "name": "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LandauPoleReLe",
+      "seconds": 11.602,
+      "stage": "module_compile"
+    },
+    {
+      "accepted_as_expected": true,
+      "exit": 0,
+      "name": "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.IteratedDerivLaplace",
+      "seconds": 13.79,
+      "stage": "module_compile"
+    },
+    {
+      "accepted_as_expected": true,
+      "exit": 0,
+      "name": "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LandauCoeff",
+      "seconds": 10.329,
+      "stage": "module_compile"
+    },
+    {
+      "accepted_as_expected": true,
+      "exit": 0,
+      "name": "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LandauFinite",
+      "seconds": 14.572,
+      "stage": "module_compile"
+    },
+    {
+      "accepted_as_expected": true,
+      "exit": 0,
+      "name": "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LandauNearest",
+      "output": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/LandauNearest.lean:57:87: warning: `Set.Infinite.diff` has been deprecated: Use `Set.Infinite.sdiff` instead\nDevelopment/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/LandauNearest.lean:96:19: warning: `Set.diff_subset` has been deprecated: Use `Set.sdiff_subset` instead",
+      "seconds": 20.263,
+      "stage": "module_compile"
+    },
+    {
+      "accepted_as_expected": true,
+      "exit": 0,
+      "name": "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LandauDichotomy",
+      "output": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/LandauDichotomy.lean:51:6: warning: `push_neg` has been deprecated. Prefer using `push Not` instead.\nIf you'd rather continue using `push_neg` in your project, you can implement it as follows:\n```\nopen Lean.Parser.Tactic in\nmacro \"push_neg\" cfg:optConfig loc:(location)? : tactic =>\n  `(tactic| push $cfg:optConfig Not $[$loc]?)\n```\nDevelopment/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/LandauDichotomy.lean:76:51: warning: `Set.diff_subset` has been deprecated: Use `Set.sdiff_subset` instead\nDevelopment/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/LandauDichotomy.lean:25:5: warning: Variable name `hle` is not explicitly referenced.\n\nHint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:\n  [apply] _hle\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`\nDevelopment/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/LandauDichotomy.lean:25:44: warning: Variable name `h\u03b8\u03c3` is not explicitly referenced.\n\nHint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:\n  [apply] _h\u03b8\u03c3\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`",
+      "seconds": 15.211,
+      "stage": "module_compile"
+    },
+    {
+      "accepted_as_expected": true,
+      "exit": 0,
+      "name": "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LandauGrowthContra",
+      "seconds": 21.235,
+      "stage": "module_compile"
+    },
+    {
+      "accepted_as_expected": true,
+      "exit": 0,
+      "name": "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.landauWindow",
+      "seconds": 19.982,
+      "stage": "module_compile"
+    },
+    {
+      "accepted_as_expected": true,
+      "exit": 0,
+      "name": "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.WindowHypUOfWindowHyp",
+      "output": "Development/AutomorphicArithmetic/DedekindLFunctions/LandauTheorems/WindowHypUOfWindowHyp.lean:29:60: warning: Variable name `h\u03b4` is not explicitly referenced.\n\nHint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:\n  [apply] _h\u03b4\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`",
+      "seconds": 16.142,
+      "stage": "module_compile"
+    },
+    {
+      "accepted_as_expected": true,
+      "exit": 0,
+      "name": "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.lemmaL",
+      "seconds": 17.766,
+      "stage": "module_compile"
+    },
+    {
+      "accepted_as_expected": true,
+      "exit": 0,
+      "name": "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.WindowHypOfRpow",
+      "seconds": 17.572,
+      "stage": "module_compile"
+    },
+    {
+      "accepted_as_expected": true,
+      "exit": 0,
+      "name": "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.ZeroFreeOfRpowWindow",
+      "seconds": 18.909,
+      "stage": "module_compile"
+    },
+    {
+      "accepted_as_expected": true,
+      "exit": 0,
+      "name": "UrielFragments",
+      "output": "UrielFragments.lean:40:6: warning: `push_neg` has been deprecated. Prefer using `push Not` instead.\nIf you'd rather continue using `push_neg` in your project, you can implement it as follows:\n```\nopen Lean.Parser.Tactic in\nmacro \"push_neg\" cfg:optConfig loc:(location)? : tactic =>\n  `(tactic| push $cfg:optConfig Not $[$loc]?)\n```\nUrielFragments.lean:50:8: warning: `push_neg` has been deprecated. Prefer using `push Not` instead.\nIf you'd rather continue using `push_neg` in your project, you can implement it as follows:\n```\nopen Lean.Parser.Tactic in\nmacro \"push_neg\" cfg:optConfig loc:(location)? : tactic =>\n  `(tactic| push $cfg:optConfig Not $[$loc]?)\n```\nUrielFragments.lean:60:54: warning: Variable name `h\u03b4` is not explicitly referenced.\n\nHint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:\n  [apply] _h\u03b4\n\nNote: This linter can be disabled with `set_option linter.unusedVariables false`",
+      "seconds": 22.907,
+      "stage": "excerpt_compile"
+    },
+    {
+      "accepted_as_expected": true,
+      "exit": 0,
+      "name": "Development.AutomorphicArithmetic.DedekindLFunctions.CharFamily",
+      "output": "replaying Development.AutomorphicArithmetic.DedekindLFunctions.CharFamily",
+      "seconds": 41.078,
+      "stage": "module_replay"
+    },
+    {
+      "accepted_as_expected": true,
+      "exit": 0,
+      "name": "Development.AutomorphicArithmetic.DedekindLFunctions.LandauZeroFreeCriterion",
+      "output": "replaying Development.AutomorphicArithmetic.DedekindLFunctions.LandauZeroFreeCriterion",
+      "seconds": 41.576,
+      "stage": "module_replay"
+    },
+    {
+      "accepted_as_expected": true,
+      "exit": 0,
+      "name": "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LogDerivLocal",
+      "output": "replaying Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LogDerivLocal",
+      "seconds": 35.699,
+      "stage": "module_replay"
+    },
+    {
+      "accepted_as_expected": true,
+      "exit": 0,
+      "name": "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LFunctionConj",
+      "output": "replaying Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LFunctionConj",
+      "seconds": 23.645,
+      "stage": "module_replay"
+    },
+    {
+      "accepted_as_expected": true,
+      "exit": 0,
+      "name": "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.CharFamilyLFunctionNeZeroOfOneLeRe",
+      "output": "replaying Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.CharFamilyLFunctionNeZeroOfOneLeRe",
+      "seconds": 24.248,
+      "stage": "module_replay"
+    },
+    {
+      "accepted_as_expected": true,
+      "exit": 0,
+      "name": "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.MellinRamp",
+      "output": "replaying Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.MellinRamp",
+      "seconds": 35.864,
+      "stage": "module_replay"
+    },
+    {
+      "accepted_as_expected": true,
+      "exit": 0,
+      "name": "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.mellinGchiOfNeOne",
+      "output": "replaying Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.mellinGchiOfNeOne",
+      "seconds": 31.453,
+      "stage": "module_replay"
+    },
+    {
+      "accepted_as_expected": true,
+      "exit": 0,
+      "name": "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.mellinGchiModOne",
+      "output": "replaying Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.mellinGchiModOne",
+      "seconds": 27.319,
+      "stage": "module_replay"
+    },
+    {
+      "accepted_as_expected": true,
+      "exit": 0,
+      "name": "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.measurableGchi",
+      "output": "replaying Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.measurableGchi",
+      "seconds": 32.33,
+      "stage": "module_replay"
+    },
+    {
+      "accepted_as_expected": true,
+      "exit": 0,
+      "name": "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.GchiGrowth",
+      "output": "replaying Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.GchiGrowth",
+      "seconds": 23.052,
+      "stage": "module_replay"
+    },
+    {
+      "accepted_as_expected": true,
+      "exit": 0,
+      "name": "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.GchiConj",
+      "output": "replaying Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.GchiConj",
+      "seconds": 19.388,
+      "stage": "module_replay"
+    },
+    {
+      "accepted_as_expected": true,
+      "exit": 0,
+      "name": "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.poleData",
+      "output": "replaying Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.poleData",
+      "seconds": 23.624,
+      "stage": "module_replay"
+    },
+    {
+      "accepted_as_expected": true,
+      "exit": 0,
+      "name": "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LandauCauchy",
+      "output": "replaying Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LandauCauchy",
+      "seconds": 11.687,
+      "stage": "module_replay"
+    },
+    {
+      "accepted_as_expected": true,
+      "exit": 0,
+      "name": "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LandauPoleAsym",
+      "output": "replaying Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LandauPoleAsym",
+      "seconds": 11.227,
+      "stage": "module_replay"
+    },
+    {
+      "accepted_as_expected": true,
+      "exit": 0,
+      "name": "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.kernelIntegral",
+      "output": "replaying Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.kernelIntegral",
+      "seconds": 10.675,
+      "stage": "module_replay"
+    },
+    {
+      "accepted_as_expected": true,
+      "exit": 0,
+      "name": "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.landauTails",
+      "output": "replaying Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.landauTails",
+      "seconds": 10.735,
+      "stage": "module_replay"
+    },
+    {
+      "accepted_as_expected": true,
+      "exit": 0,
+      "name": "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LandauKernelMax",
+      "output": "replaying Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LandauKernelMax",
+      "seconds": 10.439,
+      "stage": "module_replay"
+    },
+    {
+      "accepted_as_expected": true,
+      "exit": 0,
+      "name": "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.landauWindowIneq",
+      "output": "replaying Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.landauWindowIneq",
+      "seconds": 11.371,
+      "stage": "module_replay"
+    },
+    {
+      "accepted_as_expected": true,
+      "exit": 0,
+      "name": "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LandauPoleReLe",
+      "output": "replaying Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LandauPoleReLe",
+      "seconds": 12.218,
+      "stage": "module_replay"
+    },
+    {
+      "accepted_as_expected": true,
+      "exit": 0,
+      "name": "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.IteratedDerivLaplace",
+      "output": "replaying Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.IteratedDerivLaplace",
+      "seconds": 10.219,
+      "stage": "module_replay"
+    },
+    {
+      "accepted_as_expected": true,
+      "exit": 0,
+      "name": "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LandauCoeff",
+      "output": "replaying Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LandauCoeff",
+      "seconds": 9.611,
+      "stage": "module_replay"
+    },
+    {
+      "accepted_as_expected": true,
+      "exit": 0,
+      "name": "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LandauFinite",
+      "output": "replaying Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LandauFinite",
+      "seconds": 12.21,
+      "stage": "module_replay"
+    },
+    {
+      "accepted_as_expected": true,
+      "exit": 0,
+      "name": "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LandauNearest",
+      "output": "replaying Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LandauNearest",
+      "seconds": 10.918,
+      "stage": "module_replay"
+    },
+    {
+      "accepted_as_expected": true,
+      "exit": 0,
+      "name": "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LandauDichotomy",
+      "output": "replaying Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LandauDichotomy",
+      "seconds": 10.219,
+      "stage": "module_replay"
+    },
+    {
+      "accepted_as_expected": true,
+      "exit": 0,
+      "name": "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LandauGrowthContra",
+      "output": "replaying Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.LandauGrowthContra",
+      "seconds": 10.847,
+      "stage": "module_replay"
+    },
+    {
+      "accepted_as_expected": true,
+      "exit": 0,
+      "name": "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.landauWindow",
+      "output": "replaying Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.landauWindow",
+      "seconds": 10.266,
+      "stage": "module_replay"
+    },
+    {
+      "accepted_as_expected": true,
+      "exit": 0,
+      "name": "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.WindowHypUOfWindowHyp",
+      "output": "replaying Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.WindowHypUOfWindowHyp",
+      "seconds": 10.103,
+      "stage": "module_replay"
+    },
+    {
+      "accepted_as_expected": true,
+      "exit": 0,
+      "name": "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.lemmaL",
+      "output": "replaying Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.lemmaL",
+      "seconds": 10.139,
+      "stage": "module_replay"
+    },
+    {
+      "accepted_as_expected": true,
+      "exit": 0,
+      "name": "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.WindowHypOfRpow",
+      "output": "replaying Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.WindowHypOfRpow",
+      "seconds": 9.348,
+      "stage": "module_replay"
+    },
+    {
+      "accepted_as_expected": true,
+      "exit": 0,
+      "name": "Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.ZeroFreeOfRpowWindow",
+      "output": "replaying Development.AutomorphicArithmetic.DedekindLFunctions.LandauTheorems.ZeroFreeOfRpowWindow",
+      "seconds": 8.942,
+      "stage": "module_replay"
+    },
+    {
+      "accepted_as_expected": true,
+      "exit": 0,
+      "name": "UrielFragments",
+      "output": "replaying UrielFragments",
+      "seconds": 9.537,
+      "stage": "excerpt_replay"
+    }
+  ],
+  "pin": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "toolchain": {
+    "lean": "819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+    "packages": {
+      "Cli": "6130a47896ce867c6a4a55373441e59e565bad0f",
+      "LeanSearchClient": "5f4d51b81cbd3f6b32b156bfad9056621a040404",
+      "Qq": "92c15be17b7caf78c2ad767ec40f89052d908d81",
+      "aesop": "3448c0bcc5ce01b2d1546e483ec3620e32df3d0e",
+      "batteries": "4488d40d070b9700d4d5a6aa342f0d40c31b2a2d",
+      "importGraph": "16f02aa7642864af59f1ff0e384a015994db9118",
+      "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+      "plausible": "b7eb3304aeae834b12dda98993a37f6a41f6f0bb",
+      "proofwidgets": "4be2e3d5087eeb272cf5a8853b8f9dd025ef5957"
+    },
+    "version": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+  }
+}
