@@ -12,6 +12,8 @@ Start with [PROOF_CONTEXT.md](PROOF_CONTEXT.md), which reconstructs selected ana
 
 The arithmetic-window study follows the same-set Frobenius premium through the original arithmetic window. [Paper, Lean replay and exact controls](https://github.com/nousentllc/riemann-hypothesis/tree/80555206be28204b1d0a9063f54c8f1e2b5fd70d/research/uriel/experiments/frobenius-window-survival).
 
+**Published dyadic paper.** [Exact dyadic densities for a ramified Gram fiber](publications/ramified-gram-fiber-densities/README.md) consolidates the lattice theorem, sharp cutoff and chart checks. The full package includes the editable LuaLaTeX, PDF, proof sources and replay evidence.
+
 The ramified study now classifies the original lattice mass of every unit target at valuation `4k`. Two values occur, determined by the parity of the `√2` coefficient in the residual unit. [Lean proof, fourth-edition paper and reproduction ZIP](experiments/ramified-unit-classification/README.md).
 
 ## Baselines

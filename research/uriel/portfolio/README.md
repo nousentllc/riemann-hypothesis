@@ -24,6 +24,8 @@ The written theorem jointly chooses a prime and good orbit on the original weigh
 
 Lean verifies exactly two original lattice masses at valuation 4k. The parity of the coefficient of √2 in the residual unit determines the sign in 2 ± 2/256^k. Both classes stabilize sharply at depth 4k+2.
 
+**Published dyadic paper.** [Exact dyadic densities for a ramified Gram fiber](../publications/ramified-gram-fiber-densities/README.md) includes the PDF, single LuaLaTeX source and full reproduction package. It adds a short residue-count derivation while retaining the original-measure proofs and chart controls.
+
 [Fourth edition, arbitrary-unit classification and ZIP](https://github.com/nousentllc/riemann-hypothesis/tree/248c8f4838155354c024a6224690245067edb102/research/uriel/experiments/ramified-unit-classification) · [Third edition, companion proof and ZIP](https://github.com/nousentllc/riemann-hypothesis/tree/1747b933087347e26863fbcb3dbb82debd0441e0/research/uriel/experiments/ramified-companion-lean) · [Earlier written checkpoint](ramified-companion/README.md)
 
 ## How the tracks connect
