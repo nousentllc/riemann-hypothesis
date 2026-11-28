@@ -4,7 +4,7 @@
 
 ## Nous research in this fork
 
-**[Browse all published studies](STUDIES.md)** · **[Publication archive](https://github.com/nousentllc/riemann-hypothesis/tree/32babcca9df1b672cf013625156870bc6947020a/research/uriel/portfolio/publication-archive)** · [Research map and catalog](https://github.com/nousentllc/riemann-hypothesis/tree/research/uriel/research/uriel/portfolio) · [Latest ramified-fiber paper and ZIP](https://github.com/nousentllc/riemann-hypothesis/tree/1da9522e3ada6c5af62c014ea76e77cc40ff3676/research/uriel/portfolio/ramified-companion/paper)
+**[Browse all published studies](STUDIES.md)** · **[Publication archive](https://github.com/nousentllc/riemann-hypothesis/tree/32babcca9df1b672cf013625156870bc6947020a/research/uriel/portfolio/publication-archive)** · [Research map and catalog](https://github.com/nousentllc/riemann-hypothesis/tree/research/uriel/research/uriel/portfolio) · [Latest ramified-fiber paper and ZIP](https://github.com/nousentllc/riemann-hypothesis/tree/248c8f4838155354c024a6224690245067edb102/research/uriel/experiments/ramified-unit-classification)
 
 The GitHub file view above opens on `main`, the formalization branch. The study index opens the papers and evidence on their recorded experiment branches without requiring you to switch branches.
 

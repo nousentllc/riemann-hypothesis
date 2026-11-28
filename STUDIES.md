@@ -1,8 +1,8 @@
 # Riemann research studies
 
-The fork opens on `main`, which holds the formalization and its build instructions. Our study files live on dedicated experiment branches. The links below open each study at its recorded commit, so you can browse them directly from `main`.
+The fork opens on `main`, which holds the formalization and its build instructions. Our study files live on the research branch and dedicated experiment branches. The links below open each study at its recorded commit, so you can browse them directly from `main`.
 
-**42 experiment branches and 11 related editions.** [Current research catalog, map, and verification notes](https://github.com/nousentllc/riemann-hypothesis/tree/research/uriel/research/uriel/portfolio) · [Research branch](https://github.com/nousentllc/riemann-hypothesis/tree/research/uriel) · [Older package downloads](https://github.com/nousentllc/riemann-hypothesis/tree/research/uriel/research/uriel/portfolio/legacy-packages)
+**42 experiment branches and 13 related editions.** [Current research catalog, map, and verification notes](https://github.com/nousentllc/riemann-hypothesis/tree/research/uriel/research/uriel/portfolio) · [Research branch](https://github.com/nousentllc/riemann-hypothesis/tree/research/uriel) · [Older package downloads](https://github.com/nousentllc/riemann-hypothesis/tree/research/uriel/research/uriel/portfolio/legacy-packages)
 
 ## Earlier papers and completed experiments
 
@@ -16,6 +16,8 @@ The [publication archive](https://github.com/nousentllc/riemann-hypothesis/tree/
 
 ## Papers and reading aids on the research branch
 
+- [Ramified Gram-fiber mass classes, fourth edition](https://github.com/nousentllc/riemann-hypothesis/tree/248c8f4838155354c024a6224690245067edb102/research/uriel/experiments/ramified-unit-classification) Lean verifies exactly two original masses at valuation 4k. The parity of the coefficient of √2 in the residual unit determines the sign.
+- [Ramified companion fibers, third edition](https://github.com/nousentllc/riemann-hypothesis/tree/1747b933087347e26863fbcb3dbb82debd0441e0/research/uriel/experiments/ramified-companion-lean) Lean proves sharp stabilization at depth 4k+2 and transports the mass 2 − 2/256^k to the original lattice.
 - [Ramified companion fibers, second edition](https://github.com/nousentllc/riemann-hypothesis/tree/1da9522e3ada6c5af62c014ea76e77cc40ff3676/research/uriel/portfolio/ramified-companion/paper) contains the revised PDF, editable LuaLaTeX, and ZIP.
 - [Compact proof audit](https://github.com/nousentllc/riemann-hypothesis/tree/1da9522e3ada6c5af62c014ea76e77cc40ff3676/research/uriel/portfolio/compact-proof-audit) follows the signed auxiliary cutoff and rank deficit.
 - [Declaration route](https://github.com/nousentllc/riemann-hypothesis/tree/1da9522e3ada6c5af62c014ea76e77cc40ff3676/research/uriel/portfolio/declaration-graph) traces the original RH statement to the rank-one normalization.
