@@ -1,0 +1,67 @@
+{
+  "source_commit": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "lean": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "pinned_original_modules": 702,
+  "fresh_originals": 0,
+  "reused_originals": 702,
+  "modules": {
+    "FieldEndpoints": {
+      "sha256": "35c57e414157baa16490043a831f176c271a2bae6bfb7825659d21518b7967db",
+      "axioms": [
+        "'EndpointWeights.kexpRelax' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'EndpointWeights.pointRelax' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'EndpointWeights.point2Relax' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'EndpointWeights.finalRelax' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'EndpointWeights.partARelax' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'EndpointWeights.partBRelax' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'EndpointWeights.fillActive' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'EndpointWeights.joint' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'EndpointWeights.heightAt' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'EndpointWeights.fieldAt' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'EndpointWeights.fillPower' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'EndpointWeights.fieldTransport' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'EndpointWeights.fieldFill' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'EndpointWeights.windowPairTransport' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'EndpointWeights.commonPairGood' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ],
+      "replay": "replaying FieldEndpoints"
+    },
+    "CoherentFields": {
+      "sha256": "340c9e9e70405175930c821538259fd9fc8e1384db3187ff33a75aa3b41eb70f",
+      "axioms": [
+        "'CoherentFields.mem_picks' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'CoherentFields.picks_cohere' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'CoherentFields.coherentFirst' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'CoherentFields.stabilizes' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'CoherentFields.mixedFill' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'CoherentFields.restrictAtEqualDepth' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ],
+      "replay": "replaying CoherentFields"
+    },
+    "SynchronizedSlots": {
+      "sha256": "6ac6c90d5386a60f887c8ba2d595c72271aee49dc7c9cab476e92aff8f6fe1ab",
+      "axioms": [
+        "'SynchronizedSlots.coherentPartA' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'SynchronizedSlots.coherentPartB' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'SynchronizedSlots.fillFromTwoCutoffs' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ],
+      "replay": "replaying SynchronizedSlots"
+    },
+    "SuccessiveFields": {
+      "sha256": "3a7f42d5530cc9f0e234ae385eaaa209cedaa0bcc011fc179089386d4a239baa",
+      "axioms": [
+        "'SynchronizedSlots.coherentJoint' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'SynchronizedSlots.gapVAt' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ],
+      "replay": "replaying SuccessiveFields"
+    },
+    "PhysicalGap": {
+      "sha256": "38f47641382ab03be396eb838b46fba9d62d455a4402555663995ae6620740cb",
+      "axioms": [
+        "'SynchronizedSlots.gapWinDatum' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ],
+      "replay": "replaying PhysicalGap"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "version": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "original_sources": 1103,
+  "pinned_prior_sources": 18,
+  "rebuilt": [],
+  "axioms": [
+    "'GapFirst.Slot.principalDirect' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'GapFirst.Slot.allCentersOneLift' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'GapFirst.Slot.zeroOnModel' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'GapFirst.Slot.eraseThree' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'GapFirst.Slot.principalGap' depends on axioms: [propext, Classical.choice, Quot.sound]"
+  ],
+  "kernel": "replaying SlotGap",
+  "supplement_sha256": "2e0355d3bbd6e4940ea85d61238885f88ce31a64a8fd14dc0fff1346331abbd6"
+}

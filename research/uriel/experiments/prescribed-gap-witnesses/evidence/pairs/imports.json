@@ -1,0 +1,88 @@
+{
+ "modules": {
+  "Development.AutomorphicArithmetic.CharacterBoxes.ExistsPageN": {
+   "git_blob": "398eb8ed3528aa2666e9d3b2b09a582ad4390dd7",
+   "reference_olean": "3eea59f72e776ff9f3c64b2dea4bebccb9bdcd87eec87ba580b1d7cc04c2c323"
+  },
+  "Development.AutomorphicArithmetic.CharacterBoxes.PairGood": {
+   "git_blob": "68d04b506355e999c0f6020ee066c4967c1e6939",
+   "reference_olean": "4bf98da5e19b621d3b26e37b73e10594b636be50ae209834381cb9b5b31e08e6"
+  },
+  "Formalism.ConjugateSelfDual.Statement": {
+   "git_blob": "8ac13fd8953cf0cff090de5b89c0aab876c5c929",
+   "reference_olean": "274121e87ebbd7248bab793e5cfbe343e3379cfaec27e5dee8ecffd62a591946"
+  },
+  "Formalism.FrobeniusOrbits.Statement": {
+   "git_blob": "45d3b672d4649dd27309c092b3f9a24d279dd399",
+   "reference_olean": "c4d48271a3432c31c04d69a64720bd072a696765d6886e18a981c675d876eb7a"
+  },
+  "Formalism.GaloisCohomology.Statement": {
+   "git_blob": "0799e9bcd8aa191ffaa90ab005453a53381bacea",
+   "reference_olean": "ba9b1a5fac7bc4b0719c8902089acc794bab04479405d767c960e55d291a5242"
+  },
+  "Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.Analytic": {
+   "git_blob": "599699b5b35f6fb7bf2ab94f5f0c577b14f35ea1",
+   "reference_olean": "8d47799074adcae7db33f4a43975b04e086801da40abccde2e1dbecc23888456"
+  },
+  "Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.ConjEMemHostFIff": {
+   "git_blob": "0ab34ba6d386bb84908efe66de6ce50108eacddc",
+   "reference_olean": "6b79cd87646aff932c86b1e0bbcd1b0b63f9385eb9fe55d3927413b64c03352b"
+  },
+  "Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.ExplicitFormulaErrorOfHostConditions": {
+   "git_blob": "ed60b4b997cd4703713660b185b9e43fd95559a1",
+   "reference_olean": "465bbaf665e39801cb826936181995d3fc35fa693916e69027371d6b93ece9d6"
+  },
+  "Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.PrimePairSizeCondition": {
+   "git_blob": "aee05935e7bac6625cd4e07fef4912722d796780",
+   "reference_olean": "fe2cd8a3677383d1aa175f8175b216289f5713dac8a6cde1ed73bd96491af9af"
+  },
+  "Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.ZsmulGeneratorEqZeroOfProjection": {
+   "git_blob": "d13afca4924f8b277ae89b5d1d1e38d349ad99de",
+   "reference_olean": "b36a40c2ac5ea8af0e598d918d290a99295eb1106bcfb8c76087b1d8c0636ef4"
+  },
+  "Formalism.Statement": {
+   "git_blob": "30143706942aa349c77e4037537f381f9c8dbb25",
+   "reference_olean": "4d92c742e703c16a769aaa4aef021cb7a2aba53b2ca383e439470309fdc400c1"
+  },
+  "Formalism.StatementOC": {
+   "git_blob": "12ab19c0176bd4135c2b23a7ee3ac22888df0122",
+   "reference_olean": "c87d718d86dad4c74c7d18a21e224c77ddd3729b284c04b6219cdd5a95bc8886"
+  },
+  "Formalism.TameInertiaTowers.StatementField": {
+   "git_blob": "0d8984ee6e59434e27f1560110e63d18acf30b28",
+   "reference_olean": "11870c47973c44e4c133f065a683afb9ca9e00484951ac95639f39173a895963"
+  },
+  "Formalism.TameInertiaTowers.StatementGroup": {
+   "git_blob": "a9c329cd4a0a439dd75bfd7dc0271715ee27f0c0",
+   "reference_olean": "af521889b7e43cd1aa9549f29d9e8feec5fca063cb1d3cc96030213063b7a0a1"
+  },
+  "ReciprocityTheory.GaloisValuations.ContinuousConstSMulQuotient": {
+   "git_blob": "cc7e6464c45dac01a68e484ce0eb884df25d9f4f",
+   "reference_olean": "bfaf29881f94f0b8f3b0718f7ce441a3f3ed36964b6fa19a0a2913e67be7c2d7"
+  },
+  "ReciprocityTheory.GaloisValuations.Global": {
+   "git_blob": "cb4c9727d3c18cfdf185fa0958a4f11d21a5a43f",
+   "reference_olean": "ce449619cd414f95b4ca03d81f14688c6282f6a39d43a53a62151951628536ad"
+  },
+  "ReciprocityTheory.GaloisValuations.GlobalA": {
+   "git_blob": "f193f6e2a17963f821834b9cdc5dee96c52cfbab",
+   "reference_olean": "62856f962bfd1d4cec6c47b9f9e2205244fa6791095436f26b884d710f554ad7"
+  },
+  "ReciprocityTheory.GaloisValuations.GlobalB": {
+   "git_blob": "522d1e58b5accb8a165d6a392d5209c7b285cf65",
+   "reference_olean": "d89349a55d2e9ef0ab57a29284ae16a6a1bc93c36ae7f0805bcf34b58333564f"
+  },
+  "ReciprocityTheory.GaloisValuations.SeparatedDvrSecondCohomologyMem": {
+   "git_blob": "5860d068c8ee7b7d2845256ce5e2871cf3c9c251",
+   "reference_olean": "49d4fefb9b4a57a76e4c6589148e4fce5a0b261f6498507e4b066cbfd65f490c"
+  },
+  "ReciprocityTheory.Hypotheses.GalCoh": {
+   "git_blob": "a4e5044d290790dfc54db004228d49cd9fdb77e5",
+   "reference_olean": "4dc4f2b80c9dbb5c51df59788e42a6268b7bfa327082d50eace0e14407784c70"
+  },
+  "ReciprocityTheory.Hypotheses.GalCohDefs": {
+   "git_blob": "ac6952d0f1b0e6f8cbc15cd6e662ba1848818cc3",
+   "reference_olean": "a8d2674268c62c33d82ccfd9835c2032cfceb66623d105366d0b2077922f09cd"
+  }
+ }
+}

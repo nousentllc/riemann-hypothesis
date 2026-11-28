@@ -1,0 +1,8 @@
+# Fixed gap and successive field witnesses
+
+Recorded before new controls and Lean experiments. The previous endpoint study already proved a fill lemma for one frozen set, under a strict floor crossover and with the original local premises. This component tests when a second selection can legitimately supply such a set.
+
+1. Read the quantifiers in the original even and odd field inputs, the fixed conductor-one slot if relevant, and the actual mechanisms generating their exceptional weights from obstruction centers. Identify which field, support primes, cutoff, rank, and witness choices can be synchronized.
+2. Preselect the toy arithmetic gap [2,4], with integer cutoff floor(x^2) and size allowance x, before choosing any lists. Compare a single compatible high-cutoff source, two unrelated lists or incompatible fields, and a hidden newly active integer. Repeat for finite grids if useful. Arithmetic weights in this control are model values.
+3. Attempt a Lean result on the actual source predicates: restriction of a two-scale certificate, or a common construction from the highest cutoff. State every price of making the bound monotone (especially logarithmic dependence on the cutoff) and which endpoint or local arithmetic estimates remain required. Actively test the stronger claim that the original Type-level witnesses from two calls must agree.
+4. If the elementary source-defined centers have a common infinite model for a fixed base field, give its real mathematical argument and distinct projection/extraction costs. State explicitly when compatibility or classification cannot be inferred for actual source-selected endpoints.

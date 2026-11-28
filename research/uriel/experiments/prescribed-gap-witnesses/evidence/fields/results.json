@@ -1,0 +1,371 @@
+{
+  "coherent_cutoff_transitions": [
+    {
+      "prime": 2,
+      "reduction_classes": 64,
+      "maximum_cutoff": 32,
+      "cases": 33792,
+      "unchanged": 18384,
+      "old_only": 3616,
+      "new_only": 6144,
+      "both_changed": 5648,
+      "wrong_old_range": 0,
+      "same_depth_restriction_mismatch": 0
+    },
+    {
+      "prime": 3,
+      "reduction_classes": 81,
+      "maximum_cutoff": 32,
+      "cases": 42768,
+      "unchanged": 23806,
+      "old_only": 7134,
+      "new_only": 7946,
+      "both_changed": 3882,
+      "wrong_old_range": 0,
+      "same_depth_restriction_mismatch": 0
+    },
+    {
+      "prime": 5,
+      "reduction_classes": 125,
+      "maximum_cutoff": 32,
+      "cases": 66000,
+      "unchanged": 38991,
+      "old_only": 12153,
+      "new_only": 11809,
+      "both_changed": 3047,
+      "wrong_old_range": 0,
+      "same_depth_restriction_mismatch": 0
+    },
+    {
+      "prime": 7,
+      "reduction_classes": 49,
+      "maximum_cutoff": 32,
+      "cases": 25872,
+      "unchanged": 18009,
+      "old_only": 2197,
+      "new_only": 4587,
+      "both_changed": 1079,
+      "wrong_old_range": 0,
+      "same_depth_restriction_mismatch": 0
+    }
+  ],
+  "strict_gap": [
+    {
+      "prime": 2,
+      "endpoints": [
+        "2",
+        "7/2"
+      ],
+      "outer": [
+        4,
+        8
+      ],
+      "cutoffs": [
+        16,
+        64
+      ],
+      "center_classes": 128,
+      "shared_passing": 116,
+      "shared_hidden_holes": 0,
+      "independent_pairings": 16384,
+      "independent_passing": 14880,
+      "independent_hidden_holes": 124
+    },
+    {
+      "prime": 3,
+      "endpoints": [
+        "2",
+        "7/2"
+      ],
+      "outer": [
+        4,
+        8
+      ],
+      "cutoffs": [
+        16,
+        64
+      ],
+      "center_classes": 81,
+      "shared_passing": 70,
+      "shared_hidden_holes": 0,
+      "independent_pairings": 6561,
+      "independent_passing": 5694,
+      "independent_hidden_holes": 78
+    },
+    {
+      "prime": 5,
+      "endpoints": [
+        "2",
+        "7/2"
+      ],
+      "outer": [
+        4,
+        8
+      ],
+      "cutoffs": [
+        16,
+        64
+      ],
+      "center_classes": 125,
+      "shared_passing": 112,
+      "shared_hidden_holes": 0,
+      "independent_pairings": 15625,
+      "independent_passing": 14040,
+      "independent_hidden_holes": 120
+    },
+    {
+      "prime": 7,
+      "endpoints": [
+        "2",
+        "7/2"
+      ],
+      "outer": [
+        4,
+        8
+      ],
+      "cutoffs": [
+        16,
+        64
+      ],
+      "center_classes": 343,
+      "shared_passing": 328,
+      "shared_hidden_holes": 0,
+      "independent_pairings": 117649,
+      "independent_passing": 112560,
+      "independent_hidden_holes": 336
+    }
+  ],
+  "equality_gap": [
+    {
+      "prime": 2,
+      "endpoints": [
+        "2",
+        "4"
+      ],
+      "outer": [
+        4,
+        8
+      ],
+      "cutoffs": [
+        16,
+        64
+      ],
+      "center_classes": 128,
+      "shared_passing": 113,
+      "shared_hidden_holes": 1,
+      "independent_pairings": 16384,
+      "independent_passing": 14508,
+      "independent_hidden_holes": 248
+    },
+    {
+      "prime": 3,
+      "endpoints": [
+        "2",
+        "4"
+      ],
+      "outer": [
+        4,
+        8
+      ],
+      "cutoffs": [
+        16,
+        64
+      ],
+      "center_classes": 81,
+      "shared_passing": 67,
+      "shared_hidden_holes": 1,
+      "independent_pairings": 6561,
+      "independent_passing": 5460,
+      "independent_hidden_holes": 156
+    },
+    {
+      "prime": 5,
+      "endpoints": [
+        "2",
+        "4"
+      ],
+      "outer": [
+        4,
+        8
+      ],
+      "cutoffs": [
+        16,
+        64
+      ],
+      "center_classes": 125,
+      "shared_passing": 109,
+      "shared_hidden_holes": 1,
+      "independent_pairings": 15625,
+      "independent_passing": 13680,
+      "independent_hidden_holes": 240
+    },
+    {
+      "prime": 7,
+      "endpoints": [
+        "2",
+        "4"
+      ],
+      "outer": [
+        4,
+        8
+      ],
+      "cutoffs": [
+        16,
+        64
+      ],
+      "center_classes": 343,
+      "shared_passing": 325,
+      "shared_hidden_holes": 1,
+      "independent_pairings": 117649,
+      "independent_passing": 111552,
+      "independent_hidden_holes": 672
+    }
+  ],
+  "controls": {
+    "rollover_3_10": [
+      [
+        1
+      ],
+      [
+        10
+      ]
+    ],
+    "different_center_integer_pair": [
+      7,
+      3
+    ],
+    "different_center_interior_failure": "5/2",
+    "equality_shared_center": 4,
+    "equality_interior_failure": "5/2"
+  },
+  "arbitrary_delay": [
+    {
+      "prime": 2,
+      "digits": 8,
+      "weight": 3,
+      "first_removal_cutoff": "2^8",
+      "check_before": true,
+      "check_at": true
+    },
+    {
+      "prime": 2,
+      "digits": 32,
+      "weight": 3,
+      "first_removal_cutoff": "2^32",
+      "check_before": true,
+      "check_at": true
+    },
+    {
+      "prime": 2,
+      "digits": 128,
+      "weight": 3,
+      "first_removal_cutoff": "2^128",
+      "check_before": true,
+      "check_at": true
+    },
+    {
+      "prime": 2,
+      "digits": 512,
+      "weight": 3,
+      "first_removal_cutoff": "2^512",
+      "check_before": true,
+      "check_at": true
+    },
+    {
+      "prime": 3,
+      "digits": 8,
+      "weight": 3,
+      "first_removal_cutoff": "3^8",
+      "check_before": true,
+      "check_at": true
+    },
+    {
+      "prime": 3,
+      "digits": 32,
+      "weight": 3,
+      "first_removal_cutoff": "3^32",
+      "check_before": true,
+      "check_at": true
+    },
+    {
+      "prime": 3,
+      "digits": 128,
+      "weight": 3,
+      "first_removal_cutoff": "3^128",
+      "check_before": true,
+      "check_at": true
+    },
+    {
+      "prime": 3,
+      "digits": 512,
+      "weight": 3,
+      "first_removal_cutoff": "3^512",
+      "check_before": true,
+      "check_at": true
+    },
+    {
+      "prime": 5,
+      "digits": 8,
+      "weight": 3,
+      "first_removal_cutoff": "5^8",
+      "check_before": true,
+      "check_at": true
+    },
+    {
+      "prime": 5,
+      "digits": 32,
+      "weight": 3,
+      "first_removal_cutoff": "5^32",
+      "check_before": true,
+      "check_at": true
+    },
+    {
+      "prime": 5,
+      "digits": 128,
+      "weight": 3,
+      "first_removal_cutoff": "5^128",
+      "check_before": true,
+      "check_at": true
+    },
+    {
+      "prime": 5,
+      "digits": 512,
+      "weight": 3,
+      "first_removal_cutoff": "5^512",
+      "check_before": true,
+      "check_at": true
+    },
+    {
+      "prime": 7,
+      "digits": 8,
+      "weight": 3,
+      "first_removal_cutoff": "7^8",
+      "check_before": true,
+      "check_at": true
+    },
+    {
+      "prime": 7,
+      "digits": 32,
+      "weight": 3,
+      "first_removal_cutoff": "7^32",
+      "check_before": true,
+      "check_at": true
+    },
+    {
+      "prime": 7,
+      "digits": 128,
+      "weight": 3,
+      "first_removal_cutoff": "7^128",
+      "check_before": true,
+      "check_at": true
+    },
+    {
+      "prime": 7,
+      "digits": 512,
+      "weight": 3,
+      "first_removal_cutoff": "7^512",
+      "check_before": true,
+      "check_at": true
+    }
+  ]
+}

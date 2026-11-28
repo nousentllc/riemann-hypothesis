@@ -1,0 +1,58 @@
+{
+  "original": "40e56bab026552e089d7afcfeff08d2defb9c005",
+  "research_base": "08188ff0c6dd02dfec0bd65d30765862e9db56b7",
+  "protocol_commit": "2ddb0b1a35431324d62739d775c65f1b3f4df46b",
+  "prior_endpoint": "d79bd956c6fb2b8a3de51b606765be81d24fb1fc",
+  "prior_slot": "4b1c9fbbfb9bc50a3f791c2c1f3d7f2adb336c87",
+  "prior_ascent": "e674cb750ef96b2f5e7cd46586ea4edb9998715a",
+  "branch": "experiments/uriel-prescribed-gap-witnesses",
+  "base_branch": "research/uriel",
+  "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "lean": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "scoped_join": {
+    "pinned_originals": 1150,
+    "pinned_prior_research": 18,
+    "rebuilt_original_or_prior": 0,
+    "replayed": [
+      "SlotGap",
+      "FieldEndpoints",
+      "CoherentFields",
+      "SynchronizedSlots",
+      "SuccessiveFields",
+      "PhysicalGap",
+      "PairSharing",
+      "FixedRoster",
+      "PrincipalBridge"
+    ]
+  },
+  "source_file_count": 174793,
+  "full_lean_build": false,
+  "original_sources_changed": false,
+  "primary_protocols": [
+    "fields",
+    "pairs",
+    "stitch",
+    "slot"
+  ],
+  "secondary_protocols": [
+    "scalar/FOLLOWUP.md",
+    "scalar/PEAK_CONTROL.md",
+    "stitch/TRANSIENTS.md",
+    "pairs/FINITE_DESIGN.md",
+    "cross/PROTOCOL.md"
+  ],
+  "paper": {
+    "standalone_lualatex": true,
+    "pages": 35,
+    "rendered_pages": 35,
+    "links": 46,
+    "unique_links": 34,
+    "vector_figures": [
+      "handoff",
+      "scalar"
+    ],
+    "pdf_sha256": "40219039288eb21f41d8eaacdc0a8318371e265a1ec654a57763311d76850793",
+    "tex_sha256": "2ff145ab099e9170601331a250d3be59d45f76ea3618512023dec04f6c08eb46"
+  },
+  "verification_notes": "Scoped Lean kernel replay, finite exact and directed computations, and ordinary mathematical proofs are itemized in CLAIMS.json. No uniform endpoint availability or numerical proof of RH is claimed."
+}

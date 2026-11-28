@@ -1,0 +1,2810 @@
+{
+  "Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.GoodChi": {
+    "cached_sha256": "17e56b2ad780b63d262948cde5c9b694807c88347d5c9cc7ceddf6f9394ceffc",
+    "git_blob": "8bf75b9fa3ead0d17aadbb08c91738c3d8f984b7"
+  },
+  "Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.NStageTrivialCharacterCoeffEq": {
+    "cached_sha256": "50f24345b37bd2c21fba3a594c3c38962436d2a6a6b75cf4af3f49b69d72ad70",
+    "git_blob": "ea5d00c24a61dd7254f54bd619b97bf909117547"
+  },
+  "Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.RhoDetPrimeEqMuTildeMulChiPow": {
+    "cached_sha256": "5e248ca0c5ce6607a88f8083a5fc19aa460ab1e4159c557d02e4079145ec1acd",
+    "git_blob": "01e10d26a97409a3ad34dd73cadf27c67d215534"
+  },
+  "Development.AbelianVarietyTheory.Definitions.AutomorphicMembership.RowsRestWordColumnUnitBaseTuple": {
+    "cached_sha256": "d825acd627fdcb42e84e1d3895c1d3cedc76160c2fc4b458de7c5299bc7e92f7",
+    "git_blob": "5e9137a9cb6e6a9135a28809beb2a73efef1756c"
+  },
+  "Development.AbelianVarietyTheory.Definitions.Foundations.HTBasis": {
+    "cached_sha256": "f0ee0f85166a605332d1b50aa646271c84ad1d4396823272aee6f8c082f21f67",
+    "git_blob": "133d9d135bb4568933f6bb18591fa906cc0a0405"
+  },
+  "Development.AbelianVarietyTheory.Definitions.Foundations.RootOfUnityEightQMemCoeffGaloisSubfield": {
+    "cached_sha256": "e3255ef9ea527e058ed39190347705a5b1267ff18a01b557801f35f7d18bdaad",
+    "git_blob": "7fcec673c0588271261da9f9e7e411ceac32b2ac"
+  },
+  "Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.CentralIdemCoeff": {
+    "cached_sha256": "85bc3787c641e5c2c165e56898f98c832b3eb8b614c9277faa37db35858c4cad",
+    "git_blob": "c7bc6a8a6bf86c581800c0c16eedf1c9b87436ba"
+  },
+  "Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.ExpStar": {
+    "cached_sha256": "856cb30cd224d0dfdc2e73e389f657b4181e855311e9ef99e210a7c9e62125c0",
+    "git_blob": "eb8da5084df2f87259fe3c7f635b0b34c1baa840"
+  },
+  "Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.GlobalCore": {
+    "cached_sha256": "bf9c3571895ccc94b68dbb64045e21335bdc82631924895de01cd8a7710b6f3c",
+    "git_blob": "57259f63d007585be83ca1af6afe2f82af4ff6c3"
+  },
+  "Development.AbelianVarietyTheory.Definitions.NonGaloisDescent.LenCob": {
+    "cached_sha256": "98ea123ca7fe6f24a50dd613445f974ab6df0bb04e088d813e5e8346d6e694d7",
+    "git_blob": "fb4862045069b96b9fe161fd71177bb98a765ec7"
+  },
+  "Development.AbelianVarietyTheory.Proofs.FoundationProofs.BijectiveDualAddChar": {
+    "cached_sha256": "17697dcf8adc88f9fdc1405f10264cc57b9496974a5d99da23d3083823489a9b",
+    "git_blob": "1471fe551c44978005d767335a6696c73fd1cee5"
+  },
+  "Development.AbelianVarietyTheory.Proofs.FoundationProofs.CardDualZmodModuleEqCard": {
+    "cached_sha256": "9def810c42abcd1337888506bf1aa80c9e2f1b83afc52dfff0a35b08521380de",
+    "git_blob": "67b0dae1b56f409efd8631761a8dc2c5cf6d6d42"
+  },
+  "Development.AbelianVarietyTheory.Proofs.FoundationProofs.CardDualZmodModuleEqCardStatement": {
+    "cached_sha256": "ef2d02804d5d851ec50c0df0ea8a524a1dc1f9b71eb5a61c730d1aee0dce57a2",
+    "git_blob": "218231247ec0cba19d086ab350ac0a4bedafb6a7"
+  },
+  "Development.AbelianVarietyTheory.Proofs.FoundationProofs.ContCohomologyTransportMulEquiv": {
+    "cached_sha256": "9896da7b3cf3a8a8a4cfc6dc95471367e8989c7a3f6c25b1cc2a1d82096bcf0e",
+    "git_blob": "a161a887baf113ff5856b49338188d899e62b2e0"
+  },
+  "Development.AbelianVarietyTheory.Proofs.FoundationProofs.ContCohomologyTransportMulEquivStatement": {
+    "cached_sha256": "e9c372ebd70ce08288e7be81e33fb8db1d01757968368e2cbad95bf382f6814b",
+    "git_blob": "eaf7a9d31f4d5f0b6b3751d94adc306c635f361c"
+  },
+  "Development.AbelianVarietyTheory.Proofs.FoundationProofs.DecompositionGroupMulEquivLocalGaloisCyclotomic": {
+    "cached_sha256": "bf4452135720ff918e02da86401c75ffba9308c885828f2ec5f5b3286eb5d2f4",
+    "git_blob": "26af28b2add97b2f69708e737f4ecc264d9a05a5"
+  },
+  "Development.AbelianVarietyTheory.Proofs.FoundationProofs.DecompositionGroupMulEquivLocalGaloisCyclotomicStatement": {
+    "cached_sha256": "667a3a7100d6d26be3dd664ae8bcc9b026b9628aff6863c84c9688b2cc68a02b",
+    "git_blob": "8d1173d60b6e73ee4f2a204f86bd6add4443cde3"
+  },
+  "Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsCoboundaryOfSubsingletonContCohomologyThre": {
+    "cached_sha256": "8d07694d448572a8be1b4905eccf8b5132a945a9ceba9656ed7401a278a9682c",
+    "git_blob": "c6d691b28a122347574b378eec80bb716c6aa788"
+  },
+  "Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsCoboundaryOfSubsingletonContCohomologyThreStatement": {
+    "cached_sha256": "725f2aca0fb41f954004db276ee55fc19b366ddf539f64b78be5dade5f5196ec",
+    "git_blob": "b8a1c5b26e6e388aa7997cb0ed94dba18b7886af"
+  },
+  "Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsDecompositionGroupCyclotomicCharacterZpowN": {
+    "cached_sha256": "03befa5ebe42f0fbaaedb1e9196f47050107db16d3650b442ce53e73b2b7a847",
+    "git_blob": "4ab31fa5eedd5b330acbff0db19f973daab75804"
+  },
+  "Development.AbelianVarietyTheory.Proofs.FoundationProofs.ExistsDecompositionGroupCyclotomicCharacterZpowNStatement": {
+    "cached_sha256": "5db63b922531f622c84c359a7cc7dee76ac858f7562c64b4adcffef249c9fc1d",
+    "git_blob": "146e6ee686467a93c2e3d29003171f213e7aaa9f"
+  },
+  "Development.AbelianVarietyTheory.Proofs.FoundationProofs.IsDiscreteValuationRingIntegralClosurePadicInt": {
+    "cached_sha256": "7dc0a12b5423bd661d9232f53d8be940e310d0c71548bf548009c019e0bf1ed0",
+    "git_blob": "189194440bbfc0b6759aa79f67bd0a8358e09fc3"
+  },
+  "Development.AbelianVarietyTheory.Proofs.FoundationProofs.LengthEqLengthInvariantsOfTorsionLevels": {
+    "cached_sha256": "b2ec174155ecf8af6d0d0c6108cb5abdae2ab5530112c4f8df47f71e84805534",
+    "git_blob": "a87439c2cce46c4ad8cb5c3d05575bc4efc00d21"
+  },
+  "Development.AbelianVarietyTheory.Proofs.FoundationProofs.ModLThreeCocycleCondition": {
+    "cached_sha256": "fce4551d5290f1194e14b3025b85d92ede57c7993ec1ee01b50f9a791ceeae2e",
+    "git_blob": "7b09d8d408b75a97f4c430865f59bb4c7e0b7822"
+  },
+  "Development.AbelianVarietyTheory.Proofs.FoundationProofs.ModLThreeCocycleConditionStatement": {
+    "cached_sha256": "dc23d85f10e3a8c906807c7d99443c39da8712895d5f9771ba30b1cc2a36c5dc",
+    "git_blob": "fa7aa20ccc8f8453537f59c91ed5b83dc6c20fa8"
+  },
+  "Development.AbelianVarietyTheory.Proofs.FoundationProofs.NatCardCokerKerPadicModPow": {
+    "cached_sha256": "4f62c55e3878c3aa7a178d9f123386ac0230dd0ab41bf77f0a97fac9ea52aacc",
+    "git_blob": "136d6cf79d9f3cb51a4aa70a3428682918719b9e"
+  },
+  "Development.AbelianVarietyTheory.Proofs.FoundationProofs.NatCardCokerKerPadicModPowStatement": {
+    "cached_sha256": "7ee729796024fa20e74f3eaa54650db9dd349c139a26cc103f83822c8d81055e",
+    "git_blob": "f644e1d2478c549fcc82d26b5eca52db5659023b"
+  },
+  "Development.AbelianVarietyTheory.Proofs.FoundationProofs.PadicCoboundaryOfDivisible": {
+    "cached_sha256": "314b746952cfd50190f7ed849eefa801c58a3199fb9e87d66492537b6ec6999c",
+    "git_blob": "2debca9b708744ae5e441aa68a16a14f84b9cee2"
+  },
+  "Development.AbelianVarietyTheory.Proofs.FoundationProofs.PadicCoboundaryOfDivisibleStatement": {
+    "cached_sha256": "02fc6c2e8a7b0d5567f502c683d3a47c3f97531660bdc9141f55e3aa74732aef",
+    "git_blob": "3f2792e630c4d21a64219d554c7fb70e1c4d97d3"
+  },
+  "Development.AbelianVarietyTheory.Proofs.FoundationProofs.PadicIntLengthEqOfCardQuotientEqCardSubmodule": {
+    "cached_sha256": "a9e943e421455b6bc410bef3f8ae4c483a2ef0c12072f4f42527202c69427c16",
+    "git_blob": "0997ad4808c3c7d9cf5836502c88c894c5d51cde"
+  },
+  "Development.AbelianVarietyTheory.Proofs.FoundationProofs.PadicIntLengthEqOfCardQuotientEqCardSubmoduleStatement": {
+    "cached_sha256": "5380121e96d0a3c7688a078a699ae441b726596f67b856b740eba9ca97e243e1",
+    "git_blob": "1b96b91a5486efd2b64054370de041b757924b24"
+  },
+  "Development.AbelianVarietyTheory.Proofs.FoundationProofs.PadicIntModuleFiniteOfSeparatedOfFiniteQuotientA": {
+    "cached_sha256": "b38fa2887045ba059bf0009b314c8c20b527e95b449fc2c9f9b9320b0deccfe0",
+    "git_blob": "a9577eaad87a0486d542cba43ebfcc79048e207a"
+  },
+  "Development.AbelianVarietyTheory.Proofs.FoundationProofs.PadicIntModuleFiniteOfSeparatedOfFiniteQuotientAStatement": {
+    "cached_sha256": "a2ca67b05fee85a6f5aa3d9921747b4a76babc3c91230a394a761fbde842f1e4",
+    "git_blob": "168facfdada29996225842de756a041d32782bb7"
+  },
+  "Development.AbelianVarietyTheory.Proofs.FoundationProofs.PadicIntTorsionFreeOfCardQuotientPow": {
+    "cached_sha256": "ec21fcae0961951475c6ca46f8cfe6983d8d07d67244593cb5ce4bc42e237bab",
+    "git_blob": "9bbac29fd77d18eeae3b1d4efd61742d30ee1fb0"
+  },
+  "Development.AbelianVarietyTheory.Proofs.FoundationProofs.PadicIntTorsionFreeOfCardQuotientPowStatement": {
+    "cached_sha256": "d28b5bfa4670fc7f72de63fa721bd8e931a005ffb953acbc6357db6cb4aef613",
+    "git_blob": "52a5cd7089d0dd3699cf3fa99e4ca040e4d3701f"
+  },
+  "Development.AbelianVarietyTheory.Proofs.FoundationProofs.PadicIntTwoCocycleEqPowSmulOfReductionCoboundary": {
+    "cached_sha256": "164f3e4405415712c9d115bb52369776f6903ce80e33bbc7a59d09184ddcad23",
+    "git_blob": "06121d924d4ef73d3883c58744718ee10a6b83e1"
+  },
+  "Development.AbelianVarietyTheory.Proofs.FoundationProofs.PadicIntTwoCocycleEqPowSmulOfReductionCoboundaryStatement": {
+    "cached_sha256": "fc553be56c50db1cd05c23937b52690cc8cd3151fb3a6e41ea70bcbe04eeb7bf",
+    "git_blob": "3cf0f5321e09fbe64639affb1950d75a88440b96"
+  },
+  "Development.AbelianVarietyTheory.Proofs.FoundationProofs.PrimeEqBotOrMaximalIdealOfIsFieldAway": {
+    "cached_sha256": "72c01c198f738347d42836c4c87167f65e49a9e4814e822409eefe925843f990",
+    "git_blob": "5ef98c6cdc4a453bc90ce24b7c587fa0f7d01b5b"
+  },
+  "Development.AbelianVarietyTheory.Proofs.FoundationProofs.QzTorsionZmodEmbedding": {
+    "cached_sha256": "5d0d0244a305fe4c7e71c8132f7d9e8d1ea46dad2a9372f1c97dcddcc3c542d8",
+    "git_blob": "3963f6441317d4c1da5edeb91647c2d767f7de16"
+  },
+  "Development.AbelianVarietyTheory.Proofs.FoundationProofs.QzTorsionZmodEmbeddingStatement": {
+    "cached_sha256": "2d1b0d0cbc6411b268fca2846af52604e9a0ca2db3bdcbec6124549ef92ef5d3",
+    "git_blob": "ba21673e45e61536a4d2e002a110933b7adb859e"
+  },
+  "Development.AbelianVarietyTheory.Proofs.FoundationProofs.Sha1TorsionLevelFiltration": {
+    "cached_sha256": "f1fa29a0c2c4452d51583b81e7a3149c4daf7ecea2a809c26e71da7bdc24b0ec",
+    "git_blob": "e7f09ec5aee31de5e5af3c6151b26219bf57f390"
+  },
+  "Development.AbelianVarietyTheory.Proofs.FoundationProofs.Sha1TorsionLevelFiltrationStatement": {
+    "cached_sha256": "d695aa062aff086784d540c01439f6a66448bce71a6bb1ee8d269f65504f9ed7",
+    "git_blob": "49cb991b31d7d4d5f356bfced621cbea948ab307"
+  },
+  "Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ActDEqOfEqOne": {
+    "cached_sha256": "c3d5991ff794a703cb926c4db781734728a177169f672b5368b14a04ffe5f076",
+    "git_blob": "a9c29d6000c8fb11198222cae7042bd07a35ee5f"
+  },
+  "Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CyclotomicCharInertiaSurjective": {
+    "cached_sha256": "5241dad0c45774a672569a39d9375710d48f8a37e25bbdc9f8b07c4fe25207b2",
+    "git_blob": "4b139e648d527faee335851380ad48b7bad244b0"
+  },
+  "Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CyclotomicPrimePowAutomorphismInertialAtPrime": {
+    "cached_sha256": "96de0951777fbc95ba3cfd2b4ee06c9bba89b435db222d96c5bddb78b1687a04",
+    "git_blob": "0de24d6507729169bfc0ae3d45300067d69acdf3"
+  },
+  "Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.CyclotomicPrimePowAutomorphismInertialAtPrimeStatement": {
+    "cached_sha256": "2cfcd64a604022a9c753d9eeeff7ce38fe4d48f4f35b1d7bb5e52e8241c04c55",
+    "git_blob": "a34488c3ae72aada74dd7521eb715f30dc3c8f42"
+  },
+  "Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.ExistsLengthEqAndCardEqPowOfIsFiniteLength": {
+    "cached_sha256": "91751fdb1f35d3ebb1d16903ce05a8e9a2f752b6c06c1755647992f676b32d33",
+    "git_blob": "4f464f5cd3f7454f692d7e422e1d47084ac38b9f"
+  },
+  "Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FiniteGaloisInertiaLiftsAbsoluteInertiaRat": {
+    "cached_sha256": "2d3199313e6ae761622e7c56eab6071e9449eb002105f34bf9fd068d834e7b8b",
+    "git_blob": "bfe74ed9e95735a8a89060ea82e03d0befa42404"
+  },
+  "Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FiniteGaloisInertiaLiftsAbsoluteInertiaRatStatement": {
+    "cached_sha256": "415e5311298f3255b1f266588f0622d6378b17578529fb8cfb0e40635bbe32b2",
+    "git_blob": "829de2549ec65a37c14f04b4a1f4a249fe1be9f4"
+  },
+  "Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.FixingSubgroupEquivBicontinuous": {
+    "cached_sha256": "30aa56a7c03bfdc8eb1517bf6704451f9f78716aa3a51e42d4d2fdb91100cd10",
+    "git_blob": "663c433958e4b03ad57cf16ec96498bbc2ebb20c"
+  },
+  "Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.LengthCyclotomicBlockCocyclesLeSha": {
+    "cached_sha256": "aff4467fbd037669f6098d6a7f75a053b934caa246f0403ec6dfadd1ab00f584",
+    "git_blob": "77f017474404b7d8306f4004699eb25a9e667aec"
+  },
+  "Development.AbelianVarietyTheory.Proofs.InertiaEigenvalues.SelAllLeInf": {
+    "cached_sha256": "29c0ddfae1fa21d4fb7cbc89f8c05af05536d10c86d1d7fa4028186596b8d726",
+    "git_blob": "a591f0633487d0915f638bb7e6b453972b8e0b81"
+  },
+  "Development.AbelianVarietyTheory.Proofs.IwasawaDecomposition.FiniteDimensionalAdjoinRange": {
+    "cached_sha256": "2607e67acf8c1707d0fc2f67b021ba3b38637c6f131155cf6122374f2bbf89cb",
+    "git_blob": "ed59aaa465d09e1db63c3b92de8bcba34a59d712"
+  },
+  "Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology\u2082.CohDimTwoLocalOfLocalFiniteness": {
+    "cached_sha256": "ef2c03b89062016e8588bb2d5040b8b0196e2b7339a8c5911a0199d2ea992a96",
+    "git_blob": "89ec1ec97ba66e4615a0c33d8bb938b18fea2aec"
+  },
+  "Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology\u2082.ExistsPrimitiveRootPow": {
+    "cached_sha256": "e9604ac45573c60a6818ab62538619e6ac186ee4665bcd659cc58936dfec7868",
+    "git_blob": "f7a89580ed199e541e727ec15da44e454e0bed02"
+  },
+  "Development.AbelianVarietyTheory.PublishedTheorems.GaloisCohomology\u2082.PoitouTateNineTermTransgressionZeroApply": {
+    "cached_sha256": "f740604f2f7997b1189d1601ac43eb2c523213ca7f05f9add0ce18af0b504e22",
+    "git_blob": "36931d160bb815939f709f504ac33e3f640ede74"
+  },
+  "Development.AutomorphicArithmetic.AutomorphicVarieties.CMFieldExponentialBounds.AbelianFieldHasMuIffExistsPrimitiveRoot": {
+    "cached_sha256": "24bf2749a62e831d2e282df90c5e78142818b523f4f7523d907d8f432b03ab04",
+    "git_blob": "9d580b6b6f30d4dc83632e2249e050361234c23a"
+  },
+  "Development.AutomorphicArithmetic.AutomorphicVarieties.CMFieldExponentialBounds.AdmissibleOfPageN": {
+    "cached_sha256": "0223accf96a7231aef3427c9d4fd144264a9b32ac943b291241bfc1023179d92",
+    "git_blob": "5afd609c06ffbef90f5df59e9915343c913c6257"
+  },
+  "Development.AutomorphicArithmetic.AutomorphicVarieties.CMFieldExponentialBounds.ConductorBoundsOfIsChiField": {
+    "cached_sha256": "dd025f4db61ff70babcc18f3625d8bb083b373e9c862d4bb122c4a3e676d814e",
+    "git_blob": "02c9bfa54fab4dee3e3b114b254a961123f06bfe"
+  },
+  "Development.AutomorphicArithmetic.AutomorphicVarieties.CMFieldExponentialBounds.ErrorTermsLeSqrtExpRpow": {
+    "cached_sha256": "682d797148db4e9c6f677ab93440d001b6cae535793dd66f3ba39fe302c0eea5",
+    "git_blob": "3b6bf1f5987f7cc8fa9025e0bb25a0419cd3f69e"
+  },
+  "Development.AutomorphicArithmetic.AutomorphicVarieties.CMFieldExponentialBounds.ExistsNumberFieldIsAbFieldFinrankEqDeg": {
+    "cached_sha256": "ac82e3284bcce7c79b1f718710f395ce23491582756127e58b4b89596e53b9e7",
+    "git_blob": "4c7bc7b67096ca89b42852fee419b23f1848de6b"
+  },
+  "Development.AutomorphicArithmetic.AutomorphicVarieties.CMFieldExponentialBounds.IsCMFieldOfIsChiField": {
+    "cached_sha256": "c1e985a586e2a4e170779eacee29c56c1cf038b08b568b2972d367ae39578aa1",
+    "git_blob": "0eff7073a0d0131aaeda0b41e676570430d3535d"
+  },
+  "Development.AutomorphicArithmetic.AutomorphicVarieties.CMFieldExponentialBounds.LogConductorMulHeightLeOfPageN": {
+    "cached_sha256": "fcd129ae00ad0a8e4d965b3c74de12ed5972888ff636779a3b479f0b22e31652",
+    "git_blob": "e10e8b1f69a27515f6e282f54351b2c265d0e438"
+  },
+  "Development.AutomorphicArithmetic.AutomorphicVarieties.CMFieldExponentialBounds.bigpair": {
+    "cached_sha256": "284a29da91e31269a2f83f120a10787e6f247159fc9ccc62de0f87f5ee69b411",
+    "git_blob": "f8f75a07e82e4a64af39a1ef40595425b10f495f"
+  },
+  "Development.AutomorphicArithmetic.AutomorphicVarieties.CMFieldExponentialBounds.logpair": {
+    "cached_sha256": "363289f92b00f222f7b79a507e7e909916bd0430d138371c76548da140e95cea",
+    "git_blob": "11d54a6ef7b4af2c21bcc21d9ea0541a7bc1f79f"
+  },
+  "Development.AutomorphicArithmetic.AutomorphicVarieties.CMFieldExponentialBounds.minusle": {
+    "cached_sha256": "34d8e23d3771c0aa0be8b6f6c76cbd85ccc0ef366223a7e97c5bb06637b254c9",
+    "git_blob": "edda8abdee7688a4cefd5ed7f569f16b835ebd29"
+  },
+  "Development.AutomorphicArithmetic.AutomorphicVarieties.CharacterLevelBounds.AbLevel": {
+    "cached_sha256": "d30d06e6ea6a53d5ecb7d565264d41e82a0ec8abae86c2b05c7b0bc82bfae712",
+    "git_blob": "be04e4d9a824d888981493cbdf0ac66cd0949e43"
+  },
+  "Development.AutomorphicArithmetic.AutomorphicVarieties.CharacterLevelBounds.ClsOnto": {
+    "cached_sha256": "042a37049736fd8ff566f4cd94784815d12037bd9ef434d102fcd9f3210eb227",
+    "git_blob": "abb441b2a64278215b27dc078b72347cb3b41d4d"
+  },
+  "Development.AutomorphicArithmetic.AutomorphicVarieties.CharacterLevelBounds.LevChange": {
+    "cached_sha256": "ddecb548f86ed2c39cd9e5eb919848b6c756febbb5aaf7e93d0590094c74432d",
+    "git_blob": "1b380385c646848139aa21b31cd723224065cbe8"
+  },
+  "Development.AutomorphicArithmetic.AutomorphicVarieties.CharacterLevelBounds.LevGal": {
+    "cached_sha256": "0514ad2e35882db62389ac6253d89e143a0cbbc50992d64e95568bc791fbabba",
+    "git_blob": "093233c50d4c68b75caef5092a355fd8aa2e78e2"
+  },
+  "Development.AutomorphicArithmetic.AutomorphicVarieties.CharacterLevelBounds.ShaFamMono": {
+    "cached_sha256": "29bfd01e4efb9495bff0a3758a742ebb4964544747474709ca637e04b91394c2",
+    "git_blob": "f1b517fa7cddda3e25b5a7ba89c1e57096bbf59e"
+  },
+  "Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.GaloisCohomologyLength.CardAbove": {
+    "cached_sha256": "d7867628a57a79d3206bb380ff731390201e8e2e77ffc03af20fb6ba89bdb838",
+    "git_blob": "cc76a575c437d03c951429cdc4e67b2373a1420a"
+  },
+  "Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.GaloisCohomologyLength.ClassFix": {
+    "cached_sha256": "3887f080997fdd737b93606b9870727f81c813d52fb8ed9f93f4765fe23fb7fc",
+    "git_blob": "dfa8ff21b11a8efd5517bf9da42c5107e9bd72e2"
+  },
+  "Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.GaloisCohomologyLength.ClassIff": {
+    "cached_sha256": "ea9b0ab1e503a545bbdfe196731b777a0b9001963e18e097f929a65aa79b804f",
+    "git_blob": "de65eca59653d3bba5cda5cc1a6211e9b06241b4"
+  },
+  "Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.GaloisCohomologyLength.ContScal": {
+    "cached_sha256": "d711783e73c4339cf30acbd921bd1ca5133cc7f2d820b3e4c0a655a0fd107c1d",
+    "git_blob": "3029cb9ad9473b56c2c64f075488abcf0eb15908"
+  },
+  "Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.GaloisCohomologyLength.DecActRoots": {
+    "cached_sha256": "03494fb47c52f371dbf57381bf1019cdb2c62f5f5fbd4595eed1327e83349428",
+    "git_blob": "35166b0047833d27957c20d4dc3602b9f01061ad"
+  },
+  "Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.GaloisCohomologyLength.DecFrob": {
+    "cached_sha256": "837f2965258d6890c32da3a939ec826b069df4e7ddef0a783426a200f2767e87",
+    "git_blob": "70bcd59777328c425698379b02506d2632ac9dbf"
+  },
+  "Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.GaloisCohomologyLength.GalTransport": {
+    "cached_sha256": "637d26d4012f359e66fed7b229815961cb7d139ac5106de8622d2a5c065dcdbe",
+    "git_blob": "e9c0b31b8f18c87bfb227785c0bf037b932c57f8"
+  },
+  "Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.GaloisCohomologyLength.H0ScalRepInvPowEqTwistInv": {
+    "cached_sha256": "b28efbc446403ec7f58a5cce161e6d9bb254083b422a23556b57ccb32e0e5f78",
+    "git_blob": "b33503668728d79eae487abafb95e8e44d2a69b0"
+  },
+  "Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.GaloisCohomologyLength.ImageConj": {
+    "cached_sha256": "3cfebce8097e3e69a6805a43d2f970026091321ee7a26e2819e2b5ed4f2eeb0a",
+    "git_blob": "5ef856763e65af5f65cc1ac5b6f2202ffc46df1a"
+  },
+  "Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.GaloisCohomologyLength.IneFixRoots": {
+    "cached_sha256": "a3fe338bc5c45e504071d6d8fb483ee4b29e02607ef31eae2a8241493d6c3863",
+    "git_blob": "ea70862801f615549f8f643cce54cfe501f0ef17"
+  },
+  "Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.GaloisCohomologyLength.IneOpen": {
+    "cached_sha256": "139a0432298a5774ef2bbeb775264140a2a5999662ca3ac3d31f39126c353f5a",
+    "git_blob": "1379a7d94a7506cb119dd039428075c937b7be5d"
+  },
+  "Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.GaloisCohomologyLength.InfUnram": {
+    "cached_sha256": "a0b4b4ad0fb6d0ef2cec5b019e0fc8773aab7c4d35762036ed274a4b3b727bbf",
+    "git_blob": "d284af6428777f304abce855d525cc70733a3c82"
+  },
+  "Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.GaloisCohomologyLength.LenTwist": {
+    "cached_sha256": "49e68ee5c79f6fca5c3e9d06fe02319698f9ee2c2bf68df7faeb2111c25d2984",
+    "git_blob": "ac87166ec9a124960ccd640dabdfb84ba55414a4"
+  },
+  "Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.GaloisCohomologyLength.LengthH0GlobalEqLevelGroup": {
+    "cached_sha256": "053498066a2c4afa5122609ad5cea7097483adf086f21c13c96685cef66c2477",
+    "git_blob": "16ffd05532d1ddc0be74a4254045eb4422de4935"
+  },
+  "Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.GaloisCohomologyLength.LevelInertiaLeLevelDec": {
+    "cached_sha256": "92dea32dacfce60e333337e4ff5d1e09d8148182dcc0956432e41a1206a9934a",
+    "git_blob": "497c591dbb6981c12b4e99d280ed1c81d356adaf"
+  },
+  "Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.GaloisCohomologyLength.LevelLeIne": {
+    "cached_sha256": "54e7bc459afe3e12b956c7e5eaf2687183922c3ecac65b840437f582e2ffce73",
+    "git_blob": "34e04f410d29d35f2ded23ea73f2df00d5f1ff6e"
+  },
+  "Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.GaloisCohomologyLength.NonemptyH0GlobalEquivGaloisImage": {
+    "cached_sha256": "9bf3c5be39de2d6f0eadedb1b372a7584d23987180d3e6c0a6bb24c82794b297",
+    "git_blob": "038fbd19dbb996a7353f20691993a400de0732f3"
+  },
+  "Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.GaloisCohomologyLength.NuLeBound": {
+    "cached_sha256": "64227c0a58237c59140e29cb564acb21cc86bfc30e01d42d8d80ad7ee3e37d28",
+    "git_blob": "544139be0cd009eb78370523a1f2e9bfd46b71bd"
+  },
+  "Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.GaloisCohomologyLength.PlaceTransport": {
+    "cached_sha256": "adc5bc50b5991e50fef4be5359b67c214d684f5abc6c11f8f0807bf69bec4f60",
+    "git_blob": "8b15f3222aa03d83712fe5c5fa1133b0315baf95"
+  },
+  "Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.GaloisCohomologyLength.Ranges": {
+    "cached_sha256": "afd3f05d9d0090be0c68443d8aa9183b59c63f4c3eb0af75e52586e26747fac0",
+    "git_blob": "39b67fcacdfdd246723f5d9191a06aa25b6baa35"
+  },
+  "Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.GaloisCohomologyLength.ShaAbsRes": {
+    "cached_sha256": "6ca3da08955b8b17f4551655315b8b6506d19b238b6559fa12aa6d2354f79877",
+    "git_blob": "c3c40d14b7561a9f073d8cbafc4438d2c875ea68"
+  },
+  "Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.GaloisCohomologyLength.ShaInfl": {
+    "cached_sha256": "73dc1c829086aa25599942e0b101f220f137697a62df94829b954c79b5cbd16a",
+    "git_blob": "e6fafb7f559d65c62c4b725d4bc2d36ea80f7f6f"
+  },
+  "Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.GaloisCohomologyLength.ShaLenEqShaInv": {
+    "cached_sha256": "39ab910ca4527f8e90e5c1e596aae3902025e5045571e068c5e33da70912a860",
+    "git_blob": "19302758658356ff85c5540681e53e79579ab975"
+  },
+  "Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.GaloisCohomologyLength.VLenIndep": {
+    "cached_sha256": "a5b7229f5e2f3ef698a0818d3e067818a6daef961046e6c676ce70613f6757c4",
+    "git_blob": "a4ea4ae9c53aac7a8c327fdc021dcb86c9ccda53"
+  },
+  "Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.KummerTheory.LenOfCard": {
+    "cached_sha256": "659d77142582f87dbb57f702d9fcb0aebefc142b36cb499b1bfdcc03e0604ade",
+    "git_blob": "cd08d24505cd799a476b11a42049ffc0ddc4a10c"
+  },
+  "Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.KummerTheory.Mk0IdMapCongr": {
+    "cached_sha256": "8bcee54ffb99d1776af179f559112afc25e8f0cbaa89e22646080d7cefc34992",
+    "git_blob": "51d26d55b7fe74a67195fc010e868035094e7cce"
+  },
+  "Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.LocalRingsCompletion.DvrIntClosure": {
+    "cached_sha256": "c0e87e9ffe5be89b94d8e38bd7723d9236c002acaf9b0a92edf98b662649e004",
+    "git_blob": "1a34ab9086017af0f39b2be3a231a13ccac60313"
+  },
+  "Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.LocalRingsCompletion.IsCharOneOfSubsingleton": {
+    "cached_sha256": "a3e9bf6b117a10dbce5f64a372cea2360031212c514bbaef01de9ebaae2e82eb",
+    "git_blob": "1791992d778aed00eace19f3187842594d945c94"
+  },
+  "Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.SelmerTransport.ConjStableShaFam": {
+    "cached_sha256": "c35624a960422a26865a5a2f1bff42b4f70f8fc3472ef0ffa110677ed60a5d3b",
+    "git_blob": "578402a7b2aea9f24d31473aab4486dd43055fb2"
+  },
+  "Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.SelmerTransport.ExistsO": {
+    "cached_sha256": "6dd113678cd84e98a25c202891a6ddec7af9e93ee87379058417722db3637435",
+    "git_blob": "4dab32a2f7a0d710ae6a1e8a0a16e6bb98d1eb37"
+  },
+  "Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.SelmerTransport.GalEmbFam": {
+    "cached_sha256": "722dd92aab3f13aaf3de9853ab7b159a25c63c6961e7db3e961d00f87b4015e4",
+    "git_blob": "0f538ea13105e539de49b44e546aaf4d9c867c44"
+  },
+  "Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.SelmerTransport.GalEmbTop": {
+    "cached_sha256": "e7398a6d658597b21f9da5b7c046dc460cc8894959ff09d63b1eee31a9407824",
+    "git_blob": "0df0aefe7d44997e7e1c87a6bad556c271d1aeed"
+  },
+  "Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.SelmerTransport.Places": {
+    "cached_sha256": "f35b3e75bb63682857d7ab2d6932804057d3437bddac67d8958ccf8abcf391fb",
+    "git_blob": "f820992a67840914d259c93cee63a4fc5c5baa26"
+  },
+  "Development.AutomorphicArithmetic.AutomorphicVarieties.GaloisLibrary.SelmerTransport.RestrictionMemInvariantH1": {
+    "cached_sha256": "590ae52fe56b6b6c0199b6e35f4b9334eed792a0edc197247e4206ad392a193d",
+    "git_blob": "c66dfa93f1b37f27ebd49f09df5d3a68a4404b85"
+  },
+  "Development.AutomorphicArithmetic.AutomorphicVarieties.GeneratorCountTuples.LemmaK": {
+    "cached_sha256": "657e0a3666618755f23a3434781a3fbf19f2377470bf3d416edc9a3caf2e601b",
+    "git_blob": "8726ea4259cd1f0fcb350eca97a3be2478261c87"
+  },
+  "Development.AutomorphicArithmetic.AutomorphicVarieties.HeightAndVanishing.Counts": {
+    "cached_sha256": "10b459c1e3ef16d786b1ed16bcb0773c4c2edd0fcf2c81eb3476f525f53347ec",
+    "git_blob": "0d9f87aacf2d53abe43d894c1d822f071599ee57"
+  },
+  "Development.AutomorphicArithmetic.AutomorphicVarieties.HeightAndVanishing.DirichletPrimeToLPartMulLPowerPart": {
+    "cached_sha256": "f764dbcbab264a90bb02e1242293f9bf7fbb8431e061607bb74887f5f99905eb",
+    "git_blob": "1feb420e376868ca41d85fb09bc4f8c7ee66778e"
+  },
+  "Development.AutomorphicArithmetic.AutomorphicVarieties.HeightAndVanishing.HostCond": {
+    "cached_sha256": "8a163f95e063a85ee5cf35204535b74ecb0c79a267bc25aa2bf03466b9755df3",
+    "git_blob": "54fe7008875b53d5e357f79b140d0a2abb6455ed"
+  },
+  "Development.AutomorphicArithmetic.AutomorphicVarieties.HeightAndVanishing.HostLevel": {
+    "cached_sha256": "a0285027d9251119efc5713fed3e56bacfa99d08b4893862e1ec2b79f1c2eafa",
+    "git_blob": "cc271dd2d5228b0d9a0305792c8b1f4adbfb68e1"
+  },
+  "Development.AutomorphicArithmetic.AutomorphicVarieties.HeightAndVanishing.LayerLe": {
+    "cached_sha256": "57c844299b2b1a2445cd344024e29ef27c2ee0ecf4fb7113e3ce12709c586b08",
+    "git_blob": "88eec332233203a9222b50ad7e77772490b3cce0"
+  },
+  "Development.AutomorphicArithmetic.AutomorphicVarieties.HeightAndVanishing.ThmHV": {
+    "cached_sha256": "55e52cfd52884e8af94127b37ed68aacdf2fac4de1d29b8f8f0c1535a0709b96",
+    "git_blob": "e5d8b97420078b2d97086d847f6db8e2c8953e63"
+  },
+  "Development.AutomorphicArithmetic.AutomorphicVarieties.LayeredIsomorphisms.EquivOfRange": {
+    "cached_sha256": "8efca500848f20fe0defd60fc52b45eb3a2e91586f7b9a04e66ed218d6887841",
+    "git_blob": "6447f7b5d77085e947483df5dd30129c309fd65a"
+  },
+  "Development.AutomorphicArithmetic.AutomorphicVarieties.LayeredIsomorphisms.Exc": {
+    "cached_sha256": "9620566815871e2aa097a7a13a928a2bd39f6ad155b148a10addb0da8fcb8402",
+    "git_blob": "d0d49933faebf73a8162c153b8115139e36efa82"
+  },
+  "Development.AutomorphicArithmetic.AutomorphicVarieties.LayeredIsomorphisms.Final": {
+    "cached_sha256": "f3bdb8590ab5f405a87ecbc582be0aca0cb9d7c5d8cb8b0aec0c056ccfc0b253",
+    "git_blob": "9ef8bd0c999ab258ea150d5383003b556ac0125b"
+  },
+  "Development.AutomorphicArithmetic.AutomorphicVarieties.LayeredIsomorphisms.Imports": {
+    "cached_sha256": "463923cdd8ea3d326ce024680552cad3336b925044520afe2b3d3a8733ce9e10",
+    "git_blob": "281b94fae757fdb04d1e9157663f64e305881ca9"
+  },
+  "Development.AutomorphicArithmetic.AutomorphicVarieties.LayeredIsomorphisms.ImportsAlt": {
+    "cached_sha256": "cb690da67245c167d32e3d5ec84dd5d5e73dae33db225f19078bc2ec2ce9a71a",
+    "git_blob": "ef9122254fb295f15e9f01d9512d70a26e6f6884"
+  },
+  "Development.AutomorphicArithmetic.AutomorphicVarieties.LayeredIsomorphisms.Kexp": {
+    "cached_sha256": "47cf675c3a9a102d3a2469ba27b7fb223bdc5bebe5af7d4c6c56c0d8207c5f3f",
+    "git_blob": "c94d1e1978d487758f6a977f969e60d440f317b7"
+  },
+  "Development.AutomorphicArithmetic.AutomorphicVarieties.LayeredIsomorphisms.Klen": {
+    "cached_sha256": "5390a3d3eac73b1d6f801a531876a3f57c308b800e33844151f283398c310fb3",
+    "git_blob": "8d11cf66702190df2c12069a790cd8c29e43a37f"
+  },
+  "Development.AutomorphicArithmetic.AutomorphicVarieties.LayeredIsomorphisms.Kmono": {
+    "cached_sha256": "2f16549f00d2f59cdaf618f950bc5d46025cc7a445b42ab87930d199a6b662ad",
+    "git_blob": "b4179c5de83455bbea00538fd802d92dd8eb7423"
+  },
+  "Development.AutomorphicArithmetic.AutomorphicVarieties.LayeredIsomorphisms.Layerdisc": {
+    "cached_sha256": "7730d0962d8de6d7dd5924e90c0a1762914e6c35ce315215bc170bfee120f0b8",
+    "git_blob": "b83f72f825fd063a5b70078bb805a8305070b0e6"
+  },
+  "Development.AutomorphicArithmetic.AutomorphicVarieties.LayeredIsomorphisms.Layeremb": {
+    "cached_sha256": "65e4739de8c026a3f05da6125d08743ff037e646b49ea99959262070a7195368",
+    "git_blob": "859ac8c55982cb40e5b648e3b87b2a00a52ff9d9"
+  },
+  "Development.AutomorphicArithmetic.AutomorphicVarieties.LayeredIsomorphisms.Layerex": {
+    "cached_sha256": "ffb95cfbe5c21ca8ab09249f9dc82fe346abeaeaf4b16571f2bf46aeae438d3a",
+    "git_blob": "a4b445f22e78ae3e056d13bbe3166dbd9939ebb3"
+  },
+  "Development.AutomorphicArithmetic.AutomorphicVarieties.LayeredIsomorphisms.Layeriso": {
+    "cached_sha256": "8d937e0669bdb139b373d683594077e3baf9e37db829f911982a50a7137fb812",
+    "git_blob": "8635ffe63c04799d4da6da2fa44d914a672085b4"
+  },
+  "Development.AutomorphicArithmetic.AutomorphicVarieties.LayeredIsomorphisms.Logs": {
+    "cached_sha256": "806bf0a03aff6fd5c68b8f9252829df88cae86516f5e049477d8d10ae458f81c",
+    "git_blob": "9a2c8cf4941c35a2eecdbbff98f42fe97691f468"
+  },
+  "Development.AutomorphicArithmetic.AutomorphicVarieties.LayeredIsomorphisms.Near1": {
+    "cached_sha256": "0397e3b714cffedba21b5c42dc31442aeeda864eb13d51459d5861c965d8500d",
+    "git_blob": "3ba2c097a7496c4f32255699e57917c9763bd162"
+  },
+  "Development.AutomorphicArithmetic.AutomorphicVarieties.LayeredIsomorphisms.PartA": {
+    "cached_sha256": "6589c0ddf24ea991f78e439735693040041682ed057ad755ed2b022457b53411",
+    "git_blob": "c41983a3d9483591b7d7eedfb3b672d72cde101a"
+  },
+  "Development.AutomorphicArithmetic.AutomorphicVarieties.LayeredIsomorphisms.PartB": {
+    "cached_sha256": "6504e0765a8eb4ef7201558137ea66bbed7418e73d942aff27fce1aa2f310d45",
+    "git_blob": "cd8a7cae15738f4054f543cddf4af595a6d1f7dc"
+  },
+  "Development.AutomorphicArithmetic.AutomorphicVarieties.LayeredIsomorphisms.Point2": {
+    "cached_sha256": "f93f0bb2d20dcae7070eb33308d946eda401b3ce7a96d885d79fadab6dc10550",
+    "git_blob": "977e6ed246ef1343d9bf537ea845a5565528c0ae"
+  },
+  "Development.AutomorphicArithmetic.AutomorphicVarieties.LayeredIsomorphisms.Rootdeg": {
+    "cached_sha256": "4863f5f5ae480c283552f4def61b80b7d52571c883ecd42301f7338252136468",
+    "git_blob": "2750da1a064db043df31e00fd7d0b3cbfde405c0"
+  },
+  "Development.AutomorphicArithmetic.AutomorphicVarieties.LayeredIsomorphisms.SecondBound": {
+    "cached_sha256": "11b2c6bb66d8c8e7001c7788b9aaf2ee30e9b7766258444bf40023ceb3b8348a",
+    "git_blob": "a2e12927214cad3ce637b33adb435f42992c1c65"
+  },
+  "Development.AutomorphicArithmetic.AutomorphicVarieties.LayeredIsomorphisms.ThmBabOf": {
+    "cached_sha256": "126827b32707d58b5f6e2e3e3c2dabdff75aa2dced86d139bd63a1a613ea19cc",
+    "git_blob": "d4b0c37c79996fca0b0d30fb53fe798eceb90cff"
+  },
+  "Development.AutomorphicArithmetic.AutomorphicVarieties.LayeredIsomorphisms.Vvat": {
+    "cached_sha256": "089fd159d02ee4e36be8a56faec34bcd8d530824bf57c259354c74131704c4ae",
+    "git_blob": "a951bf639d41e5638a196041e22f73e186b2767c"
+  },
+  "Development.AutomorphicArithmetic.AutomorphicVarieties.LayeredIsomorphisms.Window": {
+    "cached_sha256": "a1433bc75bb661a9847f313f4e5f0862d3a1b9d05574785f90385438c907f34a",
+    "git_blob": "386bec7e22094a4309c4a8e2846435357f703375"
+  },
+  "Development.AutomorphicArithmetic.AutomorphicVarieties.LayeredIsomorphisms.Window1": {
+    "cached_sha256": "746e9544619acdcf66d0541da7b70c06219dab173b73ca35f58a1733322ade19",
+    "git_blob": "3d39aa0fc809fe8408a55186f7f4c4364d0a7f4c"
+  },
+  "Development.AutomorphicArithmetic.AutomorphicVarieties.LengthEqAddEigen": {
+    "cached_sha256": "025f5d40786eb9fd25902fb6e0ee6be81f6b476751a70f9011df53c45582e59a",
+    "git_blob": "0ab757164d73378933cd4c261b4bf0f670f2461e"
+  },
+  "Development.AutomorphicArithmetic.AutomorphicVarieties.PartsConj": {
+    "cached_sha256": "3f970c54a97759a14691a97b89c6a6a97c01b05c02dd97212dd680ac6ca5bfc5",
+    "git_blob": "43e9f780e70214bebe56cf4e98a81d4e90e69c83"
+  },
+  "Development.AutomorphicArithmetic.AutomorphicVarieties.PartsSign": {
+    "cached_sha256": "bed4fabdaa8a3a489b9b6ab6ecd5d12ed9dbe843c6ab16c71c6baeab57001cb0",
+    "git_blob": "c2e1cb636ac968a8a871b8fb8cbd3391c185e3f3"
+  },
+  "Development.AutomorphicArithmetic.AutomorphicVarieties.PrimeSetBoundDataOfPrimitiveChar": {
+    "cached_sha256": "24cb6f4901b08c3501d3a158bb11bbd525301542b445b55cf50224dbfc1c0eab",
+    "git_blob": "52224122dd8f9deefef473151d716984f3e1f1ff"
+  },
+  "Development.AutomorphicArithmetic.AutomorphicVarieties.StmtFields": {
+    "cached_sha256": "fff86da7d5a15369c15a4f7c841cc96ec7d9f927114390ce595b33f2ae57e9a6",
+    "git_blob": "857965059bf92dee66f67769d93377548b55a764"
+  },
+  "Development.AutomorphicArithmetic.CharacterBoxes.ExistsPageN": {
+    "cached_sha256": "3eea59f72e776ff9f3c64b2dea4bebccb9bdcd87eec87ba580b1d7cc04c2c323",
+    "git_blob": "398eb8ed3528aa2666e9d3b2b09a582ad4390dd7"
+  },
+  "Development.AutomorphicArithmetic.CharacterBoxes.PairGood": {
+    "cached_sha256": "4bf98da5e19b621d3b26e37b73e10594b636be50ae209834381cb9b5b31e08e6",
+    "git_blob": "68d04b506355e999c0f6020ee066c4967c1e6939"
+  },
+  "Development.AutomorphicArithmetic.CharacterBoxes.TwistForm": {
+    "cached_sha256": "6a64555ecd12eeb4565493d5ad63f828e16bb8380034b6a94757946b774842b8",
+    "git_blob": "5e8b1a992a393336dffd3603524526dfccfa1981"
+  },
+  "Development.AutomorphicArithmetic.CrystallineRing.Acris0": {
+    "cached_sha256": "dd46e83da2ae306bd0ce00854bcddcee635554f9aaf213168b091b9a2f808c44",
+    "git_blob": "a78da86ba23f6437f32866797baef1dc034f7a40"
+  },
+  "Development.AutomorphicArithmetic.CyclotomicBounds.ClassNumberBounds.CyclotomicTotient.NuBasic": {
+    "cached_sha256": "f5b7a1b665f186cbbb71529a3da714af8869d57fff574afd755465bbefa50f82",
+    "git_blob": "859885c552fbd5616d985b09d74b90ecb5fd9e4b"
+  },
+  "Development.AutomorphicArithmetic.CyclotomicBounds.ClassNumberBounds.CyclotomicTotient.NuInf": {
+    "cached_sha256": "d99064e39cc94a0d0ec8220df4858806562110354d2c6d4b75c4fdb90790ae45",
+    "git_blob": "6be57572b650def311280ba68950284fede25f2a"
+  },
+  "Development.AutomorphicArithmetic.CyclotomicBounds.ClassNumberBounds.CyclotomicTotient.TotientLeOfCycPowEqOne": {
+    "cached_sha256": "94680be2582b8ca5c4a7fbc5645ab5ab678415eb4958e1651d269279bb4d6f35",
+    "git_blob": "75217695ac94d0b56fe89fe5efb80c874aa4eba7"
+  },
+  "Development.AutomorphicArithmetic.CyclotomicBounds.ClassNumberBounds.HeckeCharacterChoice.LtHalfPredOfLog": {
+    "cached_sha256": "512ef8c019fd58b68e67c3aea386f16a8af441d8cd5f99efdba18fee77cdfdef",
+    "git_blob": "136b31acf5d62200d35bc9145cce6a8f94342705"
+  },
+  "Development.AutomorphicArithmetic.CyclotomicBounds.ClassNumberBounds.HeckeCharacterChoice.NCField": {
+    "cached_sha256": "23aa7c41491fffe669469b03559ae8d712b4b88efc99b08a1e7c8f790a1a3359",
+    "git_blob": "70eedeb776579302cfd0028666c535c506f67115"
+  },
+  "Development.AutomorphicArithmetic.CyclotomicBounds.ClassNumberBounds.HeckeCharacterChoice.OddRad": {
+    "cached_sha256": "8272dad9ae05e416a2af3e02c2d97a2fd9eb698ec5d0e0dba109a5371071f568",
+    "git_blob": "bcd1a6aa665a7b76691e035ce1b89966e290ec81"
+  },
+  "Development.AutomorphicArithmetic.CyclotomicBounds.ClassNumberBounds.IrreducibleSpans.CostCond": {
+    "cached_sha256": "3faaa84a24ab4e5604e287b9d50c99a1a44dcbfb72934dd87b11e3e68036a4e3",
+    "git_blob": "cdc6f17e9b0de4e9d9fd0aef8b0411d372413c08"
+  },
+  "Development.AutomorphicArithmetic.CyclotomicBounds.ClassNumberBounds.SelmerDuality.H1cEqH1": {
+    "cached_sha256": "d097d306f625e1c786aadf528465aadf36795a1bae724ce2e11456b1fc771c84",
+    "git_blob": "e2ea29611e36b694f1bd313b258856875a242577"
+  },
+  "Development.AutomorphicArithmetic.CyclotomicBounds.ClassNumberBounds.SelmerDuality.HasSmithOfOne": {
+    "cached_sha256": "4de43251b2181a1554dce6fd219d06fea5380f078ba38c75af7e54b85964dcf0",
+    "git_blob": "4af8659413d8437a0c0b9105ab0c1a0e860c9344"
+  },
+  "Development.AutomorphicArithmetic.CyclotomicBounds.ClassNumberBounds.SelmerDuality.LengthDet": {
+    "cached_sha256": "d9c0c3bfaee341b9103c927e3102d3d8314a8aacc8bdda057fedc321fa2cbfde",
+    "git_blob": "af9d390ba67c54039e9b592f37a50546d6941dbb"
+  },
+  "Development.AutomorphicArithmetic.CyclotomicBounds.ClassNumberBounds.SelmerDuality.LengthFrac": {
+    "cached_sha256": "b5187f7770333b65d1b62333de9aff56bc46af0f22845fbbfb1c9fe95f7a5602",
+    "git_blob": "b7094955b4c7ab8c2af72fc9641ef71b440acbc0"
+  },
+  "Development.AutomorphicArithmetic.CyclotomicBounds.ClassNumberBounds.TotallyRealRoots": {
+    "cached_sha256": "190d64e0e29015468e2f1cac6f7446b77241686c7ee52dd0718ea94aa9fa7697",
+    "git_blob": "0e5f58e38656b371ee4972e8ea14b711ed82b3e6"
+  },
+  "Development.AutomorphicArithmetic.CyclotomicBounds.ClassNumberBounds.TotallyRealRoots.EmultiplicityPowSubOneOdd": {
+    "cached_sha256": "98124055aee1182e7dbe5013098aebc8ab4023a0d1c224bee41b87068654c0f9",
+    "git_blob": "7aca092c240732039889174659be1edd4f078f10"
+  },
+  "Development.AutomorphicArithmetic.CyclotomicBounds.ClassNumberBounds.TotallyRealRoots.EqOneOfMemPrincOne": {
+    "cached_sha256": "f2974aaf7a68f6c4221f21f9434994d4469bb22010ddfea4a14d3ad6bf5945fa",
+    "git_blob": "58dfd10c135420aeeded49219e10ed2bf0a07cff"
+  },
+  "Development.AutomorphicArithmetic.CyclotomicBounds.ClassNumberBounds.TotallyRealRoots.FinrankAdjoinRootsEqRootDeg": {
+    "cached_sha256": "e52a4ad2f366008c9cd0f0e5f69c54ea4934de9c56c9fa505d1f697ffd216ef9",
+    "git_blob": "b727f570dc6d155f477ac9e20cfd2cb1490e338e"
+  },
+  "Development.AutomorphicArithmetic.CyclotomicBounds.ClassNumberBounds.TotallyRealRoots.GalAbelian": {
+    "cached_sha256": "5a6dec2d094b6e6d5a2968cd2af9988346e7a8aceb94af57156d73ea74519166",
+    "git_blob": "858643917c65e194c921a2ff95636641c9917bf0"
+  },
+  "Development.AutomorphicArithmetic.CyclotomicBounds.ClassNumberBounds.TotallyRealRoots.GalAut": {
+    "cached_sha256": "57e611b1d8f90a6253230e5955ebc9ff80665e53f8a6180c0336682197ba23a1",
+    "git_blob": "9aa467d59c8148cac55a862bbb0a848c128fd219"
+  },
+  "Development.AutomorphicArithmetic.CyclotomicBounds.ClassNumberBounds.TotallyRealRoots.GalDefs": {
+    "cached_sha256": "6ad15669075526cc712fb72a81214260c6a887091b399fcedaa161a6be9cded6",
+    "git_blob": "390b675121ff2219b7b688653437eb3b1295b970"
+  },
+  "Development.AutomorphicArithmetic.CyclotomicBounds.ClassNumberBounds.TotallyRealRoots.GalDegree": {
+    "cached_sha256": "851ccfe30761e661afdf47b9a2d4ce352c63f64c304bffe4e481e6b46737a7e5",
+    "git_blob": "c3b95d9ffd1d1d3c8d86451075693e22d89efd68"
+  },
+  "Development.AutomorphicArithmetic.CyclotomicBounds.ClassNumberBounds.TotallyRealRoots.GalOpen": {
+    "cached_sha256": "f071e7a4e03fec8190264022510f407c9b16ecb474e20b2c234793b8b3ff5007",
+    "git_blob": "94a9f208695c04b94288d14cacab34b8a1edb775"
+  },
+  "Development.AutomorphicArithmetic.CyclotomicBounds.ClassNumberBounds.TotallyRealRoots.GalRoots": {
+    "cached_sha256": "90c2622c36dd27a3ecc87e4b84b6acfe500c1109b1f9de3ea4ed8349d15b1dc8",
+    "git_blob": "06cf86547f0fda8de9e8e269f2bea2a8bffe66f3"
+  },
+  "Development.AutomorphicArithmetic.CyclotomicBounds.ClassNumberBounds.TotallyRealRoots.Generate": {
+    "cached_sha256": "3d23fe68ddd79831496c4625c0fa93e0d4b5b27b4fd786949c66b5f197ec46e7",
+    "git_blob": "46269a6aa9819d2ea611c00b62457ad2332046d1"
+  },
+  "Development.AutomorphicArithmetic.CyclotomicBounds.ClassNumberBounds.TotallyRealRoots.LeNuIffPowMemPrinc": {
+    "cached_sha256": "c73615c3ccf0b5a9928c95f694514179340e61a2c470eb01865ef6ab63d6706a",
+    "git_blob": "cf49e4c1d813570af7d67f4bcb76d6ca85bce5df"
+  },
+  "Development.AutomorphicArithmetic.CyclotomicBounds.ClassNumberBounds.TotallyRealRoots.LevelGroupSupLevelInertia": {
+    "cached_sha256": "95e1269e5d9c9f64159c536c0b8235f5fbe2374b601ba1e525084c7003780c1f",
+    "git_blob": "87c45ee5c18ac8ec5928700ef8660c4f43248874"
+  },
+  "Development.AutomorphicArithmetic.CyclotomicBounds.ClassNumberBounds.TotallyRealRoots.LevelLift": {
+    "cached_sha256": "2a03fd54c52315964c5944fc34c8a1d5500e61cf6b88ab634b748941cf6b98ea",
+    "git_blob": "a9a88b73c4c26ed3bb918812e48d724083f7b863"
+  },
+  "Development.AutomorphicArithmetic.CyclotomicBounds.ClassNumberBounds.TotallyRealRoots.NuBasic": {
+    "cached_sha256": "27ed103d4182c7a5f450b6bdc84d8dfd7066f8525159fdb3fd3913df2725a341",
+    "git_blob": "61748a212a1639023bfb39807b082cb24f92f31d"
+  },
+  "Development.AutomorphicArithmetic.CyclotomicBounds.ClassNumberBounds.TotallyRealRoots.NuFinite": {
+    "cached_sha256": "d9a6f2095cf951ae27723c4664561828cd14867b0cefd651be64e8eee5ac42c1",
+    "git_blob": "45bbddd83e16363a24cf81e37f679926bbba32f7"
+  },
+  "Development.AutomorphicArithmetic.CyclotomicBounds.ClassNumberBounds.TotallyRealRoots.NuFormula": {
+    "cached_sha256": "11a8f8581b014c696b8f38ca395dd92879b23199efa6a3b6c81f28db2f92aeaf",
+    "git_blob": "bb006f46b5b05f9eef04c2d2a2d3560fe0750512"
+  },
+  "Development.AutomorphicArithmetic.CyclotomicBounds.ClassNumberBounds.TotallyRealRoots.PrincTop": {
+    "cached_sha256": "94da7caf0a11658ef7dfd23118a1c757510d7a370eee22d29f6a3012f1a30196",
+    "git_blob": "e1f9fd0e24d58c0b5e70e64597ec937265cb5e3c"
+  },
+  "Development.AutomorphicArithmetic.CyclotomicBounds.ClassNumberBounds.TotallyRealRoots.RestrictScalarsTwistInvOver": {
+    "cached_sha256": "e3cb221f742bb0ef49dc6d3ee41bc9ad2ae507db2463d1fcb5509c995042d4b2",
+    "git_blob": "375ea36296b115c1b9c0c5a0d330df44af15229e"
+  },
+  "Development.AutomorphicArithmetic.CyclotomicBounds.ClassNumberBounds.TotallyRealRoots.SumArith": {
+    "cached_sha256": "762af81927c5180e22ac1527a8062772d23f6f622b070658275757fabfa08cd9",
+    "git_blob": "4c066a5403ef483be8136b311eb3d1e6f1b803aa"
+  },
+  "Development.AutomorphicArithmetic.CyclotomicBounds.ClassNumberBounds.TotallyRealRoots.UnitsMapSurjOfZmod": {
+    "cached_sha256": "a719ba69d41e9de438eb17bdcc4c793f7378b5157aa421dda951504981c5e775",
+    "git_blob": "e2774a9ace47ebaecca01ae7df7047f88a18aab9"
+  },
+  "Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.CommonMajorizingLattice": {
+    "cached_sha256": "871f2f077d33be3228e12efc047f66489e66226e15a45dc21ded493c06becb8a",
+    "git_blob": "a2bffbca90b822a7d4bcd683b7634d0972d4c918"
+  },
+  "Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.IsInducingCoeMatrix": {
+    "cached_sha256": "bd2f9ac3b8a8ac3a21560d2fa09b4b245dd5e16c19aae4ce3d535c6b08190031",
+    "git_blob": "3ad46533949f2386c34ef40f312cbd28776ff96f"
+  },
+  "Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.IsPrecompleteFiniteModule": {
+    "cached_sha256": "87dd14a33be5e29093a175772d14d6ed6bb6cd64cff7dab33703a541153674f2",
+    "git_blob": "a82115d7852a6584db8a04c9b942cd3beaf6b272"
+  },
+  "Development.AutomorphicArithmetic.IntegralCasts.CapelliIdentities.JumpSets": {
+    "cached_sha256": "6122f860bb8bf9ec9376c7f78d54af272fbb8ef4f2dedab4b1172f8373660033",
+    "git_blob": "37256d080d338c719ccbc104e688dd349f2c2a1d"
+  },
+  "Development.AutomorphicArithmetic.IntegralCasts.CrystallinePeriods.Action": {
+    "cached_sha256": "ded0d9200c201022d61c23741c6017cb3ad4394b22537c03e85b8720d58cced3",
+    "git_blob": "79d50986797136ea289d091061b513b06ec8529a"
+  },
+  "Development.AutomorphicArithmetic.IntegralCasts.CrystallinePeriods.DeRham": {
+    "cached_sha256": "7244d7c401e603b8f7386bf9a644a33dcef4c189862c4d62521b7f635195d994",
+    "git_blob": "f10743204add5a0e0a17ae69f7265228088d982a"
+  },
+  "Development.AutomorphicArithmetic.IntegralCasts.CrystallinePeriods.DeRhamMap": {
+    "cached_sha256": "69b941437d497ef91a3fa5641dc763e402194f542e85204d662533fd0ff85e62",
+    "git_blob": "6d1ad9b323039691806c631e7128b053f010b2da"
+  },
+  "Development.AutomorphicArithmetic.IntegralCasts.CrystallinePeriods.Embedding": {
+    "cached_sha256": "4d24a941baca821061de17015529bee024b90c26d0c2945b85f22be1d6ed4506",
+    "git_blob": "a27748d47e70e6b17f49490052856d4e4c65231b"
+  },
+  "Development.AutomorphicArithmetic.IntegralCasts.CrystallinePeriods.EqZeroOfPMulEqZero": {
+    "cached_sha256": "45fe67892be04fd6892b577fbf5584df2e2237b7a4b77b141fc3d531d4e8bcc6",
+    "git_blob": "a09766765a3791ea936d385c6759d653567475b1"
+  },
+  "Development.AutomorphicArithmetic.IntegralCasts.CrystallinePeriods.ExistsFactorialMulEqPow": {
+    "cached_sha256": "ba547e149a8a08b4ddd27ff95b298a0670dd8f5d9b869626227d46c3eb631542",
+    "git_blob": "54fe7c980b2c476ca92f67f9b827a2462634ac7f"
+  },
+  "Development.AutomorphicArithmetic.IntegralCasts.CrystallinePeriods.Kernel": {
+    "cached_sha256": "ceacc8a44140f895702b453de93f2554dff3b23ff5a16725a272e15155e8b809",
+    "git_blob": "291230c0c4775d235fae24c55dc3ddbcb4027b40"
+  },
+  "Development.AutomorphicArithmetic.IntegralCasts.CrystallinePeriods.Section": {
+    "cached_sha256": "3b74bb3fd690f2ddc3ce9f180880be37e70a9d757c05bec9ae332a81a4f0927e",
+    "git_blob": "e3fa440f2f5d17d03ebebd230ab6f7c9eb3ad068"
+  },
+  "Development.AutomorphicArithmetic.IntegralCasts.CrystallinePeriods.SpanNatCastLeComap": {
+    "cached_sha256": "0990e853bb3c17122ea7c20d5708bd950950f15e8c439c65c6d241ea04cb7a12",
+    "git_blob": "35dbc0b0376948bba77ced6e6fb7489385dddaa4"
+  },
+  "Development.AutomorphicArithmetic.IntegralCasts.CrystallinePeriods.TruncLogEqOfPowEqZero": {
+    "cached_sha256": "49ba0e5db80809aef24b4e4b07ec26a80ce8aa256e38f7a916635aa9cbcbe644",
+    "git_blob": "9be326d97c8ba12ad73c5a4f7eb131e19208cbff"
+  },
+  "Development.AutomorphicArithmetic.IntegralCasts.CrystallinePeriods.UniformContinuousConstSMulOfIsIsometricSMul": {
+    "cached_sha256": "04fdb6ffa66e201890bbc4b6ac30b2fb2a142a284bc130a7f988aa952ac8cc03",
+    "git_blob": "c10fbce11abd765ed63c1776bc3a5538e4a18686"
+  },
+  "Development.AutomorphicArithmetic.QuadraticCharacters.A0InfStabilizerTrivial": {
+    "cached_sha256": "2e89a8cb475356d1e0d96ab9e12f0e9817a09c6694576e79f57e2e8e2af55b62",
+    "git_blob": "6896c4b09be3403383c202c0d5833344915f0dc9"
+  },
+  "Development.AutomorphicArithmetic.QuadraticCharacters.ExceptionalCharacterCondition": {
+    "cached_sha256": "048294dc0bf12582c7df4071e01e66bb040bfbd09e9d0dd0659421260c31b84c",
+    "git_blob": "526d27f9fc520dfc3076a6b6829977e18d355aa6"
+  },
+  "Development.AutomorphicArithmetic.QuadraticCharacters.FieldOf": {
+    "cached_sha256": "2befd8121cadda4405d3e401987fb43fc15de7ee984467be8c1a90baf0ba3ec5",
+    "git_blob": "5607f2155fe943aeea65828baa738b3c5bb8844a"
+  },
+  "Development.AutomorphicArithmetic.QuadraticCharacters.GaussRoot": {
+    "cached_sha256": "11033d4d91b8248bae7842aa802bf48718e2a87bd5d4293725bf4d0d868ea9d9",
+    "git_blob": "9f3f93bf43a55feff7e1ecb53fef21604e717955"
+  },
+  "Development.AutomorphicArithmetic.QuadraticCharacters.LogDerivAtOne": {
+    "cached_sha256": "5bfe87a84c9be21f229f1a35263e4dba65723040abe04a2532061a57dbbcb7a4",
+    "git_blob": "5be5bce01b3a5d03bd7fca292d0f72f1958af429"
+  },
+  "Development.AutomorphicArithmetic.QuadraticCharacters.MemRealCyclotomicSubgroup": {
+    "cached_sha256": "28cda63c2276dbdc6d1dad9702c4b87cfcf844d412d66da476bf1b8592ba3f83",
+    "git_blob": "098bdfd3b490275bac959f604e458689f9edce0d"
+  },
+  "Development.AutomorphicArithmetic.QuadraticCharacters.PreHostA": {
+    "cached_sha256": "18096fd0462587a8012d6c94341c1855216fff4df90f816222eb588db31d8681",
+    "git_blob": "48c1787cb0722f5d5a5d75793593eec47861a2ab"
+  },
+  "Formalism.AlphaUniqueness.Statement": {
+    "cached_sha256": "315c7caef3df2c1e589ce7cb60c0d08029b0f16022e015f667074ca98f95a1b6",
+    "git_blob": "28ec29f6c8bb4b4951204ae7bc7fd41e3052dcff"
+  },
+  "Formalism.CMTypeGalois.CMTypeFrobenius.HostConj": {
+    "cached_sha256": "5f563aee4b9cb761ee4b520162b9450ad8dccefdb117d2335f066854a6c38d44",
+    "git_blob": "afdcb1d5d55cb397d91c4f8a861820e3b6679a07"
+  },
+  "Formalism.CMTypeGalois.CMTypeFrobenius.HostEmb": {
+    "cached_sha256": "ac267bdca58c19f6ae08a18a4f81591c47564c2fc74cc27f0e609796ab7761fa",
+    "git_blob": "ba178f3b94b8c9d03ac82167cf6b3b4659e13ddc"
+  },
+  "Formalism.CMTypeGalois.CMTypeFrobenius.HostFrob": {
+    "cached_sha256": "5bbf96d6304b532031b5d14fc330c7eb16da66c0164f558cb9d012f93f2a4e46",
+    "git_blob": "8d1db4af7b0b2c6d10d5b7517433f9a06f22cda0"
+  },
+  "Formalism.CMTypeGalois.CMTypeFrobenius.HostInertia": {
+    "cached_sha256": "7c57a7fac1d86eade8a688185acdff1649835b19e4332153dc6337903bad304d",
+    "git_blob": "0e4144a33cf3675f58eade2cdbb62f1d5351ef29"
+  },
+  "Formalism.CMTypeGalois.CMTypeFrobenius.HostMu": {
+    "cached_sha256": "af7dfdccef90903dc60fa88f6b8605217066c69a305f79f35d00bac78b889029",
+    "git_blob": "4e709e7fc9b3ff10477f559a05425be9554374ff"
+  },
+  "Formalism.CMTypeGalois.CMTypeFrobenius.KroneckerMeaning": {
+    "cached_sha256": "e8afb0a06b749337164f8d7a883d54bc7ae01b3e019b4bfe8bbdaba3c95a0db8",
+    "git_blob": "bd5fe77614f48f577363a791a6b36e3f229f88b6"
+  },
+  "Formalism.CMTypeGalois.CMTypeFrobenius.MQFrob": {
+    "cached_sha256": "7ab4300e9dc85268fb89ee1f6fc232a7f2f12cbcbc6828b81e7b9b44da70a92a",
+    "git_blob": "792cff3f6afc5f771a966cd96446e3f3ca0913b6"
+  },
+  "Formalism.CMTypeGalois.CMTypeFrobenius.MQGalois": {
+    "cached_sha256": "43dd24745dcaf457d7d430ce695ff95b13384c9e845309733300e974e05131c4",
+    "git_blob": "f69283249744159abf9224f2efb0b4fba193e01b"
+  },
+  "Formalism.CMTypeGalois.CMTypeFrobenius.MQKummer": {
+    "cached_sha256": "42b63c47f7bb7c560220c44b30cc3164ade6946e390ff7435bfbc7774dda464b",
+    "git_blob": "6d52af370a9931a07ae063156456a1acb2e35447"
+  },
+  "Formalism.CMTypeGalois.CMTypeFrobenius.TypesA": {
+    "cached_sha256": "3ce32b72c10a2950f0cb2cde520ada2bee5fb80869d861f5626bd44c5ab77ea1",
+    "git_blob": "84991e354df2bd4e9eaa333eeba6506cad7241d0"
+  },
+  "Formalism.CMTypeGalois.CMTypeFrobenius.TypesB": {
+    "cached_sha256": "fe3e2885f51d07d6bfda8c8d4937ad2f9cd523b150c9375211c66304814da7ed",
+    "git_blob": "e166e552f228cb7c4deec233a7c65466c919b70a"
+  },
+  "Formalism.CMTypeGalois.HalfTypesFromGeneral": {
+    "cached_sha256": "a79d4850176152522162d2bf6213943b0ee7d766a95deb76c9bce11b2fe28893",
+    "git_blob": "ff33a648f54cbb40644fc59dba040502409deac5"
+  },
+  "Formalism.CMTypeGalois.StatementField": {
+    "cached_sha256": "8b51ae4e4efcee2c52fd02356c8ed810f4a8e66f4fecdf66031beea1580d508f",
+    "git_blob": "2daf0aeeebd3eb264681039b08620f487b6908d5"
+  },
+  "Formalism.CMTypeGalois.StatementGroup": {
+    "cached_sha256": "4aced5cecfc10d79a903b845eb2a6d39cbac99e304ca35b9e3970b4b60aec2d1",
+    "git_blob": "f560fe5a128221a697b44c9add5e2072663bc221"
+  },
+  "Formalism.CoboundaryTransfers.Statement": {
+    "cached_sha256": "e14bf9f75fad120cc40222941d6a8e66b934fc5adc9f82a1e9d2f91920ef4f3e",
+    "git_blob": "d2e2a1e324a751c20ed384d7fa424a6c18c940c7"
+  },
+  "Formalism.ConjugateSelfDual.Statement": {
+    "cached_sha256": "274121e87ebbd7248bab793e5cfbe343e3379cfaec27e5dee8ecffd62a591946",
+    "git_blob": "8ac13fd8953cf0cff090de5b89c0aab876c5c929"
+  },
+  "Formalism.CorankShare.CorankShareProofs.LayerCakeFormula": {
+    "cached_sha256": "53d25fb7b22fb55c1fc7e3e2afb3c9564aafbcfe7598ab6577a9676536a2ec68",
+    "git_blob": "1fe7141b704740a711c78e1ebbbf6f60624fad4c"
+  },
+  "Formalism.CorankShare.CorankShareProofs.SumNormSqLeHilbertSchmidt": {
+    "cached_sha256": "6e59f76ad2a29c29647e2aa6dd34dc532881bead728d560da78a0f17c13215eb",
+    "git_blob": "6e242d63c5e583842d8ac1a0f08c1a247fba3b3c"
+  },
+  "Formalism.CorankShare.StatementFR": {
+    "cached_sha256": "7c465517b1cefb78ba05c2654da5ffce760a9c575d7eefa06df507a49cb6ed95",
+    "git_blob": "bbf952cfa32adb68933c8ab356ae87b6d7323976"
+  },
+  "Formalism.CyclotomicNorms.StatementI": {
+    "cached_sha256": "c5586b365e84777f074ebc76e6600249ad8c3d093fc6e472e6d23b23c769f27d",
+    "git_blob": "31894284549f6fc0ec09893f1f1e44265c7450e3"
+  },
+  "Formalism.CyclotomicNorms.StatementT": {
+    "cached_sha256": "d55afa391e0c09967a9ee11e1559f72382bfdf389007fc47cbe56991126848e3",
+    "git_blob": "5906a3af695f0021ea03d948954a1688a5fe5169"
+  },
+  "Formalism.DirichletDensity.DirichletDensityProofs.APLogDensity": {
+    "cached_sha256": "853a97076687269baf5c2e7993a17eec9f1fd9b3c7a9538a2cb2f30fa6693784",
+    "git_blob": "378dbe646249f2229d438ae64ea272f211612e23"
+  },
+  "Formalism.DirichletDensity.DirichletDensityProofs.HostDensity": {
+    "cached_sha256": "63750099c7e4c77451b095e702f24fbbdf814126b797cd22c73b8eaa1a353c8f",
+    "git_blob": "5723e9c1dc12c10ee466f02850be0a839aa50951"
+  },
+  "Formalism.DirichletDensity.DirichletDensityProofs.HostDensityArith": {
+    "cached_sha256": "b11cd98c06e641e1dd7d495f025e51016b4108993953a601a9be123e56467605",
+    "git_blob": "a2cb78286eb28b419c81d1f15d88b878fdd2c0e5"
+  },
+  "Formalism.DirichletDensity.DirichletDensityProofs.LogToDir": {
+    "cached_sha256": "e6cb4e062aff4bb1662d7701b591383b539bc3f850f72a3f5448d338145d0970",
+    "git_blob": "3fb5e283ed8b524db200094f663734fa5cbde2e8"
+  },
+  "Formalism.DirichletDensity.DirichletDensityProofs.MQDiscr": {
+    "cached_sha256": "5742644ccdf026d97c3c96ceda424d1bb32185cd04d5ee5edfbf334d75c7017f",
+    "git_blob": "454bf4299d66fa1425709c8a420f800d68a7eec7"
+  },
+  "Formalism.DirichletDensity.DirichletDensityProofs.QuadDiscr": {
+    "cached_sha256": "01872d80ca408a72bcbf408cab4a42e41508dff206cb60306eb15351c9fd6ce3",
+    "git_blob": "2096f2fc110ff1b41107818504d423828afb4c62"
+  },
+  "Formalism.DirichletDensity.HostDensityArith": {
+    "cached_sha256": "4d835792a4215b3581b5698303383e96bb78d88f9763e6e0099572f3d94c0233",
+    "git_blob": "8535d7a902ea37f0bef56d85e7348619fb46d39c"
+  },
+  "Formalism.DirichletDensity.Statement": {
+    "cached_sha256": "175988dbb6b142ea7d13c2720612733a7127d83571b2f784ea126b58127ced6d",
+    "git_blob": "2df996407844be6d90aa075f329680023a6280cd"
+  },
+  "Formalism.FockGram.FockGramProofs.CovolGram": {
+    "cached_sha256": "6dae8dd1917b1b5bef8cea9085c424c483cdd933607bd196d5056215b09b8f70",
+    "git_blob": "ca981c86e7939cebd8f55aef9628ef76db76bf51"
+  },
+  "Formalism.FockGram.StatementHerm": {
+    "cached_sha256": "3d41fdde191fc5792a4029dd22ca1c60ffcd1ce90db96126564e8ccfb94641b8",
+    "git_blob": "579ba2c54cead9265fd1606095c0b41ddd5be730"
+  },
+  "Formalism.FockGram.StatementLat": {
+    "cached_sha256": "c4781303d169eda3d70c5e808a6911bfbbd599474615b429414283d24d9116ca",
+    "git_blob": "267918bf7d701ab87a59eaccacfad00b40ca537c"
+  },
+  "Formalism.FrobeniusOrbits.DiscrMaximalRealCyclotomic": {
+    "cached_sha256": "ca11c28241d301ea4db208d391fe0936e0e40c53338981979413dce9b9d9a6b3",
+    "git_blob": "031d95d3d5dd8bb0e2ccb1aa239279cde94e650e"
+  },
+  "Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.CardExtendedGaloisGroup": {
+    "cached_sha256": "107e1d28d5156245a6d3b683ae822933cf44f79b2dd7cd9df63249a7ec6b84b2",
+    "git_blob": "32c937a40c95c211ef6c7363be533661de3a7a55"
+  },
+  "Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.CardTrivialFirstComponent": {
+    "cached_sha256": "90752a25793cedec84464a81305547c2082477cd21acb53233e6ecdb56109563",
+    "git_blob": "cf0b65988067fcb5325b94f37163fadd14cc67cb"
+  },
+  "Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.ConjReal": {
+    "cached_sha256": "48b5232c5dc1ea6af552666547cd93216d671a588dd0b23d4ea4109f842e18a7",
+    "git_blob": "f0b4de592e16f8d86af8206f66cea2db5a16e5aa"
+  },
+  "Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.CoprimeTwoPow": {
+    "cached_sha256": "f34e04fc9d5495a9521947896c66b39a13fb3e1a57c46bcdda3d1b0d868d2f0b",
+    "git_blob": "de9a6af53b6b820781f75319a566a6172bb625aa"
+  },
+  "Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.Decomp": {
+    "cached_sha256": "e8a430ca52b754c07eb0ba762156328566e04b885ac85bd3179d65549cfe51aa",
+    "git_blob": "0b91a198e4df58711478640a2bd3050883ffe8e9"
+  },
+  "Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.DiscrB": {
+    "cached_sha256": "30175a7182c17d07c90319ae6351b6b8f43f62df50d959412eb19211e7850fed",
+    "git_blob": "ef298b4f0b9933efe42308de69aee858bbf810e4"
+  },
+  "Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.DiscriminantRealSubfield": {
+    "cached_sha256": "4599113585c94e6f3b95bdc1a05670138df61955f1fa4be2c716bb9a0413d065",
+    "git_blob": "c62b3387798c9a8f26946a058107979c221dbc8c"
+  },
+  "Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.EqZeroOfNegEq": {
+    "cached_sha256": "1d4448713679b8cb36b5e39259c05538d6a9339369399cb9a938c5d583dde017",
+    "git_blob": "63ab377703a5763af06124212af6648fc803527f"
+  },
+  "Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.ExistsOpenNormalOrderOf": {
+    "cached_sha256": "d8bf93feb74ff188196c6396b66caae9617884ca882666cbc2142237331f8a7a",
+    "git_blob": "7b9083f0ad5ff7791845d34ff5f65cc97404a34e"
+  },
+  "Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.FrobMulInertia": {
+    "cached_sha256": "ae25ed12dee1bca6775c077206cac43c14f6704b5df38c30a7627cea89497fac",
+    "git_blob": "61ebaae97a17882a8f9c188fc8e1d34b5e7cf74f"
+  },
+  "Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.Galois": {
+    "cached_sha256": "5c234a76e9cf67b74d15b997c072e9c4da635c4eeca1d114bb8063baf806367e",
+    "git_blob": "423a1401f0b9c39f531607a36c50d32cf62b7301"
+  },
+  "Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.Inertia": {
+    "cached_sha256": "c28f17d3ff04ebede1579660b35556d8b9bdf5b4ac72c7ee1ada5da35c61bab8",
+    "git_blob": "9ff4eafc352c46e40ec7f166a8a09eddf57ee4a6"
+  },
+  "Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.MuCardLeTwo": {
+    "cached_sha256": "fd0f3603bec9206d132f7a8d1b55a31fd7c7b585e26fc088ef24b7994b6910ba",
+    "git_blob": "51a225a03f1f3f864a392e3c76d88bf5b56f37e9"
+  },
+  "Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.NcardEqTwoIff": {
+    "cached_sha256": "2c177e839104f0df759149c18cf3e951f00c0493098b15de44008cac9b0996b6",
+    "git_blob": "7a8bf7e8aceaff44c4eef983ac7a57f06f6437d3"
+  },
+  "Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.OrbitSg": {
+    "cached_sha256": "02e794d436e9c42c8d7eeda923b332b9962a6da928c25beddca06b6826fb0924",
+    "git_blob": "1d606a77a80c85f115d3f2a97b82d0b19e63080d"
+  },
+  "Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.Orbits": {
+    "cached_sha256": "729bcc64a54993310f99c68aa4775aee7cf27c9a5e618dc22fb6dbaec477490f",
+    "git_blob": "1e84617c386990cc26c7ae49bb42c50c3c13a10f"
+  },
+  "Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.OrdUnimod": {
+    "cached_sha256": "659a23b8304906df9e82e358d3fdaf231c97be4fbec25c913b245cd3d281b18a",
+    "git_blob": "07f08400c9d673cfcac58d2a037a44615b83d101"
+  },
+  "Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.OrderOfSignGroupDvdTwo": {
+    "cached_sha256": "12b27589b7b798cd5c3fa277b4bdcef699fb2ee28164973049ae1b26810b4418",
+    "git_blob": "20d24e077a12e2eb78acad45537c5fb80a8045c7"
+  },
+  "Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.Principal": {
+    "cached_sha256": "57e5aab446105f56e014d6f9e89fd729a8fa82bb01a1fd5b586359c618b70ce0",
+    "git_blob": "8aa1ef7292a17dbdab09677a6cebe75205ff1032"
+  },
+  "Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.RealCyclotomicSubfield": {
+    "cached_sha256": "48f0b5a427936e434c868b2c2ff4414231b05c8a40397a33068c9f0dab324c40",
+    "git_blob": "0ec354a929c133f755037f7167272a1aa8468a18"
+  },
+  "Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.SplitK": {
+    "cached_sha256": "ec7b1c7e92ca2e27a281277378fe40442f0b77677718d48695b20f8aac9ee972",
+    "git_blob": "fb1186d1385d3c1e6f63d54c57faffc73dedbe5b"
+  },
+  "Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.ThickExists": {
+    "cached_sha256": "e08e417ce5ae34f5bdfe795664bced88919edefe9bfb28be3d01c780ca26d009",
+    "git_blob": "02c657a83fc154f32f088844242192d5395d3160"
+  },
+  "Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.ThickFrames": {
+    "cached_sha256": "171d07026e0f23bb80f4a1fcfbdf3c7e0c651dadffd243f0cad754952ce26c43",
+    "git_blob": "a6e8d5502bdea0bdb94d6e1625301f583d151b39"
+  },
+  "Formalism.FrobeniusOrbits.FrobeniusOrbitsProofs.ThickOrbit": {
+    "cached_sha256": "76eb7bbec4f68701eadaf29c374d423c63cca62bf320a11baab0303c9ef49bb2",
+    "git_blob": "196a3d446212f3410c8c7fc8b4cf7a6f83ff6cd4"
+  },
+  "Formalism.FrobeniusOrbits.HostCorollaries": {
+    "cached_sha256": "017e036b9411080cabe4b72ca13d84409dad31828520e04eb2b26da79319a677",
+    "git_blob": "f47c6f36e198eb85c37c058bb1386d4d9a3c25a2"
+  },
+  "Formalism.FrobeniusOrbits.HostDiffSupport": {
+    "cached_sha256": "74ba4fe3edeacefc6706cae49ad58f80d46c234135ae159dc8b28851a6fa9a0c",
+    "git_blob": "c3926913bd3ffbfcf09b4e5808e80cfb16e2c324"
+  },
+  "Formalism.FrobeniusOrbits.HostOrbitCountSg": {
+    "cached_sha256": "6816c5d6fd91fc1133185d0850ef152e5259943e590d88dad4d515e11fdef72b",
+    "git_blob": "a01e0c74737a419b88526a0a0a6b7f7195dc1e25"
+  },
+  "Formalism.FrobeniusOrbits.HostOrbitsPlaces": {
+    "cached_sha256": "11eb94696abafc51629971e6da224255a0a2d636ec07eba756fc7ab80ce10644",
+    "git_blob": "18efdb01ea229b80963910a01fb8f6317f4ea8ce"
+  },
+  "Formalism.FrobeniusOrbits.HostThickExists": {
+    "cached_sha256": "fa302a2d43463dbbdcaae1d9168ef99eaa174107aee4b0ac38ee5ac11fc738c8",
+    "git_blob": "2443adb4e6865bed0aba0a40d700db0e3e4226ce"
+  },
+  "Formalism.FrobeniusOrbits.RealSubfieldLeCompositum": {
+    "cached_sha256": "117efa712d1646b67062ff9d742b7fbe9175aa97a711c6617e5e367dfac78fc1",
+    "git_blob": "7af4e23a1455d02ffbee368df6a8f2cced530013"
+  },
+  "Formalism.FrobeniusOrbits.Statement": {
+    "cached_sha256": "c4d48271a3432c31c04d69a64720bd072a696765d6886e18a981c675d876eb7a",
+    "git_blob": "45d3b672d4649dd27309c092b3f9a24d279dd399"
+  },
+  "Formalism.GaloisCohomology.GaloisCohomologyProofs.LdataNonempty": {
+    "cached_sha256": "c9893f7c9a9593f01509a75df88d475f9977b7aaea06c81b5654be4d3ab6cfb9",
+    "git_blob": "940a33a2189f2ef8bb347b172aa140598258642d"
+  },
+  "Formalism.GaloisCohomology.LocalTateDualityK": {
+    "cached_sha256": "759442ae8eb300885ad503a74322f4558ba209312b651350f848ea97a0d331ce",
+    "git_blob": "d75e24827c31c2c0fbf6b8c7d98233b75556a488"
+  },
+  "Formalism.GaloisCohomology.Statement": {
+    "cached_sha256": "ba9b1a5fac7bc4b0719c8902089acc794bab04479405d767c960e55d291a5242",
+    "git_blob": "0799e9bcd8aa191ffaa90ab005453a53381bacea"
+  },
+  "Formalism.GaloisCohomology.StatementLoc": {
+    "cached_sha256": "96e1e89960e5ea735deefc9a2e7fb01fdd8951f099cf56e92a9ae668778fc0b6",
+    "git_blob": "622453052ad2134b5884f147dcbb93d5c5df3edf"
+  },
+  "Formalism.GelfandTransference.EnergyIdentity": {
+    "cached_sha256": "7a6f90057ec124b231c86ad48a596ad01d85d832bf22e9472a4c510cd183b097",
+    "git_blob": "9753e05cea67dcbd2c232a2ba2a69811f9914772"
+  },
+  "Formalism.GradedWeylDivisibility.DualWeylDominanceOf": {
+    "cached_sha256": "8d39852bc53cb2d14ef9b24a8cbfea588425e9d78c0ad4720575a052960a4cd6",
+    "git_blob": "153eb840fa9c92d8436120b44560c79cb8fc6076"
+  },
+  "Formalism.GradedWeylDivisibility.FinalB": {
+    "cached_sha256": "f3dce944ffa8d2b8f4dc88ce74f1508f45e9a8d3bc077169d3e7d01569f2a34f",
+    "git_blob": "b8c9fb3ed984bbeb2b817ed4aac551ebabcd58dd"
+  },
+  "Formalism.GradedWeylDivisibility.FinalC": {
+    "cached_sha256": "09f0f19f625eec0109f128dc543bcd3633f5c2c4d9d0f9f1bcba59a90cbcc766",
+    "git_blob": "b9462b1d12085a769c1ad91ee0eed66bd7bbb161"
+  },
+  "Formalism.GradedWeylDivisibility.FinalD": {
+    "cached_sha256": "d45411d188d5b4e3bfd0df7e9382b6de0309baef7a581160ca6f43b4298bb9f7",
+    "git_blob": "639f2239c6897166001ad3fa5e51dec01306fd55"
+  },
+  "Formalism.GradedWeylDivisibility.FockSpaceTableaux.BideterminantDominance": {
+    "cached_sha256": "94a872eaeced65f13626e1c37bc32bf1598319fcabe928238704176df833d2a8",
+    "git_blob": "63e86c6e553b6d5722f6156cfc2b37a133282482"
+  },
+  "Formalism.GradedWeylDivisibility.FockSpaceTableaux.BideterminantMem": {
+    "cached_sha256": "de8c9438d0a2ba440ac4ac96dcd5fd53bf22f816f5abf634a2294c17e7f35360",
+    "git_blob": "b64ef907338bd8f2688e64d2e316ee2ca78b244b"
+  },
+  "Formalism.GradedWeylDivisibility.FockSpaceTableaux.BlockActTensor": {
+    "cached_sha256": "dfc657bf1c3a895da1f451d61a2c4233976cdfdd91a150e643e92f8b4e3d003b",
+    "git_blob": "20d0b4d519d5b98b1080e96bf93a7dfe371b282f"
+  },
+  "Formalism.GradedWeylDivisibility.FockSpaceTableaux.ClosedEqNabla": {
+    "cached_sha256": "58c32b5483809f23ddfae988cc778f5faceb567f99cc9b49e89061a95c74e015",
+    "git_blob": "7f6631589b19f67c0ea22cafab9ffa08d4688da0"
+  },
+  "Formalism.GradedWeylDivisibility.FockSpaceTableaux.ColLexInitMinor": {
+    "cached_sha256": "de637286ae05503281b564f7d710bbb3a8f795df17f7811542a33c890794e1c9",
+    "git_blob": "e6727601dad3f2310316b2056a116ed73ce570e1"
+  },
+  "Formalism.GradedWeylDivisibility.FockSpaceTableaux.ColSums": {
+    "cached_sha256": "9fc49a199c34fe9975f0a33a4af25338e60e1a524bc3377eedfa5fde4fc596fe",
+    "git_blob": "fe76c99940e6f874793ad553be9206af26ac70d0"
+  },
+  "Formalism.GradedWeylDivisibility.FockSpaceTableaux.ColumnLexBideterminant": {
+    "cached_sha256": "230b040e315577f1219485f67c8d5fb091e0f91b12490ca643da3cb223706793",
+    "git_blob": "46101b6283bc8eb041825488e9a1ad87b8540ebf"
+  },
+  "Formalism.GradedWeylDivisibility.FockSpaceTableaux.CompDeg": {
+    "cached_sha256": "e0b7543a48449bab3c6d7da1e58804c69ddfafaf4fcc4976a7323ab92978bb0c",
+    "git_blob": "471c520447344165f1cc936708fffa9994bdb878"
+  },
+  "Formalism.GradedWeylDivisibility.FockSpaceTableaux.DomPow": {
+    "cached_sha256": "4a0452ad481e21b530c43a907db2c225e12f2f57b2dde599b7700b183524dae7",
+    "git_blob": "727bb14f9d403b85c9719d6e9a877402077793ec"
+  },
+  "Formalism.GradedWeylDivisibility.FockSpaceTableaux.DualWeylDominanceOf": {
+    "cached_sha256": "3f9d0185db9596e19005854c8bfec80153e54e4cc0392a2b5662331910f54348",
+    "git_blob": "3d29e74022975c1586d0b6db899780bfa91c0d16"
+  },
+  "Formalism.GradedWeylDivisibility.FockSpaceTableaux.DualWeylIntRat": {
+    "cached_sha256": "861afe3a85f050b3fb649a68ddb6d6150110860313877f450f6107a6f83f8ede",
+    "git_blob": "22770c87a91a4817d681ddda4152de02f45b1aa9"
+  },
+  "Formalism.GradedWeylDivisibility.FockSpaceTableaux.DualWeylMap": {
+    "cached_sha256": "f77bf69551185edcbd11c692ab706e3b3297edc770404bc46742b51eef285e29",
+    "git_blob": "8fa5d99f83cc03758bba5eddfb85f69a60c44410"
+  },
+  "Formalism.GradedWeylDivisibility.FockSpaceTableaux.DualWeylMul": {
+    "cached_sha256": "afee6159720e5fd292f38e8e8c4628831a3f63ab27a79837f157a9cdffaa5312",
+    "git_blob": "feee676034c81462109539617a0b3818993875d6"
+  },
+  "Formalism.GradedWeylDivisibility.FockSpaceTableaux.DualWeylNonDom": {
+    "cached_sha256": "9d330ca33692e71d6e2a5008836bc3e4abfeb7fa434bf8d38f4ba260ad0abd0d",
+    "git_blob": "21f8771f99470d8f966b7f68e87612718dc0d1df"
+  },
+  "Formalism.GradedWeylDivisibility.FockSpaceTableaux.DualWeylPoint": {
+    "cached_sha256": "4f62f332f0ff9ed0b1e1c6f0c93f811597cfe0f2a9719425613ca1d6df87e51a",
+    "git_blob": "2e5dc078ba90468f0f5bb6e0ffb6bbf596527a65"
+  },
+  "Formalism.GradedWeylDivisibility.FockSpaceTableaux.DualWeylRowGraded": {
+    "cached_sha256": "028464b05e346cd0d5bf5a40ab798c1e9dceb6b155efb5aa4a8a21ebb395c441",
+    "git_blob": "4ffb50d2dc5915c9352175de48ad359c0ae9abf2"
+  },
+  "Formalism.GradedWeylDivisibility.FockSpaceTableaux.DualWeylRowStable": {
+    "cached_sha256": "66902c21b862cbb91ee1e650e596365b300635a231cc658de2e899dc112a9c99",
+    "git_blob": "371bf671399c61df3adc41f4ecb1ddba2b796bc2"
+  },
+  "Formalism.GradedWeylDivisibility.FockSpaceTableaux.DualWeylSat": {
+    "cached_sha256": "4d7a64d97b2e6137418e788e0cb981db19d3ff9dcf80688110b9e1d8558cac23",
+    "git_blob": "f81ea18680b46da2ef09032817beea5dd0b8dbd2"
+  },
+  "Formalism.GradedWeylDivisibility.FockSpaceTableaux.EvalDeg": {
+    "cached_sha256": "96ff2e0dec467cf9363254b1deb2af0afe2a11ba5b79f1ce950316663de6acf9",
+    "git_blob": "7bc3813605278c9102859517758f69426d987a71"
+  },
+  "Formalism.GradedWeylDivisibility.FockSpaceTableaux.FockDiagBound": {
+    "cached_sha256": "e5290f3346d26010776aab2f5d1eb7759cbf88e13344ede203d7af6cafe74ccd",
+    "git_blob": "819197c156c9f2afa34c89a70a0fd73b9e618ef8"
+  },
+  "Formalism.GradedWeylDivisibility.FockSpaceTableaux.FockHerm": {
+    "cached_sha256": "d580dbd195150f9c6e8aabe409e57ab8eb4cbcd094f340aa75f470a79f7ac36a",
+    "git_blob": "bb1d1eede6229cd7226bfa0c4c3ceece312755f0"
+  },
+  "Formalism.GradedWeylDivisibility.FockSpaceTableaux.FockPos": {
+    "cached_sha256": "b80cb6395485322b10f68584a593a5328c38c5492077e1d098b659f6f97128e9",
+    "git_blob": "fad9d435c6bed1375849915feaf3b3573e409430"
+  },
+  "Formalism.GradedWeylDivisibility.FockSpaceTableaux.FockQBilin": {
+    "cached_sha256": "c9b88296cce89c23b26d89adbc88c3261b938ad9e9e39a450a7bcc077e8aec2b",
+    "git_blob": "fabf392991740a8eecfce1174bf1d11924f33608"
+  },
+  "Formalism.GradedWeylDivisibility.FockSpaceTableaux.FockQPos": {
+    "cached_sha256": "f572a02299ee41f9e6363137ffd75046297640fe8bbd82ffddb72fd5e49524c9",
+    "git_blob": "c1cf621c3e6613a2507289e5e25cabaf59251b0f"
+  },
+  "Formalism.GradedWeylDivisibility.FockSpaceTableaux.FockQRowDivAdj": {
+    "cached_sha256": "9bc80ee2a3a7dab6aed9f044923cf0304279a5233e6e29c70f01b6ade38e8b8e",
+    "git_blob": "9c18ec52aeb76a979d85d95ba6313fdcfd777d79"
+  },
+  "Formalism.GradedWeylDivisibility.FockSpaceTableaux.FockRowAdj": {
+    "cached_sha256": "85612eae481bff0ac4817249727dea9f9b33ab8912874a30fa4a44051f8403eb",
+    "git_blob": "c9fa5678c7ac60c487f9e1797280ed0430124332"
+  },
+  "Formalism.GradedWeylDivisibility.FockSpaceTableaux.FockSubAdj": {
+    "cached_sha256": "d45a7514d8e600e66f25f08177e41a9672e22753672257e6e58d76196688f711",
+    "git_blob": "e2a18d7293a6c86b7f47b61d7a1b88d747c57605"
+  },
+  "Formalism.GradedWeylDivisibility.FockSpaceTableaux.FockWeightOrth": {
+    "cached_sha256": "5b9193c9b336090a1ff3282b008e3048db061914138438c8e6ecb52de8d442cc",
+    "git_blob": "18b177bf1c4edb460fde833fab0d26f21603db5c"
+  },
+  "Formalism.GradedWeylDivisibility.FockSpaceTableaux.HWInClosed": {
+    "cached_sha256": "712ed4611894391e64d9f5314e9b774dd4da6bee46d07f71cf82201171d047af",
+    "git_blob": "1694cbc354102728d6ff6c8125af8e746c123c64"
+  },
+  "Formalism.GradedWeylDivisibility.FockSpaceTableaux.HWLine": {
+    "cached_sha256": "1ad67e83264443aab7b0a83092a20c4b3103547a1f20817de8b6beeacd56da5b",
+    "git_blob": "e89ab9dd0633507b374ab61cc1e8c9e56fa96c36"
+  },
+  "Formalism.GradedWeylDivisibility.FockSpaceTableaux.HWLineTall": {
+    "cached_sha256": "40830c3077446bf5d2ccae0eea8537e9ceaf838b625dd4489b9ba8acc18c9e79",
+    "git_blob": "12205248034fe7c7a1596925770e0f673c95f8bb"
+  },
+  "Formalism.GradedWeylDivisibility.FockSpaceTableaux.HWRaise": {
+    "cached_sha256": "425e1afead1ba3037a4f3858c4eccb5ccec4d6729a2218e9858ff19ea3efaa1a",
+    "git_blob": "5e8b3e152f399ec4e3b94537abd1601ec869f16a"
+  },
+  "Formalism.GradedWeylDivisibility.FockSpaceTableaux.HWRowWeight": {
+    "cached_sha256": "0589c79da4a27b18176e55192c9c3d476a0bb443f2c5990262f7395bb0c68252",
+    "git_blob": "9423a8d3020add9bb423240df20a7a105b09a7f6"
+  },
+  "Formalism.GradedWeylDivisibility.FockSpaceTableaux.HighestWeightVectorNeZero": {
+    "cached_sha256": "1a6c795927f219f3d7f9ce55145101ea19bdcf341316386f960a2a8f821f2269",
+    "git_blob": "d95c76d33e384fdf2654fa6b885fb66bd7f6a184"
+  },
+  "Formalism.GradedWeylDivisibility.FockSpaceTableaux.LBidetLemmas": {
+    "cached_sha256": "5d2b9d232a04aa4c3af5ff8308fb6b356d3a1957f20e29f972dc0374d9132d33",
+    "git_blob": "8e1027ba9b1f29e12d60958247d58d6207444834"
+  },
+  "Formalism.GradedWeylDivisibility.FockSpaceTableaux.LBidetMinor": {
+    "cached_sha256": "c65ea917cef33335dab6f46c0e2a05eaf21d084ae818a58339232df211c968f3",
+    "git_blob": "350731b27af1d8fc69ef59bebabad4ab78e8f755"
+  },
+  "Formalism.GradedWeylDivisibility.FockSpaceTableaux.LBidetdomLemmas": {
+    "cached_sha256": "88a8d7cdb1bc4b6e6780a5c2f43ae8c93ab2f5a147925085ac8a335b803f786b",
+    "git_blob": "0965d786ec4d3273084517b2b0c89664a452608b"
+  },
+  "Formalism.GradedWeylDivisibility.FockSpaceTableaux.LCassemLemmas": {
+    "cached_sha256": "f249c68277630b83ea7674ee499b0cbcd9b40d4c97211f38fa036036a1ff9594",
+    "git_blob": "a3672c31a0fadb9778977fed0485967508047dc5"
+  },
+  "Formalism.GradedWeylDivisibility.FockSpaceTableaux.LCcompLemmas": {
+    "cached_sha256": "542eaf9882cf0bef1b24571fcc67661a77ec03d90f143f07e7ccce54048ff370",
+    "git_blob": "377acb2f8a365afd1509baa807efcd4c3587d3c7"
+  },
+  "Formalism.GradedWeylDivisibility.FockSpaceTableaux.LCdegLemmas": {
+    "cached_sha256": "3b1cb8553eef4eecfc5732f0f2eb9e42f0af8b9db1c34914191d2558bde2330d",
+    "git_blob": "9c4bbc80ec110a0a488e329f6604ee31460387bc"
+  },
+  "Formalism.GradedWeylDivisibility.FockSpaceTableaux.LClosedeqLemmas": {
+    "cached_sha256": "62acce04227458d26eb4548e0b5a0f2c579790814f48cb23dbd4bc6b02ead677",
+    "git_blob": "4f59709f90be028299ea4c862fff1e346d781278"
+  },
+  "Formalism.GradedWeylDivisibility.FockSpaceTableaux.LCpeelLemmas": {
+    "cached_sha256": "f3f6abaa204dd590793e940a7af851b961817dd01380491c153d458f5c639f9f",
+    "git_blob": "33b494d1e1ebfe333c951215641f795d48b59fa8"
+  },
+  "Formalism.GradedWeylDivisibility.FockSpaceTableaux.LCpleadLemmas": {
+    "cached_sha256": "c8110fecc9e62795d2423af06750275f5bd2ccaa092741e89667d0e94bc67f13",
+    "git_blob": "c3d8a409425e37bd451b292a68df8d0aeb41b0e5"
+  },
+  "Formalism.GradedWeylDivisibility.FockSpaceTableaux.LCssytLemmas": {
+    "cached_sha256": "f3c46f7c8a4b163f4684a00fe79353386a9fdaa038a99016a4df00dd869e3357",
+    "git_blob": "563c19f6896943098b1f97ac0da28088c8043db3"
+  },
+  "Formalism.GradedWeylDivisibility.FockSpaceTableaux.LDbasisLemmas": {
+    "cached_sha256": "61836db28137844c525d824e2a9797a9a21380cf0128bd9e1aea837ea7cdd506",
+    "git_blob": "bea34751a0ef144b94e2987ec92ff6e56b5447ef"
+  },
+  "Formalism.GradedWeylDivisibility.FockSpaceTableaux.LDlatLemmas": {
+    "cached_sha256": "ba43f5852c7555071dea2476a03f295d42353a71a9ef6275d82654fc864bb149",
+    "git_blob": "8fdb0bbefa2b6795ad4c5344c91a37b74f866d13"
+  },
+  "Formalism.GradedWeylDivisibility.FockSpaceTableaux.LDrowLemmas": {
+    "cached_sha256": "6b9d3604733c1de643a0df793ae5bbf2d711086b57a1ca71f6fcccd8b6759d13",
+    "git_blob": "2fd0f5a42708323d7d7a64b7ae3521959003ee5b"
+  },
+  "Formalism.GradedWeylDivisibility.FockSpaceTableaux.LFockbLemmas": {
+    "cached_sha256": "decd58fe3b5292fc07fe1ba208fe06740a9238f7f15044a57c599977223ecc9e",
+    "git_blob": "3682134c3b97a1692b74eeab7a000d567595d092"
+  },
+  "Formalism.GradedWeylDivisibility.FockSpaceTableaux.LFockqLemmas": {
+    "cached_sha256": "a406fa77607bea67e18a8cd263c3a2dc9bc665aff5dd69cd2fb538aae31aa028",
+    "git_blob": "e56d2e63f26531b9c6cfb7a3ac4c91d7a718a213"
+  },
+  "Formalism.GradedWeylDivisibility.FockSpaceTableaux.LFocksLemmas": {
+    "cached_sha256": "9c397cc17d98b892236c8f8fd147549b5fdb161daef0b69baee214270f59cd3a",
+    "git_blob": "e7dcb245838c9065f5cf135cafa7db9dcd06fcb1"
+  },
+  "Formalism.GradedWeylDivisibility.FockSpaceTableaux.LGradedLemmas": {
+    "cached_sha256": "a34af9025eff8533dec38b04c77b9b79e867833a5c16d190db42330879d02fc1",
+    "git_blob": "b19864629b93afdc4eb1fe59c561aef9b8c326db"
+  },
+  "Formalism.GradedWeylDivisibility.FockSpaceTableaux.LHwinLemmas": {
+    "cached_sha256": "20bdafff76b1488013110c335d84dcda5635fa891c22a9f051d865cd8526e8f8",
+    "git_blob": "c3d8d62ceb415738239ce4fe39d0a2550a8096a7"
+  },
+  "Formalism.GradedWeylDivisibility.FockSpaceTableaux.LHwlineLemmas": {
+    "cached_sha256": "76a562cb95a27338c75b236d2747916d6c31596c41b272ee4bc8433c3efd8f73",
+    "git_blob": "248a9c86c5bbf75d9abebc925617ae822b85a0c9"
+  },
+  "Formalism.GradedWeylDivisibility.FockSpaceTableaux.LHwrowLemmas": {
+    "cached_sha256": "2e8c48275dc2811af4c4afd3a27a6da87fb33fa89f75e400311fede8c3eddc17",
+    "git_blob": "56336c2bd7decd3f0ee4c755ef9513ce349e267c"
+  },
+  "Formalism.GradedWeylDivisibility.FockSpaceTableaux.LNondomLemmas": {
+    "cached_sha256": "3be5e8134a133f9a2e453089c08703f88380dbfb86b8155922507e7b1f378ce0",
+    "git_blob": "9c1967594e62f5cf6a9b6cece8c3f8c624a9e72e"
+  },
+  "Formalism.GradedWeylDivisibility.FockSpaceTableaux.LRowdivLemmas": {
+    "cached_sha256": "77d468ae5cd06e3d25d5cefeb0e615ae73320af1bda1f0ecd98f2d10cc60659f",
+    "git_blob": "74e257c2759ded7f28f885ca2fbcba4be7871115"
+  },
+  "Formalism.GradedWeylDivisibility.FockSpaceTableaux.LRowstLemmas": {
+    "cached_sha256": "5a04104a95a7e3bbd89142cdf2bcce5d9322d1dd9ef4d949c5831bbe2643afd5",
+    "git_blob": "a1d6a053c9a98e47e9b78d36f58572f03329e82f"
+  },
+  "Formalism.GradedWeylDivisibility.FockSpaceTableaux.LSatLemmas": {
+    "cached_sha256": "acf10c52eab85d3ad0256ee0b31daf65655d3d9a46ad964bc258a5b78377418c",
+    "git_blob": "6e6809d364b2f83cd9b80f73ee18ff27a09b7b0a"
+  },
+  "Formalism.GradedWeylDivisibility.FockSpaceTableaux.LeadComp": {
+    "cached_sha256": "fcb20a164836fbfa64e49e3afb19003cfdf1098964b87583af16ab44c8bdc882",
+    "git_blob": "58e7a0620bbb62a6fa21a99918c6be23b596e458"
+  },
+  "Formalism.GradedWeylDivisibility.FockSpaceTableaux.LeadInterlaced": {
+    "cached_sha256": "868057393c4ed124c50ffc33bb400b646665ad11d878aec05794460971f47963",
+    "git_blob": "39853a30bc792c5caf8efa6e9e219e43c4bb628b"
+  },
+  "Formalism.GradedWeylDivisibility.FockSpaceTableaux.MinorExpLt": {
+    "cached_sha256": "b468efe5b497ce0bb77a719f22a4f9abf4c7ce085a59e7224882443224e06a1e",
+    "git_blob": "407a15415b584861738d368c75969ea271a1da90"
+  },
+  "Formalism.GradedWeylDivisibility.FockSpaceTableaux.NablaLBasis": {
+    "cached_sha256": "79048fcee18f5812c53944b4dbc55b1adb5e63f3316ff353babec68be281099a",
+    "git_blob": "7235e90215ac4d0d749be8436b27bdb3321c3d4f"
+  },
+  "Formalism.GradedWeylDivisibility.FockSpaceTableaux.NablaLDiag": {
+    "cached_sha256": "9443d0d8234b37e2a2661075457875e06c92aa961ac10bcfbd87d1778db34bf4",
+    "git_blob": "f61daa17769f19038b5387ba76c675d43d63be93"
+  },
+  "Formalism.GradedWeylDivisibility.FockSpaceTableaux.NablaLKBasis": {
+    "cached_sha256": "ff1bcaadf3a21fde81e20c73d8279c48bd7ec87625bf373b25018ff571c78298",
+    "git_blob": "ad64f57285959bab8a986100daa0dc52c4204392"
+  },
+  "Formalism.GradedWeylDivisibility.FockSpaceTableaux.NablaLLe": {
+    "cached_sha256": "eedb507c4badb1425658a77cbfce57a00f241daa3aca059db3a7bb349daad908",
+    "git_blob": "671bc0632a4116e451cc7306063e642adecb0333"
+  },
+  "Formalism.GradedWeylDivisibility.FockSpaceTableaux.NablaLTwMem": {
+    "cached_sha256": "00aedc007afa88099f2e9d80011c3ec6f67645021fd24586b008f16648616d61",
+    "git_blob": "0ae27a2230772bbe8e3a71a5ed4656b78db7de58"
+  },
+  "Formalism.GradedWeylDivisibility.FockSpaceTableaux.NablaLTwist": {
+    "cached_sha256": "d19942043db03d8fb0284051876913e019abd2809270fdad6409702f1c61ccf7",
+    "git_blob": "18af1d9c2d45defe901faf807ff708db51f28398"
+  },
+  "Formalism.GradedWeylDivisibility.FockSpaceTableaux.NablaTallZero": {
+    "cached_sha256": "a986933f328d69da7bade5d1e6d539e2122015f491fdc298fc271e7869a6bc4e",
+    "git_blob": "b9ab12fd8dd01306595e09d0d16d756bbe92ca38"
+  },
+  "Formalism.GradedWeylDivisibility.FockSpaceTableaux.PeelDecomp": {
+    "cached_sha256": "6a07d9d3ce3dfc56572fd825213f2520850f0d216663b5cd22c8d14e3eae723b",
+    "git_blob": "5d84eeba2c799770bf0b60fc0031f3a5f76cdaf8"
+  },
+  "Formalism.GradedWeylDivisibility.FockSpaceTableaux.PeelDegBound": {
+    "cached_sha256": "39ac5bb885f9cb6ca73185c865be1566c4aa0d0ecce924667c600d7e661040aa",
+    "git_blob": "2c2bc7d58c526509ee90a530e144abaa1e18198f"
+  },
+  "Formalism.GradedWeylDivisibility.FockSpaceTableaux.PeelHomog": {
+    "cached_sha256": "7b1bc434a30968fedddab0e0cb07e960c2d5b3b701a3487bdf233a9399273f06",
+    "git_blob": "d8cbc47531483860d4f008e1d7ce773c4ee4ae48"
+  },
+  "Formalism.GradedWeylDivisibility.FockSpaceTableaux.PeelLead": {
+    "cached_sha256": "4ccc4194f1eaf4f3ed57978e859ffa7f984d63a673bd472749e5b8189737c7cc",
+    "git_blob": "358f994269fe390c50b5e70712d504cbe087d7a0"
+  },
+  "Formalism.GradedWeylDivisibility.FockSpaceTableaux.RowActDiagWeight": {
+    "cached_sha256": "857cf7702e2b189463032ddffdb92340e7e9c8544c11012c98a915437f27172f",
+    "git_blob": "d57c430f4772b43e3312c33dde95925f115fe598"
+  },
+  "Formalism.GradedWeylDivisibility.FockSpaceTableaux.RowActMul": {
+    "cached_sha256": "eb57cd00f3b6f8176229ea148a029634048690e6d1522610d3301cc4ba77c5c1",
+    "git_blob": "59d281a6b3ad87fd0443b4a9d26cb92fa265a0b2"
+  },
+  "Formalism.GradedWeylDivisibility.FockSpaceTableaux.RowDivClosedGraded": {
+    "cached_sha256": "43ec98d43362f4826db55ab7e9a14760aeddf8595fad19fae2a53a5500ec23f9",
+    "git_blob": "db6f01a7ea9feb9b47fbe2f91a7df4ff81960689"
+  },
+  "Formalism.GradedWeylDivisibility.FockSpaceTableaux.RowDivStable": {
+    "cached_sha256": "a475c214144c5376ec980172874c7062cb6f6e670dd61ef138b08aac0274d7be",
+    "git_blob": "e7f98828fa5cfb18f4cfc094f92228216b23f0a3"
+  },
+  "Formalism.GradedWeylDivisibility.FockSpaceTableaux.RowNuSum": {
+    "cached_sha256": "9faa38cce17969327f29d640c293fec72acd71e9939dd6e61c36d2c37a73f539",
+    "git_blob": "f90d94bb6b152f2eb00fd37a67b9b47f0531e989"
+  },
+  "Formalism.GradedWeylDivisibility.FockSpaceTableaux.SMSAssembly": {
+    "cached_sha256": "f39dc32d3b4c7646a1f0cd8b81f5d34d5d9061829332fe2ae7ce23f0d3b9717e",
+    "git_blob": "f33db407a622464e18f6a6e745171e7efb2961ab"
+  },
+  "Formalism.GradedWeylDivisibility.FockSpaceTableaux.SSBasis": {
+    "cached_sha256": "a6380d0b125050bf914f1161412e8a40c0cdad0afb50c90870b0acfef9d7d745",
+    "git_blob": "96a254b11fed4cf6bcff6624c659bbc53b7be235"
+  },
+  "Formalism.GradedWeylDivisibility.FockSpaceTableaux.SSIdxFinite": {
+    "cached_sha256": "6217f4ba51a0466541d40ef84b98f3bbf9ca5717bbaee687e4effc6b538d3484",
+    "git_blob": "151aed4763245922c1f1a4fb31ade5193deb1a6a"
+  },
+  "Formalism.GradedWeylDivisibility.FockSpaceTableaux.SSYTExists": {
+    "cached_sha256": "4b8a39bc2a4901a6eec572ef82d5266218cc78d932b95d4921042c5d44048480",
+    "git_blob": "687c6f87d89a1cfd2ba503afd87c026a19449711"
+  },
+  "Formalism.GradedWeylDivisibility.FockSpaceTableaux.SSYTPeel": {
+    "cached_sha256": "2e571c78d3ba1bbfd09b285be2ee2dc8371b11171c5ee70f9173379f533ecae6",
+    "git_blob": "38ff8e4b3290f4f60ad3a09473739734b700cab0"
+  },
+  "Formalism.GradedWeylDivisibility.FockSpaceTableaux.StandardMonomialSpanOf": {
+    "cached_sha256": "c38588dfe71ce6b497fe27862de08683c6d4876714d6070b85575152ab86509a",
+    "git_blob": "69bd52676b6bf6c855280b2a9b27fa6b06bb9bde"
+  },
+  "Formalism.GradedWeylDivisibility.FockSpaceTableaux.SumIcoTsubTelescope": {
+    "cached_sha256": "cad69d34c624d3225777b7026b8e3cf87d2453b2f9eeba3ab99481ee30547ea5",
+    "git_blob": "8d5762ae11eb8e51d8e00154b8856dccb70cb4be"
+  },
+  "Formalism.GradedWeylDivisibility.FockSpaceTableaux.TensorBasis": {
+    "cached_sha256": "b9f47fb6d7189d92e062414398ffadddef7980b460115fa94815462cd7386185",
+    "git_blob": "06eba480abb478bf19aa54d313462a69d515ec48"
+  },
+  "Formalism.GradedWeylDivisibility.FockSpaceTableaux.TwoColumn": {
+    "cached_sha256": "a704b6112fbf73480f1f36d8d2ff63b6e61de782a8ec50c0aa5efa7c4b070c16",
+    "git_blob": "b863739eb4506b4fbcd716e0e59bce4ab5087fb3"
+  },
+  "Formalism.GradedWeylDivisibility.FockSpaceTableaux.WeylEqNablaQ": {
+    "cached_sha256": "0db97e7309bae3d8cfff709700dbd9d2ef2a3dbcae7225367db2a6eeb67b099b",
+    "git_blob": "1380f067e09973d90ada8a50adc6658f2c826bf7"
+  },
+  "Formalism.GradedWeylDivisibility.FockSpaceTableaux.WeylLeDual": {
+    "cached_sha256": "35ccf7d00147b71b56ad00824383a6e30c1d7f785d75304f6df9e3f6f478160e",
+    "git_blob": "b757fb61a00e47736b7769aedc470a554973e416"
+  },
+  "Formalism.GradedWeylDivisibility.FockSpaceTableaux.WeylRationalOf": {
+    "cached_sha256": "4f489738545ff8574737abba5b9c1f167a86db49f81d5c22bf630fc058cd0bd7",
+    "git_blob": "418730106e24bace1511457e63941d70c5609531"
+  },
+  "Formalism.GradedWeylDivisibility.FockSpaceTableaux.WeylRowDivStable": {
+    "cached_sha256": "318351a03045e2746859f9ce9910ab8e9fd5ef12782a70990cd401d228209409",
+    "git_blob": "e3dae94f999161730bba22fc146056a57769a605"
+  },
+  "Formalism.GradedWeylDivisibility.StatementA": {
+    "cached_sha256": "d7223fd3f10d8f10ed30b7199ad5e8161af399b506956748add7e6628f08c6fd",
+    "git_blob": "361cb57bd08568e6409dec09aea8e28b2929fd5f"
+  },
+  "Formalism.GradedWeylDivisibility.StatementB": {
+    "cached_sha256": "33ed0efdef7a4577c3cdea863dede81e80be85d1d30d1b7d91ee3be499906784",
+    "git_blob": "fac0378613102aee50b6a319cbdb2db971c7ed2f"
+  },
+  "Formalism.GradedWeylDivisibility.StatementC": {
+    "cached_sha256": "a6234420c63e240ac6057b78466e01b086d177811f15df2cafe83920f41915a2",
+    "git_blob": "2ccbcaddc261b07244a7c8523fe27caecd3f7d63"
+  },
+  "Formalism.GradedWeylDivisibility.StatementD": {
+    "cached_sha256": "a322e997e72d50ac4c290fcee7b82cdd94af7e3d57f8c2917dfcb798003152b5",
+    "git_blob": "6a8c2f06dafa9b0ec74b06ad37dc76cab767f396"
+  },
+  "Formalism.GradedWeylDivisibility.StatementE": {
+    "cached_sha256": "0b0ee2e7a5753e08c77979583fe53607733a9b9fb0f0a2564391ff6b24368d27",
+    "git_blob": "92673f16e36e44b9daf37ec1142b9628d70ea873"
+  },
+  "Formalism.HarderNarasimhan.DefsPl": {
+    "cached_sha256": "cd5e07051365d4d9eff0905eda21113c7de5074ac173ef9f0e640484d4b7adca",
+    "git_blob": "b6defb458880711e79cbc4d87d40f6f2db7385d0"
+  },
+  "Formalism.HarderNarasimhan.DegSupermodZ": {
+    "cached_sha256": "a9b9d25ec4973bbb49bcd85bc06508668a19844050742bf677d2ea97e9886e8b",
+    "git_blob": "c6dd9d13b4ff818e34bce903c6583b568f732108"
+  },
+  "Formalism.HarderNarasimhan.HarderNarasimhanProofs.DegSupermod": {
+    "cached_sha256": "c3cd77e1c484f306504614b3a36b605106d2c9fc5f667c036e1822347d8d2ef7",
+    "git_blob": "e8a064f1e78bb08854f9688518417d07c66ea3f4"
+  },
+  "Formalism.HarderNarasimhan.HarderNarasimhanProofs.DegSupermodZ": {
+    "cached_sha256": "4a7567135d6124104b6e83b7124a6e645d098ef656a25ff3a9a57f3c6357fbf7",
+    "git_blob": "3eaa8605e1f937ea00a6d25d0ca5d5fc8b9a895e"
+  },
+  "Formalism.HarderNarasimhan.HarderNarasimhanProofs.DiscreteSpanOfLinIndep": {
+    "cached_sha256": "1e765c9e2e7faa34eee5913743aa5d56ff7ddc41b69a723c7b8012495bc78fcc",
+    "git_blob": "ac1300f441bf9a00421576deefe9b9cf9bb867a3"
+  },
+  "Formalism.HarderNarasimhan.HarderNarasimhanProofs.DualPl": {
+    "cached_sha256": "f9ded12adf009b3ad6c60b5e227b83128cef8bc3c84df5faaf1668844cb6deca",
+    "git_blob": "87062eeec1a7cb76a77ec8799c89904538931d80"
+  },
+  "Formalism.HarderNarasimhan.HarderNarasimhanProofs.Duality": {
+    "cached_sha256": "0148c1fcc11163366d9fdb4a816e7bd8813246bdf4c01bc3a034ef9adfceef5a",
+    "git_blob": "df7f75045c2c3775b243ec86a426790eaeb490b1"
+  },
+  "Formalism.HarderNarasimhan.HarderNarasimhanProofs.Example": {
+    "cached_sha256": "93533c86529ca33687cd4ac87f54aafdb0de54a341c71925a27d9dbb56a5ec54",
+    "git_blob": "be89e0169ee473fd2ae7bf1d10017e7b36e35bec"
+  },
+  "Formalism.HarderNarasimhan.HarderNarasimhanProofs.ExistsSmulMemOfFinrankEq": {
+    "cached_sha256": "b990455658c61a0ee37efd5aa2c4ba955c0d37136602cf6e7864b804965c4174",
+    "git_blob": "2f54850a06e53b84e2864c3ce734035c0564556c"
+  },
+  "Formalism.HarderNarasimhan.HarderNarasimhanProofs.FinSup": {
+    "cached_sha256": "8b72f7cd38b1ec20033f6c90d09e8c0c940a2496e3cce3ac1673e202aa2ec034",
+    "git_blob": "04d9c2c00f3d56ddd30cd5a335f3e343d5b4f125"
+  },
+  "Formalism.HarderNarasimhan.HarderNarasimhanProofs.FrameHermSharpB": {
+    "cached_sha256": "3bf3ce5e8aa9168c35292d291d78224ed376e36c26c4a4f6ad253945187faa45",
+    "git_blob": "21681e780a1592a469189fded4ac2effef8b89e2"
+  },
+  "Formalism.HarderNarasimhan.HarderNarasimhanProofs.FrameLinearAlgebraFirst": {
+    "cached_sha256": "74782d83c57b9667ada3387b1a365ce99543c4498c3b5035aee444c328cf11c6",
+    "git_blob": "7b95526eb3a09eb56d7d5536a495bc37ff542f0f"
+  },
+  "Formalism.HarderNarasimhan.HarderNarasimhanProofs.GramBlock": {
+    "cached_sha256": "8eb9be14fa7f61a0e3e83b346fe2f07dfe3198e57ceb4735feb4ac3553d39776",
+    "git_blob": "76b0b0a6ecc5304106dc3a6bfeff284aebf331ef"
+  },
+  "Formalism.HarderNarasimhan.HarderNarasimhanProofs.HNExtreme": {
+    "cached_sha256": "f6ff4c1298b1e7a36d3de182a7da79e3a738cc9fd51b8915c0d312d2786a482e",
+    "git_blob": "0b5f6144699cd23b33963e1a6bb2e6ae7b52560e"
+  },
+  "Formalism.HarderNarasimhan.HarderNarasimhanProofs.HNSlopes": {
+    "cached_sha256": "3c3fefe3c3bd2d1bc3a9410177be086af1a2c4dcbb5fe1a1f74e3ff873c7bb59",
+    "git_blob": "4bf33837e1bbdc7941b5b0c0224dcf0877dc6de4"
+  },
+  "Formalism.HarderNarasimhan.HarderNarasimhanProofs.HNStep": {
+    "cached_sha256": "ef22dad3cf90ce8a68f322c6fded1ef8b0844a333ce56afd67ddcf017365ac7a",
+    "git_blob": "86838c8f233b764ce81cba39d76535874a4951c1"
+  },
+  "Formalism.HarderNarasimhan.HarderNarasimhanProofs.HtGram": {
+    "cached_sha256": "ac1957e1368a24fe02957d1c865c8bc164ea67f4975901a286fddf6524652942",
+    "git_blob": "2d2b86ea27cfacd6dcb75579424c95375dc0bb8f"
+  },
+  "Formalism.HarderNarasimhan.HarderNarasimhanProofs.HtImage": {
+    "cached_sha256": "1136b2233bf8990ade776f337f72bc11cc13614a50a04b1b92dc10646213aabb",
+    "git_blob": "3ebe7b186e60bc72c4d04804ad614c58c0a469c3"
+  },
+  "Formalism.HarderNarasimhan.HarderNarasimhanProofs.MuChar": {
+    "cached_sha256": "b4cb64e99c7567f475c33850a5eec5b594957c9eee543f09aeda15bb8d48576e",
+    "git_blob": "6d9adec89a6c2185fdaee4964753d1e5f2c566b2"
+  },
+  "Formalism.HarderNarasimhan.HarderNarasimhanProofs.PiSumForallInsertOnly": {
+    "cached_sha256": "0dc4cec5ab65d3e81c1abb2de86efeb42ff7d0dad560ce52c8bb7f9613c68194",
+    "git_blob": "be74b50eb0abb15ba244986863812e8628fa9965"
+  },
+  "Formalism.HarderNarasimhan.HarderNarasimhanProofs.PlaceSplit": {
+    "cached_sha256": "86eec888bb0d64a12960a578ec7db4e71a756456bd7a3944ed49e2bae02f9d94",
+    "git_blob": "f442f465a9116dde56cd94546e34f3f648bdcc15"
+  },
+  "Formalism.HarderNarasimhan.HarderNarasimhanProofs.PolygonSlopeSum": {
+    "cached_sha256": "13f240b48dfdf8a378090d21ed2e1d05ea037f365bfb3e609c70ebac06dad7bd",
+    "git_blob": "efb14ec2434435984db9836de484f2e064a9df8f"
+  },
+  "Formalism.HarderNarasimhan.HarderNarasimhanProofs.QuotRealize": {
+    "cached_sha256": "2f73a2c21bcc1b5994bb58d5c10d2978bdc3dbbc96ddfeff2c7636cfd896befc",
+    "git_blob": "5578fe78497f8755fd44f580dd9a63b8e057721e"
+  },
+  "Formalism.HarderNarasimhan.HarderNarasimhanProofs.RatioMax": {
+    "cached_sha256": "2afca03e914594c888222e47b8485fd3bb1d788beb0a9279207d7f6695cd5642",
+    "git_blob": "6b3577a4f952c64f575098ccbf53b3e3c97c3091"
+  },
+  "Formalism.HarderNarasimhan.HarderNarasimhanProofs.Rerealize": {
+    "cached_sha256": "7d22c232404433859cfe4ded6f35dd258b3883fc647e93e582292ce0a2f097ff",
+    "git_blob": "934f5ae51c4c1b13011423c8cfa8a21f78c22c2c"
+  },
+  "Formalism.HarderNarasimhan.HarderNarasimhanProofs.RescaleCovol": {
+    "cached_sha256": "c0d7a50da13db9fa1c79c9be4578ad998a3ccf2759792e12f07c73d58c974d52",
+    "git_blob": "a97813696e34680382c52ee003b9471fd7e76115"
+  },
+  "Formalism.HarderNarasimhan.HarderNarasimhanProofs.SatBasic": {
+    "cached_sha256": "59b1c44cc2eb0800fbfbb7128274672f11236ecdbc74d4a6739340b120e00d80",
+    "git_blob": "d1bc25bb41981bb4a1d107b19630be97010c3a3b"
+  },
+  "Formalism.HarderNarasimhan.HarderNarasimhanProofs.ShiftInvariance": {
+    "cached_sha256": "d95a652c656cb3eb64e14de19e5891eb5ddc4fbdc3b725b41a18c518797b825c",
+    "git_blob": "8d633427ec2f148a230aaa0b21aa259b1fb8c332"
+  },
+  "Formalism.HarderNarasimhan.HarderNarasimhanProofs.SizeIneq": {
+    "cached_sha256": "a36129fe1f783f7d30bfb516a1b6d7547e9c341b7da993c9bc1483403f336a67",
+    "git_blob": "3166c1589d908e5fde85e4cfcd20e8201bda91dd"
+  },
+  "Formalism.HarderNarasimhan.HarderNarasimhanProofs.SizeMu": {
+    "cached_sha256": "f9af53be7ad6d87feb26d04ed05e9d78be8e6ddc5cc205d359c02aee97bb0f66",
+    "git_blob": "086bd6cb5940ecd807566c0ef83343551345fd8d"
+  },
+  "Formalism.HarderNarasimhan.HarderNarasimhanProofs.SlopeIneq": {
+    "cached_sha256": "88688498bf1026f8e794362e1267f77de151408b7e3c18f2e29ef1e0a4bea764",
+    "git_blob": "8f0446fe0ee5419a6937268644609d9ce760e292"
+  },
+  "Formalism.HarderNarasimhan.HarderNarasimhanProofs.SlopeIneqMean": {
+    "cached_sha256": "ebca83459269e050ff4393af3a3dbea7c33e5e95e5aba558dc7970cb1df266fb",
+    "git_blob": "7525fb1fa80a8138efc88b5a2a26e4face840d5e"
+  },
+  "Formalism.HarderNarasimhan.HarderNarasimhanProofs.TheoremFSharp": {
+    "cached_sha256": "843f3fa842fba10ead58c71e5d870c4423b64c40669d6530fd54f1e94f56b9af",
+    "git_blob": "a8f8c3bf7560fbab8302f3127fcaf0f5d9eacff8"
+  },
+  "Formalism.HarderNarasimhan.HarderNarasimhanProofs.TwistFinrankEq": {
+    "cached_sha256": "03ec937af4b2e035a8d695254484523da58233eacdf99fa722b4bcb1714b0dbd",
+    "git_blob": "0a1964f6fc60d02d10280fae2c8542204601533c"
+  },
+  "Formalism.HarderNarasimhan.QuotRealize": {
+    "cached_sha256": "a23546108ed0ad9ff9d5145a7fdd2e517e52a1df6d8a61dac8ccc62507fd35f0",
+    "git_blob": "e1ae88811f40f6fdccae2e773c4623e2328881b9"
+  },
+  "Formalism.HarderNarasimhan.ShiftInvariance": {
+    "cached_sha256": "8d18361ed8f3162eda051920f0595fcc165cff1cd5e67eb6f7bcfbd76c670122",
+    "git_blob": "95579d92ca3042890937c462b769cd5885a79868"
+  },
+  "Formalism.HarderNarasimhan.Statement": {
+    "cached_sha256": "aabfc443745ba6f86e8bedaa5a90ca7769564bfa73c0d5bdbb9da929f3e29354",
+    "git_blob": "7b4b0853ff8c38c8de7219dfbb6af4de49b67fb7"
+  },
+  "Formalism.HarderNarasimhan.StatementFrame": {
+    "cached_sha256": "f58dc081e2cc4244fcdfdac225e37e06142f79330df790be5f8ec6fbb1addeac",
+    "git_blob": "1a7aeee3ff3d7872c4525d7f6fb2a9289d006ed2"
+  },
+  "Formalism.HarderNarasimhan.StatementFrameF": {
+    "cached_sha256": "1339d273ac6ac229965bbb7ae02dd5f5a34508815ec45322955003d5f44a1d2c",
+    "git_blob": "3f17f6e4ae975f00dbeafdc3fb9e8b66f8c60c1d"
+  },
+  "Formalism.HarderNarasimhan.StatementPl": {
+    "cached_sha256": "69ceee32ac8bf3129253a33ce0d9445190fcd433b8929295654c6dd75a78a17a",
+    "git_blob": "0ef994d7e7998e4b46dfce96b8ccd24bebe4bda8"
+  },
+  "Formalism.HermitianLattices.DefsCS": {
+    "cached_sha256": "71e19d4dd88f743f3987a5ac494520b277e26bc2c715e6bf955c68c1d8c72da5",
+    "git_blob": "3a64350dfc17288e6da1a086a3cf9a72fa112ba2"
+  },
+  "Formalism.HermitianLattices.DiscrFinite": {
+    "cached_sha256": "222093aead10d3a959a7d04755c0378b3b695854329b61cb00bfb754b76180e6",
+    "git_blob": "40fb75d5d198927de82de27e6fbab116d24267b3"
+  },
+  "Formalism.HermitianLattices.DualOrthSum": {
+    "cached_sha256": "c6bb1679e4e383dce5e77de0f0becc51f43c9a507a54171c849fc3a21361321b",
+    "git_blob": "2e89c45ae3f8b2871f3e8af5958c909c685db32b"
+  },
+  "Formalism.HermitianLattices.FinalNeighbourConstruct": {
+    "cached_sha256": "fcece53c704702912173af4d113f7ef380e8da4a8ff712cfef2148905f789105",
+    "git_blob": "6aec651c1dd2b1f2d9cbbb87d9de68d5987893e1"
+  },
+  "Formalism.HermitianLattices.GenusCovolBound": {
+    "cached_sha256": "2e75a28e52ec2a408e150ae296e9a859f128de7a3916b7e479831a6ff886e7a0",
+    "git_blob": "9fb26e8678fd11422f78348180c317578cd2c88e"
+  },
+  "Formalism.HermitianLattices.HermitianLatticesProofs.AutFinite": {
+    "cached_sha256": "c1c682372b88771efbcb19aa1483fe285f3122b3651e74c6b212cbb7d2cf1762",
+    "git_blob": "357b3b9230ededead598b93ea5c8ae872677e95c"
+  },
+  "Formalism.HermitianLattices.HermitianLatticesProofs.ClassSetAssembly": {
+    "cached_sha256": "b64191a7a95cf7eae1fc5adbd3888e8b67273d7180914b68216598a06462729b",
+    "git_blob": "8f9f876dc321883e9ec9bfe3c9523caa4e7c8562"
+  },
+  "Formalism.HermitianLattices.HermitianLatticesProofs.ClassSetFinite": {
+    "cached_sha256": "74544b408258ee461a62c6e2685c446340969a327ffc59c59ba4d7e993965459",
+    "git_blob": "ad32f7eddfef1036c6f300635b084ea85b6f1705"
+  },
+  "Formalism.HermitianLattices.HermitianLatticesProofs.DualBasic": {
+    "cached_sha256": "8fbb7650b161cbe18c605671c5467bbf9f382ab0724f7030ea91dcae77ea71a7",
+    "git_blob": "01f01c4a0070cac63bcd8676c52a1157a68eeda2"
+  },
+  "Formalism.HermitianLattices.HermitianLatticesProofs.DualLattice": {
+    "cached_sha256": "71db80c9e84ff043338c570b91728db66228f3971710c12af24e894e7ad1e4e7",
+    "git_blob": "3be2f41e8ad5d57092b09539a3ad129d51461753"
+  },
+  "Formalism.HermitianLattices.HermitianLatticesProofs.DualOrthSum": {
+    "cached_sha256": "2daab51958d8b6096fa15a8f802af284a1f4017566dd598e91ceec9836baa7cc",
+    "git_blob": "e5fb209535f3c806ba3660f32832abe68fd99c90"
+  },
+  "Formalism.HermitianLattices.HermitianLatticesProofs.ExampleZ": {
+    "cached_sha256": "d30b3794145210a9dcdcc3a34d3c4fd51b6eb67c14184c33d7f50fcc01661a6e",
+    "git_blob": "d5f85a9994216b3c883c7a03ff8d7571b9c205a1"
+  },
+  "Formalism.HermitianLattices.HermitianLatticesProofs.FinIntermediate": {
+    "cached_sha256": "808a590719cdc82d41133e991d81672717ce04d918093c432e469f07b4bfe238",
+    "git_blob": "154c6c64ba26ceb73dd8159957ec0bfd24387fb8"
+  },
+  "Formalism.HermitianLattices.HermitianLatticesProofs.GenusBasic": {
+    "cached_sha256": "128a167329fdabc51c1ce0c89b513564f2bc5890a8b3a9211c8a8776c05b31cd",
+    "git_blob": "6ba0671adae4dd169fb117a8592f518272dfb868"
+  },
+  "Formalism.HermitianLattices.HermitianLatticesProofs.GenusCovol": {
+    "cached_sha256": "3d463dffbf196c8e90e76e14be078f2eb11a205efb040d514f7f3759bd319e9e",
+    "git_blob": "37e0c28549d79f8b7f9719fb750abd7902cb67e8"
+  },
+  "Formalism.HermitianLattices.HermitianLatticesProofs.GenusCovolBound": {
+    "cached_sha256": "5e09adbc204c015710176868ea518fa2d5a593370b43527502da17510a2a62db",
+    "git_blob": "f62406febf74a444f6da744e796a056d0895a35a"
+  },
+  "Formalism.HermitianLattices.HermitianLatticesProofs.GenusScale": {
+    "cached_sha256": "3a01cd97a7020b620dd5daac93dcb461d7ab652c4c5769f3e5135b3d22fa0abc",
+    "git_blob": "6f2d28ef43a563f5b24acb5a1532a324d05fbb95"
+  },
+  "Formalism.HermitianLattices.HermitianLatticesProofs.IndexBasic": {
+    "cached_sha256": "8705c0b641d7f3cfa14b796b81bfb5d26781bc9778216f3c0cb1db8ad8b4e020",
+    "git_blob": "066a9e8192dbd11db96a8ec277a865393f33f3b3"
+  },
+  "Formalism.HermitianLattices.HermitianLatticesProofs.IsomAct": {
+    "cached_sha256": "9bf899a7f4d09e6044f48f2af0fe2942c9e487bcf09dbe8d1cfbcdcb1020e328",
+    "git_blob": "3ed200c89396d19b7551c91c85311099b0a5aff1"
+  },
+  "Formalism.HermitianLattices.HermitianLatticesProofs.IsomOfTrace": {
+    "cached_sha256": "55d47ac7f3a656b91b9bf0a3cf22c95d51e30927408796c55488b00cfdff961b",
+    "git_blob": "0a4d7a6abffd012f6b1ea221e474a053c6db7d83"
+  },
+  "Formalism.HermitianLattices.HermitianLatticesProofs.LocBasic": {
+    "cached_sha256": "c14809f3f9fded7c10a6abda93c2708796319c1c5217fd4104dfdcdb3885ff40",
+    "git_blob": "5490ecedf0912a6f836e7db5d9d87d9138d0de6f"
+  },
+  "Formalism.HermitianLattices.HermitianLatticesProofs.LocDual": {
+    "cached_sha256": "b638a81d55daeae14561ab3c437e634e75e186e92d18653ca994a2c798dc91bf",
+    "git_blob": "e9bc585d8e7140b6d414142ab669bd931d9943be"
+  },
+  "Formalism.HermitianLattices.HermitianLatticesProofs.MajBasic": {
+    "cached_sha256": "a250c3374df77a7de46541b13c5a64401cfe9c3c7be9a8c56551a4cbb79d56ea",
+    "git_blob": "26584f89e9c9a7589d5adaabe82ddc1ad4c40722"
+  },
+  "Formalism.HermitianLattices.HermitianLatticesProofs.MajDual": {
+    "cached_sha256": "751f331bb5ef66fd6cf2bfec0cc00a9ccc95a8d145197a52cf2c4af48e28832d",
+    "git_blob": "444ee7fa853b520404ac10b1da83de7e1b2bb111"
+  },
+  "Formalism.HermitianLattices.HermitianLatticesProofs.MajLattice": {
+    "cached_sha256": "50899d9251cb9241d2c4c579ffd059e609d8270908353a3e64bf456db5f7a8e5",
+    "git_blob": "3c20e6ebab48fcd0b5aa4566354aa3bcbb061d36"
+  },
+  "Formalism.HermitianLattices.HermitianLatticesProofs.NeighbourBasic": {
+    "cached_sha256": "d594af627f9893d59aec11e03e376b3ea35ea99ab0d79628ce351726ed06eb56",
+    "git_blob": "a159f2767e803e1e730327984cb87599193c11ea"
+  },
+  "Formalism.HermitianLattices.HermitianLatticesProofs.NeighbourConstruct": {
+    "cached_sha256": "0d8dbe3e70456c10589c786471e9a2300d26e1ad1f2aa63b52812da8118aed52",
+    "git_blob": "17c96a5fa8125ce1ef06ca2d27063380d4b866db"
+  },
+  "Formalism.HermitianLattices.HermitianLatticesProofs.OpBound": {
+    "cached_sha256": "29d7964e76906cd211d69e67e316081205b6ddcd1419ff1f0ab381c7973b6657",
+    "git_blob": "58347cc2cdb3d4a53993176b850de2bdf67ecc3a"
+  },
+  "Formalism.HermitianLattices.HermitianLatticesProofs.ShortVectors": {
+    "cached_sha256": "05e79fae9294378c2c30ca0e39b2322c6ad089296ba0075605bdc8a52c951971",
+    "git_blob": "634f13b9d68503327d6cc4ce058d6413b88de4d1"
+  },
+  "Formalism.HermitianLattices.HermitianLatticesProofs.ThetaBasic": {
+    "cached_sha256": "cd645937e3a7dbee4ff8ffdbd0cffdbd1b2ed597616356d089148c6e64d83778",
+    "git_blob": "1ae2e69450214f1189c1ecb0a4c200a27a0f76fc"
+  },
+  "Formalism.HermitianLattices.HermitianLatticesProofs.ThetaSummable": {
+    "cached_sha256": "ac59f3397d1203493f82eb5eca82671695155a188113d37542700c7b0aa107a1",
+    "git_blob": "860155642d0b708792dfbf2b56cf6b33227e09ee"
+  },
+  "Formalism.HermitianLattices.HermitianLatticesProofs.TraceReal": {
+    "cached_sha256": "f1de0eafe2dec3271218163d14cb9a3b83d7ddc9b31ab864cd58357b91f023a0",
+    "git_blob": "71531f7e894a907456ede0b790351860935dad95"
+  },
+  "Formalism.HermitianLattices.HermitianLatticesProofs.UnimodUnramUnique": {
+    "cached_sha256": "e9854c1213614c7b5b28ca8b8f1b1ac1c5811c4279a24c89de4c9868a0bae8b5",
+    "git_blob": "0dbcad7011852702526de3f7a4b0775b568f2739"
+  },
+  "Formalism.HermitianLattices.NeighbourConstruct": {
+    "cached_sha256": "5ff43ee436dc2de9391642a7418b3999fc8026aa94d311d008b5bcf53e7b8be5",
+    "git_blob": "4ef51491e1ed8961df55e6e9ef252963a8a70adc"
+  },
+  "Formalism.HermitianLattices.StatementJac": {
+    "cached_sha256": "ac48d381090353a3bf030d8d4b665b78c7928eda0cce7074ee22a2ab6233853a",
+    "git_blob": "3ee17b091157374992add9b1443ba2c8e86c86d6"
+  },
+  "Formalism.HermitianLattices.StatementLat": {
+    "cached_sha256": "d02df63391b2ec9f45d811233314f45919dc306c0d2f034e0096ec78f0477783",
+    "git_blob": "4f84ca3c8738dca6ffab6b32fdf4ee309fed05c4"
+  },
+  "Formalism.HermitianLattices.StatementMaj": {
+    "cached_sha256": "d549465ecb4143b5425af7b42a4117c279d21cd3210f94ba298a3f973a79d510",
+    "git_blob": "57977ca7fb685ab8a250b62ad0fcfd64141c10dc"
+  },
+  "Formalism.HermitianLattices.StatementMass": {
+    "cached_sha256": "065809666977afbbc2fa87d8cb8865e99ebd7cd5a630ed9bb1fe404fcc749a4b",
+    "git_blob": "33a3ea93298eff7969409462ddfc1ed22f173939"
+  },
+  "Formalism.HermitianLattices.StatementTheta": {
+    "cached_sha256": "01c3d86830b73a0aea88f02d6c70b8b5ddbec4ec0a473dd52e03d8923ceb462b",
+    "git_blob": "2684a18b3882d4df1845161ce9ce8f74862ae3ec"
+  },
+  "Formalism.HermitianLattices.ThetaLEuclid": {
+    "cached_sha256": "aa907d7ef2f210f05af4b7a308cdb8d7fe60c64013564d5ffbbc141420aa8f52",
+    "git_blob": "0304ca0c12ae21465a3b3a46c8fdd62965c20223"
+  },
+  "Formalism.LatticeLocalGlobal.LatticeLocalGlobalOfGlobal": {
+    "cached_sha256": "1c6d10f137cde27316bd6b182c2f68727bbf4aa2586c0b2bedf7ebc5fdc2974b",
+    "git_blob": "5dbf799f0bb75afbb20e51dfaeeb32682bba04fb"
+  },
+  "Formalism.LatticeLocalGlobal.Statement": {
+    "cached_sha256": "932f59f81880bdc5e4ac664cfe0cfa66bc78642abf371c88a91ec2117043306f",
+    "git_blob": "80bc78f5c1fb3b09151b6077f3275324ee6ce6d3"
+  },
+  "Formalism.LatticeSlopes.CovolAntiSameRank": {
+    "cached_sha256": "3abae32c9d7976574719542016da63c3e88c2279319a4e6d24ba038974ae2dc4",
+    "git_blob": "bd42794e120bc3f2315bcb1099e6564e80378b40"
+  },
+  "Formalism.LatticeSlopes.ExistsSaturatedSlopeEqMuMax": {
+    "cached_sha256": "9fce5baa17f8adb18fe352b1f9b05e15de9fed643c84ab70bb4f3ee4a444c175",
+    "git_blob": "9eb08d2ce06ff2132fd21acce69ca8ba39316e3e"
+  },
+  "Formalism.LatticeSlopes.LatticeSlopesProofs.CovolEqCovolume": {
+    "cached_sha256": "7cb31982f68e75e7e1a23e104772bd2a147df1e3c4145ff7e3d01add853e6b27",
+    "git_blob": "37b74aebd5c516293d2fd32b419443218bc8ce07"
+  },
+  "Formalism.LatticeSlopes.LatticeSlopesProofs.CovolEqGram": {
+    "cached_sha256": "e52cbabf81623fe3cce5443df1d6dbf0657a1c12d425dc27c57fadcd12e8871f",
+    "git_blob": "dd73a28cf8d3a11bda18e2026e6a7a987055539f"
+  },
+  "Formalism.LatticeSlopes.LatticeSlopesProofs.CovolPos": {
+    "cached_sha256": "a64cab7a40f0821d2317ad0a37f3c314b932c422d4281611f9bdf6f2cb0f2343",
+    "git_blob": "ba0abd72a25142ef97109f33c437a16839e343f0"
+  },
+  "Formalism.LatticeSlopes.LatticeSlopesProofs.DegQuot": {
+    "cached_sha256": "461ffe80cccfc966a193d16542c0a530dc5fc79a45e6ced9aa132060673fcf42",
+    "git_blob": "4293b156ddced2f179c245027d45d314b7d317fa"
+  },
+  "Formalism.LatticeSlopes.LatticeSlopesProofs.DiscreteTopologyOfLe": {
+    "cached_sha256": "cad9066bb1c5374185eaa874f315d617a16e2df67d25677eb440bdb8c55b46ea",
+    "git_blob": "2673b513c4771c707673d18e79c5b3fcc57f21de"
+  },
+  "Formalism.LatticeSlopes.LatticeSlopesProofs.FiniteSaturated": {
+    "cached_sha256": "9ecd637139eb0aeae65b14b7de762f345e2d8282b9d29d62a765ab1b5d9e187d",
+    "git_blob": "a29491ec10023ba13c74f4c005be90c310b2213d"
+  },
+  "Formalism.LatticeSlopes.LatticeSlopesProofs.GramDetLe": {
+    "cached_sha256": "8de275c71206934f58ce7f8505ff70ebb86d2ddd1b6033f4e49408d2b2f56d4e",
+    "git_blob": "0c69401a60ac25bfb6d6c1f406497db5e0f39ff5"
+  },
+  "Formalism.LatticeSlopes.LatticeSlopesProofs.MuMaxAttained": {
+    "cached_sha256": "5252160d9e17465f7951960ef55c89037528f630eba1130675ee2e8124f66864",
+    "git_blob": "b538d679f68656cbcb0164c9dc45ca10337694ab"
+  },
+  "Formalism.LatticeSlopes.LatticeSlopesProofs.MuMaxLeMin": {
+    "cached_sha256": "f212ed17a38f70e57d4197082b7d194ff3dadef6bddfc94db37f18ad74a6ef4c",
+    "git_blob": "e8bb0f695fc07e2a48325a7eab1c0b28f9fa8c4f"
+  },
+  "Formalism.LatticeSlopes.LatticeSlopesProofs.OrthSum": {
+    "cached_sha256": "b3f0953dc41a2a85badeea02bd7b9feb101afd79936435e238dbee6664e3bbfd",
+    "git_blob": "ec67df53919db06e787ce109714e5a4257459383"
+  },
+  "Formalism.LatticeSlopes.LatticeSlopesProofs.SaturationProperties": {
+    "cached_sha256": "b0ff51b27b23a3ea0a8986457bbf7e1cf4ddf253d58a25a7a51897ee8eb2d4ba",
+    "git_blob": "06f7b62675729a91c197089abff07ba6c21c924b"
+  },
+  "Formalism.LatticeSlopes.LatticeSlopesProofs.ShortVector": {
+    "cached_sha256": "f954053245c08529069a5d1ab2d01e239fb27b6a30104fa6e5e3452f17b9a75a",
+    "git_blob": "452c424ec2239f898310cf3e4074978eac9ad6ba"
+  },
+  "Formalism.LatticeSlopes.LatticeSlopesProofs.SlopeInequality": {
+    "cached_sha256": "c1c76d462d99b630658b8c11247bc9512c76e6e848ebdfbf1599a379859f23f9",
+    "git_blob": "08b8c81f8273a2c9bf59f8ae34c269492753284b"
+  },
+  "Formalism.LatticeSlopes.LatticeSlopesProofs.SlopeLeMuMaxOf": {
+    "cached_sha256": "89d4b073909bb24cfdad3bd53582fa2392b1c21977251923a08ebf91a33c02fe",
+    "git_blob": "98cbf70eb6e176617820d113b2cf25d30a7abeb1"
+  },
+  "Formalism.LatticeSlopes.LatticeSlopesProofs.SlopesBdd": {
+    "cached_sha256": "2f10540d9c1db3bec815fb66eda19323476292121f987f3b7830bddb97d23ef8",
+    "git_blob": "7fd5f6d227a7defc8de8bf6b33fea6c38923441f"
+  },
+  "Formalism.LatticeSlopes.Statement": {
+    "cached_sha256": "714d08f26b276edc936a84988a64923e28a1e2a7c6eb543932db407eccde0a56",
+    "git_blob": "c059491136c61c9a2002764f252a729531738ef4"
+  },
+  "Formalism.LatticeTheta.LatticeSummableDecay": {
+    "cached_sha256": "944328e043847082141ef38253f7050d71d982bb7efeb2d8181b6afce18370fa",
+    "git_blob": "411ff9b8300481b101d48f582ddefc92d6731b74"
+  },
+  "Formalism.LatticeTheta.LatticeThetaProofs.Assembly": {
+    "cached_sha256": "218eeba9c8ed9706e1e0b74c093b7b526548922f226a8ca75582f69e8031b9ad",
+    "git_blob": "d3cc11d100be4262ea2ede36761eba9ab1f36a87"
+  },
+  "Formalism.LatticeTheta.LatticeThetaProofs.CovolumeDual": {
+    "cached_sha256": "fd1e4907fef5ca63aeb207037e7cedcfa56ec277db59b075e25a0001bf105f84",
+    "git_blob": "0019c662ecc06273f5ba77cc6e703c1cb0bb9d31"
+  },
+  "Formalism.LatticeTheta.LatticeThetaProofs.DualLattice": {
+    "cached_sha256": "9a0831ad00551cd86341fe9a504af5029d3aafe63118ce07f3a9bd24a7a2efa6",
+    "git_blob": "f76d844e7693d24efa229f67a25449405185b4d3"
+  },
+  "Formalism.LatticeTheta.LatticeThetaProofs.FundamentalDomainEqPreimage": {
+    "cached_sha256": "783ac89d886bdd49c00e63b0f4a1c87634017a56da51ee11cdc99981233475fc",
+    "git_blob": "8d89fab23a2fe93c6e996a6d633bb8fb1ff1f7ae"
+  },
+  "Formalism.LatticeTheta.LatticeThetaProofs.GaussSchwartz": {
+    "cached_sha256": "2cd1f018d0800235c0b7714196f0f11cf69dd3b175eef79cbf3dde6a6596e44e",
+    "git_blob": "fb5a57b37d9411531928e29d198c3ef7ba969614"
+  },
+  "Formalism.LatticeTheta.LatticeThetaProofs.InnerDualVecBasis": {
+    "cached_sha256": "16fd158014cfca2db92bef114bc552b83c4dd718e1b62881aac1ebf9603f3612",
+    "git_blob": "ad7a0fdf1279d76abfacb85cbe22fbe1b4a1c4b0"
+  },
+  "Formalism.LatticeTheta.LatticeThetaProofs.LatticeFourierSeries": {
+    "cached_sha256": "0e90ddd0d901d2a220d2de95b64f9a93ae86f9bfd1c4345eb8b0928165b6273c",
+    "git_blob": "8d2c4816b1e3acd4e37102964113984c8822d448"
+  },
+  "Formalism.LatticeTheta.LatticeThetaProofs.LatticeSummableDecay": {
+    "cached_sha256": "f7c3f73938e972dfbdd25114ed37461fc20d36c6d4baacb5e36355d72af10574",
+    "git_blob": "b7f8ff93004fc0beae788b9ac666c2e434a40599"
+  },
+  "Formalism.LatticeTheta.LatticeThetaProofs.Periodization": {
+    "cached_sha256": "bf8f31f2540fc93bc94af3ef1a21327d2930dc3389b5c45cd35642d245559d01",
+    "git_blob": "fd54494e70d11312ea8445a6c250da80c800496e"
+  },
+  "Formalism.LatticeTheta.LatticeThetaProofs.TorusProjIsOpenQuotientMap": {
+    "cached_sha256": "9d6aa586d2a2c51fe2da5af1dbfe3d9e2b8654b1f631c0de23c6e1e55452439f",
+    "git_blob": "b8c6f17bc0bfbc813bbb8db68b2e539d452929f7"
+  },
+  "Formalism.LatticeTheta.LatticeThetaProofs.UnfoldCoeff": {
+    "cached_sha256": "7253bb1c7ade5a360d70c02c36fb84d8d1fba12b8dd8c7571854085bd673f71e",
+    "git_blob": "1bd19c08c29623ba7b054f623ed6093fdd7bcc9f"
+  },
+  "Formalism.LatticeTheta.Statement": {
+    "cached_sha256": "230d169755f3fc184052ab09eba1214e8d1f0e0a36ff9768155056b6d3867aac",
+    "git_blob": "269cfaccee189005cc0e4907b08b0005c520cf9e"
+  },
+  "Formalism.LatticeTheta.ThetaShiftInversion": {
+    "cached_sha256": "53a74b2586397704c16b960354ed1e824ae4c847e1e24fce1caeedae62915454",
+    "git_blob": "162cdea9aa607b0a8a259f16c0d2fed390c40fce"
+  },
+  "Formalism.LocalRingCardinality.AdicCompletionLocal.InstIsAdicCompleteOCSpanSingletonSetCast": {
+    "cached_sha256": "3f5aeb16821e8eac8c5d2b293af32e0e7c055932ee605b3f9519974e5c20714b",
+    "git_blob": "ea7933b372b7122c2d1cfaaf4ec534ab7f01a22f"
+  },
+  "Formalism.LocalRingCardinality.AdicCompletionLocal.LocTied": {
+    "cached_sha256": "4e2066bb35815d4e3157c6d7e4d31013a95c6a0ae020ab18a9ec8902bb98e15f",
+    "git_blob": "04ff47e4089f417cce7f6be514412dbadac587da"
+  },
+  "Formalism.LocalRingCardinality.DataArith": {
+    "cached_sha256": "18fece6cb76cbf9dd3d00dfaea924c11c428bf12330c8bf7026a0c8f92d31925",
+    "git_blob": "851c12aac84bff1368763793613732f94dd15ff6"
+  },
+  "Formalism.LocalRingCardinality.DataCD": {
+    "cached_sha256": "7418c10eb7a15e7ca2cafe4a5b79dd76dad9abfb3b88f853eda40218dbc0d7b5",
+    "git_blob": "449d5479b4d8ec9baeaebd3459f95232094ae222"
+  },
+  "Formalism.LocalRingCardinality.DataCoeff": {
+    "cached_sha256": "92250148a61495d7005b6c5fc946ae48408e0506dfd7f00e13b755a7d9cd6167",
+    "git_blob": "1edf6f84deb553e6d959b156c25c4b10111de2d3"
+  },
+  "Formalism.LocalRingCardinality.DataForms": {
+    "cached_sha256": "f5eefd4a9d081b1dd69fe1be1457c9051bed668693b8181459a7f6197b873de1",
+    "git_blob": "f9b5b9ec6fa27dcdb7e1ad620b09ecfae28daa5b"
+  },
+  "Formalism.LocalRingCardinality.DataHost": {
+    "cached_sha256": "5517e509d6d06c9c417da9b54664071c2bf39c13b88d1494102f59a6a747b1dc",
+    "git_blob": "7e9af8ab364965c62be250ae93974098141598c0"
+  },
+  "Formalism.LocalRingCardinality.DataJet": {
+    "cached_sha256": "655cf2a0d2ede8c777f61efe70a5e4635951b74c4d7f9b9616a120b5b28b182a",
+    "git_blob": "dfb97914925afd71ecf4b4ebe39d983394bae180"
+  },
+  "Formalism.LocalRingCardinality.DataKernels": {
+    "cached_sha256": "ef6a12ec58c67c4beb9658555b3a1d1ecf7ff441a51e2bdb117e6ce189a277ea",
+    "git_blob": "cc77d4f90296cb1c49f01cfb28444870ca149778"
+  },
+  "Formalism.LocalRingCardinality.DataParams\u2082": {
+    "cached_sha256": "ea7e407b8ea584417538e396e35dc8c3a40edb4c61529c223304b3d63821b2ab",
+    "git_blob": "50914500995df91e2646d91a6c5c99a7e603a51b"
+  },
+  "Formalism.LocalRingCardinality.DataRows": {
+    "cached_sha256": "a9d16cfe962cd7ca292b1928c766763ac5227aba099c285d83b9ddd60c4f29bb",
+    "git_blob": "fcb081863d56e321653e278bb345ed8266cca0a5"
+  },
+  "Formalism.LocalRingCardinality.DataSpaces": {
+    "cached_sha256": "ababe0479cf3cef3b15cce95cf8ef2379401f5a287ce56ca70c293bdf53cc880",
+    "git_blob": "f1d2da346f8996c2527724b50fd6409dc8ab937b"
+  },
+  "Formalism.LocalRingCardinality.HostCls": {
+    "cached_sha256": "52be97304b3376eb781c65cb1925026dd4f65db096ab6fac932df9d89ce63196",
+    "git_blob": "a7a9b329340eab5175245043e0abd7656d7fe599"
+  },
+  "Formalism.LocalRingCardinality.Params": {
+    "cached_sha256": "9ef3cfde88c656fa1dcbad7b1948f697ba77284837a836a392ff2365b48e25aa",
+    "git_blob": "09d1aeec3049821ed6d190c7970cdca9ec5b34cf"
+  },
+  "Formalism.LocalRingCardinality.RankBoundMonotoneInDimension": {
+    "cached_sha256": "a6c08862169f394718cd3d7373edc16e58a6a40e17171073ccbdd0ae0c58c6b6",
+    "git_blob": "0a69a3d8564a0e16898eefa795db0097ef0e902f"
+  },
+  "Formalism.LocalRingCardinality.RhoDetPrimeEqMuTildeMulChiPow": {
+    "cached_sha256": "3265eb86339a2475558d9ec8c1c446e56d5a8353e42641ab35daea8cefeb3941",
+    "git_blob": "6ab57a7f313a9f8c351005051933a60a22a0da08"
+  },
+  "Formalism.LocalRingCardinality.SpanPowerMembership.Places": {
+    "cached_sha256": "38af8f02c689316fbe9aa92ecd612c5eec51bd3c266b9c8b8b121a868943e604",
+    "git_blob": "89f231062dac74e952a34fb072b5996c2be9fd9b"
+  },
+  "Formalism.RealPlaceAnalysis.Complexify": {
+    "cached_sha256": "c76e3e778a81be060dc5fb501091d45d42a1669352d857254de67924d34f6f5e",
+    "git_blob": "a32e8efb7535c3d22d292f6018575ac06fd49cb2"
+  },
+  "Formalism.RealPlaceAnalysis.FockPairGl": {
+    "cached_sha256": "c6ef7af0f41c143bc1ee775ec2703a630eb61978b585896389c672c25dfa87a5",
+    "git_blob": "b503a0f027ee0b15dd9b08004f3d3078b22de3b5"
+  },
+  "Formalism.RealPlaceAnalysis.InstMeasurableSpaceUJ": {
+    "cached_sha256": "9798e27f84686d8d35e4629fc8ac752e84c4ef2d4a0f4e01760e8cd8d7d0cbf6",
+    "git_blob": "89f7e81bc2fb4f44742e3272a64a04f8f0a6c195"
+  },
+  "Formalism.RealPlaceAnalysis.RealPlaceTaylor.KoszulLowersPower": {
+    "cached_sha256": "cf6edc23b4574e28eee142e6e2d7661a66acd1a19d02539bd5e5933e8be9d813",
+    "git_blob": "96c9ef22c2565186460bda8c0af8c30efd009c24"
+  },
+  "Formalism.RealPlaceAnalysis.RealPlaceTaylor.ProdFactorialSupportSubSingle": {
+    "cached_sha256": "44b2bf6df3f5a2915ac3960720c6d5e576f1c348676236650b99505c916b2dd1",
+    "git_blob": "ccf75a65f5997663d7de6aff76d38775bb6803a7"
+  },
+  "Formalism.RealPlaceAnalysis.StatementA": {
+    "cached_sha256": "839be43196bf4c93d2b9074c558ed38074407c765bcca23ebf1c539513d6cb24",
+    "git_blob": "9cfb14106c932aec63bae4ef175159e19da036f9"
+  },
+  "Formalism.RealPlaceAnalysis.UJLocCompact": {
+    "cached_sha256": "72426d7ccf6938af38c55cb74fa89a0cc7b4593a1b37ec6fb250eec1b86e26d6",
+    "git_blob": "603f4c92dd5d5fa1a72c46e661aa78eb27963074"
+  },
+  "Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Actions": {
+    "cached_sha256": "c6933df9b8ff4e8a02ee83a7a19d298ba4d9c5987df026fb5792e80668e37cfb",
+    "git_blob": "6b2828abcb61eea22ff2086c75550346974e3824"
+  },
+  "Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Adelstab": {
+    "cached_sha256": "579f2e4b8b2d28c4672a2f1282eb1cdd003b5550a4c38c65eca179d64a233c19",
+    "git_blob": "ab2cba0575a0eea1b01eab45ea25c2b90933b7ae"
+  },
+  "Formalism.SatakeDualWeyl.AdelicIwasawaHecke.AdelstabL": {
+    "cached_sha256": "6bbafef1450545df5311e6b5a6548494e1b555ded24b3a6abdbf91f5d4e48c27",
+    "git_blob": "4e04e027697d643f134a21fe4dacf75bd7daed9e"
+  },
+  "Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Afsplit": {
+    "cached_sha256": "207724bc975cfcaa2d7310910e464091a068927f4f294528faeee3e42d7e4441",
+    "git_blob": "1a3ce3e1588c2d9e1c536988e145dd86b93f2fc1"
+  },
+  "Formalism.SatakeDualWeyl.AdelicIwasawaHecke.AfsplitA": {
+    "cached_sha256": "fb4ac489081f515bbf707234ac3abc850305b864399d90d768dd57434a535362",
+    "git_blob": "8b1165daed14ddba3015f5cbb438b929c5ce6288"
+  },
+  "Formalism.SatakeDualWeyl.AdelicIwasawaHecke.AfsplitB": {
+    "cached_sha256": "8b020b230f8919a398d0c01848ff46f69c3d8670e7c5be251a4ee12564135b2c",
+    "git_blob": "1af86bf3155019b587b684729483aebf1c524ba9"
+  },
+  "Formalism.SatakeDualWeyl.AdelicIwasawaHecke.AfsplitC": {
+    "cached_sha256": "49be1567b98fa4f45d57b9bffa1b02e1f68814e20d94a88ad7b0472bee5dbc40",
+    "git_blob": "62912bc44597a49a2bdd8a99f905f30dd3fa2e99"
+  },
+  "Formalism.SatakeDualWeyl.AdelicIwasawaHecke.AssocFin": {
+    "cached_sha256": "411d125c2f8e5286edfe886d20d94376b672cc4e15c10675e95f36b0a425ee0c",
+    "git_blob": "2e574c9ed110eff5eefe48ed91d1824eeb4365cf"
+  },
+  "Formalism.SatakeDualWeyl.AdelicIwasawaHecke.AutomorphicFormsDecompositionHolds": {
+    "cached_sha256": "9d78beae35a4471f6fa0e95c5033be5913731516852103413183758aca0b1b36",
+    "git_blob": "b1d718bb29a1a05855cb396405c6a9bf495ce590"
+  },
+  "Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Bridge": {
+    "cached_sha256": "17f310ea81975f9d25f72299257c035d9431ffab375f1766c2593941c15f97a5",
+    "git_blob": "19fca40c4d8896def960b0eaeecff0ff2bf4169d"
+  },
+  "Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Cartan": {
+    "cached_sha256": "7836db9f1df929a86124783ff3fc1f4579e7ae8b462e28753aa20b1ccff9f567",
+    "git_blob": "abd85fe2b87738e7a8a0b4c2db5be6e8a27de75b"
+  },
+  "Formalism.SatakeDualWeyl.AdelicIwasawaHecke.ClassInjectiveOfSpanRecovery": {
+    "cached_sha256": "37b195c93e7ad5a6b20f34bb06a9937dd3bccde4dfcb73fcdfd2ec9dc819b9cc",
+    "git_blob": "e46fb12efce1508bf4bd9b19f41bc1b3e8626abd"
+  },
+  "Formalism.SatakeDualWeyl.AdelicIwasawaHecke.ClassSet": {
+    "cached_sha256": "a19277c250bf2381c1de1b7eb6ead7688e9ef0c00b78af592ff59f2437520470",
+    "git_blob": "2728bd58ddbdffa3722d2ad2a95bd719bf90c33d"
+  },
+  "Formalism.SatakeDualWeyl.AdelicIwasawaHecke.ClassSetFiniteBoundedHolds": {
+    "cached_sha256": "d9bf119c893ea12d7594ee343ea6868d7b093c4ded5c17f953d94e33572ed67a",
+    "git_blob": "dbc837ba6295ac9c3398a86fb0e64938a50b2a00"
+  },
+  "Formalism.SatakeDualWeyl.AdelicIwasawaHecke.CsApprox": {
+    "cached_sha256": "24b26e17691d22782f48be0c58570bea15f8c7821b192c514f059c3c6fdd7146",
+    "git_blob": "b83c8af58ab8b02741fbb1d7b81bf409c9dbd86c"
+  },
+  "Formalism.SatakeDualWeyl.AdelicIwasawaHecke.CsAsmHformSmulRight": {
+    "cached_sha256": "6ce75662ca3c5bf949f01bd743f02438411a295533a7cf5d52004ce7de8c39c8",
+    "git_blob": "7ed014584452f6171ffa78b540627dbffe87a219"
+  },
+  "Formalism.SatakeDualWeyl.AdelicIwasawaHecke.CsCovol": {
+    "cached_sha256": "dc90b8e123f38eb1dee70521491ea6d3ef60f96e091af5773ee404cd70754f8c",
+    "git_blob": "29d1b347a810dc56bd6b7bc21ca556ad476d1bb8"
+  },
+  "Formalism.SatakeDualWeyl.AdelicIwasawaHecke.CsDual": {
+    "cached_sha256": "7d39a5ce6ab2bc62be5b1be844b283a4ede0fe64d2a543c5e57bbcd27c62786b",
+    "git_blob": "d65feb09dfcd516205bc1fe40c331601fa056173"
+  },
+  "Formalism.SatakeDualWeyl.AdelicIwasawaHecke.CsEasy": {
+    "cached_sha256": "bd115d03dc0e6e1626ee8135d65e3de41bbfbb57a2b48bb9be7b0b56cff44575",
+    "git_blob": "e911425cec26d0f5b63a9aea92d37157dc924045"
+  },
+  "Formalism.SatakeDualWeyl.AdelicIwasawaHecke.CsEquiv": {
+    "cached_sha256": "11ed3cbf5497f9f38cd7d3118916f04ee1f43eb95adf93280701d79d85824ed8",
+    "git_blob": "c20f1a3a8bd7347c77fbf4f110b315215bb6cf35"
+  },
+  "Formalism.SatakeDualWeyl.AdelicIwasawaHecke.CsGlob": {
+    "cached_sha256": "b5ae007e7e4fba102cdf9c87915b28eef1786ba8a06f20d88311654f388402f7",
+    "git_blob": "5751da9aea32cb0b28935bee257989bd3a8c5c9e"
+  },
+  "Formalism.SatakeDualWeyl.AdelicIwasawaHecke.CsGlobApprox": {
+    "cached_sha256": "e344cbab19cafef8764fc401259fa132712be07f7f2a8283498339b50467be4f",
+    "git_blob": "43c0f83291a5ada6d1d45284dbf32032e940d5ef"
+  },
+  "Formalism.SatakeDualWeyl.AdelicIwasawaHecke.CsScale": {
+    "cached_sha256": "a4cca264525c4141ae79128771dfa1173c87371d79f5467bc76a033d5f2aa2d1",
+    "git_blob": "7817cc10169765f308f250dc1a030b6ff4df15be"
+  },
+  "Formalism.SatakeDualWeyl.AdelicIwasawaHecke.CsSpan": {
+    "cached_sha256": "797e7749b1c45953a6b6ef4a77fc38d8bf3a119839f751f2ce3564889e84b767",
+    "git_blob": "fddf561b9af19ce8082cb72fdcc39d39c0b31839"
+  },
+  "Formalism.SatakeDualWeyl.AdelicIwasawaHecke.CsTrace": {
+    "cached_sha256": "cfe66d7811890cdf836271b42f95416dae482233ea0ce7a28a2e3f7018ee53da",
+    "git_blob": "34774945f7e95f75defd9078520595518f8b103b"
+  },
+  "Formalism.SatakeDualWeyl.AdelicIwasawaHecke.DualWeylModuleStable": {
+    "cached_sha256": "0728602e5fb33e03ecef563ffb3eb8193400b0b4d9fa3cac719ac0f955f48101",
+    "git_blob": "e70aadb016c7a4b56df201b5dbc175db957cd4cc"
+  },
+  "Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Ecompose": {
+    "cached_sha256": "7ca9f52bdd866204ecad54f62087659cc31b51a112e6fc65b7ccf9032286d5fe",
+    "git_blob": "6a04cdb3416bd93cf6ceb51d9b85b10e1a85092d"
+  },
+  "Formalism.SatakeDualWeyl.AdelicIwasawaHecke.FIwasawa": {
+    "cached_sha256": "2dd6a3cd32b555f9d56bfb7c6ac24d5412a85b091b6035d8fd0da7360366a1fa",
+    "git_blob": "9ee44daefac2a12ae8500e37f65ed69ba819b557"
+  },
+  "Formalism.SatakeDualWeyl.AdelicIwasawaHecke.FIwasawaA": {
+    "cached_sha256": "045047199090e3870d583132f91d960787bb0f9fb4a444cbba47e3ee2adcf010",
+    "git_blob": "7204a79dde76a0fcebc07b90fc0fd4f44589eceb"
+  },
+  "Formalism.SatakeDualWeyl.AdelicIwasawaHecke.FIwasawaB": {
+    "cached_sha256": "6cd2be906b30ef46ce6b6f3ad934ce110d241a0e40368f961a8437db7d6fab0a",
+    "git_blob": "563b0c061bf9cef6bb525b4b3c64616289c0c53b"
+  },
+  "Formalism.SatakeDualWeyl.AdelicIwasawaHecke.FIwasawaC": {
+    "cached_sha256": "3d5ac9e590b6a01d4e191bd41dc797bd9cdf146fc426404927d7f95a32635bd7",
+    "git_blob": "679a903a902b632aa71450288c03f24d9c4456ae"
+  },
+  "Formalism.SatakeDualWeyl.AdelicIwasawaHecke.FIwasawaD": {
+    "cached_sha256": "221871eeb93b895901905d71288a4f70a358871869fa26b0df3a979604436bcb",
+    "git_blob": "f78463795217fc1f374707d1db6c98f8925231d4"
+  },
+  "Formalism.SatakeDualWeyl.AdelicIwasawaHecke.FIwasawaE": {
+    "cached_sha256": "d855039851373daee47245b0e594bf725f9ab1518e6ae9d95d093acd2ed60768",
+    "git_blob": "9aa6e6f61a0110de8a3b1d30c7e4f00eeaba5143"
+  },
+  "Formalism.SatakeDualWeyl.AdelicIwasawaHecke.FSatake": {
+    "cached_sha256": "b98f6d0f0722d4c2aa034f415225773b4b0f10bce5e4a0b100642191a0d3aa95",
+    "git_blob": "82b137a8d4fb52b6548337c95240945c2513e6ea"
+  },
+  "Formalism.SatakeDualWeyl.AdelicIwasawaHecke.FSatakeA": {
+    "cached_sha256": "2d92e011cce54e25c60248495222164fdc673494455d511efede0d07cf16b306",
+    "git_blob": "4849dbd33868b1f5cbf84cbce4aef77763e25bef"
+  },
+  "Formalism.SatakeDualWeyl.AdelicIwasawaHecke.FSatakeB": {
+    "cached_sha256": "4620dbb5adb128772487f157d48bdb1c1b6d4e3b51082de8f45e914a30b1a8bd",
+    "git_blob": "e607eb1d2d8f453fc9d1fcf51fb720013fcb02c7"
+  },
+  "Formalism.SatakeDualWeyl.AdelicIwasawaHecke.FSatakeC": {
+    "cached_sha256": "d5b70b00d45ac9492156d059322e80de1026a36f2640c5a70d89c34c37d25cde",
+    "git_blob": "9d1ecbff3baa349868e1bc3e9ffdc303e4dcabae"
+  },
+  "Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Fcompose": {
+    "cached_sha256": "1319670d76cdd9535af68a70aab3dce1157c3af703f743908d232a86610c258e",
+    "git_blob": "a9d7751878a4da1def9d0e6496adba2a38a80bc5"
+  },
+  "Formalism.SatakeDualWeyl.AdelicIwasawaHecke.FiniteCosetsInDoset": {
+    "cached_sha256": "af64448ff59762788ce2b25ba7294292e56d7d2603c2827a8f6be597e5646263",
+    "git_blob": "6c6705a667afb47b91f42e61194fbcfbf630888d"
+  },
+  "Formalism.SatakeDualWeyl.AdelicIwasawaHecke.GlintPrincRelIndexNeZero": {
+    "cached_sha256": "fcb9a52e1ae4d0a00d85685795b34afc225b424c8e4da90cfb8949ba22d5f352",
+    "git_blob": "b318b7800bd5e8acdf9ca55c72bfba96ebe6ed99"
+  },
+  "Formalism.SatakeDualWeyl.AdelicIwasawaHecke.HeckeActMem": {
+    "cached_sha256": "d464612e8d893c9d5dffbf4a4be70735bce93bb481aa09be72a20b8ba8fc9834",
+    "git_blob": "69b98c27ea44db0ffe27d2073384a8dba7efa491"
+  },
+  "Formalism.SatakeDualWeyl.AdelicIwasawaHecke.HeckeActionLevelMemHolds": {
+    "cached_sha256": "022bf101323b77709e091fefaab3b7693e87bb84e282e6f210157a9e3c5b893a",
+    "git_blob": "1f2a0a327a7b40fd2bb59db87de55c573cd133fe"
+  },
+  "Formalism.SatakeDualWeyl.AdelicIwasawaHecke.HeckeAssoc": {
+    "cached_sha256": "ed155020d935e55f86a166acc3afc571582402a9d922256f4d75259583b9c7bb",
+    "git_blob": "c72b26454adca79c1793a665921d8919fc4cb85d"
+  },
+  "Formalism.SatakeDualWeyl.AdelicIwasawaHecke.HeckeConvolutionMemHolds": {
+    "cached_sha256": "e67bde90061cd657d74b638a4ef8967db0326ad49eac4f7390a9dceaaa0dcd64",
+    "git_blob": "f1b9fd8d5727d7b4b51cb3021bc605793974d23b"
+  },
+  "Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Heckebasic": {
+    "cached_sha256": "060310e60b7224fa4b5945b90b825d4dd40fbcea353aaad543a8c519db76dd48",
+    "git_blob": "1066c9583adb96064d15962e3754f79983928041"
+  },
+  "Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Heckecomm": {
+    "cached_sha256": "6bf5084046b4c273a453c66aa77eb22d56ae34ba3dc87e63ce4f856e3f923371",
+    "git_blob": "b116a3a3e4bcbb3f552406e01211e057fe221bf9"
+  },
+  "Formalism.SatakeDualWeyl.AdelicIwasawaHecke.InclusionInjective": {
+    "cached_sha256": "8b87da74c990de7ce9773693eaad5fbc3f60e73e443dd69b66a3ee94e0bc29d1",
+    "git_blob": "f69e143926954fd8e2b32d1f6dfd46438576a881"
+  },
+  "Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Ipindep": {
+    "cached_sha256": "9c31c9f52487b41d260e80ad67975ac2e643766f64b3600740766a7e9760aa91",
+    "git_blob": "5e93498ec85f6fe1ead5732f1e0827cd7248f9d1"
+  },
+  "Formalism.SatakeDualWeyl.AdelicIwasawaHecke.LevelSubgroupFiniteAdelicStandard": {
+    "cached_sha256": "fad08db7eaa7dd56b072d6184b074ec95e90353ae22f89a0ee242755b5004c2f",
+    "git_blob": "4a04dc8174f3987528494736ef83beb67dd4d850"
+  },
+  "Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Levelaf": {
+    "cached_sha256": "06e94eecb664ecd8cbae7e7743825c7751b3a735cf4a1ccd0312300cac96b6ab",
+    "git_blob": "a82305067315c15f9bd280d1167ce411cf54a34a"
+  },
+  "Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Levelv": {
+    "cached_sha256": "c43f7846234cf402d1cc395060cf321f98954d0f66cc50fb44068bdb6e442392",
+    "git_blob": "4b466a2faa4dd2996cebdf3aa61094f4f663d253"
+  },
+  "Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Levelvsplit": {
+    "cached_sha256": "4315406673e3eba91c341d2bbeaedfa71db1169a26f2baf3d1bcd2bbe37ca4e0",
+    "git_blob": "fd1d055f60c35c37377ef0815b3859daa95fa762"
+  },
+  "Formalism.SatakeDualWeyl.AdelicIwasawaHecke.LinSubstIsHomogeneous": {
+    "cached_sha256": "2688b31ebab51b1a04a042141c3f5040c55e4aecf6b17d02c6a04b1adb10bfc6",
+    "git_blob": "39f1c2300b5112d68db113409f8d89f4281b4d87"
+  },
+  "Formalism.SatakeDualWeyl.AdelicIwasawaHecke.LocalAlgebraInertPrime": {
+    "cached_sha256": "a27834c831814de16ebfea6bb3bbba3de96b080c01b0ce587ee2e0fd19cff615",
+    "git_blob": "22b3e06dacda46dc4a45db6a3822d6000ba5a9ec"
+  },
+  "Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Nabladual": {
+    "cached_sha256": "382d66be707e39b741961b87bf139f794ee4142d1054bac536f29ac1e791b82f",
+    "git_blob": "117354b0756a63b9fedb63aa1784dfe6d6f69f87"
+  },
+  "Formalism.SatakeDualWeyl.AdelicIwasawaHecke.RationalPointsLeHolds": {
+    "cached_sha256": "15388ad6269a81d1ec96fb6a31f1f66bcb72bbd84329550158b82cb394eb46b8",
+    "git_blob": "2a8175c86e90a22f62db47723a1bdff92a38aff1"
+  },
+  "Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Satake": {
+    "cached_sha256": "33fd42bfda7eb89814a88c17e11e7d7cfc809506352fc9c07607083c270086f9",
+    "git_blob": "58784db7b10b0c75080349fd781990220527493a"
+  },
+  "Formalism.SatakeDualWeyl.AdelicIwasawaHecke.SatakeComb": {
+    "cached_sha256": "4ff735a0a75e8c26bf106339e3ceb589d07a7b47ec0ed22d4308e76bb0298732",
+    "git_blob": "5d03547e624139c49c681fdda0046673f1213e10"
+  },
+  "Formalism.SatakeDualWeyl.AdelicIwasawaHecke.SatakeMat": {
+    "cached_sha256": "cb05f0b3b14cc3f208b69b5d3ff5c91a7e01162eaf8cdcddd4c444c57af1d4e7",
+    "git_blob": "b4db57b9bc0110118355540e90a3ba005213f2a0"
+  },
+  "Formalism.SatakeDualWeyl.AdelicIwasawaHecke.SatakeRes": {
+    "cached_sha256": "68966f562bfbe4fc4e4b25cea85d60058c8bf3801b147325d6ec9baa2f582067",
+    "git_blob": "4e48f9e1544dfd166bd873ebe5e8182dd691fbc2"
+  },
+  "Formalism.SatakeDualWeyl.AdelicIwasawaHecke.SignatureConjugationInvariant": {
+    "cached_sha256": "ea81082ea1a76190fd45c19b5ec34a30420f62919ac2f0acbd37692e4ff160f0",
+    "git_blob": "a1de16abedd4366dd2025c5d7bb3f30fe24e36b6"
+  },
+  "Formalism.SatakeDualWeyl.AdelicIwasawaHecke.SignatureExists": {
+    "cached_sha256": "e4c45c2d80ccbb5a3818d3dbb40edb116d1704aeab4565cd549d3b686c6341e4",
+    "git_blob": "cad8788aa9c5b76d18b15f51e94c0eaaf7bd535e"
+  },
+  "Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Spherical": {
+    "cached_sha256": "dfff4b31b11b8c3efcad00c80e964b5b8ff8e1fddbe648af07aec349366ea5ae",
+    "git_blob": "0be7efbcff8cff9e39d1006ffdce63085fa9567b"
+  },
+  "Formalism.SatakeDualWeyl.AdelicIwasawaHecke.SphericalA": {
+    "cached_sha256": "c2d6ee96680ff50bbe9e385d6b17b7d6dc0da934b1e1d072565ea8ab40ec9e06",
+    "git_blob": "ff1d681209edb15141a532834e38a567151a566e"
+  },
+  "Formalism.SatakeDualWeyl.AdelicIwasawaHecke.SplitUnitaryGroupIso": {
+    "cached_sha256": "ce814d8a1dbeb303959a2c0a70df898e9233766faf300e3d3e838ff6ba6cf30d",
+    "git_blob": "cea5814a2fc53e08f07525ad95e8bd090b2d1800"
+  },
+  "Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Stabfin": {
+    "cached_sha256": "121498666d48974e7675717c4bab6c32c7e7721e257bb90bcd4d2279326513da",
+    "git_blob": "1bbd2d1b7b87bfaebb1a48181efcaba3dfa728f3"
+  },
+  "Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Stabstd": {
+    "cached_sha256": "7b9418149f95a096d3ccc3293c6657d7a627e0a92f7268ece187a6fcfb1c05ff",
+    "git_blob": "c23ea0eeb87f1ee2fdcbb25c3388de2d88a367e7"
+  },
+  "Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Stdform": {
+    "cached_sha256": "7ab82176c86171abe4728553bc90e2af08be6cec09c0c55b1d51fc4c0ed512ee",
+    "git_blob": "761629ccca8fb8567a99d96fc926a9340b1cddd8"
+  },
+  "Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Tjcosets": {
+    "cached_sha256": "2aa50b2c66a209c8d3f0ec3b99e0773829d8b536723665d966d36fa619f30f49",
+    "git_blob": "8d99456575057f577532f6d4ebfb469e1bfc8e6f"
+  },
+  "Formalism.SatakeDualWeyl.AdelicIwasawaHecke.TjcosetsFF": {
+    "cached_sha256": "aaa2aeff835567f4b4a97abae6dfdd9e2f3c25f98725cd55738dae9ae9e85a65",
+    "git_blob": "0c306cb75f5841782ff4d780b706f3d61469e1d0"
+  },
+  "Formalism.SatakeDualWeyl.AdelicIwasawaHecke.TjcosetsLoc": {
+    "cached_sha256": "7e74e34c5734539fd7ca87df60e9c1e939aae7d99eba96348ca1eeccc21806c4",
+    "git_blob": "4af3e0dcf4025e1ae2175c390eae0dfedde3910f"
+  },
+  "Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Transport": {
+    "cached_sha256": "eb50bf77843017032349d3073f39f98295aa7603be429910c658ecd87afdcd96",
+    "git_blob": "1698ad3396e4ae04a6267fdd0a5c8448c1f84e06"
+  },
+  "Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Upqcpt": {
+    "cached_sha256": "8b34c1227f46b43f2f2cf4144b287946c6546d962898d7e3db5b0e46d754aa8d",
+    "git_blob": "da97c6919b6030e156845337d8ce5692fe78a7ee"
+  },
+  "Formalism.SatakeDualWeyl.AdelicIwasawaHecke.Wlocal": {
+    "cached_sha256": "5ce1365a77537bc38fd45ac6c9263e9689f0d636b6533965b91f625355468370",
+    "git_blob": "94aa8b94cf68fc56e9ceea75bf6f32ca88f450ae"
+  },
+  "Formalism.SatakeDualWeyl.DefsCS": {
+    "cached_sha256": "5b9d703822b0d280e1ec8ce103e2c21d03602250e9db0ec663b4468f47b9a42d",
+    "git_blob": "d97a4e40d70499376de1d0f1522bdf87deaf2ec8"
+  },
+  "Formalism.SatakeDualWeyl.DualWeylRepApply": {
+    "cached_sha256": "ba2f1c098761c2f0f6df185ae01b0b9aae2eb8c4c5a201c3f155fc64f745d9f8",
+    "git_blob": "0fd6558741b3b848fab85cec835f4485b2fc295b"
+  },
+  "Formalism.SatakeDualWeyl.KpqSubgroupCompact": {
+    "cached_sha256": "1d1d6f4bf6c8b8791dd38a43463e4c8c495db096462e36d519d02276fcf625e0",
+    "git_blob": "1c1f7897b528d59c5c761ff4e9bebcd6b5299139"
+  },
+  "Formalism.SatakeDualWeyl.NablaRepApply": {
+    "cached_sha256": "816184d5d5575026072f0aba5d39368673ab80a0dfc11395d48a302948df9739",
+    "git_blob": "9de65bf165f15cb77c9068e96862ff978765f8e3"
+  },
+  "Formalism.SatakeDualWeyl.Statement": {
+    "cached_sha256": "60b7288b143dc934c3dacec8704f131bddb7e2d892974d9a4183c22fc67b7255",
+    "git_blob": "e5f0d2a668f9bb75c740202d478d28f505fff540"
+  },
+  "Formalism.SatakeDualWeyl.StatementB": {
+    "cached_sha256": "4266e6ca41cb97ac9967a464a8e55b424ca90fe84a5f203fcc8006569ebfc643",
+    "git_blob": "bebfcd3c21038eed2ecc97e889f05b158d1f1e06"
+  },
+  "Formalism.SatakeDualWeyl.StatementC": {
+    "cached_sha256": "2aa62cdb2a7845a0383359263f9b5aba4459227fbdffb3f432971ad979674de2",
+    "git_blob": "fb7581762ad0524605e853c1d19f19b4829ffd4c"
+  },
+  "Formalism.SatakeDualWeyl.StatementE": {
+    "cached_sha256": "9da6f12e9c549e984869e69cec53ce8efa4079c3f7986870a72aae56154b697a",
+    "git_blob": "82f5226066c7d634235797c68cf6eb58760d6d39"
+  },
+  "Formalism.SatakeDualWeyl.StatementF": {
+    "cached_sha256": "62b70dee70143e778a512ed4449f7bc84074a88d3fb30f2d727d34610832da96",
+    "git_blob": "b19f0637fd18fdb1002629ca43abb6a30e2450da"
+  },
+  "Formalism.SatakeDualWeyl.StatementG": {
+    "cached_sha256": "053efa9a1d50dfc63b60ab7d3d90508debf329eca79d7f28b2b68602cf822464",
+    "git_blob": "177605e08365f471d1ae4a39c0b001f0a4504df9"
+  },
+  "Formalism.SatakeDualWeyl.StatementW": {
+    "cached_sha256": "2a5ba52c695e3d4fa82a9ec23838f6f2006a2301fd709f0edcaed902035c10db",
+    "git_blob": "96f7ca9defa92abce540d03c46ef7c0f23c8bb06"
+  },
+  "Formalism.SharpRestriction.CuspSpanNormBounds.DataS": {
+    "cached_sha256": "fd1dfab127b6704708dde46406b2daca2a981341f1ae9b4b994876800d5308bc",
+    "git_blob": "05d6c08d180bf9804c8cf33b5873fc0c43e93bb4"
+  },
+  "Formalism.SharpRestriction.CuspSpanNormBounds.FractionFieldToGenericStalkAlgebraMapEq": {
+    "cached_sha256": "4ccc3d1acd1de794b376b786427c123d9a3be730d4463ce542f388d876aff77a",
+    "git_blob": "fbe47d9bd812f07fccfc020cfb7494633b9e884a"
+  },
+  "Formalism.SharpRestriction.CuspSpanNormBounds.GlobAut": {
+    "cached_sha256": "586494a2d58295b85d80c614cac1cef75549cc63c501248466adc3e8e1b5385b",
+    "git_blob": "2103e49fe83fce42d4962f85acd9d4f6a589d645"
+  },
+  "Formalism.SharpRestriction.CuspSpanNormBounds.Point": {
+    "cached_sha256": "66018ce0a535e7d5711a93e164c88606f3f44eef868546333786ca10db9928ed",
+    "git_blob": "dbf5f722fe192facd6c88f11de9673665eba3399"
+  },
+  "Formalism.SharpRestriction.CuspSpanNormBounds.PsiEDef": {
+    "cached_sha256": "4677e4180135b8da327c16ff4b5474d052b3db387b0d9daca894893c5f821821",
+    "git_blob": "9e27b2755884606cd1d4f85957477ef96ee42d8d"
+  },
+  "Formalism.SharpRestriction.GrowthBounds.DataG": {
+    "cached_sha256": "3ed8be6e6763b67bc313b2210a492eeea77a6647ef76ff2ac3d920ecd67db16a",
+    "git_blob": "fdde1b75e00ec664661a43bcd5ee3fc4101c19bf"
+  },
+  "Formalism.SharpRestriction.GrowthBounds.UnramifiedQuadraticSetting": {
+    "cached_sha256": "dfaccf09b166e332ad26eb8c7311a75f3270375461fbf573626e08bf490cdef1",
+    "git_blob": "c36e22ceab2885a6ab812f6187bfd1a86472a6ec"
+  },
+  "Formalism.SharpRestriction.LevelLetterCocycles.ArithmeticCylinders": {
+    "cached_sha256": "a4b642dad3e453ed5c866a21b042caa006bd67b54d4c29fd1966cbf112ab7b57",
+    "git_blob": "34d5b6f5ffafa0e56248c9e2eefb5ae0483edd81"
+  },
+  "Formalism.SharpRestriction.LevelLetterCocycles.BlochKatoPhases": {
+    "cached_sha256": "5fe8d3e6e5af2e3492ac5acdda3a1b6343443ff2baf53bcf7d8ccb9849573460",
+    "git_blob": "df02dbb392f97b19ebd900ab2f7ec3b69ef52049"
+  },
+  "Formalism.SharpRestriction.LevelLetterCocycles.DataN": {
+    "cached_sha256": "353e0b5b46a7c7413ec627ee05f6c7ba28ecb001a04f8db0c3a7917991698ef6",
+    "git_blob": "3d5ea7e38ae7ff6a7fae481011bc05e4490b5a84"
+  },
+  "Formalism.SharpRestriction.LevelLetterCocycles.DataNLoc": {
+    "cached_sha256": "3f705fef4ec136756c8afa0102601e10749319a4e0279c1a1eeb6ad3e3967bed",
+    "git_blob": "0f4cfd79eaa256afe2fb252b4fbc540c3b749f6d"
+  },
+  "Formalism.SharpRestriction.LevelLetterCocycles.LocCoh": {
+    "cached_sha256": "8f0a8c301a2b569326ef1d8d180a5fd1bb748d3340eee2627b8abe220a903a80",
+    "git_blob": "f910914c2c9d1cd58d990074cd69de53209d8162"
+  },
+  "Formalism.SharpRestriction.LevelLetterCocycles.LocalSituation": {
+    "cached_sha256": "df0fc4bfbc58c317503a5651c256b95d0fb44d0e6882c25e4b825c689b6ba0a7",
+    "git_blob": "d1ca56b63ab6470a3f7a182552f416d619ccd6ce"
+  },
+  "Formalism.SharpRestriction.LevelLetterCocycles.QuotientHomNonvanishingBound": {
+    "cached_sha256": "357625fe1a5795f60d52dcaa14e3db8c49508dceba2319f2bd3bfdb4e2e073e7",
+    "git_blob": "58fa49962e108ed73d601f5ef3affe557600e62e"
+  },
+  "Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.Analytic": {
+    "cached_sha256": "8d47799074adcae7db33f4a43975b04e086801da40abccde2e1dbecc23888456",
+    "git_blob": "599699b5b35f6fb7bf2ab94f5f0c577b14f35ea1"
+  },
+  "Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.ConjEMemHostFIff": {
+    "cached_sha256": "6b79cd87646aff932c86b1e0bbcd1b0b63f9385eb9fe55d3927413b64c03352b",
+    "git_blob": "0ab34ba6d386bb84908efe66de6ce50108eacddc"
+  },
+  "Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.EvalFrameOrd": {
+    "cached_sha256": "9be5ff5888f2a60dd0a26f6e9711c4c320319b4d39abaa644e30ab2a9111f236",
+    "git_blob": "5fa527ec90c7d7103fd770d016d70556b79a6b59"
+  },
+  "Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.ExplicitFormulaErrorOfHostConditions": {
+    "cached_sha256": "465bbaf665e39801cb826936181995d3fc35fa693916e69027371d6b93ece9d6",
+    "git_blob": "ed60b4b997cd4703713660b185b9e43fd95559a1"
+  },
+  "Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.FrameCyclicGenerator": {
+    "cached_sha256": "bd1bcb922f1232f25f6dd7a1985fa86469bef5a11675d2c7042d3f8728d20d26",
+    "git_blob": "fa8ab3bbd126ccaa1c879cc7894f3e57000319f3"
+  },
+  "Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.FrameFacts": {
+    "cached_sha256": "94b33bc9a1cb2287e578320f49d9343bd15bb0b059e1a4ed640a21e9ef3db8a4",
+    "git_blob": "22402e8349688ace18526a8fc486eb659a5e7450"
+  },
+  "Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.HostFacts": {
+    "cached_sha256": "48254e138e74a27423f1e22a83b11fb739e3061784b7271a5286fcdff3b51dc5",
+    "git_blob": "b6a9456ebd641dfd958f66039e3dddbd7b6a02e9"
+  },
+  "Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.PrimePairSizeCondition": {
+    "cached_sha256": "fe2cd8a3677383d1aa175f8175b216289f5713dac8a6cde1ed73bd96491af9af",
+    "git_blob": "aee05935e7bac6625cd4e07fef4912722d796780"
+  },
+  "Formalism.SharpRestriction.RamificationFrobenius.TotientGaloisClasses.ZsmulGeneratorEqZeroOfProjection": {
+    "cached_sha256": "b36a40c2ac5ea8af0e598d918d290a99295eb1106bcfb8c76087b1d8c0636ef4",
+    "git_blob": "d13afca4924f8b277ae89b5d1d1e38d349ad99de"
+  },
+  "Formalism.Statement": {
+    "cached_sha256": "4d92c742e703c16a769aaa4aef021cb7a2aba53b2ca383e439470309fdc400c1",
+    "git_blob": "30143706942aa349c77e4037537f381f9c8dbb25"
+  },
+  "Formalism.StatementCM": {
+    "cached_sha256": "8c465a6007dfa4f9c2218f168b34c4f2181e8784b58ba26b2021948c670b22c3",
+    "git_blob": "9ddfe16d802baf11e79b5b95759eb224637c89d3"
+  },
+  "Formalism.StatementOC": {
+    "cached_sha256": "c87d718d86dad4c74c7d18a21e224c77ddd3729b284c04b6219cdd5a95bc8886",
+    "git_blob": "12ab19c0176bd4135c2b23a7ee3ac22888df0122"
+  },
+  "Formalism.SubspaceCounting.GoodOrbitIntervalTileCondition": {
+    "cached_sha256": "62dc86c141c0abb6857d104483e455149b65ba41e0e65b9af5f08afca320cab1",
+    "git_blob": "acb9507aac12f0af981cc734a07b0302ea501026"
+  },
+  "Formalism.SubspaceCounting.Statement": {
+    "cached_sha256": "833ee8742d98d658ac74996e349ff957067c89a73494eef9177fbdc8edd6a74a",
+    "git_blob": "8c43ddb8819b8eaad836ab1492aee77f4247b88b"
+  },
+  "Formalism.SubspaceCounting.StatementB": {
+    "cached_sha256": "18a17527ec8e3c06b312c6b04bd131000127ecf4abd16de0b7cbe1dc17fec98c",
+    "git_blob": "5d64c1a8e0a7fdca57f1263c345be4d1bbca2d26"
+  },
+  "Formalism.SubspaceCounting.StatementC": {
+    "cached_sha256": "ef8bc81aa18f0ef8b1ff553902dc8f5f7215459343ffb376ae6db382264e6683",
+    "git_blob": "77358367ef349fb2f99a58d082dd90bf52124a69"
+  },
+  "Formalism.SubspaceCounting.TopsChoiceSecondBound": {
+    "cached_sha256": "51dc1205b8b77cbbc837a715906aeca1cbef7f59fa4529baa7d081c0326ecb07",
+    "git_blob": "230757df4e96248ebaf9841ac962c253e8729b61"
+  },
+  "Formalism.SuccessiveMinima.DefsMink": {
+    "cached_sha256": "171f4ca8b0bf393397ec9956ea2e321cb9c51b0105bcfc68a5fe3059f222b86f",
+    "git_blob": "70b0116574c5c690ac4c38f35f1b8d7441154b02"
+  },
+  "Formalism.SuccessiveMinima.DefsNP": {
+    "cached_sha256": "e6e2649db19208d0c1f33bb32882cfa40a59be3ba4b4d30e3fd55524bf000ef4",
+    "git_blob": "c368b7d9c6e92acbcd2919aa6babb7ed1a7f4bed"
+  },
+  "Formalism.SuccessiveMinima.MinkowskiIIUpper": {
+    "cached_sha256": "457993883f3d370e5bcb909e645c14a533d8828a460a81deec372133efdcbe7e",
+    "git_blob": "307e09c810c0b491c930e526230304b5e7754ac6"
+  },
+  "Formalism.SuccessiveMinima.StatementMink": {
+    "cached_sha256": "beadce5612fe2281e49ecde04b40caba5dab6ebdf7261f60ee3e113266561eb4",
+    "git_blob": "cb0b3ebfad014d954fa107be4a65f238f01df5f7"
+  },
+  "Formalism.SuccessiveMinima.StatementNP": {
+    "cached_sha256": "7b6b9f66d3b6fd4cd4310dbcc13f21904a7308e0ed13acc65dd917cceaf97a6f",
+    "git_blob": "994472896cf4994af7594e6ea0696e1612426dac"
+  },
+  "Formalism.SuccessiveMinima.SuccessiveMinimaProofs.AdaptedBasis": {
+    "cached_sha256": "dc72dce3f21736d4b3d1158b2b1373d67f7a4771e8d791ee38c1c835b5252776",
+    "git_blob": "d68081eff2906b0345a6fe8f38a6421e4819bde1"
+  },
+  "Formalism.SuccessiveMinima.SuccessiveMinimaProofs.GjLevel": {
+    "cached_sha256": "a8fa36fc6a1b978ce65a9db0cfb7ae527e000bdebba8fe668f8a184c54b04826",
+    "git_blob": "43b2f5361934956a856c2497a3e213b247095a01"
+  },
+  "Formalism.SuccessiveMinima.SuccessiveMinimaProofs.GjScale": {
+    "cached_sha256": "3319eec94e227fb5ca97a31ed552c31779284331be852bd54953cdf8c66c2cbd",
+    "git_blob": "bed8a219c0640036c8b2adc15525b09d1430ad8e"
+  },
+  "Formalism.SuccessiveMinima.SuccessiveMinimaProofs.MeasureEqCovolumeMulVolumeImage": {
+    "cached_sha256": "68b8d807ee1a18fee80e091503cedf47e05c0efb4681df11cbc37de2786d5a83",
+    "git_blob": "bde4ed56d2031ca9fd0cf0f42c4b78ff4f43d42d"
+  },
+  "Formalism.SuccessiveMinima.SuccessiveMinimaProofs.MinkCore": {
+    "cached_sha256": "d1839208ce02859cc0df6328661a370e4d4c6c8c61c6df1fdebc467edf59babf",
+    "git_blob": "317d4d568d72971ba7f2f27e025d9e39a652cec7"
+  },
+  "Formalism.SuccessiveMinima.SuccessiveMinimaProofs.MinkowskiIILowerOf": {
+    "cached_sha256": "8c3262bac9b8546a537fe56a66bc3874755c4e9fe8da14590bc01dc7635c1f47",
+    "git_blob": "7f6164735e35d468933a052cf3d83acf2d7bf86c"
+  },
+  "Formalism.SuccessiveMinima.SuccessiveMinimaProofs.NPUnit": {
+    "cached_sha256": "e2f92db4232450cd95f0b5949ec64a0d7a4cf89c7a9e83afe44ccd41de379310",
+    "git_blob": "895b9a46700227b11f2906fca1925270a7db6286"
+  },
+  "Formalism.SuccessiveMinima.SuccessiveMinimaProofs.NPWDivision": {
+    "cached_sha256": "1a8e206b72492e257646f3c523eeb2883f2311432b1cf236e91851f7d5e4273d",
+    "git_blob": "e214d4c0c356f6800624646906b97af2389be595"
+  },
+  "Formalism.SuccessiveMinima.SuccessiveMinimaProofs.NewtonSlope": {
+    "cached_sha256": "c6c860a0fd8c44126fd7dc15394bc76ed88c657c84635ef229806212a68b076c",
+    "git_blob": "65f8a8216c7837fde5c6d051269350da77e73f11"
+  },
+  "Formalism.SuccessiveMinima.SuccessiveMinimaProofs.SuccMin": {
+    "cached_sha256": "b7585315b4d5e8a873ea33f4b02a7e90d739e6201d97d4f988e8ff78f0926c4f",
+    "git_blob": "17252f3a4684b86e1ca348e527608efe855cc0f3"
+  },
+  "Formalism.TameInertiaTowers.CentralOrderTwo.ConjEqInvOfPowEqOne": {
+    "cached_sha256": "bfca790823033db42494a6ab675ad5619e132ae9fb6facba5cd7ad095ada3e13",
+    "git_blob": "c65dbce131ccaec098e3a9f7a48349ccad303838"
+  },
+  "Formalism.TameInertiaTowers.CentralOrderTwo.DecompositionSubgroupIndex": {
+    "cached_sha256": "5713346bbe48e8fb4a4a389c26f6c0d66a34b2b169eb5ba6ca970c20e637ff3d",
+    "git_blob": "007b0cce92e500be824da08a48939e8a0a90b813"
+  },
+  "Formalism.TameInertiaTowers.CentralOrderTwo.Galois": {
+    "cached_sha256": "9fb9e2444462c17318fe021411405169893fef8630decc626a3c421a9cc33bc1",
+    "git_blob": "40a2ed232502361c7168c1e2183f03d79669b0b2"
+  },
+  "Formalism.TameInertiaTowers.CentralOrderTwo.Groups": {
+    "cached_sha256": "181d1176c3c4aaa8b35c91c8214d3bfaa561ec0d250645072b605beb3665f5da",
+    "git_blob": "296bbd483cd59573a72824a5f8fbc960794e3ee0"
+  },
+  "Formalism.TameInertiaTowers.CentralOrderTwo.MemDecompositionSubgroupIff": {
+    "cached_sha256": "292840aaef3f77d209af001f94ca5b7daff16c50d00ed5ed84619eba3bbdd543",
+    "git_blob": "7254428773d0100c49494f403329f300bac511cb"
+  },
+  "Formalism.TameInertiaTowers.CentralOrderTwo.NegOneNeOneUnitsZmodFour": {
+    "cached_sha256": "2ce810af9c9f0fd6d1798a9cc2909e3fb0907662cc9b031ee521cb83cf242bd3",
+    "git_blob": "c71e8f21f561c8d6b7ece3f6fd75fedc62854331"
+  },
+  "Formalism.TameInertiaTowers.CentralOrderTwo.NormalOrderTwoCentral": {
+    "cached_sha256": "49bb26802d7774004f5b13986cf077eb09220180bd291f1e06011acdb0e0831c",
+    "git_blob": "42b813e88643313c2abff0da1383ac3f438c45fa"
+  },
+  "Formalism.TameInertiaTowers.CentralOrderTwo.OddEqOneOfSubOneMem": {
+    "cached_sha256": "e3b50527dcc23d23d52b09ea9726a14487d1b50da3c126c9a4653dcf1e2304ab",
+    "git_blob": "d036db2d438867585e29021d76df78f84e865bce"
+  },
+  "Formalism.TameInertiaTowers.CentralOrderTwo.OrderOfThreeUnitsTwoPow": {
+    "cached_sha256": "e4f538f1e6756c3563ce8a14087035696c157b2d3c560bdae31635d19f0bf779",
+    "git_blob": "7cce7c066a812e979492ad1608f7bf8523e17744"
+  },
+  "Formalism.TameInertiaTowers.CentralOrderTwo.TwoAdic": {
+    "cached_sha256": "dd8a0cb2476cf72e38185a6f22d2ea201adca2157faca45d238b39aaa5764698",
+    "git_blob": "c48d5573c6b0df095f6ed8a937bba33fe1e60d80"
+  },
+  "Formalism.TameInertiaTowers.FinalGroup": {
+    "cached_sha256": "45b2b992807fefd67ae990afc97b52589fbf69165d456e9f0a7d2b87e21e61de",
+    "git_blob": "e87b29321881b68ab369cf540d87a3e0bef81deb"
+  },
+  "Formalism.TameInertiaTowers.InvLength": {
+    "cached_sha256": "2d26fcc9106196361f29bc3ae7c367eb1e4fa78b5f7ff8d60bca88aa75064c02",
+    "git_blob": "44fa6a4ea2726e56c0df653affe31b8f05fb0e63"
+  },
+  "Formalism.TameInertiaTowers.StatementField": {
+    "cached_sha256": "11870c47973c44e4c133f065a683afb9ca9e00484951ac95639f39173a895963",
+    "git_blob": "0d8984ee6e59434e27f1560110e63d18acf30b28"
+  },
+  "Formalism.TameInertiaTowers.StatementGroup": {
+    "cached_sha256": "af521889b7e43cd1aa9549f29d9e8feec5fca063cb1d3cc96030213063b7a0a1",
+    "git_blob": "a9c329cd4a0a439dd75bfd7dc0271715ee27f0c0"
+  },
+  "Formalism.TameInertiaTowers.TowerFieldFoundations": {
+    "cached_sha256": "8afdfa6c380165f4209286ce1238153662829e2ceaeb164da525711f3e588f11",
+    "git_blob": "1833ad05fa82f0f43bf0896c15af7b9e624f06e6"
+  },
+  "Formalism.ThetaLiftIndependence.FinalThetaLiftAMFKIndep": {
+    "cached_sha256": "61c2b212f07be744f0d0f311767e0196be4511524c24c8edc4dbf5064c381d6e",
+    "git_blob": "dd0383ebf7eff0eba230243fb2bcad9a7d6410bc"
+  },
+  "Formalism.ThetaLiftIndependence.Statement": {
+    "cached_sha256": "2f3f40b1651e2d55583439da813e79ba53617c5584eb753de09ded938d9e3d08",
+    "git_blob": "0cbe89264b4f4920f2c0d4beab1af5bc3a915547"
+  },
+  "Formalism.ThetaLiftIndependence.ThetaOrbitSums.ChainScalar": {
+    "cached_sha256": "3956eff8e0d3dfd9567de444521ced9ae6860c5b6ed6f3bbe63d295582667b6f",
+    "git_blob": "832a5d2d88193ced98d69ed9cd83aabf128c70dd"
+  },
+  "Formalism.ThetaLiftIndependence.ThetaOrbitSums.ClassRepsDefinite": {
+    "cached_sha256": "8f676399904bf3c0152eadbb275fe00d69a0bea2a36f4d16c3620bc97e739d4c",
+    "git_blob": "1e110eabc51e7a920308bf947c14d07afe1f03f2"
+  },
+  "Formalism.ThetaLiftIndependence.ThetaOrbitSums.DetSwap": {
+    "cached_sha256": "009450810667db353158d5bd9e64de86184ff08e2b9419165efabbc707715b32",
+    "git_blob": "62017c577ce69368d787d9a8851bde065117e3d9"
+  },
+  "Formalism.ThetaLiftIndependence.ThetaOrbitSums.EigenSwap": {
+    "cached_sha256": "f354e62e703e6f0311a9f54d28dca0ed485c76e5d44594d3e358cf1583ef0d71",
+    "git_blob": "ca4a65967b825a9fa648c42ddb73bbcf491976e2"
+  },
+  "Formalism.ThetaLiftIndependence.ThetaOrbitSums.FFPlancherel": {
+    "cached_sha256": "43679766ed9fc42cd32cb5f5b7633cd5cea3159d60540a0b75a8bbdec1c761aa",
+    "git_blob": "c099a5575fd7c4527154ac924e133aa89f343a28"
+  },
+  "Formalism.ThetaLiftIndependence.ThetaOrbitSums.GaussOp": {
+    "cached_sha256": "b5a5d536631bad0cabc74a8678ebd41a991eabde3ee39d15459d8273797d1773",
+    "git_blob": "45ca574d5f224f7dc5af641d849d032b9c09cfbf"
+  },
+  "Formalism.ThetaLiftIndependence.ThetaOrbitSums.LatLiftIndep": {
+    "cached_sha256": "5e0cc82f011074a3ec33ffd5a2788a534b2fd6ebf284542324400dba06502332",
+    "git_blob": "26f0511d7c0e187775138caf98a8109f01323be9"
+  },
+  "Formalism.ThetaLiftIndependence.ThetaOrbitSums.OrbitSum": {
+    "cached_sha256": "c62732d195d2b366c629f29e50ba7cb8aa0770802e64a388bf61458dfa74413e",
+    "git_blob": "df3f70bd26777cd1ff2d24a98f519b5dee23c344"
+  },
+  "Formalism.WeaklyAdmissibleFiltrations.Statement": {
+    "cached_sha256": "a1888fb25c88d9d0278139456ea80892ab19d28472ece0ba2e52f34f24f12169",
+    "git_blob": "480fd5aa29071a7bd5c72a305b3329e11002f153"
+  },
+  "Formalism.WeaklyAdmissibleFiltrations.StatementPC": {
+    "cached_sha256": "021bea620367018eafeb5c3b62a74e4e4fca5826649750308eb6ede98f2fae2e",
+    "git_blob": "00f9cbc70caa8ef4e9d6368077dfc9f7a3a698b1"
+  },
+  "Formalism.WeaklyAdmissibleFiltrations.StatementTor": {
+    "cached_sha256": "ee55690fe4ab8ba458770a4b3251bd57e96db05b27c0301df384d5cf2497d38f",
+    "git_blob": "5d3d5abdf46dcfcdfdb5e2233ede1630e5f3dae3"
+  },
+  "Lemmata.FirstBlockLemmaE.Imports": {
+    "cached_sha256": "06e28283f8fb9a53763dfcbf12196e0db5959e3f906353fe60fa09217f82c15a",
+    "git_blob": "1db528d750d49b82ba8ec7a71083754f0db94972"
+  },
+  "Lemmata.GeneralBFactLeftForm.Imports": {
+    "cached_sha256": "11fc7a241cb552f7ea1557211cd094df8c3d620db6044158356bbfc4385091df",
+    "git_blob": "a3d2cb613ce3149e5a87095a6d926e0b03eed2d0"
+  },
+  "Lemmata.GeneralBFactRest.Imports": {
+    "cached_sha256": "71ce7fd8d2caafa2052b826491690b138424a712fd0b5e5e1d4ca8db440f893f",
+    "git_blob": "7e3a0de2bc9b68e8be8a44c75fd71f4f00614dbf"
+  },
+  "Lemmata.GeneralBFactRightTerForm.Imports": {
+    "cached_sha256": "69bddb411098ced97882b632d0ec1a9a3056c2f2bb4eafd2eb59bc569e4c24b9",
+    "git_blob": "7057877dbf044f1627fa7ee844848a12ecb819b3"
+  },
+  "Lemmata.GeneralBFactSecondLast.Imports": {
+    "cached_sha256": "79158617a8dea137c4af6613d0835e15fa345aab9e53cb9aa710a4b9ab00aabb",
+    "git_blob": "d2cb5e6bdedf49b97c67c6b9110d4f4139c3b638"
+  },
+  "Lemmata.GeneralBFactSecondRest.Imports": {
+    "cached_sha256": "f2cbb3f904cf45163ad4ee3dacda984feb86d104fcd8dcb4720acbf6546d2ccf",
+    "git_blob": "82921fff26c7590394aeb3f890d688c460ad2687"
+  },
+  "Lemmata.GeneralBFactSecondSide.Imports": {
+    "cached_sha256": "31c3144417f9595629719c7b442266b96ea0c351b929fc5048890a14fb6e5999",
+    "git_blob": "23a2d7568d307881e059ebb81f253f68b3b9ffe8"
+  },
+  "Lemmata.GeneralBFactSecondTail.Imports": {
+    "cached_sha256": "6fd548f4d3cd3476ac9a46c11117216357217f83ca726549c88e61d864ae9d9d",
+    "git_blob": "b3f94ba059b834e70bdd67faa013580d5d33026e"
+  },
+  "Lemmata.GeneralBFactSide.Imports": {
+    "cached_sha256": "18cf1d2a092b13735275d1a128e5697a35438b607605b5bdeb3228f8268a2a6f",
+    "git_blob": "b97d93e78e6d02f7fcba18c7a74f748994bb5193"
+  },
+  "Lemmata.NearbyExistence.ExistsNear": {
+    "cached_sha256": "fe5a9d701b922a143dafaa2adcbe397fe69e33aa6ee91f424e9bde814ecdfe90",
+    "git_blob": "88e7b0e9f9b0fa2cea36197496d1344d14cf85b5"
+  },
+  "ReciprocityTheory.AnalyticForms.RegularLocalRings.IntToRatA": {
+    "cached_sha256": "25fca62117932c6890a49c29891022e2c80b3e233fff1bb2aa9fd214cbc585a4",
+    "git_blob": "7a169ca6a17817e0e6f22fe93d4dd5c40456aa6d"
+  },
+  "ReciprocityTheory.BasicDefinitions.AdRep": {
+    "cached_sha256": "37fadcf12f0f1c10eeb816c5f3e035f7e8189d10cbc168c436fd90c7819faeca",
+    "git_blob": "4ab004842aa516e7080a358b899a2d9c9cedad44"
+  },
+  "ReciprocityTheory.BasicDefinitions.ExistsUnique": {
+    "cached_sha256": "2ba27a59c6a19efbee1e5fbb1d454a92cea7b6e56ba41a02d32439fe5099c850",
+    "git_blob": "e2ad48788e025aefa1e01b64301d43a9be497e71"
+  },
+  "ReciprocityTheory.CommutativeAlgebra.ChainConnInDim": {
+    "cached_sha256": "804190495671b5b7e9696408d0892170702b87d888f3e10bedfd4feb57a3d23d",
+    "git_blob": "9584d7f04fd94d1efae1f8675cf5a8aaa3f796a2"
+  },
+  "ReciprocityTheory.CommutativeAlgebra.CohenMacaulay.AssDim": {
+    "cached_sha256": "3d5f5d4159846a2898682b8cd8cdbb6beb3ed9e8616794ab9c7154944f67a3a0",
+    "git_blob": "970e8a508c526ce2ce7cd930156633175de9fe6f"
+  },
+  "ReciprocityTheory.CommutativeAlgebra.CohenMacaulay.Bridge": {
+    "cached_sha256": "cc5bc9980df044b53496cbeddc629108bdb2941bf38da30eaecc045b5b891b0f",
+    "git_blob": "d6ffe8323bcace32f81aa15b6bfaff3e0fc8c293"
+  },
+  "ReciprocityTheory.CommutativeAlgebra.CohenMacaulay.ExistsIsRegularAppendOfModDepthGE": {
+    "cached_sha256": "caaf8fb7e00abb15bfd7e4af6ba25cb23cf65760d1b9808710ee94a65de9b3ff",
+    "git_blob": "3458143af7b6f0188de8447f3f2ab8f2185fcb7f"
+  },
+  "ReciprocityTheory.CommutativeAlgebra.CohenMacaulay.ExistsIsRegularOfLeHeight": {
+    "cached_sha256": "af932ee501130fe310c5dc31970ce25ecdf69c97f885ab0f5bc6b5d41d23fe9e",
+    "git_blob": "486182de9c02c1d0af0baa001d0ae1996f484794"
+  },
+  "ReciprocityTheory.CommutativeAlgebra.CohenMacaulay.LocDim": {
+    "cached_sha256": "f33922f3442b0ca8609103ac677eccffe5665d7351ced0da93a194e0baf3b633",
+    "git_blob": "abcb3bd384b02a04c5af1abbb51d8b407b78e940"
+  },
+  "ReciprocityTheory.CommutativeAlgebra.CohenMacaulay.ModDepthGE": {
+    "cached_sha256": "12d11f6f6d7611c128cbfda6a1cccdd1f0b0f857ed6d185dd1727251c181bb75",
+    "git_blob": "943f49db79b62509ccb64e87ff62c2570b0dfd8b"
+  },
+  "ReciprocityTheory.CommutativeAlgebra.CohenMacaulay.RingKrullDimQuotientOfMemAssociatedPrimes": {
+    "cached_sha256": "1ce91ae5bb3f7cdcd73c319780d64a56c576fe03cb00241d9993be30eadf6378",
+    "git_blob": "15102a99e6007aa3ebcca7f1de50725de84c102a"
+  },
+  "ReciprocityTheory.CommutativeAlgebra.CohenMacaulay.Unmixed": {
+    "cached_sha256": "f55fec3bb260d8c253f6262cac559ba329f9e377efaea35c5f637ab1fb8a2bb2",
+    "git_blob": "a008e8cd4927974fc06f44bed6defac46f2d5cb1"
+  },
+  "ReciprocityTheory.CommutativeAlgebra.PolynomialHeights.HeightAddRingKrullDimQuotientMvPolynomialField": {
+    "cached_sha256": "0e7f15a68f604e3eff7fbc6f8149a8b668417aed8093d7edb733fdb8415369c6",
+    "git_blob": "021e1b7152c3cc2578a2af6b91c2a6e9ef1c570f"
+  },
+  "ReciprocityTheory.CommutativeAlgebra.PolynomialHeights.PolyCM": {
+    "cached_sha256": "daeb9c8a7ec8f8ef647de7fa70cba902cce5d986ad4bb8d1ca431843dfe193fe",
+    "git_blob": "3a80c050d89c6896eb0366d7fe0ec1376b66d553"
+  },
+  "ReciprocityTheory.CommutativeAlgebra.PolynomialHeights.PolyMax": {
+    "cached_sha256": "c0d3ad8dfaa5de2a7dc31f39700c6038aa4124e8e5702fe684bee87efeb1d335",
+    "git_blob": "56f55a5b8e18904b51ca58be3248ed3dd847f800"
+  },
+  "ReciprocityTheory.CommutativeAlgebra.PolynomialHeights.PolySeq": {
+    "cached_sha256": "02846909e35a47bbb706c10c1c2270183e7c92c1b4308d690bee261522d52436",
+    "git_blob": "a10fe03ab4da5d3efb7c6320f0b46cdbb03b31fc"
+  },
+  "ReciprocityTheory.CommutativeAlgebra.PolynomialHeights.PolyStep": {
+    "cached_sha256": "85100f689564a9e381dc45a7bf38552640a1fa04557d5857ac71ae20b3c4342e",
+    "git_blob": "949d0f99dcc0886b5d39b76b588e94bacee52591"
+  },
+  "ReciprocityTheory.CommutativeAlgebra.SaturatedChains.Integral": {
+    "cached_sha256": "7c7e4dce90dd62228ec6b71feece68071c6da36c6e39257ddf927700499d88f9",
+    "git_blob": "692104fd45c7ebef82dcac2cb2ee0912e5b2e998"
+  },
+  "ReciprocityTheory.CommutativeAlgebra.SaturatedChains.IsSaturatedChain": {
+    "cached_sha256": "eee92092c696cd1c602a13c775807e73ee14401d2348f055daed7ca516d5744d",
+    "git_blob": "b8deb0f8496eaa13174953ef64b379d1b5ab40b9"
+  },
+  "ReciprocityTheory.CommutativeAlgebra.SaturatedChains.RingKrullDimLocalizationQuotientEqHeight": {
+    "cached_sha256": "5bf1ff2589211f62350256a6f7bc5c4830b7fb3240464430a323fe308b67f7cd",
+    "git_blob": "cf3c74c2bb3fc5c29ea0d10bb263f7d625c3457e"
+  },
+  "ReciprocityTheory.GaloisValuations.ContinuousConstSMulQuotient": {
+    "cached_sha256": "bfaf29881f94f0b8f3b0718f7ce441a3f3ed36964b6fa19a0a2913e67be7c2d7",
+    "git_blob": "cc7e6464c45dac01a68e484ce0eb884df25d9f4f"
+  },
+  "ReciprocityTheory.GaloisValuations.Global": {
+    "cached_sha256": "ce449619cd414f95b4ca03d81f14688c6282f6a39d43a53a62151951628536ad",
+    "git_blob": "cb4c9727d3c18cfdf185fa0958a4f11d21a5a43f"
+  },
+  "ReciprocityTheory.GaloisValuations.GlobalA": {
+    "cached_sha256": "62856f962bfd1d4cec6c47b9f9e2205244fa6791095436f26b884d710f554ad7",
+    "git_blob": "f193f6e2a17963f821834b9cdc5dee96c52cfbab"
+  },
+  "ReciprocityTheory.GaloisValuations.GlobalB": {
+    "cached_sha256": "d89349a55d2e9ef0ab57a29284ae16a6a1bc93c36ae7f0805bcf34b58333564f",
+    "git_blob": "522d1e58b5accb8a165d6a392d5209c7b285cf65"
+  },
+  "ReciprocityTheory.GaloisValuations.SeparatedDvrSecondCohomologyMem": {
+    "cached_sha256": "49d4fefb9b4a57a76e4c6589148e4fce5a0b261f6498507e4b066cbfd65f490c",
+    "git_blob": "5860d068c8ee7b7d2845256ce5e2871cf3c9c251"
+  },
+  "ReciprocityTheory.Hypotheses.GalCoh": {
+    "cached_sha256": "4dc4f2b80c9dbb5c51df59788e42a6268b7bfa327082d50eace0e14407784c70",
+    "git_blob": "a4e5044d290790dfc54db004228d49cd9fdb77e5"
+  },
+  "ReciprocityTheory.Hypotheses.GalCohDefs": {
+    "cached_sha256": "a8d2674268c62c33d82ccfd9835c2032cfceb66623d105366d0b2077922f09cd",
+    "git_blob": "ac6952d0f1b0e6f8cbc15cd6e662ba1848818cc3"
+  },
+  "ReciprocityTheory.ReductiveGroups.ArithmeticGeometry.HeightTheory.FiniteAlgebraLocalCompletion": {
+    "cached_sha256": "c691039083923ec11b679ded83712f57ccd84c169a58468abbec9a7335890da9",
+    "git_blob": "1f268b7287713421df083914bfb6bd2c08b69629"
+  }
+}
