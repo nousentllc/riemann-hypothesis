@@ -1,0 +1,12 @@
+{
+  "scope": "two standalone scalar prime-power band criteria",
+  "version": "Lean (version 4.33.1, arm64-apple-darwin24.6.0, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "axioms": [
+    "'OddPositionTransport.adjacent_zero' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "'OddPositionTransport.distant_full' depends on axioms: [propext, Classical.choice, Quot.sound]"
+  ],
+  "source_sha256": "38c2423be09f41b3ea11014e4095a79b3fc86beef76a76a2c81f8ac40d637b27",
+  "object_sha256": "5a8533d51197b772db6c9dde1988041639dea17994a33d4942031054a7878d32",
+  "kernel": "replaying PrimeChargeWindow"
+}

@@ -1,0 +1,47 @@
+# What the local inequality spends
+
+On a central orbit of even length, the source charges an odd retained position to its nearest earlier retained even position. The distance matters as much as the existence of that position. A charge at distance one can erase the whole offset. At sufficiently large primes a charge at distance three or more erases none. The other partners form an explicit series whose cost can be bounded on both sides.
+
+## The measured quantity
+
+Fix the source's orbit representative, prime and lift. Let $`O`$ and $`E`$ be the retained odd and even positions, respectively. For $`y\in O`$, write $`b_y=b(\phi(y))`$, $`o_y=X.\mathrm{off}(j,(\mathrm{false},\phi(y)))`$, and $`\kappa=\mathrm{kaJ}(D,j)`$. Let $`d_y=\mathrm{dMinus}(TT,y)`$. A positive distance selects the retained even predecessor $`x=y-d_y`$ on the cycle. Set $`A_y=a_x/p^{d_y}`$ at such positions. A distance of zero switches off both minimum terms. The top level is $`b_y`$, the offset is $`o_y`$, the fill is $`b_y+o_y`$, and the gain-adjusted fill is $`b_y+o_y-\kappa`$. The source gives $`\lambda=b'/x\le o_y\le\lambda+\eta`$. At an unretained location with first coordinate false, the level contributes zero, and the fill is at most $`\lambda/n+\eta`$ for positive global rank $`n`$. The orbit length can differ from $`n`$. [Definitions and offset fields, lines 131–159](https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/SharpRestriction/GrowthBounds/IsResidueClassZero.lean#L131-L159) · [Distance and the integer-level charge, lines 207–224](https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/SharpRestriction/GrowthBounds/IsResidueClassZero.lean#L207-L224) · [Scale definitions, lines 27–39](https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/LocalRingCardinality/DataParams₂.lean#L27-L39)
+
+Write $`K_b=\sum_{d_y>0}\min(b_y,A_y)`$ and $`K_F=\sum_{d_y>0}\min(b_y+o_y,A_y)`$. Let $`M=\sum_{x\in E}\mathrm{Mn}(x)`$. Define $`T=\sum_{y\in O}(o_y-\kappa)+K_b-M`$, exactly the difference before the additive allowance in `kinkHH`. The two identities below specify every term lost at that step.
+
+```math
+ c_y=\begin{cases}0&d_y=0,\\ \min\{o_y,\max(0,A_y-b_y)\}&d_y>0,\end{cases}\quad
+ T=\sum_{y\in O}(o_y-\kappa-c_y)-(M-K_F).
+```
+
+For a positive distance, the clip is zero below the integer level, partial between the level and the fill, and full above the fill. The signed row becomes nonpositive precisely when $`\kappa\ge o_y-c_y`$. When the lift is favorable, keeping its negative contribution before summing can improve the orbit upper bound even more than clipping the row to zero. Positive-part is applied to the whole orbit in our comparison. [Original `kinkHH`, lines 369–437](https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/SharpRestriction/GrowthBounds/LogarithmicSums/PartnerCountOfCentral.lean#L369-L437)
+
+Let $`I_x`$ consist of the distances actually charged to $`x`$. Distinct positions paired with $`x`$ have distinct distances because $`y=x+d_y`$ modulo the orbit length. The complement has exact mass
+
+```math
+ M-K_F=\sum_{x\in E}\sum_{e\text{ odd},\ e\notin I_x}\min\{a_x/p^e,\mathrm{fill}(x+e)\}\ge0.
+```
+
+The original ends its comparison with a finite-subsum inequality. The supplement preserves the complementary sum, including infinitely many nonzero terms when the levels allow them. Its `series_partition` uses the same fiber decomposition and the convergent-series partition over a finite set and its complement. The signed bound $`T\le |O|(\lambda+\eta-\kappa)`$ already follows without a box upper bound or a bulk-prime restriction. [Predecessor and parity, lines 107–134](https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/SharpRestriction/GrowthBounds/LogarithmicSums/PartnerCountOfCentral.lean#L107-L134) · [Source fiberwise comparison, lines 136–193](https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/SharpRestriction/GrowthBounds/LogarithmicSums/PartnerCountOfCentral.lean#L136-L193) · [Partner series and transport to positions, lines 245–247 and 345–367](https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/SharpRestriction/GrowthBounds/LogarithmicSums/PartnerCountOfCentral.lean#L345-L367)
+
+## A two-sided bound in the prime bulk
+
+Let $`H=X'`$; hence $`a=Hb'`$. Suppose every retained odd level lies in `winB` with upper endpoint at most $`B=b'[1+N_\star x^\epsilon L_a/k]`$. In the following finite statement, $`p^3\ge 2H`$ and $`p(B+\lambda+\eta)\le a`$. For $`d_y=1`$, the actual predecessor level is at least $`a`$, and $`A_y\ge B+\lambda+\eta`$. For $`d_y\ge3`$, its level is at most $`2a`$, so $`A_y\le b'\le b_y`$. Positive distances from odd to even are odd. Therefore exactly the adjacent pairs fully clip; all other rows retain their offsets. `InWin` supplies the lower bound on $`b_y`$ but only `winB` (or an independently supplied margin) supplies its upper bound. A theorem requiring `winB` cannot directly replace the source's universally quantified `StarAll` premise. [Integer boxes, lines 305–317](https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/SharpRestriction/GrowthBounds/IsResidueClassZero.lean#L305-L317) · [`InWin` and `StarAll`, lines 99–135](https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/SharpRestriction/GrowthBounds/LogarithmicSums/Conclusion1OfGainBoundAll.lean#L99-L135) · [Top `a` bounds, lines 233–245](https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/SharpRestriction/GrowthBounds/LogarithmicSums/PartnerCountOfCentral.lean#L233-L245)
+
+Let $`U=\#\{y\in O:d_y\ne1\}`$ and $`J=\#\{x\in E:x+1\text{ is unretained}\}`$. For a retained even source, exponent one is charged exactly when its successor is retained. Every uncharged first column therefore ends at a thin place. At each even source the remaining odd exponents contribute at most the geometric tail $`2a/[p(p^2-1)]`$. Consequently, writing $`E_0=J(\lambda/n+\eta)+|E|2a/[p(p^2-1)]`$, the checked interval is
+
+```math
+ U\lambda-|O|\kappa-E_0\ \le\ T\ \le\ U(\lambda+\eta)-|O|\kappa.
+```
+
+A further elementary consequence follows for $`N=|O|+|E|>0`$, $`\lambda>0`$, and $`\kappa\ge0`$. The positive part preserves the interval around $`U\lambda`$ up to the same absolute errors because $`U\lambda\ge0`$. In particular
+
+```math
+ \left|\frac{\max(0,T)}{N\lambda}-\frac U N\right|
+ \le \max\left\{\frac{U\eta}{N\lambda},\frac{|O|\kappa+E_0}{N\lambda}\right\}.
+```
+
+For fixed positive $`\epsilon`$, $`H=\exp(x^{\epsilon/3})`$ and $`\lambda=\exp(x^\epsilon-x^{\epsilon/3})`$. On a family with the selected parameter bounds, $`\kappa\le S_c\le\exp(x^{\epsilon/4})`$ and $`\eta\le\exp(x^{23\epsilon/48})`$. These give $`\kappa/\lambda,\eta/\lambda\to0`$. If $`n\to\infty`$ and $`p\ge\sqrt H`$ within the upper box margin, the normalized tail is at most $`2x/[\sqrt H(1-p^{-2})]\to0`$. Under these conditions the positive-part residual approaches the *fraction of unpaired odd retained positions* uniformly, in absolute error. This is a mathematical corollary of the finite bounds. The supplement stops at the finite inequalities and the positive-part comparison. If $`U/N`$ tends to zero, absolute control alone gives no relative error estimate. The original scale hypotheses, prime distribution, retained-mask distribution and subsequent source uses require their own arguments. [Lift bound](https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/SharpRestriction/GrowthBounds/LogarithmicSums/Conclusion1OfGainBoundAll.lean#L71-L80) · [Conditional upper bound for $`S_c`$](https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/LocalToGlobal/GlobalTheory/PowFourLtCeilThresholdPrime.lean#L1353-L1369) · [Selected-scale bound for $`\eta`$](https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/SharpRestriction/GrowthBounds/LogarithmicSums/StarNumB.lean#L219-L224)
+
+## Where propagation stops
+
+The original uses `kinkHH` inside `starAt_E`. In the same proof it separately expands `lo_E`, a charge applied uniformly to every retained top. Refining the local kink in isolation establishes a stronger comparison at that line. Replacing the global allowance would also require a way to propagate the signed local quantities through the downstream statement, treat primes outside the bulk, justify the box restriction or retain the universal input, and control the weighted frequency of unpaired rows on the selected family. None of those steps follows from the local inequality alone. [Source `lo_E`](https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/SharpRestriction/GrowthBounds/LogarithmicSums/PartnerCountOfCentral.lean#L581-L591) · [Source `starAt_E`](https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/SharpRestriction/GrowthBounds/LogarithmicSums/PartnerCountOfCentral.lean#L696-L841)

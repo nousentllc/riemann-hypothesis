@@ -1,0 +1,169 @@
+% !TeX program = lualatex
+\documentclass[12pt,letterpaper]{article}
+\usepackage{iftex}\RequireLuaTeX
+\usepackage[margin=.93in,headheight=15pt,headsep=13pt,footskip=25pt]{geometry}
+\usepackage{fontspec}\setmainfont{Latin Modern Roman}\setsansfont{Latin Modern Sans}
+\usepackage{amsmath,amssymb,booktabs,array,tabularx,microtype,xcolor,fancyhdr,hyperref,bookmark}
+\definecolor{ink}{HTML}{182F41}\definecolor{accent}{HTML}{176060}\definecolor{muted}{HTML}{41596A}
+\hypersetup{colorlinks=true,urlcolor=accent,linkcolor=accent,pdftitle={Where the odd-position charge is tight},pdfauthor={Uriel Research}}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcommand{\orig}[3]{\href{https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/#1.lean\#L#2}{#3}}
+\newcommand{\para}[1]{\par\medskip\noindent\textbf{#1}\quad}
+\newcommand{\pagepart}[1]{\clearpage\section{#1}}
+\newcommand{\eff}{\mathrm{eff}}
+\newcommand{\gap}{\mathrm{ASK}-\mathrm{Ga}}
+\pagestyle{fancy}\fancyhf{}\fancyhead[L]{\small\sffamily\color{muted}Uriel Research}
+\fancyhead[R]{\small\sffamily\color{muted}Arithmetic witness studies}\fancyfoot[C]{\sffamily\small\thepage}
+\renewcommand{\headrulewidth}{.3pt}\setlength{\parindent}{0pt}\setlength{\parskip}{4pt}
+\setlength{\emergencystretch}{1.5em}\raggedbottom\linespread{1.025}
+\begin{document}
+\thispagestyle{plain}
+{\sffamily\small\color{accent}URIEL RESEARCH\hfill 22 NOVEMBER 2026}\par\vspace{12pt}
+{\Huge\bfseries\color{ink}Where the odd-position charge is tight\par}\vspace{5pt}
+{\Large\color{muted}One orbit, many prime steps, and the cost of selecting a witness}\par\bigskip
+
+\textbf{Result.} In the conductor-one family, the actual selection rules exclude the full \(1/2\) allowance from the preceding study. For every compatible selected witness, our upper bound on this normalized contribution is
+\[
+ \limsup_{x\to\infty}\mathcal K_x
+ \le \frac12-\frac1{48\mathrm e}=0.492335845\ldots,\qquad \mathrm e=\exp(1).
+\]
+This is a guaranteed saving for the existing witness. A deliberately chosen witness improves the bound much further. Keeping the original admissibility conditions, one can arrange a limiting local charge of \(\sqrt3-3/2=0.232050808\ldots\). Other admissible choices approach \(2-\sqrt3=0.267949192\ldots\). In particular \(1/4\) is attainable but does not bound every admissible choice of the local charge.
+
+\begin{center}\begin{tabularx}{\linewidth}{@{}Yl@{}}
+\toprule
+Which question is being answered? & Normalized local charge\\\midrule
+Can every conductor-one witness use all of the old allowance? & At most \(0.492336+o(1)\)\\
+What does a parity-balanced selection attain? & \(1/4+o(1)\)\\
+Which endpoints are sharp for selection rates in \([3\delta/4,\delta]\), at the level of their concentrated means? & \(0.232051,\ 0.267949\) (rounded)\\\bottomrule
+\end{tabularx}\end{center}
+Here \(\mathcal K_x\) is the sum of the positive parts of a particular local difference in the gain proof, divided by the original unit \(U\). It supplies an upper bound on demand minus credited gain up to a vanishing error. Equality for this local difference gives no lower bound on that final gap. The worst admissible value of \(\mathcal K_x\) across all witnesses remains open.
+
+Two facts drive the result. A neighboring retained even position cancels an odd position's leading charge over most of the prime range. Yet retained points are sparse enough that these adjacent pairs have vanishing weight overall. The remaining question is how often the \emph{same} retained point appears odd as the prime changes. The proof's orbit occupancy rules constrain that frequency even for the original, unspecified choice. \href{https://github.com/nousentllc/riemann-hypothesis/pull/9}{Preceding experiment and its normalization}.
+
+\pagepart{The exact cost at one retained position}
+Fix \(0<\varepsilon<1/52\), a sufficiently late scale \(x\), and one compatible index of the selected family. Put \(H=X'=\exp(x^{\varepsilon/3})\), \(a=xb\), \(b'=a/H\), \(\lambda=b'/x=b/H\), and \(U=mNb\) for \(m\) lifts and \(N=|T|\) retained points. The high inert band consists of primes \(k^2x^{26}\le p<H\) passing both negative-sign tests. For a served prime and a good orbit, number its positions starting from the source's prescribed representative. Type V means even position. An omitted retained point lies on an orbit outside the served set.
+\orig{Formalism/LocalToGlobal/GlobalTheory/IsResidueClassZero}{195}{Selection and service} and \orig{Formalism/SharpRestriction/GrowthBounds/UnramifiedQuadraticSetting}{54}{parity convention}.
+
+At a retained odd position \(y\), let \(d\) be the backward distance to the nearest retained even position. The source uses \(d=0\) when none exists. Write \(b_y\) for the local top height, \(o_y\in[\lambda,\lambda+\eta]\) for its offset, and \(\kappa_j\) for the lift correction. For \(d>0\), set \(z=a_{\rm prev}/p^d\). Comparing the two minima in the original argument gives the signed residual
+\[
+ r_y=o_y-\kappa_j-
+ \begin{cases}
+   \min(o_y,(z-b_y)_+),&d>0,\\
+   0,&d=0 .
+ \end{cases}
+\]
+This identifies equality row by row. For \(z\le b_y\) the row spends the full \(o_y-\kappa_j\). For \(z\ge b_y+o_y\) the height cancels the whole offset. In between, every intermediate charge can occur. With \(b_y=100,o_y=10,\kappa_j=3\), the respective values at \(z=99,105,110\) are \(7,2,-3\). An odd point can have a predecessor and still use its entire row allowance. \orig{Formalism/SharpRestriction/GrowthBounds/LogarithmicSums/PartnerCountOfCentral}{399}{Original pointwise inequality}.
+
+Write \(D_{p,j,v}\) for the left side of \texttt{kinkHH} minus the sum of \(Mn\) over even tops on orbit \(v\), before the published offset allowance. Then \(D_{p,j,v}=\sum_{y\ {\rm odd}} r_y-E_{\rm unused}\), where \(E_{\rm unused}\ge0\). Each matched odd target uses a distinct predecessor-and-exponent pair. The other pairs make up this unused sum. We measure
+\[
+ \mathcal K_x=\frac{2}{U}\sum_{p\ {\rm served\ in\ band}}\log p\,
+            \sum_{j=1}^m\sum_{v\ {\rm served\ orbit}}(D_{p,j,v})_+ .
+\]
+Taking the positive part makes this a usable allowance even at orbits where the original signed difference is negative. A good orbit on the actual late band has a marked tile, hence a retained even position. The \(d=0\) case remains a necessary boundary control for the local identity.
+
+\pagepart{Which odd rows still cost one unit?}
+In the actual family the predecessor height is in \([a,a(1+\alpha)]\), where \(\alpha=1/(kx^{13})\). The target height is in \([b',b'(1+\beta)]\), where the size windows give \(\beta\le1/(4x^2)\) eventually. The upper bound on target height is additional family information. The elementary local \texttt{InWin} hypothesis alone gives only its lower bound. \orig{Formalism/SharpRestriction/FamCore}{123}{Family height windows}.
+
+On the interior band
+\[
+ \sqrt H\le p\le \frac{H}{1+x^{-1}+\beta}
+\]
+the arithmetic decides the leading contribution. If \(d=1\), then \(a_{\rm prev}/p\ge b_y+\lambda\), so at most the small excess over \(\lambda\) survives. If \(d\ge3\), then \(a_{\rm prev}/p^d\le b'\) eventually, so the whole top offset survives before subtracting \(\kappa_j\). Every positive predecessor distance is odd. Thus the leading charge on the interior counts retained odd positions with no retained even point immediately before them. Call their number \(V\) on this orbit.
+
+For the full signed difference we also need to estimate the unused pairs. At exponent one, an unused term from an even top lands on a nonretained position and uses a thin fill, at most \(\lambda/n+\eta\), where \(n\) is the group size. All odd exponents from three upward cost at most \(2a/[p^3(1-p^{-2})]\) per even top, by summing a geometric series. If \(N_v>0\) is the number of retained points on the orbit, the resulting two-sided estimate is
+\[
+ \frac{(D_{p,j,v})_+}{N_v\lambda}
+       =\frac{V}{N_v}
+        +O\!\left(\frac{\eta+\kappa_j}{\lambda}
+                    +\frac1n+\frac{xH}{p^3(1-p^{-2})}\right).
+\]
+The error vanishes uniformly on the interior. The source's residual budgets imply \((\eta+\mathrm{Sc})/\lambda=o(1)\), and \(\kappa_j\le\mathrm{Sc}\). The omitted lower and upper strips have normalized total prime log-weight \(O(\log H/\sqrt H+(x^{-1}+\beta+2/H)\log H)=o(1)\). Everywhere the positive charge is bounded by the sum of the top offsets. This proves a two-sided leading estimate without a lower bound on the \emph{global} gap. \orig{Formalism/SharpRestriction/GrowthBounds/LogarithmicSums/PartnerCountOfCentral}{136}{Unused-pair comparison} and \orig{Formalism/SizeWindowBrackets/ChainSlopeWindows/OneLeThresholdMulPowers}{444}{residual budgets}.
+
+The gain proof uses this orbit inequality with coefficient one, before enlarging its local constant. The other high-band contributions, nine ordinary error terms and the bad-point charge together cost \(o(U)\) on the same family. Hence \((\mathrm{ASK}-\mathrm{Ga})/U\le\mathcal K_x+o(1)\). A separate incidence estimate is outside this comparison. \orig{Formalism/SharpRestriction/GrowthBounds/LogarithmicSums/PartnerCountOfCentral}{696}{High-band gain proof}.
+
+\pagepart{Averaging over the prime steps on the same field}
+The group of the host is \(G=\{\pm1\}^2\times A\), where \(|A|=n\) grows at most polynomially in \(x\). At an unramified prime, its Artin image gives the two signs and its step \(h\in A\). Let \(P_h\) be the sum of \(\log p\) over the high inert band with that step. We need the stronger version of the preceding quarter result,
+\[
+ \max_{h\in A}\left|P_h/H-\frac1{4n}\right|=O_D(x^{-D})
+ \quad\text{for each fixed }D>0 .
+\]
+Constants and eventual thresholds may depend on the fixed family and \(\varepsilon\). This estimate permits testing even a bounded function of \(h\) chosen \emph{after} observing \(T\). Summing the error over \(n\) costs only a polynomial.
+\orig{Formalism/SharpRestriction/GlobalSchurBounds/FrameCodeOfAdditive}{339}{Step equals the Artin coordinate}.
+
+For clarity, the three zero-free boxes from the preceding paper alone would not justify this strengthening. Use the family's smoothed bound for \emph{every} primitive character read from the host. Expand the indicator of \(g=(-1,-1,h)\) by finite Fourier inversion on \(G\). The coefficients have total absolute value one. Surjectivity of the Artin map ensures that only the trivial group character has principal primitive representative. On numbers coprime to the conductor \(M\), every component evaluates as its group character. The smoothed positive von Mangoldt sum for this class therefore has the form
+\[
+ F_g(y)=\frac{y\log y}{4n}+\gamma_g y+
+ O\!\left(y e^{-c x^{\varepsilon/8}}+(1+\log y)\log(2M)\right)
+\]
+at \(y\asymp H,\ y\ge H/3\). To remove powers of \(p\mid M\), absorb their linear part into \(\gamma_g y\) using the convergent series of their weights divided by \(p^j\). The discarded constant parts cost \(O(\log y)\) per ramified prime; the truncated geometric tails cost \(O(\log p)\) per prime. This step preserves positivity of the unramified count whose secants we use. \orig{Formalism/SharpRestriction/GlobalSchurBounds/Chosen}{46}{Host-wide estimate} and \orig{Formalism/SharpRestriction/GlobalSchurBounds/Joints}{1084}{primitive representatives}.
+
+Take secants at \(H(1\pm r)\) and \(H\). Their linear terms cancel; the normalized error is \(O(r+\eta_x/r)\), with \(\eta_x=e^{-c x^{\varepsilon/8}}+O((1+\log H)\log(2M)/H)\). Choose \(r=\sqrt{\eta_x}\). Prime powers, a possible endpoint, and the polynomial lower cutoff have super-polynomially small normalized weight. The displayed bound on \(P_h\) follows.
+
+For any \(T\), \(\sum_{h\in A}|T\cap(T+h)|=N^2\): every ordered pair determines one step. Thus the normalized fraction of adjacent retained pairs among inert prime and retained-point incidences is \(N/n+o(1)=o(1)\). Dropped primes and omitted points cost \(o(1)\) by the preceding study. Set \(w(t)=n^{-1}\#\{h:t\text{ has odd position for }h\}\), assigning zero to odd-order steps if needed. For the host used here, any odd-order steps have negligible mass because their orders are bounded by fixed \(o\). We conclude
+\[
+                  \mathcal K_x=\frac{1}{2N}\sum_{t\in T}w(t)+o(1).
+\]
+
+\pagepart{Why the existing witness cannot spend the full half}
+Let \(A_0\) be the distinguished cyclic subgroup of index \(o\), fixed by the input character. Its order \(n_0=2^s\) tends to infinity. When \(o=1\), it is all of \(A\). A uniform step in \(A_0\) generates \(2^jA_0\) with probability \(2^{-j-1}\), \(0\le j<s\). Inside any coset of \(2^jA_0\), the least numeric label picks the base. Its child coset modulo \(2^{j+1}A_0\) is even and the other child is odd for \emph{every} generator at that level. Changing the generator multiplies position by an odd unit and preserves parity. Numeric labels need not be cyclic coordinates. \orig{Formalism/LocalToGlobal/GlobalTheory/IsResidueClassZero}{267}{Least-base choice} and \orig{Formalism/SharpRestriction/RamificationFrobenius/TotientGaloisClasses/FrameFacts}{249}{dyadic subgroup order}.
+
+Let \(b_j(t)\) be the bit for the odd child, and put \(w_0(t)=\sum_{j<s}2^{-j-1}b_j(t)\). Each string of bits occurs once in each \(A_0\)-coset. Hence \(w_0\) permutes the grid \(0,1/n_0,\ldots,1-1/n_0\) there. Could a sparse \(T\) occupy only the upper tail of this grid? The actual good-orbit windows limit that concentration.
+
+Fix a depth \(k\) before sending \(x\) to infinity. Each depth-\(k\) cell has length \(L=n_0/2^k\). For every good orbit, each cyclic window of length \(G'\) contains at most \(N_1\) retained points. Eventually \(G'\le L\); summing over all starts bounds occupancy by \(LN_1/G'\). The definitions give \(N_1/(G'\delta)\to6\mathrm e\), where \(\delta=x^{-\varepsilon/8}\). Indeed \(r_G,h_G\) are fixed, \(u=\lceil1/\delta\rceil\), and \(G'\delta/\log x\to(6r_G+1)(h_G+3)10^{6r_G+1}\); this makes the first argument of the maximum defining \(N_1\) dominant. \orig{Formalism/SharpRestriction/GrowthBounds/UnramifiedQuadraticSetting}{237}{Window constants} and \orig{Formalism/SubspaceCounting/GoodOrbitIntervalTileCondition}{21}{window condition}.
+
+If a cell exceeded that cap, its entire retained mass would be bad for every inert prime whose step generates \(2^kA_0\). Those primes have normalized weight \(1/(4o2^{k+1})+o(1)\) and eventually clear the order threshold. Their reciprocal log-weight dominates their log-weight divided by \(H\). The cell would contain a positive fraction of \(T\), since \(N\le2\delta n\) and \(o,k\) are fixed. This contradicts the family's \(B/N=o(1)\). Consequently the cap holds in every such cell eventually.
+
+Since \(N\ge\delta n/2\), each rank bin of width \(2^{-k}\) carries at most \((12\mathrm e+o(1))2^{-k}\) of the retained probability. A density bounded by \(R\) on \([0,1]\) has mean at most \(1-1/(2R)\), attained in that relaxation by filling the top interval of width \(1/R\). For the finite bins one adds \(O(2^{-k})\) by spreading each bin's mass uniformly in that bin. Take the scale limit first, then \(k\to\infty\). Giving every remaining step outside \(A_0\) exposure one yields
+\[
+ \limsup\mathcal K_x\le\tfrac12-\frac1{48\mathrm e\,o}.
+\]
+By filling the lower tail the symmetric argument gives \(\liminf\mathcal K_x\ge1/(48\mathrm e\,o)\) for this local positive-part charge only.
+
+\pagepart{What a stronger selection can actually attain}
+The source's retained set is chosen from a finite product of independent inclusion trials. At conductor one, the distinguished subgroup is all of \(A\) and the quotient-share requirement is automatic. The bad-orbit estimate permits pointwise inclusion probabilities \(\pi_t\) anywhere in \([3\delta/4,\delta]\). This latitude lets us select a different witness while meeting the original size and bad-mass conditions. The subsequent construction must use that same \(T\) for all its other obligations. \orig{Development/AutomorphicArithmetic/ThickFrames/NotGoodLe}{84}{Nonuniform orbit estimate} and \orig{Development/AutomorphicArithmetic/ShortNorms/hostOfFieldOf}{217}{host selection}.
+
+Here \(w=w_0\) is the grid score from the last section. Under profile \(\pi_t=\delta a_t\), both \(\sum_{t\in T}w(t)\) and \(N\) concentrate around their means, because \(0\le w,a_t\le1\) and \(\delta n\to\infty\). To retain the original conditions simultaneously, start from the source score for size error and weighted bad mass. Its expected upper bound leaves probability budget: the variance term contributes at most \(1/2\) and the bad term at most \(1/4\). Add the squared centered exposure divided by \(4\delta n\); its expectation is at most \(1/4\). A single subset attains score at most one. A degree of freedom present in the construction can thus be used without assuming that the already chosen subset is typical. \orig{Development/AutomorphicArithmetic/ThickFrames/topsGroup}{103}{Original selection inputs}.
+
+For these concentrated choices \(\mathcal K_x=\frac12\sum_ta_tw(t)/\sum_ta_t+o(1)\). Taking \(a_t=1\) throughout attains \(1/4\). To see the direction of bias, give the root-odd half rate 1 and the root-even half rate \(3/4\). The limiting means of \(w\) in the two halves are \(3/4\) and \(1/4\); size weighting gives a total mean \(15/28\), hence charge \(15/56\). Interchanging the rates gives \(13/56\).
+
+\para{Sharp within the rate constraint.} For any trial upper mean \(z\), maximize \(\int_0^1a(u)(u-z)\,du\) over \(3/4\le a\le1\). Pointwise maximization takes the high rate above \(z\) and the low rate below. The zero is the unique solution of
+\[
+ \tfrac12(1-z)^2-\tfrac38z^2=0,\qquad z=4-2\sqrt3 .
+\]
+The finite score grids converge by Riemann sums. Reversing the profile gives the other endpoint. The limiting interval of attainable concentrated-profile charges has endpoints \(\sqrt3-3/2\) and \(2-\sqrt3\); intermediate values follow by continuous interpolation of profiles. The proof gives existence of witnesses at these values. The \(0.492336\) bound applies to the wider set of all compatible witnesses, including ones for which no concentration around a specified profile has been established. The exact supremum over that wider set is unknown.
+
+\pagepart{Experiments and equality cases}
+For three label orders on each cyclic group of size \(2\) through \(128\) (powers of two), we compared direct traversal to dyadic ranks on 64,770 point--step combinations. All agreed. In one scrambled 16-point frame, group coordinate zero has numeric label 10 but is odd for step one. An implementation that reads the last bit of the numeric label fails here.
+
+\begin{center}\begin{tabularx}{\linewidth}{@{}YYl@{}}
+\toprule
+Experiment & Scope of the equality test & Result\\\midrule
+Four points chosen from 16, no cell cap & Maximum mean exposure \(w\) & \(27/32\)\\
+At most one in each of four depth-two cells & Maximum over all 256 feasible sets & \(9/16\)\\
+At most two in each of those cells & Maximum checked by enumeration & \(25/32\)\\
+Product profiles with 16 rank bins & Maximum mean, all \(65{,}536\) two-rate profiles & \(943/1760\)\\\bottomrule
+\end{tabularx}\end{center}
+In the natural ordering, \(\{12,13,14,15\}\) attains \(9/16\) under the one-per-cell cap. These maxima test the relaxation at the indicated depth. They do not certify a global arithmetic witness. A separate rational cycle sweep checked the local identity and bulk bounds in 16,368 cases. The signed residual was below the unpaired baseline in 15,382, above in 926, and equal in 60. In 8,300 it was negative. Keeping the small offset and unused-pair corrections is essential at a finite scale.
+
+\para{An explicit arithmetic control.} Take the real \(256\)th cyclotomic factor and the two independent quadratic characters of discriminants \(-163,-25799\). For each unramified prime matching both negative signs, compute the unique \(h\in\mathbb Z/64\) with \(p\equiv\pm 5^h\bmod256\). Below one million there are 19,503 such primes. Their generator share by log-weight is \(0.5027964\) against the uniform-step prediction \(1/2\).
+\begin{center}\begin{tabular}{@{}lrrr@{}}
+\toprule
+Retained labels & Observed odd & Uniform-step odd & Observed unpaired\\\midrule
+All even & 0.240820 & \(31/128\) & 0\\
+All odd & 0.743616 & \(95/128\) & 0.502796\\
+Highest eighth by rank & 0.929786 & \(119/128\) & 0.875136\\\bottomrule
+\end{tabular}\end{center}
+Denominators here are all retained-point and inert-prime incidences. The finite dense sets deliberately stress the difference between odd and unpaired. The selected family has vanishing retained density. The arithmetic model evaluates real primes but supplies none of the large-scale selection certificates for these illustrative masks.
+
+\pagepart{Verification, scope and the next inequality}
+\para{What is exact.} Every pointwise clipping value, finite rank optimum, inclusion-profile comparison and local rational control is reproducible from the attached files. The finite prime experiment computes its class signs and modular logarithms with integers and its reported log-weights in floating point. The center of the proof is a double quantifier: the same retained set must pass the orbit tests at many primes. A run that resamples \(T\) at each prime tests a different statement.
+
+\para{What Lean checked.} The package records individual declarations and independent kernel replays. The local module uses the original orbit definitions to evaluate the signed difference, identify unused predecessor pairs and bound the remaining columns. The transport module checks two scalar prime-power clipping criteria. The selection modules check four results, including simultaneous finite selection with an arbitrary allowed inclusion profile and the original bad-orbit estimate. The local source replay rebuilt four original project objects whose bytes differ from the published object manifest. The source blobs and kernel checks are recorded. These runs use the pinned compiler and built Mathlib. The full RH endpoint was outside this build.
+
+\para{What is a mathematical deduction.} The passage from the host's smoothed bounds to uniform prime-step counts, the dyadic occupancy bound for every existing witness, and the limiting charges for reconstructed choices are assembled in this study. The kernel receipts cover the named components. They do not certify an end-to-end theorem containing the constants \(1/2-1/(48\mathrm e)\) or \(\sqrt3-3/2\). The original and newly selected witnesses are existential. No computed row in the finite tables purports to reveal their membership lists.
+
+\para{What is tight.} An isolated odd row uses its entire offset before the lift correction. Aggregate local charges approach the stated endpoints for the prescribed range of sampling rates and the concentrated witnesses they produce. Filling the last \(1/R\) of a uniform rank grid attains the density-cap inequality used for the existing witness. It has additional obligations before it could attain that bound in the arithmetic proof. The exact worst compatible witness and a matching lower bound on the actual global gap remain unresolved.
+
+\para{Where to follow the proof next.} At a served orbit, the actual credited gain takes a maximum involving \(g_U-\mathrm{Pr}\), \(g_0\), and zero. Our upper bound follows the first branch. An orbit whose first-branch estimate uses its full allowance may still receive greater credit through \(g_0\). A discriminating test is to hold the same mask, prime and lift fixed, compute both branches, and classify those where \(g_0\) recovers the apparent loss. That would investigate the actual demand-minus-gain gap, where we currently have only an upper bound. \orig{Formalism/LocalToGlobal/GlobalTheory/IsResidueClassZero}{224}{Definition of credited gain}.
+
+\end{document}

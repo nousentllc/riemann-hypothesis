@@ -1,0 +1,108 @@
+{
+  "arbitrary_canonical_labels": {
+    "size": 8,
+    "labellings_checked": 40320,
+    "score_numerators": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ]
+  },
+  "product_measure": {
+    "sets_summed": 256,
+    "probability_mass": "1",
+    "weights": [
+      2,
+      8,
+      1,
+      6,
+      4,
+      2,
+      3
+    ],
+    "signed_means_odd_minus_even": [
+      "1/2",
+      "0",
+      "1/2",
+      "0",
+      "1/2",
+      "0",
+      "1/2"
+    ],
+    "exact_weighted_variance": "403/8",
+    "variance_cap": "104",
+    "weighted_first_absolute_moment": "938711/32768",
+    "nonempty_sets_with_positive_weighted_sign": 115,
+    "nonempty_sets_with_negative_weighted_sign": 115
+  },
+  "midpoint_profiles": [
+    {
+      "depth": 1,
+      "low_rate_cells": 1,
+      "cells": 2,
+      "maximum": "15/28",
+      "maximum_decimal": 0.535714285714,
+      "minimum": "13/28",
+      "profiles_exhaustively_checked": 4
+    },
+    {
+      "depth": 2,
+      "low_rate_cells": 2,
+      "cells": 4,
+      "maximum": "15/28",
+      "maximum_decimal": 0.535714285714,
+      "minimum": "13/28",
+      "profiles_exhaustively_checked": 16
+    },
+    {
+      "depth": 3,
+      "low_rate_cells": 4,
+      "cells": 8,
+      "maximum": "15/28",
+      "maximum_decimal": 0.535714285714,
+      "minimum": "13/28",
+      "profiles_exhaustively_checked": 256
+    },
+    {
+      "depth": 4,
+      "low_rate_cells": 9,
+      "cells": 16,
+      "maximum": "943/1760",
+      "maximum_decimal": 0.535795454545,
+      "minimum": "817/1760",
+      "profiles_exhaustively_checked": 65536
+    },
+    {
+      "depth": 5,
+      "low_rate_cells": 17,
+      "cells": 32,
+      "maximum": "1269/2368",
+      "maximum_decimal": 0.53589527027,
+      "minimum": "1099/2368",
+      "profiles_exhaustively_checked": 0
+    },
+    {
+      "depth": 8,
+      "low_rate_cells": 137,
+      "cells": 256,
+      "maximum": "243375/454144",
+      "maximum_decimal": 0.535898305383,
+      "minimum": "210769/454144",
+      "profiles_exhaustively_checked": 0
+    },
+    {
+      "depth": 12,
+      "low_rate_cells": 2195,
+      "cells": 4096,
+      "maximum": "62290839/116236288",
+      "maximum_decimal": 0.535898384849,
+      "minimum": "53945449/116236288",
+      "profiles_exhaustively_checked": 0
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "modulus": 256,
+  "q": 163,
+  "d": 25799,
+  "rows": [
+    {
+      "cutoff": 10000,
+      "count": 318,
+      "theta_over_cutoff": 0.2542915057,
+      "generator_mass_fraction": 0.5218868626,
+      "sets": {
+        "all_even": {
+          "odd": 0.2337819579,
+          "unpaired": 0.0,
+          "uniform_odd": "31/128",
+          "uniform_unpaired": "0"
+        },
+        "all_odd": {
+          "odd": 0.7556688205,
+          "unpaired": 0.5218868626,
+          "uniform_odd": "95/128",
+          "uniform_unpaired": "1/2"
+        },
+        "highest_eighth": {
+          "odd": 0.9350747309,
+          "unpaired": 0.8806986835,
+          "uniform_odd": "119/128",
+          "uniform_unpaired": "7/8"
+        },
+        "balanced_sparse": {
+          "odd": 0.4757342997,
+          "unpaired": 0.4169927538,
+          "uniform_odd": "121/256",
+          "uniform_unpaired": "107/256"
+        }
+      }
+    },
+    {
+      "cutoff": 100000,
+      "count": 2390,
+      "theta_over_cutoff": 0.248101608,
+      "generator_mass_fraction": 0.5150663871,
+      "sets": {
+        "all_even": {
+          "odd": 0.2343826352,
+          "unpaired": 0.0,
+          "uniform_odd": "31/128",
+          "uniform_unpaired": "0"
+        },
+        "all_odd": {
+          "odd": 0.7494490224,
+          "unpaired": 0.5150663871,
+          "uniform_odd": "95/128",
+          "uniform_unpaired": "1/2"
+        },
+        "highest_eighth": {
+          "odd": 0.9304127585,
+          "unpaired": 0.8769938594,
+          "uniform_odd": "119/128",
+          "uniform_unpaired": "7/8"
+        },
+        "balanced_sparse": {
+          "odd": 0.4731841901,
+          "unpaired": 0.4181965442,
+          "uniform_odd": "121/256",
+          "uniform_unpaired": "107/256"
+        }
+      }
+    },
+    {
+      "cutoff": 1000000,
+      "count": 19503,
+      "theta_over_cutoff": 0.2480312498,
+      "generator_mass_fraction": 0.5027964043,
+      "sets": {
+        "all_even": {
+          "odd": 0.2408197359,
+          "unpaired": 0.0,
+          "uniform_odd": "31/128",
+          "uniform_unpaired": "0"
+        },
+        "all_odd": {
+          "odd": 0.7436161403,
+          "unpaired": 0.5027964043,
+          "uniform_odd": "95/128",
+          "uniform_unpaired": "1/2"
+        },
+        "highest_eighth": {
+          "odd": 0.9297858881,
+          "unpaired": 0.8751359001,
+          "uniform_odd": "119/128",
+          "uniform_unpaired": "7/8"
+        },
+        "balanced_sparse": {
+          "odd": 0.4726452765,
+          "unpaired": 0.4185019881,
+          "uniform_odd": "121/256",
+          "uniform_unpaired": "107/256"
+        }
+      }
+    }
+  ]
+}

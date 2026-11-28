@@ -1,0 +1,38 @@
+{
+  "scope": "synthetic rational cycles; counts include every mask, prime and lift tested",
+  "counts": {
+    "cases": 16368,
+    "below_unpaired_baseline": 15382,
+    "above_unpaired_baseline": 926,
+    "negative_signed_residual": 8300,
+    "positive_unused": 15624,
+    "odd_without_even": 684
+  },
+  "partial_row_controls": [
+    {
+      "d": 0,
+      "A": "150",
+      "residual": "7"
+    },
+    {
+      "d": 1,
+      "A": "99",
+      "residual": "7"
+    },
+    {
+      "d": 1,
+      "A": "105",
+      "residual": "2"
+    },
+    {
+      "d": 1,
+      "A": "110",
+      "residual": "-3"
+    },
+    {
+      "d": 3,
+      "A": "1",
+      "residual": "7"
+    }
+  ]
+}
