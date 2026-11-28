@@ -1,6 +1,6 @@
 # Riemann proof studies
 
-42 experiment branches and 11 additional editions or substudies. Links are pinned to the Git state audited on 2026-11-26.
+42 experiment branches and 13 additional editions or substudies. Links are pinned to the Git state audited on 2026-11-28.
 
 ![Six research tracks from the original arithmetic-window formalization to same-set gain, local densities and model reading tests](research-map.png)
 
@@ -14,15 +14,17 @@
 - To reproduce a standalone local theorem, read [the ramified Gram-fiber bridge](https://github.com/nousentllc/riemann-hypothesis/tree/63c06fe44eb700e4550e4a2b70adafe09cb1ff9b/research/uriel/experiments/ramified-gram-bridge) and [the square-dilate extension](https://github.com/nousentllc/riemann-hypothesis/tree/17263859a4d27c62cfc67571737355f61a080806/research/uriel/experiments/ramified-square-dilates).
 - To see how those local questions reach the original proof, follow the [declaration route to the rank-one normalization](declaration-graph/README.md).
 
-## Latest result
+## Frobenius premium in the arithmetic window
 
 The written theorem jointly chooses a prime and good orbit on the original weighted host while keeping the retained set fixed. The lift-summed premium pays the original tau and any fixed nonnegative multiple of io with at least mb′/4 left. Six Lean modules check source accounting, predecessors, finite budgets, ramps and transport. The late asymptotic choice and Fourier strip estimate are written arguments.
 
 [Paper, replay and controls](https://github.com/nousentllc/riemann-hypothesis/tree/80555206be28204b1d0a9063f54c8f1e2b5fd70d/research/uriel/experiments/frobenius-window-survival) · [Commit 8055520](https://github.com/nousentllc/riemann-hypothesis/commit/80555206be28204b1d0a9063f54c8f1e2b5fd70d)
 
-## Local-density checkpoint
+## Local-density results
 
-The [ramified companion fiber](ramified-companion/README.md) has written mass $2-2/256^k$ at $4^k(1+\sqrt{2})u^2$. The normalized counts stabilize at depth $4k+2$. The checkpoint includes exact finite controls and a kernel replay of the modulo-two obstruction. The full Lean proof of stabilization and transport remains open.
+Lean verifies exactly two original lattice masses at valuation 4k. The parity of the coefficient of √2 in the residual unit determines the sign in 2 ± 2/256^k. Both classes stabilize sharply at depth 4k+2.
+
+[Fourth edition, arbitrary-unit classification and ZIP](https://github.com/nousentllc/riemann-hypothesis/tree/248c8f4838155354c024a6224690245067edb102/research/uriel/experiments/ramified-unit-classification) · [Third edition, companion proof and ZIP](https://github.com/nousentllc/riemann-hypothesis/tree/1747b933087347e26863fbcb3dbb82debd0441e0/research/uriel/experiments/ramified-companion-lean) · [Earlier written checkpoint](ramified-companion/README.md)
 
 ## How the tracks connect
 
@@ -105,7 +107,7 @@ The newest study keeps the weighted host and retained set fixed through an exist
 
 How do finite counts become fiber measures, and how does local mass enter Siegel–Weil?
 
-Track the modulus, vector lattice, and Haar convention alongside each number. Ramified target four is 257/128 in scalar normalization and 257/256 in the matched split-skew normalization.
+Track the modulus, vector lattice, and Haar convention alongside each number. Ramified target four is 257/128 in scalar normalization and 257/256 in the matched split-skew normalization. At valuation 4k, the original scalar-normalized mass of every regular fiber is 2 ± 2/256^k, determined by the unit residue.
 
 | Study | Question or result | Commit |
 | --- | --- | --- |
@@ -121,6 +123,8 @@ Track the modulus, vector lattice, and Haar convention alongside each number. Ra
 | [Target-four Haar and valuation strata](https://github.com/nousentllc/riemann-hypothesis/tree/25a06cea18926d375c63cf45d51693a98d821cae/research/uriel/experiments/target-four-haar) | Compares two conventions and accounts for the entire 1/128 excess by vectors divisible by two. | [`25a06ce`](https://github.com/nousentllc/riemann-hypothesis/commit/25a06cea18926d375c63cf45d51693a98d821cae) |
 | [Regular chart at 4i](https://github.com/nousentllc/riemann-hypothesis/tree/25a06cea18926d375c63cf45d51693a98d821cae/research/uriel/experiments/target-four-regular-chart) | Tests narrower physical boxes while the integral trace-one obstruction persists. | [`25a06ce`](https://github.com/nousentllc/riemann-hypothesis/commit/25a06cea18926d375c63cf45d51693a98d821cae) |
 | [Two pivots on one fiber](https://github.com/nousentllc/riemann-hypothesis/tree/25a06cea18926d375c63cf45d51693a98d821cae/research/uriel/experiments/target-four-chart-overlap) | Shows chart agreement on the overlap and a second branch when the box widens. | [`25a06ce`](https://github.com/nousentllc/riemann-hypothesis/commit/25a06cea18926d375c63cf45d51693a98d821cae) |
+| [Ramified companion fibers, third edition](https://github.com/nousentllc/riemann-hypothesis/tree/1747b933087347e26863fbcb3dbb82debd0441e0/research/uriel/experiments/ramified-companion-lean) | Lean proves sharp stabilization at depth 4k+2 and transports the mass 2 − 2/256^k to the original lattice. | [`1747b93`](https://github.com/nousentllc/riemann-hypothesis/commit/1747b933087347e26863fbcb3dbb82debd0441e0) |
+| [Ramified Gram-fiber mass classes, fourth edition](https://github.com/nousentllc/riemann-hypothesis/tree/248c8f4838155354c024a6224690245067edb102/research/uriel/experiments/ramified-unit-classification) | Lean verifies exactly two original masses at valuation 4k. The parity of the coefficient of √2 in the residual unit determines the sign. | [`248c8f4`](https://github.com/nousentllc/riemann-hypothesis/commit/248c8f4838155354c024a6224690245067edb102) |
 
 ### Proof-reading experiments
 

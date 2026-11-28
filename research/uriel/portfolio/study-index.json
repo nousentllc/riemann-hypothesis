@@ -1,6 +1,6 @@
 {
   "title": "Riemann proof studies",
-  "date": "2026-11-26",
+  "date": "2026-11-28",
   "repository": "https://github.com/nousentllc/riemann-hypothesis",
   "baseline": [
     {
@@ -338,8 +338,8 @@
       "id": "density",
       "title": "Local density & normalization",
       "question": "How do finite counts become fiber measures, and how does local mass enter Siegel–Weil?",
-      "route": "Gaussian 3/4 and 63/64 → ramified 257/128 → growth & charts",
-      "finding": "Track the modulus, vector lattice, and Haar convention alongside each number. Ramified target four is 257/128 in scalar normalization and 257/256 in the matched split-skew normalization.",
+      "route": "Gaussian 3/4 and 63/64 → ramified 257/128 → growth & charts → arbitrary unit targets",
+      "finding": "Track the modulus, vector lattice, and Haar convention alongside each number. Ramified target four is 257/128 in scalar normalization and 257/256 in the matched split-skew normalization. At valuation 4k, the original scalar-normalized mass of every regular fiber is 2 ± 2/256^k, determined by the unit residue.",
       "color": "#68508d",
       "studies": [
         {
@@ -439,6 +439,22 @@
           "branch": "experiments/uriel-target-four-haar",
           "commit": "25a06cea18926d375c63cf45d51693a98d821cae",
           "path": "research/uriel/experiments/target-four-chart-overlap"
+        },
+        {
+          "id": "ramified-companion-lean",
+          "title": "Ramified companion fibers, third edition",
+          "detail": "Lean proves sharp stabilization at depth 4k+2 and transports the mass 2 − 2/256^k to the original lattice.",
+          "branch": "research/uriel",
+          "commit": "1747b933087347e26863fbcb3dbb82debd0441e0",
+          "path": "research/uriel/experiments/ramified-companion-lean"
+        },
+        {
+          "id": "ramified-unit-classification",
+          "title": "Ramified Gram-fiber mass classes, fourth edition",
+          "detail": "Lean verifies exactly two original masses at valuation 4k. The parity of the coefficient of √2 in the residual unit determines the sign.",
+          "branch": "research/uriel",
+          "commit": "248c8f4838155354c024a6224690245067edb102",
+          "path": "research/uriel/experiments/ramified-unit-classification"
         }
       ]
     },
@@ -579,6 +595,18 @@
       "filename": "Nous_Ramified_Square_Dilates_Package.zip",
       "commit": "17263859a4d27c62cfc67571737355f61a080806",
       "blob": "8d6faf3bf275f1c9da4af88d8a9326d9949c91a8"
+    },
+    {
+      "study": "ramified-companion-lean",
+      "filename": "Nous_Ramified_Companion_Fibers_Package.zip",
+      "commit": "1747b933087347e26863fbcb3dbb82debd0441e0",
+      "blob": "98d886265fc353c69286a13189ee60d6ba0abeae"
+    },
+    {
+      "study": "ramified-unit-classification",
+      "filename": "Nous_Ramified_Gram_Fiber_Mass_Classes.zip",
+      "commit": "248c8f4838155354c024a6224690245067edb102",
+      "blob": "9f235ef8e726032cdd90bca37b17d31549c1ddcc"
     }
   ]
 }

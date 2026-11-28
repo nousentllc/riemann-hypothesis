@@ -1,6 +1,7 @@
 """Build the Riemann study index, a static search page, and a GitHub preview."""
 
 import argparse
+from datetime import date
 import html
 import json
 from pathlib import Path
@@ -16,11 +17,25 @@ DATE = INDEX["date"]
 STUDIES = sum(len(track["studies"]) for track in TRACKS)
 RELATED = sum(len(track["related"]) for track in TRACKS)
 
-LATEST = next(
+FROBENIUS = next(
     study
     for track in TRACKS
     for study in track["studies"]
     if study["id"] == "global-frobenius"
+)
+COMPANION, UNIT_CLASSES = (
+    next(
+        study
+        for track in TRACKS
+        for study in track["related"]
+        if study["id"] == key
+    )
+    for key in ("ramified-companion-lean", "ramified-unit-classification")
+)
+DENSITY_SUMMARY = (
+    "Lean verifies exactly two original lattice masses at valuation 4k. The parity of "
+    "the coefficient of √2 in the residual unit determines the sign in 2 ± 2/256^k. "
+    "Both classes stabilize sharply at depth 4k+2."
 )
 WRITTEN_SELECTION = (
     "The written theorem jointly chooses a prime and good orbit on the original "
@@ -69,19 +84,20 @@ def write_markdown():
         "- To see how those local questions reach the original proof, follow the "
         "[declaration route to the rank-one normalization](declaration-graph/README.md).",
         "",
-        "## Latest result",
+        "## Frobenius premium in the arithmetic window",
         "",
         WRITTEN_SELECTION,
         "",
-        f"[Paper, replay and controls]({study_url(LATEST)}) · "
-        f"[Commit {LATEST['commit'][:7]}]({REPO}/commit/{LATEST['commit']})",
+        f"[Paper, replay and controls]({study_url(FROBENIUS)}) · "
+        f"[Commit {FROBENIUS['commit'][:7]}]({REPO}/commit/{FROBENIUS['commit']})",
         "",
-        "## Local-density checkpoint",
+        "## Local-density results",
         "",
-        "The [ramified companion fiber](ramified-companion/README.md) has written mass "
-        "$2-2/256^k$ at $4^k(1+\\sqrt{2})u^2$. The normalized counts stabilize at depth $4k+2$. "
-        "The checkpoint includes exact finite controls and a kernel replay of the modulo-two obstruction. "
-        "The full Lean proof of stabilization and transport remains open.",
+        DENSITY_SUMMARY,
+        "",
+        f"[Fourth edition, arbitrary-unit classification and ZIP]({study_url(UNIT_CLASSES)}) · "
+        f"[Third edition, companion proof and ZIP]({study_url(COMPANION)}) · "
+        "[Earlier written checkpoint](ramified-companion/README.md)",
         "",
         "## How the tracks connect",
         "",
@@ -227,7 +243,12 @@ footer { border-top:1px solid var(--line); padding-top:1rem; }
 <a href="@GITINDEX@/ramified-companion">Ramified companion checkpoint</a></p>
 </header>
 <aside class="latest">
-<h2>Latest study · Frobenius premium in the arithmetic window</h2>
+<h2>Ramified Gram-fiber masses at valuation 4k</h2>
+<p>@DENSITYSUMMARY@</p>
+<a href="@UNITURL@">Fourth-edition paper, Lean and ZIP</a> · <a href="@COMPANIONURL@">Third-edition companion proof</a>
+</aside>
+<aside class="latest">
+<h2>Frobenius premium in the arithmetic window</h2>
 <p>@LATESTSUMMARY@</p>
 <a href="@LATESTURL@">Read the paper and replay</a>
 </aside>
@@ -284,7 +305,9 @@ filter();
 </html>
 """
     for key, value in {
-        "DATE": DATE, "LATESTSUMMARY": esc(WRITTEN_SELECTION), "LATESTURL": study_url(LATEST),
+        "DATE": DATE, "LATESTSUMMARY": esc(WRITTEN_SELECTION), "LATESTURL": study_url(FROBENIUS),
+        "DENSITYSUMMARY": esc(DENSITY_SUMMARY), "UNITURL": study_url(UNIT_CLASSES),
+        "COMPANIONURL": study_url(COMPANION),
         "BUTTONS": "".join(buttons), "CARDS": "".join(cards),
         "GITINDEX": f"{REPO}/tree/research/uriel/research/uriel/portfolio",
         "SOURCE": f"{REPO}/tree/40e56bab026552e089d7afcfeff08d2defb9c005",
@@ -318,7 +341,8 @@ def write_image(font_dir):
     font = ImageFont.truetype
     ink, quiet = "#202c32", "#4b5b60"
     x = 46
-    draw.text((x, 35), "Nous Research  /  26 November 2026", font=font(bold, 23), fill=quiet)
+    published = date.fromisoformat(DATE)
+    draw.text((x, 35), f"Nous Research  /  {published.day} {published:%B %Y}", font=font(bold, 23), fill=quiet)
     draw.text((x, 73), INDEX["title"], font=font(serif, 74), fill=ink)
     draw.text((x, 163), "How the studies fit together", font=font(sans, 29), fill=quiet)
     draw.text((1314, 164), f"{STUDIES} study branches", font=font(bold, 24), fill=quiet, anchor="ra")
@@ -338,9 +362,9 @@ def write_image(font_dir):
         ("Weighted orbit test → actual fallback → stationary 64-cycle",
          "The uniform stationary guarantee reaches 10.1190% in its specified construction."),
         ("Spacing → two odd partners → b′/4 premium → τ and io",
-         "The newest result keeps the set fixed through the window’s arithmetic costs."),
-        ("Gaussian 3/4 and 63/64 → ramified 257/128 → growth and charts",
-         "Counts become measures through lifting, Haar normalization and transport."),
+         "The original set stays fixed through the window’s arithmetic costs."),
+        ("Gaussian anchors → ramified fibers → two masses at valuation 4k",
+         "The coefficient of √2 in the residual unit selects the mass."),
         ("One lookup → marking and filtering → row labels → quantifiers",
          "Controlled model runs test the evidence a reader uses to reach a verdict."),
     ]
