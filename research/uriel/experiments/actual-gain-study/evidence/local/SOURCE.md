@@ -69,7 +69,7 @@ For $`N=|T|>0`$, $`\lambda=b'/x`$, and $`p\ge\sqrt{H}`$, the elementary normaliz
 The one-exponent interval is useful when only a few inputs are available. With the complete witness data the infinite series can also be eliminated exactly. The original bounds give $`w_{s,e}\ge1`$ for every partner, since its fill is at least one and $`c_G\ge\kappa_j`$. Take any natural $`N`$ with $`p^N\ge2a_*`$; existence follows from $`p\ge2`$. For $`e\ge N`$, all retained sources satisfy $`A_s/p^e\le1`$, and hence all positive demands vanish. Compute the kept and excluded positive demands over $`e=0,\ldots,N-1`$. Their complementary minimum series then equals
 
 ```math
- \frac{p}{p^2-1}A_s-\sum_{e<N,\ e\ \mathrm{odd}}d_{s,e}.
+ \frac{p}{p^2-1}A_s-\sum_{\substack{e<N\\e\text{ odd}}}d_{s,e}.
 ```
 
 The same cutoff works for every retained source and admissible lift at that prime and scale. `cutoff_exists`, `demand_zero_after`, and `finite_column` formalize the cutoff and all three equalities. This is finite dependence on supplied levels, offsets and classifications. A real-valued offset given only by bounds still cannot generally be evaluated, and a witness chosen by existence is not recovered by the identity. Certified intervals can nonetheless settle a strict sign when the resulting enclosure stays on one side of the switch. [Original lower bound on all fills](https://github.com/nousentllc/riemann-hypothesis/blob/40e56bab026552e089d7afcfeff08d2defb9c005/src/Formalism/SharpRestriction/GrowthBounds/LogarithmicSums/PartnerCountOfCentral.lean#L203-L225)
