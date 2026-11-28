@@ -1,38 +1,40 @@
 # Documented contact with original Lean source
 
+> **Archive navigation.** References to files outside this Git branch are shown as local source paths or labeled as unavailable here. The [original snapshot](https://github.com/nousentllc/riemann-hypothesis/tree/248c8f4838155354c024a6224690245067edb102/research/uriel/portfolio/publication-archive) retains the original link markup.
+
 23 November 2026. At pinned commit 40e56bab026552e089d7afcfeff08d2defb9c005, 269 distinct original files appear in the selected inspection records, out of 175,187 Lean files under src (0.154%). This is a lower bound on documented file contact. A record can identify one declaration or source passage without establishing that the entire file was studied.
 
 The denominator uses NUL-delimited Git paths, including non-ASCII filenames. The numerator matches whole path fields or keys in the source trace, source maps, and anchor records listed below, accepting paths relative to the repository or src. For the initial proof graph, only the named declaration nodes enter. Repeated paths count once. A source anchor can be a located definition, a proof passage, or a named interface. Imports, cache inventories, generated supplement files, third-party checks and the recent language-model trials earn no additional coverage in this measure.
 
 ## Source records
 
-1. [riemann-experiments/research/uriel/SOURCE_TRACE.json](../../riemann-experiments/research/uriel/SOURCE_TRACE.json) · 55 matching paths
-2. [riemann-experiments/research/uriel/experiments/joint-witness/results/source_trace.json](../../riemann-experiments/research/uriel/experiments/joint-witness/results/source_trace.json) · 51 matching paths
-3. [riemann-experiments/research/uriel/experiments/slot-three/results/source_spans.json](../../riemann-experiments/research/uriel/experiments/slot-three/results/source_spans.json) · 25 matching paths
-4. [riemann-experiments/research/uriel/experiments/ascent-witness/results/transport_source.json](../../riemann-experiments/research/uriel/experiments/ascent-witness/results/transport_source.json) · 1 matching paths
-5. [output/pdf/actual-gain-study/evidence/source_anchors.json](../pdf/actual-gain-study/evidence/source_anchors.json) · 21 matching paths
-6. [output/pdf/cofinal-endpoint-certificates/evidence/collar/source_trace.json](../pdf/cofinal-endpoint-certificates/evidence/collar/source_trace.json) · 19 matching paths
-7. [output/pdf/cofinal-endpoint-certificates/evidence/transport/source_map.json](../pdf/cofinal-endpoint-certificates/evidence/transport/source_map.json) · 40 matching paths
-8. [output/pdf/cycle64-optimization/evidence/source_anchors.json](../pdf/cycle64-optimization/evidence/source_anchors.json) · 17 matching paths
-9. [output/pdf/cyclotomic-slot-seven/evidence/ascent/source_map.json](../pdf/cyclotomic-slot-seven/evidence/ascent/source_map.json) · 5 matching paths
-10. [output/pdf/cyclotomic-slot-seven/evidence/moving/source_map.json](../pdf/cyclotomic-slot-seven/evidence/moving/source_map.json) · 4 matching paths
-11. [output/pdf/exceptional-band-mass/evidence/geometry/source_anchors.json](../pdf/exceptional-band-mass/evidence/geometry/source_anchors.json) · 4 matching paths
-12. [output/pdf/incumbent-recovery-study/evidence/source_anchors.json](../pdf/incumbent-recovery-study/evidence/source_anchors.json) · 17 matching paths
-13. [output/pdf/odd-position-study/evidence/source_anchors.json](../pdf/odd-position-study/evidence/source_anchors.json) · 43 matching paths
-14. [output/pdf/odd-position-study 2/evidence/source_anchors.json](../pdf/odd-position-study%202/evidence/source_anchors.json) · 43 matching paths
-15. [output/pdf/orbit-loss-trace/evidence/source_anchors.json](../pdf/orbit-loss-trace/evidence/source_anchors.json) · 31 matching paths
-16. [output/pdf/prescribed-gap-witnesses/evidence/fields/source_map.json](../pdf/prescribed-gap-witnesses/evidence/fields/source_map.json) · 16 matching paths
-17. [output/pdf/prescribed-gap-witnesses/evidence/pairs/source_map.json](../pdf/prescribed-gap-witnesses/evidence/pairs/source_map.json) · 9 matching paths
-18. [output/pdf/recovery-frontier/evidence/source_anchors.json](../pdf/recovery-frontier/evidence/source_anchors.json) · 7 matching paths
-19. [output/pdf/served-prime-study/evidence/source_anchors.json](../pdf/served-prime-study/evidence/source_anchors.json) · 35 matching paths
-20. [output/pdf/ten-percent-study/evidence/source_anchors.json](../pdf/ten-percent-study/evidence/source_anchors.json) · 4 matching paths
-21. [output/pdf/weil-block-and-binary-drift/evidence/weil/weil_source_trace.json](../pdf/weil-block-and-binary-drift/evidence/weil/weil_source_trace.json) · 39 matching paths
-22. [output/pdf/zero-and-arithmetic-windows/evidence/arith/arithmetic_sources.json](../pdf/zero-and-arithmetic-windows/evidence/arith/arithmetic_sources.json) · 22 matching paths
-23. [output/pdf/weighted-orbit-study/evidence/SOURCE.json](../pdf/weighted-orbit-study/evidence/SOURCE.json) · 15 matching paths
-24. [output/pdf/exceptional-band-mass/evidence/upstream/sources.json](../pdf/exceptional-band-mass/evidence/upstream/sources.json) · 25 matching paths
-25. [output/pdf/cyclotomic-slot-seven/evidence/descent/trace.json](../pdf/cyclotomic-slot-seven/evidence/descent/trace.json) · 18 matching paths
-26. [output/pdf/prescribed-gap-witnesses/evidence/roster/source.json](../pdf/prescribed-gap-witnesses/evidence/roster/source.json) · 3 matching paths
-27. [riemann-experiments/research/uriel/experiments/initial/results/source_graph.json](../../riemann-experiments/research/uriel/experiments/initial/results/source_graph.json) · 18 matching paths
+1. [riemann-experiments/research/uriel/SOURCE_TRACE.json](../../../SOURCE_TRACE.json) · 55 matching paths
+2. **riemann-experiments/research/uriel/experiments/joint-witness/results/source_trace.json** (local archive path: `../../riemann-experiments/research/uriel/experiments/joint-witness/results/source_trace.json`) · 51 matching paths
+3. **riemann-experiments/research/uriel/experiments/slot-three/results/source_spans.json** (local archive path: `../../riemann-experiments/research/uriel/experiments/slot-three/results/source_spans.json`) · 25 matching paths
+4. **riemann-experiments/research/uriel/experiments/ascent-witness/results/transport_source.json** (local archive path: `../../riemann-experiments/research/uriel/experiments/ascent-witness/results/transport_source.json`) · 1 matching paths
+5. **output/pdf/actual-gain-study/evidence/source_anchors.json** (local archive path: `../pdf/actual-gain-study/evidence/source_anchors.json`) · 21 matching paths
+6. **output/pdf/cofinal-endpoint-certificates/evidence/collar/source_trace.json** (local archive path: `../pdf/cofinal-endpoint-certificates/evidence/collar/source_trace.json`) · 19 matching paths
+7. **output/pdf/cofinal-endpoint-certificates/evidence/transport/source_map.json** (local archive path: `../pdf/cofinal-endpoint-certificates/evidence/transport/source_map.json`) · 40 matching paths
+8. **output/pdf/cycle64-optimization/evidence/source_anchors.json** (local archive path: `../pdf/cycle64-optimization/evidence/source_anchors.json`) · 17 matching paths
+9. **output/pdf/cyclotomic-slot-seven/evidence/ascent/source_map.json** (local archive path: `../pdf/cyclotomic-slot-seven/evidence/ascent/source_map.json`) · 5 matching paths
+10. **output/pdf/cyclotomic-slot-seven/evidence/moving/source_map.json** (local archive path: `../pdf/cyclotomic-slot-seven/evidence/moving/source_map.json`) · 4 matching paths
+11. **output/pdf/exceptional-band-mass/evidence/geometry/source_anchors.json** (local archive path: `../pdf/exceptional-band-mass/evidence/geometry/source_anchors.json`) · 4 matching paths
+12. **output/pdf/incumbent-recovery-study/evidence/source_anchors.json** (local archive path: `../pdf/incumbent-recovery-study/evidence/source_anchors.json`) · 17 matching paths
+13. **output/pdf/odd-position-study/evidence/source_anchors.json** (local archive path: `../pdf/odd-position-study/evidence/source_anchors.json`) · 43 matching paths
+14. **output/pdf/odd-position-study 2/evidence/source_anchors.json** (local archive path: `../pdf/odd-position-study 2/evidence/source_anchors.json`) · 43 matching paths
+15. **output/pdf/orbit-loss-trace/evidence/source_anchors.json** (local archive path: `../pdf/orbit-loss-trace/evidence/source_anchors.json`) · 31 matching paths
+16. **output/pdf/prescribed-gap-witnesses/evidence/fields/source_map.json** (local archive path: `../pdf/prescribed-gap-witnesses/evidence/fields/source_map.json`) · 16 matching paths
+17. **output/pdf/prescribed-gap-witnesses/evidence/pairs/source_map.json** (local archive path: `../pdf/prescribed-gap-witnesses/evidence/pairs/source_map.json`) · 9 matching paths
+18. **output/pdf/recovery-frontier/evidence/source_anchors.json** (local archive path: `../pdf/recovery-frontier/evidence/source_anchors.json`) · 7 matching paths
+19. **output/pdf/served-prime-study/evidence/source_anchors.json** (local archive path: `../pdf/served-prime-study/evidence/source_anchors.json`) · 35 matching paths
+20. **output/pdf/ten-percent-study/evidence/source_anchors.json** (local archive path: `../pdf/ten-percent-study/evidence/source_anchors.json`) · 4 matching paths
+21. **output/pdf/weil-block-and-binary-drift/evidence/weil/weil_source_trace.json** (local archive path: `../pdf/weil-block-and-binary-drift/evidence/weil/weil_source_trace.json`) · 39 matching paths
+22. **output/pdf/zero-and-arithmetic-windows/evidence/arith/arithmetic_sources.json** (local archive path: `../pdf/zero-and-arithmetic-windows/evidence/arith/arithmetic_sources.json`) · 22 matching paths
+23. **output/pdf/weighted-orbit-study/evidence/SOURCE.json** (local archive path: `../pdf/weighted-orbit-study/evidence/SOURCE.json`) · 15 matching paths
+24. **output/pdf/exceptional-band-mass/evidence/upstream/sources.json** (local archive path: `../pdf/exceptional-band-mass/evidence/upstream/sources.json`) · 25 matching paths
+25. **output/pdf/cyclotomic-slot-seven/evidence/descent/trace.json** (local archive path: `../pdf/cyclotomic-slot-seven/evidence/descent/trace.json`) · 18 matching paths
+26. **output/pdf/prescribed-gap-witnesses/evidence/roster/source.json** (local archive path: `../pdf/prescribed-gap-witnesses/evidence/roster/source.json`) · 3 matching paths
+27. **riemann-experiments/research/uriel/experiments/initial/results/source_graph.json** (local archive path: `../../riemann-experiments/research/uriel/experiments/initial/results/source_graph.json`) · 18 matching paths
 
 ## Distinct original files
 
